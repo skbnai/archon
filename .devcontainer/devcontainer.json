@@ -1,0 +1,21 @@
+{
+  "name": "archon-wiki",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+  },
+  "postCreateCommand": "pip install pyyaml",
+  "mounts": [
+    "source=claude-code-config-${devcontainerId},target=/home/vscode/.claude,type=volume"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "redhat.vscode-yaml"
+      ]
+    }
+  }
+}
