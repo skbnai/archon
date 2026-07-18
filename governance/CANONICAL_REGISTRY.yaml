@@ -4367,3 +4367,472 @@ topics:
     - ea ai-first transformation — a real-life transcript
     supersedes: []
     pages: []
+  - id: ai-value-creator-deliverables-pack-part2
+    domain: strategy
+    canonical: docs/strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks.md
+    aliases:
+    - 'ai value creator deliverables: maturity, governance & playbooks'
+    supersedes: []
+    pages: []
+  - id: ai-value-creator-deliverables-pack-part3
+    domain: strategy
+    canonical: docs/strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard.md
+    aliases:
+    - 'ai value creator deliverables: governance model, economics, scorecard & playbooks (16-20)'
+    supersedes: []
+    pages: []
+  - id: ai-cost-implementation-guide-2026-part2
+    domain: strategy
+    canonical: docs/strategy/54-ai-cost-implementation-guide-2026-budget-finops-roi-measurement.md
+    aliases:
+    - 'ai cost implementation: budget governance, finops & roi'
+    supersedes: []
+    pages: []
+  - id: ai-cost-implementation-guide-2026-part3
+    domain: strategy
+    canonical: docs/strategy/55-ai-cost-implementation-guide-2026-anti-patterns-deployment-playbook.md
+    aliases:
+    - 'ai cost implementation: anti-pattern fixes & deployment playbook'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-use-case-value-lifecycle-part2
+    domain: strategy
+    canonical: docs/strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions.md
+    aliases:
+    - 'use case value lifecycle: financial model & assumptions'
+    supersedes: []
+    pages: []
+  - id: ai-coding-agents-2026-part2
+    domain: strategy
+    canonical: docs/strategy/57-ai-coding-agents-2026-enterprise-autonomous-agent-tools.md
+    aliases:
+    - 'ai coding agents 2026: enterprise & autonomous agent tools'
+    supersedes: []
+    pages: []
+  - id: ai-coding-agents-2026-part3
+    domain: strategy
+    canonical: docs/strategy/58-ai-coding-agents-2026-tool-comparison-benchmarks-guide.md
+    aliases:
+    - 'ai coding agents 2026: comparisons & benchmarks'
+    supersedes: []
+    pages: []
+  - id: ai-tokenomics-guide-part2
+    domain: strategy
+    canonical: docs/strategy/59-ai-tokenomics-guide-prompting-model-selection-fine-tuning.md
+    aliases:
+    - 'ai tokenomics: prompting, model selection & fine-tuning'
+    supersedes: []
+    pages: []
+  - id: ai-tokenomics-guide-part3
+    domain: strategy
+    canonical: docs/strategy/60-ai-tokenomics-guide-batch-processing-tco-scale.md
+    aliases:
+    - 'ai tokenomics: batch processing, tco & scale economics'
+    supersedes: []
+    pages: []
+  - id: ai-value-creators-synthesis-part2
+    domain: strategy
+    canonical: docs/strategy/61-ai-value-creators-synthesis-advanced-themes-recommendations.md
+    aliases:
+    - 'ai value creators: advanced themes & recommendations'
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-commercial-analysis-2026-part2
+    domain: strategy
+    canonical: docs/strategy/62-enterprise-ai-commercial-analysis-2026-finops-procurement-framework.md
+    aliases:
+    - 'enterprise ai commercial analysis: finops & procurement'
+    supersedes: []
+    pages: []
+  - id: part-01-evolution-part2
+    domain: strategy
+    canonical: docs/strategy/63-part-01-evolution-evolution-stages-agentic-ai-native.md
+    aliases:
+    - 'evolution: agentic ai to ai-native organization'
+    supersedes: []
+    pages: []
+  - id: part-02-operating-models-part2
+    domain: strategy
+    canonical: docs/strategy/64-part-02-operating-models-operating-models-platform-ai-native.md
+    aliases:
+    - 'enterprise ai operating models: platform-first to ai-native'
+    supersedes: []
+    pages: []
+  - id: part-02-operating-models-part3
+    domain: strategy
+    canonical: docs/strategy/65-part-02-operating-models-operating-model-comparison-maturity.md
+    aliases:
+    - 'enterprise ai operating models: comparison & maturity'
+    supersedes: []
+    pages: []
+  - id: part-08-organizational-roles-part2
+    domain: strategy
+    canonical: docs/strategy/66-part-08-organizational-roles-core-delivery-engineering-roles.md
+    aliases:
+    - 'core ai delivery & engineering roles'
+    supersedes: []
+    pages: []
+  - id: part-08-organizational-roles-part3
+    domain: strategy
+    canonical: docs/strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix.md
+    aliases:
+    - 'governance, risk & advisory roles + master raci matrix'
+    supersedes: []
+    pages: []
+  - id: part-08-organizational-roles-part4
+    domain: strategy
+    canonical: docs/strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks.md
+    aliases:
+    - 'governance raci, career pathways & compensation'
+    supersedes: []
+    pages: []
+  - id: part-09-operating-processes-part2
+    domain: strategy
+    canonical: docs/strategy/69-part-09-operating-processes-rollout-evaluation-redteam.md
+    aliases:
+    - 'ai operating processes: rollout, evaluation & red teaming'
+    supersedes: []
+    pages: []
+  - id: part-09-operating-processes-part3
+    domain: strategy
+    canonical: docs/strategy/70-part-09-operating-processes-incident-response-rollback.md
+    aliases:
+    - 'ai operating processes: incident response & rollback'
+    supersedes: []
+    pages: []
+  - id: part-10-service-catalog-part2
+    domain: strategy
+    canonical: docs/strategy/71-part-10-service-catalog-agent-guardrail-observability.md
+    aliases:
+    - 'ai service catalog: agent, guardrail & observability services'
+    supersedes: []
+    pages: []
+  - id: part-10-service-catalog-part3
+    domain: strategy
+    canonical: docs/strategy/72-part-10-service-catalog-tiers-governance-developer-portal.md
+    aliases:
+    - 'ai service catalog: tiers, governance & developer portal'
+    supersedes: []
+    pages: []
+  - id: part-21-agentic-process-blueprint-part2
+    domain: strategy
+    canonical: docs/strategy/73-part-21-agentic-process-blueprint-blueprints-by-function-teams.md
+    aliases:
+    - 'agentic blueprints by function & agent-infused teams'
+    supersedes: []
+    pages: []
+  - id: ea-strategy-playbook-part2
+    domain: strategy
+    canonical: docs/strategy/74-ea-strategy-playbook-build-operate-retire-stages.md
+    aliases:
+    - 'ea strategy playbook: build to retire'
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-strategic-brief-2026-part2
+    domain: strategy
+    canonical: docs/strategy/75-enterprise-ai-strategic-brief-2026-aegis-security-adlc.md
+    aliases:
+    - 'enterprise ai strategic brief: security governance & adlc'
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-strategic-brief-2026-part3
+    domain: strategy
+    canonical: docs/strategy/76-enterprise-ai-strategic-brief-2026-roadmap-strategic-imperatives.md
+    aliases:
+    - 'enterprise ai strategic brief: roadmap & strategic imperatives'
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-transformation-blueprint-cto-guide-2026-part2
+    domain: strategy
+    canonical: docs/strategy/77-enterprise-ai-transformation-blueprint-cto-guide-2026-finops-security-threat-model.md
+    aliases:
+    - 'cto transformation blueprint: finops & security threat model'
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-transformation-blueprint-cto-guide-2026-part3
+    domain: strategy
+    canonical: docs/strategy/78-enterprise-ai-transformation-blueprint-cto-guide-2026-failure-playbook-migration.md
+    aliases:
+    - 'cto transformation blueprint: failure playbook & migration strategy'
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-transformation-blueprint-cto-guide-2026-part4
+    domain: strategy
+    canonical: docs/strategy/79-enterprise-ai-transformation-blueprint-cto-guide-2026-end-to-end-worked-example.md
+    aliases:
+    - 'cto transformation blueprint: end-to-end worked example'
+    supersedes: []
+    pages: []
+  - id: ai-first-to-ai-native-part2
+    domain: strategy
+    canonical: docs/strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks.md
+    aliases:
+    - 'ai-first to ai-native: roadmap & sector benchmarks'
+    supersedes: []
+    pages: []
+  - id: ai-first-to-ai-native-part3
+    domain: strategy
+    canonical: docs/strategy/81-ai-first-to-ai-native-case-studies-readiness-checklist.md
+    aliases:
+    - 'ai-first to ai-native: case studies & readiness checklist'
+    supersedes: []
+    pages: []
+  - id: vol1-corporate-strategy-part2
+    domain: strategy
+    canonical: docs/strategy/82-vol1-corporate-strategy-themes-priorities-initiatives.md
+    aliases:
+    - 'corporate strategy: themes, priorities & initiatives'
+    supersedes: []
+    pages: []
+  - id: vol1-corporate-strategy-part3
+    domain: strategy
+    canonical: docs/strategy/83-vol1-corporate-strategy-strategy-taxonomy-24-types.md
+    aliases:
+    - 'corporate strategy: the 24-type strategy taxonomy'
+    supersedes: []
+    pages: []
+  - id: vol1-corporate-strategy-part4
+    domain: strategy
+    canonical: docs/strategy/84-vol1-corporate-strategy-execution-templates-kpis.md
+    aliases:
+    - 'corporate strategy: execution, templates & kpis'
+    supersedes: []
+    pages: []
+  - id: vol1-corporate-strategy-part5
+    domain: strategy
+    canonical: docs/strategy/85-vol1-corporate-strategy-relationships-industry-comparisons.md
+    aliases:
+    - 'corporate strategy: relationships & industry comparisons'
+    supersedes: []
+    pages: []
+  - id: vol10-relationship-maps-glossary-part2
+    domain: strategy
+    canonical: docs/strategy/86-vol10-relationship-maps-glossary-ai-comparisons-terminology-xref.md
+    aliases:
+    - 'relationship maps: ai/ops comparisons & terminology cross-reference'
+    supersedes: []
+    pages: []
+  - id: vol10-relationship-maps-glossary-part3
+    domain: strategy
+    canonical: docs/strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g.md
+    aliases:
+    - 'enterprise glossary: a-g'
+    supersedes: []
+    pages: []
+  - id: vol10-relationship-maps-glossary-part4
+    domain: strategy
+    canonical: docs/strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t.md
+    aliases:
+    - 'enterprise glossary: h-t'
+    supersedes: []
+    pages: []
+  - id: vol10-relationship-maps-glossary-part5
+    domain: strategy
+    canonical: docs/strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables.md
+    aliases:
+    - 'enterprise glossary: u-z & deliverables cross-reference'
+    supersedes: []
+    pages: []
+  - id: vol2-business-architecture-operating-model-part2
+    domain: strategy
+    canonical: docs/strategy/90-vol2-business-architecture-operating-model-value-streams-domains-model-design.md
+    aliases:
+    - 'business architecture: value streams, domains & model design'
+    supersedes: []
+    pages: []
+  - id: vol2-business-architecture-operating-model-part3
+    domain: strategy
+    canonical: docs/strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design.md
+    aliases:
+    - 'business architecture: organization & operating model design'
+    supersedes: []
+    pages: []
+  - id: vol2-business-architecture-operating-model-part4
+    domain: strategy
+    canonical: docs/strategy/92-vol2-business-architecture-operating-model-ai-operating-model-building-blocks.md
+    aliases:
+    - 'business architecture: ai operating model & building blocks'
+    supersedes: []
+    pages: []
+  - id: vol3-portfolio-governance-part2
+    domain: strategy
+    canonical: docs/strategy/93-vol3-portfolio-governance-pmo-agile-governance.md
+    aliases:
+    - 'portfolio governance: pmo models, agile portfolio & enterprise governance'
+    supersedes: []
+    pages: []
+  - id: vol3-portfolio-governance-part3
+    domain: strategy
+    canonical: docs/strategy/94-vol3-portfolio-governance-ai-governance-metrics.md
+    aliases:
+    - 'portfolio governance: ai governance, reporting & deliverables'
+    supersedes: []
+    pages: []
+  - id: vol4-consulting-frameworks-industry-part2
+    domain: strategy
+    canonical: docs/strategy/95-vol4-consulting-frameworks-industry-strategy-execution-frameworks.md
+    aliases:
+    - 'consulting frameworks: strategy & execution'
+    supersedes: []
+    pages: []
+  - id: vol4-consulting-frameworks-industry-part3
+    domain: strategy
+    canonical: docs/strategy/96-vol4-consulting-frameworks-industry-architecture-industry-playbooks.md
+    aliases:
+    - 'consulting frameworks: architecture & industry playbooks'
+    supersedes: []
+    pages: []
+  - id: vol4-consulting-frameworks-industry-part4
+    domain: strategy
+    canonical: docs/strategy/97-vol4-consulting-frameworks-industry-framework-selection-glossary.md
+    aliases:
+    - 'consulting frameworks: selection guide & glossary'
+    supersedes: []
+    pages: []
+  - id: vol5-ai-strategy-transformation-glossary-part2
+    domain: strategy
+    canonical: docs/strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models.md
+    aliases:
+    - 'ai strategy & transformation: transformation & maturity models'
+    supersedes: []
+    pages: []
+  - id: vol5-ai-strategy-transformation-glossary-part3
+    domain: strategy
+    canonical: docs/strategy/99-vol5-ai-strategy-transformation-glossary-glossary-a-to-h.md
+    aliases:
+    - 'ai strategy & transformation glossary: a-h'
+    supersedes: []
+    pages: []
+  - id: quantum-ai-consulting-landscape-part2
+    domain: strategy
+    canonical: docs/strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm.md
+    aliases:
+    - 'quantum ai consulting: bcg x, deloitte & ibm consulting'
+    supersedes: []
+    pages: []
+  - id: quantum-ai-consulting-landscape-part3
+    domain: strategy
+    canonical: docs/strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit.md
+    aliases:
+    - 'quantum ai consulting: capgemini & the big four audit firms'
+    supersedes: []
+    pages: []
+  - id: quantum-ai-consulting-landscape-part4
+    domain: strategy
+    canonical: docs/strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns.md
+    aliases:
+    - 'quantum ai consulting: cross-consultancy patterns & anti-patterns'
+    supersedes: []
+    pages: []
+  - id: quantum-ai-startup-landscape-part2
+    domain: strategy
+    canonical: docs/strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti.md
+    aliases:
+    - 'quantum ai startups: quantinuum, multiverse, quera & rigetti'
+    supersedes: []
+    pages: []
+  - id: quantum-ai-startup-landscape-part3
+    domain: strategy
+    canonical: docs/strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics.md
+    aliases:
+    - 'quantum ai startups: psiquantum & xanadu'
+    supersedes: []
+    pages: []
+  - id: quantum-ai-startup-landscape-part4
+    domain: strategy
+    canonical: docs/strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players.md
+    aliases:
+    - 'quantum ai startups: iqm & emerging players'
+    supersedes: []
+    pages: []
+  - id: quantum-ai-startup-landscape-part5
+    domain: strategy
+    canonical: docs/strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns.md
+    aliases:
+    - 'quantum ai startups: cross-startup patterns & anti-patterns'
+    supersedes: []
+    pages: []
+  - id: vol5-ai-strategy-transformation-glossary-part4
+    domain: strategy
+    canonical: docs/strategy/vols/01-vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref.md
+    aliases:
+    - 'ai strategy & transformation glossary: i-z & cross-reference'
+    supersedes: []
+    pages: []
+  - id: vol6-organization-structure-operating-model-part2
+    domain: strategy
+    canonical: docs/strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model.md
+    aliases:
+    - 'organization structure: agile at scale & operating model design'
+    supersedes: []
+    pages: []
+  - id: vol6-organization-structure-operating-model-part3
+    domain: strategy
+    canonical: docs/strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe.md
+    aliases:
+    - 'organization structure: target operating model & ai coe'
+    supersedes: []
+    pages: []
+  - id: vol6-organization-structure-operating-model-part4
+    domain: strategy
+    canonical: docs/strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables.md
+    aliases:
+    - 'organization structure: ai maturity & deliverables'
+    supersedes: []
+    pages: []
+  - id: vol7-enterprise-building-blocks-part2
+    domain: strategy
+    canonical: docs/strategy/vols/05-vol7-enterprise-building-blocks-application-core-ai-blocks.md
+    aliases:
+    - 'enterprise building blocks: application & core ai blocks'
+    supersedes: []
+    pages: []
+  - id: vol7-enterprise-building-blocks-part3
+    domain: strategy
+    canonical: docs/strategy/vols/06-vol7-enterprise-building-blocks-ai-infrastructure-platform-engineering.md
+    aliases:
+    - 'enterprise building blocks: ai data infrastructure & platform engineering'
+    supersedes: []
+    pages: []
+  - id: vol7-enterprise-building-blocks-part4
+    domain: strategy
+    canonical: docs/strategy/vols/07-vol7-enterprise-building-blocks-agentic-ai-selection-guide.md
+    aliases:
+    - 'enterprise building blocks: agentic ai & selection guide'
+    supersedes: []
+    pages: []
+  - id: vol8-portfolio-consulting-frameworks-part2
+    domain: strategy
+    canonical: docs/strategy/vols/08-vol8-portfolio-consulting-frameworks-pmo-evolution-strategy-frameworks.md
+    aliases:
+    - 'portfolio consulting frameworks: pmo evolution & strategy frameworks'
+    supersedes: []
+    pages: []
+  - id: vol8-portfolio-consulting-frameworks-part3
+    domain: strategy
+    canonical: docs/strategy/vols/09-vol8-portfolio-consulting-frameworks-architecture-operating-delivery.md
+    aliases:
+    - 'portfolio consulting frameworks: architecture & operating/delivery'
+    supersedes: []
+    pages: []
+  - id: vol8-portfolio-consulting-frameworks-part4
+    domain: strategy
+    canonical: docs/strategy/vols/10-vol8-portfolio-consulting-frameworks-innovation-decision-selection-guide.md
+    aliases:
+    - 'portfolio consulting frameworks: innovation, decision & selection guide'
+    supersedes: []
+    pages: []
+  - id: vol9-industry-deep-dives-part2
+    domain: strategy
+    canonical: docs/strategy/vols/11-vol9-industry-deep-dives-manufacturing-energy-telecom-gov.md
+    aliases:
+    - 'industry deep dives: manufacturing, energy, telecom, government & education'
+    supersedes: []
+    pages: []
+  - id: vol9-industry-deep-dives-part3
+    domain: strategy
+    canonical: docs/strategy/vols/12-vol9-industry-deep-dives-life-sciences-logistics-media-tech.md
+    aliases:
+    - 'industry deep dives: life sciences, logistics, media & high tech'
+    supersedes: []
+    pages: []
