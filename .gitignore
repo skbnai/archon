@@ -1,2 +1,12 @@
 __pycache__/
 *.pyc
+=======
+__pycache__/
+*.pyc
+
+# Node / Docusaurus
+node_modules/
+build/
+.docusaurus/
+.cache-loader/
+npm-debug.log*
