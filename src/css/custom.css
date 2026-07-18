@@ -1,20 +1,89 @@
+/**
+ * Archon theme overrides. Keep this file additive to the Infima defaults —
+ * override CSS variables, don't fight the theme with !important.
+ * See .claude/skills/frontend-design (if present) for broader visual
+ * direction; this file only implements the specific components that
+ * page-styling's SKILL.md references (stat rows, hub cards).
+ */
+
 :root {
-  --ifm-color-primary: #2e6b4f;
-  --ifm-color-primary-dark: #296047;
-  --ifm-color-primary-darker: #275a43;
-  --ifm-color-primary-darkest: #204a37;
-  --ifm-color-primary-light: #337657;
-  --ifm-color-primary-lighter: #357c5c;
-  --ifm-color-primary-lightest: #3d8f6a;
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary: #2f5fd6;
+  --ifm-color-primary-dark: #2952c2;
+  --ifm-color-primary-darker: #274db7;
+  --ifm-color-primary-darkest: #204097;
+  --ifm-color-primary-light: #4670da;
+  --ifm-color-primary-lighter: #567bdc;
+  --ifm-color-primary-lightest: #7d99e3;
+  --ifm-code-font-size: 92%;
+  --archon-stat-bg: #f4f6fb;
+  --archon-stat-border: #dde3f0;
 }
 
-[data-theme='dark'] {
-  --ifm-color-primary: #4fa87c;
-  --ifm-color-primary-dark: #399a6c;
-  --ifm-color-primary-darker: #369164;
-  --ifm-color-primary-darkest: #2d7753;
-  --ifm-color-primary-light: #65b590;
-  --ifm-color-primary-lighter: #72bb99;
-  --ifm-color-primary-lightest: #98cdb7;
+[data-theme="dark"] {
+  --ifm-color-primary: #7fa2ff;
+  --archon-stat-bg: #161b26;
+  --archon-stat-border: #2a3348;
 }
+
+/* --- Metric / stat callouts (page-styling SKILL.md "Metrics & stat callouts") --- */
+.stat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.stat {
+  flex: 1 1 160px;
+  background: var(--archon-stat-bg);
+  border: 1px solid var(--archon-stat-border);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ifm-color-primary);
+}
+.stat-label {
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-600);
+  letter-spacing: 0.01em;
+}
+
+/* --- Domain / hub card grid (used on domain index.md hub pages and homepage) --- */
+.archon-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.archon-card {
+  display: block;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  text-decoration: none !important;
+  color: var(--ifm-font-color-base) !important;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.archon-card:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+}
+.archon-card-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.archon-card-desc {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* --- Table polish: right-align numeric columns marked with the `.num` class,
+   e.g. | Metric | Value | with a class applied via a small remark plugin,
+   or simply use MDX ":---:"/"---:" alignment markers as the primary method --- */
+table td.num, table th.num { text-align: right; }

@@ -17,8 +17,9 @@ Per assignment (one cluster or one file):
 3. Transform:
    - Inject full frontmatter per doc-standards skill (correct doc_type, domain,
      topic_id, supersedes = all old paths from the plan).
-   - Strip converted-PDF artifacts: box characters, layout tables used as
-     visuals, stray `//` lines. Flag ASCII diagrams for diagram-standards
+   - Apply the page-styling skill: strip converted-PDF artifacts (box characters,
+     layout tables used as visuals, stray `//` lines, ALL-CAPS headings), fix
+     opening/closing anatomy, convert slide-bullet prose to sentences. Flag ASCII diagrams for diagram-standards
      treatment (insert `<!-- TODO(diagram): ... -->`).
    - Rewrite internal links to new canonical paths using migration/mapping.csv.
    - Enforce ≤2,000 words: if over, split per the plan's split map; each part

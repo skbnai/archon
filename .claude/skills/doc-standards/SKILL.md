@@ -15,6 +15,7 @@ concept · guide · reference-architecture · pattern · anti-pattern · decisio
 template-asset · glossary
 
 Pick exactly one `doc_type`. Type determines the template (see `./templates/`).
+Apply the `page-styling` skill for voice, structure, and Docusaurus components.
 
 ## Frontmatter (required on every page)
 

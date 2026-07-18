@@ -19,7 +19,7 @@ const DOMAINS = [
 function DomainCard({domain}) {
   return (
     <div className="col col--4 margin-bottom--lg">
-      <Link to={`/docs/${domain.key}/`} className="card padding--md" style={{height: '100%'}}>
+      <Link to={`/${domain.key}/`} className="card padding--md" style={{height: '100%'}}>
         <h3>{domain.label}</h3>
         <p>{domain.scope}</p>
       </Link>
@@ -38,7 +38,7 @@ export default function Home() {
           <p className="hero__subtitle">
             Enterprise AI Wiki — the governed knowledge base for building, running, and trusting enterprise AI systems.
           </p>
-          <Link className="button button--secondary button--lg" to="/docs/architecture/00-wiki-governance">
+          <Link className="button button--secondary button--lg" to="/architecture/wiki-governance">
             Read the governance model
           </Link>
         </div>

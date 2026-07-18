@@ -13,6 +13,10 @@ description: >
 
 1. Search `governance/CANONICAL_REGISTRY.yaml` for the topic (check `id`,
    `aliases`, `canonical` path). Grep, don't read the whole file.
+1a. Also query the content graph (the `graphify` skill) — `query_graph.py
+   --concept <topic>` and `--related` against the closest page you can find.
+   A registry-name miss plus a graph `similar_to` hit still means the topic
+   likely exists in different words; treat it as a hit, not a miss.
 2. **Topic exists** → you may only EDIT the canonical page (or a registered
    spoke). Do not create a sibling.
 3. **Topic missing** → invoke the `librarian` agent to register it (id, domain,
