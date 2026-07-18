@@ -1,0 +1,33 @@
+name: docs-quality
+on:
+  pull_request:
+    paths: ["docs/**", "governance/**", "scripts/**"]
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pyyaml
+      - name: Frontmatter (changed files)
+        run: |
+          git fetch origin ${{ github.base_ref }} --depth=1
+          CHANGED=$(git diff --name-only origin/${{ github.base_ref }} -- 'docs/**/*.md')
+          for f in $CHANGED; do
+            [ -f "$f" ] && { echo "== $f"; python3 scripts/validate_frontmatter.py "$f"; }
+          done
+      - name: Registry consistency
+        run: python3 scripts/registry_check.py
+      - name: Near-duplicate gate
+        run: python3 scripts/dedup_check.py --all 0.55
+      - name: Forbidden filename patterns
+        run: |
+          BAD=$(find docs -name '*_v[0-9]*' -o -name '*_final*' -o -name '*_copy*' \
+                -o -name '*-old*' -o -name '*_new*' | grep . || true)
+          if [ -n "$BAD" ]; then echo "$BAD"; echo "::error::versioned filenames forbidden"; exit 1; fi
+      - name: Link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --no-progress "docs/**/*.md"
+          fail: true

@@ -1,0 +1,29 @@
+# The "living wiki" loop: Claude Code runs headless on a schedule, takes the
+# freshness queue, grounds updates via the researcher agent, and opens a PR.
+# Requires repo secret ANTHROPIC_API_KEY. Review the drafted PR like any other.
+name: content-refresh
+on:
+  schedule: [{ cron: "0 7 * * 2" }]   # Tuesdays, after Monday's audit
+  workflow_dispatch:
+    inputs:
+      scope: { description: "topic_id or path to refresh", required: false }
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions: { contents: write, pull-requests: write }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Run the freshness-auditor agent to produce/consume migration/refresh-queue.md.
+            Take the TOP 3 items only (token budget). For each:
+            1) researcher agent verifies what changed upstream (tier-1 sources only);
+            2) update the canonical page IN PLACE per doc-standards + research-grounding
+               skills (update covers_version, sources, last_reviewed);
+            3) reviewer agent must PASS each page.
+            Never create new files; never touch the registry. Commit to branch
+            auto/content-refresh and open a PR titled "Content refresh: <topics>"
+            with the reviewer verdicts in the PR body.
+          claude_args: "--max-turns 60"

@@ -1,0 +1,24 @@
+name: freshness-audit
+on:
+  schedule: [{ cron: "0 6 * * 1" }]   # Mondays 06:00 UTC
+  workflow_dispatch: {}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions: { issues: write, contents: read }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pyyaml
+      - name: Report
+        id: rep
+        run: |
+          python3 scripts/freshness_report.py > report.txt || true
+          cat report.txt
+      - name: Open/update issue
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Weekly freshness audit"
+          content-filepath: report.txt
+          labels: freshness
