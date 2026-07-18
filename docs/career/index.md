@@ -14,8 +14,10 @@ sources: []
 tags: [hub, career]
 ---
 
-Track hub for career development: interview prep, certifications, soft
-skills, mental models, and role guides relevant to AI-focused roles.
+Technical depth doesn't automatically translate into a stronger interview,
+promotion case, or role transition. This hub collects the career-facing
+material — interview prep, certification guidance, and role guides — that
+turns wiki knowledge into career outcomes for AI-focused roles.
 
 ## Scope
 
@@ -27,6 +29,5 @@ skills, mental models, and role guides relevant to AI-focused roles.
 
 ## Related
 
-No canonical pages registered yet under this track. This hub is a draft
-skeleton created during wiki bootstrap (stage-00); it will link to canonical
-pages as they are registered and published.
+- [Learning Paths Hub](../learning-paths/index.md) — the journeys that build these skills.
+- [Asset Library Hub](../assets/index.md) — templates for interview and portfolio prep.

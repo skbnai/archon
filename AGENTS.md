@@ -20,6 +20,11 @@ loaded every session. Keep behavior aligned with it at all times.
 5. **Ground before you write.** Any factual/technical claim about products, specs,
    standards, or versions must be verified via the `research-grounding` skill and
    cited. No claims from memory for anything that changes.
+6. **Search before you create — the graph, not just the registry.** Before
+   registering a genuinely new topic, run `graphify`'s `query_graph.py
+   --related` / `--concept` / `--topic` against the corpus. A registry miss is
+   necessary but not sufficient proof a topic is new; a high `similar_to` edge
+   to an existing page is the stronger signal and means enhance, not create.
 
 ## Token discipline
 
@@ -29,6 +34,13 @@ loaded every session. Keep behavior aligned with it at all times.
   instead of re-reading the corpus.
 - Read only the files you need; use the registry to find them.
 - Do not restate rules from this file in your outputs; just follow them.
+
+## Site & navigation
+
+`docusaurus.config.js`, `sidebars.js`, and `src/css/custom.css` are pre-built —
+see `governance/DOCUSAURUS_SETUP.md`. The sidebar must always mirror
+`governance/TAXONOMY.md`; apply `page-styling` + `governance/SIDEBAR_GUIDE.md`
+to any page or navigation change.
 
 ## Layout
 

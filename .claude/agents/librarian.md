@@ -13,6 +13,10 @@ governance/CANONICAL_REGISTRY.yaml.
 Registering a topic:
 1. Grep the registry for the proposed id, title words, and aliases. If any hit,
    REFUSE registration and return the existing topic_id + canonical path.
+   If `_meta/graph.json` exists, also run graphify's `query_graph.py --concept
+   <candidate>` and, once a draft exists, `--related <doc_id>` — a `similar_to`
+   edge ≥60% to an existing page is grounds to refuse and point to the
+   overlapping canonical, even if no registry text match was found.
 2. Entry format:
    - id: kebab-case-topic
      domain: <one of 8 domains>

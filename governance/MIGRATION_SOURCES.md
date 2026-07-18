@@ -1,4 +1,8 @@
-# Old Repo Access (read-only escrow)
+# Repo Map: Source (old) → Target (new)
+
+- **Target (this repo):** https://github.com/skbnai/archon — where this scaffold lives and where all migrated content ships.
+
+## Old Repo Access (read-only escrow)
 
 - Source: https://github.com/skbnai/knowledge-docs (branch: main, frozen at
   migration start — tag it `pre-migration`).

@@ -14,8 +14,10 @@ sources: []
 tags: [hub, learning-paths]
 ---
 
-Track hub for guided learning: 8 persona journeys through the wiki plus the
-Enterprise Architecture (EA) masterclass modules.
+Reading this wiki cover-to-cover is the wrong way to learn it. This hub
+sequences the content into role-based journeys — architect, engineer,
+security, executive — plus the Enterprise Architecture (EA) masterclass, so
+each persona gets an ordered path instead of a flat index.
 
 ## Scope
 
@@ -24,6 +26,5 @@ Enterprise Architecture (EA) masterclass modules.
 
 ## Related
 
-No canonical pages registered yet under this track. This hub is a draft
-skeleton created during wiki bootstrap (stage-00); it will link to canonical
-pages as they are registered and published.
+- [Career Hub](../career/index.md) — where these journeys feed career readiness.
+- [Asset Library Hub](../assets/index.md) — templates and kits used across the journeys.

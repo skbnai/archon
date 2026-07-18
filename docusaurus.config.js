@@ -1,45 +1,35 @@
-// @ts-check
-import {themes as prismThemes} from 'prism-react-renderer';
+// docusaurus.config.js — Archon: Enterprise AI Architecture Wiki
+// Deploy target: https://skbnai.github.io/archon (GitHub Pages via .github/workflows/deploy.yml)
+// Update organizationName/projectName/url below if the repo is renamed/forked.
 
-/** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Archon',
-  tagline: 'Enterprise AI Wiki',
-  favicon: 'img/favicon.ico',
+  title: "Archon",
+  tagline: "The enterprise AI architecture knowledge base",
+  favicon: "img/favicon.ico",
 
-  future: {
-    v4: true,
-  },
+  url: "https://skbnai.github.io",
+  baseUrl: "/archon/",
+  organizationName: "skbnai",
+  projectName: "archon",
+  trailingSlash: false,
 
-  url: 'https://skbnai.github.io',
-  baseUrl: '/archon/',
+  onBrokenLinks: "throw",       // professional-grade: broken links fail the build, not just warn
 
-  organizationName: 'skbnai',
-  projectName: 'archon',
-
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+  i18n: { defaultLocale: "en", locales: ["en"] },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: 'docs',
-          routeBasePath: 'docs',
-          sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/skbnai/archon/tree/main/',
+          routeBasePath: "/",         // docs ARE the site — no separate /docs prefix
+          sidebarPath: "./sidebars.js",
+          editUrl: "https://github.com/skbnai/archon/edit/main/",
+          showLastUpdateTime: true,   // surfaces last_reviewed-adjacent signal to readers
         },
-        blog: false,
-        theme: {
-          customCss: './src/css/custom.css',
-        },
+        blog: false,                  // this is a wiki, not a blog
+        theme: { customCss: "./src/css/custom.css" },
       }),
     ],
   ],
@@ -47,48 +37,66 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      colorMode: {
-        respectPrefersColorScheme: true,
-      },
+      image: "img/archon-social-card.png",
       navbar: {
-        title: 'Archon',
+        title: "Archon",
+        logo: { alt: "Archon logo", src: "img/logo.svg" },
         items: [
+          { to: "/learning-paths/", label: "Learning Paths", position: "left" },
+          { to: "/architecture/", label: "Architecture", position: "left" },
+          { to: "/trust/", label: "Trust & Security", position: "left" },
+          { to: "/assets/", label: "Asset Library", position: "left" },
           {
-            type: 'docSidebar',
-            sidebarId: 'wikiSidebar',
-            position: 'left',
-            label: 'Wiki',
-          },
-          {
-            href: 'https://github.com/skbnai/archon',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/skbnai/archon",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Wiki',
+            title: "Domains",
             items: [
-              {label: 'Governance', to: '/docs/architecture/00-wiki-governance'},
+              { label: "Strategy & Operating Model", to: "/strategy/" },
+              { label: "Architecture", to: "/architecture/" },
+              { label: "Agentic Systems", to: "/agentic-systems/" },
+              { label: "Trust: Security & Governance", to: "/trust/" },
             ],
           },
           {
-            title: 'More',
+            title: "For",
             items: [
-              {label: 'GitHub', href: 'https://github.com/skbnai/archon'},
+              { label: "Learning Paths", to: "/learning-paths/" },
+              { label: "Career & Skills", to: "/career/" },
+              { label: "Asset Library", to: "/assets/" },
+            ],
+          },
+          {
+            title: "Project",
+            items: [
+              { label: "GitHub", href: "https://github.com/skbnai/archon" },
+              { label: "Governance", to: "/architecture/wiki-governance" },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Archon.`,
+        copyright: `Archon — a living, self-grounding enterprise AI knowledge base.`,
       },
       prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        theme: require("prism-react-renderer").themes.github,
+        darkTheme: require("prism-react-renderer").themes.dracula,
+        additionalLanguages: ["bash", "python", "yaml", "hcl", "json"],
       },
+      colorMode: { defaultMode: "dark", respectPrefersColorScheme: true },
+      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 },
     }),
+
+  markdown: {
+    mermaid: true,               // required for diagram-standards skill output
+    hooks: { onBrokenMarkdownLinks: "throw" },
+  },
+  themes: ["@docusaurus/theme-mermaid"],
 };
 
-export default config;
+module.exports = config;

@@ -14,9 +14,10 @@ sources: []
 tags: [hub, agentic-systems]
 ---
 
-Domain hub for agentic systems: agents, multi-agent topologies, orchestration
-and workflow engines, the memory hub, skills & tools, planning, human-in-the
--loop, agent UX, digital employees, and harness design.
+An agent is only as good as the loop around it — the orchestration, memory,
+and human checkpoints that turn a single model call into a system you can
+actually operate. This hub covers the architectural building blocks for
+agentic systems, from topology choices through harness design.
 
 ## Scope
 
@@ -24,13 +25,11 @@ and workflow engines, the memory hub, skills & tools, planning, human-in-the
 - Orchestration and workflow engines
 - Memory (short/long-term) hub
 - Skills & tools design
-- Planning strategies
-- Human-in-the-loop (HITL) patterns
+- Planning and human-in-the-loop (HITL) patterns
 - Agent UX and digital employees
 - Harness design
 
 ## Related
 
-No canonical pages registered yet under this domain. This hub is a draft
-skeleton created during wiki bootstrap (stage-00); it will link to canonical
-pages as they are registered and published.
+- [Protocols Hub](../protocols/index.md) — the interop layer agents call out through.
+- [Data & Knowledge Hub](../data-knowledge/index.md) — the memory and RAG backends agents rely on.

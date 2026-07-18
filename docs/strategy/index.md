@@ -14,9 +14,10 @@ sources: []
 tags: [hub, strategy]
 ---
 
-Domain hub for AI strategy: business architecture, operating models,
-transformation, economics & market analysis, and value/OKR frameworks for AI
-initiatives.
+An enterprise AI initiative usually fails at the business case, not the
+model. This hub covers the operating model, economics, and value framework
+that let architecture and engineering decisions trace back to a funded,
+measurable outcome — the reference point the other domains build against.
 
 ## Scope
 
@@ -28,6 +29,5 @@ initiatives.
 
 ## Related
 
-No canonical pages registered yet under this domain. This hub is a draft
-skeleton created during wiki bootstrap (stage-00); it will link to canonical
-pages as they are registered and published.
+- [Architecture Hub](../architecture/index.md) — translates strategy into buildable blueprints.
+- [Operations Hub](../operations/index.md) — where economics become a FinOps discipline.

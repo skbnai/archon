@@ -14,9 +14,10 @@ sources: []
 tags: [hub, operations]
 ---
 
-Domain hub for operations: LLMOps/MLOps, AgentOps, the evaluation hub and
-benchmark catalog, the observability hub, reliability, chaos engineering,
-production readiness, DR/BCP, and the FinOps hub.
+A model that works in a demo and a model that survives production are
+different engineering problems. This hub covers running agentic AI at scale:
+LLMOps/AgentOps, evaluation, observability, reliability, and the FinOps
+discipline that keeps the economics defensible.
 
 ## Scope
 
@@ -24,13 +25,11 @@ production readiness, DR/BCP, and the FinOps hub.
 - AgentOps
 - Evaluation hub and benchmark catalog
 - Observability hub
-- Reliability and chaos engineering
-- Production readiness
+- Reliability, chaos engineering, and production readiness
 - Disaster recovery / business continuity (DR/BCP)
 - FinOps hub
 
 ## Related
 
-No canonical pages registered yet under this domain. This hub is a draft
-skeleton created during wiki bootstrap (stage-00); it will link to canonical
-pages as they are registered and published.
+- [Platforms Hub](../platforms/index.md) — the infrastructure this reliability work runs on.
+- [Trust Hub](../trust/index.md) — where the AI SOC overlaps observability.

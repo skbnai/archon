@@ -14,8 +14,10 @@ sources: []
 tags: [hub, assets]
 ---
 
-Hub for the shared asset library: templates, checklists, workshop kits,
-transcripts, case studies, and the unified glossary.
+Not everything in this wiki is prose — some of it is a thing you hand
+directly to a client or a team. This hub is the library for that: templates,
+checklists, workshop kits, and the unified glossary referenced across every
+other domain.
 
 ## Scope
 
@@ -28,6 +30,5 @@ transcripts, case studies, and the unified glossary.
 
 ## Related
 
-No canonical pages registered yet under this domain. This hub is a draft
-skeleton created during wiki bootstrap (stage-00); it will link to canonical
-pages as they are registered and published.
+- [Learning Paths Hub](../learning-paths/index.md) — journeys that put these assets to use.
+- [Career Hub](../career/index.md) — templates for interview and portfolio prep.

@@ -14,25 +14,23 @@ sources: []
 tags: [hub, trust]
 ---
 
-Domain hub for trust: threat models, AI control, identity & authorization,
-guardrails, red teaming, governance frameworks, responsible/constitutional
-AI, sovereign AI, the compliance index, and the AI SOC.
+Deploying an agent without a threat model means deploying a system nobody
+has actually tested against failure. This hub covers the controls that make
+agentic AI trustworthy in production: threat modeling, identity and
+guardrails, governance frameworks, and the compliance and SOC processes that
+operate them continuously.
 
 ## Scope
 
 - Threat models for agentic AI
 - AI control mechanisms
 - Identity and authorization
-- Guardrails
-- Red teaming
-- Governance frameworks
-- Responsible/constitutional AI
-- Sovereign AI
+- Guardrails and red teaming
+- Governance frameworks (responsible/constitutional AI, sovereign AI)
 - Compliance index
 - AI Security Operations Center (AI SOC)
 
 ## Related
 
-No canonical pages registered yet under this domain. This hub is a draft
-skeleton created during wiki bootstrap (stage-00); it will link to canonical
-pages as they are registered and published.
+- [Protocols Hub](../protocols/index.md) — the identity/auth model these controls sit on top of.
+- [Operations Hub](../operations/index.md) — where the AI SOC meets observability.
