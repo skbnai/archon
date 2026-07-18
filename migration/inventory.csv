@@ -1,0 +1,693 @@
+old_path,old_section,title,words,has_frontmatter,last_reviewed,source_type,status_field,mermaid_count,ascii_art_suspected,inferred_doc_type,dup_cluster,notes
+docs/about.md,root,About & Site Guide,433,True,2026-07-10,native-md,current,0,False,guide,,
+docs/agentic-systems/config/enterprise-agentic-ai-config-management-2026.md,agentic-systems,Enterprise Configuration & Parameter Management for Agentic AI Platforms on AWS,13267,True,2026-07-11,converted-pdf,current,0,False,guide,,
+docs/agentic-systems/config/index.md,agentic-systems,Configuration Management,31,True,2026-07-10,native-md,current,0,False,hub,,
+docs/agentic-systems/harness/Harness_BestPractices_AntiPatterns_Roadmap.md,agentic-systems,"Harness: Best Practices, Anti-Patterns & Roadmap",1485,True,2026-07-11,converted-pdf,current,0,False,anti-pattern,,topic-overlap:anti-patterns
+docs/agentic-systems/harness/Harness_Engineering_AI_Agents_and_Vendor_Landscape.md,agentic-systems,Harness: Engineering AI Agents & Vendor Landscape,2387,True,2026-07-11,converted-pdf,current,0,False,guide,,
+docs/agentic-systems/harness/Harness_Engineering_Research_Report.md,agentic-systems,Harness Engineering Research Report,2785,True,2026-07-11,converted-pdf,current,0,False,guide,,
+docs/agentic-systems/harness/Harness_Interview_Question_Bank.md,agentic-systems,Harness Interview Question Bank,1381,True,2026-07-11,converted-pdf,current,0,False,career,,topic-overlap:interview-content
+docs/agentic-systems/harness/Harness_Security_SupplyChain_Observability.md,agentic-systems,"Harness: Security, Supply Chain & Observability",1090,True,2026-07-11,converted-pdf,current,0,False,guide,,topic-overlap:security;topic-overlap:observability
+docs/agentic-systems/harness/index.md,agentic-systems,Harness — Agentic AI Engineering,98,True,2026-07-10,native-md,current,0,False,hub,,
+docs/agentic-systems/index.md,agentic-systems,Agentic AI Systems,197,True,2026-07-10,native-md,current,0,False,hub,,
+docs/agentic-systems/memory/AI_Memory_Agent_Innovations_Research_Report.md,agentic-systems,AI Memory Agent Innovations Research Report,4604,True,2026-07-11,converted-pdf,current,0,False,guide,,topic-overlap:memory
+docs/agentic-systems/memory/index.md,agentic-systems,Agent Memory,66,True,2026-07-10,native-md,current,0,False,hub,,topic-overlap:memory
+docs/agentic-systems/platform/Enterprise_PromptOps_AWS_AgentCore_2026.md,agentic-systems,Enterprise PromptOps: Prompt Lifecycle Management for AWS AgentCore Runtime,11267,True,2026-07-11,converted-pdf,current,0,False,guide,,
+docs/agentic-systems/platform/MultiTenantAgentPlatform_Architecture.md,agentic-systems,Multi-Tenant Agent Platform Architecture,3897,True,2026-07-11,converted-pdf,current,0,False,guide,,
+docs/agentic-systems/platform/agentic_platform_bestpractices.md,agentic-systems,Enterprise Agentic Platform Best Practices,7152,True,2026-07-10,converted-pdf,current,0,True,guide,,
+docs/agentic-systems/platform/ai-msf-requirements-runbook.md,agentic-systems,AI-MSF PoC — Shared Requirements & Agent Runbook,2801,True,2026-07-11,converted-pdf,current,0,False,guide,,
+docs/agentic-systems/platform/ai-platform-factory-runbook-v2.md,agentic-systems,AI Platform Factory Runbook v2,4881,True,2026-07-11,converted-pdf,current,0,False,guide,,
+docs/agentic-systems/platform/enterprise-agentic-ai-asset-management-2026.md,agentic-systems,Enterprise Agentic AI Asset Management 2026,7805,True,2026-07-11,converted-pdf,current,0,False,research-report,,
+docs/agentic-systems/platform/genaiaf-prompt-lifecycle-hotswap-research-2026.md,agentic-systems,"GENAIAF-559: Prompt Lifecycle, Versioning & Hot-Swap Research 2026",6216,True,2026-07-11,converted-pdf,current,0,False,research-report,,
+docs/agentic-systems/platform/index.md,agentic-systems,Agentic AI Platform,64,True,2026-07-10,native-md,current,0,False,hub,,
+docs/agentic-systems/skill/00-executive-summary-and-reference-architecture.md,agentic-systems,Agent Skills for AI Coding Assistants — Executive Summary & Reference Architecture,2168,True,2026-07-10,native-md,current,0,True,reference-architecture,,
+docs/agentic-systems/skill/Agent_Skills_Complete_Playbook_2026.md,agentic-systems,Agent Skills & Skill Registries — Complete Playbook 2026,4783,True,2026-07-17,converted-pdf,current,0,False,guide,,
+docs/agentic-systems/skill/a2a_deep_research.md,agentic-systems,A2A Protocol: Deep Research & Critical Analysis,6383,True,2026-07-17,converted-html,current,0,False,guide,,
+docs/agentic-systems/skill/coding/01-foundations-what-is-a-coding-skill.md,agentic-systems,Foundations: What Is a Coding Skill?,1579,True,2026-07-10,native-md,current,0,False,guide,,
+docs/agentic-systems/skill/coding/02-skill-anatomy-and-metadata-schema.md,agentic-systems,Skill Anatomy & Metadata Schema,1209,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-systems/skill/coding/03-discovery-and-execution-lifecycle.md,agentic-systems,Skill Discovery & Execution Lifecycle,1148,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-systems/skill/coding/04-skills-tools-mcp-relationship.md,agentic-systems,Skills vs. MCP & the Full Responsibility Stack,972,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:mcp
+docs/agentic-systems/skill/coding/05-tool-definitions-and-instructions-engineering.md,agentic-systems,Tool Definitions & Instructions Engineering,1420,True,2026-07-10,native-md,current,0,False,guide,,
+docs/agentic-systems/skill/coding/06-repository-context-engineering.md,agentic-systems,Repository Context Engineering,973,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-systems/skill/coding/07-vscode-devcontainers-integration.md,agentic-systems,VS Code & Dev Containers Integration,1252,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-systems/skill/coding/08-mcp-integration-and-memory.md,agentic-systems,MCP Integration & Memory,1144,True,2026-07-10,native-md,current,0,False,guide,,topic-overlap:mcp;topic-overlap:memory
+docs/agentic-systems/skill/coding/09-multi-agent-and-observability.md,agentic-systems,Multi-Agent Skills & Observability,1139,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:observability
+docs/agentic-systems/skill/coding/10-governance-and-security.md,agentic-systems,Governance & Security,1626,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:security
+docs/agentic-systems/skill/coding/11-evaluation-reusability-deduplication.md,agentic-systems,"Evaluation, Reusability & Deduplication",1335,True,2026-07-10,native-md,current,0,False,guide,,
+docs/agentic-systems/skill/coding/12-enterprise-workflows-comparative-analysis-and-patterns.md,agentic-systems,Enterprise Workflows & Comparative Analysis,1681,True,2026-07-10,native-md,current,0,False,guide,,
+docs/agentic-systems/skill/coding/index.md,agentic-systems,Coding Assistant Skills Research,711,True,2026-07-10,native-md,current,0,False,hub,,
+docs/agentic-systems/skill/enterprise/01-foundations-what-is-an-agent-skill.md,agentic-systems,Foundations: What Is an Agent Skill?,1563,True,2026-07-10,native-md,current,0,False,guide,,
+docs/agentic-systems/skill/enterprise/02-skill-anatomy-and-metadata-schema.md,agentic-systems,Skill Anatomy & Metadata Schema,146,True,2026-07-12,native-md,current,0,False,guide,,
+docs/agentic-systems/skill/enterprise/03-execution-lifecycle-and-tracing.md,agentic-systems,Skill Execution Lifecycle & Tracing,963,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-systems/skill/enterprise/04-skills-tools-mcp-a2a-relationship.md,agentic-systems,"Skills, Tools, MCP & A2A Relationship",1036,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:mcp
+docs/agentic-systems/skill/enterprise/05-tool-definition-best-practices.md,agentic-systems,Tool Definition Best Practices,1254,True,2026-07-10,native-md,current,0,False,guide,,
+docs/agentic-systems/skill/enterprise/06-registry-discovery-and-deduplication.md,agentic-systems,"Registry, Discovery & Deduplication",1140,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-systems/skill/enterprise/07-composition-and-instructions-engineering.md,agentic-systems,Skill Composition & Instructions Engineering,1403,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-systems/skill/enterprise/08-observability-and-evaluation.md,agentic-systems,Observability & Evaluation,1251,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:observability
+docs/agentic-systems/skill/enterprise/09-security-architecture.md,agentic-systems,Security Architecture,1424,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:security
+docs/agentic-systems/skill/enterprise/10-governance-and-lifecycle.md,agentic-systems,Governance & Lifecycle,1043,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-systems/skill/enterprise/11-architecture-patterns-antipatterns-and-case-studies.md,agentic-systems,"Architecture Patterns, Anti-Patterns & Case Studies",2226,True,2026-07-10,native-md,current,0,False,anti-pattern,,topic-overlap:anti-patterns
+docs/agentic-systems/skill/enterprise/index.md,agentic-systems,Enterprise Agent Skills Research,606,True,2026-07-10,native-md,current,0,False,hub,,
+docs/agentic-systems/skill/index.md,agentic-systems,Agent Skills,1578,True,2026-07-10,native-md,current,0,False,hub,,
+docs/agentic-ui/agent-ux-patterns.md,agentic-ui,Agent UX Patterns,8499,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/agui-standards-landscape.md,agentic-ui,AGUI Standards & Ecosystem Landscape,8589,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/anti-patterns.md,agentic-ui,Anti-pattern Catalog for Agentic Applications,11581,True,2026-07-10,native-md,current,0,False,anti-pattern,,topic-overlap:anti-patterns
+docs/agentic-ui/application-lifecycle.md,agentic-ui,Agentic Application Lifecycle,8655,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/context-engineering.md,agentic-ui,Context Engineering for Agentic Applications,3265,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/decision-frameworks.md,agentic-ui,Decision Frameworks,16,True,2026-07-10,native-md,current,0,False,guide,,
+docs/agentic-ui/devsecops.md,agentic-ui,DevSecOps for Agentic Applications,4147,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/enterprise-reference-architecture.md,agentic-ui,Enterprise Reference Architecture,4639,True,2026-07-10,native-md,current,0,True,reference-architecture,,
+docs/agentic-ui/evaluation-framework.md,agentic-ui,Evaluation Framework for Agentic Applications,10321,True,2026-07-10,native-md,current,0,True,guide,,known-dup:eval-framework
+docs/agentic-ui/evolution-human-ai-interfaces.md,agentic-ui,Evolution of Human-AI Interfaces,7556,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/future-outlook.md,agentic-ui,Future Outlook: Agentic UI 2026–2030,3124,True,2026-07-10,native-md,current,0,False,guide,,
+docs/agentic-ui/governance.md,agentic-ui,Governance for Agentic Applications,11025,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/identity-auth-architecture.md,agentic-ui,Identity & Auth Architecture,2875,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/index.md,agentic-ui,Agentic UI & Applications,2066,True,2026-07-10,native-md,current,0,True,hub,,
+docs/agentic-ui/industry-reference-architectures.md,agentic-ui,Industry Reference Architectures for Agentic Applications,4147,True,2026-07-10,native-md,current,0,True,reference-architecture,,
+docs/agentic-ui/observability.md,agentic-ui,Observability for Agentic Applications,6705,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:observability
+docs/agentic-ui/performance-engineering.md,agentic-ui,Performance Engineering for Agentic Applications,6576,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/reliability-engineering.md,agentic-ui,Reliability Engineering for Agentic Applications,8934,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/responsible-ai.md,agentic-ui,Responsible AI for Agentic Applications,8379,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/scalability-engineering.md,agentic-ui,Scalability Engineering for Agentic Applications,6564,True,2026-07-10,native-md,current,0,True,guide,,
+docs/agentic-ui/security-architecture.md,agentic-ui,Security Architecture,3370,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:security
+docs/ai-development/aidlc/AIDLC_Agile_CICD_AI_Transformation_2026.md,ai-development,"AIDLC, Agile & CI/CD — AI Transformation 2026",5089,True,2026-07-10,pdf-converted,current,0,False,guide,,
+docs/ai-development/aidlc/AIDLC_Artifact_Reference_Library.md,ai-development,AIDLC Artifact Reference Library — Templates & Examples,386,True,2026-07-17,pdf-converted,current,0,False,guide,,known-dup:aidlc-artifact-library
+docs/ai-development/aidlc/AIDLC_Artifact_Reference_Library_Part1_Discovery_to_Model_Design.md,ai-development,AIDLC Lifecycle Artifacts: Discovery Through Model Design,2713,True,2026-07-17,pdf-converted,current,0,False,guide,,known-dup:aidlc-artifact-library
+docs/ai-development/aidlc/AIDLC_Artifact_Reference_Library_Part2_Development_to_Retirement.md,ai-development,AIDLC Lifecycle Artifacts: Development Through Retirement,2254,True,2026-07-17,pdf-converted,current,0,False,guide,,known-dup:aidlc-artifact-library
+docs/ai-development/aidlc/AIDLC_Artifact_Reference_Library_Part3_TOGAF_Foundation_to_Technology.md,ai-development,TOGAF ADM Artifact Templates: Foundation Through Technology,4285,True,2026-07-17,pdf-converted,current,0,False,guide,,known-dup:aidlc-artifact-library
+docs/ai-development/aidlc/AIDLC_Artifact_Reference_Library_Part4_TOGAF_Migration_to_EA_CrossCutting.md,ai-development,TOGAF ADM Artifact Templates: Migration Through EA Cross-Cutting,2888,True,2026-07-17,pdf-converted,current,0,False,guide,,known-dup:aidlc-artifact-library
+docs/ai-development/aidlc/AIDLC_Enterprise_Framework_2025.md,ai-development,AIDLC Enterprise Framework,5623,True,2026-07-10,pdf-converted,current,0,False,guide,,
+docs/ai-development/aidlc/Agile_in_the_Age_of_Agentic_AI_2026.md,ai-development,Agile in the Age of Agentic AI,5821,True,2026-07-10,pdf-converted,current,0,False,guide,,
+docs/ai-development/aidlc/EA_AIDLC_Deep_Research_2026.md,ai-development,Impact of AIDLC on Enterprise Architecture — The AI Tooling Revolution,5782,True,2026-07-10,pdf-converted,current,0,False,guide,,
+docs/ai-development/aidlc/index.md,ai-development,AIDLC — AI-Driven Development Lifecycle,250,True,2026-07-16,native-md,current,0,False,hub,,
+docs/ai-development/index.md,ai-development,AI Development,17,True,2026-07-10,native-md,current,0,False,hub,,
+docs/ai-development/testing/AI_Agent_Evaluation_Framework_Complete.md,ai-development,Complete AI Agent Evaluation Framework,9194,True,2026-07-16,pdf-converted,current,0,True,guide,,known-dup:eval-framework
+docs/ai-development/testing/AI_Agent_Evaluation_Framework_Guide.md,ai-development,AI Agent Evaluation Framework Guide (Original PDF — superseded),85,True,2026-07-14,pdf-converted,archived,0,False,guide,,known-dup:eval-framework
+docs/ai-development/testing/Agent_Testing_Monitoring_Evaluation.md,ai-development,"Agent Testing, Monitoring & Evaluation",6408,True,2026-07-13,pdf-converted,current,0,False,guide,,
+docs/ai-development/testing/index.md,ai-development,Agent Testing & Evaluation,201,True,2026-07-16,native-md,current,0,False,hub,,
+docs/ai-economics/AI-Value-Creator-Deliverables-Pack.md,ai-economics,"Worked Example: 20 Deliverables, One Use Case",4540,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-economics/AI_Cost_Implementation_Guide_2026.md,ai-economics,Token Management & AI Cost Architecture,4539,True,2026-07-14,converted-pdf,current,0,False,guide,,
+docs/ai-economics/Agentic-AI-Use-Case-Value-Lifecycle.md,ai-economics,A Worked Use Case: End-to-End Value Realization,4299,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-economics/ai-coding-agents-2026.md,ai-economics,AI Coding Agents 2026,4913,True,2026-07-10,native-md,current,0,False,research-report,,
+docs/ai-economics/ai-tokenomics-guide.md,ai-economics,AI Tokenomics: From Token Mechanics to Business Economics,4575,True,2026-07-14,native-md,current,0,True,guide,,
+docs/ai-economics/ai-value-creators-synthesis.md,ai-economics,AI Value Creators for Agentic AI and Beyond,3450,True,2026-07-10,native-md,current,0,False,research-report,,
+docs/ai-economics/enterprise-ai-commercial-analysis-2026.md,ai-economics,Enterprise AI Commercial Analysis 2026,3074,True,2026-07-12,native-md,current,0,False,guide,,
+docs/ai-economics/foundation-model-companies-2026.md,ai-economics,Foundation Model Companies 2026,1759,True,2026-07-13,native-md,current,0,False,guide,,
+docs/ai-economics/index.md,ai-economics,AI Cost & Economics,308,True,2026-07-10,native-md,current,0,False,hub,,
+docs/ai-foundations/AI_Assistant_Architecture_Research_Report.md,ai-foundations,AI Assistant Architecture Research Report,6555,True,2026-07-17,converted-pdf,current,0,False,guide,,
+docs/ai-foundations/AI_Deep_Future_Outlook_2026_2035.md,ai-foundations,AI Deep Future Outlook (2026–2035),7293,True,2026-07-17,converted-pdf,current,0,True,guide,,
+docs/ai-foundations/AI_Lab_Research_Report_June2026.md,ai-foundations,AI Lab Research Landscape Report,4891,True,2026-07-11,converted-pdf,current,0,True,guide,,
+docs/ai-foundations/AI_Native_Architecture_Evolution_Report.md,ai-foundations,From Data Warehouse to Agent-Native Architecture,15533,True,2026-07-11,converted-pdf,current,0,False,guide,,
+docs/ai-foundations/The_Agentic_Loop_Enterprise_AI_Architect_Guide.md,ai-foundations,The Agentic Loop - Enterprise AI Architect's Guide,6372,True,June 2026,converted-pdf,current,0,True,guide,,
+docs/ai-foundations/agentic_ai_landing_zone_architecture.md,ai-foundations,Agentic AI Landing Zone Architecture,8676,True,2026-07-10,native-md,current,0,True,guide,,
+docs/ai-foundations/agentic_ai_landing_zone_business_layer.md,ai-foundations,Agentic AI Landing Zone: Business & Enterprise Architecture Layer,2025,True,2026-07-10,native-md,current,0,True,guide,,
+docs/ai-foundations/agentic_ai_landing_zone_context_engineering.md,ai-foundations,Agentic AI Landing Zone: Context Engineering Layer,2544,True,2026-07-10,native-md,current,0,True,guide,,
+docs/ai-foundations/agentic_ai_landing_zone_eu_ai_act.md,ai-foundations,Agentic AI Landing Zone: EU AI Act Compliance (Digital Omnibus Update — July 2026),3948,True,2026-07-10,native-md,current,0,True,guide,,
+docs/ai-foundations/agentic_ai_landing_zone_evaluation.md,ai-foundations,Agentic AI Landing Zone: Evaluation Framework,2519,True,2026-07-10,native-md,current,0,True,guide,,
+docs/ai-foundations/agentic_ai_landing_zone_memory_architecture.md,ai-foundations,Agentic AI Landing Zone: Memory Architecture (Tier 3),2342,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:memory
+docs/ai-foundations/agentic_ai_landing_zone_multiagent.md,ai-foundations,Agentic AI Landing Zone: Multi-Agent Reference Architectures,2580,True,2026-07-10,native-md,current,0,True,guide,,
+docs/ai-foundations/agentic_ai_landing_zone_platform_layer.md,ai-foundations,Agentic AI Landing Zone: Agent Platform Layer,2940,True,2026-07-10,native-md,current,0,True,guide,,
+docs/ai-foundations/agentic_ai_landing_zone_playbooks.md,ai-foundations,Agentic AI Landing Zone: Implementation Playbooks,3905,True,2026-07-10,native-md,current,0,True,guide,,
+docs/ai-foundations/agentic_ai_landing_zone_tier3_complete.md,ai-foundations,"Agentic AI Landing Zone: Tier 3 Complete (Identity, FinOps, SDLC, Operating Model)",2275,True,2026-07-10,native-md,current,0,True,research-report,,
+docs/ai-foundations/agentic_ai_landing_zone_visual_guide.md,ai-foundations,Agentic AI Landing Zone: Visual Guide & Quick Reference,3491,True,2026-07-10,native-md,current,0,True,guide,,
+docs/ai-foundations/enterprise-agentic-ai-outlook-2026-2030.md,ai-foundations,Enterprise Agentic AI Outlook 2026–2030,2073,True,2026-07-13,native-md,current,0,False,guide,,
+docs/ai-foundations/index.md,ai-foundations,Agentic AI Basics,461,True,2026-07-10,native-md,current,0,True,hub,,
+docs/ai-foundations/transformer_architectures.md,ai-foundations,Transformer Architecture: Frontier Models Deep Dive,3848,True,2026-07-17,converted-html,current,0,False,guide,,
+docs/ai-foundations/transformer_concepts_deep.md,ai-foundations,Transformer Concepts: Deep Internals,3397,True,2026-07-17,converted-html,current,0,True,guide,,
+docs/ai-protocols/a2a/index.md,ai-protocols,A2A — Agent-to-Agent Protocol,776,True,2026-07-16,native-md,current,0,True,hub,,
+docs/ai-protocols/auth/AgentIdentity_Research_2026_v2.md,ai-protocols,Agent Identity for AI Systems — Research 2026,54,True,2026-07-17,,retired,0,False,guide,,
+docs/ai-protocols/auth/Part3_Identity_OBO_Sessions.md,ai-protocols,Enterprise Authentication & Identity Propagation for AI Agents — Confidential Research,2152,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-protocols/auth/agent-identity-entra-vs-awsagentcore.md,ai-protocols,Agent Identity for AI Systems,2585,True,2026-07-10,native-md,current,0,False,guide,,
+docs/ai-protocols/auth/auth-standards-reference.md,ai-protocols,"Auth Standards Reference: OAuth 2.1, OIDC, RFC 8693 & Implementation Checklists",2348,True,2026-07-10,converted-pdf,current,0,False,concept,,
+docs/ai-protocols/auth/auth_identity_flows.md,ai-protocols,Authentication & Identity Flows,2041,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-protocols/auth/enterprise-ai-platform-auth-survey.md,ai-protocols,Enterprise AI Platform Authentication Survey,2603,True,2026-07-10,converted-pdf,current,0,False,research-report,,
+docs/ai-protocols/auth/entra-3lo-agent-auth-implementation.md,ai-protocols,EntraID 3LO: AC Gateway + AC Identity — Volume 2,4122,True,2026-07-10,native-md,current,0,False,guide,,
+docs/ai-protocols/auth/entra-3lo-agent-auth-multiagent-compliance.md,ai-protocols,EntraID 3LO: AC Gateway + AC Identity — Volume 3,4434,True,2026-07-10,native-md,current,0,False,research-report,,
+docs/ai-protocols/auth/entra-3lo-agent-auth-security-review.md,ai-protocols,EntraID 3LO: AC Gateway + AC Identity — Volume 4,5084,True,2026-07-10,native-md,current,0,False,research-report,,topic-overlap:security
+docs/ai-protocols/auth/entra-3lo-agent-auth-standards-architecture.md,ai-protocols,EntraID 3LO: AC Gateway + AC Identity — Volume 1,3783,True,2026-07-10,native-md,current,0,False,research-report,,
+docs/ai-protocols/auth/index.md,ai-protocols,Authentication & Identity,803,True,2026-07-10,native-md,current,0,True,hub,,
+docs/ai-protocols/auth/marketplace-connector-auth-patterns.md,ai-protocols,Marketplace Connector Auth Patterns & Enterprise Architecture,1957,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-protocols/auth/tool-authentication-connectors.md,ai-protocols,Tool Authentication & Connector Models,2410,True,2026-07-10,native-md,current,0,False,guide,,
+docs/ai-protocols/index.md,ai-protocols,AI Protocols,628,True,2026-07-16,native-md,current,0,True,hub,,
+docs/ai-protocols/mcp/MCP_Deep_Research_2026.md,ai-protocols,MCP Deep Research 2026,7147,True,2026-07-10,native-md,current,0,False,research-report,,topic-overlap:mcp
+docs/ai-protocols/mcp/MCP_Enterprise_Security_Governance_Operations_2026.md,ai-protocols,"Enterprise MCP Security, Authorization, Governance & Operations (2026)",11880,True,2026-07-11,native-md,current,0,True,guide,,topic-overlap:security;topic-overlap:mcp
+docs/ai-protocols/mcp/MCP_Harness_AIDLC.md,ai-protocols,MCP Harness Engineering: Testing & Evaluation Across the AIDLC,3454,True,2026-07-14,converted-pdf,current,0,True,guide,,topic-overlap:mcp
+docs/ai-protocols/mcp/index.md,ai-protocols,MCP,198,True,2026-07-10,native-md,current,0,False,hub,,topic-overlap:mcp
+docs/ai-protocols/standards/AI_Protocols_Standards_Service_Industry_Guide_2026.md,ai-protocols,"AI Protocols, Frameworks & Standards 2026",7283,True,2026-07-10,converted-pdf,current,0,True,guide,,
+docs/ai-protocols/standards/agent-protocol-metadata-headers.md,ai-protocols,"Agent Protocol Metadata, Headers & Capability Negotiation",2863,True,2026-07-11,native-md,current,0,True,concept,,
+docs/ai-protocols/standards/emerging-protocols-acp-anp.md,ai-protocols,Section 2A: ACP & ANP Deep Dives — Federated and Decentralised Agent Protocols,11050,True,2026-07-11,native-md,current,0,True,research-report,,
+docs/ai-protocols/standards/emerging-protocols-agui-utcp.md,ai-protocols,Section 2B: AG-UI & UTCP — Enterprise Architecture Deep Dive (July 2026),7817,True,2026-07-11,native-md,current,0,True,research-report,,
+docs/ai-protocols/standards/emerging-protocols-beyond-mcp-a2a.md,ai-protocols,Emerging AI Agent Protocols Beyond MCP & A2A (2026),774,True,2026-07-11,native-md,current,0,False,hub,,topic-overlap:mcp
+docs/ai-protocols/standards/emerging-protocols-crosscutting.md,ai-protocols,"Section 3 — Cross-Cutting Architecture: Security, Governance, Compliance & Observability",11122,True,2026-07-11,native-md,current,0,True,research-report,,
+docs/ai-protocols/standards/emerging-protocols-overview.md,ai-protocols,"Emerging AI Agent Protocols Beyond MCP & A2A — Enterprise Architecture, Standards, Security, and Adoption (2026)",10555,True,2026-07-11,native-md,current,0,True,research-report,,
+docs/ai-protocols/standards/emerging-protocols-ucp-ap2-nlip-lmos.md,ai-protocols,"Section 2C — Emerging AI Agent Protocols: UCP, AP2, NLIP & LMOS Deep Dives",13107,True,2026-07-11,native-md,current,0,True,research-report,,
+docs/ai-protocols/standards/existing-protocol-evolution-agentic-ai.md,ai-protocols,Existing Protocol Evolution for Agentic AI (2025–2026),2555,True,2026-07-11,native-md,current,0,True,guide,,
+docs/ai-protocols/standards/index.md,ai-protocols,Protocol Standards & Governance,463,True,2026-07-16,native-md,current,0,False,hub,,
+docs/ai-security-governance/Agentic_AI_Governance_Framework.md,ai-security-governance,Agentic AI Governance Framework,4338,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/Sovereign_Constitutional_AI_RAI_Implementation_Handbook.md,ai-security-governance,Sovereign Constitutional AI & RAI - Complete Implementation Handbook,11811,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part01_DeepMind_AI_Control_Roadmap.md,ai-security-governance,Part 1: DeepMind AI Control Roadmap Analysis,2779,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part02_Evolution_Enterprise_AI_Security.md,ai-security-governance,Part 2: Evolution of Enterprise AI Security,2159,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part03_Enterprise_Threat_Modeling.md,ai-security-governance,Part 3: Enterprise Threat Modeling for AI Agents,2492,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part04_AI_Control_Architecture.md,ai-security-governance,Part 4: AI Control Architecture,1025,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part05_Runtime_AI_Security.md,ai-security-governance,Part 5: Runtime AI Security,926,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part06_Identity_for_AI_Agents.md,ai-security-governance,Part 6: Identity for AI Agents,1027,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part07_AI_Authorization.md,ai-security-governance,Part 7: AI Authorization Architecture,749,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part08_Memory_Governance.md,ai-security-governance,Part 8: Memory Governance,937,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security;topic-overlap:memory
+docs/ai-security-governance/deep-mind/Part09_Tool_Governance.md,ai-security-governance,Part 9: Tool Governance,1139,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part10_Reasoning_Governance.md,ai-security-governance,Part 10: Reasoning Governance,739,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part11_Multi_Agent_Security.md,ai-security-governance,Part 11: Multi-Agent Security,900,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part12_AI_Observability.md,ai-security-governance,Part 12: AI Observability,793,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security;topic-overlap:observability
+docs/ai-security-governance/deep-mind/Part13_AI_SOC.md,ai-security-governance,Part 13: AI Security Operations Center,842,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part14_Enterprise_Governance.md,ai-security-governance,Part 14: Enterprise Governance,912,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part15_Cloud_Implementation_Comparison.md,ai-security-governance,Part 15: Cloud Implementation Comparison,884,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part16_Reference_Architecture.md,ai-security-governance,Part 16: Reference Architecture,947,True,2026-07-17,converted-pdf,current,0,False,reference-architecture,,topic-overlap:security
+docs/ai-security-governance/deep-mind/Part17_Best_Practices_Anti_Patterns.md,ai-security-governance,Part 17: Best Practices & Anti-Patterns,4478,True,2026-07-17,converted-pdf,current,0,False,anti-pattern,,topic-overlap:security;topic-overlap:anti-patterns
+docs/ai-security-governance/deep-mind/Part18_Future_Outlook_2026_2035.md,ai-security-governance,Part 18: Future Outlook 2026-2035,4175,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/deep-mind/index.md,ai-security-governance,DeepMind Control Roadmap,525,True,2026-07-10,native-md,current,0,False,hub,,topic-overlap:security
+docs/ai-security-governance/index.md,ai-security-governance,AI Security & Governance,467,True,2026-07-10,native-md,current,0,False,hub,,topic-overlap:security
+docs/ai-security-governance/policy/Vol0_Series_Index_and_Overview.md,ai-security-governance,Enterprise AI Authorization Series: Series Index & Architecture Overview (Vol 0),823,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/policy/Vol1_Executive_Architecture.md,ai-security-governance,Executive Architecture & Authorization Fundamentals (Vol 1),2337,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/policy/Vol1b_Authorization_Deep_Dive.md,ai-security-governance,"Enterprise Authorization Deep Dive: Engines, Interceptor Patterns & XACML (Vol 1b)",2939,True,2026-07-17,converted-pdf,current,0,False,research-report,,topic-overlap:security
+docs/ai-security-governance/policy/Vol2_Identity_Claims_Policy.md,ai-security-governance,"Identity, Claims & Policy Design (Vol 2)",2308,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/policy/Vol2b_Advanced_Policy_Engineering.md,ai-security-governance,"Advanced Policy Engineering: SCIM, Cedar Templates, OPA & WASM (Vol 2b)",2563,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/policy/Vol3_Agent_Tool_MCP_Authorization.md,ai-security-governance,"Agent, Tool & MCP Authorization (Vol 3)",1879,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/policy/Vol3b_Agent_Authorization_Deep_Dive.md,ai-security-governance,"Agent Authorization Deep Dive: Prompt Safety, Contextual Risk & Workflow Patterns (Vol 3b)",1959,True,2026-07-17,converted-pdf,current,0,False,research-report,,topic-overlap:security
+docs/ai-security-governance/policy/Vol4_RAG_Memory_Data_Authorization.md,ai-security-governance,"RAG, Memory & Data Authorization (Vol 4)",1575,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security;topic-overlap:memory
+docs/ai-security-governance/policy/Vol4b_AWS_Entra_Federation_Patterns.md,ai-security-governance,AWS & Entra ID Federation: Complete Integration Patterns (Vol 4b),2403,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/policy/Vol5_AWS_Implementation_Governance.md,ai-security-governance,"AWS Implementation, Governance & Production Readiness (Vol 5)",2697,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/policy/Vol5b_Compliance_Governance_Decision_Framework.md,ai-security-governance,"Compliance, Governance & Final Decision Framework (Vol 5b)",3214,True,2026-07-17,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/policy/index.md,ai-security-governance,Policy & Authorization,661,True,2026-07-10,native-md,current,0,True,hub,,topic-overlap:security
+docs/ai-security-governance/security/01-Foundations-Reference-Architecture.md,ai-security-governance,Foundations & Reference Architecture,4149,True,2026-07-11,converted-pdf,current,0,False,reference-architecture,,topic-overlap:security
+docs/ai-security-governance/security/02-Identity-MCP-A2A-Security-Blueprint.md,ai-security-governance,"Identity, MCP & A2A Security Blueprint",4451,True,2026-07-11,converted-pdf,current,0,False,guide,,topic-overlap:security;topic-overlap:mcp
+docs/ai-security-governance/security/04-AI-SOC-Observability-RedTeam-Memory.md,ai-security-governance,"AI SOC, Observability, Red Team & Memory Security",2978,True,2026-07-11,converted-pdf,current,0,False,guide,,topic-overlap:security;topic-overlap:memory;topic-overlap:observability
+docs/ai-security-governance/security/05-Economic-Security-FinOps-Commerce-PQC.md,ai-security-governance,"Economic Security, FinOps, Commerce & Post-Quantum Cryptography",2428,True,2026-07-11,converted-pdf,current,0,False,guide,,topic-overlap:security;topic-overlap:finops
+docs/ai-security-governance/security/06-Operating-Model-Maturity-Roadmap.md,ai-security-governance,Operating Model & Security Maturity Roadmap,2928,True,2026-07-11,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/security/07-Zero-to-Mastery-Curriculum.md,ai-security-governance,Zero-to-Mastery Security Curriculum,14362,True,2026-07-11,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/security/08-Architects-Field-Guide.md,ai-security-governance,AI Security Architect's Field Guide,9424,True,2026-07-11,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/security/08-Future-AI-SOC-2026-2030.md,ai-security-governance,Part 14 — Future of AI SOC (2026–2030),9,True,2026-07-16,native-md,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/security/AI-Bill-of-Materials-Guide.md,ai-security-governance,AI Bill of Materials (AIBOM) — Supply Chain Transparency for AI Systems,1382,True,2026-07-14,native-md,current,0,True,guide,,topic-overlap:security
+docs/ai-security-governance/security/AI-Red-Teaming-Guide.md,ai-security-governance,AI Red Teaming — Adversarial Testing for AI and Agentic Systems,1508,True,2026-07-14,native-md,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/security/AI-TRiSM-Complete-Guide.md,ai-security-governance,"AI TRiSM — AI Trust, Risk and Security Management: Complete Guide",1444,True,2026-07-14,native-md,current,0,True,guide,,topic-overlap:security
+docs/ai-security-governance/security/AIDR-AI-Detection-Response-Complete-Guide.md,ai-security-governance,AIDR — AI Detection and Response: Complete Enterprise Guide,5481,True,2026-07-14,native-md,current,0,True,guide,,topic-overlap:security
+docs/ai-security-governance/security/AISPM-AI-Security-Posture-Management.md,ai-security-governance,AISPM — AI Security Posture Management: Complete Guide,1332,True,2026-07-14,native-md,current,0,True,guide,,topic-overlap:security
+docs/ai-security-governance/security/Model-Cards-System-Cards-Guide.md,ai-security-governance,Model Cards and System Cards — AI Transparency Documentation Standards,1662,True,2026-07-14,native-md,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/security/Part1_Industry_Survey.md,ai-security-governance,Enterprise AI Platform Authentication Survey,49,True,2026-07-17,,retired,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/security/Part4_Runtime_Security_Governance.md,ai-security-governance,"Agent Runtime, MCP Security & Governance",1888,True,2026-07-11,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/security/Part5_Marketplace_Architecture.md,ai-security-governance,Marketplace Connector Auth Patterns & Enterprise Architecture,46,True,2026-07-17,,retired,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/security/Part7_Standards_Reference.md,ai-security-governance,"Auth Standards Reference: OAuth 2.1, OIDC, RFC 8693 & Implementation Checklists",59,True,2026-07-17,,retired,0,False,guide,,topic-overlap:security
+docs/ai-security-governance/security/index.md,ai-security-governance,AI Security,86,True,2026-07-10,native-md,current,0,False,hub,,topic-overlap:security
+docs/ai-soc-playbooks/index.md,ai-soc-playbooks,AI-Powered SOC Automation Playbooks,929,True,2026-07-16,native-md,current,0,True,hub,,
+docs/ai-soc-playbooks/part-01-soc-operating-model.md,ai-soc-playbooks,Part 01 — SOC Operating Model & Maturity,3214,True,2026-07-16,native-md,current,0,True,guide,,
+docs/ai-soc-playbooks/part-02-ai-use-cases.md,ai-soc-playbooks,Part 02 — AI Use Cases in Security Operations,3554,True,2026-07-16,native-md,current,0,True,guide,,
+docs/ai-soc-playbooks/part-03-agentic-soc.md,ai-soc-playbooks,Part 03 — Agentic SOC Architecture,3181,True,2026-07-16,native-md,current,0,True,guide,,
+docs/ai-soc-playbooks/part-04-automation-playbooks.md,ai-soc-playbooks,Part 04 — AI Automation Playbooks,6298,True,2026-07-16,native-md,current,0,True,guide,,
+docs/ai-soc-playbooks/part-05-soar-platforms.md,ai-soc-playbooks,Part 05 — SOAR Platform Comparison,2291,True,2026-07-16,native-md,current,0,True,guide,,
+docs/ai-soc-playbooks/part-06-ai-models.md,ai-soc-playbooks,Part 06 — AI Models for SOC,2119,True,2026-07-16,native-md,current,0,False,guide,,
+docs/ai-soc-playbooks/part-07-ai-safety.md,ai-soc-playbooks,Part 07 — AI Safety & Adversarial Risks in SOC,1607,True,2026-07-16,native-md,current,0,True,guide,,
+docs/ai-soc-playbooks/part-08-observability.md,ai-soc-playbooks,Part 08 — AI SOC Observability & Evaluation,1801,True,2026-07-16,native-md,current,0,True,guide,,topic-overlap:observability
+docs/ai-soc-playbooks/part-09-enterprise-architecture.md,ai-soc-playbooks,Part 09 — Enterprise Architecture Integration,1727,True,2026-07-16,pdf-converted,current,0,True,guide,,
+docs/ai-soc-playbooks/part-10-standards-compliance.md,ai-soc-playbooks,Part 10 — Standards & Compliance Mapping,4331,True,2026-07-16,native-md,current,0,True,guide,,
+docs/ai-soc-playbooks/part-11-implementation-roadmap.md,ai-soc-playbooks,Part 11 — Implementation Roadmap & Reference Architecture,3230,True,2026-07-16,native-md,current,0,True,guide,,
+docs/ai-soc-playbooks/part-12-finops.md,ai-soc-playbooks,Part 12 — AI SOC FinOps & Cost Management,2227,True,2026-07-16,pdf-converted,current,0,True,guide,,topic-overlap:finops
+docs/ai-soc-playbooks/part-13-vendor-landscape.md,ai-soc-playbooks,Part 13 — AI SOC Vendor Landscape,2375,True,2026-07-16,pdf-converted,current,0,True,guide,,
+docs/ai-soc-playbooks/part-14-future-soc.md,ai-soc-playbooks,Part 14 — Future of AI SOC,2331,True,2026-07-16,pdf-converted,current,0,True,guide,,
+docs/ai-usecases/01_aviation.md,ai-usecases,Meridian Global Airlines Case Study,9543,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/02_banking.md,ai-usecases,Banking Case Study: Continental Union Bank — AI Underwriting Copilot,6372,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/03_healthcare.md,ai-usecases,Healthcare Case Study: Northfield Health — Clinical Documentation & Prior Auth,5413,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/04_manufacturing.md,ai-usecases,Manufacturing Case Study: Ironhaven Industrial — QC Triage & Supply Chain,5626,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/05_telecom.md,ai-usecases,Telecom Case Study: Vantar Communications — NOC Triage & Customer Care,6381,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/06_government.md,ai-usecases,Government Case Study: Meridian DHS — Benefits Screening & Caseworker Copilot,6011,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/07_pharma.md,ai-usecases,Pharma Case Study: Vireon Therapeutics — Literature Intelligence & Regulatory Drafting,6419,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/08_energy.md,ai-usecases,Energy Case Study: Cascadia Power & Light — Predictive Maintenance & Grid Advisory,6256,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/09_logistics.md,ai-usecases,Logistics Case Study: Meridian Freight — Routing & Warehouse Robotics,6776,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/10_media.md,ai-usecases,Media Case Study: Solstice Media — Content Localization & IP Compliance,6798,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/CEO_Agent_Failure_Modes_Governance_Harness.md,ai-usecases,"Failure Modes, Governance Harness & the Path to Production-Grade Reliability",3024,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/CEO_Agent_Solution_Blueprint.md,ai-usecases,CEO Agent & Meeting Prep Agent,2860,True,2026-07-10,converted-pdf,current,0,True,guide,,
+docs/ai-usecases/Case_01_Meridian_Fraud_Investigation_Agents.md,ai-usecases,"The Agent That Proposes, Never Disposes",6110,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_02_Cascadia_Prior_Authorization_Agent.md,ai-usecases,"Decision Support, Never Decision",4348,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_03_Ironclad_Maintenance_Orchestration_Agent.md,ai-usecases,Graduated Autonomy on the Factory Floor,4478,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_04_Northline_Customer_Service_Agents.md,ai-usecases,"One Conversation, Five Specialist Brains",4520,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_05_Aurelia_Research_Assistant_Agent.md,ai-usecases,Necessary But Not Sufficient,4229,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_06_Skyline_Disruption_Control_Tower.md,ai-usecases,"Options, Not Recommendations",4702,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_07_Harborstone_Claims_Processing_Agents.md,ai-usecases,"Evidence Verifiability, Not Convenience",4883,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_08_Sterling_Loan_Underwriting_Agent.md,ai-usecases,The Denial Letter Problem,4565,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_09_Palisade_Grid_Operations_Agent.md,ai-usecases,The Storm That Took Ninety Minutes to Diagnose,4570,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_10_Vantara_Procurement_Negotiation_Agents.md,ai-usecases,The Spot-Rate Market Nobody Could Watch Fast Enough,4659,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_11_Vaxion_Clinical_Trial_Matching_Agent.md,ai-usecases,A Demo That Should Never Have Left the Room,5990,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_12_Meritage_Dynamic_Pricing_Agent.md,ai-usecases,"Two VPs, One Agent, No Agreement on Who Owns It",5238,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_13_StateDHS_Benefits_Navigation_Agent.md,ai-usecases,The Mainframe Owner Who Said No,5676,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_14_Falkirk_SOC_Threat_Response_Agent.md,ai-usecases,The CISO Who Wanted Autonomy and the Identity Lead Who Said Absolutely Not,5635,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/Case_15_Correlate_Recruiting_Screening_Agent.md,ai-usecases,The Architecture That Got Rejected Before It Was Even a Proposal,5623,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/EU_Banking_AI_Agent_Evaluation_Framework.md,ai-usecases,EU Banking AI Agent Evaluation Framework,3670,True,2026-07-13,converted-pdf,current,0,True,guide,,known-dup:eval-framework;known-dup:eu-bank-copilot
+docs/ai-usecases/EU_Banking_AI_Evaluation_Compliance_Guide.md,ai-usecases,EU Banking AI Evaluation & Compliance Guide,7840,True,2026-07-14,converted-pdf,current,0,True,guide,,known-dup:eu-bank-copilot
+docs/ai-usecases/Enterprise_AI_Case_Studies.md,ai-usecases,Enterprise AI Architecture Case Studies,4612,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/Part6_Banking_Case_Study.md,ai-usecases,Banking Case Study: Enterprise AI Authentication,1813,True,2026-07-10,converted-pdf,current,0,False,case-study,,
+docs/ai-usecases/airgapped-banking-architecture.md,ai-usecases,Air-Gapped AI Infrastructure for Enterprise Banking,805,True,2026-07-10,native-md,current,0,False,guide,,
+docs/ai-usecases/ceo_agent_pitch.md,ai-usecases,CEO Agent Pitch,1577,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/ai-usecases/eu-bank-ai-copilot-architecture.md,ai-usecases,EU Bank AI Copilot — Architecture & Code Reference,4303,True,2026-07-10,converted-docx,current,0,False,guide,,known-dup:eu-bank-copilot
+docs/ai-usecases/eu-bank-ai-copilot-complete.md,ai-usecases,EU Bank AI Copilot Platform,557,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:eu-bank-copilot
+docs/ai-usecases/eu-bank-ai-copilot-part1-architecture.md,ai-usecases,EU Bank AI Copilot Platform — Part 1: Architecture & Design Decisions,2284,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:eu-bank-copilot
+docs/ai-usecases/eu-bank-ai-copilot-part2-sequence-diagrams-and-code.md,ai-usecases,EU Bank AI Copilot Platform — Part 2: Sequence Diagrams & Application Code,2456,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:eu-bank-copilot
+docs/ai-usecases/eu-bank-ai-copilot-part3-agent-mcp-security.md,ai-usecases,"EU Bank AI Copilot Platform — Part 3: Agent Runtime, MCP Servers & Security",3170,True,2026-07-17,converted-pdf,current,0,True,guide,,known-dup:eu-bank-copilot;topic-overlap:security;topic-overlap:mcp
+docs/ai-usecases/eu-bank-ai-copilot-part4-compliance-infra-observability.md,ai-usecases,"EU Bank AI Copilot Platform — Part 4: Compliance, Infrastructure & Observability",2874,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:eu-bank-copilot;topic-overlap:observability
+docs/ai-usecases/eu-bank-sequence-diagrams.md,ai-usecases,EU Bank AI Copilot — Sequence Diagrams,2518,True,2026-07-10,native-md,current,6,False,guide,,known-dup:eu-bank-copilot
+docs/ai-usecases/index.md,ai-usecases,Use Cases,379,True,2026-07-10,native-md,current,0,False,hub,,
+docs/cloud-platforms/ai-gateway/AI_Gateway_Full_Comparison.md,cloud-platforms,AI Gateway Comparison — 10 Tools,7761,True,2026-07-13,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/ai-gateway/AI_Gateway_MultiTenant_MultiCloud.md,cloud-platforms,AI GATEWAY,3432,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/ai-gateway/Enterprise_AI_Gateway.md,cloud-platforms,ENTERPRISE AI GATEWAY,3906,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/ai-gateway/index.md,cloud-platforms,AI Gateway,73,True,2026-07-10,native-md,current,0,False,hub,,
+docs/cloud-platforms/ai-gateway/kong-ai-gateway-guide.md,cloud-platforms,Kong AI Gateway Guide,7546,True,2026-07-10,native-md,current,0,True,guide,,
+docs/cloud-platforms/ai-gateway/kong-entra-id-integration.md,cloud-platforms,Kong + Entra ID Integration,4585,True,2026-07-10,native-md,current,0,True,guide,,
+docs/cloud-platforms/ai-infrastructure-silicon-landscape-2026.md,cloud-platforms,AI Infrastructure & Silicon Landscape 2026,961,True,2026-07-13,native-md,current,0,False,guide,,
+docs/cloud-platforms/aws/AWS_Native_Standards_First_Agentic_Architecture.md,cloud-platforms,"AWS-NATIVE, STANDARDS-FIRST AGENTIC PLATFORM ARCHITECTURE",7818,True,2026-07-10,converted-pdf,current,0,True,guide,,
+docs/cloud-platforms/aws/AWS_Strands_AgentCore_AdvancedPatterns_v3.md,cloud-platforms,AWS Strands & Bedrock AgentCore — Advanced Patterns v3.0,6378,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/aws/AWS_Strands_AgentCore_Builder_Journey_Kit.md,cloud-platforms,AWS STRANDS & BEDROCK AGENTCORE PRODUCTION BUILDER JOURNEY KIT,6577,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/aws/AWS_Strands_AgentCore_Delta_Supplement_v2.md,cloud-platforms,AWS Strands & Bedrock AgentCore — Delta Supplement v2.0,5613,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/aws/AgentCore_Memory_Architecture_Guide.md,cloud-platforms,AgentCore Memory Architecture Guide,9117,True,2026-07-10,converted-pdf,current,0,False,guide,,topic-overlap:memory
+docs/cloud-platforms/aws/AgentCore_Memory_Gaps_Extensions_2026.md,cloud-platforms,"AgentCore Memory — Gaps, Extensions & 2026 Research",3211,True,2026-07-10,converted-pdf,current,0,False,guide,,topic-overlap:memory
+docs/cloud-platforms/aws/AgentCore_Memory_Operations_DeepDive.md,cloud-platforms,AgentCore Memory Operations Deep Dive,3687,True,2026-07-10,converted-pdf,current,0,False,guide,,topic-overlap:memory
+docs/cloud-platforms/aws/agentcore_strands_deep_research_report.md,cloud-platforms,Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report,22038,True,2026-07-10,converted-pdf,current,0,True,guide,,
+docs/cloud-platforms/aws/bedrock-agentcore-code-interpreter-architecture.md,cloud-platforms,Bedrock AgentCore Code Interpreter Architecture,11634,True,2026-07-10,native-md,current,0,True,guide,,
+docs/cloud-platforms/aws/hyperscaler-deep-dive-aws.md,cloud-platforms,Hyperscaler Deep Dive: AWS (2026),1172,True,2026-07-13,native-md,current,1,False,research-report,,
+docs/cloud-platforms/aws/index.md,cloud-platforms,AWS AgentCore,116,True,2026-07-10,native-md,current,0,False,hub,,
+docs/cloud-platforms/azure/azure_agent_architecture.md,cloud-platforms,Azure AI Agent Architecture — Production Grade,1306,True,2026-07-17,converted-html,current,0,True,guide,,
+docs/cloud-platforms/azure/hyperscaler-deep-dive-azure.md,cloud-platforms,Hyperscaler Deep Dive: Microsoft Azure (2026),1159,True,2026-07-13,native-md,current,1,False,research-report,,
+docs/cloud-platforms/azure/index.md,cloud-platforms,Microsoft Azure Agentic AI,101,True,2026-07-13,native-md,current,0,False,hub,,
+docs/cloud-platforms/enterprise-agent-runtime-internals-2026.md,cloud-platforms,"Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026)",13970,True,2026-07-11,native-md,current,0,True,research-report,,
+docs/cloud-platforms/gcp/hyperscaler-deep-dive-gcp.md,cloud-platforms,Hyperscaler Deep Dive: Google Cloud (2026),1226,True,2026-07-13,native-md,current,1,False,research-report,,
+docs/cloud-platforms/gcp/index.md,cloud-platforms,Google Cloud AI,90,True,2026-07-13,native-md,current,0,False,hub,,
+docs/cloud-platforms/iac/index.md,cloud-platforms,Infrastructure as Code,11,True,2026-07-10,native-md,current,0,False,hub,,
+docs/cloud-platforms/iac/terraform/ai-assisted-iac-mastery.md,cloud-platforms,AI-Assisted IaC Mastery Guide,6414,True,2026-07-10,native-md,current,13,False,guide,,
+docs/cloud-platforms/iac/terraform/index.md,cloud-platforms,Terraform,12,True,2026-07-10,native-md,current,0,False,hub,,
+docs/cloud-platforms/iac/terraform/terraform-mastery-guide.md,cloud-platforms,Terraform from Zero to Mastery,9239,True,2026-07-10,native-md,current,15,True,research-report,,
+docs/cloud-platforms/index.md,cloud-platforms,Cloud Platforms,262,True,2026-07-10,native-md,current,0,False,hub,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part10_Observability.md,cloud-platforms,K8s Handbook Part 10: Observability,4454,True,2026-07-10,converted-pdf,current,0,False,guide,,topic-overlap:observability
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part11_AI_Infrastructure.md,cloud-platforms,K8s Handbook Part 11: AI Infrastructure,4027,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part12_Agentic_AI.md,cloud-platforms,K8s Handbook Part 12: Agentic AI,5824,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part13_Emerging_Standards.md,cloud-platforms,K8s Handbook Part 13: Emerging Standards,874,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part14_Reference_Architectures.md,cloud-platforms,K8s Handbook Part 14: Reference Architectures,862,True,2026-07-10,converted-pdf,current,0,False,reference-architecture,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part15_Implementation_Labs.md,cloud-platforms,K8s Handbook Part 15: Implementation Labs,1123,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part16_Future_Outlook.md,cloud-platforms,K8s Handbook Part 16: Future Outlook,1025,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part1_Infrastructure_Evolution.md,cloud-platforms,K8s Handbook Part 1: Infrastructure Evolution,6466,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part2_Linux_Foundations.md,cloud-platforms,K8s Handbook Part 2: Linux Foundations,5871,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part3_Containers.md,cloud-platforms,K8s Handbook Part 3: Containers,5926,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part4_Kubernetes_Internals.md,cloud-platforms,K8s Handbook Part 4: Kubernetes Internals,5906,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part5_Kubernetes_Resources.md,cloud-platforms,K8s Handbook Part 5: Kubernetes Resources,4613,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part6_Kubernetes_Networking.md,cloud-platforms,K8s Handbook Part 6: Kubernetes Networking,4824,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part7_Storage.md,cloud-platforms,K8s Handbook Part 7: Storage,4147,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part8_Security.md,cloud-platforms,K8s Handbook Part 8: Security,4305,True,2026-07-10,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/cloud-platforms/kubernetes/K8s_Handbook_Part9_Platform_Engineering.md,cloud-platforms,K8s Handbook Part 9: Platform Engineering,4689,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/cloud-platforms/kubernetes/index.md,cloud-platforms,Kubernetes,123,True,2026-07-10,native-md,current,0,False,hub,,
+docs/coding-tools/claude/Anthropic_Partner_Cert_Study_Guide.md,coding-tools,Anthropic Partner Certification (EA) — Complete Study Guide,10371,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/claude/CCAF_Advanced_Supplement.md,coding-tools,CCAF Advanced Supplement,7486,True,2026-07-10,converted-pdf,current,0,True,guide,,
+docs/coding-tools/claude/CCAF_Study_Guide.md,coding-tools,CCAF Study Guide,9825,True,2026-07-10,converted-pdf,current,0,True,guide,,
+docs/coding-tools/claude/Cheatsheet_10_MultiAgent_Production.md,coding-tools,Multi-Agent Production Patterns,3387,True,2026-07-17,converted-html,current,0,True,checklist,,
+docs/coding-tools/claude/Cheatsheet_11_MCP_Pipeline_Errors.md,coding-tools,MCP Pipeline Error & Context Handling,2831,True,2026-07-17,converted-html,current,0,True,checklist,,
+docs/coding-tools/claude/Cheatsheet_1_Claude_Code.md,coding-tools,Claude Code Cheat Sheet,991,True,2026-07-17,converted-html,current,0,False,checklist,,
+docs/coding-tools/claude/Cheatsheet_2_Agent_SDK.md,coding-tools,Agent SDK Cheat Sheet,838,True,2026-07-17,converted-html,current,0,True,checklist,,
+docs/coding-tools/claude/Cheatsheet_3_MCP.md,coding-tools,MCP Cheat Sheet,803,True,2026-07-17,converted-html,current,0,False,checklist,,
+docs/coding-tools/claude/Cheatsheet_4_AI_Fluency.md,coding-tools,AI Fluency Cheat Sheet,821,True,2026-07-17,converted-html,current,0,False,checklist,,
+docs/coding-tools/claude/Cheatsheet_5_Prompt_Engineering.md,coding-tools,Prompt Engineering Cheat Sheet,866,True,2026-07-17,converted-html,current,0,False,checklist,,
+docs/coding-tools/claude/Cheatsheet_6_Claude_CLI.md,coding-tools,Claude CLI Cheat Sheet,1176,True,2026-07-17,converted-html,current,0,False,checklist,,
+docs/coding-tools/claude/Cheatsheet_7_Claude_Ecosystem.md,coding-tools,Claude Ecosystem Cheat Sheet,1302,True,2026-07-17,converted-html,current,0,True,checklist,,
+docs/coding-tools/claude/Cheatsheet_9_Agents_Parallelism.md,coding-tools,Claude Code Agents & Parallelism,1808,True,2026-07-17,converted-html,current,0,True,checklist,,
+docs/coding-tools/claude/Claude_Ecosystem_Research_Report.md,coding-tools,Claude Ecosystem Research Report,6375,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/claude/Module_1_Claude_Foundations.md,coding-tools,Claude Foundations & Ecosystem Overview,2440,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/claude/Module_3_Prompt_Engineering.md,coding-tools,Prompt Engineering & Optimization — Complete Reference,3717,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/claude/Module_4_MCP.md,coding-tools,Model Context Protocol (MCP) — Complete Reference,799,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/claude/Module_5_Claude_Code_Agents.md,coding-tools,"Claude Code, Hooks, Skills & Subagents",977,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/claude/Module_6_Claude_Workflows.md,coding-tools,Claude Dynamic Workflows — Complete Guide,1104,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/claude/Module_7_Safety_Enterprise_Exam.md,coding-tools,"Safety, Enterprise Deployment & CCA-F Exam Prep",2559,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/claude/Questionnaire_Claude_Certification.md,coding-tools,Claude Certification Questionnaire,5778,True,2026-07-17,converted-html,current,0,True,career,,topic-overlap:interview-content
+docs/coding-tools/claude/Questionnaire_Vol2_Claude_Certification.md,coding-tools,Claude Cert Questionnaire Vol.2,6233,True,2026-07-17,converted-html,current,0,True,career,,topic-overlap:interview-content
+docs/coding-tools/claude/ccaf-cheatsheet.md,coding-tools,CCAF Cheatsheet — Quick Reference,1234,True,2026-07-17,native-md,current,0,False,checklist,,
+docs/coding-tools/claude/ccaf-exam-prep-complete.md,coding-tools,CCAF Exam Prep — Complete Guide,25961,True,2026-07-10,native-md,current,0,False,checklist,,
+docs/coding-tools/claude/ccao-f-cheatsheet.md,coding-tools,CCAO-F Cheatsheet — Quick Reference,1671,True,2026-07-17,native-md,current,0,False,checklist,,
+docs/coding-tools/claude/ccao-f-exam-prep-complete.md,coding-tools,CCAO-F Exam Prep — Complete Guide,12501,True,2026-07-17,native-md,current,0,False,checklist,,
+docs/coding-tools/claude/ccar-p-cheatsheet.md,coding-tools,CCAR-P Cheatsheet — Quick Reference,1875,True,2026-07-17,native-md,current,0,False,checklist,,
+docs/coding-tools/claude/ccar-p-exam-prep-complete.md,coding-tools,CCAR-P Exam Prep — Complete Guide,17347,True,2026-07-17,native-md,current,0,False,checklist,,
+docs/coding-tools/claude/ccdv-f-cheatsheet.md,coding-tools,CCDV-F Cheatsheet — Quick Reference,2112,True,2026-07-17,native-md,current,0,False,checklist,,
+docs/coding-tools/claude/ccdv-f-exam-prep-complete.md,coding-tools,CCDV-F Exam Prep — Complete Guide,12843,True,2026-07-17,native-md,current,0,False,checklist,,
+docs/coding-tools/claude/claude-agent-sdk-production.md,coding-tools,Claude Agent SDK — Production Reference,7598,True,2026-07-10,native-md,current,0,False,guide,,
+docs/coding-tools/claude/claude-api-mastery.md,coding-tools,Claude API Mastery,1313,True,2026-07-10,native-md,current,0,False,guide,,
+docs/coding-tools/claude/claude-best-practices.md,coding-tools,How to Use This Guide,6224,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/claude/claude-code-complete-2026.md,coding-tools,Claude Code CLI — Zero to Mastery 2026,5843,True,2026-07-10,native-md,current,0,True,guide,,
+docs/coding-tools/claude/claude-enterprise-2026.md,coding-tools,Claude Enterprise Deployment 2026,6673,True,2026-07-10,native-md,current,0,True,guide,,
+docs/coding-tools/claude/claude-models-2026.md,coding-tools,Claude Models 2026 — Complete Reference,6493,True,2026-07-10,native-md,current,0,True,guide,,
+docs/coding-tools/claude/claude_agents_best_practices_v2.md,coding-tools,Claude & GitHub Agents: Best Practices Guide (v2),6138,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/claude/claude_routines_guide.md,coding-tools,Claude Routines — Complete Help Guide,3856,True,2026-07-17,converted-html,current,0,False,guide,,
+docs/coding-tools/claude/constitutional-ai-safety-2026.md,coding-tools,Constitutional AI & Safety 2026,7022,True,2026-07-10,native-md,current,0,True,guide,,
+docs/coding-tools/claude/index.md,coding-tools,Claude,546,True,2026-07-10,native-md,current,0,False,hub,,
+docs/coding-tools/claude/mcp-deep-guide.md,coding-tools,MCP Deep Guide — Server Development & Enterprise Integration,8382,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:mcp
+docs/coding-tools/claude/prompt-engineering-claude-4.md,coding-tools,Prompt Engineering for Claude 4.x,5963,True,2026-07-10,native-md,current,0,False,guide,,
+docs/coding-tools/claude/ruflo-agentic-ai-guide.md,coding-tools,Multi-Agent Orchestration — claude-flow & Beyond,5441,True,2026-07-10,native-md,current,0,True,guide,,
+docs/coding-tools/code-review/PR_Review_Handbook_Vol1_Traditional_Review.md,coding-tools,THE ENTERPRISE PR REVIEW PLAYBOOK,5239,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/code-review/PR_Review_Handbook_Vol2_Deep_Domain_Reviews.md,coding-tools,THE ENTERPRISE PR REVIEW PLAYBOOK,4332,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/code-review/PR_Review_Handbook_Vol3_AI_Assisted_Review.md,coding-tools,THE ENTERPRISE PR REVIEW PLAYBOOK,2985,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/code-review/PR_Review_Handbook_Vol4_Agentic_Review_Architecture.md,coding-tools,THE ENTERPRISE PR REVIEW PLAYBOOK,3935,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/code-review/PR_Review_Handbook_Vol5_Case_Studies_Maturity_Model.md,coding-tools,THE ENTERPRISE PR REVIEW PLAYBOOK,3458,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/code-review/index.md,coding-tools,Code Review,72,True,2026-07-10,native-md,current,0,False,hub,,
+docs/coding-tools/github-copilot/GitHub_Copilot_Enterprise_Research_2026.md,coding-tools,GITHUB COPILOT ENTERPRISE AGENT PLATFORM,6317,True,2026-07-10,converted-pdf,current,0,False,research-report,,
+docs/coding-tools/github-copilot/Part01_Git_Internals.md,coding-tools,Git Internals,3636,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/github-copilot/Part01_Vision_Copilot_Architecture_RepoIntelligence.md,coding-tools,"AI Vision, Copilot Architecture &",3276,True,2026-07-10,converted-pdf,current,0,True,research-report,,
+docs/coding-tools/github-copilot/Part02_GitHub_Architecture_and_Actions.md,coding-tools,GitHub Architecture & Actions Deep Dive,2585,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/github-copilot/Part04_RAG_Agents_Models_Platform.md,coding-tools,"RAG Architecture, Agent Comparisons & GitHub Models",2823,True,2026-07-10,converted-pdf,current,0,False,research-report,,
+docs/coding-tools/github-copilot/Part04_Runners_and_Runtime.md,coding-tools,GitHub Actions Runners & Runtime,2513,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/github-copilot/Part06_Marketplace_Pages_Packages.md,coding-tools,"Marketplace, Pages, Wiki, Releases & Packages",2120,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/github-copilot/Part07_Prompts_Evaluation_Spark_Infrastructure.md,coding-tools,"Prompt Engineering, Evaluation, Spark & AI Infrastructure",3220,True,2026-07-10,converted-pdf,current,0,False,research-report,,
+docs/coding-tools/github-copilot/Part11_CICD_Secrets_Security.md,coding-tools,"CI/CD Architecture, Secrets & Supply Chain Security",2809,True,2026-07-10,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/coding-tools/github-copilot/Part11_Security_Governance.md,coding-tools,Security Architecture & Enterprise AI Governance,3623,True,2026-07-10,converted-pdf,current,0,False,research-report,,topic-overlap:security
+docs/coding-tools/github-copilot/Part13_CICD_Observability_Scaling.md,coding-tools,"AI-Assisted CI/CD, Observability & Scaling Challenges",3139,True,2026-07-10,converted-pdf,current,0,False,research-report,,topic-overlap:observability
+docs/coding-tools/github-copilot/Part14_Enterprise_APIs_Apps_CLI.md,coding-tools,"Enterprise GitHub, APIs, Apps & CLI",2675,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/github-copilot/Part16_Artifacts_ReferenceArchitecture.md,coding-tools,Engineering Artifacts & Enterprise Reference Architecture,2521,True,2026-07-10,converted-pdf,current,0,False,reference-architecture,,
+docs/coding-tools/github-copilot/Part18_Ecosystem_Patterns_Labs.md,coding-tools,"Ecosystem, Enterprise Patterns & Hands-On Labs",3906,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/coding-tools/github-copilot/copilot-enterprise-playbook.md,coding-tools,GitHub Copilot AI Credits Enterprise Mastery Guide,6840,True,2026-07-10,converted-pdf,current,0,True,guide,,
+docs/coding-tools/github-copilot/copilotkit-mcp-apps-vs-tools.md,coding-tools,CopilotKit MCP Apps vs Tools — EU Bank Design Decision,1599,True,2026-07-17,converted-html,current,0,False,guide,,topic-overlap:mcp
+docs/coding-tools/github-copilot/git-github-platform-engineering-handbook.md,coding-tools,"Git, GitHub Platform & Platform Engineering Cheatsheet",15167,True,2026-07-10,native-md,current,15,False,guide,,
+docs/coding-tools/github-copilot/github-copilot-big-wins-research.md,coding-tools,GitHub Copilot Big Wins & Automation Research Playbook,5741,True,2026-07-10,converted-pdf,current,0,False,research-report,,
+docs/coding-tools/github-copilot/github-copilot-zero-to-hero.md,coding-tools,GitHub Copilot Zero to Hero,9630,True,2026-07-10,native-md,current,4,False,guide,,
+docs/coding-tools/github-copilot/index.md,coding-tools,GitHub Copilot,169,True,2026-07-10,native-md,current,0,False,hub,,
+docs/coding-tools/github-copilot/microsoft-apm-guide.md,coding-tools,Microsoft APM — Zero to Mastery,1957,True,2026-07-17,converted-html,current,0,True,guide,,
+docs/coding-tools/index.md,coding-tools,Coding Tools,9,True,2026-07-10,native-md,current,0,False,hub,,
+docs/cybersec-architect/01-evolution.md,cybersec-architect,Part 1 — Cyber Security Evolution,2271,True,2026-07-10,native-md,current,0,False,guide,,
+docs/cybersec-architect/02-enterprise-security-architecture.md,cybersec-architect,Part 2 — Enterprise Security Architecture,2528,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:security
+docs/cybersec-architect/03-security-domains.md,cybersec-architect,Part 3 — Security Domains,2523,True,2026-07-10,native-md,current,0,False,guide,,topic-overlap:security
+docs/cybersec-architect/04-ai-security.md,cybersec-architect,Part 4 — AI Security,2538,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:security
+docs/cybersec-architect/05-agentic-ai-security.md,cybersec-architect,Part 5 — Agentic AI Security,2311,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:security
+docs/cybersec-architect/06-identity-architecture.md,cybersec-architect,Part 6 — Identity Architecture,1909,True,2026-07-10,native-md,current,0,False,guide,,
+docs/cybersec-architect/07-cloud-security.md,cybersec-architect,Part 7 — Cloud Security Architecture,2371,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:security
+docs/cybersec-architect/08-ai-governance.md,cybersec-architect,Part 8 — AI Governance & Compliance,2253,True,2026-07-10,native-md,current,0,False,guide,,
+docs/cybersec-architect/09-security-operations.md,cybersec-architect,Part 9 — Security Operations in the AI Era,1895,True,2026-07-10,native-md,current,0,False,guide,,topic-overlap:security
+docs/cybersec-architect/10-technology-investment.md,cybersec-architect,Part 10 — Technology Investment,2013,True,2026-07-10,native-md,current,0,True,guide,,
+docs/cybersec-architect/11-ai-investment.md,cybersec-architect,Part 11 — AI & Security Investment,1874,True,2026-07-10,native-md,current,0,True,guide,,
+docs/cybersec-architect/12-ea-deliverables.md,cybersec-architect,Part 12 — Enterprise Architecture Deliverables,1933,True,2026-07-10,native-md,current,0,True,guide,,
+docs/cybersec-architect/13-security-patterns.md,cybersec-architect,Part 13 — Security Patterns,2245,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:security
+docs/cybersec-architect/14-case-studies.md,cybersec-architect,Part 14 — Industry Case Studies,2776,True,2026-07-10,native-md,current,0,False,guide,,
+docs/cybersec-architect/15-emerging-trends.md,cybersec-architect,Part 15 — Emerging Trends 2026–2030,2740,True,2026-07-10,native-md,current,0,False,guide,,
+docs/cybersec-architect/index.md,cybersec-architect,Enterprise Cyber Security Architect,801,True,2026-07-10,native-md,current,0,False,hub,,
+docs/cybersec-architect/usecase-transcript.md,cybersec-architect,Use Case Transcript — Agentic AI Security Advisory Session,2914,True,2026-07-10,native-md,current,0,False,guide,,
+docs/databricks-agentic-ai/index.md,databricks-agentic-ai,Databricks Agentic AI — Enterprise Architect Reference,1309,True,2026-07-16,native-md,current,0,True,hub,,
+docs/databricks-agentic-ai/part-01-platform-vision-agentic-services.md,databricks-agentic-ai,Part 1 — Platform Vision & Agentic Services,2125,True,2026-07-16,native-md,current,0,True,guide,,
+docs/databricks-agentic-ai/part-02-agent-lake-architecture.md,databricks-agentic-ai,"Part 2 — Agent Lake, Agent Architecture & Multi-Agent Orchestration",2018,True,2026-07-16,native-md,current,0,True,guide,,
+docs/databricks-agentic-ai/part-03-mosaic-ai-mlflow.md,databricks-agentic-ai,Part 3 — Mosaic AI & MLflow 3,1922,True,2026-07-16,native-md,current,0,True,guide,,
+docs/databricks-agentic-ai/part-04-unity-catalog-governance.md,databricks-agentic-ai,Part 4 — Unity Catalog AI Governance,1720,True,2026-07-16,native-md,current,0,True,guide,,
+docs/databricks-agentic-ai/part-05-lakehouse-data-infrastructure.md,databricks-agentic-ai,"Part 5 — Lakehouse Architecture: Lakebase, LTAP & Real-Time",1822,True,2026-07-16,native-md,current,0,True,guide,,
+docs/databricks-agentic-ai/part-06-iceberg-open-formats.md,databricks-agentic-ai,"Part 6 — Apache Iceberg, Open Table Formats & Interoperability",1941,True,2026-07-16,native-md,current,0,True,guide,,
+docs/databricks-agentic-ai/part-07-security-architecture.md,databricks-agentic-ai,Part 7 — Security Architecture,1817,True,2026-07-16,native-md,current,0,True,guide,,topic-overlap:security
+docs/databricks-agentic-ai/part-08-observability-finops-integration.md,databricks-agentic-ai,"Part 8 — Observability, FinOps & Integration Ecosystem",2550,True,2026-07-16,native-md,current,0,True,guide,,topic-overlap:finops;topic-overlap:observability
+docs/databricks-agentic-ai/part-09-competitive-reference-architectures.md,databricks-agentic-ai,Part 9 — Competitive Comparison & Industry Reference Architectures,3553,True,2026-07-16,pdf-converted,current,0,True,reference-architecture,,
+docs/databricks-agentic-ai/part-12-finops.md,databricks-agentic-ai,Part 12 — AI SOC FinOps & ROI,9,True,2026-07-16,native-md,current,0,False,guide,,topic-overlap:finops
+docs/databricks-agentic-ai/part-13-vendor-landscape.md,databricks-agentic-ai,Part 13 — Vendor Landscape & Decision Matrix,9,True,2026-07-16,native-md,current,0,False,guide,,
+docs/ea-masterclass/deliverables/business-case-templates.md,ea-masterclass,Business Case Templates (1–6),5454,True,2026-07-10,native-md,current,0,False,template-asset,,
+docs/ea-masterclass/deliverables/consulting-templates.md,ea-masterclass,Deliverable Templates 11–20: Consulting & Practice Tools,7240,True,2026-07-10,native-md,current,0,True,template-asset,,
+docs/ea-masterclass/deliverables/governance-templates.md,ea-masterclass,Deliverable Templates 7–10: Governance & Decision Frameworks,5907,True,2026-07-10,native-md,current,0,True,template-asset,,
+docs/ea-masterclass/deliverables/index.md,ea-masterclass,Deliverables Overview,1613,True,2026-07-10,native-md,current,0,False,hub,,
+docs/ea-masterclass/index.md,ea-masterclass,EA Masterclass — From Technical Architect to Enterprise AI Investment Architect,4713,True,2026-07-10,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-01-ea-foundations/index.md,ea-masterclass,Module 1 — Enterprise Architecture Foundations,7655,True,2026-07-10,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-02-business-acumen/index.md,ea-masterclass,Module 2 — Business Acumen for Enterprise Architects,6756,True,2026-07-10,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-03-proposal-lifecycle/index.md,ea-masterclass,Module 3 — Enterprise Proposal Lifecycle,11434,True,2026-07-10,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-04-technology-investment/index.md,ea-masterclass,Module 4 — Technology Investment Fundamentals,7665,True,2026-07-14,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-05-ai-investment-strategy/index.md,ea-masterclass,Module 5 — AI Investment Strategy,6610,True,2026-07-10,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-06-business-case/index.md,ea-masterclass,Module 6 — Business Case Development,8991,True,2026-07-10,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-07-proposal-writing/index.md,ea-masterclass,Module 7 — Proposal Writing,6961,True,2026-07-10,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-08-financial-literacy/index.md,ea-masterclass,Module 8 — Financial Literacy for Enterprise Architects,7126,True,2026-07-10,native-md,current,0,False,hub,,
+docs/ea-masterclass/module-09-enterprise-ai-architecture/index.md,ea-masterclass,Module 9 — Enterprise AI Architecture,7606,True,2026-07-14,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-10-governance/index.md,ea-masterclass,Module 10 — Enterprise Governance,8823,True,2026-07-10,native-md,current,0,False,hub,,
+docs/ea-masterclass/module-11-executive-communication/index.md,ea-masterclass,Module 11 — Executive Communication,7173,True,2026-07-10,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-12-ai-consulting/index.md,ea-masterclass,Module 12 — AI Consulting Engagement,8391,True,2026-07-10,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-13-case-studies/energy-utilities.md,ea-masterclass,Case Study: Energy Utility — AI Predictive Maintenance for Grid Infrastructure,4441,True,2026-07-14,native-md,current,0,True,case-study,,
+docs/ea-masterclass/module-13-case-studies/global-bank.md,ea-masterclass,Case Study: Global Bank — AI-Powered Loan Origination,3859,True,2026-07-10,native-md,current,0,True,case-study,,
+docs/ea-masterclass/module-13-case-studies/government.md,ea-masterclass,Case Study: National Tax Authority — AI Risk-Based Audit Intelligence,3564,True,2026-07-10,native-md,current,0,True,case-study,,
+docs/ea-masterclass/module-13-case-studies/healthcare.md,ea-masterclass,Case Study: Healthcare Network — AI Clinical Documentation,4793,True,2026-07-10,native-md,current,0,True,case-study,,
+docs/ea-masterclass/module-13-case-studies/index.md,ea-masterclass,Module 13 — Case Studies: AI Transformation Across Six Industries,2496,True,2026-07-10,native-md,current,0,False,hub,,
+docs/ea-masterclass/module-13-case-studies/manufacturing.md,ea-masterclass,Case Study: Automotive Manufacturer — AI Predictive Maintenance,3788,True,2026-07-10,native-md,current,0,True,case-study,,
+docs/ea-masterclass/module-13-case-studies/retail.md,ea-masterclass,Case Study: Retail Chain — AI Demand Forecasting & Inventory Optimization,3066,True,2026-07-10,native-md,current,0,True,case-study,,
+docs/ea-masterclass/module-13-case-studies/telecom.md,ea-masterclass,Case Study: Telecom Operator — AI Customer Retention Platform,3491,True,2026-07-10,native-md,current,0,True,case-study,,
+docs/ea-masterclass/module-14-mentoring/index.md,ea-masterclass,Module 14 — Mentoring & Mastery,8096,True,2026-07-10,native-md,current,0,False,hub,,
+docs/ea-masterclass/module-15-distinguished-architect/architecture-leadership.md,ea-masterclass,"Architecture Leadership, Organisational Change & CTO Readiness",3237,True,2026-07-10,native-md,current,0,False,guide,,
+docs/ea-masterclass/module-15-distinguished-architect/executive-presence.md,ea-masterclass,"Executive Presence, Influence Without Authority & Stakeholder Politics",4047,True,2026-07-10,native-md,current,0,False,guide,,
+docs/ea-masterclass/module-15-distinguished-architect/fortune100-modernisation.md,ea-masterclass,Fortune 100 Modernisation Playbook — Leading at Scale,3170,True,2026-07-10,native-md,current,0,True,guide,,
+docs/ea-masterclass/module-15-distinguished-architect/index.md,ea-masterclass,"Module 15 — Distinguished Architect: Leadership, Influence & CTO Readiness",1333,True,2026-07-14,native-md,current,0,True,hub,,
+docs/ea-masterclass/module-15-distinguished-architect/strategic-thinking.md,ea-masterclass,"Strategic Thinking, Technology Bets & Platform Economics",3702,True,2026-07-10,native-md,current,0,False,guide,,
+docs/ea-masterclass/transcripts/bank-discovery-workshop.md,ea-masterclass,Transcript: Global Bank — Day 1 Discovery Workshop,3189,True,2026-07-10,native-md,current,0,False,guide,,
+docs/ea-masterclass/transcripts/healthcare-executive-presentation.md,ea-masterclass,Transcript: Healthcare Network — Executive Steering Committee (Month 6 Update),2982,True,2026-07-10,native-md,current,0,False,guide,,
+docs/ea-masterclass/transcripts/index.md,ea-masterclass,Real-Life Engagement Transcripts — EA Practitioners in Action,1826,True,2026-07-10,native-md,current,0,False,hub,,
+docs/ea-masterclass/transcripts/manufacturing-arb-review.md,ea-masterclass,Transcript: Automotive Manufacturer — Architecture Review Board Session,3282,True,2026-07-10,native-md,current,0,False,guide,,
+docs/ea-masterclass/transcripts/retail-proposal-negotiation.md,ea-masterclass,Transcript: Retail Chain — CFO Investment Proposal Negotiation,3334,True,2026-07-10,native-md,current,0,False,guide,,
+docs/enterprise-ai-report/index.md,enterprise-ai-report,Enterprise AI Research Report: From Traditional Software to AI-Native Organization,2009,True,2026-07-14,native-md,current,0,False,hub,,
+docs/enterprise-ai-report/part-01-evolution.md,enterprise-ai-report,Part 1 — Evolution: Traditional Software to AI-Native Organization,3049,True,2026-07-14,native-md,current,0,False,research-report,,
+docs/enterprise-ai-report/part-02-operating-models.md,enterprise-ai-report,Part 2 — Enterprise AI Operating Models,3775,True,2026-07-14,native-md,current,0,True,research-report,,
+docs/enterprise-ai-report/part-03-ai-delivery-lifecycle.md,enterprise-ai-report,Part 3 — AI Delivery Lifecycle,470,True,2026-07-14,native-md,current,0,False,research-report,,
+docs/enterprise-ai-report/part-04-genai-delivery.md,enterprise-ai-report,Part 4 — GenAI Delivery Lifecycle,647,True,2026-07-14,native-md,current,0,False,research-report,,
+docs/enterprise-ai-report/part-05-agentic-lifecycle.md,enterprise-ai-report,Part 5 — Agentic AI Delivery Lifecycle (ADLC),774,True,2026-07-14,native-md,current,0,False,research-report,,
+docs/enterprise-ai-report/part-06-governance.md,enterprise-ai-report,Part 6 — Enterprise AI Governance Model,1141,True,2026-07-14,native-md,current,0,True,research-report,,
+docs/enterprise-ai-report/part-07-platform-operating-model.md,enterprise-ai-report,Part 7 — AI Platform Operating Model,1123,True,2026-07-14,native-md,current,0,True,research-report,,
+docs/enterprise-ai-report/part-08-organizational-roles.md,enterprise-ai-report,"Part 8 — Organizational Roles, RACI & Career Paths",4741,True,2026-07-14,native-md,current,0,True,research-report,,
+docs/enterprise-ai-report/part-09-operating-processes.md,enterprise-ai-report,Part 9 — AI Operating Processes,4069,True,2026-07-14,native-md,current,0,False,research-report,,
+docs/enterprise-ai-report/part-10-service-catalog.md,enterprise-ai-report,Part 10 — Enterprise AI Service Catalog,3799,True,2026-07-14,native-md,current,0,True,research-report,,
+docs/enterprise-ai-report/part-11-devsecops.md,enterprise-ai-report,Part 11 — AI DevSecOps,1113,True,2026-07-14,native-md,current,0,True,research-report,,
+docs/enterprise-ai-report/part-12-responsible-ai.md,enterprise-ai-report,Part 12 — Responsible AI,1287,True,2026-07-14,native-md,current,0,True,research-report,,
+docs/enterprise-ai-report/part-13-security-model.md,enterprise-ai-report,Part 13 — Enterprise AI Security Model,1576,True,2026-07-14,native-md,current,0,True,research-report,,topic-overlap:security
+docs/enterprise-ai-report/part-14-observability.md,enterprise-ai-report,Part 14 — AI Observability,1491,True,2026-07-14,native-md,current,0,True,research-report,,topic-overlap:observability
+docs/enterprise-ai-report/part-15-enterprise-architecture.md,enterprise-ai-report,Part 15 — Enterprise Architecture Mapping,1242,True,2026-07-14,native-md,current,0,True,research-report,,
+docs/enterprise-ai-report/part-16-financial-model.md,enterprise-ai-report,Part 16 — AI Financial Operating Model,1321,True,2026-07-14,native-md,current,0,True,research-report,,
+docs/enterprise-ai-report/part-17-transformation-roadmap.md,enterprise-ai-report,Part 17 — AI Transformation Roadmap & Maturity Model,1437,True,2026-07-14,native-md,current,0,False,research-report,,
+docs/enterprise-ai-report/part-18-case-studies.md,enterprise-ai-report,Part 18 — Industry Case Studies & Vendor Perspectives,1341,True,2026-07-14,native-md,current,0,False,research-report,,
+docs/enterprise-ai-report/part-19-deliverables.md,enterprise-ai-report,"Part 19 — Deliverables, Templates & Artifacts",1619,True,2026-07-14,native-md,current,0,False,research-report,,
+docs/enterprise-ai-report/part-20-greenfield-vs-brownfield.md,enterprise-ai-report,Part 20 — Greenfield vs Brownfield AI Transformation,1917,True,2026-07-14,native-md,current,0,True,research-report,,
+docs/enterprise-ai-report/part-21-agentic-process-blueprint.md,enterprise-ai-report,Part 21 — Agentic Process Blueprint: Reimagining Enterprise Processes,2703,True,2026-07-14,native-md,current,0,True,research-report,,
+docs/enterprise-architecture/ai-architecture/AI-FinOps-Cost-Management-Guide.md,enterprise-architecture,AI FinOps — Cost Management and Token Economics for Enterprise AI,2268,True,2026-07-14,native-md,current,0,False,guide,,topic-overlap:finops
+docs/enterprise-architecture/ai-architecture/AI-Value-Stream-Mapping.md,enterprise-architecture,AI Value Stream Mapping — Lean Delivery for Enterprise AI Programs,1371,True,2026-07-14,native-md,current,0,False,guide,,
+docs/enterprise-architecture/ai-architecture/ART-Framework-Agentic-AI-Execution.md,enterprise-architecture,A.R.T. — Agility · Risk · Tenacity: Enterprise Execution Framework for Agentic AI,5906,True,2026-07-14,native-md,current,0,False,guide,,
+docs/enterprise-architecture/ai-architecture/AgentOps-Production-Guide.md,enterprise-architecture,AgentOps — Operational Discipline for Production AI Agents,1423,True,2026-07-14,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/a2a-enterprise-security-governance-guide.md,enterprise-architecture,"Enterprise-Scale A2A Ecosystem: Security, Governance & Architecture Guide",11939,True,2026-07-11,native-md,current,0,True,guide,,topic-overlap:security
+docs/enterprise-architecture/ai-architecture/agent-as-tool-composition.md,enterprise-architecture,Agent-as-Tool Composition Patterns,2206,True,2026-07-14,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/agent-communication-identity-gateway.md,enterprise-architecture,"Agent Communication, Identity, Authorization & AI Gateway",2684,True,2026-07-10,native-md,current,0,False,guide,,
+docs/enterprise-architecture/ai-architecture/agent-interoperability-orchestration.md,enterprise-architecture,Enterprise Agent Interoperability & Orchestration Governance,2325,True,2026-07-10,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/agent-memory-planning-architecture.md,enterprise-architecture,Agent Memory & Planning Architecture,1996,True,2026-07-10,native-md,current,0,False,guide,,topic-overlap:memory
+docs/enterprise-architecture/ai-architecture/agent-reliability-engineering.md,enterprise-architecture,Agent Reliability Engineering (ARE),4320,True,2026-07-10,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/agentic-ai-reliability-observability-governance.md,enterprise-architecture,"Agentic AI Reliability, Observability & Governance Lifecycle",5396,True,2026-07-10,native-md,current,0,False,guide,,topic-overlap:observability
+docs/enterprise-architecture/ai-architecture/agentic-ai-security-guardrails.md,enterprise-architecture,Agentic AI Security Architecture & Multi-Layer Guardrails,4194,True,2026-07-10,native-md,current,0,False,guide,,topic-overlap:security
+docs/enterprise-architecture/ai-architecture/agentic-ai-security-identity.md,enterprise-architecture,Agentic AI Security & Agent Identity,2746,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:security
+docs/enterprise-architecture/ai-architecture/ai-finops-budget-governance.md,enterprise-architecture,"AI FinOps — Budget Governance, Quotas & Cost Guardrails",2384,True,2026-07-14,native-md,current,0,True,guide,,topic-overlap:finops
+docs/enterprise-architecture/ai-architecture/ai-finops-capacity-forecasting.md,enterprise-architecture,AI FinOps — Capacity Planning & Cost Forecasting,2800,True,2026-07-14,native-md,current,0,False,guide,,topic-overlap:finops
+docs/enterprise-architecture/ai-architecture/ai-finops-chargeback-attribution.md,enterprise-architecture,"AI FinOps — Cost Attribution, Chargeback & Showback",1945,True,2026-07-14,native-md,current,0,True,guide,,topic-overlap:finops
+docs/enterprise-architecture/ai-architecture/ai-finops-infrastructure-optimization.md,enterprise-architecture,"AI FinOps — Infrastructure Cost Optimization (GPU, Kubernetes, Serverless)",2179,True,2026-07-14,native-md,current,0,False,guide,,topic-overlap:finops
+docs/enterprise-architecture/ai-architecture/ai-finops-maturity-model.md,enterprise-architecture,AI FinOps Maturity Model,2443,True,2026-07-14,native-md,current,0,True,guide,,topic-overlap:finops
+docs/enterprise-architecture/ai-architecture/ai-finops-multi-agent-cost-propagation.md,enterprise-architecture,Multi-Agent Cost Propagation — How Costs Accumulate Across Distributed AI Workflows,2456,True,2026-07-14,native-md,current,0,True,guide,,topic-overlap:finops
+docs/enterprise-architecture/ai-architecture/ai-finops-rag-mcp-a2a-economics.md,enterprise-architecture,"AI FinOps — RAG, MCP & A2A Economics",2838,True,2026-07-14,native-md,current,0,True,guide,,topic-overlap:finops;topic-overlap:mcp
+docs/enterprise-architecture/ai-architecture/ai-finops-unit-economics-kpis.md,enterprise-architecture,"AI FinOps — Unit Economics, KPI Framework & Executive Dashboard",2222,True,2026-07-14,native-md,current,0,True,guide,,topic-overlap:finops
+docs/enterprise-architecture/ai-architecture/ai-harness-architecture-orchestration.md,enterprise-architecture,AI Harness Architecture & Multi-Agent Orchestration,4225,True,2026-07-10,native-md,current,0,False,guide,,
+docs/enterprise-architecture/ai-architecture/drift-detection-guide.md,enterprise-architecture,Drift Detection for Multi-Agent AI Systems,2905,True,2026-07-14,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/end-to-end-traceability-guide.md,enterprise-architecture,End-to-End Traceability for Multi-Agent Systems,2700,True,2026-07-14,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/enterprise-agent-reference-architectures.md,enterprise-architecture,"Enterprise Agent Reference Architectures, Platform Engineering & Checklists",2803,True,2026-07-10,native-md,current,0,True,reference-architecture,,
+docs/enterprise-architecture/ai-architecture/enterprise-ai-architect-foundations.md,enterprise-architecture,Enterprise AI Architect — Foundations,7838,True,2026-07-10,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/enterprise-ai-architecture-patterns.md,enterprise-architecture,Enterprise AI Architecture Patterns,5831,True,2026-07-10,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/enterprise-ai-comparative-matrices-2026.md,enterprise-architecture,Enterprise AI Comparative Matrices & Decision Tools 2026,2352,True,2026-07-12,native-md,current,1,True,guide,,
+docs/enterprise-architecture/ai-architecture/enterprise-ai-governance-compliance.md,enterprise-architecture,Enterprise AI Governance & Compliance,8805,True,2026-07-10,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/enterprise-ai-skills-assessment.md,enterprise-architecture,Enterprise AI Architect — Skills Assessment,9102,True,2026-07-10,native-md,current,0,False,guide,,
+docs/enterprise-architecture/ai-architecture/enterprise-aiops-guide.md,enterprise-architecture,Enterprise AIOps Guide — AI-Driven IT Operations,9682,True,2026-07-10,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/enterprise-multi-model-ai-strategy.md,enterprise-architecture,Enterprise Multi-Model AI Strategy — Vendor-Agnostic Guide,12480,True,2026-07-10,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/governance-propagation-chain.md,enterprise-architecture,Governance Propagation Chain,2882,True,2026-07-14,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/index.md,enterprise-architecture,Enterprise AI Architect,1297,True,2026-07-10,native-md,current,0,False,hub,,
+docs/enterprise-architecture/ai-architecture/kill-switch-architecture.md,enterprise-architecture,Kill Switch Architecture for Multi-Agent AI Systems,2848,True,2026-07-14,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/machine-readable-ea.md,enterprise-architecture,Machine-Readable Enterprise Architecture for the Agentic Era,2245,True,2026-07-10,native-md,current,0,True,guide,,
+docs/enterprise-architecture/ai-architecture/mcp-a2a-protocol-deep-dive.md,enterprise-architecture,MCP & A2A Protocol Deep Dive (2026),2561,True,2026-07-10,native-md,current,0,False,guide,,topic-overlap:mcp
+docs/enterprise-architecture/ai-architecture/multi-agent-topology-patterns.md,enterprise-architecture,Multi-Agent Topology Patterns,4184,True,2026-07-14,native-md,current,0,True,guide,,
+docs/enterprise-architecture/architectural-review-board/Volume10_Collaborative_Use_Case_Transcripts.md,enterprise-architecture,Collaborative Use Case Transcripts,7454,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/architectural-review-board/Volume1_Governance_Ecosystem_Operating_Models.md,enterprise-architecture,Enterprise Governance Ecosystem & Operating Models,4306,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/architectural-review-board/Volume2_Economics_Decision_Science.md,enterprise-architecture,Architecture Economics & Decision Science,3332,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/architectural-review-board/Volume3_Knowledge_Management_Capability_Mapping.md,enterprise-architecture,Architecture Knowledge Management & Capability Mapping,2119,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/architectural-review-board/Volume4_Artifact_Catalog_Quality_Attributes.md,enterprise-architecture,Artifact Catalog & Quality Attributes,1922,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/architectural-review-board/Volume5_Review_Questions_Scorecards.md,enterprise-architecture,Enterprise Review Questions & Scorecards,3196,True,2026-07-10,converted-pdf,current,0,False,career,,
+docs/enterprise-architecture/architectural-review-board/Volume6_Banking_Industry_DeepDive.md,enterprise-architecture,Banking — The Primary Lens,1465,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/architectural-review-board/Volume7_AI_Native_ARB_Case_Studies.md,enterprise-architecture,AI-Native ARB & Enterprise Case Studies,2607,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/architectural-review-board/Volume8_Implementation_Accelerator_Kit.md,enterprise-architecture,Part A — Foundational Templates,1521,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/architectural-review-board/Volume9_Enterprise_Reference_Repository.md,enterprise-architecture,Part A — Reference Architectures & Architecture Patterns,3618,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/architectural-review-board/index.md,enterprise-architecture,Architectural Review Board (ARB),1507,True,2026-07-10,native-md,current,0,False,hub,,
+docs/enterprise-architecture/best-practices/EA_BestPractices_Jargon.md,enterprise-architecture,BEST PRACTICES & JARGON GUIDE,3061,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/best-practices/EA_Glossary_CheatSheet.md,enterprise-architecture,ENTERPRISE ARCHITECTURE Glossary & Cheat Sheet,4159,True,2026-07-10,converted-pdf,current,0,False,checklist,,topic-overlap:glossaries
+docs/enterprise-architecture/best-practices/index.md,enterprise-architecture,EA Best Practices,37,True,2026-07-10,native-md,current,0,False,hub,,
+docs/enterprise-architecture/framework/EA_Soft_Skills_Interview_Master_Guide.md,enterprise-architecture,EA Soft Skills Interview Master Guide,7692,True,2026-07-10,converted-pdf,current,0,False,career,,topic-overlap:interview-content
+docs/enterprise-architecture/framework/Executive_Communication_Framework_Guide.md,enterprise-architecture,COMMUNICATION FRAMEWORKS  MASTER GUIDE,5486,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/index.md,enterprise-architecture,Enterprise Architecture,206,True,2026-07-10,native-md,current,0,False,hub,,
+docs/enterprise-architecture/process/EA_Mastery_Guide.md,enterprise-architecture,MASTERY GUIDE,6699,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/process/EA_Real_Life_Transcript.md,enterprise-architecture,ENTERPRISE ARCHITECT,7189,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/process/Enterprise_AI_Architect_Bible_2026.md,enterprise-architecture,ENTERPRISE AI ARCHITECT BIBLE,9731,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/process/Enterprise_AI_Architect_Deep_Dive_Guide.md,enterprise-architecture,Communication Mastery,441,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:ea-deep-dive
+docs/enterprise-architecture/process/Enterprise_AI_Architect_Deep_Dive_Guide_Part1_Foundation.md,enterprise-architecture,Part 1 — Foundation,2620,True,2026-07-17,converted-pdf,current,0,True,research-report,,known-dup:ea-deep-dive
+docs/enterprise-architecture/process/Enterprise_AI_Architect_Deep_Dive_Guide_Part2_Five_Arenas.md,enterprise-architecture,Part 2 — The Five Arenas,6493,True,2026-07-17,converted-pdf,current,0,False,research-report,,known-dup:ea-deep-dive
+docs/enterprise-architecture/process/Enterprise_AI_Architect_Deep_Dive_Guide_Part3_Toolkit_Practice.md,enterprise-architecture,Part 3 — Toolkit & Practice,3296,True,2026-07-17,converted-pdf,current,0,True,research-report,,known-dup:ea-deep-dive
+docs/enterprise-architecture/process/Enterprise_AI_Architect_Deep_Dive_Guide_Part4_Measurement_Growth.md,enterprise-architecture,Part 4 — Measurement & Growth,2560,True,2026-07-17,converted-pdf,current,0,False,research-report,,known-dup:ea-deep-dive
+docs/enterprise-architecture/process/Enterprise_Agentic_AI_Architecture_Playbook_2026.md,enterprise-architecture,Enterprise Agentic AI Architecture Research Initiative,4583,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/process/ai-solution-lifecycle-deliverables.md,enterprise-architecture,AI Solution Lifecycle Deliverables,4092,True,2026-07-10,native-md,current,0,True,guide,,
+docs/enterprise-architecture/process/enterprise-technology-selection-framework.md,enterprise-architecture,Enterprise Technology Selection & Decision Framework,10077,True,2026-07-10,native-md,current,0,True,guide,,
+docs/enterprise-architecture/process/index.md,enterprise-architecture,EA Processes & Lifecycle,94,True,2026-07-10,native-md,current,0,False,hub,,
+docs/enterprise-architecture/specialization/AI_Invoice_Auditor_Architecture_v5.md,enterprise-architecture,1. What Changed in v5.0 — Executive Summary,6788,True,2026-07-10,converted-pdf,current,0,True,guide,,
+docs/enterprise-architecture/specialization/AI_Transformation_Consultant_Toolkit_2026.md,enterprise-architecture,AI Transformation,9242,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/specialization/AKES_Addendum_Document_Update_and_Versioning.md,enterprise-architecture,AKES Addendum: Document Update & Versioning,3690,True,2026-07-17,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/specialization/APEX_EA_Final.md,enterprise-architecture,APEX: AI Platform of Platforms,1038,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:apex-ea
+docs/enterprise-architecture/specialization/APEX_EA_Final_Part1_Team_Structure_RACI.md,enterprise-architecture,"APEX EA Part 1: Team Structure, RACI & Operating Model",3399,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:apex-ea
+docs/enterprise-architecture/specialization/APEX_EA_Final_Part2_AI_DLC_Methodology_Foundation_Architecture.md,enterprise-architecture,APEX EA Part 2: AI-DLC Methodology & Foundation Architecture,3455,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:apex-ea
+docs/enterprise-architecture/specialization/APEX_EA_Final_Part3_Information_Systems_Technology_Architecture.md,enterprise-architecture,APEX EA Part 3: Information Systems & Technology Architecture,1897,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:apex-ea
+docs/enterprise-architecture/specialization/APEX_EA_Final_Part4_Delivery_Governance_Reference.md,enterprise-architecture,"APEX EA Part 4: Delivery, Governance & Reference",3485,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:apex-ea
+docs/enterprise-architecture/specialization/DPDP_Act_2023_Comprehensive_Guide.md,enterprise-architecture,DPDP Act 2023 & DPDP Rules 2025 — Comprehensive Guide,5061,True,2026-07-17,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/specialization/DSA_Principal_Architect_Reference.md,enterprise-architecture,Principal Architect DSA Deep-Reference,4594,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/specialization/EAKA_Research_Study.md,enterprise-architecture,Enterprise Agent Knowledge Architecture (EAKA) Research Study,4682,True,2026-07-17,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/specialization/EA_Business_Communication_Executive_Skills.md,enterprise-architecture,Business Communication & Executive Skills,6431,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/specialization/EA_OKR_KPI_Research.md,enterprise-architecture,OKR & KPI VALUE FRAMEWORK,2419,True,2026-07-10,converted-pdf,current,0,False,research-report,,
+docs/enterprise-architecture/specialization/Enterprise_Data_Architect_AI_GenAI.md,enterprise-architecture,ENTERPRISE DATA ARCHITECT IN THE AGE OF AI & GenAI,3311,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/specialization/Enterprise_Manager_AI_GenAI.md,enterprise-architecture,ENTERPRISE MANAGER IN THE AGE OF AI & GenAI,4127,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/specialization/Principal_Enterprise_AI_Guide_Educative.md,enterprise-architecture,Principal Enterprise AI Architect,6659,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/specialization/RFI_AI_Platform_Transcript.md,enterprise-architecture,REQUEST FOR INFORMATION,8658,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/specialization/index.md,enterprise-architecture,EA Specializations,133,True,2026-07-10,native-md,current,0,False,hub,,
+docs/enterprise-architecture/specialization/modern-data-ai-platform-blueprint-2026.md,enterprise-architecture,Modern Data & AI Platform Blueprint 2026,4785,True,2026-07-17,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/strategy/EA_AI_First_Transformation_Transcript.md,enterprise-architecture,EA AI-First Transformation — A Real-Life Transcript,9856,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/strategy/EA_Strategy_Playbook.md,enterprise-architecture,STRATEGY PLAYBOOK,3170,True,2026-07-17,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/strategy/Enterprise_AI_Strategic_Brief_2026.md,enterprise-architecture,Enterprise AI Strategic Brief 2026,3319,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/strategy/Enterprise_AI_Transformation_Blueprint_CTO_Guide_2026.md,enterprise-architecture,Enterprise AI Transformation Blueprint,5024,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/strategy/index.md,enterprise-architecture,EA Strategy,62,True,2026-07-10,native-md,current,0,False,hub,,
+docs/enterprise-architecture/transformation/00_Executive_Summary_and_AI_Vision.md,enterprise-architecture,Executive Summary & AI Vision,1068,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/transformation/01_Current_State_Assessment_and_AI_Maturity.md,enterprise-architecture,Current-State Assessment & AI Maturity,881,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/transformation/02_AI_Opportunity_Portfolio.md,enterprise-architecture,AI Opportunity Portfolio & Prioritization,968,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/transformation/03_Enterprise_AI_Platform_and_Data_Architecture.md,enterprise-architecture,"Enterprise AI Platform, Data & Agentic Architecture",1047,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/transformation/04_Governance_Responsible_AI_and_Security.md,enterprise-architecture,"Governance, Responsible AI & Security Architecture",1007,True,2026-07-10,converted-pdf,current,0,False,guide,,topic-overlap:security
+docs/enterprise-architecture/transformation/05_Target_Operating_Model_and_Change.md,enterprise-architecture,"Target Operating Model, Organization & Change",847,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/transformation/06_Roadmap_Financials_KPIs_and_Risk.md,enterprise-architecture,"Roadmap, Financial Model, KPIs & Risk Register",1110,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/enterprise-architecture/transformation/ai-first-to-ai-native.md,enterprise-architecture,AI-First to AI-Native Journey,3358,True,2026-07-10,native-md,current,0,True,guide,,
+docs/enterprise-architecture/transformation/index.md,enterprise-architecture,AI-First Enterprise,606,True,2026-07-10,native-md,current,0,False,hub,,
+docs/enterprise-strategy/index.md,enterprise-strategy,Enterprise Strategy & Business Architecture Handbook,525,True,2026-07-15,native-md,current,0,True,hub,,
+docs/enterprise-strategy/vol1-corporate-strategy.md,enterprise-strategy,Vol 1 — Corporate Strategy: The Complete Enterprise Handbook,6356,True,2026-07-15,native-md,current,0,True,guide,,
+docs/enterprise-strategy/vol10-relationship-maps-glossary.md,enterprise-strategy,"Vol 10 — Relationship Maps, Comparisons & Enterprise Glossary",7724,True,2026-07-16,native-md,current,0,True,guide,,topic-overlap:glossaries
+docs/enterprise-strategy/vol2-business-architecture-operating-model.md,enterprise-strategy,Vol 2 — Business Architecture & Operating Models,6076,True,2026-07-15,native-md,current,0,True,guide,,
+docs/enterprise-strategy/vol3-portfolio-governance.md,enterprise-strategy,Vol 3 — Portfolio Management & Enterprise Governance,3950,True,2026-07-15,native-md,current,0,True,guide,,
+docs/enterprise-strategy/vol4-consulting-frameworks-industry.md,enterprise-strategy,Vol 4 — Consulting Frameworks & Industry Strategy Playbook,5170,True,2026-07-15,native-md,current,0,True,guide,,
+docs/enterprise-strategy/vol5-ai-strategy-transformation-glossary.md,enterprise-strategy,"Vol 5 — AI Strategy, Enterprise Transformation & Master Glossary",5696,True,2026-07-15,native-md,current,0,True,guide,,topic-overlap:glossaries
+docs/enterprise-strategy/vol6-organization-structure-operating-model.md,enterprise-strategy,Vol 6 — Organization Structure & Operating Model Design,6161,True,2026-07-16,native-md,current,0,True,guide,,
+docs/enterprise-strategy/vol7-enterprise-building-blocks.md,enterprise-strategy,Vol 7 — Enterprise Building Blocks Architecture,5705,True,2026-07-16,native-md,current,0,True,guide,,
+docs/enterprise-strategy/vol8-portfolio-consulting-frameworks.md,enterprise-strategy,Vol 8 — Portfolio Management & Consulting Frameworks,6088,True,2026-07-16,native-md,current,0,True,guide,,
+docs/enterprise-strategy/vol9-industry-deep-dives.md,enterprise-strategy,Vol 9 — Industry Strategy & Operating Model Deep Dives,4930,True,2026-07-16,native-md,current,0,False,research-report,,
+docs/index.md,root,Home,489,True,2026-07-10,native-md,current,0,False,hub,,
+docs/interview-prep/AI_Agent_Systems_Interview_Guide.md,interview-prep,AI Agent Systems Senior Engineer Interview Preparation Guide,8866,True,2026-07-10,converted-pdf,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/AI_Engineer_Question_Bank.md,interview-prep,AI Engineer Interview Question Bank,3344,True,2026-07-10,converted-pdf,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/Agentic_AI_Platforms_Questionnaire_2025.md,interview-prep,Agentic AI & Platforms Enterprise Questionnaire,9434,True,2026-07-10,converted-pdf,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/EA_HITL_HOTL_HOOL_Interview_Questions.md,interview-prep,EA HITL / HOTL / HOOL Interview Questions,15614,True,2026-07-10,native-md,current,0,True,career,,topic-overlap:interview-content
+docs/interview-prep/EA_Quality_Resilience_Testing_Interview_Questions.md,interview-prep,"EA Quality, Resilience & Testing Interview Questions",16282,True,2026-07-10,native-md,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/EA_Senior_Interview_Questions.md,interview-prep,EA Senior Interview Questions,9652,True,2026-07-10,native-md,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/EA_Soft_Skills_and_Behaviors.md,interview-prep,EA Soft Skills and Behaviors,9756,True,2026-07-10,native-md,current,0,True,career,,topic-overlap:interview-content
+docs/interview-prep/EY_AI_Architect_Interview_Guide_1.md,interview-prep,EY AI Architect & Consultant — Interview & ECC AI-First Guide,5246,True,2026-07-10,converted-pdf,current,0,True,career,,topic-overlap:interview-content
+docs/interview-prep/Enterprise_Architect_in_the_Age_of_AI.md,interview-prep,Enterprise Architect in the Age of AI,4848,True,2026-07-10,native-md,current,0,True,career,,topic-overlap:interview-content
+docs/interview-prep/Enterprise_GenAI_Architect_Interview_Guide.md,interview-prep,ENTERPRISE GenAI / AI ARCHITECT,4149,True,2026-07-10,converted-pdf,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/Hard_Scenarios_Interview_Prep.md,interview-prep,Hard Scenarios Interview Prep,6861,True,2026-07-10,converted-pdf,current,0,True,career,,topic-overlap:interview-content
+docs/interview-prep/ML_AI_Interview_Mastery_Guide.md,interview-prep,How to Use This Guide,7586,True,2026-07-10,converted-pdf,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/Multimodal_AI_EA_Scenarios.md,interview-prep,Multimodal AI — Enterprise Architect Complex Scenario Bank,6891,True,2026-07-16,native-md,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/ea/EA_Interview_Handbook.md,interview-prep,Enterprise Architecture Interview Handbook,11546,True,2026-07-10,converted-pdf,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/ea/EA_Interview_Handbook_DELTA.md,interview-prep,EA Interview Handbook — 2026 Delta Update,9394,True,2026-07-10,converted-pdf,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/ea/EA_Interview_Master_Guide.md,interview-prep,Enterprise Architect Interview Master Guide,9835,True,2026-07-13,converted-pdf,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/ea/EA_Interview_Vol3_CTO_AI.md,interview-prep,ENTERPRISE ARCHITECTURE,27096,True,2026-07-10,converted-pdf,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/ea/index.md,interview-prep,EA Interview Preparation,57,True,2026-07-10,native-md,current,0,False,hub,,topic-overlap:interview-content
+docs/interview-prep/ea-ai-artifacts-and-metrics.md,interview-prep,EA Artifacts & Metrics — Real-World Examples,7180,True,2026-07-10,native-md,current,0,True,career,,topic-overlap:interview-content
+docs/interview-prep/fde/architect-in-fde-context.md,interview-prep,Architect Expectations in an FDE Context,1879,True,2026-07-13,native-md,current,0,True,guide,,topic-overlap:interview-content
+docs/interview-prep/fde/fde-life-transcript.md,interview-prep,FDE Life Transcript — FinClear AI Deployment (Complete),7317,True,2026-07-13,native-md,current,0,True,career,,topic-overlap:interview-content
+docs/interview-prep/fde/fde-role-skills-map.md,interview-prep,FDE Role Skills & Study Map,3922,True,2026-07-13,native-md,current,0,False,career,,topic-overlap:interview-content
+docs/interview-prep/fde/index.md,interview-prep,Forward Deployed Engineer (FDE),426,True,2026-07-13,native-md,current,0,False,hub,,topic-overlap:interview-content
+docs/interview-prep/index.md,interview-prep,Interviews,122,True,2026-07-10,native-md,current,0,False,hub,,topic-overlap:interview-content
+docs/knowledge-engineering/data/Data_Architecture_for_AI_Report.md,knowledge-engineering,Data Architecture for AI,8423,True,2026-07-10,converted-pdf,current,0,False,research-report,,
+docs/knowledge-engineering/data/End_to_End_Lineage_Systems_Report.md,knowledge-engineering,End-to-End Lineage for AI-Era Data Systems,11775,True,2026-07-10,converted-pdf,current,0,False,research-report,,
+docs/knowledge-engineering/data/Enterprise_Data_Systems_AI_Governance_Report.md,knowledge-engineering,"Enterprise Data Systems, Streaming & AI Governance",15096,True,2026-07-10,converted-pdf,current,0,False,research-report,,
+docs/knowledge-engineering/data/index.md,knowledge-engineering,Data Architecture,88,True,2026-07-10,native-md,current,0,False,hub,,
+docs/knowledge-engineering/index.md,knowledge-engineering,Knowledge Engineering,112,True,2026-07-10,native-md,current,0,False,hub,,
+docs/knowledge-engineering/industry-practices/consulting-firms-genai-strategy.md,knowledge-engineering,Consulting & Services Firms: GenAI Strategy Landscape,4408,True,2026-07-13,native-md,current,0,False,guide,,
+docs/knowledge-engineering/industry-practices/consulting-firms.md,knowledge-engineering,Consulting Firm AI Platforms,964,True,2026-07-10,native-md,current,0,False,guide,,
+docs/knowledge-engineering/industry-practices/evaluation.md,knowledge-engineering,Evaluation & Quality Gates,859,True,2026-07-10,native-md,current,0,False,guide,,
+docs/knowledge-engineering/industry-practices/governance-rai.md,knowledge-engineering,Governance & Responsible AI,1113,True,2026-07-10,native-md,current,0,False,guide,,
+docs/knowledge-engineering/industry-practices/grounding.md,knowledge-engineering,Grounding Architectures,779,True,2026-07-10,native-md,current,0,True,guide,,
+docs/knowledge-engineering/industry-practices/index.md,knowledge-engineering,Industry Knowledge Systems,530,True,2026-07-10,native-md,current,0,True,hub,,
+docs/knowledge-engineering/industry-practices/tech-companies.md,knowledge-engineering,How Tech Companies Serve Knowledge,1061,True,2026-07-10,native-md,current,0,False,guide,,
+docs/knowledge-engineering/knowledge/Autonomous_Knowledge_Engineering_System.md,knowledge-engineering,Autonomous Knowledge Engineering System,6094,True,2026-07-10,converted-pdf,current,0,False,guide,,
+docs/knowledge-engineering/knowledge/Complex_RAG_Deep_Dive.md,knowledge-engineering,Complex RAG Systems: Deep Technical Guide,6304,True,2026-07-10,converted-pdf,current,0,True,guide,,
+docs/knowledge-engineering/knowledge/Enterprise_Knowledge_Architectures_Report.md,knowledge-engineering,"Knowledge Graphs, Ontologies & GraphRAG",11426,True,2026-07-10,converted-pdf,current,0,False,research-report,,
+docs/knowledge-engineering/knowledge/index.md,knowledge-engineering,Knowledge Engineering,42,True,2026-07-10,native-md,current,0,False,hub,,
+docs/multimodal-ai/index.md,multimodal-ai,Multimodal AI for Agentic Systems — Enterprise Architecture & Implementation Handbook,1370,True,2026-07-16,native-md,current,0,False,hub,,
+docs/multimodal-ai/part-01-foundations.md,multimodal-ai,Part 1 — Foundations of Multimodal AI,3733,True,2026-07-16,native-md,current,1,False,guide,,
+docs/multimodal-ai/part-02-enterprise-architecture.md,multimodal-ai,Part 2 — Enterprise Multimodal Agent Architecture,4097,True,2026-07-16,native-md,current,2,False,guide,,
+docs/multimodal-ai/part-03-modalities-image-document.md,multimodal-ai,Part 3 — Image & Document Intelligence,4170,True,2026-07-16,native-md,current,1,False,guide,,
+docs/multimodal-ai/part-04-modalities-video-audio.md,multimodal-ai,Part 04 — Video & Audio Intelligence,2957,True,2026-07-16,native-md,current,2,False,guide,,
+docs/multimodal-ai/part-05-multimodal-rag.md,multimodal-ai,Part 05 — Multimodal RAG,3894,True,2026-07-16,native-md,current,2,False,guide,,
+docs/multimodal-ai/part-06-agentic-workflows.md,multimodal-ai,Part 06 — Multimodal Agentic Workflows,3932,True,2026-07-16,native-md,current,2,False,guide,,
+docs/multimodal-ai/part-07-security-threats.md,multimodal-ai,Part 07 — Security & Threat Taxonomy for Multimodal AI,4098,True,2026-07-16,native-md,current,1,False,guide,,topic-overlap:security
+docs/multimodal-ai/part-08-guardrails-sanitization.md,multimodal-ai,Part 8 — Guardrails & Sanitization for Multimodal AI,4356,True,2026-07-16,native-md,current,2,False,guide,,
+docs/multimodal-ai/part-09-compliance-responsible-ai.md,multimodal-ai,Part 9 — Compliance & Responsible AI for Multimodal Systems,5753,True,2026-07-16,native-md,current,1,False,guide,,
+docs/multimodal-ai/part-10-evaluation-benchmarks.md,multimodal-ai,Part 10 — Evaluation & Benchmarks for Multimodal AI,5432,True,2026-07-16,native-md,current,1,False,guide,,
+docs/multimodal-ai/part-11-evaluation-harnesses-cicd.md,multimodal-ai,Part 11 — Evaluation Harnesses & CI/CD for Multimodal AI,5842,True,2026-07-16,native-md,current,1,False,guide,,
+docs/multimodal-ai/part-12-observability-finops.md,multimodal-ai,Part 12 — Observability & FinOps for Multimodal AI,4667,True,2026-07-16,native-md,current,2,False,guide,,topic-overlap:finops;topic-overlap:observability
+docs/multimodal-ai/part-13-governance-production.md,multimodal-ai,Part 13 — Enterprise Governance & Production Engineering for Multimodal AI,5949,True,2026-07-16,native-md,current,2,False,guide,,
+docs/multimodal-ai/part-14-cloud-platform-comparison.md,multimodal-ai,Part 14 — Cloud Platform Comparison for Multimodal AI,4226,True,2026-07-16,native-md,current,1,False,guide,,
+docs/multimodal-ai/part-15-emerging-trends-bibliography.md,multimodal-ai,Part 15 — Emerging Trends & Bibliography for Multimodal AI,5140,True,2026-07-16,native-md,current,1,False,guide,,
+docs/nist-ai-standards/index.md,nist-ai-standards,NIST AI Standards & CAISI — Enterprise Security Guide,791,True,2026-07-16,pdf-converted,current,0,True,hub,,
+docs/nist-ai-standards/part-01-nist-ai-100-2-adversarial-ml.md,nist-ai-standards,NIST AI 100-2 — Adversarial Machine Learning,2558,True,2026-07-16,pdf-converted,current,0,False,guide,,
+docs/nist-ai-standards/part-02-nist-ai-100-4-synthetic-content.md,nist-ai-standards,NIST AI 100-4 — Synthetic Content Detection & Provenance,2193,True,2026-07-16,pdf-converted,current,0,True,guide,,
+docs/nist-ai-standards/part-03-caisi-agentic-ai.md,nist-ai-standards,CAISI Agentic AI Security Guidance,2300,True,2026-07-16,pdf-converted,current,0,True,guide,,
+docs/nist-ai-standards/part-04-enterprise-architecture.md,nist-ai-standards,NIST AI Standards — Enterprise Architecture Patterns,1777,True,2026-07-16,pdf-converted,current,0,True,guide,,
+docs/nist-ai-standards/part-05-control-mappings.md,nist-ai-standards,NIST AI Standards — Cross-Framework Control Mappings,1712,True,2026-07-16,pdf-converted,current,0,False,guide,,
+docs/nist-ai-standards/part-06-implementation-checklist.md,nist-ai-standards,NIST AI Standards — Implementation Checklist,1559,True,2026-07-16,pdf-converted,current,0,True,guide,,
+docs/nist-ai-standards/part-07-future-trends.md,nist-ai-standards,NIST AI Standards — Future Trends & Emerging Threats,1743,True,2026-07-16,pdf-converted,current,0,False,guide,,
+docs/quantum/IBM_Associate_Quantum_CertGuide.md,quantum,IBM Certified Associate Developer — Quantum Computation Study Guide,4520,True,2026-07-18,native-md,current,0,False,checklist,,
+docs/quantum/IBM_Developer_Quantum_CertGuide.md,quantum,IBM Certified Developer — Quantum Computation Study Guide,4541,True,2026-07-18,native-md,current,0,False,checklist,,
+docs/quantum/Quantum_AI_Consultancies_Report.md,quantum,Quantum AI Consulting Landscape,5655,True,2026-07-18,native-md,current,0,False,research-report,,
+docs/quantum/Quantum_AI_Startups_Report.md,quantum,Quantum AI Startup Landscape,7918,True,2026-07-18,native-md,current,0,False,research-report,,
+docs/quantum/Quantum_AI_Zero_to_Mastery.md,quantum,Quantum AI — Zero to Mastery (Original PDF),78,True,2026-07-14,converted-pdf,superseded,0,False,guide,,known-dup:quantum-zero-to-mastery
+docs/quantum/index.md,quantum,Quantum AI,458,True,2026-07-18,native-md,current,0,False,hub,,
+docs/quantum/zero-to-mastery-part1-foundations.md,quantum,Quantum AI: Zero to Mastery — Part 1: Foundations,3098,True,2026-07-17,native-md,current,0,False,guide,,known-dup:quantum-zero-to-mastery
+docs/quantum/zero-to-mastery-part2-quantum-ai.md,quantum,Quantum AI: Zero to Mastery — Part 2: Quantum AI,1235,True,2026-07-17,native-md,current,1,False,guide,,known-dup:quantum-zero-to-mastery
+docs/quantum/zero-to-mastery-part3-architecture.md,quantum,Quantum AI: Zero to Mastery — Part 3: Mastery & Architecture,1556,True,2026-07-17,native-md,current,2,False,guide,,known-dup:quantum-zero-to-mastery
+docs/quantum/zero-to-mastery-part4-appendices.md,quantum,Quantum AI: Zero to Mastery — Part 4: Appendices & Industry Landscape,3695,True,2026-07-17,native-md,current,4,False,guide,,known-dup:quantum-zero-to-mastery
+docs/quantum/zero-to-mastery.md,quantum,Quantum AI — Zero to Mastery,778,True,2026-07-17,native-md,current,1,False,guide,,known-dup:quantum-zero-to-mastery
+docs/soft-skills/CTO_Voice_Mastery_Program.md,soft-skills,CTO Voice Mastery Program,21136,True,2026-07-14,converted-pdf,current,0,False,guide,,
+docs/soft-skills/Creative_Thinking_Skills.md,soft-skills,Creative Thinking Skills for Technical Leaders,2225,True,2026-07-14,native-md,current,0,True,guide,,
+docs/soft-skills/Mental_Model_Encyclopedia.md,soft-skills,The Mental Model Encyclopedia,440,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:mental-models-encyclopedia
+docs/soft-skills/Mental_Model_Encyclopedia_Part1_Executive_Cognition.md,soft-skills,The Mental Model Encyclopedia — Part 1: Executive Cognition Frameworks,4491,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:mental-models-encyclopedia
+docs/soft-skills/Mental_Model_Encyclopedia_Part2_Systems_Thinking.md,soft-skills,The Mental Model Encyclopedia — Part 2: Systems Thinking Frameworks,4073,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:mental-models-encyclopedia
+docs/soft-skills/Mental_Model_Encyclopedia_Part3_Strategic_Analysis.md,soft-skills,The Mental Model Encyclopedia — Part 3: Strategic Analysis Frameworks,5316,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:mental-models-encyclopedia
+docs/soft-skills/Mental_Model_Encyclopedia_Part4_Counterfactual_Thinking.md,soft-skills,The Mental Model Encyclopedia — Part 4: Counterfactual Thinking Frameworks,2532,True,2026-07-17,converted-pdf,current,0,False,guide,,known-dup:mental-models-encyclopedia
+docs/soft-skills/Mental_Models_for_Voice_Training.md,soft-skills,Mental Models for Voice Training,1478,True,2026-07-10,converted-pdf,current,0,False,guide,,known-dup:mental-models-encyclopedia
+docs/soft-skills/Problem_Solving_Skills.md,soft-skills,Problem-Solving Skills for Technical Leaders,1718,True,2026-07-14,native-md,current,0,True,guide,,
+docs/soft-skills/Storytelling_Exercise_Workbook.md,soft-skills,Storytelling Exercise Workbook,1699,True,2026-07-14,converted-pdf,current,0,False,guide,,
+docs/soft-skills/Voice_Training_30Day_Plan.md,soft-skills,Voice Training 30-Day Plan,1610,True,2026-07-14,converted-pdf,current,0,False,guide,,
+docs/soft-skills/index.md,soft-skills,Non-Tech,734,True,2026-07-14,native-md,current,0,False,hub,,
+docs/sovereign-constitutional-ai/ai-alignment-control.md,sovereign-constitutional-ai,AI Alignment & Control,2525,True,2026-07-10,native-md,current,0,True,guide,,
+docs/sovereign-constitutional-ai/ai-assurance-audit-architecture.md,sovereign-constitutional-ai,AI Assurance & Audit Architecture,1940,True,2026-07-10,native-md,current,0,True,guide,,
+docs/sovereign-constitutional-ai/ai-governance-operating-model.md,sovereign-constitutional-ai,AI Governance Operating Model,2747,True,2026-07-10,native-md,current,0,True,guide,,
+docs/sovereign-constitutional-ai/ai-risk-taxonomy.md,sovereign-constitutional-ai,AI Risk Taxonomy,24,True,2026-07-10,native-md,current,0,False,guide,,
+docs/sovereign-constitutional-ai/ai-safety-framework.md,sovereign-constitutional-ai,AI Safety Framework,1471,True,2026-07-10,native-md,current,0,True,guide,,
+docs/sovereign-constitutional-ai/constitutional-agent-architecture.md,sovereign-constitutional-ai,Constitutional Agent Architecture,2040,True,2026-07-10,native-md,current,0,True,guide,,
+docs/sovereign-constitutional-ai/constitutional-ai-engineering.md,sovereign-constitutional-ai,Constitutional AI Engineering,3512,True,2026-07-10,native-md,current,0,True,guide,,
+docs/sovereign-constitutional-ai/democratic-ai-public-interest.md,sovereign-constitutional-ai,Democratic & Public Interest AI,2301,True,2026-07-10,native-md,current,0,False,guide,,
+docs/sovereign-constitutional-ai/index.md,sovereign-constitutional-ai,Sovereign & Constitutional AI,1115,True,2026-07-10,native-md,current,0,True,hub,,
+docs/sovereign-constitutional-ai/policy-as-code-framework.md,sovereign-constitutional-ai,Policy-as-Code Framework,1657,True,2026-07-10,native-md,current,0,True,guide,,
+docs/sovereign-constitutional-ai/rai-operating-model.md,sovereign-constitutional-ai,Responsible AI Operating Model,2737,True,2026-07-10,native-md,current,0,True,guide,,
+docs/sovereign-constitutional-ai/sovereign-ai-foundations.md,sovereign-constitutional-ai,Sovereign AI Foundations,3236,True,2026-07-10,native-md,current,0,True,guide,,
+docs/sovereign-constitutional-ai/sovereign-ai-roadmap-maturity.md,sovereign-constitutional-ai,"Roadmap, Maturity & Standards Canon",7717,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/01-executive-summary.md,workflow-orchestration,Executive Summary - Workflow Orchestration in the Agentic AI Era,1517,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/02-evolution-timeline.md,workflow-orchestration,Technology Evolution Timeline - From BPM to Agentic Orchestration,1720,True,2026-07-10,native-md,current,0,False,guide,,
+docs/workflow-orchestration/03-workflow-vs-agent-architecture.md,workflow-orchestration,"Workflow vs Agent Architecture - Determinism, Adaptivity, and Design Principles",2028,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/04-temporal-deep-dive.md,workflow-orchestration,"Temporal Deep Dive - Architecture, Patterns, and AI Integration",1373,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/05-camunda-deep-dive.md,workflow-orchestration,"Camunda Deep Dive - BPMN, BPM, and AI Integration",1523,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/06-durable-vs-cognitive-execution.md,workflow-orchestration,Durable Execution vs. Cognitive Execution,1939,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/07-ai-coding-orchestrators.md,workflow-orchestration,"AI Coding Orchestrators - Claude Code, GitHub Copilot, and the Meta-Orchestrator Pattern",1551,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/08-agent-frameworks-comparison.md,workflow-orchestration,Agent Frameworks Comparison,2910,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/09-tool-calling-orchestration.md,workflow-orchestration,Tool Calling Orchestration,1657,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/10-mcp-impact.md,workflow-orchestration,MCP (Model Context Protocol) Impact on Orchestration,1513,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:mcp
+docs/workflow-orchestration/11-a2a-orchestration-patterns.md,workflow-orchestration,A2A (Agent-to-Agent) Orchestration Patterns,1589,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/12-human-in-the-loop-architectures.md,workflow-orchestration,Human-in-the-Loop Architectures,1725,True,2026-07-10,native-md,current,0,False,guide,,
+docs/workflow-orchestration/13-memory-vs-workflow-state.md,workflow-orchestration,Memory vs. Workflow State,1632,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:memory
+docs/workflow-orchestration/14-ai-planning-vs-workflow-engines.md,workflow-orchestration,AI Planning vs. Workflow Engines,1570,True,2026-07-10,native-md,current,0,False,guide,,
+docs/workflow-orchestration/15-reliability-playbook.md,workflow-orchestration,Reliability Playbook for Agentic Systems,1534,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/16-observability-framework.md,workflow-orchestration,Observability Framework for Orchestrated AI Systems,1560,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:observability
+docs/workflow-orchestration/17-security-architecture.md,workflow-orchestration,Security Architecture for Orchestrated AI Systems,1612,True,2026-07-10,native-md,current,0,True,guide,,topic-overlap:security
+docs/workflow-orchestration/18-enterprise-governance-model.md,workflow-orchestration,Enterprise Governance Model,1539,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/19-reference-architectures.md,workflow-orchestration,Reference Architectures - From BPM-First to AI-Native,2041,True,2026-07-10,native-md,current,0,True,reference-architecture,,
+docs/workflow-orchestration/20-decision-matrix.md,workflow-orchestration,Decision Matrix - Choosing Your Orchestration Platform,2725,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/21-future-predictions.md,workflow-orchestration,Future Outlook: Workflow Orchestration 2026–2035,1751,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/22-anti-patterns-catalog.md,workflow-orchestration,Anti-Patterns Catalog: Orchestration and Agentic Systems,1954,True,2026-07-10,native-md,current,0,False,anti-pattern,,topic-overlap:anti-patterns
+docs/workflow-orchestration/23-capability-maturity-model.md,workflow-orchestration,Orchestration Capability Maturity Model (CMM),1712,True,2026-07-10,native-md,current,0,True,guide,,
+docs/workflow-orchestration/index.md,workflow-orchestration,Workflow Orchestration in the Agentic AI Era,421,True,2026-07-10,native-md,current,0,False,hub,,
