@@ -1,0 +1,99 @@
+# Single source of truth: topic -> canonical page.
+# ONLY the librarian agent edits this file. Validated by scripts/registry_check.py.
+# A docs/ page that is not listed here cannot be created (PreToolUse hook) and
+# cannot merge (CI).
+#
+# Entry shape:
+# - id: mcp-overview                      # stable topic id
+#   domain: protocols
+#   canonical: docs/protocols/01-mcp-overview.md
+#   aliases: [model context protocol]
+#   supersedes:                            # old-repo paths absorbed by this topic
+#     - docs/ai-protocols/mcp/MCP_Deep_Research_2026.md
+#   pages: []                              # registered non-canonical spokes
+
+version: 1
+topics:
+  - id: wiki-governance
+    domain: architecture
+    canonical: docs/architecture/00-wiki-governance.md
+    aliases: [wiki self-governance, governance model, wiki meta]
+    supersedes: []
+    pages: []
+
+  - id: hub-strategy
+    domain: strategy
+    canonical: docs/strategy/index.md
+    aliases: [strategy hub]
+    supersedes: []
+    pages: []
+
+  - id: hub-architecture
+    domain: architecture
+    canonical: docs/architecture/index.md
+    aliases: [architecture hub]
+    supersedes: []
+    pages: []
+
+  - id: hub-agentic-systems
+    domain: agentic-systems
+    canonical: docs/agentic-systems/index.md
+    aliases: [agentic systems hub]
+    supersedes: []
+    pages: []
+
+  - id: hub-protocols
+    domain: protocols
+    canonical: docs/protocols/index.md
+    aliases: [protocols hub]
+    supersedes: []
+    pages: []
+
+  - id: hub-data-knowledge
+    domain: data-knowledge
+    canonical: docs/data-knowledge/index.md
+    aliases: [data & knowledge hub]
+    supersedes: []
+    pages: []
+
+  - id: hub-platforms
+    domain: platforms
+    canonical: docs/platforms/index.md
+    aliases: [platforms hub]
+    supersedes: []
+    pages: []
+
+  - id: hub-trust
+    domain: trust
+    canonical: docs/trust/index.md
+    aliases: [trust hub]
+    supersedes: []
+    pages: []
+
+  - id: hub-operations
+    domain: operations
+    canonical: docs/operations/index.md
+    aliases: [operations hub]
+    supersedes: []
+    pages: []
+
+  - id: hub-learning-paths
+    domain: learning-paths
+    canonical: docs/learning-paths/index.md
+    aliases: [learning paths hub]
+    supersedes: []
+    pages: []
+
+  - id: hub-career
+    domain: career
+    canonical: docs/career/index.md
+    aliases: [career hub]
+    supersedes: []
+    pages: []
+
+  - id: hub-assets
+    domain: assets
+    canonical: docs/assets/index.md
+    aliases: [assets hub]
+    supersedes: []
+    pages: []
