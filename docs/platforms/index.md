@@ -14,9 +14,10 @@ sources: []
 tags: [hub, platforms]
 ---
 
-Domain hub for platform engineering: AWS/Azure/GCP, Kubernetes for AI,
-gateways, runtimes, inference serving, silicon, infrastructure-as-code, and
-edge deployment.
+Every architectural decision eventually becomes a platform decision — which
+cloud, which runtime, which silicon. This hub covers the infrastructure layer
+AI workloads actually run on: cloud providers, Kubernetes, gateways,
+inference serving, and the infrastructure-as-code that keeps it reproducible.
 
 ## Scope
 
@@ -24,13 +25,11 @@ edge deployment.
 - AWS, Azure, GCP
 - Kubernetes for AI
 - API/model gateways
-- Runtimes and inference serving
-- AI silicon
+- Runtimes, inference serving, and AI silicon
 - Infrastructure-as-code
 - Edge deployment
 
 ## Related
 
-No canonical pages registered yet under this domain. This hub is a draft
-skeleton created during wiki bootstrap (stage-00); it will link to canonical
-pages as they are registered and published.
+- [Architecture Hub](../architecture/index.md) — the landing zones deployed onto this infrastructure.
+- [Operations Hub](../operations/index.md) — reliability and observability for what runs here.

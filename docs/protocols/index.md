@@ -14,8 +14,10 @@ sources: []
 tags: [hub, protocols]
 ---
 
-Domain hub for interoperability protocols: MCP (hub + changelog), A2A,
-emerging standards, agent identity & auth, and connectors.
+Agents that can't reach tools, data, or each other stay isolated pilots. This
+hub covers the interoperability layer — MCP, A2A, and the identity/auth model
+wrapped around them — that lets agentic systems compose instead of
+re-integrating from scratch every time.
 
 ## Scope
 
@@ -27,6 +29,5 @@ emerging standards, agent identity & auth, and connectors.
 
 ## Related
 
-No canonical pages registered yet under this domain. This hub is a draft
-skeleton created during wiki bootstrap (stage-00); it will link to canonical
-pages as they are registered and published.
+- [Agentic Systems Hub](../agentic-systems/index.md) — the systems these protocols wire together.
+- [Trust Hub](../trust/index.md) — the identity and authorization model layered on top.

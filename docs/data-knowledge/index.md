@@ -14,9 +14,10 @@ sources: []
 tags: [hub, data-knowledge]
 ---
 
-Domain hub for data and knowledge systems: data architecture & engineering,
-the RAG hub, knowledge graphs/GraphRAG, semantic & long-term memory, lineage,
-and the lakehouse.
+Agent quality is bounded by what an agent can retrieve, not just how it
+reasons. This hub covers the data and knowledge layer underneath agentic
+systems: architecture and engineering, RAG, knowledge graphs, and the memory
+and lineage guarantees a production agent depends on.
 
 ## Scope
 
@@ -29,6 +30,5 @@ and the lakehouse.
 
 ## Related
 
-No canonical pages registered yet under this domain. This hub is a draft
-skeleton created during wiki bootstrap (stage-00); it will link to canonical
-pages as they are registered and published.
+- [Agentic Systems Hub](../agentic-systems/index.md) — the consumer of this RAG and memory layer.
+- [Platforms Hub](../platforms/index.md) — the lakehouse and data infrastructure underneath.
