@@ -1,10 +1,20 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(awk -F',' '$2==\"MERGE-INTO\" || $2==\"SPLIT\"' /workspaces/archon/migration/mapping.csv)",
+      "Bash(awk -F',' '\\($2==\"MERGE-INTO\" || $2==\"SPLIT\"\\){print $3}' /workspaces/archon/migration/mapping.csv)"
+    ]
+  },
   "hooks": {
     "PreToolUse": [
       {
         "matcher": "Write|Edit|MultiEdit",
         "hooks": [
-          { "type": "command", "command": "python3 .claude/hooks/guard_write.py" }
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/guard_write.py"
+          }
         ]
       }
     ],
@@ -12,14 +22,20 @@
       {
         "matcher": "Write|Edit|MultiEdit",
         "hooks": [
-          { "type": "command", "command": "python3 .claude/hooks/validate_page.py" }
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/validate_page.py"
+          }
         ]
       }
     ],
     "SessionStart": [
       {
         "hooks": [
-          { "type": "command", "command": "bash .claude/hooks/session_context.sh" }
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/session_context.sh"
+          }
         ]
       }
     ]

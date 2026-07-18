@@ -1,4 +1,6 @@
 name: graphify
+permissions:
+  contents: write
 on:
   pull_request:
     paths: ["docs/**", "governance/technology-taxonomy.json", "sidebars.js"]

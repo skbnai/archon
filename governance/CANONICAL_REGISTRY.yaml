@@ -17,83 +17,4353 @@ topics:
   - id: wiki-governance
     domain: architecture
     canonical: docs/architecture/00-wiki-governance.md
-    aliases: [wiki self-governance, governance model, wiki meta]
-    supersedes: []
+    aliases:
+    - wiki self-governance
+    - governance model
+    - wiki meta
+    supersedes:
+    - docs/about.md
     pages: []
-
   - id: hub-strategy
     domain: strategy
     canonical: docs/strategy/index.md
-    aliases: [strategy hub]
-    supersedes: []
+    aliases:
+    - strategy hub
+    supersedes:
+    - docs/ai-economics/index.md
+    - docs/enterprise-ai-report/index.md
+    - docs/enterprise-architecture/strategy/index.md
+    - docs/enterprise-architecture/transformation/index.md
+    - docs/enterprise-strategy/index.md
     pages: []
-
   - id: hub-architecture
     domain: architecture
     canonical: docs/architecture/index.md
-    aliases: [architecture hub]
-    supersedes: []
+    aliases:
+    - architecture hub
+    supersedes:
+    - docs/ai-development/aidlc/index.md
+    - docs/ai-development/index.md
+    - docs/ai-foundations/index.md
+    - docs/enterprise-architecture/ai-architecture/index.md
+    - docs/enterprise-architecture/architectural-review-board/index.md
+    - docs/enterprise-architecture/best-practices/index.md
+    - docs/enterprise-architecture/index.md
+    - docs/enterprise-architecture/process/index.md
+    - docs/enterprise-architecture/specialization/index.md
     pages: []
-
   - id: hub-agentic-systems
     domain: agentic-systems
     canonical: docs/agentic-systems/index.md
-    aliases: [agentic systems hub]
-    supersedes: []
+    aliases:
+    - agentic systems hub
+    supersedes:
+    - docs/agentic-systems/config/index.md
+    - docs/agentic-systems/harness/index.md
+    - docs/agentic-systems/index.md
+    - docs/agentic-systems/memory/index.md
+    - docs/agentic-systems/platform/index.md
+    - docs/agentic-systems/skill/coding/index.md
+    - docs/agentic-systems/skill/enterprise/index.md
+    - docs/agentic-systems/skill/index.md
+    - docs/agentic-ui/index.md
+    - docs/coding-tools/claude/index.md
+    - docs/coding-tools/code-review/index.md
+    - docs/coding-tools/github-copilot/index.md
+    - docs/coding-tools/index.md
+    - docs/multimodal-ai/index.md
+    - docs/workflow-orchestration/index.md
     pages: []
-
   - id: hub-protocols
     domain: protocols
     canonical: docs/protocols/index.md
-    aliases: [protocols hub]
-    supersedes: []
+    aliases:
+    - protocols hub
+    supersedes:
+    - docs/ai-protocols/a2a/index.md
+    - docs/ai-protocols/auth/index.md
+    - docs/ai-protocols/index.md
+    - docs/ai-protocols/mcp/index.md
+    - docs/ai-protocols/standards/emerging-protocols-beyond-mcp-a2a.md
+    - docs/ai-protocols/standards/index.md
     pages: []
-
   - id: hub-data-knowledge
     domain: data-knowledge
     canonical: docs/data-knowledge/index.md
-    aliases: [data & knowledge hub]
-    supersedes: []
+    aliases:
+    - data & knowledge hub
+    supersedes:
+    - docs/knowledge-engineering/data/index.md
+    - docs/knowledge-engineering/index.md
+    - docs/knowledge-engineering/industry-practices/index.md
+    - docs/knowledge-engineering/knowledge/index.md
     pages: []
-
   - id: hub-platforms
     domain: platforms
     canonical: docs/platforms/index.md
-    aliases: [platforms hub]
-    supersedes: []
+    aliases:
+    - platforms hub
+    supersedes:
+    - docs/cloud-platforms/ai-gateway/index.md
+    - docs/cloud-platforms/aws/index.md
+    - docs/cloud-platforms/azure/index.md
+    - docs/cloud-platforms/gcp/index.md
+    - docs/cloud-platforms/iac/index.md
+    - docs/cloud-platforms/iac/terraform/index.md
+    - docs/cloud-platforms/index.md
+    - docs/cloud-platforms/kubernetes/index.md
+    - docs/databricks-agentic-ai/index.md
+    - docs/quantum/index.md
     pages: []
-
   - id: hub-trust
     domain: trust
     canonical: docs/trust/index.md
-    aliases: [trust hub]
-    supersedes: []
+    aliases:
+    - trust hub
+    supersedes:
+    - docs/ai-security-governance/index.md
+    - docs/ai-security-governance/policy/index.md
+    - docs/ai-security-governance/security/index.md
+    - docs/ai-soc-playbooks/index.md
+    - docs/cybersec-architect/index.md
+    - docs/nist-ai-standards/index.md
+    - docs/sovereign-constitutional-ai/index.md
     pages: []
-
   - id: hub-operations
     domain: operations
     canonical: docs/operations/index.md
-    aliases: [operations hub]
-    supersedes: []
+    aliases:
+    - operations hub
+    supersedes:
+    - docs/ai-development/testing/index.md
     pages: []
-
   - id: hub-learning-paths
     domain: learning-paths
     canonical: docs/learning-paths/index.md
-    aliases: [learning paths hub]
-    supersedes: []
+    aliases:
+    - learning paths hub
+    supersedes:
+    - docs/ea-masterclass/index.md
     pages: []
-
   - id: hub-career
     domain: career
     canonical: docs/career/index.md
-    aliases: [career hub]
-    supersedes: []
+    aliases:
+    - career hub
+    supersedes:
+    - docs/interview-prep/ea/index.md
+    - docs/interview-prep/fde/index.md
+    - docs/interview-prep/index.md
+    - docs/soft-skills/index.md
     pages: []
-
   - id: hub-assets
     domain: assets
     canonical: docs/assets/index.md
-    aliases: [assets hub]
+    aliases:
+    - assets hub
+    supersedes:
+    - docs/ai-usecases/index.md
+    - docs/ea-masterclass/deliverables/index.md
+    - docs/ea-masterclass/module-13-case-studies/index.md
+    - docs/ea-masterclass/transcripts/index.md
+    pages: []
+  - id: quantum-ai-consulting-landscape
+    domain: strategy
+    canonical: docs/strategy/01-quantum-ai-consulting-landscape.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: quantum-ai-startup-landscape
+    domain: strategy
+    canonical: docs/strategy/02-quantum-ai-startup-landscape.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-value-creator-deliverables-pack
+    domain: strategy
+    canonical: docs/strategy/03-ai-value-creator-deliverables-pack.md
+    aliases:
+    - 'worked example: 20 deliverables, one use case'
+    supersedes: []
+    pages: []
+  - id: ai-cost-implementation-guide-2026
+    domain: strategy
+    canonical: docs/strategy/04-ai-cost-implementation-guide-2026.md
+    aliases:
+    - token management & ai cost architecture
+    supersedes: []
+    pages: []
+  - id: agentic-ai-use-case-value-lifecycle
+    domain: strategy
+    canonical: docs/strategy/05-agentic-ai-use-case-value-lifecycle.md
+    aliases:
+    - 'a worked use case: end-to-end value realization'
+    supersedes: []
+    pages: []
+  - id: ai-coding-agents-2026
+    domain: strategy
+    canonical: docs/strategy/06-ai-coding-agents-2026.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-tokenomics-guide
+    domain: strategy
+    canonical: docs/strategy/07-ai-tokenomics-guide.md
+    aliases:
+    - 'ai tokenomics: from token mechanics to business economics'
+    supersedes: []
+    pages: []
+  - id: ai-value-creators-synthesis
+    domain: strategy
+    canonical: docs/strategy/08-ai-value-creators-synthesis.md
+    aliases:
+    - ai value creators for agentic ai and beyond
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-commercial-analysis-2026
+    domain: strategy
+    canonical: docs/strategy/09-enterprise-ai-commercial-analysis-2026.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: foundation-model-companies-2026
+    domain: strategy
+    canonical: docs/strategy/10-foundation-model-companies-2026.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: part-01-evolution
+    domain: strategy
+    canonical: docs/strategy/11-part-01-evolution.md
+    aliases:
+    - 'part 1 — evolution: traditional software to ai-native organization'
+    supersedes: []
+    pages: []
+  - id: part-02-operating-models
+    domain: strategy
+    canonical: docs/strategy/12-part-02-operating-models.md
+    aliases:
+    - part 2 — enterprise ai operating models
+    supersedes: []
+    pages: []
+  - id: part-03-ai-delivery-lifecycle
+    domain: strategy
+    canonical: docs/strategy/13-part-03-ai-delivery-lifecycle.md
+    aliases:
+    - part 3 — ai delivery lifecycle
+    supersedes: []
+    pages: []
+  - id: part-04-genai-delivery
+    domain: strategy
+    canonical: docs/strategy/14-part-04-genai-delivery.md
+    aliases:
+    - part 4 — genai delivery lifecycle
+    supersedes: []
+    pages: []
+  - id: part-05-agentic-lifecycle
+    domain: strategy
+    canonical: docs/strategy/15-part-05-agentic-lifecycle.md
+    aliases:
+    - part 5 — agentic ai delivery lifecycle
+    supersedes: []
+    pages: []
+  - id: part-06-governance
+    domain: strategy
+    canonical: docs/strategy/16-part-06-governance.md
+    aliases:
+    - part 6 — enterprise ai governance model
+    supersedes: []
+    pages: []
+  - id: part-07-platform-operating-model
+    domain: strategy
+    canonical: docs/strategy/17-part-07-platform-operating-model.md
+    aliases:
+    - part 7 — ai platform operating model
+    supersedes: []
+    pages: []
+  - id: part-08-organizational-roles
+    domain: strategy
+    canonical: docs/strategy/18-part-08-organizational-roles.md
+    aliases:
+    - part 8 — organizational roles, raci & career paths
+    supersedes: []
+    pages: []
+  - id: part-09-operating-processes
+    domain: strategy
+    canonical: docs/strategy/19-part-09-operating-processes.md
+    aliases:
+    - part 9 — ai operating processes
+    supersedes: []
+    pages: []
+  - id: part-10-service-catalog
+    domain: strategy
+    canonical: docs/strategy/20-part-10-service-catalog.md
+    aliases:
+    - part 10 — enterprise ai service catalog
+    supersedes: []
+    pages: []
+  - id: part-11-devsecops
+    domain: strategy
+    canonical: docs/strategy/21-part-11-devsecops.md
+    aliases:
+    - part 11 — ai devsecops
+    supersedes: []
+    pages: []
+  - id: part-12-responsible-ai
+    domain: strategy
+    canonical: docs/strategy/22-part-12-responsible-ai.md
+    aliases:
+    - part 12 — responsible ai
+    supersedes: []
+    pages: []
+  - id: part-13-security-model
+    domain: strategy
+    canonical: docs/strategy/23-part-13-security-model.md
+    aliases:
+    - part 13 — enterprise ai security model
+    supersedes: []
+    pages: []
+  - id: part-14-observability
+    domain: strategy
+    canonical: docs/strategy/24-part-14-observability.md
+    aliases:
+    - part 14 — ai observability
+    supersedes: []
+    pages: []
+  - id: part-15-enterprise-architecture
+    domain: strategy
+    canonical: docs/strategy/25-part-15-enterprise-architecture.md
+    aliases:
+    - part 15 — enterprise architecture mapping
+    supersedes: []
+    pages: []
+  - id: part-16-financial-model
+    domain: strategy
+    canonical: docs/strategy/26-part-16-financial-model.md
+    aliases:
+    - part 16 — ai financial operating model
+    supersedes: []
+    pages: []
+  - id: part-17-transformation-roadmap
+    domain: strategy
+    canonical: docs/strategy/27-part-17-transformation-roadmap.md
+    aliases:
+    - part 17 — ai transformation roadmap & maturity model
+    supersedes: []
+    pages: []
+  - id: part-18-case-studies
+    domain: strategy
+    canonical: docs/strategy/28-part-18-case-studies.md
+    aliases:
+    - part 18 — industry case studies & vendor perspectives
+    supersedes: []
+    pages: []
+  - id: part-19-deliverables
+    domain: strategy
+    canonical: docs/strategy/29-part-19-deliverables.md
+    aliases:
+    - part 19 — deliverables, templates & artifacts
+    supersedes: []
+    pages: []
+  - id: part-20-greenfield-vs-brownfield
+    domain: strategy
+    canonical: docs/strategy/30-part-20-greenfield-vs-brownfield.md
+    aliases:
+    - part 20 — greenfield vs brownfield ai transformation
+    supersedes: []
+    pages: []
+  - id: part-21-agentic-process-blueprint
+    domain: strategy
+    canonical: docs/strategy/31-part-21-agentic-process-blueprint.md
+    aliases:
+    - 'part 21 — agentic process blueprint: reimagining enterprise processes'
+    supersedes: []
+    pages: []
+  - id: ea-strategy-playbook
+    domain: strategy
+    canonical: docs/strategy/32-ea-strategy-playbook.md
+    aliases:
+    - strategy playbook
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-strategic-brief-2026
+    domain: strategy
+    canonical: docs/strategy/33-enterprise-ai-strategic-brief-2026.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-transformation-blueprint-cto-guide-2026
+    domain: strategy
+    canonical: docs/strategy/34-enterprise-ai-transformation-blueprint-cto-guide-2026.md
+    aliases:
+    - enterprise ai transformation blueprint
+    supersedes: []
+    pages: []
+  - id: executive-summary-and-ai-vision
+    domain: strategy
+    canonical: docs/strategy/35-executive-summary-and-ai-vision.md
+    aliases:
+    - executive summary & ai vision
+    supersedes: []
+    pages: []
+  - id: current-state-assessment-and-ai-maturity
+    domain: strategy
+    canonical: docs/strategy/36-current-state-assessment-and-ai-maturity.md
+    aliases:
+    - current-state assessment & ai maturity
+    supersedes: []
+    pages: []
+  - id: ai-opportunity-portfolio
+    domain: strategy
+    canonical: docs/strategy/37-ai-opportunity-portfolio.md
+    aliases:
+    - ai opportunity portfolio & prioritization
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-platform-and-data-architecture
+    domain: strategy
+    canonical: docs/strategy/38-enterprise-ai-platform-and-data-architecture.md
+    aliases:
+    - enterprise ai platform, data & agentic architecture
+    supersedes: []
+    pages: []
+  - id: governance-responsible-ai-and-security
+    domain: strategy
+    canonical: docs/strategy/39-governance-responsible-ai-and-security.md
+    aliases:
+    - governance, responsible ai & security architecture
+    supersedes: []
+    pages: []
+  - id: target-operating-model-and-change
+    domain: strategy
+    canonical: docs/strategy/40-target-operating-model-and-change.md
+    aliases:
+    - target operating model, organization & change
+    supersedes: []
+    pages: []
+  - id: roadmap-financials-kpis-and-risk
+    domain: strategy
+    canonical: docs/strategy/41-roadmap-financials-kpis-and-risk.md
+    aliases:
+    - roadmap, financial model, kpis & risk register
+    supersedes: []
+    pages: []
+  - id: ai-first-to-ai-native
+    domain: strategy
+    canonical: docs/strategy/42-ai-first-to-ai-native.md
+    aliases:
+    - ai-first to ai-native journey
+    supersedes: []
+    pages: []
+  - id: vol1-corporate-strategy
+    domain: strategy
+    canonical: docs/strategy/43-vol1-corporate-strategy.md
+    aliases:
+    - 'vol 1 — corporate strategy: the complete enterprise handbook'
+    supersedes: []
+    pages: []
+  - id: vol10-relationship-maps-glossary
+    domain: strategy
+    canonical: docs/strategy/44-vol10-relationship-maps-glossary.md
+    aliases:
+    - vol 10 — relationship maps, comparisons & enterprise glossary
+    supersedes: []
+    pages: []
+  - id: vol2-business-architecture-operating-model
+    domain: strategy
+    canonical: docs/strategy/45-vol2-business-architecture-operating-model.md
+    aliases:
+    - vol 2 — business architecture & operating models
+    supersedes: []
+    pages: []
+  - id: vol3-portfolio-governance
+    domain: strategy
+    canonical: docs/strategy/46-vol3-portfolio-governance.md
+    aliases:
+    - vol 3 — portfolio management & enterprise governance
+    supersedes: []
+    pages: []
+  - id: vol4-consulting-frameworks-industry
+    domain: strategy
+    canonical: docs/strategy/47-vol4-consulting-frameworks-industry.md
+    aliases:
+    - vol 4 — consulting frameworks & industry strategy playbook
+    supersedes: []
+    pages: []
+  - id: vol5-ai-strategy-transformation-glossary
+    domain: strategy
+    canonical: docs/strategy/48-vol5-ai-strategy-transformation-glossary.md
+    aliases:
+    - vol 5 — ai strategy, enterprise transformation & master glossary
+    supersedes: []
+    pages: []
+  - id: vol6-organization-structure-operating-model
+    domain: strategy
+    canonical: docs/strategy/49-vol6-organization-structure-operating-model.md
+    aliases:
+    - vol 6 — organization structure & operating model design
+    supersedes: []
+    pages: []
+  - id: vol7-enterprise-building-blocks
+    domain: strategy
+    canonical: docs/strategy/50-vol7-enterprise-building-blocks.md
+    aliases:
+    - vol 7 — enterprise building blocks architecture
+    supersedes: []
+    pages: []
+  - id: vol8-portfolio-consulting-frameworks
+    domain: strategy
+    canonical: docs/strategy/51-vol8-portfolio-consulting-frameworks.md
+    aliases:
+    - vol 8 — portfolio management & consulting frameworks
+    supersedes: []
+    pages: []
+  - id: vol9-industry-deep-dives
+    domain: strategy
+    canonical: docs/strategy/52-vol9-industry-deep-dives.md
+    aliases:
+    - vol 9 — industry strategy & operating model deep dives
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-discovery-to-model
+    domain: architecture
+    canonical: docs/architecture/01-aidlc-artifacts-discovery-to-model.md
+    aliases:
+    - 'aidlc lifecycle artifacts: discovery through model design'
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-development-to-retirement
+    domain: architecture
+    canonical: docs/architecture/02-aidlc-artifacts-development-to-retirement.md
+    aliases:
+    - 'aidlc lifecycle artifacts: development through retirement'
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-togaf-foundation-to-technology
+    domain: architecture
+    canonical: docs/architecture/03-aidlc-artifacts-togaf-foundation-to-technology.md
+    aliases:
+    - 'togaf adm artifact templates: foundation through technology'
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-togaf-migration-to-ea
+    domain: architecture
+    canonical: docs/architecture/04-aidlc-artifacts-togaf-migration-to-ea.md
+    aliases:
+    - 'togaf adm artifact templates: migration through ea cross-cutting'
+    supersedes: []
+    pages: []
+  - id: ea-architect-deep-dive-foundation
+    domain: architecture
+    canonical: docs/architecture/05-ea-architect-deep-dive-foundation.md
+    aliases:
+    - part 1 — foundation
+    supersedes: []
+    pages: []
+  - id: ea-architect-deep-dive-five-arenas
+    domain: architecture
+    canonical: docs/architecture/06-ea-architect-deep-dive-five-arenas.md
+    aliases:
+    - part 2 — the five arenas
+    supersedes: []
+    pages: []
+  - id: ea-architect-deep-dive-toolkit-practice
+    domain: architecture
+    canonical: docs/architecture/07-ea-architect-deep-dive-toolkit-practice.md
+    aliases:
+    - part 3 — toolkit & practice
+    supersedes: []
+    pages: []
+  - id: ea-architect-deep-dive-measurement-growth
+    domain: architecture
+    canonical: docs/architecture/08-ea-architect-deep-dive-measurement-growth.md
+    aliases:
+    - part 4 — measurement & growth
+    supersedes: []
+    pages: []
+  - id: apex-ea-team-structure-raci
+    domain: architecture
+    canonical: docs/architecture/09-apex-ea-team-structure-raci.md
+    aliases:
+    - 'apex ea part 1: team structure, raci & operating model'
+    supersedes: []
+    pages: []
+  - id: apex-ea-aidlc-methodology
+    domain: architecture
+    canonical: docs/architecture/10-apex-ea-aidlc-methodology.md
+    aliases:
+    - 'apex ea part 2: ai-dlc methodology & foundation architecture'
+    supersedes: []
+    pages: []
+  - id: apex-ea-information-systems-architecture
+    domain: architecture
+    canonical: docs/architecture/11-apex-ea-information-systems-architecture.md
+    aliases:
+    - 'apex ea part 3: information systems & technology architecture'
+    supersedes: []
+    pages: []
+  - id: apex-ea-delivery-governance-reference
+    domain: architecture
+    canonical: docs/architecture/12-apex-ea-delivery-governance-reference.md
+    aliases:
+    - 'apex ea part 4: delivery, governance & reference'
+    supersedes: []
+    pages: []
+  - id: aidlc-agile-cicd-ai-transformation-2026
+    domain: architecture
+    canonical: docs/architecture/13-aidlc-agile-cicd-ai-transformation-2026.md
+    aliases:
+    - aidlc, agile & ci/cd — ai transformation 2026
+    supersedes: []
+    pages: []
+  - id: aidlc-enterprise-framework-2025
+    domain: architecture
+    canonical: docs/architecture/14-aidlc-enterprise-framework-2025.md
+    aliases:
+    - aidlc enterprise framework
+    supersedes: []
+    pages: []
+  - id: agile-in-the-age-of-agentic-ai-2026
+    domain: architecture
+    canonical: docs/architecture/15-agile-in-the-age-of-agentic-ai-2026.md
+    aliases:
+    - agile in the age of agentic ai
+    supersedes: []
+    pages: []
+  - id: ea-aidlc-deep-research-2026
+    domain: architecture
+    canonical: docs/architecture/16-ea-aidlc-deep-research-2026.md
+    aliases:
+    - impact of aidlc on enterprise architecture — the ai tooling revolution
+    supersedes: []
+    pages: []
+  - id: ai-assistant-architecture-research-report
+    domain: architecture
+    canonical: docs/architecture/17-ai-assistant-architecture-research-report.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-deep-future-outlook-2026-2035
+    domain: architecture
+    canonical: docs/architecture/18-ai-deep-future-outlook-2026-2035.md
+    aliases:
+    - ai deep future outlook
+    supersedes: []
+    pages: []
+  - id: ai-lab-research-report-june2026
+    domain: architecture
+    canonical: docs/architecture/19-ai-lab-research-report-june2026.md
+    aliases:
+    - ai lab research landscape report
+    supersedes: []
+    pages: []
+  - id: ai-native-architecture-evolution-report
+    domain: architecture
+    canonical: docs/architecture/20-ai-native-architecture-evolution-report.md
+    aliases:
+    - from data warehouse to agent-native architecture
+    supersedes: []
+    pages: []
+  - id: the-agentic-loop-enterprise-ai-architect-guide
+    domain: architecture
+    canonical: docs/architecture/21-the-agentic-loop-enterprise-ai-architect-guide.md
+    aliases:
+    - the agentic loop - enterprise ai architect's guide
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-architecture
+    domain: architecture
+    canonical: docs/architecture/22-agentic-ai-landing-zone-architecture.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-business-layer
+    domain: architecture
+    canonical: docs/architecture/23-agentic-ai-landing-zone-business-layer.md
+    aliases:
+    - 'agentic ai landing zone: business & enterprise architecture layer'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-context-engineering
+    domain: architecture
+    canonical: docs/architecture/24-agentic-ai-landing-zone-context-engineering.md
+    aliases:
+    - 'agentic ai landing zone: context engineering layer'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-eu-ai-act
+    domain: architecture
+    canonical: docs/architecture/25-agentic-ai-landing-zone-eu-ai-act.md
+    aliases:
+    - 'agentic ai landing zone: eu ai act compliance'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-evaluation
+    domain: architecture
+    canonical: docs/architecture/26-agentic-ai-landing-zone-evaluation.md
+    aliases:
+    - 'agentic ai landing zone: evaluation framework'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-memory-architecture
+    domain: architecture
+    canonical: docs/architecture/27-agentic-ai-landing-zone-memory-architecture.md
+    aliases:
+    - 'agentic ai landing zone: memory architecture'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-multiagent
+    domain: architecture
+    canonical: docs/architecture/28-agentic-ai-landing-zone-multiagent.md
+    aliases:
+    - 'agentic ai landing zone: multi-agent reference architectures'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-platform-layer
+    domain: architecture
+    canonical: docs/architecture/29-agentic-ai-landing-zone-platform-layer.md
+    aliases:
+    - 'agentic ai landing zone: agent platform layer'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-playbooks
+    domain: architecture
+    canonical: docs/architecture/30-agentic-ai-landing-zone-playbooks.md
+    aliases:
+    - 'agentic ai landing zone: implementation playbooks'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-tier3-complete
+    domain: architecture
+    canonical: docs/architecture/31-agentic-ai-landing-zone-tier3-complete.md
+    aliases:
+    - 'agentic ai landing zone: tier 3 complete'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-visual-guide
+    domain: architecture
+    canonical: docs/architecture/32-agentic-ai-landing-zone-visual-guide.md
+    aliases:
+    - 'agentic ai landing zone: visual guide & quick reference'
+    supersedes: []
+    pages: []
+  - id: enterprise-agentic-ai-outlook-2026-2030
+    domain: architecture
+    canonical: docs/architecture/33-enterprise-agentic-ai-outlook-2026-2030.md
+    aliases:
+    - enterprise agentic ai outlook 2026–2030
+    supersedes: []
+    pages: []
+  - id: transformer-architectures
+    domain: architecture
+    canonical: docs/architecture/34-transformer-architectures.md
+    aliases:
+    - 'transformer architecture: frontier models deep dive'
+    supersedes: []
+    pages: []
+  - id: transformer-concepts-deep
+    domain: architecture
+    canonical: docs/architecture/35-transformer-concepts-deep.md
+    aliases:
+    - 'transformer concepts: deep internals'
+    supersedes: []
+    pages: []
+  - id: ai-value-stream-mapping
+    domain: architecture
+    canonical: docs/architecture/36-ai-value-stream-mapping.md
+    aliases:
+    - ai value stream mapping — lean delivery for enterprise ai programs
+    supersedes: []
+    pages: []
+  - id: art-framework-agentic-ai-execution
+    domain: architecture
+    canonical: docs/architecture/37-art-framework-agentic-ai-execution.md
+    aliases:
+    - 'a.r.t. — agility · risk · tenacity: enterprise execution framework for agentic ai'
+    supersedes: []
+    pages: []
+  - id: agentops-production-guide
+    domain: architecture
+    canonical: docs/architecture/38-agentops-production-guide.md
+    aliases:
+    - agentops — operational discipline for production ai agents
+    supersedes: []
+    pages: []
+  - id: agent-as-tool-composition
+    domain: architecture
+    canonical: docs/architecture/39-agent-as-tool-composition.md
+    aliases:
+    - agent-as-tool composition patterns
+    supersedes: []
+    pages: []
+  - id: agent-interoperability-orchestration
+    domain: architecture
+    canonical: docs/architecture/40-agent-interoperability-orchestration.md
+    aliases:
+    - enterprise agent interoperability & orchestration governance
+    supersedes: []
+    pages: []
+  - id: agent-memory-planning-architecture
+    domain: architecture
+    canonical: docs/architecture/41-agent-memory-planning-architecture.md
+    aliases:
+    - agent memory & planning architecture
+    supersedes: []
+    pages: []
+  - id: agent-reliability-engineering
+    domain: architecture
+    canonical: docs/architecture/42-agent-reliability-engineering.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentic-ai-reliability-observability-governance
+    domain: architecture
+    canonical: docs/architecture/43-agentic-ai-reliability-observability-governance.md
+    aliases:
+    - agentic ai reliability, observability & governance lifecycle
+    supersedes: []
+    pages: []
+  - id: ai-harness-architecture-orchestration
+    domain: architecture
+    canonical: docs/architecture/44-ai-harness-architecture-orchestration.md
+    aliases:
+    - ai harness architecture & multi-agent orchestration
+    supersedes: []
+    pages: []
+  - id: drift-detection-guide
+    domain: architecture
+    canonical: docs/architecture/45-drift-detection-guide.md
+    aliases:
+    - drift detection for multi-agent ai systems
+    supersedes: []
+    pages: []
+  - id: end-to-end-traceability-guide
+    domain: architecture
+    canonical: docs/architecture/46-end-to-end-traceability-guide.md
+    aliases:
+    - end-to-end traceability for multi-agent systems
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-reference-architectures
+    domain: architecture
+    canonical: docs/architecture/47-enterprise-agent-reference-architectures.md
+    aliases:
+    - enterprise agent reference architectures, platform engineering & checklists
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-architect-foundations
+    domain: architecture
+    canonical: docs/architecture/48-enterprise-ai-architect-foundations.md
+    aliases:
+    - enterprise ai architect — foundations
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-architecture-patterns
+    domain: architecture
+    canonical: docs/architecture/49-enterprise-ai-architecture-patterns.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-comparative-matrices-2026
+    domain: architecture
+    canonical: docs/architecture/50-enterprise-ai-comparative-matrices-2026.md
+    aliases:
+    - enterprise ai comparative matrices & decision tools 2026
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-governance-compliance
+    domain: architecture
+    canonical: docs/architecture/51-enterprise-ai-governance-compliance.md
+    aliases:
+    - enterprise ai governance & compliance
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-skills-assessment
+    domain: architecture
+    canonical: docs/architecture/52-enterprise-ai-skills-assessment.md
+    aliases:
+    - enterprise ai architect — skills assessment
+    supersedes: []
+    pages: []
+  - id: enterprise-aiops-guide
+    domain: architecture
+    canonical: docs/architecture/53-enterprise-aiops-guide.md
+    aliases:
+    - enterprise aiops guide — ai-driven it operations
+    supersedes: []
+    pages: []
+  - id: enterprise-multi-model-ai-strategy
+    domain: architecture
+    canonical: docs/architecture/54-enterprise-multi-model-ai-strategy.md
+    aliases:
+    - enterprise multi-model ai strategy — vendor-agnostic guide
+    supersedes: []
+    pages: []
+  - id: governance-propagation-chain
+    domain: architecture
+    canonical: docs/architecture/55-governance-propagation-chain.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: kill-switch-architecture
+    domain: architecture
+    canonical: docs/architecture/56-kill-switch-architecture.md
+    aliases:
+    - kill switch architecture for multi-agent ai systems
+    supersedes: []
+    pages: []
+  - id: machine-readable-ea
+    domain: architecture
+    canonical: docs/architecture/57-machine-readable-ea.md
+    aliases:
+    - machine-readable enterprise architecture for the agentic era
+    supersedes: []
+    pages: []
+  - id: mcp-a2a-protocol-deep-dive
+    domain: architecture
+    canonical: docs/architecture/58-mcp-a2a-protocol-deep-dive.md
+    aliases:
+    - mcp & a2a protocol deep dive
+    supersedes: []
+    pages: []
+  - id: multi-agent-topology-patterns
+    domain: architecture
+    canonical: docs/architecture/59-multi-agent-topology-patterns.md
+    aliases:
+    - multi-agent topology patterns
+    supersedes: []
+    pages: []
+  - id: volume1-governance-ecosystem-operating-models
+    domain: architecture
+    canonical: docs/architecture/60-volume1-governance-ecosystem-operating-models.md
+    aliases:
+    - enterprise governance ecosystem & operating models
+    supersedes: []
+    pages: []
+  - id: volume2-economics-decision-science
+    domain: architecture
+    canonical: docs/architecture/61-volume2-economics-decision-science.md
+    aliases:
+    - architecture economics & decision science
+    supersedes: []
+    pages: []
+  - id: volume3-knowledge-management-capability-mapping
+    domain: architecture
+    canonical: docs/architecture/62-volume3-knowledge-management-capability-mapping.md
+    aliases:
+    - architecture knowledge management & capability mapping
+    supersedes: []
+    pages: []
+  - id: volume4-artifact-catalog-quality-attributes
+    domain: architecture
+    canonical: docs/architecture/63-volume4-artifact-catalog-quality-attributes.md
+    aliases:
+    - artifact catalog & quality attributes
+    supersedes: []
+    pages: []
+  - id: volume5-review-questions-scorecards
+    domain: architecture
+    canonical: docs/architecture/64-volume5-review-questions-scorecards.md
+    aliases:
+    - enterprise review questions & scorecards
+    supersedes: []
+    pages: []
+  - id: volume6-banking-industry-deepdive
+    domain: architecture
+    canonical: docs/architecture/65-volume6-banking-industry-deepdive.md
+    aliases:
+    - banking — the primary lens
+    supersedes: []
+    pages: []
+  - id: volume7-ai-native-arb-case-studies
+    domain: architecture
+    canonical: docs/architecture/66-volume7-ai-native-arb-case-studies.md
+    aliases:
+    - ai-native arb & enterprise case studies
+    supersedes: []
+    pages: []
+  - id: volume9-enterprise-reference-repository
+    domain: architecture
+    canonical: docs/architecture/67-volume9-enterprise-reference-repository.md
+    aliases:
+    - part a — reference architectures & architecture patterns
+    supersedes: []
+    pages: []
+  - id: ea-bestpractices-jargon
+    domain: architecture
+    canonical: docs/architecture/68-ea-bestpractices-jargon.md
+    aliases:
+    - best practices & jargon guide
+    supersedes: []
+    pages: []
+  - id: ea-glossary-cheatsheet
+    domain: architecture
+    canonical: docs/architecture/69-ea-glossary-cheatsheet.md
+    aliases:
+    - enterprise architecture glossary & cheat sheet
+    supersedes: []
+    pages: []
+  - id: executive-communication-framework-guide
+    domain: architecture
+    canonical: docs/architecture/70-executive-communication-framework-guide.md
+    aliases:
+    - communication frameworks  master guide
+    supersedes: []
+    pages: []
+  - id: ea-mastery-guide
+    domain: architecture
+    canonical: docs/architecture/71-ea-mastery-guide.md
+    aliases:
+    - mastery guide
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-architect-bible-2026
+    domain: architecture
+    canonical: docs/architecture/72-enterprise-ai-architect-bible-2026.md
+    aliases:
+    - enterprise ai architect bible
+    supersedes: []
+    pages: []
+  - id: enterprise-agentic-ai-architecture-playbook-2026
+    domain: architecture
+    canonical: docs/architecture/73-enterprise-agentic-ai-architecture-playbook-2026.md
+    aliases:
+    - enterprise agentic ai architecture research initiative
+    supersedes: []
+    pages: []
+  - id: ai-solution-lifecycle-deliverables
+    domain: architecture
+    canonical: docs/architecture/74-ai-solution-lifecycle-deliverables.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-technology-selection-framework
+    domain: architecture
+    canonical: docs/architecture/75-enterprise-technology-selection-framework.md
+    aliases:
+    - enterprise technology selection & decision framework
+    supersedes: []
+    pages: []
+  - id: ai-invoice-auditor-architecture
+    domain: architecture
+    canonical: docs/architecture/76-ai-invoice-auditor-architecture.md
+    aliases:
+    - 1. what changed in v5.0 — executive summary
+    supersedes: []
+    pages: []
+  - id: ai-transformation-consultant-toolkit-2026
+    domain: architecture
+    canonical: docs/architecture/77-ai-transformation-consultant-toolkit-2026.md
+    aliases:
+    - ai transformation
+    supersedes: []
+    pages: []
+  - id: akes-addendum-document-update-and-versioning
+    domain: architecture
+    canonical: docs/architecture/78-akes-addendum-document-update-and-versioning.md
+    aliases:
+    - 'akes addendum: document update & versioning'
+    supersedes: []
+    pages: []
+  - id: dpdp-act-2023-comprehensive-guide
+    domain: architecture
+    canonical: docs/architecture/79-dpdp-act-2023-comprehensive-guide.md
+    aliases:
+    - dpdp act 2023 & dpdp rules 2025 — comprehensive guide
+    supersedes: []
+    pages: []
+  - id: dsa-principal-architect-reference
+    domain: architecture
+    canonical: docs/architecture/80-dsa-principal-architect-reference.md
+    aliases:
+    - principal architect dsa deep-reference
+    supersedes: []
+    pages: []
+  - id: eaka-research-study
+    domain: architecture
+    canonical: docs/architecture/81-eaka-research-study.md
+    aliases:
+    - enterprise agent knowledge architecture (eaka) research study
+    supersedes: []
+    pages: []
+  - id: ea-business-communication-executive-skills
+    domain: architecture
+    canonical: docs/architecture/82-ea-business-communication-executive-skills.md
+    aliases:
+    - business communication & executive skills
+    supersedes: []
+    pages: []
+  - id: ea-okr-kpi-research
+    domain: architecture
+    canonical: docs/architecture/83-ea-okr-kpi-research.md
+    aliases:
+    - okr & kpi value framework
+    supersedes: []
+    pages: []
+  - id: enterprise-data-architect-ai-genai
+    domain: architecture
+    canonical: docs/architecture/84-enterprise-data-architect-ai-genai.md
+    aliases:
+    - enterprise data architect in the age of ai & genai
+    supersedes: []
+    pages: []
+  - id: enterprise-manager-ai-genai
+    domain: architecture
+    canonical: docs/architecture/85-enterprise-manager-ai-genai.md
+    aliases:
+    - enterprise manager in the age of ai & genai
+    supersedes: []
+    pages: []
+  - id: principal-enterprise-ai-guide-educative
+    domain: architecture
+    canonical: docs/architecture/86-principal-enterprise-ai-guide-educative.md
+    aliases:
+    - principal enterprise ai architect
+    supersedes: []
+    pages: []
+  - id: modern-data-ai-platform-blueprint-2026
+    domain: architecture
+    canonical: docs/architecture/87-modern-data-ai-platform-blueprint-2026.md
+    aliases:
+    - modern data & ai platform blueprint 2026
+    supersedes: []
+    pages: []
+  - id: agent-ux-patterns
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/01-agent-ux-patterns.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agui-standards-landscape
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/02-agui-standards-landscape.md
+    aliases:
+    - agui standards & ecosystem landscape
+    supersedes: []
+    pages: []
+  - id: anti-patterns
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/03-anti-patterns.md
+    aliases:
+    - anti-pattern catalog for agentic applications
+    supersedes: []
+    pages: []
+  - id: application-lifecycle
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/04-application-lifecycle.md
+    aliases:
+    - agentic application lifecycle
+    supersedes: []
+    pages: []
+  - id: context-engineering
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/05-context-engineering.md
+    aliases:
+    - context engineering for agentic applications
+    supersedes: []
+    pages: []
+  - id: decision-frameworks
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/06-decision-frameworks.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: devsecops
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/07-devsecops.md
+    aliases:
+    - devsecops for agentic applications
+    supersedes: []
+    pages: []
+  - id: enterprise-reference-architecture
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/08-enterprise-reference-architecture.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: evolution-human-ai-interfaces
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/09-evolution-human-ai-interfaces.md
+    aliases:
+    - evolution of human-ai interfaces
+    supersedes: []
+    pages: []
+  - id: future-outlook
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/10-future-outlook.md
+    aliases:
+    - 'future outlook: agentic ui 2026–2030'
+    supersedes: []
+    pages: []
+  - id: governance
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/11-governance.md
+    aliases:
+    - governance for agentic applications
+    supersedes: []
+    pages: []
+  - id: identity-auth-architecture
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/12-identity-auth-architecture.md
+    aliases:
+    - identity & auth architecture
+    supersedes: []
+    pages: []
+  - id: industry-reference-architectures
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/13-industry-reference-architectures.md
+    aliases:
+    - industry reference architectures for agentic applications
+    supersedes: []
+    pages: []
+  - id: observability
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/14-observability.md
+    aliases:
+    - observability for agentic applications
+    supersedes: []
+    pages: []
+  - id: performance-engineering
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/15-performance-engineering.md
+    aliases:
+    - performance engineering for agentic applications
+    supersedes: []
+    pages: []
+  - id: reliability-engineering
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/16-reliability-engineering.md
+    aliases:
+    - reliability engineering for agentic applications
+    supersedes: []
+    pages: []
+  - id: responsible-ai
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/17-responsible-ai.md
+    aliases:
+    - responsible ai for agentic applications
+    supersedes: []
+    pages: []
+  - id: scalability-engineering
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/18-scalability-engineering.md
+    aliases:
+    - scalability engineering for agentic applications
+    supersedes: []
+    pages: []
+  - id: agentic-ui-security-architecture
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/19-agentic-ui-security-architecture.md
+    aliases:
+    - security architecture
+    supersedes: []
+    pages: []
+  - id: cicd-secrets-security
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/01-cicd-secrets-security.md
+    aliases:
+    - ci/cd architecture, secrets & supply chain security
+    supersedes: []
+    pages: []
+  - id: security-governance
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/02-security-governance.md
+    aliases:
+    - security architecture & enterprise ai governance
+    supersedes: []
+    pages: []
+  - id: cicd-observability-scaling
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/03-cicd-observability-scaling.md
+    aliases:
+    - ai-assisted ci/cd, observability & scaling challenges
+    supersedes: []
+    pages: []
+  - id: enterprise-apis-apps-cli
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/04-enterprise-apis-apps-cli.md
+    aliases:
+    - enterprise github, apis, apps & cli
+    supersedes: []
+    pages: []
+  - id: artifacts-referencearchitecture
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/05-artifacts-referencearchitecture.md
+    aliases:
+    - engineering artifacts & enterprise reference architecture
+    supersedes: []
+    pages: []
+  - id: ecosystem-patterns-labs
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/06-ecosystem-patterns-labs.md
+    aliases:
+    - ecosystem, enterprise patterns & hands-on labs
+    supersedes: []
+    pages: []
+  - id: copilot-enterprise-playbook
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/07-copilot-enterprise-playbook.md
+    aliases:
+    - github copilot ai credits enterprise mastery guide
+    supersedes: []
+    pages: []
+  - id: copilotkit-mcp-apps-vs-tools
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/08-copilotkit-mcp-apps-vs-tools.md
+    aliases:
+    - copilotkit mcp apps vs tools — eu bank design decision
+    supersedes: []
+    pages: []
+  - id: git-github-platform-engineering-handbook
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/09-git-github-platform-engineering-handbook.md
+    aliases:
+    - git, github platform & platform engineering cheatsheet
+    supersedes: []
+    pages: []
+  - id: github-copilot-big-wins-research
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/10-github-copilot-big-wins-research.md
+    aliases:
+    - github copilot big wins & automation research playbook
+    supersedes: []
+    pages: []
+  - id: github-copilot-zero-to-hero
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/11-github-copilot-zero-to-hero.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: microsoft-apm-guide
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/12-microsoft-apm-guide.md
+    aliases:
+    - microsoft apm — zero to mastery
+    supersedes: []
+    pages: []
+  - id: cheatsheet-10-multiagent-production
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/13-cheatsheet-10-multiagent-production.md
+    aliases:
+    - multi-agent production patterns
+    supersedes: []
+    pages: []
+  - id: cheatsheet-11-mcp-pipeline-errors
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/14-cheatsheet-11-mcp-pipeline-errors.md
+    aliases:
+    - mcp pipeline error & context handling
+    supersedes: []
+    pages: []
+  - id: cheatsheet-1-claude-code
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/15-cheatsheet-1-claude-code.md
+    aliases:
+    - claude code cheat sheet
+    supersedes: []
+    pages: []
+  - id: cheatsheet-2-agent-sdk
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/16-cheatsheet-2-agent-sdk.md
+    aliases:
+    - agent sdk cheat sheet
+    supersedes: []
+    pages: []
+  - id: cheatsheet-3-mcp
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/17-cheatsheet-3-mcp.md
+    aliases:
+    - mcp cheat sheet
+    supersedes: []
+    pages: []
+  - id: cheatsheet-4-ai-fluency
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/18-cheatsheet-4-ai-fluency.md
+    aliases:
+    - ai fluency cheat sheet
+    supersedes: []
+    pages: []
+  - id: cheatsheet-5-prompt-engineering
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/19-cheatsheet-5-prompt-engineering.md
+    aliases:
+    - prompt engineering cheat sheet
+    supersedes: []
+    pages: []
+  - id: cheatsheet-6-claude-cli
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/20-cheatsheet-6-claude-cli.md
+    aliases:
+    - claude cli cheat sheet
+    supersedes: []
+    pages: []
+  - id: cheatsheet-7-claude-ecosystem
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/21-cheatsheet-7-claude-ecosystem.md
+    aliases:
+    - claude ecosystem cheat sheet
+    supersedes: []
+    pages: []
+  - id: cheatsheet-9-agents-parallelism
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/22-cheatsheet-9-agents-parallelism.md
+    aliases:
+    - claude code agents & parallelism
+    supersedes: []
+    pages: []
+  - id: claude-ecosystem-research-report
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/23-claude-ecosystem-research-report.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: module-1-claude-foundations
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/24-module-1-claude-foundations.md
+    aliases:
+    - claude foundations & ecosystem overview
+    supersedes: []
+    pages: []
+  - id: module-3-prompt-engineering
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/25-module-3-prompt-engineering.md
+    aliases:
+    - prompt engineering & optimization — complete reference
+    supersedes: []
+    pages: []
+  - id: module-4-mcp
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/26-module-4-mcp.md
+    aliases:
+    - model context protocol (mcp) — complete reference
+    supersedes: []
+    pages: []
+  - id: module-5-claude-code-agents
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/27-module-5-claude-code-agents.md
+    aliases:
+    - claude code, hooks, skills & subagents
+    supersedes: []
+    pages: []
+  - id: module-6-claude-workflows
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/28-module-6-claude-workflows.md
+    aliases:
+    - claude dynamic workflows — complete guide
+    supersedes: []
+    pages: []
+  - id: module-7-safety-enterprise-exam
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/29-module-7-safety-enterprise-exam.md
+    aliases:
+    - safety, enterprise deployment & cca-f exam prep
+    supersedes: []
+    pages: []
+  - id: claude-agent-sdk-production
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/30-claude-agent-sdk-production.md
+    aliases:
+    - claude agent sdk — production reference
+    supersedes: []
+    pages: []
+  - id: claude-api-mastery
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/31-claude-api-mastery.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: claude-best-practices
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/32-claude-best-practices.md
+    aliases:
+    - how to use this guide
+    supersedes: []
+    pages: []
+  - id: claude-code-complete-2026
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/33-claude-code-complete-2026.md
+    aliases:
+    - claude code cli — zero to mastery 2026
+    supersedes: []
+    pages: []
+  - id: claude-enterprise-2026
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/34-claude-enterprise-2026.md
+    aliases:
+    - claude enterprise deployment 2026
+    supersedes: []
+    pages: []
+  - id: claude-models-2026
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/35-claude-models-2026.md
+    aliases:
+    - claude models 2026 — complete reference
+    supersedes: []
+    pages: []
+  - id: claude-agents-best-practices
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/36-claude-agents-best-practices.md
+    aliases:
+    - 'claude & github agents: best practices guide'
+    supersedes: []
+    pages: []
+  - id: claude-routines-guide
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/37-claude-routines-guide.md
+    aliases:
+    - claude routines — complete help guide
+    supersedes: []
+    pages: []
+  - id: constitutional-ai-safety-2026
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/38-constitutional-ai-safety-2026.md
+    aliases:
+    - constitutional ai & safety 2026
+    supersedes: []
+    pages: []
+  - id: mcp-deep-guide
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/39-mcp-deep-guide.md
+    aliases:
+    - mcp deep guide — server development & enterprise integration
+    supersedes: []
+    pages: []
+  - id: prompt-engineering-claude-4
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/40-prompt-engineering-claude-4.md
+    aliases:
+    - prompt engineering for claude 4.x
+    supersedes: []
+    pages: []
+  - id: ruflo-agentic-ai-guide
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/41-ruflo-agentic-ai-guide.md
+    aliases:
+    - multi-agent orchestration — claude-flow & beyond
+    supersedes: []
+    pages: []
+  - id: pr-review-handbook-vol1-traditional-review
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/42-pr-review-handbook-vol1-traditional-review.md
+    aliases:
+    - the enterprise pr review playbook
+    supersedes: []
+    pages: []
+  - id: pr-review-handbook-vol2-deep-domain-reviews
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/43-pr-review-handbook-vol2-deep-domain-reviews.md
+    aliases:
+    - the enterprise pr review playbook
+    supersedes: []
+    pages: []
+  - id: pr-review-handbook-vol3-ai-assisted-review
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/44-pr-review-handbook-vol3-ai-assisted-review.md
+    aliases:
+    - the enterprise pr review playbook
+    supersedes: []
+    pages: []
+  - id: pr-review-handbook-vol4-agentic-review-architecture
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/45-pr-review-handbook-vol4-agentic-review-architecture.md
+    aliases:
+    - the enterprise pr review playbook
+    supersedes: []
+    pages: []
+  - id: pr-review-handbook-vol5-case-studies-maturity-model
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/46-pr-review-handbook-vol5-case-studies-maturity-model.md
+    aliases:
+    - the enterprise pr review playbook
+    supersedes: []
+    pages: []
+  - id: github-copilot-enterprise-research-2026
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/47-github-copilot-enterprise-research-2026.md
+    aliases:
+    - github copilot enterprise agent platform
+    supersedes: []
+    pages: []
+  - id: git-internals
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/48-git-internals.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: vision-copilot-architecture-repointelligence
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/49-vision-copilot-architecture-repointelligence.md
+    aliases:
+    - ai vision, copilot architecture &
+    supersedes: []
+    pages: []
+  - id: github-architecture-and-actions
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/50-github-architecture-and-actions.md
+    aliases:
+    - github architecture & actions deep dive
+    supersedes: []
+    pages: []
+  - id: rag-agents-models-platform
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/51-rag-agents-models-platform.md
+    aliases:
+    - rag architecture, agent comparisons & github models
+    supersedes: []
+    pages: []
+  - id: runners-and-runtime
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/52-runners-and-runtime.md
+    aliases:
+    - github actions runners & runtime
+    supersedes: []
+    pages: []
+  - id: marketplace-pages-packages
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/53-marketplace-pages-packages.md
+    aliases:
+    - marketplace, pages, wiki, releases & packages
+    supersedes: []
+    pages: []
+  - id: prompts-evaluation-spark-infrastructure
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/54-prompts-evaluation-spark-infrastructure.md
+    aliases:
+    - prompt engineering, evaluation, spark & ai infrastructure
+    supersedes: []
+    pages: []
+  - id: agent-skill-anatomy-metadata-schema
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/01-agent-skill-anatomy-metadata-schema.md
+    aliases:
+    - skill anatomy & metadata schema
+    supersedes:
+    - docs/agentic-systems/skill/coding/02-skill-anatomy-and-metadata-schema.md
+    pages: []
+  - id: enterprise-agentic-ai-config-management-2026
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/02-enterprise-agentic-ai-config-management-2026.md
+    aliases:
+    - enterprise configuration & parameter management for agentic ai platforms on aws
+    supersedes: []
+    pages: []
+  - id: harness-bestpractices-antipatterns-roadmap
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/03-harness-bestpractices-antipatterns-roadmap.md
+    aliases:
+    - 'harness: best practices, anti-patterns & roadmap'
+    supersedes: []
+    pages: []
+  - id: harness-engineering-ai-agents-and-vendor-landscape
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/04-harness-engineering-ai-agents-and-vendor-landscape.md
+    aliases:
+    - 'harness: engineering ai agents & vendor landscape'
+    supersedes: []
+    pages: []
+  - id: harness-engineering-research-report
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/05-harness-engineering-research-report.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: harness-security-supplychain-observability
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/06-harness-security-supplychain-observability.md
+    aliases:
+    - 'harness: security, supply chain & observability'
+    supersedes: []
+    pages: []
+  - id: ai-memory-agent-innovations-research-report
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/07-ai-memory-agent-innovations-research-report.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-promptops-aws-agentcore-2026
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/08-enterprise-promptops-aws-agentcore-2026.md
+    aliases:
+    - 'enterprise promptops: prompt lifecycle management for aws agentcore runtime'
+    supersedes: []
+    pages: []
+  - id: multitenantagentplatform-architecture
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/09-multitenantagentplatform-architecture.md
+    aliases:
+    - multi-tenant agent platform architecture
+    supersedes: []
+    pages: []
+  - id: agentic-platform-bestpractices
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/10-agentic-platform-bestpractices.md
+    aliases:
+    - enterprise agentic platform best practices
+    supersedes: []
+    pages: []
+  - id: ai-msf-requirements-runbook
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/11-ai-msf-requirements-runbook.md
+    aliases:
+    - ai-msf poc — shared requirements & agent runbook
+    supersedes: []
+    pages: []
+  - id: ai-platform-factory-runbook
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/12-ai-platform-factory-runbook.md
+    aliases:
+    - ai platform factory runbook v2
+    supersedes: []
+    pages: []
+  - id: enterprise-agentic-ai-asset-management-2026
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/13-enterprise-agentic-ai-asset-management-2026.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: genaiaf-prompt-lifecycle-hotswap-research-2026
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/14-genaiaf-prompt-lifecycle-hotswap-research-2026.md
+    aliases:
+    - 'genaiaf-559: prompt lifecycle, versioning & hot-swap research 2026'
+    supersedes: []
+    pages: []
+  - id: executive-summary-and-reference-architecture
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/15-executive-summary-and-reference-architecture.md
+    aliases:
+    - agent skills for ai coding assistants — executive summary & reference architecture
+    supersedes: []
+    pages: []
+  - id: agent-skills-complete-playbook-2026
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/16-agent-skills-complete-playbook-2026.md
+    aliases:
+    - agent skills & skill registries — complete playbook 2026
+    supersedes: []
+    pages: []
+  - id: a2a-deep-research
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/17-a2a-deep-research.md
+    aliases:
+    - 'a2a protocol: deep research & critical analysis'
+    supersedes: []
+    pages: []
+  - id: foundations-what-is-a-coding-skill
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/18-foundations-what-is-a-coding-skill.md
+    aliases:
+    - 'foundations: what is a coding skill?'
+    supersedes: []
+    pages: []
+  - id: discovery-and-execution-lifecycle
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/19-discovery-and-execution-lifecycle.md
+    aliases:
+    - skill discovery & execution lifecycle
+    supersedes: []
+    pages: []
+  - id: skills-tools-mcp-relationship
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/20-skills-tools-mcp-relationship.md
+    aliases:
+    - skills vs. mcp & the full responsibility stack
+    supersedes: []
+    pages: []
+  - id: tool-definitions-and-instructions-engineering
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/21-tool-definitions-and-instructions-engineering.md
+    aliases:
+    - tool definitions & instructions engineering
+    supersedes: []
+    pages: []
+  - id: repository-context-engineering
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/22-repository-context-engineering.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: vscode-devcontainers-integration
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/23-vscode-devcontainers-integration.md
+    aliases:
+    - vs code & dev containers integration
+    supersedes: []
+    pages: []
+  - id: mcp-integration-and-memory
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/24-mcp-integration-and-memory.md
+    aliases:
+    - mcp integration & memory
+    supersedes: []
+    pages: []
+  - id: multi-agent-and-observability
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/25-multi-agent-and-observability.md
+    aliases:
+    - multi-agent skills & observability
+    supersedes: []
+    pages: []
+  - id: governance-and-security
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/26-governance-and-security.md
+    aliases:
+    - governance & security
+    supersedes: []
+    pages: []
+  - id: evaluation-reusability-deduplication
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/27-evaluation-reusability-deduplication.md
+    aliases:
+    - evaluation, reusability & deduplication
+    supersedes: []
+    pages: []
+  - id: enterprise-workflows-comparative-analysis-and-patterns
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/28-enterprise-workflows-comparative-analysis-and-patterns.md
+    aliases:
+    - enterprise workflows & comparative analysis
+    supersedes: []
+    pages: []
+  - id: foundations-what-is-an-agent-skill
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/29-foundations-what-is-an-agent-skill.md
+    aliases:
+    - 'foundations: what is an agent skill?'
+    supersedes: []
+    pages: []
+  - id: execution-lifecycle-and-tracing
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/30-execution-lifecycle-and-tracing.md
+    aliases:
+    - skill execution lifecycle & tracing
+    supersedes: []
+    pages: []
+  - id: skills-tools-mcp-a2a-relationship
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/31-skills-tools-mcp-a2a-relationship.md
+    aliases:
+    - skills, tools, mcp & a2a relationship
+    supersedes: []
+    pages: []
+  - id: tool-definition-best-practices
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/32-tool-definition-best-practices.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: registry-discovery-and-deduplication
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/33-registry-discovery-and-deduplication.md
+    aliases:
+    - registry, discovery & deduplication
+    supersedes: []
+    pages: []
+  - id: composition-and-instructions-engineering
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/34-composition-and-instructions-engineering.md
+    aliases:
+    - skill composition & instructions engineering
+    supersedes: []
+    pages: []
+  - id: observability-and-evaluation
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/35-observability-and-evaluation.md
+    aliases:
+    - observability & evaluation
+    supersedes: []
+    pages: []
+  - id: agent-skills-security-architecture
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/36-agent-skills-security-architecture.md
+    aliases:
+    - security architecture
+    supersedes: []
+    pages: []
+  - id: governance-and-lifecycle
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/37-governance-and-lifecycle.md
+    aliases:
+    - governance & lifecycle
+    supersedes: []
+    pages: []
+  - id: architecture-patterns-antipatterns-and-case-studies
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/38-architecture-patterns-antipatterns-and-case-studies.md
+    aliases:
+    - architecture patterns, anti-patterns & case studies
+    supersedes: []
+    pages: []
+  - id: part-01-foundations
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/01-part-01-foundations.md
+    aliases:
+    - part 1 — foundations of multimodal ai
+    supersedes: []
+    pages: []
+  - id: part-02-enterprise-architecture
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/02-part-02-enterprise-architecture.md
+    aliases:
+    - part 2 — enterprise multimodal agent architecture
+    supersedes: []
+    pages: []
+  - id: part-03-modalities-image-document
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/03-part-03-modalities-image-document.md
+    aliases:
+    - part 3 — image & document intelligence
+    supersedes: []
+    pages: []
+  - id: part-04-modalities-video-audio
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/04-part-04-modalities-video-audio.md
+    aliases:
+    - part 04 — video & audio intelligence
+    supersedes: []
+    pages: []
+  - id: part-05-multimodal-rag
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/05-part-05-multimodal-rag.md
+    aliases:
+    - part 05 — multimodal rag
+    supersedes: []
+    pages: []
+  - id: part-06-agentic-workflows
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/06-part-06-agentic-workflows.md
+    aliases:
+    - part 06 — multimodal agentic workflows
+    supersedes: []
+    pages: []
+  - id: part-07-security-threats
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/07-part-07-security-threats.md
+    aliases:
+    - part 07 — security & threat taxonomy for multimodal ai
+    supersedes: []
+    pages: []
+  - id: part-08-guardrails-sanitization
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/08-part-08-guardrails-sanitization.md
+    aliases:
+    - part 8 — guardrails & sanitization for multimodal ai
+    supersedes: []
+    pages: []
+  - id: part-09-compliance-responsible-ai
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/09-part-09-compliance-responsible-ai.md
+    aliases:
+    - part 9 — compliance & responsible ai for multimodal systems
+    supersedes: []
+    pages: []
+  - id: part-10-evaluation-benchmarks
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/10-part-10-evaluation-benchmarks.md
+    aliases:
+    - part 10 — evaluation & benchmarks for multimodal ai
+    supersedes: []
+    pages: []
+  - id: part-11-evaluation-harnesses-cicd
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/11-part-11-evaluation-harnesses-cicd.md
+    aliases:
+    - part 11 — evaluation harnesses & ci/cd for multimodal ai
+    supersedes: []
+    pages: []
+  - id: part-12-observability-finops
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/12-part-12-observability-finops.md
+    aliases:
+    - part 12 — observability & finops for multimodal ai
+    supersedes: []
+    pages: []
+  - id: part-13-governance-production
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/13-part-13-governance-production.md
+    aliases:
+    - part 13 — enterprise governance & production engineering for multimodal ai
+    supersedes: []
+    pages: []
+  - id: part-14-cloud-platform-comparison
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/14-part-14-cloud-platform-comparison.md
+    aliases:
+    - part 14 — cloud platform comparison for multimodal ai
+    supersedes: []
+    pages: []
+  - id: part-15-emerging-trends-bibliography
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/15-part-15-emerging-trends-bibliography.md
+    aliases:
+    - part 15 — emerging trends & bibliography for multimodal ai
+    supersedes: []
+    pages: []
+  - id: executive-summary
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/01-executive-summary.md
+    aliases:
+    - executive summary - workflow orchestration in the agentic ai era
+    supersedes: []
+    pages: []
+  - id: evolution-timeline
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/02-evolution-timeline.md
+    aliases:
+    - technology evolution timeline - from bpm to agentic orchestration
+    supersedes: []
+    pages: []
+  - id: workflow-vs-agent-architecture
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/03-workflow-vs-agent-architecture.md
+    aliases:
+    - workflow vs agent architecture - determinism, adaptivity, and design principles
+    supersedes: []
+    pages: []
+  - id: temporal-deep-dive
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/04-temporal-deep-dive.md
+    aliases:
+    - temporal deep dive - architecture, patterns, and ai integration
+    supersedes: []
+    pages: []
+  - id: camunda-deep-dive
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/05-camunda-deep-dive.md
+    aliases:
+    - camunda deep dive - bpmn, bpm, and ai integration
+    supersedes: []
+    pages: []
+  - id: durable-vs-cognitive-execution
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/06-durable-vs-cognitive-execution.md
+    aliases:
+    - durable execution vs. cognitive execution
+    supersedes: []
+    pages: []
+  - id: ai-coding-orchestrators
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/07-ai-coding-orchestrators.md
+    aliases:
+    - ai coding orchestrators - claude code, github copilot, and the meta-orchestrator pattern
+    supersedes: []
+    pages: []
+  - id: agent-frameworks-comparison
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/08-agent-frameworks-comparison.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: tool-calling-orchestration
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/09-tool-calling-orchestration.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: mcp-impact
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/10-mcp-impact.md
+    aliases:
+    - mcp (model context protocol) impact on orchestration
+    supersedes: []
+    pages: []
+  - id: a2a-orchestration-patterns
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/11-a2a-orchestration-patterns.md
+    aliases:
+    - a2a (agent-to-agent) orchestration patterns
+    supersedes: []
+    pages: []
+  - id: human-in-the-loop-architectures
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/12-human-in-the-loop-architectures.md
+    aliases:
+    - human-in-the-loop architectures
+    supersedes: []
+    pages: []
+  - id: memory-vs-workflow-state
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/13-memory-vs-workflow-state.md
+    aliases:
+    - memory vs. workflow state
+    supersedes: []
+    pages: []
+  - id: ai-planning-vs-workflow-engines
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/14-ai-planning-vs-workflow-engines.md
+    aliases:
+    - ai planning vs. workflow engines
+    supersedes: []
+    pages: []
+  - id: reliability-playbook
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/15-reliability-playbook.md
+    aliases:
+    - reliability playbook for agentic systems
+    supersedes: []
+    pages: []
+  - id: observability-framework
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/16-observability-framework.md
+    aliases:
+    - observability framework for orchestrated ai systems
+    supersedes: []
+    pages: []
+  - id: workflow-orchestration-security-architecture
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/17-workflow-orchestration-security-architecture.md
+    aliases:
+    - security architecture for orchestrated ai systems
+    supersedes: []
+    pages: []
+  - id: enterprise-governance-model
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/18-enterprise-governance-model.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: reference-architectures
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/19-reference-architectures.md
+    aliases:
+    - reference architectures - from bpm-first to ai-native
+    supersedes: []
+    pages: []
+  - id: decision-matrix
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/20-decision-matrix.md
+    aliases:
+    - decision matrix - choosing your orchestration platform
+    supersedes: []
+    pages: []
+  - id: future-predictions
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/21-future-predictions.md
+    aliases:
+    - 'future outlook: workflow orchestration 2026–2035'
+    supersedes: []
+    pages: []
+  - id: anti-patterns-catalog
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/22-anti-patterns-catalog.md
+    aliases:
+    - 'anti-patterns catalog: orchestration and agentic systems'
+    supersedes: []
+    pages: []
+  - id: capability-maturity-model
+    domain: agentic-systems
+    canonical: docs/agentic-systems/orchestration/23-capability-maturity-model.md
+    aliases:
+    - orchestration capability maturity model
+    supersedes: []
+    pages: []
+  - id: auth-standards-reference
+    domain: protocols
+    canonical: docs/protocols/01-auth-standards-reference.md
+    aliases:
+    - 'auth standards reference: oauth 2.1, oidc, rfc 8693 & implementation checklists'
+    supersedes:
+    - docs/ai-security-governance/security/Part7_Standards_Reference.md
+    pages: []
+  - id: enterprise-ai-platform-auth-survey
+    domain: protocols
+    canonical: docs/protocols/02-enterprise-ai-platform-auth-survey.md
+    aliases:
+    - enterprise ai platform authentication survey
+    supersedes:
+    - docs/ai-security-governance/security/Part1_Industry_Survey.md
+    pages: []
+  - id: marketplace-connector-auth-patterns
+    domain: protocols
+    canonical: docs/protocols/03-marketplace-connector-auth-patterns.md
+    aliases:
+    - marketplace connector auth patterns & enterprise architecture
+    supersedes:
+    - docs/ai-security-governance/security/Part5_Marketplace_Architecture.md
+    pages: []
+  - id: agentidentity-research-2026
+    domain: protocols
+    canonical: docs/protocols/04-agentidentity-research-2026.md
+    aliases:
+    - agent identity for ai systems — research 2026
+    supersedes: []
+    pages: []
+  - id: identity-obo-sessions
+    domain: protocols
+    canonical: docs/protocols/05-identity-obo-sessions.md
+    aliases:
+    - enterprise authentication & identity propagation for ai agents — confidential research
+    supersedes: []
+    pages: []
+  - id: agent-identity-entra-vs-awsagentcore
+    domain: protocols
+    canonical: docs/protocols/06-agent-identity-entra-vs-awsagentcore.md
+    aliases:
+    - agent identity for ai systems
+    supersedes: []
+    pages: []
+  - id: auth-identity-flows
+    domain: protocols
+    canonical: docs/protocols/07-auth-identity-flows.md
+    aliases:
+    - authentication & identity flows
+    supersedes: []
+    pages: []
+  - id: entra-3lo-agent-auth-implementation
+    domain: protocols
+    canonical: docs/protocols/08-entra-3lo-agent-auth-implementation.md
+    aliases:
+    - 'entraid 3lo: ac gateway + ac identity — volume 2'
+    supersedes: []
+    pages: []
+  - id: entra-3lo-agent-auth-multiagent-compliance
+    domain: protocols
+    canonical: docs/protocols/09-entra-3lo-agent-auth-multiagent-compliance.md
+    aliases:
+    - 'entraid 3lo: ac gateway + ac identity — volume 3'
+    supersedes: []
+    pages: []
+  - id: entra-3lo-agent-auth-security-review
+    domain: protocols
+    canonical: docs/protocols/10-entra-3lo-agent-auth-security-review.md
+    aliases:
+    - 'entraid 3lo: ac gateway + ac identity — volume 4'
+    supersedes: []
+    pages: []
+  - id: entra-3lo-agent-auth-standards-architecture
+    domain: protocols
+    canonical: docs/protocols/11-entra-3lo-agent-auth-standards-architecture.md
+    aliases:
+    - 'entraid 3lo: ac gateway + ac identity — volume 1'
+    supersedes: []
+    pages: []
+  - id: tool-authentication-connectors
+    domain: protocols
+    canonical: docs/protocols/12-tool-authentication-connectors.md
+    aliases:
+    - tool authentication & connector models
+    supersedes: []
+    pages: []
+  - id: mcp-deep-research-2026
+    domain: protocols
+    canonical: docs/protocols/13-mcp-deep-research-2026.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: mcp-enterprise-security-governance-operations-2026
+    domain: protocols
+    canonical: docs/protocols/14-mcp-enterprise-security-governance-operations-2026.md
+    aliases:
+    - enterprise mcp security, authorization, governance & operations
+    supersedes: []
+    pages: []
+  - id: mcp-harness-aidlc
+    domain: protocols
+    canonical: docs/protocols/15-mcp-harness-aidlc.md
+    aliases:
+    - 'mcp harness engineering: testing & evaluation across the aidlc'
+    supersedes: []
+    pages: []
+  - id: ai-protocols-standards-service-industry-guide-2026
+    domain: protocols
+    canonical: docs/protocols/16-ai-protocols-standards-service-industry-guide-2026.md
+    aliases:
+    - ai protocols, frameworks & standards 2026
+    supersedes: []
+    pages: []
+  - id: agent-protocol-metadata-headers
+    domain: protocols
+    canonical: docs/protocols/17-agent-protocol-metadata-headers.md
+    aliases:
+    - agent protocol metadata, headers & capability negotiation
+    supersedes: []
+    pages: []
+  - id: emerging-protocols-acp-anp
+    domain: protocols
+    canonical: docs/protocols/18-emerging-protocols-acp-anp.md
+    aliases:
+    - 'section 2a: acp & anp deep dives — federated and decentralised agent protocols'
+    supersedes: []
+    pages: []
+  - id: emerging-protocols-agui-utcp
+    domain: protocols
+    canonical: docs/protocols/19-emerging-protocols-agui-utcp.md
+    aliases:
+    - 'section 2b: ag-ui & utcp — enterprise architecture deep dive'
+    supersedes: []
+    pages: []
+  - id: emerging-protocols-crosscutting
+    domain: protocols
+    canonical: docs/protocols/20-emerging-protocols-crosscutting.md
+    aliases:
+    - 'section 3 — cross-cutting architecture: security, governance, compliance & observability'
+    supersedes: []
+    pages: []
+  - id: emerging-protocols-overview
+    domain: protocols
+    canonical: docs/protocols/21-emerging-protocols-overview.md
+    aliases:
+    - emerging ai agent protocols beyond mcp & a2a — enterprise architecture, standards, security, and adoption
+    supersedes: []
+    pages: []
+  - id: emerging-protocols-ucp-ap2-nlip-lmos
+    domain: protocols
+    canonical: docs/protocols/22-emerging-protocols-ucp-ap2-nlip-lmos.md
+    aliases:
+    - 'section 2c — emerging ai agent protocols: ucp, ap2, nlip & lmos deep dives'
+    supersedes: []
+    pages: []
+  - id: existing-protocol-evolution-agentic-ai
+    domain: protocols
+    canonical: docs/protocols/23-existing-protocol-evolution-agentic-ai.md
+    aliases:
+    - existing protocol evolution for agentic ai
+    supersedes: []
+    pages: []
+  - id: databricks-lakehouse-data-infrastructure
+    domain: data-knowledge
+    canonical: docs/data-knowledge/01-databricks-lakehouse-data-infrastructure.md
+    aliases:
+    - 'part 5 — lakehouse architecture: lakebase, ltap & real-time'
+    supersedes: []
+    pages: []
+  - id: databricks-iceberg-open-formats
+    domain: data-knowledge
+    canonical: docs/data-knowledge/02-databricks-iceberg-open-formats.md
+    aliases:
+    - part 6 — apache iceberg, open table formats & interoperability
+    supersedes: []
+    pages: []
+  - id: data-architecture-for-ai-report
+    domain: data-knowledge
+    canonical: docs/data-knowledge/03-data-architecture-for-ai-report.md
+    aliases:
+    - data architecture for ai
+    supersedes: []
+    pages: []
+  - id: end-to-end-lineage-systems-report
+    domain: data-knowledge
+    canonical: docs/data-knowledge/04-end-to-end-lineage-systems-report.md
+    aliases:
+    - end-to-end lineage for ai-era data systems
+    supersedes: []
+    pages: []
+  - id: enterprise-data-systems-ai-governance-report
+    domain: data-knowledge
+    canonical: docs/data-knowledge/05-enterprise-data-systems-ai-governance-report.md
+    aliases:
+    - enterprise data systems, streaming & ai governance
+    supersedes: []
+    pages: []
+  - id: consulting-firms-genai-strategy
+    domain: data-knowledge
+    canonical: docs/data-knowledge/06-consulting-firms-genai-strategy.md
+    aliases:
+    - 'consulting & services firms: genai strategy landscape'
+    supersedes: []
+    pages: []
+  - id: consulting-firms
+    domain: data-knowledge
+    canonical: docs/data-knowledge/07-consulting-firms.md
+    aliases:
+    - consulting firm ai platforms
+    supersedes: []
+    pages: []
+  - id: evaluation
+    domain: data-knowledge
+    canonical: docs/data-knowledge/08-evaluation.md
+    aliases:
+    - evaluation & quality gates
+    supersedes: []
+    pages: []
+  - id: governance-rai
+    domain: data-knowledge
+    canonical: docs/data-knowledge/09-governance-rai.md
+    aliases:
+    - governance & responsible ai
+    supersedes: []
+    pages: []
+  - id: grounding
+    domain: data-knowledge
+    canonical: docs/data-knowledge/10-grounding.md
+    aliases:
+    - grounding architectures
+    supersedes: []
+    pages: []
+  - id: tech-companies
+    domain: data-knowledge
+    canonical: docs/data-knowledge/11-tech-companies.md
+    aliases:
+    - how tech companies serve knowledge
+    supersedes: []
+    pages: []
+  - id: autonomous-knowledge-engineering-system
+    domain: data-knowledge
+    canonical: docs/data-knowledge/12-autonomous-knowledge-engineering-system.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: complex-rag-deep-dive
+    domain: data-knowledge
+    canonical: docs/data-knowledge/13-complex-rag-deep-dive.md
+    aliases:
+    - 'complex rag systems: deep technical guide'
+    supersedes: []
+    pages: []
+  - id: enterprise-knowledge-architectures-report
+    domain: data-knowledge
+    canonical: docs/data-knowledge/14-enterprise-knowledge-architectures-report.md
+    aliases:
+    - knowledge graphs, ontologies & graphrag
+    supersedes: []
+    pages: []
+  - id: quantum-ai-foundations
+    domain: platforms
+    canonical: docs/platforms/01-quantum-ai-foundations.md
+    aliases:
+    - 'quantum ai: zero to mastery'
+    supersedes:
+    - docs/quantum/zero-to-mastery.md
+    pages: []
+  - id: quantum-ai-applications
+    domain: platforms
+    canonical: docs/platforms/02-quantum-ai-applications.md
+    aliases:
+    - 'quantum ai: zero to mastery'
+    supersedes: []
+    pages: []
+  - id: quantum-ai-architecture
+    domain: platforms
+    canonical: docs/platforms/03-quantum-ai-architecture.md
+    aliases:
+    - 'quantum ai: zero to mastery'
+    supersedes: []
+    pages: []
+  - id: quantum-ai-appendices
+    domain: platforms
+    canonical: docs/platforms/04-quantum-ai-appendices.md
+    aliases:
+    - 'quantum ai: zero to mastery'
+    supersedes: []
+    pages: []
+  - id: ai-gateway-full-comparison
+    domain: platforms
+    canonical: docs/platforms/05-ai-gateway-full-comparison.md
+    aliases:
+    - ai gateway comparison — 10 tools
+    supersedes: []
+    pages: []
+  - id: ai-gateway-multitenant-multicloud
+    domain: platforms
+    canonical: docs/platforms/06-ai-gateway-multitenant-multicloud.md
+    aliases:
+    - ai gateway
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-gateway
+    domain: platforms
+    canonical: docs/platforms/07-enterprise-ai-gateway.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: kong-ai-gateway-guide
+    domain: platforms
+    canonical: docs/platforms/08-kong-ai-gateway-guide.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: kong-entra-id-integration
+    domain: platforms
+    canonical: docs/platforms/09-kong-entra-id-integration.md
+    aliases:
+    - kong + entra id integration
+    supersedes: []
+    pages: []
+  - id: ai-infrastructure-silicon-landscape-2026
+    domain: platforms
+    canonical: docs/platforms/10-ai-infrastructure-silicon-landscape-2026.md
+    aliases:
+    - ai infrastructure & silicon landscape 2026
+    supersedes: []
+    pages: []
+  - id: aws-native-standards-first-agentic-architecture
+    domain: platforms
+    canonical: docs/platforms/11-aws-native-standards-first-agentic-architecture.md
+    aliases:
+    - aws-native, standards-first agentic platform architecture
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-advancedpatterns
+    domain: platforms
+    canonical: docs/platforms/12-aws-strands-agentcore-advancedpatterns.md
+    aliases:
+    - aws strands & bedrock agentcore — advanced patterns v3.0
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-builder-journey-kit
+    domain: platforms
+    canonical: docs/platforms/13-aws-strands-agentcore-builder-journey-kit.md
+    aliases:
+    - aws strands & bedrock agentcore production builder journey kit
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-delta-supplement
+    domain: platforms
+    canonical: docs/platforms/14-aws-strands-agentcore-delta-supplement.md
+    aliases:
+    - aws strands & bedrock agentcore — delta supplement v2.0
+    supersedes: []
+    pages: []
+  - id: agentcore-memory-architecture-guide
+    domain: platforms
+    canonical: docs/platforms/15-agentcore-memory-architecture-guide.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-memory-gaps-extensions-2026
+    domain: platforms
+    canonical: docs/platforms/16-agentcore-memory-gaps-extensions-2026.md
+    aliases:
+    - agentcore memory — gaps, extensions & 2026 research
+    supersedes: []
+    pages: []
+  - id: agentcore-memory-operations-deepdive
+    domain: platforms
+    canonical: docs/platforms/17-agentcore-memory-operations-deepdive.md
+    aliases:
+    - agentcore memory operations deep dive
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report
+    domain: platforms
+    canonical: docs/platforms/18-agentcore-strands-deep-research-report.md
+    aliases:
+    - amazon bedrock agentcore & strands sdk — deep technical research report
+    supersedes: []
+    pages: []
+  - id: bedrock-agentcore-code-interpreter-architecture
+    domain: platforms
+    canonical: docs/platforms/19-bedrock-agentcore-code-interpreter-architecture.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: hyperscaler-deep-dive-aws
+    domain: platforms
+    canonical: docs/platforms/20-hyperscaler-deep-dive-aws.md
+    aliases:
+    - 'hyperscaler deep dive: aws'
+    supersedes: []
+    pages: []
+  - id: azure-agent-architecture
+    domain: platforms
+    canonical: docs/platforms/21-azure-agent-architecture.md
+    aliases:
+    - azure ai agent architecture — production grade
+    supersedes: []
+    pages: []
+  - id: hyperscaler-deep-dive-azure
+    domain: platforms
+    canonical: docs/platforms/22-hyperscaler-deep-dive-azure.md
+    aliases:
+    - 'hyperscaler deep dive: microsoft azure'
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026
+    domain: platforms
+    canonical: docs/platforms/23-enterprise-agent-runtime-internals-2026.md
+    aliases:
+    - 'enterprise ai agent runtime internals: aws, azure & gcp'
+    supersedes: []
+    pages: []
+  - id: hyperscaler-deep-dive-gcp
+    domain: platforms
+    canonical: docs/platforms/24-hyperscaler-deep-dive-gcp.md
+    aliases:
+    - 'hyperscaler deep dive: google cloud'
+    supersedes: []
+    pages: []
+  - id: ai-assisted-iac-mastery
+    domain: platforms
+    canonical: docs/platforms/25-ai-assisted-iac-mastery.md
+    aliases:
+    - ai-assisted iac mastery guide
+    supersedes: []
+    pages: []
+  - id: terraform-mastery-guide
+    domain: platforms
+    canonical: docs/platforms/26-terraform-mastery-guide.md
+    aliases:
+    - terraform from zero to mastery
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part10-observability
+    domain: platforms
+    canonical: docs/platforms/27-k8s-handbook-part10-observability.md
+    aliases:
+    - 'k8s handbook part 10: observability'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part11-ai-infrastructure
+    domain: platforms
+    canonical: docs/platforms/28-k8s-handbook-part11-ai-infrastructure.md
+    aliases:
+    - 'k8s handbook part 11: ai infrastructure'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part12-agentic-ai
+    domain: platforms
+    canonical: docs/platforms/29-k8s-handbook-part12-agentic-ai.md
+    aliases:
+    - 'k8s handbook part 12: agentic ai'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part13-emerging-standards
+    domain: platforms
+    canonical: docs/platforms/30-k8s-handbook-part13-emerging-standards.md
+    aliases:
+    - 'k8s handbook part 13: emerging standards'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part14-reference-architectures
+    domain: platforms
+    canonical: docs/platforms/31-k8s-handbook-part14-reference-architectures.md
+    aliases:
+    - 'k8s handbook part 14: reference architectures'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part15-implementation-labs
+    domain: platforms
+    canonical: docs/platforms/32-k8s-handbook-part15-implementation-labs.md
+    aliases:
+    - 'k8s handbook part 15: implementation labs'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part16-future-outlook
+    domain: platforms
+    canonical: docs/platforms/33-k8s-handbook-part16-future-outlook.md
+    aliases:
+    - 'k8s handbook part 16: future outlook'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part1-infrastructure-evolution
+    domain: platforms
+    canonical: docs/platforms/34-k8s-handbook-part1-infrastructure-evolution.md
+    aliases:
+    - 'k8s handbook part 1: infrastructure evolution'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part2-linux-foundations
+    domain: platforms
+    canonical: docs/platforms/35-k8s-handbook-part2-linux-foundations.md
+    aliases:
+    - 'k8s handbook part 2: linux foundations'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part3-containers
+    domain: platforms
+    canonical: docs/platforms/36-k8s-handbook-part3-containers.md
+    aliases:
+    - 'k8s handbook part 3: containers'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part4-kubernetes-internals
+    domain: platforms
+    canonical: docs/platforms/37-k8s-handbook-part4-kubernetes-internals.md
+    aliases:
+    - 'k8s handbook part 4: kubernetes internals'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part5-kubernetes-resources
+    domain: platforms
+    canonical: docs/platforms/38-k8s-handbook-part5-kubernetes-resources.md
+    aliases:
+    - 'k8s handbook part 5: kubernetes resources'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part6-kubernetes-networking
+    domain: platforms
+    canonical: docs/platforms/39-k8s-handbook-part6-kubernetes-networking.md
+    aliases:
+    - 'k8s handbook part 6: kubernetes networking'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part7-storage
+    domain: platforms
+    canonical: docs/platforms/40-k8s-handbook-part7-storage.md
+    aliases:
+    - 'k8s handbook part 7: storage'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part8-security
+    domain: platforms
+    canonical: docs/platforms/41-k8s-handbook-part8-security.md
+    aliases:
+    - 'k8s handbook part 8: security'
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part9-platform-engineering
+    domain: platforms
+    canonical: docs/platforms/42-k8s-handbook-part9-platform-engineering.md
+    aliases:
+    - 'k8s handbook part 9: platform engineering'
+    supersedes: []
+    pages: []
+  - id: part-01-platform-vision-agentic-services
+    domain: platforms
+    canonical: docs/platforms/43-part-01-platform-vision-agentic-services.md
+    aliases:
+    - part 1 — platform vision & agentic services
+    supersedes: []
+    pages: []
+  - id: part-02-agent-lake-architecture
+    domain: platforms
+    canonical: docs/platforms/44-part-02-agent-lake-architecture.md
+    aliases:
+    - part 2 — agent lake, agent architecture & multi-agent orchestration
+    supersedes: []
+    pages: []
+  - id: part-03-mosaic-ai-mlflow
+    domain: platforms
+    canonical: docs/platforms/45-part-03-mosaic-ai-mlflow.md
+    aliases:
+    - part 3 — mosaic ai & mlflow 3
+    supersedes: []
+    pages: []
+  - id: part-04-unity-catalog-governance
+    domain: platforms
+    canonical: docs/platforms/46-part-04-unity-catalog-governance.md
+    aliases:
+    - part 4 — unity catalog ai governance
+    supersedes: []
+    pages: []
+  - id: part-07-security-architecture
+    domain: platforms
+    canonical: docs/platforms/47-part-07-security-architecture.md
+    aliases:
+    - part 7 — security architecture
+    supersedes: []
+    pages: []
+  - id: part-08-observability-finops-integration
+    domain: platforms
+    canonical: docs/platforms/48-part-08-observability-finops-integration.md
+    aliases:
+    - part 8 — observability, finops & integration ecosystem
+    supersedes: []
+    pages: []
+  - id: part-09-competitive-reference-architectures
+    domain: platforms
+    canonical: docs/platforms/49-part-09-competitive-reference-architectures.md
+    aliases:
+    - part 9 — competitive comparison & industry reference architectures
+    supersedes: []
+    pages: []
+  - id: databricks-vendor-landscape
+    domain: platforms
+    canonical: docs/platforms/50-databricks-vendor-landscape.md
+    aliases:
+    - part 13 — vendor landscape & decision matrix
+    supersedes: []
+    pages: []
+  - id: airgapped-banking-infrastructure
+    domain: trust
+    canonical: docs/trust/01-airgapped-banking-infrastructure.md
+    aliases:
+    - air-gapped ai infrastructure for enterprise banking
+    supersedes: []
+    pages: []
+  - id: a2a-security-governance
+    domain: trust
+    canonical: docs/trust/02-a2a-security-governance.md
+    aliases:
+    - 'enterprise-scale a2a ecosystem: security, governance & architecture guide'
+    supersedes: []
+    pages: []
+  - id: agent-communication-identity-gateway
+    domain: trust
+    canonical: docs/trust/03-agent-communication-identity-gateway.md
+    aliases:
+    - agent communication, identity, authorization & ai gateway
+    supersedes: []
+    pages: []
+  - id: agentic-ai-security-guardrails
+    domain: trust
+    canonical: docs/trust/04-agentic-ai-security-guardrails.md
+    aliases:
+    - agentic ai security architecture & multi-layer guardrails
+    supersedes: []
+    pages: []
+  - id: agentic-ai-security-identity
+    domain: trust
+    canonical: docs/trust/05-agentic-ai-security-identity.md
+    aliases:
+    - agentic ai security & agent identity
+    supersedes: []
+    pages: []
+  - id: ai-control-series-overview
+    domain: trust
+    canonical: docs/trust/ai-security-governance/01-ai-control-series-overview.md
+    aliases:
+    - deepmind control roadmap
+    supersedes: []
+    pages: []
+  - id: policy-authorization-series-overview
+    domain: trust
+    canonical: docs/trust/ai-security-governance/02-policy-authorization-series-overview.md
+    aliases:
+    - 'enterprise ai authorization series: series index & architecture overview'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-governance-framework
+    domain: trust
+    canonical: docs/trust/ai-security-governance/03-agentic-ai-governance-framework.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: sovereign-constitutional-ai-rai-implementation-handbook
+    domain: trust
+    canonical: docs/trust/ai-security-governance/04-sovereign-constitutional-ai-rai-implementation-handbook.md
+    aliases:
+    - sovereign constitutional ai & rai - complete implementation handbook
+    supersedes: []
+    pages: []
+  - id: deepmind-ai-control-roadmap
+    domain: trust
+    canonical: docs/trust/ai-security-governance/05-deepmind-ai-control-roadmap.md
+    aliases:
+    - 'part 1: deepmind ai control roadmap analysis'
+    supersedes: []
+    pages: []
+  - id: evolution-enterprise-ai-security
+    domain: trust
+    canonical: docs/trust/ai-security-governance/06-evolution-enterprise-ai-security.md
+    aliases:
+    - 'part 2: evolution of enterprise ai security'
+    supersedes: []
+    pages: []
+  - id: enterprise-threat-modeling
+    domain: trust
+    canonical: docs/trust/ai-security-governance/07-enterprise-threat-modeling.md
+    aliases:
+    - 'part 3: enterprise threat modeling for ai agents'
+    supersedes: []
+    pages: []
+  - id: ai-control-architecture
+    domain: trust
+    canonical: docs/trust/ai-security-governance/08-ai-control-architecture.md
+    aliases:
+    - 'part 4: ai control architecture'
+    supersedes: []
+    pages: []
+  - id: runtime-ai-security
+    domain: trust
+    canonical: docs/trust/ai-security-governance/09-runtime-ai-security.md
+    aliases:
+    - 'part 5: runtime ai security'
+    supersedes: []
+    pages: []
+  - id: identity-for-ai-agents
+    domain: trust
+    canonical: docs/trust/ai-security-governance/10-identity-for-ai-agents.md
+    aliases:
+    - 'part 6: identity for ai agents'
+    supersedes: []
+    pages: []
+  - id: ai-authorization
+    domain: trust
+    canonical: docs/trust/ai-security-governance/11-ai-authorization.md
+    aliases:
+    - 'part 7: ai authorization architecture'
+    supersedes: []
+    pages: []
+  - id: memory-governance
+    domain: trust
+    canonical: docs/trust/ai-security-governance/12-memory-governance.md
+    aliases:
+    - 'part 8: memory governance'
+    supersedes: []
+    pages: []
+  - id: tool-governance
+    domain: trust
+    canonical: docs/trust/ai-security-governance/13-tool-governance.md
+    aliases:
+    - 'part 9: tool governance'
+    supersedes: []
+    pages: []
+  - id: reasoning-governance
+    domain: trust
+    canonical: docs/trust/ai-security-governance/14-reasoning-governance.md
+    aliases:
+    - 'part 10: reasoning governance'
+    supersedes: []
+    pages: []
+  - id: multi-agent-security
+    domain: trust
+    canonical: docs/trust/ai-security-governance/15-multi-agent-security.md
+    aliases:
+    - 'part 11: multi-agent security'
+    supersedes: []
+    pages: []
+  - id: ai-observability
+    domain: trust
+    canonical: docs/trust/ai-security-governance/16-ai-observability.md
+    aliases:
+    - 'part 12: ai observability'
+    supersedes: []
+    pages: []
+  - id: ai-soc
+    domain: trust
+    canonical: docs/trust/ai-security-governance/17-ai-soc.md
+    aliases:
+    - 'part 13: ai security operations center'
+    supersedes: []
+    pages: []
+  - id: enterprise-governance
+    domain: trust
+    canonical: docs/trust/ai-security-governance/18-enterprise-governance.md
+    aliases:
+    - 'part 14: enterprise governance'
+    supersedes: []
+    pages: []
+  - id: cloud-implementation-comparison
+    domain: trust
+    canonical: docs/trust/ai-security-governance/19-cloud-implementation-comparison.md
+    aliases:
+    - 'part 15: cloud implementation comparison'
+    supersedes: []
+    pages: []
+  - id: reference-architecture
+    domain: trust
+    canonical: docs/trust/ai-security-governance/20-reference-architecture.md
+    aliases:
+    - 'part 16: reference architecture'
+    supersedes: []
+    pages: []
+  - id: best-practices-anti-patterns
+    domain: trust
+    canonical: docs/trust/ai-security-governance/21-best-practices-anti-patterns.md
+    aliases:
+    - 'part 17: best practices & anti-patterns'
+    supersedes: []
+    pages: []
+  - id: future-outlook-2026-2035
+    domain: trust
+    canonical: docs/trust/ai-security-governance/22-future-outlook-2026-2035.md
+    aliases:
+    - 'part 18: future outlook 2026-2035'
+    supersedes: []
+    pages: []
+  - id: executive-architecture
+    domain: trust
+    canonical: docs/trust/ai-security-governance/23-executive-architecture.md
+    aliases:
+    - executive architecture & authorization fundamentals
+    supersedes: []
+    pages: []
+  - id: 1b-authorization-deep-dive
+    domain: trust
+    canonical: docs/trust/ai-security-governance/24-1b-authorization-deep-dive.md
+    aliases:
+    - 'enterprise authorization deep dive: engines, interceptor patterns & xacml'
+    supersedes: []
+    pages: []
+  - id: identity-claims-policy
+    domain: trust
+    canonical: docs/trust/ai-security-governance/25-identity-claims-policy.md
+    aliases:
+    - identity, claims & policy design
+    supersedes: []
+    pages: []
+  - id: 2b-advanced-policy-engineering
+    domain: trust
+    canonical: docs/trust/ai-security-governance/26-2b-advanced-policy-engineering.md
+    aliases:
+    - 'advanced policy engineering: scim, cedar templates, opa & wasm'
+    supersedes: []
+    pages: []
+  - id: agent-tool-mcp-authorization
+    domain: trust
+    canonical: docs/trust/ai-security-governance/27-agent-tool-mcp-authorization.md
+    aliases:
+    - agent, tool & mcp authorization
+    supersedes: []
+    pages: []
+  - id: 3b-agent-authorization-deep-dive
+    domain: trust
+    canonical: docs/trust/ai-security-governance/28-3b-agent-authorization-deep-dive.md
+    aliases:
+    - 'agent authorization deep dive: prompt safety, contextual risk & workflow patterns'
+    supersedes: []
+    pages: []
+  - id: rag-memory-data-authorization
+    domain: trust
+    canonical: docs/trust/ai-security-governance/29-rag-memory-data-authorization.md
+    aliases:
+    - rag, memory & data authorization
+    supersedes: []
+    pages: []
+  - id: 4b-aws-entra-federation-patterns
+    domain: trust
+    canonical: docs/trust/ai-security-governance/30-4b-aws-entra-federation-patterns.md
+    aliases:
+    - 'aws & entra id federation: complete integration patterns'
+    supersedes: []
+    pages: []
+  - id: aws-implementation-governance
+    domain: trust
+    canonical: docs/trust/ai-security-governance/31-aws-implementation-governance.md
+    aliases:
+    - aws implementation, governance & production readiness
+    supersedes: []
+    pages: []
+  - id: 5b-compliance-governance-decision-framework
+    domain: trust
+    canonical: docs/trust/ai-security-governance/32-5b-compliance-governance-decision-framework.md
+    aliases:
+    - compliance, governance & final decision framework
+    supersedes: []
+    pages: []
+  - id: foundations-reference-architecture
+    domain: trust
+    canonical: docs/trust/ai-security-governance/33-foundations-reference-architecture.md
+    aliases:
+    - foundations & reference architecture
+    supersedes: []
+    pages: []
+  - id: identity-mcp-a2a-security-blueprint
+    domain: trust
+    canonical: docs/trust/ai-security-governance/34-identity-mcp-a2a-security-blueprint.md
+    aliases:
+    - identity, mcp & a2a security blueprint
+    supersedes: []
+    pages: []
+  - id: ai-soc-observability-redteam-memory
+    domain: trust
+    canonical: docs/trust/ai-security-governance/35-ai-soc-observability-redteam-memory.md
+    aliases:
+    - ai soc, observability, red team & memory security
+    supersedes: []
+    pages: []
+  - id: economic-security-finops-commerce-pqc
+    domain: trust
+    canonical: docs/trust/ai-security-governance/36-economic-security-finops-commerce-pqc.md
+    aliases:
+    - economic security, finops, commerce & post-quantum cryptography
+    supersedes: []
+    pages: []
+  - id: operating-model-maturity-roadmap
+    domain: trust
+    canonical: docs/trust/ai-security-governance/37-operating-model-maturity-roadmap.md
+    aliases:
+    - operating model & security maturity roadmap
+    supersedes: []
+    pages: []
+  - id: zero-to-mastery-curriculum
+    domain: trust
+    canonical: docs/trust/ai-security-governance/38-zero-to-mastery-curriculum.md
+    aliases:
+    - zero-to-mastery security curriculum
+    supersedes: []
+    pages: []
+  - id: architects-field-guide
+    domain: trust
+    canonical: docs/trust/ai-security-governance/39-architects-field-guide.md
+    aliases:
+    - ai security architect's field guide
+    supersedes: []
+    pages: []
+  - id: future-ai-soc-2026-2030
+    domain: trust
+    canonical: docs/trust/ai-security-governance/40-future-ai-soc-2026-2030.md
+    aliases:
+    - part 14 — future of ai soc
+    supersedes: []
+    pages: []
+  - id: ai-bill-of-materials-guide
+    domain: trust
+    canonical: docs/trust/ai-security-governance/41-ai-bill-of-materials-guide.md
+    aliases:
+    - ai bill of materials (aibom) — supply chain transparency for ai systems
+    supersedes: []
+    pages: []
+  - id: ai-red-teaming-guide
+    domain: trust
+    canonical: docs/trust/ai-security-governance/42-ai-red-teaming-guide.md
+    aliases:
+    - ai red teaming — adversarial testing for ai and agentic systems
+    supersedes: []
+    pages: []
+  - id: ai-trism-complete-guide
+    domain: trust
+    canonical: docs/trust/ai-security-governance/43-ai-trism-complete-guide.md
+    aliases:
+    - 'ai trism — ai trust, risk and security management: complete guide'
+    supersedes: []
+    pages: []
+  - id: aidr-ai-detection-response-complete-guide
+    domain: trust
+    canonical: docs/trust/ai-security-governance/44-aidr-ai-detection-response-complete-guide.md
+    aliases:
+    - 'aidr — ai detection and response: complete enterprise guide'
+    supersedes: []
+    pages: []
+  - id: aispm-ai-security-posture-management
+    domain: trust
+    canonical: docs/trust/ai-security-governance/45-aispm-ai-security-posture-management.md
+    aliases:
+    - 'aispm — ai security posture management: complete guide'
+    supersedes: []
+    pages: []
+  - id: model-cards-system-cards-guide
+    domain: trust
+    canonical: docs/trust/ai-security-governance/46-model-cards-system-cards-guide.md
+    aliases:
+    - model cards and system cards — ai transparency documentation standards
+    supersedes: []
+    pages: []
+  - id: runtime-security-governance
+    domain: trust
+    canonical: docs/trust/ai-security-governance/47-runtime-security-governance.md
+    aliases:
+    - agent runtime, mcp security & governance
+    supersedes: []
+    pages: []
+  - id: part-01-soc-operating-model
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/01-part-01-soc-operating-model.md
+    aliases:
+    - part 01 — soc operating model & maturity
+    supersedes: []
+    pages: []
+  - id: part-02-ai-use-cases
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/02-part-02-ai-use-cases.md
+    aliases:
+    - part 02 — ai use cases in security operations
+    supersedes: []
+    pages: []
+  - id: part-03-agentic-soc
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/03-part-03-agentic-soc.md
+    aliases:
+    - part 03 — agentic soc architecture
+    supersedes: []
+    pages: []
+  - id: part-04-automation-playbooks
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/04-part-04-automation-playbooks.md
+    aliases:
+    - part 04 — ai automation playbooks
+    supersedes: []
+    pages: []
+  - id: part-05-soar-platforms
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/05-part-05-soar-platforms.md
+    aliases:
+    - part 05 — soar platform comparison
+    supersedes: []
+    pages: []
+  - id: part-06-ai-models
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/06-part-06-ai-models.md
+    aliases:
+    - part 06 — ai models for soc
+    supersedes: []
+    pages: []
+  - id: part-07-ai-safety
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/07-part-07-ai-safety.md
+    aliases:
+    - part 07 — ai safety & adversarial risks in soc
+    supersedes: []
+    pages: []
+  - id: part-08-observability
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/08-part-08-observability.md
+    aliases:
+    - part 08 — ai soc observability & evaluation
+    supersedes: []
+    pages: []
+  - id: part-09-enterprise-architecture
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/09-part-09-enterprise-architecture.md
+    aliases:
+    - part 09 — enterprise architecture integration
+    supersedes: []
+    pages: []
+  - id: part-10-standards-compliance
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/10-part-10-standards-compliance.md
+    aliases:
+    - part 10 — standards & compliance mapping
+    supersedes: []
+    pages: []
+  - id: part-11-implementation-roadmap
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/11-part-11-implementation-roadmap.md
+    aliases:
+    - part 11 — implementation roadmap & reference architecture
+    supersedes: []
+    pages: []
+  - id: part-13-vendor-landscape
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/12-part-13-vendor-landscape.md
+    aliases:
+    - part 13 — ai soc vendor landscape
+    supersedes: []
+    pages: []
+  - id: part-14-future-soc
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/13-part-14-future-soc.md
+    aliases:
+    - part 14 — future of ai soc
+    supersedes: []
+    pages: []
+  - id: evolution
+    domain: trust
+    canonical: docs/trust/cybersec-architect/01-evolution.md
+    aliases:
+    - part 1 — cyber security evolution
+    supersedes: []
+    pages: []
+  - id: enterprise-security-architecture
+    domain: trust
+    canonical: docs/trust/cybersec-architect/02-enterprise-security-architecture.md
+    aliases:
+    - part 2 — enterprise security architecture
+    supersedes: []
+    pages: []
+  - id: security-domains
+    domain: trust
+    canonical: docs/trust/cybersec-architect/03-security-domains.md
+    aliases:
+    - part 3 — security domains
+    supersedes: []
+    pages: []
+  - id: ai-security
+    domain: trust
+    canonical: docs/trust/cybersec-architect/04-ai-security.md
+    aliases:
+    - part 4 — ai security
+    supersedes: []
+    pages: []
+  - id: agentic-ai-security
+    domain: trust
+    canonical: docs/trust/cybersec-architect/05-agentic-ai-security.md
+    aliases:
+    - part 5 — agentic ai security
+    supersedes: []
+    pages: []
+  - id: identity-architecture
+    domain: trust
+    canonical: docs/trust/cybersec-architect/06-identity-architecture.md
+    aliases:
+    - part 6 — identity architecture
+    supersedes: []
+    pages: []
+  - id: cloud-security
+    domain: trust
+    canonical: docs/trust/cybersec-architect/07-cloud-security.md
+    aliases:
+    - part 7 — cloud security architecture
+    supersedes: []
+    pages: []
+  - id: ai-governance
+    domain: trust
+    canonical: docs/trust/cybersec-architect/08-ai-governance.md
+    aliases:
+    - part 8 — ai governance & compliance
+    supersedes: []
+    pages: []
+  - id: security-operations
+    domain: trust
+    canonical: docs/trust/cybersec-architect/09-security-operations.md
+    aliases:
+    - part 9 — security operations in the ai era
+    supersedes: []
+    pages: []
+  - id: technology-investment
+    domain: trust
+    canonical: docs/trust/cybersec-architect/10-technology-investment.md
+    aliases:
+    - part 10 — technology investment
+    supersedes: []
+    pages: []
+  - id: ai-investment
+    domain: trust
+    canonical: docs/trust/cybersec-architect/11-ai-investment.md
+    aliases:
+    - part 11 — ai & security investment
+    supersedes: []
+    pages: []
+  - id: ea-deliverables
+    domain: trust
+    canonical: docs/trust/cybersec-architect/12-ea-deliverables.md
+    aliases:
+    - part 12 — enterprise architecture deliverables
+    supersedes: []
+    pages: []
+  - id: security-patterns
+    domain: trust
+    canonical: docs/trust/cybersec-architect/13-security-patterns.md
+    aliases:
+    - part 13 — security patterns
+    supersedes: []
+    pages: []
+  - id: case-studies
+    domain: trust
+    canonical: docs/trust/cybersec-architect/14-case-studies.md
+    aliases:
+    - part 14 — industry case studies
+    supersedes: []
+    pages: []
+  - id: emerging-trends
+    domain: trust
+    canonical: docs/trust/cybersec-architect/15-emerging-trends.md
+    aliases:
+    - part 15 — emerging trends 2026–2030
+    supersedes: []
+    pages: []
+  - id: part-01-nist-ai-100-2-adversarial-ml
+    domain: trust
+    canonical: docs/trust/nist-ai-standards/01-part-01-nist-ai-100-2-adversarial-ml.md
+    aliases:
+    - nist ai 100-2 — adversarial machine learning
+    supersedes: []
+    pages: []
+  - id: part-02-nist-ai-100-4-synthetic-content
+    domain: trust
+    canonical: docs/trust/nist-ai-standards/02-part-02-nist-ai-100-4-synthetic-content.md
+    aliases:
+    - nist ai 100-4 — synthetic content detection & provenance
+    supersedes: []
+    pages: []
+  - id: part-03-caisi-agentic-ai
+    domain: trust
+    canonical: docs/trust/nist-ai-standards/03-part-03-caisi-agentic-ai.md
+    aliases:
+    - caisi agentic ai security guidance
+    supersedes: []
+    pages: []
+  - id: part-04-enterprise-architecture
+    domain: trust
+    canonical: docs/trust/nist-ai-standards/04-part-04-enterprise-architecture.md
+    aliases:
+    - nist ai standards — enterprise architecture patterns
+    supersedes: []
+    pages: []
+  - id: part-05-control-mappings
+    domain: trust
+    canonical: docs/trust/nist-ai-standards/05-part-05-control-mappings.md
+    aliases:
+    - nist ai standards — cross-framework control mappings
+    supersedes: []
+    pages: []
+  - id: part-06-implementation-checklist
+    domain: trust
+    canonical: docs/trust/nist-ai-standards/06-part-06-implementation-checklist.md
+    aliases:
+    - nist ai standards — implementation checklist
+    supersedes: []
+    pages: []
+  - id: part-07-future-trends
+    domain: trust
+    canonical: docs/trust/nist-ai-standards/07-part-07-future-trends.md
+    aliases:
+    - nist ai standards — future trends & emerging threats
+    supersedes: []
+    pages: []
+  - id: ai-alignment-control
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/01-ai-alignment-control.md
+    aliases:
+    - ai alignment & control
+    supersedes: []
+    pages: []
+  - id: ai-assurance-audit-architecture
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/02-ai-assurance-audit-architecture.md
+    aliases:
+    - ai assurance & audit architecture
+    supersedes: []
+    pages: []
+  - id: ai-governance-operating-model
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/03-ai-governance-operating-model.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-risk-taxonomy
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/04-ai-risk-taxonomy.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-safety-framework
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/05-ai-safety-framework.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: constitutional-agent-architecture
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/06-constitutional-agent-architecture.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: constitutional-ai-engineering
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/07-constitutional-ai-engineering.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: democratic-ai-public-interest
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/08-democratic-ai-public-interest.md
+    aliases:
+    - democratic & public interest ai
+    supersedes: []
+    pages: []
+  - id: policy-as-code-framework
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/09-policy-as-code-framework.md
+    aliases:
+    - policy-as-code framework
+    supersedes: []
+    pages: []
+  - id: rai-operating-model
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/10-rai-operating-model.md
+    aliases:
+    - responsible ai operating model
+    supersedes: []
+    pages: []
+  - id: sovereign-ai-foundations
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/11-sovereign-ai-foundations.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: sovereign-ai-roadmap-maturity
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/12-sovereign-ai-roadmap-maturity.md
+    aliases:
+    - roadmap, maturity & standards canon
+    supersedes: []
+    pages: []
+  - id: agent-evaluation-framework
+    domain: operations
+    canonical: docs/operations/01-agent-evaluation-framework.md
+    aliases:
+    - complete ai agent evaluation framework
+    supersedes:
+    - docs/agentic-ui/evaluation-framework.md
+    - docs/ai-development/testing/AI_Agent_Evaluation_Framework_Guide.md
+    pages: []
+  - id: finops-ai-soc
+    domain: operations
+    canonical: docs/operations/02-finops-ai-soc.md
+    aliases:
+    - part 12 — ai soc finops & cost management
+    supersedes:
+    - docs/databricks-agentic-ai/part-12-finops.md
+    pages: []
+  - id: finops-cost-management-overview
+    domain: operations
+    canonical: docs/operations/03-finops-cost-management-overview.md
+    aliases:
+    - ai finops — cost management and token economics for enterprise ai
+    supersedes: []
+    pages: []
+  - id: finops-budget-governance
+    domain: operations
+    canonical: docs/operations/04-finops-budget-governance.md
+    aliases:
+    - ai finops — budget governance, quotas & cost guardrails
+    supersedes: []
+    pages: []
+  - id: finops-capacity-forecasting
+    domain: operations
+    canonical: docs/operations/05-finops-capacity-forecasting.md
+    aliases:
+    - ai finops — capacity planning & cost forecasting
+    supersedes: []
+    pages: []
+  - id: finops-chargeback-attribution
+    domain: operations
+    canonical: docs/operations/06-finops-chargeback-attribution.md
+    aliases:
+    - ai finops — cost attribution, chargeback & showback
+    supersedes: []
+    pages: []
+  - id: finops-infrastructure-optimization
+    domain: operations
+    canonical: docs/operations/07-finops-infrastructure-optimization.md
+    aliases:
+    - ai finops — infrastructure cost optimization
+    supersedes: []
+    pages: []
+  - id: finops-maturity-model
+    domain: operations
+    canonical: docs/operations/08-finops-maturity-model.md
+    aliases:
+    - ai finops maturity model
+    supersedes: []
+    pages: []
+  - id: finops-multiagent-cost-propagation
+    domain: operations
+    canonical: docs/operations/09-finops-multiagent-cost-propagation.md
+    aliases:
+    - multi-agent cost propagation — how costs accumulate across distributed ai workflows
+    supersedes: []
+    pages: []
+  - id: finops-rag-mcp-a2a-economics
+    domain: operations
+    canonical: docs/operations/10-finops-rag-mcp-a2a-economics.md
+    aliases:
+    - ai finops — rag, mcp & a2a economics
+    supersedes: []
+    pages: []
+  - id: finops-unit-economics-kpis
+    domain: operations
+    canonical: docs/operations/11-finops-unit-economics-kpis.md
+    aliases:
+    - ai finops — unit economics, kpi framework & executive dashboard
+    supersedes: []
+    pages: []
+  - id: agent-testing-monitoring-evaluation
+    domain: operations
+    canonical: docs/operations/12-agent-testing-monitoring-evaluation.md
+    aliases:
+    - agent testing, monitoring & evaluation
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-01-foundations
+    domain: learning-paths
+    canonical: docs/learning-paths/01-ea-masterclass-01-foundations.md
+    aliases:
+    - module 1 — enterprise architecture foundations
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-02-business-acumen
+    domain: learning-paths
+    canonical: docs/learning-paths/02-ea-masterclass-02-business-acumen.md
+    aliases:
+    - module 2 — business acumen for enterprise architects
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-03-proposal-lifecycle
+    domain: learning-paths
+    canonical: docs/learning-paths/03-ea-masterclass-03-proposal-lifecycle.md
+    aliases:
+    - module 3 — enterprise proposal lifecycle
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-04-technology-investment
+    domain: learning-paths
+    canonical: docs/learning-paths/04-ea-masterclass-04-technology-investment.md
+    aliases:
+    - module 4 — technology investment fundamentals
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-05-ai-investment-strategy
+    domain: learning-paths
+    canonical: docs/learning-paths/05-ea-masterclass-05-ai-investment-strategy.md
+    aliases:
+    - module 5 — ai investment strategy
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-06-business-case
+    domain: learning-paths
+    canonical: docs/learning-paths/06-ea-masterclass-06-business-case.md
+    aliases:
+    - module 6 — business case development
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-07-proposal-writing
+    domain: learning-paths
+    canonical: docs/learning-paths/07-ea-masterclass-07-proposal-writing.md
+    aliases:
+    - module 7 — proposal writing
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-08-financial-literacy
+    domain: learning-paths
+    canonical: docs/learning-paths/08-ea-masterclass-08-financial-literacy.md
+    aliases:
+    - module 8 — financial literacy for enterprise architects
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-09-enterprise-ai-architecture
+    domain: learning-paths
+    canonical: docs/learning-paths/09-ea-masterclass-09-enterprise-ai-architecture.md
+    aliases:
+    - module 9 — enterprise ai architecture
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-10-governance
+    domain: learning-paths
+    canonical: docs/learning-paths/10-ea-masterclass-10-governance.md
+    aliases:
+    - module 10 — enterprise governance
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-11-executive-communication
+    domain: learning-paths
+    canonical: docs/learning-paths/11-ea-masterclass-11-executive-communication.md
+    aliases:
+    - module 11 — executive communication
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-12-ai-consulting
+    domain: learning-paths
+    canonical: docs/learning-paths/12-ea-masterclass-12-ai-consulting.md
+    aliases:
+    - module 12 — ai consulting engagement
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-14-mentoring
+    domain: learning-paths
+    canonical: docs/learning-paths/13-ea-masterclass-14-mentoring.md
+    aliases:
+    - module 14 — mentoring & mastery
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-15-distinguished-architect
+    domain: learning-paths
+    canonical: docs/learning-paths/14-ea-masterclass-15-distinguished-architect.md
+    aliases:
+    - 'module 15 — distinguished architect: leadership, influence & cto readiness'
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-15-architecture-leadership
+    domain: learning-paths
+    canonical: docs/learning-paths/15-ea-masterclass-15-architecture-leadership.md
+    aliases:
+    - architecture leadership, organisational change & cto readiness
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-15-executive-presence
+    domain: learning-paths
+    canonical: docs/learning-paths/16-ea-masterclass-15-executive-presence.md
+    aliases:
+    - executive presence, influence without authority & stakeholder politics
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-15-fortune100-modernisation
+    domain: learning-paths
+    canonical: docs/learning-paths/17-ea-masterclass-15-fortune100-modernisation.md
+    aliases:
+    - fortune 100 modernisation playbook — leading at scale
+    supersedes: []
+    pages: []
+  - id: ea-masterclass-15-strategic-thinking
+    domain: learning-paths
+    canonical: docs/learning-paths/18-ea-masterclass-15-strategic-thinking.md
+    aliases:
+    - strategic thinking, technology bets & platform economics
+    supersedes: []
+    pages: []
+  - id: mental-models-executive-cognition
+    domain: career
+    canonical: docs/career/01-mental-models-executive-cognition.md
+    aliases:
+    - the mental model encyclopedia
+    supersedes:
+    - docs/soft-skills/Mental_Models_for_Voice_Training.md
+    pages: []
+  - id: mental-models-systems-thinking
+    domain: career
+    canonical: docs/career/02-mental-models-systems-thinking.md
+    aliases:
+    - the mental model encyclopedia
+    supersedes: []
+    pages: []
+  - id: mental-models-strategic-analysis
+    domain: career
+    canonical: docs/career/03-mental-models-strategic-analysis.md
+    aliases:
+    - the mental model encyclopedia
+    supersedes: []
+    pages: []
+  - id: mental-models-counterfactual-thinking
+    domain: career
+    canonical: docs/career/04-mental-models-counterfactual-thinking.md
+    aliases:
+    - the mental model encyclopedia
+    supersedes: []
+    pages: []
+  - id: ea-interview-handbook
+    domain: career
+    canonical: docs/career/05-ea-interview-handbook.md
+    aliases:
+    - enterprise architecture interview handbook
+    supersedes:
+    - docs/interview-prep/ea/EA_Interview_Handbook_DELTA.md
+    pages: []
+  - id: interview-ai-agent-systems
+    domain: career
+    canonical: docs/career/06-interview-ai-agent-systems.md
+    aliases:
+    - ai agent systems senior engineer interview preparation guide
+    supersedes: []
+    pages: []
+  - id: interview-ai-engineer-question-bank
+    domain: career
+    canonical: docs/career/07-interview-ai-engineer-question-bank.md
+    aliases:
+    - ai engineer interview question bank
+    supersedes: []
+    pages: []
+  - id: interview-agentic-ai-platforms-questionnaire
+    domain: career
+    canonical: docs/career/08-interview-agentic-ai-platforms-questionnaire.md
+    aliases:
+    - agentic ai & platforms enterprise questionnaire
+    supersedes: []
+    pages: []
+  - id: interview-ea-hitl-hotl-hool
+    domain: career
+    canonical: docs/career/09-interview-ea-hitl-hotl-hool.md
+    aliases:
+    - ea hitl / hotl / hool interview questions
+    supersedes: []
+    pages: []
+  - id: interview-ea-quality-resilience-testing
+    domain: career
+    canonical: docs/career/10-interview-ea-quality-resilience-testing.md
+    aliases:
+    - ea quality, resilience & testing interview questions
+    supersedes: []
+    pages: []
+  - id: interview-ea-senior
+    domain: career
+    canonical: docs/career/11-interview-ea-senior.md
+    aliases:
+    - ea senior interview questions
+    supersedes: []
+    pages: []
+  - id: interview-ea-soft-skills-and-behaviors
+    domain: career
+    canonical: docs/career/12-interview-ea-soft-skills-and-behaviors.md
+    aliases:
+    - ea soft skills and behaviors
+    supersedes: []
+    pages: []
+  - id: interview-ey-ai-architect
+    domain: career
+    canonical: docs/career/13-interview-ey-ai-architect.md
+    aliases:
+    - ey ai architect & consultant — interview & ecc ai-first guide
+    supersedes: []
+    pages: []
+  - id: interview-enterprise-architect-age-of-ai
+    domain: career
+    canonical: docs/career/14-interview-enterprise-architect-age-of-ai.md
+    aliases:
+    - enterprise architect in the age of ai
+    supersedes: []
+    pages: []
+  - id: interview-enterprise-genai-architect
+    domain: career
+    canonical: docs/career/15-interview-enterprise-genai-architect.md
+    aliases:
+    - enterprise genai / ai architect
+    supersedes: []
+    pages: []
+  - id: interview-hard-scenarios
+    domain: career
+    canonical: docs/career/16-interview-hard-scenarios.md
+    aliases:
+    - hard scenarios interview prep
+    supersedes: []
+    pages: []
+  - id: interview-ml-ai-mastery-guide
+    domain: career
+    canonical: docs/career/17-interview-ml-ai-mastery-guide.md
+    aliases:
+    - how to use this guide
+    supersedes: []
+    pages: []
+  - id: interview-multimodal-ai-ea-scenarios
+    domain: career
+    canonical: docs/career/18-interview-multimodal-ai-ea-scenarios.md
+    aliases:
+    - multimodal ai — enterprise architect complex scenario bank
+    supersedes: []
+    pages: []
+  - id: interview-ea-master-guide
+    domain: career
+    canonical: docs/career/19-interview-ea-master-guide.md
+    aliases:
+    - enterprise architect interview master guide
+    supersedes: []
+    pages: []
+  - id: interview-ea-vol3-cto-ai
+    domain: career
+    canonical: docs/career/20-interview-ea-vol3-cto-ai.md
+    aliases:
+    - enterprise architecture
+    supersedes: []
+    pages: []
+  - id: interview-ea-artifacts-and-metrics
+    domain: career
+    canonical: docs/career/21-interview-ea-artifacts-and-metrics.md
+    aliases:
+    - ea artifacts & metrics — real-world examples
+    supersedes: []
+    pages: []
+  - id: interview-fde-architect-context
+    domain: career
+    canonical: docs/career/22-interview-fde-architect-context.md
+    aliases:
+    - architect expectations in an fde context
+    supersedes: []
+    pages: []
+  - id: interview-fde-role-skills-map
+    domain: career
+    canonical: docs/career/23-interview-fde-role-skills-map.md
+    aliases:
+    - fde role skills & study map
+    supersedes: []
+    pages: []
+  - id: soft-skills-cto-voice-mastery
+    domain: career
+    canonical: docs/career/24-soft-skills-cto-voice-mastery.md
+    aliases:
+    - cto voice mastery program
+    supersedes: []
+    pages: []
+  - id: soft-skills-creative-thinking
+    domain: career
+    canonical: docs/career/25-soft-skills-creative-thinking.md
+    aliases:
+    - creative thinking skills for technical leaders
+    supersedes: []
+    pages: []
+  - id: soft-skills-problem-solving
+    domain: career
+    canonical: docs/career/26-soft-skills-problem-solving.md
+    aliases:
+    - problem-solving skills for technical leaders
+    supersedes: []
+    pages: []
+  - id: soft-skills-voice-training-30-day-plan
+    domain: career
+    canonical: docs/career/27-soft-skills-voice-training-30-day-plan.md
+    aliases:
+    - voice training 30-day plan
+    supersedes: []
+    pages: []
+  - id: cert-ibm-quantum-associate
+    domain: career
+    canonical: docs/career/28-cert-ibm-quantum-associate.md
+    aliases:
+    - ibm certified associate developer — quantum computation study guide
+    supersedes: []
+    pages: []
+  - id: cert-ibm-quantum-developer
+    domain: career
+    canonical: docs/career/29-cert-ibm-quantum-developer.md
+    aliases:
+    - ibm certified developer — quantum computation study guide
+    supersedes: []
+    pages: []
+  - id: interview-harness-question-bank
+    domain: career
+    canonical: docs/career/30-interview-harness-question-bank.md
+    aliases:
+    - harness interview question bank
+    supersedes: []
+    pages: []
+  - id: cert-anthropic-partner-study-guide
+    domain: career
+    canonical: docs/career/31-cert-anthropic-partner-study-guide.md
+    aliases:
+    - anthropic partner certification (ea) — complete study guide
+    supersedes: []
+    pages: []
+  - id: cert-ccaf-advanced-supplement
+    domain: career
+    canonical: docs/career/32-cert-ccaf-advanced-supplement.md
+    aliases:
+    - ccaf advanced supplement
+    supersedes: []
+    pages: []
+  - id: cert-ccaf-study-guide
+    domain: career
+    canonical: docs/career/33-cert-ccaf-study-guide.md
+    aliases:
+    - ccaf study guide
+    supersedes: []
+    pages: []
+  - id: cert-claude-certification-questionnaire
+    domain: career
+    canonical: docs/career/34-cert-claude-certification-questionnaire.md
+    aliases:
+    - claude certification questionnaire
+    supersedes: []
+    pages: []
+  - id: cert-claude-certification-questionnaire-vol2
+    domain: career
+    canonical: docs/career/35-cert-claude-certification-questionnaire-vol2.md
+    aliases:
+    - claude cert questionnaire vol.2
+    supersedes: []
+    pages: []
+  - id: cert-ccaf-cheatsheet
+    domain: career
+    canonical: docs/career/36-cert-ccaf-cheatsheet.md
+    aliases:
+    - ccaf cheatsheet — quick reference
+    supersedes: []
+    pages: []
+  - id: cert-ccaf-exam-prep
+    domain: career
+    canonical: docs/career/37-cert-ccaf-exam-prep.md
+    aliases:
+    - ccaf exam prep — complete guide
+    supersedes: []
+    pages: []
+  - id: cert-ccao-f-cheatsheet
+    domain: career
+    canonical: docs/career/38-cert-ccao-f-cheatsheet.md
+    aliases:
+    - ccao-f cheatsheet — quick reference
+    supersedes: []
+    pages: []
+  - id: cert-ccao-f-exam-prep
+    domain: career
+    canonical: docs/career/39-cert-ccao-f-exam-prep.md
+    aliases:
+    - ccao-f exam prep — complete guide
+    supersedes: []
+    pages: []
+  - id: cert-ccar-p-cheatsheet
+    domain: career
+    canonical: docs/career/40-cert-ccar-p-cheatsheet.md
+    aliases:
+    - ccar-p cheatsheet — quick reference
+    supersedes: []
+    pages: []
+  - id: cert-ccar-p-exam-prep
+    domain: career
+    canonical: docs/career/41-cert-ccar-p-exam-prep.md
+    aliases:
+    - ccar-p exam prep — complete guide
+    supersedes: []
+    pages: []
+  - id: cert-ccdv-f-cheatsheet
+    domain: career
+    canonical: docs/career/42-cert-ccdv-f-cheatsheet.md
+    aliases:
+    - ccdv-f cheatsheet — quick reference
+    supersedes: []
+    pages: []
+  - id: cert-ccdv-f-exam-prep
+    domain: career
+    canonical: docs/career/43-cert-ccdv-f-exam-prep.md
+    aliases:
+    - ccdv-f exam prep — complete guide
+    supersedes: []
+    pages: []
+  - id: ea-soft-skills-interview-master-guide
+    domain: career
+    canonical: docs/career/44-ea-soft-skills-interview-master-guide.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: eu-bank-copilot-architecture
+    domain: assets
+    canonical: docs/assets/01-eu-bank-copilot-architecture.md
+    aliases:
+    - eu bank ai copilot platform
+    supersedes:
+    - docs/ai-usecases/eu-bank-ai-copilot-architecture.md
+    pages: []
+  - id: eu-bank-copilot-sequence-diagrams
+    domain: assets
+    canonical: docs/assets/02-eu-bank-copilot-sequence-diagrams.md
+    aliases:
+    - eu bank ai copilot platform
+    supersedes:
+    - docs/ai-usecases/eu-bank-sequence-diagrams.md
+    pages: []
+  - id: eu-bank-copilot-runtime-security
+    domain: assets
+    canonical: docs/assets/03-eu-bank-copilot-runtime-security.md
+    aliases:
+    - eu bank ai copilot platform
+    supersedes: []
+    pages: []
+  - id: eu-bank-copilot-compliance-observability
+    domain: assets
+    canonical: docs/assets/04-eu-bank-copilot-compliance-observability.md
+    aliases:
+    - eu bank ai copilot platform
+    supersedes:
+    - docs/ai-usecases/EU_Banking_AI_Agent_Evaluation_Framework.md
+    - docs/ai-usecases/EU_Banking_AI_Evaluation_Compliance_Guide.md
+    pages: []
+  - id: transcript-cybersec-architect-usecase
+    domain: assets
+    canonical: docs/assets/05-transcript-cybersec-architect-usecase.md
+    aliases:
+    - use case transcript — agentic ai security advisory session
+    supersedes: []
+    pages: []
+  - id: fde-life-transcript
+    domain: assets
+    canonical: docs/assets/06-fde-life-transcript.md
+    aliases:
+    - fde life transcript — finclear ai deployment
+    supersedes: []
+    pages: []
+  - id: storytelling-exercise-workbook
+    domain: assets
+    canonical: docs/assets/07-storytelling-exercise-workbook.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: case-study-ea-energy-utilities
+    domain: assets
+    canonical: docs/assets/08-case-study-ea-energy-utilities.md
+    aliases:
+    - 'case study: energy utility — ai predictive maintenance for grid infrastructure'
+    supersedes: []
+    pages: []
+  - id: case-study-ea-global-bank
+    domain: assets
+    canonical: docs/assets/09-case-study-ea-global-bank.md
+    aliases:
+    - 'case study: global bank — ai-powered loan origination'
+    supersedes: []
+    pages: []
+  - id: case-study-ea-government
+    domain: assets
+    canonical: docs/assets/10-case-study-ea-government.md
+    aliases:
+    - 'case study: national tax authority — ai risk-based audit intelligence'
+    supersedes: []
+    pages: []
+  - id: case-study-ea-healthcare
+    domain: assets
+    canonical: docs/assets/11-case-study-ea-healthcare.md
+    aliases:
+    - 'case study: healthcare network — ai clinical documentation'
+    supersedes: []
+    pages: []
+  - id: case-study-ea-manufacturing
+    domain: assets
+    canonical: docs/assets/12-case-study-ea-manufacturing.md
+    aliases:
+    - 'case study: automotive manufacturer — ai predictive maintenance'
+    supersedes: []
+    pages: []
+  - id: case-study-ea-retail
+    domain: assets
+    canonical: docs/assets/13-case-study-ea-retail.md
+    aliases:
+    - 'case study: retail chain — ai demand forecasting & inventory optimization'
+    supersedes: []
+    pages: []
+  - id: case-study-ea-telecom
+    domain: assets
+    canonical: docs/assets/14-case-study-ea-telecom.md
+    aliases:
+    - 'case study: telecom operator — ai customer retention platform'
+    supersedes: []
+    pages: []
+  - id: transcript-bank-discovery-workshop
+    domain: assets
+    canonical: docs/assets/15-transcript-bank-discovery-workshop.md
+    aliases:
+    - 'transcript: global bank — day 1 discovery workshop'
+    supersedes: []
+    pages: []
+  - id: transcript-healthcare-executive-presentation
+    domain: assets
+    canonical: docs/assets/16-transcript-healthcare-executive-presentation.md
+    aliases:
+    - 'transcript: healthcare network — executive steering committee'
+    supersedes: []
+    pages: []
+  - id: transcript-manufacturing-arb-review
+    domain: assets
+    canonical: docs/assets/17-transcript-manufacturing-arb-review.md
+    aliases:
+    - 'transcript: automotive manufacturer — architecture review board session'
+    supersedes: []
+    pages: []
+  - id: transcript-retail-proposal-negotiation
+    domain: assets
+    canonical: docs/assets/18-transcript-retail-proposal-negotiation.md
+    aliases:
+    - 'transcript: retail chain — cfo investment proposal negotiation'
+    supersedes: []
+    pages: []
+  - id: template-business-case
+    domain: assets
+    canonical: docs/assets/19-template-business-case.md
+    aliases:
+    - business case templates
+    supersedes: []
+    pages: []
+  - id: template-consulting-and-practice
+    domain: assets
+    canonical: docs/assets/20-template-consulting-and-practice.md
+    aliases:
+    - 'deliverable templates 11–20: consulting & practice tools'
+    supersedes: []
+    pages: []
+  - id: template-governance-and-decision
+    domain: assets
+    canonical: docs/assets/21-template-governance-and-decision.md
+    aliases:
+    - 'deliverable templates 7–10: governance & decision frameworks'
+    supersedes: []
+    pages: []
+  - id: aviation
+    domain: assets
+    canonical: docs/assets/22-aviation.md
+    aliases:
+    - meridian global airlines case study
+    supersedes: []
+    pages: []
+  - id: banking
+    domain: assets
+    canonical: docs/assets/23-banking.md
+    aliases:
+    - 'banking case study: continental union bank — ai underwriting copilot'
+    supersedes: []
+    pages: []
+  - id: healthcare
+    domain: assets
+    canonical: docs/assets/24-healthcare.md
+    aliases:
+    - 'healthcare case study: northfield health — clinical documentation & prior auth'
+    supersedes: []
+    pages: []
+  - id: manufacturing
+    domain: assets
+    canonical: docs/assets/25-manufacturing.md
+    aliases:
+    - 'manufacturing case study: ironhaven industrial — qc triage & supply chain'
+    supersedes: []
+    pages: []
+  - id: telecom
+    domain: assets
+    canonical: docs/assets/26-telecom.md
+    aliases:
+    - 'telecom case study: vantar communications — noc triage & customer care'
+    supersedes: []
+    pages: []
+  - id: government
+    domain: assets
+    canonical: docs/assets/27-government.md
+    aliases:
+    - 'government case study: meridian dhs — benefits screening & caseworker copilot'
+    supersedes: []
+    pages: []
+  - id: pharma
+    domain: assets
+    canonical: docs/assets/28-pharma.md
+    aliases:
+    - 'pharma case study: vireon therapeutics — literature intelligence & regulatory drafting'
+    supersedes: []
+    pages: []
+  - id: energy
+    domain: assets
+    canonical: docs/assets/29-energy.md
+    aliases:
+    - 'energy case study: cascadia power & light — predictive maintenance & grid advisory'
+    supersedes: []
+    pages: []
+  - id: logistics
+    domain: assets
+    canonical: docs/assets/30-logistics.md
+    aliases:
+    - 'logistics case study: meridian freight — routing & warehouse robotics'
+    supersedes: []
+    pages: []
+  - id: media
+    domain: assets
+    canonical: docs/assets/31-media.md
+    aliases:
+    - 'media case study: solstice media — content localization & ip compliance'
+    supersedes: []
+    pages: []
+  - id: case-study-ceo-agent-failure-modes
+    domain: assets
+    canonical: docs/assets/32-case-study-ceo-agent-failure-modes.md
+    aliases:
+    - failure modes, governance harness & the path to production-grade reliability
+    supersedes: []
+    pages: []
+  - id: case-study-ceo-agent-blueprint
+    domain: assets
+    canonical: docs/assets/33-case-study-ceo-agent-blueprint.md
+    aliases:
+    - ceo agent & meeting prep agent
+    supersedes: []
+    pages: []
+  - id: case-01-meridian-fraud-investigation-agents
+    domain: assets
+    canonical: docs/assets/34-case-01-meridian-fraud-investigation-agents.md
+    aliases:
+    - the agent that proposes, never disposes
+    supersedes: []
+    pages: []
+  - id: case-02-cascadia-prior-authorization-agent
+    domain: assets
+    canonical: docs/assets/35-case-02-cascadia-prior-authorization-agent.md
+    aliases:
+    - decision support, never decision
+    supersedes: []
+    pages: []
+  - id: case-03-ironclad-maintenance-orchestration-agent
+    domain: assets
+    canonical: docs/assets/36-case-03-ironclad-maintenance-orchestration-agent.md
+    aliases:
+    - graduated autonomy on the factory floor
+    supersedes: []
+    pages: []
+  - id: case-04-northline-customer-service-agents
+    domain: assets
+    canonical: docs/assets/37-case-04-northline-customer-service-agents.md
+    aliases:
+    - one conversation, five specialist brains
+    supersedes: []
+    pages: []
+  - id: case-05-aurelia-research-assistant-agent
+    domain: assets
+    canonical: docs/assets/38-case-05-aurelia-research-assistant-agent.md
+    aliases:
+    - necessary but not sufficient
+    supersedes: []
+    pages: []
+  - id: case-06-skyline-disruption-control-tower
+    domain: assets
+    canonical: docs/assets/39-case-06-skyline-disruption-control-tower.md
+    aliases:
+    - options, not recommendations
+    supersedes: []
+    pages: []
+  - id: case-07-harborstone-claims-processing-agents
+    domain: assets
+    canonical: docs/assets/40-case-07-harborstone-claims-processing-agents.md
+    aliases:
+    - evidence verifiability, not convenience
+    supersedes: []
+    pages: []
+  - id: case-08-sterling-loan-underwriting-agent
+    domain: assets
+    canonical: docs/assets/41-case-08-sterling-loan-underwriting-agent.md
+    aliases:
+    - the denial letter problem
+    supersedes: []
+    pages: []
+  - id: case-09-palisade-grid-operations-agent
+    domain: assets
+    canonical: docs/assets/42-case-09-palisade-grid-operations-agent.md
+    aliases:
+    - the storm that took ninety minutes to diagnose
+    supersedes: []
+    pages: []
+  - id: case-10-vantara-procurement-negotiation-agents
+    domain: assets
+    canonical: docs/assets/43-case-10-vantara-procurement-negotiation-agents.md
+    aliases:
+    - the spot-rate market nobody could watch fast enough
+    supersedes: []
+    pages: []
+  - id: case-11-vaxion-clinical-trial-matching-agent
+    domain: assets
+    canonical: docs/assets/44-case-11-vaxion-clinical-trial-matching-agent.md
+    aliases:
+    - a demo that should never have left the room
+    supersedes: []
+    pages: []
+  - id: case-12-meritage-dynamic-pricing-agent
+    domain: assets
+    canonical: docs/assets/45-case-12-meritage-dynamic-pricing-agent.md
+    aliases:
+    - two vps, one agent, no agreement on who owns it
+    supersedes: []
+    pages: []
+  - id: case-13-statedhs-benefits-navigation-agent
+    domain: assets
+    canonical: docs/assets/46-case-13-statedhs-benefits-navigation-agent.md
+    aliases:
+    - the mainframe owner who said no
+    supersedes: []
+    pages: []
+  - id: case-14-falkirk-soc-threat-response-agent
+    domain: assets
+    canonical: docs/assets/47-case-14-falkirk-soc-threat-response-agent.md
+    aliases:
+    - the ciso who wanted autonomy and the identity lead who said absolutely not
+    supersedes: []
+    pages: []
+  - id: case-15-correlate-recruiting-screening-agent
+    domain: assets
+    canonical: docs/assets/48-case-15-correlate-recruiting-screening-agent.md
+    aliases:
+    - the architecture that got rejected before it was even a proposal
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-case-studies
+    domain: assets
+    canonical: docs/assets/49-enterprise-ai-case-studies.md
+    aliases:
+    - enterprise ai architecture case studies
+    supersedes: []
+    pages: []
+  - id: banking-case-study
+    domain: assets
+    canonical: docs/assets/50-banking-case-study.md
+    aliases:
+    - 'banking case study: enterprise ai authentication'
+    supersedes: []
+    pages: []
+  - id: case-study-ceo-agent
+    domain: assets
+    canonical: docs/assets/51-case-study-ceo-agent.md
+    aliases:
+    - ceo agent pitch
+    supersedes: []
+    pages: []
+  - id: transcript-arb-collaborative-use-cases
+    domain: assets
+    canonical: docs/assets/52-transcript-arb-collaborative-use-cases.md
+    aliases:
+    - collaborative use case transcripts
+    supersedes: []
+    pages: []
+  - id: template-arb-implementation-accelerator-kit
+    domain: assets
+    canonical: docs/assets/53-template-arb-implementation-accelerator-kit.md
+    aliases:
+    - part a — foundational templates
+    supersedes: []
+    pages: []
+  - id: transcript-ea-real-life
+    domain: assets
+    canonical: docs/assets/54-transcript-ea-real-life.md
+    aliases:
+    - enterprise architect
+    supersedes: []
+    pages: []
+  - id: transcript-rfi-ai-platform
+    domain: assets
+    canonical: docs/assets/55-transcript-rfi-ai-platform.md
+    aliases:
+    - request for information
+    supersedes: []
+    pages: []
+  - id: transcript-ea-ai-first-transformation
+    domain: assets
+    canonical: docs/assets/56-transcript-ea-ai-first-transformation.md
+    aliases:
+    - ea ai-first transformation — a real-life transcript
     supersedes: []
     pages: []
