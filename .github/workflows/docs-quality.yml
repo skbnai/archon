@@ -18,7 +18,14 @@ jobs:
             [ -f "$f" ] && { echo "== $f"; python3 scripts/validate_frontmatter.py "$f"; }
           done
       - name: Registry consistency
-        run: python3 scripts/registry_check.py
+        run: |
+          git fetch origin ${{ github.base_ref }} --depth=1
+          if git diff --name-only origin/${{ github.base_ref }} -- 'docs/**/*.md' | grep -q .; then
+            python3 scripts/registry_check.py
+          else
+            echo "no docs/ pages changed in this PR -- paper-stage registry update, running --paper mode"
+            python3 scripts/registry_check.py --paper
+          fi
       - name: Near-duplicate gate
         run: python3 scripts/dedup_check.py --all 0.55
       - name: Forbidden filename patterns
