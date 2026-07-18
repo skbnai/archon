@@ -20,8 +20,14 @@ jobs:
       - name: Registry consistency
         run: |
           git fetch origin ${{ github.base_ref }} --depth=1
-          if git diff --name-only origin/${{ github.base_ref }} -- 'docs/**/*.md' | grep -q .; then
-            python3 scripts/registry_check.py
+          CHANGED_MD=$(git diff --name-only origin/${{ github.base_ref }} -- 'docs/**/*.md')
+          if [ -n "$CHANGED_MD" ]; then
+            # stage-04 lands one domain per PR; only that domain's registry
+            # entries are expected to have canonical files on disk already.
+            # Other domains are future waves -- don't fail this PR for them.
+            DOMAINS=$(echo "$CHANGED_MD" | sed -E 's#^docs/([a-z-]+)/.*#\1#' | sort -u | paste -sd, -)
+            echo "changed domains: $DOMAINS"
+            python3 scripts/registry_check.py --domains "$DOMAINS"
           else
             echo "no docs/ pages changed in this PR -- paper-stage registry update, running --paper mode"
             python3 scripts/registry_check.py --paper

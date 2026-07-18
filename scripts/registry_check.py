@@ -9,7 +9,15 @@ would fail-by-design since canonical files don't exist yet — and instead
 checks only what's knowable from the registry text itself: id/canonical
 present, no duplicate ids, no duplicate canonical paths, no two topics
 sharing a canonical, and every canonical path is well-formed
-(docs/<domain>/... , domain matches the topic's declared domain)."""
+(docs/<domain>/... , domain matches the topic's declared domain).
+
+--domains a,b,c: mid-migration live mode (stage-04, one domain wave per PR).
+Registry entries whose domain is NOT in the given set are exempt from the
+"canonical file missing" check (they belong to a wave that hasn't landed
+yet) — everything else (duplicate ids/canonicals, frontmatter consistency
+for files that DO exist, unregistered pages on disk) still runs unscoped.
+Without --domains, live mode requires every registered topic's canonical
+file to exist — only true once all stage-04 waves are merged."""
 import sys, re, pathlib
 try: import yaml
 except ImportError: sys.exit(0)
@@ -42,7 +50,7 @@ def check_paper(topics):
             errs.append(f"two topics share one canonical: {canon} -> {tids}")
     return errs
 
-def check_live(topics):
+def check_live(topics, domains=None):
     errs = []
     registered = set()
     for t in topics:
@@ -52,7 +60,8 @@ def check_live(topics):
         registered.add(canon); registered.update(t.get("pages", []))
         p = pathlib.Path(canon)
         if not p.exists():
-            errs.append(f"[{tid}] canonical file missing: {canon}")
+            if domains is None or t.get("domain") in domains:
+                errs.append(f"[{tid}] canonical file missing: {canon}")
         else:
             f = fm(p)
             if f.get("topic_id") != tid:
@@ -69,12 +78,21 @@ def check_live(topics):
 
 def main():
     paper = "--paper" in sys.argv
+    domains = None
+    if "--domains" in sys.argv:
+        idx = sys.argv.index("--domains")
+        domains = {d.strip() for d in sys.argv[idx + 1].split(",") if d.strip()}
     reg = yaml.safe_load(open("governance/CANONICAL_REGISTRY.yaml")) or {}
     topics = reg.get("topics") or []
-    errs = check_paper(topics) if paper else check_live(topics)
+    errs = check_paper(topics) if paper else check_live(topics, domains)
     if errs:
         print("\n".join(f"  - {e}" for e in errs)); sys.exit(1)
-    mode = "paper" if paper else "live"
+    if paper:
+        mode = "paper"
+    elif domains:
+        mode = f"live, scoped to domains={sorted(domains)}"
+    else:
+        mode = "live"
     print(f"registry: consistent ({len(topics)} topics, {mode} mode)")
 
 if __name__ == "__main__":
