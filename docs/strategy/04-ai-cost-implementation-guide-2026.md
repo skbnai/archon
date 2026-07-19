@@ -45,7 +45,7 @@ Route every request through a lightweight complexity classifier before dispatchi
 | **Mid** | Claude Sonnet, GPT-4o | $0.003–$0.005 | Chat, debugging, code review, multi-file context |
 | **Frontier** | Claude Opus, o3 | $0.015–$0.075 | Architecture design, complex reasoning, security analysis |
 
-**Cost reduction:** RouteLLM (Stanford) demonstrates 50% cost reduction at 95% quality parity by using a lightweight Sentence-BERT classifier (~80 MB, <10 ms inference) to route trivial requests to nano models.
+**Cost reduction:** RouteLLM (Stanford) demonstrates 50% cost reduction at 95% quality parity by using a lightweight Sentence-BERT classifier (~80 MB, &lt;10 ms inference) to route trivial requests to nano models.
 
 ### Complexity Classifier
 

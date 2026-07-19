@@ -80,9 +80,9 @@ This section covers the final four operating models and provides comparison matr
 **Service Catalogue:**
 | Service | Description | SLA |
 |---------|-------------|-----|
-| Inference-as-a-Service | LLM API access, model routing | 99.9%, <500ms p95 |
-| Embedding-as-a-Service | Text/document embedding | 99.5%, <200ms |
-| RAG-as-a-Service | Managed retrieval pipelines | 99.5%, <1s |
+| Inference-as-a-Service | LLM API access, model routing | 99.9%, &lt;500ms p95 |
+| Embedding-as-a-Service | Text/document embedding | 99.5%, &lt;200ms |
+| RAG-as-a-Service | Managed retrieval pipelines | 99.5%, &lt;1s |
 | Agent-as-a-Service | Pre-built agents (HR, Finance, etc.) | 99.9%, task SLA varies |
 | Evaluation-as-a-Service | AI quality testing | Best effort, 24hr |
 | Compliance Review | Responsible AI assessment | 5 business days |

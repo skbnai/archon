@@ -31,7 +31,7 @@ Batch APIs (OpenAI Batch, Anthropic Batch) offer **50% discount** on token cost,
 | **Dimension** | **Sync (Pay-as-you-go)** | **Batch** |
 |---|---|---|
 | **Cost** | Standard | 50% off |
-| **Latency** | <10s (TTFT) | 1–24 hours |
+| **Latency** | &lt;10s (TTFT) | 1–24 hours |
 | **Best for** | Real-time, user-facing | Bulk processing, background jobs |
 | **Throughput** | Medium | High |
 

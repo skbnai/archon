@@ -46,10 +46,10 @@ Resolve Tier-1 support tickets autonomously. Escalate Tier-2 with context.
 
 ### Success Metrics
 - Tier-1 resolution rate: >60% of tickets (target: 70%)
-- Resolution time: <2 minutes for Tier-1 (vs 8 min human average)
+- Resolution time: &lt;2 minutes for Tier-1 (vs 8 min human average)
 - CSAT delta: +0.5 or above vs human-only baseline
 - Escalation quality: humans rate pre-loaded context as 'helpful' >80%
-- Cost per ticket: <$0.08 at scale (blended Tier-1+2 with routing)
+- Cost per ticket: &lt;$0.08 at scale (blended Tier-1+2 with routing)
 
 ### Failure Modes to Design Against
 - Hallucinating order details not in CRM
@@ -100,7 +100,7 @@ COST GUARD: if tokens >8,000 OR cost >$0.50/ticket: alert + escalate
 | Context loading (MCP calls) | No LLM — parallel API | No tokens | $0.001–0.003 | API latency, not token cost |
 | Resolution drafting | Claude Sonnet 4.6 | ~4.5K | $0.020 | 4K context window enforced |
 | Async eval (LLM-as-judge) | Claude Haiku 4.5 | ~1.1K | $0.0012 | Runs async, doesn't block |
-| **Subtotal API cost** | — | ~6.6K | **$0.023/ticket** | Target: <$0.08 blended |
+| **Subtotal API cost** | — | ~6.6K | **$0.023/ticket** | Target: &lt;$0.08 blended |
 | **LLMOps multiplier (2.8x)** | Infra, obs, guardrails | — | **$0.064/ticket** | Multiply API cost × 2.8 |
 | **TOTAL at 1K tickets/day** | — | — | **$64/day = $1,920/month** | Break even vs 1 agent FTE |
 | **TOTAL at 10K tickets/day** | — | — | **$640/day = $19.2K/month** | Break even vs 12 agent FTEs |
@@ -112,11 +112,11 @@ COST GUARD: if tokens >8,000 OR cost >$0.50/ticket: alert + escalate
 | Eval Type | What It Measures | How | Threshold |
 |---|---|---|---|
 | **Accuracy** | Did agent retrieve correct account/order data? | Compare stated facts vs CRM ground truth. Automated. | >99% (errors are customer trust events) |
-| **Resolution Quality (LLM-as-judge)** | Was response helpful, empathetic, policy-compliant? | Claude Sonnet grades on 4 dimensions, structured JSON | >80% score; flag <60% |
+| **Resolution Quality (LLM-as-judge)** | Was response helpful, empathetic, policy-compliant? | Claude Sonnet grades on 4 dimensions, structured JSON | >80% score; flag &lt;60% |
 | **Hallucination detection** | Did agent invent information not in CRM/ERP/KB? | Check every factual claim vs retrieved context | Zero tolerance for factual errors |
 | **PII boundary** | Did response include another customer's data? | Automated: scan for customer IDs, emails not matching ticket customer | Zero violations |
 | **Action accuracy** | Did agent perform the right action (correct tier, approval)? | Audit log: every action logged with ticket ID, action type, value | >99% correct tier classification |
-| **Cost per ticket** | Is blended cost within budget? | Portkey tracks per-trace costs; Vantage alerts if 7-day avg exceeds $0.10 | <$0.10 per ticket blended |
+| **Cost per ticket** | Is blended cost within budget? | Portkey tracks per-trace costs; Vantage alerts if 7-day avg exceeds $0.10 | &lt;$0.10 per ticket blended |
 | **Escalation quality** | Did humans find pre-loaded context helpful? | CSAT from human agents rating context at handoff | >80% 'helpful' rating |
 
 ---

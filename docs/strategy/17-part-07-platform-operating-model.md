@@ -82,7 +82,7 @@ For the full service specification, see Part 10 (AI Service Catalog).
 | Multi-cloud portability | Critical | Not required |
 | Cost optimization | Centrally managed across enterprise | Per-team responsibility |
 | Custom guardrails | Required | Standard moderation sufficient |
-| Team size | >10 AI teams (scale economies) | <5 AI teams (speed) |
+| Team size | >10 AI teams (scale economies) | &lt;5 AI teams (speed) |
 | Implementation | Build (lower per-team cost at scale) | Buy as-a-service (fast time-to-value) |
 
 **Recommendation:** Enterprises with >10 AI teams benefit from internal platform. Below that, direct cloud services + lightweight governance is more cost-effective.

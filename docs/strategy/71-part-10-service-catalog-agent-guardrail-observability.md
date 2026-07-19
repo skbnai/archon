@@ -29,7 +29,7 @@ These services support autonomous agents, safety controls, and comprehensive obs
 - Agent versioning (model + prompt + tools + memory as compound version)
 - Agent lifecycle management (create, update, deprecate, retire)
 
-**SLA:** 99.9% availability; <500ms per agent step
+**SLA:** 99.9% availability; &lt;500ms per agent step
 
 **Governance:**
 - Agent Charter requirement (documented goal, constraints, tools)
@@ -87,7 +87,7 @@ These services support autonomous agents, safety controls, and comprehensive obs
 - Regulatory compliance filtering (e.g., no medical advice)
 - Sensitive data filtering (prevent accidental exposure)
 
-**SLA:** 99.5% availability; <50ms per request (low latency for inline safety)
+**SLA:** 99.5% availability; &lt;50ms per request (low latency for inline safety)
 
 **Configuration:** Per use case (different guardrails for different domains)
 
@@ -111,7 +111,7 @@ These services support autonomous agents, safety controls, and comprehensive obs
 
 **Models Supported:** Azure Content Safety, Perspective API, custom enterprise models
 
-**SLA:** 99% availability; <200ms per moderation request
+**SLA:** 99% availability; &lt;200ms per moderation request
 
 **Pricing:** Per-request; batch processing available
 
@@ -135,7 +135,7 @@ These services support autonomous agents, safety controls, and comprehensive obs
 - Per-team usage visibility (cost allocation)
 - Root cause analysis tools (investigate performance issues)
 
-**SLA:** 99.9% availability for dashboards; <1 minute lag for metrics
+**SLA:** 99.9% availability for dashboards; &lt;1 minute lag for metrics
 
 **Retention:** 1 year of data (searchable); archive historical data
 

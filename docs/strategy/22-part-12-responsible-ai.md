@@ -129,12 +129,12 @@ Choose oversight level based on risk class (High Risk requires HITL).
 
 | Metric | Target | Alert Threshold |
 |--------|--------|-----------------|
-| Hallucination rate (RAG systems) | <1% | >2% |
+| Hallucination rate (RAG systems) | &lt;1% | >2% |
 | PII leakage incidents | 0 | Any occurrence |
-| Bias delta (max outcome gap across groups) | <5% | >10% |
+| Bias delta (max outcome gap across groups) | &lt;5% | >10% |
 | HITL escalation rate | Appropriate per use case | >30% |
-| User challenge / recourse rate | <1% | >3% |
-| High-risk AI use cases with current conformity assessment | 100% | <100% |
+| User challenge / recourse rate | &lt;1% | >3% |
+| High-risk AI use cases with current conformity assessment | 100% | &lt;100% |
 | RAI incident rate | 0 high severity | Any high severity |
 
 ## Authoritative Guides

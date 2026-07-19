@@ -38,7 +38,7 @@ The platform offers tiered access to match risk and usage patterns:
 
 **Tier 3 — Premium:** For critical business systems requiring high reliability
 - Limits: 100M+ tokens/month, all models, premium support
-- SLA: 99.9% availability, <500ms latency guarantee
+- SLA: 99.9% availability, &lt;500ms latency guarantee
 - Governance: Full governance workflow; mandatory responsible AI review
 - Audience: Enterprise critical systems
 - Cost: Reserved capacity with monthly commitment
@@ -146,7 +146,7 @@ The platform offers tiered access to match risk and usage patterns:
 
 **Operational Metrics:**
 - Platform availability (target: >99.9%)
-- API latency (target: <500ms p95)
+- API latency (target: &lt;500ms p95)
 - Incident MTTR (mean time to recovery)
 
 **Cost Metrics:**

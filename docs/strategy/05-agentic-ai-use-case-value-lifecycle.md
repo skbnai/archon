@@ -53,7 +53,7 @@ Build value bridge and 3-year financial model. Define target architecture (orche
 ### Stage 3 — Pilot & Build (Months 3–6)
 Build orchestration layer and two highest-feasibility agents (FNOL triage, auto glass/small-PD settlement). Launch in 2 regions with 100% human audit for 30 days, stepping down to statistical sampling.
 
-**Gate criteria:** STP accuracy ≥97%, human override rate <12%, cycle time ≥30% reduction vs. baseline.
+**Gate criteria:** STP accuracy ≥97%, human override rate &lt;12%, cycle time ≥30% reduction vs. baseline.
 
 ### Stage 4 — Scale (Months 6–24)
 Extend to property and additional regions; then national auto and liability augmentation. Each wave repeats pilot gate at smaller scale.

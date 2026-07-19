@@ -75,10 +75,10 @@ From decision to delivery: the executable plan. The roadmap spans 36 months in t
 |---|---|---|
 | **Value** | Audited net benefit ($); benefit run-rate vs plan; % Finance-verified | Breakeven months 20-27; 100% verification |
 | **Adoption** | Weekly active governed-AI users (% knowledge workforce); use cases in production; median tasks/user | 30% by mo 6, 60% by mo 12, 80%+ by mo 24 |
-| **Delivery** | Median idea-to-production time; % initiatives on paved road; platform availability | <30 days by mo 18; >90% paved-road |
+| **Delivery** | Median idea-to-production time; % initiatives on paved road; platform availability | &lt;30 days by mo 18; >90% paved-road |
 | **Quality & trust** | Eval pass rates; hallucination/critical-error rate per 1,000 outputs; CSAT delta; incident count & severity | CSAT never negative; declining error rates |
 | **Risk & compliance** | % AI systems inventoried & tiered; Tier-1 reviews on time; audit findings; deletion-propagation SLA | 100% inventory; zero overdue Tier-1 reviews |
-| **People** | Certified practitioners; internal mobility from affected roles; sentiment index; attrition in key AI roles | Reskilling commitments met; key-role attrition <10% |
+| **People** | Certified practitioners; internal mobility from affected roles; sentiment index; attrition in key AI roles | Reskilling commitments met; key-role attrition &lt;10% |
 | **Economics** | Cost per unit of work (per resolved ticket, per PR, per document); token spend vs budget | Unit costs declining QoQ |
 
 **Executive Steering Dashboard:** One page, monthly, exactly these seven rows with red/amber/green status, trend arrows, plus the top three decisions needed. Anything longer will not be read.

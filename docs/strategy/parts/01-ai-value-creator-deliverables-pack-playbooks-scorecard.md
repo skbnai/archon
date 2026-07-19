@@ -119,16 +119,16 @@ At current baseline volume (480K claims/year):
 | Cycle time (avg, days) | Operational | 9.5 | 9.8 | TRACKING | -2.1 days from baseline |
 | Leakage (% indemnity) | Operational | 3.1% | 3.3% | TRACKING | -0.9pts from baseline |
 | Claims CSAT | Customer | 76% | 77% | AHEAD of plan | +6pts from baseline |
-| Human override rate (augmented tier) | Operational | <12% | 10.4% | AHEAD of plan | Stable |
+| Human override rate (augmented tier) | Operational | &lt;12% | 10.4% | AHEAD of plan | Stable |
 | Value realized vs. plan (cumulative) | Financial | $82.6M | $79.1M | TRACKING (96% of plan) | On path for Year 3 |
 | Model accuracy (test set) | Technical | ≥95% | 96.2% | AHEAD | Stable |
 | Audit findings (critical) | Governance | 0 | 0 | PASS | 0 in all prior quarters |
 
 ### Dashboard Interpretation
 
-- **Green (AHEAD):** >105% of target or <95% of cost target; favorable trend
+- **Green (AHEAD):** >105% of target or &lt;95% of cost target; favorable trend
 - **Yellow (TRACKING):** 95–105% of target; acceptable variance; monitor
-- **Red (MISS):** <95% of target or >105% of cost target; triggers remediation review
+- **Red (MISS):** &lt;95% of target or >105% of cost target; triggers remediation review
 
 ---
 

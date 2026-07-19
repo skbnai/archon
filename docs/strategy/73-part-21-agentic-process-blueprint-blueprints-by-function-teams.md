@@ -32,7 +32,7 @@ sources: []
 | Exception handling | Human | Exception Agent proposes resolution | Yes |
 | Approval routing | Human | Routing Agent (rules-based + AI) | No |
 | Final approval (>£10K) | Human | — | Yes |
-| Final approval (<£10K, within policy) | Human | Payment Agent | No |
+| Final approval (&lt;£10K, within policy) | Human | Payment Agent | No |
 | Payment execution | Human | Payment Agent | No |
 
 **Metrics:** Cycle time 5 days → 2 hours (exception: 4 hours). Cost per invoice £25 → £3. Error rate 8% → 0.5%. Straight-through processing 20% → 85%.
@@ -66,7 +66,7 @@ sources: []
 | Income & employment verification | Verification Agent (API to payroll data) | Exception only |
 | Risk scoring (credit model) | Risk Agent (ML model + LLM explainer) | None |
 | Policy compliance check | Compliance Agent | None |
-| Decision (auto-approve: <£50K, score >750) | Decision Agent | None (straight-through) |
+| Decision (auto-approve: &lt;£50K, score >750) | Decision Agent | None (straight-through) |
 | Decision (borderline: score 650–750) | Decision Agent + human reviewer | Yes |
 | Decision (complex / >£250K) | Human underwriter (Agent informs) | Human-led |
 | Offer letter generation | Document Agent | None |
@@ -151,8 +151,8 @@ graph TD
 
 | Metric | Formula | Target |
 |--------|---------|--------|
-| Error Rate | Errors / Transactions | <1% (vs. 3–8% human) |
-| Rework Rate | Rework / Transactions | <0.5% |
+| Error Rate | Errors / Transactions | &lt;1% (vs. 3–8% human) |
+| Rework Rate | Rework / Transactions | &lt;0.5% |
 | Policy Compliance Rate | Compliant / Total | >99.5% |
 | First-Time-Right Rate | Correct first attempt / Total | >98% |
 
@@ -162,7 +162,7 @@ graph TD
 |--------|---------|--------|
 | Agent Autonomy Rate | Agent-completed steps / Total steps | 70–85% (mature) |
 | HITL Rate | Human interventions / Transactions | 10–20% (target) |
-| Human Override Rate | Overrides / Agent decisions | <5% |
+| Human Override Rate | Overrides / Agent decisions | &lt;5% |
 | Escalation Accuracy | Necessary escalations / Total escalations | >80% |
 
 ### Business Outcome Metrics

@@ -118,7 +118,7 @@ Robust rollout, evaluation, and safety testing processes ensure AI systems perfo
 7. If control wins: iterate on variant or rollback
 8. Document learnings for future iterations
 
-**Decision Gate:** Statistical significance achieved (p < 0.05) plus business metric improvement
+**Decision Gate:** Statistical significance achieved (p &lt; 0.05) plus business metric improvement
 
 **Output:** A/B test report, winner promotion, learnings documented
 
@@ -138,7 +138,7 @@ Robust rollout, evaluation, and safety testing processes ensure AI systems perfo
 3. Monthly review of user feedback and incident trends
 4. Quarterly external audit of responsible AI practices
 5. Continuous drift detection (compare current to baseline)
-6. Alert on threshold breaches (quality < 85%, cost increase >20%, error rate > 5%)
+6. Alert on threshold breaches (quality &lt; 85%, cost increase >20%, error rate > 5%)
 
 **Escalation:** Critical alerts → on-call engineer → incident response; quality drift → product manager → iteration discussion
 

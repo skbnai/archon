@@ -121,7 +121,7 @@ Real organizations moving through the levels show patterns. What separates succe
 - **20–25 checks:** High readiness. Level 4 by month 36 is realistic. Green light to launch.
 - **15–19 checks:** Moderate readiness. Level 3–4 likely. Plan 90-day gap-closing sprint before Horizon 1 execution.
 - **10–14 checks:** Low readiness. Recommend 6-month discovery & foundations phase before Horizon 1. Risk of plateau at Level 2–3.
-- **<10 checks:** Major gaps. AI-First transformation unlikely to succeed without significant pre-work. Consider phased approach: 12-month Horizon 0 (foundations) before Horizon 1 launch.
+- **&lt;10 checks:** Major gaps. AI-First transformation unlikely to succeed without significant pre-work. Consider phased approach: 12-month Horizon 0 (foundations) before Horizon 1 launch.
 
 ---
 

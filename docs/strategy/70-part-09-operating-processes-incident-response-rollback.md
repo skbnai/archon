@@ -22,13 +22,13 @@ Swift, coordinated incident response and rollback procedures are critical for mi
 
 **Severity Levels:**
 
-**Critical:** Immediate threat to safety, security, or business continuity. Examples: agent taking unauthorized actions, model producing harmful output, system compromise. Response: <15 minutes to incident commander decision; 1 hour to remediation.
+**Critical:** Immediate threat to safety, security, or business continuity. Examples: agent taking unauthorized actions, model producing harmful output, system compromise. Response: &lt;15 minutes to incident commander decision; 1 hour to remediation.
 
-**High:** Significant performance degradation or security concern; containable without immediate rollback. Examples: accuracy drop >20%, hallucination spike >10%, cost overrun. Response: <2 hours to triage; 4 hours to remediation.
+**High:** Significant performance degradation or security concern; containable without immediate rollback. Examples: accuracy drop >20%, hallucination spike >10%, cost overrun. Response: &lt;2 hours to triage; 4 hours to remediation.
 
-**Medium:** Noticeable but contained issue; impacts subset of users. Examples: accuracy drop 10-20%, specific use case failure. Response: <8 hours to triage; 24 hours to remediation.
+**Medium:** Noticeable but contained issue; impacts subset of users. Examples: accuracy drop 10-20%, specific use case failure. Response: &lt;8 hours to triage; 24 hours to remediation.
 
-**Low:** Minor anomaly; business continuity maintained. Examples: minor quality drift, isolated customer complaint. Response: <24 hours to triage; 1 week to remediation.
+**Low:** Minor anomaly; business continuity maintained. Examples: minor quality drift, isolated customer complaint. Response: &lt;24 hours to triage; 1 week to remediation.
 
 ## Process 1: Incident Detection & Triage
 
@@ -49,7 +49,7 @@ Swift, coordinated incident response and rollback procedures are critical for mi
 
 **Output:** Incident ticket, severity classification, preliminary diagnosis
 
-**Timeline:** <5 minutes for critical, <30 minutes for high
+**Timeline:** &lt;5 minutes for critical, &lt;30 minutes for high
 
 **Responsible Parties:** On-call engineer (triage), incident commander (escalation decision)
 
@@ -69,7 +69,7 @@ Swift, coordinated incident response and rollback procedures are critical for mi
 
 **Recovery:** Requires explicit human approval after root cause analysis and fix validation
 
-**Timeline:** Kill switch activation: <1 minute; full investigation: 2-4 hours
+**Timeline:** Kill switch activation: &lt;1 minute; full investigation: 2-4 hours
 
 **Responsible Parties:** LLMOps/AgentOps (monitors), incident commander (authorization), agent owner (fix)
 
@@ -101,7 +101,7 @@ Swift, coordinated incident response and rollback procedures are critical for mi
 **Trigger:** System exhibiting critical failures and root cause unclear or fix will take >1 hour
 
 **Rollback Triggers (Automatic Authorization):**
-- Quality metric drop >20% in <30 minutes
+- Quality metric drop >20% in &lt;30 minutes
 - Safety incident (harmful output, unauthorized action)
 - Error rate >10% of transactions
 - Tool/API failures blocking normal operation
@@ -123,7 +123,7 @@ Swift, coordinated incident response and rollback procedures are critical for mi
 - System operates on rolled-back version indefinitely until fix validated
 - New version undergoes additional testing before re-deployment
 
-**Timeline:** Rollback decision: <5 minutes; execution: <15 minutes; validation: <30 minutes
+**Timeline:** Rollback decision: &lt;5 minutes; execution: &lt;15 minutes; validation: &lt;30 minutes
 
 **Responsible Parties:** Incident commander (decides), LLMOps/AgentOps (executes), VP Engineering (authority for rollback)
 

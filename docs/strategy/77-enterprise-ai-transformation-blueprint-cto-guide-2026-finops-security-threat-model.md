@@ -50,7 +50,7 @@ Token costs have collapsed 80-85% since 2023, but agentic workflows consume 5-30
 
 ### The Five FinOps Levers That Actually Work
 
-**1. Model routing (biggest impact):** Route 70-80% of traffic to mid-tier or budget models. Reserve frontier models for tasks where quality differential is measurable. LiteLLM and Portkey support rule-based and confidence-threshold routing. Example: 'Use GPT-5 nano for classification; escalate to Claude Sonnet if confidence <0.85.' Expected savings: 60-80% of API costs.
+**1. Model routing (biggest impact):** Route 70-80% of traffic to mid-tier or budget models. Reserve frontier models for tasks where quality differential is measurable. LiteLLM and Portkey support rule-based and confidence-threshold routing. Example: 'Use GPT-5 nano for classification; escalate to Claude Sonnet if confidence &lt;0.85.' Expected savings: 60-80% of API costs.
 
 **2. Prompt caching (easy win):** Anthropic and OpenAI both offer 75-90% discounts on cached input tokens. Cache-eligible: system prompts, few-shot examples, static context, tool definitions. A 1,500-token system prompt repeated 10,000 times/day costs $150 uncached vs $15 cached (Claude prices). Implement before any other optimization — zero quality trade-off.
 

@@ -119,7 +119,7 @@ Six interdependent dimensions of operating model design, cascading from strategi
 | Organization Design | Future structure, roles, reporting | Platform + Value Stream teams |
 | Capability Model | Target capabilities and maturity | L5 AI credit, L4 digital onboarding |
 | Value Streams | Key end-to-end flows | Customer gets loan in 2 hours |
-| Process Design | Future-state processes | STP for loans <$25K |
+| Process Design | Future-state processes | STP for loans &lt;$25K |
 | Technology Architecture | Future application and platform | Cloud-native, API-first core |
 | Data & Analytics | Future data capabilities | Real-time data platform, AI/ML |
 | Governance | Decision rights, committees | Federated governance with AI CoE |
@@ -145,7 +145,7 @@ Six foundational principles guiding operating model design from customer focus t
 | Dimension | Current State | Target State | Gap |
 |---|---|---|---|
 | Organization | Siloed by function (12 BUs) | Platform + Value Stream teams | Reorganization required |
-| Processes | Manual, 14-day loan approval | STP for <$25K loans | Process redesign, AI workflow |
+| Processes | Manual, 14-day loan approval | STP for &lt;$25K loans | Process redesign, AI workflow |
 | Technology | 3 core banking systems, legacy | Cloud-native single platform | 7-year migration, API layer |
 | Data | 10 siloed data warehouses | Unified data platform, customer 360 | Data migration, MDM, governance |
 | People | 80% operations specialists | 60% engineering/product talent | Reskilling, AI literacy training |

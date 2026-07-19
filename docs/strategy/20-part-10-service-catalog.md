@@ -31,7 +31,7 @@ The service catalog is the enterprise's **menu of available AI services** with d
 
 **SLA:**
 - Availability: 99.9%
-- Latency: <500ms p95 (non-streaming), <100ms first token (streaming)
+- Latency: &lt;500ms p95 (non-streaming), &lt;100ms first token (streaming)
 - Throughput: Auto-scales to organization quota
 
 **Pricing:** Per-1M-tokens consumed (input/output); varies by model. Chargeback to business unit.
@@ -54,8 +54,8 @@ The service catalog is the enterprise's **menu of available AI services** with d
 
 **SLA:**
 - Availability: 99.5%
-- Latency: <200ms p95
-- Batch processing: <1s per 100 documents
+- Latency: &lt;200ms p95
+- Batch processing: &lt;1s per 100 documents
 
 **Pricing:** Per-1M tokens consumed (approximate: 1 document ≈ 100 tokens)
 
@@ -101,7 +101,7 @@ The service catalog is the enterprise's **menu of available AI services** with d
 - Metadata filtering
 - Namespace isolation per use case
 
-**SLA:** 99.9% availability, <500ms query latency
+**SLA:** 99.9% availability, &lt;500ms query latency
 
 **Quota:** 1M vectors default; scale via approval
 
@@ -120,7 +120,7 @@ The service catalog is the enterprise's **menu of available AI services** with d
 - Retrieval optimization (re-ranking, query decomposition)
 - Knowledge freshness monitoring
 
-**SLA:** 99.5% availability, <1s end-to-end retrieval
+**SLA:** 99.5% availability, &lt;1s end-to-end retrieval
 
 **Governance:**
 - PII scanning before indexing

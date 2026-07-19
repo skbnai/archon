@@ -95,7 +95,7 @@ Manage like a VC book: many small bets, few big "reshape/invent" bets, ruthless 
 - Decision intelligence for executive decisions
 
 **Benchmarks that change strategy:**
-- If EBIT impact <2% after 18 months: revisit operating model and measurement (not the model)
+- If EBIT impact &lt;2% after 18 months: revisit operating model and measurement (not the model)
 - If agent utilization/reuse is low: invest in platform and context layer before adding use cases
 
 ---

@@ -89,7 +89,7 @@ For agentic systems, trace the full agent execution graph:
 
 | Metric | Description | Alert Threshold |
 |--------|-------------|-----------------|
-| LLM API availability | % time the inference service is available | <99.5% → alert |
+| LLM API availability | % time the inference service is available | &lt;99.5% → alert |
 | First token latency (p50/p95/p99) | Time to first token in streaming response | p95 >2s → alert |
 | Total generation latency (p95) | End-to-end response time | Use case SLA |
 | Error rate | % requests resulting in error | >1% → alert |
@@ -123,7 +123,7 @@ For agentic systems, trace the full agent execution graph:
 
 | Metric | Description | Alert Threshold |
 |--------|-------------|-----------------|
-| Task completion rate | % agent tasks completed without human help | <80% → review |
+| Task completion rate | % agent tasks completed without human help | &lt;80% → review |
 | HITL escalation rate | % tasks escalated to human | >20% → agent redesign |
 | Tool error rate | % tool calls resulting in error | >5% → investigate |
 | Loop detection rate | % tasks terminated due to loop | >0.1% → review |

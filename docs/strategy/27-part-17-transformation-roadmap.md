@@ -31,7 +31,7 @@ Enterprise AI maturity progresses through six distinct levels. This guide provid
 | **5** | AI-First | AI is the operating fabric; autonomous agents at scale; constitutional governance |
 | **6** | AI-Native | AI IS the organisation's operating model; sovereign infrastructure; proprietary models |
 
-*Approximate enterprise distribution 2026: L1 (~15%), L2 (~35%), L3 (~30%), L4 (~15%), L5 (~4%), L6 (<1%)*
+*Approximate enterprise distribution 2026: L1 (~15%), L2 (~35%), L3 (~30%), L4 (~15%), L5 (~4%), L6 (&lt;1%)*
 
 ### Maturity Assessment Dimensions
 
@@ -43,7 +43,7 @@ Enterprise AI maturity progresses through six distinct levels. This guide provid
 | **Organisation** | No AI roles | AI CoE started | Hub & Spoke | Domain teams + platform | AI-native workforce |
 | **Technology** | Direct API access | Managed LLM access | AI platform (L3) | AI platform (L4–5) | Sovereign AI infrastructure |
 | **Governance** | None | Policy drafted | Governance active | Automated governance | Constitutional governance |
-| **Investment** | <£500K | £500K–£5M | £5M–£50M | £50M–£200M | £200M+ |
+| **Investment** | &lt;£500K | £500K–£5M | £5M–£50M | £50M–£200M | £200M+ |
 | **KPIs** | N/A | Activity KPIs | Output KPIs | Outcome KPIs | Enterprise value KPIs |
 
 ## Transformation Roadmap

@@ -84,8 +84,8 @@ This section covers the final three stages of enterprise AI maturity: Agentic AI
 | Generative AI | ~55% POCs, ~25% production | 15–40% productivity |
 | Enterprise RAG | ~20% production | 20–45% knowledge work productivity |
 | Agentic AI | ~8% production, ~35% pilots | 30–70% automation potential |
-| Autonomous Enterprise | <2% | TBD (early adopters) |
-| AI-Native | <0.1% | Differentiator |
+| Autonomous Enterprise | &lt;2% | TBD (early adopters) |
+| AI-Native | &lt;0.1% | Differentiator |
 
 *Source: Synthesis of Gartner AI TechRadar 2025, McKinsey State of AI 2025, Deloitte AI Readiness Report 2025*
 

@@ -104,7 +104,7 @@ This part is a continuation of:
 
 ### Key Phase Gates
 
-- **Pilot gate (M6→Scale):** STP accuracy ≥97%, override rate <12%, cycle time ≥30% reduction vs. baseline
+- **Pilot gate (M6→Scale):** STP accuracy ≥97%, override rate &lt;12%, cycle time ≥30% reduction vs. baseline
 - **Scale gate (M15→Rollout):** Unit economics hold; no adverse regulatory findings; field readiness confirmed
 - **National gate (M24→Sustain):** All regions reporting; adoption targets met (>75% STP where authorized); payback achieved
 
@@ -118,7 +118,7 @@ This part is a continuation of:
 
 | **Condition** | **Routing decision** | **Rationale** |
 |---|---|---|
-| Claim value < $5,000 AND agent confidence > 92% AND no prior fraud flag | Straight-through: auto-settle, no human touch | Low value + high confidence + clean history = safe automation |
+| Claim value &lt; $5,000 AND agent confidence > 92% AND no prior fraud flag | Straight-through: auto-settle, no human touch | Low value + high confidence + clean history = safe automation |
 | Claim value $5,000–$50,000 AND agent confidence > 80% | Agent-drafted estimate/settlement; adjuster co-signs | Medium value requires human review, but agent draft accelerates process |
 | Fraud/SIU score above threshold | Route to SIU regardless of claim value | Fraud risk overrides confidence thresholds |
 | Bodily injury or litigation flag present | Human-led; agents provide research & drafting support only | High-stakes decisions require human authority |
@@ -167,12 +167,12 @@ This part is a continuation of:
 
 | **Initiative** | **Stage** | **Owners** | **Est. annual value** | **Risk** | **Kill criteria** |
 |---|---|---|---|---|---|
-| FNOL triage agent | Scaling | Claims AI Product Owner | Included in LAE savings (~$15M) | Low | STP rate <25% at M12 |
+| FNOL triage agent | Scaling | Claims AI Product Owner | Included in LAE savings (~$15M) | Low | STP rate &lt;25% at M12 |
 | Auto glass / small-PD STP agent | Optimized | Regional Ops Directors | ~$38M (largest single contributor) | Low | Unit economics deteriorate >10% |
-| Property estimation agent | Piloted | Agent Factory Lead | ~$22M | Medium | Accuracy <92% at M9; pilot gates missed |
+| Property estimation agent | Piloted | Agent Factory Lead | ~$22M | Medium | Accuracy &lt;92% at M9; pilot gates missed |
 | Fraud / SIU scoring agent | Scaling | SIU/Fraud owner | $31M | Medium | False-positive rate >50% (loses adjuster trust) |
 | Subrogation identification agent | Not started | Finance & SIU | ~$6M (Phase 2 estimate) | Medium | Defer to Phase 2 funding gate |
-| Customer status chat agent | Scaling | Customer Experience | CSAT contribution, not separately valued | Low | Adoption <40% at M12 |
+| Customer status chat agent | Scaling | Customer Experience | CSAT contribution, not separately valued | Low | Adoption &lt;40% at M12 |
 
 ### Portfolio Rules
 
