@@ -7,6 +7,3 @@ build/
 .docusaurus/
 .cache-loader/
 npm-debug.log*
-
-# Claude Code local settings (personal, not shared)
-.claude/settings.local.json
