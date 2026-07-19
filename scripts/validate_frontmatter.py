@@ -35,8 +35,9 @@ def main(path):
     if fm.get("doc_type") == "reference-architecture" and "```mermaid" not in text:
         errs.append("reference-architecture requires a mermaid diagram")
     words = len(re.sub(r"```.*?```", "", text[m.end():], flags=re.S).split())
-    if words > 2600:
-        errs.append(f"page is {words} words (>2600 hard cap) — split it")
+    cap = 6600 if fm.get("doc_type") == "reference-architecture" else 2600
+    if words > cap:
+        errs.append(f"page is {words} words (>{cap} hard cap for doc_type={fm.get('doc_type')}) — split it")
     if errs: fail(errs)
     print("OK")
 

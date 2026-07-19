@@ -7,9 +7,10 @@ canonical: true
 topic_id: wiki-governance
 maturity: foundational
 personas: [architect, contributor]
-last_reviewed: 2026-07-18
+last_reviewed: 2026-07-19
 covers_version: ""
-supersedes: []
+supersedes:
+  - docs/about.md
 sources: []
 tags: [governance, registry, hooks, ci, doc-types, freshness]
 ---

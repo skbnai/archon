@@ -7,7 +7,7 @@ and freshness SLA.
 |---|---|---|---|
 | concept | Explain one idea | 365d | ≤1,200 words |
 | guide | How to do X | 180d | Prereqs + steps + verification |
-| reference-architecture | Blueprint | 180d | Mermaid diagram required; trade-offs section |
+| reference-architecture | Blueprint | 180d | Mermaid diagram required; trade-offs section; ≤6,000 words (higher ceiling — these are deep technical blueprints; still split into a series if a source genuinely exceeds it) |
 | pattern | Reusable solution | 365d | Context/Forces/Solution/Consequences |
 | anti-pattern | Named failure mode | 365d | Symptoms/Why it happens/Remedy |
 | decision | ADR | on change | ADR template; status proposed/accepted/superseded |
