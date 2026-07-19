@@ -2,14 +2,19 @@
 title: "Strategy Hub"
 doc_type: hub
 domain: strategy
-status: draft
+status: current
 canonical: true
 topic_id: hub-strategy
 maturity: foundational
 personas: [executive, architect]
-last_reviewed: 2026-07-18
+last_reviewed: 2026-07-19
 covers_version: ""
-supersedes: []
+supersedes:
+  - docs/ai-economics/index.md
+  - docs/enterprise-ai-report/index.md
+  - docs/enterprise-architecture/strategy/index.md
+  - docs/enterprise-architecture/transformation/index.md
+  - docs/enterprise-strategy/index.md
 sources: []
 tags: [hub, strategy]
 ---
@@ -26,6 +31,14 @@ measurable outcome — the reference point the other domains build against.
 - Transformation playbooks
 - Economics & market landscape
 - Value measurement and OKRs
+
+## Key Frameworks
+
+- AI-First Enterprise maturity model → [Executive Summary & AI Vision](35-executive-summary-and-ai-vision.md)
+- Enterprise Strategy & Business Architecture Handbook (Vol 1–10) → [Vol 1: Corporate Strategy](43-vol1-corporate-strategy.md)
+- Enterprise AI Research Report (evolution, operating models, transformation) → [Part 1: Evolution](11-part-01-evolution.md)
+- AI Cost & Economics guide series → [AI Value Creator Deliverables Pack](03-ai-value-creator-deliverables-pack.md)
+- Quantum AI vendor landscape → [Quantum AI Consulting Landscape](01-quantum-ai-consulting-landscape.md)
 
 ## Related
 

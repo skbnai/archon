@@ -23,3 +23,19 @@ description: >
   not vague arrows.
 - Migration duty: when a source page contains ASCII layouts or converted-PDF
   table-diagrams, REPLACE them with Mermaid; do not carry them over.
+
+## Mandatory verification (do not skip — this rule has been ignored before)
+
+"No ASCII art" is not satisfied by eyeballing the page. Before marking any
+migrated/written file done, run:
+
+```
+grep -cP '[\x{2500}-\x{257F}]' path/to/file.md
+```
+
+The count MUST be 0. If it isn't, convert what's left — including small
+"minor" trees, org-charts, or phase/step sequences using `├── └── │ → ↓`.
+There is no size or complexity exception: a 4-node tree gets the same
+Mermaid treatment as a 15-node one (split it if it's actually >15 nodes).
+"Not a real diagram, just an indented list" is not a valid reason to keep
+box-drawing characters — convert it to a small `graph TD` instead.

@@ -27,3 +27,10 @@ description: >
    (merge decisions, reviews) → stronger model.
 7. **Write once.** Draft complete pages before writing; avoid write-read-rewrite
    loops. Fix validator errors from the hook message, not by re-reading.
+8. **Never trust a subagent's self-reported numbers.** Migrator/reviewer agents
+   have repeatedly reported wrong word counts, "no ASCII art found" when there
+   was, and "all links resolved" when many weren't — even "task complete" at a
+   fraction of the batch. After every batch, re-run the real checks yourself
+   (`registry_check.py`, `dedup_check.py`, a word-count script, an ASCII-art
+   grep, a link-resolution pass) rather than accepting the agent's prose
+   summary as ground truth. This is cheap compared to a reviewer bounce.
