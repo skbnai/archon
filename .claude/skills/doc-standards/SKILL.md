@@ -66,6 +66,31 @@ domain folder you're already inside, never use a site-root-absolute path.
 After writing/migrating a batch, resolve every relative `.md` link against
 the filesystem before calling it done — don't eyeball it.
 
+## MDX escaping (breaks the live build, not caught by docs-quality CI)
+
+Docusaurus parses every page as MDX, not plain Markdown. A literal `<` not
+immediately followed by a letter, `/`, or `!` is read as an attempted JSX
+tag and fails the build — this hits constantly in migrated business/technical
+prose that uses `<` as "less than" (`<12%`, `<2000 words`, `p < 0.05`,
+`<£500K`, `<$5,000`). The `docs-quality` CI workflow does NOT run
+`npm run build`, so this class of error only surfaces on the `deploy`
+workflow *after* merge to main (previous deploy stays live, but the new
+content doesn't go out).
+
+- Before finishing any page, escape every such `<` to `&lt;` (renders
+  identically, unambiguous to MDX). Do NOT touch `<` inside fenced ``` code
+  blocks (Mermaid's `<br/>` and `<-->` are valid there and must stay as-is).
+- Quick self-check: outside fenced code blocks, `<` should only ever be
+  followed by a letter, `/`, or `!`. Anything else needs `&lt;`.
+- A markdown link to a topic that's registered but not yet migrated (a
+  future-wave forward-reference) will also fail Docusaurus's build-time
+  link check (`onBrokenLinks`/`onBrokenMarkdownLinks`, both `"throw"` by
+  deliberate site policy — don't weaken it). Use the `pathname://` protocol
+  with the predicted final slug (Docusaurus strips the `NN-` ordering
+  prefix from slugs by default — confirm against an existing page/config
+  link, don't guess) instead of a plain relative `.md` link, so the link
+  stays clickable without failing the build.
+
 ## Naming
 
 `NN-kebab-case.md`; NN = reading order within folder. No dates, versions,
