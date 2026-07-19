@@ -3,7 +3,9 @@
     "allow": [
       "Bash(python3 -c ' *)",
       "Bash(awk -F',' '$2==\"MERGE-INTO\" || $2==\"SPLIT\"' /workspaces/archon/migration/mapping.csv)",
-      "Bash(awk -F',' '\\($2==\"MERGE-INTO\" || $2==\"SPLIT\"\\){print $3}' /workspaces/archon/migration/mapping.csv)"
+      "Bash(awk -F',' '\\($2==\"MERGE-INTO\" || $2==\"SPLIT\"\\){print $3}' /workspaces/archon/migration/mapping.csv)",
+      "Bash(python3 -)",
+      "Bash(bash /tmp/claude-1000/-workspaces-archon/bdf0e809-93cf-4ae4-9d3f-bb3498a17fd9/scratchpad/section_words.sh docs/enterprise-ai-report/part-21-agentic-process-blueprint.md)"
     ]
   },
   "hooks": {
