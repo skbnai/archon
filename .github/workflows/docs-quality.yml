@@ -39,8 +39,17 @@ jobs:
           BAD=$(find docs -name '*_v[0-9]*' -o -name '*_final*' -o -name '*_copy*' \
                 -o -name '*-old*' -o -name '*_new*' | grep . || true)
           if [ -n "$BAD" ]; then echo "$BAD"; echo "::error::versioned filenames forbidden"; exit 1; fi
+      - name: Compute pending-domain link excludes
+        id: pending
+        run: |
+          # A page finished in an earlier wave may legitimately link forward
+          # to a topic that's registered but not yet migrated (future wave).
+          # Don't fail the link check on those -- only on links into domains
+          # that are supposed to be fully present already.
+          EXCLUDES=$(python3 scripts/registry_check.py --pending-domains)
+          echo "excludes=$EXCLUDES" >> "$GITHUB_OUTPUT"
       - name: Link check
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --offline --no-progress "docs/**/*.md"
+          args: --offline --no-progress ${{ steps.pending.outputs.excludes }} "docs/**/*.md"
           fail: true

@@ -17,7 +17,15 @@ Registry entries whose domain is NOT in the given set are exempt from the
 yet) — everything else (duplicate ids/canonicals, frontmatter consistency
 for files that DO exist, unregistered pages on disk) still runs unscoped.
 Without --domains, live mode requires every registered topic's canonical
-file to exist — only true once all stage-04 waves are merged."""
+file to exist — only true once all stage-04 waves are merged.
+
+--pending-domains: prints lychee-ready `--exclude` args (space-separated,
+one per domain) for every domain that has at least one registered topic
+whose canonical file doesn't exist yet. A page finished in an earlier wave
+is allowed to link forward to a topic in a not-yet-migrated domain (it's
+already registered, just not written) — that link will resolve once its
+wave lands, so CI's link checker shouldn't fail on it in the meantime.
+Used by the docs-quality workflow's Link check step, not by humans."""
 import sys, re, pathlib
 try: import yaml
 except ImportError: sys.exit(0)
@@ -76,6 +84,14 @@ def check_live(topics, domains=None):
             errs.append(f"unregistered page on disk: {p.as_posix()}")
     return errs
 
+def pending_domains(topics):
+    pending = set()
+    for t in topics:
+        domain, canon = t.get("domain"), t.get("canonical")
+        if domain and canon and not pathlib.Path(canon).exists():
+            pending.add(domain)
+    return pending
+
 def main():
     paper = "--paper" in sys.argv
     domains = None
@@ -84,6 +100,10 @@ def main():
         domains = {d.strip() for d in sys.argv[idx + 1].split(",") if d.strip()}
     reg = yaml.safe_load(open("governance/CANONICAL_REGISTRY.yaml")) or {}
     topics = reg.get("topics") or []
+    if "--pending-domains" in sys.argv:
+        pending = sorted(pending_domains(topics))
+        print(" ".join(f"--exclude docs/{d}/" for d in pending))
+        return
     errs = check_paper(topics) if paper else check_live(topics, domains)
     if errs:
         print("\n".join(f"  - {e}" for e in errs)); sys.exit(1)
