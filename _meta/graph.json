@@ -4,7 +4,7 @@
  "concept_count": 387,
  "tool_count": 35,
  "edge_counts": {
-  "similar_to": 160,
+  "similar_to": 164,
   "links_to": 404,
   "tagged": 614,
   "mentions": 270
@@ -4985,7 +4985,7 @@
    "source": "strategy/99-vol5-ai-strategy-transformation-glossary-glossary-a-to-h",
    "target": "strategy/vols/01-vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref",
    "type": "similar_to",
-   "weight": 0.7816,
+   "weight": 0.7818,
    "tier": "heavy_overlap"
   },
   {
@@ -4999,488 +4999,530 @@
    "source": "strategy/01-quantum-ai-consulting-landscape",
    "target": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "type": "similar_to",
-   "weight": 0.7086,
+   "weight": 0.709,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "target": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
    "type": "similar_to",
-   "weight": 0.7059,
+   "weight": 0.7064,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
    "type": "similar_to",
-   "weight": 0.6935,
+   "weight": 0.694,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
    "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
    "type": "similar_to",
-   "weight": 0.6713,
+   "weight": 0.6714,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/01-quantum-ai-consulting-landscape",
    "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
    "type": "similar_to",
-   "weight": 0.6622,
+   "weight": 0.6626,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/01-quantum-ai-consulting-landscape",
    "target": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
    "type": "similar_to",
-   "weight": 0.658,
+   "weight": 0.6583,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/02-quantum-ai-startup-landscape",
    "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
    "type": "similar_to",
-   "weight": 0.6064,
+   "weight": 0.6067,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/03-ai-value-creator-deliverables-pack",
    "target": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
    "type": "similar_to",
-   "weight": 0.5935,
+   "weight": 0.5924,
    "tier": "related"
   },
   {
    "source": "strategy/06-ai-coding-agents-2026",
    "target": "strategy/57-ai-coding-agents-2026-enterprise-autonomous-agent-tools",
    "type": "similar_to",
-   "weight": 0.5818,
+   "weight": 0.5811,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
    "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
    "type": "similar_to",
-   "weight": 0.5785,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/03-ai-value-creator-deliverables-pack",
-   "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
-   "type": "similar_to",
-   "weight": 0.5501,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/76-enterprise-ai-strategic-brief-2026-roadmap-strategic-imperatives",
-   "target": "strategy/33-enterprise-ai-strategic-brief-2026",
-   "type": "similar_to",
-   "weight": 0.5493,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
-   "target": "strategy/18-part-08-organizational-roles",
-   "type": "similar_to",
-   "weight": 0.5441,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
-   "target": "strategy/42-ai-first-to-ai-native",
-   "type": "similar_to",
-   "weight": 0.5403,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
-   "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
-   "type": "similar_to",
-   "weight": 0.5394,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/02-quantum-ai-startup-landscape",
-   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
-   "type": "similar_to",
-   "weight": 0.532,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/20-part-10-service-catalog",
-   "target": "strategy/71-part-10-service-catalog-agent-guardrail-observability",
-   "type": "similar_to",
-   "weight": 0.5247,
+   "weight": 0.5794,
    "tier": "related"
   },
   {
    "source": "strategy/31-part-21-agentic-process-blueprint",
    "target": "strategy/73-part-21-agentic-process-blueprint-blueprints-by-function-teams",
    "type": "similar_to",
-   "weight": 0.5165,
+   "weight": 0.555,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/76-enterprise-ai-strategic-brief-2026-roadmap-strategic-imperatives",
+   "target": "strategy/33-enterprise-ai-strategic-brief-2026",
+   "type": "similar_to",
+   "weight": 0.5498,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
+   "target": "strategy/18-part-08-organizational-roles",
+   "type": "similar_to",
+   "weight": 0.5428,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
+   "target": "strategy/42-ai-first-to-ai-native",
+   "type": "similar_to",
+   "weight": 0.5402,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/03-ai-value-creator-deliverables-pack",
+   "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
+   "type": "similar_to",
+   "weight": 0.5365,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/02-quantum-ai-startup-landscape",
+   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
+   "type": "similar_to",
+   "weight": 0.5326,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/20-part-10-service-catalog",
+   "target": "strategy/71-part-10-service-catalog-agent-guardrail-observability",
+   "type": "similar_to",
+   "weight": 0.5229,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
+   "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
+   "type": "similar_to",
+   "weight": 0.5193,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
+   "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
+   "type": "similar_to",
+   "weight": 0.5098,
    "tier": "related"
   },
   {
    "source": "strategy/32-ea-strategy-playbook",
    "target": "strategy/74-ea-strategy-playbook-build-operate-retire-stages",
    "type": "similar_to",
-   "weight": 0.5095,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-   "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
-   "type": "similar_to",
-   "weight": 0.5094,
+   "weight": 0.5091,
    "tier": "related"
   },
   {
    "source": "strategy/66-part-08-organizational-roles-core-delivery-engineering-roles",
    "target": "strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks",
    "type": "similar_to",
-   "weight": 0.5077,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
-   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
-   "type": "similar_to",
-   "weight": 0.4802,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/vols/11-vol9-industry-deep-dives-manufacturing-energy-telecom-gov",
-   "target": "strategy/vols/12-vol9-industry-deep-dives-life-sciences-logistics-media-tech",
-   "type": "similar_to",
-   "weight": 0.4685,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/02-quantum-ai-startup-landscape",
-   "target": "strategy/01-quantum-ai-consulting-landscape",
-   "type": "similar_to",
-   "weight": 0.4682,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
-   "target": "strategy/03-ai-value-creator-deliverables-pack",
-   "type": "similar_to",
-   "weight": 0.4637,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/75-enterprise-ai-strategic-brief-2026-aegis-security-adlc",
-   "target": "strategy/76-enterprise-ai-strategic-brief-2026-roadmap-strategic-imperatives",
-   "type": "similar_to",
-   "weight": 0.4629,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
-   "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
-   "type": "similar_to",
-   "weight": 0.4613,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/42-ai-first-to-ai-native",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-   "type": "similar_to",
-   "weight": 0.4518,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/42-ai-first-to-ai-native",
-   "target": "strategy/27-part-17-transformation-roadmap",
-   "type": "similar_to",
-   "weight": 0.4499,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/01-quantum-ai-consulting-landscape",
-   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
-   "type": "similar_to",
-   "weight": 0.4487,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/18-part-08-organizational-roles",
-   "target": "strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks",
-   "type": "similar_to",
-   "weight": 0.4476,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/52-vol9-industry-deep-dives",
-   "target": "strategy/vols/11-vol9-industry-deep-dives-manufacturing-energy-telecom-gov",
-   "type": "similar_to",
-   "weight": 0.4468,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
-   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
-   "type": "similar_to",
-   "weight": 0.4457,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/02-quantum-ai-startup-landscape",
-   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
-   "type": "similar_to",
-   "weight": 0.4453,
-   "tier": "related"
-  },
-  {
-   "source": "career/index",
-   "target": "assets/index",
-   "type": "similar_to",
-   "weight": 0.4436,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/42-ai-first-to-ai-native",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.4373,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
-   "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
-   "type": "similar_to",
-   "weight": 0.4348,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
-   "target": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
-   "type": "similar_to",
-   "weight": 0.4343,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
-   "target": "strategy/12-part-02-operating-models",
-   "type": "similar_to",
-   "weight": 0.4317,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/02-quantum-ai-startup-landscape",
-   "target": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
-   "type": "similar_to",
-   "weight": 0.4289,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/02-quantum-ai-startup-landscape",
-   "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-   "type": "similar_to",
-   "weight": 0.428,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/06-ai-coding-agents-2026",
-   "target": "strategy/58-ai-coding-agents-2026-tool-comparison-benchmarks-guide",
-   "type": "similar_to",
-   "weight": 0.4253,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
-   "target": "strategy/16-part-06-governance",
-   "type": "similar_to",
-   "weight": 0.425,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/vols/06-vol7-enterprise-building-blocks-ai-infrastructure-platform-engineering",
-   "target": "strategy/vols/05-vol7-enterprise-building-blocks-application-core-ai-blocks",
-   "type": "similar_to",
-   "weight": 0.4231,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/52-vol9-industry-deep-dives",
-   "target": "strategy/vols/12-vol9-industry-deep-dives-life-sciences-logistics-media-tech",
-   "type": "similar_to",
-   "weight": 0.4224,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
-   "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
-   "type": "similar_to",
-   "weight": 0.4154,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
-   "type": "similar_to",
-   "weight": 0.415,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
-   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
-   "type": "similar_to",
-   "weight": 0.4081,
+   "weight": 0.5056,
    "tier": "related"
   },
   {
    "source": "strategy/27-part-17-transformation-roadmap",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.4058,
+   "weight": 0.5046,
    "tier": "related"
   },
   {
-   "source": "strategy/18-part-08-organizational-roles",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "source": "strategy/42-ai-first-to-ai-native",
+   "target": "strategy/27-part-17-transformation-roadmap",
    "type": "similar_to",
-   "weight": 0.4053,
+   "weight": 0.495,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
+   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
+   "type": "similar_to",
+   "weight": 0.4807,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
+   "target": "strategy/03-ai-value-creator-deliverables-pack",
+   "type": "similar_to",
+   "weight": 0.4722,
    "tier": "related"
   },
   {
    "source": "strategy/02-quantum-ai-startup-landscape",
-   "target": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
+   "target": "strategy/01-quantum-ai-consulting-landscape",
    "type": "similar_to",
-   "weight": 0.4051,
+   "weight": 0.4687,
    "tier": "related"
   },
   {
-   "source": "strategy/55-ai-cost-implementation-guide-2026-anti-patterns-deployment-playbook",
-   "target": "strategy/09-enterprise-ai-commercial-analysis-2026",
+   "source": "strategy/vols/11-vol9-industry-deep-dives-manufacturing-energy-telecom-gov",
+   "target": "strategy/vols/12-vol9-industry-deep-dives-life-sciences-logistics-media-tech",
    "type": "similar_to",
-   "weight": 0.4041,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/01-quantum-ai-consulting-landscape",
-   "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-   "type": "similar_to",
-   "weight": 0.4019,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
-   "target": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
-   "type": "similar_to",
-   "weight": 0.3978,
+   "weight": 0.4683,
    "tier": "related"
   },
   {
    "source": "strategy/17-part-07-platform-operating-model",
    "target": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
    "type": "similar_to",
-   "weight": 0.3941,
+   "weight": 0.467,
    "tier": "related"
   },
   {
-   "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
-   "target": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
+   "source": "strategy/75-enterprise-ai-strategic-brief-2026-aegis-security-adlc",
+   "target": "strategy/76-enterprise-ai-strategic-brief-2026-roadmap-strategic-imperatives",
    "type": "similar_to",
-   "weight": 0.3936,
+   "weight": 0.4619,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
+   "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
+   "type": "similar_to",
+   "weight": 0.4615,
    "tier": "related"
   },
   {
    "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
    "target": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
    "type": "similar_to",
-   "weight": 0.3925,
+   "weight": 0.452,
    "tier": "related"
   },
   {
-   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
-   "type": "similar_to",
-   "weight": 0.3904,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
-   "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
-   "type": "similar_to",
-   "weight": 0.3901,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/28-part-18-case-studies",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.3887,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
-   "target": "strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g",
-   "type": "similar_to",
-   "weight": 0.3827,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
-   "target": "strategy/48-vol5-ai-strategy-transformation-glossary",
-   "type": "similar_to",
-   "weight": 0.377,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-   "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
-   "type": "similar_to",
-   "weight": 0.3765,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
+   "source": "strategy/42-ai-first-to-ai-native",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3757,
+   "weight": 0.4502,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/01-quantum-ai-consulting-landscape",
+   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
+   "type": "similar_to",
+   "weight": 0.4493,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/18-part-08-organizational-roles",
+   "target": "strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks",
+   "type": "similar_to",
+   "weight": 0.4474,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
+   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
+   "type": "similar_to",
+   "weight": 0.4464,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/52-vol9-industry-deep-dives",
+   "target": "strategy/vols/11-vol9-industry-deep-dives-manufacturing-energy-telecom-gov",
+   "type": "similar_to",
+   "weight": 0.4459,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/02-quantum-ai-startup-landscape",
+   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
+   "type": "similar_to",
+   "weight": 0.4458,
+   "tier": "related"
+  },
+  {
+   "source": "career/index",
+   "target": "assets/index",
+   "type": "similar_to",
+   "weight": 0.4428,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
+   "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
+   "type": "similar_to",
+   "weight": 0.438,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/42-ai-first-to-ai-native",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.4369,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
+   "target": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
+   "type": "similar_to",
+   "weight": 0.433,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
+   "target": "strategy/12-part-02-operating-models",
+   "type": "similar_to",
+   "weight": 0.4323,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/02-quantum-ai-startup-landscape",
+   "target": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
+   "type": "similar_to",
+   "weight": 0.4294,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/02-quantum-ai-startup-landscape",
+   "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
+   "type": "similar_to",
+   "weight": 0.4286,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/vols/06-vol7-enterprise-building-blocks-ai-infrastructure-platform-engineering",
+   "target": "strategy/vols/05-vol7-enterprise-building-blocks-application-core-ai-blocks",
+   "type": "similar_to",
+   "weight": 0.425,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
+   "target": "strategy/16-part-06-governance",
+   "type": "similar_to",
+   "weight": 0.4222,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/52-vol9-industry-deep-dives",
+   "target": "strategy/vols/12-vol9-industry-deep-dives-life-sciences-logistics-media-tech",
+   "type": "similar_to",
+   "weight": 0.4216,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
+   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
+   "type": "similar_to",
+   "weight": 0.4158,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
+   "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
+   "type": "similar_to",
+   "weight": 0.4157,
    "tier": "related"
   },
   {
    "source": "strategy/20-part-10-service-catalog",
    "target": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
    "type": "similar_to",
-   "weight": 0.3754,
+   "weight": 0.4155,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
+   "target": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
+   "type": "similar_to",
+   "weight": 0.4106,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/06-ai-coding-agents-2026",
+   "target": "strategy/58-ai-coding-agents-2026-tool-comparison-benchmarks-guide",
+   "type": "similar_to",
+   "weight": 0.41,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/27-part-17-transformation-roadmap",
+   "target": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
+   "type": "similar_to",
+   "weight": 0.4094,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
+   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
+   "type": "similar_to",
+   "weight": 0.4087,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/02-quantum-ai-startup-landscape",
+   "target": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
+   "type": "similar_to",
+   "weight": 0.4053,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/18-part-08-organizational-roles",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "type": "similar_to",
+   "weight": 0.4039,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/01-quantum-ai-consulting-landscape",
+   "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
+   "type": "similar_to",
+   "weight": 0.402,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/55-ai-cost-implementation-guide-2026-anti-patterns-deployment-playbook",
+   "target": "strategy/09-enterprise-ai-commercial-analysis-2026",
+   "type": "similar_to",
+   "weight": 0.4015,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
+   "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
+   "type": "similar_to",
+   "weight": 0.4003,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
+   "target": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
+   "type": "similar_to",
+   "weight": 0.3974,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
+   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
+   "type": "similar_to",
+   "weight": 0.3907,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/28-part-18-case-studies",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3882,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
+   "target": "strategy/27-part-17-transformation-roadmap",
+   "type": "similar_to",
+   "weight": 0.3858,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
+   "target": "strategy/27-part-17-transformation-roadmap",
+   "type": "similar_to",
+   "weight": 0.3857,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
+   "target": "strategy/27-part-17-transformation-roadmap",
+   "type": "similar_to",
+   "weight": 0.3841,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
+   "target": "strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g",
+   "type": "similar_to",
+   "weight": 0.3835,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/27-part-17-transformation-roadmap",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3831,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
+   "target": "strategy/71-part-10-service-catalog-agent-guardrail-observability",
+   "type": "similar_to",
+   "weight": 0.382,
    "tier": "related"
   },
   {
    "source": "strategy/19-part-09-operating-processes",
    "target": "strategy/69-part-09-operating-processes-rollout-evaluation-redteam",
    "type": "similar_to",
-   "weight": 0.3737,
+   "weight": 0.38,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
+   "target": "strategy/48-vol5-ai-strategy-transformation-glossary",
+   "type": "similar_to",
+   "weight": 0.3774,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
+   "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
+   "type": "similar_to",
+   "weight": 0.3764,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "type": "similar_to",
+   "weight": 0.374,
    "tier": "related"
   },
   {
    "source": "strategy/96-vol4-consulting-frameworks-industry-architecture-industry-playbooks",
    "target": "strategy/85-vol1-corporate-strategy-relationships-industry-comparisons",
    "type": "similar_to",
-   "weight": 0.3735,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/34-enterprise-ai-transformation-blueprint-cto-guide-2026",
-   "target": "strategy/38-enterprise-ai-platform-and-data-architecture",
-   "type": "similar_to",
-   "weight": 0.3735,
+   "weight": 0.3737,
    "tier": "related"
   },
   {
    "source": "strategy/01-quantum-ai-consulting-landscape",
    "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
    "type": "similar_to",
-   "weight": 0.3721,
+   "weight": 0.3724,
    "tier": "related"
   },
   {
-   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
-   "target": "strategy/27-part-17-transformation-roadmap",
+   "source": "strategy/34-enterprise-ai-transformation-blueprint-cto-guide-2026",
+   "target": "strategy/38-enterprise-ai-platform-and-data-architecture",
+   "type": "similar_to",
+   "weight": 0.3723,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/27-part-17-transformation-roadmap",
+   "target": "strategy/28-part-18-case-studies",
    "type": "similar_to",
    "weight": 0.372,
    "tier": "related"
@@ -5489,287 +5531,308 @@
    "source": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
    "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
    "type": "similar_to",
-   "weight": 0.371,
+   "weight": 0.3713,
    "tier": "related"
   },
   {
    "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3697,
+   "weight": 0.368,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/27-part-17-transformation-roadmap",
+   "target": "strategy/18-part-08-organizational-roles",
+   "type": "similar_to",
+   "weight": 0.3674,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/25-part-15-enterprise-architecture",
+   "target": "strategy/42-ai-first-to-ai-native",
+   "type": "similar_to",
+   "weight": 0.3668,
    "tier": "related"
   },
   {
    "source": "strategy/22-part-12-responsible-ai",
    "target": "strategy/16-part-06-governance",
    "type": "similar_to",
-   "weight": 0.368,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
-   "target": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
-   "type": "similar_to",
-   "weight": 0.3663,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/25-part-15-enterprise-architecture",
-   "target": "strategy/42-ai-first-to-ai-native",
-   "type": "similar_to",
-   "weight": 0.366,
+   "weight": 0.3648,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
    "type": "similar_to",
-   "weight": 0.3638,
+   "weight": 0.3641,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
    "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
    "type": "similar_to",
-   "weight": 0.3629,
+   "weight": 0.3632,
    "tier": "related"
   },
   {
-   "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
+   "target": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
    "type": "similar_to",
-   "weight": 0.3624,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/49-vol6-organization-structure-operating-model",
-   "target": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
-   "type": "similar_to",
-   "weight": 0.3621,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/11-part-01-evolution",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.3615,
+   "weight": 0.363,
    "tier": "related"
   },
   {
    "source": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
    "target": "strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t",
    "type": "similar_to",
-   "weight": 0.3614,
+   "weight": 0.3625,
    "tier": "related"
   },
   {
-   "source": "strategy/58-ai-coding-agents-2026-tool-comparison-benchmarks-guide",
-   "target": "strategy/57-ai-coding-agents-2026-enterprise-autonomous-agent-tools",
+   "source": "strategy/49-vol6-organization-structure-operating-model",
+   "target": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
    "type": "similar_to",
-   "weight": 0.3562,
+   "weight": 0.3609,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "type": "similar_to",
+   "weight": 0.3606,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/11-part-01-evolution",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3599,
    "tier": "related"
   },
   {
    "source": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3562,
+   "weight": 0.3544,
    "tier": "related"
   },
   {
    "source": "strategy/30-part-20-greenfield-vs-brownfield",
    "target": "strategy/28-part-18-case-studies",
    "type": "similar_to",
-   "weight": 0.3542,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.3523,
+   "weight": 0.3539,
    "tier": "related"
   },
   {
    "source": "strategy/25-part-15-enterprise-architecture",
    "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "type": "similar_to",
-   "weight": 0.3519,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
-   "target": "strategy/22-part-12-responsible-ai",
-   "type": "similar_to",
-   "weight": 0.3493,
+   "weight": 0.352,
    "tier": "related"
   },
   {
    "source": "strategy/42-ai-first-to-ai-native",
    "target": "strategy/18-part-08-organizational-roles",
    "type": "similar_to",
-   "weight": 0.3487,
+   "weight": 0.3497,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3496,
    "tier": "related"
   },
   {
    "source": "strategy/40-target-operating-model-and-change",
    "target": "strategy/12-part-02-operating-models",
    "type": "similar_to",
-   "weight": 0.3486,
+   "weight": 0.3483,
    "tier": "related"
   },
   {
    "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
    "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
-   "weight": 0.3482,
+   "weight": 0.348,
    "tier": "related"
   },
   {
-   "source": "strategy/28-part-18-case-studies",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-   "type": "similar_to",
-   "weight": 0.3468,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-   "type": "similar_to",
-   "weight": 0.3467,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/35-executive-summary-and-ai-vision",
-   "target": "strategy/41-roadmap-financials-kpis-and-risk",
+   "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
+   "target": "strategy/22-part-12-responsible-ai",
    "type": "similar_to",
    "weight": 0.3466,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/25-part-15-enterprise-architecture",
+   "target": "strategy/27-part-17-transformation-roadmap",
+   "type": "similar_to",
+   "weight": 0.3464,
    "tier": "related"
   },
   {
    "source": "strategy/49-vol6-organization-structure-operating-model",
    "target": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
    "type": "similar_to",
-   "weight": 0.346,
+   "weight": 0.3457,
    "tier": "related"
   },
   {
-   "source": "strategy/75-enterprise-ai-strategic-brief-2026-aegis-security-adlc",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "source": "strategy/28-part-18-case-studies",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3445,
+   "weight": 0.3452,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "type": "similar_to",
+   "weight": 0.3446,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
    "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
    "type": "similar_to",
-   "weight": 0.3444,
+   "weight": 0.3446,
    "tier": "related"
   },
   {
-   "source": "strategy/44-vol10-relationship-maps-glossary",
-   "target": "strategy/86-vol10-relationship-maps-glossary-ai-comparisons-terminology-xref",
+   "source": "strategy/27-part-17-transformation-roadmap",
+   "target": "strategy/12-part-02-operating-models",
    "type": "similar_to",
-   "weight": 0.3432,
+   "weight": 0.344,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/69-part-09-operating-processes-rollout-evaluation-redteam",
+   "target": "strategy/70-part-09-operating-processes-incident-response-rollback",
+   "type": "similar_to",
+   "weight": 0.3438,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
    "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
    "type": "similar_to",
-   "weight": 0.3431,
+   "weight": 0.3433,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/75-enterprise-ai-strategic-brief-2026-aegis-security-adlc",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3432,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/58-ai-coding-agents-2026-tool-comparison-benchmarks-guide",
+   "target": "strategy/57-ai-coding-agents-2026-enterprise-autonomous-agent-tools",
+   "type": "similar_to",
+   "weight": 0.343,
    "tier": "related"
   },
   {
    "source": "strategy/25-part-15-enterprise-architecture",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3427,
+   "weight": 0.3419,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/35-executive-summary-and-ai-vision",
+   "target": "strategy/41-roadmap-financials-kpis-and-risk",
+   "type": "similar_to",
+   "weight": 0.3416,
    "tier": "related"
   },
   {
    "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3423,
+   "weight": 0.3409,
    "tier": "related"
   },
   {
-   "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
-   "target": "strategy/27-part-17-transformation-roadmap",
+   "source": "strategy/44-vol10-relationship-maps-glossary",
+   "target": "strategy/86-vol10-relationship-maps-glossary-ai-comparisons-terminology-xref",
    "type": "similar_to",
-   "weight": 0.3407,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/27-part-17-transformation-roadmap",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.3404,
+   "weight": 0.3398,
    "tier": "related"
   },
   {
    "source": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3395,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/48-vol5-ai-strategy-transformation-glossary",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-   "type": "similar_to",
-   "weight": 0.3358,
+   "weight": 0.3381,
    "tier": "related"
   },
   {
    "source": "strategy/42-ai-first-to-ai-native",
    "target": "strategy/28-part-18-case-studies",
    "type": "similar_to",
-   "weight": 0.3351,
+   "weight": 0.3354,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/48-vol5-ai-strategy-transformation-glossary",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "type": "similar_to",
+   "weight": 0.3349,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/48-vol5-ai-strategy-transformation-glossary",
+   "target": "strategy/27-part-17-transformation-roadmap",
+   "type": "similar_to",
+   "weight": 0.3345,
    "tier": "related"
   },
   {
    "source": "strategy/75-enterprise-ai-strategic-brief-2026-aegis-security-adlc",
    "target": "strategy/33-enterprise-ai-strategic-brief-2026",
    "type": "similar_to",
-   "weight": 0.3346,
+   "weight": 0.334,
    "tier": "related"
   },
   {
-   "source": "strategy/82-vol1-corporate-strategy-themes-priorities-initiatives",
-   "target": "strategy/85-vol1-corporate-strategy-relationships-industry-comparisons",
+   "source": "strategy/27-part-17-transformation-roadmap",
+   "target": "strategy/35-executive-summary-and-ai-vision",
    "type": "similar_to",
-   "weight": 0.3321,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/09-enterprise-ai-commercial-analysis-2026",
-   "target": "strategy/62-enterprise-ai-commercial-analysis-2026-finops-procurement-framework",
-   "type": "similar_to",
-   "weight": 0.3321,
+   "weight": 0.3322,
    "tier": "related"
   },
   {
    "source": "strategy/02-quantum-ai-startup-landscape",
    "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
    "type": "similar_to",
-   "weight": 0.3317,
+   "weight": 0.3319,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/82-vol1-corporate-strategy-themes-priorities-initiatives",
+   "target": "strategy/85-vol1-corporate-strategy-relationships-industry-comparisons",
+   "type": "similar_to",
+   "weight": 0.3318,
    "tier": "related"
   },
   {
    "source": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
    "target": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
    "type": "similar_to",
-   "weight": 0.3314,
+   "weight": 0.3315,
    "tier": "related"
   },
   {
    "source": "strategy/28-part-18-case-studies",
    "target": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
    "type": "similar_to",
-   "weight": 0.3312,
+   "weight": 0.3313,
    "tier": "related"
   },
   {
@@ -5780,176 +5843,134 @@
    "tier": "related"
   },
   {
+   "source": "strategy/09-enterprise-ai-commercial-analysis-2026",
+   "target": "strategy/62-enterprise-ai-commercial-analysis-2026-finops-procurement-framework",
+   "type": "similar_to",
+   "weight": 0.3297,
+   "tier": "related"
+  },
+  {
    "source": "strategy/81-ai-first-to-ai-native-case-studies-readiness-checklist",
    "target": "strategy/41-roadmap-financials-kpis-and-risk",
    "type": "similar_to",
-   "weight": 0.3281,
+   "weight": 0.3262,
    "tier": "related"
   },
   {
    "source": "strategy/75-enterprise-ai-strategic-brief-2026-aegis-security-adlc",
    "target": "strategy/23-part-13-security-model",
    "type": "similar_to",
-   "weight": 0.3277,
+   "weight": 0.3259,
    "tier": "related"
   },
   {
    "source": "strategy/39-governance-responsible-ai-and-security",
    "target": "strategy/16-part-06-governance",
    "type": "similar_to",
-   "weight": 0.325,
+   "weight": 0.3233,
    "tier": "related"
   },
   {
    "source": "strategy/59-ai-tokenomics-guide-prompting-model-selection-fine-tuning",
    "target": "strategy/07-ai-tokenomics-guide",
    "type": "similar_to",
-   "weight": 0.3248,
+   "weight": 0.3219,
    "tier": "related"
   },
   {
    "source": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
    "target": "strategy/03-ai-value-creator-deliverables-pack",
    "type": "similar_to",
-   "weight": 0.3235,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/27-part-17-transformation-roadmap",
-   "target": "strategy/28-part-18-case-studies",
-   "type": "similar_to",
-   "weight": 0.3232,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/69-part-09-operating-processes-rollout-evaluation-redteam",
-   "target": "strategy/70-part-09-operating-processes-incident-response-rollback",
-   "type": "similar_to",
-   "weight": 0.3226,
+   "weight": 0.3209,
    "tier": "related"
   },
   {
    "source": "strategy/46-vol3-portfolio-governance",
    "target": "strategy/93-vol3-portfolio-governance-pmo-agile-governance",
    "type": "similar_to",
-   "weight": 0.3216,
+   "weight": 0.3196,
    "tier": "related"
   },
   {
    "source": "strategy/40-target-operating-model-and-change",
    "target": "strategy/41-roadmap-financials-kpis-and-risk",
    "type": "similar_to",
-   "weight": 0.3208,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
-   "target": "strategy/71-part-10-service-catalog-agent-guardrail-observability",
-   "type": "similar_to",
-   "weight": 0.3199,
+   "weight": 0.3174,
    "tier": "related"
   },
   {
    "source": "strategy/22-part-12-responsible-ai",
    "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
-   "weight": 0.3174,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/27-part-17-transformation-roadmap",
-   "target": "strategy/18-part-08-organizational-roles",
-   "type": "similar_to",
-   "weight": 0.3174,
+   "weight": 0.3163,
    "tier": "related"
   },
   {
    "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
    "target": "strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks",
    "type": "similar_to",
-   "weight": 0.3167,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
-   "target": "strategy/27-part-17-transformation-roadmap",
-   "type": "similar_to",
-   "weight": 0.316,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/12-part-02-operating-models",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-   "type": "similar_to",
-   "weight": 0.3159,
+   "weight": 0.3162,
    "tier": "related"
   },
   {
    "source": "strategy/12-part-02-operating-models",
    "target": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
    "type": "similar_to",
-   "weight": 0.3157,
+   "weight": 0.3148,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/12-part-02-operating-models",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "type": "similar_to",
+   "weight": 0.3147,
    "tier": "related"
   },
   {
    "source": "strategy/22-part-12-responsible-ai",
    "target": "strategy/18-part-08-organizational-roles",
    "type": "similar_to",
-   "weight": 0.3147,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
-   "target": "strategy/12-part-02-operating-models",
-   "type": "similar_to",
-   "weight": 0.3143,
-   "tier": "related"
-  },
-  {
-   "source": "learning-paths/index",
-   "target": "assets/index",
-   "type": "similar_to",
-   "weight": 0.3137,
+   "weight": 0.3132,
    "tier": "related"
   },
   {
    "source": "strategy/vols/07-vol7-enterprise-building-blocks-agentic-ai-selection-guide",
    "target": "strategy/vols/05-vol7-enterprise-building-blocks-application-core-ai-blocks",
    "type": "similar_to",
-   "weight": 0.3129,
+   "weight": 0.3127,
    "tier": "related"
   },
   {
-   "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "source": "learning-paths/index",
+   "target": "assets/index",
    "type": "similar_to",
-   "weight": 0.3122,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/25-part-15-enterprise-architecture",
-   "target": "strategy/vols/09-vol8-portfolio-consulting-frameworks-architecture-operating-delivery",
-   "type": "similar_to",
-   "weight": 0.3118,
+   "weight": 0.3125,
    "tier": "related"
   },
   {
    "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
    "target": "strategy/18-part-08-organizational-roles",
    "type": "similar_to",
-   "weight": 0.3116,
+   "weight": 0.312,
    "tier": "related"
   },
   {
-   "source": "strategy/16-part-06-governance",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "type": "similar_to",
-   "weight": 0.3113,
+   "weight": 0.3119,
    "tier": "related"
   },
   {
    "source": "strategy/66-part-08-organizational-roles-core-delivery-engineering-roles",
    "target": "strategy/18-part-08-organizational-roles",
+   "type": "similar_to",
+   "weight": 0.311,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/25-part-15-enterprise-architecture",
+   "target": "strategy/vols/09-vol8-portfolio-consulting-frameworks-architecture-operating-delivery",
    "type": "similar_to",
    "weight": 0.3109,
    "tier": "related"
@@ -5958,75 +5979,82 @@
    "source": "strategy/48-vol5-ai-strategy-transformation-glossary",
    "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
-   "weight": 0.3098,
+   "weight": 0.3107,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
+   "target": "strategy/12-part-02-operating-models",
+   "type": "similar_to",
+   "weight": 0.3102,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/16-part-06-governance",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "type": "similar_to",
+   "weight": 0.3092,
    "tier": "related"
   },
   {
    "source": "strategy/50-vol7-enterprise-building-blocks",
    "target": "strategy/vols/07-vol7-enterprise-building-blocks-agentic-ai-selection-guide",
    "type": "similar_to",
-   "weight": 0.309,
+   "weight": 0.3092,
    "tier": "related"
   },
   {
    "source": "strategy/42-ai-first-to-ai-native",
    "target": "strategy/16-part-06-governance",
    "type": "similar_to",
-   "weight": 0.3089,
+   "weight": 0.3084,
    "tier": "related"
   },
   {
    "source": "strategy/61-ai-value-creators-synthesis-advanced-themes-recommendations",
    "target": "strategy/08-ai-value-creators-synthesis",
    "type": "similar_to",
-   "weight": 0.3088,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/17-part-07-platform-operating-model",
-   "target": "strategy/20-part-10-service-catalog",
-   "type": "similar_to",
-   "weight": 0.3086,
+   "weight": 0.3082,
    "tier": "related"
   },
   {
    "source": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "target": "strategy/23-part-13-security-model",
    "type": "similar_to",
-   "weight": 0.3078,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/35-executive-summary-and-ai-vision",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-   "type": "similar_to",
-   "weight": 0.3057,
+   "weight": 0.3059,
    "tier": "related"
   },
   {
    "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
    "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
-   "weight": 0.3049,
+   "weight": 0.3053,
    "tier": "related"
   },
   {
-   "source": "strategy/48-vol5-ai-strategy-transformation-glossary",
-   "target": "strategy/27-part-17-transformation-roadmap",
-   "type": "similar_to",
-   "weight": 0.3038,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/22-part-12-responsible-ai",
+   "source": "strategy/35-executive-summary-and-ai-vision",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3034,
+   "weight": 0.3039,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/29-part-19-deliverables",
+   "target": "strategy/27-part-17-transformation-roadmap",
+   "type": "similar_to",
+   "weight": 0.3037,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
+   "type": "similar_to",
+   "weight": 0.3035,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/17-part-07-platform-operating-model",
+   "target": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
    "type": "similar_to",
    "weight": 0.3033,
    "tier": "related"
@@ -6035,70 +6063,70 @@
    "source": "strategy/25-part-15-enterprise-architecture",
    "target": "strategy/28-part-18-case-studies",
    "type": "similar_to",
-   "weight": 0.3029,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/39-governance-responsible-ai-and-security",
-   "target": "strategy/22-part-12-responsible-ai",
-   "type": "similar_to",
-   "weight": 0.3029,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/94-vol3-portfolio-governance-ai-governance-metrics",
-   "target": "strategy/16-part-06-governance",
-   "type": "similar_to",
-   "weight": 0.3027,
+   "weight": 0.3031,
    "tier": "related"
   },
   {
    "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
    "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
-   "weight": 0.3022,
+   "weight": 0.3028,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/17-part-07-platform-operating-model",
+   "target": "strategy/20-part-10-service-catalog",
+   "type": "similar_to",
+   "weight": 0.302,
    "tier": "related"
   },
   {
    "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
    "target": "strategy/28-part-18-case-studies",
    "type": "similar_to",
-   "weight": 0.3021,
+   "weight": 0.3018,
    "tier": "related"
   },
   {
    "source": "strategy/12-part-02-operating-models",
    "target": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
    "type": "similar_to",
-   "weight": 0.3015,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/27-part-17-transformation-roadmap",
-   "target": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
-   "type": "similar_to",
-   "weight": 0.3008,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/19-part-09-operating-processes",
-   "target": "strategy/16-part-06-governance",
-   "type": "similar_to",
-   "weight": 0.3007,
+   "weight": 0.3016,
    "tier": "related"
   },
   {
    "source": "strategy/94-vol3-portfolio-governance-ai-governance-metrics",
-   "target": "strategy/93-vol3-portfolio-governance-pmo-agile-governance",
+   "target": "strategy/16-part-06-governance",
    "type": "similar_to",
-   "weight": 0.3007,
+   "weight": 0.3013,
    "tier": "related"
   },
   {
-   "source": "strategy/77-enterprise-ai-transformation-blueprint-cto-guide-2026-finops-security-threat-model",
-   "target": "strategy/78-enterprise-ai-transformation-blueprint-cto-guide-2026-failure-playbook-migration",
+   "source": "strategy/22-part-12-responsible-ai",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "type": "similar_to",
+   "weight": 0.3011,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/39-governance-responsible-ai-and-security",
+   "target": "strategy/22-part-12-responsible-ai",
+   "type": "similar_to",
+   "weight": 0.3009,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/27-part-17-transformation-roadmap",
+   "target": "strategy/16-part-06-governance",
    "type": "similar_to",
    "weight": 0.3004,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/51-vol8-portfolio-consulting-frameworks",
+   "target": "strategy/vols/08-vol8-portfolio-consulting-frameworks-pmo-evolution-strategy-frameworks",
+   "type": "similar_to",
+   "weight": 0.3002,
    "tier": "related"
   },
   {
