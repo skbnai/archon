@@ -334,22 +334,18 @@ Context security flows through six stages: authentication, authorization, row an
 ### Sensitive Data Patterns
 
 **Automatic detection & masking:**
+- **Credit cards:** 16-digit numbers → "****-****-****-1234"
+- **SSN:** XXX-XX-#### → "***-**-1234"
+- **Email:** user@company.com → "u***@c***.com"
+- **Phone:** 1-555-1234 → "1-555-****"
+- **API keys:** sk_live_... → "[REDACTED]"
+- **Passwords:** any field named "password" → "[REDACTED]"
 
-```yaml
-Patterns Detected Automatically:
-├─ Credit cards: 16-digit numbers → "****-****-****-1234"
-├─ SSN: XXX-XX-#### → "***-**-1234"
-├─ Email: user@company.com → "u***@c***.com"
-├─ Phone: 1-555-1234 → "1-555-****"
-├─ API keys: sk_live_... → "[REDACTED]"
-└─ Passwords: any field named "password" → "[REDACTED]"
-
-Custom Rules (organization-specific):
-├─ Financial data: Only show to agents in "Finance" domain
-├─ Medical: Only show to healthcare agents
-├─ Internal IP addresses: Mask from external-facing agents
-└─ [Your rules here]
-```
+**Custom Rules (organization-specific):**
+- **Financial data:** Only show to agents in "Finance" domain
+- **Medical:** Only show to healthcare agents
+- **Internal IP addresses:** Mask from external-facing agents
+- [Your rules here]
 
 ---
 
@@ -357,31 +353,27 @@ Custom Rules (organization-specific):
 
 ### Time-to-Live (TTL) Strategy
 
-```yaml
-CONTEXT TYPE → TTL
+**Customer Profile:**
+- If accessed today: 24-hour TTL (unlikely to change)
+- Last accessed: 2026-07-09T10:30Z
+- Expires: 2026-07-10T10:30Z
+- Refresh trigger: Account status change event
 
-Customer Profile:
-  - If accessed today: 24-hour TTL (unlikely to change)
-  - Last accessed: 2026-07-09T10:30Z
-  - Expires: 2026-07-10T10:30Z
-  └─ Refresh trigger: Account status change event
+**Inventory / Stock:**
+- Real-time data: 5-minute TTL
+- Last accessed: 2026-07-09T16:45:00Z
+- Expires: 2026-07-09T16:50:00Z
+- Refresh trigger: Inventory update event (webhook)
 
-Inventory / Stock:
-  - Real-time data: 5-minute TTL
-  - Last accessed: 2026-07-09T16:45:00Z
-  - Expires: 2026-07-09T16:50:00Z
-  └─ Refresh trigger: Inventory update event (webhook)
+**Pricing / Exchange Rates:**
+- Hourly: 60-minute TTL
+- Daily: 24-hour TTL
 
-Pricing / Exchange Rates:
-  - Hourly: 60-minute TTL
-  - Daily: 24-hour TTL
-
-FAQs / Policies:
-  - Stable: 7-day TTL (rarely change)
-  - Last updated: 2026-07-02
-  - Expires: 2026-07-09 (refresh on update)
-  └─ Refresh trigger: Policy document changed
-```
+**FAQs / Policies:**
+- Stable: 7-day TTL (rarely change)
+- Last updated: 2026-07-02
+- Expires: 2026-07-09 (refresh on update)
+- Refresh trigger: Policy document changed
 
 ### Smart Invalidation (Event-Driven)
 
