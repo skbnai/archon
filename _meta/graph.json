@@ -327,7 +327,7 @@
     "meta",
     "ai-economics"
    ],
-   "word_count": 1488,
+   "word_count": 1510,
    "category_path": "",
    "tools_mentioned": [
     "tool:claude",
@@ -4985,7 +4985,7 @@
    "source": "strategy/99-vol5-ai-strategy-transformation-glossary-glossary-a-to-h",
    "target": "strategy/vols/01-vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref",
    "type": "similar_to",
-   "weight": 0.7818,
+   "weight": 0.7817,
    "tier": "heavy_overlap"
   },
   {
@@ -5132,7 +5132,7 @@
    "source": "strategy/32-ea-strategy-playbook",
    "target": "strategy/74-ea-strategy-playbook-build-operate-retire-stages",
    "type": "similar_to",
-   "weight": 0.5091,
+   "weight": 0.5089,
    "tier": "related"
   },
   {
@@ -5146,7 +5146,7 @@
    "source": "strategy/27-part-17-transformation-roadmap",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.5046,
+   "weight": 0.5047,
    "tier": "related"
   },
   {
@@ -5195,7 +5195,7 @@
    "source": "strategy/75-enterprise-ai-strategic-brief-2026-aegis-security-adlc",
    "target": "strategy/76-enterprise-ai-strategic-brief-2026-roadmap-strategic-imperatives",
    "type": "similar_to",
-   "weight": 0.4619,
+   "weight": 0.4618,
    "tier": "related"
   },
   {
@@ -5279,7 +5279,7 @@
    "source": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
    "target": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
    "type": "similar_to",
-   "weight": 0.433,
+   "weight": 0.4329,
    "tier": "related"
   },
   {
@@ -5426,7 +5426,7 @@
    "source": "strategy/28-part-18-case-studies",
    "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "type": "similar_to",
-   "weight": 0.3882,
+   "weight": 0.3883,
    "tier": "related"
   },
   {
@@ -5454,7 +5454,7 @@
    "source": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
    "target": "strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g",
    "type": "similar_to",
-   "weight": 0.3835,
+   "weight": 0.3831,
    "tier": "related"
   },
   {
@@ -5503,7 +5503,7 @@
    "source": "strategy/96-vol4-consulting-frameworks-industry-architecture-industry-playbooks",
    "target": "strategy/85-vol1-corporate-strategy-relationships-industry-comparisons",
    "type": "similar_to",
-   "weight": 0.3737,
+   "weight": 0.3738,
    "tier": "related"
   },
   {
@@ -5552,7 +5552,7 @@
    "source": "strategy/25-part-15-enterprise-architecture",
    "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
-   "weight": 0.3668,
+   "weight": 0.367,
    "tier": "related"
   },
   {
@@ -5587,14 +5587,14 @@
    "source": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
    "target": "strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t",
    "type": "similar_to",
-   "weight": 0.3625,
+   "weight": 0.3624,
    "tier": "related"
   },
   {
    "source": "strategy/49-vol6-organization-structure-operating-model",
    "target": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
    "type": "similar_to",
-   "weight": 0.3609,
+   "weight": 0.361,
    "tier": "related"
   },
   {
@@ -5629,7 +5629,7 @@
    "source": "strategy/25-part-15-enterprise-architecture",
    "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "type": "similar_to",
-   "weight": 0.352,
+   "weight": 0.3522,
    "tier": "related"
   },
   {
@@ -5661,6 +5661,13 @@
    "tier": "related"
   },
   {
+   "source": "strategy/25-part-15-enterprise-architecture",
+   "target": "strategy/27-part-17-transformation-roadmap",
+   "type": "similar_to",
+   "weight": 0.3466,
+   "tier": "related"
+  },
+  {
    "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
    "target": "strategy/22-part-12-responsible-ai",
    "type": "similar_to",
@@ -5668,17 +5675,10 @@
    "tier": "related"
   },
   {
-   "source": "strategy/25-part-15-enterprise-architecture",
-   "target": "strategy/27-part-17-transformation-roadmap",
-   "type": "similar_to",
-   "weight": 0.3464,
-   "tier": "related"
-  },
-  {
    "source": "strategy/49-vol6-organization-structure-operating-model",
    "target": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
    "type": "similar_to",
-   "weight": 0.3457,
+   "weight": 0.3458,
    "tier": "related"
   },
   {
@@ -5741,7 +5741,7 @@
    "source": "strategy/25-part-15-enterprise-architecture",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3419,
+   "weight": 0.3421,
    "tier": "related"
   },
   {
@@ -5762,7 +5762,7 @@
    "source": "strategy/44-vol10-relationship-maps-glossary",
    "target": "strategy/86-vol10-relationship-maps-glossary-ai-comparisons-terminology-xref",
    "type": "similar_to",
-   "weight": 0.3398,
+   "weight": 0.3396,
    "tier": "related"
   },
   {
@@ -5818,7 +5818,7 @@
    "source": "strategy/82-vol1-corporate-strategy-themes-priorities-initiatives",
    "target": "strategy/85-vol1-corporate-strategy-relationships-industry-comparisons",
    "type": "similar_to",
-   "weight": 0.3318,
+   "weight": 0.3316,
    "tier": "related"
   },
   {
@@ -5881,7 +5881,7 @@
    "source": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
    "target": "strategy/03-ai-value-creator-deliverables-pack",
    "type": "similar_to",
-   "weight": 0.3209,
+   "weight": 0.321,
    "tier": "related"
   },
   {
@@ -5969,13 +5969,6 @@
    "tier": "related"
   },
   {
-   "source": "strategy/25-part-15-enterprise-architecture",
-   "target": "strategy/vols/09-vol8-portfolio-consulting-frameworks-architecture-operating-delivery",
-   "type": "similar_to",
-   "weight": 0.3109,
-   "tier": "related"
-  },
-  {
    "source": "strategy/48-vol5-ai-strategy-transformation-glossary",
    "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
@@ -5987,6 +5980,13 @@
    "target": "strategy/12-part-02-operating-models",
    "type": "similar_to",
    "weight": 0.3102,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/25-part-15-enterprise-architecture",
+   "target": "strategy/vols/09-vol8-portfolio-consulting-frameworks-architecture-operating-delivery",
+   "type": "similar_to",
+   "weight": 0.3098,
    "tier": "related"
   },
   {
@@ -6053,17 +6053,17 @@
    "tier": "related"
   },
   {
-   "source": "strategy/17-part-07-platform-operating-model",
-   "target": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
+   "source": "strategy/25-part-15-enterprise-architecture",
+   "target": "strategy/28-part-18-case-studies",
    "type": "similar_to",
    "weight": 0.3033,
    "tier": "related"
   },
   {
-   "source": "strategy/25-part-15-enterprise-architecture",
-   "target": "strategy/28-part-18-case-studies",
+   "source": "strategy/17-part-07-platform-operating-model",
+   "target": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
    "type": "similar_to",
-   "weight": 0.3031,
+   "weight": 0.3033,
    "tier": "related"
   },
   {
