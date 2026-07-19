@@ -1,0 +1,20 @@
+{
+ "domain": "data-knowledge",
+ "page_count": 1,
+ "pages": [
+  {
+   "id": "data-knowledge/index",
+   "title": "Data & Knowledge Hub",
+   "doc_type": "hub",
+   "topic_id": "hub-data-knowledge",
+   "tags": [
+    "hub",
+    "data-knowledge"
+   ],
+   "word_count": 98,
+   "last_reviewed": "2026-07-18",
+   "status": "draft",
+   "top_similar": []
+  }
+ ]
+}

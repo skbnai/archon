@@ -1,0 +1,25 @@
+{
+ "domain": "learning-paths",
+ "page_count": 1,
+ "pages": [
+  {
+   "id": "learning-paths/index",
+   "title": "Learning Paths Hub",
+   "doc_type": "hub",
+   "topic_id": "hub-learning-paths",
+   "tags": [
+    "hub",
+    "learning-paths"
+   ],
+   "word_count": 82,
+   "last_reviewed": "2026-07-18",
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "assets/index",
+     "score": 0.31
+    }
+   ]
+  }
+ ]
+}

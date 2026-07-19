@@ -1,0 +1,29 @@
+{
+ "domain": "assets",
+ "page_count": 1,
+ "pages": [
+  {
+   "id": "assets/index",
+   "title": "Asset Library Hub",
+   "doc_type": "hub",
+   "topic_id": "hub-assets",
+   "tags": [
+    "hub",
+    "assets"
+   ],
+   "word_count": 85,
+   "last_reviewed": "2026-07-18",
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "career/index",
+     "score": 0.44
+    },
+    {
+     "id": "learning-paths/index",
+     "score": 0.31
+    }
+   ]
+  }
+ ]
+}

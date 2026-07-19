@@ -1,0 +1,25 @@
+{
+ "domain": "career",
+ "page_count": 1,
+ "pages": [
+  {
+   "id": "career/index",
+   "title": "Career Hub",
+   "doc_type": "hub",
+   "topic_id": "hub-career",
+   "tags": [
+    "hub",
+    "career"
+   ],
+   "word_count": 79,
+   "last_reviewed": "2026-07-18",
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "assets/index",
+     "score": 0.44
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "domain": "operations",
+ "page_count": 1,
+ "pages": [
+  {
+   "id": "operations/index",
+   "title": "Operations Hub",
+   "doc_type": "hub",
+   "topic_id": "hub-operations",
+   "tags": [
+    "hub",
+    "operations"
+   ],
+   "word_count": 95,
+   "last_reviewed": "2026-07-18",
+   "status": "draft",
+   "top_similar": []
+  }
+ ]
+}

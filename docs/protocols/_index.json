@@ -1,0 +1,20 @@
+{
+ "domain": "protocols",
+ "page_count": 1,
+ "pages": [
+  {
+   "id": "protocols/index",
+   "title": "Protocols Hub",
+   "doc_type": "hub",
+   "topic_id": "hub-protocols",
+   "tags": [
+    "hub",
+    "protocols"
+   ],
+   "word_count": 92,
+   "last_reviewed": "2026-07-18",
+   "status": "draft",
+   "top_similar": []
+  }
+ ]
+}

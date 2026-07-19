@@ -1,0 +1,38 @@
+{
+ "domain": "architecture",
+ "page_count": 2,
+ "pages": [
+  {
+   "id": "architecture/00-wiki-governance",
+   "title": "How This Wiki Governs Itself",
+   "doc_type": "guide",
+   "topic_id": "wiki-governance",
+   "tags": [
+    "governance",
+    "registry",
+    "hooks",
+    "ci",
+    "doc-types",
+    "freshness"
+   ],
+   "word_count": 562,
+   "last_reviewed": "2026-07-18",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "architecture/index",
+   "title": "Architecture Hub",
+   "doc_type": "hub",
+   "topic_id": "hub-architecture",
+   "tags": [
+    "hub",
+    "architecture"
+   ],
+   "word_count": 111,
+   "last_reviewed": "2026-07-18",
+   "status": "draft",
+   "top_similar": []
+  }
+ ]
+}

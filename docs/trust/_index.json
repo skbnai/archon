@@ -1,0 +1,20 @@
+{
+ "domain": "trust",
+ "page_count": 1,
+ "pages": [
+  {
+   "id": "trust/index",
+   "title": "Trust Hub",
+   "doc_type": "hub",
+   "topic_id": "hub-trust",
+   "tags": [
+    "hub",
+    "trust"
+   ],
+   "word_count": 109,
+   "last_reviewed": "2026-07-18",
+   "status": "draft",
+   "top_similar": []
+  }
+ ]
+}

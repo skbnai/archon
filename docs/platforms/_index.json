@@ -1,0 +1,20 @@
+{
+ "domain": "platforms",
+ "page_count": 1,
+ "pages": [
+  {
+   "id": "platforms/index",
+   "title": "Platforms Hub",
+   "doc_type": "hub",
+   "topic_id": "hub-platforms",
+   "tags": [
+    "hub",
+    "platforms"
+   ],
+   "word_count": 94,
+   "last_reviewed": "2026-07-18",
+   "status": "draft",
+   "top_similar": []
+  }
+ ]
+}

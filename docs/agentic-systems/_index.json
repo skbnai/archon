@@ -1,0 +1,20 @@
+{
+ "domain": "agentic-systems",
+ "page_count": 1,
+ "pages": [
+  {
+   "id": "agentic-systems/index",
+   "title": "Agentic Systems Hub",
+   "doc_type": "hub",
+   "topic_id": "hub-agentic-systems",
+   "tags": [
+    "hub",
+    "agentic-systems"
+   ],
+   "word_count": 111,
+   "last_reviewed": "2026-07-18",
+   "status": "draft",
+   "top_similar": []
+  }
+ ]
+}
