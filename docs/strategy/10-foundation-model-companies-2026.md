@@ -238,7 +238,7 @@ Distribution-anchored (WeChat ecosystem; Baidu search/cloud), increasingly open-
 
 - [Enterprise AI Commercial Analysis 2026](09-enterprise-ai-commercial-analysis-2026.md) — pricing, contracts, lock-in
 - [AI Value Creators Synthesis](08-ai-value-creators-synthesis.md) — value thesis across vendor landscape
-- [Agentic AI Outlook 2026–2030](../architecture/33-enterprise-agentic-ai-outlook-2026-2030.md) — long-term trajectory
+- Agentic AI Outlook 2026–2030 (architecture domain, topic_id `enterprise-agentic-ai-outlook-2026-2030`) — long-term trajectory; not yet migrated, link back in once that wave lands
 
 ## Sources
 
