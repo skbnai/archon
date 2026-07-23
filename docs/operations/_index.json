@@ -16,10 +16,6 @@
    "status": "draft",
    "top_similar": [
     {
-     "id": "protocols/index",
-     "score": 0.32
-    },
-    {
      "id": "trust/index",
      "score": 0.31
     }
