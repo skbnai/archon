@@ -266,22 +266,19 @@ Without ARE governance, model updates silently break production agents.
 
 ### Model Update Protocol
 
+```mermaid
+flowchart TD
+    A[Provider announces new model version] --> B[Evaluation harness runs<br/>automated, within 4 hours]
+    B --> C{Regression detected?}
+    C -- Pass --> D[Promote to staging]
+    C -- Fail --> E[Block auto-upgrade]
+    E --> F[Create Jira ticket]
+    F --> G[Investigate: prompt tuning?<br/>version pinned? model rejected?]
+    D --> H[Shadow test — 5% traffic, 24h]
+    H --> I[Promote to production]
 ```
-Provider announces new model version
-         ↓
-Evaluation harness runs (automated, within 4 hours)
-         ↓
-  ┌─────┴─────┐
-PASS       FAIL (regression detected)
-  ↓         ↓
-Promote   Block auto-upgrade
-to        Create Jira ticket
-staging   Investigate: prompt tuning? | version pinned? | model rejected?
-  ↓
-Shadow test (5%, 24h)
-  ↓
-Promote to production
-```
+
+**Figure:** Gate for adopting a new provider model version — every release runs through the evaluation harness before it can reach staging or production, with regressions routed to investigation instead of silently reaching users.
 
 ### Model Version Pinning Policy
 
