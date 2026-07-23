@@ -501,6 +501,34 @@ MoE buys you the **knowledge capacity of a large model** (total params determine
 
 Now every piece connects. Here's what happens, step by step, for the sentence _"The capital of France is"_ — predicting the next token "Paris":
 
+### Transformer Forward Pass: 6-Step Pipeline
+
+```mermaid
+flowchart TD
+    S1["1. Tokenization<br/>Text → integer IDs"]
+    S2["2. Embedding Lookup<br/>IDs → dense vectors"]
+    S3["3. RoPE Position Injection<br/>Rotate Q, K by position"]
+    S4["4. 32 Transformer Layers<br/>Self-Attention → FFN × 32"]
+    S5["5. Language Model Head<br/>Output vector → logits"]
+    S6["6. Autoregressive Loop<br/>Sample token, append, repeat"]
+    
+    S1 -->|5 integers| S2
+    S2 -->|5 × 4096 matrix| S3
+    S3 -->|Position-aware vectors| S4
+    S4 -->|Layer-by-layer refinement| S5
+    S5 -->|Probability over vocab| S6
+    S6 -->|Next token to input| S1
+    
+    style S1 fill:#99ccff
+    style S2 fill:#99ccff
+    style S3 fill:#ffcc99
+    style S4 fill:#ff9999
+    style S5 fill:#99ff99
+    style S6 fill:#cc99ff
+```
+
+**Transformer Forward Pass Pipeline** — Text tokenization produces integer IDs. Embedding lookup converts IDs to dense vectors. RoPE position injection encodes relative distance. Transformer layers (32 iterations of Self-Attention + FFN) progressively refine representations. Language Model Head projects final output to vocabulary logits. Autoregressive loop samples the next token and repeats, generating text one token per forward pass.
+
 1
 
 ### Tokenization

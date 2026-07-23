@@ -160,6 +160,36 @@ The technology layer faces the most immediate and tangible restructuring. GPU in
 
 The 2026 production-grade enterprise AI architecture comprises seven horizontal layers, each with specific components, governance controls, and AIDLC touchpoints. This reference architecture synthesizes patterns from AWS, Azure, Google Cloud, and leading enterprise deployments.
 
+### 7-Layer AI-First Enterprise Architecture Stack
+
+```mermaid
+graph TB
+    L7["L7: Governance & Compliance<br/>AI Governance Council, AIDLC phases,<br/>compliance monitoring"]
+    L6["L6: Observability & Operations<br/>OpenTelemetry, SLOs,<br/>incident response"]
+    L5["L5: Security & Access Control<br/>Zero Trust AI, agent identity,<br/>policy enforcement"]
+    L4["L4: AI Orchestration & Serving<br/>LLM Gateway, agent mesh,<br/>model routing"]
+    L3["L3: Data & Retrieval<br/>Vector databases, RAG pipelines,<br/>feature stores, data mesh"]
+    L2["L2: ML/LLMOps Infrastructure<br/>Model registry, experiment tracking,<br/>training pipelines"]
+    L1["L1: Foundation Infrastructure<br/>GPU clusters, inference serving,<br/>storage & networking"]
+    
+    L7 -->|Controls & gates| L6
+    L6 -->|Traces all activity| L5
+    L5 -->|Enforces permissions| L4
+    L4 -->|Routes requests| L3
+    L3 -->|Feeds context| L2
+    L2 -->|Manages artifacts| L1
+    
+    style L7 fill:#ff6666
+    style L6 fill:#ff9999
+    style L5 fill:#ffcc99
+    style L4 fill:#ffff99
+    style L3 fill:#99ff99
+    style L2 fill:#99ccff
+    style L1 fill:#cc99ff
+```
+
+**7-Layer AI-First EA Stack** — Governance at the top (L7) sets policy and gates. Observability (L6) monitors all activity. Security (L5) enforces access controls. Orchestration (L4) routes agentic requests through LLM gateways and agent meshes. Data (L3) provides context via RAG and feature stores. MLOps (L2) manages the model lifecycle. Foundation (L1) provides compute infrastructure. Each layer implements AIDLC controls appropriate to its domain.
+
 *Figure 2: 7-Layer AI-First Enterprise Architecture Reference Stack (L1=Foundation, L7=Governance)*
 
 #### CROSS-CUTTING ARCHITECTURE CONCERNS

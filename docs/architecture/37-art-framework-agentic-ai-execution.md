@@ -331,6 +331,54 @@ VISION → STRATEGY → PORTFOLIO → ARCHITECTURE → BUILD → DEPLOY → OPER
 
 ### Overview
 
+### A.R.T. Maturity Progression — 5 Levels
+
+```mermaid
+stateDiagram-v2
+    L1: L1: Experimental
+    L2: L2: Managed
+    L3: L3: Standardized
+    L4: L4: Optimized
+    L5: L5: Autonomous Enterprise
+    
+    L1 --> L2: Ad-hoc → Structured
+    L2 --> L3: Reactive → Proactive
+    L3 --> L4: Basic → Advanced
+    L4 --> L5: Manual → Self-improving
+    
+    note right of L1
+        No formal process
+        Technology-led
+        No governance
+    end note
+    
+    note right of L2
+        Projects have sponsors
+        Some SDLC practices
+        Post-facto review
+    end note
+    
+    note right of L3
+        Product-led AI
+        ARB reviews
+        AIDLC phases 1–8
+    end note
+    
+    note right of L4
+        Continuous discovery
+        Autonomous AIDR
+        Policy-as-code
+    end note
+    
+    note right of L5
+        AI-native operating model
+        AI governs AI
+        Self-optimizing systems
+    end note
+```
+
+**A.R.T. Maturity Levels L1–L5** — Organizations progress from Experimental (no systematic execution) through Managed, Standardized, and Optimized stages to reach the Autonomous Enterprise at L5, where AI systems are self-improving and governance is embedded by design rather than bolted-on.
+
 | Level | Name | Description |
 |-------|------|-------------|
 | **L1** | Experimental | Ad-hoc AI exploration; no systematic execution |

@@ -28,21 +28,38 @@ covers_version: "as of 2026-07-10"
 
 ## CRITICAL TIMELINE
 
-```
-TODAY: July 2026
-├─ Article 5 prohibitions: IN FORCE (since Feb 2, 2025)
-├─ Article 50 transparency obligations: IN FORCE from Aug 2, 2026
-├─ High-risk systems (Annex III): deadline Dec 2, 2027 (Digital Omnibus deferral)
-├─ High-risk embedded in Annex I products: deadline Aug 2, 2028
-└─ Penalties: €35M or 7% global turnover
+**Current Status (July 2026):**
 
-RECOMMENDATION:
-├─ Now:        Agent inventory + risk classification
-├─ Q3 2026:    Article 50 transparency compliance (chatbot disclosure, AI-content labeling)
-├─ Q4 2026:    High-risk gap assessment + conformity roadmap
-├─ 2027:       High-risk remediation, documentation, audit readiness (before Dec 2, 2027)
-└─ Ongoing:    Operational compliance
+- **Article 5 prohibitions:** IN FORCE (since Feb 2, 2025)
+- **Article 50 transparency obligations:** IN FORCE from Aug 2, 2026
+- **High-risk systems (Annex III):** deadline Dec 2, 2027 (Digital Omnibus deferral)
+- **High-risk embedded in Annex I products:** deadline Aug 2, 2028
+- **Penalties:** €35M or 7% global turnover
+
+**Compliance Roadmap:**
+
+```mermaid
+graph LR
+    A["Now<br/>(Jul 2026)"] -->|"Agent inventory<br/>+ risk classification"| B["Q3 2026"]
+    B -->|"Article 50<br/>transparency<br/>compliance"| C["Q4 2026"]
+    C -->|"High-risk gap<br/>assessment +<br/>roadmap"| D["2027"]
+    D -->|"High-risk<br/>remediation &<br/>audit readiness"| E["Dec 2, 2027"]
+    E -->|"Ongoing"| F["Operations"]
+    
+    style A fill:#fff4e6
+    style B fill:#ffe0cc
+    style C fill:#ffccb3
+    style D fill:#ffb399
+    style E fill:#ff9980
+    style F fill:#f0f0f0
 ```
+
+**Compliance Roadmap by Deadline:**
+1. **Now (July 2026):** Agent inventory + risk classification
+2. **Q3 2026:** Article 50 transparency compliance (chatbot disclosure, AI-content labeling)
+3. **Q4 2026:** High-risk gap assessment + conformity roadmap
+4. **2027:** High-risk remediation, documentation, audit readiness (before Dec 2, 2027)
+5. **Ongoing:** Operational compliance
 
 ---
 
@@ -52,29 +69,28 @@ RECOMMENDATION:
 
 **Action:** List every AI agent your organization has or is developing.
 
-```
-DISCOVERY QUESTIONS:
-├─ Where are agents running?
-│  ├─ Production systems (web, mobile, backend)
-│  ├─ Internal tools (employee productivity)
-│  ├─ Experimental/pilot projects
-│  ├─ Shadow systems (teams built without IT approval)
-│  └─ Proof-of-concepts (not yet deployed)
-│
-├─ Who knows about them?
-│  ├─ Official IT/AI team
-│  ├─ Business units (Finance, HR, Operations)
-│  ├─ Skunkworks/innovation teams
-│  ├─ Individual engineers (personal projects)
-│  └─ External agencies (outsourced development)
-│
-└─ What are they doing?
-   ├─ Customer-facing (customer service, support)
-   ├─ Business-critical (approvals, decisions, transactions)
-   ├─ Back-office (analytics, reporting)
-   ├─ Monitoring (compliance, fraud detection)
-   └─ Administrative (scheduling, notifications)
-```
+**Discovery Questions:**
+
+*Where are agents running?*
+- Production systems (web, mobile, backend)
+- Internal tools (employee productivity)
+- Experimental/pilot projects
+- Shadow systems (teams built without IT approval)
+- Proof-of-concepts (not yet deployed)
+
+*Who knows about them?*
+- Official IT/AI team
+- Business units (Finance, HR, Operations)
+- Skunkworks/innovation teams
+- Individual engineers (personal projects)
+- External agencies (outsourced development)
+
+*What are they doing?*
+- Customer-facing (customer service, support)
+- Business-critical (approvals, decisions, transactions)
+- Back-office (analytics, reporting)
+- Monitoring (compliance, fraud detection)
+- Administrative (scheduling, notifications)
 
 **Agent Inventory Template:**
 
@@ -124,31 +140,25 @@ agents:
 
 ### Classification Decision Tree
 
-```
-Does your agent make decisions affecting fundamental rights?
-│
-├─ YES → HIGH-RISK (Annex III)
-│  ├─ Employment (hiring, firing, promotion, salary)
-│  ├─ Credit/finance (loan approval, credit scoring, pricing)
-│  ├─ Law enforcement (arrest, investigation, prosecution)
-│  ├─ Border control (visa, entry decisions)
-│  ├─ Safety-critical infrastructure (power grids, transport)
-│  ├─ Migration/asylum (visa, entry, asylum decisions)
-│  └─ Justice system (criminal sentencing, bail decisions)
-│
-└─ NO → Next question
-   │
-   ├─ Does your agent interact with humans/users?
-   │  ├─ YES → LIMITED-RISK (transparency required)
-   │  │  ├─ Chatbots
-   │  │  ├─ Recommendation systems
-   │  │  ├─ Content generation/summarization
-   │  │  └─ Virtual assistants
-   │  │
-   │  └─ NO → MINIMAL-RISK (no special requirements)
-   │     ├─ Spam filters
-   │     ├─ Internal analytics
-   │     └─ Log analysis
+**Agent Risk Classification Flowchart:**
+
+```mermaid
+flowchart TD
+    A["Does your agent make<br/>decisions affecting<br/>fundamental rights?"]
+    
+    A -->|YES| B["HIGH-RISK<br/>Annex III"]
+    B -->|Examples:| C["Employment, Credit/Finance,<br/>Law Enforcement, Border Control,<br/>Infrastructure, Migration/Asylum,<br/>Justice System"]
+    
+    A -->|NO| D["Does your agent interact<br/>with humans/users?"]
+    D -->|YES| E["LIMITED-RISK<br/>Transparency Required"]
+    E -->|Examples:| F["Chatbots, Recommendations,<br/>Content Generation,<br/>Virtual Assistants"]
+    
+    D -->|NO| G["MINIMAL-RISK<br/>No Special Requirements"]
+    G -->|Examples:| H["Spam Filters,<br/>Internal Analytics,<br/>Log Analysis"]
+    
+    style B fill:#ffcccc
+    style E fill:#ffffcc
+    style G fill:#ccffcc
 ```
 
 ### Classification Template
@@ -203,18 +213,16 @@ classification:
 
 **High-Risk Requirements (EU AI Act, Article 8-51):**
 
-```
-REQUIREMENT                        STATUS    EVIDENCE NEEDED
-─────────────────────────────────────────────────────────────
-1. Risk Management System          [ ]       Documentation
-2. Data Governance & Quality       [ ]       Data collection logs
-3. Technical Documentation         [ ]       Architecture, code, models
-4. Record-Keeping                  [ ]       Audit logs, decision logs
-5. Transparency & Information      [ ]       User-facing disclosures
-6. Human Oversight & Appeal        [ ]       Process documentation
-7. Robustness & Accuracy           [ ]       Test results, metrics
-8. Incident Response Plan          [ ]       Runbook, escalation
-```
+| # | Requirement | Status | Evidence Needed |
+|---|---|---|---|
+| 1 | Risk Management System | [ ] | Documentation |
+| 2 | Data Governance & Quality | [ ] | Data collection logs |
+| 3 | Technical Documentation | [ ] | Architecture, code, models |
+| 4 | Record-Keeping | [ ] | Audit logs, decision logs |
+| 5 | Transparency & Information | [ ] | User-facing disclosures |
+| 6 | Human Oversight & Appeal | [ ] | Process documentation |
+| 7 | Robustness & Accuracy | [ ] | Test results, metrics |
+| 8 | Incident Response Plan | [ ] | Runbook, escalation |
 
 ### Step 2.2: Risk Management System
 
@@ -250,24 +258,24 @@ REQUIREMENT                        STATUS    EVIDENCE NEEDED
 
 ## 2. Risk Assessment
 For each risk:
-├─ Probability (Low/Medium/High)
-├─ Severity (Low/Medium/High)
-├─ Risk Score = Probability × Severity
-└─ Tolerance Level (acceptable?)
+- Probability (Low/Medium/High)
+- Severity (Low/Medium/High)
+- Risk Score = Probability × Severity
+- Tolerance Level (acceptable?)
 
 ## 3. Risk Mitigation
 For each HIGH-risk item:
-├─ Technical controls (code, model, data)
-├─ Organizational controls (policies, processes)
-├─ Monitoring (how to detect when mitigation fails)
-└─ Response (what to do if risk materializes)
+- Technical controls (code, model, data)
+- Organizational controls (policies, processes)
+- Monitoring (how to detect when mitigation fails)
+- Response (what to do if risk materializes)
 
 Example Mitigation:
 Risk: Bias against women in loan decisions
-├─ Technical: Debiasing at training time + post-hoc fairness checks
-├─ Organizational: Quarterly bias audits, mandatory accuracy testing
-├─ Monitoring: Track approval rates by gender (daily dashboard)
-└─ Response: If disparity > 5%, escalate to Chief Risk Officer
+- Technical: Debiasing at training time + post-hoc fairness checks
+- Organizational: Quarterly bias audits, mandatory accuracy testing
+- Monitoring: Track approval rates by gender (daily dashboard)
+- Response: If disparity > 5%, escalate to Chief Risk Officer
 
 ## 4. Ongoing Monitoring
 - Frequency: Daily (for production agent)
@@ -333,39 +341,37 @@ data_governance:
 
 **Checklist:**
 
-```
-✓ System Architecture Diagram
-  ├─ Components (agent, model, databases, APIs)
-  ├─ Data flows
-  └─ Decision points
+- **System Architecture Diagram**
+  - Components (agent, model, databases, APIs)
+  - Data flows
+  - Decision points
 
-✓ Model Card
-  ├─ Model name, version, last update
-  ├─ Intended use (what decisions?)
-  ├─ Training data (what? how much?)
-  ├─ Performance metrics (accuracy by subgroup)
-  ├─ Known limitations & failure modes
-  └─ Bias testing results
+- **Model Card**
+  - Model name, version, last update
+  - Intended use (what decisions?)
+  - Training data (what? how much?)
+  - Performance metrics (accuracy by subgroup)
+  - Known limitations & failure modes
+  - Bias testing results
 
-✓ Decision Logic Documentation
-  ├─ Input requirements
-  ├─ Processing steps
-  ├─ Policy/rule constraints
-  ├─ Output format & explanations
-  └─ Escalation criteria (when to send to human)
+- **Decision Logic Documentation**
+  - Input requirements
+  - Processing steps
+  - Policy/rule constraints
+  - Output format & explanations
+  - Escalation criteria (when to send to human)
 
-✓ API Specifications
-  ├─ Request format
-  ├─ Response format
-  ├─ Error codes
-  └─ Rate limits
+- **API Specifications**
+  - Request format
+  - Response format
+  - Error codes
+  - Rate limits
 
-✓ Code Quality Documentation
-  ├─ Static analysis results
-  ├─ Security scanning results
-  ├─ Test coverage (unit, integration, end-to-end)
-  └─ Known vulnerabilities (and fixes)
-```
+- **Code Quality Documentation**
+  - Static analysis results
+  - Security scanning results
+  - Test coverage (unit, integration, end-to-end)
+  - Known vulnerabilities (and fixes)
 
 ### Step 2.5: Record-Keeping & Audit Logs
 
@@ -373,25 +379,23 @@ data_governance:
 
 **Requirements:**
 
-```
-For each decision made by agent:
-├─ Timestamp
-├─ Input data (what did agent see?)
-├─ Agent ID & version
-├─ Decision made
-├─ Confidence/probability
-├─ Explanation/reasoning (why this decision?)
-├─ User identity (who requested?)
-├─ Data sources consulted
-└─ Outcome (if known: was decision correct?)
+For each decision made by agent, record:
+- Timestamp
+- Input data (what did agent see?)
+- Agent ID & version
+- Decision made
+- Confidence/probability
+- Explanation/reasoning (why this decision?)
+- User identity (who requested?)
+- Data sources consulted
+- Outcome (if known: was decision correct?)
 
 Audit Log Must:
-✓ Be immutable (can't be edited after creation)
-✓ Be cryptographically signed (tamper detection)
-✓ Be retained for 7 years (GDPR requirement)
-✓ Be accessible to regulators/auditors
-✓ Be queryable (can find decisions affecting specific person)
-```
+- Be immutable (can't be edited after creation)
+- Be cryptographically signed (tamper detection)
+- Be retained for 7 years (GDPR requirement)
+- Be accessible to regulators/auditors
+- Be queryable (can find decisions affecting specific person)
 
 **Implementation Example:**
 
@@ -457,61 +461,45 @@ Audit Log Must:
 
 **Option A: Chatbot/Conversational AI**
 
-```
 User sees at start of conversation:
-┌─────────────────────────────────────┐
-│ 🤖 You're talking to an AI Assistant│
-│                                     │
-│ This is an AI-powered customer      │
-│ service agent. While I aim to help, │
-│ I may make mistakes.                │
-│                                     │
-│ For complex issues, you can ask to  │
-│ speak with a human representative.  │
-│                                     │
-│ [Talk to human] [Continue]          │
-└─────────────────────────────────────┘
-```
+
+> 🤖 **You're talking to an AI Assistant**
+>
+> This is an AI-powered customer service agent. While I aim to help, I may make mistakes.
+>
+> For complex issues, you can ask to speak with a human representative.
+>
+> **[Talk to human] [Continue]**
 
 **Option B: Automated Decision System**
 
-```
 User sees after decision:
-┌─────────────────────────────────────┐
-│ ⚠️  This decision was made by AI    │
-│                                     │
-│ Your loan application was decided   │
-│ using automated decision-making.    │
-│                                     │
-│ Decision: APPROVED for $250,000     │
-│ at 4.25% APR                        │
-│                                     │
-│ Reason: Strong credit profile       │
-│                                     │
-│ Want to understand this decision?   │
-│ [Request explanation] [Appeal]      │
-└─────────────────────────────────────┘
-```
+
+> ⚠️ **This decision was made by AI**
+>
+> Your loan application was decided using automated decision-making.
+>
+> **Decision:** APPROVED for $250,000 at 4.25% APR
+>
+> **Reason:** Strong credit profile
+>
+> Want to understand this decision?
+>
+> **[Request explanation] [Appeal]**
 
 **Option C: Behind-the-Scenes AI**
 
-```
 Email to user:
-─────────────────────────────────────
-Subject: Your Support Ticket Response
 
-Hello,
-
-Your support ticket was initially reviewed
-by our AI-assisted system to categorize
-your issue and prioritize it for our team.
-
-Your actual response came from a human
-support specialist.
-
-Learn more: [Company AI Disclosure Policy]
-─────────────────────────────────────
-```
+> **Subject:** Your Support Ticket Response
+>
+> Hello,
+>
+> Your support ticket was initially reviewed by our AI-assisted system to categorize your issue and prioritize it for our team.
+>
+> Your actual response came from a human support specialist.
+>
+> Learn more: [Company AI Disclosure Policy]
 
 ### Disclosure Requirements Checklist
 
@@ -537,43 +525,39 @@ For each agent, ensure users see:
 
 **When is human review required?**
 
-```
+**When is human review required?**
+
 Always:
-├─ First-time user (new customer)
-├─ High-value decisions (> $100K)
-├─ Refusal/rejection decisions (deny loan, no hire)
-└─ Complaint/appeal requests
+- First-time user (new customer)
+- High-value decisions (> $100K)
+- Refusal/rejection decisions (deny loan, no hire)
+- Complaint/appeal requests
 
 Sometimes:
-├─ Low confidence scores (< 70%)
-├─ Unusual patterns detected
-└─ Customer explicitly requests human review
+- Low confidence scores (&lt; 70%)
+- Unusual patterns detected
+- Customer explicitly requests human review
 
 Never (if all conditions met):
-└─ Routine approval, returning customer, low-risk
-```
+- Routine approval, returning customer, low-risk
 
 ### Human Review SLA
 
-**Template:**
-
-```
-HIGH-RISK AGENT: Loan Approval
+**Template — HIGH-RISK AGENT: Loan Approval**
 
 Human Review SLA:
-├─ First-time decisions: < 24 hours
-├─ Appeals/complaints: < 48 hours
-├─ Escalations: < 4 hours
-└─ Critical cases: < 1 hour
+- First-time decisions: &lt; 24 hours
+- Appeals/complaints: &lt; 48 hours
+- Escalations: &lt; 4 hours
+- Critical cases: &lt; 1 hour
 
 Process:
 1. Agent makes decision + confidence score
-2. If confidence < 75%: Queue for human review
+2. If confidence &lt; 75%: Queue for human review
 3. Human reviews: Input data, decision, reasoning
 4. Human decides: Approve, modify, or reject agent decision
 5. Final decision made by human (agent is input, not authority)
 6. Document: Why human agreed/disagreed with agent
-```
 
 ### Appeals Process Documentation
 
@@ -615,55 +599,51 @@ Process:
 
 ### Set Up Daily Compliance Checks
 
-**Dashboard Template:**
+**Dashboard Template — COMPLIANCE MONITORING DASHBOARD**
 
-```
-COMPLIANCE MONITORING DASHBOARD
 Updated: 2026-07-09 16:00 UTC
-═══════════════════════════════════════════════
 
-Agent: loan-approval-v1.0
-├─ Status: ✅ IN COMPLIANCE
-├─ Last audit: 2026-07-08
-└─ Next audit: 2026-07-22 (bi-weekly)
+**Agent: loan-approval-v1.0**
+- Status: ✅ IN COMPLIANCE
+- Last audit: 2026-07-08
+- Next audit: 2026-07-22 (bi-weekly)
 
-DAILY CHECKS (Last 24 hours):
-├─ Decisions made: 487
-├─ Human reviews triggered: 73 (15%)
-│  └─ Human reversals: 8 (11% of reviews)
-├─ Appeals received: 2
-├─ Audit logs created: 487 (100% coverage)
-└─ Audit logs signed: 487 ✓
+**Daily Checks (Last 24 hours):**
+- Decisions made: 487
+- Human reviews triggered: 73 (15%)
+  - Human reversals: 8 (11% of reviews)
+- Appeals received: 2
+- Audit logs created: 487 (100% coverage)
+- Audit logs signed: 487 ✓
 
-MONTHLY METRICS:
-├─ Bias audit (approval rate by gender): ✓ PASS
-│  ├─ Men: 78% approval
-│  ├─ Women: 76% approval
-│  └─ Difference: 2% (within 5% threshold)
-├─ Accuracy (vs. human reviewers): ✓ PASS
-│  ├─ Agent-human agreement: 94%
-│  └─ Target: > 90%
-└─ Privacy (PII incidents): ✓ PASS
-   └─ Incidents: 0
+**Monthly Metrics:**
+- Bias audit (approval rate by gender): ✓ PASS
+  - Men: 78% approval
+  - Women: 76% approval
+  - Difference: 2% (within 5% threshold)
+- Accuracy (vs. human reviewers): ✓ PASS
+  - Agent-human agreement: 94%
+  - Target: > 90%
+- Privacy (PII incidents): ✓ PASS
+  - Incidents: 0
 
-COMPLIANCE ITEMS:
-├─ Risk Management System: ✓ Documented
-├─ Data Governance: ✓ Documented
-├─ Technical Documentation: ✓ Current
-├─ Human Oversight: ✓ Operational
-├─ Transparency Disclosure: ✓ Live
-├─ Appeals Process: ✓ Live
-├─ Audit Logs: ✓ Immutable, signed
-└─ Incident Response: ✓ Tested
+**Compliance Items:**
+- Risk Management System: ✓ Documented
+- Data Governance: ✓ Documented
+- Technical Documentation: ✓ Current
+- Human Oversight: ✓ Operational
+- Transparency Disclosure: ✓ Live
+- Appeals Process: ✓ Live
+- Audit Logs: ✓ Immutable, signed
+- Incident Response: ✓ Tested
 
-ALERTS (if any):
-└─ None currently
+**Alerts:**
+- None currently
 
-NEXT ACTIONS:
-├─ Monthly bias audit (scheduled 2026-07-15)
-├─ Quarterly risk reassessment (scheduled 2026-10-09)
-└─ Annual external audit (scheduled 2026-12-15)
-```
+**Next Actions:**
+- Monthly bias audit (scheduled 2026-07-15)
+- Quarterly risk reassessment (scheduled 2026-10-09)
+- Annual external audit (scheduled 2026-12-15)
 
 **Timeline:** 3 days (dashboard setup)
 
@@ -675,62 +655,60 @@ NEXT ACTIONS:
 
 ### Before the deadlines (Art. 50 transparency: Aug 2, 2026 · Annex III high-risk: Dec 2, 2027)
 
-```
-AGENT INVENTORY & CLASSIFICATION
-└─ [ ] List all agents (production, staging, pilots, shadow)
-   └─ [ ] For each: document purpose, users, scope
+### Agent Inventory & Classification
+- [ ] List all agents (production, staging, pilots, shadow)
+  - [ ] For each: document purpose, users, scope
 
-HIGH-RISK AGENT REMEDIATION (For each HIGH-RISK agent)
-├─ [ ] Risk Management System documented
-├─ [ ] Data Governance & Quality documented
-├─ [ ] Technical Documentation completed
-├─ [ ] Model Card completed
-├─ [ ] Decision Logic documented
-├─ [ ] Audit log system operational
-│  └─ [ ] Logs immutable & cryptographically signed
-│  └─ [ ] 7-year retention configured
-│  └─ [ ] Access controls for regulators/auditors
-├─ [ ] Bias testing completed & documented
-├─ [ ] Fairness testing completed & documented
-└─ [ ] Accuracy metrics documented
+### High-Risk Agent Remediation (For each HIGH-RISK agent)
+- [ ] Risk Management System documented
+- [ ] Data Governance & Quality documented
+- [ ] Technical Documentation completed
+- [ ] Model Card completed
+- [ ] Decision Logic documented
+- [ ] Audit log system operational
+  - [ ] Logs immutable & cryptographically signed
+  - [ ] 7-year retention configured
+  - [ ] Access controls for regulators/auditors
+- [ ] Bias testing completed & documented
+- [ ] Fairness testing completed & documented
+- [ ] Accuracy metrics documented
 
-TRANSPARENCY OBLIGATIONS (ALL agents)
-├─ [ ] Disclosure language reviewed by Legal
-├─ [ ] Disclosure implemented on website/app
-├─ [ ] User-facing explanations tested
-├─ [ ] Privacy policy updated
-└─ [ ] FAQs created
+### Transparency Obligations (ALL agents)
+- [ ] Disclosure language reviewed by Legal
+- [ ] Disclosure implemented on website/app
+- [ ] User-facing explanations tested
+- [ ] Privacy policy updated
+- [ ] FAQs created
 
-HUMAN OVERSIGHT (HIGH-RISK agents)
-├─ [ ] Appeal process defined & documented
-├─ [ ] Human review workflow established
-├─ [ ] SLAs set (review time, decision time)
-├─ [ ] Training for human reviewers completed
-├─ [ ] Appeal system tested with sample cases
-└─ [ ] Documentation published to users
+### Human Oversight (HIGH-RISK agents)
+- [ ] Appeal process defined & documented
+- [ ] Human review workflow established
+- [ ] SLAs set (review time, decision time)
+- [ ] Training for human reviewers completed
+- [ ] Appeal system tested with sample cases
+- [ ] Documentation published to users
 
-INCIDENT RESPONSE (ALL agents)
-├─ [ ] Incident response plan written
-├─ [ ] Escalation procedure defined
-├─ [ ] Emergency contact list created
-├─ [ ] Incident log template prepared
-└─ [ ] Team training scheduled
+### Incident Response (ALL agents)
+- [ ] Incident response plan written
+- [ ] Escalation procedure defined
+- [ ] Emergency contact list created
+- [ ] Incident log template prepared
+- [ ] Team training scheduled
 
-COMPLIANCE MONITORING
-├─ [ ] Daily compliance dashboard live
-├─ [ ] Bias metrics tracked daily
-├─ [ ] Accuracy metrics tracked daily
-├─ [ ] Alert thresholds configured
-└─ [ ] Weekly compliance report scheduled
+### Compliance Monitoring
+- [ ] Daily compliance dashboard live
+- [ ] Bias metrics tracked daily
+- [ ] Accuracy metrics tracked daily
+- [ ] Alert thresholds configured
+- [ ] Weekly compliance report scheduled
 
-REGULATORY READINESS
-├─ [ ] All documentation centralized
-├─ [ ] Organized by: Agent → Requirement → Evidence
-├─ [ ] Legal review of all documentation
-├─ [ ] Executive sign-off obtained
-├─ [ ] Audit team briefing held
-└─ [ ] Public-facing "AI Governance" page created
-```
+### Regulatory Readiness
+- [ ] All documentation centralized
+- [ ] Organized by: Agent → Requirement → Evidence
+- [ ] Legal review of all documentation
+- [ ] Executive sign-off obtained
+- [ ] Audit team briefing held
+- [ ] Public-facing "AI Governance" page created
 
 ---
 
@@ -738,86 +716,80 @@ REGULATORY READINESS
 
 ### Scenario 1: HIGH-RISK Agent (Loan Approval)
 
-```
-Your Agent: Loan decisioning (approves/rejects loans)
-EU AI Act Classification: HIGH-RISK (Annex III)
-Compliance Deadline: December 2, 2027 (Digital Omnibus deferral)
+**Your Agent:** Loan decisioning (approves/rejects loans)
+**EU AI Act Classification:** HIGH-RISK (Annex III)
+**Compliance Deadline:** December 2, 2027 (Digital Omnibus deferral)
 
-What you MUST have:
-✓ Risk management system (documented risks + mitigations)
-✓ Data governance (training data quality, bias testing)
-✓ Technical documentation (how system works)
-✓ Audit logs (every decision + reasoning + signature)
-✓ Transparency (users know AI made decision)
-✓ Human oversight (human can review/override)
-✓ Appeals process (users can request review)
-✓ Bias monitoring (daily fairness checks)
+**What you MUST have:**
+- Risk management system (documented risks + mitigations)
+- Data governance (training data quality, bias testing)
+- Technical documentation (how system works)
+- Audit logs (every decision + reasoning + signature)
+- Transparency (users know AI made decision)
+- Human oversight (human can review/override)
+- Appeals process (users can request review)
+- Bias monitoring (daily fairness checks)
 
-If you DON'T have all 8 items by Dec 2, 2027:
-❌ System cannot be deployed/operated
-❌ Regulator can fine you €35M or 7% turnover
-❌ Potential criminal liability for executives
+**If you DON'T have all 8 items by Dec 2, 2027:**
+- System cannot be deployed/operated
+- Regulator can fine you €35M or 7% turnover
+- Potential criminal liability for executives
 
-Action Plan:
-├─ Days 1-3: Document risk management system
-├─ Days 4-7: Complete data governance audit
-├─ Days 8-11: Finish technical documentation
-├─ Days 12-14: Implement audit logging
-├─ Days 15-18: Add transparency + human oversight
-├─ Days 19-24: Monitor + audit readiness
-└─ Day 25+: Ongoing compliance
-```
+**Action Plan:**
+- Days 1-3: Document risk management system
+- Days 4-7: Complete data governance audit
+- Days 8-11: Finish technical documentation
+- Days 12-14: Implement audit logging
+- Days 15-18: Add transparency + human oversight
+- Days 19-24: Monitor + audit readiness
+- Day 25+: Ongoing compliance
 
 ### Scenario 2: LIMITED-RISK Agent (Chatbot)
 
-```
-Your Agent: Customer service chatbot
-EU AI Act Classification: LIMITED-RISK (Article 50 — unchanged by the Omnibus)
-Compliance Deadline: August 2, 2026 (in force)
+**Your Agent:** Customer service chatbot
+**EU AI Act Classification:** LIMITED-RISK (Article 50 — unchanged by the Omnibus)
+**Compliance Deadline:** August 2, 2026 (in force)
 
-What you MUST have:
-✓ Transparency (users know they're talking to AI)
-✓ Privacy policy (how you use their data)
-✓ Disclosure of limitations ("I can make mistakes")
+**What you MUST have:**
+- Transparency (users know they're talking to AI)
+- Privacy policy (how you use their data)
+- Disclosure of limitations ("I can make mistakes")
 
-What you DON'T need (unlike high-risk):
-❌ Full risk management system (simpler)
-❌ Human appeal process (no decisions being made)
-❌ Audit logs (not required)
-❌ Bias audits (lower stakes)
+**What you DON'T need (unlike high-risk):**
+- Full risk management system (simpler)
+- Human appeal process (no decisions being made)
+- Audit logs (not required)
+- Bias audits (lower stakes)
 
-Action Plan:
-├─ Days 1-2: Add disclosure to chat interface
-├─ Days 3-4: Update privacy policy
-└─ Days 5+: Monitor for issues
-```
+**Action Plan:**
+- Days 1-2: Add disclosure to chat interface
+- Days 3-4: Update privacy policy
+- Days 5+: Monitor for issues
 
 ### Scenario 3: UNACCEPTABLE Agent (Social Scoring)
 
-```
-Your Agent: Scores customers on "trustworthiness" for credit
-EU AI Act Classification: UNACCEPTABLE (Article 5)
-Compliance Deadline: ALREADY IN FORCE (since February 2, 2025)
+**Your Agent:** Scores customers on "trustworthiness" for credit
+**EU AI Act Classification:** UNACCEPTABLE (Article 5)
+**Compliance Deadline:** ALREADY IN FORCE (since February 2, 2025)
 
-What you MUST do:
-❌ STOP using this system immediately
-❌ REMOVE it from production
-❌ NOTIFY affected customers
-❌ DELETE all score data
+**What you MUST do:**
+- STOP using this system immediately
+- REMOVE it from production
+- NOTIFY affected customers
+- DELETE all score data
 
-Why:
+**Why:**
 - EU AI Act prohibits "social scoring"
 - This violates human dignity
 - Penalties are criminal + €35M fine
 - No amount of documentation makes this legal
 
-Action Plan:
-├─ Day 1: Executive decision to discontinue
-├─ Day 2-3: Plan migration to alternative system
-├─ Day 4-7: Notify customers affected
-├─ Day 8-14: Delete personal data
-└─ Day 15+: Audit trail to prove deletion
-```
+**Action Plan:**
+- Day 1: Executive decision to discontinue
+- Day 2-3: Plan migration to alternative system
+- Day 4-7: Notify customers affected
+- Day 8-14: Delete personal data
+- Day 15+: Audit trail to prove deletion
 
 ---
 
@@ -825,81 +797,79 @@ Action Plan:
 
 **Fill this in and execute:**
 
-```markdown
-# EU AI Act Compliance Plan - [YOUR ORGANIZATION]
+**EU AI Act Compliance Plan Template — [YOUR ORGANIZATION]**
 
-## Inventory (Complete by July 11)
+### Inventory (Complete by July 11)
 
-Agent Count by Risk Level:
-├─ Unacceptable: [ ] (must discontinue immediately)
-├─ High-Risk: [ ] (conformity assessment required)
-├─ Limited-Risk: [ ] (transparency required)
-└─ Minimal-Risk: [ ] (no immediate action)
+**Agent Count by Risk Level:**
+- Unacceptable: [ ] (must discontinue immediately)
+- High-Risk: [ ] (conformity assessment required)
+- Limited-Risk: [ ] (transparency required)
+- Minimal-Risk: [ ] (no immediate action)
 
-High-Risk Agents Requiring Conformity Assessment:
-├─ Agent 1: [name, owner, status]
-├─ Agent 2: [name, owner, status]
-└─ ...
+**High-Risk Agents Requiring Conformity Assessment:**
+- Agent 1: [name, owner, status]
+- Agent 2: [name, owner, status]
+- ...
 
-## Compliance Status by Agent
+### Compliance Status by Agent
 
-For EACH high-risk agent:
+For each high-risk agent:
 
-Agent Name: _______________
-├─ Risk Management System: [ ] In progress [ ] Complete
-├─ Data Governance: [ ] In progress [ ] Complete
-├─ Technical Docs: [ ] In progress [ ] Complete
-├─ Audit Logs: [ ] In progress [ ] Complete
-├─ Transparency: [ ] In progress [ ] Complete
-├─ Human Oversight: [ ] In progress [ ] Complete
-├─ Appeals Process: [ ] In progress [ ] Complete
-└─ Target Completion: _____ (date)
+**Agent Name:** _______________
+- Risk Management System: [ ] In progress [ ] Complete
+- Data Governance: [ ] In progress [ ] Complete
+- Technical Docs: [ ] In progress [ ] Complete
+- Audit Logs: [ ] In progress [ ] Complete
+- Transparency: [ ] In progress [ ] Complete
+- Human Oversight: [ ] In progress [ ] Complete
+- Appeals Process: [ ] In progress [ ] Complete
+- Target Completion: _____ (date)
 
-## Week-by-Week Execution
+### Week-by-Week Execution
 
-Week 1 (Jul 9-13): Classification & Inventory
-├─ [ ] All agents identified
-├─ [ ] Risk levels assigned
-└─ [ ] Executive steering meeting
+**Week 1 (Jul 9-13): Classification & Inventory**
+- [ ] All agents identified
+- [ ] Risk levels assigned
+- [ ] Executive steering meeting
 
-Week 2 (Jul 16-20): High-Risk Audit Starts
-├─ [ ] Risk management system drafted
-├─ [ ] Data governance audit initiated
-└─ [ ] Steering committee check-in
+**Week 2 (Jul 16-20): High-Risk Audit Starts**
+- [ ] Risk management system drafted
+- [ ] Data governance audit initiated
+- [ ] Steering committee check-in
 
-Week 3 (Jul 23-27): Documentation & Implementation
-├─ [ ] Technical docs completed
-├─ [ ] Audit log system operational
-└─ [ ] Transparency deployed
+**Week 3 (Jul 23-27): Documentation & Implementation**
+- [ ] Technical docs completed
+- [ ] Audit log system operational
+- [ ] Transparency deployed
 
-Week 4: Final Audit & Compliance Verification
-├─ [ ] All requirements checked
-├─ [ ] Internal audit passed
-├─ [ ] Regulatory readiness confirmed
-└─ [ ] Deadline met (Art. 50: Aug 2, 2026 · Annex III: Dec 2, 2027) ✓
+**Week 4: Final Audit & Compliance Verification**
+- [ ] All requirements checked
+- [ ] Internal audit passed
+- [ ] Regulatory readiness confirmed
+- [ ] Deadline met (Art. 50: Aug 2, 2026 · Annex III: Dec 2, 2027) ✓
 
-## Resources Allocated
+### Resources Allocated
 
-├─ Team lead: [name]
-├─ Legal counsel: [name]
-├─ Technical team: [size]
-├─ Budget: [amount]
-└─ Timeline: [per deadline — Art. 50 now; Annex III by Dec 2, 2027]
+- Team lead: [name]
+- Legal counsel: [name]
+- Technical team: [size]
+- Budget: [amount]
+- Timeline: [per deadline — Art. 50 now; Annex III by Dec 2, 2027]
 
-## Risks & Mitigations
+### Risks & Mitigations
 
-Risk: Insufficient resources
-├─ Impact: Can't meet deadline
-└─ Mitigation: [your plan]
+**Risk 1:** Insufficient resources
+- Impact: Can't meet deadline
+- Mitigation: [your plan]
 
-Risk: High-risk agent in production, not compliant
-├─ Impact: Legal liability + €35M fine
-└─ Mitigation: [your plan]
+**Risk 2:** High-risk agent in production, not compliant
+- Impact: Legal liability + €35M fine
+- Mitigation: [your plan]
 
-Risk: Missing agents in inventory
-├─ Impact: Regulator discovers undisclosed system
-└─ Mitigation: [your plan]
-```
+**Risk 3:** Missing agents in inventory
+- Impact: Regulator discovers undisclosed system
+- Mitigation: [your plan]
 
 ---
 

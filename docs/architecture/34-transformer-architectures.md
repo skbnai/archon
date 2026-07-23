@@ -22,6 +22,37 @@ A rigorous technical comparison of how GPT-4, Claude, Gemini, LLaMA, Mistral, Gr
 
 The "Attention Is All You Need" paper (Vaswani et al., 2017) introduced the Transformer — a sequence-to-sequence model that dispensed with recurrence entirely. Every frontier model today is a descendant of this architecture, but each has made crucial design choices that differentiate them dramatically.
 
+### Core Transformer Block Architecture
+
+```mermaid
+graph TB
+    X["Input Embedding<br/>(sequence × d_model)"]
+    LN1["LayerNorm"]
+    MHA["Multi-Head<br/>Attention<br/>(h heads)"]
+    RC1["Add & Norm<br/>(residual)"]
+    LN2["LayerNorm"]
+    FFN["Feed-Forward<br/>Network<br/>(SwiGLU or ReLU)"]
+    RC2["Add & Norm<br/>(residual)"]
+    Y["Output<br/>(sequence × d_model)"]
+    
+    X --> LN1
+    LN1 -->|Q, K, V projections| MHA
+    MHA -->|Attended values| RC1
+    RC1 -->|x + Attention| LN2
+    LN2 -->|Position-wise| FFN
+    FFN -->|Hidden layer| RC2
+    RC2 -->|x + FFN| Y
+    
+    style X fill:#99ccff
+    style MHA fill:#ffcc99
+    style FFN fill:#99ff99
+    style RC1 fill:#ff9999
+    style RC2 fill:#ff9999
+    style Y fill:#cc99ff
+```
+
+**Core Transformer Block** — Input is normalized, then passes through Multi-Head Attention (queries learn which tokens to attend to) with residual connection. Output is normalized again, passes through Feed-Forward Network (position-wise transformations where "knowledge" lives) with another residual connection, producing the refined output representation ready for the next layer.
+
 ### Self-Attention
 
 Every token attends to every other token simultaneously. Three learnable projections — Queries (Q), Keys (K), Values (V) — determine which tokens are relevant to which. The formula: `Attention(Q,K,V) = softmax(QKᵀ/√dₖ)·V`

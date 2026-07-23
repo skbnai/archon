@@ -28,48 +28,37 @@ sources: []
 
 Every action taken by any agent must be traceable back to an authorised human intent. The governance chain is the complete path from user to action, with a policy evaluation point at every transition.
 
-<!-- TODO(diagram): Convert ASCII governance chain diagram to mermaid
-Original shows 9 layers from USER through RESULT, each with policy responsibility
--->
+Governance Chain: User Authorization to Result Delivery
 
-```
-USER
-  │  authenticate (OIDC/OAuth)
-  ▼
-GATEWAY
-  │  policy: user-tier, rate-limit, scope-check
-  ▼
-PLANNER / ORCHESTRATOR
-  │  policy: action-class approval, budget-check
-  ▼
-SUPERVISOR AGENT
-  │  policy: delegation scope, worker entitlements
-  ▼
-WORKER AGENT
-  │  policy: tool access, data-class permissions
-  ▼
-REMOTE AGENT (A2A)
-  │  policy: cross-org trust, re-authentication
-  ▼
-MCP SERVER
-  │  policy: tool invocation, parameter validation
-  ▼
-TOOL / API
-  │  policy: backend authorization (data-level)
-  ▼
-MODEL PROVIDER
-  │  policy: content safety, system prompt controls
-  ▼
-DATA / KNOWLEDGE STORE
-  │  policy: row/column level security, classification
-  ▼
-RESULT
-  │  policy: output filtering, PII removal, response classification
-  ▼
-USER (response)
+```mermaid
+graph TD
+    USER["USER<br/>Authenticate OIDC/OAuth"]
+    GW["GATEWAY<br/>Policy: user-tier, rate-limit,<br/>scope-check"]
+    PLANNER["PLANNER / ORCHESTRATOR<br/>Policy: action-class approval,<br/>budget-check"]
+    SUPERVISOR["SUPERVISOR AGENT<br/>Policy: delegation scope,<br/>worker entitlements"]
+    WORKER["WORKER AGENT<br/>Policy: tool access,<br/>data-class permissions"]
+    REMOTE["REMOTE AGENT A2A<br/>Policy: cross-org trust,<br/>re-authentication"]
+    MCP["MCP SERVER<br/>Policy: tool invocation,<br/>parameter validation"]
+    TOOL["TOOL / API<br/>Policy: backend authorization<br/>data-level"]
+    MODEL["MODEL PROVIDER<br/>Policy: content safety,<br/>system prompt controls"]
+    DATA["DATA / KNOWLEDGE STORE<br/>Policy: row/column level security,<br/>classification"]
+    RESULT["RESULT<br/>Policy: output filtering,<br/>PII removal, response classification"]
+    RESP_USER["USER receives response"]
+    
+    USER -->|Authenticate| GW
+    GW -->|Scope check| PLANNER
+    PLANNER -->|Approve action| SUPERVISOR
+    SUPERVISOR -->|Delegate| WORKER
+    WORKER -->|Invoke| REMOTE
+    REMOTE -->|Call| MCP
+    MCP -->|Invoke| TOOL
+    TOOL -->|Query| MODEL
+    MODEL -->|Retrieve| DATA
+    DATA -->|Return| RESULT
+    RESULT -->|Filter/Classify| RESP_USER
 ```
 
-**No layer is exempt.** Zero Trust applies: every transition is authenticated, every action is authorized, every decision is logged.
+No layer is exempt. Zero Trust applies: every transition is authenticated, every action is authorized, every decision is logged. Authorization propagates downstream with strict restriction at each boundary (no layer grants permissions beyond what it received).
 
 ---
 
@@ -176,26 +165,26 @@ When a worker calls a remote agent (cross-organization or cross-system via A2A):
 - **Trust verification**: remote agent's identity is verified via SPIFFE/SPIRE or A2A agent card + signature
 - **Return-path policy**: the remote agent's response is classified before being returned to the worker; the worker cannot receive data at a classification level above its delegation
 
+Cross-Organization A2A Authorization Flow
+
+```mermaid
+sequenceDiagram
+    participant WA as Worker Agent<br/>Local Org
+    participant RA as Remote Agent<br/>Remote Org
+    
+    WA->>RA: A2A request<br/>(delegated JWT: sub=user-alice)<br/>(scope=read:inventory)<br/>(audience=remote-org-agent-id)
+    
+    RA->>RA: Verify JWT signature
+    RA->>RA: Check audience claim
+    RA->>RA: Local policy evaluation
+    RA->>RA: Execute action
+    
+    RA->>WA: A2A response<br/>(classified at: INTERNAL)
+    
+    WA->>WA: Classify response<br/>(if response class ><br/>worker clearance: reject)
 ```
-Local Org                          Remote Org
-─────────────────────────────────────────────────────
-Worker Agent                       Remote Agent
-    │                                   │
-    │── A2A request ──────────────────►│
-    │   (delegated JWT: sub=user-alice,  │
-    │    scope=read:inventory,           │
-    │    audience=remote-org-agent-id)   │
-    │                                   │── verify JWT sig
-    │                                   │── check audience
-    │                                   │── local policy eval
-    │                                   │── execute
-    │◄── A2A response ─────────────────│
-    │    (classified at: INTERNAL)      │
-    │                                   │
-    │── classify response ──────────────│
-    │   (if response class > worker     │
-    │    clearance: reject)             │
-```
+
+Cross-org A2A calls reissue delegated tokens at the org boundary, re-authenticate the remote agent, and validate response classification levels before return to the caller.
 
 ### 2.6 Layer 6: MCP Server
 
@@ -208,31 +197,29 @@ The MCP Server enforces tool-level authorization:
 
 **MCP authorization middleware pattern:**
 
+MCP Tool Authorization Evaluation Flow
+
+```mermaid
+flowchart TD
+    START["MCP Tool Call Received"]
+    AUTH["Authenticate Caller<br/>SPIFFE SVID / JWT<br/>workload identity"]
+    EVAL["Evaluate Policy<br/>OPA sidecar checks:<br/>- Caller in allowlist?<br/>- Parameters in bounds?<br/>- Data within clearance?"]
+    DECISION{Authorization<br/>Decision}
+    PERMIT["PERMIT:<br/>Execute tool call"]
+    DENY["DENY:<br/>Return 403 + audit log"]
+    CLASSIFY["Classify output data"]
+    RETURN["Return to caller"]
+    
+    START --> AUTH
+    AUTH --> EVAL
+    EVAL --> DECISION
+    DECISION -->|PERMIT| PERMIT
+    DECISION -->|DENY| DENY
+    PERMIT --> CLASSIFY
+    CLASSIFY --> RETURN
 ```
-MCP Tool Call Received
-        │
-        ▼
-   [Authenticate caller]  ← SPIFFE SVID / JWT workload identity
-        │
-        ▼
-   [Evaluate policy]      ← OPA sidecar evaluates:
-        │                      - caller identity in tool's allowlist?
-        │                      - tool call parameters within allowed bounds?
-        │                      - data requested within caller's clearance?
-        │
-   ┌────┴────┐
-   │         │
-  PERMIT    DENY
-   │         │
-   ▼         ▼
-[Execute]  [Return 403 + audit log]
-   │
-   ▼
-[Classify output]
-   │
-   ▼
-[Return to caller]
-```
+
+MCP tool invocation enforces caller identity verification, policy evaluation against caller permissions and data clearance, execution conditional on authorization decision, and output classification before return.
 
 ### 2.7 Layer 7: Model Provider
 
@@ -261,19 +248,21 @@ When authorization propagates down the chain, it follows a **strictly additive r
 
 > **Each layer may only restrict permissions. No layer may grant permissions that do not already exist at the layer above.**
 
-```
-Layer      Permissions (example)
-──────     ─────────────────────────────────────────────
-Gateway    {read, write, execute, financial:read}
-              ↓ (subset only)
-Planner    {read, execute}         ← financial:read dropped
-              ↓ (subset only)
-Supervisor {read, execute:research}  ← execute narrowed
-              ↓ (subset only)
-Worker A   {read}                  ← execute dropped
-Worker B   {execute:research}      ← read dropped
-              ↓ (subset only)
-MCP Tool   {read:catalog}          ← scoped to specific resource
+**Permission set narrowing from Gateway down to MCP Tool — each arrow is a strict subset.**
+
+```mermaid
+graph TD
+    GW["Gateway<br/>{read, write, execute, financial:read}"]
+    PL["Planner<br/>{read, execute}<br/>financial:read dropped"]
+    SUP["Supervisor<br/>{read, execute:research}<br/>execute narrowed"]
+    WA["Worker A<br/>{read}<br/>execute dropped"]
+    WB["Worker B<br/>{execute:research}<br/>read dropped"]
+    MCP["MCP Tool<br/>{read:catalog}<br/>scoped to specific resource"]
+    GW -- "subset only" --> PL
+    PL -- "subset only" --> SUP
+    SUP -- "subset only" --> WA
+    SUP -- "subset only" --> WB
+    WB -- "subset only" --> MCP
 ```
 
 **Violation of inheritance**: if any layer attempts to grant permissions above its own delegation level, the attempt must be rejected with an authorization error and logged as a security event.
@@ -373,27 +362,22 @@ When multiple policies apply to the same action, conflicts must be resolved dete
 
 A key challenge in multi-agent systems: worker agents must act on behalf of the original human user, not on behalf of themselves.
 
-```
-User Alice (u-alice)
-    │ authorizes
-    ▼
-Agent Platform (client)
-    │ requests token for:
-    │   subject: u-alice
-    │   scope: agent:execute:research
-    │   audience: worker-agent-pool
-    ▼
-Authorization Server
-    │ issues delegated token
-    ▼
-Worker Agent
-    │ calls API with:
-    │   Authorization: Bearer <delegated-token>
-    │   subject still = u-alice (not worker-agent-id)
-    ▼
-Backend API
-    │ sees: u-alice requested data
-    │ applies: u-alice's data permissions
+**On-Behalf-Of token delegation preserving the original user's identity.**
+
+```mermaid
+sequenceDiagram
+    participant Alice as User Alice (u-alice)
+    participant Platform as Agent Platform (client)
+    participant AuthServer as Authorization Server
+    participant Worker as Worker Agent
+    participant API as Backend API
+
+    Alice->>Platform: authorizes
+    Platform->>AuthServer: requests token (subject: u-alice, scope: agent:execute:research, audience: worker-agent-pool)
+    AuthServer-->>Platform: issues delegated token
+    Platform->>Worker: delegated token
+    Worker->>API: calls API (Authorization: Bearer &lt;delegated-token&gt;, subject still = u-alice)
+    API-->>Worker: sees u-alice requested data, applies u-alice's permissions
 ```
 
 The delegated token **preserves the original user's identity** through the chain. Backend systems apply the user's permissions, not the agent's permissions. This is the OAuth 2.0 Token Exchange (RFC 8693) / OBO flow.
@@ -424,27 +408,26 @@ Policy decisions are expensive (network calls to OPA, Cedar, Zanzibar). Caching 
 
 ### 7.2 Cache Architecture
 
-```
-Policy Decision Request
-        │
-        ▼
-   [Cache lookup]
-   (policy-decision-cache, TTL-based)
-        │
-   ┌────┴────┐
-HIT │         │ MISS
-    │         ▼
-    │    [Policy Engine]
-    │    (OPA / Cedar / SpiceDB)
-    │         │
-    │         ▼
-    │    [Cache write]
-    │    (with TTL)
-    ▼         ▼
-  [Decision: permit/deny]
+Policy Decision Cache with TTL Fallthrough
+
+```mermaid
+flowchart TD
+    START["Policy Decision Request"]
+    LOOKUP["Cache Lookup<br/>TTL-based cache"]
+    DECISION{Cache<br/>Hit?}
+    ENGINE["Policy Engine<br/>OPA / Cedar / SpiceDB"]
+    WRITE["Cache Write<br/>with TTL"]
+    RESULT["Decision: permit/deny"]
+    
+    START --> LOOKUP
+    LOOKUP --> DECISION
+    DECISION -->|HIT| RESULT
+    DECISION -->|MISS| ENGINE
+    ENGINE --> WRITE
+    WRITE --> RESULT
 ```
 
-**Critical rule:** The emergency deny path (kill switch, suspension, compromised agent) must always bypass cache and hit the policy engine in real time.
+Cached policy decisions reduce latency but introduce staleness risk. Critical rule: emergency deny paths (kill switch, suspension, compromised agent) must always bypass cache and hit the policy engine in real time for immediate effect.
 
 ---
 
@@ -462,48 +445,52 @@ HIT │         │ MISS
 
 ### 8.2 Agent Identity with SPIFFE/SPIRE
 
-```
-Agent Boot
-     │
-     ▼
-SPIRE Agent
-  (runs on same node)
-     │ attests workload
-     │ (Kubernetes pod UID, container hash, etc.)
-     ▼
-SPIRE Server
-  (issues SVID = X.509 certificate)
-     │
-     ▼
-Agent holds SVID:
-  spiffe://trust-domain/ns/ai-agents/sa/worker-billing
+SPIFFE Workload Identity Attestation
 
-When agent calls MCP Server:
-  - Presents SVID in TLS client certificate
-  - MCP Server validates SVID against SPIRE trust bundle
-  - OPA policy evaluates spiffe://... identity against tool allowlist
+```mermaid
+sequenceDiagram
+    participant AB as Agent Boot
+    participant SA as SPIRE Agent<br/>same node
+    participant SS as SPIRE Server
+    participant A as Agent Runtime
+    participant MCP as MCP Server
+    participant OPA as OPA Policy
+    
+    AB->>SA: Start workload
+    SA->>SA: Attest workload<br/>K8s pod UID, container hash
+    SA->>SS: Request SVID
+    SS->>SS: Verify attestation
+    SS->>A: Issue SVID<br/>X.509 certificate
+    A->>A: Hold SVID:<br/>spiffe://trust-domain/ns/ai-agents/sa/worker-billing
+    
+    A->>MCP: Call MCP Server<br/>Present SVID in TLS cert
+    MCP->>SS: Validate SVID
+    OPA->>OPA: Evaluate spiffe:// identity<br/>against tool allowlist
+    OPA->>MCP: Authorization decision
 ```
+
+SPIRE issues short-lived SVID certificates based on workload attestation. Agents present SVIDs in TLS client certificates, and MCP servers validate identity against policy engine.
 
 ### 8.3 Blast Radius Containment
 
 Zero Trust contains the blast radius of a compromised agent:
 
+Scoped Worker Isolation Within Trust Boundary
+
+```mermaid
+graph TB
+    subgraph TB["Trust Boundary A"]
+        WA["Worker A<br/>(Billing)<br/>Scoped Token:<br/>billing only"]
+        WB["Worker B<br/>(Research)<br/>Scoped Token:<br/>research only"]
+        WC["Worker C<br/>(Legal)<br/>Scoped Token:<br/>legal only"]
+    end
+    
+    NOTE["Blast Radius Containment:<br/>If Worker A compromised →<br/>can ONLY access billing tools<br/>Cannot reach Worker B/C or their tools"]
+    
+    TB -.->|Compromised scope isolation| NOTE
 ```
-┌──────────────────────────────────────────────────┐
-│                TRUST BOUNDARY A                   │
-│                                                   │
-│  ┌──────────┐    ┌──────────┐    ┌──────────┐   │
-│  │ Worker A │    │ Worker B │    │ Worker C │   │
-│  │ (billing)│    │(research)│    │(legal)   │   │
-│  └──────────┘    └──────────┘    └──────────┘   │
-│       │               │               │           │
-│  [scoped token]  [scoped token]  [scoped token]  │
-│  billing only    research only   legal only        │
-│                                                   │
-│  Worker A COMPROMISED → can only access billing   │
-│  Cannot reach Worker B, Worker C, or their tools  │
-└──────────────────────────────────────────────────┘
-```
+
+When a worker agent is compromised, its blast radius is limited to the scope defined in its delegation token—it cannot escalate to access other workers' resources or permissions.
 
 ---
 
@@ -520,44 +507,34 @@ Zero Trust contains the blast radius of a compromised agent:
 
 ### 9.2 Production-Grade Policy Evaluation Flow
 
+Agent Authorization Decision and Obligation Execution
+
+```mermaid
+flowchart TD
+    START["Agent Decision Required"]
+    BUNDLE["Assemble Input Bundle<br/>principal: SVID<br/>action: tool-call-spec<br/>resource: MCP-URI<br/>context: time, risk_score, session_id"]
+    CACHE["OPA/Cedar Sidecar<br/>Check local cache first"]
+    DECISION{Cache<br/>Result?}
+    REMOTE["Remote Policy Engine<br/>if complex/<br/>relationship-based"]
+    EVAL["Decision: allow/deny<br/>reasons, obligations"]
+    FINAL{Authorization<br/>Result?}
+    EXEC["Execute tool call"]
+    DENY["Audit log + return 403"]
+    OBLIG["Execute Obligations<br/>log, re-auth gate,<br/>mask PII in output"]
+    
+    START --> BUNDLE
+    BUNDLE --> CACHE
+    CACHE --> DECISION
+    DECISION -->|HIT| EVAL
+    DECISION -->|MISS| REMOTE
+    REMOTE --> EVAL
+    EVAL --> FINAL
+    FINAL -->|ALLOW| EXEC
+    FINAL -->|DENY| DENY
+    EXEC --> OBLIG
 ```
-Agent Decision Required
-        │
-        ▼
-  [Assemble input bundle]
-  { principal: <SVID>,
-    action: <tool-call-spec>,
-    resource: <MCP-URI>,
-    context: {time, risk_score, session_id} }
-        │
-        ▼
-  [OPA/Cedar sidecar]
-  (check local cache first)
-        │
-   ┌────┴────┐
-CACHED      MISS
-   │          │
-   │    [Remote policy engine]
-   │    (if complex / relationship-based)
-   │          │
-   └────┬─────┘
-        │
-        ▼
-  [Decision: {allow: bool, reasons: [], obligations: []}]
-        │
-  ┌─────┴──────┐
-  │            │
-ALLOW        DENY
-  │            │
-  ▼            ▼
-Execute    Audit log + return 403
-  │
-  ▼
-[Execute obligations]
-(e.g., log this action,
- require re-auth in 5 min,
- mask PII in output)
-```
+
+Production authorization evaluates input bundles (principal, action, resource, context) through a cache-backed sidecar policy engine, issues decisions with obligations, and routes to execution or denial with audit logging.
 
 ---
 

@@ -43,28 +43,29 @@ Build a **managed agent ecosystem** where agents are:
 
 ## Agent Platform Layers
 
+**Agent Platform Architecture (Bottom-to-Top):**
+
+```mermaid
+graph TB
+    L3["LAYER 3: Agent Trust & Governance Plane<br/>Policy enforcement, runtime controls, risk scoring"]
+    L4["LAYER 4: Agent Platform<br/>Registry • Marketplace • Governance<br/>Certification • Operations • Versioning"]
+    L5["LAYER 5: Agent Applications<br/>Domain agents, orchestrators<br/>What users interact with"]
+    
+    L3 --> L4
+    L4 --> L5
+    
+    style L3 fill:#f0e6ff
+    style L4 fill:#e6d5ff
+    style L5 fill:#dcc4ff
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│ LAYER 5: AGENT APPLICATIONS                                     │
-│ (What users interact with - domain agents, orchestrators)       │
-└─────────────────────────────────────────────────────────────────┘
-                              ↑
-┌─────────────────────────────────────────────────────────────────┐
-│ LAYER 4: AGENT PLATFORM (THIS SECTION)                          │
-├─────────────────────────────────────────────────────────────────┤
-│ ├─ Agent Registry (discovery, metadata, lifecycle)              │
-│ ├─ Agent Marketplace (reusable components, skills)              │
-│ ├─ Agent Governance (policy enforcement, approvals)             │
-│ ├─ Agent Certification (quality gates, performance thresholds)  │
-│ ├─ Agent Operations (monitoring, cost tracking, SLAs)           │
-│ └─ Agent Versioning & Deprecation                               │
-└─────────────────────────────────────────────────────────────────┘
-                              ↑
-┌─────────────────────────────────────────────────────────────────┐
-│ LAYER 3: AGENT TRUST & GOVERNANCE PLANE                         │
-│ (Policy enforcement, runtime controls, risk scoring)            │
-└─────────────────────────────────────────────────────────────────┘
-```
+
+**Layer 4 Components:**
+- Agent Registry (discovery, metadata, lifecycle)
+- Agent Marketplace (reusable components, skills)
+- Agent Governance (policy enforcement, approvals)
+- Agent Certification (quality gates, performance thresholds)
+- Agent Operations (monitoring, cost tracking, SLAs)
+- Agent Versioning & Deprecation
 
 ---
 
@@ -75,24 +76,11 @@ Build a **managed agent ecosystem** where agents are:
 **Central catalog** of all agents authorized to run in your organization.
 
 ```
-┌─────────────────────────────────────┐
-│ Agent Registry (Central Database)   │
-├─────────────────────────────────────┤
-│ • Agent ID + metadata               │
-│ • Ownership & team                  │
-│ • Business value & impact           │
-│ • Data access permissions           │
-│ • Compliance classification         │
-│ • Performance baselines             │
-│ • Cost tracking                     │
-│ • Deployment locations              │
-│ • SLA & support info                │
-│ • Approval status                   │
-│ • Deprecation timeline (if retiring)│
-└─────────────────────────────────────┘
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Agent Registry (Central Database)     - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  • Agent ID + metadata                   • Ownership & team                      • Business value & impact               • Data access permissions               • Compliance classification             • Performance baselines                 • Cost tracking                         • Deployment locations                  • SLA & support info                    • Approval status                       • Deprecation timeline (if retiring)  - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         ↑          ↑          ↑
-        │          │          │
-   Policy Engine  Cost       Observability
+                 Policy Engine  Cost       Observability
    (allow/deny)   Dashboard  System
 ```
 
@@ -109,14 +97,14 @@ metadata:
   last_updated: "2026-07-09"
 
 spec:
-  # ─── OWNERSHIP & ORGANIZATION ─────────────
+  # --------------------- OWNERSHIP & ORGANIZATION -------------------------------------------------------------------------------------------
   ownership:
     team: "Customer Operations AI"
     owner_email: "cust-ops-lead@company.com"
     oncall_slack: "#ai-cust-ops-oncall"
     cto_approval_required: false  # only true for high-risk
 
-  # ─── BUSINESS DEFINITION ──────────────────
+  # --------------------- BUSINESS DEFINITION ------------------------------------------------------------------------------------------------------------------------------
   business:
     description: "Orchestrates multi-agent workflow for customer inquiries"
     business_value: "revenue_protection"  # revenue_generation | cost_reduction | risk_mitigation | compliance
@@ -124,7 +112,7 @@ spec:
     business_unit: "Customer Operations"
     enabled_by: ["customer-support-agent", "order-lookup-agent", "refund-policy-agent"]
 
-  # ─── TECHNICAL SPECIFICATION ──────────────
+  # --------------------- TECHNICAL SPECIFICATION --------------------------------------------------------------------------------------------------
   technical:
     framework: "langgraph-0.4.8"
     model_primary: "claude-sonnet-4-6"
@@ -139,7 +127,7 @@ spec:
       p95_latency_ms: 2000
       throughput_rps: 100
 
-  # ─── DATA ACCESS & PERMISSIONS ────────────
+  # --------------------- DATA ACCESS & PERMISSIONS ------------------------------------------------------------------------------------
   data_access:
     databases:
       - name: "customer_db"
@@ -164,7 +152,7 @@ spec:
       - "financial_data"
       - "source_code_repos"
 
-  # ─── GOVERNANCE & COMPLIANCE ──────────────
+  # --------------------- GOVERNANCE & COMPLIANCE --------------------------------------------------------------------------------------------------
   governance:
     autonomy_level: 2  # 0=advisory, 1=supervised, 2=constrained, 3=broad, 4=full
     decision_scope: "customer_interactions"
@@ -184,7 +172,7 @@ spec:
       audit_retention_days: 2555  # 7 years
       human_review_on_escalation: true
 
-  # ─── QUALITY & EVALUATION ─────────────────
+  # --------------------- QUALITY & EVALUATION -----------------------------------------------------------------------------------------------------------------------
   quality:
     evaluation_enabled: true
     golden_dataset_id: "cust-service-golden-v3"
@@ -204,7 +192,7 @@ spec:
       run_on_deployment: true
       baseline_version: "v2.3"
 
-  # ─── COST GOVERNANCE ──────────────────────
+  # --------------------- COST GOVERNANCE ----------------------------------------------------------------------------------------------------------------------------------------------------------
   cost:
     monthly_budget_usd: 15000
     cost_center: "CUSTOMER_OPS_001"
@@ -212,7 +200,7 @@ spec:
     estimated_cost_per_interaction: "$0.08"
     alert_threshold_daily_usd: 500
 
-  # ─── OBSERVABILITY ────────────────────────
+  # --------------------- OBSERVABILITY ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   observability:
     traces_exported_to: ["datadog", "new_relic"]
     logs_exported_to: "splunk"
@@ -220,7 +208,7 @@ spec:
     anomaly_detection: true
     sla_tracking: true
 
-  # ─── DEPLOYMENT & VERSIONING ──────────────
+  # --------------------- DEPLOYMENT & VERSIONING --------------------------------------------------------------------------------------------------
   deployment:
     version: "2.4.1"
     semver_strategy: "minor-features, patch-fixes"
@@ -233,7 +221,7 @@ spec:
     blue_green_enabled: true
     rollback_auto_trigger: "error_rate > 5%"
 
-  # ─── DEPRECATION (if retiring) ────────────
+  # --------------------- DEPRECATION (if retiring) ------------------------------------------------------------------------------------
   deprecation:
     status: "active"  # active | deprecated | retired
     deprecation_date: null  # YYYY-MM-DD when we stop accepting new deployments
@@ -242,7 +230,7 @@ spec:
     migration_plan: null
 
 status:
-  # ─── RUNTIME STATUS ───────────────────────
+  # --------------------- RUNTIME STATUS -----------------------------------------------------------------------------------------------------------------------------------------------------------------
   phase: "running"  # deploying | running | paused | failed
   last_deployment: "2026-07-09T14:30:00Z"
   last_successful_health_check: "2026-07-09T16:45:00Z"
@@ -250,7 +238,7 @@ status:
   deployments_active: 5
   pods_running: 8
 
-  # ─── METRICS (updated continuously) ────────
+  # --------------------- METRICS (updated continuously) --------------------------------------------------------
   metrics:
     uptime_last_7_days_percent: 99.7
     avg_latency_p95_ms: 1850
@@ -258,7 +246,7 @@ status:
     error_rate_percent: 0.3
     cost_mtd_usd: 8234.50
 
-  # ─── RECENT ISSUES ────────────────────────
+  # --------------------- RECENT ISSUES ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   recent_incidents:
     - id: "INC-2026-0847"
       severity: "warning"
@@ -313,85 +301,29 @@ ORDER BY governance.risk_score DESC;
 ### Lifecycle Stages
 
 ```
-┌────────────────────────────────────────────────────────────────┐
-│ Stage 1: DISCOVERY & EXPERIMENTATION (Weeks 1–2)              │
-├────────────────────────────────────────────────────────────────┤
-│ Status: SHADOW (unmanaged, no registry entry)                  │
-│ • Team builds prototype in sandbox environment                 │
-│ • Limited data access, no production traffic                   │
-│ • Manual testing, ad-hoc evaluations                           │
-│ Exit Criteria: Business case validated, technical feasibility  │
-└────────────────────────────────────────────────────────────────┘
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Stage 1: DISCOVERY & EXPERIMENTATION (Weeks 1–2)                - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Status: SHADOW (unmanaged, no registry entry)                      • Team builds prototype in sandbox environment                     • Limited data access, no production traffic                       • Manual testing, ad-hoc evaluations                               Exit Criteria: Business case validated, technical feasibility    - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                               ↓
-┌────────────────────────────────────────────────────────────────┐
-│ Stage 2: REGISTRATION & GOVERNANCE (Weeks 3–4)                │
-├────────────────────────────────────────────────────────────────┤
-│ Status: REGISTERED (in registry, security review in progress)  │
-│ • Formal registration in Agent Registry                        │
-│ • Security architecture review                                 │
-│ • Risk classification (EU AI Act level)                        │
-│ • Policy Card creation                                         │
-│ • Data access approval workflow                                │
-│ Exit Criteria: All security gates passed, approvals granted    │
-└────────────────────────────────────────────────────────────────┘
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Stage 2: REGISTRATION & GOVERNANCE (Weeks 3–4)                  - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Status: REGISTERED (in registry, security review in progress)      • Formal registration in Agent Registry                            • Security architecture review                                     • Risk classification (EU AI Act level)                            • Policy Card creation                                             • Data access approval workflow                                    Exit Criteria: All security gates passed, approvals granted      - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                               ↓
-┌────────────────────────────────────────────────────────────────┐
-│ Stage 3: EVALUATION & VALIDATION (Weeks 5–8)                  │
-├────────────────────────────────────────────────────────────────┤
-│ Status: STAGING (test environment, synthetic traffic)          │
-│ • Deploy to staging cluster                                    │
-│ • Run against golden dataset                                   │
-│ • Establish performance baselines                              │
-│ • Offline evaluation: accuracy, bias, hallucinations           │
-│ • Automated regression testing                                 │
-│ • User acceptance testing (UAT)                                │
-│ Exit Criteria: Quality metrics meet targets, no regressions    │
-└────────────────────────────────────────────────────────────────┘
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Stage 3: EVALUATION & VALIDATION (Weeks 5–8)                    - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Status: STAGING (test environment, synthetic traffic)              • Deploy to staging cluster                                        • Run against golden dataset                                       • Establish performance baselines                                  • Offline evaluation: accuracy, bias, hallucinations               • Automated regression testing                                     • User acceptance testing (UAT)                                    Exit Criteria: Quality metrics meet targets, no regressions      - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                               ↓
-┌────────────────────────────────────────────────────────────────┐
-│ Stage 4: PRODUCTION DEPLOYMENT (Week 9+)                       │
-├────────────────────────────────────────────────────────────────┤
-│ Status: CANARY (1-5% production traffic)                       │
-│ • Canary deployment (5% traffic for 4 hours)                   │
-│ • Real-time monitoring for anomalies                           │
-│ • Cost tracking, latency metrics                               │
-│ • Escalation handling                                          │
-│ • Exit Criteria: No critical issues, metrics aligned           │
-│                                                                │
-│ Status: ROLLING (100% production traffic)                      │
-│ • Blue-green deployment completed                              │
-│ • Full traffic serving                                         │
-│ • SLA monitoring active                                        │
-│ • Continuous evaluation loop                                   │
-└────────────────────────────────────────────────────────────────┘
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Stage 4: PRODUCTION DEPLOYMENT (Week 9+)                         - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Status: CANARY (1-5% production traffic)                           • Canary deployment (5% traffic for 4 hours)                       • Real-time monitoring for anomalies                               • Cost tracking, latency metrics                                   • Escalation handling                                              • Exit Criteria: No critical issues, metrics aligned                   Status: ROLLING (100% production traffic)                          • Blue-green deployment completed                                  • Full traffic serving                                             • SLA monitoring active                                            • Continuous evaluation loop                                     - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                               ↓
-┌────────────────────────────────────────────────────────────────┐
-│ Stage 5: OPERATIONS & OPTIMIZATION (Ongoing)                   │
-├────────────────────────────────────────────────────────────────┤
-│ Status: RUNNING (production, monitored)                        │
-│ • Daily metric tracking (availability, latency, errors)        │
-│ • Weekly performance reviews                                   │
-│ • Monthly cost reconciliation                                  │
-│ • Quarterly compliance audits                                  │
-│ • Continuous prompt/model optimization                         │
-│ • Version updates as available                                 │
-└────────────────────────────────────────────────────────────────┘
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Stage 5: OPERATIONS & OPTIMIZATION (Ongoing)                     - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Status: RUNNING (production, monitored)                            • Daily metric tracking (availability, latency, errors)            • Weekly performance reviews                                       • Monthly cost reconciliation                                      • Quarterly compliance audits                                      • Continuous prompt/model optimization                             • Version updates as available                                   - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                               ↓
-┌────────────────────────────────────────────────────────────────┐
-│ Stage 6: DEPRECATION & RETIREMENT (End of Life)                │
-├────────────────────────────────────────────────────────────────┤
-│ Status: DEPRECATED (new instances not accepted)                │
-│ • Announce deprecation date (6-month notice minimum)           │
-│ • Identify successor agent for migration                       │
-│ • Publish migration guide                                      │
-│ • Support existing instances                                   │
-│                                                                │
-│ Status: RETIRED (shut down, data archived)                     │
-│ • Stop accepting new traffic                                   │
-│ • Drain existing instances gracefully                          │
-│ • Archive logs for compliance                                  │
-│ • Delete sensitive data (subject to retention policies)        │
-└────────────────────────────────────────────────────────────────┘
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Stage 6: DEPRECATION & RETIREMENT (End of Life)                  - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Status: DEPRECATED (new instances not accepted)                    • Announce deprecation date (6-month notice minimum)               • Identify successor agent for migration                           • Publish migration guide                                          • Support existing instances                                           Status: RETIRED (shut down, data archived)                         • Stop accepting new traffic                                       • Drain existing instances gracefully                              • Archive logs for compliance                                      • Delete sensitive data (subject to retention policies)          - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
 ### Lifecycle Gates & Approvals
@@ -413,25 +345,25 @@ ORDER BY governance.risk_score DESC;
 
 ```
 TIER 1: SHARED CORE AGENTS
-├─ Canonical implementations (1 per use case)
-├─ Maintained by Platform Team
-├─ SLA: 99.9% availability
-├─ Shared cost across all consumers
-└─ Examples: Customer Service Orchestrator, Order Processing Agent
+- Canonical implementations (1 per use case)
+- Maintained by Platform Team
+- SLA: 99.9% availability
+- Shared cost across all consumers
+- Examples: Customer Service Orchestrator, Order Processing Agent
 
 TIER 2: DOMAIN AGENTS
-├─ Business-unit-specific agents
-├─ Maintained by domain teams
-├─ Published for reuse within business unit
-├─ Shared cost model
-└─ Examples: Financial Analysis Agent (Finance), Recruitment Agent (HR)
+- Business-unit-specific agents
+- Maintained by domain teams
+- Published for reuse within business unit
+- Shared cost model
+- Examples: Financial Analysis Agent (Finance), Recruitment Agent (HR)
 
 TIER 3: SHARED COMPONENTS & SKILLS
-├─ Reusable agent building blocks
-├─ Tool integrations (email, ticketing, databases)
-├─ Prompt templates
-├─ Evaluation datasets
-└─ Examples: EmailToolkit, TicketingIntegration, ComplianceChecks
+- Reusable agent building blocks
+- Tool integrations (email, ticketing, databases)
+- Prompt templates
+- Evaluation datasets
+- Examples: EmailToolkit, TicketingIntegration, ComplianceChecks
 ```
 
 ### Marketplace Discovery Interface
@@ -460,19 +392,16 @@ agents search --reusable true --license-type permissive
 **Can I reuse this agent for my use case?**
 
 ```
-┌─ Is it a Tier 1 Core Agent?
-│  ├─ YES → Can directly instantiate
-│  └─ NO → Next question
-│
-├─ Is it from my business unit (Tier 2)?
-│  ├─ YES → Can use with owner approval
-│  └─ NO → Next question
-│
-├─ Is it licensed for external use?
-│  ├─ YES → Can use with cost-share agreement
-│  └─ NO → Cannot use (must build or fork)
-│
-└─ RESULT:
+------- Is it a Tier 1 Core Agent?
+  - YES → Can directly instantiate
+  - NO → Next question
+  - Is it from my business unit (Tier 2)?
+  - YES → Can use with owner approval
+  - NO → Next question
+  - Is it licensed for external use?
+  - YES → Can use with cost-share agreement
+  - NO → Cannot use (must build or fork)
+  - RESULT:
    ✅ Approved to use
    ⚠️  Requires approval from agent owner
    🚫 Not licensed for reuse
@@ -486,21 +415,21 @@ agents search --reusable true --license-type permissive
 
 ```
 Agent Cost Structure:
-├─ Inference Cost (model API calls)
-├─ Storage Cost (logs, traces, state)
-├─ Compute Cost (runtime infrastructure)
-├─ Support Cost (on-call, maintenance)
-└─ Platform Cost (shared registry, monitoring, tools)
+- Inference Cost (model API calls)
+- Storage Cost (logs, traces, state)
+- Compute Cost (runtime infrastructure)
+- Support Cost (on-call, maintenance)
+- Platform Cost (shared registry, monitoring, tools)
 
 Monthly Cost Breakdown:
-────────────────────────────────────
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Customer Service Agent:     $12,500
-├─ Model inference (70%)    $8,750   (50K interactions × $0.175 per)
-├─ Compute (15%)            $1,875   (2 pods × $468/month)
-├─ Storage (8%)             $1,000   (logs: 500GB @ $2/GB/month)
-├─ Monitoring (5%)          $625     (shared platform cost)
-└─ Support (2%)             $250     (on-call rotation)
-────────────────────────────────────
+- Model inference (70%)    $8,750   (50K interactions × $0.175 per)
+- Compute (15%)            $1,875   (2 pods × $468/month)
+- Storage (8%)             $1,000   (logs: 500GB @ $2/GB/month)
+- Monitoring (5%)          $625     (shared platform cost)
+- Support (2%)             $250     (on-call rotation)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TOTAL                       $12,500
 
 Cost per interaction:       $0.25 (including platform overhead)
@@ -557,28 +486,28 @@ Agents must meet baseline standards before production:
 
 ```
 Agent Health (Real-Time):
-├─ Availability: 99.7% (target: 99.5%)
-├─ Latency p95: 1,840ms (target: <2000ms)
-├─ Error Rate: 0.32% (target: <1%)
-├─ Throughput: 42.3 req/sec (capacity: 100 req/sec)
-└─ Active Connections: 847 / 1000
+- Availability: 99.7% (target: 99.5%)
+- Latency p95: 1,840ms (target: <2000ms)
+- Error Rate: 0.32% (target: <1%)
+- Throughput: 42.3 req/sec (capacity: 100 req/sec)
+- Active Connections: 847 / 1000
 
 Quality Metrics (Daily):
-├─ Task Completion: 96.2% (target: >95%)
-├─ Customer Satisfaction: 4.3/5 (target: >4.2)
-├─ Escalation Rate: 14.1% (target: <15%)
-└─ Hallucination Rate: 1.2% (target: <2%)
+- Task Completion: 96.2% (target: >95%)
+- Customer Satisfaction: 4.3/5 (target: >4.2)
+- Escalation Rate: 14.1% (target: <15%)
+- Hallucination Rate: 1.2% (target: <2%)
 
 Cost Tracking (Monthly):
-├─ YTD Spend: $8,234.50 / $15,000 budget (54.9%)
-├─ Cost per Interaction: $0.25 (trending +2% from last month)
-└─ Projected Monthly: $12,350 (within budget)
+- YTD Spend: $8,234.50 / $15,000 budget (54.9%)
+- Cost per Interaction: $0.25 (trending +2% from last month)
+- Projected Monthly: $12,350 (within budget)
 
 Compliance (Last Audit):
-├─ Policy Compliance: 100%
-├─ Audit Trail Completeness: 100%
-├─ Risk Score: 18 / 100 (Low)
-└─ Last Compliance Review: 2026-07-02
+- Policy Compliance: 100%
+- Audit Trail Completeness: 100%
+- Risk Score: 18 / 100 (Low)
+- Last Compliance Review: 2026-07-02
 ```
 
 ### Incident Response Runbook
@@ -603,27 +532,27 @@ Compliance (Last Audit):
 
 ```
 T+0 (Deprecation Announcement)
-└─ Email all stakeholders
+- Email all stakeholders
    "Agent X will retire 2026-12-31. Successor: Agent X-v2"
 
 T+30 days
-├─ Successor agent released in production
-├─ Migration guide published
-└─ Training webinar held
+- Successor agent released in production
+- Migration guide published
+- Training webinar held
 
 T+60 days
-├─ Automated migration tool available
-├─ Direct support for migrations
-└─ No new instances accepted
+- Automated migration tool available
+- Direct support for migrations
+- No new instances accepted
 
 T+90 days (2026-12-31)
-├─ Final retirement date
-├─ All instances must be migrated
-├─ Logs archived for compliance
-└─ Resources deprovisioned
+- Final retirement date
+- All instances must be migrated
+- Logs archived for compliance
+- Resources deprovisioned
 
 T+2555 days (7 years)
-└─ Archived logs deleted (GDPR retention complete)
+- Archived logs deleted (GDPR retention complete)
 ```
 
 ---
@@ -637,33 +566,33 @@ Engineer: "I built a refund automation agent. How do I get it to production?"
 
 WORKFLOW:
 1. Agent Registry entry created (DRAFT status)
-   └─ Metadata: name, business value, data access, model, owner
+   - Metadata: name, business value, data access, model, owner
 
 2. Security review initiated (3-day SLA)
-   └─ CISO checks: data access, policy cards, risk classification
-   └─ Result: APPROVED or REQUEST_CHANGES
+   - CISO checks: data access, policy cards, risk classification
+   - Result: APPROVED or REQUEST_CHANGES
 
 3. Architecture review (5-day SLA)
-   └─ ARB validates: design patterns, scalability, cost estimates
-   └─ Result: APPROVED or REJECTED
+   - ARB validates: design patterns, scalability, cost estimates
+   - Result: APPROVED or REJECTED
 
 4. Deploy to staging (1 day)
-   └─ Automated deployment pipeline
-   └─ Runs quality evaluation against golden dataset
+   - Automated deployment pipeline
+   - Runs quality evaluation against golden dataset
 
 5. User acceptance testing (3 days)
-   └─ Business team validates behavior
-   └─ Result: APPROVED_FOR_PRODUCTION
+   - Business team validates behavior
+   - Result: APPROVED_FOR_PRODUCTION
 
 6. Canary deployment (4 hours)
-   └─ 5% production traffic
-   └─ Monitor error rates, latency
-   └─ Result: PROCEED_TO_100% or ROLLBACK
+   - 5% production traffic
+   - Monitor error rates, latency
+   - Result: PROCEED_TO_100% or ROLLBACK
 
 7. Production deployment (1 day)
-   └─ Blue-green deployment to 100%
-   └─ SLA monitoring active
-   └─ Status: RUNNING
+   - Blue-green deployment to 100%
+   - SLA monitoring active
+   - Status: RUNNING
 
 TOTAL TIME: ~2 weeks
 ```
@@ -675,24 +604,24 @@ Engineer: "I fixed a bug and improved the model prompt. Deploy v2.4 → v2.5"
 
 WORKFLOW:
 1. New version registered
-   └─ Automatically uses existing policy cards + data access
-   └─ Skip security review (unchanged scope)
+   - Automatically uses existing policy cards + data access
+   - Skip security review (unchanged scope)
 
 2. Regression testing (automated, 1 hour)
-   └─ Compare v2.5 against v2.4 on golden dataset
-   └─ Quality metrics must match or improve
+   - Compare v2.5 against v2.4 on golden dataset
+   - Quality metrics must match or improve
 
 3. Staging validation (4 hours)
-   └─ Run in parallel with v2.4
-   └─ Compare real-world performance
+   - Run in parallel with v2.4
+   - Compare real-world performance
 
 4. Canary deployment (4 hours)
-   └─ 5% traffic to v2.5
-   └─ 95% still on v2.4
+   - 5% traffic to v2.5
+   - 95% still on v2.4
 
 5. Rollout to 100% (automated if healthy)
-   └─ Monitor for 24 hours
-   └─ v2.4 deprecated, but not deleted (rollback available)
+   - Monitor for 24 hours
+   - v2.4 deprecated, but not deleted (rollback available)
 
 TOTAL TIME: ~1 day (much faster than new agent)
 ```
@@ -704,20 +633,20 @@ Product Owner: "Order Processing Agent v1 is superseded by v3. Retire it."
 
 WORKFLOW:
 T+0: Deprecation announced
-└─ All users notified (email, dashboard banner)
-└─ Successor agent recommended
-└─ Migration guide published
+- All users notified (email, dashboard banner)
+- Successor agent recommended
+- Migration guide published
 
 T+30: Successor released
-├─ Migration tooling available
-├─ No new instances of v1 accepted
-└─ Existing instances continue running (with warnings)
+- Migration tooling available
+- No new instances of v1 accepted
+- Existing instances continue running (with warnings)
 
 T+90: Retirement date
-├─ All instances shut down
-├─ Logs archived (7-year retention for compliance)
-├─ Cost allocation ends
-└─ Agent removed from registry
+- All instances shut down
+- Logs archived (7-year retention for compliance)
+- Cost allocation ends
+- Agent removed from registry
 
 STATUS: RETIRED (historical record kept for audit)
 ```

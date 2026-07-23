@@ -349,43 +349,25 @@ When drift is detected:
 
 ### 6.1 Required Components
 
-<!-- TODO(diagram): Convert ASCII drift detection pipeline to mermaid
-Original shows: Production Agent System → Metrics Pipeline → Drift Detector (runs every 1h) → Baseline Store → Alert Router → Drift Dashboard
-With DRIFT/NO DRIFT branch
--->
+Drift Detection Pipeline Architecture
 
+```mermaid
+graph TD
+    AGENT["Production Agent System<br/>(telemetry)"]
+    METRICS["Metrics Pipeline<br/>Prometheus/CloudWatch<br/>Azure Monitor"]
+    DETECTOR["Drift Detector<br/>Statistical Tests<br/>Runs Every 1h"]
+    BASELINE["Baseline Store<br/>Pinned baselines per<br/>metric, per version"]
+    
+    AGENT -->|Telemetry| METRICS
+    METRICS -->|Metrics| DETECTOR
+    DETECTOR -->|Compare| BASELINE
+    
+    DETECTOR -->|Drift Detected| ROUTER["Alert Router<br/>PagerDuty/OpsGenie/Slack"]
+    DETECTOR -->|No Drift| DASHBOARD["Drift Dashboard<br/>Grafana / DataDog"]
+    ROUTER -->|Alert| DASHBOARD
 ```
-Production Agent System
-        │ telemetry
-        ▼
-┌────────────────────┐
-│  Metrics Pipeline  │ (Prometheus / CloudWatch / Azure Monitor)
-└────────┬───────────┘
-         │
-         ▼
-┌────────────────────┐
-│  Drift Detector    │ (Scheduled jobs; statistical tests)
-│  (runs every 1h)  │
-└────────┬───────────┘
-         │
-         ▼
-┌────────────────────┐
-│  Baseline Store    │ (Pinned baselines per metric, per version)
-└────────┬───────────┘
-         │
-    ┌────┴────┐
-DRIFT        NO DRIFT
-    │
-    ▼
-┌────────────────────┐
-│  Alert Router      │ (PagerDuty / OpsGenie / Slack)
-└────────┬───────────┘
-         │
-         ▼
-┌────────────────────┐
-│  Drift Dashboard   │ (Grafana / DataDog)
-└────────────────────┘
-```
+
+Drift detection consumes continuous telemetry from production agents through a metrics pipeline (Prometheus, CloudWatch, or Azure Monitor), runs statistical tests hourly against pinned baselines, and routes drift signals to alert systems (PagerDuty, Slack) and observability dashboards.
 
 ### 6.2 Baseline Management
 
@@ -418,30 +400,18 @@ DRIFT        NO DRIFT
 
 For Critical and High drift, automatic rollback reduces mean time to recovery:
 
-```
-Drift Alert (Critical/High)
-        │
-        ▼
- [Confirm drift]
- (secondary validation: different detection method)
-        │
-        ▼
- [Identify rollback target]
- (last known-good version from baseline store)
-        │
-        ▼
- [Execute rollback]
- (GitOps: ArgoCD reverts to last-known-good agent definition + prompt + model-pin)
-        │
-        ▼
- [Verify rollback]
- (run canary probes on rolled-back version)
-        │
-        ▼
- [Notify: Platform team, on-call, stakeholders]
-        │
-        ▼
- [Post-mortem scheduled within 24h]
+**Automatic rollback sequence.**
+
+```mermaid
+graph TD
+    A["Drift Alert (Critical/High)"]
+    B["Confirm drift<br/>secondary validation: different detection method"]
+    C["Identify rollback target<br/>last known-good version from baseline store"]
+    D["Execute rollback<br/>GitOps: ArgoCD reverts agent definition + prompt + model-pin"]
+    E["Verify rollback<br/>run canary probes on rolled-back version"]
+    F["Notify: Platform team, on-call, stakeholders"]
+    G["Post-mortem scheduled within 24h"]
+    A --> B --> C --> D --> E --> F --> G
 ```
 
 **Warning:** Automatic rollback requires that **code + prompt + model-pin + policy bundle** are versioned together and rolled back atomically. Partial rollbacks (code only, or prompt only) are a common cause of post-rollback incidents.

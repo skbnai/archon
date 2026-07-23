@@ -291,6 +291,38 @@ A mature agentic AI operations center runs five distinct dashboards:
 
 The governance architecture is a single spine with five registries. The operational rule: **nothing is invokable unless it is registered; nothing is registered without an owner and a risk class.**
 
+### Agentic AI Governance: 5-Registry Spine
+
+```mermaid
+graph TB
+    subgraph Registry["Governance Spine: 5 Registries of Record"]
+        AR["Agent Registry<br/>Agent name, owner,<br/>risk class, model deps"]
+        TR["Tool/MCP Registry<br/>Tool manifest, sandbox<br/>profile, data classes"]
+        PR["Prompt Registry<br/>Versioned prompts,<br/>eval-gated releases"]
+        PLR["Policy Registry<br/>Signed Cedar/OPA<br/>policy bundles"]
+        MR["Model Registry<br/>Approved versions,<br/>data residency"]
+    end
+    
+    Control["Operational Rule:<br/>Nothing invokable<br/>unless registered"]
+    
+    AR -->|References| MR
+    AR -->|References| TR
+    AR -->|References| PR
+    AR -->|References| PLR
+    MR -->|Enforces| Control
+    TR -->|Enforces| Control
+    
+    style Registry fill:#f0f0f0
+    style Control fill:#ff6666
+    style AR fill:#99ccff
+    style TR fill:#99ccff
+    style PR fill:#99ccff
+    style PLR fill:#99ccff
+    style MR fill:#99ccff
+```
+
+**Agentic AI Governance Spine** — Five registries form the central governance authority. Agent Registry is the hub, referencing approved Tool/MCP endpoints, versioned Prompts, Policy bundles, and Model versions. Every agent invocation must be registered; every deployment must pass through these registries. The operative rule: nothing runs without explicit registration and an accountable owner.
+
 ### Registry 1: Agent Registry
 
 | Field | Description |

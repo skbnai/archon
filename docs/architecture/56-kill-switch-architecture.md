@@ -69,47 +69,55 @@ The EU AI Act Article 9 (risk management) requires high-risk AI systems to inclu
 
 ### 3.1 Control Plane
 
-<!-- TODO(diagram): Convert ASCII control plane architecture diagram to mermaid
-Original shows: OPERATOR → KILL SWITCH API → KILL SWITCH ORCHESTRATOR (with 7 steps) → 6 propagation mechanisms (Gateway Block, OPA Rule, Feature Flag, Agent Registry, Circuit Breaker, Credential Revocation)
--->
+Kill Switch Control Plane Orchestration
 
+```mermaid
+graph TD
+    OP["OPERATOR"]
+    API["KILL SWITCH API<br/>authenticated, audited"]
+    ORCH["KILL SWITCH ORCHESTRATOR<br/>1. Authenticate operator<br/>2. Verify authority for scope<br/>3. Log activation + reason<br/>4. Determine propagation path<br/>5. Dispatch mechanisms<br/>6. Confirm SLA<br/>7. Alert stakeholders"]
+    
+    GW["Gateway<br/>Block"]
+    OPA["OPA<br/>Rule"]
+    FF["Feature<br/>Flag"]
+    AR["Agent<br/>Registry"]
+    CB["Circuit<br/>Breaker"]
+    CR["Credential<br/>Revocation"]
+    
+    OP -->|activate| API
+    API -->|scope, level, reason| ORCH
+    ORCH -->|Dispatch| GW
+    ORCH -->|Dispatch| OPA
+    ORCH -->|Dispatch| FF
+    ORCH -->|Dispatch| AR
+    ORCH -->|Dispatch| CB
+    ORCH -->|Dispatch| CR
 ```
-KILL SWITCH CONTROL PLANE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
- OPERATOR           KILL SWITCH API
-    │               (authenticated, audited)
-    │ activate(scope, level, reason)
-    ▼
- ┌─────────────────────────────────────────────────┐
- │           KILL SWITCH ORCHESTRATOR              │
- │  1. Authenticate operator identity              │
- │  2. Verify operator has authority for scope     │
- │  3. Log activation with timestamp + reason      │
- │  4. Determine propagation path for scope        │
- │  5. Dispatch to propagation mechanisms          │
- │  6. Confirm propagation (within SLA)            │
- │  7. Alert: team + stakeholders + audit log      │
- └───┬─────┬─────┬──────┬──────┬──────┬───────────┘
-     │     │     │      │      │      │
-     ▼     ▼     ▼      ▼      ▼      ▼
-  Gateway  OPA  Feature Agent  Circuit Credential
-  Block   Rule  Flag   Registry Breaker Revocation
-```
+Operator activates kill switch through authenticated API. Orchestrator authenticates operator, verifies authority, logs activation, dispatches to six propagation mechanisms, confirms within SLA targets, and alerts all stakeholders.
 
 ### 3.2 Feature Flag Kill Switch
 
 Feature flags provide the most controllable kill switch — graduated, reversible, audited:
 
-```
-Kill Switch Flag Store (LaunchDarkly / AWS AppConfig / Azure App Config / Unleash)
-    │
-    ├─► Global: ai.agents.enabled = false
-    ├─► Platform: ai.platform.us-east-1.enabled = false
-    ├─► Agent: ai.agent.billing-agent.enabled = false
-    ├─► Tool: ai.tool.funds-transfer.enabled = false
-    ├─► Model: ai.model.claude-opus.enabled = false
-    └─► Tenant: ai.tenant.acme-corp.enabled = false
+Kill Switch Feature Flag Hierarchy
+
+```mermaid
+graph TB
+    STORE["Kill Switch Flag Store<br/>LaunchDarkly / AWS AppConfig<br/>Azure App Config / Unleash"]
+    GLOBAL["Global:<br/>ai.agents.enabled = false"]
+    PLATFORM["Platform:<br/>ai.platform.us-east-1.enabled = false"]
+    AGENT["Agent:<br/>ai.agent.billing-agent.enabled = false"]
+    TOOL["Tool:<br/>ai.tool.funds-transfer.enabled = false"]
+    MODEL["Model:<br/>ai.model.claude-opus.enabled = false"]
+    TENANT["Tenant:<br/>ai.tenant.acme-corp.enabled = false"]
+    
+    STORE --> GLOBAL
+    STORE --> PLATFORM
+    STORE --> AGENT
+    STORE --> TOOL
+    STORE --> MODEL
+    STORE --> TENANT
 ```
 
 **Agent implementation (required at every agent):**
@@ -139,21 +147,19 @@ async def execute_agent_task(task: AgentTask) -> AgentResult:
 
 The gateway is the fastest and most reliable kill switch for inbound traffic:
 
-```
-Kill Switch Activation
-        │ (API call to Gateway Admin API)
-        ▼
-Gateway Kill Switch Rule:
-  match: agent_id == "billing-agent"
-  action: REJECT with HTTP 503
-  reason: "Agent suspended by governance - ref: INC-8821"
-  log: all rejected requests
-  duration: until explicitly lifted
+**Gateway kill-switch activation and effect.**
 
-Effect:
-  All new requests to billing-agent → rejected immediately
-  In-flight requests → completed (drain period) or killed (hard stop)
-  User experience → 503 with governance message
+```mermaid
+graph TD
+    A["Kill Switch Activation<br/>API call to Gateway Admin API"]
+    B["Gateway Kill Switch Rule<br/>match: agent_id == billing-agent<br/>action: REJECT with HTTP 503<br/>reason: Agent suspended by governance - ref: INC-8821<br/>duration: until explicitly lifted"]
+    C["New requests to billing-agent → rejected immediately"]
+    D["In-flight requests → completed (drain) or killed (hard stop)"]
+    E["User experience → 503 with governance message"]
+    A --> B
+    B --> C
+    B --> D
+    B --> E
 ```
 
 **Drain vs. hard stop choice:**
@@ -164,9 +170,9 @@ Effect:
 
 For scenarios where the agent bypassed the gateway (internal calls, scheduled tasks):
 
-```
-Emergency Policy Rule (OPA / Cedar)
-────────────────────────────────────
+Emergency Policy Rule (OPA / Cedar):
+
+```rego
 # OPA: emergency deny for specific agent
 package emergency.overrides
 
@@ -204,16 +210,14 @@ All components that dispatch work to agents (Planner, Supervisor, A2A gateway) m
 
 Safe mode is a degraded operating state that maintains basic functionality while disabling AI-powered features. It is activated when AI systems must be suspended but the underlying service must remain available.
 
-```
-NORMAL MODE                    SAFE MODE
-────────────────────────────────────────────────
-Agent answers questions         Fallback to knowledge base search
-Agent routes to specialist      Fixed routing rules (no ML)
-Agent drafts emails             Email drafting disabled
-Agent processes claims          Claims queued for human review
-Agent monitors for anomalies    Rule-based alerting only
-Agent interprets contracts      Contract review routed to legal team
-```
+| Normal Mode | Safe Mode |
+|---|---|
+| Agent answers questions | Fallback to knowledge base search |
+| Agent routes to specialist | Fixed routing rules (no ML) |
+| Agent drafts emails | Email drafting disabled |
+| Agent processes claims | Claims queued for human review |
+| Agent monitors for anomalies | Rule-based alerting only |
+| Agent interprets contracts | Contract review routed to legal team |
 
 ### Safe Mode Activation Playbook
 
@@ -282,26 +286,13 @@ For **security incidents** (compromised agent, active data exfiltration), skip S
 
 When a remote agent (connected via A2A) is suspected of malicious behavior or has been compromised:
 
-```
-LOCAL ACTION                           EFFECT
-────────────────────────────────────────────────────────
-1. Block outbound A2A to remote agent  No new tasks sent to remote agent
-   (gateway rule: drop A2A calls to
-    remote-agent-id)
-
-2. Invalidate cached remote agent card  Local agents no longer discover remote agent
-   (agent registry: mark as BLOCKED)
-
-3. Revoke trust for remote agent's     All in-flight A2A responses rejected
-   certificate/JWT issuer              (SPIFFE trust bundle updated)
-
-4. Notify remote org                   Remote org can investigate their side
-   (A2A protocol: send agent-status
-    notification)
-
-5. Audit: log all recent interactions  Compliance + forensics
-   with the remote agent
-```
+| Local Action | Effect |
+|---|---|
+| 1. Block outbound A2A to remote agent (gateway rule: drop A2A calls to remote-agent-id) | No new tasks sent to remote agent |
+| 2. Invalidate cached remote agent card (agent registry: mark as BLOCKED) | Local agents no longer discover remote agent |
+| 3. Revoke trust for remote agent's certificate/JWT issuer | All in-flight A2A responses rejected (SPIFFE trust bundle updated) |
+| 4. Notify remote org (A2A protocol: send agent-status notification) | Remote org can investigate their side |
+| 5. Audit: log all recent interactions with the remote agent | Compliance + forensics |
 
 ---
 
@@ -309,24 +300,45 @@ LOCAL ACTION                           EFFECT
 
 Circuit isolation prevents a failing component from cascading failures to other components:
 
+Circuit Breaker State Transition: Normal to Isolated
+
+```mermaid
+graph TD
+    NORMAL["NORMAL STATE<br/>Circuit: CLOSED"]
+    AA1["Agent A"]
+    AB1["Agent B"]
+    AC1["Agent C"]
+    TX1["Tool X<br/>healthy"]
+    
+    FAILING["TOOL X FAILING<br/>error rate > 50%"]
+    
+    OPEN["CIRCUIT ISOLATION<br/>Circuit: OPEN"]
+    AA2["Agent A"]
+    AB2["Agent B"]
+    AC2["Agent C"]
+    FB1["Fallback<br/>Response"]
+    TX2["Tool X<br/>isolated"]
+    
+    SUBGRAPH1["<b>Normal Operation</b>"]
+    NORMAL --> AA1
+    NORMAL --> AB1
+    NORMAL --> AC1
+    AA1 --> TX1
+    AB1 --> TX1
+    AC1 --> TX1
+    
+    SUBGRAPH2["<b>Isolation Activated</b>"]
+    FAILING -.-> OPEN
+    OPEN --> AA2
+    OPEN --> AB2
+    OPEN --> AC2
+    AA2 --> FB1
+    AB2 --> FB1
+    AC2 --> FB1
+    TX2 --> |"Recovery:<br/>after 60s<br/>half-open probe"|TX1
 ```
-Normal state:
-  Agent A ──calls──► Tool X   (circuit: CLOSED)
-  Agent B ──calls──► Tool X   (circuit: CLOSED)
-  Agent C ──calls──► Tool X   (circuit: CLOSED)
 
-Tool X starts failing (> 50% error rate):
-
-Circuit isolation:
-  Agent A ──calls──► [Circuit OPEN] ──► fallback response
-  Agent B ──calls──► [Circuit OPEN] ──► fallback response
-  Agent C ──calls──► [Circuit OPEN] ──► fallback response
-
-Tool X isolated:
-  - No calls pass to Tool X
-  - Tool X can recover without load
-  - After 60s, half-open probe: single call to test recovery
-```
+During normal operation, agents call Tool X directly (circuit closed). When Tool X fails (>50% error rate), circuit opens: agents receive fallback responses instead, Tool X isolation prevents cascading failure, and after 60 seconds a half-open probe tests recovery.
 
 ### Isolation Scope Matrix
 

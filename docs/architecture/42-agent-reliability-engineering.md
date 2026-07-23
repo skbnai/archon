@@ -329,34 +329,17 @@ The PRR gate ensures agents meet operational standards before reaching productio
 
 ### 4.3 PRR Process
 
+```mermaid
+flowchart TD
+    A["Agent Feature<br/>Development Complete"] --> B["Staging Validation<br/>1-2 weeks<br/>Golden Set Evaluation<br/>Load Test 2x Volume<br/>Adversarial Test Set"]
+    B --> C["PRR Submission<br/>Checklist Completed<br/>Submitted to ARE Team"]
+    C --> D["ARE Review<br/>3-5 Business Days<br/>Check Evidence<br/>Spot Check Results<br/>Review SLO Design"]
+    D --> E{Review<br/>Result}
+    E -->|Pass| F["Approved<br/>for Production"]
+    E -->|Fail| G["Conditional Approval<br/>Gaps must be closed<br/>within 2 weeks"]
 ```
-AGENT FEATURE DEVELOPMENT COMPLETE
-           │
-           ▼
-   STAGING VALIDATION (1–2 weeks)
-   - Golden set evaluation
-   - Load test at 2× expected volume
-   - Adversarial test set
-           │
-           ▼
-   PRR SUBMISSION
-   - PRR checklist completed by dev team
-   - Submitted to ARE team
-           │
-           ▼
-   ARE REVIEW (3–5 business days)
-   - Review each checklist item with evidence
-   - Run spot checks on evaluation results
-   - Review SLO design for achievability
-           │
-      ┌────┴────┐
-     PASS      FAIL
-      │         │
-      ▼         ▼
-   APPROVED  CONDITIONAL APPROVAL
-   for prod  (specific gaps must be
-              closed within 2 weeks)
-```
+
+Production Readiness Review process ensuring agents meet operational standards before production deployment.
 
 ---
 
@@ -643,33 +626,18 @@ Without ARE governance, model updates silently break production agents.
 
 ### 8.2 Model Update Protocol
 
+```mermaid
+flowchart TD
+    A["Provider Announces<br/>New Model Version"] --> B["Evaluation Harness Runs<br/>Automated, within 4 hours<br/>Full Golden Set Eval<br/>Compare vs Production<br/>Flag regressions < -2%"]
+    B --> C{Evaluation<br/>Result}
+    C -->|Pass<br/>Scores Equal/Better| D["Promote to Staging"]
+    C -->|Fail<br/>Regression Detected| E["Block Auto-Upgrade<br/>Create Jira Ticket<br/>Notify Model Team"]
+    E --> F["Investigate Options:<br/>1. Tune Prompt<br/>2. Pin Previous Version<br/>3. Accept Regression"]
+    D --> G["Shadow Test<br/>5% Traffic, 24h"]
+    G --> H["Promote to Production<br/>With 1-hour Monitoring"]
 ```
-PROVIDER ANNOUNCES NEW MODEL VERSION
-           │
-           ▼
-   EVALUATION HARNESS RUNS (automated, within 4 hours)
-   - Full golden set evaluation on new model version
-   - Compare against current production model scores
-   - Flag any dimension where new model scores < current - 2%
-           │
-      ┌────┴────┐
-   PASS        FAIL (regression detected)
-   (scores     │
-    equal or   ▼
-    better)  BLOCK auto-upgrade
-      │       Create Jira ticket with regression detail
-      ▼       Notify model team + product owner
-   PROMOTE    Investigate: prompt tuning? | version pinned? | model rejected?
-   to staging │
-      │       Options:
-      ▼       1. Tune prompt to recover performance → re-evaluate
-   SHADOW     2. Pin to previous version (notify team of vendor timeline)
-   TEST       3. Accept regression if tradeoff acceptable (documented decision)
-   (5%, 24h)
-      │
-      ▼
-   PROMOTE to production (with 1-hour monitoring period)
-```
+
+Automated model update protocol with evaluation gates, regression detection, and staged promotion to prevent quality regressions.
 
 ### 8.3 Model Version Pinning Policy
 

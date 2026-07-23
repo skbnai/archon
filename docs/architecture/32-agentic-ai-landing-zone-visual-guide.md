@@ -28,113 +28,59 @@ Architecture decisions require rapid visual communication. This guide provides d
 
 ### Decision Tree 1: Should You Build an Agent?
 
+```mermaid
+flowchart TD
+    A["Business Problem"] --> B{Can humans solve?}
+    B -->|NO| B1["Too complex<br/>Break down further"]
+    B -->|YES| C{Repetitive/<br/>High-volume?}
+    C -->|NO| C1["Maybe not worth<br/>automation"]
+    C -->|YES| D{Define success<br/>clearly?}
+    D -->|NO| D1["Refine success<br/>metrics first"]
+    D -->|YES| E{Have training<br/>data?}
+    E -->|NO| E1["Collect data<br/>weeks/months"]
+    E -->|YES| F{Compliance/<br/>Regulation?}
+    F -->|HIGH-RISK| F1["Extra time for<br/>compliance"]
+    F -->|LIMITED-RISK| F2["Standard<br/>implementation"]
+    F -->|MINIMAL| F3["Faster<br/>deployment"]
+    
+    F1 --> G["BUILD AGENT<br/>Timeline: 8 weeks<br/>Team: 3-5 people<br/>Cost: $50K-$200K"]
+    F2 --> G
+    F3 --> G
 ```
-START: Business Problem
-  │
-  ├─ Can humans currently solve this?
-  │  ├─ NO  → Too complex, need to break down further
-  │  └─ YES → Next question
-  │
-  ├─ Is it repetitive/high-volume?
-  │  ├─ NO  → Maybe not worth automation
-  │  └─ YES → Next question
-  │
-  ├─ Can you define success clearly?
-  │  ├─ NO  → Refine success metrics first
-  │  └─ YES → Next question
-  │
-  ├─ Do you have training data?
-  │  ├─ NO  → Collect data first (weeks/months)
-  │  └─ YES → Next question
-  │
-  ├─ Is compliance/regulation a concern?
-  │  ├─ HIGH-RISK → Allocate extra time for compliance
-  │  ├─ LIMITED-RISK → Standard implementation
-  │  └─ MINIMAL → Faster deployment
-  │
-  └─ DECISION: ✅ BUILD AGENT
-     ├─ Timeline: 8 weeks (Playbook 1)
-     ├─ Team: 3-5 people
-     └─ Cost: $50K-$200K (varies by complexity)
-```
+
+Decision tree guiding whether to build an agent based on solvability by humans, volume, success metrics, data availability, and compliance requirements.
 
 ### Decision Tree 2: Agent Risk Classification (EU AI Act)
 
+```mermaid
+flowchart TD
+    A["Your Agent"] --> B{Decisions affecting<br/>fundamental rights?<br/>employment, credit,<br/>justice, safety}
+    B -->|YES| C["HIGH-RISK - Annex III<br/>Conformity assessment required<br/>Deadline: Dec 2, 2027<br/>Effort: 3-4 weeks<br/>Penalties: €35M"]
+    B -->|NO| D{Interacts with<br/>end users?}
+    D -->|YES| E["LIMITED-RISK<br/>Transparency disclosure required<br/>Deadline: Aug 2, 2026<br/>Effort: 1-2 days<br/>Example: Chatbots, recommendations"]
+    D -->|NO| F["MINIMAL-RISK<br/>No specific compliance<br/>Effort: None<br/>Example: Internal analytics"]
 ```
-START: Your Agent
-  │
-  ├─ Does it make decisions affecting fundamental rights?
-  │  │  (employment, credit, justice, asylum, safety-critical)
-  │  │
-  │  ├─ YES → HIGH-RISK (Annex III)
-  │  │   ├─ Requires: Conformity assessment ✓
-  │  │   ├─ Deadline: December 2, 2027 (Omnibus deferral) ⏰
-  │  │   ├─ Effort: 3-4 weeks
-  │  │   └─ Penalties: €35M if non-compliant
-  │  │
-  │  └─ NO → Next question
-  │
-  ├─ Does it interact with end users?
-  │  ├─ YES → LIMITED-RISK
-  │  │   ├─ Requires: Transparency disclosure ✓
-  │  │   ├─ Deadline: August 2, 2026 (Art. 50 — in force) ⏰
-  │  │   ├─ Effort: 1-2 days
-  │  │   └─ Example: Chatbots, recommendation systems
-  │  │
-  │  └─ NO → MINIMAL-RISK
-  │      ├─ Requires: No specific compliance
-  │      ├─ Effort: None
-  │      └─ Example: Internal analytics, spam filters
-```
+
+EU AI Act risk classification for agents based on impact on fundamental rights and user interaction.
 
 ### Decision Tree 3: Multi-Agent Pattern Selection
 
+```mermaid
+flowchart TD
+    A["Your Workflow"] --> B{Linear workflow<br/>step-by-step?}
+    B -->|YES| C["SEQUENTIAL Pattern<br/>Intake → Validation → Decision → Response<br/>Pros: Simple, deterministic | Cons: Slow"]
+    B -->|NO| D{One coordinator &<br/>many specialists?}
+    D -->|YES| E["SUPERVISOR Pattern<br/>Route to specialists<br/>Pros: Parallel, clear roles | Cons: Bottleneck"]
+    D -->|NO| F{Clear organizational<br/>hierarchy?}
+    F -->|YES| G["HIERARCHICAL Pattern<br/>Support tiers, escalation<br/>Pros: Maps org | Cons: Slow escalation"]
+    F -->|NO| H{All agents identical<br/>capability?}
+    H -->|YES| I["POOL Pattern<br/>Parallel identical tasks<br/>Pros: High throughput | Cons: No specialization"]
+    H -->|NO| J{Emergent<br/>self-organizing?}
+    J -->|YES| K["SWARM Pattern<br/>Exploration, research, complex<br/>Pros: Resilient | Cons: Unpredictable"]
+    J -->|NO| L["MESH Pattern<br/>Complex interdependencies<br/>Pros: Flexible | Cons: Hard to control"]
 ```
-START: Your Workflow
-  │
-  ├─ Is the workflow linear (step-by-step)?
-  │  ├─ YES → SEQUENTIAL Pattern
-  │  │   ├─ Best for: Intake → Validation → Decision → Response
-  │  │   ├─ Pros: Simple, deterministic
-  │  │   └─ Cons: Slow (serial execution)
-  │  │
-  │  └─ NO → Next question
-  │
-  ├─ Do you have one coordinator and many specialists?
-  │  ├─ YES → SUPERVISOR Pattern
-  │  │   ├─ Best for: Customer service (route to specialists)
-  │  │   ├─ Pros: Parallel execution, clear roles
-  │  │   └─ Cons: Supervisor becomes bottleneck
-  │  │
-  │  └─ NO → Next question
-  │
-  ├─ Does your org have a clear hierarchy?
-  │  ├─ YES → HIERARCHICAL Pattern
-  │  │   ├─ Best for: Support tiers, escalation
-  │  │   ├─ Pros: Maps to org structure
-  │  │   └─ Cons: Slow escalation
-  │  │
-  │  └─ NO → Next question
-  │
-  ├─ Are all agents identical (same capability)?
-  │  ├─ YES → POOL Pattern
-  │  │   ├─ Best for: Parallel identical tasks
-  │  │   ├─ Pros: High throughput, auto-scaling
-  │  │   └─ Cons: No specialization
-  │  │
-  │  └─ NO → Next question
-  │
-  ├─ Do you need emergent, self-organizing behavior?
-  │  ├─ YES → SWARM Pattern
-  │  │   ├─ Best for: Exploration, research, complex problems
-  │  │   ├─ Pros: Resilient, adaptive
-  │  │   └─ Cons: Unpredictable, hard to debug
-  │  │
-  │  └─ NO → MESH Pattern
-  │      ├─ Best for: Complex interdependencies
-  │      ├─ Pros: Flexible, no bottlenecks
-  │      └─ Cons: Chaotic, hard to control
-```
+
+Decision tree for selecting multi-agent patterns based on workflow characteristics, organizational structure, and capability requirements.
 
 ---
 
@@ -142,134 +88,67 @@ START: Your Workflow
 
 ### Diagram 1: Complete Landing Zone Stack
 
+```mermaid
+graph TB
+    L0["<b>LAYER 0: Strategy & Governance Foundation</b><br/>AI Operating Model | Risk Appetite | Compliance"]
+    L1["<b>LAYER 1: Cloud Platform Landing Zone</b><br/>Identity & Access | Networking | Security Baseline"]
+    L2["<b>LAYER 2: AI/Agent Platform Foundation</b><br/>Compute Fabric | Model Access | Orchestration Runtime | Tool Integration"]
+    L3["<b>LAYER 3: Agent Trust & Governance</b><br/>Agent Identity & Registry | Runtime Guardrails | Risk Monitoring | Observability"]
+    L4["<b>LAYER 4: Data / Knowledge Plane</b><br/>Vector Stores | Knowledge Graphs | RAG Pipelines | Data Governance | Data Lineage"]
+    L5["<b>LAYER 5: Application / Agent Experience</b><br/>Orchestrator Agents | Domain Agents | User Interfaces"]
+    L6["<b>LAYER 6: Operations & Lifecycle</b><br/>CI/CD Pipelines | Monitoring | Incident Response | Continuous Improvement"]
+    
+    L0 --> L1
+    L1 --> L2
+    L2 --> L3
+    L3 --> L4
+    L4 --> L5
+    L5 --> L6
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│ LAYER 6: OPERATIONS & LIFECYCLE (DevOps/MLOps/AgentOps)         │
-│ ├─ CI/CD Pipelines  ├─ Monitoring  ├─ Incident Response         │
-│ └─ Continuous Improvement                                        │
-└─────────────────────────────────────────────────────────────────┘
-                              ↑
-┌─────────────────────────────────────────────────────────────────┐
-│ LAYER 5: APPLICATION / AGENT EXPERIENCE                         │
-│ ├─ Orchestrator Agents  ├─ Domain Agents  ├─ User Interfaces   │
-└─────────────────────────────────────────────────────────────────┘
-                              ↑
-┌─────────────────────────────────────────────────────────────────┐
-│ LAYER 4: DATA / KNOWLEDGE PLANE                                 │
-│ ├─ Vector Stores  ├─ Knowledge Graphs  ├─ RAG Pipelines        │
-│ ├─ Data Governance  ├─ Privacy Controls  ├─ Data Lineage       │
-└─────────────────────────────────────────────────────────────────┘
-                              ↑
-┌─────────────────────────────────────────────────────────────────┐
-│ LAYER 3: AGENT TRUST & GOVERNANCE PLANE                         │
-│ ├─ Agent Identity & Registry  ├─ Runtime Guardrails             │
-│ ├─ Risk Monitoring  ├─ Behavioral Analytics  ├─ Observability   │
-└─────────────────────────────────────────────────────────────────┘
-                              ↑
-┌─────────────────────────────────────────────────────────────────┐
-│ LAYER 2: AI/AGENT PLATFORM FOUNDATION                           │
-│ ├─ Compute Fabric (GPU/CPU/Serverless)  ├─ Model Access        │
-│ ├─ Orchestration Runtime  ├─ Tool Integration                   │
-└─────────────────────────────────────────────────────────────────┘
-                              ↑
-┌─────────────────────────────────────────────────────────────────┐
-│ LAYER 1: CLOUD PLATFORM LANDING ZONE                            │
-│ ├─ Identity & Access  ├─ Networking  ├─ Security Baseline       │
-└─────────────────────────────────────────────────────────────────┘
-                              ↑
-┌─────────────────────────────────────────────────────────────────┐
-│ LAYER 0: STRATEGY & GOVERNANCE FOUNDATION                       │
-│ ├─ AI Operating Model  ├─ Risk Appetite  ├─ Compliance          │
-└─────────────────────────────────────────────────────────────────┘
-```
+
+Agentic AI landing zone organized as 7 layers, from governance foundation (bottom) through cloud platform, agent infrastructure, data plane, applications, and operations (top).
 
 ### Diagram 2: Context Assembly Flow
 
+```mermaid
+flowchart TD
+    A["User Request"] --> B["Identify Sources<br/>What data does agent need?"]
+    B --> C["Fetch Data via MCP<br/>Customer DB | Policy Docs | Real-time APIs"]
+    C --> D["Compress<br/>Summarize | Remove redundancy | Prioritize"]
+    D --> E["Secure<br/>Mask PII | Check access | Audit log"]
+    E --> F["Inject Into Prompt<br/>System: Knowledge | User: Request | Examples: Few-shot"]
+    F --> G["Agent Reasoning<br/>LLM Decision"]
+    G --> H["Output Generated"]
 ```
-User Request
-    ↓
-┌─────────────────────────────┐
-│ IDENTIFY SOURCES                │
-│ What data does agent need?      │
-└──────────────┬──────────────────┘
-               ↓
-┌─────────────────────────────┐
-│ FETCH DATA (MCP)                │
-│ └─ Customer DB (row-level sec)  │
-│ └─ Policy documents (vector DB) │
-│ └─ Real-time APIs (rate limited)│
-└──────────────┬──────────────────┘
-               ↓
-┌─────────────────────────────┐
-│ COMPRESS                        │
-│ └─ Summarize if > 100KB         │
-│ └─ Remove redundancy            │
-│ └─ Prioritize high-signal       │
-└──────────────┬──────────────────┘
-               ↓
-┌─────────────────────────────┐
-│ SECURE                          │
-│ └─ Mask PII (SSN → ***-**-1234) │
-│ └─ Check row-level access       │
-│ └─ Audit log access             │
-└──────────────┬──────────────────┘
-               ↓
-┌─────────────────────────────┐
-│ INJECT INTO PROMPT              │
-│ System: Strategic knowledge     │
-│ User: Immediate data + request  │
-│ Examples: Few-shot learning     │
-└──────────────┬──────────────────┘
-               ↓
-         Agent Reasoning
-         (LLM Decision)
-               ↓
-          Output Generated
-```
+
+Context assembly flow showing how data is gathered from multiple sources via Model Context Protocol, compressed, secured, and injected into the agent's prompt before reasoning begins.
 
 ### Diagram 3: Evaluation Pipeline Stages
 
+```mermaid
+flowchart TD
+    subgraph Dev["DEV ENVIRONMENT"]
+        A["Code Written"] --> B["Offline Eval<br/>Golden Dataset<br/>50+ test cases<br/>Target: 80%+"]
+        B --> C1{PASS}
+    end
+    
+    subgraph Staging["STAGING ENVIRONMENT"]
+        D["Deploy Agent"] --> E["Shadow Mode<br/>Parallel to Prod<br/>24 hour eval"]
+        E --> C2{PASS}
+    end
+    
+    subgraph Prod["PRODUCTION ENVIRONMENT"]
+        F["Canary Deploy<br/>5% traffic<br/>4 hours"] --> C3{PASS}
+        C3 --> G["Full Deployment<br/>100% traffic<br/>Blue-green<br/>24 hour stable"]
+        G --> H["PRODUCTION LIVE"]
+        H --> I["Monitor Metrics<br/>Daily tracking<br/>Weekly reviews<br/>Monthly audits"]
+    end
+    
+    C1 --> D
+    C2 --> F
 ```
-DEV ENVIRONMENT                   STAGING ENVIRONMENT
-┌──────────────────┐             ┌──────────────────┐
-│ Code Written     │             │ Deploy Agent     │
-└────────┬─────────┘             └────────┬─────────┘
-         ↓                                 ↓
-┌──────────────────┐             ┌──────────────────┐
-│ Offline Eval     │             │ Shadow Mode      │
-│ Golden Dataset   │             │ Parallel to Prod │
-│ 50+ test cases   │             │ 24 hour eval     │
-│ Target: 80%+ ✓   │             │ Metrics: ✓       │
-└────────┬─────────┘             └────────┬─────────┘
-         ↓                                 ↓
-      PASS ✓                           PASS ✓
-         ↓                                 ↓
-    PRODUCTION ENVIRONMENT
-    ┌──────────────────┐
-    │ Canary Deploy    │
-    │ 5% traffic       │
-    │ 4 hours          │
-    │ Metrics: ✓       │
-    └────────┬─────────┘
-             ↓
-          PASS ✓
-             ↓
-    ┌──────────────────┐
-    │ Full Deployment  │
-    │ 100% traffic     │
-    │ Blue-green       │
-    │ 24 hour stable   │
-    └────────┬─────────┘
-             ↓
-    PRODUCTION LIVE ✅
-             ↓
-    ┌──────────────────┐
-    │ Monitor Metrics  │
-    │ Daily tracking   │
-    │ Weekly reviews   │
-    │ Monthly audits   │
-    └──────────────────┘
-```
+
+Staged evaluation pipeline moving agents from development through staging shadow mode to production canary and full deployment with continuous monitoring.
 
 ---
 
@@ -808,35 +687,28 @@ Cryptographically signed claim about an agent's identity, capabilities, or deleg
 
 ### Cross-Reference Map
 
+```mermaid
+graph TB
+    KN["Knowledge Base"] 
+    
+    BL["Business Layer<br/>Links: Operating Model, Portfolio, ROI<br/>Audience: Executives, product owners"] 
+    EU["EU AI Act Compliance<br/>Links: Risk classification, governance<br/>Audience: Legal, compliance, security"]
+    PL["Platform Layer<br/>Links: Agent lifecycle, registry, marketplace<br/>Audience: Architects, platform engineers"]
+    CE["Context Engineering<br/>Links: Data sources, compression, security<br/>Audience: Engineers, data architects"]
+    EF["Evaluation Framework<br/>Links: Golden datasets, metrics, gates<br/>Audience: QA, product teams, operations"]
+    MA["Multi-Agent Architectures<br/>Links: Patterns, decision trees<br/>Audience: Architects, advanced teams"]
+    IP["Implementation Playbooks<br/>Links: All other documents<br/>Audience: Teams executing all phases"]
+    
+    KN --> BL
+    KN --> EU
+    KN --> PL
+    KN --> CE
+    KN --> EF
+    KN --> MA
+    KN --> IP
 ```
-Business Layer
-    ├─ Links to: Operating Model, Portfolio, ROI
-    └─ Used by: Executives, product owners, governance boards
 
-EU AI Act Compliance
-    ├─ Links to: Risk classification, governance, audit readiness
-    └─ Used by: Legal, compliance, security teams
-
-Platform Layer
-    ├─ Links to: Agent lifecycle, registry schema, marketplace
-    └─ Used by: Architects, platform engineers
-
-Context Engineering
-    ├─ Links to: Data sources, compression, security
-    └─ Used by: Engineers, data architects
-
-Evaluation Framework
-    ├─ Links to: Golden datasets, metrics, gates
-    └─ Used by: QA, product teams, operations
-
-Multi-Agent Architectures
-    ├─ Links to: Patterns, decision trees, implementations
-    └─ Used by: Architects, advanced teams
-
-Implementation Playbooks
-    ├─ Links to: All other documents
-    └─ Used by: Teams executing each phase
-```
+Cross-reference map showing how knowledge base sections connect and which audience each serves.
 
 ---
 

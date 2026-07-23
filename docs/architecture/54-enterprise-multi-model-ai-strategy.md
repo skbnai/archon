@@ -73,37 +73,53 @@ Standardising on one foundation model is superficially appealing — simpler ope
 
 ### 1.2 Business Case for Multi-Model
 
-<!-- TODO(diagram): SINGLE-MODEL RISK SURFACE showing risks concentrating at one provider vs MULTI-MODEL RISK DISTRIBUTION across specialised providers with AI gateway abstraction layer -->
+Single-Model Risk Concentration vs. Multi-Model Risk Distribution
 
+```mermaid
+graph TB
+    subgraph SINGLE["Single-Model Risk Surface"]
+        RS1["Price<br/>Shock"]
+        RS2["Competitive<br/>Disadvantage"]
+        RS3["Model-Specific<br/>Limitations"]
+        RS4["Outage<br/>Risk"]
+        RS5["Regulatory<br/>Risk"]
+        RS6["Lock-in<br/>Cost"]
+        
+        PLAT["YOUR ENTIRE<br/>AI PLATFORM<br/>one provider"]
+        
+        RS1 -->|Risks concentrate| PLAT
+        RS2 -->|Risks concentrate| PLAT
+        RS3 -->|Risks concentrate| PLAT
+        RS4 -->|Risks concentrate| PLAT
+        RS5 -->|Risks concentrate| PLAT
+        RS6 -->|Risks concentrate| PLAT
+    end
+    
+    subgraph MULTI["Multi-Model Risk Distribution"]
+        TA["Task A<br/>Reasoning"]
+        TB["Task B<br/>Code Gen"]
+        TC["Task C<br/>Vision"]
+        
+        CA["Claude"]
+        CB["Codex/GPT"]
+        CC["Gemini"]
+        CD["Local<br/>Llama"]
+        
+        TA --> CA
+        TB --> CB
+        TC --> CC
+        TC --> CD
+        
+        CA -->|Route| GW["AI GATEWAY<br/>Abstraction Layer"]
+        CB -->|Route| GW
+        CC -->|Route| GW
+        CD -->|Route| GW
+        
+        GW --> APPS["YOUR APPLICATIONS"]
+    end
 ```
-SINGLE-MODEL RISK SURFACE
 
-                    Competitive         Model-specific
-Price shock         disadvantage         limitations
-    │                   │                    │
-    ▼                   ▼                    ▼
-┌───────────────────────────────────────────────────┐
-│             YOUR ENTIRE AI PLATFORM               │
-│                 (one provider)                    │
-└───────────────────────────────────────────────────┘
-    ▲                   ▲                    ▲
-    │                   │                    │
-Outage risk       Regulatory risk       Lock-in cost
-
-MULTI-MODEL RISK DISTRIBUTION
-
-  Task A          Task B              Task C
-(reasoning)    (code gen)          (vision)
-    │               │                   │
-    ▼               ▼                   ▼
-[Claude]        [Codex/GPT]         [Gemini]   [Local Llama]
-    │               │                   │            │
-    └───────────────┴───────────────────┴────────────┘
-                  AI GATEWAY
-                (abstraction layer)
-                       │
-              YOUR APPLICATIONS
-```
+Single-model strategies concentrate all failure modes at one provider. Multi-model distributes risk across specialized providers via an abstraction layer, enabling independent scaling, vendor independence, and task-optimized routing.
 
 ### 1.3 Multi-Model Enables Specialisation
 
@@ -136,43 +152,68 @@ Different models have genuinely different capability profiles — not just marke
 
 ### 2.1 Decision Guide
 
-```
-Start here: What is your primary AI risk?
+Enterprise Model Strategy Selection Decision Tree
 
-    ├── Cost / budget?
-    │       └── Multi-model with routing → 40–70% cost savings
-    │
-    ├── Vendor reliability / outage?
-    │       └── Multi-model with failover → 99.9%+ AI availability
-    │
-    ├── Regulatory / data sovereignty?
-    │       └── Hybrid (commercial + on-premise open-source)
-    │
-    ├── Best task performance?
-    │       └── Multi-model with task-routing
-    │
-    └── Low operational overhead above all?
-            └── Single-model (accept the trade-offs)
+```mermaid
+graph TD
+    START["What is your<br/>primary AI risk?"]
+    
+    COST{Cost / Budget<br/>Sensitivity?}
+    VENDOR{Vendor Reliability<br/>Concerns?}
+    REGULATORY{Regulatory /<br/>Data Sovereignty?}
+    PERF{Best Task<br/>Performance?}
+    OVERHEAD{Low Operational<br/>Overhead?}
+    
+    COST_RES["Multi-Model with<br/>Routing<br/>40-70% cost<br/>savings"]
+    
+    VENDOR_RES["Multi-Model with<br/>Failover<br/>99.9%+ AI<br/>availability"]
+    
+    REG_RES["Hybrid Strategy<br/>Commercial +<br/>On-Premise<br/>Open-Source"]
+    
+    PERF_RES["Multi-Model<br/>with Task-<br/>Routing"]
+    
+    OVERHEAD_RES["Single-Model<br/>Accept<br/>Trade-Offs"]
+    
+    START --> COST
+    START --> VENDOR
+    START --> REGULATORY
+    START --> PERF
+    START --> OVERHEAD
+    
+    COST -->|Yes| COST_RES
+    VENDOR -->|Yes| VENDOR_RES
+    REGULATORY -->|Yes| REG_RES
+    PERF -->|Yes| PERF_RES
+    OVERHEAD -->|Yes| OVERHEAD_RES
 ```
+
+Choose your model strategy based on which risk factor dominates your organization: cost sensitivity, vendor resilience, regulatory compliance, task performance, or operational simplicity.
 
 ### 2.2 The Hybrid Strategy (Recommended Default)
 
 Most enterprises land on a hybrid: **one or two commercial providers plus one self-hosted open-source tier**, connected through an AI gateway abstraction layer.
 
+Hybrid Model Tiering Architecture
+
+```mermaid
+graph TD
+    GW["AI GATEWAY LAYER<br/>LiteLLM / Kong AI / Custom SDK"]
+    
+    T1["TIER 1: Premium<br/>Claude Fable, GPT-4o<br/>Complex tasks<br/>~$5-50/MTok"]
+    
+    T2["TIER 2: Mid-Tier<br/>Haiku 4.5, Gemini Flash<br/>Standard tasks<br/>~$0.10-1/MTok"]
+    
+    T3["TIER 3: Self-Hosted<br/>Llama 3.3 70B, Mistral 7B<br/>High-volume, air-gap<br/>~$0.003/MTok GPU cost"]
+    
+    APP["Applications"]
+    
+    APP --> GW
+    GW --> T1
+    GW --> T2
+    GW --> T3
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    AI GATEWAY LAYER                     │
-│           (LiteLLM / Kong AI / Custom SDK)              │
-└───────┬───────────────┬─────────────────┬───────────────┘
-        │               │                 │
-        ▼               ▼                 ▼
-   TIER 1:         TIER 2:          TIER 3:
-   Premium         Mid-tier         Self-hosted
-   (Claude Fable,  (Haiku 4.5,      (Llama 3.3 70B,
-    GPT-4o)         Gemini Flash)    Mistral 7B)
-   Complex tasks   Standard tasks   High-volume / air-gap
-   ~$5–50/MTok     ~$0.10–1/MTok    ~$0.003/MTok (GPU cost)
-```
+
+Hybrid architecture routes complex reasoning tasks to premium models (T1), standard workloads to cost-efficient commercial models (T2), and high-volume or air-gap requirements to self-hosted open-source (T3), all coordinated through an AI gateway abstraction layer.
 
 ---
 

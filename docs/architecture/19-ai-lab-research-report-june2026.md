@@ -133,9 +133,10 @@ Returning plain text or markdown payloads limits user interaction. The market ha
 
 #### Technical Insight
 
-```
-[MCP Server] ──(Structured Data)──> [UI Interface Def] ──(streamUI / RSC)──> [Dynamic Frontend Component]
-
+```mermaid
+graph LR
+    MCP["MCP Server"] -- "Structured Data" --> UID["UI Interface Def"]
+    UID -- "streamUI / RSC" --> DFC["Dynamic Frontend Component"]
 ```
 
 > **The Shift to Component Architecture:** Under this model, frontend engineering shifts from building static dashboards to crafting responsive UI blueprints that external agents can call upon dynamically. By combining CopilotKit with MCP backends, organizations are building resilient, complex applications in fractions of traditional development cycles (e.g., Thomson Reuters' CoCounsel deployment).
@@ -255,27 +256,21 @@ Categorized by problem domain and infrastructure layer.
 
 ### 3. Generative UI & Context Protocols
 
-```
-               ┌────────────────────────┐
-               │  Model Context Protocol│
-               └───────────┬────────────┘
-                           │ (Structured Data)
-                           ▼
-               ┌────────────────────────┐
-               │    Vercel AI SDK 6     │
-               └───────────┬────────────┘
-                           │ (React Server Components)
-                           ▼
-               ┌────────────────────────┐
-               │  CopilotKit / AG-UI    │
-               └───────────┬────────────┘
-                           │ (Real-Time State Stream)
-                           ▼
-               ┌────────────────────────┐
-               │   Dynamic Frontend     │
-               └────────────────────────┘
+MCP-to-Frontend Data Flow
 
+```mermaid
+graph TB
+    MCP["Model Context Protocol"]
+    SDK["Vercel AI SDK 6"]
+    TOOLKIT["CopilotKit / AG-UI"]
+    FRONTEND["Dynamic Frontend"]
+    
+    MCP -->|Structured Data| SDK
+    SDK -->|React Server Components| TOOLKIT
+    TOOLKIT -->|Real-Time State Stream| FRONTEND
 ```
+
+MCP-to-Frontend data pipeline: Model Context Protocol defines the structured data contract, which flows through Vercel AI SDK for streaming React Server Components, then CopilotKit synchronizes real-time state to the dynamic frontend.
 
 * **Model Context Protocol (MCP):** The open standard protocol enabling LLMs to maintain secure, structured bi-directional data exchange with local and remote tools.
 * **Vercel AI SDK 6:** Advanced frontend integration toolkit featuring `streamUI` for streaming React Server Components and unified multi-step tool execution hooks.
@@ -315,15 +310,30 @@ To successfully operationalize the findings of this report, engineering organiza
 
 ### Migration Roadmap: From Prototype to Production
 
-```
-   [STAGE 1: PROTOTYPE]                   [STAGE 2: HARDENED RUNTIME]
-   Open-ended agent loops   ───────────>  Deterministic State Machines (LangGraph/Temporal)
-   Static similarity RAG    ───────────>  GraphRAG + Neurosymbolic Guardrails
-   Plain Text/JSON payloads ───────────>  Generative UI + Model Context Protocol (MCP)
-   Multi-vendor audio hops  ───────────>  Co-located Single-Cluster Voice Infrastructures
-   Self-Reflective Tuning   ───────────>  Cross-Family Model Curation (Snorkel/Cleanlab)
+Prototype-to-Production Transformation Stages
 
+```mermaid
+graph LR
+    P1["Prototype:<br/>Open-ended agent loops"]
+    P2["Prototype:<br/>Static similarity RAG"]
+    P3["Prototype:<br/>Plain Text/JSON payloads"]
+    P4["Prototype:<br/>Multi-vendor audio hops"]
+    P5["Prototype:<br/>Self-Reflective Tuning"]
+    
+    H1["Hardened:<br/>Deterministic State Machines<br/>LangGraph/Temporal"]
+    H2["Hardened:<br/>GraphRAG +<br/>Neurosymbolic Guardrails"]
+    H3["Hardened:<br/>Generative UI + MCP"]
+    H4["Hardened:<br/>Co-located Single-Cluster<br/>Voice Infrastructure"]
+    H5["Hardened:<br/>Cross-Family Model<br/>Curation Snorkel/Cleanlab"]
+    
+    P1 -->|Transform| H1
+    P2 -->|Transform| H2
+    P3 -->|Transform| H3
+    P4 -->|Transform| H4
+    P5 -->|Transform| H5
 ```
+
+Organizations transition from exploratory prototypes to deterministic, production-grade architectures across five critical dimensions: agent orchestration, information retrieval, user interfaces, voice infrastructure, and data integrity.
 
 | Domain | Baseline (Fragile Approach) | Target Architecture (Production-Grade) | Business/Operational Impact |
 | --- | --- | --- | --- |

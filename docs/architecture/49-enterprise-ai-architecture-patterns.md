@@ -61,36 +61,17 @@ Foundation models have a knowledge cutoff and no access to your enterprise data.
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["Knowledge Base<br/>PDFs, docs, wiki, DB, APIs"] -->|Chunk + Embed| B["Vector Store<br/>Pinecone/pgvector"]
+    C["User Query"] --> D["Embedder"]
+    D -->|Query vector| E["Vector Store Search"]
+    E -->|Top-k chunks| F["Reranker<br/>Cross-encoder scoring"]
+    F -->|Top-n chunks| G["Claude Generator<br/>System: Answer using context<br/>Context: chunks<br/>User: query"]
+    G --> H["Response"]
 ```
-                        ┌─────────────────────────────┐
-  INDEXING              │        KNOWLEDGE BASE        │
-  (offline)             │  PDFs, docs, wiki, DB, APIs  │
-                        └──────────────┬──────────────┘
-                                       │ Chunk + Embed
-                                       ▼
-                               ┌───────────────┐
-                               │  Vector Store  │
-                               │(Pinecone/pgvec)│
-                               └───────────────┘
 
-  RETRIEVAL             User Query
-  (online)                  │
-                        [Embedder]
-                            │ Query vector
-                       [Vector Store]
-                            │ Top-k chunks (by similarity)
-                       [Reranker] ← Cross-encoder scoring
-                            │ Top-n reranked chunks
-                   ┌────────────────────┐
-                   │   Claude (Generator)    │
-                   │  System: Answer using   │
-                   │  the provided context.  │
-                   │  Context: [chunks]      │
-                   │  User: [query]          │
-                   └──────────┬─────────────┘
-                              │
-                           Response
-```
+RAG (Retrieval-Augmented Generation) showing offline indexing pipeline (knowledge base chunking and embedding into vector store) and online retrieval pipeline (query embedding, similarity search, reranking, generation).
 
 ### Key Components
 
@@ -201,29 +182,20 @@ Standard RAG uses a fixed retrieval strategy for every query. Some queries need 
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["User Query"] --> B["Routing Agent<br/>Claude Sonnet 5<br/>Decide: retrieve/answer/<br/>multi-hop reasoning"]
+    B --> C{Routing<br/>Decision}
+    C -->|Direct Answer| D["Direct Answer"]
+    C -->|Needs Retrieval| E["Retrieval Tool"]
+    E --> F["Vector Store"]
+    F --> G["Read Results"]
+    G --> H{Information<br/>Sufficient?}
+    H -->|No| E
+    H -->|Yes| I["Synthesise Answer"]
 ```
-User Query
-    │
-    ▼
-┌─────────────────────────────────────────┐
-│         ROUTING AGENT (Sonnet 5)        │
-│  Decision: retrieve / answer directly / │
-│  retrieve → read → decide → retrieve    │
-└──────────┬──────────────────────────────┘
-           │
-    ┌──────┴──────────────┐
-    │                     │
-    ▼                     ▼
-[Direct Answer]    [Retrieval Tool]
-                        │
-                   [Vector Store]
-                        │
-                   [Read Results]
-                        │
-                   [Need more?] → [Retrieval Tool] again
-                        │ No
-                   [Synthesise Answer]
-```
+
+Agentic RAG where the model decides whether and when to retrieve, supporting multi-hop reasoning and dynamic retrieval decisions.
 
 ### Key Components
 
@@ -275,13 +247,15 @@ while response.stop_reason == "tool_use":
 
 Agentic RAG can query multiple sources in parallel:
 
-```
-Agent decides:
-  ├─ Search internal wiki (Tool A)
-  ├─ Search customer records (Tool B)  ← parallel
-  └─ Search product catalogue (Tool C)
-
-Results merged → Agent synthesises unified answer
+```mermaid
+flowchart TD
+    A["Agent Decides"] --> B["Search Internal Wiki<br/>Tool A"]
+    A --> C["Search Customer Records<br/>Tool B"]
+    A --> D["Search Product Catalogue<br/>Tool C"]
+    B --> E["Merge Results"]
+    C --> E
+    D --> E
+    E --> F["Agent Synthesises<br/>Unified Answer"]
 ```
 
 ### Antipatterns
@@ -300,34 +274,19 @@ Some tasks are too large for a single agent's context window, benefit from paral
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["User Goal"] --> B["Orchestrator Agent<br/>Claude Fable 5<br/>Decomposes goal<br/>Routes to workers<br/>Aggregates results<br/>Handles errors"]
+    B -->|Plans tasks| C["Worker A<br/>Claude Haiku<br/>Data Fetch"]
+    B -->|Plans tasks| D["Worker B<br/>Claude Sonnet 5<br/>Analysis"]
+    B -->|Plans tasks| E["Worker C<br/>Claude Haiku<br/>Formatting"]
+    C -->|Results| F["Orchestrator<br/>Synthesises Results"]
+    D -->|Results| F
+    E -->|Results| F
+    F --> G["Output"]
 ```
-                    ┌─────────────────────────┐
-     User Goal ───► │   ORCHESTRATOR AGENT     │
-                    │   (Claude Fable 5)       │
-                    │   - Decomposes goal      │
-                    │   - Routes to workers    │
-                    │   - Aggregates results   │
-                    │   - Handles errors       │
-                    └───────────┬─────────────┘
-                                │ Plans tasks
-              ┌─────────────────┼──────────────────┐
-              │                 │                   │
-              ▼                 ▼                   ▼
-    ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
-    │  WORKER A    │  │  WORKER B    │  │  WORKER C    │
-    │(Claude Haiku)│  │(Sonnet 5)    │  │(Claude Haiku)│
-    │  Data fetch  │  │  Analysis    │  │  Formatting  │
-    └──────┬───────┘  └──────┬───────┘  └──────┬───────┘
-           │                 │                  │
-           └─────────────────┼──────────────────┘
-                             │ Results
-                    ┌────────▼────────┐
-                    │  ORCHESTRATOR   │
-                    │  Synthesises    │
-                    └────────┬────────┘
-                             │
-                          Output
-```
+
+Multi-agent orchestration with specialized workers for different capabilities (data fetch, analysis, formatting) coordinated by a Fable 5 orchestrator that decomposes goals and aggregates results.
 
 ### Task Decomposition Strategies
 
@@ -350,20 +309,14 @@ Some tasks are too large for a single agent's context window, benefit from paral
 
 ### Error Handling in Agent Chains
 
-```
-Worker fails
-    │
-    ├─ Transient (timeout, rate limit)?
-    │      → Retry with exponential backoff (max 3 attempts)
-    │
-    ├─ Data error (invalid input)?
-    │      → Return structured error to orchestrator
-    │             → Orchestrator decides: skip / rephrase / escalate
-    │
-    └─ Model error (tool call failed, parse error)?
-           → Return error with context to orchestrator
-                  → Orchestrator can attempt alternative approach
-                        or route to HITL
+```mermaid
+flowchart TD
+    A["Worker Fails"] --> B{Error Type}
+    B -->|Transient<br/>Timeout/Rate Limit| C["Retry with<br/>Exponential Backoff<br/>Max 3 Attempts"]
+    B -->|Data Error<br/>Invalid Input| D["Return Structured Error<br/>to Orchestrator"]
+    D --> E["Orchestrator Decides:<br/>Skip / Rephrase / Escalate"]
+    B -->|Model Error<br/>Tool/Parse Failure| F["Return Error with Context<br/>to Orchestrator"]
+    F --> G["Orchestrator:<br/>Alternative Approach<br/>or Route to HITL"]
 ```
 
 **Key principle:** Workers return structured results including error states. The orchestrator, not the worker, decides how to handle failure.
@@ -387,25 +340,19 @@ A large batch of independent AI tasks needs to complete in acceptable time. Sequ
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["Input Batch<br/>N Items"] --> B["Splitter"]
+    B -->|N Tasks| C["Worker 1<br/>Concurrent AI Call"]
+    B -->|N Tasks| D["Worker 2<br/>Concurrent AI Call"]
+    B -->|N Tasks| E["Worker N<br/>Concurrent AI Call"]
+    C -->|Result| F["Aggregator"]
+    D -->|Result| F
+    E -->|Result| F
+    F --> G["Output"]
 ```
-       Input batch (N items)
-              │
-        ┌─────┴─────┐
-        │  SPLITTER  │
-        └─────┬─────┘
-              │ N tasks
-    ┌─────────┼─────────┐
-    ▼         ▼         ▼
-[Worker 1] [Worker 2] [Worker n]  ← Concurrent AI calls
-    │         │         │
-    └─────────┼─────────┘
-              │ N results
-        ┌─────┴─────┐
-        │ AGGREGATOR │
-        └─────┬─────┘
-              │
-           Output
-```
+
+Parallel fan-out pattern for processing large batches of independent AI tasks concurrently, then aggregating results.
 
 ### Implementation
 
@@ -497,31 +444,32 @@ Multiple teams, services, and applications each implement their own AI integrati
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["App 1"] --> B["AI Gateway"]
+    C["App 2"] --> B
+    D["App 3"] --> B
+    
+    B -->|Auth<br/>mTLS, API Key| E["Auth Module"]
+    B -->|Rate Limiting<br/>per Team| F["Rate Limiter"]
+    B -->|Model Routing<br/>by cost| G["Router"]
+    B -->|Logging<br/>& Cost Tracking| H["Logger & Cost Tracker"]
+    B -->|Semantic<br/>Caching| I["Cache"]
+    B -->|Fallback| J["Fallback Logic"]
+    
+    E --> K["Claude"]
+    F --> K
+    G --> K
+    K --> L["Model Providers"]
+    K --> M["OpenAI"]
+    K --> N["Bedrock"]
+    
+    H --> L
+    I --> L
+    J --> L
 ```
-  Applications / Services
-  ┌────┐  ┌────┐  ┌────┐
-  │App1│  │App2│  │App3│
-  └──┬─┘  └──┬─┘  └──┬─┘
-     └────────┼────────┘
-              │
-     ┌────────▼────────────────────────────────┐
-     │              AI GATEWAY                  │
-     │  ┌──────────┐  ┌──────────┐  ┌──────────┐  │
-     │  │   Auth   │  │  Rate    │  │  Router  │  │
-     │  │  (mTLS,  │  │ Limiting │  │(by model/│  │
-     │  │  API key)│  │ per team │  │  cost)   │  │
-     │  └──────────┘  └──────────┘  └──────────┘  │
-     │  ┌──────────┐  ┌──────────┐  ┌──────────┐  │
-     │  │ Logging  │  │  Cache   │  │ Fallback │  │
-     │  │ & Cost   │  │(semantic)│  │  Logic   │  │
-     │  │ Tracking │  │          │  │          │  │
-     │  └──────────┘  └──────────┘  └──────────┘  │
-     └──────────────────┬──────────────────────────┘
-                        │
-             ┌──────────┼──────────┐
-             ▼          ▼          ▼
-         [Claude]   [OpenAI]    [Bedrock]
-```
+
+Centralized AI Gateway providing unified authentication, rate limiting, model routing, semantic caching, and fallback logic across multiple applications and model providers.
 
 ### Gateway Capabilities
 
@@ -568,22 +516,18 @@ Many AI applications receive near-identical queries repeatedly (FAQ bots, search
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["Incoming Query"] --> B["Embedder"]
+    B -->|Query Vector| C["Similarity Search<br/>Against Cached Queries"]
+    C --> D{Cache Hit?}
+    D -->|Yes| E["Return Cached Response"]
+    D -->|No| F["Call Claude"]
+    F --> G["Store Query Vector<br/>+ Response in Cache"]
+    G --> H["Return Response"]
 ```
-Incoming query
-      │
-  [Embedder] → query vector
-      │
-[Similarity Search] against cached queries
-      │
-  ┌───┴────────────┐
-  │                │
-Cache hit?      Cache miss
-  │                │
-  ▼                ▼
-Return cached   Call Claude
-response        Store {query_vector, response}
-                Return response
-```
+
+Semantic caching matches incoming queries to cached queries via similarity search, reducing API calls and costs for repeated or similar queries.
 
 ### Similarity Threshold Configuration
 
@@ -631,22 +575,15 @@ Evaluating AI output quality at scale is expensive if done by humans and impossi
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["Production Output"] --> B["Judge<br/>Claude Fable 5<br/>Score: 1-5<br/>Reasoning<br/>Pass/Fail"]
+    B --> C{Evaluation<br/>Result}
+    C -->|Pass| D["Store Score<br/>Aggregate Metrics"]
+    C -->|Fail| E["Flag for Review<br/>Route to HITL"]
 ```
-Production output
-      │
-      ▼
-[JUDGE (Claude Fable 5)]
-  System: "You are an expert evaluator. Score the following response..."
-  Input: {question, response, reference_answer (optional)}
-  Output: {score: 1-5, reasoning: "...", pass_fail: true/false}
-      │
-  ┌───┴─────────────────────────┐
-  │                             │
- Pass                         Fail
-  │                             │
-Store score                  Flag for review
-Aggregate metrics            Route to HITL
-```
+
+LLM-as-Judge evaluation pipeline scoring production AI outputs with sampled human validation to detect quality regressions at scale.
 
 ### Avoiding Judge Bias
 
@@ -705,23 +642,17 @@ AI agents make mistakes. For high-stakes, irreversible, or regulated actions, th
 
     Async approval queue for high-volume flows:
 
-    ```
-    Agent proposes action
-          │
-          ▼
-    [Write to approval queue]
-          │
-          ▼
-    [Notify reviewer (Slack/email)]
-          │
-          ▼
-    Reviewer approves/rejects (dashboard or mobile)
-          │
-          ▼
-    [Execute or discard]
+    ```mermaid
+    flowchart TD
+        A["Agent Proposes Action"] --> B["Write to<br/>Approval Queue"]
+        B --> C["Notify Reviewer<br/>Slack/Email"]
+        C --> D{Reviewer<br/>Approves/Rejects?}
+        D -->|Timeout SLA<br/>4 hours| E["Auto-Escalate<br/>to Manager Queue"]
+        D -->|Approved| F["Execute Action"]
+        D -->|Rejected| G["Discard"]
     ```
 
-    Timeout: If no review within SLA (e.g., 4 hours), auto-escalate to manager queue.
+    Asynchronous approval queue enabling human review of high-stakes agent actions with SLA-based escalation.
 
 === "Inline Confirmation"
 
@@ -777,30 +708,15 @@ Raw model output can contain: harmful content, PII, off-topic responses, competi
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["User Input"] --> B["Input Guardrails<br/>PII Detection | Topic Classifier<br/>Prompt Injection Detector<br/>Content Classifier"]
+    B -->|Clean Input| C["Claude Model Call"]
+    C -->|Raw Output| D["Output Guardrails<br/>PII Scanner | Factual Grounding<br/>Topic Drift Detector<br/>Content Classifier | Format Validator"]
+    D -->|Validated Output| E["User / Downstream System"]
 ```
-User Input
-    │
-    ▼
-[INPUT GUARDRAILS]
-  ├─ PII detection → anonymise or block
-  ├─ Topic classifier → reject off-scope queries
-  ├─ Prompt injection detector → block or sanitise
-  └─ Content classifier → block harmful inputs
-    │
-    ▼ Clean input
-[CLAUDE MODEL CALL]
-    │
-    ▼ Raw output
-[OUTPUT GUARDRAILS]
-  ├─ PII scanner → redact any PII in output
-  ├─ Factual grounding check → flag unsupported claims
-  ├─ Topic drift detector → ensure answer matches question
-  ├─ Content classifier → detect harmful output
-  └─ Format validator → enforce schema compliance
-    │
-    ▼ Validated output
-  User / Downstream system
-```
+
+Layered guardrail pipeline protecting both inputs (PII, prompt injection, off-topic) and outputs (PII redaction, factual grounding, topic drift, harmful content, format compliance).
 
 ### Layered Defense
 
@@ -847,27 +763,17 @@ Regulated industries (finance, healthcare, HR) require explanations for AI-assis
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["AI Decision / Output"] --> B["Reasoning Capture<br/>Chain-of-Thought Extraction<br/>Retrieved Context Logging<br/>Tool Call Sequence"]
+    B --> C["Explanation Store<br/>Immutable Audit Log<br/>Linked to Decision ID<br/>Regulatory Retention"]
+    C --> D["Explanation Generator<br/>On-Demand"]
+    D --> E["Plain-language Summary<br/>for End User"]
+    D --> F["Technical Trace<br/>for Auditor"]
+    D --> G["Compliance Evidence<br/>Package"]
 ```
-AI Decision / Output
-        │
-        ▼
-[REASONING CAPTURE]
-  - Chain-of-thought extraction
-  - Retrieved context logging
-  - Tool call sequence recording
-        │
-        ▼
-[EXPLANATION STORE]
-  - Immutable audit log
-  - Linked to decision ID
-  - Retention per regulatory requirement
-        │
-        ▼
-[EXPLANATION GENERATOR] ← On-demand
-  - Plain-language summary for end user
-  - Technical trace for auditor
-  - Compliance evidence package
-```
+
+Explainability pipeline capturing reasoning chains, storing audit trails, and generating on-demand explanations for users, auditors, and compliance.
 
 ### Capturing Chain-of-Thought for Audits
 
@@ -916,28 +822,16 @@ Not all tasks need the same model. Using Fable 5 for everything is 10–50× mor
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["Incoming Request"] --> B["Complexity Classifier<br/>Claude Haiku<br/>Inputs: Token count, domain<br/>Structural complexity, code/math<br/>Multi-step indicators"]
+    B -->|Score: 0.0-1.0| C{Complexity<br/>Score}
+    C -->|< 0.35| D["Haiku<br/>Simple"]
+    C -->|0.35-0.70| E["Claude Sonnet 5<br/>Standard"]
+    C -->|≥ 0.70| F["Claude Fable 5<br/>Complex"]
 ```
-Incoming request
-        │
-        ▼
-[COMPLEXITY CLASSIFIER]
-(Claude Haiku — fast, cheap)
-  Inputs: token count, domain,
-          structural complexity,
-          presence of code/math,
-          multi-step indicators
-        │
-  Score: 0.0–1.0
-        │
-  ┌─────┴──────────┐
-  │                │
-< 0.35          ≥ 0.35
-  │                │
- Haiku           < 0.70    ≥ 0.70
-(simple)          │          │
-              Sonnet 5    Fable 5
-             (standard)  (complex)
-```
+
+Cost optimization routing assigning requests to the cheapest model capable of handling the complexity, reducing inference costs by 60-80%.
 
 ### Complexity Scoring Features
 
@@ -1007,17 +901,11 @@ AI endpoints have different performance profiles than conventional APIs. Model l
 
 Design explicit degraded modes:
 
-```
-Normal mode: Full AI response (Sonnet 5)
-     │ 429 rate > 5%
-     ▼
-Degraded mode: Cached responses + Haiku fallback
-     │ System overloaded
-     ▼
-Minimal mode: Return cached response or static fallback
-     │ All AI unavailable
-     ▼
-Offline mode: Notify user; queue request for later processing
+```mermaid
+flowchart TD
+    A["Normal Mode<br/>Full AI Response<br/>Claude Sonnet 5"] -->|429 Rate > 5%| B["Degraded Mode<br/>Cached Responses +<br/>Claude Haiku Fallback"]
+    B -->|System Overloaded| C["Minimal Mode<br/>Cached Response<br/>or Static Fallback"]
+    C -->|All AI Unavailable| D["Offline Mode<br/>Notify User<br/>Queue for Later"]
 ```
 
 ---
@@ -1030,36 +918,18 @@ AI systems degrade silently. A new model version, a prompt change, or a RAG conf
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["Test Dataset<br/>Golden Set<br/>Questions + Reference Answers"] --> B["Test Runner<br/>Execute System Under Test"]
+    B --> C["Evaluators<br/>LLM Judge | Rule-Based | Human"]
+    C --> D["Score Store<br/>Track Scores Across Versions"]
+    D --> E["Comparison<br/>Current vs Previous Version"]
+    E --> F{Regression<br/>Detected?}
+    F -->|Yes| G["Block PR"]
+    F -->|No/Improvement| H["Promote to Prod"]
 ```
-     ┌─────────────┐
-     │ TEST DATASET │  (golden set: questions + reference answers)
-     └──────┬───────┘
-            │
-     ┌──────▼───────┐
-     │  TEST RUNNER  │ → calls system under test with each question
-     └──────┬───────┘
-            │
-     ┌──────▼───────┐
-     │  EVALUATORS   │
-     │  ├─ LLM judge │
-     │  ├─ Rule-based│
-     │  └─ Human     │
-     └──────┬───────┘
-            │
-     ┌──────▼───────┐
-     │ SCORE STORE  │ → track scores across versions
-     └──────┬───────┘
-            │
-     ┌──────▼───────┐
-     │  COMPARISON  │ → compare current vs previous version
-     └──────┬───────┘
-            │
-    ┌───────┴───────┐
-    │               │
-  Regression?    Improvement?
-    │               │
-  Block PR       Promote to prod
-```
+
+Automated evaluation harness with test dataset, multi-method evaluation, scoring tracking, and version comparison to block regressions and gate deployments.
 
 ### Test Dataset Management
 
@@ -1097,17 +967,13 @@ def run_regression(system_version, dataset):
 
 ### A/B Testing Infrastructure
 
-```
-Traffic split (50/50):
-  ├─ Group A: Model A / Prompt v1 → log responses
-  └─ Group B: Model B / Prompt v2 → log responses
-
-After N samples (power analysis → min 200 per group):
-  Compare:
-    - Quality score (LLM judge)
-    - User satisfaction (thumbs up/down)
-    - Task completion rate
-    - Cost per successful task
+```mermaid
+flowchart TD
+    A["Traffic Split 50/50"] --> B["Group A<br/>Model A / Prompt v1<br/>Log Responses"]
+    A --> C["Group B<br/>Model B / Prompt v2<br/>Log Responses"]
+    B --> D["Compare After N Samples<br/>Min 200 per group"]
+    C --> D
+    D --> E["Quality Metrics:<br/>Quality Score LLM Judge<br/>User Satisfaction<br/>Task Completion Rate<br/>Cost per Task"]
 ```
 
 ### Business Metric Alignment
@@ -1134,28 +1000,16 @@ Changing models or system prompts in production is risky. A bad change can silen
 
 ### Architecture
 
+```mermaid
+flowchart TD
+    A["Traffic"] --> B["AI Load Balancer<br/>Blue: 90%<br/>Green: 10%"]
+    B --> C["Blue Environment<br/>Claude Sonnet 5<br/>Prompt v3<br/>RAG index v2"]
+    B --> D["Green Environment<br/>Claude Fable 5<br/>Prompt v4<br/>RAG index v3"]
+    C --> E["Comparison Metrics<br/>Quality, Cost<br/>Latency, Error Rate"]
+    D --> E
 ```
-                   ┌──────────────────────┐
-     Traffic ────► │   AI LOAD BALANCER   │
-                   │                      │
-                   │  Blue: 90% traffic   │
-                   │  Green: 10% traffic  │
-                   └──────────┬───────────┘
-                              │
-              ┌───────────────┴────────────────┐
-              ▼                                ▼
-    ┌─────────────────┐              ┌─────────────────┐
-    │    BLUE ENV     │              │   GREEN ENV     │
-    │ Claude Sonnet 5 │              │ Claude Fable 5  │
-    │ Prompt v3       │              │ Prompt v4       │
-    │ RAG index v2    │              │ RAG index v3    │
-    └────────┬────────┘              └────────┬────────┘
-             │                               │
-             └───────────────┬───────────────┘
-                             │
-                    [COMPARISON METRICS]
-                    Quality, cost, latency, error rate
-```
+
+Blue-green AI deployment enabling safe model/prompt rollouts with traffic splitting, canary testing, and gradual migration with rollback capability.
 
 ### Traffic Split for Gradual Rollout
 
@@ -1225,25 +1079,16 @@ def compress_history(turns, max_tokens=4000):
 
 ### Long-Term Memory Implementation
 
+```mermaid
+flowchart TD
+    A["User Session Ends"] --> B["Memory Extractor<br/>Claude Haiku<br/>Extract: Facts, Preferences<br/>Decisions, Open Tasks<br/>Format: JSON"]
+    B --> C["Memory Store<br/>Vector DB + Key-Value<br/>Embed & Store<br/>Each Memory Unit"]
+    C --> D["Next Session Starts"]
+    D --> E["Memory Retriever<br/>Query by User ID +<br/>Current Context<br/>Retrieve Top-K Memories"]
+    E --> F["Inject Into System Prompt<br/>User Context from<br/>Previous Sessions: memories"]
 ```
-User session ends
-       │
-[MEMORY EXTRACTOR] (Haiku)
-  - Extract: key facts, preferences, decisions, open tasks
-  - Format: structured JSON
-       │
-[MEMORY STORE] (Vector DB + key-value)
-  - Embed and store each memory unit
-       │
-Next session starts
-       │
-[MEMORY RETRIEVER]
-  - Query by user ID + current conversation context
-  - Retrieve top-k relevant memories
-       │
-[Inject into system prompt]
-  "User context from previous sessions: [memories]"
-```
+
+Long-term memory implementation enabling continuity across sessions through extraction, storage, and retrieval of user preferences and decisions.
 
 ---
 
@@ -1251,46 +1096,20 @@ Next session starts
 
 ### Decision Tree
 
-```
-START: What is the core problem?
-
-├─ Need enterprise knowledge access without retraining?
-│    └─ Use RAG (#1) or Agentic RAG (#2) if retrieval needs to be model-decided
-
-├─ Task requires multiple independent sub-tasks?
-│    └─ Use Parallel Fan-Out (#4) if independent
-│    └─ Use Multi-Agent Orchestration (#3) if coordinated
-
-├─ Need to control AI traffic across multiple teams?
-│    └─ Use AI Gateway (#5)
-
-├─ High repeat queries driving up cost?
-│    └─ Use Semantic Caching (#6)
-
-├─ Need to measure AI output quality at scale?
-│    └─ Use LLM-as-Judge (#7) + Evaluation Harness (#13)
-
-├─ AI taking high-stakes actions?
-│    └─ Use HITL Gates (#8)
-
-├─ Need safety and compliance filtering?
-│    └─ Use Guardrail Pipeline (#9)
-
-├─ Regulated domain needing audit trail?
-│    └─ Use Explainability Pipeline (#10)
-
-├─ AI spend is too high?
-│    └─ Use Cost Optimisation Routing (#11) + Semantic Caching (#6)
-
-├─ Deploying a new model or prompt?
-│    └─ Use Blue-Green Deployment (#14) + Evaluation Harness (#13)
-
-├─ Long conversations or multi-session continuity?
-│    └─ Use CALM Context Management (#15)
-
-└─ Validating AI system performance?
-     └─ Use Stress Testing (#12) + Evaluation Harness (#13)
-```
+| Problem | Solution |
+|---------|----------|
+| Need enterprise knowledge access without retraining? | Use RAG (#1) or Agentic RAG (#2) if retrieval needs to be model-decided |
+| Task requires multiple independent sub-tasks? | Use Parallel Fan-Out (#4) if independent; Use Multi-Agent Orchestration (#3) if coordinated |
+| Need to control AI traffic across multiple teams? | Use AI Gateway (#5) |
+| High repeat queries driving up cost? | Use Semantic Caching (#6) |
+| Need to measure AI output quality at scale? | Use LLM-as-Judge (#7) + Evaluation Harness (#13) |
+| AI taking high-stakes actions? | Use HITL Gates (#8) |
+| Need safety and compliance filtering? | Use Guardrail Pipeline (#9) |
+| Regulated domain needing audit trail? | Use Explainability Pipeline (#10) |
+| AI spend is too high? | Use Cost Optimisation Routing (#11) + Semantic Caching (#6) |
+| Deploying a new model or prompt? | Use Blue-Green Deployment (#14) + Evaluation Harness (#13) |
+| Long conversations or multi-session continuity? | Use CALM Context Management (#15) |
+| Validating AI system performance? | Use Stress Testing (#12) + Evaluation Harness (#13) |
 
 ---
 

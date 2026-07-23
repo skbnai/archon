@@ -163,7 +163,19 @@ Traditional cloud landing zones are insufficient because they assume:
 
 ### Layered Architecture Overview
 
-<!-- TODO(diagram): 7-layer reference architecture showing Strategy & Governance Foundation (Layer 0) → Cloud Platform Landing Zone (Layer 1) → AI/Agent Platform Foundation (Layer 2) → Agent Trust & Governance Plane (Layer 3) → Data/Knowledge Plane (Layer 4) → Application/Agent Experience (Layer 5) → Operations & Lifecycle (Layer 6) with downward flow. -->
+**Landing zone layer stack.** Each layer builds on the one below; Layer 0's governance decisions constrain every layer above it.
+
+```mermaid
+graph TB
+    L0["Layer 0: Strategy & Governance Foundation"]
+    L1["Layer 1: Cloud Platform Landing Zone"]
+    L2["Layer 2: AI/Agent Platform Foundation"]
+    L3["Layer 3: Agent Trust & Governance Plane"]
+    L4["Layer 4: Data/Knowledge Plane"]
+    L5["Layer 5: Application/Agent Experience"]
+    L6["Layer 6: Operations & Lifecycle"]
+    L0 --> L1 --> L2 --> L3 --> L4 --> L5 --> L6
+```
 
 ### Detailed Component Architecture
 
@@ -241,7 +253,20 @@ Traditional cloud landing zones are insufficient because they assume:
 
 1. **Compute Fabric**
 
-   <!-- TODO(diagram): Compute fabric showing GPU Clusters (training, real-time inference, batch processing), Serverless Compute (function execution, container instances, event-driven agents), Container Orchestration (Kubernetes clusters, agent deployment manifests, auto-scaling policies), Edge Deployment (IoT edge devices, branch office agents, mobile agent runtimes). -->
+   **Compute fabric options and their agent workloads.**
+
+   ```mermaid
+   graph TB
+       CF["Compute Fabric"]
+       GPU["GPU Clusters<br/>training, real-time inference, batch processing"]
+       SC["Serverless Compute<br/>function execution, container instances, event-driven agents"]
+       CO["Container Orchestration<br/>Kubernetes clusters, deployment manifests, auto-scaling"]
+       ED["Edge Deployment<br/>IoT edge devices, branch office agents, mobile runtimes"]
+       CF --> GPU
+       CF --> SC
+       CF --> CO
+       CF --> ED
+   ```
 
 2. **Model Access & Management**
    - **Model Gateway**: Unified API for multi-provider access
@@ -286,7 +311,14 @@ Traditional cloud landing zones are insufficient because they assume:
 
 1. **Agent Identity & Registry**
 
-   <!-- TODO(diagram): Agent identity architecture with Agent Identity Service (DID generation, credential issuance, capability declaration, trust relationships) and Agent Registry (active agent catalog, capability discovery, version tracking, lifecycle state management). -->
+   **Agent identity and registry relationship.**
+
+   ```mermaid
+   graph LR
+       AIS["Agent Identity Service<br/>DID generation, credential issuance,<br/>capability declaration, trust relationships"]
+       AR["Agent Registry<br/>active agent catalog, capability discovery,<br/>version tracking, lifecycle state"]
+       AIS -- "issues identity for" --> AR
+   ```
 
 2. **Runtime Guardrails**
    - **Policy Cards** (Machine-readable governance)
@@ -399,7 +431,18 @@ Traditional cloud landing zones are insufficient because they assume:
 
 1. **Data Domains**
 
-   <!-- TODO(diagram): Data domain taxonomy showing Structured Data (relational databases, data warehouses, OLAP cubes), Semi-Structured Data (document stores, JSON/XML data lakes, log aggregation), Unstructured Data (object storage, content management systems, email archives). -->
+   **Data domain taxonomy by structure.**
+
+   ```mermaid
+   graph TB
+       DD["Data Domains"]
+       SD["Structured Data<br/>relational databases, data warehouses, OLAP cubes"]
+       SSD["Semi-Structured Data<br/>document stores, JSON/XML data lakes, log aggregation"]
+       UD["Unstructured Data<br/>object storage, content management, email archives"]
+       DD --> SD
+       DD --> SSD
+       DD --> UD
+   ```
 
 2. **Knowledge Repositories**
    - **Vector Stores**: Semantic search
@@ -438,7 +481,16 @@ Traditional cloud landing zones are insufficient because they assume:
 
 4. **Data Pipelines**
 
-   <!-- TODO(diagram): Data pipeline flow showing Ingestion (batch ETL, streaming, CDC) → Processing (embedding generation, chunking, quality validation, enrichment) → Storage (primary databases, archive, cache layers) → Serving (query APIs, GraphQL, real-time streams, batch exports). -->
+   **Data pipeline stages from ingestion to serving.**
+
+   ```mermaid
+   graph LR
+       I["Ingestion<br/>batch ETL, streaming, CDC"]
+       P["Processing<br/>embedding generation, chunking,<br/>quality validation, enrichment"]
+       S["Storage<br/>primary databases, archive, cache layers"]
+       SV["Serving<br/>query APIs, GraphQL, real-time streams, batch exports"]
+       I --> P --> S --> SV
+   ```
 
 #### Layer 5: Application / Agent Experience
 
@@ -473,7 +525,17 @@ Traditional cloud landing zones are insufficient because they assume:
 
 1. **DevOps / CI/CD**
 
-   <!-- TODO(diagram): CI/CD pipeline showing Code → Build → Test → Deploy → Monitor with components: source control (Git repositories, IaC), build pipeline (container images, dependencies, security scanning), test automation (unit tests, integration tests, performance), deployment (blue-green, canary, rollback procedures). -->
+   **CI/CD pipeline stages for agent deployment.**
+
+   ```mermaid
+   graph LR
+       Code["Code<br/>Git repositories, IaC"]
+       Build["Build<br/>container images, dependencies, security scanning"]
+       Test["Test<br/>unit, integration, performance"]
+       Deploy["Deploy<br/>blue-green, canary, rollback procedures"]
+       Monitor["Monitor"]
+       Code --> Build --> Test --> Deploy --> Monitor
+   ```
 
 2. **MLOps**: Model lifecycle management
    - Model training pipelines
@@ -639,7 +701,18 @@ Key Metrics:
 
 #### Model Context Protocol (MCP) Integration
 
-<!-- TODO(diagram): MCP integration showing MCP Host (Agent) ↔ MCP Client (Runtime with protocol layer) ↔ MCP Server (Tool/Data) with JSON-RPC 2.0 messaging, capability discovery, standardized tool invocation, and resource access. -->
+**MCP host/client/server relationship.**
+
+```mermaid
+sequenceDiagram
+    participant Host as MCP Host (Agent)
+    participant Client as MCP Client (Runtime + protocol layer)
+    participant Server as MCP Server (Tool/Data)
+    Host->>Client: invoke tool
+    Client->>Server: JSON-RPC 2.0 request
+    Server-->>Client: capability discovery / tool result
+    Client-->>Host: standardized resource access
+```
 
 **MCP Benefits**:
 
@@ -657,11 +730,34 @@ Key Metrics:
 
 #### Agent-to-Agent Protocol (A2A)
 
-<!-- TODO(diagram): Agent-to-Agent protocol showing Agent A ↔ Agent B peer-to-peer communication with capability request, task delegation, and result exchange flows. -->
+**A2A peer-to-peer exchange between two agents.**
+
+```mermaid
+sequenceDiagram
+    participant A as Agent A
+    participant B as Agent B
+    A->>B: capability request
+    B-->>A: capability response
+    A->>B: task delegation
+    B-->>A: result exchange
+```
 
 ### Network Architecture
 
-<!-- TODO(diagram): Network architecture showing Internet/Users → WAF/CDN → Application Gateway/LB → Public tier (Agent Runtime, API Gateway, Web Portal) → Private Link → Private tier (Model Serving, Vector Store, Data Lake) → Hub Network (Firewall) → Hybrid connections (On-Premises, Partners, Branch Offices). -->
+**Network tiers from internet edge to hybrid connections.**
+
+```mermaid
+graph TB
+    Internet["Internet / Users"]
+    WAF["WAF / CDN"]
+    AGW["Application Gateway / LB"]
+    Public["Public tier<br/>Agent Runtime, API Gateway, Web Portal"]
+    PL["Private Link"]
+    Private["Private tier<br/>Model Serving, Vector Store, Data Lake"]
+    Hub["Hub Network (Firewall)"]
+    Hybrid["Hybrid connections<br/>On-Premises, Partners, Branch Offices"]
+    Internet --> WAF --> AGW --> Public --> PL --> Private --> Hub --> Hybrid
+```
 
 **Security Zones**:
 

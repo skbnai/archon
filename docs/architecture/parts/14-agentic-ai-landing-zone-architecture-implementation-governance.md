@@ -299,24 +299,43 @@ Implement a federated agent identity model based on Decentralized Identifiers (D
 
 **Architecture**:
 
-```
-Agent Identity Registry (Centralized)
-├── DID Generation
-├── Credential Issuance
-├── Capability Declaration
-└── Trust Relationship Management
-
-Runtime Token Service
-├── Short-lived JWT tokens
-├── Delegation support
-├── Scope enforcement
-└── Audit logging
-
-Integration with Enterprise IdP
-├── User identity as root of trust
-├── Agent acts on behalf of user
-├── Permission inheritance
-└── Escalation to user when needed
+```mermaid
+flowchart TD
+    A["Agent Identity<br/>Federation Model"]
+    
+    B["Agent Identity Registry<br/>Centralized"]
+    B1["DID Generation"]
+    B2["Credential Issuance"]
+    B3["Capability Declaration"]
+    B4["Trust Relationship<br/>Management"]
+    B --> B1
+    B --> B2
+    B --> B3
+    B --> B4
+    
+    C["Runtime Token Service"]
+    C1["Short-lived<br/>JWT Tokens"]
+    C2["Delegation<br/>Support"]
+    C3["Scope<br/>Enforcement"]
+    C4["Audit<br/>Logging"]
+    C --> C1
+    C --> C2
+    C --> C3
+    C --> C4
+    
+    D["Integration with<br/>Enterprise IdP"]
+    D1["User Identity<br/>as Root of Trust"]
+    D2["Agent Acts<br/>on Behalf of User"]
+    D3["Permission<br/>Inheritance"]
+    D4["Escalation<br/>to User"]
+    D --> D1
+    D --> D2
+    D --> D3
+    D --> D4
+    
+    A --> B
+    A --> C
+    A --> D
 ```
 
 **Implementation**:
@@ -408,17 +427,17 @@ Implement a Model Gateway abstraction layer that provides:
 
 **Architecture**:
 
-```
-Agent Code
-    ↓
-Model Gateway API (Unified Interface)
-    ↓
-┌─────────┬─────────┬─────────┬─────────┐
-│ OpenAI  │ Claude  │ Bedrock │ Azure   │
-│ Adapter │ Adapter │ Adapter │ Adapter │
-└─────────┴─────────┴─────────┴─────────┘
-    ↓         ↓         ↓         ↓
-  External Model Providers
+```mermaid
+flowchart TD
+    A["Agent Code"] --> B["Model Gateway API<br/>Unified Interface"]
+    B --> C["OpenAI<br/>Adapter"]
+    B --> D["Claude<br/>Adapter"]
+    B --> E["Bedrock<br/>Adapter"]
+    B --> F["Azure<br/>Adapter"]
+    C --> G["External<br/>Model Providers"]
+    D --> G
+    E --> G
+    F --> G
 ```
 
 **Routing Logic**:
@@ -768,21 +787,19 @@ Implement **Semantic Observability** - structured logging that captures agent in
 
 **Telemetry Pipeline**:
 
+```mermaid
+flowchart TD
+    A["Agent Runtime"] --> B["Semantic Logger"]
+    B --> C["Message Queue<br/>Kafka"]
+    C --> D["Real-time Alerts"]
+    C --> E["Storage<br/>S3/Blob"]
+    C --> F["Analytics<br/>Spark"]
+    D --> G["Dashboard"]
+    E --> H["Compliance<br/>Audit"]
+    F --> I["ML Training<br/>Feedback"]
 ```
-Agent Runtime
-    ↓
-Semantic Logger
-    ↓
-Message Queue (Kafka)
-    ↓
-┌──────────┬──────────┬──────────┐
-│ Real-time│ Storage  │ Analytics│
-│ Alerts   │ (S3/Blob)│ (Spark)  │
-└──────────┴──────────┴──────────┘
-    ↓          ↓          ↓
-Dashboard  Compliance  ML Training
-           Audit       (feedback)
-```
+
+Semantic observability pipeline capturing structured agent action logs through Kafka, with parallel paths for real-time monitoring, compliance auditing, and continuous learning.
 
 ### Consequences
 
@@ -861,32 +878,18 @@ Adopt **Model Context Protocol (MCP)** as the standard integration interface bet
 
 **Architecture**:
 
-```
-┌─────────────────────────────────────────┐
-│ MCP Host (Agent Runtime)                │
-├─────────────────────────────────────────┤
-│ • Discovery (list available tools)      │
-│ • Invocation (call tool with parameters)│
-│ • Streaming (handle async responses)    │
-└─────────────────────────────────────────┘
-              │
-              │ JSON-RPC 2.0
-              │
-┌─────────────────────────────────────────┐
-│ MCP Client (Integration Layer)          │
-├─────────────────────────────────────────┤
-│ • Authentication & Authorization        │
-│ • Rate Limiting & Quota Enforcement     │
-│ • Logging & Audit                       │
-│ • Error Handling & Retry                │
-└─────────────────────────────────────────┘
-              │
-      ┌───────┴───────┐
-      │               │
-┌─────▼─────┐   ┌─────▼─────┐
-│MCP Server │   │MCP Server │
-│(SQL DB)   │   │(Salesforce│
-└───────────┘   └───────────┘
+```mermaid
+flowchart TD
+    A["MCP Host<br/>Agent Runtime<br/>Discovery | Invocation<br/>Streaming"]
+    B["JSON-RPC 2.0"]
+    C["MCP Client<br/>Integration Layer<br/>Auth | Rate Limiting<br/>Logging | Error Handling"]
+    D["MCP Server<br/>SQL DB"]
+    E["MCP Server<br/>Salesforce"]
+    
+    A --> B
+    B --> C
+    C --> D
+    C --> E
 ```
 
 **MCP Server Deployment Plan**:
@@ -990,27 +993,28 @@ Use **Kubernetes** as the primary agent runtime platform across all clouds.
 
 **Deployment Model**:
 
+```mermaid
+flowchart TD
+    A["Kubernetes Cluster<br/>Per Environment"]
+    
+    B["Agent Pod A<br/>Agent Code | MCP Client<br/>Sidecars:<br/>Auth Proxy | Policy | Logging"]
+    
+    C["Agent Pod B<br/>Agent Code | MCP Client<br/>Sidecars:<br/>Auth Proxy | Policy | Logging"]
+    
+    D["Horizontal Pod Autoscaling<br/>HPA"]
+    
+    E["Network Policies<br/>Isolation"]
+    
+    F["Service Mesh<br/>Istio Optional"]
+    
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
 ```
-┌────────────────────────────────────────┐
-│ Kubernetes Cluster (per environment)   │
-├────────────────────────────────────────┤
-│                                        │
-│  ┌──────────────┐  ┌──────────────┐   │
-│  │ Agent Pod A  │  │ Agent Pod B  │   │
-│  ├──────────────┤  ├──────────────┤   │
-│  │ Agent Code   │  │ Agent Code   │   │
-│  │ MCP Client   │  │ MCP Client   │   │
-│  │ Sidecar:     │  │ Sidecar:     │   │
-│  │ - Auth Proxy │  │ - Auth Proxy │   │
-│  │ - Policy     │  │ - Policy     │   │
-│  │ - Logging    │  │ - Logging    │   │
-│  └──────────────┘  └──────────────┘   │
-│                                        │
-│  Horizontal Pod Autoscaling (HPA)     │
-│  Network Policies (Isolation)         │
-│  Service Mesh (Istio) [Optional]      │
-└────────────────────────────────────────┘
-```
+
+Kubernetes agent runtime deployment with pod-level sidecars for auth, policy enforcement, and logging; auto-scaling, network isolation, and optional service mesh.
 
 **Why Kubernetes**:
 

@@ -38,23 +38,18 @@ covers_version: "as of 2026-07-10"
 
 ```
 START
-  ├─ Simple sequential flow?
-  │  └─ Use SEQUENTIAL Pattern
-  │
-  ├─ One coordinator, many workers?
-  │  └─ Use SUPERVISOR Pattern
-  │
-  ├─ Hierarchical breakdown (CEO → VPs → Teams)?
-  │  └─ Use HIERARCHICAL Pattern
-  │
-  ├─ Agents can run in parallel on unrelated tasks?
-  │  └─ Use MESH Pattern
-  │
-  ├─ Many agents, same capability, load balanced?
-  │  └─ Use POOL Pattern
-  │
-  └─ Emergent behavior, swarm intelligence needed?
-     └─ Use SWARM Pattern
+  - Simple sequential flow?
+    - Use SEQUENTIAL Pattern
+      - One coordinator, many workers?
+    - Use SUPERVISOR Pattern
+      - Hierarchical breakdown (CEO → VPs → Teams)?
+    - Use HIERARCHICAL Pattern
+      - Agents can run in parallel on unrelated tasks?
+    - Use MESH Pattern
+      - Many agents, same capability, load balanced?
+    - Use POOL Pattern
+      - Emergent behavior, swarm intelligence needed?
+     - Use SWARM Pattern
 ```
 
 ---
@@ -155,15 +150,26 @@ async def sequential_workflow(user_request):
 
 **Description:** One "supervisor" agent coordinates multiple specialist agents, deciding which to call.
 
+```mermaid
+graph LR
+    User["User<br/>Request"]
+    Supervisor["Supervisor<br/>Agent"]
+    AgentA["Specialist A<br/>Returns"]
+    AgentB["Specialist B<br/>Billing"]
+    AgentC["Specialist C<br/>Technical"]
+    
+    User --> Supervisor
+    Supervisor --> AgentA
+    Supervisor --> AgentB
+    Supervisor --> AgentC
+    
+    style Supervisor fill:#fff4e6
+    style AgentA fill:#f0f0f0
+    style AgentB fill:#f0f0f0
+    style AgentC fill:#f0f0f0
 ```
-          ┌─ Specialist Agent A (Returns)
-          │
-User → Supervisor Agent ─┼─ Specialist Agent B (Billing)
-          │
-          └─ Specialist Agent C (Technical Support)
 
 Supervisor: "This is a billing question → call Billing Agent"
-```
 
 ### Supervisor Example: Customer Service Hub
 
@@ -171,30 +177,29 @@ Supervisor: "This is a billing question → call Billing Agent"
 User: "I was overcharged on my order, and my tracking isn't updating"
 
 Supervisor Analysis:
-├─ Identified issues: 2 (overcharge + tracking)
-├─ Required agents:
-│  ├─ Billing Agent (for overcharge)
-│  └─ Logistics Agent (for tracking)
-└─ Decision: Call both in parallel
+- Identified issues: 2 (overcharge + tracking)
+- Required agents:
+  - Billing Agent (for overcharge)
+  - Logistics Agent (for tracking)
+- Decision: Call both in parallel
 
 Parallel Execution:
-├─ Billing Agent
-│  ├─ Checks order: $99.99 charged, should be $79.99
-│  ├─ Finds duplicate charge
-│  └─ Output: "Issue found: $20 duplicate. Refund processing."
-│
-└─ Logistics Agent
-   ├─ Checks tracking system
-   ├─ Finds package stuck in facility
-   └─ Output: "Stuck in Denver facility. Investigating."
+- Billing Agent
+  - Checks order: $99.99 charged, should be $79.99
+  - Finds duplicate charge
+  - Output: "Issue found: $20 duplicate. Refund processing."
+  - Logistics Agent
+   - Checks tracking system
+   - Finds package stuck in facility
+   - Output: "Stuck in Denver facility. Investigating."
 
 Supervisor Synthesis:
-├─ Combines: "Your refund is being processed ($20).
+- Combines: "Your refund is being processed ($20).
              Your package is stuck but moving today."
-└─ Escalates: "I'm escalating the logistics issue to our ops team."
+- Escalates: "I'm escalating the logistics issue to our ops team."
 
 Response to User:
-└─ Clear, addressed both problems, escalation initiated
+- Clear, addressed both problems, escalation initiated
 ```
 
 ### Supervisor Implementation
@@ -256,17 +261,15 @@ class SupervisorAgent:
 
 ```
 CEO Agent
-    ├─ VP Sales Agent
-    │   ├─ Account Manager Agent
-    │   └─ Upsell Agent
-    │
-    ├─ VP Operations Agent
-    │   ├─ Order Processing Agent
-    │   └─ Fulfillment Agent
-    │
-    └─ VP Support Agent
-        ├─ Tier 1 Support Agent
-        └─ Tier 2 Support Agent
+    - VP Sales Agent
+      - Account Manager Agent
+      - Upsell Agent
+          - VP Operations Agent
+      - Order Processing Agent
+      - Fulfillment Agent
+          - VP Support Agent
+        - Tier 1 Support Agent
+        - Tier 2 Support Agent
 ```
 
 ### Hierarchical Example: Order Processing
@@ -277,26 +280,23 @@ CEO Agent
 
   User: "I placed an order 3 days ago. It hasn't shipped yet."
 
-  └─ Delegates to: VP Operations Agent
+  - Delegates to: VP Operations Agent
       Role: Handle operational issues
 
-      ├─ Analyzes: Issue is about order status + shipping
-      ├─ Delegates to: Tier 1 Support Agent
-      │   Role: Handle standard inquiries
-      │  
-      │   ├─ Checks order status: Shows "processing"
-      │   ├─ Checks current date: 3 days is normal for processing
-      │   ├─ Standard response: "Your order is being processed..."
-      │   │
-      │   └─ If complaint or edge case → Escalate to Tier 2
-      │
-      └─ (If Tier 1 escalates) Delegates to: Tier 2 Support Agent
+      - Analyzes: Issue is about order status + shipping
+      - Delegates to: Tier 1 Support Agent
+        Role: Handle standard inquiries
+                - Checks order status: Shows "processing"
+        - Checks current date: 3 days is normal for processing
+        - Standard response: "Your order is being processed..."
+                  - If complaint or edge case → Escalate to Tier 2
+              - (If Tier 1 escalates) Delegates to: Tier 2 Support Agent
           Role: Handle complex/escalated issues
 
-          ├─ Deep investigation: Order flagged for manual review (fraud check)
-          ├─ Explanation: "Security review in progress, ships tomorrow"
-          ├─ Compensation: "Free express shipping as apology"
-          └─ Resolution: Issue resolved
+          - Deep investigation: Order flagged for manual review (fraud check)
+          - Explanation: "Security review in progress, ships tomorrow"
+          - Compensation: "Free express shipping as apology"
+          - Resolution: Issue resolved
 ```
 
 ### Hierarchical Implementation
@@ -368,29 +368,27 @@ Each agent can communicate with any other agent.
 
 ```
 Demand Planner Agent: "We need 1000 units by Friday"
-    ├─ Calls Supplier Agent: "Can you deliver 500 by Friday?"
-    │   └─ Supplier: "Yes, $50/unit"
-    │
-    ├─ Calls Inventory Agent: "How many in stock?"
-    │   └─ Inventory: "200 units"
-    │
-    └─ Calls Finance Agent: "Is $50K budget available?"
-        └─ Finance: "Yes"
+    - Calls Supplier Agent: "Can you deliver 500 by Friday?"
+      - Supplier: "Yes, $50/unit"
+          - Calls Inventory Agent: "How many in stock?"
+      - Inventory: "200 units"
+          - Calls Finance Agent: "Is $50K budget available?"
+        - Finance: "Yes"
 
 Supply Planner Agent: "Need 500 units from Supplier + 200 from Inventory"
-    ├─ Calls Supplier Agent: "Confirm order for 500"
-    ├─ Calls Inventory Agent: "Reserve 200 units"
-    └─ Calls Logistics Agent: "Arrange delivery for 700 units"
+    - Calls Supplier Agent: "Confirm order for 500"
+    - Calls Inventory Agent: "Reserve 200 units"
+    - Calls Logistics Agent: "Arrange delivery for 700 units"
 
 Logistics Agent: "Confirmed delivery Friday"
-    └─ Calls Customer Agent: "Notify customer: arriving Friday"
+    - Calls Customer Agent: "Notify customer: arriving Friday"
 
 Each agent maintains state:
-├─ Demand: 1000 needed
-├─ Inventory: 200 reserved
-├─ Suppliers: 500 ordered
-├─ Logistics: 700 units in transit
-└─ Customer: Notified of Friday arrival
+- Demand: 1000 needed
+- Inventory: 200 reserved
+- Suppliers: 500 ordered
+- Logistics: 700 units in transit
+- Customer: Notified of Friday arrival
 ```
 
 ### Mesh Implementation
@@ -452,17 +450,26 @@ class MeshAgent:
 
 **Description:** Multiple identical agents, load-balanced for parallel execution.
 
+```mermaid
+graph LR
+    User["User<br/>Requests"]
+    LB["Load Balancer"]
+    AgentA["Agent A<br/>Invoice Processor"]
+    AgentB["Agent B<br/>Invoice Processor"]
+    AgentC["Agent C<br/>Invoice Processor"]
+    
+    User --> LB
+    LB --> AgentA
+    LB --> AgentB
+    LB --> AgentC
+    
+    style LB fill:#fff4e6
+    style AgentA fill:#e6f3ff
+    style AgentB fill:#e6f3ff
+    style AgentC fill:#e6f3ff
 ```
-┌──────────────────────────────────────┐
-│         Load Balancer                │
-└──────────────────────────────────────┘
-      ↓         ↓         ↓
-   Agent A   Agent B   Agent C
-  (same        (same      (same
-  capability)  capability) capability)
 
-User requests distributed across pool.
-```
+User requests distributed across pool of identical agents.
 
 ### Pool Example: Invoice Processing
 
@@ -470,24 +477,24 @@ User requests distributed across pool.
 Incoming invoices: 10,000/day
 
 Without Pool:
-└─ Single Invoice Agent
-   ├─ Processes 1 invoice/second
-   ├─ Total time: 10,000 seconds ≈ 2.8 hours
-   └─ Latency: Invoice sits 90+ minutes before processing
+- Single Invoice Agent
+   - Processes 1 invoice/second
+   - Total time: 10,000 seconds ≈ 2.8 hours
+   - Latency: Invoice sits 90+ minutes before processing
 
 With Pool (3 agents):
-├─ Agent A: processes invoices 1-3,333
-├─ Agent B: processes invoices 3,334-6,666
-└─ Agent C: processes invoices 6,667-10,000
+- Agent A: processes invoices 1-3,333
+- Agent B: processes invoices 3,334-6,666
+- Agent C: processes invoices 6,667-10,000
 
-  ├─ Total time: 10,000 / 3 ≈ 3,333 seconds ≈ 55 minutes (3x faster)
-  └─ Latency: Invoice processed within ~2 minutes
+  - Total time: 10,000 / 3 ≈ 3,333 seconds ≈ 55 minutes (3x faster)
+  - Latency: Invoice processed within ~2 minutes
 
 With Auto-Scaling Pool:
-├─ Monitor queue depth
-├─ If queue > 1,000: spin up more agents
-├─ If queue < 100: scale down to save cost
-└─ Result: Consistent latency, cost-optimized
+- Monitor queue depth
+- If queue > 1,000: spin up more agents
+- If queue < 100: scale down to save cost
+- Result: Consistent latency, cost-optimized
 ```
 
 ### Pool Implementation
@@ -558,16 +565,16 @@ class AgentPool:
 
 ```
 Individual Agent Rules:
-├─ Follow the leader (when leader is moving)
-├─ Stay close to neighbors (within 10 units)
-├─ Avoid collisions
-└─ Move toward objective
+- Follow the leader (when leader is moving)
+- Stay close to neighbors (within 10 units)
+- Avoid collisions
+- Move toward objective
 
 Emergent Behavior (no central controller):
-├─ Coordinated movement (appears choreographed)
-├─ Adapts to obstacles (flows around)
-├─ Self-organizing (no top-down command)
-└─ Resilient (if one agent fails, swarm continues)
+- Coordinated movement (appears choreographed)
+- Adapts to obstacles (flows around)
+- Self-organizing (no top-down command)
+- Resilient (if one agent fails, swarm continues)
 ```
 
 ### Swarm Example: Market Research Agents
@@ -576,23 +583,21 @@ Emergent Behavior (no central controller):
 Mission: Gather competitive intelligence across 100 markets
 
 Swarm of 50 Research Agents:
-├─ Local Rules:
-│  ├─ "Search your assigned market for price changes"
-│  ├─ "If you find interesting pattern, share with neighbors"
-│  ├─ "If neighbor found something valuable, investigate too"
-│  └─ "Report daily to collective"
-│
-├─ Emergent Behavior:
-│  ├─ Agents concentrate on high-signal markets (no central assignment)
-│  ├─ Interesting patterns replicate (viral behavior)
-│  ├─ Redundancy handles failures (if agent fails, others continue)
-│  └─ Collective intelligence > sum of parts
-│
-└─ Results:
-   ├─ Comprehensive coverage (all 100 markets touched)
-   ├─ Deep dives on anomalies (swarm converges on changes)
-   ├─ Adaptability (as market shifts, swarm redistributes)
-   └─ Resilience (90% effectiveness even with 20% failure rate)
+- Local Rules:
+  - "Search your assigned market for price changes"
+  - "If you find interesting pattern, share with neighbors"
+  - "If neighbor found something valuable, investigate too"
+  - "Report daily to collective"
+  - Emergent Behavior:
+  - Agents concentrate on high-signal markets (no central assignment)
+  - Interesting patterns replicate (viral behavior)
+  - Redundancy handles failures (if agent fails, others continue)
+  - Collective intelligence > sum of parts
+  - Results:
+   - Comprehensive coverage (all 100 markets touched)
+   - Deep dives on anomalies (swarm converges on changes)
+   - Adaptability (as market shifts, swarm redistributes)
+   - Resilience (90% effectiveness even with 20% failure rate)
 ```
 
 ### When to Use Swarm
@@ -620,24 +625,20 @@ Swarm of 50 Research Agents:
 
 ```
 Is the workflow linear?
-├─ YES → SEQUENTIAL
-└─ NO
-   │
-   ├─ Is there one coordinator?
-   │  ├─ YES → SUPERVISOR
-   │  └─ NO
-   │     │
-   │     ├─ Is there a hierarchy (org structure)?
-   │     │  ├─ YES → HIERARCHICAL
-   │     │  └─ NO
-   │     │     │
-   │     │     ├─ Are all agents identical?
-   │     │     │  ├─ YES → POOL
-   │     │     │  └─ NO
-   │     │     │     │
-   │     │     │     ├─ Need emergent behavior?
-   │     │     │     │  ├─ YES → SWARM
-   │     │     │     │  └─ NO → MESH
+- YES → SEQUENTIAL
+- NO
+        - Is there one coordinator?
+     - YES → SUPERVISOR
+     - NO
+            - Is there a hierarchy (org structure)?
+       - YES → HIERARCHICAL
+       - NO
+                - Are all agents identical?
+         - YES → POOL
+         - NO
+                    - Need emergent behavior?
+           - YES → SWARM
+           - NO → MESH
 ```
 
 ---
@@ -650,18 +651,16 @@ Is the workflow linear?
 
 ```
 Layer 1: SUPERVISOR (top)
-├─ Supervisor routes to specialists:
-│  ├─ Returns Specialist (HIERARCHICAL: Tier 1 → Tier 2)
-│  ├─ Billing Specialist (SEQUENTIAL: Validate → Check Policy → Refund)
-│  └─ Technical Specialist (MESH: Coordinates with Ops agents)
-│
-Layer 2: POOL (parallelization)
-├─ If request matches pattern (e.g., "simple return"):
-│  └─ Route to pool of simple return processors (identical, load-balanced)
-│
-Layer 3: SWARM (exploration)
-└─ For complex, novel requests:
-   └─ Swarm of research agents explores solution space
+- Supervisor routes to specialists:
+  - Returns Specialist (HIERARCHICAL: Tier 1 → Tier 2)
+  - Billing Specialist (SEQUENTIAL: Validate → Check Policy → Refund)
+  - Technical Specialist (MESH: Coordinates with Ops agents)
+  Layer 2: POOL (parallelization)
+- If request matches pattern (e.g., "simple return"):
+  - Route to pool of simple return processors (identical, load-balanced)
+  Layer 3: SWARM (exploration)
+- For complex, novel requests:
+   - Swarm of research agents explores solution space
 ```
 
 **Result:** Combines simplicity (supervisor) with speed (pool), handles complexity (hierarchical), explores novel cases (swarm).

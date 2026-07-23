@@ -188,6 +188,42 @@ PwC's 2025 Responsible AI Survey reveals how leading organizations translate RAI
 
 The AIDLC is structured across eight sequential yet iterative phases. Each phase embeds governance checkpoints, compliance evidence requirements, and RAI guardrails that must be satisfied before progression to the next phase.
 
+### AIDLC Phase Progression with Governance Gates
+
+```mermaid
+graph TB
+    P1["Phase 1<br/>Discovery &<br/>Ideation"]
+    GG1{"Governance<br/>Gate 1"}
+    P2["Phase 2<br/>Feasibility &<br/>Risk Assessment"]
+    GG2{"Governance<br/>Gate 2"}
+    P3["Phase 3<br/>Data Strategy &<br/>Governance"]
+    GG3{"Governance<br/>Gate 3"}
+    P4["Phase 4<br/>Model Design &<br/>Architecture"]
+    GG4{"Governance<br/>Gate 4"}
+    P5["Phase 5<br/>Development &<br/>Training"]
+    
+    P1 -->|Use case charter| GG1
+    GG1 -->|Risk tier assigned| P2
+    P2 -->|Risk register created| GG2
+    GG2 -->|Data strategy approved| P3
+    P3 -->|Data lineage mapped| GG3
+    GG3 -->|Architecture approved| P4
+    P4 -->|CAI policy signed| GG4
+    GG4 -->|Development begins| P5
+    
+    style GG1 fill:#ff9999
+    style GG2 fill:#ff9999
+    style GG3 fill:#ff9999
+    style GG4 fill:#ff9999
+    style P1 fill:#99ccff
+    style P2 fill:#99ccff
+    style P3 fill:#99ccff
+    style P4 fill:#99ccff
+    style P5 fill:#99ccff
+```
+
+**AIDLC Phase Gate Progression** — The 8-phase lifecycle flows left-to-right with governance checkpoints (red diamonds) validating readiness before advancement. Each gate requires artifacts (use case charter, risk register, data strategy, architecture approval) before the next phase begins.
+
 ## Phase 1: Discovery & Ideation
 
 - **Objective:** Define the AI use case, business value hypothesis, and initial feasibility signal.

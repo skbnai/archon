@@ -28,12 +28,12 @@ covers_version: "as of 2026-07-10"
 Request 1: "What's my account balance?"
     ↓ Agent processes, generates response
     ✅ Response: "$2,345.67"
-    └─ Memory: NONE
+    - Memory: NONE
 
 Request 2 (5 minutes later): "Has anything changed?"
     ↓ Agent has no memory of Request 1
     ❌ Response: "I don't know what your previous balance was"
-    └─ Memory: NONE
+    - Memory: NONE
 
 User Frustration: 😤 "I just told you this!"
 ```
@@ -44,24 +44,29 @@ User Frustration: 😤 "I just told you this!"
 
 ## MEMORY TYPES: The Pyramid
 
+**Agent Memory Architecture (Top-to-Bottom):**
+
+```mermaid
+graph TD
+    A["ORGANIZATIONAL MEMORY<br/>Enterprise knowledge<br/>policies, history<br/>Shared across all agents"]
+    B["SEMANTIC MEMORY<br/>Facts & relationships<br/>what we know<br/>Persistent, reusable"]
+    C["EPISODIC MEMORY<br/>Experiences & events<br/>what happened<br/>Time-bound, contextual"]
+    D["CONVERSATION MEMORY<br/>Current session<br/>what we said<br/>Short-term, operational"]
+    E["WORKING MEMORY<br/>Current reasoning<br/>what we're thinking<br/>Ephemeral, task-specific"]
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    
+    style A fill:#f0e6ff
+    style B fill:#e6d5ff
+    style C fill:#dcc4ff
+    style D fill:#d1b3ff
+    style E fill:#c7a2ff
 ```
-        ┌─────────────────────┐
-        │ ORGANIZATIONAL      │ Enterprise knowledge (policies, history)
-        │ Memory              │ Shared across all agents
-        ├─────────────────────┤
-        │ SEMANTIC MEMORY     │ Facts & relationships (what we know)
-        │ (Long-term facts)   │ Persistent, reusable
-        ├─────────────────────┤
-        │ EPISODIC MEMORY     │ Experiences & events (what happened)
-        │ (Events & history)  │ Time-bound, contextual
-        ├─────────────────────┤
-        │ CONVERSATION        │ Current session (what we said)
-        │ MEMORY              │ Short-term, operational
-        ├─────────────────────┤
-        │ WORKING MEMORY      │ Current reasoning (what we're thinking)
-        │ (Immediate context) │ Ephemeral, task-specific
-        └─────────────────────┘
-```
+
+**Memory Hierarchy:** Organizational (enterprise-wide) → Semantic (factual) → Episodic (experiential) → Conversation (session) → Working (immediate reasoning)
 
 ---
 
@@ -89,19 +94,19 @@ User Frustration: 😤 "I just told you this!"
 User Request: "Can I return my order?"
 
 Working Memory Contents (during processing):
-├─ order_id: "98765"
-├─ customer_id: "12345"
-├─ current_step: "checking_return_eligibility"
-├─ days_since_purchase: 8
-├─ return_window_days: 30
-├─ is_eligible: true
-├─ reasoning_chain: [
-│   "Fetched order",
-│   "Calculated days since purchase",
-│   "Checked against 30-day window",
-│   "Determined eligible=true"
-│ ]
-└─ confidence_score: 0.94
+- order_id: "98765"
+- customer_id: "12345"
+- current_step: "checking_return_eligibility"
+- days_since_purchase: 8
+- return_window_days: 30
+- is_eligible: true
+- reasoning_chain: [
+  "Fetched order",
+  "Calculated days since purchase",
+  "Checked against 30-day window",
+  "Determined eligible=true"
+  ]
+- confidence_score: 0.94
 
 Request ends → Working memory discarded
 ```
@@ -154,19 +159,19 @@ class WorkingMemory:
 
 ```
 CONVERSATION WINDOW (Last N turns):
-├─ Keep only last 5 exchanges
-├─ Older messages summarized or discarded
-└─ Example: Chat interface (last 10 messages visible)
+- Keep only last 5 exchanges
+- Older messages summarized or discarded
+- Example: Chat interface (last 10 messages visible)
 
 FULL CONVERSATION HISTORY:
-├─ Store all messages in session
-├─ Index for search/retrieval
-└─ Example: Support ticket (all interactions recorded)
+- Store all messages in session
+- Index for search/retrieval
+- Example: Support ticket (all interactions recorded)
 
 SUMMARIZED CONVERSATION:
-├─ Store key points, decisions, unresolved items
-├─ Discard full text after N hours
-└─ Example: "Customer asked about refunds, decided to wait"
+- Store key points, decisions, unresolved items
+- Discard full text after N hours
+- Example: "Customer asked about refunds, decided to wait"
 ```
 
 **Example:**
@@ -175,16 +180,16 @@ SUMMARIZED CONVERSATION:
 Session: customer_12345_session_789
 
 Message 1:
-├─ User: "Hi, I want to return my order"
-└─ Agent: "I'd be happy to help! What's your order number?"
+- User: "Hi, I want to return my order"
+- Agent: "I'd be happy to help! What's your order number?"
 
 Message 2:
-├─ User: "Order 98765"
-└─ Agent: "Great! Your order qualifies for return..."
+- User: "Order 98765"
+- Agent: "Great! Your order qualifies for return..."
 
 Message 3:
-├─ User: "What about shipping?"
-└─ Agent: "We'll provide a prepaid label..."
+- User: "What about shipping?"
+- Agent: "We'll provide a prepaid label..."
 
 Current agent can recall entire conversation
 (After session ends → Store as episodic memory if needed)
@@ -256,34 +261,34 @@ class ConversationMemory:
 EPISODIC MEMORY STORE:
 
 Episode 1: Customer 12345 returned item successfully
-├─ Date: 2026-06-15
-├─ Order: 98765
-├─ Reason: Item damaged
-├─ Resolution: Approved return, refund issued
-├─ Processing time: 4 days
-└─ Outcome: ✅ Successful
+- Date: 2026-06-15
+- Order: 98765
+- Reason: Item damaged
+- Resolution: Approved return, refund issued
+- Processing time: 4 days
+- Outcome: ✅ Successful
 
 Episode 2: Customer 12345 complained about shipping
-├─ Date: 2026-05-20
-├─ Issue: Late delivery (5 days)
-├─ Escalation: Human review needed
-├─ Compensation: Free express shipping on next order
-└─ Outcome: ✅ Resolved, customer satisfied
+- Date: 2026-05-20
+- Issue: Late delivery (5 days)
+- Escalation: Human review needed
+- Compensation: Free express shipping on next order
+- Outcome: ✅ Resolved, customer satisfied
 
 Episode 3: Customer 12345 asked about bulk discount
-├─ Date: 2026-04-10
-├─ Request: 10% discount for 5+ units
-├─ Response: Policy requires 20+ units
-├─ Customer reaction: Accepted explanation
-└─ Outcome: ✅ Friendly decline
+- Date: 2026-04-10
+- Request: 10% discount for 5+ units
+- Response: Policy requires 20+ units
+- Customer reaction: Accepted explanation
+- Outcome: ✅ Friendly decline
 
 AGENT RETRIEVAL:
 When customer 12345 calls again:
-├─ Retrieve similar past episodes
-├─ "This customer has been pleasant in past"
-├─ "Resolved successfully before"
-├─ "Had shipping issues once, now happy"
-└─ Agent: More personalized, faster resolution
+- Retrieve similar past episodes
+- "This customer has been pleasant in past"
+- "Resolved successfully before"
+- "Had shipping issues once, now happy"
+- Agent: More personalized, faster resolution
 ```
 
 **Implementation:**
@@ -358,34 +363,32 @@ class EpisodicMemory:
 SEMANTIC FACTS (Knowledge Graph):
 
 Products:
-├─ iPhone 15 Pro
-│  ├─ Price: $999
-│  ├─ Warranty: 1 year
-│  ├─ Color options: [Black, Silver, Gold, Purple]
-│  └─ Related: [iPhone 15, iPhone 15 Max]
-│
-└─ iPad Air
-   ├─ Price: $599
-   ├─ Warranty: 1 year
-   └─ Bundle offers: [Apple Pencil, Magic Keyboard]
+- iPhone 15 Pro
+  - Price: $999
+  - Warranty: 1 year
+  - Color options: [Black, Silver, Gold, Purple]
+  - Related: [iPhone 15, iPhone 15 Max]
+  - iPad Air
+   - Price: $599
+   - Warranty: 1 year
+   - Bundle offers: [Apple Pencil, Magic Keyboard]
 
 Policies:
-├─ Return Policy
-│  ├─ Window: 30 days
-│  ├─ Condition: Unopened/unused
-│  ├─ Exceptions: [Electronics, Accessories]
-│  └─ Refund method: Original payment
-│
-└─ Warranty Policy
-   ├─ Coverage: Manufacturing defects
-   ├─ Duration: 1 year
-   └─ Claim process: [Contact support, Provide proof, Ship to warehouse]
+- Return Policy
+  - Window: 30 days
+  - Condition: Unopened/unused
+  - Exceptions: [Electronics, Accessories]
+  - Refund method: Original payment
+  - Warranty Policy
+   - Coverage: Manufacturing defects
+   - Duration: 1 year
+   - Claim process: [Contact support, Provide proof, Ship to warehouse]
 
 Relationships:
-├─ Customer 12345 → Tier: Gold Member
-├─ Gold Member → Benefits: [Free shipping, Extended warranty]
-├─ Customer 12345 → Previous orders: [Order 98765, Order 98764, ...]
-└─ Order 98765 → Product: iPhone 15 Pro
+- Customer 12345 → Tier: Gold Member
+- Gold Member → Benefits: [Free shipping, Extended warranty]
+- Customer 12345 → Previous orders: [Order 98765, Order 98764, ...]
+- Order 98765 → Product: iPhone 15 Pro
 ```
 
 **Vector-Based Semantic Memory:**
@@ -394,13 +397,13 @@ Relationships:
 Query: "Can I return my phone after 30 days?"
 
 Embedding the question:
-└─ Vector: [0.234, -0.145, 0.892, ..., 0.567]
+- Vector: [0.234, -0.145, 0.892, ..., 0.567]
 
 Semantic search in knowledge base:
-├─ "30-day return policy" → Similarity: 0.98 ✓
-├─ "Return window 30 days for phones" → Similarity: 0.96 ✓
-├─ "Can't return damaged items" → Similarity: 0.78 ⚠️
-└─ "Warranty covers phone defects" → Similarity: 0.45 ✗
+- "30-day return policy" → Similarity: 0.98 ✓
+- "Return window 30 days for phones" → Similarity: 0.96 ✓
+- "Can't return damaged items" → Similarity: 0.78 ⚠️
+- "Warranty covers phone defects" → Similarity: 0.45 ✗
 
 Result: "No, return window is 30 days. You're at day 31."
 ```
@@ -480,30 +483,30 @@ ORGANIZATIONAL MEMORY:
 Playbook: Handling High-Value Customer Complaints
 
 Context:
-├─ Applies to: Orders > $1,000
-├─ Created: 2026-01-15
-├─ Updated: 2026-06-20
-└─ Owner: Customer Service Leadership
+- Applies to: Orders > $1,000
+- Created: 2026-01-15
+- Updated: 2026-06-20
+- Owner: Customer Service Leadership
 
 Steps:
-├─ Step 1: Acknowledge emotion ("I understand your frustration")
-├─ Step 2: Take ownership ("I'll personally handle this")
-├─ Step 3: Escalate authority
-│   ├─ Agent can approve: Up to $500 credit
-│   ├─ Manager can approve: Up to $2,000 credit
-│   └─ Director can approve: Up to $10,000 credit
-├─ Step 4: Follow up within 24 hours
-└─ Step 5: Document for future reference
+- Step 1: Acknowledge emotion ("I understand your frustration")
+- Step 2: Take ownership ("I'll personally handle this")
+- Step 3: Escalate authority
+  - Agent can approve: Up to $500 credit
+  - Manager can approve: Up to $2,000 credit
+  - Director can approve: Up to $10,000 credit
+- Step 4: Follow up within 24 hours
+- Step 5: Document for future reference
 
 Success Rate:
-├─ Customer retention: 87% (vs 45% without playbook)
-├─ Issue resolution time: 4.2 hours (vs 8.1 hours)
-└─ Customer satisfaction: 4.7/5 (vs 2.1/5)
+- Customer retention: 87% (vs 45% without playbook)
+- Issue resolution time: 4.2 hours (vs 8.1 hours)
+- Customer satisfaction: 4.7/5 (vs 2.1/5)
 
 Lessons Learned:
-├─ Acknowledge emotion first (increases retention by 15%)
-├─ Faster authority delegation improves outcomes (20% better)
-└─ 24-hour follow-up critical (prevents 70% of escalations)
+- Acknowledge emotion first (increases retention by 15%)
+- Faster authority delegation improves outcomes (20% better)
+- 24-hour follow-up critical (prevents 70% of escalations)
 ```
 
 **Uses:**
@@ -512,16 +515,16 @@ Lessons Learned:
 Agent accessing organizational memory:
 
 Agent A (New, 1 month old):
-└─ "I don't know how to handle this high-value complaint"
-   └─ Retrieves playbook from organizational memory
-   └─ Follows steps exactly
-   └─ Achieves 87% retention rate (matches experienced team)
+- "I don't know how to handle this high-value complaint"
+   - Retrieves playbook from organizational memory
+   - Follows steps exactly
+   - Achieves 87% retention rate (matches experienced team)
 
 Agent B (Experienced, 3 years old):
-└─ "I see a pattern we haven't seen before"
-   └─ Documents new case + solution
-   └─ Adds to organizational memory
-   └─ All other agents now benefit from this learning
+- "I see a pattern we haven't seen before"
+   - Documents new case + solution
+   - Adds to organizational memory
+   - All other agents now benefit from this learning
 ```
 
 ---
@@ -530,15 +533,13 @@ Agent B (Experienced, 3 years old):
 
 ### Storage Tiers
 
-```
-LAYER          STORAGE TYPE      RETENTION     QUERY TIME    COST
-─────────────────────────────────────────────────────────────────
-Working        RAM              5 min         < 1ms         ✓✓ (free)
-Conversation   Cache / Temp DB  24 hours      < 100ms       ✓ (cheap)
-Episodic       Production DB    7 years       < 500ms       $$ (medium)
-Semantic       Vector DB        Permanent     < 200ms       $$ (medium)
-Organizational Central Repo     Permanent     < 1s          $$ (medium)
-```
+| Layer | Storage Type | Retention | Query Time | Cost |
+|---|---|---|---|---|
+| Working | RAM | 5 min | &lt; 1ms | ✓✓ (free) |
+| Conversation | Cache / Temp DB | 24 hours | &lt; 100ms | ✓ (cheap) |
+| Episodic | Production DB | 7 years | &lt; 500ms | $$ (medium) |
+| Semantic | Vector DB | Permanent | &lt; 200ms | $$ (medium) |
+| Organizational | Central Repo | Permanent | &lt; 1s | $$ (medium) |
 
 ### Memory Hygiene
 
@@ -564,19 +565,19 @@ Organizational Central Repo     Permanent     < 1s          $$ (medium)
 
 ```
 Agent A (Customer Service, limited authority):
-├─ Can read: Own conversation history, customer profile, policies
-├─ Can write: Conversation history, episodic memory (own interactions)
-└─ Cannot read: Other agents' episodic memories, confidential payroll
+- Can read: Own conversation history, customer profile, policies
+- Can write: Conversation history, episodic memory (own interactions)
+- Cannot read: Other agents' episodic memories, confidential payroll
 
 Agent B (Compliance, high authority):
-├─ Can read: All episodic memories (for compliance auditing)
-├─ Can write: Organizational policies, compliance playbooks
-└─ Cannot write: Customer conversation history (data isolation)
+- Can read: All episodic memories (for compliance auditing)
+- Can write: Organizational policies, compliance playbooks
+- Cannot write: Customer conversation history (data isolation)
 
 Human Analyst:
-├─ Can read: Anonymized aggregated data, trends
-├─ Can read/write: Playbooks, training materials
-└─ Cannot read: Individual customer conversations (privacy)
+- Can read: Anonymized aggregated data, trends
+- Can read/write: Playbooks, training materials
+- Cannot read: Individual customer conversations (privacy)
 ```
 
 ---
@@ -587,20 +588,20 @@ Human Analyst:
 
 ```
 Conversation Memory (temp storage):
-└─ 1M conversations × 5KB avg = 5TB/month
-   └─ Cost: $100/month = $1,200/year
+- 1M conversations × 5KB avg = 5TB/month
+   - Cost: $100/month = $1,200/year
 
 Episodic Memory (7-year retention):
-└─ 1M conversations × 2KB stored = 2TB/month
-   └─ Cost: $150/month = $1,800/year
+- 1M conversations × 2KB stored = 2TB/month
+   - Cost: $150/month = $1,800/year
 
 Semantic Memory (vector store):
-└─ 1M embeddings × 1.5KB = 1.5TB
-   └─ Cost: $50/month = $600/year
+- 1M embeddings × 1.5KB = 1.5TB
+   - Cost: $50/month = $600/year
 
 Organizational Memory (central repo):
-└─ Policies, playbooks, training = 100GB
-   └─ Cost: $5/month = $60/year
+- Policies, playbooks, training = 100GB
+   - Cost: $5/month = $60/year
 
 **TOTAL MEMORY COST: ~$3,660/year**
 (Small compared to model inference)
@@ -632,43 +633,43 @@ Organizational Memory (central repo):
 
 ```
 Working Memory:
-├─ [ ] In-memory storage (dict/cache)
-├─ [ ] Auto-cleanup after request
-└─ [ ] Logging for debugging
+- [ ] In-memory storage (dict/cache)
+- [ ] Auto-cleanup after request
+- [ ] Logging for debugging
 
 Conversation Memory:
-├─ [ ] Database schema designed
-├─ [ ] TTL configured (30 min - 1 day)
-├─ [ ] Summarization logic (optional)
-└─ [ ] Indexing for queries
+- [ ] Database schema designed
+- [ ] TTL configured (30 min - 1 day)
+- [ ] Summarization logic (optional)
+- [ ] Indexing for queries
 
 Episodic Memory:
-├─ [ ] Production database (PostgreSQL, etc.)
-├─ [ ] Embeddings generated (for similarity search)
-├─ [ ] Retention policy (7 years for compliance)
-├─ [ ] Access controls (who can see what)
-└─ [ ] PII redaction rules
+- [ ] Production database (PostgreSQL, etc.)
+- [ ] Embeddings generated (for similarity search)
+- [ ] Retention policy (7 years for compliance)
+- [ ] Access controls (who can see what)
+- [ ] PII redaction rules
 
 Semantic Memory:
-├─ [ ] Vector database (Pinecone, Weaviate, etc.)
-├─ [ ] Knowledge graph (Neo4j, optional)
-├─ [ ] Embedding model selected (OpenAI, Anthropic, local)
-├─ [ ] Facts populated (policies, products, relationships)
-└─ [ ] Update process (batch or real-time)
+- [ ] Vector database (Pinecone, Weaviate, etc.)
+- [ ] Knowledge graph (Neo4j, optional)
+- [ ] Embedding model selected (OpenAI, Anthropic, local)
+- [ ] Facts populated (policies, products, relationships)
+- [ ] Update process (batch or real-time)
 
 Organizational Memory:
-├─ [ ] Central repository (Wiki, Confluence, custom)
-├─ [ ] Playbooks documented
-├─ [ ] Access controls (who can contribute)
-├─ [ ] Version control (for playbook evolution)
-└─ [ ] Search/retrieval interface
+- [ ] Central repository (Wiki, Confluence, custom)
+- [ ] Playbooks documented
+- [ ] Access controls (who can contribute)
+- [ ] Version control (for playbook evolution)
+- [ ] Search/retrieval interface
 
 Governance:
-├─ [ ] Retention policies documented
-├─ [ ] PII handling guidelines
-├─ [ ] Access control matrix
-├─ [ ] Audit logging (who accessed what)
-└─ [ ] Compliance review (GDPR, CCPA, etc.)
+- [ ] Retention policies documented
+- [ ] PII handling guidelines
+- [ ] Access control matrix
+- [ ] Audit logging (who accessed what)
+- [ ] Compliance review (GDPR, CCPA, etc.)
 ```
 
 ---

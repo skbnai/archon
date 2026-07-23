@@ -195,6 +195,33 @@ Agile is not dead. But it is being fundamentally restructured. The organizations
 
 Proposed by SAFe practitioners and validated by the DORA 2025 data, this model decouples execution from coordination. AI compresses coding execution but leaves coordination, review, and architectural governance untouched — making hybrid the default.
 
+### Dual-Rhythm Delivery Model
+
+```mermaid
+graph LR
+    CF["Continuous Flow Layer<br/>Code generation, tests,<br/>PRs, docs"]
+    WSP["Weekly Sync Pulse<br/>Status, blockers,<br/>risks"]
+    IDS["Intent Design<br/>Priorities, risk flags"]
+    SR["Strategic<br/>Retrospective<br/>Patterns, waste"]
+    
+    CF -->|Real-time / Async| CF
+    CF -.->|Reports to| WSP
+    WSP -->|Weekly 1-hour| WSP
+    WSP -.->|Informs| IDS
+    IDS -->|Bi-weekly| IDS
+    IDS -.->|Sets direction for| SR
+    SR -->|Monthly| SR
+    
+    style CF fill:#99ff99
+    style WSP fill:#ffcc99
+    style IDS fill:#ff9999
+    style SR fill:#cc99ff
+```
+
+**Dual-Rhythm Architecture** — Three distinct cadences operate in parallel: Continuous Flow Layer (engineers + AI agents execute asynchronously), Weekly Sync Pulse (team coordination), Bi-weekly Intent Design (backlog refinement), and Monthly Strategic Retrospective (improvement). AI accelerates execution; humans govern coordination and strategy.
+
+| Component | Cadence | Owned By | AI Role |
+
 | Component | Cadence | Owned By | AI Role |
 | --- | --- | --- | --- |
 | Continuous Flow Layer | Async / real-time | Engineers + AI agents | Executes: code, tests, PRs, docs |
