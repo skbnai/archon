@@ -1,13 +1,13 @@
 ---
 title: "Enterprise Agent Knowledge Architecture (EAKA) Research Study (Part 2 of 3): Skill Composition, Governance, Knowledge Graph, MCP & Ecosystem Integration"
-doc_type: research-report
+doc_type: reference-architecture
 domain: architecture
 topic_id: eaka-research-study-part2
 date_created: 2026-07-11
 last_reviewed: 2026-07-23
 status: current
 supersedes: []
-tags: [enterprise-architecture, research, knowledge-architecture, study, eaka]
+tags: [enterprise-architecture, knowledge-architecture, eaka]
 covers_version: "2026"
 ---
 
@@ -32,6 +32,46 @@ Automatically composed skills:
 - Architecture Skill → Zero-trust patterns, ADR retrieval
 - Documentation Skill → Runbook generation, OpenAPI annotation
 - Testing Skill → Security test cases, integration test scaffolding
+
+#### EAKA Part 2 — Skill Composition & Knowledge Graph Model
+
+```mermaid
+graph TB
+    subgraph Composition["Skill Composition Process"]
+        Goal["User Goal"]
+        Embed["Goal Embedding"]
+        Match["Capability Matcher"]
+        Dep["Dependency Resolver"]
+        Opt["Optimization"]
+        DAG["Execution DAG"]
+    end
+    
+    subgraph KG["Enterprise Knowledge Graph"]
+        Concept["Concept Node"]
+        Tech["Technology Node"]
+        Pattern["Pattern Node"]
+        Skill["Skill Node"]
+        Policy["Policy Node"]
+    end
+    
+    subgraph Edges["Semantic Relationships"]
+        Impl["implements"]
+        Req["requires_concept"]
+        Gov["governed_by"]
+        Depend["depends_on"]
+    end
+    
+    Goal --> Embed --> Match
+    Match -->|Skill Registry| KG
+    Dep --> Opt --> DAG
+    
+    Concept -->|implements| Pattern
+    Pattern -->|governed_by| Policy
+    Tech -->|requires_concept| Concept
+    Skill -->|depends_on| Skill
+```
+
+**Skill composition drives knowledge graph traversal:** The Composition Process ingests a user goal and queries the Skill Registry backed by the Enterprise Knowledge Graph. Semantic relationships (implements, governed_by, requires_concept, depends_on) enable multi-hop reasoning. The output is an optimized directed acyclic graph (DAG) of skill invocations respecting governance policies.
 
 #### 5.2 Composition Algorithm
 

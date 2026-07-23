@@ -71,26 +71,42 @@ async def analyse_documents(documents):
 
 ### 10.1 REST API Integration Patterns
 
-**Direct integration (simple):**
+```mermaid
+graph LR
+    subgraph Development["Development"]
+        DC["Client Code"]
+    end
+    
+    subgraph Production["Production (Gateway-Mediated)"]
+        PC["Client Code"]
+        GW["AI Gateway<br/>(auth, rate limit,<br/>retry, logging,<br/>cost tracking,<br/>routing)"]
+        CACHE["Prompt Cache"]
+        API["Claude API"]
+    end
+    
+    DC -->|simple<br/>direct| API
+    PC -->|request| GW
+    GW -->|check| CACHE
+    CACHE -->|hit| PC
+    GW -->|miss| API
+    API -->|response| GW
+    GW -->|response| PC
+```
 
-```
-Client → Claude API
-```
+**AI gateway mediation for production:** Development uses direct integration for speed; production routes through a gateway for observability, cost control, and multi-model routing.
+
+**Direct integration (simple):**
 
 Use for: prototypes, low-volume internal tools. Not for production at scale (no caching, monitoring, or retry logic).
 
 **Gateway-mediated (production):**
-
-```
-Client → AI Gateway → Claude API
-```
 
 The gateway handles: auth, rate limiting, retry, logging, cost tracking, model routing. See [AI Gateway Pattern](pathname:///archon/architecture/enterprise-ai-architecture-patterns.md).
 
 **SDK-mediated:**
 
 ```
-Application → Internal AI SDK → AI Gateway → Claude API
+Application -> Internal AI SDK -> AI Gateway -> Claude API
 ```
 
 The internal SDK provides a stable interface. Underneath, the SDK can change model, provider, or routing without the application knowing.
@@ -100,7 +116,7 @@ The internal SDK provides a stable interface. Underneath, the SDK can change mod
 Decouple AI processing from the request/response cycle using event queues.
 
 ```
-User action → Event Queue (Kafka/SQS) → AI Worker → Result Queue → Downstream system
+User action -> Event Queue (Kafka/SQS) -> AI Worker -> Result Queue -> Downstream system
 ```
 
 **Benefits:** Burst handling (queue absorbs spikes), decoupled scaling, natural retry, dead-letter queue for failures.
@@ -156,7 +172,7 @@ For full MCP implementation details, see [MCP Deep Guide](pathname:///archon/pro
 
 - **Tokenisation:** Replace PII values with tokens before sending; reverse-tokenise on return
 - **Redaction:** Remove PII fields entirely if not needed for the task
-- **Pseudonymisation:** Replace real values with consistent fake values (name → "Person A")
+- **Pseudonymisation:** Replace real values with consistent fake values (name -> "Person A")
 - **Differential privacy:** Add noise to aggregate statistics (for analytics workloads)
 
 **Detection tools:** Microsoft Presidio, AWS Comprehend Medical, Google Cloud DLP — use in a pre-processing pipeline before the AI call.
@@ -231,11 +247,11 @@ Never hardcode API keys. Hardcoded keys in source code are the single most commo
 **Production key management:**
 
 ```
-Application → AWS Secrets Manager / Azure Key Vault / HashiCorp Vault
-                        ↓
-               Secret retrieved at runtime
-                        ↓
-               Key never touches source code, env files, or logs
+Application -> AWS Secrets Manager / Azure Key Vault / HashiCorp Vault
+                    |
+          Secret retrieved at runtime
+                    |
+          Key never touches source code, env files, or logs
 ```
 
 **Key rotation:** Rotate API keys quarterly minimum. Automate rotation. Alert on keys older than 90 days.
@@ -290,16 +306,25 @@ Each agent call is a span. The full agent chain is a trace.
 
 **Trace structure for a multi-agent workflow:**
 
+```mermaid
+graph TD
+    T["Trace: research-task-abc123<br/>Total: 5,300ms"]
+    OP["Span: orchestrator-plan<br/>200ms"]
+    WS["Span: worker-search<br/>1,200ms"]
+    WEB["Span: tool-call-web-search<br/>800ms"]
+    WR["Span: worker-read<br/>2,100ms"]
+    FETCH["Span: tool-call-fetch-url<br/>900ms"]
+    OS["Span: orchestrator-synthesise<br/>1,800ms"]
+    
+    T --> OP
+    T --> WS
+    WS --> WEB
+    T --> WR
+    WR --> FETCH
+    T --> OS
 ```
-Trace: research-task-abc123
-  ├─ Span: orchestrator-plan (200ms)
-  ├─ Span: worker-search (1,200ms)
-  │    └─ Span: tool-call-web-search (800ms)
-  ├─ Span: worker-read (2,100ms)
-  │    └─ Span: tool-call-fetch-url (900ms)
-  └─ Span: orchestrator-synthesise (1,800ms)
-Total: 5,300ms
-```
+
+**OpenTelemetry trace structure:** Hierarchical spans showing agent orchestration, worker execution, and tool calls within a distributed trace.
 
 **Tooling:** OpenTelemetry spans to Jaeger, Honeycomb, Datadog APM, or AWS X-Ray. Tag spans with model, tokens, cost.
 

@@ -98,27 +98,38 @@ The Enterprise AI Architect (EA-AI) sits at the intersection of AI/ML technology
 
 ### 2.1 The Four Layers
 
-<!-- TODO(diagram): Replace ASCII box diagram with SVG visual showing 4-layer AI stack -->
+```mermaid
+graph TB
+    subgraph L4["Layer 4: Enterprise AI Products"]
+        direction TB
+        P1["GitHub Copilot, Microsoft 365 Copilot<br/>Vertex AI Conversation, Microsoft Foundry"]
+        P1_1["Turnkey solutions for<br/>specific business domains"]
+    end
+    
+    subgraph L3["Layer 3: Agentic Frameworks"]
+        direction TB
+        A1["Claude Agent SDK, LangGraph<br/>Agent Framework, CrewAI"]
+        A1_1["Orchestration, tool use<br/>multi-agent coordination"]
+    end
+    
+    subgraph L2["Layer 2: Enhanced Models"]
+        direction TB
+        E1["Fine-tuning, RAG<br/>Prompt engineering"]
+        E1_1["Domain adaptation<br/>knowledge grounding"]
+    end
+    
+    subgraph L1["Layer 1: Foundation Models"]
+        direction TB
+        F1["Claude, GPT-5, Gemini<br/>Llama — raw capabilities"]
+        F1_1["Language understanding<br/>reasoning, generation"]
+    end
+    
+    L1 --> L2
+    L2 --> L3
+    L3 --> L4
+```
 
-```
-┌─────────────────────────────────────────────────────────┐
-│  LAYER 4: ENTERPRISE AI PRODUCTS                        │
-│  GitHub Copilot, Microsoft 365 Copilot, Vertex AI       │
-│  Conversation, Microsoft Foundry services               │
-├─────────────────────────────────────────────────────────┤
-│  LAYER 3: AGENTIC FRAMEWORKS                            │
-│  Claude Agent SDK, LangGraph, Agent Framework, CrewAI   │
-│  → Orchestration, tool use, multi-agent coordination    │
-├─────────────────────────────────────────────────────────┤
-│  LAYER 2: ENHANCED MODELS                               │
-│  Fine-tuning, RAG, prompt engineering                   │
-│  → Domain adaptation, knowledge grounding               │
-├─────────────────────────────────────────────────────────┤
-│  LAYER 1: FOUNDATION MODELS                             │
-│  Claude, GPT-5, Gemini, Llama — raw capabilities        │
-│  → Language understanding, reasoning, generation        │
-└─────────────────────────────────────────────────────────┘
-```
+**Four-Layer AI Technology Stack.** Each layer builds on the previous, providing increasing business value and application specificity in exchange for reduced flexibility and customization control.
 
 ### 2.2 What Each Layer Solves
 
@@ -248,20 +259,25 @@ Enterprises should evaluate Claude alongside other providers. The table below ma
 
 ### 4.2 Use-Case Fit (within Claude Tier)
 
-<!-- TODO(diagram): Replace ASCII complexity/cost matrix with SVG grid -->
+```mermaid
+graph TB
+    subgraph HighCost["HIGH COST SENSITIVITY"]
+        HC["Fable 5<br/>(low volume)"]
+        HH["Opus 4.8<br/>(extended thinking)"]
+    end
+    
+    subgraph LowCost["LOW COST SENSITIVITY"]
+        LC["Fable 5<br/>(high volume)"]
+        LL["Sonnet 5<br/>(production)"]
+    end
+    
+    subgraph EvenLower["EVEN LOWER COST"]
+        EL["Haiku 4.5"]
+        ES["Sonnet 5"]
+    end
+```
 
-```
-COMPLEXITY OF TASK
-         High │ Fable 5          │ Fable 5
-              │ (high volume)    │ (low volume)
-              ├──────────────────┤
-              │ Sonnet 5         │ Opus 4.8
-              │ (production)     │ (extended thinking)
-         Low  │ Haiku 4.5        │ Sonnet 5
-              └──────────────────┘
-              Low          High
-              COST SENSITIVITY
-```
+**Model Selection by Task Complexity and Cost Sensitivity.** Higher complexity tasks benefit from Fable 5 or Opus 4.8; routine work fits Sonnet 5 or Haiku. Cost-sensitive operations should route to Haiku first, cascade to Sonnet 5 if quality insufficient.
 
 For cross-provider task-to-model mapping, see [Dynamic Model Selection](pathname:///archon/architecture/enterprise-multi-model-ai-strategy.md).
 
@@ -346,20 +362,21 @@ AI coordinates multiple systems, tools, and sub-tasks to complete a complex goal
 
 ### 6.2 Orchestrator-Worker Pattern
 
-<!-- TODO(diagram): Replace ASCII agent orchestrator diagram with SVG -->
-
-```
-                    ┌─────────────┐
-                    │ ORCHESTRATOR│ ← Planner, router, goal holder
-                    │  (Fable 5) │
-                    └──────┬──────┘
-              ┌────────────┼────────────┐
-              ▼            ▼            ▼
-        ┌──────────┐ ┌──────────┐ ┌──────────┐
-        │ WORKER A │ │ WORKER B │ │ WORKER C │
-        │ (Haiku)  │ │(Sonnet 5)│ │ (Haiku)  │
-        │ Search   │ │ Synthesis│ │ Format   │
-        └──────────┘ └──────────┘ └──────────┘
+```mermaid
+graph TB
+    Orch["ORCHESTRATOR<br/>(Fable 5)<br/>Planner, router<br/>goal holder"]
+    
+    WA["WORKER A<br/>(Haiku)<br/>Search"]
+    WB["WORKER B<br/>(Sonnet 5)<br/>Synthesis"]
+    WC["WORKER C<br/>(Haiku)<br/>Format"]
+    
+    Orch -->|delegate| WA
+    Orch -->|delegate| WB
+    Orch -->|delegate| WC
+    
+    WA -->|results| Orch
+    WB -->|results| Orch
+    WC -->|results| Orch
 ```
 
 The orchestrator holds the overall goal and plan. Workers execute specific sub-tasks. Workers do not know about each other — communication flows through the orchestrator.
@@ -416,18 +433,26 @@ CALM (Conversation, Augmentation, Long-term memory, Multi-turn) is a structured 
 
 ### 7.2 RAG Architecture
 
-<!-- TODO(diagram): Replace ASCII RAG flow with SVG pipeline diagram -->
-
-```
-Query → [Embedder] → Query vector
-                           ↓
-                    [Vector Store] ← Retrieve top-k chunks
-                           ↓
-                   [Reranker] ← Score by relevance
-                           ↓
-              [Generator (Claude)] ← Prompt = query + top chunks
-                           ↓
-                       Response
+```mermaid
+flowchart LR
+    Q["Query"]
+    Embed["Embedder"]
+    QVec["Query Vector"]
+    VS["Vector Store"]
+    Chunks["Retrieved<br/>Top-k Chunks"]
+    Rerank["Reranker"]
+    Scored["Scored & Ranked<br/>Chunks"]
+    Gen["Generator<br/>(Claude)"]
+    Resp["Response"]
+    
+    Q --> Embed
+    Embed --> QVec
+    QVec --> VS
+    VS --> Chunks
+    Chunks --> Rerank
+    Rerank --> Scored
+    Scored --> Gen
+    Gen --> Resp
 ```
 
 **Naive RAG:** Query → retrieve → generate. Simple, fast, often good enough for structured knowledge bases.
@@ -540,24 +565,16 @@ batch = client.messages.batches.create(
 
 A routing layer classifies incoming requests and sends them to the most cost-effective model that can handle the task.
 
-<!-- TODO(diagram): Replace ASCII routing flow diagram with SVG -->
-
-```
-Incoming request
-       ↓
-[Complexity Classifier] (Haiku — cheap, fast)
-       ↓
-  ┌────┴────┐
-  │         │
-Simple   Complex
-  │         │
-Haiku    Sonnet 5
-(~$0.001) (~$0.03)
-              │
-         Very complex
-              │
-           Fable 5
-          (~$0.20+)
+```mermaid
+flowchart TD
+    Req["Incoming Request"]
+    Classify["Complexity Classifier<br/>(Haiku - cheap, fast)"]
+    
+    Req --> Classify
+    
+    Classify -->|Simple| Haiku["Haiku 4.5<br/>~$0.001<br/>per call"]
+    Classify -->|Complex| Sonnet["Sonnet 5<br/>~$0.03<br/>per call"]
+    Classify -->|Very Complex| Fable["Fable 5<br/>~$0.20+<br/>per call"]
 ```
 
 **Classifier features:** Token count, domain keywords, structural complexity, presence of code, multi-step indicators.

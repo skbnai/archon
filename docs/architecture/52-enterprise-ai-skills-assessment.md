@@ -136,6 +136,25 @@ For EA practitioners already working with Claude, CCA-F provides external credib
 
 ## 3. Enterprise AI Architect Competency Model
 
+```mermaid
+stateDiagram-v2
+    [*] --> Awareness: Start learning
+    
+    Awareness --> Practitioner: Complete project<br/>Build experience
+    
+    Practitioner --> Expert: Lead architecture<br/>Mentor others
+    
+    Expert --> Expert: Continuous<br/>evolution
+    
+    Awareness: Can discuss concepts<br/>Requires assistance<br/>to design/build
+    
+    Practitioner: Design & implement<br/>independently<br/>Review others' work
+    
+    Expert: Lead decisions<br/>Define standards<br/>Handle edge cases
+```
+
+**Enterprise AI Architect Competency Progression.** Three distinct levels of mastery across technical, architectural, and governance domains, from foundational awareness through independent practice to expert thought leadership.
+
 Each competency area has three levels:
 
 - **Awareness** — Understands the concept; can have an informed conversation; cannot design or build without assistance

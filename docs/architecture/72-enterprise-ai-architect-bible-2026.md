@@ -5,6 +5,7 @@ domain: architecture
 topic_id: enterprise-ai-architect-bible-2026
 date_created: 2026-07-10
 date_modified: 2026-07-23
+last_reviewed: 2026-07-23
 status: current
 version: 2026-wave-2
 supersedes:
@@ -125,6 +126,44 @@ MAANG interviews at architect level probe deeply on LLM internals. You don't nee
 The transformer architecture, introduced in "Attention Is All You Need" (2017), remains the foundation of every major LLM in production today. Understanding it at depth is non-negotiable for an AI Architect—it informs every performance, cost, and capability decision.
 
 #### Core Components
+
+```mermaid
+graph TB
+    Input["Input Tokens"]
+    
+    Tokenize["Tokenization<br/>(BPE, WordPiece, SentencePiece)"]
+    
+    Embed["Token Embeddings<br/>(2048-8192 dims)"]
+    
+    PosEnc["Positional Encodings<br/>(RoPE for long context)"]
+    
+    Norm1["Layer Normalization<br/>(RMSNorm)"]
+    
+    Attention["Multi-Head Self-Attention<br/>(Q, K, V computation)"]
+    
+    Residual1["Residual Connection<br/>(skip connection)"]
+    
+    Norm2["Layer Normalization"]
+    
+    FFN["Feed-Forward Network<br/>(4x dims, SwiGLU)"]
+    
+    Residual2["Residual Connection"]
+    
+    Output["Output Tokens"]
+    
+    Input --> Tokenize
+    Tokenize --> Embed
+    Embed --> PosEnc
+    PosEnc --> Norm1
+    Norm1 --> Attention
+    Attention --> Residual1
+    Residual1 --> Norm2
+    Norm2 --> FFN
+    FFN --> Residual2
+    Residual2 --> Output
+```
+
+**Transformer Architecture Block Flow.** Each transformer layer alternates attention (global token interaction) and feed-forward (per-token transformation), with residual connections enabling deep training and layer normalization stabilizing computation.
 
 - **Token Embeddings.** Input text is tokenized (BPE, WordPiece, SentencePiece) and mapped to dense vectors in high-dimensional space (typically 2048–8192 dimensions for large models). The embedding layer is the interface between discrete language and continuous computation.
 - **Positional Encodings.** Transformers have no inherent notion of sequence order. Positional encodings inject this. Modern models use RoPE (Rotary Position Embeddings) which encode relative positions and generalize better to long contexts than absolute sinusoidal encodings.

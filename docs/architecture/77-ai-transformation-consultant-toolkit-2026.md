@@ -116,6 +116,26 @@ Healthcare, financial services, legal, government. Deep compliance constraints. 
 
 ### Client Journey Map — Across All Archetypes
 
+```mermaid
+stateDiagram-v2
+    [*] --> Awareness: First conversation
+    
+    Awareness --> Discovery: Board asks<br/>for strategy
+    Discovery --> Pilot: SOW signed<br/>sponsor identified
+    Pilot --> Foundation: Measurable<br/>success
+    Foundation --> Scale: 3+ use cases<br/>CoE established
+    Scale --> Transformation: AI native<br/>new business models
+    
+    Awareness: Client heard about AI<br/>No clear plan
+    Discovery: Explore solutions<br/>Assess readiness
+    Pilot: First project live<br/>Limited scope
+    Foundation: Platform built<br/>Governance emerges
+    Scale: 10+ systems<br/>ROI demonstrated
+    Transformation: AI is operating model<br/>New revenue streams
+```
+
+**Enterprise AI Transformation Client Journey.** Six invariant stages from initial awareness through AI-native transformation, with speed and difficulty varying by client archetype. The consultant's role shifts significantly across stages—from educator to architect to operations partner to strategic advisor.
+
 This is the universal journey a client traverses from first conversation to AI-native transformation. The speed and difficulty of each stage varies by archetype, but the sequence is invariant. Understand where your client is today to prescribe the right intervention.
 
 | Stage | Name | Client State of Mind | Your Primary Role | Success Signal |

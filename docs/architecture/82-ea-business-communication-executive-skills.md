@@ -1,10 +1,12 @@
 ---
 doc_type: guide
 domain: architecture
+status: current
 topic_id: ea-business-communication-executive-skills
 title: Business Communication & Executive Skills
 created: 2026-07-10
 updated: 2026-07-23
+last_reviewed: 2026-07-23
 sources: []
 covers_version: 2026
 supersedes:

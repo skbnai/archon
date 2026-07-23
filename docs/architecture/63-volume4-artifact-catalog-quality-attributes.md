@@ -21,6 +21,40 @@ Every artifact an Architecture Review Board should expect to see — purpose, ow
 
 ## Part A — The Complete Artifact Catalog
 
+```mermaid
+graph LR
+    BC["Business Case"]
+    VD["Vision Document"]
+    AD["Architecture Vision"]
+    CD["Context Diagram"]
+    CONT["Container Diagram"]
+    DD["Deployment Diagram"]
+    TM["Threat Model"]
+    ADR["Architecture Decision<br/>Record"]
+    INT["Integration Contract"]
+    PROM["Prompt Library"]
+    AGENT["Agent Specification"]
+    MCP["MCP Tool Contract"]
+    RB["Runbook"]
+    RC["Retirement Checklist"]
+    
+    BC --> VD
+    VD --> AD
+    AD --> CD
+    CD --> CONT
+    CONT --> DD
+    DD --> TM
+    TM --> ADR
+    ADR --> INT
+    INT --> PROM
+    PROM --> AGENT
+    AGENT --> MCP
+    MCP --> RB
+    RB --> RC
+```
+
+**Architecture Artifact Lifecycle.** From business case through governance decisions, interfaces, AI-specific artifacts, and operational handoff to retirement—a complete artifact catalog ensures consistent quality across all phases.
+
 An ARB that doesn't have a clear, enforced artifact catalog ends up with wildly inconsistent submission quality. This catalog defines what "good" looks like for every artifact a mature banking ARB should expect across the full lifecycle, from business case through retirement.
 
 ### Strategy & Vision Artifacts

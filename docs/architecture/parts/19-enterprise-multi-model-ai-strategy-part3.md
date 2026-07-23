@@ -132,6 +132,23 @@ Public benchmarks measure narrow, standardised tasks under controlled conditions
 
 ### 13.5 Evaluation Pipeline
 
+```mermaid
+flowchart LR
+    A["1. Task Definition<br/>Input, output format<br/>success criteria"]
+    B["2. Dataset Creation<br/>100-500 examples<br/>edge cases, adversarial"]
+    C["3. Baseline Eval<br/>Accuracy, latency<br/>cost, compliance"]
+    D["4. Shadow Test<br/>5% prod traffic<br/>A/B vs primary"]
+    E["5. Monitoring<br/>Continuous eval<br/>Regression alerts"]
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E -->|Quarterly review| A
+```
+
+**Enterprise Model Evaluation Pipeline.** Five-stage continuous process from task definition through dataset preparation, baseline benchmarking, production shadow testing, and ongoing monitoring. Quarterly full reviews and continuous regression alerts ensure models stay fit-for-purpose.
+
 1. TASK DEFINITION: Define input, expected output format, success criteria
 
 2. DATASET CREATION: Golden set of 100–500 representative examples, edge cases (known-hard inputs), adversarial samples (prompt injection, jailbreak attempts)

@@ -47,6 +47,33 @@ This is **Part 2 of 3** of the definitive enterprise reference for selecting, ro
 
 ## Part III — Technical Comparison
 
+```mermaid
+flowchart TD
+    A["Task requires<br/>frontier reasoning?"]
+    A -->|Yes| B["Extended thinking<br/>needed?"]
+    A -->|No| C["Instruction<br/>adherence critical?"]
+    
+    B -->|Yes| D["Claude Fable 5<br/>(extended thinking)<br/>or Opus 4.8"]
+    B -->|No| E["Claude Fable 5<br/>or GPT-4o"]
+    
+    C -->|Yes| F["Claude>GPT-4o<br/>>Gemini"]
+    C -->|No| G["Cost sensitive?"]
+    
+    G -->|Yes| H["Haiku 4.5<br/>or Nova Lite"]
+    G -->|No| I["Tool use<br/>reliability<br/>critical?"]
+    
+    I -->|Yes| J["Claude or<br/>GPT-4o"]
+    I -->|No| K["Long context?"]
+    
+    K -->|Yes| L["Claude Fable 5<br/>or Gemini 2.5 Pro<br/>1M tokens"]
+    K -->|No| M["Coding focus?"]
+    
+    M -->|Yes| N["Gemini 2.5 Pro<br/>or GPT-4o<br/>SWE-Bench strong"]
+    M -->|No| O["Claude Sonnet 5"]
+```
+
+**Multi-Model Selection Decision Tree.** Model choice depends on task characteristics—reasoning depth, cost sensitivity, instruction adherence, and domain focus all influence the decision. No single model dominates; use this decision tree to route each workload appropriately.
+
 ## 6. Claude vs GPT vs Gemini vs Open Source — Technical Comparison
 
 ### 6.1 Instruction Following
@@ -261,17 +288,20 @@ class TaskClassifier:
 
 Generate with a cheap model, escalate only if quality is insufficient:
 
-```
-Request
-  ├─> [Haiku / Flash] ──> [Quality Score > 0.85?]
-  │                             ├─ YES: Return response
-  │                             └─ NO: Escalate
-  │
-  ├─> [Sonnet 5 / GPT-4o] ──> [Quality Score > 0.85?]
-  │                             ├─ YES: Return response
-  │                             └─ NO: Escalate
-  │
-  └─> [Fable 5 / o3] ──> Return response (best effort)
+```mermaid
+flowchart LR
+    Req["Request"]
+    
+    Q1{Haiku/Flash<br/>Quality > 0.85?}
+    Q2{Sonnet 5/GPT-4o<br/>Quality > 0.85?}
+    Best["Fable 5/o3<br/>Return response<br/>best effort"]
+    
+    Req -->|Try cheap first| Q1
+    Q1 -->|YES| ReturnA["Return response"]
+    Q1 -->|NO| Q2
+    
+    Q2 -->|YES| ReturnB["Return response"]
+    Q2 -->|NO| Best
 ```
 
 Quality scoring approaches include:
@@ -297,12 +327,28 @@ For chat or agentic applications, route based on detected user intent:
 
 ### 8.4 Latency-Aware Routing
 
-```
-Request with SLA tag
-       ├─ SLA < 500ms: Gemini Flash / Haiku / Nova Micro
-       ├─ SLA < 2s: GPT-4o mini / Sonnet 5 / Mistral Small
-       ├─ SLA < 10s: GPT-4o / Sonnet 5 / Gemini 2.5 Pro
-       └─ SLA < 60s: Fable 5 (extended thinking) / o3
+```mermaid
+flowchart TD
+    Req["Request with SLA tag"]
+    
+    Q500["SLA < 500ms?"]
+    Q2s["SLA < 2s?"]
+    Q10s["SLA < 10s?"]
+    Q60s["SLA < 60s?"]
+    
+    M1["Gemini Flash<br/>Haiku<br/>Nova Micro"]
+    M2["GPT-4o mini<br/>Sonnet 5<br/>Mistral Small"]
+    M3["GPT-4o<br/>Sonnet 5<br/>Gemini 2.5 Pro"]
+    M4["Fable 5<br/>(extended thinking)<br/>o3"]
+    
+    Req --> Q500
+    Q500 -->|YES| M1
+    Q500 -->|NO| Q2s
+    Q2s -->|YES| M2
+    Q2s -->|NO| Q10s
+    Q10s -->|YES| M3
+    Q10s -->|NO| Q60s
+    Q60s -->|YES| M4
 ```
 
 ### 8.5 Risk-Aware Routing
@@ -340,43 +386,58 @@ See Enterprise AI Architecture Patterns for Pattern 11: Cost Optimisation Routin
 
 ### 9.2 Abstraction Layer Architecture
 
-```
-APPLICATION LAYER
-┌─────────────────────────────────────────────────────┐
-│  App A      App B       App C       App D           │
-│  (Python)   (Node.js)   (Java)      (Go)            │
-└────────────────────────┬────────────────────────────┘
-                         │ Standard API (OpenAI-compatible)
-                         ▼
-ABSTRACTION LAYER (AI Gateway)
-┌─────────────────────────────────────────────────────┐
-│  Auth & Rate Limiting                               │
-│  Model Router (rule / classifier / cascade)         │
-│  Prompt Template Engine                             │
-│  Cost Tracker & Budget Enforcer                     │
-│  Semantic Cache                                     │
-│  Observability (traces, tokens, latency, cost)      │
-│  Failover Manager                                   │
-└────────────────────────┬────────────────────────────┘
-                         │
-       ┌─────────────────┼──────────────────┐
-       ▼                 ▼                  ▼
-PROVIDER LAYER
-┌──────────┐     ┌──────────┐     ┌──────────────────┐
-│ Anthropic│     │ OpenAI   │     │ Self-Hosted      │
-│ Claude   │     │ Azure OAI│     │ (vLLM / Ollama)  │
-│ Bedrock  │     │          │     │ Llama / Mistral  │
-└──────────┘     └──────────┘     └──────────────────┘
-       │                 │                  │
-       └─────────────────┴──────────────────┘
-                         │
-                OBSERVABILITY LAYER
-                ┌──────────────────┐
-                │ LangSmith        │
-                │ Phoenix (Arize)  │
-                │ Datadog LLM Obs  │
-                │ Grafana / OTel   │
-                └──────────────────┘
+```mermaid
+graph TB
+    subgraph App["APPLICATION LAYER"]
+        AppA["App A<br/>(Python)"]
+        AppB["App B<br/>(Node.js)"]
+        AppC["App C<br/>(Java)"]
+        AppD["App D<br/>(Go)"]
+    end
+    
+    subgraph Gateway["ABSTRACTION LAYER - AI Gateway"]
+        Auth["Auth & Rate Limiting"]
+        Router["Model Router<br/>rule/classifier/cascade"]
+        Template["Prompt Template Engine"]
+        Cost["Cost Tracker &<br/>Budget Enforcer"]
+        Cache["Semantic Cache"]
+        Obs["Observability<br/>traces, tokens, latency"]
+        Failover["Failover Manager"]
+    end
+    
+    subgraph Provider["PROVIDER LAYER"]
+        Anthropic["Anthropic<br/>Claude / Bedrock"]
+        OpenAI["OpenAI<br/>Azure OAI"]
+        SelfHost["Self-Hosted<br/>vLLM, Ollama<br/>Llama, Mistral"]
+    end
+    
+    subgraph Monitoring["OBSERVABILITY LAYER"]
+        LangSmith["LangSmith"]
+        Phoenix["Phoenix/Arize"]
+        Datadog["Datadog LLM Obs"]
+        Grafana["Grafana/OTel"]
+    end
+    
+    AppA --> Auth
+    AppB --> Auth
+    AppC --> Auth
+    AppD --> Auth
+    
+    Auth --> Router
+    Router --> Template
+    Template --> Cost
+    Cost --> Cache
+    Cache --> Obs
+    Obs --> Failover
+    
+    Failover --> Anthropic
+    Failover --> OpenAI
+    Failover --> SelfHost
+    
+    Anthropic --> LangSmith
+    OpenAI --> Phoenix
+    SelfHost --> Datadog
+    Failover --> Grafana
 ```
 
 ### 9.3 Implementation Tools for the Abstraction Layer
@@ -401,51 +462,34 @@ See Kong AI Gateway Guide for detailed configuration instructions.
 
 In complex agentic systems, different models serve different roles based on their strengths. Assigning the right model to each role controls cost while maintaining quality.
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    USER REQUEST                             │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-                         ▼
-               ┌─────────────────┐
-               │  PLANNER MODEL  │  <- Expensive; runs once
-               │  (Fable 5 /     │    Decomposes task, creates plan
-               │   o3)           │    Decides which agents to invoke
-               └────────┬────────┘
-                        │
-        ┌───────────────┼───────────────┐
-        │               │               │
-        ▼               ▼               ▼
-┌──────────────┐ ┌──────────────┐ ┌──────────────┐
-│ EXECUTION    │ │ CODE MODEL   │ │ VISION MODEL │
-│ MODEL        │ │ (DeepSeek-   │ │ (GPT-4o /   │
-│ (Haiku /     │ │  Coder /     │ │  Gemini)    │
-│ Flash)       │ │  Codestral)  │ │             │
-│ Fast tool    │ │ Writes code, │ │ Analyses    │
-│ calls, data  │ │ tests code   │ │ images,     │
-│ extraction   │ │              │ │ diagrams    │
-└──────┬───────┘ └──────┬───────┘ └──────┬───────┘
-       │                │                │
-       └────────────────┼────────────────┘
-                        │
-                        ▼
-               ┌─────────────────┐
-               │  VERIFIER MODEL │  <- Medium tier; runs on outputs
-               │  (Sonnet 5 /    │    Checks correctness
-               │   GPT-4o mini)  │    Flags issues for retry
-               └────────┬────────┘
-                        │
-                   [Pass / Fail]
-                        │
-             ┌──────────┴──────────┐
-            PASS                  FAIL (-> retry planner)
-             │
-             ▼
-    ┌─────────────────┐
-    │ SUMMARISER MODEL│  <- Cheap; final step
-    │ (Haiku / Flash) │    Synthesises results
-    │                 │    Formats output
-    └─────────────────┘
+```mermaid
+flowchart TD
+    Req["USER REQUEST"]
+    
+    Planner["PLANNER MODEL<br/>(Fable 5 / o3)<br/>Expensive; runs once<br/>Decomposes task"]
+    
+    Exec["EXECUTION MODEL<br/>(Haiku / Flash)<br/>Fast tool calls<br/>data extraction"]
+    Code["CODE MODEL<br/>(DeepSeek-Coder)<br/>Writes & tests code"]
+    Vision["VISION MODEL<br/>(GPT-4o / Gemini)<br/>Analyzes images<br/>diagrams"]
+    
+    Verify["VERIFIER MODEL<br/>(Sonnet 5 / GPT-4o mini)<br/>Medium tier<br/>Checks correctness"]
+    
+    Decision{Pass/Fail?}
+    
+    Summary["SUMMARIZER MODEL<br/>(Haiku / Flash)<br/>Cheap; final step<br/>Formats output"]
+    
+    Req --> Planner
+    Planner --> Exec
+    Planner --> Code
+    Planner --> Vision
+    
+    Exec --> Verify
+    Code --> Verify
+    Vision --> Verify
+    
+    Verify --> Decision
+    Decision -->|FAIL| Planner
+    Decision -->|PASS| Summary
 ```
 
 ### 10.2 Agent Role to Model Assignment
@@ -476,23 +520,50 @@ Cost pattern: high model (once) -> medium (once) -> medium (once) -> low (once)
 
 **Parallel Fan-Out:** Planner spawns multiple specialist models simultaneously.
 
-```
-              Planner
-       ┌─────────┼─────────┐
-       ▼         ▼         ▼
-    Coder    Researcher  Analyst
-       └─────────┼─────────┘
-            Planner (aggregates)
+```mermaid
+flowchart TD
+    Planner1["Planner<br/>Decompose task"]
+    
+    Coder["Coder<br/>Parallel"]
+    Researcher["Researcher<br/>Parallel"]
+    Analyst["Analyst<br/>Parallel"]
+    
+    Planner2["Planner<br/>Aggregates results"]
+    
+    Planner1 --> Coder
+    Planner1 --> Researcher
+    Planner1 --> Analyst
+    
+    Coder --> Planner2
+    Researcher --> Planner2
+    Analyst --> Planner2
 ```
 
 See Enterprise AI Architecture Patterns Parallel Fan-Out Pattern for implementation details.
 
 **Debate / Ensemble:** Multiple models independently answer; a judge selects or synthesises best answer.
 
-```
-Question -> [Model A (Claude)]
-         -> [Model B (GPT-4o)]  -> [Judge (Sonnet 5)] -> Best answer
-         -> [Model C (Gemini)]
+```mermaid
+flowchart LR
+    Q["Question"]
+    
+    ModelA["Model A<br/>(Claude)"]
+    ModelB["Model B<br/>(GPT-4o)"]
+    ModelC["Model C<br/>(Gemini)"]
+    
+    Judge["Judge<br/>(Sonnet 5)<br/>Selects best or<br/>synthesizes"]
+    
+    Output["Best Answer"]
+    
+    Q --> ModelA
+    Q --> ModelB
+    Q --> ModelC
+    
+    ModelA --> Judge
+    ModelB --> Judge
+    ModelC --> Judge
+    
+    Judge --> Output
 ```
 
 Use for high-stakes decisions, conflict resolution, and reducing single-model hallucination risk. Cost: 3x inference plus judge call.
@@ -537,17 +608,20 @@ For CALM (Context and Memory) patterns, see Enterprise AI Architecture Patterns 
 
 **Profile:** 5–20 engineers; <$50K/month AI spend; single cloud.
 
-```
-Applications
-     │
-     ▼
-[LiteLLM Proxy] --- Config-driven model routing
-     │
-     ├── Claude Sonnet 5 (primary)
-     └── Claude Haiku 4.5 (triage / low-cost)
-
-Observability: LangSmith
-Auth: API key per team
+```mermaid
+graph TB
+    Apps["Applications"]
+    Proxy["LiteLLM Proxy<br/>Config-driven routing"]
+    Sonnet["Claude Sonnet 5<br/>Primary"]
+    Haiku["Claude Haiku 4.5<br/>Triage/Low-cost"]
+    Obs["Observability:<br/>LangSmith"]
+    Auth["Auth: API key<br/>per team"]
+    
+    Apps --> Proxy
+    Proxy --> Sonnet
+    Proxy --> Haiku
+    Proxy --> Obs
+    Proxy --> Auth
 ```
 
 Key decisions: Minimal infrastructure; single commercial provider; simple routing; add complexity only when cost or capability limits appear.
@@ -556,89 +630,75 @@ Key decisions: Minimal infrastructure; single commercial provider; simple routin
 
 **Profile:** 50–200 engineers; multi-team; $50K–$500K/month AI spend; multi-cloud consideration.
 
-```
-Internal Applications
-        │
-        ▼
-┌─────────────────────────────────────────┐
-│         ENTERPRISE AI GATEWAY           │
-│    (Kong AI / LiteLLM + custom rules)   │
-│  ┌──────────────┐ ┌──────────────────┐  │
-│  │ Task Router  │ │  Cost Controller │  │
-│  │ (classifier) │ │  (budget/team)   │  │
-│  └──────────────┘ └──────────────────┘  │
-└────────────────────┬────────────────────┘
-                     │
-     ┌───────────────┼─────────────────┐
-     ▼               ▼                 ▼
-  Anthropic       OpenAI           Self-hosted
-  (Claude Fable,  (GPT-4o /        (Llama 3.3 70B
-   Sonnet, Haiku) GPT-4o mini)      on K8s cluster)
-                                   Sensitive data only
-
-Observability: Datadog or Phoenix (Arize)
-Auth: SSO + per-team API keys; model tier RBAC
-Governance: Monthly model review board
+```mermaid
+graph TB
+    Apps["Internal Applications"]
+    
+    subgraph GW["ENTERPRISE AI GATEWAY<br/>(Kong AI / LiteLLM)"]
+        Router["Task Router<br/>(classifier)"]
+        Cost["Cost Controller<br/>(budget/team)"]
+    end
+    
+    Anthropic["Anthropic<br/>Claude Fable/Sonnet/Haiku"]
+    OpenAI["OpenAI<br/>GPT-4o / GPT-4o mini"]
+    SelfHost["Self-hosted<br/>Llama 3.3 70B<br/>K8s cluster<br/>Sensitive data"]
+    
+    Apps --> GW
+    Router --> Anthropic
+    Router --> OpenAI
+    Router --> SelfHost
+    Cost --> Anthropic
+    Cost --> OpenAI
+    
+    GW -.->|Datadog/Phoenix| Obs["Observability"]
+    GW -.->|SSO + RBAC| Auth["Auth & Governance"]
 ```
 
 ### 12.3 Large Regulated Enterprise (Bank / Insurance / Healthcare)
 
 **Profile:** 500+ engineers; $1M+/month AI spend; strict data residency; compliance requirements.
 
-```
-PUBLIC INTERNET
-      │ (no AI data crosses this boundary for T1 data)
-      │
-[PERIMETER]
-      │
-┌─────────────────────────────────────────────────────┐
-│                  PRIVATE VPC / ON-PREMISE            │
-│                                                     │
-│  ┌─────────────────────────────────────────────┐    │
-│  │          AI GOVERNANCE CONTROL PLANE        │    │
-│  │  Policy engine | Audit log | PII scanner    │    │
-│  └──────────────────────┬──────────────────────┘    │
-│                         │                           │
-│  ┌──────────────────────┼──────────────────────┐    │
-│  │              AI GATEWAY LAYER                │    │
-│  │ ┌─────────────────┐ ┌─────────────────────┐ │    │
-│  │ │ Regulated tier  │ │  Commercial tier    │ │    │
-│  │ │ (T0 data only)  │ │  (T2/T3 data only) │ │    │
-│  │ │ Self-hosted OSS │ │  Bedrock / Vertex   │ │    │
-│  │ │ Llama / Granite │ │  Claude / Gemini    │ │    │
-│  │ └─────────────────┘ └─────────────────────┘ │    │
-│  └──────────────────────────────────────────────┘    │
-│                                                     │
-│  ┌──────────────────────────────────────────────┐   │
-│  │         DATA CLASSIFICATION LAYER            │   │
-│  │  T0: Personal/clinical/regulated -> self-host│   │
-│  │  T1: Internal sensitive -> private endpoints │   │
-│  │  T2: Internal general -> commercial (DPA)    │   │
-│  │  T3: Public -> any approved model            │   │
-│  └──────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────┘
+```mermaid
+graph TB
+    Internet["PUBLIC INTERNET<br/>(no T1 data crosses)"]
+    Perimeter["PERIMETER SECURITY"]
+    
+    subgraph VPC["PRIVATE VPC / ON-PREMISE"]
+        subgraph GovPlane["AI GOVERNANCE CONTROL PLANE<br/>Policy engine | Audit log | PII scanner"]
+            Gov["Governance"]
+        end
+        
+        subgraph GWLayer["AI GATEWAY LAYER"]
+            Regulated["Regulated Tier<br/>T0 data only<br/>Self-hosted OSS<br/>Llama / Granite"]
+            Commercial["Commercial Tier<br/>T2/T3 data only<br/>Bedrock / Vertex<br/>Claude / Gemini"]
+        end
+        
+        subgraph DataClass["DATA CLASSIFICATION LAYER"]
+            T0["T0: Personal/clinical<br/>-> self-host"]
+            T1["T1: Internal sensitive<br/>-> private endpoints"]
+            T2["T2: Internal general<br/>-> commercial DPA"]
+            T3["T3: Public<br/>-> any approved"]
+        end
+    end
+    
+    Internet --> Perimeter
+    Perimeter --> VPC
 ```
 
 ### 12.4 Government / Sovereign AI
 
 **Profile:** National security or data sovereignty requirements; no commercial cloud in some deployments.
 
-```
-CLASSIFIED NETWORK (no internet)
-          │
-    ┌─────────────────────────────────┐
-    │     AIR-GAPPED AI PLATFORM      │
-    │                                 │
-    │  Self-hosted models only:       │
-    │  - Llama 3.3 70B (vetted)       │
-    │  - Mistral Large (vetted)       │
-    │  - IBM Granite (enterprise SLA) │
-    │                                 │
-    │  On-premise GPU: H100 cluster   │
-    │  vLLM serving layer             │
-    │  Internal model registry        │
-    │  Full audit trail               │
-    └─────────────────────────────────┘
+```mermaid
+graph TB
+    ClassNet["CLASSIFIED NETWORK<br/>(no internet)"]
+    
+    subgraph AirGap["AIR-GAPPED AI PLATFORM"]
+        Models["Self-hosted Models:<br/>Llama 3.3 70B (vetted)<br/>Mistral Large (vetted)<br/>IBM Granite (SLA)"]
+        Infra["Infrastructure:<br/>H100 cluster (on-premise)<br/>vLLM serving layer<br/>Internal model registry<br/>Full audit trail"]
+    end
+    
+    ClassNet --> AirGap
 ```
 
 Model weights must be (a) downloaded and verified offline, (b) scanned for trojans/backdoors, (c) signed with internal keys, (d) stored in isolated registry.

@@ -1,17 +1,22 @@
 ---
-title: "Enterprise AI Comparative Matrices & Decision Tools 2026"
-date_created: 2026-07-12
-last_reviewed: 2026-07-12
-status: current
-source_type: native-md
-source_file: ""
-tags: ["architecture", "vendor-selection", "decision-framework"]
 doc_type: reference-architecture
-covers_version: "analyst judgment, early 2026"
 domain: architecture
 topic_id: enterprise-ai-comparative-matrices-2026
+title: "Enterprise AI Comparative Matrices & Decision Tools 2026"
+date_created: 2026-07-12
+last_reviewed: 2026-07-23
+status: current
+covers_version: "analyst judgment, early 2026"
+aliases:
+  - enterprise ai matrices
+  - ai decision tools 2026
 supersedes:
   - docs/enterprise-architecture/ai-architecture/enterprise-ai-comparative-matrices-2026.md
+tags:
+  - enterprise-ai-architect
+  - vendor-selection
+  - decision-framework
+  - maturity-model
 ---
 
 # Enterprise AI Comparative Matrices & Decision Tools 2026
@@ -21,6 +26,19 @@ supersedes:
 **Purpose:** Analyst-grade scorecards, decision matrices, technology radar, maturity model, Porter Five Forces, and vendor-neutral reference architecture for positioning enterprise agentic AI platforms and frontier models.
 
 **Score methodology:** 5 = category-defining leadership · 4 = strong, production-proven · 3 = credible, gaps · 2 = emerging/partial · 1 = absent/immature. Scores are analyst judgment (early 2026); verify against current vendor documentation before procurement decisions.
+
+---
+
+## Table of Contents
+
+1. [Hyperscaler Agent-Platform Scorecard](#1-hyperscaler-agent-platform-scorecard)
+2. [Frontier-Model Provider Decision Matrix](#2-frontier-model-provider-decision-matrix)
+3. [Agent-Framework Technology Radar](#3-agent-framework-technology-radar)
+4. [Enterprise Agentic-AI Maturity Model](#4-enterprise-agentic-ai-maturity-model)
+5. [Porter Five Forces — Enterprise Agent-Platform Market](#5-porter-five-forces)
+6. [Consolidated SWOT One-Liners](#6-consolidated-swot-one-liners)
+7. [Target-State Reference Architecture](#7-target-state-reference-architecture)
+8. [Migration Decision Tree](#8-migration-decision-tree)
 
 ---
 
@@ -51,11 +69,13 @@ supersedes:
 - **Google** when data-platform economics and open interop dominate — BigQuery/Vertex co-location and A2A originator advantage.
 - **AWS** when runtime primitives, model neutrality, and isolation economics dominate — Firecracker microVM isolation is the clearest differentiation for untrusted-code workloads.
 
-Differences are **lane differences**, not quality gaps. Multi-cloud deployments often pick the runtime that co-locates with the dominant data gravity and use the other two for model access via API.
+> Differences are **lane differences**, not quality gaps. Multi-cloud deployments often pick the runtime that co-locates with the dominant data gravity and use the other two for model access via API.
 
 ---
 
 ## 2. Frontier-Model Provider Decision Matrix
+
+Weights apply to the weighted score column.
 
 | Criterion (weight) | OpenAI | Anthropic | Google | Meta / Llama | Mistral | Cohere |
 |---|---|---|---|---|---|---|
@@ -76,13 +96,14 @@ Differences are **lane differences**, not quality gaps. Multi-cloud deployments 
 - **Meta/Llama** is the deployment-flexibility play — sovereign/air-gapped/on-prem requirements and cost floor.
 - **Cohere & Mistral** serve regulated-industry on-prem with strong data-residency posture.
 
-**Critical principle**: Run **two frontier providers** in production (not one). Single-model dependency on agentic task reliability is a strategic liability given the pace of capability change.
+Run **two frontier providers** in production (not one). Single-model dependency on agentic task reliability is a strategic liability given the pace of capability change.
 
 ---
 
 ## 3. Agent-Framework Technology Radar
 
-### Adopt (Production-ready)
+### Adopt
+Production-ready, strong enterprise track record. Low-regret investments in 2026.
 
 | Item | Rationale |
 |---|---|
@@ -92,30 +113,34 @@ Differences are **lane differences**, not quality gaps. Multi-cloud deployments 
 | **OTel GenAI conventions** | Observability standard; instrument before agent fleet scales — retrofitting is expensive |
 | **DSPy** | Prompt optimisation pipelines; compiles prompts for quality + cost instead of manual tuning |
 
-### Trial (Evaluate in 2026)
+### Trial
+Evaluate with a real workload in 2026; production-grade by 2027 expected.
 
 - Microsoft Agent Framework (MAF) — strong for Entra-anchored enterprises
 - Google ADK + Agent Engine — strong for Vertex/BigQuery-anchored shops
 - AWS AgentCore — runtime-primitives leader; microVM isolation differentiator
-- CrewAI Flows — structured multi-agent coordination
-- PydanticAI — type-safe, testable Python agents
+- CrewAI Flows — structured multi-agent coordination; evaluate against LangGraph for your use case
+- PydanticAI — type-safe, testable Python agents; strong DevEx
 - Mastra — TypeScript shops building agentic workflows
-- A2A protocol — cross-vendor agent-to-agent communication
-- OpenHands — sandboxed autonomous coding agents
+- A2A protocol — cross-vendor agent-to-agent communication; watch for identity + payment extensions
+- OpenHands — sandboxed autonomous coding agents; evaluate governance model carefully
 
-### Assess (Monitor in 2026)
+### Assess
+Directionally important; not yet enterprise-production-ready. Monitor in 2026.
 
-- **AG-UI** — streaming agent-UI protocol
-- **Agent-payment protocols** (AP2/ACP-class) — buyer-agent ↔ seller-agent commerce
-- **Cedar for agent authz** — policy-as-code for agent action authorisation
+- **AG-UI** — streaming agent-UI protocol; strong concept, spec stabilising
+- **Agent-payment protocols** (AP2/ACP-class) — buyer-agent ↔ seller-agent commerce; early but high-impact
+- **BeeAI** — multi-agent framework from IBM; watch governance story
+- **Cedar for agent authz** — policy-as-code for agent action authorisation; compelling but adoption early
 - **Confidential inference** — TEE-based model serving for highest-sensitivity regulated workloads
 
-### Hold (Do not introduce in new projects)
+### Hold
+Do not introduce in new greenfield projects; plan migration for existing uses.
 
-- Unpinned community MCP servers in production
-- Planner-style legacy Semantic Kernel (SK) planners
-- Monolithic single-prompt "god agents"
-- Seat-priced agent SKUs without usage terms
+- Unpinned community MCP servers in production — supply-chain risk until signing + provenance story matures
+- Planner-style legacy Semantic Kernel (SK) planners — superseded by graph-based approaches
+- Monolithic single-prompt "god agents" — brittleness, cost, and debuggability failure mode
+- Seat-priced agent SKUs without usage terms — misaligned incentives; demand consumption or outcome pricing
 
 ---
 
@@ -129,7 +154,7 @@ Differences are **lane differences**, not quality gaps. Multi-cloud deployments 
 | 4 | Governed Fleet | Agent registry, identities, policy plane, outcome metrics | Cross-vendor agents ungoverned |
 | 5 | Agentic Operations | Agents as managed workforce: budgets, SLAs, A2A across org boundary | Over-autonomy without audit parity |
 
-Most Global-2000 firms sit at levels 2–3 entering 2026. **Procurement should target level-4 capabilities** in platform selection even when currently operating at level 2 — the cost of retrofitting identity and policy onto a scaled agent fleet is 3–5× the cost of building it in.
+> Most Global-2000 firms sit at levels 2–3 entering 2026. **Procurement should target level-4 capabilities** in platform selection even when currently operating at level 2 — the cost of retrofitting identity and policy onto a scaled agent fleet is 3–5× the cost of building it in.
 
 **Level transition checkpoints:**
 
@@ -165,6 +190,10 @@ Portfolio-level view across the principal vendors in the enterprise agentic AI m
 | Microsoft | Distribution at scale + Entra identity | SKU sprawl / complexity | Enterprise agent directory win | OpenAI partnership evolution |
 | AWS | Runtime primitives + microVM isolation | DevEx fragmentation across services | Default agent runtime for neutrality buyers | Up-stack rivals (Salesforce, ServiceNow) |
 | NVIDIA | CUDA ecosystem + systems-level position | Customer custom-ASIC programs | Inference OS layer (Dynamo/vLLM) | Accelerating margin compression |
+| Salesforce | CRM gravity + consumption-pricing courage | Raw model quality bar | Digital-labor category ownership | Seat cannibalisation by agents |
+| ServiceNow | Workflow substrate depth | Price perception | Agent control tower positioning | Platform overreach perception |
+| Accenture | Global scale + hyperscaler alliances | Hours-leverage model under pressure | Reinvention IP / outcome models | Insourcing + Fixed-Delivery-Engine pressure |
+| Databricks | Data + governance depth | Model tier credibility | Agent-on-lakehouse pattern | Snowflake + Microsoft Fabric convergence |
 
 ---
 
@@ -172,17 +201,39 @@ Portfolio-level view across the principal vendors in the enterprise agentic AI m
 
 Vendor-neutral architecture for a governed agentic AI platform at level 4 maturity.
 
+```mermaid
+flowchart TB
+  subgraph Experience
+    CH[Chat/Copilot surfaces] --- APP[Product-embedded agents] --- AGUI[AG-UI streams]
+  end
+  subgraph Orchestration
+    GW[AI Gateway: routing · quotas · caching · policy]
+    RT[Agent Runtime: sessions · checkpoints · HITL]
+    MEM[Memory: episodic+semantic · owned schema]
+  end
+  subgraph Capability
+    FM[Frontier models ×2] --- SM[Small/OSS models] --- FT[Tuned/domain models]
+  end
+  subgraph Integration
+    MCPS[MCP tool servers — signed · allow-listed] --- A2AB[A2A boundary agents]
+  end
+  subgraph Foundation
+    ID[Agent identity: OIDC + token-exchange + SPIFFE]
+    DATA[Governed data: catalog + vector + lineage]
+    OBS[OTel traces + action audit]
+    GOVN[Registry + eval-gated CI/CD + policy engine]
+  end
+  Experience --> GW --> RT
+  RT <--> MEM
+  GW --> FM & SM & FT
+  RT <--> MCPS
+  RT <--> A2AB
+  ID -.-> RT & MCPS & A2AB
+  DATA -.-> MEM & MCPS
+  RT --> OBS --> GOVN -.gates.-> RT
 ```
-Experience Layer: Chat/Copilot surfaces, Product-embedded agents, AG-UI streams
-            ↓
-Orchestration Layer: AI Gateway (routing, quotas, caching, policy) → Agent Runtime (sessions, checkpoints, HITL) ↔ Memory (episodic+semantic, owned schema)
-            ↓
-Capability Layer: Frontier models ×2, Small/OSS models, Tuned/domain models
-            ↓
-Integration Layer: MCP tool servers (signed, allow-listed) ↔ A2A boundary agents
-            ↓
-Foundation Layer: Agent identity (OIDC + token-exchange + SPIFFE) + Governed data (catalog, vector, lineage) + OTel traces + Registry + eval-gated CI/CD + policy engine
-```
+
+**Reference architecture for governed agentic platforms:** Experience surfaces route through AI Gateway to Agent Runtime, which coordinates capability layer (frontier + OSS + tuned models), integrations (MCP + A2A), and foundation controls (identity, data governance, observability, CI/CD gates).
 
 **Layer design notes:**
 
@@ -198,26 +249,55 @@ Foundation Layer: Agent identity (OIDC + token-exchange + SPIFFE) + Governed dat
 
 ## 8. Migration Decision Tree
 
-**1. WORKLOAD CLASS?**
-- Interactive copilot (latency-sensitive, user-facing) → gateway + model tier only; skip managed runtime complexity
-- Long-running agent (multi-step, tool-calling, persistent state) → proceed to step 2
+Condensed workload-placement and migration guide.
 
-**2. IDENTITY GRAVITY?**
-- Entra-centric (M365 / Azure dominant) → Azure Foundry Agent Service as default runtime; Entra Agent ID for agent identity
-- Multi-cloud / vendor-neutral → proceed to step 3
+```mermaid
+graph TD
+    WC["1. WORKLOAD CLASS?"]
+    WC -->|Interactive copilot<br/>latency-sensitive, user-facing| SKIP["Gateway + model tier only<br/>Skip managed runtime"]
+    WC -->|Long-running agent<br/>multi-step, tool-calling, state| IG["2. IDENTITY GRAVITY?"]
+    
+    IG -->|Entra-centric<br/>M365/Azure dominant| ENTRA["Azure Foundry Agent Service<br/>Entra Agent ID for identity"]
+    IG -->|Multi-cloud/<br/>vendor-neutral| DG["3. DATA GRAVITY?"]
+    
+    DG -->|BigQuery/Vertex| GOOGLE["Co-locate agents with<br/>Google data plane"]
+    DG -->|Snowflake/Databricks| AGN["Agnostic runtime<br/>partner integration"]
+    DG -->|AWS/S3-native| AWS["AWS AgentCore<br/>as default runtime"]
+    
+    SKIP --> ISOL["4. ISOLATION REQ?"]
+    ENTRA --> ISOL
+    GOOGLE --> ISOL
+    AGN --> ISOL
+    AWS --> ISOL
+    
+    ISOL -->|Untrusted code execution<br/>web browsing at scale| MICROVM["microVM/gVisor MANDATORY<br/>AgentCore + Agent Sandbox<br/>+ Hyper-V sessions"]
+    ISOL -->|Trusted internal tools| CONTAINER["Standard container<br/>acceptable for L3"]
+    
+    MICROVM --> PORT["5. PORTABILITY HIGH?"]
+    CONTAINER --> PORT
+    
+    PORT -->|Yes: multi-cloud,<br/>M&A risk, regulatory| PORTABLE["LangGraph/ADK/MAF<br/>Own memory schema<br/>Runtime as deploy target"]
+    PORT -->|No: single-cloud,<br/>PoC/prototype| VENDOR["Vendor SDK OK<br/>Revisit at scale"]
+    
+    PORTABLE --> REG["6. REGULATED<br/>EU AI Act/high-risk?"]
+    VENDOR --> REG
+    
+    REG -->|Yes| REGULATED["Add before scale-out:<br/>Data residency controls<br/>ISO 42001 registry+evals<br/>Deployer-duty tooling<br/>DPIA template<br/>Deployer assurance docs"]
+    REG -->|No| DONE["Decision complete"]
+    REGULATED --> DONE
+```
 
-**3. DATA GRAVITY?**
-- BigQuery / Vertex dominant → co-locate agents with Google data plane
-- Snowflake / Databricks dominant → agnostic runtime; partner integration
-- AWS / S3-native → AWS AgentCore as default runtime
+**Migration decision tree:** Navigate workload type → identity gravity → data gravity → isolation requirements → portability needs → regulatory requirements to select optimal runtime and architecture.
 
-**4. ISOLATION REQUIREMENT?**
-- Untrusted code execution / web browsing at scale → microVM / gVisor-class runtime MANDATORY (AgentCore, Agent Sandbox, Hyper-V sessions)
-- Trusted internal tools only → standard container runtime acceptable for L3 maturity
+---
 
-**5. PORTABILITY PRIORITY HIGH?**
-- Yes (multi-cloud roadmap, M&A risk, regulatory portability) → Author in LangGraph / ADK / MAF; own memory schema; treat runtime as deploy target
-- No (single-cloud committed, PoC / prototype scope) → vendor-native SDK acceptable; revisit at production scale
+## Sources
 
-**6. REGULATED WORKLOAD (EU AI Act / high-risk / financial)?**
-- Add before scale-out (not after): Data residency controls · ISO 42001-mapped agent registry + eval gates · Deployer-duty tooling from vendor · Published DPIA template from vendor · Prefer vendors with deployer-model assurance documentation
+- [AgentMarketCap — Agent Memory at Scale 2026: Letta, Zep, Mem0, LangMem Compared](https://agentmarketcap.ai/blog/2026/04/10/agent-memory-vendor-landscape-2026-letta-zep-mem0-langmem)
+- [APIScout — Zep vs Mem0 vs Letta Agent Memory API (2026)](https://apiscout.dev/guides/zep-vs-mem0-vs-letta-agent-memory-api-2026)
+- [Mem0 — Graph-Based Memory Solutions Compared](https://mem0.ai/blog/graph-memory-solutions-ai-agents)
+- [Medium/Data Reply — Stateful Agents on Amazon Bedrock: AgentCore Runtime & Memory](https://medium.com/data-reply-it-datatech/stateful-agents-on-amazon-bedrock-how-agentcore-runtime-solves-the-memory-problem-74ba885776e7)
+- [Anthropic — How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)
+- [Zylos Research — Durable Execution for AI Agent Runtimes: Checkpointing, Replay, Recovery](https://zylos.ai/research/2026-04-24-durable-execution-agent-runtimes/)
+
+*Scores are analyst judgment (early 2026). Verify against current vendor documentation and pricing pages before procurement.*

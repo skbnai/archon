@@ -1,13 +1,13 @@
 ---
 title: "Enterprise Agent Knowledge Architecture (EAKA) Research Study (Part 1 of 3): Enterprise Knowledge Discovery, Classification, Planning & Skills Architecture"
-doc_type: research-report
+doc_type: reference-architecture
 domain: architecture
 topic_id: eaka-research-study
 date_created: 2026-07-11
 last_reviewed: 2026-07-23
 status: current
 supersedes: ["docs/enterprise-architecture/specialization/EAKA_Research_Study.md"]
-tags: [enterprise-architecture, research, knowledge-architecture, study, eaka]
+tags: [enterprise-architecture, knowledge-architecture, eaka]
 covers_version: "2026"
 ---
 
@@ -62,6 +62,35 @@ Current enterprise AI platforms excel at connecting agents to data and tools, bu
 - Context Engineering disciplines — budgeting, compression, refresh policies — reduce hallucination by 40–60% in controlled benchmarks.
 - MCP Integration as an intelligent capability provider (not merely a connector) unlocks dynamic tool discovery and multi-server orchestration.
 - Microsoft Agent Ecosystem integration enables enterprise-grade identity, governance, and agent interoperability at organisational scale.
+
+#### EAKA Part 1 — Knowledge Discovery through Skills Architecture Pipeline
+
+```mermaid
+graph LR
+    T1["T1: Official<br/>Specifications"]
+    T2["T2: Internal<br/>Authoritative"]
+    T3["T3: Project<br/>Knowledge"]
+    T4["T4: Collaborative"]
+    T5["T5: Training &<br/>Reference"]
+    
+    FDE["Federated Discovery<br/>Engine"]
+    CLASS["Classification:<br/>Taxonomy & Relationships"]
+    KEP["Knowledge Execution<br/>Plan Generator"]
+    SR["Skill Registry &<br/>Composition"]
+    
+    T1 --> FDE
+    T2 --> FDE
+    T3 --> FDE
+    T4 --> FDE
+    T5 --> FDE
+    
+    FDE -->|Indexed &<br/>Attributed| CLASS
+    CLASS -->|Tagged &<br/>Governed| KEP
+    KEP -->|Goal-Driven<br/>Planning| SR
+    SR -->|Versioned<br/>Skills Ready| AGENT["Enterprise Agent"]
+```
+
+**EAKA knowledge pipeline:** Source tiers stream into the Federated Discovery Engine for cross-source indexing. Classification assigns hierarchical taxonomy and semantic relationships. The Knowledge Execution Plan generator uses this to construct goal-decomposed plans before retrieval. Enterprise Skills encapsulate reusable capabilities with governance, versioning, and trust scores.
 
 #### Scope and Target Sectors
 

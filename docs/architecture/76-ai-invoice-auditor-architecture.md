@@ -86,6 +86,40 @@ store = SqliteStore.from_conn_string(
 
 ## **2.3 Port Map — All Native Windows Processes**
 
+```mermaid
+graph TB
+    subgraph Client["Client Tier"]
+        Browser["Browser<br/>(localhost:8501)"]
+    end
+    
+    subgraph Services["Native Windows Services"]
+        StreamlitUI["Streamlit UI<br/>Port 8501<br/>(6 pages)"]
+        ChatGW["Chat API Gateway<br/>Port 8502<br/>(uvicorn)"]
+        ERPMock["ERP Mock API<br/>Port 8000<br/>(uvicorn)"]
+        MCPServer["MCP Tool Server<br/>Port 9000<br/>(Fast MCP)"]
+        Ollama["Ollama LLM<br/>Port 11434<br/>(llama3/mistral)"]
+    end
+    
+    subgraph Storage["Local Storage"]
+        Checkpoints["checkpoints.db<br/>(LangGraph state)"]
+        Store["store.db<br/>(Long-term memory)"]
+        Metrics["metrics.db<br/>(Observability)"]
+    end
+    
+    Browser -->|HTTP| StreamlitUI
+    StreamlitUI -->|API calls| ChatGW
+    ChatGW -->|tool calls| MCPServer
+    ChatGW -->|inference| Ollama
+    MCPServer -->|fetch POs| ERPMock
+    
+    ChatGW -->|checkpoint| Checkpoints
+    ChatGW -->|memory| Store
+    ChatGW -->|metrics| Metrics
+    StreamlitUI -->|query| Metrics
+```
+
+**AI Invoice Auditor v5.0 System Architecture.** All services run as native Windows Python processes orchestrated via a single start_all.bat script, with SQLite providing persistence—eliminating Docker complexity while maintaining distributed service model.
+
 With Docker removed, every service is a native Windows Python process or .exe. The entire system starts from one .bat file.
 
 | Port | Service | Process Type | Notes |
@@ -123,12 +157,12 @@ timeout /t 3 /nobreak > nul
 echo [5/5] Starting Streamlit UI (port 8501)...
 start "Streamlit" cmd /c "%VENV%\streamlit.exe run ui\app.py"
 
-echo ─────────────────────────────────────────────────────────────────
+echo ===================================================================
 echo  All services started (no Docker required)
 echo  UI:      <http://localhost:8501>
 echo  ERP API: <http://localhost:8000/docs>
 echo  SQLite:  %APPDATA%\InvoiceAuditor\
-echo ─────────────────────────────────────────────────────────────────
+echo ===================================================================
 pause
 ```
 
@@ -171,7 +205,7 @@ class InvoiceAuditState(AgentState):
     final_status:       str   = ''
     auditor_id:         str   = ''
 
-# ── Tools that require human approval before execution ─────────────────
+# -- Tools that require human approval before execution -----
 
 # approve_invoice  — approve payment: high-stakes, all decisions allowed
 
@@ -399,7 +433,7 @@ from src.core.persistence import checkpointer, store
 from src.core.llm_factory import get_llm
 from typing import Callable
 
-# ── State carries current_step across all turns ────────────────────────
+# -- State carries current_step across all turns --------
 
 class InvoicePipelineState(AgentState):
     invoice_id:             str
@@ -412,7 +446,7 @@ class InvoicePipelineState(AgentState):
     flags:                  list  = []
     final_status:           str   = ''
 
-# ── Handoff tools — each updates current_step via Command ──────────────
+# -- Handoff tools — each updates current_step via Command ----
 
 @tool
 def complete_triage(
@@ -463,7 +497,7 @@ def complete_validation(
         'current_step':  next_step,
     })
 
-# ── Stage configuration map ────────────────────────────────────────────
+# -- Stage configuration map ------
 
 STAGE_CONFIGS = {
     'triage': {
@@ -492,7 +526,7 @@ STAGE_CONFIGS = {
     },
 }
 
-# ── Middleware: apply stage config based on current_step ───────────────
+# -- Middleware: apply stage config based on current_step ----
 
 @wrap_model_call
 def apply_stage_config(
@@ -507,7 +541,7 @@ def apply_stage_config(
     )
     return handler(request)
 
-# ── Pipeline agent — single agent, all stages ──────────────────────────
+# -- Pipeline agent — single agent, all stages ----
 
 pipeline_agent = create_agent(
     model=get_llm(),
@@ -691,7 +725,7 @@ Long-term memory is stored in store.db using LangGraph's **SqliteStore**. It is 
 
 from src.core.persistence import store
 
-# ── Namespace design ─────────────────────────────────────────────────
+# -- Namespace design ------
 
 # ('vendors', vendor_id)       → vendor risk profile + payment history
 

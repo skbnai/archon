@@ -16,6 +16,31 @@ This is Part 2 of 2. [Return to Part 1: Overview, Certifications, Competency Mod
 
 ## 7. EA-Level Scenario Questions
 
+```mermaid
+graph TB
+    subgraph Categories["Assessment Domains"]
+        S["Security & Governance"]
+        C["Compliance & Regulations"]
+        P["Performance & Reliability"]
+        D["Data Architecture"]
+        O["Observability & Cost"]
+    end
+    
+    subgraph Skills["Practitioner Skills"]
+        TS["Technical Skills"]
+        GS["Governance Skills"]
+        CS["Compliance Skills"]
+    end
+    
+    S --> TS
+    C --> CS
+    P --> TS
+    D --> TS
+    O --> GS
+```
+
+**Enterprise AI architecture review domains:** Scenarios test competency across security, compliance, performance, data architecture, and observability — the five pillars of enterprise AI design.
+
 These 20 scenarios reflect real architecture review, consulting, and incident situations. Each has a model answer (3–5 sentences). Use them for interview prep, architecture review practice, or CCA-F scenario practice.
 
 ---

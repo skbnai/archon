@@ -111,23 +111,32 @@ Different categories of technology warrant different levels of evaluation rigour
 
 ### 2.2 Evaluation Rigour by Category
 
-<!-- TODO(diagram): ASCII evaluation-effort chart showing relationship between strategic platform through commodity on vertical axis and standardisation pressure on horizontal axis. -->
+```mermaid
+graph TB
+    subgraph eval["EVALUATION EFFORT (Increasing)"]
+        Strategic["Strategic Platform<br/>Maximum Rigour<br/>ARB Full Review"]
+        Core["Core Enterprise Service<br/>High Rigour<br/>ARB + Security"]
+        Shared["Shared Engineering Platform<br/>High Rigour<br/>Architecture Forum"]
+        Dept["Departmental Tool<br/>Medium Rigour<br/>Team Architect"]
+        Prod["Productivity Tool<br/>Low Rigour<br/>Self-service"]
+        Exp["Experimental/Emerging<br/>PoC-gated<br/>Sandbox Only"]
+        Comm["Commodity<br/>Policy-approved<br/>No Review"]
+    end
+    
+    subgraph stand["STANDARDISATION PRESSURE (Increasing →)"]
+        Low["Low<br/>Many tools OK"]
+        High["High<br/>One standard required"]
+    end
+    
+    Strategic -.->|High pressure| Core
+    Core -.->|Medium pressure| Dept
+    Prod -.->|Low pressure| Exp
+    Exp -.->|Variable| Comm
+```
 
-```
-EVALUATION EFFORT
-│
-│  Strategic Platform ────────────────────────── Maximum
-│  Core Enterprise Service ─────────────────── High
-│  Shared Engineering Platform ────────────── High
-│  Departmental Tool ───────────────────────── Medium
-│  Productivity Tool ───────────────────────── Low
-│  Experimental / Emerging ─────────────────── PoC-gated
-│  Commodity ────────────────────────────────── Policy-approved
-│
-└────────────────────────────────────────────── STANDARDISATION PRESSURE
-     Low                                            High
-     (many tools OK)                        (one standard required)
-```
+**Technology Category Evaluation Matrix.** Strategic platforms require maximum rigour where organizational standardization is critical; commodity technologies require policy approval only. Each category maps to distinct governance gates.
+
+
 
 ---
 
@@ -297,48 +306,28 @@ Used when the cost of a wrong decision is very high. Process:
 
 <!-- TODO(diagram): ASCII decision tree showing evaluation flow from "NEW CAPABILITY NEEDED" through ADOPT, BUILD, BUY, EXTEND, PARTNER outcomes. -->
 
-```
-NEW CAPABILITY NEEDED
-         │
-         ▼
-    Does a commodity or
-    open-source solution
-    exist that covers ≥80%?
-         │
-    ┌────┴────┐
-   YES       NO
-    │         │
-    ▼         ▼
-  ADOPT     Is this a
-  (OSS /    differentiating
-  commodity) capability that
-             creates IP?
-                │
-           ┌────┴────┐
-          YES        NO
-           │          │
-           ▼          ▼
-         BUILD     Does a commercial
-         (internal  SaaS/product
-          R&D)      solve it?
-                      │
-                 ┌────┴────┐
-                YES        NO
-                 │          │
-                 ▼          ▼
-               BUY        Is the gap
-               (SaaS/    fillable by
-               product)  extending an
-                         existing system?
-                               │
-                          ┌────┴────┐
-                         YES        NO
-                          │          │
-                          ▼          ▼
-                        EXTEND    PARTNER
-                        (plugin,   (SI, ISV,
-                         API ext,   strategic
-                         config)    partner)
+```mermaid
+flowchart TD
+    Start["New Capability Needed"]
+    Q1{Commodity or OSS<br/>solution covers ≥80%?}
+    Adopt["ADOPT<br/>(Open Source /<br/>Commodity)"]
+    Q2{Differentiating<br/>capability that<br/>creates IP?}
+    Build["BUILD<br/>(Internal R&D)"]
+    Q3{Commercial SaaS/<br/>product solves it?}
+    Buy["BUY<br/>(SaaS / Product)"]
+    Q4{Gap fillable by<br/>extending existing<br/>system?}
+    Extend["EXTEND<br/>(Plugin, API<br/>extension, config)"]
+    Partner["PARTNER<br/>(SI, ISV,<br/>strategic partner)"]
+    
+    Start --> Q1
+    Q1 -->|YES| Adopt
+    Q1 -->|NO| Q2
+    Q2 -->|YES| Build
+    Q2 -->|NO| Q3
+    Q3 -->|YES| Buy
+    Q3 -->|NO| Q4
+    Q4 -->|YES| Extend
+    Q4 -->|NO| Partner
 ```
 
 ### 5.2 Options Compared
@@ -578,26 +567,32 @@ Controls:
 
 ### 9.1 Standards Hierarchy
 
-```
-MUST USE (Mandatory Standard)
-│ Enterprise-wide; no exceptions without ARB waiver
-│ Example: Entra ID for identity; approved cloud regions only
-│
-SHOULD USE (Preferred Standard)
-│ Default choice for new projects; deviation requires justification
-│ Example: PostgreSQL for relational databases; Kafka for event streaming
-│
-MAY USE (Approved Alternatives)
-│ Permitted but not preferred; team has justified the deviation
-│ Example: MySQL for small-scale teams migrating from existing MySQL
-│
-DO NOT USE (Restricted)
-│ Blocked by policy; security, legal, or compliance reason
-│ Example: End-of-life versions; products failing security audit
-│
-EVALUATE ONLY (Experimental)
-│ Not production-approved; sandbox/PoC only
-│ Example: New AI models not yet through security review
+```mermaid
+graph TB
+    subgraph Must["MUST USE (Mandatory Standard)"]
+        Must_desc["Enterprise-wide<br/>No exceptions without ARB waiver<br/>Example: Entra ID, approved cloud regions"]
+    end
+    
+    subgraph Should["SHOULD USE (Preferred Standard)"]
+        Should_desc["Default choice for new projects<br/>Deviation requires justification<br/>Example: PostgreSQL, Kafka"]
+    end
+    
+    subgraph May["MAY USE (Approved Alternatives)"]
+        May_desc["Permitted but not preferred<br/>Team has justified deviation<br/>Example: MySQL for migration"]
+    end
+    
+    subgraph Not["DO NOT USE (Restricted)"]
+        Not_desc["Blocked by policy<br/>Security, legal, or compliance reason<br/>Example: EOL versions"]
+    end
+    
+    subgraph Eval["EVALUATE ONLY (Experimental)"]
+        Eval_desc["Not production-approved<br/>Sandbox/PoC only<br/>Example: New AI models under review"]
+    end
+    
+    Must --> Should
+    Should --> May
+    May --> Not
+    Eval -.->|for research| May
 ```
 
 ### 9.2 Exception Process
@@ -655,14 +650,25 @@ Create a complete technology inventory:
 
 Map each tool to the capability it provides:
 
-```
-CAPABILITY: "Workflow automation"
-├── Tool A (Marketing) — $24K/year
-├── Tool B (Sales) — $36K/year  
-├── Tool C (Ops) — $18K/year — same vendor as Tool B, different contract
-└── Tool D (Platform) — $0 (open-source, self-hosted)
-
-→ 4 tools solving the same capability → rationalize to 1 or 2
+```mermaid
+graph TD
+    Cap["CAPABILITY:<br/>Workflow automation"]
+    
+    A["Tool A (Marketing)<br/>$24K/year"]
+    B["Tool B (Sales)<br/>$36K/year"]
+    C["Tool C (Ops)<br/>$18K/year<br/>same vendor as B"]
+    D["Tool D (Platform)<br/>$0<br/>open-source, self-hosted"]
+    
+    Cap --> A
+    Cap --> B
+    Cap --> C
+    Cap --> D
+    
+    Result["Result: 4 tools for same capability<br/>→ Rationalize to 1-2 tools"]
+    A --> Result
+    B --> Result
+    C --> Result
+    D --> Result
 ```
 
 **Step 3: Functional Overlap Analysis**
@@ -696,28 +702,25 @@ Winner: Tool B covers most users; negotiate enterprise licence; migrate Tool A a
 
 Not all technical debt is worth paying. Use this model:
 
-<!-- TODO(diagram): Debt quadrant showing business impact (high/low) × risk (high/low) with tactics: tackle now, schedule to tackle, leave it, document and monitor. -->
-
-```
-DEBT QUADRANT
-
-                HIGH BUSINESS IMPACT
-                         │
-     Tackle now ─────────┼───────── Schedule to tackle
-     (blocking           │          (important, plan it)
-      growth or          │
-      causing            │
-      incidents)         │
-─────────────────────────┼────────────────────────────
-                         │
-     Leave it ───────────┼───────── Document and monitor
-     (low value,         │          (risk is real but
-      high cost          │           not urgent today)
-      to fix)            │
-                         │
-                LOW BUSINESS IMPACT
-
-        HIGH RISK                          LOW RISK
+```mermaid
+graph TB
+    subgraph matrix["TECHNOLOGY DEBT QUADRANT"]
+        subgraph Q1["HIGH IMPACT + HIGH RISK<br/>TACKLE NOW<br/>(blocking growth)"]
+            Q1Text["Blocking growth<br/>Causing incidents<br/>Must fix immediately"]
+        end
+        
+        subgraph Q2["HIGH IMPACT + LOW RISK<br/>SCHEDULE TO TACKLE<br/>(plan it)"]
+            Q2Text["Important capability<br/>Plan in roadmap<br/>Allocate resources"]
+        end
+        
+        subgraph Q3["LOW IMPACT + HIGH RISK<br/>LEAVE IT<br/>(low value)"]
+            Q3Text["High cost to fix<br/>Low business value<br/>Accept the risk"]
+        end
+        
+        subgraph Q4["LOW IMPACT + LOW RISK<br/>DOCUMENT & MONITOR<br/>(non-urgent)"]
+            Q4Text["Risk is real<br/>Not urgent today<br/>Track and revisit"]
+        end
+    end
 ```
 
 ---

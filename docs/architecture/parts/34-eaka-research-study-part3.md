@@ -1,13 +1,13 @@
 ---
 title: "Enterprise Agent Knowledge Architecture (EAKA) Research Study (Part 3 of 3): Context Engineering, Reliability, Reference Architecture, Lifecycle & Maturity Model"
-doc_type: research-report
+doc_type: reference-architecture
 domain: architecture
 topic_id: eaka-research-study-part3
 date_created: 2026-07-11
 last_reviewed: 2026-07-23
 status: current
 supersedes: []
-tags: [enterprise-architecture, research, knowledge-architecture, study, eaka]
+tags: [enterprise-architecture, knowledge-architecture, eaka]
 covers_version: "2026"
 ---
 
@@ -115,10 +115,57 @@ The EAKA Reference Architecture defines a layered, loosely coupled platform with
 
 **EAKA Layered Reference Architecture**
 
+```mermaid
+graph TB
+    subgraph Interface["User & Agent Interface Layer"]
+        NLP["Natural Language<br/>Interface"]
+        API["API Gateway"]
+        COPILOT["Copilot Plugins"]
+    end
+    
+    subgraph Orchestration["Orchestration Layer"]
+        KP["Knowledge Planner"]
+        SC["Skill Composer"]
+        CP["Context Planner"]
+    end
+    
+    subgraph Intelligence["Intelligence & Registry Layer"]
+        KR["Knowledge Registry"]
+        SR["Skill Registry"]
+        EKG["Enterprise<br/>Knowledge Graph"]
+        MCP["MCP Registry"]
+    end
+    
+    subgraph Foundation["Governance & Support Layer"]
+        TE["Trust Engine"]
+        GE["Governance Engine"]
+        EE["Evaluation Engine"]
+        OBS["Observability"]
+        FB["Feedback Loop"]
+    end
+    
+    NLP --> KP
+    API --> SC
+    COPILOT --> CP
+    
+    KP --> KR
+    SC --> SR
+    CP --> EKG
+    SC --> MCP
+    
+    KR --> TE
+    SR --> GE
+    EKG --> EE
+    MCP --> OBS
+    
+    FB -->|Signals| TE
+    FB -->|Signals| GE
+```
+
+**Four-layer EAKA platform:** The Interface Layer accepts user goals via natural language, API, or Microsoft Copilot extensions. The Orchestration Layer (Knowledge Planner, Skill Composer, Context Planner) decomposes goals and manages resource allocation. The Intelligence Layer maintains the Knowledge Registry, Skill Registry, Enterprise Knowledge Graph, and MCP Registry. The Foundation Layer provides trust scoring, governance enforcement, evaluation, observability, and feedback-driven continuous improvement.
+
 - User / Agent Interface Layer (Natural language, API, Copilot plugins)
 - Orchestration Layer (Knowledge Planner, Skill Composer, Context Planner)
-
-![Figure 6](/img/enterprise-architecture/ea-p27-6.png)
 
 #### 12.3 Technology Stack Recommendations
 
