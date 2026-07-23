@@ -1,26 +1,32 @@
 ---
-title: "End-to-End Traceability for Multi-Agent Systems"
-date_created: 2026-07-14
-last_reviewed: 2026-07-14
-status: current
-source_type: native-md
-source_file: ""
-tags: ["architecture", "observability", "traceability", "opentelemetry", "audit"]
 doc_type: reference-architecture
-covers_version: "as of 2026-07-14"
 domain: architecture
 topic_id: end-to-end-traceability-guide
+title: "End-to-End Traceability for Multi-Agent Systems"
+date_created: 2026-07-14
+last_reviewed: 2026-07-23
+status: current
+covers_version: "as of 2026-07-14"
+aliases:
+  - end-to-end traceability multi-agent
+  - trace propagation guide
 supersedes:
   - docs/enterprise-architecture/ai-architecture/end-to-end-traceability-guide.md
+tags:
+  - architecture
+  - observability
+  - traceability
+  - opentelemetry
+  - audit
 ---
 
 # End-to-End Traceability for Multi-Agent Systems
 
 **Audience:** Platform engineers, AI architects, and SREs building observable multi-agent systems.
 
-**Purpose:** Defines how a single trace context propagates from the user's request through every agent, tool, model call, and data access — surviving process boundaries, network hops, asynchronous queues, and cross-organization agent calls. Covers correlation IDs, distributed tracing, OTel baggage propagation, causal graphs, lineage, provenance, compliance audit trails, and execution replay.
+**Purpose:** Defines how a single trace context propagates from the user's request through every agent, tool, model call, and data access—surviving process boundaries, network hops, asynchronous queues, and cross-organization agent calls. Covers correlation IDs, distributed tracing, OTel baggage propagation, causal graphs, lineage, provenance, compliance audit trails, and execution replay.
 
-**Scope:** Trace propagation mechanics. For observability dashboards and signal inventory, see [Agentic AI Reliability, Observability & Governance §6–8](pathname:///archon/architecture/49-agentic-ai-reliability-observability-governance). For governance decisions within the trace, see [Governance Propagation Chain](pathname:///archon/architecture/governance-propagation-chain).
+**Scope:** Trace propagation mechanics. For observability dashboards and signal inventory, see [Agentic AI Reliability, Observability &amp; Governance §6–8](./pathname:///archon/architecture/49-agentic-ai-reliability-observability-governance). For governance decisions within the trace, see [Governance Propagation Chain](./pathname:///archon/architecture/governance-propagation-chain).
 
 ---
 
@@ -31,8 +37,8 @@ Traditional distributed tracing assumes: a request enters, flows through a DAG o
 Agentic systems break this model:
 
 | Challenge | Why it's hard |
-|-----------|--------------|
-| **Asynchronous agent invocation** | Tool calls may queue; the trace is paused and resumed — a different process/thread/node picks it up |
+| --- | --- |
+| **Asynchronous agent invocation** | Tool calls may queue; the trace is paused and resumed—a different process/thread/node picks it up |
 | **Dynamic plan generation** | The span tree is not known at trace start; the planner creates new spans mid-trace |
 | **Cross-organization A2A calls** | Remote organizations have different telemetry backends; trace context must survive the protocol boundary |
 | **Long-running sessions** | A conversation spanning hours has thousands of spans; standard tracing systems time out or truncate |
@@ -47,7 +53,7 @@ Agentic systems break this model:
 A complete trace in a multi-agent system requires multiple correlated identifiers:
 
 | Identifier | Scope | Lifetime | Example |
-|-----------|-------|---------|---------|
+| --- | --- | --- | --- |
 | **Trace ID** | End-to-end request | Request lifecycle | W3C `traceparent`: `00-4bf92f3...` |
 | **Span ID** | Single operation | Operation lifetime | W3C `traceparent` parent-id |
 | **Conversation ID** | Multi-turn session | Session lifetime | `conv-8821-abc123` |
@@ -67,58 +73,23 @@ A complete trace in a multi-agent system requires multiple correlated identifier
 
 ### 3.1 The Complete Propagation Chain
 
-```
-USER REQUEST
-  │ HTTP/gRPC headers:
-  │   traceparent: 00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01
-  │   tracestate:  vendor-specific
-  │   baggage:     conv_id=conv-8821, req_id=req-001, user_id=u-alice
-  ▼
-GATEWAY
-  │ Creates root span: "gateway.request"
-  │ Validates trace context; if absent, creates new
-  │ Injects: plan_id, session_id into baggage
-  │ Propagates to Planner via HTTP headers
-  ▼
-PLANNER AGENT
-  │ Creates child span: "planner.decompose"
-  │ Logs: plan_id, steps[], model_used, reasoning_summary
-  │ Creates one child span per planned step
-  │ Propagates trace context to each Supervisor call
-  ▼
-SUPERVISOR AGENT
-  │ Creates child span: "supervisor.delegate"
-  │ Logs: task_assignment, worker_id, delegation_scope
-  │ Propagates trace context to Worker calls
-  │ Also propagates via: A2A task.metadata.trace_context
-  ▼
-WORKER AGENT
-  │ Creates child span: "worker.execute"
-  │ Logs: tool_calls[], model_calls[], data_accesses[]
-  │ Each tool call and model call is a child span
-  ▼
-MCP SERVER (Tool Call)
-  │ Creates child span: "mcp.tool.call"
-  │ Logs: tool_name, input_params_hash (not values), output_class
-  │ Propagates trace context to backend API
-  ▼
-EXTERNAL API / DATABASE
-  │ Creates child span: "api.execute" or "db.query"
-  │ Logs: query_hash, result_count, data_class, latency
-  │ Returns result + classification
-  ▼
-MODEL PROVIDER (LLM Call)
-  │ Creates child span: "model.generate"
-  │ Logs: model_id, prompt_tokens, completion_tokens, finish_reason
-  │ Captures: input_hash, output_hash (for replay; not full content unless required)
-  │ OTel GenAI semantic conventions: gen_ai.system, gen_ai.model, gen_ai.usage.*
-  ▼
-RESPONSE PIPELINE
-  │ Creates child span: "output.validate"
-  │ Logs: guardrail_checks[], pii_detected, classification_result
-  ▼
-USER (response)
-  │ Trace complete: all spans linked by traceparent/parentId
+The canonical per-request trace propagation from user to response, with complete span hierarchy:
+
+```mermaid
+graph TD
+    A["User Request<br/>traceparent + baggage"] --> B["Gateway<br/>gateway.request"]
+    B --> C["Planner Agent<br/>planner.decompose"]
+    C --> D["Supervisor<br/>supervisor.delegate"]
+    D --> E["Worker Agent<br/>worker.execute"]
+    E --> F["MCP Server<br/>mcp.tool.call"]
+    F --> G["External API<br/>api.execute"]
+    E --> H["Model Provider<br/>model.generate"]
+    H --> I["Response Pipeline<br/>output.validate"]
+    I --> J["User Response<br/>trace complete"]
+    
+    style A fill:#e1f5ff
+    style J fill:#c8e6c9
+    style H fill:#fff3e0
 ```
 
 ### 3.2 OTel Baggage Propagation
@@ -138,7 +109,7 @@ Baggage: conv_id=conv-8821,
 **Propagation methods by transport:**
 
 | Transport | Method |
-|----------|--------|
+| --- | --- |
 | HTTP/gRPC | `traceparent`, `tracestate`, `baggage` headers |
 | A2A protocol | `task.metadata.traceContext` field |
 | MCP protocol | `_meta.progressToken` + custom trace headers |
@@ -148,7 +119,22 @@ Baggage: conv_id=conv-8821,
 
 ### 3.3 Cross-Organization Trace Propagation (A2A)
 
-When a task crosses an organizational boundary via A2A, the trace context must survive while respecting the remote organization's telemetry sovereignty. **Key principle:** The remote organization's spans are in their telemetry backend, not yours. Your local trace records a **reference** to the remote span (remote span ID). For cross-org audit compliance, the remote org must provide their span export on request (SLA-governed).
+When a task crosses an organizational boundary via A2A, the trace context must survive while respecting the remote organization's telemetry sovereignty:
+
+```mermaid
+sequenceDiagram
+    participant LW as Local Worker
+    participant RA as Remote Agent
+    LW->>RA: A2A tasks/send with traceContext<br/>(traceParent, traceState, baggage)
+    RA->>RA: Create child span in remote backend
+    RA->>RA: Record spans locally (remote backend)
+    RA-->>LW: A2A task result with remote spanId
+    LW->>LW: Record remote span reference<br/>(not full content)
+    
+    Note over LW,RA: Remote org owns their telemetry backend<br/>Local org records only the reference
+```
+
+**Key principle:** The remote organization's spans are in their telemetry backend, not yours. Your local trace records a **reference** to the remote span (remote span ID). For cross-org audit compliance, the remote org must provide their span export on request (SLA-governed).
 
 ---
 
@@ -157,6 +143,38 @@ When a task crosses an organizational boundary via A2A, the trace context must s
 ### 4.1 Causal Graph
 
 A causal graph captures *why* each decision was made, not just *what* happened. It is the debugging artifact for multi-agent systems.
+
+```mermaid
+graph TD
+    A["USER QUERY<br/>Summarise contract risk for deal-X"] --> B["Planner chose<br/>Legal Analysis workflow"]
+    B --> C["BECAUSE: query matched pattern<br/>contract risk"]
+    C --> D["EVIDENCE: classification score 0.94"]
+    
+    A --> E["Supervisor assigned<br/>Legal Worker"]
+    E --> F["BECAUSE: task risk_class = HIGH<br/>general worker not authorized"]
+    F --> G["EVIDENCE: policy rule Vol3b-Rule-7"]
+    
+    A --> H["Legal Worker retrieved<br/>contract-X.pdf 3 chunks"]
+    H --> I["BECAUSE: semantic similarity &gt; 0.8"]
+    I --> J["EVIDENCE: scores [0.91, 0.87, 0.83]"]
+    
+    A --> K["Model generated<br/>risk summary 3 concerns"]
+    K --> L["BECAUSE: retrieved context<br/>contained risk indicators"]
+    L --> M["MODEL: claude-opus-4-8"]
+    
+    A --> N["Output flagged for HITL<br/>concern #2 regulatory risk"]
+    N --> O["BECAUSE: confidence &lt; 0.7"]
+    O --> P["EVIDENCE: uncertainty_score=0.68"]
+    
+    style A fill:#fff3e0
+    style B fill:#e8f5e9
+    style E fill:#e8f5e9
+    style H fill:#e8f5e9
+    style K fill:#e8f5e9
+    style N fill:#ffebee
+```
+
+**Causal graph storage format:** Each causation event is a structured log entry linked to the parent span by `span_id` + `parent_span_id`:
 
 ```json
 {
@@ -173,10 +191,52 @@ A causal graph captures *why* each decision was made, not just *what* happened. 
 
 ### 4.2 Data Lineage
 
-Data lineage tracks how information flows from source to output and must answer for compliance:
+Data lineage tracks how information flows from source to output:
+
+```mermaid
+graph LR
+    A["contract-X.pdf<br/>chunk 3, lines 45-67"] --> B["chunk + embed"]
+    B --> C["vector store"]
+    C --> D["retrieve top-3"]
+    D --> E["context window"]
+    E --> F["LLM generate"]
+    F --> G["risk summary"]
+    G --> H["PII scan + redact"]
+    H --> I["final output"]
+    
+    style A fill:#fff3e0
+    style C fill:#e1f5ff
+    style E fill:#e1f5ff
+    style G fill:#c8e6c9
+    style I fill:#c8e6c9
+```
+
+For compliance (GDPR, financial regulations), the lineage record must answer:
 - What source data informed this output?
 - Was the source data authorized for this use?
 - If the source data is deleted/corrected, which outputs are affected?
+
+**Lineage record schema:**
+
+```json
+{
+  "output_id": "response-8821-001",
+  "lineage": [
+    {
+      "source_id": "doc-contract-X",
+      "source_type": "pdf",
+      "chunk_ids": ["chunk-45-67", "chunk-120-145"],
+      "access_authorized_by": "user-alice",
+      "access_policy": "read:legal-docs",
+      "retrieval_span_id": "span-retrieval-001"
+    }
+  ],
+  "transformation_spans": ["span-llm-001", "span-guardrail-001"],
+  "output_classification": "INTERNAL",
+  "retention_policy": "7-years",
+  "deletion_cascade": true
+}
+```
 
 ---
 
@@ -184,10 +244,10 @@ Data lineage tracks how information flows from source to output and must answer 
 
 ### 5.1 Audit Evidence Package
 
-For regulated industries, each agentic action must produce an audit evidence package:
+For regulated industries, each agentic action must produce an audit evidence package sufficient for regulatory examination:
 
 | Evidence Component | What It Contains | Required For |
-|-------------------|-----------------|-------------|
+| --- | --- | --- |
 | **Authorization proof** | Token, policy decision, principal identity | All regulated actions |
 | **Input record** | Prompt sent (or hash), context provided, tool parameters | Financial, Healthcare |
 | **Model record** | Model ID, version, provider, tokens, finish_reason | EU AI Act Art. 13 |
@@ -199,7 +259,7 @@ For regulated industries, each agentic action must produce an audit evidence pac
 ### 5.2 Trace Retention Requirements
 
 | Regulation | Retention Period | What Must Be Retained |
-|-----------|-----------------|----------------------|
+| --- | --- | --- |
 | EU AI Act (High-risk) | Lifetime of the AI system + 10 years | Full audit log, model versions, risk assessments |
 | GDPR | Duration of data processing | Personal data processing records |
 | DORA (Financial) | 5 years minimum | ICT incident records, audit trails |
@@ -215,8 +275,10 @@ For regulated industries, each agentic action must produce an audit evidence pac
 
 ### 6.1 Why Replay Matters
 
+Replay serves four enterprise purposes:
+
 | Purpose | Scenario |
-|---------|---------|
+| --- | --- |
 | **Debugging** | Reproduce a production failure that cannot be reproduced in staging |
 | **Audit** | Demonstrate to a regulator exactly what the agent did and why |
 | **Testing** | Use production traces as regression test cases (recorded-replay test harness) |
@@ -224,8 +286,10 @@ For regulated industries, each agentic action must produce an audit evidence pac
 
 ### 6.2 Replay Safety Requirements
 
+Replay is dangerous if the replayed execution causes real-world side effects:
+
 | Requirement | Implementation |
-|------------|---------------|
+| --- | --- |
 | **Read-only replay mode** | Tool calls in replay mode return recorded responses; no real API calls |
 | **Idempotency keys** | All mutating operations carry idempotency keys; replay reuses same key to detect real-world state |
 | **Replay flag propagation** | `X-Replay-Mode: true` header propagated to all downstream services |
@@ -234,18 +298,60 @@ For regulated industries, each agentic action must produce an audit evidence pac
 
 ### 6.3 Replay Architecture
 
-State, plan, step execution, results, model responses all stored. Replay engine restores state, replays each step, compares recorded vs. re-execution results, flags divergences as determinism alerts.
+```mermaid
+graph TD
+    A["CHECKPOINT STATE<br/>plan_state, step_results,<br/>identifiers, model_responses"] --> B["REPLAY ENGINE"]
+    B --> C["Restore state from checkpoint"]
+    B --> D["Replay each step"]
+    D --> E["For recorded steps:<br/>return recorded result"]
+    D --> F["For non-executed steps:<br/>execute live with read-only"]
+    C --> G["Compare recorded vs<br/>re-execution results"]
+    G --> H["Flag divergences as<br/>determinism alerts"]
+    H --> I["REPLAY TRACE<br/>new trace_id with<br/>replay_of=original"]
+    
+    style A fill:#fff3e0
+    style B fill:#e8f5e9
+    style I fill:#c8e6c9
+```
 
 ### 6.4 Replay Types
 
 | Type | What It Does | When to Use |
-|------|------------|------------|
+| --- | --- | --- |
 | **Full replay** | Re-executes the entire trace from start | Debugging complete failures |
 | **Partial replay** | Re-executes from a specific checkpoint step | Debugging failures at a specific step |
 | **Branch replay** | From a checkpoint, executes a modified plan branch | Testing alternative plan paths |
 | **Deterministic replay** | Re-executes with recorded model responses (no new LLM calls) | Audit and regression testing |
 | **Live partial replay** | From checkpoint, uses new LLM calls for unexecuted steps | Resuming interrupted workflows |
 | **Comparison replay** | Runs two plans in parallel from same checkpoint; compares outputs | A/B testing of plan changes |
+
+### 6.5 Temporal Workflow Replay
+
+For Temporal-based workflows, replay is built into the engine:
+
+```python
+# Temporal activities must be deterministic within a workflow run
+# Non-deterministic calls (LLM, time, random) must be wrapped as activities
+
+@activity.defn
+async def call_model(prompt: str, model_id: str) -> ModelResponse:
+    # This activity is replayed with the recorded result during replay
+    response = await model_client.generate(prompt, model=model_id)
+    return response
+
+@workflow.defn
+class ResearchWorkflow:
+    @workflow.run
+    async def run(self, task: ResearchTask) -> ResearchResult:
+        # Workflow code is replayed deterministically
+        # Activity results are returned from history during replay
+        result = await workflow.execute_activity(
+            call_model,
+            args=[task.prompt, task.model],
+            start_to_close_timeout=timedelta(minutes=5),
+        )
+        return result
+```
 
 ---
 
@@ -256,7 +362,7 @@ State, plan, step execution, results, model responses all stored. Replay engine 
 Following the [OpenTelemetry GenAI Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/):
 
 | Span Name | Operation | Required Attributes |
-|-----------|-----------|-------------------|
+| --- | --- | --- |
 | `gen_ai.chat` | LLM completion | `gen_ai.system`, `gen_ai.model`, `gen_ai.usage.input_tokens`, `gen_ai.usage.output_tokens` |
 | `gen_ai.tool.call` | Tool invocation | `gen_ai.tool.name`, `gen_ai.tool.call.id` |
 | `gen_ai.agent.invoke` | Agent invocation | `gen_ai.agent.name`, `gen_ai.agent.id` |
@@ -352,7 +458,7 @@ Where the model generates content NOT grounded in retrieved sources:
 ### 9.1 Storage Tiers
 
 | Tier | Content | Hot Storage | Warm Storage | Cold Storage |
-|------|---------|------------|-------------|-------------|
+| --- | --- | --- | --- | --- |
 | **Real-time** | Spans, metrics, logs | 72 hours | — | — |
 | **Operational** | Span trees, dashboards | 7 days | 30 days | — |
 | **Causal graphs** | Decision graphs | 7 days | 90 days | 1 year |
@@ -362,7 +468,7 @@ Where the model generates content NOT grounded in retrieved sources:
 ### 9.2 Platform Recommendations
 
 | Function | AWS | Azure | GCP | Open-source |
-|----------|-----|-------|-----|------------|
+| --- | --- | --- | --- | --- |
 | Trace collection | X-Ray, ADOT | Azure Monitor | Cloud Trace | Jaeger, Tempo |
 | Long-term archive | S3 + Athena | ADLS + Synapse | GCS + BigQuery | ClickHouse |
 | Policy decision log | CloudWatch Logs | Log Analytics | Cloud Logging | OpenSearch |
@@ -372,10 +478,10 @@ Where the model generates content NOT grounded in retrieved sources:
 
 ## Further Reading
 
-- [Agentic AI Reliability, Observability & Governance](pathname:///archon/architecture/49-agentic-ai-reliability-observability-governance) — signal inventory, dashboard architecture
-- [Governance Propagation Chain](pathname:///archon/architecture/governance-propagation-chain) — policy decisions within the trace
-- [Drift Detection Guide](pathname:///archon/architecture/drift-detection-guide) — using trace data for drift detection
-- [Agent Reliability Engineering](pathname:///archon/architecture/agent-reliability-engineering) — chaos engineering; trace-driven fault injection
-- [Kill Switch Architecture](pathname:///archon/architecture/kill-switch-architecture) — emergency shutdown traceability
-- [AI Observability](pathname:///archon/trust/ai-security-governance/16-ai-observability) — deep-mind series
-- [EU Banking AI Agent Evaluation Framework](pathname:///archon/operations/eu-banking-ai-agent-evaluation-framework) — regulated industry traceability requirements
+- [Agentic AI Reliability, Observability &amp; Governance](./pathname:///archon/architecture/49-agentic-ai-reliability-observability-governance) — signal inventory, dashboard architecture
+- [Governance Propagation Chain](./pathname:///archon/architecture/governance-propagation-chain) — policy decisions within the trace
+- [Drift Detection Guide](./pathname:///archon/architecture/drift-detection-guide) — using trace data for drift detection
+- [Agent Reliability Engineering](./pathname:///archon/architecture/agent-reliability-engineering) — chaos engineering; trace-driven fault injection
+- [Kill Switch Architecture](./pathname:///archon/architecture/kill-switch-architecture) — emergency shutdown traceability
+- [AI Observability](./pathname:///archon/trust/ai-security-governance/16-ai-observability) — deep-mind series
+- [EU Banking AI Agent Evaluation Framework](./pathname:///archon/operations/eu-banking-ai-agent-evaluation-framework) — regulated industry traceability requirements
