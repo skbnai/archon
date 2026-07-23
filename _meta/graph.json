@@ -4,7 +4,7 @@
  "concept_count": 537,
  "tool_count": 36,
  "edge_counts": {
-  "similar_to": 424,
+  "similar_to": 433,
   "links_to": 634,
   "tagged": 1157,
   "mentions": 1040
@@ -108,7 +108,7 @@
     "architecture"
    ],
    "word_count": 3134,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:langgraph",
@@ -126,7 +126,7 @@
    "status": "current",
    "tags": [],
    "word_count": 4361,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gemini",
@@ -155,7 +155,7 @@
     "enterprise-architecture"
    ],
    "word_count": 5240,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:otel",
@@ -176,7 +176,7 @@
     "ai-foundations"
    ],
    "word_count": 3923,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:nist-ai-rmf",
@@ -236,7 +236,7 @@
     "rag"
    ],
    "word_count": 5435,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -279,7 +279,7 @@
     "guardrails"
    ],
    "word_count": 5789,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -308,7 +308,7 @@
     "templates"
    ],
    "word_count": 1148,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:eu-ai-act"
    ]
@@ -323,7 +323,7 @@
    "status": "current",
    "tags": [],
    "word_count": 3975,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:langgraph",
     "tool:vllm",
@@ -348,7 +348,7 @@
     "cloud-native"
    ],
    "word_count": 3616,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -381,7 +381,7 @@
    "status": "current",
    "tags": [],
    "word_count": 3625,
-   "category_path": "Architecture > ARB Governance Handbook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:a2a"
@@ -404,7 +404,7 @@
     "multi-part-series"
    ],
    "word_count": 3649,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -423,7 +423,7 @@
     "state-management"
    ],
    "word_count": 2100,
-   "category_path": "Architecture > Agent Reliability, Memory & Governance",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:langgraph",
@@ -469,7 +469,7 @@
     "ai-native"
    ],
    "word_count": 2980,
-   "category_path": "Architecture > ARB Governance Handbook",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -488,7 +488,7 @@
     "windows"
    ],
    "word_count": 3271,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:langchain",
     "tool:langgraph",
@@ -506,7 +506,7 @@
    "status": "current",
    "tags": [],
    "word_count": 4490,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:langchain",
     "tool:langgraph",
@@ -534,7 +534,7 @@
    "status": "current",
    "tags": [],
    "word_count": 6227,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -553,7 +553,7 @@
     "audit"
    ],
    "word_count": 2591,
-   "category_path": "Architecture > Agent Reliability, Memory & Governance",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:mcp",
@@ -578,7 +578,7 @@
     "lifecycle"
    ],
    "word_count": 1252,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:iso-42001",
@@ -602,7 +602,7 @@
     "cloud-native"
    ],
    "word_count": 2074,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -634,7 +634,7 @@
     "maturity-model"
    ],
    "word_count": 2350,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -671,7 +671,7 @@
     "production-engineering"
    ],
    "word_count": 4436,
-   "category_path": "Architecture > Frontier AI Research & Industry Outlook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -702,7 +702,7 @@
     "architecture"
    ],
    "word_count": 3944,
-   "category_path": "Architecture > Foundations: Models & Agent Patterns",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -726,7 +726,7 @@
     "operational-resilience"
    ],
    "word_count": 2246,
-   "category_path": "Architecture > Operational Guardrails & Protocols",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:otel",
@@ -750,7 +750,7 @@
     "model-selection"
    ],
    "word_count": 4601,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -785,7 +785,7 @@
     "2026-2030"
    ],
    "word_count": 2073,
-   "category_path": "Architecture > Frontier AI Research & Industry Outlook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:gemini",
@@ -811,7 +811,7 @@
     "leadership"
    ],
    "word_count": 6351,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:aws-bedrock",
     "tool:databricks"
@@ -834,7 +834,7 @@
     "incident-management"
    ],
    "word_count": 4491,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:otel",
     "tool:kubernetes",
@@ -858,7 +858,7 @@
     "enterprise-architecture"
    ],
    "word_count": 6416,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -902,7 +902,7 @@
     "governance"
    ],
    "word_count": 3594,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:otel",
     "tool:eu-ai-act"
@@ -918,7 +918,7 @@
    "status": "current",
    "tags": [],
    "word_count": 5477,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -943,7 +943,7 @@
     "operating-models"
    ],
    "word_count": 5312,
-   "category_path": "Architecture > ARB Governance Handbook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:kubernetes",
     "tool:nist-ai-rmf",
@@ -969,7 +969,7 @@
     "agentops"
    ],
    "word_count": 1949,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -996,7 +996,7 @@
    "status": "current",
    "tags": [],
    "word_count": 4358,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -1025,7 +1025,7 @@
    "status": "current",
    "tags": [],
    "word_count": 2534,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -1040,7 +1040,7 @@
     "ai-foundations"
    ],
    "word_count": 4071,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -1065,7 +1065,7 @@
     "business-strategy"
    ],
    "word_count": 2462,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:otel",
     "tool:kubernetes",
@@ -1092,7 +1092,7 @@
     "agentic-ai"
    ],
    "word_count": 5936,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt"
@@ -1112,7 +1112,7 @@
     "leadership"
    ],
    "word_count": 2889,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:langgraph"
    ]
@@ -1127,7 +1127,7 @@
    "status": "current",
    "tags": [],
    "word_count": 3007,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gemini",
     "tool:vertex-ai",
@@ -1154,7 +1154,7 @@
     "deep-dive"
    ],
    "word_count": 3472,
-   "category_path": "Architecture > Foundations: Models & Agent Patterns",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:gemini",
@@ -1178,7 +1178,7 @@
     "patterns"
    ],
    "word_count": 2166,
-   "category_path": "Architecture > Foundations: Models & Agent Patterns",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:a2a"
@@ -1198,7 +1198,7 @@
     "decision-frameworks"
    ],
    "word_count": 3661,
-   "category_path": "Architecture > ARB Governance Handbook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:kafka"
    ]
@@ -1217,7 +1217,7 @@
     "memory-systems"
    ],
    "word_count": 2360,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:pinecone",
@@ -1241,7 +1241,7 @@
     "governance"
    ],
    "word_count": 3452,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:kubernetes",
     "tool:eu-ai-act"
@@ -1257,7 +1257,7 @@
    "status": "current",
    "tags": [],
    "word_count": 4779,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:kubernetes",
@@ -1277,7 +1277,7 @@
     "ai-foundations"
    ],
    "word_count": 2802,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:langgraph",
@@ -1299,7 +1299,7 @@
     "regulatory-governance"
    ],
    "word_count": 1675,
-   "category_path": "Architecture > ARB Governance Handbook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:eu-ai-act"
    ]
@@ -1319,7 +1319,7 @@
     "strategic-planning"
    ],
    "word_count": 4390,
-   "category_path": "Architecture > Frontier AI Research & Industry Outlook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:gemini",
@@ -1343,7 +1343,7 @@
     "multi-agent"
    ],
    "word_count": 4242,
-   "category_path": "Architecture > Agent Reliability, Memory & Governance",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -1379,7 +1379,7 @@
     "domain-specific"
    ],
    "word_count": 2833,
-   "category_path": "Architecture > Agent Reliability, Memory & Governance",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -1420,7 +1420,7 @@
     "growth-framework"
    ],
    "word_count": 2922,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:nist-ai-rmf",
     "tool:iso-42001",
@@ -1441,7 +1441,7 @@
     "reference-architectures"
    ],
    "word_count": 4127,
-   "category_path": "Architecture > ARB Governance Handbook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:terraform",
     "tool:kafka"
@@ -1463,7 +1463,7 @@
     "knowledge-base"
    ],
    "word_count": 2420,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": [
     "tool:langgraph",
     "tool:mcp",
@@ -1507,7 +1507,7 @@
     "artifacts"
    ],
    "word_count": 3504,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -1526,7 +1526,7 @@
     "dpdp"
    ],
    "word_count": 2272,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -1539,7 +1539,7 @@
    "status": "current",
    "tags": [],
    "word_count": 4547,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -1559,7 +1559,7 @@
     "freshness"
    ],
    "word_count": 562,
-   "category_path": "Architecture",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude"
    ]
@@ -1580,7 +1580,7 @@
     "multi-agent"
    ],
    "word_count": 2910,
-   "category_path": "Architecture > Agent Reliability, Memory & Governance",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:mcp",
@@ -1601,7 +1601,7 @@
     "eaka"
    ],
    "word_count": 1938,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp"
    ]
@@ -1620,7 +1620,7 @@
     "aidlc"
    ],
    "word_count": 6271,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gemini",
     "tool:azure-openai",
@@ -1648,7 +1648,7 @@
     "templates"
    ],
    "word_count": 1602,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -1663,7 +1663,7 @@
     "ai-foundations"
    ],
    "word_count": 2420,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:nist-ai-rmf",
@@ -1685,7 +1685,7 @@
     "reference"
    ],
    "word_count": 3219,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -1707,7 +1707,7 @@
     "templates"
    ],
    "word_count": 1557,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:langgraph",
@@ -1735,7 +1735,7 @@
     "multi-agent"
    ],
    "word_count": 3018,
-   "category_path": "Architecture > Operational Guardrails & Protocols",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -1755,7 +1755,7 @@
    "status": "current",
    "tags": [],
    "word_count": 1896,
-   "category_path": "Architecture > ARB Governance Handbook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:a2a"
@@ -1778,7 +1778,7 @@
     "sdlc"
    ],
    "word_count": 2463,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:nist-ai-rmf",
@@ -1801,7 +1801,7 @@
     "ai-policy"
    ],
    "word_count": 5325,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -1831,7 +1831,7 @@
     "multi-agent"
    ],
    "word_count": 4287,
-   "category_path": "Architecture > Operational Guardrails & Protocols",
+   "category_path": "",
    "tools_mentioned": [
     "tool:langgraph",
     "tool:mcp",
@@ -1856,7 +1856,7 @@
     "ai-readiness"
    ],
    "word_count": 4494,
-   "category_path": "Architecture > Frontier AI Research & Industry Outlook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:databricks"
@@ -1876,7 +1876,7 @@
     "enterprise-architecture"
    ],
    "word_count": 4441,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:gemini",
@@ -1925,7 +1925,7 @@
     "governance"
    ],
    "word_count": 6059,
-   "category_path": "Architecture > Foundations: Models & Agent Patterns",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -1961,7 +1961,7 @@
     "agentic-systems"
    ],
    "word_count": 2531,
-   "category_path": "Architecture > Operational Guardrails & Protocols",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gemini",
     "tool:agentcore",
@@ -1982,7 +1982,7 @@
    "status": "current",
    "tags": [],
    "word_count": 2408,
-   "category_path": "Architecture > ARB Governance Handbook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:kubernetes"
    ]
@@ -2003,7 +2003,7 @@
     "agent-loops"
    ],
    "word_count": 3427,
-   "category_path": "Architecture > Frontier AI Research & Industry Outlook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp"
    ]
@@ -2024,7 +2024,7 @@
     "enterprise-architecture"
    ],
    "word_count": 2177,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -2052,7 +2052,7 @@
     "emergency-shutdown"
    ],
    "word_count": 2922,
-   "category_path": "Architecture > Operational Guardrails & Protocols",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:mcp",
@@ -2078,7 +2078,7 @@
     "flow-efficiency"
    ],
    "word_count": 1345,
-   "category_path": "Architecture > Foundations: Models & Agent Patterns",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -2094,7 +2094,7 @@
     "enterprise-ai-architect"
    ],
    "word_count": 5535,
-   "category_path": "Architecture > Agent Reliability, Memory & Governance",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gemini",
     "tool:mcp",
@@ -2127,7 +2127,7 @@
     "templates"
    ],
    "word_count": 1316,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:nist-ai-rmf",
     "tool:iso-42001",
@@ -2149,7 +2149,7 @@
     "research"
    ],
    "word_count": 4903,
-   "category_path": "Architecture > Frontier AI Research & Industry Outlook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:gemini",
@@ -2184,7 +2184,7 @@
     "phoenix"
    ],
    "word_count": 1387,
-   "category_path": "Architecture > Foundations: Models & Agent Patterns",
+   "category_path": "",
    "tools_mentioned": [
     "tool:langchain",
     "tool:langgraph",
@@ -2204,7 +2204,7 @@
     "ai-foundations"
    ],
    "word_count": 2525,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -2222,7 +2222,7 @@
     "standards"
    ],
    "word_count": 2035,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:mcp"
@@ -2245,7 +2245,7 @@
     "governance"
    ],
    "word_count": 2334,
-   "category_path": "Architecture > Foundations: Models & Agent Patterns",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -2274,7 +2274,7 @@
     "observability"
    ],
    "word_count": 4248,
-   "category_path": "Architecture > Agent Reliability, Memory & Governance",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:otel",
@@ -2300,7 +2300,7 @@
     "templates"
    ],
    "word_count": 1475,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:kubernetes",
@@ -2325,7 +2325,7 @@
     "technology-architecture"
    ],
    "word_count": 1803,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -2344,7 +2344,7 @@
     "arb"
    ],
    "word_count": 5295,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:kafka",
     "tool:nist-ai-rmf"
@@ -2364,7 +2364,7 @@
     "eaka"
    ],
    "word_count": 2044,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:gemini",
@@ -2399,7 +2399,7 @@
     "decision-frameworks"
    ],
    "word_count": 4102,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -2433,7 +2433,7 @@
     "templates"
    ],
    "word_count": 848,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:weaviate",
     "tool:github-actions",
@@ -2450,7 +2450,7 @@
    "status": "current",
    "tags": [],
    "word_count": 4896,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -2482,7 +2482,7 @@
     "production-engineering"
    ],
    "word_count": 3659,
-   "category_path": "Architecture > Frontier AI Research & Industry Outlook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -2518,7 +2518,7 @@
     "templates"
    ],
    "word_count": 1761,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -2550,7 +2550,7 @@
     "templates"
    ],
    "word_count": 892,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:gemini",
@@ -2576,7 +2576,7 @@
     "implementation"
    ],
    "word_count": 3979,
-   "category_path": "Architecture > Agentic AI Landing Zone",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -2617,7 +2617,7 @@
     "master-principles"
    ],
    "word_count": 4724,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gemini",
     "tool:vertex-ai",
@@ -2640,7 +2640,7 @@
     "observability"
    ],
    "word_count": 3271,
-   "category_path": "Architecture > Frontier AI Research & Industry Outlook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:nist-ai-rmf",
@@ -2658,7 +2658,7 @@
    "status": "current",
    "tags": [],
    "word_count": 3703,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gemini",
@@ -2694,7 +2694,7 @@
     "reference"
    ],
    "word_count": 612,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -2740,7 +2740,7 @@
     "agentops"
    ],
    "word_count": 1592,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -2757,7 +2757,7 @@
    "status": "current",
    "tags": [],
    "word_count": 5551,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -2786,7 +2786,7 @@
     "standards"
    ],
    "word_count": 1871,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp"
    ]
@@ -2805,7 +2805,7 @@
     "eaka"
    ],
    "word_count": 2376,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gemini",
     "tool:langchain",
@@ -2837,7 +2837,7 @@
     "ai-readiness"
    ],
    "word_count": 5653,
-   "category_path": "Architecture > Frontier AI Research & Industry Outlook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:databricks"
@@ -2878,7 +2878,7 @@
     "operations"
    ],
    "word_count": 4984,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:llama",
@@ -2903,7 +2903,7 @@
     "architect-roles"
    ],
    "word_count": 1383,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:owasp-llm-top10",
     "tool:eu-ai-act"
@@ -2925,7 +2925,7 @@
     "agent-architecture"
    ],
    "word_count": 6248,
-   "category_path": "Architecture > Frontier AI Research & Industry Outlook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:mcp",
     "tool:databricks",
@@ -2955,7 +2955,7 @@
     "templates"
    ],
    "word_count": 1676,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -2991,7 +2991,7 @@
     "templates"
    ],
    "word_count": 1850,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:eu-ai-act"
@@ -3014,7 +3014,7 @@
     "deployment"
    ],
    "word_count": 3472,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:langchain",
@@ -3042,7 +3042,7 @@
     "templates"
    ],
    "word_count": 1958,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:iso-42001",
@@ -3065,7 +3065,7 @@
     "existential-risk"
    ],
    "word_count": 2834,
-   "category_path": "Architecture > Frontier AI Research & Industry Outlook",
+   "category_path": "",
    "tools_mentioned": [
     "tool:a2a"
    ]
@@ -3090,7 +3090,7 @@
     "roles"
    ],
    "word_count": 1448,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:langgraph",
@@ -3120,7 +3120,7 @@
     "penalties"
    ],
    "word_count": 1591,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": []
   },
   {
@@ -3138,7 +3138,7 @@
     "risk-testing"
    ],
    "word_count": 3632,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:mcp",
@@ -3166,7 +3166,7 @@
     "operations"
    ],
    "word_count": 5116,
-   "category_path": "Architecture > Enterprise AI Architecture Blueprints",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -3202,7 +3202,7 @@
     "career-strategy"
    ],
    "word_count": 5555,
-   "category_path": "Architecture > EA Practice & Career Guides",
+   "category_path": "",
    "tools_mentioned": [
     "tool:claude",
     "tool:gpt",
@@ -3245,7 +3245,7 @@
     "templates"
    ],
    "word_count": 1064,
-   "category_path": "Architecture > AI-DLC & Transformation Frameworks",
+   "category_path": "",
    "tools_mentioned": [
     "tool:gpt",
     "tool:temporal",
@@ -3266,7 +3266,7 @@
     "use-cases"
    ],
    "word_count": 1302,
-   "category_path": "Architecture > Specialized System Blueprints & Toolkits",
+   "category_path": "",
    "tools_mentioned": [
     "tool:eu-ai-act"
    ]
@@ -8883,46 +8883,67 @@
    "source": "strategy/99-vol5-ai-strategy-transformation-glossary-glossary-a-to-h",
    "target": "strategy/vols/01-vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref",
    "type": "similar_to",
-   "weight": 0.7448,
+   "weight": 0.7465,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/01-quantum-ai-consulting-landscape",
    "target": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "type": "similar_to",
-   "weight": 0.7086,
+   "weight": 0.7089,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t",
    "target": "strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g",
    "type": "similar_to",
-   "weight": 0.7027,
+   "weight": 0.7032,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "target": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
    "type": "similar_to",
-   "weight": 0.7007,
+   "weight": 0.7009,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
    "type": "similar_to",
-   "weight": 0.6921,
+   "weight": 0.6925,
+   "tier": "heavy_overlap"
+  },
+  {
+   "source": "architecture/54-enterprise-multi-model-ai-strategy",
+   "target": "architecture/parts/18-enterprise-multi-model-ai-strategy-part2",
+   "type": "similar_to",
+   "weight": 0.6892,
    "tier": "heavy_overlap"
   },
   {
    "source": "architecture/79-dpdp-act-2023-comprehensive-guide",
    "target": "architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3",
    "type": "similar_to",
-   "weight": 0.6822,
+   "weight": 0.6833,
+   "tier": "heavy_overlap"
+  },
+  {
+   "source": "architecture/77-ai-transformation-consultant-toolkit-2026",
+   "target": "architecture/parts/27-ai-transformation-consultant-toolkit-2026-part2",
+   "type": "similar_to",
+   "weight": 0.6704,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
+   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
+   "type": "similar_to",
+   "weight": 0.6643,
+   "tier": "heavy_overlap"
+  },
+  {
+   "source": "strategy/01-quantum-ai-consulting-landscape",
    "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
    "type": "similar_to",
    "weight": 0.6638,
@@ -8930,324 +8951,317 @@
   },
   {
    "source": "strategy/01-quantum-ai-consulting-landscape",
-   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
-   "type": "similar_to",
-   "weight": 0.6626,
-   "tier": "heavy_overlap"
-  },
-  {
-   "source": "strategy/01-quantum-ai-consulting-landscape",
    "target": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
    "type": "similar_to",
-   "weight": 0.6604,
+   "weight": 0.6606,
    "tier": "heavy_overlap"
   },
   {
    "source": "architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3",
    "target": "architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2",
    "type": "similar_to",
-   "weight": 0.6554,
+   "weight": 0.6566,
    "tier": "heavy_overlap"
   },
   {
    "source": "architecture/79-dpdp-act-2023-comprehensive-guide",
    "target": "architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2",
    "type": "similar_to",
-   "weight": 0.6292,
+   "weight": 0.6298,
    "tier": "heavy_overlap"
   },
   {
    "source": "architecture/78-akes-addendum-document-update-and-versioning",
    "target": "architecture/parts/30-akes-addendum-document-update-and-versioning-part2",
    "type": "similar_to",
-   "weight": 0.6283,
+   "weight": 0.6296,
    "tier": "heavy_overlap"
   },
   {
    "source": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
    "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
    "type": "similar_to",
-   "weight": 0.6069,
+   "weight": 0.6092,
    "tier": "heavy_overlap"
   },
   {
    "source": "strategy/02-quantum-ai-startup-landscape",
    "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
    "type": "similar_to",
-   "weight": 0.6064,
-   "tier": "heavy_overlap"
-  },
-  {
-   "source": "architecture/54-enterprise-multi-model-ai-strategy",
-   "target": "architecture/parts/18-enterprise-multi-model-ai-strategy-part2",
-   "type": "similar_to",
-   "weight": 0.6003,
+   "weight": 0.6082,
    "tier": "heavy_overlap"
   },
   {
    "source": "architecture/12-apex-ea-delivery-governance-reference",
    "target": "architecture/10-apex-ea-aidlc-methodology",
    "type": "similar_to",
-   "weight": 0.5969,
+   "weight": 0.5932,
    "tier": "related"
   },
   {
    "source": "architecture/53-enterprise-aiops-guide",
    "target": "architecture/parts/20-enterprise-aiops-guide-part2",
    "type": "similar_to",
-   "weight": 0.5909,
+   "weight": 0.5921,
    "tier": "related"
   },
   {
    "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
    "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
    "type": "similar_to",
-   "weight": 0.5834,
+   "weight": 0.5856,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
    "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
    "type": "similar_to",
-   "weight": 0.5736,
+   "weight": 0.5753,
    "tier": "related"
   },
   {
    "source": "strategy/03-ai-value-creator-deliverables-pack",
    "target": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
    "type": "similar_to",
-   "weight": 0.573,
+   "weight": 0.5747,
    "tier": "related"
   },
   {
    "source": "architecture/76-ai-invoice-auditor-architecture",
    "target": "architecture/parts/26-ai-invoice-auditor-architecture-part2",
    "type": "similar_to",
-   "weight": 0.5695,
+   "weight": 0.5683,
    "tier": "related"
   },
   {
    "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
    "target": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
    "type": "similar_to",
-   "weight": 0.5498,
+   "weight": 0.5519,
    "tier": "related"
   },
   {
    "source": "architecture/17-ai-assistant-architecture-research-report",
    "target": "architecture/parts/16-ai-assistant-architecture-research-report-implementation-evaluation",
    "type": "similar_to",
-   "weight": 0.5481,
+   "weight": 0.5498,
    "tier": "related"
   },
   {
    "source": "architecture/13-aidlc-agile-cicd-ai-transformation-2026",
    "target": "architecture/parts/11-aidlc-agile-cicd-roles-disciplines-roadmap-principles",
    "type": "similar_to",
-   "weight": 0.5481,
+   "weight": 0.5476,
    "tier": "related"
   },
   {
    "source": "architecture/81-eaka-research-study",
    "target": "architecture/parts/33-eaka-research-study-part2",
    "type": "similar_to",
-   "weight": 0.5468,
+   "weight": 0.547,
    "tier": "related"
   },
   {
    "source": "architecture/75-enterprise-technology-selection-framework",
    "target": "architecture/parts/25-enterprise-technology-selection-framework-part2",
    "type": "similar_to",
-   "weight": 0.5405,
+   "weight": 0.5468,
    "tier": "related"
   },
   {
    "source": "strategy/06-ai-coding-agents-2026",
    "target": "strategy/57-ai-coding-agents-2026-enterprise-autonomous-agent-tools",
    "type": "similar_to",
-   "weight": 0.5396,
+   "weight": 0.542,
    "tier": "related"
   },
   {
    "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
    "target": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
    "type": "similar_to",
-   "weight": 0.5381,
+   "weight": 0.54,
    "tier": "related"
   },
   {
    "source": "architecture/71-ea-mastery-guide",
    "target": "architecture/parts/35-ea-mastery-guide-part2",
    "type": "similar_to",
-   "weight": 0.5367,
+   "weight": 0.5368,
    "tier": "related"
   },
   {
    "source": "architecture/parts/10-aidlc-agile-cicd-agile-evolution-cicd-transformation",
    "target": "architecture/parts/11-aidlc-agile-cicd-roles-disciplines-roadmap-principles",
    "type": "similar_to",
-   "weight": 0.5285,
+   "weight": 0.5322,
    "tier": "related"
   },
   {
    "source": "architecture/parts/33-eaka-research-study-part2",
    "target": "architecture/parts/34-eaka-research-study-part3",
    "type": "similar_to",
-   "weight": 0.5265,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/18-ai-deep-future-outlook-2026-2035",
-   "target": "architecture/parts/15-ai-deep-future-outlook-2026-2035-sector-impacts",
-   "type": "similar_to",
-   "weight": 0.5232,
+   "weight": 0.5272,
    "tier": "related"
   },
   {
    "source": "strategy/02-quantum-ai-startup-landscape",
    "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
    "type": "similar_to",
-   "weight": 0.5226,
+   "weight": 0.5245,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/18-ai-deep-future-outlook-2026-2035",
+   "target": "architecture/parts/15-ai-deep-future-outlook-2026-2035-sector-impacts",
+   "type": "similar_to",
+   "weight": 0.524,
    "tier": "related"
   },
   {
    "source": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
    "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
    "type": "similar_to",
-   "weight": 0.5145,
+   "weight": 0.5166,
    "tier": "related"
   },
   {
    "source": "strategy/76-enterprise-ai-strategic-brief-2026-roadmap-strategic-imperatives",
    "target": "strategy/33-enterprise-ai-strategic-brief-2026",
    "type": "similar_to",
-   "weight": 0.5115,
+   "weight": 0.5131,
    "tier": "related"
   },
   {
    "source": "strategy/03-ai-value-creator-deliverables-pack",
    "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
    "type": "similar_to",
-   "weight": 0.5086,
+   "weight": 0.5116,
    "tier": "related"
   },
   {
    "source": "architecture/parts/07-aidlc-artifacts-togaf-technology-architecture",
    "target": "architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture",
    "type": "similar_to",
-   "weight": 0.5078,
+   "weight": 0.509,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
    "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
    "type": "similar_to",
-   "weight": 0.5074,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/14-aidlc-enterprise-framework-2025",
-   "type": "similar_to",
-   "weight": 0.5056,
+   "weight": 0.5088,
    "tier": "related"
   },
   {
    "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
    "target": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
    "type": "similar_to",
-   "weight": 0.5051,
+   "weight": 0.5071,
    "tier": "related"
   },
   {
-   "source": "architecture/77-ai-transformation-consultant-toolkit-2026",
-   "target": "architecture/parts/27-ai-transformation-consultant-toolkit-2026-part2",
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/14-aidlc-enterprise-framework-2025",
    "type": "similar_to",
-   "weight": 0.5041,
+   "weight": 0.5064,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/12-apex-ea-delivery-governance-reference",
+   "target": "architecture/11-apex-ea-information-systems-architecture",
+   "type": "similar_to",
+   "weight": 0.5062,
    "tier": "related"
   },
   {
    "source": "architecture/34-transformer-architectures",
    "target": "architecture/35-transformer-concepts-deep",
    "type": "similar_to",
-   "weight": 0.5033,
+   "weight": 0.5044,
    "tier": "related"
   },
   {
    "source": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
    "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
    "type": "similar_to",
-   "weight": 0.4982,
+   "weight": 0.4987,
    "tier": "related"
   },
   {
    "source": "career/index",
    "target": "assets/index",
    "type": "similar_to",
-   "weight": 0.4974,
+   "weight": 0.4981,
    "tier": "related"
   },
   {
    "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
    "target": "strategy/18-part-08-organizational-roles",
    "type": "similar_to",
-   "weight": 0.4972,
+   "weight": 0.4977,
    "tier": "related"
   },
   {
    "source": "architecture/13-aidlc-agile-cicd-ai-transformation-2026",
    "target": "architecture/parts/10-aidlc-agile-cicd-agile-evolution-cicd-transformation",
    "type": "similar_to",
-   "weight": 0.4923,
+   "weight": 0.4956,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
    "target": "architecture/51-enterprise-ai-governance-compliance",
    "type": "similar_to",
-   "weight": 0.4907,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/51-enterprise-ai-governance-compliance",
-   "target": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
-   "type": "similar_to",
-   "weight": 0.4874,
+   "weight": 0.4915,
    "tier": "related"
   },
   {
    "source": "architecture/02-aidlc-artifacts-development-to-retirement",
    "target": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
    "type": "similar_to",
-   "weight": 0.4857,
+   "weight": 0.4885,
    "tier": "related"
   },
   {
-   "source": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
-   "target": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
+   "source": "architecture/51-enterprise-ai-governance-compliance",
+   "target": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
    "type": "similar_to",
-   "weight": 0.4841,
+   "weight": 0.4881,
    "tier": "related"
   },
   {
    "source": "architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture",
    "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
    "type": "similar_to",
-   "weight": 0.4836,
+   "weight": 0.4858,
    "tier": "related"
   },
   {
    "source": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
    "target": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
    "type": "similar_to",
-   "weight": 0.4828,
+   "weight": 0.4851,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
+   "target": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
+   "type": "similar_to",
+   "weight": 0.4844,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
    "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
    "type": "similar_to",
-   "weight": 0.4816,
+   "weight": 0.4826,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
+   "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
+   "type": "similar_to",
+   "weight": 0.4797,
    "tier": "related"
   },
   {
@@ -9258,556 +9272,570 @@
    "tier": "related"
   },
   {
-   "source": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
-   "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
-   "type": "similar_to",
-   "weight": 0.478,
-   "tier": "related"
-  },
-  {
    "source": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
    "target": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
    "type": "similar_to",
-   "weight": 0.4771,
+   "weight": 0.4792,
    "tier": "related"
   },
   {
    "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
    "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
-   "weight": 0.4748,
+   "weight": 0.4757,
    "tier": "related"
   },
   {
    "source": "strategy/20-part-10-service-catalog",
    "target": "strategy/71-part-10-service-catalog-agent-guardrail-observability",
    "type": "similar_to",
-   "weight": 0.4727,
+   "weight": 0.4748,
    "tier": "related"
   },
   {
    "source": "architecture/02-aidlc-artifacts-development-to-retirement",
    "target": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
    "type": "similar_to",
-   "weight": 0.4724,
+   "weight": 0.4744,
    "tier": "related"
   },
   {
    "source": "strategy/02-quantum-ai-startup-landscape",
    "target": "strategy/01-quantum-ai-consulting-landscape",
    "type": "similar_to",
-   "weight": 0.4705,
+   "weight": 0.4718,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
    "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
    "type": "similar_to",
-   "weight": 0.4695,
+   "weight": 0.4704,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/02-aidlc-artifacts-development-to-retirement",
+   "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
+   "type": "similar_to",
+   "weight": 0.4681,
    "tier": "related"
   },
   {
    "source": "strategy/31-part-21-agentic-process-blueprint",
    "target": "strategy/73-part-21-agentic-process-blueprint-blueprints-by-function-teams",
    "type": "similar_to",
-   "weight": 0.4652,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/02-aidlc-artifacts-development-to-retirement",
-   "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
-   "type": "similar_to",
-   "weight": 0.4645,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
-   "target": "architecture/85-enterprise-manager-ai-genai",
-   "type": "similar_to",
-   "weight": 0.4628,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/44-ai-harness-architecture-orchestration",
-   "target": "architecture/47-enterprise-agent-reference-architectures",
-   "type": "similar_to",
-   "weight": 0.4598,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
-   "target": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
-   "type": "similar_to",
-   "weight": 0.4594,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/02-aidlc-artifacts-development-to-retirement",
-   "target": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
-   "type": "similar_to",
-   "weight": 0.453,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/66-part-08-organizational-roles-core-delivery-engineering-roles",
-   "target": "strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks",
-   "type": "similar_to",
-   "weight": 0.4524,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/27-part-17-transformation-roadmap",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-   "type": "similar_to",
-   "weight": 0.4484,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/01-quantum-ai-consulting-landscape",
-   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
-   "type": "similar_to",
-   "weight": 0.4464,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
-   "type": "similar_to",
-   "weight": 0.4448,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "strategy/25-part-15-enterprise-architecture",
-   "type": "similar_to",
-   "weight": 0.4447,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/07-aidlc-artifacts-togaf-technology-architecture",
-   "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
-   "type": "similar_to",
-   "weight": 0.4445,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
-   "target": "strategy/03-ai-value-creator-deliverables-pack",
-   "type": "similar_to",
-   "weight": 0.4438,
+   "weight": 0.4667,
    "tier": "related"
   },
   {
    "source": "architecture/72-enterprise-ai-architect-bible-2026",
    "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
    "type": "similar_to",
-   "weight": 0.4404,
+   "weight": 0.4639,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
+   "target": "architecture/85-enterprise-manager-ai-genai",
+   "type": "similar_to",
+   "weight": 0.4639,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
+   "target": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
+   "type": "similar_to",
+   "weight": 0.4612,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/44-ai-harness-architecture-orchestration",
+   "target": "architecture/47-enterprise-agent-reference-architectures",
+   "type": "similar_to",
+   "weight": 0.4599,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/02-aidlc-artifacts-development-to-retirement",
+   "target": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
+   "type": "similar_to",
+   "weight": 0.4534,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/66-part-08-organizational-roles-core-delivery-engineering-roles",
+   "target": "strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks",
+   "type": "similar_to",
+   "weight": 0.4515,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/27-part-17-transformation-roadmap",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "type": "similar_to",
+   "weight": 0.4493,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/01-quantum-ai-consulting-landscape",
+   "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
+   "type": "similar_to",
+   "weight": 0.4478,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
+   "target": "strategy/03-ai-value-creator-deliverables-pack",
+   "type": "similar_to",
+   "weight": 0.4473,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/07-aidlc-artifacts-togaf-technology-architecture",
+   "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
+   "type": "similar_to",
+   "weight": 0.4463,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
+   "type": "similar_to",
+   "weight": 0.4462,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "strategy/25-part-15-enterprise-architecture",
+   "type": "similar_to",
+   "weight": 0.4453,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
    "type": "similar_to",
-   "weight": 0.4395,
+   "weight": 0.4408,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/02-quantum-ai-startup-landscape",
+   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
+   "type": "similar_to",
+   "weight": 0.44,
    "tier": "related"
   },
   {
    "source": "architecture/48-enterprise-ai-architect-foundations",
    "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
    "type": "similar_to",
-   "weight": 0.4388,
+   "weight": 0.4389,
    "tier": "related"
   },
   {
-   "source": "strategy/02-quantum-ai-startup-landscape",
-   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
+   "source": "architecture/14-aidlc-enterprise-framework-2025",
+   "target": "strategy/22-part-12-responsible-ai",
    "type": "similar_to",
-   "weight": 0.4387,
+   "weight": 0.4375,
    "tier": "related"
   },
   {
    "source": "strategy/42-ai-first-to-ai-native",
    "target": "strategy/27-part-17-transformation-roadmap",
    "type": "similar_to",
-   "weight": 0.4356,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/14-aidlc-enterprise-framework-2025",
-   "target": "strategy/22-part-12-responsible-ai",
-   "type": "similar_to",
-   "weight": 0.4355,
+   "weight": 0.4372,
    "tier": "related"
   },
   {
    "source": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
    "target": "architecture/parts/07-aidlc-artifacts-togaf-technology-architecture",
    "type": "similar_to",
-   "weight": 0.4336,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/58-mcp-a2a-protocol-deep-dive",
-   "target": "architecture/40-agent-interoperability-orchestration",
-   "type": "similar_to",
-   "weight": 0.4304,
-   "tier": "related"
-  },
-  {
-   "source": "learning-paths/index",
-   "target": "assets/index",
-   "type": "similar_to",
-   "weight": 0.43,
+   "weight": 0.4363,
    "tier": "related"
   },
   {
    "source": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
    "target": "architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture",
    "type": "similar_to",
-   "weight": 0.4288,
+   "weight": 0.431,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/58-mcp-a2a-protocol-deep-dive",
+   "target": "architecture/40-agent-interoperability-orchestration",
+   "type": "similar_to",
+   "weight": 0.4309,
+   "tier": "related"
+  },
+  {
+   "source": "learning-paths/index",
+   "target": "assets/index",
+   "type": "similar_to",
+   "weight": 0.4306,
    "tier": "related"
   },
   {
    "source": "strategy/02-quantum-ai-startup-landscape",
    "target": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "type": "similar_to",
-   "weight": 0.4287,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/20-ai-native-architecture-evolution-report",
-   "target": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
-   "type": "similar_to",
-   "weight": 0.4269,
+   "weight": 0.4298,
    "tier": "related"
   },
   {
    "source": "strategy/vols/11-vol9-industry-deep-dives-manufacturing-energy-telecom-gov",
    "target": "strategy/vols/12-vol9-industry-deep-dives-life-sciences-logistics-media-tech",
    "type": "similar_to",
-   "weight": 0.4258,
+   "weight": 0.4274,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/20-ai-native-architecture-evolution-report",
+   "target": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
+   "type": "similar_to",
+   "weight": 0.4273,
    "tier": "related"
   },
   {
    "source": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
    "target": "architecture/parts/13-ai-native-architecture-evolution-report-decision-forecast",
    "type": "similar_to",
-   "weight": 0.4252,
+   "weight": 0.4255,
    "tier": "related"
   },
   {
    "source": "architecture/22-agentic-ai-landing-zone-architecture",
    "target": "architecture/parts/14-agentic-ai-landing-zone-architecture-implementation-governance",
    "type": "similar_to",
-   "weight": 0.4235,
+   "weight": 0.4245,
    "tier": "related"
   },
   {
    "source": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
    "target": "architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture",
    "type": "similar_to",
-   "weight": 0.4216,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/18-part-08-organizational-roles",
-   "target": "strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks",
-   "type": "similar_to",
-   "weight": 0.4204,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/51-enterprise-ai-governance-compliance",
-   "type": "similar_to",
-   "weight": 0.4196,
+   "weight": 0.4241,
    "tier": "related"
   },
   {
    "source": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
    "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
    "type": "similar_to",
-   "weight": 0.4196,
+   "weight": 0.4219,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/18-part-08-organizational-roles",
+   "target": "strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks",
+   "type": "similar_to",
+   "weight": 0.4218,
    "tier": "related"
   },
   {
    "source": "strategy/02-quantum-ai-startup-landscape",
    "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
    "type": "similar_to",
-   "weight": 0.4188,
+   "weight": 0.4205,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/51-enterprise-ai-governance-compliance",
+   "type": "similar_to",
+   "weight": 0.4204,
    "tier": "related"
   },
   {
    "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
    "type": "similar_to",
-   "weight": 0.4185,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/84-enterprise-data-architect-ai-genai",
-   "type": "similar_to",
-   "weight": 0.4181,
+   "weight": 0.42,
    "tier": "related"
   },
   {
    "source": "architecture/02-aidlc-artifacts-development-to-retirement",
    "target": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
    "type": "similar_to",
-   "weight": 0.4171,
+   "weight": 0.4191,
    "tier": "related"
   },
   {
    "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
    "target": "architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture",
    "type": "similar_to",
-   "weight": 0.4168,
+   "weight": 0.419,
    "tier": "related"
   },
   {
-   "source": "architecture/51-enterprise-ai-governance-compliance",
-   "target": "strategy/22-part-12-responsible-ai",
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/84-enterprise-data-architect-ai-genai",
    "type": "similar_to",
-   "weight": 0.4165,
+   "weight": 0.4183,
    "tier": "related"
   },
   {
    "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
    "target": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
    "type": "similar_to",
-   "weight": 0.416,
+   "weight": 0.4182,
    "tier": "related"
   },
   {
-   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-   "target": "architecture/44-ai-harness-architecture-orchestration",
+   "source": "architecture/51-enterprise-ai-governance-compliance",
+   "target": "strategy/22-part-12-responsible-ai",
    "type": "similar_to",
-   "weight": 0.4159,
+   "weight": 0.418,
    "tier": "related"
   },
   {
    "source": "architecture/74-ai-solution-lifecycle-deliverables",
    "target": "architecture/parts/28-ai-solution-lifecycle-deliverables-part2",
    "type": "similar_to",
-   "weight": 0.4156,
+   "weight": 0.4168,
    "tier": "related"
   },
   {
-   "source": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
-   "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
+   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
+   "target": "architecture/44-ai-harness-architecture-orchestration",
    "type": "similar_to",
-   "weight": 0.4156,
+   "weight": 0.4163,
    "tier": "related"
   },
   {
    "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
    "target": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
    "type": "similar_to",
-   "weight": 0.4116,
+   "weight": 0.4136,
    "tier": "related"
   },
   {
-   "source": "strategy/32-ea-strategy-playbook",
-   "target": "strategy/74-ea-strategy-playbook-build-operate-retire-stages",
+   "source": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
+   "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
    "type": "similar_to",
-   "weight": 0.4111,
+   "weight": 0.4128,
    "tier": "related"
   },
   {
-   "source": "architecture/86-principal-enterprise-ai-guide-educative",
-   "target": "architecture/parts/36-principal-enterprise-ai-guide-educative-part2",
+   "source": "architecture/49-enterprise-ai-architecture-patterns",
+   "target": "architecture/48-enterprise-ai-architect-foundations",
    "type": "similar_to",
-   "weight": 0.4097,
+   "weight": 0.4122,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/48-enterprise-ai-architect-foundations",
+   "target": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
+   "type": "similar_to",
+   "weight": 0.4118,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
    "target": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
    "type": "similar_to",
-   "weight": 0.4089,
+   "weight": 0.4109,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/32-ea-strategy-playbook",
+   "target": "strategy/74-ea-strategy-playbook-build-operate-retire-stages",
+   "type": "similar_to",
+   "weight": 0.4108,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/86-principal-enterprise-ai-guide-educative",
+   "target": "architecture/parts/36-principal-enterprise-ai-guide-educative-part2",
+   "type": "similar_to",
+   "weight": 0.4099,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
    "type": "similar_to",
-   "weight": 0.4077,
+   "weight": 0.4092,
    "tier": "related"
   },
   {
    "source": "architecture/20-ai-native-architecture-evolution-report",
    "target": "architecture/parts/13-ai-native-architecture-evolution-report-decision-forecast",
    "type": "similar_to",
-   "weight": 0.4067,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
-   "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
-   "type": "similar_to",
-   "weight": 0.4042,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
-   "target": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
-   "type": "similar_to",
-   "weight": 0.4041,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/51-enterprise-ai-governance-compliance",
-   "target": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
-   "type": "similar_to",
-   "weight": 0.4038,
+   "weight": 0.4072,
    "tier": "related"
   },
   {
    "source": "strategy/02-quantum-ai-startup-landscape",
    "target": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
    "type": "similar_to",
-   "weight": 0.4038,
+   "weight": 0.4046,
    "tier": "related"
   },
   {
    "source": "strategy/75-enterprise-ai-strategic-brief-2026-aegis-security-adlc",
    "target": "strategy/76-enterprise-ai-strategic-brief-2026-roadmap-strategic-imperatives",
    "type": "similar_to",
-   "weight": 0.403,
+   "weight": 0.4046,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/51-enterprise-ai-governance-compliance",
+   "target": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
+   "type": "similar_to",
+   "weight": 0.4044,
    "tier": "related"
   },
   {
    "source": "architecture/85-enterprise-manager-ai-genai",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
+   "weight": 0.4038,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
+   "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
+   "type": "similar_to",
    "weight": 0.4029,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
+   "target": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
+   "type": "similar_to",
+   "weight": 0.4028,
    "tier": "related"
   },
   {
    "source": "architecture/01-aidlc-artifacts-discovery-to-model",
    "target": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
    "type": "similar_to",
-   "weight": 0.4002,
+   "weight": 0.4019,
    "tier": "related"
   },
   {
    "source": "strategy/52-vol9-industry-deep-dives",
    "target": "strategy/vols/11-vol9-industry-deep-dives-manufacturing-energy-telecom-gov",
    "type": "similar_to",
-   "weight": 0.3995,
+   "weight": 0.4018,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
    "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
    "type": "similar_to",
+   "weight": 0.3999,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/72-enterprise-ai-architect-bible-2026",
+   "target": "architecture/48-enterprise-ai-architect-foundations",
+   "type": "similar_to",
    "weight": 0.3985,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/17-part-07-platform-operating-model",
-   "target": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
-   "type": "similar_to",
-   "weight": 0.3956,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/43-agentic-ai-reliability-observability-governance",
-   "target": "architecture/42-agent-reliability-engineering",
-   "type": "similar_to",
-   "weight": 0.3944,
    "tier": "related"
   },
   {
    "source": "architecture/01-aidlc-artifacts-discovery-to-model",
    "target": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
    "type": "similar_to",
-   "weight": 0.3941,
+   "weight": 0.3959,
    "tier": "related"
   },
   {
-   "source": "architecture/44-ai-harness-architecture-orchestration",
-   "target": "architecture/43-agentic-ai-reliability-observability-governance",
+   "source": "strategy/17-part-07-platform-operating-model",
+   "target": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
    "type": "similar_to",
-   "weight": 0.394,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/06-ea-architect-deep-dive-five-arenas",
-   "target": "architecture/07-ea-architect-deep-dive-toolkit-practice",
-   "type": "similar_to",
-   "weight": 0.3935,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/01-quantum-ai-consulting-landscape",
-   "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-   "type": "similar_to",
-   "weight": 0.3929,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/52-enterprise-ai-skills-assessment",
-   "target": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
-   "type": "similar_to",
-   "weight": 0.3922,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/14-aidlc-enterprise-framework-2025",
-   "target": "strategy/42-ai-first-to-ai-native",
-   "type": "similar_to",
-   "weight": 0.3919,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/12-apex-ea-delivery-governance-reference",
-   "target": "architecture/11-apex-ea-information-systems-architecture",
-   "type": "similar_to",
-   "weight": 0.3894,
+   "weight": 0.3952,
    "tier": "related"
   },
   {
    "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
    "target": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
    "type": "similar_to",
-   "weight": 0.389,
+   "weight": 0.3952,
    "tier": "related"
   },
   {
-   "source": "strategy/52-vol9-industry-deep-dives",
-   "target": "strategy/vols/12-vol9-industry-deep-dives-life-sciences-logistics-media-tech",
+   "source": "architecture/43-agentic-ai-reliability-observability-governance",
+   "target": "architecture/42-agent-reliability-engineering",
    "type": "similar_to",
-   "weight": 0.389,
+   "weight": 0.3951,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/44-ai-harness-architecture-orchestration",
+   "target": "architecture/43-agentic-ai-reliability-observability-governance",
+   "type": "similar_to",
+   "weight": 0.3947,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/01-quantum-ai-consulting-landscape",
+   "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
+   "type": "similar_to",
+   "weight": 0.3943,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/06-ea-architect-deep-dive-five-arenas",
+   "target": "architecture/07-ea-architect-deep-dive-toolkit-practice",
+   "type": "similar_to",
+   "weight": 0.394,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/14-aidlc-enterprise-framework-2025",
+   "target": "strategy/42-ai-first-to-ai-native",
+   "type": "similar_to",
+   "weight": 0.3931,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/52-enterprise-ai-skills-assessment",
+   "target": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
+   "type": "similar_to",
+   "weight": 0.3927,
    "tier": "related"
   },
   {
    "source": "strategy/42-ai-first-to-ai-native",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3888,
+   "weight": 0.3897,
    "tier": "related"
   },
   {
-   "source": "architecture/70-executive-communication-framework-guide",
-   "target": "architecture/82-ea-business-communication-executive-skills",
+   "source": "strategy/52-vol9-industry-deep-dives",
+   "target": "strategy/vols/12-vol9-industry-deep-dives-life-sciences-logistics-media-tech",
    "type": "similar_to",
-   "weight": 0.3885,
+   "weight": 0.3897,
    "tier": "related"
   },
   {
    "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
    "target": "strategy/12-part-02-operating-models",
    "type": "similar_to",
-   "weight": 0.3884,
+   "weight": 0.3896,
    "tier": "related"
   },
   {
    "source": "architecture/52-enterprise-ai-skills-assessment",
    "target": "architecture/16-ea-aidlc-deep-research-2026",
    "type": "similar_to",
-   "weight": 0.3876,
+   "weight": 0.3885,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/70-executive-communication-framework-guide",
+   "target": "architecture/82-ea-business-communication-executive-skills",
+   "type": "similar_to",
+   "weight": 0.3883,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/39-agent-as-tool-composition",
+   "target": "architecture/40-agent-interoperability-orchestration",
+   "type": "similar_to",
+   "weight": 0.387,
    "tier": "related"
   },
   {
@@ -9818,680 +9846,722 @@
    "tier": "related"
   },
   {
-   "source": "architecture/39-agent-as-tool-composition",
-   "target": "architecture/40-agent-interoperability-orchestration",
+   "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
+   "target": "architecture/parts/07-aidlc-artifacts-togaf-technology-architecture",
    "type": "similar_to",
-   "weight": 0.3856,
+   "weight": 0.3846,
    "tier": "related"
   },
   {
    "source": "architecture/85-enterprise-manager-ai-genai",
    "target": "strategy/18-part-08-organizational-roles",
    "type": "similar_to",
-   "weight": 0.384,
+   "weight": 0.3845,
    "tier": "related"
   },
   {
    "source": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
    "target": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
    "type": "similar_to",
-   "weight": 0.3835,
+   "weight": 0.3844,
    "tier": "related"
   },
   {
    "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
    "type": "similar_to",
-   "weight": 0.3832,
+   "weight": 0.3843,
    "tier": "related"
   },
   {
    "source": "architecture/08-ea-architect-deep-dive-measurement-growth",
    "target": "architecture/07-ea-architect-deep-dive-toolkit-practice",
    "type": "similar_to",
-   "weight": 0.3827,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
-   "target": "architecture/parts/07-aidlc-artifacts-togaf-technology-architecture",
-   "type": "similar_to",
-   "weight": 0.3821,
+   "weight": 0.3835,
    "tier": "related"
   },
   {
    "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
    "target": "architecture/55-governance-propagation-chain",
    "type": "similar_to",
-   "weight": 0.3819,
+   "weight": 0.3822,
    "tier": "related"
   },
   {
    "source": "strategy/27-part-17-transformation-roadmap",
    "target": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
    "type": "similar_to",
-   "weight": 0.3812,
+   "weight": 0.3822,
    "tier": "related"
   },
   {
    "source": "learning-paths/index",
    "target": "career/index",
    "type": "similar_to",
-   "weight": 0.381,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/06-ea-architect-deep-dive-five-arenas",
-   "target": "architecture/05-ea-architect-deep-dive-foundation",
-   "type": "similar_to",
-   "weight": 0.3806,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/06-ea-architect-deep-dive-five-arenas",
-   "target": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
-   "type": "similar_to",
-   "weight": 0.3805,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/55-ai-cost-implementation-guide-2026-anti-patterns-deployment-playbook",
-   "target": "strategy/09-enterprise-ai-commercial-analysis-2026",
-   "type": "similar_to",
-   "weight": 0.3805,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/parts/07-aidlc-artifacts-togaf-technology-architecture",
-   "type": "similar_to",
-   "weight": 0.3796,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/01-aidlc-artifacts-discovery-to-model",
-   "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
-   "type": "similar_to",
-   "weight": 0.3793,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/72-enterprise-ai-architect-bible-2026",
-   "target": "architecture/86-principal-enterprise-ai-guide-educative",
-   "type": "similar_to",
-   "weight": 0.379,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.3789,
+   "weight": 0.3817,
    "tier": "related"
   },
   {
    "source": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
    "target": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
    "type": "similar_to",
-   "weight": 0.3784,
+   "weight": 0.3812,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/01-aidlc-artifacts-discovery-to-model",
+   "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
+   "type": "similar_to",
+   "weight": 0.381,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/06-ea-architect-deep-dive-five-arenas",
+   "target": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
+   "type": "similar_to",
+   "weight": 0.3807,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/06-ea-architect-deep-dive-five-arenas",
+   "target": "architecture/05-ea-architect-deep-dive-foundation",
+   "type": "similar_to",
+   "weight": 0.3804,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/parts/07-aidlc-artifacts-togaf-technology-architecture",
+   "type": "similar_to",
+   "weight": 0.3803,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3801,
    "tier": "related"
   },
   {
    "source": "architecture/21-the-agentic-loop-enterprise-ai-architect-guide",
    "target": "architecture/parts/17-the-agentic-loop-enterprise-ai-architect-guide-practice-cases",
    "type": "similar_to",
-   "weight": 0.3782,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture",
-   "type": "similar_to",
-   "weight": 0.3774,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/42-ai-first-to-ai-native",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.3774,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
-   "target": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
-   "type": "similar_to",
-   "weight": 0.3773,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
-   "type": "similar_to",
-   "weight": 0.3773,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/85-enterprise-manager-ai-genai",
-   "target": "strategy/27-part-17-transformation-roadmap",
-   "type": "similar_to",
-   "weight": 0.3768,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/47-enterprise-agent-reference-architectures",
-   "target": "architecture/58-mcp-a2a-protocol-deep-dive",
-   "type": "similar_to",
-   "weight": 0.3766,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/14-aidlc-enterprise-framework-2025",
-   "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
-   "type": "similar_to",
-   "weight": 0.3758,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/28-ai-solution-lifecycle-deliverables-part2",
-   "target": "architecture/parts/29-ai-solution-lifecycle-deliverables-part3",
-   "type": "similar_to",
-   "weight": 0.3758,
+   "weight": 0.3796,
    "tier": "related"
   },
   {
    "source": "strategy/05-agentic-ai-use-case-value-lifecycle",
    "target": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
    "type": "similar_to",
-   "weight": 0.3749,
+   "weight": 0.3795,
    "tier": "related"
   },
   {
-   "source": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
-   "target": "architecture/51-enterprise-ai-governance-compliance",
+   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
+   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
    "type": "similar_to",
-   "weight": 0.3718,
+   "weight": 0.3785,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/42-ai-first-to-ai-native",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3784,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/72-enterprise-ai-architect-bible-2026",
+   "target": "architecture/86-principal-enterprise-ai-guide-educative",
+   "type": "similar_to",
+   "weight": 0.3783,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/85-enterprise-manager-ai-genai",
+   "target": "strategy/27-part-17-transformation-roadmap",
+   "type": "similar_to",
+   "weight": 0.3783,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture",
+   "type": "similar_to",
+   "weight": 0.378,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/47-enterprise-agent-reference-architectures",
+   "target": "architecture/58-mcp-a2a-protocol-deep-dive",
+   "type": "similar_to",
+   "weight": 0.3774,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/14-aidlc-enterprise-framework-2025",
+   "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
+   "type": "similar_to",
+   "weight": 0.3769,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/28-ai-solution-lifecycle-deliverables-part2",
+   "target": "architecture/parts/29-ai-solution-lifecycle-deliverables-part3",
+   "type": "similar_to",
+   "weight": 0.3769,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
+   "target": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
+   "type": "similar_to",
+   "weight": 0.3763,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/48-enterprise-ai-architect-foundations",
+   "target": "architecture/parts/18-enterprise-multi-model-ai-strategy-part2",
+   "type": "similar_to",
+   "weight": 0.3749,
    "tier": "related"
   },
   {
    "source": "architecture/51-enterprise-ai-governance-compliance",
    "target": "architecture/22-agentic-ai-landing-zone-architecture",
    "type": "similar_to",
-   "weight": 0.3713,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/54-enterprise-multi-model-ai-strategy",
-   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
-   "type": "similar_to",
-   "weight": 0.3709,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/85-enterprise-manager-ai-genai",
-   "target": "architecture/14-aidlc-enterprise-framework-2025",
-   "type": "similar_to",
-   "weight": 0.3709,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/01-quantum-ai-consulting-landscape",
-   "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
-   "type": "similar_to",
-   "weight": 0.3709,
+   "weight": 0.3733,
    "tier": "related"
   },
   {
    "source": "architecture/parts/07-aidlc-artifacts-togaf-technology-architecture",
    "target": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
    "type": "similar_to",
-   "weight": 0.3703,
+   "weight": 0.3729,
    "tier": "related"
   },
   {
-   "source": "architecture/48-enterprise-ai-architect-foundations",
-   "target": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
+   "source": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
+   "target": "architecture/51-enterprise-ai-governance-compliance",
    "type": "similar_to",
-   "weight": 0.3696,
+   "weight": 0.3723,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/01-quantum-ai-consulting-landscape",
+   "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
+   "type": "similar_to",
+   "weight": 0.3722,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/85-enterprise-manager-ai-genai",
+   "target": "architecture/14-aidlc-enterprise-framework-2025",
+   "type": "similar_to",
+   "weight": 0.3718,
    "tier": "related"
   },
   {
    "source": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
    "target": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
    "type": "similar_to",
-   "weight": 0.3694,
+   "weight": 0.3713,
    "tier": "related"
   },
   {
-   "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
-   "target": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
+   "source": "strategy/55-ai-cost-implementation-guide-2026-anti-patterns-deployment-playbook",
+   "target": "strategy/09-enterprise-ai-commercial-analysis-2026",
    "type": "similar_to",
-   "weight": 0.3693,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/72-enterprise-ai-architect-bible-2026",
-   "target": "architecture/48-enterprise-ai-architect-foundations",
-   "type": "similar_to",
-   "weight": 0.369,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
-   "type": "similar_to",
-   "weight": 0.369,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
-   "target": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
-   "type": "similar_to",
-   "weight": 0.3686,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "strategy/42-ai-first-to-ai-native",
-   "type": "similar_to",
-   "weight": 0.3683,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/22-agentic-ai-landing-zone-architecture",
-   "type": "similar_to",
-   "weight": 0.3682,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/49-enterprise-ai-architecture-patterns",
-   "target": "architecture/48-enterprise-ai-architect-foundations",
-   "type": "similar_to",
-   "weight": 0.3679,
+   "weight": 0.3701,
    "tier": "related"
   },
   {
    "source": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
    "target": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
    "type": "similar_to",
-   "weight": 0.3678,
+   "weight": 0.3701,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
+   "type": "similar_to",
+   "weight": 0.3699,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/22-agentic-ai-landing-zone-architecture",
+   "type": "similar_to",
+   "weight": 0.3695,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "strategy/42-ai-first-to-ai-native",
+   "type": "similar_to",
+   "weight": 0.3693,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
+   "target": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
+   "type": "similar_to",
+   "weight": 0.3689,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
+   "target": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
+   "type": "similar_to",
+   "weight": 0.3689,
    "tier": "related"
   },
   {
    "source": "architecture/02-aidlc-artifacts-development-to-retirement",
    "target": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
    "type": "similar_to",
-   "weight": 0.3665,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
-   "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-   "type": "similar_to",
-   "weight": 0.3661,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/54-enterprise-multi-model-ai-strategy",
-   "target": "architecture/48-enterprise-ai-architect-foundations",
-   "type": "similar_to",
-   "weight": 0.3659,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/10-apex-ea-aidlc-methodology",
-   "target": "architecture/14-aidlc-enterprise-framework-2025",
-   "type": "similar_to",
-   "weight": 0.3659,
+   "weight": 0.368,
    "tier": "related"
   },
   {
    "source": "architecture/74-ai-solution-lifecycle-deliverables",
    "target": "architecture/parts/29-ai-solution-lifecycle-deliverables-part3",
    "type": "similar_to",
-   "weight": 0.3657,
+   "weight": 0.367,
    "tier": "related"
   },
   {
-   "source": "architecture/77-ai-transformation-consultant-toolkit-2026",
-   "target": "architecture/85-enterprise-manager-ai-genai",
+   "source": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
+   "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
    "type": "similar_to",
-   "weight": 0.3653,
+   "weight": 0.3665,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/10-apex-ea-aidlc-methodology",
+   "target": "architecture/14-aidlc-enterprise-framework-2025",
+   "type": "similar_to",
+   "weight": 0.3664,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
    "target": "strategy/16-part-06-governance",
    "type": "similar_to",
-   "weight": 0.3653,
+   "weight": 0.3659,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/54-enterprise-multi-model-ai-strategy",
+   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
+   "type": "similar_to",
+   "weight": 0.3646,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
+   "type": "similar_to",
+   "weight": 0.3646,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
+   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
+   "type": "similar_to",
+   "weight": 0.3641,
    "tier": "related"
   },
   {
    "source": "strategy/18-part-08-organizational-roles",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3641,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
-   "type": "similar_to",
-   "weight": 0.3637,
+   "weight": 0.3638,
    "tier": "related"
   },
   {
    "source": "architecture/51-enterprise-ai-governance-compliance",
    "target": "strategy/16-part-06-governance",
    "type": "similar_to",
-   "weight": 0.3627,
+   "weight": 0.3635,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3624,
+   "weight": 0.3634,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
    "target": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
    "type": "similar_to",
-   "weight": 0.3616,
+   "weight": 0.363,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
    "target": "strategy/27-part-17-transformation-roadmap",
    "type": "similar_to",
-   "weight": 0.3607,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/18-ai-deep-future-outlook-2026-2035",
-   "target": "architecture/85-enterprise-manager-ai-genai",
-   "type": "similar_to",
-   "weight": 0.3603,
+   "weight": 0.3623,
    "tier": "related"
   },
   {
    "source": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
    "target": "architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture",
    "type": "similar_to",
-   "weight": 0.3601,
+   "weight": 0.3615,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/18-ai-deep-future-outlook-2026-2035",
+   "target": "architecture/85-enterprise-manager-ai-genai",
+   "type": "similar_to",
+   "weight": 0.3611,
    "tier": "related"
   },
   {
    "source": "architecture/68-ea-bestpractices-jargon",
    "target": "architecture/parts/35-ea-mastery-guide-part2",
    "type": "similar_to",
-   "weight": 0.3598,
+   "weight": 0.3606,
    "tier": "related"
   },
   {
    "source": "architecture/05-ea-architect-deep-dive-foundation",
    "target": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
    "type": "similar_to",
-   "weight": 0.3591,
+   "weight": 0.3595,
    "tier": "related"
   },
   {
    "source": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
    "target": "architecture/14-aidlc-enterprise-framework-2025",
    "type": "similar_to",
-   "weight": 0.3581,
+   "weight": 0.3589,
    "tier": "related"
   },
   {
    "source": "architecture/01-aidlc-artifacts-discovery-to-model",
    "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
    "type": "similar_to",
-   "weight": 0.3573,
+   "weight": 0.3588,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/54-enterprise-multi-model-ai-strategy",
+   "target": "architecture/48-enterprise-ai-architect-foundations",
+   "type": "similar_to",
+   "weight": 0.3585,
    "tier": "related"
   },
   {
    "source": "strategy/06-ai-coding-agents-2026",
    "target": "strategy/58-ai-coding-agents-2026-tool-comparison-benchmarks-guide",
    "type": "similar_to",
-   "weight": 0.3572,
+   "weight": 0.3585,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/18-enterprise-multi-model-ai-strategy-part2",
+   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
+   "type": "similar_to",
+   "weight": 0.3583,
    "tier": "related"
   },
   {
    "source": "architecture/51-enterprise-ai-governance-compliance",
    "target": "architecture/parts/36-principal-enterprise-ai-guide-educative-part2",
    "type": "similar_to",
-   "weight": 0.3571,
+   "weight": 0.3575,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/11-apex-ea-information-systems-architecture",
+   "target": "architecture/10-apex-ea-aidlc-methodology",
+   "type": "similar_to",
+   "weight": 0.3572,
    "tier": "related"
   },
   {
    "source": "architecture/05-ea-architect-deep-dive-foundation",
    "target": "architecture/07-ea-architect-deep-dive-toolkit-practice",
    "type": "similar_to",
-   "weight": 0.3564,
+   "weight": 0.3572,
    "tier": "related"
   },
   {
    "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
    "type": "similar_to",
-   "weight": 0.3562,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-   "target": "architecture/47-enterprise-agent-reference-architectures",
-   "type": "similar_to",
-   "weight": 0.356,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/14-aidlc-enterprise-framework-2025",
-   "target": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-   "type": "similar_to",
-   "weight": 0.3557,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-   "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
-   "type": "similar_to",
-   "weight": 0.3553,
+   "weight": 0.3568,
    "tier": "related"
   },
   {
    "source": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
    "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
    "type": "similar_to",
-   "weight": 0.3548,
+   "weight": 0.3567,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
+   "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
+   "type": "similar_to",
+   "weight": 0.3567,
    "tier": "related"
   },
   {
    "source": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
    "target": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
    "type": "similar_to",
-   "weight": 0.3545,
+   "weight": 0.3566,
    "tier": "related"
   },
   {
-   "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
-   "target": "strategy/16-part-06-governance",
+   "source": "architecture/14-aidlc-enterprise-framework-2025",
+   "target": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
    "type": "similar_to",
-   "weight": 0.3545,
+   "weight": 0.3564,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
+   "target": "architecture/47-enterprise-agent-reference-architectures",
+   "type": "similar_to",
+   "weight": 0.3562,
    "tier": "related"
   },
   {
    "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "strategy/27-part-17-transformation-roadmap",
    "type": "similar_to",
-   "weight": 0.3543,
+   "weight": 0.3557,
    "tier": "related"
   },
   {
-   "source": "architecture/41-agent-memory-planning-architecture",
-   "target": "architecture/44-ai-harness-architecture-orchestration",
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
    "type": "similar_to",
-   "weight": 0.3531,
+   "weight": 0.3554,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
+   "target": "strategy/16-part-06-governance",
+   "type": "similar_to",
+   "weight": 0.3548,
    "tier": "related"
   },
   {
    "source": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
    "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
    "type": "similar_to",
-   "weight": 0.353,
+   "weight": 0.3546,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/41-agent-memory-planning-architecture",
+   "target": "architecture/44-ai-harness-architecture-orchestration",
+   "type": "similar_to",
+   "weight": 0.3542,
    "tier": "related"
   },
   {
    "source": "architecture/50-enterprise-ai-comparative-matrices-2026",
    "target": "architecture/47-enterprise-agent-reference-architectures",
    "type": "similar_to",
-   "weight": 0.352,
+   "weight": 0.3532,
    "tier": "related"
   },
   {
    "source": "architecture/85-enterprise-manager-ai-genai",
    "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
-   "weight": 0.352,
+   "weight": 0.3532,
    "tier": "related"
   },
   {
-   "source": "architecture/12-apex-ea-delivery-governance-reference",
-   "target": "architecture/09-apex-ea-team-structure-raci",
+   "source": "architecture/48-enterprise-ai-architect-foundations",
+   "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
    "type": "similar_to",
-   "weight": 0.3512,
+   "weight": 0.3531,
    "tier": "related"
   },
   {
-   "source": "strategy/20-part-10-service-catalog",
-   "target": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
+   "source": "architecture/49-enterprise-ai-architecture-patterns",
+   "target": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
    "type": "similar_to",
-   "weight": 0.3506,
+   "weight": 0.3525,
    "tier": "related"
   },
   {
    "source": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
    "target": "architecture/23-agentic-ai-landing-zone-business-layer",
    "type": "similar_to",
-   "weight": 0.3504,
+   "weight": 0.3518,
    "tier": "related"
   },
   {
-   "source": "architecture/14-aidlc-enterprise-framework-2025",
-   "target": "architecture/parts/36-principal-enterprise-ai-guide-educative-part2",
+   "source": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
+   "target": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
    "type": "similar_to",
-   "weight": 0.3501,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/44-ai-harness-architecture-orchestration",
-   "target": "architecture/58-mcp-a2a-protocol-deep-dive",
-   "type": "similar_to",
-   "weight": 0.35,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-   "target": "architecture/72-enterprise-ai-architect-bible-2026",
-   "type": "similar_to",
-   "weight": 0.3498,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/51-enterprise-ai-governance-compliance",
-   "target": "strategy/39-governance-responsible-ai-and-security",
-   "type": "similar_to",
-   "weight": 0.3498,
+   "weight": 0.3512,
    "tier": "related"
   },
   {
    "source": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
    "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
    "type": "similar_to",
-   "weight": 0.3496,
+   "weight": 0.3509,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/20-part-10-service-catalog",
+   "target": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
+   "type": "similar_to",
+   "weight": 0.3508,
    "tier": "related"
   },
   {
    "source": "architecture/50-enterprise-ai-comparative-matrices-2026",
    "target": "architecture/33-enterprise-agentic-ai-outlook-2026-2030",
    "type": "similar_to",
-   "weight": 0.3495,
+   "weight": 0.3503,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/51-enterprise-ai-governance-compliance",
+   "target": "strategy/39-governance-responsible-ai-and-security",
+   "type": "similar_to",
+   "weight": 0.3503,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/14-aidlc-enterprise-framework-2025",
+   "target": "architecture/parts/36-principal-enterprise-ai-guide-educative-part2",
+   "type": "similar_to",
+   "weight": 0.3499,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
    "target": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
    "type": "similar_to",
-   "weight": 0.3491,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/51-enterprise-ai-governance-compliance",
-   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
-   "type": "similar_to",
-   "weight": 0.3485,
+   "weight": 0.3499,
    "tier": "related"
   },
   {
    "source": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
    "target": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
    "type": "similar_to",
-   "weight": 0.348,
+   "weight": 0.3498,
    "tier": "related"
   },
   {
    "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-   "target": "strategy/23-part-13-security-model",
+   "target": "architecture/72-enterprise-ai-architect-bible-2026",
    "type": "similar_to",
-   "weight": 0.3479,
+   "weight": 0.3497,
    "tier": "related"
   },
   {
-   "source": "architecture/68-ea-bestpractices-jargon",
-   "target": "strategy/32-ea-strategy-playbook",
+   "source": "architecture/12-apex-ea-delivery-governance-reference",
+   "target": "architecture/09-apex-ea-team-structure-raci",
    "type": "similar_to",
-   "weight": 0.3479,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
-   "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
-   "type": "similar_to",
-   "weight": 0.3479,
+   "weight": 0.3494,
    "tier": "related"
   },
   {
    "source": "architecture/13-aidlc-agile-cicd-ai-transformation-2026",
    "target": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
    "type": "similar_to",
-   "weight": 0.3475,
+   "weight": 0.3493,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/44-ai-harness-architecture-orchestration",
+   "target": "architecture/58-mcp-a2a-protocol-deep-dive",
+   "type": "similar_to",
+   "weight": 0.3493,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
+   "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
+   "type": "similar_to",
+   "weight": 0.3492,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/51-enterprise-ai-governance-compliance",
+   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
+   "type": "similar_to",
+   "weight": 0.349,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/52-enterprise-ai-skills-assessment",
+   "target": "architecture/48-enterprise-ai-architect-foundations",
+   "type": "similar_to",
+   "weight": 0.3488,
    "tier": "related"
   },
   {
    "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-   "target": "architecture/19-ai-lab-research-report-june2026",
+   "target": "strategy/23-part-13-security-model",
    "type": "similar_to",
-   "weight": 0.3474,
+   "weight": 0.3488,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/86-principal-enterprise-ai-guide-educative",
+   "target": "architecture/48-enterprise-ai-architect-foundations",
+   "type": "similar_to",
+   "weight": 0.3486,
    "tier": "related"
   },
   {
    "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "architecture/48-enterprise-ai-architect-foundations",
    "type": "similar_to",
+   "weight": 0.3486,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/68-ea-bestpractices-jargon",
+   "target": "strategy/32-ea-strategy-playbook",
+   "type": "similar_to",
+   "weight": 0.3486,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
+   "target": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
+   "type": "similar_to",
    "weight": 0.3471,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/85-enterprise-manager-ai-genai",
+   "type": "similar_to",
+   "weight": 0.3469,
    "tier": "related"
   },
   {
    "source": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
    "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
    "type": "similar_to",
-   "weight": 0.3469,
+   "weight": 0.346,
    "tier": "related"
   },
   {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/85-enterprise-manager-ai-genai",
+   "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
+   "target": "strategy/27-part-17-transformation-roadmap",
    "type": "similar_to",
    "weight": 0.346,
    "tier": "related"
@@ -10500,54 +10570,82 @@
    "source": "strategy/96-vol4-consulting-frameworks-industry-architecture-industry-playbooks",
    "target": "strategy/85-vol1-corporate-strategy-relationships-industry-comparisons",
    "type": "similar_to",
-   "weight": 0.3444,
+   "weight": 0.3453,
    "tier": "related"
   },
   {
-   "source": "architecture/52-enterprise-ai-skills-assessment",
-   "target": "architecture/48-enterprise-ai-architect-foundations",
+   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
+   "target": "architecture/19-ai-lab-research-report-june2026",
    "type": "similar_to",
-   "weight": 0.3439,
+   "weight": 0.3451,
    "tier": "related"
   },
   {
    "source": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
    "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "type": "similar_to",
-   "weight": 0.3439,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
-   "target": "strategy/27-part-17-transformation-roadmap",
-   "type": "similar_to",
-   "weight": 0.3439,
+   "weight": 0.3451,
    "tier": "related"
   },
   {
    "source": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
    "target": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
    "type": "similar_to",
-   "weight": 0.3434,
+   "weight": 0.3444,
    "tier": "related"
   },
   {
-   "source": "architecture/84-enterprise-data-architect-ai-genai",
-   "target": "architecture/77-ai-transformation-consultant-toolkit-2026",
+   "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
+   "target": "strategy/27-part-17-transformation-roadmap",
    "type": "similar_to",
-   "weight": 0.343,
+   "weight": 0.3439,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
    "target": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
    "type": "similar_to",
-   "weight": 0.3428,
+   "weight": 0.3437,
    "tier": "related"
   },
   {
-   "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
-   "target": "strategy/27-part-17-transformation-roadmap",
+   "source": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
+   "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
+   "type": "similar_to",
+   "weight": 0.3437,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/27-part-17-transformation-roadmap",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3437,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
+   "target": "strategy/48-vol5-ai-strategy-transformation-glossary",
+   "type": "similar_to",
+   "weight": 0.3435,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
+   "target": "strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g",
+   "type": "similar_to",
+   "weight": 0.3431,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/50-enterprise-ai-comparative-matrices-2026",
+   "target": "architecture/44-ai-harness-architecture-orchestration",
+   "type": "similar_to",
+   "weight": 0.343,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/08-ea-architect-deep-dive-measurement-growth",
+   "target": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
    "type": "similar_to",
    "weight": 0.3426,
    "tier": "related"
@@ -10556,343 +10654,294 @@
    "source": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
    "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
    "type": "similar_to",
-   "weight": 0.3424,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/08-ea-architect-deep-dive-measurement-growth",
-   "target": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
-   "type": "similar_to",
-   "weight": 0.3422,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/27-part-17-transformation-roadmap",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.3418,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/50-enterprise-ai-comparative-matrices-2026",
-   "target": "architecture/44-ai-harness-architecture-orchestration",
-   "type": "similar_to",
-   "weight": 0.3417,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
-   "target": "strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g",
-   "type": "similar_to",
-   "weight": 0.3417,
+   "weight": 0.3423,
    "tier": "related"
   },
   {
    "source": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
    "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
    "type": "similar_to",
-   "weight": 0.3415,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
-   "target": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
-   "type": "similar_to",
-   "weight": 0.3411,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
-   "target": "strategy/48-vol5-ai-strategy-transformation-glossary",
-   "type": "similar_to",
-   "weight": 0.3409,
+   "weight": 0.3418,
    "tier": "related"
   },
   {
    "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3407,
+   "weight": 0.3417,
    "tier": "related"
   },
   {
-   "source": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
-   "target": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
+   "source": "architecture/44-ai-harness-architecture-orchestration",
+   "target": "architecture/40-agent-interoperability-orchestration",
    "type": "similar_to",
-   "weight": 0.3407,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
-   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
-   "type": "similar_to",
-   "weight": 0.3407,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
-   "type": "similar_to",
-   "weight": 0.3406,
+   "weight": 0.3416,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
    "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "type": "similar_to",
-   "weight": 0.3402,
+   "weight": 0.3414,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
+   "target": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
+   "type": "similar_to",
+   "weight": 0.3403,
    "tier": "related"
   },
   {
    "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
    "type": "similar_to",
-   "weight": 0.3401,
+   "weight": 0.3402,
    "tier": "related"
   },
   {
    "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
    "target": "architecture/43-agentic-ai-reliability-observability-governance",
    "type": "similar_to",
-   "weight": 0.3399,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/44-ai-harness-architecture-orchestration",
-   "target": "architecture/40-agent-interoperability-orchestration",
-   "type": "similar_to",
-   "weight": 0.3399,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/72-enterprise-ai-architect-bible-2026",
-   "target": "architecture/49-enterprise-ai-architecture-patterns",
-   "type": "similar_to",
-   "weight": 0.3394,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
-   "target": "strategy/27-part-17-transformation-roadmap",
-   "type": "similar_to",
-   "weight": 0.3388,
+   "weight": 0.3401,
    "tier": "related"
   },
   {
    "source": "architecture/52-enterprise-ai-skills-assessment",
    "target": "architecture/51-enterprise-ai-governance-compliance",
    "type": "similar_to",
-   "weight": 0.3387,
+   "weight": 0.3399,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
+   "target": "strategy/27-part-17-transformation-roadmap",
+   "type": "similar_to",
+   "weight": 0.3399,
    "tier": "related"
   },
   {
    "source": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
    "target": "architecture/18-ai-deep-future-outlook-2026-2035",
    "type": "similar_to",
-   "weight": 0.3386,
+   "weight": 0.3398,
    "tier": "related"
   },
   {
    "source": "strategy/27-part-17-transformation-roadmap",
    "target": "strategy/18-part-08-organizational-roles",
    "type": "similar_to",
-   "weight": 0.3374,
+   "weight": 0.3388,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/72-enterprise-ai-architect-bible-2026",
+   "target": "architecture/49-enterprise-ai-architecture-patterns",
+   "type": "similar_to",
+   "weight": 0.3385,
    "tier": "related"
   },
   {
    "source": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
    "target": "architecture/parts/10-aidlc-agile-cicd-agile-evolution-cicd-transformation",
    "type": "similar_to",
-   "weight": 0.3371,
+   "weight": 0.3382,
    "tier": "related"
   },
   {
    "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
    "target": "architecture/parts/17-the-agentic-loop-enterprise-ai-architect-guide-practice-cases",
    "type": "similar_to",
-   "weight": 0.3369,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/51-enterprise-ai-governance-compliance",
-   "target": "architecture/37-art-framework-agentic-ai-execution",
-   "type": "similar_to",
-   "weight": 0.3368,
+   "weight": 0.3377,
    "tier": "related"
   },
   {
    "source": "architecture/85-enterprise-manager-ai-genai",
    "target": "architecture/51-enterprise-ai-governance-compliance",
    "type": "similar_to",
-   "weight": 0.3367,
+   "weight": 0.3377,
    "tier": "related"
   },
   {
    "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
    "target": "architecture/40-agent-interoperability-orchestration",
    "type": "similar_to",
-   "weight": 0.3364,
+   "weight": 0.3376,
    "tier": "related"
   },
   {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/10-apex-ea-aidlc-methodology",
+   "source": "architecture/51-enterprise-ai-governance-compliance",
+   "target": "architecture/37-art-framework-agentic-ai-execution",
    "type": "similar_to",
-   "weight": 0.3363,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
-   "target": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
-   "type": "similar_to",
-   "weight": 0.336,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/01-aidlc-artifacts-discovery-to-model",
-   "target": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-   "type": "similar_to",
-   "weight": 0.3353,
+   "weight": 0.337,
    "tier": "related"
   },
   {
    "source": "architecture/51-enterprise-ai-governance-compliance",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3353,
+   "weight": 0.3365,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/10-apex-ea-aidlc-methodology",
+   "type": "similar_to",
+   "weight": 0.3364,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/01-aidlc-artifacts-discovery-to-model",
+   "target": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
+   "type": "similar_to",
+   "weight": 0.3358,
    "tier": "related"
   },
   {
    "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
    "target": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
    "type": "similar_to",
-   "weight": 0.3351,
+   "weight": 0.3354,
    "tier": "related"
   },
   {
-   "source": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
-   "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
+   "source": "architecture/52-enterprise-ai-skills-assessment",
+   "target": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
    "type": "similar_to",
-   "weight": 0.335,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/18-enterprise-multi-model-ai-strategy-part2",
-   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
-   "type": "similar_to",
-   "weight": 0.334,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
-   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
-   "type": "similar_to",
-   "weight": 0.3334,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/37-art-framework-agentic-ai-execution",
-   "type": "similar_to",
-   "weight": 0.3333,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/44-ai-harness-architecture-orchestration",
-   "target": "architecture/59-multi-agent-topology-patterns",
-   "type": "similar_to",
-   "weight": 0.3333,
+   "weight": 0.3353,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
    "target": "architecture/22-agentic-ai-landing-zone-architecture",
    "type": "similar_to",
-   "weight": 0.3332,
+   "weight": 0.3347,
    "tier": "related"
   },
   {
-   "source": "architecture/66-volume7-ai-native-arb-case-studies",
-   "target": "architecture/60-volume1-governance-ecosystem-operating-models",
+   "source": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
+   "target": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
    "type": "similar_to",
-   "weight": 0.3327,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/vols/06-vol7-enterprise-building-blocks-ai-infrastructure-platform-engineering",
-   "target": "strategy/vols/05-vol7-enterprise-building-blocks-application-core-ai-blocks",
-   "type": "similar_to",
-   "weight": 0.3326,
+   "weight": 0.3346,
    "tier": "related"
   },
   {
    "source": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
    "target": "strategy/27-part-17-transformation-roadmap",
    "type": "similar_to",
-   "weight": 0.3324,
+   "weight": 0.3342,
    "tier": "related"
   },
   {
-   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-   "target": "architecture/16-ea-aidlc-deep-research-2026",
-   "type": "similar_to",
-   "weight": 0.3319,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/82-ea-business-communication-executive-skills",
-   "target": "architecture/parts/35-ea-mastery-guide-part2",
-   "type": "similar_to",
-   "weight": 0.3317,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/14-aidlc-enterprise-framework-2025",
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "architecture/37-art-framework-agentic-ai-execution",
    "type": "similar_to",
-   "weight": 0.3314,
+   "weight": 0.3332,
    "tier": "related"
   },
   {
-   "source": "architecture/10-apex-ea-aidlc-methodology",
-   "target": "architecture/09-apex-ea-team-structure-raci",
+   "source": "architecture/44-ai-harness-architecture-orchestration",
+   "target": "architecture/59-multi-agent-topology-patterns",
    "type": "similar_to",
-   "weight": 0.3308,
+   "weight": 0.333,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/66-volume7-ai-native-arb-case-studies",
+   "target": "architecture/60-volume1-governance-ecosystem-operating-models",
+   "type": "similar_to",
+   "weight": 0.3325,
    "tier": "related"
   },
   {
    "source": "architecture/02-aidlc-artifacts-development-to-retirement",
    "target": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
    "type": "similar_to",
-   "weight": 0.3304,
+   "weight": 0.3325,
    "tier": "related"
   },
   {
    "source": "strategy/27-part-17-transformation-roadmap",
    "target": "strategy/28-part-18-case-studies",
    "type": "similar_to",
-   "weight": 0.3302,
+   "weight": 0.3323,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/vols/06-vol7-enterprise-building-blocks-ai-infrastructure-platform-engineering",
+   "target": "strategy/vols/05-vol7-enterprise-building-blocks-application-core-ai-blocks",
+   "type": "similar_to",
+   "weight": 0.3323,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/82-ea-business-communication-executive-skills",
+   "target": "architecture/parts/35-ea-mastery-guide-part2",
+   "type": "similar_to",
+   "weight": 0.3322,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/51-enterprise-ai-governance-compliance",
+   "target": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
+   "type": "similar_to",
+   "weight": 0.3322,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/14-aidlc-enterprise-framework-2025",
+   "target": "architecture/37-art-framework-agentic-ai-execution",
+   "type": "similar_to",
+   "weight": 0.3315,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
+   "target": "architecture/16-ea-aidlc-deep-research-2026",
+   "type": "similar_to",
+   "weight": 0.3314,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/77-ai-transformation-consultant-toolkit-2026",
+   "target": "architecture/85-enterprise-manager-ai-genai",
+   "type": "similar_to",
+   "weight": 0.3314,
    "tier": "related"
   },
   {
    "source": "architecture/51-enterprise-ai-governance-compliance",
    "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
-   "weight": 0.3301,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/07-ea-architect-deep-dive-toolkit-practice",
-   "target": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
-   "type": "similar_to",
-   "weight": 0.33,
+   "weight": 0.3314,
    "tier": "related"
   },
   {
    "source": "architecture/51-enterprise-ai-governance-compliance",
    "target": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
    "type": "similar_to",
-   "weight": 0.33,
+   "weight": 0.3308,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/28-part-18-case-studies",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3308,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/07-ea-architect-deep-dive-toolkit-practice",
+   "target": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
+   "type": "similar_to",
+   "weight": 0.3307,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/10-apex-ea-aidlc-methodology",
+   "target": "architecture/09-apex-ea-team-structure-raci",
+   "type": "similar_to",
+   "weight": 0.3299,
    "tier": "related"
   },
   {
@@ -10906,376 +10955,383 @@
    "source": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
    "target": "architecture/37-art-framework-agentic-ai-execution",
    "type": "similar_to",
-   "weight": 0.329,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/28-part-18-case-studies",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.3288,
+   "weight": 0.3293,
    "tier": "related"
   },
   {
    "source": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
    "target": "strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t",
    "type": "similar_to",
-   "weight": 0.3278,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/32-agentic-ai-landing-zone-visual-guide",
-   "target": "architecture/30-agentic-ai-landing-zone-playbooks",
-   "type": "similar_to",
-   "weight": 0.3275,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-   "target": "architecture/50-enterprise-ai-comparative-matrices-2026",
-   "type": "similar_to",
-   "weight": 0.3275,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/39-agent-as-tool-composition",
-   "target": "architecture/44-ai-harness-architecture-orchestration",
-   "type": "similar_to",
-   "weight": 0.3275,
+   "weight": 0.3291,
    "tier": "related"
   },
   {
    "source": "architecture/44-ai-harness-architecture-orchestration",
    "target": "architecture/parts/17-the-agentic-loop-enterprise-ai-architect-guide-practice-cases",
    "type": "similar_to",
-   "weight": 0.3275,
+   "weight": 0.3286,
    "tier": "related"
   },
   {
-   "source": "architecture/48-enterprise-ai-architect-foundations",
-   "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
+   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
+   "target": "architecture/50-enterprise-ai-comparative-matrices-2026",
    "type": "similar_to",
-   "weight": 0.3271,
+   "weight": 0.3284,
    "tier": "related"
   },
   {
-   "source": "architecture/86-principal-enterprise-ai-guide-educative",
-   "target": "architecture/48-enterprise-ai-architect-foundations",
+   "source": "architecture/39-agent-as-tool-composition",
+   "target": "architecture/44-ai-harness-architecture-orchestration",
    "type": "similar_to",
-   "weight": 0.327,
+   "weight": 0.3283,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/84-enterprise-data-architect-ai-genai",
+   "target": "architecture/77-ai-transformation-consultant-toolkit-2026",
+   "type": "similar_to",
+   "weight": 0.328,
    "tier": "related"
   },
   {
    "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
    "target": "architecture/22-agentic-ai-landing-zone-architecture",
    "type": "similar_to",
-   "weight": 0.3268,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/49-enterprise-ai-architecture-patterns",
-   "target": "architecture/86-principal-enterprise-ai-guide-educative",
-   "type": "similar_to",
-   "weight": 0.3265,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/34-transformer-architectures",
-   "target": "architecture/54-enterprise-multi-model-ai-strategy",
-   "type": "similar_to",
-   "weight": 0.3263,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/25-part-15-enterprise-architecture",
-   "target": "strategy/42-ai-first-to-ai-native",
-   "type": "similar_to",
-   "weight": 0.3257,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/14-aidlc-enterprise-framework-2025",
-   "target": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
-   "type": "similar_to",
-   "weight": 0.3254,
+   "weight": 0.3274,
    "tier": "related"
   },
   {
    "source": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
    "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
    "type": "similar_to",
-   "weight": 0.3254,
+   "weight": 0.3273,
    "tier": "related"
   },
   {
-   "source": "strategy/40-target-operating-model-and-change",
-   "target": "strategy/12-part-02-operating-models",
+   "source": "architecture/32-agentic-ai-landing-zone-visual-guide",
+   "target": "architecture/30-agentic-ai-landing-zone-playbooks",
    "type": "similar_to",
-   "weight": 0.3253,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/71-ea-mastery-guide",
-   "target": "architecture/68-ea-bestpractices-jargon",
-   "type": "similar_to",
-   "weight": 0.3242,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/11-apex-ea-information-systems-architecture",
-   "target": "architecture/10-apex-ea-aidlc-methodology",
-   "type": "similar_to",
-   "weight": 0.3241,
+   "weight": 0.3272,
    "tier": "related"
   },
   {
    "source": "architecture/51-enterprise-ai-governance-compliance",
    "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
    "type": "similar_to",
-   "weight": 0.324,
+   "weight": 0.3269,
    "tier": "related"
   },
   {
-   "source": "strategy/19-part-09-operating-processes",
-   "target": "strategy/69-part-09-operating-processes-rollout-evaluation-redteam",
+   "source": "strategy/25-part-15-enterprise-architecture",
+   "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
-   "weight": 0.3239,
+   "weight": 0.3267,
    "tier": "related"
   },
   {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "strategy/28-part-18-case-studies",
+   "source": "strategy/40-target-operating-model-and-change",
+   "target": "strategy/12-part-02-operating-models",
    "type": "similar_to",
-   "weight": 0.3238,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/68-ea-bestpractices-jargon",
-   "target": "strategy/74-ea-strategy-playbook-build-operate-retire-stages",
-   "type": "similar_to",
-   "weight": 0.3238,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/51-enterprise-ai-governance-compliance",
-   "target": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
-   "type": "similar_to",
-   "weight": 0.3238,
+   "weight": 0.3263,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
-   "target": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
+   "target": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
    "type": "similar_to",
-   "weight": 0.3236,
+   "weight": 0.326,
    "tier": "related"
   },
   {
    "source": "architecture/01-aidlc-artifacts-discovery-to-model",
    "target": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
    "type": "similar_to",
-   "weight": 0.3234,
+   "weight": 0.3257,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/71-ea-mastery-guide",
+   "target": "architecture/68-ea-bestpractices-jargon",
+   "type": "similar_to",
+   "weight": 0.3255,
    "tier": "related"
   },
   {
    "source": "architecture/49-enterprise-ai-architecture-patterns",
-   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
+   "target": "architecture/86-principal-enterprise-ai-guide-educative",
    "type": "similar_to",
-   "weight": 0.3229,
+   "weight": 0.3251,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "strategy/28-part-18-case-studies",
+   "type": "similar_to",
+   "weight": 0.325,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/68-ea-bestpractices-jargon",
+   "target": "strategy/74-ea-strategy-playbook-build-operate-retire-stages",
+   "type": "similar_to",
+   "weight": 0.3247,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/51-enterprise-ai-governance-compliance",
+   "target": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
+   "type": "similar_to",
+   "weight": 0.3244,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
-   "target": "strategy/18-part-08-organizational-roles",
+   "target": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
    "type": "similar_to",
-   "weight": 0.3228,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/72-enterprise-ai-architect-bible-2026",
-   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
-   "type": "similar_to",
-   "weight": 0.3227,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/48-enterprise-ai-architect-foundations",
-   "target": "strategy/26-part-16-financial-model",
-   "type": "similar_to",
-   "weight": 0.3224,
+   "weight": 0.3242,
    "tier": "related"
   },
   {
    "source": "architecture/51-enterprise-ai-governance-compliance",
    "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "type": "similar_to",
-   "weight": 0.3224,
+   "weight": 0.3238,
    "tier": "related"
   },
   {
-   "source": "strategy/30-part-20-greenfield-vs-brownfield",
-   "target": "strategy/28-part-18-case-studies",
+   "source": "architecture/14-aidlc-enterprise-framework-2025",
+   "target": "strategy/18-part-08-organizational-roles",
    "type": "similar_to",
-   "weight": 0.3223,
+   "weight": 0.3236,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/19-part-09-operating-processes",
+   "target": "strategy/69-part-09-operating-processes-rollout-evaluation-redteam",
+   "type": "similar_to",
+   "weight": 0.3236,
    "tier": "related"
   },
   {
    "source": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3221,
+   "weight": 0.3235,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/30-part-20-greenfield-vs-brownfield",
+   "target": "strategy/28-part-18-case-studies",
+   "type": "similar_to",
+   "weight": 0.3234,
    "tier": "related"
   },
   {
    "source": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
    "target": "architecture/51-enterprise-ai-governance-compliance",
    "type": "similar_to",
-   "weight": 0.3218,
+   "weight": 0.323,
    "tier": "related"
   },
   {
    "source": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3218,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/43-agentic-ai-reliability-observability-governance",
-   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
-   "type": "similar_to",
-   "weight": 0.3217,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
-   "type": "similar_to",
-   "weight": 0.3216,
+   "weight": 0.323,
    "tier": "related"
   },
   {
    "source": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
    "target": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
    "type": "similar_to",
-   "weight": 0.3212,
+   "weight": 0.3227,
    "tier": "related"
   },
   {
-   "source": "strategy/01-quantum-ai-consulting-landscape",
-   "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
+   "source": "architecture/72-enterprise-ai-architect-bible-2026",
+   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
    "type": "similar_to",
-   "weight": 0.321,
+   "weight": 0.3226,
    "tier": "related"
   },
   {
-   "source": "strategy/02-quantum-ai-startup-landscape",
-   "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
    "type": "similar_to",
-   "weight": 0.3209,
+   "weight": 0.3226,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/48-enterprise-ai-architect-foundations",
+   "target": "strategy/26-part-16-financial-model",
+   "type": "similar_to",
+   "weight": 0.3225,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/49-enterprise-ai-architecture-patterns",
+   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
+   "type": "similar_to",
+   "weight": 0.3224,
    "tier": "related"
   },
   {
    "source": "architecture/02-aidlc-artifacts-development-to-retirement",
    "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
    "type": "similar_to",
-   "weight": 0.3204,
+   "weight": 0.3224,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/02-quantum-ai-startup-landscape",
+   "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
+   "type": "similar_to",
+   "weight": 0.3218,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/86-principal-enterprise-ai-guide-educative",
+   "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
+   "type": "similar_to",
+   "weight": 0.3216,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/01-quantum-ai-consulting-landscape",
+   "target": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
+   "type": "similar_to",
+   "weight": 0.3216,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/43-agentic-ai-reliability-observability-governance",
+   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
+   "type": "similar_to",
+   "weight": 0.3215,
    "tier": "related"
   },
   {
    "source": "architecture/18-ai-deep-future-outlook-2026-2035",
    "target": "architecture/14-aidlc-enterprise-framework-2025",
    "type": "similar_to",
-   "weight": 0.3201,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/69-ea-glossary-cheatsheet",
-   "target": "architecture/51-enterprise-ai-governance-compliance",
-   "type": "similar_to",
-   "weight": 0.3197,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/82-ea-business-communication-executive-skills",
-   "target": "architecture/68-ea-bestpractices-jargon",
-   "type": "similar_to",
-   "weight": 0.3195,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/14-aidlc-enterprise-framework-2025",
-   "target": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
-   "type": "similar_to",
-   "weight": 0.3195,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/49-enterprise-ai-architecture-patterns",
-   "target": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
-   "type": "similar_to",
-   "weight": 0.3193,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/52-enterprise-ai-skills-assessment",
-   "target": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
-   "type": "similar_to",
-   "weight": 0.3186,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/25-part-15-enterprise-architecture",
-   "target": "strategy/27-part-17-transformation-roadmap",
-   "type": "similar_to",
-   "weight": 0.3185,
+   "weight": 0.3209,
    "tier": "related"
   },
   {
    "source": "architecture/parts/07-aidlc-artifacts-togaf-technology-architecture",
    "target": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
    "type": "similar_to",
-   "weight": 0.3184,
+   "weight": 0.3207,
    "tier": "related"
   },
   {
-   "source": "architecture/72-enterprise-ai-architect-bible-2026",
-   "target": "architecture/34-transformer-architectures",
+   "source": "architecture/34-transformer-architectures",
+   "target": "architecture/54-enterprise-multi-model-ai-strategy",
    "type": "similar_to",
-   "weight": 0.3183,
+   "weight": 0.3202,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/14-aidlc-enterprise-framework-2025",
+   "target": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
+   "type": "similar_to",
+   "weight": 0.3201,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/25-part-15-enterprise-architecture",
+   "target": "strategy/27-part-17-transformation-roadmap",
+   "type": "similar_to",
+   "weight": 0.3199,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/82-ea-business-communication-executive-skills",
+   "target": "architecture/68-ea-bestpractices-jargon",
+   "type": "similar_to",
+   "weight": 0.3198,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
+   "type": "similar_to",
+   "weight": 0.3198,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/69-ea-glossary-cheatsheet",
+   "target": "architecture/51-enterprise-ai-governance-compliance",
+   "type": "similar_to",
+   "weight": 0.3198,
    "tier": "related"
   },
   {
    "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
    "type": "similar_to",
-   "weight": 0.3181,
+   "weight": 0.3193,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
    "target": "strategy/28-part-18-case-studies",
    "type": "similar_to",
-   "weight": 0.3181,
+   "weight": 0.3193,
    "tier": "related"
   },
   {
    "source": "architecture/51-enterprise-ai-governance-compliance",
    "target": "architecture/23-agentic-ai-landing-zone-business-layer",
    "type": "similar_to",
-   "weight": 0.3174,
+   "weight": 0.3188,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
+   "target": "architecture/48-enterprise-ai-architect-foundations",
+   "type": "similar_to",
+   "weight": 0.3186,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/72-enterprise-ai-architect-bible-2026",
+   "target": "architecture/34-transformer-architectures",
+   "type": "similar_to",
+   "weight": 0.318,
    "tier": "related"
   },
   {
    "source": "architecture/55-governance-propagation-chain",
    "target": "strategy/23-part-13-security-model",
    "type": "similar_to",
-   "weight": 0.3172,
+   "weight": 0.318,
    "tier": "related"
   },
   {
-   "source": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-   "target": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
+   "source": "strategy/49-vol6-organization-structure-operating-model",
+   "target": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
+   "type": "similar_to",
+   "weight": 0.3178,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
+   "target": "architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture",
+   "type": "similar_to",
+   "weight": 0.3177,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
+   "target": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
+   "type": "similar_to",
+   "weight": 0.3176,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/13-aidlc-agile-cicd-ai-transformation-2026",
    "type": "similar_to",
    "weight": 0.317,
    "tier": "related"
@@ -11288,190 +11344,190 @@
    "tier": "related"
   },
   {
-   "source": "strategy/49-vol6-organization-structure-operating-model",
-   "target": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
+   "source": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
+   "target": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
    "type": "similar_to",
-   "weight": 0.3167,
+   "weight": 0.3169,
    "tier": "related"
   },
   {
    "source": "architecture/84-enterprise-data-architect-ai-genai",
    "target": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
    "type": "similar_to",
-   "weight": 0.316,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
-   "target": "architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture",
-   "type": "similar_to",
-   "weight": 0.316,
+   "weight": 0.3166,
    "tier": "related"
   },
   {
    "source": "architecture/52-enterprise-ai-skills-assessment",
    "target": "architecture/72-enterprise-ai-architect-bible-2026",
    "type": "similar_to",
-   "weight": 0.3159,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
-   "target": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
-   "type": "similar_to",
-   "weight": 0.3156,
+   "weight": 0.3163,
    "tier": "related"
   },
   {
    "source": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3156,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-   "type": "similar_to",
-   "weight": 0.3155,
+   "weight": 0.3162,
    "tier": "related"
   },
   {
    "source": "architecture/39-agent-as-tool-composition",
    "target": "architecture/55-governance-propagation-chain",
    "type": "similar_to",
-   "weight": 0.3153,
+   "weight": 0.3161,
    "tier": "related"
   },
   {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/13-aidlc-agile-cicd-ai-transformation-2026",
+   "source": "architecture/43-agentic-ai-reliability-observability-governance",
+   "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
    "type": "similar_to",
-   "weight": 0.3152,
+   "weight": 0.316,
    "tier": "related"
   },
   {
-   "source": "architecture/60-volume1-governance-ecosystem-operating-models",
-   "target": "architecture/09-apex-ea-team-structure-raci",
+   "source": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3151,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/47-enterprise-agent-reference-architectures",
-   "target": "architecture/43-agentic-ai-reliability-observability-governance",
-   "type": "similar_to",
-   "weight": 0.315,
+   "weight": 0.316,
    "tier": "related"
   },
   {
    "source": "architecture/18-ai-deep-future-outlook-2026-2035",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3149,
+   "weight": 0.3159,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/47-enterprise-agent-reference-architectures",
+   "target": "architecture/43-agentic-ai-reliability-observability-governance",
+   "type": "similar_to",
+   "weight": 0.3157,
    "tier": "related"
   },
   {
    "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "architecture/71-ea-mastery-guide",
    "type": "similar_to",
-   "weight": 0.3143,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/35-executive-summary-and-ai-vision",
-   "target": "strategy/41-roadmap-financials-kpis-and-risk",
-   "type": "similar_to",
-   "weight": 0.314,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/51-enterprise-ai-governance-compliance",
-   "target": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
-   "type": "similar_to",
-   "weight": 0.3139,
+   "weight": 0.315,
    "tier": "related"
   },
   {
    "source": "architecture/47-enterprise-agent-reference-architectures",
    "target": "architecture/40-agent-interoperability-orchestration",
    "type": "similar_to",
-   "weight": 0.3138,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
-   "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
-   "type": "similar_to",
-   "weight": 0.3138,
+   "weight": 0.315,
    "tier": "related"
   },
   {
    "source": "architecture/50-enterprise-ai-comparative-matrices-2026",
    "target": "strategy/10-foundation-model-companies-2026",
    "type": "similar_to",
-   "weight": 0.3136,
+   "weight": 0.3149,
    "tier": "related"
   },
   {
-   "source": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
-   "target": "strategy/71-part-10-service-catalog-agent-guardrail-observability",
+   "source": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
+   "target": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
    "type": "similar_to",
-   "weight": 0.3132,
+   "weight": 0.3146,
    "tier": "related"
   },
   {
    "source": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3132,
+   "weight": 0.3146,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/60-volume1-governance-ecosystem-operating-models",
+   "target": "architecture/09-apex-ea-team-structure-raci",
+   "type": "similar_to",
+   "weight": 0.3143,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
+   "target": "strategy/71-part-10-service-catalog-agent-guardrail-observability",
+   "type": "similar_to",
+   "weight": 0.3143,
    "tier": "related"
   },
   {
    "source": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
    "target": "strategy/42-ai-first-to-ai-native",
    "type": "similar_to",
-   "weight": 0.3128,
+   "weight": 0.314,
    "tier": "related"
   },
   {
-   "source": "architecture/72-enterprise-ai-architect-bible-2026",
-   "target": "architecture/19-ai-lab-research-report-june2026",
+   "source": "architecture/48-enterprise-ai-architect-foundations",
+   "target": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
    "type": "similar_to",
-   "weight": 0.3126,
+   "weight": 0.3139,
+   "tier": "related"
+  },
+  {
+   "source": "trust/index",
+   "target": "protocols/index",
+   "type": "similar_to",
+   "weight": 0.3137,
    "tier": "related"
   },
   {
    "source": "strategy/27-part-17-transformation-roadmap",
    "target": "strategy/12-part-02-operating-models",
    "type": "similar_to",
-   "weight": 0.3124,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/83-ea-okr-kpi-research",
-   "target": "strategy/84-vol1-corporate-strategy-execution-templates-kpis",
-   "type": "similar_to",
-   "weight": 0.312,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
-   "type": "similar_to",
-   "weight": 0.3113,
+   "weight": 0.3136,
    "tier": "related"
   },
   {
    "source": "strategy/58-ai-coding-agents-2026-tool-comparison-benchmarks-guide",
    "target": "strategy/57-ai-coding-agents-2026-enterprise-autonomous-agent-tools",
    "type": "similar_to",
-   "weight": 0.3113,
+   "weight": 0.3131,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/35-executive-summary-and-ai-vision",
+   "target": "strategy/41-roadmap-financials-kpis-and-risk",
+   "type": "similar_to",
+   "weight": 0.3128,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
+   "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
+   "type": "similar_to",
+   "weight": 0.3117,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
+   "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
+   "type": "similar_to",
+   "weight": 0.3117,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
+   "type": "similar_to",
+   "weight": 0.3114,
    "tier": "related"
   },
   {
    "source": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
    "target": "architecture/14-aidlc-enterprise-framework-2025",
+   "type": "similar_to",
+   "weight": 0.3113,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
+   "target": "architecture/39-agent-as-tool-composition",
    "type": "similar_to",
    "weight": 0.3112,
    "tier": "related"
@@ -11480,75 +11536,96 @@
    "source": "architecture/72-enterprise-ai-architect-bible-2026",
    "target": "architecture/16-ea-aidlc-deep-research-2026",
    "type": "similar_to",
-   "weight": 0.3109,
+   "weight": 0.3111,
    "tier": "related"
   },
   {
-   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-   "target": "architecture/39-agent-as-tool-composition",
+   "source": "architecture/72-enterprise-ai-architect-bible-2026",
+   "target": "architecture/19-ai-lab-research-report-june2026",
    "type": "similar_to",
-   "weight": 0.3108,
-   "tier": "related"
-  },
-  {
-   "source": "trust/index",
-   "target": "protocols/index",
-   "type": "similar_to",
-   "weight": 0.3103,
+   "weight": 0.311,
    "tier": "related"
   },
   {
    "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "strategy/75-enterprise-ai-strategic-brief-2026-aegis-security-adlc",
    "type": "similar_to",
-   "weight": 0.3097,
+   "weight": 0.3105,
    "tier": "related"
   },
   {
-   "source": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
-   "target": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
+   "source": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
+   "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
    "type": "similar_to",
-   "weight": 0.3097,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.3095,
+   "weight": 0.3104,
    "tier": "related"
   },
   {
    "source": "strategy/25-part-15-enterprise-architecture",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3094,
+   "weight": 0.3103,
    "tier": "related"
   },
   {
    "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "type": "similar_to",
-   "weight": 0.3093,
+   "weight": 0.3101,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/46-vol3-portfolio-governance",
+   "target": "strategy/93-vol3-portfolio-governance-pmo-agile-governance",
+   "type": "similar_to",
+   "weight": 0.3098,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/44-ai-harness-architecture-orchestration",
+   "target": "architecture/21-the-agentic-loop-enterprise-ai-architect-guide",
+   "type": "similar_to",
+   "weight": 0.3095,
    "tier": "related"
   },
   {
    "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
    "target": "architecture/parts/14-agentic-ai-landing-zone-architecture-implementation-governance",
    "type": "similar_to",
-   "weight": 0.3088,
+   "weight": 0.309,
    "tier": "related"
   },
   {
    "source": "architecture/66-volume7-ai-native-arb-case-studies",
    "target": "architecture/62-volume3-knowledge-management-capability-mapping",
    "type": "similar_to",
+   "weight": 0.3089,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/22-agentic-ai-landing-zone-architecture",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3089,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/22-part-12-responsible-ai",
+   "target": "strategy/16-part-06-governance",
+   "type": "similar_to",
+   "weight": 0.3089,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
+   "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
+   "type": "similar_to",
    "weight": 0.3087,
    "tier": "related"
   },
   {
-   "source": "architecture/44-ai-harness-architecture-orchestration",
-   "target": "architecture/21-the-agentic-loop-enterprise-ai-architect-guide",
+   "source": "architecture/02-aidlc-artifacts-development-to-retirement",
+   "target": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
    "type": "similar_to",
    "weight": 0.3085,
    "tier": "related"
@@ -11557,159 +11634,166 @@
    "source": "trust/index",
    "target": "operations/index",
    "type": "similar_to",
-   "weight": 0.3076,
+   "weight": 0.3081,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/83-ea-okr-kpi-research",
+   "target": "strategy/84-vol1-corporate-strategy-execution-templates-kpis",
+   "type": "similar_to",
+   "weight": 0.308,
    "tier": "related"
   },
   {
    "source": "architecture/16-ea-aidlc-deep-research-2026",
    "target": "architecture/77-ai-transformation-consultant-toolkit-2026",
    "type": "similar_to",
-   "weight": 0.3076,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/22-agentic-ai-landing-zone-architecture",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.3075,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/22-part-12-responsible-ai",
-   "target": "strategy/16-part-06-governance",
-   "type": "similar_to",
-   "weight": 0.3074,
+   "weight": 0.3079,
    "tier": "related"
   },
   {
    "source": "strategy/34-enterprise-ai-transformation-blueprint-cto-guide-2026",
    "target": "strategy/38-enterprise-ai-platform-and-data-architecture",
    "type": "similar_to",
-   "weight": 0.3073,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/46-vol3-portfolio-governance",
-   "target": "strategy/93-vol3-portfolio-governance-pmo-agile-governance",
-   "type": "similar_to",
-   "weight": 0.3071,
+   "weight": 0.3079,
    "tier": "related"
   },
   {
    "source": "strategy/42-ai-first-to-ai-native",
    "target": "strategy/18-part-08-organizational-roles",
    "type": "similar_to",
-   "weight": 0.3071,
+   "weight": 0.3079,
    "tier": "related"
   },
   {
    "source": "strategy/11-part-01-evolution",
    "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "type": "similar_to",
-   "weight": 0.307,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/02-aidlc-artifacts-development-to-retirement",
-   "target": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-   "type": "similar_to",
-   "weight": 0.3067,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/48-enterprise-ai-architect-foundations",
-   "target": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
-   "type": "similar_to",
-   "weight": 0.3066,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-   "target": "architecture/48-enterprise-ai-architect-foundations",
-   "type": "similar_to",
-   "weight": 0.3059,
+   "weight": 0.3078,
    "tier": "related"
   },
   {
    "source": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
    "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "type": "similar_to",
-   "weight": 0.3058,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/22-agentic-ai-landing-zone-architecture",
-   "target": "architecture/37-art-framework-agentic-ai-execution",
-   "type": "similar_to",
-   "weight": 0.3055,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/19-ai-lab-research-report-june2026",
-   "target": "architecture/parts/17-the-agentic-loop-enterprise-ai-architect-guide-practice-cases",
-   "type": "similar_to",
-   "weight": 0.3052,
+   "weight": 0.3072,
    "tier": "related"
   },
   {
    "source": "architecture/41-agent-memory-planning-architecture",
    "target": "architecture/parts/13-ai-native-architecture-evolution-report-decision-forecast",
    "type": "similar_to",
-   "weight": 0.3049,
+   "weight": 0.3066,
    "tier": "related"
   },
   {
-   "source": "strategy/25-part-15-enterprise-architecture",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "source": "architecture/22-agentic-ai-landing-zone-architecture",
+   "target": "architecture/37-art-framework-agentic-ai-execution",
    "type": "similar_to",
-   "weight": 0.3048,
-   "tier": "related"
-  },
-  {
-   "source": "agentic-systems/index",
-   "target": "data-knowledge/index",
-   "type": "similar_to",
-   "weight": 0.3046,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/44-ai-harness-architecture-orchestration",
-   "target": "architecture/55-governance-propagation-chain",
-   "type": "similar_to",
-   "weight": 0.3043,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/51-enterprise-ai-governance-compliance",
-   "target": "strategy/27-part-17-transformation-roadmap",
-   "type": "similar_to",
-   "weight": 0.3043,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/01-aidlc-artifacts-discovery-to-model",
-   "target": "architecture/14-aidlc-enterprise-framework-2025",
-   "type": "similar_to",
-   "weight": 0.3042,
+   "weight": 0.3065,
    "tier": "related"
   },
   {
    "source": "architecture/22-agentic-ai-landing-zone-architecture",
    "target": "architecture/23-agentic-ai-landing-zone-business-layer",
    "type": "similar_to",
-   "weight": 0.3039,
+   "weight": 0.3064,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/25-part-15-enterprise-architecture",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3059,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/51-enterprise-ai-governance-compliance",
+   "target": "strategy/27-part-17-transformation-roadmap",
+   "type": "similar_to",
+   "weight": 0.3058,
+   "tier": "related"
+  },
+  {
+   "source": "agentic-systems/index",
+   "target": "data-knowledge/index",
+   "type": "similar_to",
+   "weight": 0.3055,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/01-aidlc-artifacts-discovery-to-model",
+   "target": "architecture/14-aidlc-enterprise-framework-2025",
+   "type": "similar_to",
+   "weight": 0.3052,
    "tier": "related"
   },
   {
    "source": "architecture/52-enterprise-ai-skills-assessment",
    "target": "architecture/14-aidlc-enterprise-framework-2025",
    "type": "similar_to",
-   "weight": 0.3037,
+   "weight": 0.3046,
    "tier": "related"
   },
   {
    "source": "architecture/32-agentic-ai-landing-zone-visual-guide",
    "target": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
+   "type": "similar_to",
+   "weight": 0.3044,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/44-ai-harness-architecture-orchestration",
+   "target": "architecture/55-governance-propagation-chain",
+   "type": "similar_to",
+   "weight": 0.3042,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/43-agentic-ai-reliability-observability-governance",
+   "target": "architecture/40-agent-interoperability-orchestration",
+   "type": "similar_to",
+   "weight": 0.304,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/19-ai-lab-research-report-june2026",
+   "target": "architecture/parts/17-the-agentic-loop-enterprise-ai-architect-guide-practice-cases",
+   "type": "similar_to",
+   "weight": 0.304,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/43-agentic-ai-reliability-observability-governance",
+   "type": "similar_to",
+   "weight": 0.3039,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/37-art-framework-agentic-ai-execution",
+   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+   "type": "similar_to",
+   "weight": 0.3039,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/18-ai-deep-future-outlook-2026-2035",
+   "type": "similar_to",
+   "weight": 0.3038,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "type": "similar_to",
+   "weight": 0.3037,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/52-enterprise-ai-skills-assessment",
+   "target": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
    "type": "similar_to",
    "weight": 0.3035,
    "tier": "related"
@@ -11718,54 +11802,33 @@
    "source": "architecture/52-enterprise-ai-skills-assessment",
    "target": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
    "type": "similar_to",
-   "weight": 0.3034,
+   "weight": 0.3035,
    "tier": "related"
   },
   {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/43-agentic-ai-reliability-observability-governance",
-   "type": "similar_to",
-   "weight": 0.3034,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/48-enterprise-ai-architect-foundations",
-   "target": "architecture/51-enterprise-ai-governance-compliance",
+   "source": "architecture/49-enterprise-ai-architecture-patterns",
+   "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
    "type": "similar_to",
    "weight": 0.3031,
    "tier": "related"
   },
   {
-   "source": "architecture/37-art-framework-agentic-ai-execution",
-   "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
-   "type": "similar_to",
-   "weight": 0.3031,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/18-ai-deep-future-outlook-2026-2035",
+   "source": "operations/index",
+   "target": "protocols/index",
    "type": "similar_to",
    "weight": 0.303,
    "tier": "related"
   },
   {
-   "source": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
+   "source": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
    "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
    "type": "similar_to",
-   "weight": 0.3024,
+   "weight": 0.3027,
    "tier": "related"
   },
   {
-   "source": "architecture/52-enterprise-ai-skills-assessment",
-   "target": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
-   "type": "similar_to",
-   "weight": 0.3023,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/43-agentic-ai-reliability-observability-governance",
-   "target": "architecture/40-agent-interoperability-orchestration",
+   "source": "architecture/18-ai-deep-future-outlook-2026-2035",
+   "target": "architecture/51-enterprise-ai-governance-compliance",
    "type": "similar_to",
    "weight": 0.3023,
    "tier": "related"
@@ -11774,77 +11837,77 @@
    "source": "architecture/parts/36-principal-enterprise-ai-guide-educative-part2",
    "target": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
    "type": "similar_to",
-   "weight": 0.3023,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/77-ai-transformation-consultant-toolkit-2026",
-   "target": "architecture/51-enterprise-ai-governance-compliance",
-   "type": "similar_to",
-   "weight": 0.3021,
-   "tier": "related"
-  },
-  {
-   "source": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
-   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-   "type": "similar_to",
-   "weight": 0.3019,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/77-ai-transformation-consultant-toolkit-2026",
-   "target": "strategy/27-part-17-transformation-roadmap",
-   "type": "similar_to",
-   "weight": 0.3018,
+   "weight": 0.3022,
    "tier": "related"
   },
   {
    "source": "architecture/14-aidlc-enterprise-framework-2025",
    "target": "strategy/39-governance-responsible-ai-and-security",
    "type": "similar_to",
-   "weight": 0.3016,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/18-ai-deep-future-outlook-2026-2035",
-   "target": "architecture/51-enterprise-ai-governance-compliance",
-   "type": "similar_to",
-   "weight": 0.3015,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/16-ea-aidlc-deep-research-2026",
-   "target": "architecture/parts/36-principal-enterprise-ai-guide-educative-part2",
-   "type": "similar_to",
-   "weight": 0.3011,
+   "weight": 0.302,
    "tier": "related"
   },
   {
    "source": "strategy/49-vol6-organization-structure-operating-model",
    "target": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
    "type": "similar_to",
-   "weight": 0.3009,
+   "weight": 0.3018,
    "tier": "related"
   },
   {
    "source": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
    "target": "strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks",
    "type": "similar_to",
-   "weight": 0.3007,
-   "tier": "related"
-  },
-  {
-   "source": "architecture/18-ai-deep-future-outlook-2026-2035",
-   "target": "strategy/42-ai-first-to-ai-native",
-   "type": "similar_to",
-   "weight": 0.3003,
+   "weight": 0.3017,
    "tier": "related"
   },
   {
    "source": "architecture/85-enterprise-manager-ai-genai",
    "target": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
    "type": "similar_to",
-   "weight": 0.3003,
+   "weight": 0.3016,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/82-vol1-corporate-strategy-themes-priorities-initiatives",
+   "target": "strategy/85-vol1-corporate-strategy-relationships-industry-comparisons",
+   "type": "similar_to",
+   "weight": 0.3014,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/18-ai-deep-future-outlook-2026-2035",
+   "target": "strategy/42-ai-first-to-ai-native",
+   "type": "similar_to",
+   "weight": 0.3013,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/16-ea-aidlc-deep-research-2026",
+   "target": "architecture/parts/36-principal-enterprise-ai-guide-educative-part2",
+   "type": "similar_to",
+   "weight": 0.301,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/48-enterprise-ai-architect-foundations",
+   "target": "architecture/51-enterprise-ai-governance-compliance",
+   "type": "similar_to",
+   "weight": 0.3008,
+   "tier": "related"
+  },
+  {
+   "source": "strategy/28-part-18-case-studies",
+   "target": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+   "type": "similar_to",
+   "weight": 0.3006,
+   "tier": "related"
+  },
+  {
+   "source": "architecture/51-enterprise-ai-governance-compliance",
+   "target": "strategy/28-part-18-case-studies",
+   "type": "similar_to",
+   "weight": 0.3004,
    "tier": "related"
   },
   {

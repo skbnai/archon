@@ -1,6 +1,6 @@
 # Duplicate-Candidate Clusters (>=0.6 similarity, connected components)
 
-8 cluster(s) found across 255 pages.
+9 cluster(s) found across 255 pages.
 
 ## Cluster (4 pages)
 
@@ -37,7 +37,16 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 60%  `architecture/54-enterprise-multi-model-ai-strategy` <-> `architecture/parts/18-enterprise-multi-model-ai-strategy-part2`
+- 69%  `architecture/54-enterprise-multi-model-ai-strategy` <-> `architecture/parts/18-enterprise-multi-model-ai-strategy-part2`
+
+## Cluster (2 pages)
+
+- `architecture/77-ai-transformation-consultant-toolkit-2026`
+- `architecture/parts/27-ai-transformation-consultant-toolkit-2026-part2`
+
+Pairwise similarity within this cluster:
+
+- 67%  `architecture/77-ai-transformation-consultant-toolkit-2026` <-> `architecture/parts/27-ai-transformation-consultant-toolkit-2026-part2`
 
 ## Cluster (2 pages)
 
@@ -73,7 +82,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 74%  `strategy/99-vol5-ai-strategy-transformation-glossary-glossary-a-to-h` <-> `strategy/vols/01-vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref`
+- 75%  `strategy/99-vol5-ai-strategy-transformation-glossary-glossary-a-to-h` <-> `strategy/vols/01-vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref`
 
 ## Cluster (2 pages)
 
