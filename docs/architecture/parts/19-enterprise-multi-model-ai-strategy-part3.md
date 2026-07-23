@@ -309,42 +309,35 @@ ownership:
 
 ### 15.3 Registry Governance Workflow
 
-```
-NEW MODEL AVAILABLE (provider announcement)
-           │
-           ▼
-   [AI Platform Team: Initial Screening]
-   - Does it add capability beyond existing roster?
-   - License compatible with enterprise policy?
-   - Provider has signed DPA?
-           │
-          YES
-           ▼
-   [Security Review (2 weeks)]
-   - API endpoint security assessment
-   - Data handling agreement review
-   - Prompt injection testing
-   - PII handling verification
-           │
-       PASSED
-           ▼
-   [Architecture Review Board (1 week)]
-   - Use case fit assessment
-   - Cost/capability comparison vs existing roster
-   - Assign tier (T1 / T2 / T3)
-   - Define approved data classification levels
-           │
-        APPROVED
-           ▼
-   [Registry Entry Created]
-   [Teams notified via #ai-platform-updates]
-   [Available in gateway routing config]
-
-DEPRECATION TRIGGER (provider announces EOL):
-   [Platform team creates migration guide]
-   [90-day notice to all consuming teams]
-   [Automatic routing failover configured]
-   [Registry status -> "deprecated" then "retired"]
+```mermaid
+flowchart TD
+    NewModel["NEW MODEL AVAILABLE<br/>provider announcement"]
+    
+    Screen["AI Platform Team:<br/>Initial Screening<br/>Capability? License? DPA?"]
+    
+    Sec["Security Review<br/>2 weeks<br/>API security, data handling<br/>injection testing, PII"]
+    
+    ARB["Architecture Review Board<br/>1 week<br/>Use case fit, cost vs roster<br/>Assign tier, data classification"]
+    
+    Approved["Registry Entry Created<br/>Teams notified<br/>Available in gateway"]
+    
+    Depr["DEPRECATION TRIGGER<br/>Provider announces EOL"]
+    
+    MigGuide["Platform team creates<br/>migration guide"]
+    NotifyDepr["90-day notice to teams"]
+    Failover["Automatic routing<br/>failover configured"]
+    Retired["Registry status:<br/>deprecated → retired"]
+    
+    NewModel --> Screen
+    Screen -->|YES| Sec
+    Sec -->|PASSED| ARB
+    ARB -->|APPROVED| Approved
+    
+    Approved --> Depr
+    Depr --> MigGuide
+    MigGuide --> NotifyDepr
+    NotifyDepr --> Failover
+    Failover --> Retired
 ```
 
 ---
@@ -579,29 +572,27 @@ class ModelAdapter:
 
 Structure prompts so the core logic is model-agnostic:
 
-```
-┌────────────────────────────────────────┐
-│  SYSTEM SECTION                        │
-│  - Role and identity                   │
-│  - Task objective (model-agnostic)     │
-│  - Constraints and guardrails          │
-│  - Output format specification         │
-├────────────────────────────────────────┤
-│  CONTEXT SECTION                       │
-│  - Background knowledge                │
-│  - Retrieved documents (RAG)           │
-│  - Conversation history                │
-├────────────────────────────────────────┤
-│  TASK SECTION                          │
-│  - Specific request                    │
-│  - Input data                          │
-│  - Examples (few-shot)                 │
-├────────────────────────────────────────┤
-│  CONSTRAINTS SECTION                   │
-│  - What NOT to do                      │
-│  - Edge case handling                  │
-│  - Fallback behaviour                  │
-└────────────────────────────────────────┘
+```mermaid
+graph TB
+    subgraph System["SYSTEM SECTION<br/>Role & Identity<br/>Task objective (model-agnostic)<br/>Constraints & guardrails<br/>Output format specification"]
+        S["System"]
+    end
+    
+    subgraph Context["CONTEXT SECTION<br/>Background knowledge<br/>Retrieved documents RAG<br/>Conversation history"]
+        C["Context"]
+    end
+    
+    subgraph Task["TASK SECTION<br/>Specific request<br/>Input data<br/>Examples few-shot"]
+        T["Task"]
+    end
+    
+    subgraph Constraints["CONSTRAINTS SECTION<br/>What NOT to do<br/>Edge case handling<br/>Fallback behaviour"]
+        Con["Constraints"]
+    end
+    
+    System --> Context
+    Context --> Task
+    Task --> Constraints
 ```
 
 ### 19.2 Structured Output Portability

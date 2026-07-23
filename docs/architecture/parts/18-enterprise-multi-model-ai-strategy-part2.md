@@ -707,27 +707,57 @@ Model weights must be (a) downloaded and verified offline, (b) scanned for troja
 
 **Profile:** Globally distributed users; data residency by region; latency-sensitive applications.
 
-```
-USER (EU)                    USER (US)                  USER (APAC)
-    │                            │                           │
-    ▼                            ▼                           ▼
-[EU CDN Edge]             [US CDN Edge]              [APAC CDN Edge]
-    │                            │                           │
-    ▼                            ▼                           ▼
-[EU AI Gateway]           [US AI Gateway]            [APAC AI Gateway]
-    │                            │                           │
-    ├── Vertex AI (EU)          ├── Bedrock (us-east)       ├── Vertex AI (asia)
-    ├── Azure OAI (EU)          ├── Azure OAI (us)          ├── Qwen API (APAC)
-    └── Self-hosted             └── Self-hosted             └── Self-hosted
-        (GDPR, EU data)                                          (regional data)
-
-All gateways report to:
-┌──────────────────────────────────┐
-│     GLOBAL CONTROL PLANE         │
-│  Unified observability           │
-│  Cross-region cost tracking      │
-│  Governance policy sync          │
-└──────────────────────────────────┘
+```mermaid
+graph TB
+    subgraph EU["EU REGION"]
+        UserEU["User (EU)"]
+        CDNEU["EU CDN Edge"]
+        GWEU["EU AI Gateway"]
+        VEU["Vertex AI (EU)"]
+        AZEU["Azure OAI (EU)"]
+        SHEU["Self-hosted<br/>GDPR compliance"]
+    end
+    
+    subgraph US["US REGION"]
+        UserUS["User (US)"]
+        CDNUS["US CDN Edge"]
+        GWUS["US AI Gateway"]
+        VUS["Bedrock (us-east)"]
+        AZUS["Azure OAI (us)"]
+        SHUS["Self-hosted"]
+    end
+    
+    subgraph APAC["APAC REGION"]
+        UserAPAC["User (APAC)"]
+        CDNAPAC["APAC CDN Edge"]
+        GWAPAC["APAC AI Gateway"]
+        VAPAC["Vertex AI (asia)"]
+        QWEN["Qwen API"]
+        SHAPAC["Self-hosted<br/>regional data"]
+    end
+    
+    subgraph Global["GLOBAL CONTROL PLANE<br/>Unified observability<br/>Cross-region cost<br/>Governance sync"]
+        CP["Control Plane"]
+    end
+    
+    UserEU --> CDNEU --> GWEU
+    GWEU --> VEU
+    GWEU --> AZEU
+    GWEU --> SHEU
+    
+    UserUS --> CDNUS --> GWUS
+    GWUS --> VUS
+    GWUS --> AZUS
+    GWUS --> SHUS
+    
+    UserAPAC --> CDNAPAC --> GWAPAC
+    GWAPAC --> VAPAC
+    GWAPAC --> QWEN
+    GWAPAC --> SHAPAC
+    
+    GWEU -.-> CP
+    GWUS -.-> CP
+    GWAPAC -.-> CP
 ```
 
 ---
