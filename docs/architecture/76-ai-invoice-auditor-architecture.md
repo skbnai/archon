@@ -27,7 +27,7 @@ v5.0 is a targeted ground-up rewrite of the runtime-layer choices made in v3/v4,
 | Short-term memory | ConversationBufferWindowMemory (Redis required) | AgentState messages list — in-context, no server needed |
 | Long-term memory | Not specified | SqliteStore (langgraph.store.sqlite) — namespaced key-value, accessed via ToolRuntime.store |
 | Skills | Class-based Skill(ABC) with run() method | Prompt-driven tools using load_skill() progressive disclosure — per official LangChain Skills docs |
-| Handoffs | Not implemented | Single-agent middleware pattern: tools return Command(update={current_step:...}) to transition between invoice processing stages |
+| Handoffs | Not implemented | Single-agent middleware pattern: tools return `Command(update={current_step:...})` to transition between invoice processing stages |
 | Runtime context | Global config objects + manual threading | context_schema + ToolRuntime[Context] — LangChain dependency injection per official Runtime docs |
 | Docker | Required (LangFuse, PostgreSQL, Redis) | Eliminated entirely — all services run as native Windows Python processes |
 
