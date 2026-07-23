@@ -21,6 +21,8 @@ tags:
   - governance
   - maturity-model
 sources: []
+pagination_prev: strategy/ai-value-creator-deliverables-pack
+pagination_next: strategy/parts/ai-value-creator-deliverables-pack-playbooks-scorecard
 ---
 
 # AI Value Creator Deliverables: Maturity, Roadmap & Portfolio (11-15)

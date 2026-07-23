@@ -23,6 +23,7 @@ tags:
   - target-operating-model
   - ai-coe
 sources: []
+pagination_next: strategy/vols/vol6-organization-structure-operating-model-agile-scale-operating-model
 ---
 
 # Organization Structure: Why Org Design Matters & Core Structures

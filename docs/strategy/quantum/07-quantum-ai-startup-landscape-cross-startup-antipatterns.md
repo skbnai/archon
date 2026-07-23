@@ -35,6 +35,7 @@ sources:
     title: "IQM Revenue & Nasdaq Listing"
     tier: 2
     retrieved: 2026-07-19
+pagination_prev: strategy/quantum/quantum-ai-startup-landscape-iqm-emerging-players
 ---
 
 # Quantum AI Startups: Cross-Startup Patterns & Anti-Patterns

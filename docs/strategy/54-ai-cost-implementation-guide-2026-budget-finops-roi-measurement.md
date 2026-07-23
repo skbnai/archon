@@ -19,6 +19,8 @@ tags:
   - budget-governance
   - roi-measurement
 sources: []
+pagination_prev: strategy/ai-cost-implementation-guide-2026
+pagination_next: strategy/ai-cost-implementation-guide-2026-anti-patterns-deployment-playbook
 ---
 
 # AI Cost Implementation: Budget Governance, FinOps & ROI

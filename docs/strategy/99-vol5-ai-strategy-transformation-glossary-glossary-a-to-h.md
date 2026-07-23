@@ -15,6 +15,8 @@ tags:
   - terminology
   - strategy-terms
 sources: []
+pagination_prev: strategy/vol5-ai-strategy-transformation-glossary-transformation-maturity-models
+pagination_next: strategy/vols/vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref
 ---
 
 # AI Strategy & Transformation Glossary: A-H

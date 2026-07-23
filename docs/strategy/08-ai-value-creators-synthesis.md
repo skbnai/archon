@@ -24,6 +24,7 @@ sources:
     title: "The State of AI in 2026"
     tier: 1
     retrieved: 2026-07-19
+pagination_next: strategy/ai-value-creators-synthesis-advanced-themes-recommendations
 ---
 
 # AI Value Creators: Key Findings & Core Themes

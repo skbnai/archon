@@ -16,6 +16,7 @@ tags:
   - agentic-systems
   - building-blocks
 sources: []
+pagination_prev: strategy/vol2-business-architecture-operating-model-organization-operating-model-design
 ---
 
 # Business Architecture: AI Operating Model & Building Blocks

@@ -13,11 +13,14 @@ supersedes: []
 sources: []
 tags: [hub, protocols]
 ---
+import SectionProgress from '@site/src/components/SectionProgress';
 
 Agents that can't reach tools, data, or each other stay isolated pilots. This
 hub covers the interoperability layer — MCP, A2A, and the identity/auth model
 wrapped around them — that lets agentic systems compose instead of
 re-integrating from scratch every time.
+
+<SectionProgress domain="protocols" />
 
 ## Scope
 

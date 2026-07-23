@@ -18,6 +18,8 @@ tags:
   - model-selection
   - fine-tuning
 sources: []
+pagination_prev: strategy/ai-tokenomics-guide
+pagination_next: strategy/ai-tokenomics-guide-batch-processing-tco-scale
 ---
 
 # AI Tokenomics: Prompting, Model Selection & Fine-Tuning

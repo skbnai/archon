@@ -1,0 +1,592 @@
+{
+  "agentic-systems": {
+    "label": "Agentic Systems",
+    "totalPages": 1,
+    "pages": [
+      {
+        "id": "agentic-systems/index",
+        "title": "Agentic Systems Hub"
+      }
+    ]
+  },
+  "architecture": {
+    "label": "Architecture",
+    "totalPages": 2,
+    "pages": [
+      {
+        "id": "architecture/00-wiki-governance",
+        "title": "How This Wiki Governs Itself"
+      },
+      {
+        "id": "architecture/index",
+        "title": "Architecture Hub"
+      }
+    ]
+  },
+  "assets": {
+    "label": "Asset Library",
+    "totalPages": 1,
+    "pages": [
+      {
+        "id": "assets/index",
+        "title": "Asset Library Hub"
+      }
+    ]
+  },
+  "career": {
+    "label": "Career & Skills",
+    "totalPages": 1,
+    "pages": [
+      {
+        "id": "career/index",
+        "title": "Career Hub"
+      }
+    ]
+  },
+  "data-knowledge": {
+    "label": "Data & Knowledge",
+    "totalPages": 1,
+    "pages": [
+      {
+        "id": "data-knowledge/index",
+        "title": "Data & Knowledge Hub"
+      }
+    ]
+  },
+  "learning-paths": {
+    "label": "Learning Paths",
+    "totalPages": 1,
+    "pages": [
+      {
+        "id": "learning-paths/index",
+        "title": "Learning Paths Hub"
+      }
+    ]
+  },
+  "operations": {
+    "label": "Operations & Economics",
+    "totalPages": 1,
+    "pages": [
+      {
+        "id": "operations/index",
+        "title": "Operations Hub"
+      }
+    ]
+  },
+  "platforms": {
+    "label": "Platforms & Infrastructure",
+    "totalPages": 1,
+    "pages": [
+      {
+        "id": "platforms/index",
+        "title": "Platforms Hub"
+      }
+    ]
+  },
+  "protocols": {
+    "label": "Protocols & Interoperability",
+    "totalPages": 1,
+    "pages": [
+      {
+        "id": "protocols/index",
+        "title": "Protocols Hub"
+      }
+    ]
+  },
+  "strategy": {
+    "label": "Strategy & Operating Model",
+    "totalPages": 120,
+    "pages": [
+      {
+        "id": "strategy/01-quantum-ai-consulting-landscape",
+        "title": "Quantum AI Consulting: Accenture & McKinsey"
+      },
+      {
+        "id": "strategy/02-quantum-ai-startup-landscape",
+        "title": "Quantum AI Startups: IonQ & D-Wave"
+      },
+      {
+        "id": "strategy/03-ai-value-creator-deliverables-pack",
+        "title": "AI Value Creator Deliverables: Reference Models & Architecture (1-10)"
+      },
+      {
+        "id": "strategy/04-ai-cost-implementation-guide-2026",
+        "title": "AI Cost Implementation: Model Routing & Semantic Caching"
+      },
+      {
+        "id": "strategy/05-agentic-ai-use-case-value-lifecycle",
+        "title": "Use Case Value Lifecycle: Overview, Stages & Baseline"
+      },
+      {
+        "id": "strategy/06-ai-coding-agents-2026",
+        "title": "AI Coding Agents 2026: Market Landscape & Leading Tools"
+      },
+      {
+        "id": "strategy/07-ai-tokenomics-guide",
+        "title": "AI Tokenomics: Token Mechanics & Context Window Economics"
+      },
+      {
+        "id": "strategy/08-ai-value-creators-synthesis",
+        "title": "AI Value Creators: Key Findings & Core Themes"
+      },
+      {
+        "id": "strategy/09-enterprise-ai-commercial-analysis-2026",
+        "title": "Enterprise AI Commercial Analysis: Pricing, Tokens & Contracts"
+      },
+      {
+        "id": "strategy/10-foundation-model-companies-2026",
+        "title": "Foundation Model Companies 2026"
+      },
+      {
+        "id": "strategy/11-part-01-evolution",
+        "title": "Evolution: Traditional Software to Enterprise RAG"
+      },
+      {
+        "id": "strategy/12-part-02-operating-models",
+        "title": "Enterprise AI Operating Models: Centralised to Domain Teams"
+      },
+      {
+        "id": "strategy/13-part-03-ai-delivery-lifecycle",
+        "title": "AI Delivery Lifecycle"
+      },
+      {
+        "id": "strategy/14-part-04-genai-delivery",
+        "title": "GenAI Delivery Lifecycle"
+      },
+      {
+        "id": "strategy/15-part-05-agentic-lifecycle",
+        "title": "Agentic AI Delivery Lifecycle (ADLC)"
+      },
+      {
+        "id": "strategy/16-part-06-governance",
+        "title": "Enterprise AI Governance Model"
+      },
+      {
+        "id": "strategy/17-part-07-platform-operating-model",
+        "title": "AI Platform Operating Model"
+      },
+      {
+        "id": "strategy/18-part-08-organizational-roles",
+        "title": "AI Talent Landscape & Leadership Roles"
+      },
+      {
+        "id": "strategy/19-part-09-operating-processes",
+        "title": "AI Operating Processes: Onboarding & Approval"
+      },
+      {
+        "id": "strategy/20-part-10-service-catalog",
+        "title": "AI Service Catalog: Core Inference & Data Services"
+      },
+      {
+        "id": "strategy/21-part-11-devsecops",
+        "title": "Part 11 — AI DevSecOps"
+      },
+      {
+        "id": "strategy/22-part-12-responsible-ai",
+        "title": "Part 12 — Responsible AI"
+      },
+      {
+        "id": "strategy/23-part-13-security-model",
+        "title": "Part 13 — Enterprise AI Security Model"
+      },
+      {
+        "id": "strategy/24-part-14-observability",
+        "title": "Part 14 — AI Observability"
+      },
+      {
+        "id": "strategy/25-part-15-enterprise-architecture",
+        "title": "Part 15 — Enterprise Architecture Mapping"
+      },
+      {
+        "id": "strategy/26-part-16-financial-model",
+        "title": "Part 16 — AI Financial Operating Model"
+      },
+      {
+        "id": "strategy/27-part-17-transformation-roadmap",
+        "title": "Part 17 — AI Transformation Roadmap & Maturity Model"
+      },
+      {
+        "id": "strategy/28-part-18-case-studies",
+        "title": "Part 18 — Industry Case Studies & Vendor Perspectives"
+      },
+      {
+        "id": "strategy/29-part-19-deliverables",
+        "title": "Part 19 — Deliverables, Templates & Artifacts"
+      },
+      {
+        "id": "strategy/30-part-20-greenfield-vs-brownfield",
+        "title": "Part 20 — Greenfield vs Brownfield AI Transformation"
+      },
+      {
+        "id": "strategy/31-part-21-agentic-process-blueprint",
+        "title": "Part 21 — Agentic Process Design Methodology & Patterns"
+      },
+      {
+        "id": "strategy/32-ea-strategy-playbook",
+        "title": "EA Strategy Playbook: Pitch to Design"
+      },
+      {
+        "id": "strategy/33-enterprise-ai-strategic-brief-2026",
+        "title": "Enterprise AI Strategic Brief: Claude Mythos & IT Operations"
+      },
+      {
+        "id": "strategy/34-enterprise-ai-transformation-blueprint-cto-guide-2026",
+        "title": "CTO Transformation Blueprint: Maturity Model & Reference Architectures"
+      },
+      {
+        "id": "strategy/35-executive-summary-and-ai-vision",
+        "title": "Executive Summary & AI Vision: Becoming AI-First"
+      },
+      {
+        "id": "strategy/36-current-state-assessment-and-ai-maturity",
+        "title": "Current State Assessment & AI Maturity"
+      },
+      {
+        "id": "strategy/37-ai-opportunity-portfolio",
+        "title": "AI Opportunity Portfolio & Prioritization"
+      },
+      {
+        "id": "strategy/38-enterprise-ai-platform-and-data-architecture",
+        "title": "Enterprise AI Platform, Data & Agentic Architecture"
+      },
+      {
+        "id": "strategy/39-governance-responsible-ai-and-security",
+        "title": "Governance, Responsible AI & Security Architecture"
+      },
+      {
+        "id": "strategy/40-target-operating-model-and-change",
+        "title": "Target Operating Model, Organization & Change"
+      },
+      {
+        "id": "strategy/41-roadmap-financials-kpis-and-risk",
+        "title": "Roadmap, Financials, KPIs & Risk"
+      },
+      {
+        "id": "strategy/42-ai-first-to-ai-native",
+        "title": "AI-First to AI-Native: The AI-Native Tier & Assessment"
+      },
+      {
+        "id": "strategy/43-vol1-corporate-strategy",
+        "title": "Corporate Strategy: Vision, Mission, Purpose & Intent"
+      },
+      {
+        "id": "strategy/44-vol10-relationship-maps-glossary",
+        "title": "Relationship Maps: Concept Hierarchy & Core Comparisons"
+      },
+      {
+        "id": "strategy/45-vol2-business-architecture-operating-model",
+        "title": "Business Architecture: Discipline & Capabilities"
+      },
+      {
+        "id": "strategy/46-vol3-portfolio-governance",
+        "title": "Portfolio Governance: Fundamentals & Investment Planning"
+      },
+      {
+        "id": "strategy/47-vol4-consulting-frameworks-industry",
+        "title": "Consulting Frameworks: Landscape & Environmental Analysis"
+      },
+      {
+        "id": "strategy/48-vol5-ai-strategy-transformation-glossary",
+        "title": "AI Strategy & Transformation: Strategy Framework & Operating Model"
+      },
+      {
+        "id": "strategy/49-vol6-organization-structure-operating-model",
+        "title": "Organization Structure: Why Org Design Matters & Core Structures"
+      },
+      {
+        "id": "strategy/50-vol7-enterprise-building-blocks",
+        "title": "Enterprise Building Blocks: Concept & Business Blocks"
+      },
+      {
+        "id": "strategy/51-vol8-portfolio-consulting-frameworks",
+        "title": "Portfolio Consulting Frameworks: Portfolio Management"
+      },
+      {
+        "id": "strategy/52-vol9-industry-deep-dives",
+        "title": "Industry Deep Dives: Banking, Healthcare & Retail"
+      },
+      {
+        "id": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
+        "title": "AI Value Creator Deliverables: Maturity, Roadmap & Portfolio (11-15)"
+      },
+      {
+        "id": "strategy/54-ai-cost-implementation-guide-2026-budget-finops-roi-measurement",
+        "title": "AI Cost Implementation: Budget Governance, FinOps & ROI"
+      },
+      {
+        "id": "strategy/55-ai-cost-implementation-guide-2026-anti-patterns-deployment-playbook",
+        "title": "AI Cost Implementation: Anti-Pattern Fixes & Deployment Playbook"
+      },
+      {
+        "id": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
+        "title": "Use Case Value Lifecycle: Financial Model & Assumptions"
+      },
+      {
+        "id": "strategy/57-ai-coding-agents-2026-enterprise-autonomous-agent-tools",
+        "title": "AI Coding Agents 2026: Enterprise & Autonomous Agent Tools"
+      },
+      {
+        "id": "strategy/58-ai-coding-agents-2026-tool-comparison-benchmarks-guide",
+        "title": "AI Coding Agents 2026: Comparisons & Benchmarks"
+      },
+      {
+        "id": "strategy/59-ai-tokenomics-guide-prompting-model-selection-fine-tuning",
+        "title": "AI Tokenomics: Prompting, Model Selection & Fine-Tuning"
+      },
+      {
+        "id": "strategy/60-ai-tokenomics-guide-batch-processing-tco-scale",
+        "title": "AI Tokenomics: Batch Processing, TCO & Scale Economics"
+      },
+      {
+        "id": "strategy/61-ai-value-creators-synthesis-advanced-themes-recommendations",
+        "title": "AI Value Creators: Advanced Themes & Recommendations"
+      },
+      {
+        "id": "strategy/62-enterprise-ai-commercial-analysis-2026-finops-procurement-framework",
+        "title": "Enterprise AI Commercial Analysis: FinOps & Procurement Framework"
+      },
+      {
+        "id": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+        "title": "Evolution: Agentic AI to AI-Native Organization"
+      },
+      {
+        "id": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
+        "title": "Enterprise AI Operating Models: Platform-First to AI-Native"
+      },
+      {
+        "id": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
+        "title": "Enterprise AI Operating Models: Comparison & Maturity"
+      },
+      {
+        "id": "strategy/66-part-08-organizational-roles-core-delivery-engineering-roles",
+        "title": "Core AI Delivery & Engineering Roles"
+      },
+      {
+        "id": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
+        "title": "Governance, Risk & Advisory Roles + Master RACI Matrix"
+      },
+      {
+        "id": "strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks",
+        "title": "Career Pathways & Compensation Benchmarks"
+      },
+      {
+        "id": "strategy/69-part-09-operating-processes-rollout-evaluation-redteam",
+        "title": "AI Operating Processes: Rollout, Evaluation & Red Teaming"
+      },
+      {
+        "id": "strategy/70-part-09-operating-processes-incident-response-rollback",
+        "title": "AI Operating Processes: Incident Response & Rollback"
+      },
+      {
+        "id": "strategy/71-part-10-service-catalog-agent-guardrail-observability",
+        "title": "AI Service Catalog: Agent, Guardrail & Observability Services"
+      },
+      {
+        "id": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
+        "title": "AI Service Catalog: Tiers, Governance & Developer Portal"
+      },
+      {
+        "id": "strategy/73-part-21-agentic-process-blueprint-blueprints-by-function-teams",
+        "title": "Part 21 — Agentic Blueprints by Function & Agent-Infused Teams"
+      },
+      {
+        "id": "strategy/74-ea-strategy-playbook-build-operate-retire-stages",
+        "title": "EA Strategy Playbook: Build to Retire"
+      },
+      {
+        "id": "strategy/75-enterprise-ai-strategic-brief-2026-aegis-security-adlc",
+        "title": "Enterprise AI Strategic Brief: Security Governance & ADLC"
+      },
+      {
+        "id": "strategy/76-enterprise-ai-strategic-brief-2026-roadmap-strategic-imperatives",
+        "title": "Enterprise AI Strategic Brief: Roadmap & Strategic Imperatives"
+      },
+      {
+        "id": "strategy/77-enterprise-ai-transformation-blueprint-cto-guide-2026-finops-security-threat-model",
+        "title": "CTO Transformation Blueprint: FinOps & Security Threat Model"
+      },
+      {
+        "id": "strategy/78-enterprise-ai-transformation-blueprint-cto-guide-2026-failure-playbook-migration",
+        "title": "CTO Transformation Blueprint: Failure Playbook & Migration Strategy"
+      },
+      {
+        "id": "strategy/79-enterprise-ai-transformation-blueprint-cto-guide-2026-end-to-end-worked-example",
+        "title": "CTO Transformation Blueprint: End-to-End Worked Example"
+      },
+      {
+        "id": "strategy/80-ai-first-to-ai-native-transformation-roadmap-benchmarks",
+        "title": "AI-First to AI-Native: Transformation Roadmap & Sector Benchmarks"
+      },
+      {
+        "id": "strategy/81-ai-first-to-ai-native-case-studies-readiness-checklist",
+        "title": "AI-First to AI-Native: Case Studies & Readiness Checklist"
+      },
+      {
+        "id": "strategy/82-vol1-corporate-strategy-themes-priorities-initiatives",
+        "title": "Corporate Strategy: Themes, Priorities & Initiatives"
+      },
+      {
+        "id": "strategy/83-vol1-corporate-strategy-strategy-taxonomy-24-types",
+        "title": "Corporate Strategy: The 24-Type Strategy Taxonomy"
+      },
+      {
+        "id": "strategy/84-vol1-corporate-strategy-execution-templates-kpis",
+        "title": "Corporate Strategy: Execution, Templates & KPIs"
+      },
+      {
+        "id": "strategy/85-vol1-corporate-strategy-relationships-industry-comparisons",
+        "title": "Corporate Strategy: Relationships & Industry Comparisons"
+      },
+      {
+        "id": "strategy/86-vol10-relationship-maps-glossary-ai-comparisons-terminology-xref",
+        "title": "Relationship Maps: AI/Ops Comparisons & Terminology Cross-Reference"
+      },
+      {
+        "id": "strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g",
+        "title": "Enterprise Glossary: A-G"
+      },
+      {
+        "id": "strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t",
+        "title": "Enterprise Glossary: H-T"
+      },
+      {
+        "id": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
+        "title": "Enterprise Glossary: U-Z & Deliverables Cross-Reference"
+      },
+      {
+        "id": "strategy/90-vol2-business-architecture-operating-model-value-streams-domains-model-design",
+        "title": "Business Architecture: Value Streams, Domains & Model Design"
+      },
+      {
+        "id": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
+        "title": "Business Architecture: Organization & Operating Model Design"
+      },
+      {
+        "id": "strategy/92-vol2-business-architecture-operating-model-ai-operating-model-building-blocks",
+        "title": "Business Architecture: AI Operating Model & Building Blocks"
+      },
+      {
+        "id": "strategy/93-vol3-portfolio-governance-pmo-agile-governance",
+        "title": "Portfolio Governance: PMO Models, Agile Portfolio & Enterprise Governance"
+      },
+      {
+        "id": "strategy/94-vol3-portfolio-governance-ai-governance-metrics",
+        "title": "Portfolio Governance: AI Governance, Reporting & Deliverables"
+      },
+      {
+        "id": "strategy/95-vol4-consulting-frameworks-industry-strategy-execution-frameworks",
+        "title": "Consulting Frameworks: Strategy & Execution"
+      },
+      {
+        "id": "strategy/96-vol4-consulting-frameworks-industry-architecture-industry-playbooks",
+        "title": "Consulting Frameworks: Architecture & Industry Playbooks"
+      },
+      {
+        "id": "strategy/97-vol4-consulting-frameworks-industry-framework-selection-glossary",
+        "title": "Consulting Frameworks: Selection Guide & Glossary"
+      },
+      {
+        "id": "strategy/98-vol5-ai-strategy-transformation-glossary-transformation-maturity-models",
+        "title": "AI Strategy & Transformation: Transformation & Maturity Models"
+      },
+      {
+        "id": "strategy/99-vol5-ai-strategy-transformation-glossary-glossary-a-to-h",
+        "title": "AI Strategy & Transformation Glossary: A-H"
+      },
+      {
+        "id": "strategy/index",
+        "title": "Strategy Hub"
+      },
+      {
+        "id": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
+        "title": "AI Value Creator Deliverables: Governance, Economics & Playbooks (16-20)"
+      },
+      {
+        "id": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
+        "title": "Quantum AI Consulting: BCG X, Deloitte & IBM Consulting"
+      },
+      {
+        "id": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
+        "title": "Quantum AI Consulting: Capgemini & the Big Four Audit Firms"
+      },
+      {
+        "id": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
+        "title": "Quantum AI Consulting: Cross-Consultancy Patterns & Anti-Patterns"
+      },
+      {
+        "id": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
+        "title": "Quantum AI Startups: Quantinuum, Multiverse, QuEra & Rigetti"
+      },
+      {
+        "id": "strategy/quantum/05-quantum-ai-startup-landscape-psiquantum-xanadu-photonics",
+        "title": "Quantum AI Startups: PsiQuantum & Xanadu (Photonics)"
+      },
+      {
+        "id": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
+        "title": "Quantum AI Startups: IQM & Emerging Players"
+      },
+      {
+        "id": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
+        "title": "Quantum AI Startups: Cross-Startup Patterns & Anti-Patterns"
+      },
+      {
+        "id": "strategy/vols/01-vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref",
+        "title": "AI Strategy & Transformation Glossary: I-Z & Cross-Reference"
+      },
+      {
+        "id": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
+        "title": "Organization Structure: Operating Models & Design"
+      },
+      {
+        "id": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
+        "title": "Organization Structure: Target Operating Model & AI COE"
+      },
+      {
+        "id": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
+        "title": "Organization Structure: AI Maturity & Deliverables"
+      },
+      {
+        "id": "strategy/vols/05-vol7-enterprise-building-blocks-application-core-ai-blocks",
+        "title": "Enterprise Building Blocks: Application & Core AI Blocks"
+      },
+      {
+        "id": "strategy/vols/06-vol7-enterprise-building-blocks-ai-infrastructure-platform-engineering",
+        "title": "Enterprise Building Blocks: AI Infrastructure & Platform Engineering"
+      },
+      {
+        "id": "strategy/vols/07-vol7-enterprise-building-blocks-agentic-ai-selection-guide",
+        "title": "Enterprise Building Blocks: Agentic AI & Selection Guide"
+      },
+      {
+        "id": "strategy/vols/08-vol8-portfolio-consulting-frameworks-pmo-evolution-strategy-frameworks",
+        "title": "Portfolio Consulting Frameworks: PMO Evolution & Strategy"
+      },
+      {
+        "id": "strategy/vols/09-vol8-portfolio-consulting-frameworks-architecture-operating-delivery",
+        "title": "Portfolio Consulting Frameworks: Architecture & Operating Delivery"
+      },
+      {
+        "id": "strategy/vols/10-vol8-portfolio-consulting-frameworks-innovation-decision-selection-guide",
+        "title": "Portfolio Consulting Frameworks: Innovation, Decision & Selection"
+      },
+      {
+        "id": "strategy/vols/11-vol9-industry-deep-dives-manufacturing-energy-telecom-gov",
+        "title": "Industry Deep Dives: Manufacturing, Energy, Telecom, Government"
+      },
+      {
+        "id": "strategy/vols/12-vol9-industry-deep-dives-life-sciences-logistics-media-tech",
+        "title": "Industry Deep Dives: Life Sciences, Logistics, Media, High Tech"
+      }
+    ]
+  },
+  "trust": {
+    "label": "Trust: Security, Governance & RAI",
+    "totalPages": 1,
+    "pages": [
+      {
+        "id": "trust/index",
+        "title": "Trust Hub"
+      }
+    ]
+  }
+}

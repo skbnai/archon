@@ -26,6 +26,7 @@ sources:
     title: "IBM/Dubai Future Foundation CAIO Study: 36% Higher ROI"
     tier: 1
     retrieved: 2026-07-19
+pagination_prev: strategy/ai-value-creators-synthesis
 ---
 
 # AI Value Creators: Advanced Themes & Recommendations

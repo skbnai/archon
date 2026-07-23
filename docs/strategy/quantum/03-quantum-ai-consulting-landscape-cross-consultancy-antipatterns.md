@@ -22,6 +22,7 @@ sources:
     title: "EO-14412: Securing the Nation Against Advanced Cryptographic Attacks"
     tier: 1
     retrieved: 2026-07-19
+pagination_prev: strategy/quantum/quantum-ai-consulting-landscape-capgemini-big-four-audit
 ---
 
 # Quantum AI Consulting: Cross-Consultancy Patterns & Anti-Patterns

@@ -12,6 +12,7 @@ covers_version: "N/A"
 supersedes: ["docs/enterprise-architecture/strategy/Enterprise_AI_Transformation_Blueprint_CTO_Guide_2026.md"]
 tags: ["enterprise-ai", "cto-guide", "ai-maturity", "reference-architecture", "platform-engineering"]
 sources: []
+pagination_next: strategy/enterprise-ai-transformation-blueprint-cto-guide-2026-finops-security-threat-model
 ---
 
 Transforming enterprise AI requires honest self-assessment and opinionated reference architectures for three deployment scales: startup, mid-enterprise, and regulated enterprise. Before you spend a dollar, you need a clear-eyed view of where your organization actually stands.

@@ -18,6 +18,7 @@ tags:
   - porter
   - swot
 sources: []
+pagination_next: strategy/vol4-consulting-frameworks-industry-strategy-execution-frameworks
 ---
 
 # Consulting Frameworks: Landscape & Environmental Analysis

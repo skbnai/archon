@@ -12,6 +12,7 @@ covers_version: "as of 2026-07-14"
 supersedes: []
 tags: ["operating-model", "maturity-model", "agent-factory", "digital-workforce", "organizational-design"]
 sources: []
+pagination_prev: strategy/part-02-operating-models-operating-models-platform-ai-native
 ---
 
 # Enterprise AI Operating Models: Comparison & Maturity

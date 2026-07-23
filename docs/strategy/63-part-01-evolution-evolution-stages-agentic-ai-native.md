@@ -12,6 +12,7 @@ covers_version: "as of 2026-07-14"
 supersedes: []
 tags: ["evolution", "ai-native", "enterprise-ai", "agentic-ai", "autonomous-systems", "transformation"]
 sources: []
+pagination_prev: strategy/part-01-evolution
 ---
 
 # Evolution: Agentic AI to AI-Native Organization

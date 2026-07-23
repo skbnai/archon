@@ -17,6 +17,8 @@ tags:
   - wardley-mapping
   - blue-ocean
 sources: []
+pagination_prev: strategy/vol4-consulting-frameworks-industry
+pagination_next: strategy/vol4-consulting-frameworks-industry-architecture-industry-playbooks
 ---
 
 # Consulting Frameworks: Strategy & Execution

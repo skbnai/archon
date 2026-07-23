@@ -20,6 +20,7 @@ tags:
   - value-lifecycle
   - agentic-ai
 sources: []
+pagination_next: strategy/agentic-ai-use-case-value-lifecycle-financial-model-assumptions
 ---
 
 # Use Case Value Lifecycle: Overview, Stages & Baseline

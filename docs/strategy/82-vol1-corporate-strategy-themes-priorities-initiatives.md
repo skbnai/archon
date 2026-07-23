@@ -16,6 +16,8 @@ tags:
   - strategic-objectives
   - portfolio-management
 sources: []
+pagination_prev: strategy/vol1-corporate-strategy
+pagination_next: strategy/vol1-corporate-strategy-strategy-taxonomy-24-types
 ---
 
 # Corporate Strategy: Themes, Priorities & Initiatives

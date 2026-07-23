@@ -18,6 +18,7 @@ tags:
   - investment
   - frameworks
 sources: []
+pagination_next: strategy/vols/vol8-portfolio-consulting-frameworks-pmo-evolution-strategy-frameworks
 ---
 
 # Portfolio Consulting Frameworks: Portfolio Management

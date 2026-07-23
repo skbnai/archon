@@ -18,6 +18,8 @@ tags:
   - banking
   - healthcare
 sources: []
+pagination_prev: strategy/vol4-consulting-frameworks-industry-strategy-execution-frameworks
+pagination_next: strategy/vol4-consulting-frameworks-industry-framework-selection-glossary
 ---
 
 # Consulting Frameworks: Architecture & Industry Playbooks

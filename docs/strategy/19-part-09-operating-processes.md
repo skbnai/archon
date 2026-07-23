@@ -13,6 +13,7 @@ supersedes:
   - docs/enterprise-ai-report/part-09-operating-processes.md
 tags: ["operating-processes", "approval-workflow", "governance", "ai-delivery", "human-oversight"]
 sources: []
+pagination_next: strategy/part-09-operating-processes-rollout-evaluation-redteam
 ---
 
 # AI Operating Processes: Onboarding & Approval

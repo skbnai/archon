@@ -13,12 +13,15 @@ supersedes: []
 sources: []
 tags: [hub, trust]
 ---
+import SectionProgress from '@site/src/components/SectionProgress';
 
 Deploying an agent without a threat model means deploying a system nobody
 has actually tested against failure. This hub covers the controls that make
 agentic AI trustworthy in production: threat modeling, identity and
 guardrails, governance frameworks, and the compliance and SOC processes that
 operate them continuously.
+
+<SectionProgress domain="trust" />
 
 ## Scope
 

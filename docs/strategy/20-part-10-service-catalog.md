@@ -13,6 +13,7 @@ supersedes:
   - docs/enterprise-ai-report/part-10-service-catalog.md
 tags: ["service-catalog", "platform", "inference", "embedding", "api-service", "sla"]
 sources: []
+pagination_next: strategy/part-10-service-catalog-agent-guardrail-observability
 ---
 
 # AI Service Catalog: Core Inference & Data Services

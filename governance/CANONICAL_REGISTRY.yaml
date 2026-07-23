@@ -4836,3 +4836,164 @@ topics:
     - 'industry deep dives: life sciences, logistics, media & high tech'
     supersedes: []
     pages: []
+  - id: aidlc-artifacts-discovery-to-model-part2
+    domain: architecture
+    canonical: docs/architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy.md
+    aliases:
+    - 'aidlc artifacts: feasibility, risk & data strategy (phase 2-3)'
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-discovery-to-model-part3
+    domain: architecture
+    canonical: docs/architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture.md
+    aliases:
+    - 'aidlc artifacts: model design & architecture (phase 4)'
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-development-to-retirement-part2
+    domain: architecture
+    canonical: docs/architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement.md
+    aliases:
+    - 'aidlc artifacts: deployment, mlops & retirement (phase 7-8)'
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-development-to-retirement-part3
+    domain: architecture
+    canonical: docs/architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts.md
+    aliases:
+    - 'aidlc artifacts: enterprise architecture artifacts'
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-togaf-foundation-to-technology-part2
+    domain: architecture
+    canonical: docs/architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture.md
+    aliases:
+    - 'aidlc artifacts: togaf vision & business architecture (phase a-b)'
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-togaf-foundation-to-technology-part3
+    domain: architecture
+    canonical: docs/architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture.md
+    aliases:
+    - 'aidlc artifacts: togaf data & application architecture (phase c1-c2)'
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-togaf-foundation-to-technology-part4
+    domain: architecture
+    canonical: docs/architecture/parts/07-aidlc-artifacts-togaf-technology-architecture.md
+    aliases:
+    - 'aidlc artifacts: togaf technology architecture (phase d)'
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-togaf-migration-to-ea-part2
+    domain: architecture
+    canonical: docs/architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting.md
+    aliases:
+    - 'aidlc artifacts: togaf change management & cross-cutting (phase h)'
+    supersedes: []
+    pages: []
+  - id: aidlc-artifacts-togaf-migration-to-ea-part3
+    domain: architecture
+    canonical: docs/architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference.md
+    aliases:
+    - 'aidlc artifacts: artifact cross-reference'
+    supersedes: []
+    pages: []
+  - id: aidlc-agile-cicd-ai-transformation-2026-part2
+    domain: architecture
+    canonical: docs/architecture/parts/10-aidlc-agile-cicd-agile-evolution-cicd-transformation.md
+    aliases:
+    - 'aidlc agile/cicd: agile evolution & cicd transformation'
+    supersedes: []
+    pages: []
+  - id: aidlc-agile-cicd-ai-transformation-2026-part3
+    domain: architecture
+    canonical: docs/architecture/parts/11-aidlc-agile-cicd-roles-disciplines-roadmap-principles.md
+    aliases:
+    - 'aidlc agile/cicd: roles, disciplines, roadmap & principles'
+    supersedes: []
+    pages: []
+  - id: ai-native-architecture-evolution-report-part2
+    domain: architecture
+    canonical: docs/architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms.md
+    aliases:
+    - 'ai-native architecture evolution: data paradigm deep dives'
+    supersedes: []
+    pages: []
+  - id: ai-native-architecture-evolution-report-part3
+    domain: architecture
+    canonical: docs/architecture/parts/13-ai-native-architecture-evolution-report-decision-forecast.md
+    aliases:
+    - 'ai-native architecture evolution: decision matrix & forecast'
+    supersedes: []
+    pages: []
+  - id: agentic-ai-landing-zone-architecture-part2
+    domain: architecture
+    canonical: docs/architecture/parts/14-agentic-ai-landing-zone-architecture-implementation-governance.md
+    aliases:
+    - 'agentic ai landing zone: implementation & governance'
+    supersedes: []
+    pages: []
+  - id: ai-deep-future-outlook-2026-2035-part2
+    domain: architecture
+    canonical: docs/architecture/parts/15-ai-deep-future-outlook-2026-2035-sector-impacts.md
+    aliases:
+    - 'ai deep future outlook: sector impacts & implications'
+    supersedes: []
+    pages: []
+  - id: ai-assistant-architecture-research-report-part2
+    domain: architecture
+    canonical: docs/architecture/parts/16-ai-assistant-architecture-research-report-implementation-evaluation.md
+    aliases:
+    - 'ai assistant architecture: implementation & evaluation'
+    supersedes: []
+    pages: []
+  - id: the-agentic-loop-enterprise-ai-architect-guide-part2
+    domain: architecture
+    canonical: docs/architecture/parts/17-the-agentic-loop-enterprise-ai-architect-guide-practice-cases.md
+    aliases:
+    - 'the agentic loop: practice & case studies'
+    supersedes: []
+    pages: []
+  - id: enterprise-multi-model-ai-strategy-part2
+    domain: architecture
+    canonical: docs/architecture/parts/18-enterprise-multi-model-ai-strategy-part2.md
+    aliases:
+    - 'enterprise multi-model ai strategy: part 2'
+    supersedes: []
+    pages: []
+  - id: enterprise-multi-model-ai-strategy-part3
+    domain: architecture
+    canonical: docs/architecture/parts/19-enterprise-multi-model-ai-strategy-part3.md
+    aliases:
+    - 'enterprise multi-model ai strategy: part 3'
+    supersedes: []
+    pages: []
+  - id: enterprise-aiops-guide-part2
+    domain: architecture
+    canonical: docs/architecture/parts/20-enterprise-aiops-guide-part2.md
+    aliases:
+    - 'enterprise aiops guide: part 2'
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-skills-assessment-part2
+    domain: architecture
+    canonical: docs/architecture/parts/21-enterprise-ai-skills-assessment-part2.md
+    aliases:
+    - 'enterprise ai skills assessment: part 2'
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-governance-compliance-part2
+    domain: architecture
+    canonical: docs/architecture/parts/22-enterprise-ai-governance-compliance-part2.md
+    aliases:
+    - 'enterprise ai governance & compliance: part 2'
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-architect-foundations-part2
+    domain: architecture
+    canonical: docs/architecture/parts/23-enterprise-ai-architect-foundations-part2.md
+    aliases:
+    - 'enterprise ai architect foundations: part 2'
+    supersedes: []
+    pages: []

@@ -17,6 +17,7 @@ tags:
   - bizbok
   - business-capabilities
 sources: []
+pagination_next: strategy/vol2-business-architecture-operating-model-value-streams-domains-model-design
 ---
 
 # Business Architecture: Discipline & Capabilities

@@ -17,6 +17,8 @@ tags:
   - definitions
   - enterprise-terms
 sources: []
+pagination_prev: strategy/vol10-relationship-maps-glossary-glossary-terms-a-g
+pagination_next: strategy/vol10-relationship-maps-glossary-glossary-u-z-deliverables
 ---
 
 # Enterprise Glossary: H-T

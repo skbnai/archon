@@ -17,6 +17,8 @@ tags:
   - togaf
   - delivery-frameworks
 sources: []
+pagination_prev: strategy/vols/vol8-portfolio-consulting-frameworks-pmo-evolution-strategy-frameworks
+pagination_next: strategy/vols/vol8-portfolio-consulting-frameworks-innovation-decision-selection-guide
 ---
 
 # Portfolio Consulting Frameworks: Architecture & Operating Delivery

@@ -13,11 +13,14 @@ supersedes: []
 sources: []
 tags: [hub, architecture]
 ---
+import SectionProgress from '@site/src/components/SectionProgress';
 
 Architecture is where strategy becomes a buildable system. This hub covers
 the foundations, reference patterns, and review process an architect uses to
 turn an AI initiative into a landing zone that survives production load and
 audit.
+
+<SectionProgress domain="architecture" />
 
 ## Scope
 

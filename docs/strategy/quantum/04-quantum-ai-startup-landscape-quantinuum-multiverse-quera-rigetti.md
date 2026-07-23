@@ -33,6 +33,8 @@ sources:
     tier: 3
     retrieved: 2026-07-19
     note: "press-reported, not audited"
+pagination_prev: strategy/quantum-ai-startup-landscape
+pagination_next: strategy/quantum/quantum-ai-startup-landscape-psiquantum-xanadu-photonics
 ---
 
 # Quantum AI Startups: Quantinuum, Multiverse, QuEra & Rigetti

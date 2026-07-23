@@ -12,6 +12,7 @@ covers_version: "as of 2026-07-14"
 supersedes: []
 tags: ["career-path", "compensation", "recruiting", "retention", "ai-talent", "benchmarks"]
 sources: []
+pagination_prev: strategy/part-08-organizational-roles-governance-risk-roles-raci-matrix
 ---
 
 # Career Pathways & Compensation Benchmarks

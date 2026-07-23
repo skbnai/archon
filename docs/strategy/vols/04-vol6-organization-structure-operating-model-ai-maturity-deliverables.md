@@ -17,6 +17,7 @@ tags:
   - organizational-maturity
   - ai-strategy
 sources: []
+pagination_prev: strategy/vols/vol6-organization-structure-operating-model-target-operating-model-ai-coe
 ---
 
 # Organization Structure: AI Maturity & Deliverables

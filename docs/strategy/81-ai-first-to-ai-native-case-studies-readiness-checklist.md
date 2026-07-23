@@ -12,6 +12,7 @@ covers_version: "N/A"
 supersedes: []
 tags: ["enterprise-ai", "ai-native", "case-studies", "readiness", "best-practices"]
 sources: []
+pagination_prev: strategy/ai-first-to-ai-native-transformation-roadmap-benchmarks
 ---
 
 Real organizations moving through the levels show patterns. What separates successful Level 4+ transformations from those that plateau? This section synthesizes case patterns and provides a readiness checklist for each transition.

@@ -13,11 +13,14 @@ supersedes: []
 sources: []
 tags: [hub, assets]
 ---
+import SectionProgress from '@site/src/components/SectionProgress';
 
 Not everything in this wiki is prose — some of it is a thing you hand
 directly to a client or a team. This hub is the library for that: templates,
 checklists, workshop kits, and the unified glossary referenced across every
 other domain.
+
+<SectionProgress domain="assets" />
 
 ## Scope
 

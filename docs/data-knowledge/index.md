@@ -13,11 +13,14 @@ supersedes: []
 sources: []
 tags: [hub, data-knowledge]
 ---
+import SectionProgress from '@site/src/components/SectionProgress';
 
 Agent quality is bounded by what an agent can retrieve, not just how it
 reasons. This hub covers the data and knowledge layer underneath agentic
 systems: architecture and engineering, RAG, knowledge graphs, and the memory
 and lineage guarantees a production agent depends on.
+
+<SectionProgress domain="data-knowledge" />
 
 ## Scope
 

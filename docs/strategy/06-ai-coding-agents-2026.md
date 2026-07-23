@@ -28,6 +28,7 @@ sources:
     title: "GitHub Copilot User Statistics"
     tier: 2
     retrieved: 2026-07-19
+pagination_next: strategy/ai-coding-agents-2026-enterprise-autonomous-agent-tools
 ---
 
 # AI Coding Agents 2026: Market Landscape & Leading Tools

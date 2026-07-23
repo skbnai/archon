@@ -13,6 +13,7 @@ supersedes:
   - docs/enterprise-ai-report/part-02-operating-models.md
 tags: ["operating-model", "ai-coe", "hub-spoke", "federated-ai", "organizational-design"]
 sources: []
+pagination_next: strategy/part-02-operating-models-operating-models-platform-ai-native
 ---
 
 # Enterprise AI Operating Models: Centralised to Domain Teams

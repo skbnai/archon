@@ -21,6 +21,7 @@ tags:
   - vendor-contracts
   - commercial-strategy
 sources: []
+pagination_next: strategy/enterprise-ai-commercial-analysis-2026-finops-procurement-framework
 ---
 
 # Enterprise AI Commercial Analysis: Pricing, Tokens & Contracts

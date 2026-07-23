@@ -17,6 +17,8 @@ tags:
   - kpi
   - governance
 sources: []
+pagination_prev: strategy/vol1-corporate-strategy-strategy-taxonomy-24-types
+pagination_next: strategy/vol1-corporate-strategy-relationships-industry-comparisons
 ---
 
 # Corporate Strategy: Execution, Templates & KPIs

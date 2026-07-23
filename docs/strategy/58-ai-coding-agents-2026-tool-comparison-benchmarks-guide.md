@@ -25,6 +25,7 @@ sources:
     title: "Cursor Pricing"
     tier: 1
     retrieved: 2026-07-19
+pagination_prev: strategy/ai-coding-agents-2026-enterprise-autonomous-agent-tools
 ---
 
 # AI Coding Agents 2026: Comparisons & Benchmarks

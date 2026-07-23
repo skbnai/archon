@@ -34,6 +34,7 @@ sources:
     tier: 3
     retrieved: 2026-07-19
     note: "press-reported, not audited"
+pagination_next: strategy/quantum/quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti
 ---
 
 # Quantum AI Startups: IonQ & D-Wave

@@ -16,6 +16,8 @@ tags:
   - domain-driven-design
   - business-model-canvas
 sources: []
+pagination_prev: strategy/vol2-business-architecture-operating-model
+pagination_next: strategy/vol2-business-architecture-operating-model-organization-operating-model-design
 ---
 
 # Business Architecture: Value Streams, Domains & Model Design

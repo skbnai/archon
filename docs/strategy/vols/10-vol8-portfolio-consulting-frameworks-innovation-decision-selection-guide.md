@@ -18,6 +18,7 @@ tags:
   - decision-frameworks
   - business-model-innovation
 sources: []
+pagination_prev: strategy/vols/vol8-portfolio-consulting-frameworks-architecture-operating-delivery
 ---
 
 # Portfolio Consulting Frameworks: Innovation, Decision & Selection

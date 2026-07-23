@@ -17,6 +17,7 @@ tags:
   - business-case
   - pmo
 sources: []
+pagination_next: strategy/vol3-portfolio-governance-pmo-agile-governance
 ---
 
 # Portfolio Governance: Fundamentals & Investment Planning

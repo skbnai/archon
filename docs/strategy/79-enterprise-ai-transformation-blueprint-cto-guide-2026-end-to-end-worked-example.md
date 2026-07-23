@@ -12,6 +12,7 @@ covers_version: "N/A"
 supersedes: []
 tags: ["enterprise-ai", "worked-example", "customer-support-agent", "architecture-decisions", "cost-model"]
 sources: []
+pagination_prev: strategy/enterprise-ai-transformation-blueprint-cto-guide-2026-failure-playbook-migration
 ---
 
 A complete, production-grade customer support agent — from spec to cost model to evaluation framework to architecture decisions. Every decision is documented. This is the reference for building agents at scale.

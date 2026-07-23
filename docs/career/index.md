@@ -13,11 +13,14 @@ supersedes: []
 sources: []
 tags: [hub, career]
 ---
+import SectionProgress from '@site/src/components/SectionProgress';
 
 Technical depth doesn't automatically translate into a stronger interview,
 promotion case, or role transition. This hub collects the career-facing
 material — interview prep, certification guidance, and role guides — that
 turns wiki knowledge into career outcomes for AI-focused roles.
+
+<SectionProgress domain="career" />
 
 ## Scope
 

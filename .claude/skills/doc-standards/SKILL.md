@@ -40,11 +40,26 @@ tags: []                   # from controlled vocabulary only
 
 ## Page anatomy & size
 
-- ≤ ~2,000 words. Larger topic → split into a series with a hub/index page.
-- When authoring a split plan, budget each part to ~1,600-1,800 words, not
-  right up to the ceiling — a part that looks fine on paper can land over
-  2,000 once real prose is written, forcing a mid-migration re-split (extra
-  registry entry, renumbered files, relinking). Leave headroom instead.
+- ≤ ~2,000 words for most doc_types. Larger topic → split into a series with
+  a hub/index page.
+- **`reference-architecture` gets a higher ceiling: ≤6,000 words.** These are
+  deep technical blueprints (multi-phase frameworks, artifact libraries,
+  architecture evolution reports) where forcing a 2,000-word cap produces
+  absurd fragmentation (one 15,000-word source split into 9-11 tiny parts,
+  each needing its own registry entry, hub link, and review pass, for no
+  reader benefit — discovered mid-wave-2, see feedback-wave2-page-size-tiering
+  memory if present). Only split a reference-architecture page if it
+  genuinely exceeds 6,000 words, and even then target large ~3,000-5,000
+  word parts, not maximally-fragmented ~1,700-word ones.
+- When authoring a split plan, budget each part with real headroom under
+  its type's ceiling (~1,600-1,800/2,000 for most types; ~4,500-5,500/6,000
+  for reference-architecture) — a part that looks fine on paper can land
+  over once real prose is written, forcing a mid-migration re-split (extra
+  registry entry, renumbered files, relinking).
+- **Verify a proposed split plan actually respects the ceiling before
+  registering it.** Grouping "2 sections per part" or similar even-looking
+  heuristics can silently produce parts that are themselves over the limit —
+  check each part's real word budget, not just the total part count.
 - Order: 1-paragraph "why this matters" → body → "Related" links (canonical
   pages only) → sources.
 - Architecture content MUST include a Mermaid diagram (see diagram-standards).

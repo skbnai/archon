@@ -12,6 +12,8 @@ covers_version: "N/A"
 supersedes: []
 tags: ["enterprise-ai", "failure-modes", "migration-strategy", "agent-reliability", "strangler-pattern"]
 sources: []
+pagination_prev: strategy/enterprise-ai-transformation-blueprint-cto-guide-2026-finops-security-threat-model
+pagination_next: strategy/enterprise-ai-transformation-blueprint-cto-guide-2026-end-to-end-worked-example
 ---
 
 The compound probability problem: an agent achieving 85% accuracy per action — which sounds great — has only 20% end-to-end success on a 10-step workflow. At 90% per-step: 35% end-to-end. At 95%: 60%. Production-grade agentic systems require short workflows, verification steps, and HITL gates at critical junctions.

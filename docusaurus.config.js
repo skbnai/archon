@@ -46,6 +46,7 @@ const config = {
           { to: "/architecture/", label: "Architecture", position: "left" },
           { to: "/trust/", label: "Trust & Security", position: "left" },
           { to: "/assets/", label: "Asset Library", position: "left" },
+          { to: "/progress", label: "My Progress", position: "right" },
           {
             href: "https://github.com/skbnai/archon",
             label: "GitHub",
@@ -97,6 +98,10 @@ const config = {
     hooks: { onBrokenMarkdownLinks: "throw" },
   },
   themes: ["@docusaurus/theme-mermaid"],
+
+  // Records reading streaks / page visits on every route change. See
+  // .claude/skills/gamification/SKILL.md.
+  clientModules: [require.resolve("./src/clientModules/trackVisits.js")],
 };
 
 module.exports = config;

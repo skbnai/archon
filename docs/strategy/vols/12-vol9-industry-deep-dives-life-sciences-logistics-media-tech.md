@@ -20,6 +20,7 @@ tags:
   - media
   - saas
 sources: []
+pagination_prev: strategy/vols/vol9-industry-deep-dives-manufacturing-energy-telecom-gov
 ---
 
 # Industry Deep Dives: Life Sciences, Logistics, Media, High Tech

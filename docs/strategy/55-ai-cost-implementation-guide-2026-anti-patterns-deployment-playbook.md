@@ -18,6 +18,7 @@ tags:
   - deployment
   - optimization
 sources: []
+pagination_prev: strategy/ai-cost-implementation-guide-2026-budget-finops-roi-measurement
 ---
 
 # AI Cost Implementation: Anti-Pattern Fixes & Deployment Playbook

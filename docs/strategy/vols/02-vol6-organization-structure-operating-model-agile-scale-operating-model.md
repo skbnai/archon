@@ -18,6 +18,8 @@ tags:
   - ai-operating-model
   - cloud-operating-model
 sources: []
+pagination_prev: strategy/vol6-organization-structure-operating-model
+pagination_next: strategy/vols/vol6-organization-structure-operating-model-target-operating-model-ai-coe
 ---
 
 # Organization Structure: Operating Models & Design

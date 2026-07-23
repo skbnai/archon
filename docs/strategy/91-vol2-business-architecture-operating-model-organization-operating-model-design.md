@@ -16,6 +16,8 @@ tags:
   - target-operating-model
   - platform-organization
 sources: []
+pagination_prev: strategy/vol2-business-architecture-operating-model-value-streams-domains-model-design
+pagination_next: strategy/vol2-business-architecture-operating-model-ai-operating-model-building-blocks
 ---
 
 # Business Architecture: Organization & Operating Model Design

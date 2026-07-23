@@ -19,6 +19,7 @@ tags:
   - healthcare
   - retail
 sources: []
+pagination_next: strategy/vols/vol9-industry-deep-dives-manufacturing-energy-telecom-gov
 ---
 
 # Industry Deep Dives: Banking, Healthcare & Retail
