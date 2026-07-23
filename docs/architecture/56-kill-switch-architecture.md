@@ -16,15 +16,27 @@ sources: []
 
 # Kill Switch Architecture for Multi-Agent AI Systems
 
-Kill switches are not an afterthought — they are a fundamental trust mechanism. Regulators, enterprise risk teams, and users must have confidence that **any agent can be stopped immediately**, regardless of what it is doing, without requiring a code deployment or infrastructure change. The EU AI Act Article 9 (risk management) requires high-risk AI systems to include "appropriate human oversight measures" including the ability to halt the system.
+**Audience:** Platform engineers, AI architects, SREs, CISO/security teams, and AI governance teams responsible for emergency response.
 
-This guide defines the complete kill switch architecture for enterprise multi-agent AI systems — covering global, scoped, and progressive shutdown mechanisms; safe mode; circuit isolation; feature flags; emergency policy override; and the governance model for who can activate each level.
+**Purpose:** Defines the complete kill switch architecture for enterprise multi-agent AI systems — covering global, scoped, and progressive shutdown mechanisms; safe mode; circuit isolation; feature flags; emergency policy override; and the governance model for who can activate each level.
+
+**Scope:** Emergency shutdown and containment mechanisms. For the underlying circuit breaker reliability pattern, see [Agentic AI Reliability, Observability & Governance §4.3](43-agentic-ai-reliability-observability-governance.md). For the observability that triggers kill switch activation, see [Agent Reliability Engineering](42-agent-reliability-engineering.md). For governance of kill switch authority, see [Governance Propagation Chain](55-governance-propagation-chain.md).
 
 ---
 
-## 1. Kill Switch Taxonomy
+## 1. Why Kill Switches Are a First-Class Architectural Concern
 
-### 1.1 Scope Levels
+Kill switches are not an afterthought — they are a fundamental trust mechanism. Regulators, enterprise risk teams, and users must have confidence that **any agent can be stopped immediately**, regardless of what it is doing, without requiring a code deployment or infrastructure change.
+
+The EU AI Act Article 9 (risk management) requires high-risk AI systems to include "appropriate human oversight measures" including the ability to halt the system. DORA (Digital Operational Resilience Act) requires financial firms to be able to terminate AI-driven processes that pose operational risk.
+
+**Key design principle:** Kill switches must work when the system is under load, when the normal communication paths are degraded, and when the agent is in the middle of a long-running task.
+
+---
+
+## 2. Kill Switch Taxonomy
+
+### 2.1 Scope Levels
 
 | Level | Scope | Propagation Time Target | Who Can Activate |
 |-------|-------|------------------------|-----------------|
@@ -39,7 +51,7 @@ This guide defines the complete kill switch architecture for enterprise multi-ag
 | **Retrieval disable** | Disable RAG retrieval for specified agents | &lt; 60 seconds | Platform Team, AI Governance |
 | **Remote agent isolation** | Block all A2A calls to/from a specific remote agent | &lt; 30 seconds | Security Team, Platform Team |
 
-### 1.2 Mechanism Types
+### 2.2 Mechanism Types
 
 | Mechanism | How It Works | Propagation Speed | Use Case |
 |----------|-------------|------------------|---------|
@@ -53,65 +65,142 @@ This guide defines the complete kill switch architecture for enterprise multi-ag
 
 ---
 
-## 2. Kill Switch Architecture
+## 3. Kill Switch Architecture
 
-### 2.1 Control Plane
+### 3.1 Control Plane
 
-```mermaid
-graph TD
-    O["OPERATOR<br/>(activate kill switch)"]
-    API["KILL SWITCH API<br/>(authenticated, audited)"]
-    KSO["KILL SWITCH ORCHESTRATOR<br/>1. Authenticate operator identity<br/>2. Verify operator has authority<br/>3. Log activation<br/>4. Determine propagation path<br/>5. Dispatch to mechanisms<br/>6. Confirm propagation<br/>7. Alert stakeholders"]
-    
-    GB["Gateway<br/>Block"]
-    OPA["OPA<br/>Rule"]
-    FF["Feature<br/>Flag"]
-    AR["Agent<br/>Registry"]
-    CB["Circuit<br/>Breaker"]
-    CR["Credential<br/>Revocation"]
-    
-    O --> API
-    API --> KSO
-    KSO --> GB
-    KSO --> OPA
-    KSO --> FF
-    KSO --> AR
-    KSO --> CB
-    KSO --> CR
+<!-- TODO(diagram): Convert ASCII control plane architecture diagram to mermaid
+Original shows: OPERATOR → KILL SWITCH API → KILL SWITCH ORCHESTRATOR (with 7 steps) → 6 propagation mechanisms (Gateway Block, OPA Rule, Feature Flag, Agent Registry, Circuit Breaker, Credential Revocation)
+-->
+
+```
+KILL SWITCH CONTROL PLANE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ OPERATOR           KILL SWITCH API
+    │               (authenticated, audited)
+    │ activate(scope, level, reason)
+    ▼
+ ┌─────────────────────────────────────────────────┐
+ │           KILL SWITCH ORCHESTRATOR              │
+ │  1. Authenticate operator identity              │
+ │  2. Verify operator has authority for scope     │
+ │  3. Log activation with timestamp + reason      │
+ │  4. Determine propagation path for scope        │
+ │  5. Dispatch to propagation mechanisms          │
+ │  6. Confirm propagation (within SLA)            │
+ │  7. Alert: team + stakeholders + audit log      │
+ └───┬─────┬─────┬──────┬──────┬──────┬───────────┘
+     │     │     │      │      │      │
+     ▼     ▼     ▼      ▼      ▼      ▼
+  Gateway  OPA  Feature Agent  Circuit Credential
+  Block   Rule  Flag   Registry Breaker Revocation
 ```
 
-### 2.2 Feature Flag Kill Switch
+### 3.2 Feature Flag Kill Switch
 
-Feature flags provide the most controllable kill switch — graduated, reversible, audited. Kill Switch Flag Store contains:
+Feature flags provide the most controllable kill switch — graduated, reversible, audited:
 
-- Global: `ai.agents.enabled = false`
-- Platform: `ai.platform.us-east-1.enabled = false`
-- Agent: `ai.agent.billing-agent.enabled = false`
-- Tool: `ai.tool.funds-transfer.enabled = false`
-- Model: `ai.model.claude-opus.enabled = false`
-- Tenant: `ai.tenant.acme-corp.enabled = false`
+```
+Kill Switch Flag Store (LaunchDarkly / AWS AppConfig / Azure App Config / Unleash)
+    │
+    ├─► Global: ai.agents.enabled = false
+    ├─► Platform: ai.platform.us-east-1.enabled = false
+    ├─► Agent: ai.agent.billing-agent.enabled = false
+    ├─► Tool: ai.tool.funds-transfer.enabled = false
+    ├─► Model: ai.model.claude-opus.enabled = false
+    └─► Tenant: ai.tenant.acme-corp.enabled = false
+```
 
-Agents must poll kill switch flags at intervals &lt;= 5 seconds (real-time). Long-running agents must check the kill switch flag at every step boundary, not just at invocation start.
+**Agent implementation (required at every agent):**
 
-### 2.3 Gateway-Level Kill Switch
+```python
+async def execute_agent_task(task: AgentTask) -> AgentResult:
+    # Kill switch check BEFORE any work begins
+    if not await feature_flags.is_enabled(f"ai.agent.{agent_id}.enabled"):
+        raise AgentSuspendedError(
+            code="AGENT_SUSPENDED",
+            message="Agent temporarily disabled by platform governance"
+        )
 
-The gateway is the fastest and most reliable kill switch for inbound traffic. All new requests to a suspended agent are rejected immediately with HTTP 503. In-flight requests are completed (drain period) or killed (hard stop) depending on incident type.
+    # Kill switch check DURING long-running tasks (at every step boundary)
+    for step in plan.steps:
+        if not await feature_flags.is_enabled(f"ai.agent.{agent_id}.enabled"):
+            raise AgentSuspendedMidTaskError(
+                completed_steps=completed_steps,
+                checkpoint=current_checkpoint
+            )
+        await execute_step(step)
+```
+
+**Flag polling requirement:** Agents must poll kill switch flags at intervals ≤ 5 seconds (real-time). Long-running agents must check the kill switch flag at every step boundary, not just at invocation start.
+
+### 3.3 Gateway-Level Kill Switch
+
+The gateway is the fastest and most reliable kill switch for inbound traffic:
+
+```
+Kill Switch Activation
+        │ (API call to Gateway Admin API)
+        ▼
+Gateway Kill Switch Rule:
+  match: agent_id == "billing-agent"
+  action: REJECT with HTTP 503
+  reason: "Agent suspended by governance - ref: INC-8821"
+  log: all rejected requests
+  duration: until explicitly lifted
+
+Effect:
+  All new requests to billing-agent → rejected immediately
+  In-flight requests → completed (drain period) or killed (hard stop)
+  User experience → 503 with governance message
+```
 
 **Drain vs. hard stop choice:**
 - **Drain** (allow in-flight requests to complete): use for non-security incidents where graceful completion is preferred
 - **Hard stop** (kill in-flight immediately): use for security incidents (prompt injection, data exfiltration in progress)
 
-### 2.4 Policy Override Kill Switch
+### 3.4 Policy Override Kill Switch
 
-For scenarios where the agent bypassed the gateway (internal calls, scheduled tasks), an emergency policy rule (OPA / Cedar) provides another layer. This rule takes precedence over all permit rules and must be propagated to all OPA instances in &lt; 30 seconds.
+For scenarios where the agent bypassed the gateway (internal calls, scheduled tasks):
 
-### 2.5 Capability Suspension in Agent Registry
+```
+Emergency Policy Rule (OPA / Cedar)
+────────────────────────────────────
+# OPA: emergency deny for specific agent
+package emergency.overrides
 
-Suspending an agent in the central registry prevents new dispatches. All components that dispatch work to agents (Planner, Supervisor, A2A gateway) must check agent registry status before dispatching. A suspended agent receives no new tasks.
+deny[msg] {
+  input.agent_id == "billing-agent"
+  msg := "Agent billing-agent suspended - INC-8821"
+}
+
+# This rule takes precedence over all permit rules
+# Must be propagated to all OPA instances in < 30 seconds
+```
+
+**Propagation mechanism:** OPA bundle update pushed to all OPA sidecar instances via bundle server. Each sidecar polls every 5–10 seconds (configurable). Target: &lt; 30 seconds global propagation.
+
+### 3.5 Capability Suspension in Agent Registry
+
+Suspending an agent in the central registry prevents new dispatches:
+
+```json
+{
+  "agent_id": "billing-agent",
+  "status": "suspended",
+  "suspension_reason": "INC-8821: anomalous billing lookups detected",
+  "suspended_at": "2026-07-14T15:30:00Z",
+  "suspended_by": "platform-oncall@acme.com",
+  "review_scheduled": "2026-07-14T17:00:00Z"
+}
+```
+
+All components that dispatch work to agents (Planner, Supervisor, A2A gateway) must check agent registry status before dispatching. A suspended agent receives no new tasks.
 
 ---
 
-## 3. Safe Mode
+## 4. Safe Mode
 
 Safe mode is a degraded operating state that maintains basic functionality while disabling AI-powered features. It is activated when AI systems must be suspended but the underlying service must remain available.
 
@@ -128,81 +217,116 @@ Agent interprets contracts      Contract review routed to legal team
 
 ### Safe Mode Activation Playbook
 
-```mermaid
-graph TD
-    T["Trigger: Global kill switch activated"]
-    S1["Gateway switches to safe-mode ruleset"]
-    S2["UI displays safe-mode banner"]
-    S3["Work queue accumulates"]
-    S4["Communications sent"]
-    S5["AI reactivation<br/>requires: root cause + resolution<br/>requires: sign-offs<br/>requires: gradual rollout"]
-    
-    T --> S1 --> S2 --> S3 --> S4 --> S5
+```
+Trigger: Global kill switch activated for AI agents
+
+1. Gateway switches to safe-mode ruleset:
+   - All AI-agent endpoints → fallback handler
+   - Fallback handler serves static/rule-based responses
+
+2. UI displays safe-mode banner:
+   - "AI features temporarily unavailable. Using assisted mode."
+
+3. Work queue accumulates:
+   - Unprocessed AI tasks enter a durable queue
+   - Queue monitored for SLA breaches
+   - Human review team notified of queue depth
+
+4. Communications:
+   - Users notified via status page
+   - Account teams notified if enterprise customers affected
+
+5. AI reactivation:
+   - Requires: root cause identified + resolved
+   - Requires: sign-off from: Platform Lead + AI Governance + (CISO if security incident)
+   - Reactivation is gradual (canary first, then full rollout)
 ```
 
 ---
 
-## 4. Progressive Shutdown
+## 5. Progressive Shutdown
 
-Progressive shutdown reduces blast radius by stopping in a controlled sequence.
+Progressive shutdown reduces blast radius by stopping in a controlled sequence:
 
-```mermaid
-graph LR
-    S1["Step 1<br/>Feature flag<br/>disable new task acceptance<br/>Wait: 30s"]
-    S2["Step 2<br/>Gateway kill<br/>reject new requests<br/>Wait: 30s drain"]
-    S3["Step 3<br/>Cancel in-flight tasks<br/>send cancellation signal<br/>Wait: 60s"]
-    S4["Step 4<br/>Force-terminate remaining<br/>checkpoint state; kill processes<br/>Wait: 10s"]
-    S5["Step 5<br/>Suspend agent registry<br/>prevent future dispatch<br/>Immediate"]
-    S6["Step 6<br/>Revoke credentials<br/>if security incident<br/>&lt; 60s propagation"]
-    
-    S1 --> S2 --> S3 --> S4 --> S5 --> S6
+```
+Step 1: Feature flag → disable new task acceptance
+        (agent finishes current tasks; accepts no new ones)
+        Wait: 30 seconds
+
+Step 2: Gateway kill → reject new requests
+        (belt-and-suspenders; catches requests that bypassed flag check)
+        Wait: 30 seconds for drain
+
+Step 3: Cancel in-flight tasks
+        (send cancellation signal to all active task IDs)
+        Wait: 60 seconds for graceful cancellation
+
+Step 4: Force-terminate remaining tasks
+        (checkpoint state; kill processes)
+        Wait: 10 seconds
+
+Step 5: Suspend agent registry entry
+        (prevent any future dispatch)
+        Immediate
+
+Step 6: Revoke credentials (if security incident)
+        (revoke SPIFFE SVID / OAuth tokens)
+        OCSP propagation: < 60 seconds
 ```
 
-For **security incidents** (compromised agent, active data exfiltration), skip Steps 1–4 and go directly to Steps 5–6 and gateway hard block.
+For **security incidents** (compromised agent, active data exfiltration), skip Steps 1–4 and go directly to Steps 5–6 + gateway hard block.
 
 ---
 
-## 5. Remote Agent Isolation (A2A)
+## 6. Remote Agent Isolation (A2A)
 
 When a remote agent (connected via A2A) is suspected of malicious behavior or has been compromised:
 
-```mermaid
-graph LR
-    A1["Block outbound A2A<br/>to remote agent<br/>no new tasks sent"]
-    A2["Invalidate cached<br/>remote agent card<br/>local agents no longer discover"]
-    A3["Revoke trust for<br/>remote agent's certificate<br/>all in-flight responses rejected"]
-    A4["Notify remote org<br/>remote org can investigate"]
-    A5["Audit: log all recent<br/>interactions"]
-    
-    A1 --> A2 --> A3 --> A4 --> A5
+```
+LOCAL ACTION                           EFFECT
+────────────────────────────────────────────────────────
+1. Block outbound A2A to remote agent  No new tasks sent to remote agent
+   (gateway rule: drop A2A calls to
+    remote-agent-id)
+
+2. Invalidate cached remote agent card  Local agents no longer discover remote agent
+   (agent registry: mark as BLOCKED)
+
+3. Revoke trust for remote agent's     All in-flight A2A responses rejected
+   certificate/JWT issuer              (SPIFFE trust bundle updated)
+
+4. Notify remote org                   Remote org can investigate their side
+   (A2A protocol: send agent-status
+    notification)
+
+5. Audit: log all recent interactions  Compliance + forensics
+   with the remote agent
 ```
 
 ---
 
-## 6. Circuit Isolation
+## 7. Circuit Isolation
 
-Circuit isolation prevents a failing component from cascading failures to other components.
+Circuit isolation prevents a failing component from cascading failures to other components:
 
-Normal state: Agent A, B, C call Tool X (circuit: CLOSED).
-
-Tool X starts failing (&gt; 50% error rate): Circuit isolation activates.
-
-```mermaid
-graph LR
-    AA["Agent A"]
-    AB["Agent B"]
-    AC["Agent C"]
-    C["Circuit<br/>OPEN"]
-    FR["Fallback<br/>response"]
-    T["Tool X<br/>(isolated)"]
-    
-    AA --> C --> FR
-    AB --> C --> FR
-    AC --> C --> FR
-    C -.->|can recover<br/>without load| T
 ```
+Normal state:
+  Agent A ──calls──► Tool X   (circuit: CLOSED)
+  Agent B ──calls──► Tool X   (circuit: CLOSED)
+  Agent C ──calls──► Tool X   (circuit: CLOSED)
 
-After 60 seconds, a half-open probe sends a single call to test recovery.
+Tool X starts failing (> 50% error rate):
+
+Circuit isolation:
+  Agent A ──calls──► [Circuit OPEN] ──► fallback response
+  Agent B ──calls──► [Circuit OPEN] ──► fallback response
+  Agent C ──calls──► [Circuit OPEN] ──► fallback response
+
+Tool X isolated:
+  - No calls pass to Tool X
+  - Tool X can recover without load
+  - After 60s, half-open probe: single call to test recovery
+```
 
 ### Isolation Scope Matrix
 
@@ -217,26 +341,51 @@ After 60 seconds, a half-open probe sends a single call to test recovery.
 
 ---
 
-## 7. Emergency Policy Override
+## 8. Emergency Policy Override
 
-During a security incident, the normal policy evaluation may need to be bypassed for an emergency override.
+During a security incident, the normal policy evaluation may need to be bypassed for an emergency override:
 
-### 7.1 Emergency Deny Override
+### 8.1 Emergency Deny Override
 
-Supersedes all existing permit policies for the duration of the incident. Auto-expiry is mandatory: Emergency overrides must auto-expire. Indefinite emergency overrides become permanent policy by default, which is a governance failure. Default TTL: 2 hours; renewal requires explicit re-authorization.
+Supersedes all existing permit policies for the duration of the incident:
 
-### 7.2 Human Approval Override
+```python
+# Emergency override structure
+{
+    "type": "emergency_deny",
+    "scope": {
+        "agent_ids": ["billing-agent", "funds-agent"],
+        "action_classes": ["financial:write", "funds:transfer"]
+    },
+    "reason": "INC-8821: Suspected unauthorized access via prompt injection",
+    "activated_by": "security-oncall@acme.com",
+    "activated_at": "2026-07-14T15:30:00Z",
+    "valid_until": "2026-07-14T17:30:00Z",  # Auto-expires; requires renewal
+    "requires_review_by": "CISO"
+}
+```
 
-For actions that were previously automated, require human approval for the duration of the incident. Under emergency conditions, high-risk actions are routed to HITL queue, and critical actions require CISO sign-off. Automated financial actions are suspended; queued for treasury team review.
+**Auto-expiry:** Emergency overrides must auto-expire. Indefinite emergency overrides become permanent policy by default, which is a governance failure. Default TTL: 2 hours; renewal requires explicit re-authorization.
+
+### 8.2 Human Approval Override
+
+For actions that were previously automated, require human approval for the duration of the incident:
+
+```
+Under emergency conditions:
+  All agent actions class "HIGH" → route to HITL queue
+  All agent actions class "CRITICAL" → require CISO sign-off
+  Automated financial actions → suspended; queue for treasury team review
+```
 
 ---
 
-## 8. Governance Model
+## 9. Governance Model
 
-### 8.1 Authority Matrix
+### 9.1 Authority Matrix
 
 | Kill Switch Level | Minimum Authority | CISO Must Approve? | Time Limit |
-|------------------|------------------|-------------------|-----------|
+|---|---|---|---|
 | Global kill | CISO or CTO | Yes (or is activating) | 2 hours; review required |
 | Platform kill | Platform Team Lead | No (notify within 15 min) | 4 hours |
 | Tenant kill | Tenant Admin or Platform Team | No (notify within 30 min) | 8 hours |
@@ -244,27 +393,55 @@ For actions that were previously automated, require human approval for the durat
 | Tool kill | Tool Owner or On-call SRE | No | 24 hours |
 | Model kill | Platform Team Lead | No (notify within 1 hour) | 8 hours |
 | Memory disable | Platform Team or AI Governance | No | 24 hours |
-| Remote agent isolation | Security Team or On-call SRE | If cross-org: yes | 24 hours |
+| Remote agent isolation | Security Team or On-call SRE | If cross-org security incident: yes | 24 hours |
 
-### 8.2 Audit Requirements
+### 9.2 Audit Requirements
 
-Every kill switch activation must produce a mandatory audit record. The record includes: event_type, event_id, timestamp, scope, target, level, activated_by (identity, authentication_method, ip_address), reason, incident_id, propagation_confirmed_at, propagation_time_seconds, sla_met, notifications_sent, auto_expires_at.
+Every kill switch activation must produce a mandatory audit record:
 
-### 8.3 Reactivation Protocol
+```json
+{
+  "event_type": "kill_switch_activated",
+  "event_id": "ks-2026-0714-001",
+  "timestamp": "2026-07-14T15:30:00.123Z",
+  "scope": "agent",
+  "target": "billing-agent",
+  "level": "agent_kill",
+  "activated_by": {
+    "identity": "platform-oncall@acme.com",
+    "authentication_method": "OIDC + MFA",
+    "ip_address": "10.0.1.45"
+  },
+  "reason": "Anomalous billing lookup rate: 10000 lookups/min vs normal 50/min",
+  "incident_id": "INC-8821",
+  "propagation_confirmed_at": "2026-07-14T15:30:28.000Z",
+  "propagation_time_seconds": 28,
+  "sla_met": true,
+  "notifications_sent": ["platform-team@acme.com", "ai-governance@acme.com"],
+  "auto_expires_at": "2026-07-14T17:30:00Z"
+}
+```
+
+### 9.3 Reactivation Protocol
 
 Reactivation requires explicit process, not just removing the kill switch:
 
+```
 1. Root cause documented (incident ticket)
 2. Mitigation implemented (code fix, policy update, or containment measure)
 3. Testing completed (eval suite passing; chaos test of the specific failure scenario)
-4. Sign-off obtained
+4. Sign-off obtained:
+   - For security incident: CISO + Platform Lead
+   - For quality incident: AI Governance + Platform Lead
+   - For operational incident: Platform Lead + On-call SRE
 5. Canary reactivation: 5% of traffic → monitor for 30 min
 6. Full reactivation if canary passes
 7. Post-mortem completed within 24 hours of reactivation
+```
 
 ---
 
-## 9. Kill Switch Testing
+## 10. Kill Switch Testing
 
 Kill switches that are never tested will fail when needed. Test on a quarterly schedule:
 
@@ -283,12 +460,12 @@ Test results are logged and reviewed by AI Governance. Tests are not optional �
 
 ---
 
-## 10. Kill Switch Runbook
+## 11. Kill Switch Runbook
 
-### 10.1 Security Incident (Compromised Agent)
+### 11.1 Security Incident (Compromised Agent)
 
 ```
-TRIGGER: Agent exhibiting anomalous behavior (prompt injection, data exfiltration)
+TRIGGER: Agent exhibiting anomalous behavior (prompt injection, data exfiltration pattern)
 
 T+0:00  On-call SRE detects anomaly via AI SOC alert
 T+0:02  Confirm: is this a genuine compromise? (check causal trace)
@@ -296,7 +473,7 @@ T+0:05  Activate agent kill switch (gateway hard block + policy override)
 T+0:06  Confirm kill switch propagation (< 30s SLA)
 T+0:07  Notify CISO + Platform Lead
 T+0:10  Preserve forensic state (snapshot agent state, recent trace data)
-T+0:15  Identify blast radius (what data accessed? what actions taken?)
+T+0:15  Identify blast radius (what data was accessed? what actions were taken?)
 T+0:30  Notify affected tenants/users if data accessed
 T+1:00  Incident Review begins (root cause)
 T+4:00  Mitigation implemented
@@ -306,7 +483,7 @@ T+5:30  Full reactivation (if canary clean)
 T+24h   Post-mortem published
 ```
 
-### 10.2 Quality Degradation (Agent Producing Wrong Outputs)
+### 11.2 Quality Degradation (Agent Producing Wrong Outputs)
 
 ```
 TRIGGER: Judge pass rate drops below 70% (automated alert)
@@ -326,16 +503,13 @@ T+24h   Post-mortem published
 
 ---
 
-## Related
+## Further Reading
 
-- [Agentic AI Reliability, Observability and Governance](43-agentic-ai-reliability-observability-governance.md) — circuit breaker and kill switch patterns
-- [Agent Reliability Engineering](42-agent-reliability-engineering.md) — chaos testing kill switches; incident runbooks
+- [Agentic AI Reliability, Observability & Governance §4.3](43-agentic-ai-reliability-observability-governance.md) — circuit breaker and kill switch patterns
+- [Agent Reliability Engineering §5 & §6](42-agent-reliability-engineering.md) — chaos testing kill switches; incident runbooks
 - [Governance Propagation Chain](55-governance-propagation-chain.md) — emergency policy override architecture
-- [End-to-End Traceability Guide](pathname:///archon/architecture/end-to-end-traceability-guide) — forensic investigation after kill switch activation
+- [End-to-End Traceability Guide](46-end-to-end-traceability-guide.md) — forensic investigation after kill switch activation
 - [Drift Detection Guide](45-drift-detection-guide.md) — detecting quality degradation that triggers kill switches
 - [AIDR: AI Detection and Response](pathname:///archon/trust/ai-security-governance/aidr-ai-detection-response-complete-guide) — SOC response when kill switch is triggered
 - [AI SOC](pathname:///archon/trust/ai-security-governance/ai-soc) — AI security operations
 - [AI TRiSM Complete Guide](pathname:///archon/trust/ai-security-governance/ai-trism-complete-guide) — trust, risk, and security management
-
-## Sources
-

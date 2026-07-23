@@ -9,8 +9,15 @@ maturity: practitioner
 personas: [architect, platform-engineer, cto]
 last_reviewed: 2026-07-19
 covers_version: "as of 2026-07-10"
-supersedes: ["docs/enterprise-architecture/ai-architecture/enterprise-multi-model-ai-strategy.md"]
-tags: ["enterprise-architecture", "ai-architecture", "multi-model", "vendor-agnostic", "llm-strategy", "model-selection"]
+supersedes:
+  - docs/enterprise-architecture/ai-architecture/enterprise-multi-model-ai-strategy.md
+tags:
+  - enterprise-architecture
+  - ai-architecture
+  - multi-model
+  - vendor-agnostic
+  - llm-strategy
+  - model-selection
 sources: []
 ---
 
@@ -26,7 +33,7 @@ This is **Part 1 of 3** of the definitive enterprise reference for selecting, ro
 
 **What this guide covers (Parts 1–3):** Model landscape, capability matrices, decision frameworks, routing architectures, open-source strategy, evaluation, cost optimisation, governance, security, vendor lock-in prevention, model registry design, and 2026–2030 trends.
 
-**What it does NOT duplicate:** Claude-specific pricing → [Claude Models 2026](pathname://docs/agentic-systems/coding-tools/35-claude-models-2026.md) | AI gateway implementation → [Kong AI Gateway Guide](pathname://docs/platforms/08-kong-ai-gateway-guide.md) | Architecture patterns → [Enterprise AI Architecture Patterns](pathname://docs/architecture/49-enterprise-ai-architecture-patterns.md) | Governance rules → [Enterprise AI Governance &amp; Compliance](pathname://docs/architecture/51-enterprise-ai-governance-compliance.md) | Role fundamentals → [Enterprise AI Architect Foundations](pathname://docs/architecture/48-enterprise-ai-architect-foundations.md)
+**What it does NOT duplicate:** Claude-specific pricing → [Claude Models 2026](pathname:///archon/agentic-systems/coding-tools/claude-models-2026) | AI gateway implementation → [Kong AI Gateway Guide](pathname:///archon/platforms/kong-ai-gateway-guide) | Architecture patterns → [Enterprise AI Architecture Patterns](49-enterprise-ai-architecture-patterns.md) | Governance rules → [Enterprise AI Governance & Compliance](51-enterprise-ai-governance-compliance.md) | Role fundamentals → [Enterprise AI Architect Foundations](48-enterprise-ai-architect-foundations.md)
 
 ---
 
@@ -66,40 +73,37 @@ Standardising on one foundation model is superficially appealing — simpler ope
 
 ### 1.2 Business Case for Multi-Model
 
-```mermaid
-graph TB
-    subgraph Single["SINGLE-MODEL RISK SURFACE"]
-        PS["Price shock"]
-        CD["Competitive disadvantage"]
-        MSL["Model-specific limitations"]
-        PS --> CENTER["YOUR ENTIRE AI PLATFORM<br/>(one provider)"]
-        CD --> CENTER
-        MSL --> CENTER
-        CENTER --> OR["Outage risk"]
-        CENTER --> RR["Regulatory risk"]
-        CENTER --> LC["Lock-in cost"]
-    end
-    
-    subgraph Multi["MULTI-MODEL RISK DISTRIBUTION"]
-        TA["Task A<br/>(reasoning)"]
-        TB["Task B<br/>(code gen)"]
-        TC["Task C<br/>(vision)"]
-        TA --> C["Claude"]
-        TB --> G["Codex/GPT"]
-        TC --> GEM["Gemini"]
-        TC --> LL["Local Llama"]
-        C --> GW["AI GATEWAY<br/>(abstraction layer)"]
-        G --> GW
-        GEM --> GW
-        LL --> GW
-        GW --> APP["YOUR APPLICATIONS"]
-    end
-    
-    style CENTER fill:#ffcccc
-    style GW fill:#ccffcc
-```
+<!-- TODO(diagram): SINGLE-MODEL RISK SURFACE showing risks concentrating at one provider vs MULTI-MODEL RISK DISTRIBUTION across specialised providers with AI gateway abstraction layer -->
 
-**Caption:** Single-model architectures concentrate risk at one provider. Multi-model strategies distribute workloads across specialised providers with a gateway abstraction layer, reducing availability and cost risk.
+```
+SINGLE-MODEL RISK SURFACE
+
+                    Competitive         Model-specific
+Price shock         disadvantage         limitations
+    │                   │                    │
+    ▼                   ▼                    ▼
+┌───────────────────────────────────────────────────┐
+│             YOUR ENTIRE AI PLATFORM               │
+│                 (one provider)                    │
+└───────────────────────────────────────────────────┘
+    ▲                   ▲                    ▲
+    │                   │                    │
+Outage risk       Regulatory risk       Lock-in cost
+
+MULTI-MODEL RISK DISTRIBUTION
+
+  Task A          Task B              Task C
+(reasoning)    (code gen)          (vision)
+    │               │                   │
+    ▼               ▼                   ▼
+[Claude]        [Codex/GPT]         [Gemini]   [Local Llama]
+    │               │                   │            │
+    └───────────────┴───────────────────┴────────────┘
+                  AI GATEWAY
+                (abstraction layer)
+                       │
+              YOUR APPLICATIONS
+```
 
 ### 1.3 Multi-Model Enables Specialisation
 
@@ -132,54 +136,43 @@ Different models have genuinely different capability profiles — not just marke
 
 ### 2.1 Decision Guide
 
-```mermaid
-flowchart TD
-    Start["Start here:<br/>What is your primary AI risk?"]
-    
-    Cost["Cost / budget?"]
-    Vendor["Vendor reliability /<br/>outage?"]
-    Regulatory["Regulatory /<br/>data sovereignty?"]
-    Performance["Best task<br/>performance?"]
-    Overhead["Low operational<br/>overhead above all?"]
-    
-    Start --> Cost
-    Start --> Vendor
-    Start --> Regulatory
-    Start --> Performance
-    Start --> Overhead
-    
-    Cost -->|Yes| CostSolution["Multi-model with routing<br/>40–70% cost savings"]
-    Vendor -->|Yes| VendorSolution["Multi-model with failover<br/>99.9%+ AI availability"]
-    Regulatory -->|Yes| RegSolution["Hybrid<br/>commercial + on-premise OSS"]
-    Performance -->|Yes| PerfSolution["Multi-model with task-routing"]
-    Overhead -->|Yes| OverheadSolution["Single-model<br/>accept the trade-offs"]
 ```
+Start here: What is your primary AI risk?
 
-**Caption:** Decision tree for initial multi-model strategy selection based on primary organizational risk.
+    ├── Cost / budget?
+    │       └── Multi-model with routing → 40–70% cost savings
+    │
+    ├── Vendor reliability / outage?
+    │       └── Multi-model with failover → 99.9%+ AI availability
+    │
+    ├── Regulatory / data sovereignty?
+    │       └── Hybrid (commercial + on-premise open-source)
+    │
+    ├── Best task performance?
+    │       └── Multi-model with task-routing
+    │
+    └── Low operational overhead above all?
+            └── Single-model (accept the trade-offs)
+```
 
 ### 2.2 The Hybrid Strategy (Recommended Default)
 
 Most enterprises land on a hybrid: **one or two commercial providers plus one self-hosted open-source tier**, connected through an AI gateway abstraction layer.
 
-```mermaid
-graph TB
-    GW["AI GATEWAY LAYER<br/>(LiteLLM / Kong AI / Custom SDK)"]
-    
-    T1["TIER 1: Premium<br/>Claude Fable, GPT-4o<br/>Complex tasks<br/>~$5–50/MTok"]
-    T2["TIER 2: Mid-tier<br/>Haiku 4.5, Gemini Flash<br/>Standard tasks<br/>~$0.10–1/MTok"]
-    T3["TIER 3: Self-hosted<br/>Llama 3.3 70B, Mistral 7B<br/>High-volume / air-gap<br/>~$0.003/MTok GPU cost"]
-    
-    GW --> T1
-    GW --> T2
-    GW --> T3
-    
-    style GW fill:#e1f5ff
-    style T1 fill:#fff3e0
-    style T2 fill:#f3e5f5
-    style T3 fill:#e8f5e9
 ```
-
-**Caption:** Recommended three-tier hybrid architecture connecting commercial and self-hosted providers through a unified gateway.
+┌─────────────────────────────────────────────────────────┐
+│                    AI GATEWAY LAYER                     │
+│           (LiteLLM / Kong AI / Custom SDK)              │
+└───────┬───────────────┬─────────────────┬───────────────┘
+        │               │                 │
+        ▼               ▼                 ▼
+   TIER 1:         TIER 2:          TIER 3:
+   Premium         Mid-tier         Self-hosted
+   (Claude Fable,  (Haiku 4.5,      (Llama 3.3 70B,
+    GPT-4o)         Gemini Flash)    Mistral 7B)
+   Complex tasks   Standard tasks   High-volume / air-gap
+   ~$5–50/MTok     ~$0.10–1/MTok    ~$0.003/MTok (GPU cost)
+```
 
 ---
 
@@ -445,15 +438,136 @@ Scale: ✦✦✦✦✦ = industry-leading | ✦✦✦ = competitive | ✦ = limi
 | **Enterprise API maturity** | ✦✦✦✦✦ | ✦✦✦✦✦ | ✦✦✦✦ | ✦✦✦ | ✦✦✦✦ | ✦✦ | ✦✦ |
 | **Safety / harm avoidance** | ✦✦✦✦✦ | ✦✦✦✦ | ✦✦✦✦ | ✦✦✦ | ✦✦✦ | ✦✦ | ✦✦ |
 
-&gt; **Important note on matrices:** These ratings reflect the general consensus of independent benchmarks and practitioner community as of Q3 2026. Individual task performance can vary significantly from these generalised scores. Always run task-specific evaluations before committing a model to a production use case.
+**Important note on matrices:** These ratings reflect the general consensus of independent benchmarks and practitioner community as of Q3 2026. Individual task performance can vary significantly from these generalised scores. Always run task-specific evaluations before committing a model to a production use case.
+
+---
+
+## Part III — Technical Comparison
+
+## 6. Claude vs GPT vs Gemini vs Open Source — Technical Comparison
+
+### 6.1 Instruction Following
+
+**Claude (Anthropic)** is designed from the ground up around detailed instruction following. Constitutional AI training means Claude rarely ignores explicit constraints in system prompts. Particularly reliable for: multi-constraint tasks, persona adherence, structured format compliance.
+
+**GPT-4o (OpenAI)** shows strong instruction following but with higher variance on complex multi-constraint prompts. Some practitioners report more "creative interpretation" of instructions than Anthropic models.
+
+**Gemini 2.5 Pro** has improved substantially in 2026 but historically showed more hallucinations on specific constraint adherence. Strongest at factual task following; weaker on nuanced persona or style constraints.
+
+**Llama 3.3 70B (self-hosted)** performance on instruction following depends heavily on the RLHF tuning variant used. Meta's base Instruct models are competitive; community fine-tunes vary widely.
+
+**Verdict:** Claude > GPT-4o > Gemini > Open-source (varies) for strict instruction adherence.
+
+### 6.2 Reasoning Depth and Chain-of-Thought
+
+| Model | Reasoning mode | GPQA Diamond | MATH-500 | ARC-Challenge |
+| --- | --- | --- | --- | --- |
+| Claude Fable 5 (extended thinking) | Extended thinking | ~83% | ~96% | ~98% |
+| GPT-4o (with o3) | System 2 reasoning | ~87% | ~97% | ~98% |
+| Gemini 2.5 Pro | Thinking mode | ~84% | ~97% | ~98% |
+| DeepSeek-R1 | Chain-of-thought | ~79% | ~97% | ~96% |
+| Llama 3.1 405B | Standard CoT | ~50% | ~73% | ~88% |
+| Llama 3.3 70B | Standard CoT | ~46% | ~68% | ~84% |
+
+*Source: public benchmark leaderboards (MMLU Pro, LiveBench, GPQA); verify against current evaluations at publication date.*
+
+**Extended thinking / reasoning mode:** All frontier commercial models now have a "reasoning" or "thinking" mode that uses explicit chain-of-thought before generating. DeepSeek-R1 is the leading open-source reasoning model. These modes increase latency (5–30s) and cost (2–5× token usage) substantially — use only for tasks that demonstrably benefit.
+
+### 6.3 Hallucination and Factual Accuracy
+
+Hallucination rates are task-dependent. General patterns from practitioner research:
+
+- **Grounded (RAG) tasks:** All frontier models perform similarly when grounding context is provided. The differentiator is *faithfulness* — how well the model stays within provided context vs. adding ungrounded facts.
+- **Open-domain factual:** Gemini with Search grounding leads (real-time knowledge); Claude and GPT-4o are strong but have knowledge cutoffs.
+- **Long-context faithfulness:** Claude Fable 5 and Gemini 2.5 Pro maintain higher faithfulness over 500K+ token contexts than GPT-4o (128K limit creates truncation risk).
+- **Open-source:** Generally higher hallucination rates without careful prompt engineering; quantised models show further degradation.
+
+### 6.4 Tool Use and Function Calling
+
+**Claude** uses XML-tagged tool call format and has the most reliable structured tool use in multi-step agent tasks. Claude Agent SDK enables complex tool orchestration patterns.
+
+**GPT-4o** established the de-facto JSON schema function-calling API that most frameworks (LangChain, AutoGen) use as their interface contract. Most ecosystem tooling works natively with OpenAI schema.
+
+**Gemini** supports function calling with JSON schema; supports Google Search grounding as a native tool.
+
+**Open-source models:** Tool calling quality varies significantly. Mistral Large 2 and Llama 3.1+ have explicit fine-tuning for function calling. Smaller models (&lt;13B) struggle with complex nested tool schemas.
+
+**Recommendation:** For multi-step agents, prefer Claude or GPT-4o. For tool-calling in constrained pipelines, test any open-source model specifically on your tool schema before committing.
+
+### 6.5 Coding Capabilities
+
+| Benchmark | GPT-4o | Claude Fable 5 | Gemini 2.5 Pro | DeepSeek-V3 | Qwen2.5-Coder 32B |
+| --- | --- | --- | --- | --- | --- |
+| HumanEval | ~90% | ~88% | ~91% | ~90% | ~92% |
+| SWE-Bench Verified | ~49% | ~49% | ~63% | ~47% | ~37% |
+| BigCodeBench | ~63% | ~64% | ~68% | ~66% | ~65% |
+
+*Note: SWE-Bench Verified reflects real-world repository issue resolution. These figures change rapidly; check [SWE-bench.com](https://www.swebench.com) for current standings.*
+
+**Key insight:** Gemini 2.5 Pro leads on SWE-Bench (full repository context + multi-file changes). GPT-4o and Claude are competitive across benchmarks. Open-source models like DeepSeek-Coder and Qwen-Coder approach commercial quality for specific coding tasks at a fraction of the cost.
+
+### 6.6 Cost Profile Comparison
+
+```
+COST PER 1,000 REQUESTS (typical enterprise workload: 500 input / 500 output tokens)
+
+Ultra premium tier:
+  Claude Fable 5:     ~$30.00
+  GPT-4o:             ~$6.25
+
+Standard production tier:
+  Claude Sonnet 5:    ~$6.00
+  Gemini 2.5 Pro:     ~$5.63
+  GPT-4o mini:        ~$0.38
+
+Efficient tier:
+  Claude Haiku 4.5:   ~$3.00
+  Gemini 2.0 Flash:   ~$0.25
+  Amazon Nova Lite:   ~$0.15
+
+Self-hosted (GPU cost):
+  Llama 3.3 70B:      ~$0.003 (H100 rental, no idle cost)
+  Mistral 7B:         ~$0.001 (A10G rental)
+```
+
+### 6.7 Context Window Strategy by Provider
+
+| Provider / Model | Max Context | Practical Limit | Notes |
+| --- | --- | --- | --- |
+| Claude Fable 5 | 1M tokens | ~900K reliable | Best-in-class faithfulness at long context |
+| Gemini 2.5 Pro | 1M tokens | ~800K reliable | Strong; some loss-in-the-middle reported |
+| GPT-4o | 128K tokens | ~100K reliable | Hard limit forces chunking for long docs |
+| Amazon Nova Pro | 300K tokens | ~250K reliable | AWS-native; good for document batches |
+| Llama 3.1 405B | 128K tokens | ~100K reliable | Self-hosted; context management critical |
+
+### 6.8 Determinism and Consistency
+
+No frontier model is fully deterministic. Temperature=0 reduces but does not eliminate output variation across providers:
+
+- Claude: temperature=0 is more consistent than most; recommended for structured extraction
+- GPT-4o: seed parameter available for reproducibility (best-effort)
+- Gemini: temperature=0 available; less consistent than Claude in practitioner testing
+- Open-source: temperature=0 is effective; same weights = more reproducible
+
+**Design implication:** Never assume AI outputs are idempotent. Build evaluation harnesses that can tolerate non-deterministic responses.
+
+---
+
+## Part IV — Decision Frameworks
+
+## 7. Enterprise Model Decision Tree
+
+### 7.1 Primary Routing Decision Tree
+
+<!-- TODO(diagram): Enterprise model selection decision tree starting from "Can data leave the org?" with branches for self-hosted vs commercial, then context requirements, then cost sensitivity, then task type -->
 
 ---
 
 ## Related
 
 - [Enterprise AI Architecture Patterns](49-enterprise-ai-architecture-patterns.md) — Canonical patterns for routing, caching, evaluation pipelines
-- [Enterprise AI Architect Foundations](pathname:///archon/architecture/enterprise-ai-architect-foundations) — Role definition, token economics, integration patterns
-- [Kong AI Gateway Guide](pathname://docs/platforms/08-kong-ai-gateway-guide.md) — Implementation details for AI gateway layer
+- [Enterprise AI Architect Foundations](48-enterprise-ai-architect-foundations.md) — Role definition, token economics, integration patterns
+- [Kong AI Gateway Guide](pathname:///archon/platforms/kong-ai-gateway-guide) — Implementation details for AI gateway layer
 - Part 2: [Enterprise Multi-Model AI Strategy (Part 2): Technical Comparison, Decision Frameworks & Architecture](pathname:///archon/architecture/parts/enterprise-multi-model-ai-strategy-part2)
 - Part 3: [Enterprise Multi-Model AI Strategy (Part 3): Operations, Governance & Future Trends](pathname:///archon/architecture/parts/enterprise-multi-model-ai-strategy-part3)
 

@@ -1,306 +1,598 @@
 ---
-title: "Transformer Concepts: Deep Internals"
-doc_type: guide
-domain: architecture
+title: 'Transformer Concepts: Deep Internals'
+date_created: 2026-07-17
+last_reviewed: 2026-07-17
 status: current
-canonical: true
+source_type: converted-html
+doc_type: reference-architecture
+domain: architecture
 topic_id: transformer-concepts-deep
 maturity: expert
-personas: [ml-engineer, research-engineer, architect]
-last_reviewed: 2026-07-19
-covers_version: "2026"
+personas: [architect, research-engineer, ml-engineer]
+tags: [transformers, llm, ai-foundations, deep-dive]
 supersedes: [docs/ai-foundations/transformer_concepts_deep.md]
-tags: [transformers, llm, deep-dive, internals, concepts]
-sources: []
+covers_version: "2026"
 ---
 
 # Transformer Concepts: Deep Internals
 
-Transformer mechanics—self-attention, Q/K/V, RoPE, MoE routing, total vs. active parameters—with intuition at every step.
+Not model comparisons. Not benchmarks. The real mechanics — self-attention, Q/K/V, RoPE, MoE routing, and exactly what "total vs. active parameters" means — with interactive examples at every step.
 
-## Why This Matters
+## TOKENIZATION
 
-Production agent systems require understanding what's happening under the hood. Why does context length matter? What limits inference speed? How do Mixture-of-Experts actually work? These questions have concrete answers that drive architecture decisions.
+Before a transformer sees a single letter, text is converted to integers. A **tokenizer** is a fixed lookup table (built before training) that maps subword pieces to IDs. The model never sees characters — only numbers.
 
----
+### Example: BPE Tokenization
 
-## 1. TOKENIZATION
+Input sentence: `"The cat sat on the mat"`
 
-Before a transformer sees a single letter, text is converted to integers. A **tokenizer** is a fixed lookup table mapping subword pieces to IDs. The model never sees characters—only numbers.
+CHARACTERS → SUBWORDS (BPE)
 
-### Example: Byte-Pair Encoding (BPE)
+The ▁cat ▁sat ▁on ▁the ▁mat
 
-Input: `"The cat sat on the mat"`
+SUBWORDS → INTEGER IDs (LLaMA 3 vocab)
 
-**CHARACTERS → SUBWORDS (BPE)**
-- The, cat, sat, on, the, mat
+The → 791 cat → 8415 sat → 7731 on → 389 the → 279 mat → 14679
 
-**SUBWORDS → INTEGER IDs (LLaMA 3 vocab)**
-- The→791, cat→8415, sat→7731, on→389, the→279, mat→14679
+Why subwords, not words?
 
-**Why subwords, not words?**
+"Unbelievable" becomes ["un", "believ", "able"] — the model handles unseen words by composing seen pieces. A word-level vocab of 500K+ is impractical; BPE with 32K–128K tokens covers virtually all text with manageable embedding tables.
 
-"Unbelievable" becomes ["un", "believ", "able"]. The model handles unseen words by composing seen pieces. A word-level vocab of 500K+ is impractical; BPE with 32K–128K tokens covers virtually all text with manageable embedding tables.
+The output of tokenization is a sequence of integers: `[791, 8415, 7731, 389, 279, 14679]`. This integer sequence is the only input to the transformer. Everything else — meaning, grammar, world knowledge — must be learned from predicting what comes next.
 
-**Key Insight:** The output of tokenization is a sequence of integers: `[791, 8415, 7731, 389, 279, 14679]`. This integer sequence is the only input to the transformer. Everything else—meaning, grammar, world knowledge—must be learned from predicting what comes next.
+## TOKEN EMBEDDINGS
 
----
-
-## 2. TOKEN EMBEDDINGS
-
-An integer like `8415` carries no mathematical meaning—you can't do algebra on it. An **embedding layer** maps each integer to a high-dimensional vector of floats (typically 4096 or 8192 dimensions). This lookup table has one row per vocabulary token.
+An integer like `8415` carries no mathematical meaning — you can't do algebra on it. An **embedding layer** maps each integer to a high-dimensional vector of floats (typically 4096 or 8192 dimensions). This lookup table has one row per vocabulary token and is _learned during training_.
 
 ### Embedding as Lookup Table
 
-Each token gets its own row in embedding matrix `E ∈ ℝ^(vocab_size × d_model)`. Token 791 ("The") maps to a vector of 4096 floats.
+E ∈ ℝ^(vocab_size × d_model)
 
-### What Geometry Encodes
+token 0:
 
-After training, semantically similar tokens occupy nearby regions in this space.
+0.2
 
-**Famous example:**
-```
-E[king] − E[man] + E[woman] ≈ nearest neighbor to E[queen]
-```
+−.1
 
-This isn't magic—it emerges from predicting next tokens across billions of documents. The model that predicts "king wore a crown" must also predict "queen wore a crown", so their vectors necessarily capture shared "royalty" dimension.
+0.8
 
-### Critical Insight
+... 4093 more
 
-Each token in the sequence gets its own vector. A 6-token sentence produces a matrix of shape `[6 × 4096]`. This matrix is the raw input to the transformer stack. The transformer's job is to iteratively refine these vectors so that by the output layer, each vector encodes not just "what is this token" but "what does this token mean in this specific context."
+token 791 →
 
----
+0.7
 
-## 3. SELF-ATTENTION
+0.3
 
-Self-attention answers: **for each token, how much should it pay attention to every other token?** Unlike CNNs (fixed local window) or RNNs (sequential), attention computes pairwise relationships between *all* tokens simultaneously.
+−.4
 
-**Key intuition:** The meaning of "bank" in "river bank" vs. "bank account" is determined by surrounding words. Attention lets the model dynamically decide which surrounding words matter and how much.
+... 4093 more
 
-### What "Attending" Means Computationally
+...
 
-When token A "attends to" token B with weight 0.6, the output representation of A is 60% influenced by B's value vector. The model learns which tokens are useful context for which other tokens—through gradient descent on next-token prediction.
+#### What Geometry Encodes
 
-### Scaled Dot-Product Attention
+After training, semantically similar tokens occupy nearby regions in this space. The famous example:
 
-**Formula:** `Attention(Q, K, V) = softmax(Q · K^T / √d_k) · V`
+E[king] − E[man] + E[woman]
 
-The scaling by √d_k (typically √128=11.3) prevents extremely small gradients. Without it, training becomes unstable.
+≈ nearest neighbor to
 
----
+E[queen]
 
-## 4. QUERIES, KEYS & VALUES
+This isn't magic — it emerges from predicting next tokens across billions of documents. The model that predicts "king wore a crown" must also predict "queen wore a crown", so their vectors necessarily capture the shared "royalty" dimension.
 
-The brilliant insight of attention is splitting each token's representation into three roles. Think of a **library database search**:
+Critical Insight
 
-**Q — Query:** "What am I looking for?" Each token produces a Query vector representing what information it needs from context. Query = `x · W_Q` where W_Q is a learned weight matrix.
+Each token in the sequence gets its own vector from this table. A 6-token sentence produces a matrix of shape `[6 × 4096]`. This matrix is the raw input to the transformer stack — the transformer's job is to iteratively refine these vectors so that by the output layer, each vector encodes not just "what is this token" but "what does this token mean in this specific context."
 
-**K — Key:** "What information do I have?" Each token produces a Key vector describing what information it contains. Keys are matched against Queries via dot product to compute compatibility.
+## SELF-ATTENTION
 
-**V — Value:** "What do I actually contribute?" Each token produces a Value vector—the actual content that gets mixed into the output. Once the model decides which tokens matter, the Value is what flows into the output.
+Self-attention answers one question: **for each token, how much should it pay attention to every other token?** Unlike a CNN (fixed local window) or RNN (sequential, one step at a time), attention computes pairwise relationships between _all_ tokens simultaneously.
 
-**Formula:** `Attention output = weighted sum of all Values, where weights come from Q·K compatibility`
+The key intuition: the meaning of "bank" in "river bank" vs. "bank account" is determined by surrounding words. Attention lets the model dynamically decide which surrounding words matter and how much.
 
-### Intuitive Example: "The cat sat"
+↓ CLICK A WORD TO SEE WHAT IT ATTENDS TO ↓
 
-Token "sat" produces a Query that asks: "Which tokens help me understand what happened?" The Key of "cat" advertises: "I'm a noun, a concrete entity." The softmax similarity between sat's Query and cat's Key is high. The Value of "cat" then influences sat's refined representation.
+What "attending" means computationally
 
----
+When token A "attends to" token B with weight 0.6, the output representation of A is 60% influenced by B's value vector. The model learns which tokens are useful context for which other tokens — not through rules, but through gradient descent on next-token prediction.
 
-## 5. MULTI-HEAD ATTENTION
+## QUERIES, KEYS & VALUES
 
-One attention head can only learn one type of relationship pattern. **Multi-head attention** runs H independent attention operations in parallel, each with its own W_Q, W_K, W_V matrices. Results concatenated and projected back.
+The brilliant insight of attention is splitting each token's representation into three distinct roles. Think of it like a **library database search** :
+
+### Q — Query
+
+### "What am I looking for?"
+
+Each token produces a Query vector representing what information it needs from the context. "The word 'it' needs to find its antecedent noun."
+
+Query = `x · W_Q` where W_Q is a learned weight matrix.
+
+Shape: [seq_len × d_k] where d_k = d_model / num_heads
+
+#### K — Key
+
+### "What information do I have?"
+
+Each token produces a Key vector describing what information it contains or offers. "The word 'cat' advertises: I am a concrete noun, an animal, a subject."
+
+Key = `x · W_K` — a different learned projection.
+
+Keys are matched against Queries via dot product to compute compatibility.
+
+#### V — Value
+
+### "What do I actually contribute?"
+
+Each token produces a Value vector — the actual content that gets mixed into the output. "Once the model decides 'it' refers to 'cat', the cat's Value is what flows into 'it's' new representation."
+
+Value = `x · W_V`
+
+Attention output = weighted sum of all Values, where weights come from Q·K compatibility.
+
+Scaled Dot-Product Attention
+
+Attention(Q, K, V) = softmax( Q · Kᵀ / √d_k ) · V
+
+Q ∈ ℝ^(n×dₖ)  |  K ∈ ℝ^(n×dₖ)  |  V ∈ ℝ^(n×dᵥ)  |  √dₖ = scaling factor 
+
+EXAMPLE: "THE CAT SAT" → Q, K, V PROJECTIONS (simplified d_k=6)
+
+TOKEN
+
+Query (Q)
+
+Key (K)
+
+Value (V)
+
+The
+
+0.3
+
+-0.1
+
+0.7
+
+0.2
+
+-0.4
+
+0.5
+
+0.1
+
+0.4
+
+-0.2
+
+0.6
+
+0.1
+
+-0.3
+
+0.5
+
+0.1
+
+0.2
+
+-0.1
+
+0.4
+
+0.3
+
+cat
+
+-0.2
+
+0.8
+
+0.1
+
+-0.3
+
+0.6
+
+0.1
+
+0.7
+
+-0.1
+
+0.4
+
+0.2
+
+-0.5
+
+0.3
+
+-0.1
+
+0.7
+
+0.4
+
+0.2
+
+-0.3
+
+0.5
+
+sat
+
+0.6
+
+0.2
+
+-0.4
+
+0.5
+
+0.1
+
+-0.2
+
+-0.3
+
+0.5
+
+0.1
+
+-0.4
+
+0.6
+
+0.2
+
+0.2
+
+-0.3
+
+0.6
+
+0.4
+
+0.1
+
+-0.2
+
+ATTENTION SCORE: Q(sat) · K(cat)ᵀ / √6 — HOW MUCH "SAT" LOOKS AT "CAT"
+
+= (0.6×0.7) + (0.2×−0.1) + (−0.4×0.4) + (0.5×0.2) + (0.1×−0.5) + (−0.2×0.3) 
+
+= 0.42 − 0.02 − 0.16 + 0.10 − 0.05 − 0.06
+
+= 0.23 → divide by √6 (2.449) → 0.094 → softmax → attention weight
+
+Why scale by √d_k?
+
+For large d_k (say 128), dot products grow large in magnitude, pushing softmax into regions with extremely small gradients. Dividing by √d_k keeps values in a stable range regardless of model dimension. Without this, training becomes unstable and the model learns poorly.
+
+## MULTI-HEAD ATTENTION
+
+One attention head can only learn one type of relationship pattern at a time. **Multi-head attention** runs H independent attention operations in parallel, each with its own W_Q, W_K, W_V matrices. The results are concatenated and projected back.
 
 ### Example: 4 Heads on "The cat that the dog chased finally ran away"
 
-**HEAD 1 — SUBJECT-VERB AGREEMENT**
-- "ran" attends strongly to "cat" (grammatical subject), skipping "dog" even though syntactically closer. This head learned subject tracking across clauses.
+HEAD 1 — SUBJECT-VERB AGREEMENT
 
-**HEAD 2 — COREFERENCE**
-- "it" (if present) would attend to "cat" as antecedent. This head specializes in pronoun-entity linkage.
+"ran" attends strongly to "cat" (the grammatical subject), skipping "dog" even though dog is syntactically closer. This head learned to track subject across intervening clauses.
 
-**HEAD 3 — SYNTACTIC DEPENDENCY**
-- "chased" attends to "dog" (subject) and "cat" (object). Encodes event participants.
+HEAD 2 — COREFERENCE
 
-**HEAD 4 — LOCAL CONTEXT**
-- "finally" attends locally to neighboring words for adverbial modification.
+"it" (if present) would strongly attend to "cat" as its antecedent. This head specializes in resolving pronoun-to-entity linkage across distances.
 
-**Formula:** `MultiHead(Q,K,V) = Concat(head_1, ..., head_h) · W^O`
+HEAD 3 — SYNTACTIC DEPENDENCY
 
----
+"chased" strongly attends to "dog" (its subject) and "cat" (its object). This head encodes the chase-event's participant roles.
 
-## 6. FEED-FORWARD NETWORK
+HEAD 4 — LOCAL CONTEXT
 
-After attention mixes information across positions, a position-wise FFN processes each token independently.
+"finally" attends locally to neighboring words for adverbial modification. Some heads specialize in short-range positional patterns.
 
-**Key insight:** Attention handles *communication between tokens*. FFN handles *per-token computation*. This is where the model stores factual associations.
+Multi-Head Attention Formula
 
-### FFN as Key-Value Memory Store
+MultiHead(Q,K,V) = Concat(head₁, ..., headₕ) · W^O
 
-Research (Geva et al., 2021) showed FFN neurons behave like memory cells. The first weight matrix (W_1) acts as **keys**—detecting patterns like "this position contains a European capital city name". The second matrix (W_2) acts as **values**—contributing associated knowledge like "→ is located in Europe, has a parliament, uses Euro".
+where headᵢ = Attention(Q·W^Q_i, K·W^K_i, V·W^V_i)
 
-**Standard FFN (ReLU):**
-```
-FFN(x) = ReLU(x · W_1 + b_1) · W_2 + b_2
-d_ff = 4 × d_model (typical)
-```
+After concatenation, a final linear projection W^O mixes information across all heads. The output shape is identical to the input: `[seq_len × d_model]` — the heads work in parallel and their outputs are integrated seamlessly.
 
-**SwiGLU (LLaMA 3, Mistral):**
-```
-FFN_SwiGLU(x) = (x·W_1 ⊗ SiLU(x·W_3)) · W_2
-⊗ = elementwise multiply
-SiLU(x) = x · σ(x) (smooth, differentiable gate)
-Requires 3 matrices instead of 2
-```
+#### MHA — Full Multi-Head
 
-### Why SwiGLU &gt; ReLU
+H heads, each with independent W_Q, W_K, W_V. Dimension per head = d_model / H. For GPT-3 (d=12288, H=96): each head has d_k = 128.
 
-**ReLU** kills all negative activations (hard zero). **SiLU** allows small negatives through smoothly. The **gating** (multiplication by sigmoid) creates a soft information gate—neurons learn "pass through only if input matches pattern X AND pattern Y."
+**KV Cache size:** For each head, per token, store a K and V vector of size d_k. Total: `H × seq_len × d_k × 2`
 
-In practice, SwiGLU models achieve the same loss with fewer training steps.
+#### GQA — Grouped Query Attention
 
----
+Multiple Query heads share one K, V pair per group. If 32 Q heads share 8 KV groups, each group covers 4 Q heads. Same computation for Q, but 4× less KV cache memory.
 
-## 7. POSITIONAL ENCODING
+**Why it matters:** KV cache is the bottleneck for long sequences. GQA makes 128K context practical on 80GB GPUs.
 
-Transformers are **permutation invariant**—without positional information, "cat bites dog" and "dog bites cat" produce identical attention patterns. Positional encodings inject order into an architecture that otherwise has none.
+## FEED-FORWARD NETWORK
 
-### Three Approaches
+After attention mixes information across positions, a position-wise FFN processes each token independently. This is crucial: attention handles _communication between tokens_ ; FFN handles _per-token computation_. It's where the model stores factual associations.
 
-**1. Sinusoidal (2017):** Fixed, non-learned vectors added to embeddings: `PE(pos, 2i) = sin(pos / 10000^(2i/d))`
-- Works but can't extrapolate—model struggles with sequences longer than training.
+### FFN as a Key-Value Memory Store
 
-**2. Learned Absolute (GPT-1, GPT-2):** Each position gets a trainable embedding vector.
-- Simple, but hard limit at max training length (e.g., 2048 tokens). Position 2049 has no embedding—model breaks completely.
+Research (Geva et al., 2021) showed FFN neurons behave like memory cells. The first weight matrix (W₁) acts as **keys** — detecting patterns like "this position contains a European capital city name". The second matrix (W₂) acts as **values** — contributing the associated knowledge like "→ is located in Europe, has a parliament, uses Euro...".
 
-**3. RoPE — Rotary Position Embedding (now standard):** Instead of adding positional vectors to embeddings, RoPE **rotates** Q and K vectors by angles that depend on position.
+Standard FFN (ReLU)
 
-**RoPE Core Idea:**
-```
-Q_pos = R_θ(pos) · Q
-K_pos = R_θ(pos) · K
+FFN(x) = ReLU(x · W₁ + b₁) · W₂ + b₂
 
-R_θ(pos) = block-diagonal rotation matrix
-The dot product (Q_m · K_n) depends only on |m−n|, not absolute positions m or n
-```
+d_ff = 4 × d_model (typical). For d_model=4096: d_ff=16384. 2 matrices: [4096×16384] + [16384×4096] ≈ 134M params per layer
 
-**Intuition:** Each token's Q,K vector is rotated by its position angle. The relative angle between two tokens equals their positional distance—this is the same whether they're at positions (5,8) or (105,108). The model sees relative distance and generalizes to unseen absolute positions.
+SwiGLU (LLaMA 3, Mistral)
 
-### Base Frequency θ and Context Length
+FFN_SwiGLU(x) = (x·W₁ ⊗ SiLU(x·W₃)) · W₂
 
-**RoPE hyperparameter θ** determines rotation rate. Standard θ=10,000. LLaMA 3.1 uses θ=500,000.
+⊗ = elementwise multiply  |  SiLU(x) = x · σ(x) (smooth, differentiable gate)  |  Requires 3 matrices instead of 2
 
-**Higher θ** means slower rotation—position vectors change more gradually. Model can distinguish positions very far apart (128K tokens) without embeddings wrapping around and becoming identical for different positions.
+#### Why SwiGLU > ReLU
 
----
+**ReLU** kills all negative activations (hard zero). **SiLU** allows small negative values through smoothly. The **gating** (multiplication by sigmoid) creates a soft information gate — neurons can learn "pass through only if the input matches pattern X AND pattern Y."
 
-## 8. MIXTURE OF EXPERTS
+In practice, SwiGLU models achieve the same loss with fewer training steps, or lower loss at the same compute.
 
-Standard transformers are "dense"—every parameter used for every token, every time. **Mixture of Experts (MoE)** breaks this: the FFN layer is replaced by E expert FFNs, and a learned **router** selects only K of them per token. Most parameters idle most of the time.
+#### FFN Size vs. Attention Size
+
+In a standard transformer, FFNs contain about **⅔ of total parameters**. A 7B model has roughly:
+
+• Embedding: ~500M
+
+• Attention (32 layers): ~1.5B
+
+• FFN (32 layers): ~4.5B
+
+• LayerNorm, biases: ~500M
+
+## POSITIONAL ENCODING
+
+Transformers are **permutation invariant** — without positional information, "cat bites dog" and "dog bites cat" would produce identical attention patterns. Positional encodings inject order into an architecture that otherwise has none.
+
+1
+
+### Original: Sinusoidal (2017)
+
+Fixed, non-learned vectors added to embeddings: `PE(pos, 2i) = sin(pos / 10000^(2i/d))`. Works but can't extrapolate — the model struggles with sequences longer than those seen in training, because frequencies were fixed at training time.
+
+2
+
+### Learned Absolute (GPT-1, GPT-2)
+
+Each position gets a trainable embedding vector. Simple, but hard limit at max training length (e.g., 2048 tokens). Position 2049 has no embedding — the model breaks completely.
+
+3
+
+### RoPE — Rotary Position Embedding (now standard)
+
+Instead of adding positional vectors to embeddings, RoPE **rotates** the Q and K vectors by angles that depend on position. The dot product Q·K then naturally encodes relative distance between tokens.
+
+RoPE Core Idea
+
+Q_pos = R_θ(pos) · Q  |  K_pos = R_θ(pos) · K
+
+R_θ(pos) = block-diagonal rotation matrix | dot product (Q_m · K_n) depends only on |m−n|, not absolute positions m or n
+
+INTUITION: EACH TOKEN'S Q,K VECTOR IS ROTATED BY ITS POSITION ANGLE
+
+↕ Relative angle between tokens = their positional distance
+
+Token at pos 5 and pos 8 → angle difference = 3 steps  
+This is the same whether they're at positions (5,8) or (105,108)  
+→ Model sees relative distance, generalizes to unseen absolute positions
+
+Base Frequency θ and Context Length
+
+RoPE has a hyperparameter θ (base frequency). Standard: θ=10,000. LLaMA 3.1: θ=500,000. Higher θ means slower rotation — position vectors change more gradually, so the model can distinguish positions that are very far apart (128K tokens) without the embeddings wrapping around and becoming identical for different positions.
+
+4
+
+### ALiBi — Attention with Linear Biases
+
+Instead of rotating embeddings, ALiBi adds a learned linear penalty to attention scores based on distance: `score(i,j) = Q_i · K_j − m · |i−j|` where m is a head-specific slope. Simpler and extrapolates well, but less expressive than RoPE.
+
+## MIXTURE OF EXPERTS
+
+Standard transformers are "dense" — every parameter is used for every token, every time. **Mixture of Experts (MoE)** breaks this: the FFN layer is replaced by E expert FFNs, and a learned **router** selects only K of them for each token. Most parameters are idle most of the time.
 
 ### The Router: How Experts Are Selected
 
-Router is a small linear layer: `router_logits = x · W_r` where W_r ∈ ℝ^(d_model × E).
+The router is a small linear layer: `router_logits = x · W_r` where W_r ∈ ℝ^(d_model × E). Softmax gives probabilities over all E experts. The top-K probabilities are kept (K=2 in Mixtral, Gemini), rest set to zero. The output is a weighted sum of the selected expert outputs.
 
-Softmax gives probabilities over all E experts. Top-K probabilities kept (K=2 in Mixtral, Gemini), rest set to zero.
+MoE FFN Output
 
-**Formula:** `MoE(x) = Σ_i∈TopK(x) g_i(x) · Expert_i(x)`
+MoE(x) = Σᵢ∈TopK(x) g_i(x) · Expert_i(x)
 
-### Load Balancing Problem
+g_i(x) = softmax(router_logits)_i (renormalized over top-K)  |  Expert_i = standard FFN with its own W₁, W₂, W₃
 
-If router is naive, all tokens route to same 2 experts, making others useless. Training requires an **auxiliary load balancing loss** that penalizes uneven expert utilization: `L_aux = α · Σ_i f_i · P_i`
+Load Balancing Problem
 
-This pushes all experts to receive roughly equal traffic during training.
+If the router is naive, all tokens route to the same 2 experts, making the others useless. Training requires an **auxiliary load balancing loss** that penalizes uneven expert utilization: `L_aux = α · Σᵢ f_i · P_i` where f_i = fraction of tokens routed to expert i, P_i = mean routing probability. This pushes all experts to receive roughly equal traffic during training.
 
----
+## TOTAL vs. ACTIVE PARAMS
 
-## 9. TOTAL vs. ACTIVE PARAMETERS
-
-This distinction causes the most confusion when comparing models like "GPT-4 has 1.8T parameters" vs "LLaMA 3 has 405B parameters". These numbers mean fundamentally different things.
+This is the question that causes the most confusion when comparing models like "GPT-4 has 1.8T parameters" vs "LLaMA 3 has 405B parameters". These numbers mean fundamentally different things.
 
 ### Total Parameters
 
-All weights stored on disk / in memory. For MoE, includes *all expert weights*—even ones not used for any given token.
+### All weights in the model file
 
-**Determines:** Storage cost, GPU memory needed to load, total capacity for knowledge.
+The total count of all numbers stored on disk / in memory. For an MoE model, this includes _all expert weights_ — even the ones that won't be used for any given token.
 
-**Example:** Mixtral 8×7B = 8 experts × ~7B each = **46.7B total**
+This determines: **storage cost** , **GPU memory needed to load the model** , and **the model's total capacity for knowledge**.
 
-### Active Parameters
+Mixtral 8×7B: 8 experts × ~7B each = **46.7B total**
 
-Only experts actually selected by router participate in computation. For a given token, K out of E experts run. Rest ignored—no compute, no FLOPs.
+#### Active Parameters
 
-**Determines:** Inference speed, FLOPs per token, practical compute cost.
+### Params used per token, per forward pass
 
-**Example:** Mixtral 8×7B = 2 of 8 active = **~12.9B active**
+Only the experts actually selected by the router participate in computation. For a given token, K out of E experts run. The rest are ignored — no compute, no FLOPs.
 
-### The MoE Trade-off in One Sentence
+This determines: **inference speed** , **FLOPs per token** , and **practical compute cost**.
 
-**MoE buys you the knowledge capacity of a large model (total params) at the inference cost of a small model (active params)—at the price of needing enough RAM/VRAM to store all idle experts simultaneously.**
+Mixtral 8×7B: 2 of 8 experts active = **~12.9B active**
 
-### Concrete Implications
+VISUAL: TOTAL (DARK) vs ACTIVE (BRIGHT) PARAMETERS PER TOKEN
 
-| Metric | Dense Model (LLaMA 405B) | MoE Model (Mixtral 8×22B) | Winner |
-|---|---|---|---|
-| VRAM to load | ~810GB | ~282GB | MoE ✓ |
-| FLOPs per token | ~810B | ~78B | MoE ✓ |
-| Knowledge capacity | 405B params | 141B params | Dense ✓ |
-| Fine-tuning ease | Simple | Complex (expert collapse risk) | Dense ✓ |
-| Quality at same FLOPs | Good | Better (larger total capacity) | MoE ✓ |
+LLaMA 3 405B (Dense) Active = Total = 405B (100%)
 
----
+405B — Every param fires for every token 
 
-## 10. THE FULL FORWARD PASS
+Mixtral 8×7B (Sparse MoE) Active: 12.9B / 46.7B (28%)
 
-Here's what happens, step by step, for "The capital of France is" → predict "Paris":
+12.9B active
 
-**Step 1: Tokenization**
-`"The capital of France is" → [791, 6864, 315, 9822, 374]` (5 integers)
+34B idle (stored, not computed)
 
-**Step 2: Embedding Lookup**
-5 integers → matrix `[5 × 4096]`. Each integer selects a row from embedding table. At this point they encode *token identity* only—no positional or contextual information.
+Mixtral 8×22B (Sparse MoE) Active: 39B / 141B (28%)
 
-**Step 3: RoPE Position Injection**
-As Q and K matrices computed in each attention layer, they are rotated by position-specific angles. Now "France" at position 4 has Q/K vectors rotated differently from position 1.
+39B active
 
-**Step 4: 32× Transformer Layers**
-Each layer refines representations via `[Self-Attention → Add&Norm → FFN → Add&Norm]`.
+102B idle
 
-- **Layers 1–8:** Token-level patterns. "capital" is noun, "of" is preposition, "France" is proper noun. Syntactic dependencies form noun phrase.
-- **Layers 9–16:** Semantic grouping. "The capital of France" recognized as geographic entity. "is" is copula.
-- **Layers 17–24:** World knowledge retrieval. "capital of France" activates "Paris" memory cells in multiple FFN layers.
-- **Layers 25–32:** Final integration. Last token "is" accumulates evidence. High attention to "France" and "capital". Output vector now strongly points toward "Paris" in vocabulary space.
+GPT-4 (Estimated MoE) Active: ~220B / ~1.8T (12%)
 
-**Step 5: Language Model Head**
-Output vector for last position projected through unembedding matrix `[4096 × 128,256]` and softmaxed to produce probabilities. "Paris" gets ~0.94, "Lyon" ~0.02, etc.
+220B
 
-**Step 6: Autoregressive Loop**
-Sampled token "Paris" appended to input: `[791, 6864, 315, 9822, 374, 12366]`. Entire forward pass runs again for now-6-token sequence.
+~1.58T parameters idle per token
 
-**Why generation is slow:** One token per forward pass, sequentially. KV caching saves K, V computations from previous steps—only new token's attention to all prior tokens needs fresh computation.
+Active/computed per token
 
----
+Stored but idle per token
 
-## The Big Picture
+#### The Concrete Implications
 
-| Component | Role |
-|---|---|
-| **Attention** | Communication between tokens. Q asks questions. K advertises. V delivers. Router decides who listens. |
-| **FFN** | Memory. Each neuron in W_1 detects patterns; corresponding row in W_2 is associated fact. |
-| **MoE** | Conditional memory. E specialized databases routed per token. Total capacity scales; per-token cost constant. |
-| **RoPE** | Relative compass. Bakes relative distance into Q·K dot product via rotation. Enables position generalization. |
-| **Total Params** | Knowledge tank. How much the model can know. Determines GPU memory to load. |
-| **Active Params** | Thinking cost. How much compute per token. Determines inference speed and cost. |
+### GPU Memory (Loading)
 
----
+Loading a model requires enough VRAM for **all parameters** (total). Mixtral 8×7B at fp16 needs ~93GB of VRAM regardless of which experts will be used — because all experts must be available for routing decisions.
 
-## Related
+Memory ∝ Total Parameters
 
-- [Transformer Architecture: Frontier Models Deep Dive](34-transformer-architectures.md)
-- [Agentic AI Landing Zone: Visual Guide](32-agentic-ai-landing-zone-visual-guide.md)
+### Inference Speed (FLOPs)
 
----
+Each forward pass only computes through **active parameters**. Mixtral 8×7B processes each token through ~12.9B parameters. This is why it runs at similar speed to a 13B dense model despite 46.7B total weights.
 
-**Document Status:** Current (July 2026)  
-**Owner:** ML Research & Architecture  
-**Audience:** Research engineers, ML architects, advanced platform teams
+Speed ∝ Active Parameters
+
+The MoE Trade-off in One Sentence
+
+MoE buys you the **knowledge capacity of a large model** (total params determines what the model can know) at the **inference cost of a small model** (active params determines how fast it runs) — at the price of needing enough RAM/VRAM to store all the idle experts simultaneously.
+
+| Metric | Dense Model (LLaMA 3 405B) | MoE Model (Mixtral 8×22B) | Winner  
+---|---|---|---  
+| VRAM to load | ~810GB (fp16) | ~282GB (fp16) | MoE ✓ (less total params)  
+| FLOPs per token | ~810B FLOPs | ~78B FLOPs | MoE ✓ (only active experts)  
+| Knowledge capacity | 405B params of knowledge | 141B params of knowledge | Dense ✓ (more total params)  
+| Fine-tuning ease | Standard, well-understood | Complex (expert collapse risk) | Dense ✓  
+| Quality at same FLOPs | Good | Better (larger total capacity) | MoE ✓  
+| Serving complexity | Simple | Expert sharding across GPUs | Dense ✓  
+
+## THE FULL FORWARD PASS
+
+Now every piece connects. Here's what happens, step by step, for the sentence _"The capital of France is"_ — predicting the next token "Paris":
+
+1
+
+### Tokenization
+
+### "The capital of France is" → [791, 6864, 315, 9822, 374]
+
+5 integers. The model sees nothing else. No letters, no spaces — pure integers that index into the embedding table.
+
+2
+
+#### Embedding Lookup
+
+### 5 integers → matrix [5 × 4096]
+
+Each integer selects a row from the embedding table. We now have 5 vectors of 4096 floats each. At this point they encode _token identity_ only — no positional or contextual information yet. "France" in any position looks the same.
+
+3
+
+#### RoPE Position Injection
+
+### Rotate Q, K vectors inside each attention layer
+
+As Q and K matrices are computed in each attention head, they are rotated by position-specific angles. Now "France" at position 4 has Q/K vectors rotated differently from "France" at position 1 — the model knows order.
+
+4
+
+#### 32× Transformer Layers
+
+### [Self-Attention → Add&Norm; → FFN → Add&Norm;] × 32
+
+Each layer refines the representations. In early layers, attention captures local grammar. In middle layers, it builds syntactic structure. In late layers, it integrates semantic meaning. By layer 32, the vector for the last token "is" encodes the entire context: "this sentence is asking for a capital city, specifically France's."
+
+#### Layer-by-layer intuition for "France is [?]"
+
+| Layers | What's being computed  
+---|---  
+| 1–8 | Token-level patterns: "capital" is a noun, "of" is a preposition, "France" is a proper noun. Syntactic dependencies: "capital of France" forms a noun phrase.  
+| 9–16 | Semantic grouping: "The capital of France" is recognized as a geographic entity reference. "is" is the copula linking subject to predicate.  
+| 17–24 | World knowledge retrieval from FFN layers: "capital of France" activates the "Paris" memory cells in multiple FFN layers.  
+| 25–32 | Final integration: Last token "is" accumulates evidence. High attention to "France" and "capital". Output vector now strongly points toward "Paris" in the vocabulary space.  
+
+5
+
+#### Language Model Head
+
+### Final vector → probability over 128,256 tokens
+
+The output vector for the last position is projected through the unembedding matrix (shape: [4096 × 128256]) and softmaxed to produce probabilities. "Paris" gets probability ~0.94, "Lyon" ~0.02, "Berlin" ~0.001, etc.
+
+Unembedding + Temperature Sampling
+
+P(next_token) = softmax(h_last · W_unembed / τ)
+
+h_last ∈ ℝ^4096  |  W_unembed ∈ ℝ^(4096×128256)  |  τ = temperature (1.0 = no scaling)
+
+6
+
+#### Autoregressive Loop
+
+### Append "Paris", repeat from step 1 for next token
+
+The sampled token "Paris" is appended to the input: `[791, 6864, 315, 9822, 374, 12366]`. The entire forward pass runs again for the now-6-token sequence. This continues until an EOS (end-of-sequence) token is sampled or max length is reached.
+
+This is why generation is slow: **one token per forward pass** , sequentially. KV caching saves the K, V computations from previous steps — only the new token's attention to all prior tokens needs fresh computation.
+
+Summary
+
+## THE BIG PICTURE
+
+### Attention = Communication
+
+Self-attention is how tokens talk to each other. Q asks questions. K advertises information. V delivers the content. The router (softmax) decides who listens to whom.
+
+#### FFN = Memory
+
+Feed-forward layers are the model's database. Each neuron in W₁ is a pattern detector; its corresponding row in W₂ is the associated fact or transformation to apply when that pattern fires.
+
+#### MoE = Conditional Memory
+
+MoE replaces one big FFN database with E specialized databases, and routes each token to the 2 most relevant ones. Total capacity scales with E, but per-token cost stays constant at 2 experts.
+
+#### RoPE = Relative Compass
+
+Without RoPE, the model is positionally blind. RoPE bakes relative distance into the Q·K dot product via rotation, letting the model know "this token is 50 steps behind that one" without hard position limits.
+
+#### Total Params = Knowledge Tank
+
+How much the model can store and know. Determined by architecture size. Requires this much GPU memory to load. Does NOT equal how fast it runs.
+
+#### Active Params = Thinking Cost
+
+How much compute per token. In dense models = total params. In MoE = (active experts / all experts) × total. This determines inference speed and API cost per token.
+
+TRANSFORMER INTERNALS — CONCEPT-FIRST DEEP DIVE  ·  INTERACTIVE EXAMPLES  ·  2025  
+All computations shown are simplified for illustrative clarity. Real vectors have thousands of dimensions.
