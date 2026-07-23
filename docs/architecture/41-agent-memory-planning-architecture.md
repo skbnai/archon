@@ -22,7 +22,7 @@ tags:
 
 # Agent Memory & Planning Architecture
 
-> **Current as of July 2026.** This guide covers the two subsystems that give agents continuity: **memory** (the full taxonomy, the extract-consolidate-retrieve pipeline, end-to-end lifecycle controls, and memory security) and **planning** (the plan as a versioned first-class artifact, planning modes, failure recovery, and plan governance). It is Volume 4 of the harness architecture series ([Vol 1: Harness & Orchestration](./44-ai-harness-architecture-orchestration.md); [Vol 3: MCP & A2A Deep Dive](./58-mcp-a2a-protocol-deep-dive.md)); memory-poisoning threats are covered in depth in [Security Architecture & Guardrails](../trust/04-agentic-ai-security-guardrails.md).
+> **Current as of July 2026.** This guide covers the two subsystems that give agents continuity: **memory** (the full taxonomy, the extract-consolidate-retrieve pipeline, end-to-end lifecycle controls, and memory security) and **planning** (the plan as a versioned first-class artifact, planning modes, failure recovery, and plan governance). It is Volume 4 of the harness architecture series ([Vol 1: Harness & Orchestration](./44-ai-harness-architecture-orchestration.md); [Vol 3: MCP & A2A Deep Dive](./58-mcp-a2a-protocol-deep-dive.md)); memory-poisoning threats are covered in depth in [Security Architecture & Guardrails](pathname:///archon/trust/agentic-ai-security-guardrails).
 
 ---
 
@@ -129,7 +129,7 @@ Consistency promises to engineer for:
 
 ## 4. Memory Security
 
-Full threat treatments in [Security Architecture & Guardrails](../trust/04-agentic-ai-security-guardrails.md) (memory poisoning, vector DB poisoning). The architectural controls:
+Full threat treatments in [Security Architecture & Guardrails](pathname:///archon/trust/agentic-ai-security-guardrails) (memory poisoning, vector DB poisoning). The architectural controls:
 
 **Namespaces & ACLs.** Namespace = `{tenant, principal, agent, purpose}`; ReBAC answers per-record access. Retrieval queries are **post-filtered by the caller's entitlements** — an agent must never retrieve what its human principal couldn't read. RAG permission-mirroring failures are a top audit finding.
 

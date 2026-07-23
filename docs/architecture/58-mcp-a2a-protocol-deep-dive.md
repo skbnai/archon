@@ -142,7 +142,7 @@ Anything not in the registry is unsanctioned by definition. This mirrors the con
 
 ## 5. MCP Security
 
-For the full threat catalog and treatment stages, see [Security Architecture & Guardrails](../trust/04-agentic-ai-security-guardrails.md). The MCP-specific surfaces:
+For the full threat catalog and treatment stages, see [Security Architecture & Guardrails](pathname:///archon/trust/agentic-ai-security-guardrails). The MCP-specific surfaces:
 
 **Prompt injection — three vectors:** (a) **tool descriptions** (malicious instructions in the manifest read into context), (b) **tool results** (retrieved content carrying instructions — indirect injection), (c) **rug-pull updates**. Controls: manifest review + hash pinning; result screening at the tool gateway; provenance-tag tool output as untrusted data; least privilege so a hijacked call can't matter; and the **"lethal trifecta" rule** — never combine private-data access + untrusted content + external egress in one agent context without approval gates.
 
@@ -191,7 +191,7 @@ For the full threat catalog and treatment stages, see [Security Architecture & G
 3. Check catalog entitlement (is this counterparty approved for this data class / this tenant?)
 4. Runtime DLP on egress payloads
 
-Identity here is *organizational* trust, distinct from intra-platform workload identity ([Agentic AI Security & Identity](../trust/05-agentic-ai-security-identity.md)).
+Identity here is *organizational* trust, distinct from intra-platform workload identity ([Agentic AI Security & Identity](pathname:///archon/trust/agentic-ai-security-identity)).
 
 **Cross-org federation:** treat each partner as a separate trust domain — SPIFFE or OIDC federation for workload trust; contractual allowlist of skills; **artifact-only exchange** (no raw internal context); asymmetric disclosure (send minimum necessary); per-partner audit streams.
 
