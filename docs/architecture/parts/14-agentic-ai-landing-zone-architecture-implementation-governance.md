@@ -47,10 +47,10 @@ graph TD
 
 | Function | Description | Implementation in Landing Zone |
 | ---------- | ------------- | -------------------------------- |
-| **GOVERN** | Establish policies, accountability, and oversight | • AI Governance Board<br>• Policy Cards<br>• RACI matrices<br>• Risk appetite statements |
-| **MAP** | Identify and frame AI risks across lifecycle | • Risk taxonomy<br>• Threat modeling<br>• Impact assessments<br>• Stakeholder analysis |
-| **MEASURE** | Analyze and monitor AI risks | • Risk scoring engine<br>• Behavioral analytics<br>• Performance metrics<br>• Audit dashboards |
-| **MANAGE** | Mitigate identified risks | • Runtime guardrails<br>• Escalation workflows<br>• Incident response<br>• Continuous improvement |
+| **GOVERN** | Establish policies, accountability, and oversight | • AI Governance Board<br/>• Policy Cards<br/>• RACI matrices<br/>• Risk appetite statements |
+| **MAP** | Identify and frame AI risks across lifecycle | • Risk taxonomy<br/>• Threat modeling<br/>• Impact assessments<br/>• Stakeholder analysis |
+| **MEASURE** | Analyze and monitor AI risks | • Risk scoring engine<br/>• Behavioral analytics<br/>• Performance metrics<br/>• Audit dashboards |
+| **MANAGE** | Mitigate identified risks | • Runtime guardrails<br/>• Escalation workflows<br/>• Incident response<br/>• Continuous improvement |
 
 ### ISO/IEC 42001 AI Management System
 

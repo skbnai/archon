@@ -16,13 +16,13 @@ sources: []
 
 # Enterprise AI Governance & Compliance (Part 1 of 2)
 
-**Why this matters:** This is part 1 of a 2-part guide. Enterprise AI systems require regulatory compliance, governance structures, and risk controls. This part covers the regulatory landscape, governance frameworks, and foundational risk management for AI systems. For cost governance, bias testing, and toolkit resources, see [Part 2](../parts/22-enterprise-ai-governance-compliance-part2.md).
+**Why this matters:** This is part 1 of a 2-part guide. Enterprise AI systems require regulatory compliance, governance structures, and risk controls. This part covers the regulatory landscape, governance frameworks, and foundational risk management for AI systems. For cost governance, bias testing, and toolkit resources, see [Part 2](parts/22-enterprise-ai-governance-compliance-part2.md).
 
 **Audience:** Enterprise AI Architects, compliance officers, legal, risk, and governance teams.
 
 **Purpose:** Actionable governance frameworks and compliance requirements for enterprise AI systems. Covers regulatory landscape, RAI principles, operating model, data governance, model governance, security governance, and foundational governance controls.
 
-**Related sections:** [Architecture Patterns](12-enterprise-ai-architecture-patterns.md) | [Foundations](48-enterprise-ai-architect-foundations.md) | [Constitutional AI](../../coding-tools/claude/constitutional-ai-safety-2026.md)
+**Related sections:** [Architecture Patterns](49-enterprise-ai-architecture-patterns.md) | [Foundations](pathname:///archon/architecture/enterprise-ai-architect-foundations) | [Constitutional AI](pathname:///archon/agentic-systems/coding-tools/constitutional-ai-safety-2026)
 
 ---
 
@@ -713,7 +713,7 @@ AI systems can amplify insider threats: an insider with AI agent access can exfi
 
 ## Related
 
-[Enterprise AI Governance & Compliance Part 2](../parts/22-enterprise-ai-governance-compliance-part2.md) — cost governance, bias testing, vendor assessment, Claude-specific governance, best practices, and governance toolkit.
+[Enterprise AI Governance & Compliance Part 2](parts/22-enterprise-ai-governance-compliance-part2.md) — cost governance, bias testing, vendor assessment, Claude-specific governance, best practices, and governance toolkit.
 
 ## Sources
 

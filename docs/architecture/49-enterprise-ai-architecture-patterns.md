@@ -93,17 +93,19 @@ Standard RAG uses a fixed retrieval strategy for every query. Some queries need 
 
 ### Implementation Pattern
 
+```mermaid
+flowchart TD
+    A[User Query] --> B[Routing Agent]
+    B -- model already knows --> C[Direct Answer]
+    B -- needs retrieval --> D[Retrieval Tool]
+    D --> E[Vector Store]
+    E --> F[Read Results]
+    F --> G{Sufficient to answer?}
+    G -- No, need more --> D
+    G -- Yes --> H[Synthesise Answer]
 ```
-User Query
-    ↓
-[ROUTING AGENT]
-    ├─ Direct Answer (model knows)
-    └─ [Retrieval Tool]
-         ├─ [Vector Store]
-         ├─ [Read Results]
-         ├─ Need more? → [Retrieval Tool] again
-         └─ Synthesise Answer
-```
+
+**Figure:** The routing agent decides per-query whether to answer directly or invoke retrieval, and self-assesses after each round whether another retrieval pass is needed — unlike fixed-strategy RAG, which always retrieves once.
 
 ### Key Components
 
@@ -366,15 +368,15 @@ Store reasoning traces separately from answers. Use thinking blocks (adaptive) t
 ## Further Reading
 
 - [Agentic AI Reliability, Observability & Governance](43-agentic-ai-reliability-observability-governance.md)
-- [AI Harness Architecture & Orchestration](44-ai-harness-architecture-orchestration.md)
-- [Multi-Agent Topology Patterns](59-multi-agent-topology-patterns.md)
+- [AI Harness Architecture & Orchestration](pathname:///archon/architecture/ai-harness-architecture-orchestration)
+- [Multi-Agent Topology Patterns](pathname:///archon/architecture/multi-agent-topology-patterns)
 
 ---
 
 ## Related
 
 - [LLM-as-Judge Evaluation](43-agentic-ai-reliability-observability-governance.md)
-- [Guardrail Architecture](agentic-ai-security-guardrails.md)
+- [Guardrail Architecture](pathname:///archon/trust/agentic-ai-security-guardrails)
 
 ---
 

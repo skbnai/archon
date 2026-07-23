@@ -44,6 +44,18 @@ Agent systems fail in four distinct classes, each requiring different treatment 
 | **Systemic** | Provider outage, quota exhaustion, sustained degradation | Failover to alternate provider/model; graceful degradation | Retry hoping the outage resolves |
 | **Safety/Policy** | Guardrail trip, policy violation, scope exceeded | Halt immediately; escalate to human review | Never retry-around — this is the most dangerous anti-pattern |
 
+```mermaid
+flowchart TD
+    A[Agent step fails] --> B{Classify failure}
+    B -- Transport --> C[Retry: exponential backoff<br/>+ full jitter, honor Retry-After]
+    B -- Semantic --> D[Verification gate<br/>re-plan with different strategy]
+    B -- Systemic --> E[Failover to alternate<br/>provider/model; degrade gracefully]
+    B -- Safety/Policy --> F[Halt immediately<br/>escalate to human review]
+    F -.never retry-around.-> A
+```
+
+**Figure:** Correct classification routes each failure to its own response path — the most dangerous anti-pattern is treating a Safety/Policy failure like a Transport failure and retrying around a guardrail.
+
 ---
 
 ## Eight Reliability Anti-Patterns to Eliminate First
@@ -183,9 +195,9 @@ Approved model versions per data classification and geographic region. Fields in
 ## Related
 
 - [Agent Reliability Engineering](42-agent-reliability-engineering.md)
-- [AI Harness Architecture & Orchestration](44-ai-harness-architecture-orchestration.md)
+- [AI Harness Architecture & Orchestration](pathname:///archon/architecture/ai-harness-architecture-orchestration)
 - [Enterprise AI Architecture Patterns](49-enterprise-ai-architecture-patterns.md)
-- [Multi-Agent Topology Patterns](59-multi-agent-topology-patterns.md)
+- [Multi-Agent Topology Patterns](pathname:///archon/architecture/multi-agent-topology-patterns)
 
 ---
 

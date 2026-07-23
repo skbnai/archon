@@ -93,12 +93,12 @@ Traditional cloud landing zones are insufficient because they assume:
 
 | Stakeholder | Primary Concerns | Success Criteria |
 | ------------- | ------------------ | ------------------ |
-| **Chief Information Officer** | - Strategic value realization<br>- Total cost of ownership<br>- Time to market | - ROI > 200% within 24 months<br>- 60% faster deployment cycles |
-| **Chief Information Security Officer** | - Security posture<br>- Compliance adherence<br>- Trust boundaries | - Zero security breaches<br>- 100% audit compliance<br>- Runtime policy enforcement |
-| **Chief Data Officer** | - Data governance<br>- Privacy protection<br>- Data quality | - 100% data lineage tracking<br>- Automated privacy controls<br>- GDPR/CCPA compliance |
-| **AI Governance Board** | - Ethical AI deployment<br>- Risk management<br>- Regulatory compliance | - ISO 42001 certification<br>- NIST AI RMF alignment<br>- Risk score &lt; threshold |
-| **Platform Engineering** | - Operational excellence<br>- Scalability<br>- Reliability | - 99.9% uptime SLA<br>- Auto-scaling capability<br>- Self-service enablement |
-| **Development Teams** | - Developer productivity<br>- Tool availability<br>- Clear standards | - &lt; 1 week onboarding time<br>- Comprehensive documentation<br>- Reusable templates |
+| **Chief Information Officer** | - Strategic value realization<br/>- Total cost of ownership<br/>- Time to market | - ROI > 200% within 24 months<br/>- 60% faster deployment cycles |
+| **Chief Information Security Officer** | - Security posture<br/>- Compliance adherence<br/>- Trust boundaries | - Zero security breaches<br/>- 100% audit compliance<br/>- Runtime policy enforcement |
+| **Chief Data Officer** | - Data governance<br/>- Privacy protection<br/>- Data quality | - 100% data lineage tracking<br/>- Automated privacy controls<br/>- GDPR/CCPA compliance |
+| **AI Governance Board** | - Ethical AI deployment<br/>- Risk management<br/>- Regulatory compliance | - ISO 42001 certification<br/>- NIST AI RMF alignment<br/>- Risk score &lt; threshold |
+| **Platform Engineering** | - Operational excellence<br/>- Scalability<br/>- Reliability | - 99.9% uptime SLA<br/>- Auto-scaling capability<br/>- Self-service enablement |
+| **Development Teams** | - Developer productivity<br/>- Tool availability<br/>- Clear standards | - &lt; 1 week onboarding time<br/>- Comprehensive documentation<br/>- Reusable templates |
 
 ## Scope Definition
 

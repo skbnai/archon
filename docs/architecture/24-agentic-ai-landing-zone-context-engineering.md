@@ -197,7 +197,7 @@ Latency: ~400ms (higher, but context is fresh)
 
 **Agent Request:** "Customer calls with a complaint"
 
-**Phase 1: Prefetch (Immediate, <100ms)**
+**Phase 1: Prefetch (Immediate, &lt;100ms)**
 - Customer record (identity, account status)
 - Recent order (most likely relevant)
 - Cached FAQ about common issues
