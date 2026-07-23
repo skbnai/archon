@@ -1885,7 +1885,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/26-ai-invoice-auditor-architecture-part2",
-     "score": 0.57
+     "score": 0.55
     }
    ]
   },
@@ -2231,11 +2231,11 @@
      "score": 0.45
     },
     {
-     "id": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
+     "id": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
      "score": 0.4
     },
     {
-     "id": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
+     "id": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
      "score": 0.4
     }
    ]
@@ -2679,7 +2679,7 @@
     },
     {
      "id": "architecture/48-enterprise-ai-architect-foundations",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
@@ -2891,7 +2891,7 @@
    "top_similar": [
     {
      "id": "architecture/76-ai-invoice-auditor-architecture",
-     "score": 0.57
+     "score": 0.55
     }
    ]
   },
