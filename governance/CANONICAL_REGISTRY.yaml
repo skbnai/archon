@@ -4997,3 +4997,17 @@ topics:
     - 'enterprise ai architect foundations: part 2'
     supersedes: []
     pages: []
+  - id: ea-mastery-guide-part2
+    domain: architecture
+    canonical: docs/architecture/parts/35-ea-mastery-guide-part2.md
+    aliases:
+    - 'ea mastery guide: part 2'
+    supersedes: []
+    pages: []
+  - id: principal-enterprise-ai-guide-educative-part2
+    domain: architecture
+    canonical: docs/architecture/parts/36-principal-enterprise-ai-guide-educative-part2.md
+    aliases:
+    - 'principal enterprise ai guide educative: part 2'
+    supersedes: []
+    pages: []
