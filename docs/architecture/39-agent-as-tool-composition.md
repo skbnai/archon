@@ -423,4 +423,4 @@ Does the task decompose into natural domain boundaries?
 ## Sources
 
 - [MCP Deep Research 2026](https://modelcontextprotocol.io/)
-- [Workflow Orchestration Decision Matrix](45-workflow-orchestration-decision-matrix.md)
+- [Workflow Orchestration Decision Matrix](pathname:///archon/agentic-systems/orchestration/decision-matrix)

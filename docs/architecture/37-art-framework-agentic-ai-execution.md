@@ -233,7 +233,7 @@ The maturity assessment scorecard rates each dimension 1–5 per pillar, summing
 - [Agentic AI Reliability, Observability & Governance](43-agentic-ai-reliability-observability-governance.md)
 - [Agent Reliability Engineering](42-agent-reliability-engineering.md)
 - [Enterprise AI Architecture Patterns](49-enterprise-ai-architecture-patterns.md)
-- [AI Harness Architecture & Orchestration](44-ai-harness-architecture-orchestration.md)
+- [AI Harness Architecture & Orchestration](pathname:///archon/architecture/ai-harness-architecture-orchestration)
 - [Enterprise AI Governance & Compliance](51-enterprise-ai-governance-compliance.md)
 
 ---

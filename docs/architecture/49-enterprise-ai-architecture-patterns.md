@@ -366,7 +366,7 @@ Store reasoning traces separately from answers. Use thinking blocks (adaptive) t
 ## Further Reading
 
 - [Agentic AI Reliability, Observability & Governance](43-agentic-ai-reliability-observability-governance.md)
-- [AI Harness Architecture & Orchestration](44-ai-harness-architecture-orchestration.md)
+- [AI Harness Architecture & Orchestration](pathname:///archon/architecture/ai-harness-architecture-orchestration)
 - [Multi-Agent Topology Patterns](59-multi-agent-topology-patterns.md)
 
 ---

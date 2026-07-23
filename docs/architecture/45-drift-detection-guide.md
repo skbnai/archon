@@ -244,7 +244,7 @@ graph TD
 ## Related
 
 - [Agent Reliability Engineering](../path-to-file) — chaos engineering experiments (including controlled drift injection)
-- [End-to-End Traceability Guide](46-end-to-end-traceability-guide.md) — the telemetry data that drift detection consumes
+- [End-to-End Traceability Guide](pathname:///archon/architecture/end-to-end-traceability-guide) — the telemetry data that drift detection consumes
 - [Agentic AI Reliability, Observability and Governance](../path-to-file) — metrics and dashboard architecture
 - [Agentic AI Security and Guardrails](../path-to-file) — policy drift is a security event
 - [MCP Enterprise Security, Governance and Operations](../../protocols/path-to-file) — MCP contract management

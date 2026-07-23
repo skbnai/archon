@@ -336,7 +336,7 @@ For each production multi-agent system, verify:
 - [Auth and Identity Hub](../../protocols/path-to-file) — OIDC, OAuth, OBO flows, Entra, SPIFFE
 - [Agentic AI Security and Identity](../path-to-file) — SPIFFE/SPIRE, OWASP ASI01–ASI10
 - [Multi-Agent Topology Patterns](../path-to-file) — who calls whom (topology)
-- [End-to-End Traceability Guide](46-end-to-end-traceability-guide.md) — how authorization decisions are traced
+- [End-to-End Traceability Guide](pathname:///archon/architecture/end-to-end-traceability-guide) — how authorization decisions are traced
 - [Kill Switch Architecture](56-kill-switch-architecture.md) — emergency policy override propagation
 - [DeepMind AI Authorization](../../trust/path-to-file) — authorization in depth
 
