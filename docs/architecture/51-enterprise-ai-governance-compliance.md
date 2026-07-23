@@ -22,7 +22,7 @@ sources: []
 
 **Purpose:** Actionable governance frameworks and compliance requirements for enterprise AI systems. Covers regulatory landscape, RAI principles, operating model, data governance, model governance, security governance, and foundational governance controls.
 
-**Related sections:** [Architecture Patterns](12-enterprise-ai-architecture-patterns.md) | [Foundations](48-enterprise-ai-architect-foundations.md) | [Constitutional AI](../../coding-tools/claude/constitutional-ai-safety-2026.md)
+**Related sections:** [Architecture Patterns](49-enterprise-ai-architecture-patterns.md) | [Foundations](pathname:///archon/architecture/enterprise-ai-architect-foundations) | [Constitutional AI](pathname:///archon/agentic-systems/coding-tools/constitutional-ai-safety-2026)
 
 ---
 

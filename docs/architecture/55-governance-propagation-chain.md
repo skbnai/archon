@@ -332,13 +332,13 @@ For each production multi-agent system, verify:
 
 ## Related
 
-- [Policy and Authorization Series](../../trust/path-to-file) — policy content and AWS/Entra implementation
-- [Auth and Identity Hub](../../protocols/path-to-file) — OIDC, OAuth, OBO flows, Entra, SPIFFE
-- [Agentic AI Security and Identity](../path-to-file) — SPIFFE/SPIRE, OWASP ASI01–ASI10
-- [Multi-Agent Topology Patterns](../path-to-file) — who calls whom (topology)
+- [Policy and Authorization Series](pathname:///archon/trust/ai-security-governance/policy-authorization-series-overview) — policy content and AWS/Entra implementation
+- [Auth and Identity Hub](pathname:///archon/protocols/auth-identity-flows) — OIDC, OAuth, OBO flows, Entra, SPIFFE
+- [Agentic AI Security and Identity](pathname:///archon/trust/agentic-ai-security-identity) — SPIFFE/SPIRE, OWASP ASI01–ASI10
+- [Multi-Agent Topology Patterns](pathname:///archon/architecture/multi-agent-topology-patterns) — who calls whom (topology)
 - [End-to-End Traceability Guide](pathname:///archon/architecture/end-to-end-traceability-guide) — how authorization decisions are traced
 - [Kill Switch Architecture](56-kill-switch-architecture.md) — emergency policy override propagation
-- [DeepMind AI Authorization](../../trust/path-to-file) — authorization in depth
+- [DeepMind AI Authorization](pathname:///archon/trust/ai-security-governance/ai-authorization) — authorization in depth
 
 ## Sources
 

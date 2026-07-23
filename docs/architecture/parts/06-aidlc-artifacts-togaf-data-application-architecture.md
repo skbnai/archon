@@ -125,13 +125,13 @@ Owner: Solution Architect | ADM Phase: C2 | TOGAF 10 + AI-First Extension
 
 | **Design Requirement** | **Standard** | **Example Implementation** |
 |---|---|---|
-| Idempotency | All state-changing endpoints MUST be idempotent (safe to retry). Idempotency key in header. | POST /decisions: X-Idempotency-Key: {uuid} prevents duplicate credit decisions on agent retry |
+| Idempotency | All state-changing endpoints MUST be idempotent (safe to retry). Idempotency key in header. | POST /decisions: X-Idempotency-Key: `{uuid}` prevents duplicate credit decisions on agent retry |
 | Semantic Versioning in Metadata | API version communicated in response metadata, not just URL. Allows agents to self-discover deprecation. | Response header: X-API-Version: 2.3.1, X-API-Deprecation-Date: 2027-01-01 |
-| Action Documentation | Every state-changing endpoint documents: action type (reversible/irreversible), scope of impact, human approval requirement. | POST /decisions: {"reversible": false, "scope": "customer-credit-file", "hitl_required": true} |
+| Action Documentation | Every state-changing endpoint documents: action type (reversible/irreversible), scope of impact, human approval requirement. | POST /decisions: `{"reversible": false, "scope": "customer-credit-file", "hitl_required": true}` |
 | Burst Rate Limits | Agent-specific rate limits documented in API spec. Differentiated from human user limits. Exponential backoff required. | Agent client: burst 500 RPM sustained 200 RPM. Retry-After header provided on 429. |
-| Webhook Callbacks | Long-running operations return 202 + callback URL. Agents register webhook endpoint. No synchronous waiting. | POST /model-retraining → 202 {callbackUrl: "/retrain-status/{job-id}"} |
+| Webhook Callbacks | Long-running operations return 202 + callback URL. Agents register webhook endpoint. No synchronous waiting. | POST /model-retraining → 202 `{callbackUrl: "/retrain-status/{job-id}"}` |
 | Dry-Run Mode | Irreversible operations support ?dryRun=true parameter for agent testing without side effects. | DELETE /model-version?dryRun=true → returns what would happen, no deletion |
-| Audit Trail in Response | Every state-changing response includes audit trail ID for traceability from agent action to business outcome. | Response: {"auditId": "AUD-2026-FIN-048371", "agentId": "AGT-OPS-001"} |
+| Audit Trail in Response | Every state-changing response includes audit trail ID for traceability from agent action to business outcome. | Response: `{"auditId": "AUD-2026-FIN-048371", "agentId": "AGT-OPS-001"}` |
 
 ---
 

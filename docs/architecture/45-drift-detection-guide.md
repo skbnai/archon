@@ -243,13 +243,13 @@ graph TD
 
 ## Related
 
-- [Agent Reliability Engineering](../path-to-file) — chaos engineering experiments (including controlled drift injection)
+- [Agent Reliability Engineering](42-agent-reliability-engineering.md) — chaos engineering experiments (including controlled drift injection)
 - [End-to-End Traceability Guide](pathname:///archon/architecture/end-to-end-traceability-guide) — the telemetry data that drift detection consumes
-- [Agentic AI Reliability, Observability and Governance](../path-to-file) — metrics and dashboard architecture
-- [Agentic AI Security and Guardrails](../path-to-file) — policy drift is a security event
-- [MCP Enterprise Security, Governance and Operations](../../protocols/path-to-file) — MCP contract management
-- [A2A Enterprise Security and Governance Guide](../path-to-file) — A2A capability verification
-- [Enterprise Asset Management 2026](../../agentic-systems/path-to-file) — prompt registry, model registry, version management
+- [Agentic AI Reliability, Observability and Governance](43-agentic-ai-reliability-observability-governance.md) — metrics and dashboard architecture
+- [Agentic AI Security and Guardrails](pathname:///archon/trust/agentic-ai-security-guardrails) — policy drift is a security event
+- [MCP Enterprise Security, Governance and Operations](pathname:///archon/protocols/mcp-enterprise-security-governance-operations-2026) — MCP contract management
+- [A2A Enterprise Security and Governance Guide](pathname:///archon/trust/a2a-security-governance) — A2A capability verification
+- [Enterprise Asset Management 2026](pathname:///archon/agentic-systems/core/enterprise-agentic-ai-asset-management-2026) — prompt registry, model registry, version management
 
 ## Sources
 
