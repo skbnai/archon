@@ -18,6 +18,10 @@
     {
      "id": "trust/index",
      "score": 0.31
+    },
+    {
+     "id": "protocols/index",
+     "score": 0.3
     }
    ]
   }
