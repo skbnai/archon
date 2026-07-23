@@ -183,7 +183,7 @@ Router topology: a single entry point classifies incoming queries and routes to 
 | Misclassification | Wrong agent handles query | Feedback loop; human corrections update classifier training |
 | Agent unavailable | Router has no live target | Fallback route; queue if recoverable |
 | Routing loop | Agent re-routes back through router | Loop detection: max 2 re-routes; then escalate |
-| Routing drift | Classifier degrades over time | Automated accuracy monitoring; alert at <90% |
+| Routing drift | Classifier degrades over time | Automated accuracy monitoring; alert at &lt;90% |
 
 ### Enterprise Suitability ★★★★★
 

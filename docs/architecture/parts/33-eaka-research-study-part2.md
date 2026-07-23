@@ -183,7 +183,7 @@ The Enterprise Knowledge Graph (EKG) is the semantic backbone of EAKA. Rather th
 - **Concept path query** — traverse from Business Capability to concrete implementation artefacts.
 - **Expertise routing** — find SMEs by traversing Person → expertise_in → Technology edges.
 - **Impact analysis** — identify all Skills/Agents affected by a knowledge node deprecation.
-- **Freshness scan** — retrieve all nodes with trust_score < threshold for curation review.
+- **Freshness scan** — retrieve all nodes with trust_score &lt; threshold for curation review.
 
 ### 8. MCP Integration
 

@@ -274,7 +274,7 @@ Same baseline as Architecture 1 (~100TB active → ~400TB by Year 3). Infrastruc
 
 | Use Case / Priority | Best-of-Breed | Open-Source / Self-Managed |
 |-------|--------|--------|
-| Fast time-to-market (<6mo MVP) | ✅ Strong fit | ❌ Weak fit |
+| Fast time-to-market (&lt;6mo MVP) | ✅ Strong fit | ❌ Weak fit |
 | Lowest 3-yr TCO at >1PB scale | ⚠ Moderate | ✅ Strong fit (if SRE talent secured) |
 | Strict data sovereignty / on-prem | ⚠ Possible via Outposts | ✅ Strong fit |
 | Cutting-edge AI/agent features (2026) | ✅ Strong fit | ⚠ Lag 6–12 months |
@@ -294,13 +294,13 @@ Same baseline as Architecture 1 (~100TB active → ~400TB by Year 3). Infrastruc
 
 **Q4:** Launch vector search and first GraphRAG use case in contained domain. Establish AI gateway with guardrails and LLM routing. Deploy initial MCP servers for 3–5 internal tools.
 
-**Success metrics:** Time-to-onboard new data source < 2 weeks; 95% pipeline SLA adherence; first production RAG use case live.
+**Success metrics:** Time-to-onboard new data source &lt; 2 weeks; 95% pipeline SLA adherence; first production RAG use case live.
 
 ### Year 2 — Scale: Streaming + BI/AI Expansion
 
 Expand streaming coverage; introduce serving layer (Pinot/Materialize) for sub-second analytics. Build enterprise-scale knowledge graph and entity resolution; expand vector infrastructure to multi-tenant. Stand up agent runtime (LangGraph/Temporal) with persistent agent memory (episodic + semantic). Introduce A2A protocol pilots for 2–3 cross-agent workflows; expand MCP server catalog to 15–20 tools. Mature FinOps: per-workload chargeback, automated cost-anomaly detection, GPU utilization optimization.
 
-**Success metrics:** Streaming latency p99 < 500ms; agent task success > 80% on pilots; cost/query reduced 20% versus Year 1.
+**Success metrics:** Streaming latency p99 &lt; 500ms; agent task success > 80% on pilots; cost/query reduced 20% versus Year 1.
 
 ### Year 3 — Optimize / Transform: Full Agentic AI + Advanced FinOps
 

@@ -227,7 +227,7 @@ Apply this framework consistently across every system design question. Deviating
 #### Step 1: Clarify Requirements (5 min)
 
 - Scale: How many users? Queries per second? Data volume? Geographic distribution?
-- Latency: Real-time (<500ms), near-real-time (<5s), or batch acceptable?
+- Latency: Real-time (&lt;500ms), near-real-time (&lt;5s), or batch acceptable?
 - Quality: What does "good enough" mean? How is success measured?
 - Constraints: Budget cap? Existing infrastructure? Compliance requirements?
 - Failure modes: What happens when the AI is wrong? Who is the downstream victim?
@@ -303,7 +303,7 @@ Design a recommendation engine for YouTube Shorts that balances immediate engage
 - **Diversity Constraints.** Enforce topic diversity (no more than 3 consecutive same-topic videos) and creator diversity. Hardcoded constraints override ranking scores.
 - **Safety Layer.** Pre-filter content with Llama Guard classifier. Post-filter recommendation slate for policy violations before serving.
 
-**Scale notes:** 500M daily active users. Candidate generation must reduce 1B+ videos to ~1000 candidates per user in <50ms. Use ANN (ScaNN) on pre-computed video embeddings. Ranking < 100ms.
+**Scale notes:** 500M daily active users. Candidate generation must reduce 1B+ videos to ~1000 candidates per user in &lt;50ms. Use ANN (ScaNN) on pre-computed video embeddings. Ranking &lt; 100ms.
 
 #### Problem 4: Design a Code Review AI Agent
 
@@ -316,20 +316,20 @@ Build an AI agent that reviews code PRs for bugs, security issues, style violati
 - **Context Assembly.** Diff + affected files + test coverage report + similar past PRs (RAG from code embedding store) + repo architecture documentation.
 - **Feedback Ranking.** Prioritize findings by severity (Critical > Major > Minor). Suppress low-severity findings if PR is already large. Group related findings.
 - **Learning Loop.** When developer accepts a suggestion → positive signal. When developer dismisses with explanation → extract reasoning for few-shot examples. Retrain monthly.
-- **Latency.** P95 < 60 seconds for PRs < 500 lines. Async processing with GitHub commit status check showing progress.
+- **Latency.** P95 &lt; 60 seconds for PRs &lt; 500 lines. Async processing with GitHub commit status check showing progress.
 
 **Scale notes:** For a large enterprise: 50K PRs/day. Queue-based architecture with priority routing (small PRs get priority). Cost control: use Haiku for style checks, Opus for architecture analysis.
 
 #### Problem 5: Design an AI-Powered Customer Service System
 
-Build an AI customer service system that can resolve 70% of tickets autonomously while seamlessly escalating to human agents for the remaining 30%. SLA: < 30s for initial response.
+Build an AI customer service system that can resolve 70% of tickets autonomously while seamlessly escalating to human agents for the remaining 30%. SLA: &lt; 30s for initial response.
 
 **Key Components:**
 
 - **Intent Classifier.** Lightweight model (fine-tuned Phi-3) classifies intent and complexity. Routes simple (FAQ, order status) to fully autonomous; complex (refund dispute, technical issue) to HITL.
 - **Knowledge Base RAG.** Product documentation, past resolved tickets, and support runbooks in hybrid retrieval. Updated in near-real-time via event stream from CMS.
 - **Action Agents.** OrderLookupAgent, RefundAgent, AccountAgent—each with bounded permissions and confirmation requirements before irreversible actions.
-- **Escalation Protocol.** Confidence < threshold → human escalation with full context summary. Customer dissatisfaction signal (explicit request, sentiment detection) → immediate human handoff.
+- **Escalation Protocol.** Confidence &lt; threshold → human escalation with full context summary. Customer dissatisfaction signal (explicit request, sentiment detection) → immediate human handoff.
 - **Human Agent Interface.** AI prepares a briefing (issue summary, customer history, attempted resolutions, recommended next action) before human takes over. Human never starts from scratch.
 - **Quality Loop.** Human agent rates AI's briefing quality and marks resolution success. Low-rated sessions feed into fine-tuning dataset.
 

@@ -54,12 +54,12 @@ Continues from [Part 2: AI-DLC Methodology & Foundation Architecture](./10-apex-
 
 | Component | Technology | Pattern | SLA | Key Design Decision |
 | --- | --- | --- | --- | --- |
-| APEX Developer Portal | React SPA + API Gateway (Kong/Nginx/cloud-native) | Backend-for-Frontend (BFF) | 99.9% / p99 <500ms | Agent health score and DEA query link visible per agent; AI-DLC scaffolds UI in 1 bolt |
-| APEX Control Plane | Python FastAPI; Kubernetes OCI containers; 6 microservices | Microservices — bounded contexts | 99.9% / p99 <500ms | Agent Lifecycle, Budget Enforcer, Onboarding Orchestrator, Chargeback, Notification, Compliance Reporter services |
-| Agent Gateway | Envoy proxy + custom plugin OR APISIX + plugin | Zero-trust entry point; registry lookup; budget throttle | 99.99% / p99 <50ms | Blocks unregistered agents (403); enforces budget hard-throttle at 110%; logs all agent dependency calls |
-| Agent Orchestration Engine | LangGraph / AutoGen / CrewAI OR cloud-managed equivalent (evaluated in WP-002 spike) | Supervisor-Worker multi-agent pattern | 99.95% / p99 <3s | All routing decisions logged to OpenTelemetry trace for DEA assembly; abstraction layer prevents framework lock-in |
-| Serverless Tool Functions | Knative / OpenFaaS / cloud FaaS (OCI container-based) | Action Group / Tool Sidecar pattern | 99.95% / p99 <1s | Each function passes L1–L5 verification; tool invocation logs written to structured log for DEA |
-| DEA Generation Service | Python event-driven service; Kubernetes; triggered on regulated decision | Event-driven async; completeness validation before store | 99.9% / <5s | Assembles DEA from all log sources; validates completeness; stores immutably; queryable via DEA API |
+| APEX Developer Portal | React SPA + API Gateway (Kong/Nginx/cloud-native) | Backend-for-Frontend (BFF) | 99.9% / p99 &lt;500ms | Agent health score and DEA query link visible per agent; AI-DLC scaffolds UI in 1 bolt |
+| APEX Control Plane | Python FastAPI; Kubernetes OCI containers; 6 microservices | Microservices — bounded contexts | 99.9% / p99 &lt;500ms | Agent Lifecycle, Budget Enforcer, Onboarding Orchestrator, Chargeback, Notification, Compliance Reporter services |
+| Agent Gateway | Envoy proxy + custom plugin OR APISIX + plugin | Zero-trust entry point; registry lookup; budget throttle | 99.99% / p99 &lt;50ms | Blocks unregistered agents (403); enforces budget hard-throttle at 110%; logs all agent dependency calls |
+| Agent Orchestration Engine | LangGraph / AutoGen / CrewAI OR cloud-managed equivalent (evaluated in WP-002 spike) | Supervisor-Worker multi-agent pattern | 99.95% / p99 &lt;3s | All routing decisions logged to OpenTelemetry trace for DEA assembly; abstraction layer prevents framework lock-in |
+| Serverless Tool Functions | Knative / OpenFaaS / cloud FaaS (OCI container-based) | Action Group / Tool Sidecar pattern | 99.95% / p99 &lt;1s | Each function passes L1–L5 verification; tool invocation logs written to structured log for DEA |
+| DEA Generation Service | Python event-driven service; Kubernetes; triggered on regulated decision | Event-driven async; completeness validation before store | 99.9% / &lt;5s | Assembles DEA from all log sources; validates completeness; stores immutably; queryable via DEA API |
 | Human Review Portal | React + Temporal / Camunda workflow engine | Human-in-the-Loop (HITL) review workflow | 99.5% / SLA defined per agent risk tier | HITL outcome written to DEA; DEA marked complete only after HITL where required by risk classification |
 | LGTM Observability Stack | OpenTelemetry Collector + Prometheus + Grafana + Loki + Tempo | Centralised OTEL collector; push-based metrics and traces | 99.5% ingestion; real-time dashboards | Agent health score metrics; emergent behaviour alert rules (chain >3 hops or latency >10s) |
 | Compliance Reporter | Python data pipeline + Apache Superset or Metabase | Batch + event-driven reporting | 99.5% daily run | EU AI Act and DORA report templates; DORA change record auto-writer; DEA export API |
@@ -68,11 +68,11 @@ Continues from [Part 2: AI-DLC Methodology & Foundation Architecture](./10-apex-
 
 | API | Version | Style | Auth | SLA | Owner |
 | --- | --- | --- | --- | --- | --- |
-| Agent Registry API | v2 | REST / OpenAPI 3.1 | OAuth 2.0 (APEX scope) | 99.9% / p99 <200ms | Platform Eng |
-| Agent Invocation API | v1 | REST + SSE streaming | IAM / mTLS | 99.95% / p99 <3s | Platform Eng |
-| Knowledge Base API | v1 | REST / JSON | IAM / mTLS | 99.9% / p99 <500ms | AI/ML Eng |
-| Onboarding API | v1 | REST / JSON | OAuth 2.0 | 99.5% / p99 <1s | Platform Eng |
-| DEA Query API | v1 | REST / JSON | OAuth 2.0 + MFA | 99.9% / <60s response | Compliance |
+| Agent Registry API | v2 | REST / OpenAPI 3.1 | OAuth 2.0 (APEX scope) | 99.9% / p99 &lt;200ms | Platform Eng |
+| Agent Invocation API | v1 | REST + SSE streaming | IAM / mTLS | 99.95% / p99 &lt;3s | Platform Eng |
+| Knowledge Base API | v1 | REST / JSON | IAM / mTLS | 99.9% / p99 &lt;500ms | AI/ML Eng |
+| Onboarding API | v1 | REST / JSON | OAuth 2.0 | 99.5% / p99 &lt;1s | Platform Eng |
+| DEA Query API | v1 | REST / JSON | OAuth 2.0 + MFA | 99.9% / &lt;60s response | Compliance |
 | Chargeback API | v1 | REST / JSON | mTLS | 99.9% monthly run | SRE / FinOps |
 | Compliance Report API | v1 | REST / JSON | OAuth 2.0 + MFA | 99.5% daily run | Compliance |
 

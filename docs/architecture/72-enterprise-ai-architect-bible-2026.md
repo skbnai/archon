@@ -420,7 +420,7 @@ You cannot improve what you cannot measure. RAG evaluation is notoriously challe
 | Context Precision | Are retrieved chunks actually relevant to the question? | LLM-as-judge or human labels on retrieved chunks | > 0.80 |
 | Context Recall | Did retrieval find all relevant information? | Requires ground-truth reference answer | > 0.75 |
 | Answer Correctness | Is the answer factually correct? | Ground-truth comparison (expensive, use sampling) | > 0.80 |
-| Latency P95 | End-to-end response time at 95th percentile | Infrastructure instrumentation | < 3s for chat |
+| Latency P95 | End-to-end response time at 95th percentile | Infrastructure instrumentation | &lt; 3s for chat |
 | Cost per Query | Total LLM + retrieval cost | Token tracking + vector DB billing | Define per use case |
 
 **RAGAS Framework.** RAGAS (Retrieval Augmented Generation Assessment) is the de facto open-source RAG evaluation framework. It implements faithfulness, answer relevance, context precision, and context recall using LLM-as-judge, eliminating the need for expensive human evaluation on every change. Integrate RAGAS into your CI/CD pipeline as a regression gate.
@@ -433,7 +433,7 @@ Context engineering is the discipline of deliberately crafting the context windo
 - **Injecting Design Constraints.** For coding agents, inject architectural guidelines, security constraints, and design patterns into the agent's working context. This produces code that fits your system rather than generic solutions.
 - **Few-Shot Example Selection.** Dynamically select few-shot examples based on the current query using semantic similarity to an example bank. Dynamic few-shot selection outperforms fixed examples by 15–25% on diverse query distributions.
 - **Structured Output Schemas.** Always specify JSON or structured output schemas. This reduces token consumption (the model knows exactly what to produce), eliminates parsing errors, and enables downstream tool calls without additional LLM calls.
-- **Context Compression.** Before adding long documents to context, compress them using extractive summarization or LLMLingua. Target 50–80% compression with < 5% information loss for non-critical passages.
+- **Context Compression.** Before adding long documents to context, compress them using extractive summarization or LLMLingua. Target 50–80% compression with &lt; 5% information loss for non-critical passages.
 
 ---
 

@@ -158,7 +158,7 @@ Enterprise architecture metrics are a set of predetermined ways architects and s
 |---|---|---|
 | **Time to Market** | Speed from ideation to production deployment for new capabilities | Trend: decreasing |
 | **Integration Cycle Time** | Average time to integrate new systems with the existing landscape | Benchmark vs prior |
-| **Architecture Review Cycle** | Average time to complete an architecture review for new proposals | Target: <2 weeks |
+| **Architecture Review Cycle** | Average time to complete an architecture review for new proposals | Target: &lt;2 weeks |
 | **Deployment Frequency** | How often new architecture-compliant releases are deployed to production | Trend: increasing |
 
 ### 4. Risk & Compliance
@@ -170,7 +170,7 @@ Enterprise architecture metrics are a set of predetermined ways architects and s
 | **Risks Discovered vs Incidents** | Ratio of architecture risks identified proactively vs reactive incidents | Higher ratio = better |
 | **Compliance with Standards** | % of business applications compliant with IT architecture standards | Target: >95% |
 | **Security Architecture Debt** | Number of open security architecture findings by severity | Critical = 0 |
-| **End-of-Life Technology %** | % of estate running on unsupported or EOL platforms | Target: <5% |
+| **End-of-Life Technology %** | % of estate running on unsupported or EOL platforms | Target: &lt;5% |
 
 ### 5. Stakeholder & Business Value
 

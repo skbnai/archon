@@ -120,7 +120,7 @@ GPT-4o established the de-facto JSON schema function-calling API that most frame
 
 Gemini supports function calling with JSON schema; supports Google Search grounding as a native tool.
 
-Open-source models show tool calling quality that varies significantly. Mistral Large 2 and Llama 3.1+ have explicit fine-tuning for function calling. Smaller models (<13B) struggle with complex nested tool schemas.
+Open-source models show tool calling quality that varies significantly. Mistral Large 2 and Llama 3.1+ have explicit fine-tuning for function calling. Smaller models (&lt;13B) struggle with complex nested tool schemas.
 
 **Recommendation:** For multi-step agents, prefer Claude or GPT-4o. For tool-calling in constrained pipelines, test any open-source model specifically on your tool schema before committing.
 
@@ -576,7 +576,7 @@ Use for high-stakes decisions, conflict resolution, and reducing single-model ha
 
 | Context Size | Use Case | Model Options | Trade-off |
 | --- | --- | --- | --- |
-| **< 32K** | Single document Q&A; short chat; classification | Any model | No constraint |
+| **&lt; 32K** | Single document Q&A; short chat; classification | Any model | No constraint |
 | **32K – 128K** | Multi-document analysis; codebase context; conversation history | GPT-4o, Llama 3.3, Mistral Large | Cost scales with tokens |
 | **128K – 500K** | Full repository analysis; book-length documents; legal contracts | Claude Sonnet 5, Nova Pro | Higher cost; verify model faithfulness |
 | **500K – 1M+** | Entire codebases; multi-document legal discovery; research corpus | Claude Fable 5, Gemini 2.5 Pro | Significant cost; loss-in-middle risk |
@@ -606,7 +606,7 @@ For CALM (Context and Memory) patterns, see Enterprise AI Architecture Patterns 
 
 ### 12.1 Small Startup / MVP
 
-**Profile:** 5–20 engineers; <$50K/month AI spend; single cloud.
+**Profile:** 5–20 engineers; &lt;$50K/month AI spend; single cloud.
 
 ```mermaid
 graph TB

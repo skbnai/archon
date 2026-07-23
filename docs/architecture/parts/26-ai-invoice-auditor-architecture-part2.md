@@ -421,7 +421,7 @@ class MetricsDB:
 | Purpose | Technical operations view. Agent stage timing, MCP tool performance, LLM cost (Ollama=free), skill load frequency, RAG quality scores. All from SQLite metrics.db. |
 | Tabs | Tab 1 — Stage Funnel (handoff transitions). Tab 2 — Tool Performance (slowest_tools() query, error rates). Tab 3 — Skill Usage (which skills loaded most). Tab 4 — HITL Analytics (decision type breakdown, avg wait time). Tab 5 — RAG Quality (faithfulness/relevance/groundedness gauges). |
 | Data Sources | Direct SQLite queries via MetricsDB helper methods. No external service needed. |
-| Alerts | Red tab badge if: tool error_rate >5% | avg_stage_ms > threshold | RAG score < threshold. |
+| Alerts | Red tab badge if: tool error_rate >5% | avg_stage_ms > threshold | RAG score &lt; threshold. |
 
 ## **9.6 Page 6 — Settings**
 

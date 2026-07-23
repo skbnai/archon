@@ -93,7 +93,7 @@ Designing the architecture first and attempting to retrofit compliance controls 
 Business teams adopting AI tools (often consumer-grade AI products) for customer-facing decisions without going through AI Governance Board or Model Risk Committee review, because the tool was procured outside the normal technology procurement process. A serious and increasingly common finding in banking technology risk assessments.
 
 ### The Perpetual Exception
-
+ 
 A legacy system granted a "temporary" architecture exception during a modernization program that becomes permanent because the modernization program is deprioritized, leaving a system operating outside current standards indefinitely with no active remediation plan.
 
 ### Vendor Concentration Blindness

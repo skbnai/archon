@@ -398,7 +398,7 @@ print(max_independent_set(7, [(0,1),(0,2),(1,3),(1,4),(2,5),(2,6)]))  # 4
 | `0/1 Knapsack` | `dp[w] = max(dp[w], dp[w-wt]+val)` | `Iterate w backward` |
 | `Unbounded` | `dp[w] = max(dp[w], dp[w-wt]+val)` | `Iterate w forward` |
 | `Bounded` | `Binary group items into powers of 2` | `Reduces to 0/1` |
-| `Bitmask DP` | `dp[mask\|1<<j] = min(dp[mask]+cost)` | `TSP, assignment` |
+| `Bitmask DP` | `dp[mask\|1&lt;<j] = min(dp[mask]+cost)` | `TSP, assignment` |
 
 **Knapsack variants + Bitmask TSP**
 

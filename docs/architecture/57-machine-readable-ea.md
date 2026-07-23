@@ -287,7 +287,7 @@ This policy, served via the EA MCP server, ensures every agent in the enterprise
 The SLM-first policy intersects with digital sovereignty requirements:
 
 - **35% of countries** will have data-localization requirements affecting AI workloads by 2027 (Gartner)
-- **>75% of European and Middle Eastern enterprises** are expected to geopatriate AI workloads by 2030 (from <5% in 2025)
+- **>75% of European and Middle Eastern enterprises** are expected to geopatriate AI workloads by 2030 (from &lt;5% in 2025)
 - The EU AI Act + GDPR combination means data used to train or fine-tune models must also respect data-subject rights
 
 Enterprise architects in regulated sectors should designate certain data classifications as **"local inference only"** in the model routing policy — preventing them from being sent to any cloud model, regardless of model capability.
@@ -329,7 +329,7 @@ Enterprise architects in regulated sectors should designate certain data classif
 | **1 — Ad-hoc** | Policies in docs; manual enforcement | ARB reviews all agent deployments |
 | **2 — Encoded** | Core policies in OPA/Cedar; audit mode | Policy violations visible in dashboards |
 | **3 — Enforced** | Policies block non-compliant actions; EA MCP server live | New agents deploy without ARB review |
-| **4 — Adaptive** | Policies updated via CI/CD; anomaly detection feeds policy refinement | Policy update cycle < 1 week |
+| **4 — Adaptive** | Policies updated via CI/CD; anomaly detection feeds policy refinement | Policy update cycle &lt; 1 week |
 | **5 — Autonomous** | EA repository is the primary context source for all agents; policies version-controlled and self-tested | Zero manual enforcement reviews |
 
 ---

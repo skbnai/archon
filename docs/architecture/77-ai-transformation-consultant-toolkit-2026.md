@@ -183,8 +183,8 @@ Rate each item 1–5. 1 = Not in place. 3 = Partially in place. 5 = Fully in pla
 
 | Criterion | Description | Score (1–5) | Notes |
 |-----------|-------------|------------|-------|
-| Completeness | Key fields have <5% null rate in critical datasets | ___ | |
-| Accuracy | Data passes validation rules; known error rate <2% | ___ | |
+| Completeness | Key fields have &lt;5% null rate in critical datasets | ___ | |
+| Accuracy | Data passes validation rules; known error rate &lt;2% | ___ | |
 | Consistency | Same entity represented consistently across systems (no duplicates) | ___ | |
 | Lineage | Data provenance is documented — where it came from, how it was transformed | ___ | |
 
@@ -213,7 +213,7 @@ Rate each item 1–5. 1 = Not in place. 3 = Partially in place. 5 = Fully in pla
 | 56–80 | Data-Ready | Proceed directly to AI architecture design. Data foundation is sound. |
 | 40–55 | Partially Ready | 6-week data remediation sprint before AI pilot. Fix top 3 gaps. |
 | 24–39 | Pre-AI | 3-month data foundation programme required. AI pilot after Month 3. |
-| <24 | Not Ready | 12-month data transformation first. AI is 18+ months away. Be honest with client. |
+| &lt;24 | Not Ready | 12-month data transformation first. AI is 18+ months away. Be honest with client. |
 
 ### Technical Infrastructure Assessment
 
@@ -234,7 +234,7 @@ Assess current technical capabilities against AI deployment requirements.
 
 | Dimension | Indicator | Low (1) | High (5) |
 |-----------|-----------|---------|---------|
-| AI Literacy | % of employees with basic AI literacy training | <10% have awareness | >60% certified |
+| AI Literacy | % of employees with basic AI literacy training | &lt;10% have awareness | >60% certified |
 | Technical Talent | ML Engineers, Data Scientists, AI Architects on staff | 0 dedicated AI staff | >5 AI specialists |
 | Data Engineering | Data pipeline engineers and architects | Data work is ad hoc | Dedicated DE team with lakehouse |
 | Leadership Commitment | CEO/CAIO publicly committed; budget allocated | IT-only initiative | CEO + board AI strategy |
@@ -263,7 +263,7 @@ Complete this after all four assessments. Present to client leadership.
 | 130–169 | Advancing | 4-week foundation sprint first | First production: 12–16 weeks |
 | 90–129 | Developing | 90-day foundation programme | First production: 6 months |
 | 50–89 | Early Stage | Data + talent programme first | First production: 12 months |
-| <50 | Pre-Digital | Digital transformation prerequisite | AI in 18–24 months minimum |
+| &lt;50 | Pre-Digital | Digital transformation prerequisite | AI in 18–24 months minimum |
 
 ---
 

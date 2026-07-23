@@ -411,7 +411,7 @@ The orchestrator holds the overall goal and plan. Workers execute specific sub-t
 **Do NOT go agentic when:**
 
 - A single well-crafted prompt produces acceptable output
-- Latency SLA is < 2 seconds (single model call only)
+- Latency SLA is &lt; 2 seconds (single model call only)
 - The workflow is fully deterministic (use code, not AI)
 - Error recovery from agent failure is prohibitively expensive
 

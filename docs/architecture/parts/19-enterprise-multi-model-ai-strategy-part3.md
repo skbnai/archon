@@ -656,7 +656,7 @@ Extended thinking / chain-of-thought reasoning modes (Claude thinking, o3, DeepS
 
 ### 20.3 Small Language Models (SLMs) for Edge
 
-Phi-4, Gemma 3 4B, Llama 3.2 3B, and similar models are reaching practical utility for many tasks at <5B parameters. On-device inference (phones, IoT, edge servers) becomes viable.
+Phi-4, Gemma 3 4B, Llama 3.2 3B, and similar models are reaching practical utility for many tasks at &lt;5B parameters. On-device inference (phones, IoT, edge servers) becomes viable.
 
 **Implication:** Enterprise architectures will include "edge tier" in the model routing hierarchy. Tasks that can run locally with no network round-trip become cost optimisation opportunities.
 

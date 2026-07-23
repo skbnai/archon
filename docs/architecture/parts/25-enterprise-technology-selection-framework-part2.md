@@ -163,7 +163,7 @@ Test before committing: Submit a non-trivial support ticket during evaluation. E
 | Reference customer quality | 5 | | |
 | **Total** | **100** | | |
 
-Interpret: 400+ = Strong vendor; 300–399 = Acceptable; <300 = Proceed with caution.
+Interpret: 400+ = Strong vendor; 300–399 = Acceptable; &lt;300 = Proceed with caution.
 
 ---
 
@@ -270,7 +270,7 @@ Even the right technology selection fails without organisational readiness. Asse
 
 Score each dimension: 1 = Not ready / 3 = Partial readiness / 5 = Fully ready.
 
-Total < 20: High risk of adoption failure; address gaps before proceeding.
+Total &lt; 20: High risk of adoption failure; address gaps before proceeding.
 Total 20–28: Moderate readiness; proceed with change management plan.
 Total > 28: Ready; proceed with standard governance.
 
@@ -544,7 +544,7 @@ Define success metrics at decision time — not after deployment.
 
 ## 19. Reference Models by Organisation Type
 
-### 19.1 Startup (< 50 engineers)
+### 19.1 Startup (&lt; 50 engineers)
 
 **Priority order:** Speed to value → Cost → Operational simplicity → Standards.
 

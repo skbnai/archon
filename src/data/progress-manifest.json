@@ -11,15 +11,511 @@
   },
   "architecture": {
     "label": "Architecture",
-    "totalPages": 2,
+    "totalPages": 126,
     "pages": [
       {
         "id": "architecture/00-wiki-governance",
         "title": "How This Wiki Governs Itself"
       },
       {
+        "id": "architecture/01-aidlc-artifacts-discovery-to-model",
+        "title": "AIDLC Lifecycle Artifacts - Discovery & Ideation"
+      },
+      {
+        "id": "architecture/02-aidlc-artifacts-development-to-retirement",
+        "title": "AIDLC Lifecycle Artifacts: Development & Evaluation (Phase 5-6)"
+      },
+      {
+        "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
+        "title": "AIDLC TOGAF Artifacts: Preliminary Phase"
+      },
+      {
+        "id": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
+        "title": "AIDLC TOGAF Artifacts: Opportunities, Migration & Implementation Governance (Phase E-G)"
+      },
+      {
+        "id": "architecture/05-ea-architect-deep-dive-foundation",
+        "title": "Part 1 — Foundation"
+      },
+      {
+        "id": "architecture/06-ea-architect-deep-dive-five-arenas",
+        "title": "EA Architect Deep Dive — The Five Arenas (Part 1 of 2): Executive & Product/Domain Stakeholder Communication"
+      },
+      {
+        "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
+        "title": "EA Architect Deep Dive Part 3: Toolkit & Practice"
+      },
+      {
+        "id": "architecture/08-ea-architect-deep-dive-measurement-growth",
+        "title": "EA Architect Deep Dive Part 4: Measurement & Growth"
+      },
+      {
+        "id": "architecture/09-apex-ea-team-structure-raci",
+        "title": "APEX EA Part 1: Team Structure, RACI & Operating Model"
+      },
+      {
+        "id": "architecture/10-apex-ea-aidlc-methodology",
+        "title": "APEX EA Part 2: AI-DLC Methodology & Foundation Architecture"
+      },
+      {
+        "id": "architecture/11-apex-ea-information-systems-architecture",
+        "title": "APEX EA Part 3: Information Systems & Technology Architecture"
+      },
+      {
+        "id": "architecture/12-apex-ea-delivery-governance-reference",
+        "title": "APEX EA Part 4: Delivery, Governance & Reference"
+      },
+      {
+        "id": "architecture/13-aidlc-agile-cicd-ai-transformation-2026",
+        "title": "AIDLC Agile & CI/CD Transformation: The Grand Transformation & Lifecycle"
+      },
+      {
+        "id": "architecture/14-aidlc-enterprise-framework-2025",
+        "title": "AIDLC Enterprise Framework"
+      },
+      {
+        "id": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
+        "title": "Agile in the Age of Agentic AI"
+      },
+      {
+        "id": "architecture/16-ea-aidlc-deep-research-2026",
+        "title": "Impact of AIDLC on Enterprise Architecture — The AI Tooling Revolution"
+      },
+      {
+        "id": "architecture/17-ai-assistant-architecture-research-report",
+        "title": "AI Assistant Architecture Research Report (Part 1: Core Persistence, Context, Memory)"
+      },
+      {
+        "id": "architecture/18-ai-deep-future-outlook-2026-2035",
+        "title": "AI Deep Future Outlook 2026–2035 (Part 1: Healthcare, Finance, Education, Climate)"
+      },
+      {
+        "id": "architecture/19-ai-lab-research-report-june2026",
+        "title": "AI Lab Research Landscape Report"
+      },
+      {
+        "id": "architecture/20-ai-native-architecture-evolution-report",
+        "title": "From Data Warehouse to Agent-Native Architecture — Part 1: Foundational Paradigms"
+      },
+      {
+        "id": "architecture/21-the-agentic-loop-enterprise-ai-architect-guide",
+        "title": "The Agentic Loop — Enterprise AI Architect's Guide (Part 1: Foundations &amp; Patterns)"
+      },
+      {
+        "id": "architecture/22-agentic-ai-landing-zone-architecture",
+        "title": "Agentic AI Landing Zone Architecture"
+      },
+      {
+        "id": "architecture/23-agentic-ai-landing-zone-business-layer",
+        "title": "Agentic AI Landing Zone: Business & Enterprise Architecture Layer"
+      },
+      {
+        "id": "architecture/24-agentic-ai-landing-zone-context-engineering",
+        "title": "Agentic AI Landing Zone: Context Engineering Layer"
+      },
+      {
+        "id": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
+        "title": "Agentic AI Landing Zone: EU AI Act Compliance (Digital Omnibus Update — July 2026)"
+      },
+      {
+        "id": "architecture/26-agentic-ai-landing-zone-evaluation",
+        "title": "Agentic AI Landing Zone: Evaluation Framework"
+      },
+      {
+        "id": "architecture/27-agentic-ai-landing-zone-memory-architecture",
+        "title": "Agentic AI Landing Zone: Memory Architecture (Tier 3)"
+      },
+      {
+        "id": "architecture/28-agentic-ai-landing-zone-multiagent",
+        "title": "Agentic AI Landing Zone: Multi-Agent Reference Architectures"
+      },
+      {
+        "id": "architecture/29-agentic-ai-landing-zone-platform-layer",
+        "title": "Agentic AI Landing Zone: Agent Platform Layer"
+      },
+      {
+        "id": "architecture/30-agentic-ai-landing-zone-playbooks",
+        "title": "Agentic AI Landing Zone: Implementation Playbooks"
+      },
+      {
+        "id": "architecture/31-agentic-ai-landing-zone-tier3-complete",
+        "title": "Agentic AI Landing Zone: Tier 3 Complete (Identity, FinOps, SDLC, Operating Model)"
+      },
+      {
+        "id": "architecture/32-agentic-ai-landing-zone-visual-guide",
+        "title": "Agentic AI Landing Zone: Visual Guide & Quick Reference"
+      },
+      {
+        "id": "architecture/33-enterprise-agentic-ai-outlook-2026-2030",
+        "title": "Enterprise Agentic AI Outlook 2026–2030"
+      },
+      {
+        "id": "architecture/34-transformer-architectures",
+        "title": "Transformer Architecture: Frontier Models Deep Dive"
+      },
+      {
+        "id": "architecture/35-transformer-concepts-deep",
+        "title": "Transformer Concepts: Deep Internals"
+      },
+      {
+        "id": "architecture/36-ai-value-stream-mapping",
+        "title": "AI Value Stream Mapping — Lean Delivery for Enterprise AI Programs"
+      },
+      {
+        "id": "architecture/37-art-framework-agentic-ai-execution",
+        "title": "A.R.T. — Agility · Risk · Tenacity: Enterprise Execution Framework for Agentic AI"
+      },
+      {
+        "id": "architecture/38-agentops-production-guide",
+        "title": "AgentOps — Operational Discipline for Production AI Agents"
+      },
+      {
+        "id": "architecture/39-agent-as-tool-composition",
+        "title": "Agent-as-Tool Composition Patterns"
+      },
+      {
+        "id": "architecture/40-agent-interoperability-orchestration",
+        "title": "Enterprise Agent Interoperability & Orchestration Governance"
+      },
+      {
+        "id": "architecture/41-agent-memory-planning-architecture",
+        "title": "Agent Memory & Planning Architecture"
+      },
+      {
+        "id": "architecture/42-agent-reliability-engineering",
+        "title": "Agent Reliability Engineering (ARE)"
+      },
+      {
+        "id": "architecture/43-agentic-ai-reliability-observability-governance",
+        "title": "Agentic AI Reliability, Observability & Governance Lifecycle"
+      },
+      {
+        "id": "architecture/44-ai-harness-architecture-orchestration",
+        "title": "AI Harness Architecture & Multi-Agent Orchestration"
+      },
+      {
+        "id": "architecture/45-drift-detection-guide",
+        "title": "Drift Detection for Multi-Agent AI Systems"
+      },
+      {
+        "id": "architecture/46-end-to-end-traceability-guide",
+        "title": "End-to-End Traceability for Multi-Agent Systems"
+      },
+      {
+        "id": "architecture/47-enterprise-agent-reference-architectures",
+        "title": "Enterprise Agent Reference Architectures, Platform Engineering & Checklists"
+      },
+      {
+        "id": "architecture/48-enterprise-ai-architect-foundations",
+        "title": "Enterprise AI Architect — Foundations (Part 1 of 2): Role, Landscape, Selection & Integration Patterns"
+      },
+      {
+        "id": "architecture/49-enterprise-ai-architecture-patterns",
+        "title": "Enterprise AI Architecture Patterns"
+      },
+      {
+        "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
+        "title": "Enterprise AI Comparative Matrices & Decision Tools 2026"
+      },
+      {
+        "id": "architecture/51-enterprise-ai-governance-compliance",
+        "title": "Enterprise AI Governance & Compliance"
+      },
+      {
+        "id": "architecture/52-enterprise-ai-skills-assessment",
+        "title": "Enterprise AI Architect — Skills Assessment (Part 1 of 2): Overview, Certifications, Competency Model & Learning Path"
+      },
+      {
+        "id": "architecture/53-enterprise-aiops-guide",
+        "title": "Enterprise AIOps Guide — AI-Driven IT Operations (Part 1 of 2)"
+      },
+      {
+        "id": "architecture/54-enterprise-multi-model-ai-strategy",
+        "title": "Enterprise Multi-Model AI Strategy — Vendor-Agnostic Guide (Part 1)"
+      },
+      {
+        "id": "architecture/55-governance-propagation-chain",
+        "title": "Governance Propagation Chain"
+      },
+      {
+        "id": "architecture/56-kill-switch-architecture",
+        "title": "Kill Switch Architecture for Multi-Agent AI Systems"
+      },
+      {
+        "id": "architecture/57-machine-readable-ea",
+        "title": "Machine-Readable Enterprise Architecture for the Agentic Era"
+      },
+      {
+        "id": "architecture/58-mcp-a2a-protocol-deep-dive",
+        "title": "MCP & A2A Protocol Deep Dive (2026)"
+      },
+      {
+        "id": "architecture/59-multi-agent-topology-patterns",
+        "title": "Multi-Agent Topology Patterns"
+      },
+      {
+        "id": "architecture/60-volume1-governance-ecosystem-operating-models",
+        "title": "Enterprise Governance Ecosystem & Operating Models"
+      },
+      {
+        "id": "architecture/61-volume2-economics-decision-science",
+        "title": "Architecture Economics & Decision Science"
+      },
+      {
+        "id": "architecture/62-volume3-knowledge-management-capability-mapping",
+        "title": "Architecture Knowledge Management & Capability Mapping"
+      },
+      {
+        "id": "architecture/63-volume4-artifact-catalog-quality-attributes",
+        "title": "Artifact Catalog & Quality Attributes"
+      },
+      {
+        "id": "architecture/64-volume5-review-questions-scorecards",
+        "title": "Enterprise Review Questions & Scorecards"
+      },
+      {
+        "id": "architecture/65-volume6-banking-industry-deepdive",
+        "title": "Banking — The Primary Lens"
+      },
+      {
+        "id": "architecture/66-volume7-ai-native-arb-case-studies",
+        "title": "AI-Native ARB & Enterprise Case Studies"
+      },
+      {
+        "id": "architecture/67-volume9-enterprise-reference-repository",
+        "title": "Part A — Reference Architectures & Architecture Patterns"
+      },
+      {
+        "id": "architecture/68-ea-bestpractices-jargon",
+        "title": "Best Practices & Jargon Guide"
+      },
+      {
+        "id": "architecture/69-ea-glossary-cheatsheet",
+        "title": "ENTERPRISE ARCHITECTURE Glossary & Cheat Sheet"
+      },
+      {
+        "id": "architecture/70-executive-communication-framework-guide",
+        "title": "COMMUNICATION FRAMEWORKS MASTER GUIDE"
+      },
+      {
+        "id": "architecture/71-ea-mastery-guide",
+        "title": "EA Mastery Guide (Part 1 of 2): Frameworks, Technical Domains & Business Strategy"
+      },
+      {
+        "id": "architecture/72-enterprise-ai-architect-bible-2026",
+        "title": "Enterprise AI Architect Bible (Part 1 of 2)"
+      },
+      {
+        "id": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
+        "title": "Enterprise Agentic AI Architecture Playbook 2026"
+      },
+      {
+        "id": "architecture/74-ai-solution-lifecycle-deliverables",
+        "title": "AI Solution Lifecycle Deliverables by Role (Part 1 of 3): Lifecycle, Roles, Matrix & Enterprise Architect"
+      },
+      {
+        "id": "architecture/75-enterprise-technology-selection-framework",
+        "title": "Enterprise Technology Selection & Decision Framework (Part 1 of 2): Philosophy, Classification, Criteria & Evaluation Methods"
+      },
+      {
+        "id": "architecture/76-ai-invoice-auditor-architecture",
+        "title": "AI Invoice Auditor Architecture v5.0: Part 1 of 2"
+      },
+      {
+        "id": "architecture/77-ai-transformation-consultant-toolkit-2026",
+        "title": "AI Transformation Consultant Toolkit 2026 (Part 1 of 2)"
+      },
+      {
+        "id": "architecture/78-akes-addendum-document-update-and-versioning",
+        "title": "AKES Addendum: Document Update & Versioning"
+      },
+      {
+        "id": "architecture/79-dpdp-act-2023-comprehensive-guide",
+        "title": "DPDP Act 2023 & DPDP Rules 2025 — Comprehensive Guide (Part 1 of 3): Executive Summary, Legislative Foundation, Framework, Principles & Rights"
+      },
+      {
+        "id": "architecture/80-dsa-principal-architect-reference",
+        "title": "DSA Principal Architect Reference"
+      },
+      {
+        "id": "architecture/81-eaka-research-study",
+        "title": "Enterprise Agent Knowledge Architecture (EAKA) Research Study (Part 1 of 3): Enterprise Knowledge Discovery, Classification, Planning & Skills Architecture"
+      },
+      {
+        "id": "architecture/82-ea-business-communication-executive-skills",
+        "title": "Business Communication & Executive Skills"
+      },
+      {
+        "id": "architecture/83-ea-okr-kpi-research",
+        "title": "OKR & KPI VALUE FRAMEWORK"
+      },
+      {
+        "id": "architecture/84-enterprise-data-architect-ai-genai",
+        "title": "ENTERPRISE DATA ARCHITECT IN THE AGE OF AI & GenAI"
+      },
+      {
+        "id": "architecture/85-enterprise-manager-ai-genai",
+        "title": "Enterprise Manager in the Age of AI & GenAI"
+      },
+      {
+        "id": "architecture/86-principal-enterprise-ai-guide-educative",
+        "title": "Principal & Enterprise AI Architect (Part 1 of 2): Scenario & Strategy Mastery"
+      },
+      {
+        "id": "architecture/87-modern-data-ai-platform-blueprint-2026",
+        "title": "Modern Data & AI Platform Blueprint 2026"
+      },
+      {
         "id": "architecture/index",
         "title": "Architecture Hub"
+      },
+      {
+        "id": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
+        "title": "AIDLC Lifecycle Artifacts: Feasibility, Risk & Data Strategy (Phase 2-3)"
+      },
+      {
+        "id": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
+        "title": "AIDLC Lifecycle Artifacts: Model Design & Architecture (Phase 4)"
+      },
+      {
+        "id": "architecture/parts/03-aidlc-artifacts-development-to-retirement-deployment-mlops-retirement",
+        "title": "AIDLC Lifecycle Artifacts: Deployment, MLOps & Retirement (Phase 7-8)"
+      },
+      {
+        "id": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
+        "title": "AIDLC Lifecycle Artifacts: Enterprise Architecture Artifacts"
+      },
+      {
+        "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
+        "title": "AIDLC TOGAF Artifacts: Vision & Business Architecture (Phase A-B)"
+      },
+      {
+        "id": "architecture/parts/06-aidlc-artifacts-togaf-data-application-architecture",
+        "title": "AIDLC TOGAF Artifacts: Data & Application Architecture (Phase C1-C2)"
+      },
+      {
+        "id": "architecture/parts/07-aidlc-artifacts-togaf-technology-architecture",
+        "title": "AIDLC TOGAF Artifacts: Technology Architecture (Phase D)"
+      },
+      {
+        "id": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
+        "title": "AIDLC TOGAF Artifacts: Change Management & Cross-Cutting Artifacts (Phase H)"
+      },
+      {
+        "id": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
+        "title": "AIDLC TOGAF Artifacts: Artifact Cross-Reference"
+      },
+      {
+        "id": "architecture/parts/10-aidlc-agile-cicd-agile-evolution-cicd-transformation",
+        "title": "AIDLC Agile & CI/CD Transformation: Agile Evolution & CI/CD Transformation"
+      },
+      {
+        "id": "architecture/parts/11-aidlc-agile-cicd-roles-disciplines-roadmap-principles",
+        "title": "AIDLC Agile & CI/CD Transformation: Roles, Disciplines, Roadmap & Principles"
+      },
+      {
+        "id": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
+        "title": "From Data Warehouse to Agent-Native Architecture — Part 2: Data Mesh to Semantic Layers"
+      },
+      {
+        "id": "architecture/parts/13-ai-native-architecture-evolution-report-decision-forecast",
+        "title": "From Data Warehouse to Agent-Native Architecture — Part 3: Feature Stores, Vector Infrastructure, and Agent Memory"
+      },
+      {
+        "id": "architecture/parts/14-agentic-ai-landing-zone-architecture-implementation-governance",
+        "title": "Agentic AI Landing Zone Architecture — Implementation & Governance"
+      },
+      {
+        "id": "architecture/parts/15-ai-deep-future-outlook-2026-2035-sector-impacts",
+        "title": "AI Deep Future Outlook 2026–2035 (Part 2: Workforce, Security, Agriculture, Cities, Creative, AGI)"
+      },
+      {
+        "id": "architecture/parts/16-ai-assistant-architecture-research-report-implementation-evaluation",
+        "title": "AI Assistant Architecture Research Report (Part 2: Multi-Agent, Security, Governance, Production Engineering)"
+      },
+      {
+        "id": "architecture/parts/17-the-agentic-loop-enterprise-ai-architect-guide-practice-cases",
+        "title": "The Agentic Loop — Enterprise AI Architect's Guide (Part 2: Production Practice &amp; Governance)"
+      },
+      {
+        "id": "architecture/parts/18-enterprise-multi-model-ai-strategy-part2",
+        "title": "Enterprise Multi-Model AI Strategy — Technical Comparison, Decision Frameworks & Architecture (Part 2)"
+      },
+      {
+        "id": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
+        "title": "Enterprise Multi-Model AI Strategy — Operations, Governance & Future Trends (Part 3)"
+      },
+      {
+        "id": "architecture/parts/20-enterprise-aiops-guide-part2",
+        "title": "Enterprise AIOps Guide — Governance, Operations & Maturity (Part 2 of 2)"
+      },
+      {
+        "id": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
+        "title": "Enterprise AI Architect — Skills Assessment (Part 2 of 2): Scenario Questions, Review Checklist & Resources"
+      },
+      {
+        "id": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
+        "title": "Enterprise AI Governance & Compliance: Part 2"
+      },
+      {
+        "id": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
+        "title": "Enterprise AI Architect — Foundations (Part 2 of 2): Latency, Data & Security Architecture, Observability, Career Path & Best Practices"
+      },
+      {
+        "id": "architecture/parts/24-enterprise-ai-architect-bible-2026-part2",
+        "title": "Enterprise AI Architect Bible (Part 2 of 2)"
+      },
+      {
+        "id": "architecture/parts/25-enterprise-technology-selection-framework-part2",
+        "title": "Enterprise Technology Selection & Decision Framework (Part 2 of 2): Risk, Vendor Evaluation, TCO, ARB Process & Templates"
+      },
+      {
+        "id": "architecture/parts/26-ai-invoice-auditor-architecture-part2",
+        "title": "AI Invoice Auditor Architecture v5.0: Part 2 of 2"
+      },
+      {
+        "id": "architecture/parts/27-ai-transformation-consultant-toolkit-2026-part2",
+        "title": "AI Transformation Consultant Toolkit 2026 (Part 2 of 2)"
+      },
+      {
+        "id": "architecture/parts/28-ai-solution-lifecycle-deliverables-part2",
+        "title": "AI Solution Lifecycle Deliverables by Role (Part 2 of 3): Security, RAI/Governance, Solution, Distinguished, Data & Platform Architect Deep-Dives"
+      },
+      {
+        "id": "architecture/parts/29-ai-solution-lifecycle-deliverables-part3",
+        "title": "AI Solution Lifecycle Deliverables by Role (Part 3 of 3): Use Case Walk-throughs & Architect's Checklist"
+      },
+      {
+        "id": "architecture/parts/30-akes-addendum-document-update-and-versioning-part2",
+        "title": "AKES Addendum: Document Update & Versioning (Part 2 of 2): Changelog, Partial Updates, Retention & Governance Integration"
+      },
+      {
+        "id": "architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2",
+        "title": "DPDP Act 2023 & DPDP Rules 2025 (Part 2 of 3): Data Discovery, DLP, Breach Notification, DPO & Penalties"
+      },
+      {
+        "id": "architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3",
+        "title": "DPDP Act 2023 & DPDP Rules 2025 (Part 3 of 3): Anti-Patterns, GDPR Comparison, Technology Architecture & Compliance Checklist"
+      },
+      {
+        "id": "architecture/parts/33-eaka-research-study-part2",
+        "title": "Enterprise Agent Knowledge Architecture (EAKA) Research Study (Part 2 of 3): Skill Composition, Governance, Knowledge Graph, MCP & Ecosystem Integration"
+      },
+      {
+        "id": "architecture/parts/34-eaka-research-study-part3",
+        "title": "Enterprise Agent Knowledge Architecture (EAKA) Research Study (Part 3 of 3): Context Engineering, Reliability, Reference Architecture, Lifecycle & Maturity Model"
+      },
+      {
+        "id": "architecture/parts/35-ea-mastery-guide-part2",
+        "title": "EA Mastery Guide (Part 2 of 2): Reading List, Communities, Certifications, Tools & Master Principles"
+      },
+      {
+        "id": "architecture/parts/36-principal-enterprise-ai-guide-educative-part2",
+        "title": "Principal & Enterprise AI Architect (Part 2 of 2): Governance, Strategy & Decision Frameworks"
+      },
+      {
+        "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
+        "title": "EA Architect Deep Dive — The Five Arenas (Part 2 of 2): Engineering, Governance/Risk/Operations & Board/Vendor/External"
       }
     ]
   },

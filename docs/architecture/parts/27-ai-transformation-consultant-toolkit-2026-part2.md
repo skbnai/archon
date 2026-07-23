@@ -153,7 +153,7 @@ Score each identified use case across 6 dimensions. Total score out of 60. Top s
 | Business Value | Nice-to-have; no clear metric | Clear metric; $100K–$1M impact | Core metric; $1M+ impact or strategic | ×2 |
 | Data Readiness | Data doesn't exist or is inaccessible | Data exists but needs cleaning | Clean, labelled, accessible data ready | ×2 |
 | Technical Feasibility | Requires unproven technology or new stack | Requires moderate technical build | Proven pattern; existing stack | ×1.5 |
-| Time to Value | >12 months to first result | 3–12 months to first result | <3 months to first result | ×1.5 |
+| Time to Value | >12 months to first result | 3–12 months to first result | &lt;3 months to first result | ×1.5 |
 | Organisational Readiness | Strong resistance; no sponsor | Mixed reception; sponsor identified | Enthusiastic team; clear owner | ×1 |
 | Risk Level | High: regulatory, safety, or reputational risk | Medium: limited downside; manageable | Low: internal tool; reversible | ×1 |
 
@@ -292,7 +292,7 @@ A: Short answer: start with RAG, add fine-tuning for style and domain dialect la
 
 **Q: What vector database should we use?**
 
-A: It depends on your scale and existing stack. Pinecone for fastest time-to-production with no infra ops. pgvector if you're already on PostgreSQL and scale is <10M vectors. Weaviate for complex multi-tenant schemas. Qdrant for highest throughput production workloads. Chroma only for prototyping — not production-ready at scale.
+A: It depends on your scale and existing stack. Pinecone for fastest time-to-production with no infra ops. pgvector if you're already on PostgreSQL and scale is &lt;10M vectors. Weaviate for complex multi-tenant schemas. Qdrant for highest throughput production workloads. Chroma only for prototyping — not production-ready at scale.
 
 **Action:** Match vector DB choice to your scale expectations and existing data stack. Default to Pinecone if starting from zero.
 
@@ -481,7 +481,7 @@ Gate criterion: ALL items must be complete. No partial deployment to production.
 - Monitoring dashboard live: latency, cost, quality, safety metrics
 - Alerting configured: PagerDuty/OpsGenie for quality degradation, cost spikes, errors
 - Canary deployment configured: 5% of traffic to new version, 95% to baseline
-- Rollback procedure tested and documented (target: < 5 minutes to rollback)
+- Rollback procedure tested and documented (target: &lt; 5 minutes to rollback)
 - On-call rotation established for AI system with documented escalation path
 - LangSmith/Arize/Phoenix observability traces verified in production
 - Cost dashboard live with budget alerts configured
@@ -610,13 +610,13 @@ Monthly dashboard shared with executive sponsor. Tells the story of AI value in 
 | Category | Metric | Baseline | Current | Target | Trend |
 |----------|--------|----------|---------|--------|-------|
 | Quality | AI Output Accuracy / Faithfulness | N/A | ___ | ≥0.85 | ↑↓→ |
-| Quality | Error Rate / Hallucination Rate | N/A | ___ | <2% | ↑↓→ |
+| Quality | Error Rate / Hallucination Rate | N/A | ___ | &lt;2% | ↑↓→ |
 | Adoption | Active Users / Target Users | 0% | ___ | >70% | ↑↓→ |
 | Adoption | Queries per Active User per Week | 0 | ___ | >20 | ↑↓→ |
 | Efficiency | Task Time Saved per User (hrs/wk) | 0 | ___ | ___ | ↑↓→ |
 | Efficiency | Throughput Increase (%) | 0% | ___ | ___ | ↑↓→ |
-| Cost | Cost per Query ($) | N/A | ___ | < $___ | ↑↓→ |
-| Cost | Monthly AI Infrastructure Spend ($) | $0 | ___ | < $___ | ↑↓→ |
+| Cost | Cost per Query ($) | N/A | ___ | &lt; $___ | ↑↓→ |
+| Cost | Monthly AI Infrastructure Spend ($) | $0 | ___ | &lt; $___ | ↑↓→ |
 | Business | Business Metric Impacted | ___ | ___ | ___ | ↑↓→ |
 | Business | Annualised $ Value Delivered | $0 | ___ | ___ | ↑↓→ |
 | Governance | Safety Incidents in Period | 0 | ___ | 0 | ↑↓→ |

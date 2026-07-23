@@ -22,7 +22,7 @@ See [Part 1 of 2](pathname:///archon/architecture/48-enterprise-ai-architect-fou
 
 | Latency tier | Typical SLA | Suitable models | Notes |
 | ------------- | ------------- | ----------------- | ------- |
-| Interactive | < 2s | Haiku 4.5, short Sonnet 5 calls | No extended thinking; short outputs |
+| Interactive | &lt; 2s | Haiku 4.5, short Sonnet 5 calls | No extended thinking; short outputs |
 | Near-real-time | 2–10s | Sonnet 5, Fable 5 (short) | OK for most chat and workflow steps |
 | Background | 10–60s | Fable 5, Opus 4.8, extended thinking | Research, analysis, batch steps |
 | Async/batch | Minutes–hours | Batch API, any model | Report generation, bulk processing |
@@ -40,7 +40,7 @@ See [Part 1 of 2](pathname:///archon/architecture/48-enterprise-ai-architect-fou
 **Use synchronous when:**
 
 - Output will be processed programmatically (parse JSON, call next step)
-- Total latency < 3 seconds (streaming overhead not worth it)
+- Total latency &lt; 3 seconds (streaming overhead not worth it)
 - You need the full response before taking any action
 
 ### 9.3 Parallelism: Fan-Out and Concurrent Agents
