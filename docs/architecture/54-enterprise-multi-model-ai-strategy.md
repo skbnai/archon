@@ -451,7 +451,7 @@ Scale: ✦✦✦✦✦ = industry-leading | ✦✦✦ = competitive | ✦ = limi
 
 ## Related
 
-- [Enterprise AI Architecture Patterns](../49-enterprise-ai-architecture-patterns.md) — Canonical patterns for routing, caching, evaluation pipelines
+- [Enterprise AI Architecture Patterns](49-enterprise-ai-architecture-patterns.md) — Canonical patterns for routing, caching, evaluation pipelines
 - [Enterprise AI Architect Foundations](../48-enterprise-ai-architect-foundations.md) — Role definition, token economics, integration patterns
 - [Kong AI Gateway Guide](pathname://docs/platforms/08-kong-ai-gateway-guide.md) — Implementation details for AI gateway layer
 - Part 2: [Enterprise Multi-Model AI Strategy (Part 2): Technical Comparison &amp; Decision Frameworks](parts/18-enterprise-multi-model-ai-strategy-part2.md)

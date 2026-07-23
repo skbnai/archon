@@ -706,8 +706,8 @@ When RUM signals a user experience problem, AIOps can correlate it with infrastr
 
 ## Related
 
-- [Agentic AI Reliability, Observability & Governance](../43-agentic-ai-reliability-observability-governance.md)
-- [Enterprise AI Architecture Patterns](../49-enterprise-ai-architecture-patterns.md)
+- [Agentic AI Reliability, Observability & Governance](43-agentic-ai-reliability-observability-governance.md)
+- [Enterprise AI Architecture Patterns](49-enterprise-ai-architecture-patterns.md)
 - [Enterprise AI Governance & Compliance](../51-enterprise-ai-governance-compliance.md)
 - [Agent Interoperability & Orchestration](../40-agent-interoperability-orchestration.md)
 

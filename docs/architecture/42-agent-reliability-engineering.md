@@ -337,7 +337,7 @@ This creates an explicit tradeoff mechanism: move fast when reliable, slow down 
 ## Related
 
 - [Agentic AI Reliability, Observability & Governance](43-agentic-ai-reliability-observability-governance.md)
-- [AI Harness Architecture & Orchestration](44-ai-harness-architecture-orchestration.md)
+- [AI Harness Architecture & Orchestration](pathname:///archon/architecture/ai-harness-architecture-orchestration)
 - [Enterprise AI Architecture Patterns](49-enterprise-ai-architecture-patterns.md)
 
 ---

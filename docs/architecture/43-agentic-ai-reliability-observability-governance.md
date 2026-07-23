@@ -183,7 +183,7 @@ Approved model versions per data classification and geographic region. Fields in
 ## Related
 
 - [Agent Reliability Engineering](42-agent-reliability-engineering.md)
-- [AI Harness Architecture & Orchestration](44-ai-harness-architecture-orchestration.md)
+- [AI Harness Architecture & Orchestration](pathname:///archon/architecture/ai-harness-architecture-orchestration)
 - [Enterprise AI Architecture Patterns](49-enterprise-ai-architecture-patterns.md)
 - [Multi-Agent Topology Patterns](59-multi-agent-topology-patterns.md)
 

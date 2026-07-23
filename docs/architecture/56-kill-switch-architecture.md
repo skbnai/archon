@@ -331,7 +331,7 @@ T+24h   Post-mortem published
 - [Agentic AI Reliability, Observability and Governance](../path-to-file) — circuit breaker and kill switch patterns
 - [Agent Reliability Engineering](../path-to-file) — chaos testing kill switches; incident runbooks
 - [Governance Propagation Chain](55-governance-propagation-chain.md) — emergency policy override architecture
-- [End-to-End Traceability Guide](46-end-to-end-traceability-guide.md) — forensic investigation after kill switch activation
+- [End-to-End Traceability Guide](pathname:///archon/architecture/end-to-end-traceability-guide) — forensic investigation after kill switch activation
 - [Drift Detection Guide](45-drift-detection-guide.md) — detecting quality degradation that triggers kill switches
 - [AIDR: AI Detection and Response](../../trust/path-to-file) — SOC response when kill switch is triggered
 - [AI SOC](../../trust/path-to-file) — AI security operations

@@ -16,7 +16,7 @@ sources: []
 
 # Enterprise AI Governance & Compliance (Part 1 of 2)
 
-**Why this matters:** This is part 1 of a 2-part guide. Enterprise AI systems require regulatory compliance, governance structures, and risk controls. This part covers the regulatory landscape, governance frameworks, and foundational risk management for AI systems. For cost governance, bias testing, and toolkit resources, see [Part 2](../parts/22-enterprise-ai-governance-compliance-part2.md).
+**Why this matters:** This is part 1 of a 2-part guide. Enterprise AI systems require regulatory compliance, governance structures, and risk controls. This part covers the regulatory landscape, governance frameworks, and foundational risk management for AI systems. For cost governance, bias testing, and toolkit resources, see [Part 2](parts/22-enterprise-ai-governance-compliance-part2.md).
 
 **Audience:** Enterprise AI Architects, compliance officers, legal, risk, and governance teams.
 
@@ -713,7 +713,7 @@ AI systems can amplify insider threats: an insider with AI agent access can exfi
 
 ## Related
 
-[Enterprise AI Governance & Compliance Part 2](../parts/22-enterprise-ai-governance-compliance-part2.md) — cost governance, bias testing, vendor assessment, Claude-specific governance, best practices, and governance toolkit.
+[Enterprise AI Governance & Compliance Part 2](parts/22-enterprise-ai-governance-compliance-part2.md) — cost governance, bias testing, vendor assessment, Claude-specific governance, best practices, and governance toolkit.
 
 ## Sources
 
