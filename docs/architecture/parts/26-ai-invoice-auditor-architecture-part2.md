@@ -151,6 +151,26 @@ def load_skill(
 
 The **pipeline_agent** from Section 4 is extended with **load_skill** so each stage starts by loading the relevant skill prompt before calling MCP tools. The handoff middleware still controls stage transitions, but the skill provides the specialist prompt context dynamically.
 
+```mermaid
+sequenceDiagram
+    participant A as Pipeline Agent
+    participant S as load_skill Tool
+    participant M as MCP Tool<br/>(data_harvester, etc)
+    participant H as Handoff Middleware
+    participant DB as SQLiteStore<br/>(Long-term Memory)
+    
+    A->>S: load_skill('extraction')
+    S->>S: Read extraction_skill.yaml
+    S-->>A: Skill prompt + required tools
+    A->>M: Call data_harvester(invoice_file)
+    M-->>A: Extracted fields + confidence
+    A->>DB: save_audit_decision(vendor_id, result)
+    A->>H: complete_extraction(confidence)
+    H-->>A: Command(update=next_stage)
+```
+
+**Skills-Driven Invoice Processing Pipeline.** Agent loads the relevant skill prompt before each stage, calls MCP tools with expert guidance, persists decisions to long-term memory, then signals handoff to the next stage. Progressive disclosure ensures only active skills are in context.
+
 ```python
 # Extension to pipeline_agent — add load_skill to all stage tool lists
 
@@ -283,7 +303,7 @@ class MetricsDB:
         self.conn.row_factory = sqlite3.Row
         self.conn.executescript(SCHEMA)
 
-    # ── Writers ───────────────────────────────────────────────────────
+    # Writers
     def log_tool_call(self, run_id, tool_name, duration_ms,
                       status, input_data=None, error_msg=None):
         ih = hashlib.sha256(
@@ -315,7 +335,7 @@ class MetricsDB:
             ' VALUES(?,?,datetime("now"))',
             (run_id, skill_name))
 
-    # ── Query helpers (used by Observability UI page) ─────────────────
+    # Query helpers (used by Observability UI page)
     def slowest_tools(self, n=10):
         return [dict(r) for r in self.conn.execute(
             'SELECT tool_name, AVG(duration_ms) avg_ms, COUNT(*) calls,'
@@ -415,84 +435,29 @@ class MetricsDB:
 
 ## **10. Updated Project Folder Structure (v5.0)**
 
-```
-ai-invoice-auditor\
-│
-├── config\
-│   ├── rules.yaml                      # ✅ unchanged
-│   └── config.yaml                     # 🔧 removed langfuse/postgres sections
-│
-├── docs\incoming\                      # ✅ unchanged
-├── docs\erp\                           # ✅ unchanged
-│
-├── prompts\                            # 🆕 Externalised skill prompts
-│   └── skills\
-│       ├── extraction_skill.yaml
-│       ├── translation_skill.yaml
-│       ├── validation_skill.yaml
-│       ├── reporting_skill.yaml
-│       ├── rag_indexing_skill.yaml
-│       └── rag_query_skill.yaml
-│
-├── src\
-│   ├── context.py                      # 🆕 InvoiceContext dataclass (Runtime)
-│   ├── core\
-│   │   ├── persistence.py              # 🆕 SqliteSaver + SqliteStore setup
-│   │   ├── llm_factory.py              # 🔧 returns BaseChatModel for Ollama
-│   │   ├── paths.py                    # ✅ Windows-safe pathlib constants
-│   │   └── config_loader.py
-│   ├── agents\
-│   │   ├── pipeline_agent.py           # 🆕 Handoffs + HumanInTheLoopMiddleware
-│   │   ├── invoice_audit_agent.py      # 🆕 HITL-only agent for review stage
-│   │   └── hitl_runner.py              # 🆕 run_audit / resume_audit / stream_audit
-│   ├── memory\
-│   │   └── long_term.py                # 🆕 recall/save SqliteStore tools
-│   ├── observability\
-│   │   └── metrics_db.py               # 🔧 SQLite-only (LangFuse removed)
-│   ├── protocols\
-│   │   ├── mcp_client.py               # ✅ InstrumentedMCPClient
-│   │   └── a2a_broker.py
-│   └── schemas\
-│       ├── invoice.py
-│       ├── a2a_message.py
-│       └── hitl.py                     # 🔧 updated for approve/edit/reject
-│
-├── tools\                              # ✅ all 11 MCP tools unchanged
-│   ├── mcp_server.py
-│   └── ...                             # watcher, extractor, translator, etc.
-│
-├── chat_api\
-│   ├── main.py                         # 🔧 /hitl uses resume_audit()
-│   ├── agui_bus.py
-│   ├── session_store.py                # 🔧 memory backed by SqliteStore
-│   └── routers\
-│       ├── chat.py
-│       ├── hitl.py                     # 🔧 decisions → Command(resume=...)
-│       └── dashboard.py
-│
-├── ui\
-│   ├── app.py
-│   └── pages\
-│       ├── 1_Pipeline_Monitor.py       # 🔧 stage transitions from handoffs
-│       ├── 2_Invoice_Chat.py           # 🔧 memory panels (short+long term)
-│       ├── 3_HITL_Review.py           # 🔧 approve/edit/reject UI
-│       ├── 4_Executive_Dashboard.py
-│       ├── 5_Observability.py          # 🔧 SQLite only, no LangFuse iframe
-│       └── 6_Settings.py              # 🔧 memory controls + HITL policy editor
-│
-├── erp_mock\                           # ✅ unchanged
-├── tests\
-├── start_all.bat                       # 🔧 no Docker commands
-├── stop_all.bat
-├── .env.example
-├── requirements.txt                    # 🔧 removed langfuse, psycopg; added sqlite deps
-└── README.md
-```
+**Key Folder Changes v5.0:**
+
+- **config/** (unchanged): rules.yaml, config.yaml (removed langfuse/postgres sections)
+- **docs/** (unchanged): docs/incoming/, docs/erp/
+- **prompts/** (new): Externalised skill prompts (extraction_skill.yaml, translation_skill.yaml, validation_skill.yaml, reporting_skill.yaml, rag_indexing_skill.yaml, rag_query_skill.yaml)
+- **src/context.py** (new): InvoiceContext dataclass
+- **src/core/** (modified): persistence.py (SqliteSaver + SqliteStore), llm_factory.py (Ollama), paths.py (Windows-safe), config_loader.py
+- **src/agents/** (new): pipeline_agent.py (Handoffs + HITL), invoice_audit_agent.py (HITL-only), hitl_runner.py (run/resume/stream)
+- **src/memory/** (new): long_term.py (SqliteStore recall/save tools)
+- **src/observability/** (modified): metrics_db.py (SQLite-only, LangFuse removed)
+- **src/protocols/** (unchanged): mcp_client.py (InstrumentedMCPClient), a2a_broker.py
+- **src/schemas/** (modified): invoice.py, a2a_message.py, hitl.py (approve/edit/reject)
+- **tools/** (unchanged): All 11 MCP tools, mcp_server.py
+- **chat_api/** (modified): main.py (/hitl uses resume_audit), agui_bus.py, session_store.py (SqliteStore), routers/ (chat.py, hitl.py, dashboard.py)
+- **ui/pages/** (modified): 1_Pipeline_Monitor (handoffs), 2_Invoice_Chat (memory panels), 3_HITL_Review (approve/edit/reject), 4_Executive_Dashboard, 5_Observability (SQLite only), 6_Settings (memory + policy)
+- **erp_mock/** (unchanged)
+- **tests/**, **start_all.bat**, **stop_all.bat**, **.env.example** (updated): Removed Docker, removed langfuse/psycopg, added sqlite deps
+- **README.md**
 
 ## **11. requirements.txt (v5.0 — No Docker/LangFuse/PostgreSQL)**
 
 ```
-# ── Orchestration ─────────────────────────────────────────────────────
+# Orchestration
 
 langgraph>=0.3.0
 langgraph-checkpoint-sqlite>=0.1.0      # SqliteSaver — replaces PostgresSaver
@@ -501,11 +466,11 @@ langchain-community>=0.3.0
 langchain-ollama>=0.1.0
 langchain-openai>=0.1.0                 # optional — for Azure switch
 
-# ── HITL Middleware ────────────────────────────────────────────────────
+# HITL Middleware
 
 # HumanInTheLoopMiddleware is in langchain>=0.3 — no extra package
 
-# ── Memory ────────────────────────────────────────────────────────────
+# Memory
 
 # SqliteStore is in langgraph>=0.3 — no extra package
 
@@ -513,7 +478,7 @@ langchain-openai>=0.1.0                 # optional — for Azure switch
 
 sentence-transformers>=2.7.0            # embeddings for SqliteStore vector search
 
-# ── Chat API Gateway ──────────────────────────────────────────────────
+# Chat API Gateway
 
 fastapi>=0.111.0
 uvicorn[standard]>=0.29.0
@@ -521,54 +486,54 @@ httpx>=0.27.0
 sse-starlette>=1.8.0
 ag-ui-sdk>=0.1.0
 
-# ── Protocols ─────────────────────────────────────────────────────────
+# Protocols
 
 fastmcp>=0.9.0
 a2a-sdk>=0.2.0
 
-# ── Document Parsing ─────────────────────────────────────────────────
+# Document Parsing
 
 pdfplumber>=0.10.0
 python-docx>=1.1.0
 pytesseract>=0.3.10
 Pillow>=10.0.0
 
-# ── Vector DB (RAG) ──────────────────────────────────────────────────
+# Vector DB (RAG)
 
 faiss-cpu>=1.8.0
 qdrant-client>=1.9.0                    # optional — if Qdrant preferred
 chromadb>=0.5.0                         # optional — if Chroma preferred
 
-# ── RAG Evaluation ────────────────────────────────────────────────────
+# RAG Evaluation
 
 trulens-eval>=0.30.0
 
-# ── Schema Validation ────────────────────────────────────────────────
+# Schema Validation
 
 pydantic>=2.7.0
 pydantic-settings>=2.2.0
 
-# ── Frontend ─────────────────────────────────────────────────────────
+# Frontend
 
 streamlit>=1.35.0
 pdfkit>=1.0.0                           # Executive Dashboard PDF export
 
-# ── Config + Utilities ────────────────────────────────────────────────
+# Config + Utilities
 
 pyyaml>=6.0.1
 python-dotenv>=1.0.1
 structlog>=24.0.0
 
-# ── Windows compatibility ─────────────────────────────────────────────
+# Windows compatibility
 
 colorama>=0.4.6                         # Windows terminal colour support
 
-# ── Testing ───────────────────────────────────────────────────────────
+# Testing
 
 pytest>=8.2.0
 pytest-asyncio>=0.23.0
 
-# ── REMOVED vs v4.0 ──────────────────────────────────────────────────
+# REMOVED vs v4.0
 
 # langfuse                — removed (no Docker, no LangFuse server)
 

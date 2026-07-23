@@ -5,6 +5,7 @@ domain: architecture
 topic_id: enterprise-ai-architect-bible-2026-part2
 date_created: 2026-07-10
 date_modified: 2026-07-23
+last_reviewed: 2026-07-23
 status: current
 version: 2026-wave-2
 supersedes: []
@@ -72,6 +73,30 @@ Fine-tuning is often the wrong answer. Most enterprise AI problems should be sol
 ### CI/CD for Models and Prompts
 
 Production AI systems require version control and automated testing for both model weights and prompts. Most teams treat prompts as static text—a costly mistake. Prompt regressions are as real as code regressions, and just as damaging.
+
+```mermaid
+flowchart TB
+    A["Model Selection<br/>(Base + fine-tune choice)"] --> B["Train/SFT<br/>(500-10K examples)"]
+    B --> C["Model Registry<br/>(Version + metadata)"]
+    C --> D["Eval Gate<br/>(RAGAS, latency)"]
+    D -->|Pass| E["Canary 5%<br/>(Monitor metrics)"]
+    D -->|Fail| B
+    E -->|Metrics stable<br/>24h| F["Promote 100%<br/>(Production)"]
+    E -->|Degradation| G["Auto-Rollback<br/>(Previous version)"]
+    F --> H["Production Monitoring<br/>(Drift + quality)"]
+    H -->|Quality drift| I["Retrain<br/>(New data)"]
+    I --> C
+    H -->|Stable| H
+
+    classDef gate fill:#ff9999
+    classDef promote fill:#99ccff
+    classDef loop fill:#99ff99
+    class D gate
+    class F promote
+    class I loop
+```
+
+**LLMOps Continuous Improvement Cycle.** Model versions move through eval gates, canary deployment with automated rollback, then production monitoring that triggers retraining when drift is detected. Complete automation reduces manual incident response and enables rapid model iteration at scale.
 
 - **Model Registry.** Every model version (base + fine-tuned) is registered with metadata: training data hash, hyperparameters, eval metrics, and deployment history. MLflow Model Registry and Vertex AI Model Registry are the leading solutions.
 - **Prompt Version Control.** Prompts are code. Store in Git with PR reviews. Use LangSmith, PromptLayer, or Weave for prompt experiment tracking. Each prompt version has an associated eval score.

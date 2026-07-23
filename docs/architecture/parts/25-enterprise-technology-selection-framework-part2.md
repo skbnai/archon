@@ -175,25 +175,35 @@ Organisations routinely undercount the cost of technology by 3–5× because the
 
 The TCO iceberg:
 
+```mermaid
+graph TB
+    VIS["<b>VISIBLE</b><br/>Licence / Subscription"]
+    
+    H1["Integration Development<br/>(one-time)"]
+    H2["Migration from<br/>Existing System"]
+    H3["Training &<br/>Onboarding"]
+    H4["Internal Engineering<br/>to Operate"]
+    H5["Infrastructure<br/>(compute, storage, network)"]
+    H6["Professional Services<br/>& Consulting"]
+    H7["Compliance<br/>Audit Cost"]
+    H8["Customisation<br/>Maintenance"]
+    H9["Upgrade<br/>Engineering"]
+    H10["Exit / Migration Cost<br/>(amortised)"]
+    H11["Productivity Loss<br/>During Transition"]
+    H12["Security Review<br/>& Tooling"]
+    
+    HID["<b>HIDDEN</b><br/>(what architects must surface)"]
+    
+    VIS --> HID
+    HID --> H1 & H2 & H3 & H4 & H5 & H6 & H7 & H8 & H9 & H10 & H11 & H12
+    
+    classDef visible fill:#e1f5ff
+    classDef hidden fill:#fff3e0
+    class VIS visible
+    class HID hidden
 ```
-VISIBLE (what procurement sees):
-  Licence / subscription fee
-  ─────────────────────────────── WATERLINE ──────
 
-HIDDEN (what architects must surface):
-  Integration development (one-time)
-  Migration from existing system
-  Training and onboarding
-  Internal engineering to operate
-  Infrastructure (compute, storage, network)
-  Professional services / consulting
-  Compliance audit cost
-  Customisation maintenance
-  Upgrade engineering
-  Exit / migration cost (amortised)
-  Productivity loss during transition
-  Security review and tooling
-```
+**Total Cost of Ownership Iceberg.** Organisations see only the licence/subscription cost visible above the waterline. Hidden below: integration, migration, training, operations, infrastructure, consulting, compliance, maintenance, upgrades, exit costs, and productivity loss. True TCO is typically 3–5× the acquisition cost.
 
 ### 13.2 TCO Model Structure
 
@@ -309,6 +319,38 @@ All technology decisions above the departmental tool level require an ARB submis
 | **Standard designation gate** | Team wants enterprise-wide standard | Approve as Preferred / Mandatory / reject | 4 weeks |
 | **Exception gate** | Deviation from existing standard | Approve time-limited exception / reject | 2 business days (blocking) / 2 weeks (planned) |
 | **Sunset gate** | Technology being retired | Approve retirement date and migration plan | 2 weeks |
+
+```mermaid
+flowchart LR
+    A["New Tech Request"] --> B{Pre-PoC Gate<br/>1 week}
+    B -->|Approved| C["PoC Scope<br/>& Budget"]
+    B -->|Rejected| D["Decline"]
+    C --> E["PoC Execution"]
+    E --> F{Post-PoC Gate<br/>2 weeks}
+    F -->|Pilot OK| G["Pilot Deployment"]
+    F -->|More Data| E
+    F -->|Reject| D
+    G --> H{Standard Gate<br/>4 weeks}
+    H -->|Preferred| I["Enterprise Standard"]
+    H -->|Mandatory| I
+    H -->|Reject| D
+    I --> J{Exception Gate<br/>2 days-2 weeks}
+    J -->|Time-Limited| K["Exception Approved"]
+    J -->|Reject| D
+    K --> L["Production Use"]
+    I --> L
+    L --> M{Sunset Gate<br/>2 weeks}
+    M -->|Approved| N["Retire + Migrate"]
+    
+    classDef gate fill:#ffcccc
+    classDef active fill:#ccffcc
+    classDef decline fill:#ffaaaa
+    class B,F,H,J,M gate
+    class C,E,G,I,K,L active
+    class D,N decline
+```
+
+**ARB Technology Decision Gates.** Five sequential gates govern technology adoption: PoC approval, pilot readiness, enterprise standardization, exception requests, and retirement. Each gate has a defined timeline and clear approval criteria, ensuring consistent decision-making across the organization.
 
 ### 15.3 Stakeholder Roles in the Decision
 

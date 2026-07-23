@@ -199,6 +199,31 @@ Complete one form per candidate use case before the prioritisation workshop.
 | 1:40–1:55 | Owner Assignment: each use case gets a named business owner | Leaders | Accountability map |
 | 1:55–2:00 | Next Steps & Commitment: sign the prioritisation document | AI Architect | Signed roadmap |
 
+```mermaid
+flowchart LR
+    A["Intake Forms<br/>(Candidates)"] --> B["Welcome &<br/>Rules"]
+    B --> C["3-Min<br/>Pitches"]
+    C --> D["Individual<br/>Scoring<br/>(6 dimensions)"]
+    D --> E["Score<br/>Aggregation"]
+    E --> F{Outlier<br/>Discussion}
+    F --> G["Consensus<br/>Scores"]
+    G --> H["Portfolio<br/>Tiering<br/>(90d/6m/12m)"]
+    H --> I["Owner<br/>Assignment"]
+    I --> J["Sign<br/>Roadmap"]
+    
+    classDef phase1 fill:#cce5ff
+    classDef scoring fill:#fff4cc
+    classDef decision fill:#ccffcc
+    classDef commit fill:#ffcccc
+    
+    class A,B,C phase1
+    class D,E,F,G scoring
+    class H,I decision
+    class J commit
+```
+
+**Use Case Prioritisation Workshop Flow.** Candidates move from intake through pitched presentations into multi-criteria scoring (Business Value, Data Readiness, Technical Feasibility, Time to Value, Org Readiness, Risk Level). Scores drive portfolio tiering: highest-scoring use cases enter the 90-day plan with named owners and board sign-off.
+
 ---
 
 ## Part 6: FAQ Bank — All Client Scenarios
