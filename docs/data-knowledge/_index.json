@@ -11,10 +11,19 @@
     "hub",
     "data-knowledge"
    ],
-   "word_count": 98,
+   "word_count": 105,
    "last_reviewed": "2026-07-18",
    "status": "draft",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "agentic-systems/index",
+     "score": 0.33
+    },
+    {
+     "id": "protocols/index",
+     "score": 0.3
+    }
+   ]
   }
  ]
 }

@@ -11,13 +11,17 @@
     "hub",
     "learning-paths"
    ],
-   "word_count": 82,
+   "word_count": 174,
    "last_reviewed": "2026-07-18",
    "status": "draft",
    "top_similar": [
     {
      "id": "assets/index",
-     "score": 0.31
+     "score": 0.44
+    },
+    {
+     "id": "career/index",
+     "score": 0.38
     }
    ]
   }

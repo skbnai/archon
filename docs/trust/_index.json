@@ -11,10 +11,19 @@
     "hub",
     "trust"
    ],
-   "word_count": 109,
+   "word_count": 116,
    "last_reviewed": "2026-07-18",
    "status": "draft",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "protocols/index",
+     "score": 0.33
+    },
+    {
+     "id": "operations/index",
+     "score": 0.31
+    }
+   ]
   }
  ]
 }

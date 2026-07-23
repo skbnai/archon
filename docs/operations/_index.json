@@ -11,10 +11,19 @@
     "hub",
     "operations"
    ],
-   "word_count": 95,
+   "word_count": 102,
    "last_reviewed": "2026-07-18",
    "status": "draft",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "protocols/index",
+     "score": 0.32
+    },
+    {
+     "id": "trust/index",
+     "score": 0.31
+    }
+   ]
   }
  ]
 }

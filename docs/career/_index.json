@@ -11,13 +11,17 @@
     "hub",
     "career"
    ],
-   "word_count": 79,
+   "word_count": 86,
    "last_reviewed": "2026-07-18",
    "status": "draft",
    "top_similar": [
     {
      "id": "assets/index",
-     "score": 0.44
+     "score": 0.52
+    },
+    {
+     "id": "learning-paths/index",
+     "score": 0.38
     }
    ]
   }

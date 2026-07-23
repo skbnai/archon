@@ -11,17 +11,17 @@
     "hub",
     "assets"
    ],
-   "word_count": 85,
+   "word_count": 92,
    "last_reviewed": "2026-07-18",
    "status": "draft",
    "top_similar": [
     {
      "id": "career/index",
-     "score": 0.44
+     "score": 0.52
     },
     {
      "id": "learning-paths/index",
-     "score": 0.31
+     "score": 0.44
     }
    ]
   }
