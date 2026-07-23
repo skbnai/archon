@@ -1,190 +1,265 @@
 ---
-title: "MASTERY GUIDE"
-doc_type: guide
+title: "EA Mastery Guide (Part 1 of 2): Frameworks, Technical Domains & Business Strategy"
+date_created: 2026-07-23
+date_modified: 2026-07-23
+last_reviewed: 2026-07-23
+status: current
+doc_type: reference-architecture
 domain: architecture
 topic_id: ea-mastery-guide
-date_created: 2026-07-23
-status: current
-last_reviewed: 2026-07-23
-covers_version: "N/A"
 supersedes:
   - docs/enterprise-architecture/process/EA_Mastery_Guide.md
+tags:
+  - enterprise-architecture
+  - frameworks
+  - technical-domains
+  - business-strategy
+covers_version: "2025-2026"
 ---
 
-# MASTERY GUIDE
+**This is Part 1 of 2.** For Part 2 covering must-read books, communities, certifications, tools, learning paths, and master principles, see [EA Mastery Guide Part 2](pathname:///archon/architecture/parts/35-ea-mastery-guide-part2).
 
-Deep Research Edition. Everything You Need to Read, Learn, Do and Become. A comprehensive, deeply researched guide covering every concept, framework, book, website, certification, tool, and principle an Enterprise Architect needs to master — from foundational theory to cutting-edge practice in AI, cloud, data, and governance.
+## Deep Research Edition
 
-## EA Frameworks & Standards
+**Everything You Need to Read, Learn, Do and Become**
 
-**TOGAF 10 — The Open Group Architecture Framework.** The dominant global EA framework — adopted by 60% of Fortune 500 companies. TOGAF provides the Architecture Development Method (ADM): a cyclical process covering Architecture Vision, Business Architecture, Information Systems Architecture, Technology Architecture, Opportunities and Solutions, Migration Planning, and Architecture Governance. Priority: ESSENTIAL — Learn this first.
+A comprehensive, deeply researched guide covering every concept, framework, book, website, certification, tool, and principle an Enterprise Architect needs to master — from foundational theory to cutting-edge practice in AI, cloud, data, and governance. Grounded in 2025–2026 research across Gartner, The Open Group, McKinsey, BCG, IASA, and the world's leading EA practitioners.
 
-**ArchiMate 3.2 — The EA Modelling Language.** The standard visual notation for EA, maintained by The Open Group. ArchiMate has three layers — Business, Application, and Technology — and three aspects: Active Structure, Behaviour, and Passive Structure. Priority: ESSENTIAL — Your drawing language.
+### Content Overview
 
-**Zachman Framework.** Not a methodology — a classification taxonomy. A 6x6 matrix mapping six perspectives (Planner, Owner, Designer, Builder, Implementer, Worker) against six interrogatives (What, How, Where, Who, When, Why). Use for completeness checks. Priority: IMPORTANT.
+| Topic | Focus Areas |
+|-------|-----------|
+| **01** | **EA Frameworks & Standards** | TOGAF, Zachman, FEAF, SABSA, ArchiMate |
+| **02** | **Technical Domains to Master** | Cloud, Integration, Data, Security, AI |
+| **03** | **Business & Strategy Domains** | Capability Mapping, BCM, OKR, FinOps |
 
-**SABSA — Sherwood Applied Business Security Architecture.** The leading enterprise security architecture framework. SABSA is business-driven rather than compliance-driven. Priority: ESSENTIAL if security is in scope.
+## Framework Architecture Overview
 
-**FEAF & DODAF — Government EA Frameworks.** FEAF (Federal Enterprise Architecture Framework) is used across US federal agencies. DoDAF (Department of Defense Architecture Framework) is used in defence. Priority: SITUATIONAL — Government/Defence contexts.
+```mermaid
+graph TB
+    EA["Enterprise Architecture"]
+    
+    EA --> F["Framework Layer"]
+    EA --> T["Technical Layer"]
+    EA --> B["Business Layer"]
+    
+    F --> TOGAF["TOGAF 10<br/>ADM Process"]
+    F --> ArchiMate["ArchiMate 3.2<br/>Modelling Language"]
+    F --> Zachman["Zachman<br/>Ontology"]
+    F --> SABSA["SABSA<br/>Security"]
+    F --> FEAF["FEAF/DoDAF<br/>Government"]
+    
+    T --> Cloud["Cloud Architecture<br/>Multi-Cloud & Hybrid"]
+    T --> Integration["Integration & APIs<br/>Event-Driven"]
+    T --> Data["Data Architecture<br/>Mesh & Lakehouse"]
+    T --> Security["Security Architecture<br/>Zero Trust"]
+    T --> AI["AI & ML Architecture<br/>MLOps"]
+    T --> Platform["Platform Engineering<br/>DevOps"]
+    
+    B --> Capability["Capability Mapping<br/>& Value Streams"]
+    B --> Business["Business Model Canvas<br/>& Strategy"]
+    B --> OKR["OKR & KPI<br/>Frameworks"]
+    B --> Financial["Financial Acumen<br/>TCO & ROI"]
+    B --> Risk["Risk Architecture<br/>& Continuity"]
+    B --> Change["Organizational Change<br/>Management"]
+    B --> Compliance["Regulatory &<br/>Compliance"]
+    
+    style EA fill:#e1f5ff
+    style F fill:#fff3e0
+    style T fill:#f3e5f5
+    style B fill:#e8f5e9
+```
 
-**ITIL 4 — IT Service Management.** Not strictly EA but essential context. The EA must understand the service management lifecycle because architecture decisions shape how services are operated. Priority: IMPORTANT.
+---
 
-**Business Architecture Guild — BIZBOK.** The Business Architecture Body of Knowledge defines business architecture practice. Where TOGAF starts with technology and works toward business, BIZBOK starts with business strategy and works toward technology. Priority: IMPORTANT.
+## 01 — EA Frameworks & Standards
 
-**SAFe — Scaled Agile Framework.** The enterprise scaling framework for agile delivery. The EA's role is to maintain the 'architectural runway.' 30%+ of large enterprises now use SAFe or a derivative. Priority: IMPORTANT for delivery-oriented organisations.
+The architecture of architecture — know these cold.
 
-## Technical Domains to Master
+Frameworks are the language of enterprise architecture. You do not need to implement every framework — you need to understand each well enough to know when and why to use it, and to have an intelligent conversation with anyone who has. Based on 147 EA engagements across FTSE 250 companies, the most effective EAs use TOGAF as governance scaffolding, ArchiMate as their visual language, and draw from Zachman for completeness checks. SABSA is mandatory if you touch security architecture.
 
-**Cloud Architecture.** The Well-Architected Framework (AWS, Azure, GCP) defines five pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimisation. 94% of enterprises use cloud for critical workloads.
+### TOGAF 10 — The Open Group Architecture Framework
 
-**Integration Architecture & API Strategy.** Enterprise Integration Patterns (Hohpe, 2003) remains the definitive reference. 65 integration patterns covering messaging, routing, transformation, orchestration. API-first design is non-negotiable.
+The dominant global EA framework — adopted by 60% of Fortune 500 companies. TOGAF provides the Architecture Development Method (ADM): a cyclical process covering Architecture Vision, Business Architecture, Information Systems Architecture, Technology Architecture, Opportunities and Solutions, Migration Planning, and Architecture Governance. TOGAF 10 (2022) introduced modular adoption — you no longer need to implement all 10 ADM phases. Focus on the principles: architecture content framework, enterprise continuum, and governance repository. Do NOT treat TOGAF as a rigid checklist — it is a configurable methodology, not a recipe.
 
-**Data Architecture & Platform Engineering.** The Data Mesh manifesto and Data Lakehouse architecture are the dominant paradigms. DAMA-DMBOK is the Body of Knowledge. Data Contracts define the interface between data producers and consumers.
+- **Reference:** opengroup.org/togaf
+- **Priority:** ESSENTIAL — Learn this first
+- **Tags:** Framework, Governance, Methodology, Foundation, Certification
 
-**Security Architecture.** Zero Trust is the dominant security paradigm. NIST Zero Trust Architecture (SP 800-207) is the authoritative reference. SABSA for security architecture methodology.
+### ArchiMate 3.2 — The EA Modelling Language
 
-**AI & ML Architecture.** MLOps: experiment tracking (MLflow), model registry, feature stores, model serving, drift monitoring. LLM architecture: RAG, prompt engineering, vector databases, fine-tuning vs. prompting trade-offs. EU AI Act is law.
+The standard visual notation for EA, maintained by The Open Group. ArchiMate has three layers — Business (processes, actors, roles), Application (software, services), and Technology (infrastructure, platforms) — and three aspects: Active Structure, Behaviour, and Passive Structure. Master the motivation and strategy extensions for capability and roadmap modelling. ArchiMate is what makes your architecture readable and consistent across business and IT stakeholders. Free viewer: Archi (archi-matetool.com). Professional: Sparx EA, BiZZdesign.
 
-**Platform Engineering & DevOps.** Platform Engineering is the EA's discipline applied to developer tooling. DORA metrics are the four metrics that measure software delivery performance. Concepts: GitOps, Infrastructure as Code (Terraform), Kubernetes, Service Mesh, Observability.
+- **Reference:** opengroup.org/archimate
+- **Priority:** ESSENTIAL — Your drawing language
+- **Tags:** Modelling, Language, Visual Standard, Open Group
 
-## Business & Strategy Domains
+### Zachman Framework — The Enterprise Architecture Ontology
 
-**Business Capability Mapping.** The most powerful EA tool for business alignment. Heat-mapping capabilities by investment level, performance gap, and strategic importance is the foundation of portfolio rationalisation.
+Not a methodology — a classification taxonomy. The Zachman Framework is a 6x6 matrix mapping six perspectives (Planner, Owner, Designer, Builder, Implementer, Worker) against six interrogatives (What, How, Where, Who, When, Why). Use Zachman for completeness checks — it ensures you have not missed a stakeholder perspective or an architectural dimension. Particularly valuable in documentation-heavy or regulated environments. Widely used in government and financial services.
 
-**Value Stream Mapping.** Tracing the end-to-end flow of value delivery from customer need to customer outcome. Reveals where technology investments have the highest leverage.
+- **Reference:** zachman.com
+- **Priority:** IMPORTANT — Use for structured documentation
+- **Tags:** Taxonomy, Classification, Completeness, Documentation
 
-**Business Model Canvas & Strategy.** Every EA must read 'Business Model Generation' (Osterwalder & Pigneur). Understanding the business model is the prerequisite for meaningful technology strategy.
+### SABSA — Sherwood Applied Business Security Architecture
 
-**OKR & KPI Frameworks.** Measure What Matters (Doerr, 2018) is the foundational OKR text. The EA must be fluent in both OKRs and KPIs to translate architecture outcomes into business language.
+The leading enterprise security architecture framework. SABSA follows Zachman's six-layer structure adapted for security — contextual (business), conceptual (architecture), logical (design), physical (technology), component, and operational. SABSA is business-driven rather than compliance-driven — it ties security architecture directly to business risk and objectives. Mandatory reading if your EA scope includes security. The Chartered Security Architect credential (CSAP) is the gold standard for security architects.
 
-**Financial Acumen: TCO, ROI, FinOps.** An EA who cannot build a business case is an EA who cannot influence investment. FinOps Foundation's practitioner certification (FOCP) is worth considering.
+- **Reference:** sabsa.org
+- **Priority:** ESSENTIAL if security is in scope
+- **Tags:** Security Architecture, Risk, Business-Driven, Certification
 
-**Risk Architecture & Business Continuity.** COSO ERM framework and ISO 31000 for risk management. ISO 22301 for Business Continuity Management.
+### FEAF & DODAF — Government EA Frameworks
 
-**Organisational Change Management.** PROSCI ADKAR model, Kotter's 8-Step Change Model. The EA is a change agent.
+FEAF (Federal Enterprise Architecture Framework) is used across US federal agencies. DoDAF (Department of Defense Architecture Framework) is used in defence. Both matter if you work in government, defence, or with public sector clients. DoDAF uses viewpoints organised into eight architecture data groups. FEAF uses a collaborative planning methodology with five reference models. Even in commercial settings, FEAF's structured approach to capability assessment and investment review is highly transferable.
 
-**Regulatory & Compliance Landscape.** 2026 compliance landscape: GDPR, PCI-DSS, DORA, EU AI Act, SOC 2, ISO 27001, HIPAA, CSRD.
+- **Reference:** gsa.gov/feaf | dodcio.defense.gov/dodaf
+- **Priority:** SITUATIONAL — Government/Defence contexts
+- **Tags:** Government, Defence, Public Sector, Viewpoints
 
-## Must-Read Books
+### ITIL 4 — IT Service Management
 
-**Tier 1 — Read First:**
+Not strictly EA but essential context. ITIL 4 defines how IT services are managed, delivered, and improved. The EA must understand the service management lifecycle (Design, Transition, Operation, Continual Improvement) because architecture decisions shape how services are operated. ITIL 4 introduced the Service Value System and four dimensions of service management — organisations and people, information and technology, partners and suppliers, and value streams. Key integration point: Change Management (ITIL) and Architecture Governance (TOGAF) must be explicitly connected in your operating model.
 
-The Software Architect Elevator (Hohpe) — The single best book for the modern EA.
+- **Reference:** axelos.com/certifications/itil-service-management
+- **Priority:** IMPORTANT — Every EA must understand ITSM
+- **Tags:** Service Management, Operations, ITSM, Governance
 
-Enterprise Integration Patterns (Hohpe & Woolf) — The definitive catalogue of 65 integration patterns.
+### Business Architecture Guild — BIZBOK
 
-Fundamentals of Software Architecture (Richards & Ford) — The best modern textbook on software architecture.
+The Business Architecture Body of Knowledge defines business architecture practice: capability maps, value streams, information maps, and organisation maps. Where TOGAF starts with technology and works toward business, BIZBOK starts with business strategy and works toward technology. The combination is powerful: use BIZBOK to build the business capability map, use TOGAF to connect it to the application and technology architecture. Particularly relevant for EAs who work closely with business strategy teams.
 
-Measure What Matters (Doerr) — The OKR bible.
+- **Reference:** businessarchitectureguild.org
+- **Priority:** IMPORTANT — Business-strategy oriented EAs
+- **Tags:** Business Architecture, Capability, Strategy, Value Streams
 
-Business Model Generation (Osterwalder & Pigneur) — The Business Model Canvas.
+### SAFe — Scaled Agile Framework
 
-Accelerate (Forsgren, Humble & Kim) — The research behind the DORA metrics.
+The enterprise scaling framework for agile delivery. If your organisation uses SAFe, the EA must understand PI Planning (Program Increment Planning), Architecture Runway, and Agile Release Trains. The EA's role in SAFe is to maintain the architectural runway — the technical foundation that enables delivery teams to build features without architectural rework. Gartner (2025): 30%+ of large enterprises now use SAFe or a derivative. The EA who doesn't understand SAFe will be permanently excluded from delivery conversations.
 
-**Tier 2 — Read Next:**
+- **Reference:** scaledagileframework.com
+- **Priority:** IMPORTANT — Delivery-oriented organisations
+- **Tags:** Agile, Delivery, PI Planning, Runway
 
-Patterns of Enterprise Application Architecture (Fowler) — The patterns behind every enterprise application.
+---
 
-Building Microservices (Newman, 2nd ed.) — The definitive guide to microservices architecture.
+## 02 — Technical Domains to Master
 
-Designing Data-Intensive Applications (Kleppmann) — The most important technical book of the decade.
+The hard knowledge that gives your governance credibility.
 
-Team Topologies (Skelton & Pais) — Reframes how architecture teams are organised.
+An EA who cannot have a credible technical conversation has no governance authority. You do not need to be a hands-on engineer in all these domains — you need to understand the concepts, trade-offs, and implications deeply enough to evaluate decisions and challenge choices. These are the domains where technical depth directly translates to architectural influence.
 
-The Phoenix Project (Kim, Behr & Spafford) — Business novel about IT transformation.
+### Cloud Architecture (Multi-Cloud & Hybrid)
 
-Rewired (McKinsey) — Framework for digital and AI transformation.
+The Well-Architected Framework (AWS, Azure, GCP all have versions) defines the five pillars: Operational Excellence, Security, Reliability, Performance Efficiency, and Cost Optimisation. Master all five — not just the technical pillars. Key patterns: Landing Zone design (the governance wrapper for cloud accounts), Hub-and-Spoke vs. Mesh networking, FinOps (cloud cost governance), and the Cloud Adoption Framework. 94% of enterprises use cloud for critical workloads (2026). Study: AWS Well-Architected, Azure Architecture Center, Google Cloud Architecture Framework.
 
-Thinking in Systems (Meadows) — Systems thinking — the intellectual foundation of enterprise architecture.
+- **Reference:** aws.amazon.com/architecture | learn.microsoft.com/azure/architecture
+- **Tags:** Cloud, Multi-Cloud, Well-Architected, FinOps
 
-The Architecture of Trust (Sherwood) — The deep dive into enterprise security architecture practice.
+### Integration Architecture & API Strategy
 
-## Certifications Roadmap
+Enterprise Integration Patterns (Gregor Hohpe, 2003) — still the definitive reference. 65 integration patterns covering messaging, routing, transformation, and orchestration. Modern additions: event-driven architecture (EDA), AsyncAPI, service mesh (Istio, Linkerd), API gateways, and GraphQL federation. API-first design is non-negotiable in 2026. The EA must define the enterprise integration pattern catalogue and enforce it. Key concepts: choreography vs. orchestration, idempotency, dead letter queues, event sourcing, CQRS, saga pattern for distributed transactions.
 
-**Foundation Layer:**
+- **Reference:** enterpriseintegrationpatterns.com
+- **Tags:** Integration, API, Event-Driven, Messaging
 
-TOGAF Foundation (Level 1) — 40 MCQs open book. TOGAF Practitioner (Level 2) — 8 scenario-based questions. The most employer-recognised EA credential globally. 60% of Fortune 500 use TOGAF.
+### Data Architecture & Platform Engineering
 
-ArchiMate Practitioner — The modelling certification that makes TOGAF practical. Without ArchiMate, TOGAF is a written framework with no agreed visual language.
+The Data Mesh manifesto (Zhamak Dehghani, 2020) and Data Lakehouse architecture (Databricks) are the dominant paradigms. Data governance: DAMA-DMBOK is the Body of Knowledge — know the six data quality dimensions and the data management knowledge areas. Key concepts: Data Contracts (defining the interface between data producers and consumers), data lineage, master data management (MDM), canonical data models, and metadata management. The EA must own the data architecture principles and the canonical data model — without this, AI initiatives will always fail.
 
-**Cloud Architecture — Choose Your Primary Cloud:**
+- **Reference:** dama.org | martinfowler.com/articles/data-mesh-principles.html
+- **Tags:** Data, Data Mesh, Lakehouse, Governance
 
-AWS Solutions Architect Professional — Highest-signal cloud architect credential for AWS environments.
+### Security Architecture (Zero Trust & Beyond)
 
-Azure Solutions Architect Expert (AZ-305) — The Azure equivalent.
+Zero Trust is the dominant security paradigm: never trust, always verify. The NIST Zero Trust Architecture (SP 800-207) is the authoritative reference. SABSA for security architecture methodology. Key concepts: Identity and Access Management (IAM), mTLS between services, Software Defined Perimeter (SDP), SIEM/SOAR integration, DevSecOps (security embedded in the CI/CD pipeline). Regulatory frameworks to know: GDPR, PCI-DSS, SOC 2, ISO 27001, HIPAA, DORA. The EA must define security architecture principles — the CISO owns the policy, the EA owns the architecture that implements it.
 
-Google Cloud Professional Cloud Architect — Most valuable for data-engineering-heavy and AI-first environments.
+- **Reference:** nist.gov/publications/zero-trust-architecture | sabsa.org
+- **Tags:** Security, Zero Trust, IAM, Compliance
 
-**Specialist Credentials:**
+### AI & ML Architecture
 
-SABSA Chartered (CSAP) — The gold standard for enterprise security architects.
+MLOps: the DevOps for machine learning — experiment tracking (MLflow), model registry, feature stores, model serving, and drift monitoring. LLM architecture: RAG (Retrieval-Augmented Generation), prompt engineering, vector databases (Pinecone, Weaviate, pgvector), fine-tuning vs. prompting trade-offs, hallucination detection and guardrails. AI Governance: the EU AI Act (2024) is law — risk classification, conformity assessment, transparency obligations. Every EA in 2026 must understand AI system architecture. Key reading: Google's 'Hidden Technical Debt in ML Systems' paper (NIPS 2015) — still the most important paper on production ML architecture.
 
-ITIL 4 Foundation or Managing Professional — Validates mastery of IT service management.
+- **Reference:** papers.nips.cc | mlflow.org | eugdpr.org
+- **Priority:** ESSENTIAL in 2026
+- **Tags:** AI, MLOps, LLM, AI Governance
 
-CISA — The governance and audit credential.
+### Platform Engineering & DevOps
 
-FinOps Certified Practitioner (FOCP) — Cloud financial management certification.
+Platform Engineering is the EA's discipline applied to developer tooling — the Internal Developer Platform (IDP) that enables delivery teams to self-serve infrastructure, environments, and shared services. Key frameworks: DORA metrics (Deployment Frequency, Lead Time, Change Failure Rate, MTTR) — the four metrics that measure software delivery performance. The 2024 State of DevOps Report is annual required reading. Concepts: GitOps, Infrastructure as Code (IaC — Terraform, Pulumi), Container orchestration (Kubernetes), Service Mesh, Observability (the three pillars: metrics, logs, traces — Prometheus, Grafana, Jaeger, OpenTelemetry).
 
-## 30 EA Master Principles
+- **Reference:** dora.dev | platformengineering.org
+- **Priority:** IMPORTANT
+- **Tags:** Platform Engineering, DevOps, DORA, Observability
 
-**1. Architecture Is an Enabling Function, Not a Gatekeeper.** The moment stakeholders see you as a blocker rather than an enabler, you have lost your influence.
+---
 
-**2. Document the Why, Not Just the What.** ADRs that say 'we chose Kafka because it was recommended' are worthless. ADRs that say 'we chose Kafka because our peak load model requires X events/second and the alternatives fail at Y' are priceless.
+## 03 — Business & Strategy Domains
 
-**3. The Map Is Not the Territory.** Your architecture diagram is a model — a useful simplification of reality. Never mistake the model for the thing it describes.
+The 70% that most technical architects never learn.
 
-**4. Start With the Business Problem.** The best technical solution to the wrong business problem is still the wrong solution.
+BCG's 10-20-70 rule applies to the EA as much as to AI: 10% of EA value comes from technical frameworks, 20% from documentation and modelling, 70% from business understanding, stakeholder influence, and organisational change. The EAs who advance to CTO or CISO are the ones who learned these domains.
 
-**5. Technical Debt Has a Business Cost — Quantify It.** Expressing technical debt as '£187,000 per year in data science productivity and growing' gets a budget.
+### Business Capability Mapping
 
-**6. The Incumbent Always Has a Structural Advantage.** Your business case must explicitly quantify the cost of inaction — or inertia wins.
+The most powerful EA tool for business alignment. A capability map shows what the organisation does (independent of how) and is used to align technology investment to strategic priorities. Heat-mapping capabilities by investment level, performance gap, and strategic importance is the foundation of portfolio rationalisation. BIZBOK is the standard. Gartner's Business Capability Modelling practice notes are free.
 
-**7. Governance Without Enforcement Is Decoration.** An architecture principle that nobody follows is not a principle — it is a wish list.
+- **Reference:** businessarchitectureguild.org
+- **Tags:** Capability Mapping, Business Alignment, Portfolio
 
-**8. The Sceptic in the Room Is Your Most Valuable Ally.** The person who challenges every assumption is the person who will catch the failure nobody else saw coming.
+### Value Stream Mapping
 
-**9. API-First Is Not Optional.** Every service, every integration, every data access must have a defined API contract before implementation begins.
+A lean technique adapted for business architecture — tracing the end-to-end flow of value delivery from customer need to customer outcome. Value streams cut across organisational silos and reveal where technology investments have the highest leverage. BIZBOK defines value streams as the primary cross-functional organising principle for business architecture. Pair with capability maps for complete coverage.
 
-**10. Data Quality Is the Prerequisite for Everything Else.** You cannot build meaningful AI on broken data.
+- **Reference:** businessarchitectureguild.org/value-streams
+- **Tags:** Value Stream, Business Architecture, Lean
 
-**11. Migration Risk Is Never Zero.** Always budget for 30–50% more time than the estimate and plan for parallel running.
+### Business Model Canvas & Strategy
 
-**12. Observability Is Architecture.** A system you cannot see is a system you cannot manage.
+Every EA must read 'Business Model Generation' (Osterwalder & Pigneur). The Business Model Canvas frames the nine building blocks: customer segments, value propositions, channels, customer relationships, revenue streams, key resources, key activities, key partnerships, cost structure. Understanding the business model is the prerequisite for meaningful technology strategy.
 
-**13. The 30% Review Is Your Most Cost-Effective Governance Investment.** A structural architectural mistake caught at 30% costs a fraction of what it costs at 90%.
+- **Reference:** strategyzer.com
+- **Tags:** Business Model, Strategy, Canvas
 
-**14. Vendor Lock-In Is a Risk, Not a Blocker.** All technology creates some lock-in. The EA's job is to manage it through abstraction layers.
+### OKR & KPI Frameworks
 
-**15. Every Exception Creates a Precedent.** Every exception must have a named owner, a resolution date, and a cost-of-permanence calculation.
+Measure What Matters (John Doerr, 2018) is the foundational OKR text. The EA must be fluent in both OKRs and KPIs to translate architecture outcomes into business language. The five domains of EA KPIs: Strategic Alignment, Cost & TCO, Agility & Time to Market, Risk & Compliance, Stakeholder Value. EA OKRs should cascade from corporate strategic themes.
 
-**16. Security Is Designed In, Not Bolted On.** Security requirements defined after the design is complete are security theatre.
+- **Reference:** whatmatters.com
+- **Tags:** OKR, KPI, Measurement, Goals
 
-**17. The Cloud Is a Deployment Model, Not a Strategy.** Lifting and shifting a legacy application to cloud gives you a cloud bill and the same application.
+### Financial Acumen: TCO, ROI, FinOps
 
-**18. Complexity Has a Tax — Charge It.** The cost of complexity is rarely in the design — it is in the ongoing maintenance.
+An EA who cannot build a business case is an EA who cannot influence investment. Master: Total Cost of Ownership (3-5 year horizon), ROI calculation, payback period, NPV for multi-year programmes, and FinOps principles for cloud cost governance. FinOps Foundation's practitioner certification (FOCP) is worth considering. The CFO is your most important non-technical stakeholder.
 
-**19. The EA Who Builds Alone Builds Irrelevance.** Architecture that is designed in isolation and handed to delivery teams will be ignored or circumvented.
+- **Reference:** finops.org | finops.org/certification
+- **Tags:** Financial Acumen, TCO, ROI, FinOps
 
-**20. Your Technology Radar Must Be a Living Document.** A technology radar published once and forgotten is worse than none.
+### Risk Architecture & Business Continuity
 
-**21. Application Portfolio Hygiene Is a Financial Discipline.** Every redundant application is money that could be building new capability.
+COSO ERM framework for enterprise risk. ISO 31000 for risk management principles. Business Continuity Management: ISO 22301. Key EA concepts: RTO (Recovery Time Objective), RPO (Recovery Point Objective), Tier classification of systems (Tier 1 = mission critical), resilience architecture patterns (active-active, active-passive, chaos engineering). The EA defines the resilience architecture — operations delivers it.
 
-**22. The Decommission Is as Important as the Deployment.** A system that is 'decommissioned' but still running is a zombie.
+- **Reference:** iso.org/iso-22301 | coso.org
+- **Tags:** Risk Architecture, Business Continuity, Resilience
 
-**23. AI Governance Must Precede AI Deployment.** A model without a fairness audit, without outcome monitoring, and without human-in-the-loop is not production-ready.
+### Organisational Change Management
 
-**24. Communication Style Determines EA Effectiveness.** The board needs a one-page narrative. The CTO needs a three-slide technical summary.
+PROSCI ADKAR model: Awareness, Desire, Knowledge, Ability, Reinforcement — the six stages of individual change. Kotter's 8-Step Change Model. The EA is a change agent — every architecture decision requires adoption. Architecture without change management is documentation that nobody follows. Study: Leading Change (Kotter), Switch (Heath & Heath), The Lean Startup (Ries).
 
-**25. The EA Must Ride the Elevator.** Equally comfortable in the engine room (discussing specifics with engineers) and the penthouse (translating strategy with executives).
+- **Reference:** prosci.com | kotterinc.com
+- **Tags:** Change Management, Organisational Change, ADKAR
 
-**26. Simplicity Requires More Skill Than Complexity.** Anyone can add another layer. The expert EA finds the simplest solution that satisfies the requirements.
+### Regulatory & Compliance Landscape
 
-**27. Great EAs Create More EAs.** The measure of a great EA practice is not the quality of the architecture diagrams — it is the architectural thinking embedded across the organisation.
+2026 compliance landscape every EA must know: GDPR (data privacy), PCI-DSS (payments), DORA (Digital Operational Resilience Act — EU financial services from Jan 2025), EU AI Act (2024 — risk-based AI regulation), SOC 2 (cloud services), ISO 27001 (information security), HIPAA (healthcare in US), CSRD (Corporate Sustainability Reporting Directive — ESG). The EA must design architectures that are compliance-native, not compliance-bolt-on.
 
-**28. Every Architecture Decision Is a Trade-Off.** There is no perfect architecture. There is only the architecture whose trade-offs are explicitly understood and accepted.
+- **Reference:** ico.org.uk | eba.europa.eu/DORA
+- **Tags:** Regulatory, Compliance, Governance, Risk
 
-**29. The 70% Rule: People and Culture Determine AI Value.** 10% of value comes from the algorithm, 20% from data and technology, 70% from people, adoption, and culture.
+---
 
-**30. Your Reputation Is Your Most Valuable Asset.** EAs who commit to delivery timelines and meet them, who say 'I don't know' when they don't, and who acknowledge when their recommendation was wrong — those EAs get listened to.
+## Cross-Reference
 
-**Mastery in Enterprise Architecture is not knowing every answer. It is knowing which question to ask, of whom, at what moment — and having the credibility to make the answer matter.**
+This concludes Part 1 of the EA Mastery Guide. **Next:** Continue with [Part 2: Must-Read Books, Communities, Certifications, Tools & Master Principles](pathname:///archon/architecture/parts/35-ea-mastery-guide-part2).
