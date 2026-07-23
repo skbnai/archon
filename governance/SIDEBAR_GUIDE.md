@@ -39,6 +39,28 @@ is that taxonomy rendered as navigation.
    reviewer agent checks for this (cross-reference `docs/**/*.md` against the
    compiled sidebar doc-id list).
 
+## Numbering vs. grouping
+
+File number prefixes (`NN-kebab-case.md`) are assigned sequentially per
+domain at creation time — "next available number" — and are NOT reused,
+renumbered, or grouped into per-topic ranges. Sub-category grouping in
+`sidebars.js` is done entirely through the `items` array structure (which
+doc-ids get nested under which category label), never by relying on number
+ranges to imply grouping. Do not renumber existing files to make a
+sub-category's numbers contiguous — that breaks `supersedes` history and
+any existing cross-links for zero navigational benefit; group in the
+sidebar structure only.
+
+## Scoped maintenance
+
+When a task asks you to fix, add to, or reorganize the sidebar, touch only
+the entries for pages actually in scope for that task (newly added pages,
+pages whose category is being restructured) — do not re-verify or rewrite
+sidebar entries for unrelated, already-correct sections just because you
+have the file open. This mirrors the same scoping discipline as content
+edits: a sidebar pass is not an invitation to re-litigate sections nobody
+asked about.
+
 ## Special sections
 
 - **Learning Paths** and **Career & Skills**: flat lists, no sub-categories —

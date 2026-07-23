@@ -1,241 +1,35 @@
 ---
 title: "Agentic AI Landing Zone Architecture — Implementation & Governance"
+date_created: 2026-07-05
+last_reviewed: 2026-07-10
+status: current
 doc_type: reference-architecture
 domain: architecture
-status: current
-canonical: true
 topic_id: agentic-ai-landing-zone-architecture-part2
-maturity: expert
-personas: [architect, platform-engineer, ai-engineer]
-last_reviewed: 2026-07-19
-covers_version: ""
 supersedes: []
-sources: []
-tags: ["ai-foundations", "agent-architecture", "governance", "implementation"]
+maturity: expert
+personas:
+  - architect
+  - platform-engineer
+  - ai-engineer
+covers_version: "as of 2026-07-10"
+tags:
+  - agentic-ai
+  - landing-zone
+  - governance
+  - implementation
 ---
 
 # Agentic AI Landing Zone Architecture — Implementation & Governance
 
-*Enterprise Architecture Blueprint for Governed, Secure, Scalable Agentic AI Workloads — Part 2 of 2*
-
-This is **Part 2 of 2**, covering standards alignment (NIST AI RMF, ISO 42001, EU AI Act), implementation roadmap, governance structures, and architecture decision records. [Part 1](../22-agentic-ai-landing-zone-architecture.md) covers the conceptual architecture, layered platform components, and technology stack.
-
-## Why This Matters
-
-Deployment of a landing zone is not a one-time event but a continuous governance process. Part 2 provides the operational and decision-making frameworks that turn the architecture from blueprint to running system. This includes standards-based compliance mappings, a phased implementation roadmap calibrated to real enterprise constraints, formalized governance structures (Architecture Review Board, AI Governance Board), architecture decision records that will shape every platform decision, and success metrics that indicate whether the landing zone is delivering the promised value. Without these governance and operational elements, the architecture remains aspirational; with them, it becomes a functioning system.
-
-## Governance & Implementation Framework
-
-```mermaid
-graph TD
-    A["Governance Frameworks<br/>NIST AI RMF<br/>ISO 42001<br/>EU AI Act"]
-    B["ARB Decisions<br/>Architecture<br/>Decision Records"]
-    C["Implementation Roadmap<br/>4 Phases<br/>9 Work Packages"]
-    D["Success Metrics<br/>Platform<br/>Compliance<br/>Business Value"]
-    
-    A -->|"Standards Shape"| B
-    B -->|"Guides"| C
-    C -->|"Measured By"| D
-    D -->|"Feeds Back to"| A
-```
-
-## Standards Alignment
-
-### NIST AI Risk Management Framework (AI RMF)
-
-**Framework Structure**: Four core functions
-
-| Function | Description | Implementation in Landing Zone |
-| ---------- | ------------- | -------------------------------- |
-| **GOVERN** | Establish policies, accountability, and oversight | • AI Governance Board<br/>• Policy Cards<br/>• RACI matrices<br/>• Risk appetite statements |
-| **MAP** | Identify and frame AI risks across lifecycle | • Risk taxonomy<br/>• Threat modeling<br/>• Impact assessments<br/>• Stakeholder analysis |
-| **MEASURE** | Analyze and monitor AI risks | • Risk scoring engine<br/>• Behavioral analytics<br/>• Performance metrics<br/>• Audit dashboards |
-| **MANAGE** | Mitigate identified risks | • Runtime guardrails<br/>• Escalation workflows<br/>• Incident response<br/>• Continuous improvement |
-
-### ISO/IEC 42001 AI Management System
-
-**Standard Structure**: 10 clauses + 4 annexes (38 controls)
-
-| Clause | Title | Key Requirements |
-| -------- | ------- | ------------------ |
-| **4** | Context of the organization | Understand stakeholders, define AIMS scope |
-| **5** | Leadership | Top management commitment, AI policy, roles |
-| **6** | Planning | Address risks/opportunities, set objectives |
-| **7** | Support | Resources, competence, awareness, communication |
-| **8** | Operation | AI lifecycle management, risk assessment/treatment |
-| **9** | Performance evaluation | Monitor, measure, analyze, audit, review |
-| **10** | Improvement | Nonconformity, corrective action, continual improvement |
-
-**Annex A Controls** (examples relevant to landing zone):
-- **A.2**: AI policy and objectives
-- **A.4**: Resource allocation and competence
-- **A.5**: Data governance and quality
-- **A.6**: AI system lifecycle management
-- **A.7**: Risk assessment and treatment
-- **A.8**: AI system impact assessment
-- **A.9**: Monitoring, measurement, and analysis
-
-### NIST AI RMF ↔ ISO 42001 Crosswalk
-
-Our landing zone implements both frameworks in an integrated manner:
-
-| NIST AI RMF | ISO/IEC 42001 | Landing Zone Implementation |
-| ------------- | --------------- | ---------------------------- |
-| GOVERN 1.1: Policies and procedures | Clause 5.2: AI policy | Policy Cards, governance documentation |
-| GOVERN 1.2: Roles and responsibilities | Clause 5.3: Organizational roles | RACI matrix, team structures |
-| MAP 1.1: Context establishment | Clause 4.1: Understanding the organization | Stakeholder analysis, risk taxonomy |
-| MAP 1.2: Categorization of AI systems | A.6: AI system lifecycle | Agent registry, autonomy classification |
-| MEASURE 1.1: Testing and evaluation | A.9: Monitoring and measurement | Continuous evaluation, quality metrics |
-| MEASURE 2.1: Monitoring and tracking | Clause 9.1: Monitoring | Observability stack, dashboards |
-| MANAGE 1.1: Risk response | A.7: Risk treatment | Runtime guardrails, escalation |
-| MANAGE 2.1: Incident response | A.10: Nonconformity management | Incident workflows, post-mortems |
-
-### Model Context Protocol (MCP) Integration
-
-**MCP Adoption Benefits**:
-- **Interoperability**: Agents can use any MCP-compliant tool
-- **Scalability**: Add new data sources without custom code
-- **Security**: Centralized authentication and authorization
-- **Observability**: Standardized telemetry for all tool interactions
-
-**Security Controls**:
-- OAuth 2.0 / OIDC for authentication
-- Scoped access tokens
-- Rate limiting per client
-- Audit logging of all MCP requests
-- Content filtering on responses
-
-### EU AI Act Readiness
-
-**Risk Classification**:
-
-| Risk Level | Agent Types | Requirements |
-| ------------ | ------------- | -------------- |
-| **Unacceptable** | Social scoring, manipulation | **Prohibited** |
-| **High-Risk** | Critical infrastructure, employment, law enforcement | Conformity assessment, risk management, human oversight, documentation |
-| **Limited-Risk** | Chatbots, content generation | Transparency obligations (disclose AI use) |
-| **Minimal-Risk** | Spam filters, recommendations | No specific obligations |
-
-> **Timeline note (July 2026):** The Digital Omnibus on AI (Council final approval June 29, 2026) deferred Annex III high-risk obligations to December 2, 2027 and Annex I embedded systems to August 2, 2028; Article 50 transparency obligations still apply from August 2, 2026.
-
-**Landing Zone Capabilities for High-Risk AI**:
-- Risk management system (integrated with NIST AI RMF)
-- Data governance protocols (ISO 42001 Annex A.5)
-- Technical documentation (architecture docs, ADRs)
-- Record-keeping (audit logs, provenance tracking)
-- Transparency and information (Policy Cards, user notifications)
-- Human oversight (escalation workflows, approval gates)
-- Robustness and accuracy (continuous evaluation, monitoring)
-
-## Work Packages & Implementation Roadmap
-
-### Work Packages
-
-| WP# | Work Package | Description | Duration | Dependencies |
-| ----- | -------------- | ------------- | ---------- | -------------- |
-| **WP-1** | Identity Federation Design | Design and implement agent identity model with cross-cloud federation | 8 weeks | None |
-| **WP-2** | Policy Framework Implementation | Develop Policy Card schema, enforcement engine, and governance tooling | 10 weeks | WP-1 |
-| **WP-3** | Agent Runtime Platform | Deploy orchestration engines, model gateways, and compute infrastructure | 12 weeks | WP-1 |
-| **WP-4** | Observability Stack Rollout | Implement semantic telemetry, dashboards, and alerting | 8 weeks | WP-3 |
-| **WP-5** | Model Governance Framework | Establish model registry, evaluation pipelines, and approval workflows | 10 weeks | WP-3 |
-| **WP-6** | Data Access Control Integration | Integrate with existing data platforms, implement ABAC, enable vector search | 12 weeks | WP-1, WP-3 |
-| **WP-7** | MCP Server Deployment | Deploy MCP servers for key enterprise systems and external services | 6 weeks | WP-3 |
-| **WP-8** | Developer Experience | Create templates, documentation, training, and self-service portal | 8 weeks | WP-2, WP-3, WP-4 |
-| **WP-9** | Compliance Certification | Prepare for and achieve ISO 42001 certification | 16 weeks | All WPs |
-
-### Transition Architecture Roadmap
-
-#### Phase 0: Foundation (Weeks 1-4)
-
-**Objective**: Establish governance and design foundations
-
-**Deliverables**:
-- AI governance framework document
-- Risk appetite statement
-- Agent autonomy classification model
-- Initial architecture design
-- Stakeholder alignment
-
-**Success Criteria**:
-- Governance board established
-- Architecture principles approved
-- Funding secured
-
-#### Phase 1: Platform Enablement (Weeks 5-20)
-
-**Objective**: Deploy core platform capabilities in pilot environment
-
-**Deliverables**:
-- Single-cloud landing zone (Azure or AWS)
-- Basic agent runtime (serverless + containers)
-- Model gateway with 2-3 providers
-- Simple policy enforcement
-- Foundational observability
-
-**Success Criteria**:
-- 1-2 pilot agents deployed
-- Policy enforcement validated
-- Developer documentation complete
-- &lt;5 second policy evaluation latency
-
-#### Phase 2: Governance Embed (Weeks 21-32)
-
-**Objective**: Enhance governance, expand platform, prepare for multi-cloud
-
-**Deliverables**:
-- Policy Card full implementation
-- Risk scoring engine
-- Advanced observability (semantic telemetry)
-- MCP server ecosystem
-- Second cloud provider integration
-
-**Success Criteria**:
-- 5+ production agents
-- 100% policy compliance
-- Real-time risk scoring operational
-- ISO 42001 gap assessment complete
-
-#### Phase 3: Enterprise Rollout (Weeks 33-48)
-
-**Objective**: Scale to enterprise-wide adoption
-
-**Deliverables**:
-- Multi-cloud orchestration
-- Self-service developer portal
-- Full observability suite
-- Automated compliance reporting
-- Advanced agent capabilities (multi-agent workflows)
-
-**Success Criteria**:
-- 20+ production agents
-- 100+ developers onboarded
-- 99.9% platform uptime
-- &lt;1 week onboarding time for new agents
-
-#### Phase 4: Optimization (Weeks 49-52+)
-
-**Objective**: Continuous improvement and advanced features
-
-**Deliverables**:
-- ISO 42001 certification
-- Cost optimization initiatives
-- Advanced autonomy capabilities
-- Edge deployment support
-- Continuous innovation pipeline
-
-**Success Criteria**:
-- ROI > 200%
-- Certification achieved
-- User satisfaction > 4.5/5
-- Innovation backlog healthy
-
-## Implementation Governance
+## IMPLEMENTATION GOVERNANCE
 
 ### Architecture Review Board (ARB)
 
 **Purpose**: Ensure architectural integrity and alignment with enterprise standards
 
 **Membership**:
+
 - Enterprise Architect (Chair)
 - Security Architect
 - Data Architect
@@ -245,6 +39,7 @@ Our landing zone implements both frameworks in an integrated manner:
 - Representative from AI Governance Board
 
 **Responsibilities**:
+
 - Review and approve Architecture Decision Records (ADRs)
 - Validate adherence to architecture principles
 - Resolve architectural conflicts
@@ -258,6 +53,7 @@ Our landing zone implements both frameworks in an integrated manner:
 **Purpose**: Oversee ethical and responsible AI deployment
 
 **Membership**:
+
 - Chief AI Officer (Chair)
 - Chief Ethics Officer
 - Chief Data Officer
@@ -267,6 +63,7 @@ Our landing zone implements both frameworks in an integrated manner:
 - External Ethics Advisor (optional)
 
 **Responsibilities**:
+
 - Define and update AI policies
 - Review high-risk agent deployments
 - Investigate incidents and complaints
@@ -287,6 +84,7 @@ Our landing zone implements both frameworks in an integrated manner:
 | **Major** | Architectural changes, new capabilities | ARB + Governance Board |
 
 **Change Process**:
+
 1. Submit ADR or change request
 2. Technical review and impact assessment
 3. ARB approval (if required)
@@ -294,169 +92,64 @@ Our landing zone implements both frameworks in an integrated manner:
 5. Deployment with monitoring
 6. Post-implementation review
 
+---
+
 ## Architecture Change Management
 
 ### Change Triggers
 
 Events that may require architecture updates:
 
-1. **Regulatory Changes**: New AI regulations, industry requirements, privacy law amendments
-2. **Technology Evolution**: New model providers, agent frameworks, platform updates
-3. **Organizational Changes**: Mergers, business model shifts, new markets
-4. **Risk Findings**: Security incidents, compliance violations, performance degradation
+1. **Regulatory Changes**
+   - New AI regulations (e.g., EU AI Act updates)
+   - Industry-specific compliance requirements
+   - Privacy law amendments (GDPR, CCPA)
 
-### Architecture Decision Records (ADRs)
+2. **Technology Evolution**
+   - New model providers and capabilities
+   - Emerging agent frameworks
+   - Platform service updates
 
-#### ADR-001: Hybrid Multi-Cloud Foundation
+3. **Organizational Changes**
+   - Mergers and acquisitions
+   - Business model shifts
+   - New markets or products
 
-**Status**: Approved | **Date**: 2026-02-06
+4. **Risk Findings**
+   - Security incidents
+   - Compliance violations
+   - Performance degradation
 
-**Decision**: Implement a hybrid multi-cloud landing zone architecture with standardized abstractions.
+### Architecture Evolution Process
 
-**Rationale**: Cannot mandate single-cloud due to existing investments; regulatory compliance requires data sovereignty; disaster recovery requires multi-region/cloud support.
+```
+Change Trigger → Assessment → ADR Creation → Review → Implementation → Validation
 
-**Approach**:
-1. Define common abstractions (identity, networking, policy)
-2. Use Terraform as primary IaC tool
-3. Implement agent runtime abstraction via Kubernetes
+Assessment Questions:
+• What is the business driver?
+• What is the technical impact?
+• What are the alternatives?
+• What are the risks?
+• What is the ROI?
+```
 
-**Consequences**:
-- ✅ Flexibility, vendor lock-in avoidance, compliance, business continuity
-- ❌ Increased complexity, higher operational overhead, configuration drift risk
-- **Mitigation**: Strong IaC practices, centralized policy, comprehensive documentation
+### Version Control
 
-#### ADR-002: Agent Identity Federation Model
+**Architecture Artifacts**:
 
-**Status**: Approved | **Date**: 2026-02-06
+- Maintained in Git repository
+- Semantic versioning (MAJOR.MINOR.PATCH)
+- Changelog documentation
+- Approval signatures (digital)
 
-**Decision**: Implement federated agent identity based on Decentralized Identifiers (DIDs) and Verifiable Credentials.
+**ADR Management**:
 
-**Rationale**: Agents are dynamically created, short-lived, capable of assuming multiple roles, requiring delegation capabilities — traditional identity systems (built for humans/static service principals) are insufficient.
+- Each ADR has unique identifier (ADR-XXX)
+- Status tracking (Proposed → Approved → Superseded → Deprecated)
+- Linked to implementation code/config
+- Search and discovery enabled
 
-**Architecture**:
-- Each agent receives unique DID
-- Capabilities encoded in Verifiable Credentials
-- Runtime requests short-lived access tokens
-- All services validate tokens and log usage
-
-**Consequences**:
-- ✅ Strong identity, fine-grained authorization, delegation support, full audit trail, standards-based
-- ❌ Implementation complexity, token validation overhead, limited enterprise tooling
-- **Mitigation**: Pilot approach, token caching, internal tooling investment, developer training
-
-#### ADR-003: Model Vendor Abstraction via Gateway
-
-**Status**: Approved | **Date**: 2026-02-06
-
-**Decision**: Implement Model Gateway abstraction layer providing unified API for multi-provider model access.
-
-**Rationale**: Multiple providers (OpenAI, Anthropic, Google, Azure) with different APIs, authentication, rate limits, costs. Agents need to use best model for each task and switch providers easily.
-
-**Features**:
-- Unified API for model access
-- Intelligent routing (capabilities, cost, latency)
-- Rate limiting and quota management
-- Fallback and circuit breaking
-- Observability and cost tracking
-
-**Consequences**:
-- ✅ Vendor portability, cost optimization, simplified agent code, centralized observability
-- ❌ Added latency, abstraction limits provider-specific features, gateway becomes SPOF
-- **Mitigation**: Optimize routing (&lt;10ms overhead), allow pass-through mode, deploy as HA service
-
-#### ADR-004: Runtime Policy Enforcement via Policy Cards
-
-**Status**: Approved | **Date**: 2026-02-06
-
-**Decision**: Implement runtime policy enforcement using Policy Cards — machine-readable governance specifications executed at agent runtime.
-
-**Rationale**: Traditional governance (pre-deployment reviews, static configuration) can't support real-time agent decision-making, dynamic behavior adaptation, autonomous action authorization, rapid iteration.
-
-**Key Features**:
-- Machine-readable specifications defining allowed/prohibited actions
-- Real-time constraint enforcement
-- Data access scoping
-- Autonomy level limits
-- Escalation triggers
-- Compliance audit trails
-
-**Consequences**:
-- ✅ Real-time enforcement without redeployment, machine-readable, version controlled, auditable, enables high autonomy with safety
-- ❌ Runtime overhead, new authoring skills required, potential policy conflicts, testing complexity
-- **Mitigation**: Optimize evaluation (&lt;50ms), provide authoring tools, implement conflict detection, build testing framework
-
-#### ADR-005: Semantic Observability for Agent Actions
-
-**Status**: Approved | **Date**: 2026-02-06
-
-**Decision**: Implement Semantic Observability — structured logging capturing agent intent, reasoning, context, and outcomes.
-
-**Rationale**: Traditional observability (metrics, logs, traces) insufficient for agentic systems where intent matters, reasoning is opaque, context is critical, compliance requires proof of decisions.
-
-**Semantic Log Includes**:
-- Agent context and session
-- User intent and inferred intent
-- Action details and authorization
-- Reasoning (model, confidence, alternatives)
-- Data accessed
-- Result and outcome
-- Risk assessment
-- Compliance metadata
-- Provenance and human interventions
-
-**Consequences**:
-- ✅ Full explainability, compliance audit trail, debugging, continuous learning, incident investigation
-- ❌ High storage costs, serialization overhead, PII in logs
-- **Mitigation**: Log sampling, efficient serialization, PII redaction, tiered storage
-
-#### ADR-006: Model Context Protocol (MCP) as Primary Integration Standard
-
-**Status**: Approved | **Date**: 2026-02-06
-
-**Decision**: Adopt Model Context Protocol as the standard integration interface between agents and tools.
-
-**Rationale**: Agents need to interact with dozens/hundreds of tools and data sources. Traditional N×M custom integration approach leads to massive duplication, inconsistency, maintenance burden.
-
-**Architecture**:
-- MCP Host (Agent Runtime) with discovery, invocation, streaming
-- MCP Client (Integration Layer) with auth, rate limiting, logging
-- MCP Servers (Tools/Data) providing standardized interface
-
-**Deployment Phases**:
-1. **Internal Data**: SQL databases, document repositories, file systems
-2. **Business Applications**: CRM, collaboration, productivity tools
-3. **External Services**: Web search, maps, weather, datasets
-
-**Consequences**:
-- ✅ Eliminates N×M problem, standardized security/observability, plug-and-play ecosystem, open-source support, vendor-neutral
-- ❌ Not all tools have MCP servers yet, custom servers needed for legacy systems, added abstraction layer
-- **Mitigation**: Incremental deployment, contribute servers to community, maintain escape hatch
-
-#### ADR-007: Kubernetes as Primary Agent Runtime
-
-**Status**: Approved | **Date**: 2026-02-06
-
-**Decision**: Use Kubernetes as the primary agent runtime platform across all clouds.
-
-**Rationale**: Agents require support for short-lived and long-running workloads, multi-cloud portability, auto-scaling, GPU support, network isolation, observability integration, CI/CD compatibility.
-
-**Deployment Model**:
-- AKS for Azure, EKS for AWS, GKE for GCP, self-managed for on-premises
-- Pod per agent with sidecars for auth, policy, logging
-- HPA, network policies, optional service mesh
-
-**Why Kubernetes**:
-1. Portability (same manifests across clouds)
-2. Ecosystem (rich tooling)
-3. Scalability (HPA, VPA built-in)
-4. Security (RBAC, pod security standards)
-5. Observability (native integration)
-6. GPU support (native scheduling)
-
-**Consequences**:
-- ✅ Cloud portability, consistent deployment, strong ecosystem, enterprise-grade security, team knowledge
-- ❌ Operational complexity, higher baseline cost than serverless, longer cold starts
-- **Mitigation**: Kubernetes training, managed services, cluster autoscaling, serverless for specific use cases
+---
 
 ## Success Metrics & KPIs
 
@@ -465,10 +158,10 @@ Events that may require architecture updates:
 | Metric | Target | Measurement Method |
 | -------- | -------- | ------------------- |
 | **Platform Availability** | 99.9% | Uptime monitoring (monthly) |
-| **Policy Evaluation Latency** | &lt;50ms (p95) | APM tracing |
-| **Agent Deployment Time** | &lt;1 hour (end-to-end) | CI/CD pipeline metrics |
-| **Onboarding Time (New Agent)** | &lt;1 week | Developer surveys + tracking |
-| **Incident MTTR** | &lt;2 hours | Incident management system |
+| **Policy Evaluation Latency** | &lt; 50ms (p95) | APM tracing |
+| **Agent Deployment Time** | &lt; 1 hour (end-to-end) | CI/CD pipeline metrics |
+| **Onboarding Time (New Agent)** | &lt; 1 week | Developer surveys + tracking |
+| **Incident MTTR** | &lt; 2 hours | Incident management system |
 
 ### Governance & Compliance
 
@@ -477,7 +170,7 @@ Events that may require architecture updates:
 | **Policy Compliance Rate** | 100% | Automated policy checks |
 | **Audit Trail Completeness** | 100% | Audit log validation |
 | **Risk Score Accuracy** | > 90% | Human review validation |
-| **Escalation Response Time** | &lt;15 minutes | Workflow tracking |
+| **Escalation Response Time** | &lt; 15 minutes | Workflow tracking |
 | **Certification Status** | ISO 42001 certified | External audit |
 
 ### Business Value
@@ -495,29 +188,986 @@ Events that may require architecture updates:
 | Metric | Target | Measurement Method |
 | -------- | -------- | ------------------- |
 | **Agent Accuracy** | > 95% | Task success evaluation |
-| **Hallucination Rate** | &lt;2% | Automated + human review |
+| **Hallucination Rate** | &lt; 2% | Automated + human review |
 | **Safety Incident Rate** | 0 critical incidents | Incident tracking |
-| **False Positive Escalations** | &lt;5% | Escalation analysis |
+| **False Positive Escalations** | &lt; 5% | Escalation analysis |
 | **Mean Confidence Score** | > 0.80 | Agent output analysis |
 
-## Trade-offs
+---
 
-**Standardization vs. Customization, Governance Burden vs. Innovation Velocity**: This section makes many consequential design choices that constrain future implementation in favor of consistency, auditability, and interoperability:
+## Architecture Decision Records (ADRs)
 
-- **Standardized Patterns Over Flexibility**: Choosing Kubernetes, Terraform, federated identity, and Policy Cards means every team implements these patterns. Teams with different preferences for orchestration or policy languages accept this constraint in exchange for platform consolidation and reduced operational burden.
+## ADR-001: Hybrid Multi-Cloud Foundation
 
-- **Governance as Non-Negotiable**: The landing zone treats runtime policy enforcement, semantic telemetry, and audit trails as non-negotiable baseline capabilities, not optional enhancements. This increases platform complexity and initial time-to-productivity for development teams, justified by the compliance and safety properties these governance elements provide.
+**Status**: Approved  
+**Date**: 2026-02-06  
+**Deciders**: Enterprise Architecture, Cloud Architecture, CIO
 
-- **Standards Adoption Creates Dependency Risk**: Betting on NIST AI RMF, ISO 42001, and MCP means the landing zone evolves with these standards' evolution. If standards change faster than platforms can adapt, or if competitors adopt different standards with clearer technical advantages, migration becomes costly. This is a conscious bet on these standards' durability.
+### Context
 
-- **Multi-Cloud Complexity Over Cloud-Native Optimization**: Supporting Azure, AWS, and GCP equally prevents leveraging cloud-specific optimizations that would make deployments more efficient on any single cloud. Each cloud has native AI services, identity models, and networking patterns that the abstraction layers hide — there's real cost to this portability.
+The organization operates across multiple cloud providers (Azure, AWS, GCP) and maintains on-premises infrastructure. Business units have existing cloud investments and regulatory requirements vary by region.
 
-- **Semantic Telemetry Completeness Over Cost**: Capturing full context (intent, reasoning, data accessed, authorization, provenance) for every agent action means high storage and compute costs, mitigated only partially by sampling and tiering. Organizations must decide what visibility is worth this cost.
+**Constraints**:
 
-## Related
+- Cannot mandate single-cloud due to existing investments
+- Regulatory compliance requires data sovereignty
+- Business continuity requires disaster recovery across regions/clouds
+- Talent pool familiar with multiple platforms
 
-- [Part 1: Architecture Vision & Platform Components](../22-agentic-ai-landing-zone-architecture.md)
+### Decision
 
-## Sources
+Implement a hybrid multi-cloud landing zone architecture with standardized abstractions.
 
-Architecture decision records and implementation guidance synthesize patterns from enterprise cloud landing zones, AI governance frameworks (NIST AI RMF, ISO 42001, EU AI Act), model context protocol specifications, and operational experience from dozens of enterprise agentic AI pilot programs. Detailed technical specifications for each work package and continuous governance processes are maintained in the Architecture Review Board's ADR repository.
+**Approach**:
+
+1. Define common abstractions for:
+   - Identity (federated across providers)
+   - Networking (consistent segmentation model)
+   - Policy (provider-agnostic definitions)
+
+2. Use Infrastructure as Code (Terraform) as primary tool
+   - Cloud-specific modules where necessary
+   - Standardized module interfaces
+
+3. Implement agent runtime abstraction
+   - Deploy to Kubernetes (portable across clouds)
+   - Use provider-managed services when advantageous
+   - Maintain escape hatches for cloud-specific features
+
+### Consequences
+
+**Positive**:
+
+- ✅ Flexibility to leverage best-of-breed services per cloud
+- ✅ Avoid vendor lock-in
+- ✅ Compliance with data residency requirements
+- ✅ Business continuity and disaster recovery
+
+**Negative**:
+
+- ❌ Increased architectural complexity
+- ❌ Higher operational overhead (multiple tools and processes)
+- ❌ Potential for configuration drift
+- ❌ Training requirements for multi-cloud skills
+
+**Mitigation**:
+
+- Strong IaC practices and automation
+- Centralized policy management
+- Comprehensive documentation and training
+- Regular architecture reviews
+
+### Alternatives Considered
+
+**Alternative 1**: Single-cloud standardization (Azure)
+
+- Rejected: Cannot abandon existing AWS/GCP investments
+- Risk: Creates organizational conflict and waste
+
+**Alternative 2**: Cloud-agnostic abstraction layer (e.g., Crossplane)
+
+- Deferred: Too immature for enterprise scale
+- May revisit in Phase 4
+
+---
+
+## ADR-002: Agent Identity Federation Model
+
+**Status**: Approved  
+**Date**: 2026-02-06  
+**Deciders**: Enterprise Architecture, Security Architecture, Identity Team
+
+### Context
+
+Agentic systems require identity for:
+
+- Authentication to services
+- Authorization for data access
+- Audit trail attribution
+- Cross-agent trust relationships
+
+Traditional identity systems assume human users or static service principals. Agents are:
+
+- Dynamically created
+- Short-lived (sometimes)
+- Capable of assuming multiple roles
+- Require delegation capabilities
+
+### Decision
+
+Implement a federated agent identity model based on Decentralized Identifiers (DIDs) and Verifiable Credentials.
+
+**Architecture**:
+
+```mermaid
+flowchart TD
+    A["Agent Identity<br/>Federation Model"]
+    
+    B["Agent Identity Registry<br/>Centralized"]
+    B1["DID Generation"]
+    B2["Credential Issuance"]
+    B3["Capability Declaration"]
+    B4["Trust Relationship<br/>Management"]
+    B --> B1
+    B --> B2
+    B --> B3
+    B --> B4
+    
+    C["Runtime Token Service"]
+    C1["Short-lived<br/>JWT Tokens"]
+    C2["Delegation<br/>Support"]
+    C3["Scope<br/>Enforcement"]
+    C4["Audit<br/>Logging"]
+    C --> C1
+    C --> C2
+    C --> C3
+    C --> C4
+    
+    D["Integration with<br/>Enterprise IdP"]
+    D1["User Identity<br/>as Root of Trust"]
+    D2["Agent Acts<br/>on Behalf of User"]
+    D3["Permission<br/>Inheritance"]
+    D4["Escalation<br/>to User"]
+    D --> D1
+    D --> D2
+    D --> D3
+    D --> D4
+    
+    A --> B
+    A --> C
+    A --> D
+```
+
+**Implementation**:
+
+1. Each agent receives a unique DID
+2. Capabilities encoded in Verifiable Credentials
+3. Runtime requests short-lived access tokens
+4. Tokens carry agent identity + user context
+5. All services validate tokens and log usage
+
+### Consequences
+
+**Positive**:
+
+- ✅ Strong identity for all agents
+- ✅ Fine-grained authorization
+- ✅ Support for delegation and cross-agent trust
+- ✅ Full audit trail of agent actions
+- ✅ Standards-based (W3C DID, VC)
+
+**Negative**:
+
+- ❌ Complexity in implementation
+- ❌ Performance overhead for token validation
+- ❌ New technology with limited enterprise tooling
+
+**Mitigation**:
+
+- Pilot with small agent population
+- Implement token caching
+- Build internal tooling and libraries
+- Provide developer training
+
+### Alternatives Considered
+
+**Alternative 1**: Service principals per agent
+
+- Rejected: Poor scalability (management overhead)
+- Issue: No delegation or cross-agent trust
+
+**Alternative 2**: Shared service identity for all agents
+
+- Rejected: No attribution or fine-grained control
+- Risk: Blast radius of compromised credentials
+
+---
+
+## ADR-003: Model Vendor Abstraction via Gateway
+
+**Status**: Approved  
+**Date**: 2026-02-06  
+**Deciders**: Enterprise Architecture, AI/ML Architecture
+
+### Context
+
+The AI model landscape is rapidly evolving with multiple providers:
+
+- OpenAI (GPT-5 family)
+- Anthropic (Claude)
+- Google (Gemini)
+- Meta (Llama)
+- Azure OpenAI Service
+- AWS Bedrock
+- Specialized models (Mistral, Cohere, etc.)
+
+Challenges:
+
+- Different APIs, authentication, rate limits
+- Varying cost structures
+- Inconsistent capabilities
+- Risk of vendor dependency
+
+Agents need to:
+
+- Use best model for each task
+- Switch providers easily
+- Manage costs dynamically
+- Handle failures gracefully
+
+### Decision
+
+Implement a Model Gateway abstraction layer that provides:
+
+1. Unified API for model access
+2. Intelligent routing based on capabilities and cost
+3. Rate limiting and quota management
+4. Fallback and circuit breaking
+5. Observability and cost tracking
+
+**Architecture**:
+
+```mermaid
+flowchart TD
+    A["Agent Code"] --> B["Model Gateway API<br/>Unified Interface"]
+    B --> C["OpenAI<br/>Adapter"]
+    B --> D["Claude<br/>Adapter"]
+    B --> E["Bedrock<br/>Adapter"]
+    B --> F["Azure<br/>Adapter"]
+    C --> G["External<br/>Model Providers"]
+    D --> G
+    E --> G
+    F --> G
+```
+
+**Routing Logic**:
+
+```python
+request = {
+    "task": "code_generation",
+    "input": "...",
+    "constraints": {
+        "max_cost_per_call": 0.05,
+        "max_latency_ms": 2000,
+        "required_capabilities": ["function_calling"]
+    }
+}
+
+# Gateway selects best model based on:
+# 1. Capability match
+# 2. Cost constraints
+# 3. Current availability
+# 4. Historical performance
+```
+
+### Consequences
+
+**Positive**:
+
+- ✅ Vendor portability (no lock-in)
+- ✅ Cost optimization through routing
+- ✅ Simplified agent code
+- ✅ Centralized observability
+- ✅ Easy to add new model providers
+
+**Negative**:
+
+- ❌ Added latency (routing overhead)
+- ❌ Abstraction may limit provider-specific features
+- ❌ Gateway becomes critical dependency (SPOF risk)
+
+**Mitigation**:
+
+- Optimize routing logic (&lt; 10ms overhead target)
+- Allow pass-through mode for advanced use cases
+- Deploy gateway as highly available service
+- Implement circuit breakers and fallbacks
+
+### Alternatives Considered
+
+**Alternative 1**: Direct model provider integration in each agent
+
+- Rejected: High coupling, code duplication
+- Issue: Difficult to switch providers or optimize costs
+
+**Alternative 2**: LangChain/LlamaIndex abstraction only
+
+- Deferred: Insufficient for enterprise governance needs
+- Gap: No cost control, quota management, or centralized observability
+
+---
+
+## ADR-004: Runtime Policy Enforcement via Policy Cards
+
+**Status**: Approved  
+**Date**: 2026-02-06  
+**Deciders**: Enterprise Architecture, Security Architecture, AI Governance Board
+
+### Context
+
+Traditional governance relies on:
+
+- Pre-deployment reviews
+- Static configuration
+- Human oversight at execution time
+
+Agentic systems require:
+
+- Real-time decision making
+- Dynamic behavior adaptation
+- Autonomous action authorization
+- Rapid iteration cycles
+
+**Problem**: How to enforce governance policies without blocking innovation or requiring human approval for every action?
+
+### Decision
+
+Implement runtime policy enforcement using **Policy Cards** - machine-readable governance specifications executed at agent runtime.
+
+**Policy Card Schema**:
+
+```yaml
+policy_card:
+  metadata:
+    id: "pc-customer-service-v2.1"
+    version: "2.1.0"
+    created: "2026-02-01"
+    owner: "AI Governance Board"
+
+  agent_scope:
+    agent_ids: ["customer-service-*"]
+    agent_types: ["chatbot", "email_assistant"]
+
+  allowed_actions:
+    - "query_customer_database"
+    - "send_email_notification"
+    - "create_support_ticket"
+
+  prohibited_actions:
+    - "modify_pricing"
+    - "delete_customer_records"
+    - "access_payment_methods"
+
+  data_access:
+    allowed_datasets:
+      - name: "customer_profile"
+        operations: ["read"]
+      - name: "support_tickets"
+        operations: ["read", "create", "update"]
+
+    prohibited_datasets:
+      - "employee_records"
+      - "financial_transactions"
+
+    data_filtering:
+      - rule: "pii_redaction"
+        scope: "customer_ssn"
+        action: "mask"
+
+  autonomy_constraints:
+    max_level: 2  # Constrained autonomy
+
+    human_approval_required:
+      - condition: "refund_amount > $500"
+        approver_role: "customer_service_manager"
+        sla_minutes: 30
+
+      - condition: "account_deletion_request"
+        approver_role: "data_protection_officer"
+        sla_minutes: 60
+
+  risk_management:
+    escalation_triggers:
+      - metric: "confidence_score < 0.7"
+        action: "request_human_review"
+
+      - metric: "sensitive_data_detected"
+        action: "block_and_alert"
+
+    monitoring:
+      - "log_all_actions"
+      - "track_decision_reasoning"
+
+  compliance:
+    frameworks: ["GDPR", "CCPA", "ISO27001"]
+    audit_retention_days: 2555  # 7 years
+```
+
+**Runtime Enforcement**:
+
+1. Agent requests action (e.g., "send email to customer")
+2. Policy engine loads applicable Policy Card(s)
+3. Engine evaluates:
+   - Is action allowed?
+   - Is data access permitted?
+   - Does autonomy level support this decision?
+   - Are risk thresholds exceeded?
+4. Decision:
+   - ✅ ALLOW + log
+   - ⚠️ ALLOW with constraints + log
+   - 🔒 BLOCK + alert
+   - 👤 ESCALATE to human + hold
+
+### Consequences
+
+**Positive**:
+
+- ✅ Real-time enforcement without deployment delays
+- ✅ Machine-readable (can be automatically validated)
+- ✅ Version controlled and auditable
+- ✅ Enables high autonomy with safety
+- ✅ Supports iterative policy refinement
+
+**Negative**:
+
+- ❌ Runtime performance overhead
+- ❌ Policy authoring requires new skills
+- ❌ Potential for policy conflicts
+- ❌ Complexity in policy testing
+
+**Mitigation**:
+
+- Optimize policy evaluation (target &lt; 50ms)
+- Provide policy authoring tools and templates
+- Implement policy conflict detection
+- Build policy simulation/testing framework
+- Cache compiled policies
+
+### Alternatives Considered
+
+**Alternative 1**: Static configuration files
+
+- Rejected: Requires redeployment for policy changes
+- Issue: Too slow for iterative governance
+
+**Alternative 2**: Code-based policies (e.g., Python decorators)
+
+- Rejected: Difficult for non-developers to understand/modify
+- Risk: Policy logic embedded in application code
+
+**Alternative 3**: External policy service (e.g., Open Policy Agent)
+
+- Considered: OPA is good, but not AI-specific
+- Decision: Use OPA as enforcement engine, Policy Cards as schema
+
+---
+
+## ADR-005: Semantic Observability for Agent Actions
+
+**Status**: Approved  
+**Date**: 2026-02-06  
+**Deciders**: Enterprise Architecture, Platform Engineering
+
+### Context
+
+Traditional observability focuses on:
+
+- System metrics (CPU, memory, network)
+- Application logs (errors, warnings)
+- Request tracing (latency, throughput)
+
+This is insufficient for agentic systems because:
+
+- **Intent matters**: Why did agent take action?
+- **Reasoning is opaque**: How did it decide?
+- **Context is critical**: What data influenced the decision?
+- **Compliance requires proof**: Can we explain the outcome?
+
+**Example Problem**:
+
+```
+Traditional Log:
+2026-02-06 15:30:45 INFO AgentExecutor: Action completed successfully
+
+Questions We Can't Answer:
+• What was the agent trying to accomplish?
+• What data did it access?
+• Why did it choose this specific action?
+• How confident was it?
+• Who authorized this on behalf of?
+```
+
+### Decision
+
+Implement **Semantic Observability** - structured logging that captures agent intent, reasoning, context, and outcomes.
+
+**Semantic Log Schema**:
+
+```json
+{
+  "log_version": "1.0",
+  "timestamp": "2026-02-06T15:30:45.123Z",
+  "log_type": "agent_action",
+
+  "agent_context": {
+    "agent_id": "customer-service-bot-prod-001",
+    "agent_version": "2.3.1",
+    "session_id": "sess-abc123xyz",
+    "user_id": "user-456789",
+    "user_role": "customer",
+    "business_context": "product_return_request"
+  },
+
+  "intent": {
+    "goal": "process_return_request",
+    "user_request": "I want to return my order #12345",
+    "inferred_intent": "initiate_return_workflow"
+  },
+
+  "action": {
+    "type": "tool_invocation",
+    "tool": "returns_management_api",
+    "method": "create_return",
+    "parameters": {
+      "order_id": "12345",
+      "reason": "product_damaged",
+      "refund_method": "original_payment"
+    },
+    "authorization": {
+      "policy_card_id": "pc-returns-v1.2",
+      "permission_source": "user_delegation",
+      "access_token_id": "tok-xyz789"
+    }
+  },
+
+  "reasoning": {
+    "model_used": "claude-sonnet-4-6",
+    "prompt_version": "return-workflow-v3",
+    "confidence_score": 0.92,
+    "alternative_considered": "escalate_to_human",
+    "decision_factors": [
+      "order_in_return_window",
+      "product_return_eligible",
+      "customer_history_good"
+    ]
+  },
+
+  "data_accessed": [
+    {
+      "source": "orders_database",
+      "query": "SELECT * FROM orders WHERE order_id = '12345'",
+      "rows_returned": 1,
+      "classification": "customer_pii"
+    },
+    {
+      "source": "product_catalog",
+      "operation": "lookup",
+      "classification": "public"
+    }
+  ],
+
+  "result": {
+    "status": "success",
+    "outcome": "return_created",
+    "return_id": "RET-987654",
+    "customer_communication": "sent_email_confirmation",
+    "processing_time_ms": 342
+  },
+
+  "risk_assessment": {
+    "risk_score": 15,
+    "risk_level": "low",
+    "flags": []
+  },
+
+  "compliance": {
+    "frameworks_applicable": ["GDPR", "CCPA"],
+    "data_retention_required": true,
+    "audit_category": "customer_transaction"
+  },
+
+  "provenance": {
+    "data_sources_fingerprint": "sha256:abc...",
+    "model_checkpoint": "claude-sonnet-4-6",
+    "policy_version": "pc-returns-v1.2",
+    "human_interventions": []
+  }
+}
+```
+
+**Telemetry Pipeline**:
+
+```mermaid
+flowchart TD
+    A["Agent Runtime"] --> B["Semantic Logger"]
+    B --> C["Message Queue<br/>Kafka"]
+    C --> D["Real-time Alerts"]
+    C --> E["Storage<br/>S3/Blob"]
+    C --> F["Analytics<br/>Spark"]
+    D --> G["Dashboard"]
+    E --> H["Compliance<br/>Audit"]
+    F --> I["ML Training<br/>Feedback"]
+```
+
+Semantic observability pipeline capturing structured agent action logs through Kafka, with parallel paths for real-time monitoring, compliance auditing, and continuous learning.
+
+### Consequences
+
+**Positive**:
+
+- ✅ Full explainability of agent decisions
+- ✅ Compliance audit trail
+- ✅ Debugging and troubleshooting
+- ✅ Continuous learning (use logs to improve prompts/models)
+- ✅ Incident investigation
+
+**Negative**:
+
+- ❌ High storage costs (rich logs are large)
+- ❌ Performance overhead (structured serialization)
+- ❌ PII in logs (must be handled carefully)
+
+**Mitigation**:
+
+- Implement log sampling for high-volume agents
+- Use efficient serialization (Protobuf, Avro)
+- Automatic PII detection and redaction
+- Tiered storage (hot → warm → cold → archive)
+- Compression and deduplication
+
+### Alternatives Considered
+
+**Alternative 1**: Traditional logging (text-based)
+
+- Rejected: Impossible to query or analyze at scale
+- Issue: No structure for compliance or debugging
+
+**Alternative 2**: OpenTelemetry traces only
+
+- Insufficient: Traces capture "how" but not "why"
+- Decision: Use OTel for infrastructure + semantic logs for agents
+
+---
+
+## ADR-006: Model Context Protocol (MCP) as Primary Integration Standard
+
+**Status**: Approved  
+**Date**: 2026-02-06  
+**Deciders**: Enterprise Architecture, Platform Engineering
+
+### Context
+
+Agents need to interact with dozens or hundreds of tools and data sources:
+
+- Databases (SQL, NoSQL)
+- APIs (REST, GraphQL, SOAP)
+- File systems (local, cloud storage)
+- SaaS applications (Salesforce, Slack, Jira, etc.)
+- Internal microservices
+
+**Traditional Approach**: Custom integration per tool
+
+```
+Agent A → Custom Connector → Tool 1
+Agent A → Custom Connector → Tool 2
+Agent B → Custom Connector → Tool 1
+Agent B → Custom Connector → Tool 3
+
+Result: N agents × M tools = N×M integrations
+```
+
+**Problem**:
+
+- Massive duplication of effort
+- Inconsistent security and observability
+- Difficult to maintain and upgrade
+
+### Decision
+
+Adopt **Model Context Protocol (MCP)** as the standard integration interface between agents and tools.
+
+**Architecture**:
+
+```mermaid
+flowchart TD
+    A["MCP Host<br/>Agent Runtime<br/>Discovery | Invocation<br/>Streaming"]
+    B["JSON-RPC 2.0"]
+    C["MCP Client<br/>Integration Layer<br/>Auth | Rate Limiting<br/>Logging | Error Handling"]
+    D["MCP Server<br/>SQL DB"]
+    E["MCP Server<br/>Salesforce"]
+    
+    A --> B
+    B --> C
+    C --> D
+    C --> E
+```
+
+**MCP Server Deployment Plan**:
+
+Phase 1 - Internal Data:
+
+- SQL databases (PostgreSQL, SQL Server, MySQL)
+- Document stores (MongoDB, Cosmos DB)
+- File systems (SharePoint, Google Drive, S3)
+
+Phase 2 - Business Applications:
+
+- CRM (Salesforce, Dynamics)
+- Collaboration (Slack, Teams, Email)
+- Productivity (Jira, Confluence, Notion)
+
+Phase 3 - External Services:
+
+- Web search
+- Maps and geolocation
+- Weather data
+- Public datasets (Census, Financial, etc.)
+
+**Security Model**:
+
+- Each MCP Server requires authentication (OAuth 2.0 / API Keys)
+- Agents receive scoped tokens (can't access all data)
+- MCP Client enforces Policy Card restrictions
+- All requests logged for audit
+
+### Consequences
+
+**Positive**:
+
+- ✅ Eliminates N×M integration problem
+- ✅ Standardized security and observability
+- ✅ Plug-and-play tool ecosystem
+- ✅ Open-source community support
+- ✅ Vendor-neutral (Anthropic donated to Linux Foundation)
+
+**Negative**:
+
+- ❌ Not all tools have MCP servers (yet)
+- ❌ Requires building custom MCP servers for legacy systems
+- ❌ Added layer of abstraction (minor latency)
+
+**Mitigation**:
+
+- Build MCP servers incrementally (prioritize high-value tools)
+- Contribute servers to open-source community
+- Maintain escape hatch for direct API access when needed
+- Monitor latency and optimize
+
+### Alternatives Considered
+
+**Alternative 1**: LangChain tools only
+
+- Issue: Not a formal standard, vendor-specific
+- Gap: No standardized auth, observability, or discovery
+
+**Alternative 2**: Custom API gateway
+
+- Rejected: Reinventing the wheel
+- Better: Leverage MCP as emerging standard
+
+**Alternative 3**: Direct API calls from agents
+
+- Rejected: Back to N×M problem
+- Risk: No central control or governance
+
+---
+
+## ADR-007: Kubernetes as Primary Agent Runtime
+
+**Status**: Approved  
+**Date**: 2026-02-06  
+**Deciders**: Enterprise Architecture, Platform Engineering
+
+### Context
+
+Agents need to run somewhere. Options include:
+
+- Serverless functions (Lambda, Azure Functions, Cloud Functions)
+- Container orchestration (Kubernetes, ECS, Cloud Run)
+- Virtual machines (EC2, Azure VMs, Compute Engine)
+- Platform-as-a-Service (App Service, Elastic Beanstalk)
+
+**Requirements**:
+
+1. Support both short-lived and long-running agents
+2. Multi-cloud portability
+3. Auto-scaling based on demand
+4. GPU support for model inference
+5. Network isolation and security
+6. Observability integration
+7. CI/CD compatibility
+
+### Decision
+
+Use **Kubernetes** as the primary agent runtime platform across all clouds.
+
+**Deployment Model**:
+
+```mermaid
+flowchart TD
+    A["Kubernetes Cluster<br/>Per Environment"]
+    
+    B["Agent Pod A<br/>Agent Code | MCP Client<br/>Sidecars:<br/>Auth Proxy | Policy | Logging"]
+    
+    C["Agent Pod B<br/>Agent Code | MCP Client<br/>Sidecars:<br/>Auth Proxy | Policy | Logging"]
+    
+    D["Horizontal Pod Autoscaling<br/>HPA"]
+    
+    E["Network Policies<br/>Isolation"]
+    
+    F["Service Mesh<br/>Istio Optional"]
+    
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+```
+
+Kubernetes agent runtime deployment with pod-level sidecars for auth, policy enforcement, and logging; auto-scaling, network isolation, and optional service mesh.
+
+**Why Kubernetes**:
+
+1. **Portability**: Same manifests work on AKS, EKS, GKE, on-prem
+2. **Ecosystem**: Rich tooling (Helm, Argo CD, Prometheus, etc.)
+3. **Scalability**: HPA, VPA, cluster autoscaler built-in
+4. **Security**: Network policies, RBAC, pod security standards
+5. **Observability**: Native integration with monitoring stacks
+6. **GPU Support**: Native scheduling and resource management
+
+**Multi-Cloud Approach**:
+
+- Azure: Azure Kubernetes Service (AKS)
+- AWS: Elastic Kubernetes Service (EKS)
+- GCP: Google Kubernetes Engine (GKE)
+- On-Prem: Self-managed Kubernetes (kubeadm, Rancher, OpenShift)
+
+**Serverless Complement**:
+
+- Use serverless for:
+  - Event-driven, single-function agents
+  - Ultra-low latency requirements
+  - Cost optimization for sporadic workloads
+- Examples: Lambda for webhook handlers, Functions for batch jobs
+
+### Consequences
+
+**Positive**:
+
+- ✅ Cloud portability (avoid lock-in)
+- ✅ Consistent deployment model across environments
+- ✅ Strong ecosystem and community
+- ✅ Enterprise-grade security and compliance
+- ✅ Extensive team knowledge
+
+**Negative**:
+
+- ❌ Operational complexity (need Kubernetes expertise)
+- ❌ Higher baseline cost than serverless
+- ❌ Longer cold start times than Functions
+
+**Mitigation**:
+
+- Invest in Kubernetes training and certifications
+- Use managed services (AKS, EKS, GKE) to reduce operational burden
+- Implement cluster autoscaling to optimize costs
+- Use serverless for specific use cases (not primary runtime)
+
+### Alternatives Considered
+
+**Alternative 1**: Serverless-first (Functions/Lambda)
+
+- Rejected: Limited for long-running agents, GPU workloads
+- Issue: Vendor lock-in, complexity in multi-cloud
+
+**Alternative 2**: Virtual machines
+
+- Rejected: Poor resource utilization, slow scaling
+- Outdated: Not cloud-native
+
+---
+
+## Appendices
+
+## Appendix A: Glossary
+
+| Term | Definition |
+| ------ | ------------ |
+| **Agent** | An autonomous AI system capable of perceiving its environment, making decisions, and taking actions to achieve goals |
+| **Agentic AI** | AI systems exhibiting goal-directed autonomy, often involving multi-step reasoning and tool use |
+| **Autonomy Level** | Classification of how much independent decision-making authority an agent possesses (0-4 scale) |
+| **Constraint Engine** | Runtime component that enforces policy restrictions on agent behavior |
+| **Landing Zone** | Standardized, secure cloud environment configured to support specific workload types |
+| **Model Context Protocol (MCP)** | Open standard for connecting AI systems to tools and data sources |
+| **Policy Card** | Machine-readable specification of governance rules for an agent or agent type |
+| **Provenance Tracking** | Recording the lineage of data and decisions to enable auditability |
+| **Risk Score** | Quantitative assessment of the potential harm from an agent's autonomous action |
+| **Semantic Telemetry** | Structured logging that captures intent, reasoning, and context of agent actions |
+| **Tool** | External function or service that an agent can invoke (database query, API call, etc.) |
+
+## Appendix B: Reference Architectures
+
+### B.1: Single-Cloud Deployment (Azure)
+
+[Diagram would show detailed Azure-specific implementation]
+
+### B.2: Multi-Cloud Deployment (Azure + AWS)
+
+[Diagram would show cross-cloud integration, shared control plane]
+
+### B.3: Hybrid Deployment (Cloud + On-Premises)
+
+[Diagram would show secure connectivity, data synchronization]
+
+## Appendix C: Compliance Mapping
+
+### C.1: NIST AI RMF Compliance Matrix
+
+[Table mapping each NIST control to Landing Zone implementation]
+
+### C.2: ISO 42001 Control Implementation
+
+[Table mapping ISO 42001 Annex A controls to platform components]
+
+### C.3: EU AI Act Risk Assessment
+
+[Template for classifying AI systems under EU AI Act]
+
+## Appendix D: Tool Catalog
+
+### D.1: Approved Agent Frameworks
+
+- LangChain v0.3.x
+- LlamaIndex v0.11.x
+- CrewAI v0.80.x
+- AutoGen v0.4.x
+
+### D.2: Approved Model Providers
+
+- Azure OpenAI Service
+- AWS Bedrock
+- Anthropic API
+- Google Vertex AI
+
+### D.3: MCP Server Registry
+
+[Table of available MCP servers, authentication requirements, SLAs]
+
+## Appendix E: Training and Enablement
+
+### E.1: Developer Onboarding Path
+
+1. Complete "Introduction to Agentic AI" (4 hours)
+2. Review Landing Zone documentation (2 hours)
+3. Complete "Building Your First Agent" hands-on lab (4 hours)
+4. Deploy test agent to dev environment (self-paced)
+5. Governance and compliance training (2 hours)
+6. Certification quiz (1 hour)
+
+**Total Time**: 2 days
+
+### E.2: Architecture Review Checklist
+
+[Template for ARB reviews of agent designs]
+
+### E.3: Runbook Library
+
+[Links to operational runbooks for common scenarios]
+
+---
+
+**Document Status**: APPROVED (Part 2 of 2)  
+**See Also**: [Part 1: Architecture Vision & Technology Stack](../22-agentic-ai-landing-zone-architecture.md)  
+**Next Review Date**: 2026-10-05 (Quarterly; last reviewed 2026-07-05)  
+**Owner**: Enterprise Architecture Office  
+**Distribution**: Architecture Review Board, AI Governance Board, Engineering Leadership

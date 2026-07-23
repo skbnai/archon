@@ -567,6 +567,13 @@ topics:
     - part 2 — the five arenas
     supersedes: []
     pages: []
+  - id: ea-architect-deep-dive-five-arenas-part2
+    domain: architecture
+    canonical: docs/architecture/parts/37-ea-architect-deep-dive-five-arenas-part2.md
+    aliases:
+    - 'ea architect deep dive — the five arenas: part 2'
+    supersedes: []
+    pages: []
   - id: ea-architect-deep-dive-toolkit-practice
     domain: architecture
     canonical: docs/architecture/07-ea-architect-deep-dive-toolkit-practice.md
@@ -4995,5 +5002,96 @@ topics:
     canonical: docs/architecture/parts/23-enterprise-ai-architect-foundations-part2.md
     aliases:
     - 'enterprise ai architect foundations: part 2'
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-architect-bible-2026-part2
+    domain: architecture
+    canonical: docs/architecture/parts/24-enterprise-ai-architect-bible-2026-part2.md
+    aliases:
+    - 'enterprise ai architect bible: part 2'
+    supersedes: []
+    pages: []
+  - id: enterprise-technology-selection-framework-part2
+    domain: architecture
+    canonical: docs/architecture/parts/25-enterprise-technology-selection-framework-part2.md
+    aliases:
+    - 'enterprise technology selection & decision framework: part 2'
+    supersedes: []
+    pages: []
+  - id: ai-invoice-auditor-architecture-part2
+    domain: architecture
+    canonical: docs/architecture/parts/26-ai-invoice-auditor-architecture-part2.md
+    aliases:
+    - 'ai invoice auditor architecture v5: part 2'
+    supersedes: []
+    pages: []
+  - id: ai-transformation-consultant-toolkit-2026-part2
+    domain: architecture
+    canonical: docs/architecture/parts/27-ai-transformation-consultant-toolkit-2026-part2.md
+    aliases:
+    - 'ai transformation consultant toolkit 2026: part 2'
+    supersedes: []
+    pages: []
+  - id: ai-solution-lifecycle-deliverables-part2
+    domain: architecture
+    canonical: docs/architecture/parts/28-ai-solution-lifecycle-deliverables-part2.md
+    aliases:
+    - 'ai solution lifecycle deliverables by role: part 2'
+    supersedes: []
+    pages: []
+  - id: ai-solution-lifecycle-deliverables-part3
+    domain: architecture
+    canonical: docs/architecture/parts/29-ai-solution-lifecycle-deliverables-part3.md
+    aliases:
+    - 'ai solution lifecycle deliverables by role: part 3'
+    supersedes: []
+    pages: []
+  - id: akes-addendum-document-update-and-versioning-part2
+    domain: architecture
+    canonical: docs/architecture/parts/30-akes-addendum-document-update-and-versioning-part2.md
+    aliases:
+    - 'akes addendum: document update & versioning: part 2'
+    supersedes: []
+    pages: []
+  - id: dpdp-act-2023-comprehensive-guide-part2
+    domain: architecture
+    canonical: docs/architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2.md
+    aliases:
+    - 'dpdp act 2023 & dpdp rules 2025: part 2'
+    supersedes: []
+    pages: []
+  - id: dpdp-act-2023-comprehensive-guide-part3
+    domain: architecture
+    canonical: docs/architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3.md
+    aliases:
+    - 'dpdp act 2023 & dpdp rules 2025: part 3'
+    supersedes: []
+    pages: []
+  - id: eaka-research-study-part2
+    domain: architecture
+    canonical: docs/architecture/parts/33-eaka-research-study-part2.md
+    aliases:
+    - 'enterprise agent knowledge architecture (eaka) research study: part 2'
+    supersedes: []
+    pages: []
+  - id: eaka-research-study-part3
+    domain: architecture
+    canonical: docs/architecture/parts/34-eaka-research-study-part3.md
+    aliases:
+    - 'enterprise agent knowledge architecture (eaka) research study: part 3'
+    supersedes: []
+    pages: []
+  - id: ea-mastery-guide-part2
+    domain: architecture
+    canonical: docs/architecture/parts/35-ea-mastery-guide-part2.md
+    aliases:
+    - 'ea mastery guide: part 2'
+    supersedes: []
+    pages: []
+  - id: principal-enterprise-ai-guide-educative-part2
+    domain: architecture
+    canonical: docs/architecture/parts/36-principal-enterprise-ai-guide-educative-part2.md
+    aliases:
+    - 'principal enterprise ai guide educative: part 2'
     supersedes: []
     pages: []

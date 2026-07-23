@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "prepare": "bash scripts/install-git-hooks.sh",
     "docusaurus": "docusaurus",
     "prestart": "node scripts/build_progress_manifest.js",
     "start": "docusaurus start",
