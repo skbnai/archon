@@ -126,7 +126,7 @@ With Docker removed, every service is a native Windows Python process or .exe. T
 | --- | --- | --- | --- |
 | 8501 | Streamlit UI | Python (native) | All 6 UI pages — opens in browser automatically |
 | 8502 | Chat API Gateway | Python uvicorn | /chat /stream /hitl /dashboard |
-| 8000 | ERP Mock API | Python uvicorn | GET /purchase-orders/{po_id} |
+| 8000 | ERP Mock API | Python uvicorn | `GET /purchase-orders/{po_id}` |
 | 9000 | MCP Tool Server | Python (Fast MCP) | 11 MCP tools registered |
 | 11434 | Ollama | Windows exe | Local LLM — llama3/mistral. No internet needed after pull. |
 | ✅ None | SQLite files | File system | checkpoints.db / store.db / metrics.db in %APPDATA%\InvoiceAuditor\ |
@@ -172,7 +172,7 @@ Source: *<https://docs.langchain.com/oss/python/langchain/human-in-the-loop>*
 
 ## **3.1 How It Works — Official Pattern**
 
-The official LangChain HITL pattern uses **HumanInTheLoopMiddleware** added to the agent's **middleware** list at creation time. The middleware intercepts tool calls after the model generates them but before execution. If a tool matches **interrupt_on**, it raises an **interrupt** and the graph state is saved to the SQLite checkpointer. The UI then presents the action and collects a decision (**approve**, **edit**, or **reject**). Execution resumes via **Command(resume={"decisions":[...]})** with the same thread_id.
+The official LangChain HITL pattern uses **HumanInTheLoopMiddleware** added to the agent's **middleware** list at creation time. The middleware intercepts tool calls after the model generates them but before execution. If a tool matches **interrupt_on**, it raises an **interrupt** and the graph state is saved to the SQLite checkpointer. The UI then presents the action and collects a decision (**approve**, **edit**, or **reject**). Execution resumes via **`Command(resume={"decisions":[...]})`** with the same thread_id.
 
 | Decision Type | Symbol | Invoice Auditor Meaning |
 | --- | --- | --- |
@@ -405,7 +405,7 @@ Source: *<https://docs.langchain.com/oss/python/langchain/multi-agent/handoffs>*
 
 ## **4.1 Why Handoffs Fit Invoice Processing**
 
-The official LangChain handoffs pattern is ideal for the Invoice Auditor because invoice processing is a **sequential, state-driven flow** where each stage unlocks the next only when preconditions are met (e.g., extraction must succeed before translation; translation must reach 0.80 confidence before validation). The **single-agent middleware approach** is used here — one agent changes its system prompt and available tools based on the **current_step** state variable, updated by handoff tools returning **Command(update={...})**.
+The official LangChain handoffs pattern is ideal for the Invoice Auditor because invoice processing is a **sequential, state-driven flow** where each stage unlocks the next only when preconditions are met (e.g., extraction must succeed before translation; translation must reach 0.80 confidence before validation). The **single-agent middleware approach** is used here — one agent changes its system prompt and available tools based on the **current_step** state variable, updated by handoff tools returning **`Command(update={...})`**.
 
 ## **4.2 Invoice Processing Stages via Handoffs**
 

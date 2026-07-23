@@ -377,7 +377,7 @@ class MetricsDB:
 | File | ui/pages/1_Pipeline_Monitor.py |
 | Purpose | Live view of all invoice runs with stage-by-stage progress. Shows handoff transitions as pipeline moves through triage → extraction → translation → validation → hitl/reporting. |
 | Layout | Top: 4 KPI tiles (Total | Auto-Approved | Pending HITL | Errors). Middle: Active run card per invoice (stage badge strip). Bottom: Completed runs table with status filter. |
-| Data Sources | GET /dashboard/metrics (batch stats) | GET /stream/{run_id} SSE (stage transitions) | SQLite stage_transitions table |
+| Data Sources | `GET /dashboard/metrics` (batch stats) | `GET /stream/{run_id}` SSE (stage transitions) | SQLite stage_transitions table |
 | AG-UI Events | StepProgress per handoff transition. HumanInputRequired → HITL badge increment. RunFinished → move to completed table. |
 | Interactions | Click stage badge → show timing for that stage. Click invoice_id → open Chat page. Upload Invoice file widget → triggers new pipeline run. |
 
@@ -398,8 +398,8 @@ class MetricsDB:
 | --- | --- |
 | File | ui/pages/3_HITL_Review.py |
 | Purpose | Structured approve/edit/reject decision UI for flagged invoices. Backed by the HumanInTheLoopMiddleware interrupt/resume pattern. Three decision types with appropriate controls per type. |
-| Layout | Per action card: tool name, arguments, description. Decision radio (approve/edit/reject per allowed_decisions). Edit mode shows field-level inputs. Reject mode shows reason textarea (min 10 chars). Submit button sends Command(resume={decisions:[...]}). |
-| Data Sources | GET /hitl/{invoice_id}/interrupt → loads interrupt payload. POST /hitl/{invoice_id}/decision → resumes SqliteSaver-checkpointed graph. Logs to hitl_events table in metrics.db. |
+| Layout | Per action card: tool name, arguments, description. Decision radio (approve/edit/reject per allowed_decisions). Edit mode shows field-level inputs. Reject mode shows reason textarea (min 10 chars). Submit button sends `Command(resume={decisions:[...]})`. |
+| Data Sources | `GET /hitl/{invoice_id}/interrupt` → loads interrupt payload. `POST /hitl/{invoice_id}/decision` → resumes SqliteSaver-checkpointed graph. Logs to hitl_events table in metrics.db. |
 | AG-UI Events | HumanInputRequired auto-navigates here. HumanDecisionMade → toast plus sidebar badge decrement plus pipeline resume. |
 | Memory | Past decisions for this vendor from SqliteStore shown as context. Decision is saved to long-term memory via save_audit_decision tool after submit. |
 
@@ -572,13 +572,13 @@ pytest-asyncio>=0.23.0
 | SqliteStore | langgraph.store.sqlite long-term memory store. Namespaced key-value (namespace tuple plus key string). Vector-searchable with embedded MiniLM embeddings. Accessed via runtime.store in any tool using ToolRuntime. |
 | Short-term memory | AgentState.messages list persisted per thread_id in SqliteSaver. Automatically restored on resume. Represents the in-context conversation history for a single invoice run. |
 | Long-term memory | SqliteStore entries persisted across all runs. Namespaces: (vendors,), (invoices,decisions), (auditors,), (patterns,). Read/written by tools via runtime.store. Survives application restarts. |
-| Handoffs | Official LangChain multi-agent pattern. Tools return Command(update={current_step:...}) to transition the agent between processing stages (triage → extraction → translation → validation → hitl → reporting). Single-agent middleware variant used: one agent, dynamic config per stage. |
+| Handoffs | Official LangChain multi-agent pattern. Tools return `Command(update={current_step:...})` to transition the agent between processing stages (triage → extraction → translation → validation → hitl → reporting). Single-agent middleware variant used: one agent, dynamic config per stage. |
 | Skills (v5.0) | Prompt-driven specialisations per official LangChain Skills docs. Packaged as YAML files in prompts/skills/. Loaded on-demand via load_skill(skill_name) tool — progressive disclosure. Not class-based. Teams maintain skill files independently. |
 | ToolRuntime[Context] | LangChain dependency injection in tools. runtime.context → InvoiceContext (run_id, mcp client, metrics). runtime.store → SqliteStore. runtime.state → current AgentState. runtime.tool_call_id → for ToolMessage pairing in handoffs. |
 | load_skill | Tool that returns a skill's prompt YAML content on demand. Agent calls this at the start of each processing stage to get expert guidance. Enables progressive disclosure and independent team maintenance of skill prompts. |
 | wrap_model_call | LangChain middleware decorator used by apply_stage_config. Intercepts model requests before LLM call. Reads current_step from state and overrides system_prompt plus tools per stage config. Enables dynamic agent behaviour without multiple agent instances. |
 | MetricsDB | SQLite-backed local observability store (metrics.db). Tables: pipeline_runs, stage_transitions, tool_calls, llm_calls, hitl_events, skill_loads, rag_scores. Queried by Streamlit Observability page. Replaces LangFuse. |
-| Command(resume=...) | LangGraph primitive used to resume a graph interrupted by HumanInTheLoopMiddleware. resume={'decisions':[{type:'approve'}]} OR {type:'edit', edited_action:{name:..., args:{...}}} OR {type:'reject', message:'...'}. Passed with same thread_id to reload SqliteSaver state. |
+| `Command(resume=...)` | LangGraph primitive used to resume a graph interrupted by HumanInTheLoopMiddleware. `resume={'decisions':[{type:'approve'}]}` OR {type:'edit', edited_action:{name:..., args:{...}}} OR {type:'reject', message:'...'}. Passed with same thread_id to reload SqliteSaver state. |
 
 **END OF DOCUMENT — AI Invoice Auditor Architecture v5.0 (Part 2)**
 Skills, Observability, UI Pages, Project Structure, Requirements, Sprint Plan, Glossary
