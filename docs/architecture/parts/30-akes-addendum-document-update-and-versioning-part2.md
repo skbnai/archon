@@ -11,7 +11,7 @@ tags: [enterprise-architecture, knowledge-systems, versioning, standards]
 covers_version: "2026"
 ---
 
-**Part 2 of 2.** This is the continuation of [Part 1](/docs/architecture/78-akes-addendum-document-update-and-versioning.md): Overview & Design Intent, Version Lifecycle, Update Triggering, Update Paths, and Version Store Schema.
+**Part 2 of 2.** This is the continuation of [Part 1](pathname:///archon/architecture/78-akes-addendum-document-update-and-versioning): Overview & Design Intent, Version Lifecycle, Update Triggering, Update Paths, and Version Store Schema.
 
 # A6. Changelog Rollup & Consumer-Facing Views
 

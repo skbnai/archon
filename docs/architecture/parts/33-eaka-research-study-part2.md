@@ -119,8 +119,6 @@ Every knowledge artefact and skill carries a computed Trust Score (0–100) deri
 
 **Conflict Resolution Protocol**
 
-![Figure 3](/img/enterprise-architecture/ea-p15-3.png)
-
 **Notify downstream skills of resolution**
 
 #### 6.3 Compliance and Auditability
@@ -207,10 +205,6 @@ Each registered MCP Server carries a structured capability manifest:
 #### 8.2 Dynamic MCP Discovery
 
 **Dynamic MCP Discovery and Tool Selection**
-
-![Figure 4](/img/enterprise-architecture/ea-p19-4.png)
-
-![Figure 5](/img/enterprise-architecture/ea-p20-5.png)
 
 #### 8.3 Multi-MCP Orchestration
 

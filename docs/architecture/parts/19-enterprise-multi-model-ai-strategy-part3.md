@@ -20,7 +20,7 @@ sources: []
 This is **Part 3 of 3** of the definitive enterprise reference for selecting, routing, governing, evaluating, and operating foundation models across an organization. Part 3 covers operational disciplines, governance frameworks, security architecture, and forward-looking trends for multi-model systems. Part 1 established business case and landscape; Part 2 covered decision frameworks and architectures. Together, these parts form a complete playbook for enterprise multi-model strategy.
 
 **Cross-references to other parts:**
-- [Part 1: Enterprise Multi-Model AI Strategy — Vendor-Agnostic Guide (Part 1)](54-enterprise-multi-model-ai-strategy.md) — Foundational case and landscape survey
+- [Part 1: Enterprise Multi-Model AI Strategy — Vendor-Agnostic Guide (Part 1)](../54-enterprise-multi-model-ai-strategy.md) — Foundational case and landscape survey
 - [Part 2: Enterprise Multi-Model AI Strategy — Technical Comparison, Decision Frameworks & Architecture (Part 2)](18-enterprise-multi-model-ai-strategy-part2.md) — Decision frameworks and architecture patterns
 
 ---
@@ -870,9 +870,9 @@ Agents that evaluate their own outputs, generate synthetic training data, and re
 
 **Internal Cross-References**
 
-- [Enterprise AI Architect Foundations](48-enterprise-ai-architect-foundations.md) — Role, token economics, integration patterns
-- [Enterprise AI Architecture Patterns](49-enterprise-ai-architecture-patterns.md) — 15 canonical patterns including routing, caching, evaluation
-- [Enterprise AI Governance & Compliance](51-enterprise-ai-governance-compliance.md) — Governance framework detail
+- [Enterprise AI Architect Foundations](../48-enterprise-ai-architect-foundations.md) — Role, token economics, integration patterns
+- [Enterprise AI Architecture Patterns](../49-enterprise-ai-architecture-patterns.md) — 15 canonical patterns including routing, caching, evaluation
+- [Enterprise AI Governance & Compliance](../51-enterprise-ai-governance-compliance.md) — Governance framework detail
 - [Kong AI Gateway Guide](pathname:///archon/platforms/kong-ai-gateway-guide) — AI gateway implementation
 - [Claude Models 2026](pathname:///archon/agentic-systems/coding-tools/claude-models-2026) — Claude model reference
 
@@ -880,11 +880,11 @@ Agents that evaluate their own outputs, generate synthetic training data, and re
 
 ## Related
 
-- [Enterprise Multi-Model AI Strategy — Part 1](54-enterprise-multi-model-ai-strategy.md) — Foundational case and model landscape
+- [Enterprise Multi-Model AI Strategy — Part 1](../54-enterprise-multi-model-ai-strategy.md) — Foundational case and model landscape
 - [Enterprise Multi-Model AI Strategy — Part 2](18-enterprise-multi-model-ai-strategy-part2.md) — Technical comparison, decision frameworks, architecture
-- [Enterprise AI Architecture Patterns](49-enterprise-ai-architecture-patterns.md) — Canonical patterns for routing, caching, evaluation
-- [Enterprise AI Governance & Compliance](51-enterprise-ai-governance-compliance.md) — Governance framework detail
-- [Enterprise AI Architect Foundations](48-enterprise-ai-architect-foundations.md) — Role definition, token economics
+- [Enterprise AI Architecture Patterns](../49-enterprise-ai-architecture-patterns.md) — Canonical patterns for routing, caching, evaluation
+- [Enterprise AI Governance & Compliance](../51-enterprise-ai-governance-compliance.md) — Governance framework detail
+- [Enterprise AI Architect Foundations](../48-enterprise-ai-architect-foundations.md) — Role definition, token economics
 
 ## Sources
 

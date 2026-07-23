@@ -12,7 +12,7 @@ tags: [enterprise-architecture, knowledge-systems, versioning, standards]
 covers_version: "2026"
 ---
 
-**Part 1 of 2.** Continue reading in [Part 2](/docs/architecture/parts/30-akes-addendum-document-update-and-versioning-part2.md): Changelog, Partial Updates, Retention & Governance Integration.
+**Part 1 of 2.** Continue reading in [Part 2](pathname:///archon/architecture/parts/30-akes-addendum-document-update-and-versioning-part2): Changelog, Partial Updates, Retention & Governance Integration.
 
 # AKES Addendum: Document Update & Versioning
 

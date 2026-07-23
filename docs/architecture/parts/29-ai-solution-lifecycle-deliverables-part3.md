@@ -13,7 +13,7 @@ covers_version: "as of 2026-07-10"
 ---
 
 :::info Part 3 of 3
-This is the third and final part of a three-part guide. Start with [Part 1](/archon/architecture/74-ai-solution-lifecycle-deliverables) (Lifecycle, Roles, Matrix & Enterprise Architect) and [Part 2](/archon/architecture/parts/28-ai-solution-lifecycle-deliverables-part2) (Security, RAI/Governance, Solution, Distinguished, Data & Platform Architect Deep-Dives).
+This is the third and final part of a three-part guide. Start with [Part 1](pathname:///archon/architecture/74-ai-solution-lifecycle-deliverables) (Lifecycle, Roles, Matrix & Enterprise Architect) and [Part 2](pathname:///archon/architecture/parts/28-ai-solution-lifecycle-deliverables-part2) (Security, RAI/Governance, Solution, Distinguished, Data & Platform Architect Deep-Dives).
 :::
 
 ---

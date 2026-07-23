@@ -187,8 +187,6 @@ Traditional RAG approaches retrieve documents in response to a query and pass th
 
 **Knowledge Execution Plan — Planning Pipeline**
 
-![Figure 1](/img/enterprise-architecture/ea-p9-1.png)
-
 **Evaluation & Feedback**
 
 #### 3.2 KEP vs. Traditional RAG
@@ -254,8 +252,6 @@ Skills must maintain backward compatibility for at least one major version. Depr
 #### 4.3 Skill Governance Workflow
 
 **Skill Lifecycle — Governance Workflow**
-
-![Figure 2](/img/enterprise-architecture/ea-p12-2.png)
 
 ---
 

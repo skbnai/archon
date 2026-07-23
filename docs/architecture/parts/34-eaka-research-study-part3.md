@@ -187,8 +187,6 @@ Enterprise knowledge must not merely be indexed but continuously curated, valida
 
 **AI-Assisted Knowledge Lifecycle Pipeline**
 
-![Figure 7](/img/enterprise-architecture/ea-p28-7.png)
-
 Deprecation Trigger (Conflict detected or TTL expired) → Archival (Immutable archive with lineage preserved)
 
 #### 13.2 AI-Generated Skill Drafts

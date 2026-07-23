@@ -13,7 +13,7 @@ covers_version: "as of 2026-07-10"
 ---
 
 :::info Part 2 of 3
-This is the second part of a three-part guide. Start with [Part 1](/archon/architecture/74-ai-solution-lifecycle-deliverables) (Lifecycle, Roles, Matrix & Enterprise Architect) and continue with [Part 3](/archon/architecture/parts/29-ai-solution-lifecycle-deliverables-part3) (Use Case Walk-throughs & Architect's Checklist).
+This is the second part of a three-part guide. Start with [Part 1](pathname:///archon/architecture/74-ai-solution-lifecycle-deliverables) (Lifecycle, Roles, Matrix & Enterprise Architect) and continue with [Part 3](pathname:///archon/architecture/parts/29-ai-solution-lifecycle-deliverables-part3) (Use Case Walk-throughs & Architect's Checklist).
 :::
 
 ---

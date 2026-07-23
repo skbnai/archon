@@ -18,7 +18,7 @@ covers_version: "as of 2026-07-10"
 **Related:** AI-First to AI-Native Journey · AI Governance Operating Model · Constitutional AI Engineering · Enterprise AI Governance & Compliance
 
 :::info Part 1 of 3
-This is the first part of a three-part guide. Continue with [Part 2](/archon/architecture/parts/28-ai-solution-lifecycle-deliverables-part2) (Security, RAI/Governance, Solution, Distinguished, Data & Platform Architect Deep-Dives) and [Part 3](/archon/architecture/parts/29-ai-solution-lifecycle-deliverables-part3) (Use Case Walk-throughs & Architect's Checklist).
+This is the first part of a three-part guide. Continue with [Part 2](pathname:///archon/architecture/parts/28-ai-solution-lifecycle-deliverables-part2) (Security, RAI/Governance, Solution, Distinguished, Data & Platform Architect Deep-Dives) and [Part 3](pathname:///archon/architecture/parts/29-ai-solution-lifecycle-deliverables-part3) (Use Case Walk-throughs & Architect's Checklist).
 :::
 
 :::info Current as of July 2026

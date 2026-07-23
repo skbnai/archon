@@ -20,7 +20,7 @@ sources: []
 This is **Part 2 of 3** of the definitive enterprise reference for selecting, routing, governing, evaluating, and operating foundation models across an organization. Part 2 provides technical comparison of frontier models, decision frameworks for model selection, and detailed architecture patterns for multi-model systems. Part 1 established the foundational business case and surveyed the 2026 model landscape; Part 3 covers operations, governance, security, and future trends.
 
 **Cross-references to other parts:**
-- [Part 1: Enterprise Multi-Model AI Strategy — Vendor-Agnostic Guide (Part 1)](54-enterprise-multi-model-ai-strategy.md) — Foundational case for multi-model and landscape survey
+- [Part 1: Enterprise Multi-Model AI Strategy — Vendor-Agnostic Guide (Part 1)](../54-enterprise-multi-model-ai-strategy.md) — Foundational case for multi-model and landscape survey
 - [Part 3: Enterprise Multi-Model AI Strategy — Operations, Governance & Future Trends (Part 3)](pathname:///archon/architecture/parts/19-enterprise-multi-model-ai-strategy-part3)
 
 ---
@@ -764,10 +764,10 @@ graph TB
 
 ## Related
 
-- [Enterprise Multi-Model AI Strategy — Part 1](54-enterprise-multi-model-ai-strategy.md) — Foundational case and model landscape
+- [Enterprise Multi-Model AI Strategy — Part 1](../54-enterprise-multi-model-ai-strategy.md) — Foundational case and model landscape
 - [Enterprise Multi-Model AI Strategy — Part 3](pathname:///archon/architecture/parts/19-enterprise-multi-model-ai-strategy-part3) — Operations, governance, future trends
-- [Enterprise AI Architecture Patterns](49-enterprise-ai-architecture-patterns.md) — Canonical patterns for routing, caching, evaluation
-- [Enterprise AI Architect Foundations](48-enterprise-ai-architect-foundations.md) — Role definition, token economics
+- [Enterprise AI Architecture Patterns](../49-enterprise-ai-architecture-patterns.md) — Canonical patterns for routing, caching, evaluation
+- [Enterprise AI Architect Foundations](../48-enterprise-ai-architect-foundations.md) — Role definition, token economics
 - [Kong AI Gateway Guide](pathname:///archon/platforms/kong-ai-gateway-guide) — AI gateway implementation details
 
 ## Sources
