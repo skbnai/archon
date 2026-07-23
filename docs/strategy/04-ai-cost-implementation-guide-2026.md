@@ -21,6 +21,7 @@ tags:
   - model-routing
   - semantic-caching
 sources: []
+pagination_next: strategy/ai-cost-implementation-guide-2026-budget-finops-roi-measurement
 ---
 
 # AI Cost Implementation: Model Routing & Semantic Caching

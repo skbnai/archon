@@ -19,6 +19,8 @@ tags:
   - telecom
   - government
 sources: []
+pagination_prev: strategy/vol9-industry-deep-dives
+pagination_next: strategy/vols/vol9-industry-deep-dives-life-sciences-logistics-media-tech
 ---
 
 # Industry Deep Dives: Manufacturing, Energy, Telecom, Government

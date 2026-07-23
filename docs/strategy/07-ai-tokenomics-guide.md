@@ -20,6 +20,7 @@ tags:
   - llm-pricing
   - cost-optimization
 sources: []
+pagination_next: strategy/ai-tokenomics-guide-prompting-model-selection-fine-tuning
 ---
 
 # AI Tokenomics: Token Mechanics & Context Window Economics

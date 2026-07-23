@@ -12,6 +12,8 @@ covers_version: "N/A"
 supersedes: []
 tags: ["enterprise-ai", "ai-native", "transformation-roadmap", "sector-benchmarks", "banking", "healthcare", "government"]
 sources: []
+pagination_prev: strategy/ai-first-to-ai-native
+pagination_next: strategy/ai-first-to-ai-native-case-studies-readiness-checklist
 ---
 
 The path from each maturity level to AI-Native spans 9-36 months, depending on starting point. This roadmap shows typical blockers at each level, priority initiatives, governance milestones, and what success looks like. Sector benchmarks for Banking, Healthcare, and Government show typical timelines and challenges.

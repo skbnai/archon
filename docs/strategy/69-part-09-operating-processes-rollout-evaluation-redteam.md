@@ -12,6 +12,8 @@ covers_version: "as of 2026-07-14"
 supersedes: []
 tags: ["operating-processes", "rollout", "evaluation", "red-team", "testing", "safety"]
 sources: []
+pagination_prev: strategy/part-09-operating-processes
+pagination_next: strategy/part-09-operating-processes-incident-response-rollback
 ---
 
 # AI Operating Processes: Rollout, Evaluation & Red Teaming

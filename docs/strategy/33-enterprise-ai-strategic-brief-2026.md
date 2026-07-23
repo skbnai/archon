@@ -12,6 +12,7 @@ covers_version: "N/A"
 supersedes: ["docs/enterprise-architecture/strategy/Enterprise_AI_Strategic_Brief_2026.md"]
 tags: ["enterprise-ai", "ai-strategy", "ai-operations", "agentic-ai", "claude-mythos"]
 sources: []
+pagination_next: strategy/enterprise-ai-strategic-brief-2026-aegis-security-adlc
 ---
 
 Enterprise AI architecture in 2026 pivots on three seismic shifts: Claude Mythos-class models that autonomously correct their own errors and operate on 14.5-hour task horizons, the rise of AIOps as the operating model for IT, and the AEGIS governance framework for managing non-human agents. This brief synthesizes the research foundation and strategic roadmap for all three.

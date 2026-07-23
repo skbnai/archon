@@ -12,6 +12,7 @@ covers_version: "N/A"
 supersedes: ["docs/enterprise-architecture/strategy/EA_Strategy_Playbook.md"]
 tags: ["enterprise-architecture", "governance", "raci", "ea-lifecycle", "architecture-review"]
 sources: []
+pagination_next: strategy/ea-strategy-playbook-build-operate-retire-stages
 ---
 
 Enterprise Architecture must create strategy before money is committed. This playbook defines the operational stages from pitch through design, with clear RACI responsibilities, decision gates, and success patterns that prevent expensive mistakes.

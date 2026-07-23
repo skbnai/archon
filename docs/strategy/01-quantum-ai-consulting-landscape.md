@@ -29,6 +29,7 @@ sources:
     title: "QuantumBlack, AI by McKinsey — Our People"
     tier: 1
     retrieved: 2026-07-19
+pagination_next: strategy/quantum/quantum-ai-consulting-landscape-bcg-x-deloitte-ibm
 ---
 
 # Quantum AI Consulting: Accenture & McKinsey

@@ -18,6 +18,8 @@ tags:
   - ai-coe
   - ai-center-of-excellence
 sources: []
+pagination_prev: strategy/vols/vol6-organization-structure-operating-model-agile-scale-operating-model
+pagination_next: strategy/vols/vol6-organization-structure-operating-model-ai-maturity-deliverables
 ---
 
 # Organization Structure: Target Operating Model & AI COE

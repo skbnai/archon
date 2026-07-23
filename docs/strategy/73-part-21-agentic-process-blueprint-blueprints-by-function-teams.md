@@ -12,6 +12,7 @@ personas: ["architect", "process-owner"]
 supersedes: []
 tags: ["agentic-blueprints", "agent-infused-teams", "digital-workforce", "function-specific"]
 sources: []
+pagination_prev: strategy/part-21-agentic-process-blueprint
 ---
 
 # Part 21 — Agentic Blueprints by Function & Agent-Infused Teams

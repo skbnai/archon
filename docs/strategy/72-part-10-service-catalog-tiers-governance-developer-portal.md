@@ -12,6 +12,7 @@ covers_version: "as of 2026-07-14"
 supersedes: []
 tags: ["service-catalog", "governance", "developer-experience", "self-service", "tiers", "sla"]
 sources: []
+pagination_prev: strategy/part-10-service-catalog-agent-guardrail-observability
 ---
 
 # AI Service Catalog: Tiers, Governance & Developer Portal

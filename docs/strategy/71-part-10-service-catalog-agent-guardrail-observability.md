@@ -12,6 +12,8 @@ covers_version: "as of 2026-07-14"
 supersedes: []
 tags: ["service-catalog", "agent-platform", "guardrails", "observability", "monitoring", "safety"]
 sources: []
+pagination_prev: strategy/part-10-service-catalog
+pagination_next: strategy/part-10-service-catalog-tiers-governance-developer-portal
 ---
 
 # AI Service Catalog: Agent, Guardrail & Observability Services

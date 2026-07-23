@@ -16,6 +16,7 @@ tags:
   - governance-framework
   - portfolio-metrics
 sources: []
+pagination_prev: strategy/vol3-portfolio-governance-pmo-agile-governance
 ---
 
 # Portfolio Governance: AI Governance, Reporting & Deliverables

@@ -23,6 +23,8 @@ sources:
     title: "EO-14412: Securing the Nation Against Advanced Cryptographic Attacks"
     tier: 1
     retrieved: 2026-07-19
+pagination_prev: strategy/quantum-ai-consulting-landscape
+pagination_next: strategy/quantum/quantum-ai-consulting-landscape-capgemini-big-four-audit
 ---
 
 # Quantum AI Consulting: BCG X, Deloitte & IBM Consulting

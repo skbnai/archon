@@ -17,6 +17,8 @@ tags:
   - definitions
   - enterprise-terms
 sources: []
+pagination_prev: strategy/vol10-relationship-maps-glossary-ai-comparisons-terminology-xref
+pagination_next: strategy/vol10-relationship-maps-glossary-glossary-terms-h-t
 ---
 
 # Enterprise Glossary: A-G

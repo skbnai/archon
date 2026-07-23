@@ -13,6 +13,7 @@ supersedes:
   - docs/enterprise-ai-report/part-01-evolution.md
 tags: ["evolution", "ai-native", "enterprise-ai", "generative-ai", "agentic-ai", "transformation"]
 sources: []
+pagination_next: strategy/part-01-evolution-evolution-stages-agentic-ai-native
 ---
 
 # Evolution: Traditional Software to Enterprise RAG

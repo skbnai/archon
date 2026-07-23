@@ -18,6 +18,8 @@ tags:
   - identity-management
   - ai-building-blocks
 sources: []
+pagination_prev: strategy/vol7-enterprise-building-blocks
+pagination_next: strategy/vols/vol7-enterprise-building-blocks-ai-infrastructure-platform-engineering
 ---
 
 # Enterprise Building Blocks: Application & Core AI Blocks

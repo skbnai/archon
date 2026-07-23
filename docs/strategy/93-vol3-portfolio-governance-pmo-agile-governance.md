@@ -16,6 +16,8 @@ tags:
   - agile-portfolio
   - governance
 sources: []
+pagination_prev: strategy/vol3-portfolio-governance
+pagination_next: strategy/vol3-portfolio-governance-ai-governance-metrics
 ---
 
 # Portfolio Governance: PMO Models, Agile Portfolio & Enterprise Governance

@@ -12,6 +12,8 @@ covers_version: "N/A"
 supersedes: []
 tags: ["enterprise-ai", "finops", "ai-security", "threat-model", "cost-optimization"]
 sources: []
+pagination_prev: strategy/enterprise-ai-transformation-blueprint-cto-guide-2026
+pagination_next: strategy/enterprise-ai-transformation-blueprint-cto-guide-2026-failure-playbook-migration
 ---
 
 Token costs have collapsed 80-85% since 2023, but agentic workflows consume 5-30x more tokens per task than chatbots. The inference cost crisis is real: average enterprise AI budgets grew from $1.2M/year in 2024 to $7M in 2026. Security threats have multiplied with agent autonomy — prompt injection, memory poisoning, tool misuse, supply chain attacks, and data exfiltration via legitimate access.

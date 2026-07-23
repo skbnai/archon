@@ -12,6 +12,7 @@ covers_version: "N/A"
 supersedes: []
 tags: ["enterprise-ai", "strategy", "roadmap", "strategic-imperatives", "ai-roadmap-2026-2027"]
 sources: []
+pagination_prev: strategy/enterprise-ai-strategic-brief-2026-aegis-security-adlc
 ---
 
 The convergence of Mythos capabilities, AIOps transformation, AEGIS security governance, and ADLC delivery shifts crystallize into a single strategic priority: infrastructure before models. The organizations that act now will absorb Mythos capabilities as a strategic acceleration rather than an unmanaged risk.

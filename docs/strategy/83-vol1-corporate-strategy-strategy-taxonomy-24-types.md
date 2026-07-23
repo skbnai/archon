@@ -17,6 +17,8 @@ tags:
   - ai-strategy
   - digital-strategy
 sources: []
+pagination_prev: strategy/vol1-corporate-strategy-themes-priorities-initiatives
+pagination_next: strategy/vol1-corporate-strategy-execution-templates-kpis
 ---
 
 # Corporate Strategy: The 24-Type Strategy Taxonomy

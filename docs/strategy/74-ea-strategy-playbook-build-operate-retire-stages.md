@@ -12,6 +12,7 @@ covers_version: "N/A"
 supersedes: []
 tags: ["enterprise-architecture", "governance", "raci", "ea-lifecycle", "operations", "retirement"]
 sources: []
+pagination_prev: strategy/ea-strategy-playbook
 ---
 
 Once architecture is designed and approved, EA transitions from author to guardian — ensuring what gets built matches what was approved, maintaining portfolio health through operations, and executing controlled retirements.

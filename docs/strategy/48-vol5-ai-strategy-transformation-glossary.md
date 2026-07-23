@@ -16,6 +16,7 @@ tags:
   - enterprise-transformation
   - ai-operating-model
 sources: []
+pagination_next: strategy/vol5-ai-strategy-transformation-glossary-transformation-maturity-models
 ---
 
 # AI Strategy & Transformation: Strategy Framework & Operating Model

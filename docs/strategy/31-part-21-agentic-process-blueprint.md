@@ -12,6 +12,7 @@ personas: ["architect", "process-owner"]
 supersedes: ["docs/enterprise-ai-report/part-21-agentic-process-blueprint.md"]
 tags: ["agentic-process", "process-blueprint", "agent-infused-teams", "digital-workforce", "process-redesign"]
 sources: []
+pagination_next: strategy/part-21-agentic-process-blueprint-blueprints-by-function-teams
 ---
 
 # Part 21 — Agentic Process Design Methodology & Patterns

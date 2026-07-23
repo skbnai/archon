@@ -19,6 +19,7 @@ tags:
   - procurement
   - vendor-management
 sources: []
+pagination_prev: strategy/enterprise-ai-commercial-analysis-2026
 ---
 
 # Enterprise AI Commercial Analysis: FinOps & Procurement Framework

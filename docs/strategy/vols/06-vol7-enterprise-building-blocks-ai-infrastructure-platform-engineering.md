@@ -17,6 +17,8 @@ tags:
   - mlops
   - infrastructure
 sources: []
+pagination_prev: strategy/vols/vol7-enterprise-building-blocks-application-core-ai-blocks
+pagination_next: strategy/vols/vol7-enterprise-building-blocks-agentic-ai-selection-guide
 ---
 
 # Enterprise Building Blocks: AI Infrastructure & Platform Engineering

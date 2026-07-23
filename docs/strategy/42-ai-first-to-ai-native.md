@@ -12,6 +12,7 @@ covers_version: "as of 2026-07-10"
 supersedes: ["docs/enterprise-architecture/transformation/ai-first-to-ai-native.md"]
 tags: ["enterprise-ai", "maturity-model", "ai-native", "ai-strategy", "governance"]
 sources: []
+pagination_next: strategy/ai-first-to-ai-native-transformation-roadmap-benchmarks
 ---
 
 An AI-First enterprise (Level 5) treats AI as the primary tool for solving business problems. An AI-Native enterprise (Level 6) is qualitatively different: AI is not a tool the enterprise uses. AI is the operating fabric of the enterprise. The distinction maps to how the internet transformed companies — AI-First is like having a website; AI-Native is like being Amazon.

@@ -15,6 +15,7 @@ tags:
   - consulting-terminology
   - strategy-tools
 sources: []
+pagination_prev: strategy/vol4-consulting-frameworks-industry-architecture-industry-playbooks
 ---
 
 # Consulting Frameworks: Selection Guide & Glossary

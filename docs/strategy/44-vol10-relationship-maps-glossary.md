@@ -19,6 +19,7 @@ tags:
   - strategy-taxonomy
   - enterprise-concepts
 sources: []
+pagination_next: strategy/vol10-relationship-maps-glossary-ai-comparisons-terminology-xref
 ---
 
 # Relationship Maps: Concept Hierarchy & Core Comparisons

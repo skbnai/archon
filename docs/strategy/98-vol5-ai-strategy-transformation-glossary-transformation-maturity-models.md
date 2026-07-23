@@ -16,6 +16,8 @@ tags:
   - maturity-models
   - transformation-roadmap
 sources: []
+pagination_prev: strategy/vol5-ai-strategy-transformation-glossary
+pagination_next: strategy/vol5-ai-strategy-transformation-glossary-glossary-a-to-h
 ---
 
 # AI Strategy & Transformation: Transformation & Maturity Models

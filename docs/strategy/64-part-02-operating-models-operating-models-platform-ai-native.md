@@ -12,6 +12,8 @@ covers_version: "as of 2026-07-14"
 supersedes: []
 tags: ["operating-model", "platform-first", "ai-factory", "product-centric", "organizational-design"]
 sources: []
+pagination_prev: strategy/part-02-operating-models
+pagination_next: strategy/part-02-operating-models-operating-model-comparison-maturity
 ---
 
 # Enterprise AI Operating Models: Platform-First to AI-Native

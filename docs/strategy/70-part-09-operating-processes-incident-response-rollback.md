@@ -12,6 +12,7 @@ covers_version: "as of 2026-07-14"
 supersedes: []
 tags: ["operating-processes", "incident-response", "rollback", "safety", "crisis-management", "business-continuity"]
 sources: []
+pagination_prev: strategy/part-09-operating-processes-rollout-evaluation-redteam
 ---
 
 # AI Operating Processes: Incident Response & Rollback

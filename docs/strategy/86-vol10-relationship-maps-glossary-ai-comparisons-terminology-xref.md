@@ -19,6 +19,8 @@ tags:
   - framework-comparison
   - cross-reference
 sources: []
+pagination_prev: strategy/vol10-relationship-maps-glossary
+pagination_next: strategy/vol10-relationship-maps-glossary-glossary-terms-a-g
 ---
 
 # Relationship Maps: AI/Ops Comparisons & Terminology Cross-Reference

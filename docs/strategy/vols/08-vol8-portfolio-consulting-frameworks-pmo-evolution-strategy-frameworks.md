@@ -18,6 +18,8 @@ tags:
   - strategy-frameworks
   - frameworks
 sources: []
+pagination_prev: strategy/vol8-portfolio-consulting-frameworks
+pagination_next: strategy/vols/vol8-portfolio-consulting-frameworks-architecture-operating-delivery
 ---
 
 # Portfolio Consulting Frameworks: PMO Evolution & Strategy Frameworks

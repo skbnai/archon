@@ -12,6 +12,8 @@ covers_version: "as of 2026-07-14"
 supersedes: []
 tags: ["roles", "governance", "risk", "raci", "responsible-ai", "audit"]
 sources: []
+pagination_prev: strategy/part-08-organizational-roles-core-delivery-engineering-roles
+pagination_next: strategy/part-08-organizational-roles-career-pathways-salary-benchmarks
 ---
 
 # Governance, Risk & Advisory Roles + Master RACI Matrix

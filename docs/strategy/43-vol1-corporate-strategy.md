@@ -19,6 +19,7 @@ tags:
   - strategic-intent
   - organizational-hierarchy
 sources: []
+pagination_next: strategy/vol1-corporate-strategy-themes-priorities-initiatives
 ---
 
 # Corporate Strategy: Vision, Mission, Purpose & Intent

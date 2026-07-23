@@ -21,6 +21,7 @@ tags:
   - governance
   - playbooks
 sources: []
+pagination_prev: strategy/ai-value-creator-deliverables-pack-maturity-governance-playbooks
 ---
 
 # AI Value Creator Deliverables: Governance, Economics & Playbooks (16-20)

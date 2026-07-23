@@ -13,6 +13,7 @@ supersedes:
   - docs/enterprise-ai-report/part-08-organizational-roles.md
 tags: ["organizational-roles", "raci", "chief-ai-officer", "ai-engineer", "mlops", "agentops", "career-path"]
 sources: []
+pagination_next: strategy/part-08-organizational-roles-core-delivery-engineering-roles
 ---
 
 # AI Talent Landscape & Leadership Roles

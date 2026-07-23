@@ -15,6 +15,7 @@ tags:
   - industry-strategy
   - consulting-terminology
 sources: []
+pagination_prev: strategy/vol1-corporate-strategy-execution-templates-kpis
 ---
 
 # Corporate Strategy: Relationships & Industry Comparisons

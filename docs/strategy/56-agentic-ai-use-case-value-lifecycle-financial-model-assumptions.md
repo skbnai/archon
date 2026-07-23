@@ -18,6 +18,7 @@ tags:
   - roi-analysis
   - agentic-ai
 sources: []
+pagination_prev: strategy/agentic-ai-use-case-value-lifecycle
 ---
 
 # Use Case Value Lifecycle: Financial Model & Assumptions

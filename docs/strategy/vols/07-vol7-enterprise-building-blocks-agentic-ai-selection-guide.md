@@ -17,6 +17,7 @@ tags:
   - agent-framework
   - selection
 sources: []
+pagination_prev: strategy/vols/vol7-enterprise-building-blocks-ai-infrastructure-platform-engineering
 ---
 
 # Enterprise Building Blocks: Agentic AI & Selection Guide

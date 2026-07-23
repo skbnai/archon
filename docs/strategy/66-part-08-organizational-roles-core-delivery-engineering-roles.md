@@ -12,6 +12,8 @@ covers_version: "as of 2026-07-14"
 supersedes: []
 tags: ["roles", "ai-engineers", "mlops", "agentops", "data-science", "career-path"]
 sources: []
+pagination_prev: strategy/part-08-organizational-roles
+pagination_next: strategy/part-08-organizational-roles-governance-risk-roles-raci-matrix
 ---
 
 # Core AI Delivery & Engineering Roles

@@ -12,6 +12,8 @@ covers_version: "N/A"
 supersedes: []
 tags: ["enterprise-ai", "ai-security", "ai-governance", "aegis-framework", "zero-trust", "adlc"]
 sources: []
+pagination_prev: strategy/enterprise-ai-strategic-brief-2026
+pagination_next: strategy/enterprise-ai-strategic-brief-2026-roadmap-strategic-imperatives
 ---
 
 With Mythos-class models capable of autonomously exploiting weakly-defended systems and 80% of Fortune 500 companies running active AI agents, security governance must evolve from perimeter defense to ambient, autonomous security woven into every inference. The Agentic Development Lifecycle (ADLC) replaces traditional SDLC with AI-native delivery practices.

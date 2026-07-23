@@ -20,6 +20,7 @@ tags:
   - deliverables
   - reference-architecture
 sources: []
+pagination_next: strategy/ai-value-creator-deliverables-pack-maturity-governance-playbooks
 ---
 
 # AI Value Creator Deliverables: Reference Models & Architecture (1-10)

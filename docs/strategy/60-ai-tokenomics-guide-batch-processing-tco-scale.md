@@ -18,6 +18,7 @@ tags:
   - tco
   - scale-economics
 sources: []
+pagination_prev: strategy/ai-tokenomics-guide-prompting-model-selection-fine-tuning
 ---
 
 # AI Tokenomics: Batch Processing, TCO & Scale Economics

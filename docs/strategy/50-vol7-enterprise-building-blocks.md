@@ -20,6 +20,7 @@ tags:
   - platform-engineering
   - ai-building-blocks
 sources: []
+pagination_next: strategy/vols/vol7-enterprise-building-blocks-application-core-ai-blocks
 ---
 
 # Enterprise Building Blocks: Concept & Business Blocks
