@@ -16,7 +16,7 @@ tags: ["enterprise-architecture", "langchain", "skills", "observability", "ui-sp
 
 ## **7. Skills — Prompt-Driven Progressive Disclosure (v5.0)**
 
-Source: *<https://docs.langchain.com/oss/python/langchain/multi-agent/skills>*
+Source: *[https://docs.langchain.com/oss/python/langchain/multi-agent/skills](https://docs.langchain.com/oss/python/langchain/multi-agent/skills)*
 
 ## **7.1 What Changed — Class-Based → Prompt-Driven**
 
@@ -578,7 +578,7 @@ pytest-asyncio>=0.23.0
 | load_skill | Tool that returns a skill's prompt YAML content on demand. Agent calls this at the start of each processing stage to get expert guidance. Enables progressive disclosure and independent team maintenance of skill prompts. |
 | wrap_model_call | LangChain middleware decorator used by apply_stage_config. Intercepts model requests before LLM call. Reads current_step from state and overrides system_prompt plus tools per stage config. Enables dynamic agent behaviour without multiple agent instances. |
 | MetricsDB | SQLite-backed local observability store (metrics.db). Tables: pipeline_runs, stage_transitions, tool_calls, llm_calls, hitl_events, skill_loads, rag_scores. Queried by Streamlit Observability page. Replaces LangFuse. |
-| `Command(resume=...)` | LangGraph primitive used to resume a graph interrupted by HumanInTheLoopMiddleware. `resume={'decisions':[{type:'approve'}]}` OR {type:'edit', edited_action:{name:..., args:{...}}} OR {type:'reject', message:'...'}. Passed with same thread_id to reload SqliteSaver state. |
+| `Command(resume=...)` | LangGraph primitive used to resume a graph interrupted by HumanInTheLoopMiddleware. `resume={'decisions':[{type:'approve'}]}` OR `{type:'edit', edited_action:{name:..., args:{...}}}` OR `{type:'reject', message:'...'}`. Passed with same thread_id to reload SqliteSaver state. |
 
 **END OF DOCUMENT — AI Invoice Auditor Architecture v5.0 (Part 2)**
 Skills, Observability, UI Pages, Project Structure, Requirements, Sprint Plan, Glossary

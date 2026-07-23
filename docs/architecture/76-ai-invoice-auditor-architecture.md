@@ -168,7 +168,7 @@ pause
 
 ## **3. Human-in-the-Loop — HumanInTheLoopMiddleware (v5.0)**
 
-Source: *<https://docs.langchain.com/oss/python/langchain/human-in-the-loop>*
+Source: *[https://docs.langchain.com/oss/python/langchain/human-in-the-loop](https://docs.langchain.com/oss/python/langchain/human-in-the-loop)*
 
 ## **3.1 How It Works — Official Pattern**
 
@@ -401,7 +401,7 @@ if invoice_id:
 
 ## **4. Multi-Agent Handoffs — Invoice Processing Stages**
 
-Source: *<https://docs.langchain.com/oss/python/langchain/multi-agent/handoffs>*
+Source: *[https://docs.langchain.com/oss/python/langchain/multi-agent/handoffs](https://docs.langchain.com/oss/python/langchain/multi-agent/handoffs)*
 
 ## **4.1 Why Handoffs Fit Invoice Processing**
 
@@ -570,7 +570,7 @@ pipeline_agent = create_agent(
 
 ## **5. Runtime Context Injection**
 
-Source: *<http://docs.langchain.com/oss/python/langchain/runtime>*
+Source: *[http://docs.langchain.com/oss/python/langchain/runtime](http://docs.langchain.com/oss/python/langchain/runtime)*
 
 LangChain's Runtime provides dependency injection for tools and middleware. Instead of global config objects, database connections and request-scoped values are declared in a **context_schema** dataclass and injected via **ToolRuntime[Context]**. This makes all tools testable in isolation and eliminates thread-safety issues from shared mutable state.
 
@@ -679,7 +679,7 @@ result = pipeline_agent.invoke(
 
 ## **6. Short-Term & Long-Term Memory**
 
-Sources: *<https://docs.langchain.com/oss/python/langchain/short-term-memory>*  |  *<https://docs.langchain.com/oss/python/langchain/long-term-memory>*
+Sources: *[https://docs.langchain.com/oss/python/langchain/short-term-memory](https://docs.langchain.com/oss/python/langchain/short-term-memory)*  |  *[https://docs.langchain.com/oss/python/langchain/long-term-memory](https://docs.langchain.com/oss/python/langchain/long-term-memory)*
 
 ## **6.1 Two Memory Tiers — Clear Separation**
 

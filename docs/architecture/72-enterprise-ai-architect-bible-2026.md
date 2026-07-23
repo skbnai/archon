@@ -26,7 +26,7 @@ The definitive MAANG-targeted preparation guide for senior technologists with 20
 
 Edition April 2026. Latest & Greatest. Target roles: Staff or Principal AI Architect at MAANG. Duration: 24-Week Structured Program. Prerequisite: 20+ Years DS/DE/SA Experience. Salary Target: $280K–$450K+ Total Compensation.
 
-This document covers LLM Architecture, Agentic Systems, MCP & A2A Protocols, RAG & Knowledge Graphs, and foundational concepts. See [Part 2](#related) for LLMOps, AI Safety & Governance, System Design Playbook, and Career Strategy.
+This document covers LLM Architecture, Agentic Systems, MCP & A2A Protocols, RAG & Knowledge Graphs, and foundational concepts. See [Part 2](pathname:///archon/architecture/parts/enterprise-ai-architect-bible-2026-part2) for LLMOps, AI Safety & Governance, System Design Playbook, and Career Strategy.
 
 ## Table of Contents
 

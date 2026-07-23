@@ -35,7 +35,7 @@ tags:
 2. [Frontier-Model Provider Decision Matrix](#2-frontier-model-provider-decision-matrix)
 3. [Agent-Framework Technology Radar](#3-agent-framework-technology-radar)
 4. [Enterprise Agentic-AI Maturity Model](#4-enterprise-agentic-ai-maturity-model)
-5. [Porter Five Forces — Enterprise Agent-Platform Market](#5-porter-five-forces)
+5. [Porter Five Forces — Enterprise Agent-Platform Market](#5-porter-five-forces--enterprise-agent-platform-market)
 6. [Consolidated SWOT One-Liners](#6-consolidated-swot-one-liners)
 7. [Target-State Reference Architecture](#7-target-state-reference-architecture)
 8. [Migration Decision Tree](#8-migration-decision-tree)
