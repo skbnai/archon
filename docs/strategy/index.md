@@ -18,11 +18,14 @@ supersedes:
 sources: []
 tags: [hub, strategy]
 ---
+import SectionProgress from '@site/src/components/SectionProgress';
 
 An enterprise AI initiative usually fails at the business case, not the
 model. This hub covers the operating model, economics, and value framework
 that let architecture and engineering decisions trace back to a funded,
 measurable outcome — the reference point the other domains build against.
+
+<SectionProgress domain="strategy" />
 
 ## Scope
 

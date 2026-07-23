@@ -1,0 +1,52 @@
+.quiz {
+  margin: 1.5rem 0;
+  padding: 1.1rem 1.25rem;
+  background: var(--archon-stat-bg);
+  border: 1px solid var(--archon-stat-border);
+  border-radius: 10px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+
+.question {
+  border: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.question legend {
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 0.4rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.question[disabled] .option {
+  cursor: default;
+}
+
+.correct {
+  color: var(--ifm-color-success, #2e844a);
+  font-weight: 600;
+}
+
+.result {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--archon-stat-border);
+}
+
+.best {
+  color: var(--ifm-color-emphasis-700);
+}

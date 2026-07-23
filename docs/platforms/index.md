@@ -13,11 +13,14 @@ supersedes: []
 sources: []
 tags: [hub, platforms]
 ---
+import SectionProgress from '@site/src/components/SectionProgress';
 
 Every architectural decision eventually becomes a platform decision — which
 cloud, which runtime, which silicon. This hub covers the infrastructure layer
 AI workloads actually run on: cloud providers, Kubernetes, gateways,
 inference serving, and the infrastructure-as-code that keeps it reproducible.
+
+<SectionProgress domain="platforms" />
 
 ## Scope
 

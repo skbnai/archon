@@ -1,0 +1,41 @@
+.widget {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  background: var(--archon-stat-bg);
+  border: 1px solid var(--archon-stat-border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  color: var(--ifm-font-color-base) !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.widget:hover,
+.widget:focus-visible {
+  transform: translateY(-2px);
+  color: var(--ifm-color-primary) !important;
+}
+
+.flame {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.count {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 480px) {
+  .widget {
+    right: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0.4rem 0.6rem;
+  }
+}

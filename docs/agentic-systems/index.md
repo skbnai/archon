@@ -13,11 +13,14 @@ supersedes: []
 sources: []
 tags: [hub, agentic-systems]
 ---
+import SectionProgress from '@site/src/components/SectionProgress';
 
 An agent is only as good as the loop around it — the orchestration, memory,
 and human checkpoints that turn a single model call into a system you can
 actually operate. This hub covers the architectural building blocks for
 agentic systems, from topology choices through harness design.
+
+<SectionProgress domain="agentic-systems" />
 
 ## Scope
 

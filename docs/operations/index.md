@@ -13,11 +13,14 @@ supersedes: []
 sources: []
 tags: [hub, operations]
 ---
+import SectionProgress from '@site/src/components/SectionProgress';
 
 A model that works in a demo and a model that survives production are
 different engineering problems. This hub covers running agentic AI at scale:
 LLMOps/AgentOps, evaluation, observability, reliability, and the FinOps
 discipline that keeps the economics defensible.
+
+<SectionProgress domain="operations" />
 
 ## Scope
 
