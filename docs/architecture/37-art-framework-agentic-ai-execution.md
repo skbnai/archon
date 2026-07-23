@@ -730,9 +730,9 @@ Before any agent goes to production, verify:
 
 | Guide | Link |
 |-------|------|
-| AIDR — AI Detection and Response | [AIDR Complete Guide](../../ai-security-governance/security/AIDR-AI-Detection-Response-Complete-Guide.md) |
-| Agentic AI Security & Identity | [Security Identity](./agentic-ai-security-identity.md) |
-| Security Architecture & Guardrails | [Security Guardrails](./agentic-ai-security-guardrails.md) |
-| Enterprise AI Governance & Compliance | [Governance Compliance](./enterprise-ai-governance-compliance.md) |
-| Agent Reliability & Observability | [Reliability Observability](./agentic-ai-reliability-observability-governance.md) |
-| Enterprise Agentic AI Architecture Playbook | [Architecture Playbook](../process/Enterprise_Agentic_AI_Architecture_Playbook_2026.md) |
+| AIDR — AI Detection and Response | [AIDR Complete Guide](pathname:///archon/trust/aidr-ai-detection-response-complete-guide) |
+| Agentic AI Security & Identity | [Security Identity](pathname:///archon/trust/agentic-ai-security-identity) |
+| Security Architecture & Guardrails | [Security Guardrails](pathname:///archon/trust/agentic-ai-security-guardrails) |
+| Enterprise AI Governance & Compliance | [Governance Compliance](51-enterprise-ai-governance-compliance.md) |
+| Agent Reliability & Observability | [Reliability Observability](43-agentic-ai-reliability-observability-governance.md) |
+| Enterprise Agentic AI Architecture Playbook | [Architecture Playbook](73-enterprise-agentic-ai-architecture-playbook-2026.md) |

@@ -19,9 +19,9 @@ supersedes: ["docs/enterprise-architecture/ai-architecture/agentic-ai-reliabilit
 > **Current as of July 2026.** This guide covers the end-to-end production lifecycle for multi-agent AI systems: reliability engineering patterns, observability architecture (OpenTelemetry GenAI semantic conventions), the 5-registry governance spine, and how Google, Microsoft, AWS, and leading consultancies operationalize this at scale.
 
 :::info Companion guides
-    - [Agentic AI Security & Guardrails](agentic-ai-security-guardrails.md) — threat catalog, multi-layer guardrail map
-    - [Agentic AI Security & Identity](agentic-ai-security-identity.md) — SPIFFE/SPIRE, OWASP ASI01–ASI10, bounded autonomy
-    - [Governance & Compliance](enterprise-ai-governance-compliance.md) — regulatory frameworks, RAI, vendor assessment
+    - [Agentic AI Security & Guardrails](pathname:///archon/trust/agentic-ai-security-guardrails) — threat catalog, multi-layer guardrail map
+    - [Agentic AI Security & Identity](pathname:///archon/trust/agentic-ai-security-identity) — SPIFFE/SPIRE, OWASP ASI01–ASI10, bounded autonomy
+    - [Governance & Compliance](51-enterprise-ai-governance-compliance.md) — regulatory frameworks, RAI, vendor assessment
 
 ---
 

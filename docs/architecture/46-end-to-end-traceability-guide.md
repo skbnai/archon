@@ -26,7 +26,7 @@ tags:
 
 **Purpose:** Defines how a single trace context propagates from the user's request through every agent, tool, model call, and data access—surviving process boundaries, network hops, asynchronous queues, and cross-organization agent calls. Covers correlation IDs, distributed tracing, OTel baggage propagation, causal graphs, lineage, provenance, compliance audit trails, and execution replay.
 
-**Scope:** Trace propagation mechanics. For observability dashboards and signal inventory, see [Agentic AI Reliability, Observability &amp; Governance §6–8](./pathname:///archon/architecture/49-agentic-ai-reliability-observability-governance). For governance decisions within the trace, see [Governance Propagation Chain](./pathname:///archon/architecture/governance-propagation-chain).
+**Scope:** Trace propagation mechanics. For observability dashboards and signal inventory, see [Agentic AI Reliability, Observability &amp; Governance §6–8](43-agentic-ai-reliability-observability-governance.md). For governance decisions within the trace, see [Governance Propagation Chain](55-governance-propagation-chain.md).
 
 ---
 
@@ -478,10 +478,10 @@ Where the model generates content NOT grounded in retrieved sources:
 
 ## Further Reading
 
-- [Agentic AI Reliability, Observability &amp; Governance](./pathname:///archon/architecture/49-agentic-ai-reliability-observability-governance) — signal inventory, dashboard architecture
-- [Governance Propagation Chain](./pathname:///archon/architecture/governance-propagation-chain) — policy decisions within the trace
-- [Drift Detection Guide](./pathname:///archon/architecture/drift-detection-guide) — using trace data for drift detection
-- [Agent Reliability Engineering](./pathname:///archon/architecture/agent-reliability-engineering) — chaos engineering; trace-driven fault injection
-- [Kill Switch Architecture](./pathname:///archon/architecture/kill-switch-architecture) — emergency shutdown traceability
-- [AI Observability](./pathname:///archon/trust/ai-security-governance/16-ai-observability) — deep-mind series
-- [EU Banking AI Agent Evaluation Framework](./pathname:///archon/operations/eu-banking-ai-agent-evaluation-framework) — regulated industry traceability requirements
+- [Agentic AI Reliability, Observability &amp; Governance](43-agentic-ai-reliability-observability-governance.md) — signal inventory, dashboard architecture
+- [Governance Propagation Chain](55-governance-propagation-chain.md) — policy decisions within the trace
+- [Drift Detection Guide](45-drift-detection-guide.md) — using trace data for drift detection
+- [Agent Reliability Engineering](42-agent-reliability-engineering.md) — chaos engineering; trace-driven fault injection
+- [Kill Switch Architecture](56-kill-switch-architecture.md) — emergency shutdown traceability
+- [AI Observability](pathname:///archon/trust/ai-security-governance/16-ai-observability) — deep-mind series
+- [EU Bank Copilot: Compliance & Observability](pathname:///archon/assets/eu-bank-copilot-compliance-observability) — regulated industry traceability requirements

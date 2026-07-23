@@ -27,7 +27,7 @@ sources: []
 
 **Purpose:** Canonical reference for 15 enterprise AI patterns. Each pattern includes: what problem it solves, architecture diagram, key components, implementation guidance, evaluation approach, best practices, and antipatterns.
 
-**Related sections:** [Agent SDK code examples](../../coding-tools/claude/claude-agent-sdk-production.md) | [MCP integration](../../coding-tools/claude/mcp-deep-guide.md) | [Governance controls](enterprise-ai-governance-compliance.md)
+**Related sections:** [Agent SDK code examples](pathname:///archon/agentic-systems/claude-agent-sdk-production) | [MCP integration](pathname:///archon/agentic-systems/mcp-deep-guide) | [Governance controls](51-enterprise-ai-governance-compliance.md)
 
 ---
 
@@ -486,7 +486,7 @@ Centralized AI Gateway providing unified authentication, rate limiting, model ro
 
 ### Implementation Options
 
-**Kong AI Gateway:** Open-source plugin ecosystem. AI proxy plugin for Claude, OpenAI, Cohere. Rate limiting, caching, logging plugins available. See [Kong AI Gateway Guide](../../cloud-platforms/ai-gateway/kong-ai-gateway-guide.md).
+**Kong AI Gateway:** Open-source plugin ecosystem. AI proxy plugin for Claude, OpenAI, Cohere. Rate limiting, caching, logging plugins available. See [Kong AI Gateway Guide](pathname:///archon/platforms/kong-ai-gateway-guide).
 
 **AWS API Gateway + Lambda:** Serverless AI gateway for AWS-native shops. Lambda handles routing and auth; API Gateway handles TLS and rate limiting.
 

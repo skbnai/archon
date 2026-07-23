@@ -21,7 +21,7 @@ tags:
 
 # Enterprise Agent Reference Architectures, Platform Engineering & Checklists
 
-**Current as of July 2026.** The capstone of the harness architecture series: domain-by-domain reference architecture deltas (banking, healthcare, insurance, retail, manufacturing, public sector, telco, software engineering, digital employees, customer support), the platform-engineering operating model, the July 2026 framework/runtime comparative analysis, the architecture artifact set, the best-practice canon, review checklists, and a 4-quarter migration roadmap. Builds on [Vol 1: Harness &amp; Orchestration](./44-ai-harness-architecture-orchestration.md), [Vol 2: Communication, Identity &amp; Gateway](./pathname:///archon/architecture/agent-communication-identity-gateway), [Vol 3: MCP &amp; A2A](./58-mcp-a2a-protocol-deep-dive.md), [Vol 4: Memory &amp; Planning](./41-agent-memory-planning-architecture.md), [Vol 5: Security &amp; Guardrails](./pathname:///archon/architecture/agentic-ai-security-guardrails), and [Vol 6: Reliability, Observability &amp; Governance](./pathname:///archon/architecture/49-agentic-ai-reliability-observability-governance).
+**Current as of July 2026.** The capstone of the harness architecture series: domain-by-domain reference architecture deltas (banking, healthcare, insurance, retail, manufacturing, public sector, telco, software engineering, digital employees, customer support), the platform-engineering operating model, the July 2026 framework/runtime comparative analysis, the architecture artifact set, the best-practice canon, review checklists, and a 4-quarter migration roadmap. Builds on [Vol 1: Harness &amp; Orchestration](./44-ai-harness-architecture-orchestration.md), [Vol 2: Communication, Identity &amp; Gateway](pathname:///archon/trust/agent-communication-identity-gateway), [Vol 3: MCP &amp; A2A](./58-mcp-a2a-protocol-deep-dive.md), [Vol 4: Memory &amp; Planning](./41-agent-memory-planning-architecture.md), [Vol 5: Security &amp; Guardrails](pathname:///archon/trust/agentic-ai-security-guardrails), and [Vol 6: Reliability, Observability &amp; Governance](43-agentic-ai-reliability-observability-governance.md).
 
 ---
 
@@ -141,7 +141,7 @@ Deliverables your architecture repo should contain:
 
 **Runtime interaction diagram**—the Vol 1 §4 loop annotated with PEPs and telemetry emission points.
 
-**Threat model &amp; failure tree**—the [Vol 5 catalog](./pathname:///archon/architecture/agentic-ai-security-guardrails) mapped to boundaries; a failure tree rooting "unacceptable outcome" (funds moved wrongly / PHI leaked) down through guard layers—verifies defense-in-depth has no single-point path.
+**Threat model &amp; failure tree**—the [Vol 5 catalog](pathname:///archon/trust/agentic-ai-security-guardrails) mapped to boundaries; a failure tree rooting "unacceptable outcome" (funds moved wrongly / PHI leaked) down through guard layers—verifies defense-in-depth has no single-point path.
 
 **Risk register**—`{risk, owner, tier, controls, residual, test evidence, review date}`.
 

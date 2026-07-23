@@ -22,7 +22,7 @@ tags:
 
 # AI Harness Architecture & Multi-Agent Orchestration
 
-Volume 1 of the harness architecture series, covering the AI harness—the deterministic software shell that turns non-deterministic models into accountable system components—its full runtime component catalog, end-to-end task lifecycle, trust boundaries, and complete orchestration pattern comparison. Companion guides: [Memory & Planning Architecture](./41-agent-memory-planning-architecture.md); [Security Architecture & Guardrails](./pathname:///archon/architecture/agentic-ai-security-guardrails); [Reliability, Observability & Governance](./pathname:///archon/architecture/agentic-ai-reliability-observability-governance).
+Volume 1 of the harness architecture series, covering the AI harness—the deterministic software shell that turns non-deterministic models into accountable system components—its full runtime component catalog, end-to-end task lifecycle, trust boundaries, and complete orchestration pattern comparison. Companion guides: [Memory & Planning Architecture](./41-agent-memory-planning-architecture.md); [Security Architecture & Guardrails](pathname:///archon/trust/agentic-ai-security-guardrails); [Reliability, Observability & Governance](43-agentic-ai-reliability-observability-governance.md).
 
 :::info State of the world (July 2026)
 MCP finalized spec is 2025-11-25; the 2026-07-28 release (stateless core, Extensions framework, Tasks, MCP Apps) finalizes this month. A2A is at v1.x under the Linux Foundation's Agentic AI Foundation with 150+ organizations in production. AWS Bedrock AgentCore, Azure AI Foundry Agent Service, and Google's Gemini Enterprise Agent Platform (ex-Vertex AI) are GA managed agent runtimes, all supporting MCP and A2A. Design against these baselines.
@@ -155,7 +155,7 @@ Every arrow emits an OTel span; every policy decision and tool call lands in the
 
 ## 5. Trust Boundaries TB1–TB8
 
-Enumerate and defend these boundaries explicitly—they feed the threat model in [Security Architecture &amp; Guardrails](./pathname:///archon/architecture/agentic-ai-security-guardrails):
+Enumerate and defend these boundaries explicitly—they feed the threat model in [Security Architecture &amp; Guardrails](pathname:///archon/trust/agentic-ai-security-guardrails):
 
 | # | Boundary | Crossing controls |
 | --- | --- | --- |
