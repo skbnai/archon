@@ -21,7 +21,7 @@ v5.0 is a targeted ground-up rewrite of the runtime-layer choices made in v3/v4,
 
 | Area | Was (v4) | Now (v5) |
 | --- | --- | --- |
-| HITL | interrupt_before=[...] compile-time + HITLMiddleware class | HumanInTheLoopMiddleware with interrupt_on={} + approve/edit/reject decisions via Command(resume=...) |
+| HITL | `interrupt_before=[...]` compile-time + HITLMiddleware class | `HumanInTheLoopMiddleware` with `interrupt_on={}` + approve/edit/reject decisions via Command(resume=...) |
 | Checkpointer | PostgresSaver (Docker required) | SqliteSaver from langgraph-checkpoint-sqlite — single .db file, no server |
 | Observability | LangFuse (Docker) + SQLite dual-write | SQLite MetricsDB only — LangFuse removed entirely |
 | Short-term memory | ConversationBufferWindowMemory (Redis required) | AgentState messages list — in-context, no server needed |

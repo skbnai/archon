@@ -80,7 +80,7 @@ graph TD
 - **Category:** Happy Path
 - **Difficulty:** Easy
 - **Input:** "What's my order status?"
-- **Context:** {customer_id: 12345, order_id: 98765, status: "shipped"}
+- **Context:** `{customer_id: 12345, order_id: 98765, status: "shipped"}`
 - **Expected:** "Your order 98765 is currently shipped and will arrive by July 12"
 - **Success:** Response mentions order ID, status, and ETA
 - **Coverage:** Basic happy path ✓
@@ -90,7 +90,7 @@ graph TD
 - **Category:** Edge Case / High Impact
 - **Difficulty:** Hard
 - **Input:** "I want to return my order"
-- **Context:** {customer_id: 12345, order_id: 98765, return_window_days: 5, days_purchased: 8, return_policy: "30 days for eligible items"}
+- **Context:** `{customer_id: 12345, order_id: 98765, return_window_days: 5, days_purchased: 8, return_policy: "30 days for eligible items"}`
 - **Expected:** "Unfortunately, your order is outside the 30-day return window. However, I can escalate this to our supervisor if you'd like."
 - **Success:** 
   - Acknowledges return request ✓

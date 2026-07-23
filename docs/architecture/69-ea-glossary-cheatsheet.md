@@ -456,7 +456,7 @@ Key terms used across all four volumes. **Color coding:** Security · Risk · Ar
 |---|---|---|---|
 | **Human AuthN** | OIDC/SAML | Workforce login to applications SSO | id_token: sub, email, groups; access_token: scope |
 | **Machine-to-Machine** | OAuth2 Credentials | Service-to-service API calls | access_token: client_id, scope, aud |
-| **Delegated User** | RFC 8693 Token Exchange | Agent acting on behalf of user Context Exchange | sub=user, act={sub=agent}, scope=narrowed |
+| **Delegated User** | RFC 8693 Token Exchange | Agent acting on behalf of user Context Exchange | `sub=user, act={sub=agent}, scope=narrowed` |
 | **Workload Identity** | SPIFFE/SPIRE | Agent and service authentication | X.509 SVID: spiffe://domain/agent/type/id |
 | **Just-in-Time Access** | PAM + Vault | Privileged session access | Time-limited credential, session recording |
 | **Federated Identity** | SAML/OIDC Federation | Cross-org or cross-cloud trust Federation | Assertion from trusted IdP, local token issued |
