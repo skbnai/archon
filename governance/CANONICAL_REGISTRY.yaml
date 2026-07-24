@@ -5589,3 +5589,17 @@ topics:
     aliases: []
     supersedes: []
     pages: []
+  - id: claude-agents-best-practices
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/36-claude-agents-best-practices.md
+    aliases: []
+    supersedes:
+    - docs/coding-tools/claude/claude_agents_best_practices_v2.md
+    pages: []
+  - id: claude-best-practices
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/32-claude-best-practices.md
+    aliases: []
+    supersedes:
+    - docs/coding-tools/claude/claude-best-practices.md
+    pages: []
