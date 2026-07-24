@@ -1202,6 +1202,12 @@ topics:
     - 'future outlook: agentic ui 2026–2030'
     supersedes: []
     pages: []
+  - id: future-outlook-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/parts/10-future-outlook-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: governance
     domain: agentic-systems
     canonical: docs/agentic-systems/agentic-ui/11-governance.md
@@ -1221,6 +1227,12 @@ topics:
     canonical: docs/agentic-systems/agentic-ui/13-industry-reference-architectures.md
     aliases:
     - industry reference architectures for agentic applications
+    supersedes: []
+    pages: []
+  - id: industry-reference-architectures-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/parts/13-industry-reference-architectures-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: observability
@@ -1279,6 +1291,12 @@ topics:
     - security architecture & enterprise ai governance
     supersedes: []
     pages: []
+  - id: security-governance-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/security-governance-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: cicd-observability-scaling
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/03-cicd-observability-scaling.md
@@ -1286,11 +1304,23 @@ topics:
     - ai-assisted ci/cd, observability & scaling challenges
     supersedes: []
     pages: []
+  - id: cicd-observability-scaling-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/cicd-observability-scaling-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: enterprise-apis-apps-cli
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/04-enterprise-apis-apps-cli.md
     aliases:
     - enterprise github, apis, apps & cli
+    supersedes: []
+    pages: []
+  - id: enterprise-apis-apps-cli-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/enterprise-apis-apps-cli-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: artifacts-referencearchitecture
@@ -1305,6 +1335,12 @@ topics:
     canonical: docs/agentic-systems/coding-tools/06-ecosystem-patterns-labs.md
     aliases:
     - ecosystem, enterprise patterns & hands-on labs
+    supersedes: []
+    pages: []
+  - id: ecosystem-patterns-labs-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/ecosystem-patterns-labs-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: copilot-enterprise-playbook
@@ -1360,6 +1396,18 @@ topics:
     canonical: docs/agentic-systems/coding-tools/14-cheatsheet-11-mcp-pipeline-errors.md
     aliases:
     - mcp pipeline error & context handling
+    supersedes: []
+    pages: []
+  - id: cheatsheet-10-multiagent-production-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/13-cheatsheet-10-multiagent-production-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: cheatsheet-11-mcp-pipeline-errors-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/14-cheatsheet-11-mcp-pipeline-errors-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: cheatsheet-1-claude-code
@@ -1431,6 +1479,12 @@ topics:
     - claude foundations & ecosystem overview
     supersedes: []
     pages: []
+  - id: module-1-claude-foundations-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/24-module-1-claude-foundations-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: module-3-prompt-engineering
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/25-module-3-prompt-engineering.md
@@ -1464,6 +1518,12 @@ topics:
     canonical: docs/agentic-systems/coding-tools/29-module-7-safety-enterprise-exam.md
     aliases:
     - safety, enterprise deployment & cca-f exam prep
+    supersedes: []
+    pages: []
+  - id: module-7-safety-enterprise-exam-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/29-module-7-safety-enterprise-exam-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: claude-agent-sdk-production
@@ -1521,6 +1581,12 @@ topics:
     - claude routines — complete help guide
     supersedes: []
     pages: []
+  - id: claude-routines-guide-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/37-claude-routines-guide-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: constitutional-ai-safety-2026
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/38-constitutional-ai-safety-2026.md
@@ -1549,11 +1615,29 @@ topics:
     - multi-agent orchestration — claude-flow & beyond
     supersedes: []
     pages: []
+  - id: ruflo-agentic-ai-guide-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/41-ruflo-agentic-ai-guide-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: pr-review-handbook-vol1-traditional-review
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/42-pr-review-handbook-vol1-traditional-review.md
     aliases:
     - the enterprise pr review playbook
+    supersedes: []
+    pages: []
+  - id: pr-review-handbook-vol1-traditional-review-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/42-pr-review-handbook-vol1-traditional-review-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: pr-review-handbook-vol1-traditional-review-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/42-pr-review-handbook-vol1-traditional-review-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: pr-review-handbook-vol2-deep-domain-reviews
@@ -1563,11 +1647,23 @@ topics:
     - the enterprise pr review playbook
     supersedes: []
     pages: []
+  - id: pr-review-handbook-vol2-deep-domain-reviews-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/43-pr-review-handbook-vol2-deep-domain-reviews-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: pr-review-handbook-vol3-ai-assisted-review
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/44-pr-review-handbook-vol3-ai-assisted-review.md
     aliases:
     - the enterprise pr review playbook
+    supersedes: []
+    pages: []
+  - id: pr-review-handbook-vol3-ai-assisted-review-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/44-pr-review-handbook-vol3-ai-assisted-review-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: pr-review-handbook-vol4-agentic-review-architecture
@@ -1577,11 +1673,23 @@ topics:
     - the enterprise pr review playbook
     supersedes: []
     pages: []
+  - id: pr-review-handbook-vol4-agentic-review-architecture-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/45-pr-review-handbook-vol4-agentic-review-architecture-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: pr-review-handbook-vol5-case-studies-maturity-model
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/46-pr-review-handbook-vol5-case-studies-maturity-model.md
     aliases:
     - the enterprise pr review playbook
+    supersedes: []
+    pages: []
+  - id: pr-review-handbook-vol5-case-studies-maturity-model-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/46-pr-review-handbook-vol5-case-studies-maturity-model-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: github-copilot-enterprise-research-2026
@@ -1674,6 +1782,12 @@ topics:
     aliases: []
     supersedes: []
     pages: []
+  - id: harness-engineering-research-report-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/parts/01-harness-engineering-research-report-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: harness-security-supplychain-observability
     domain: agentic-systems
     canonical: docs/agentic-systems/core/06-harness-security-supplychain-observability.md
@@ -1684,6 +1798,12 @@ topics:
   - id: ai-memory-agent-innovations-research-report
     domain: agentic-systems
     canonical: docs/agentic-systems/core/07-ai-memory-agent-innovations-research-report.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-memory-agent-innovations-research-report-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2.md
     aliases: []
     supersedes: []
     pages: []
@@ -1747,6 +1867,12 @@ topics:
     canonical: docs/agentic-systems/core/16-agent-skills-complete-playbook-2026.md
     aliases:
     - agent skills & skill registries — complete playbook 2026
+    supersedes: []
+    pages: []
+  - id: agent-skills-complete-playbook-2026-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/parts/16-agent-skills-complete-playbook-2026-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: a2a-deep-research
@@ -1908,6 +2034,12 @@ topics:
     - part 1 — foundations of multimodal ai
     supersedes: []
     pages: []
+  - id: part-01-foundations-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/parts/01-part-01-foundations-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: part-02-enterprise-architecture
     domain: agentic-systems
     canonical: docs/agentic-systems/multimodal/02-part-02-enterprise-architecture.md
@@ -1922,11 +2054,23 @@ topics:
     - part 3 — image & document intelligence
     supersedes: []
     pages: []
+  - id: part-03-modalities-image-document-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/parts/03-part-03-modalities-image-document-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: part-04-modalities-video-audio
     domain: agentic-systems
     canonical: docs/agentic-systems/multimodal/04-part-04-modalities-video-audio.md
     aliases:
     - part 04 — video & audio intelligence
+    supersedes: []
+    pages: []
+  - id: part-04-modalities-video-audio-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/parts/04-part-04-modalities-video-audio-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: part-05-multimodal-rag
@@ -1950,11 +2094,23 @@ topics:
     - part 07 — security & threat taxonomy for multimodal ai
     supersedes: []
     pages: []
+  - id: part-07-security-threats-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/parts/07-part-07-security-threats-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: part-08-guardrails-sanitization
     domain: agentic-systems
     canonical: docs/agentic-systems/multimodal/08-part-08-guardrails-sanitization.md
     aliases:
     - part 8 — guardrails & sanitization for multimodal ai
+    supersedes: []
+    pages: []
+  - id: part-08-guardrails-sanitization-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/parts/08-part-08-guardrails-sanitization-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: part-09-compliance-responsible-ai
@@ -1971,6 +2127,18 @@ topics:
     - part 10 — evaluation & benchmarks for multimodal ai
     supersedes: []
     pages: []
+  - id: part-10-evaluation-benchmarks-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/parts/10-part-10-evaluation-benchmarks-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: part-10-evaluation-benchmarks-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/parts/10-part-10-evaluation-benchmarks-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: part-11-evaluation-harnesses-cicd
     domain: agentic-systems
     canonical: docs/agentic-systems/multimodal/11-part-11-evaluation-harnesses-cicd.md
@@ -1983,6 +2151,12 @@ topics:
     canonical: docs/agentic-systems/multimodal/12-part-12-observability-finops.md
     aliases:
     - part 12 — observability & finops for multimodal ai
+    supersedes: []
+    pages: []
+  - id: part-12-observability-finops-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/parts/12-part-12-observability-finops-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: part-13-governance-production
@@ -1999,11 +2173,23 @@ topics:
     - part 14 — cloud platform comparison for multimodal ai
     supersedes: []
     pages: []
+  - id: part-14-cloud-platform-comparison-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/parts/14-part-14-cloud-platform-comparison-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: part-15-emerging-trends-bibliography
     domain: agentic-systems
     canonical: docs/agentic-systems/multimodal/15-part-15-emerging-trends-bibliography.md
     aliases:
     - part 15 — emerging trends & bibliography for multimodal ai
+    supersedes: []
+    pages: []
+  - id: part-15-emerging-trends-bibliography-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/multimodal/parts/15-part-15-emerging-trends-bibliography-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: executive-summary
