@@ -116,10 +116,10 @@ Most organizations outside Google use a hybrid: CODEOWNERS for domain authority,
 
 |**Review Question**|**Why It Matters**|
 |---|---|
-|Google|Single-approver norm (ownership + readability). Reviews run through Critique,<br>Google's internal tool, with inline static-analysis findings, an "attention set"<br>mechanism showing whose turn it is to act, and a stated cultural goal of<br>same-day turnaround.|
-|Meta|Heavy internal tooling (Phabricator historically, now largely internal successors)<br>with stacked-diff workflows as the default rather than the exception — Meta's<br>Sapling source control system was built specifically to make stacked, iterative<br>review the natural way of working.|
-|Microsoft|More heterogeneous than Google's monoculture; a mix of tool-driven review and<br>over-the-shoulder / pairing-style review is explicitly sanctioned, reflecting<br>Microsoft's more federated engineering culture across product groups.|
-|Netflix, Stripe, Shopify,<br>Airbnb, Uber, LinkedIn,<br>Datadog, Cloudflare|Broadly converge on GitHub/GitLab-based review with required<br>CODEOWNERS approval, CI gating, and increasing adoption of merge queues;<br>these companies are also the primary commercial adopters and case studies<br>behind stacked-PR tooling such as Graphite, reflecting a shared pain point of<br>large-PR review latency in fast-growing product organizations.|
+|Google|Single-approver norm (ownership + readability). Reviews run through Critique,<br/>Google's internal tool, with inline static-analysis findings, an "attention set"<br/>mechanism showing whose turn it is to act, and a stated cultural goal of<br/>same-day turnaround.|
+|Meta|Heavy internal tooling (Phabricator historically, now largely internal successors)<br/>with stacked-diff workflows as the default rather than the exception — Meta's<br/>Sapling source control system was built specifically to make stacked, iterative<br/>review the natural way of working.|
+|Microsoft|More heterogeneous than Google's monoculture; a mix of tool-driven review and<br/>over-the-shoulder / pairing-style review is explicitly sanctioned, reflecting<br/>Microsoft's more federated engineering culture across product groups.|
+|Netflix, Stripe, Shopify,<br/>Airbnb, Uber, LinkedIn,<br/>Datadog, Cloudflare|Broadly converge on GitHub/GitLab-based review with required<br/>CODEOWNERS approval, CI gating, and increasing adoption of merge queues;<br/>these companies are also the primary commercial adopters and case studies<br/>behind stacked-PR tooling such as Graphite, reflecting a shared pain point of<br/>large-PR review latency in fast-growing product organizations.|
 
 *Sourced from public engineering blogs, the Software Engineering at Google book, and vendor case-study material; treat company-specific claims as illustrative of broad practice rather than a verbatim account of any single team's current process, which evolves continuously.*
 
@@ -145,10 +145,10 @@ A merge queue serializes the final integration step: PRs approved for merge ente
 
 |**Review Question**|**Why It Matters**|
 |---|---|
-|Blast radius visibility|Monorepo reviewers can see every downstream consumer of a changed<br>interface in the same review; polyrepo reviewers often cannot see consumers at<br>all without cross-repo tooling or a service catalog.|
-|Ownership enforcement|Monorepos need path-based CODEOWNERS at massive scale (Google's is<br>famous for this); polyrepos get ownership "for free" from repo boundaries but<br>lose cross-cutting visibility.|
-|CI cost and selectivity|Monorepo CI must be smart about only building/testing affected targets<br>(Bazel-style dependency graphs); polyrepo CI is naturally scoped but duplicated<br>across repos.|
-|Cross-cutting refactors|Trivial in a monorepo (one PR touches everything); in polyrepo, a breaking API<br>change requires coordinated, sequenced PRs across many repos and often a<br>deprecation period enforced by contract testing.|
+|Blast radius visibility|Monorepo reviewers can see every downstream consumer of a changed<br/>interface in the same review; polyrepo reviewers often cannot see consumers at<br/>all without cross-repo tooling or a service catalog.|
+|Ownership enforcement|Monorepos need path-based CODEOWNERS at massive scale (Google's is<br/>famous for this); polyrepos get ownership "for free" from repo boundaries but<br/>lose cross-cutting visibility.|
+|CI cost and selectivity|Monorepo CI must be smart about only building/testing affected targets<br/>(Bazel-style dependency graphs); polyrepo CI is naturally scoped but duplicated<br/>across repos.|
+|Cross-cutting refactors|Trivial in a monorepo (one PR touches everything); in polyrepo, a breaking API<br/>change requires coordinated, sequenced PRs across many repos and often a<br/>deprecation period enforced by contract testing.|
 
 ## **Section 2 — Role-Based Review Playbooks**
 
@@ -156,40 +156,40 @@ The same diff produces a different review depending on who is reading it. A juni
 
 #### **2.1 Junior Developer**
 
-|**What they review**|Correctness of the immediate change; does the code do what the description<br>says; obvious null/boundary bugs; whether tests exist and pass; adherence to<br>visible style conventions.|
+|**What they review**|Correctness of the immediate change; does the code do what the description<br/>says; obvious null/boundary bugs; whether tests exist and pass; adherence to<br/>visible style conventions.|
 |---|---|
-|**What they deliberately**<br>**ignore**|Whether this is the right architectural approach at all; long-term maintainability;<br>whether this duplicates logic that exists elsewhere in a part of the codebase they<br>haven't seen.|
-|**Questions they ask**|"Does this match the ticket?" "Did I break any existing tests?" "Is there an example<br>elsewhere in the codebase I should follow?"|
-|**Approval criteria**|Tests pass, the diff matches the stated intent, and a more senior reviewer has<br>also looked at it — junior review is rarely the last gate on anything consequential.|
-|**Common comments**|"Nit: variable name could be clearer." "Should this have a test for the empty-list<br>case?" "I don't understand what this line does — can you add a comment?"|
-|**Anti-patterns they flag**|Rubber-stamping because the CI is green; reviewing only the lines that changed<br>and never opening the surrounding file for context.|
+|**What they deliberately**<br/>**ignore**|Whether this is the right architectural approach at all; long-term maintainability;<br/>whether this duplicates logic that exists elsewhere in a part of the codebase they<br/>haven't seen.|
+|**Questions they ask**|"Does this match the ticket?" "Did I break any existing tests?" "Is there an example<br/>elsewhere in the codebase I should follow?"|
+|**Approval criteria**|Tests pass, the diff matches the stated intent, and a more senior reviewer has<br/>also looked at it — junior review is rarely the last gate on anything consequential.|
+|**Common comments**|"Nit: variable name could be clearer." "Should this have a test for the empty-list<br/>case?" "I don't understand what this line does — can you add a comment?"|
+|**Anti-patterns they flag**|Rubber-stamping because the CI is green; reviewing only the lines that changed<br/>and never opening the surrounding file for context.|
 
 #### **2.2 Senior Developer**
 
-|**What they review**|Correctness plus local design: is this the right abstraction for this file/module; error<br>handling completeness; test coverage of edge cases and failure paths; whether<br>the change respects existing module boundaries.|
+|**What they review**|Correctness plus local design: is this the right abstraction for this file/module; error<br/>handling completeness; test coverage of edge cases and failure paths; whether<br/>the change respects existing module boundaries.|
 |---|---|
-|**What they deliberately**<br>**ignore**|Broader system architecture debates that belong in a design doc, not a PR<br>comment; micro-style issues already caught by linters.|
-|**Questions they ask**|"What happens when this call fails?" "Is this concurrency-safe?" "Why this<br>approach instead of [alternative]?" "Does this need a migration plan for existing<br>data?"|
-|**Approval criteria**|The change is correct, tested, and consistent with the module's existing patterns;<br>any deviation from convention is deliberate and justified in the PR description, not<br>accidental.|
-|**Common comments**|"This will race under concurrent access — see line X." "Can we extract this into a<br>shared utility instead of duplicating it?" "This needs a test for the timeout case."|
-|**Anti-patterns they flag**|Approving because "it looks like the surrounding code" without checking whether<br>the surrounding code is itself a known problem; nitpicking style while missing a<br>logic error.|
+|**What they deliberately**<br/>**ignore**|Broader system architecture debates that belong in a design doc, not a PR<br/>comment; micro-style issues already caught by linters.|
+|**Questions they ask**|"What happens when this call fails?" "Is this concurrency-safe?" "Why this<br/>approach instead of [alternative]?" "Does this need a migration plan for existing<br/>data?"|
+|**Approval criteria**|The change is correct, tested, and consistent with the module's existing patterns;<br/>any deviation from convention is deliberate and justified in the PR description, not<br/>accidental.|
+|**Common comments**|"This will race under concurrent access — see line X." "Can we extract this into a<br/>shared utility instead of duplicating it?" "This needs a test for the timeout case."|
+|**Anti-patterns they flag**|Approving because "it looks like the surrounding code" without checking whether<br/>the surrounding code is itself a known problem; nitpicking style while missing a<br/>logic error.|
 
 #### **2.3 Staff Engineer**
 
-|**What they review**|Cross-team and cross-service impact; whether the change introduces coupling<br>that will be expensive to unwind later; consistency with architectural direction the<br>org has committed to; whether the change is the right size (should this be split, or<br>does it belong in a bigger redesign).|
+|**What they review**|Cross-team and cross-service impact; whether the change introduces coupling<br/>that will be expensive to unwind later; consistency with architectural direction the<br/>org has committed to; whether the change is the right size (should this be split, or<br/>does it belong in a bigger redesign).|
 |---|---|
-|**What they deliberately**<br>**ignore**|Line-by-line style; test naming conventions; anything already enforced by CI.|
-|**Questions they ask**|"Who else consumes this interface, and did they get a heads-up?" "Does this<br>quietly become load-bearing infrastructure that nobody signed up to own?" "Is<br>there a simpler way to get 80% of the value?"|
-|**Approval criteria**|The change is technically sound_and_organizationally sound — it doesn't create a<br>surprise dependency, doesn't silently expand another team's on-call surface, and<br>is proportionate to the problem.|
-|**Common comments**|"This creates a hard dependency from team A to team B's internal data model —<br>can we go through the public API instead?" "This PR is doing three unrelated<br>things; can we split it?"|
-|**Anti-patterns they flag**|Blocking a reasonable PR to relitigate an architecture decision that was already<br>made in an ADR; over-engineering a simple change because of hypothetical<br>future scale.|
+|**What they deliberately**<br/>**ignore**|Line-by-line style; test naming conventions; anything already enforced by CI.|
+|**Questions they ask**|"Who else consumes this interface, and did they get a heads-up?" "Does this<br/>quietly become load-bearing infrastructure that nobody signed up to own?" "Is<br/>there a simpler way to get 80% of the value?"|
+|**Approval criteria**|The change is technically sound_and_organizationally sound — it doesn't create a<br/>surprise dependency, doesn't silently expand another team's on-call surface, and<br/>is proportionate to the problem.|
+|**Common comments**|"This creates a hard dependency from team A to team B's internal data model —<br/>can we go through the public API instead?" "This PR is doing three unrelated<br/>things; can we split it?"|
+|**Anti-patterns they flag**|Blocking a reasonable PR to relitigate an architecture decision that was already<br/>made in an ADR; over-engineering a simple change because of hypothetical<br/>future scale.|
 
 #### **2.4 Principal / Distinguished Engineer**
 
-|**What they review**|Strategic fit: does this move the system toward or away from where the<br>organization is trying to go; second-order consequences (what does this make<br>easier or harder to do next); whether this is solving the real problem or a<br>symptom; organizational risk (does this quietly become a single point of failure or<br>a key-person dependency).|
+|**What they review**|Strategic fit: does this move the system toward or away from where the<br/>organization is trying to go; second-order consequences (what does this make<br/>easier or harder to do next); whether this is solving the real problem or a<br/>symptom; organizational risk (does this quietly become a single point of failure or<br/>a key-person dependency).|
 |---|---|
-|**What they deliberately**<br>**ignore**|Implementation detail that a competent staff engineer has already covered;<br>anything that is purely a matter of team preference.|
-|**Questions they ask**|"What does this foreclose?" "If this succeeds, what do we build next on top of it,<br>and does this design support that?" "Is this the right layer for this decision, or are<br>we solving an organizational problem with a technical one?"|
-|**Approval criteria**|The change is defensible not just today but as a precedent — other teams will<br>point to this PR as "how we do X here." Principal-level approval is often about<br>setting a pattern, not just clearing a diff.|
+|**What they deliberately**<br/>**ignore**|Implementation detail that a competent staff engineer has already covered;<br/>anything that is purely a matter of team preference.|
+|**Questions they ask**|"What does this foreclose?" "If this succeeds, what do we build next on top of it,<br/>and does this design support that?" "Is this the right layer for this decision, or are<br/>we solving an organizational problem with a technical one?"|
+|**Approval criteria**|The change is defensible not just today but as a precedent — other teams will<br/>point to this PR as "how we do X here." Principal-level approval is often about<br/>setting a pattern, not just clearing a diff.|
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/42-pr-review-handbook-vol1-traditional-review-part2) for continued content.**

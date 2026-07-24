@@ -337,11 +337,11 @@ The Lambda Authorizer returns a context object with an 8 KB hard limit. A typica
 |---|---|---|---|
 |1|Browser→BFF|Send Entra id_token in POST body|0 ms|
 |2|BFF→JWT Token Svc|Validate Entra token (JWKS cache); look up FT rights from DynamoDB|10–20 ms|
-|3|JWT Token Svc|Compute fingerprint = SHA256(sort(rights[]) + tenant_id + user_id)|0 ms|
-|4|JWT Token Svc→ ElastiCache|SETEX rights:{tenant_id}:{fp}→gzip(rights_json), TTL=900s|1 ms|
-|5|JWT Token Svc→BFF|Return JWT: {sub, tenant_id, rights_fp, exp:+900s}. No rights in token.|0 ms|
+|3|JWT Token Svc|Compute fingerprint = `SHA256(sort(rights[]) + tenant_id + user_id)`|0 ms|
+|4|JWT Token Svc→ ElastiCache|`SETEX rights:{tenant_id}:{fp} → gzip(rights_json)`, TTL=900s|1 ms|
+|5|JWT Token Svc→BFF|Return JWT: `{sub, tenant_id, rights_fp, exp:+900s}`. No rights in token.|0 ms|
 |6|APIGW→Lambda Authorizer|Verify RS256 signature; extract claims|0 ms|
-|7|λAuthorizer→ ElastiCache|GET rights:{tenant_id}:{fp}→hydrate full rights|1–2 ms|
+|7|λAuthorizer→ ElastiCache|`GET rights:{tenant_id}:{fp}` → hydrate full rights|1–2 ms|
 |8|λAuthorizer→APIGW|Return IAM Allow policy + context {tenant_id, user_id, rights_json (route-scoped)}|0 ms|
 |9|APIGW→AgentCore|Forward request with context headers; AgentCore Identity validates OAuth Bearer|0 ms|
 

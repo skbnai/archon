@@ -88,7 +88,7 @@ Few-shot examples are the most reliable technique for consistent output format a
 
 | ✅  BEST PRACTICE | ❌  ANTIPATTERN |
 | --- | --- |
-| Wrap examples in <example> tags inside <examples> so Claude distinguishes them from instructions. Include 3–5 examples. | Embedding examples as free-form text mixed with instructions. Claude may treat example content as instructions to follow. |
+| Wrap examples in `<example>` tags inside `<examples>` so Claude distinguishes them from instructions. Include 3–5 examples. | Embedding examples as free-form text mixed with instructions. Claude may treat example content as instructions to follow. |
 | After one successful happy-path example, prioritize edge case examples: missing fields, non-standard layouts, ambiguous values. | Adding 5 more happy-path examples. The model already understands the standard case — edge cases are where it fails. |
 | For consistently missed behaviors, provide a concrete failing input/output example rather than more detailed prose description. | After 8 iterations of refined prose, still not communicating the edge case. Concrete test cases communicate better than descriptions. |
 | For escalation calibration, use few-shot examples showing exactly which case types escalate and which resolve autonomously. | Relying on a separate ML classifier to predict escalation. Over-engineered before few-shot optimization has been fully explored. |

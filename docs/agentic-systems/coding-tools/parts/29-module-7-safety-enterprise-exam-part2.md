@@ -63,7 +63,7 @@ B) thinking_budget
 C) effort with values low/medium/high
 D) reasoning_depth
 
-**Answer: C** — The effort parameter replaces the deprecated budget_tokens on Claude 4.6+ models. Adaptive thinking (thinking:{type:'auto'}) automatically manages depth without any explicit parameter.
+**Answer: C** — The effort parameter replaces the deprecated budget_tokens on Claude 4.6+ models. Adaptive thinking (`thinking: {type: 'auto'}`) automatically manages depth without any explicit parameter.
 
 ### Domain 2: Prompt Engineering (4 questions)
 

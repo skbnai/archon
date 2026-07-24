@@ -36,8 +36,8 @@ This v2 edition incorporates the **April 2026 Claude Code changelog**, the newly
 
 |ReAct loop, 9-step pipeline, 5-layer compaction, 98.4% infra rule|
 |---|
-|SKILL.md mastery, description engineering, compaction budget,<br>SkillKit|
-|Explore-Plan-Execute, domain routing, Agent Teams, model<br>selection|
+|SKILL.md mastery, description engineering, compaction budget,<br/>SkillKit|
+|Explore-Plan-Execute, domain routing, Agent Teams, model<br/>selection|
 |Handler types, async, HTTP, security gates, PostToolUseFailure|
 |Tool design, ToolSearch, 35-tool problem, Google gws, SkillKit|
 |9-source context window, 5 compaction shapers, .claudeignore|
@@ -424,7 +424,7 @@ response = client.messages.create(
 |Explicit params|Clear types, constraints, examples. Avoid optional params|Malformed calls|
 |Negative examples|Include what NOT to use the tool for (critical boundary definition)|Over-triggering|
 |PROACTIVELY signal|'Use PROACTIVELY when...' prefix for auto-selection|Under-triggering|
-|Limit total tools|Target <20 tools per server (Manus, Claude Code use ~12-20)|Context bloat|
+|Limit total tools|Target &lt;20 tools per server (Manus, Claude Code use ~12-20)|Context bloat|
 
 ## **Plugin Manifest — 10 Component Types**
 

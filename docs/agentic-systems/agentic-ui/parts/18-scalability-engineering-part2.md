@@ -94,7 +94,7 @@ LLM Provider (tokens arrive fast, ~100 tok/s)
   ↓
 Token Buffer (per-session, max 500 tokens)
   - At 80% capacity: Signal upstream to pause token read, continue draining buffer
-  - At <20% capacity: Resume upstream token read
+  - At &lt;20% capacity: Resume upstream token read
   ↓
 Formatter (markdown → SSE event)
   ↓

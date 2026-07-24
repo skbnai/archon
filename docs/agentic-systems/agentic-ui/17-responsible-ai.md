@@ -253,7 +253,7 @@ CAISI (Comprehensive AI Safety and Integrity Standards) extends NIST AI RMF 2.0 
 
 ## 4. OWASP LLM Top 10 (2025) in Agentic UI Applications
 
-For OWASP Agentic AI ASI01–ASI10, see [Agentic AI Security &amp; Identity](../../trust/05-agentic-ai-security-identity.md). Maps OWASP LLM Top 10 (2025, chatbot origin) to agentic UI surfaces.
+For OWASP Agentic AI ASI01–ASI10, see [Agentic AI Security &amp; Identity](../../trust/index.md). Maps OWASP LLM Top 10 (2025, chatbot origin) to agentic UI surfaces.
 
 ### 4.1 LLM01–LLM10 Mapped to AGUI Attack Surfaces
 

@@ -88,59 +88,59 @@ timeline
 
 **Vision-Language Models**
 
-- Radford, A. et al. (2021). *Learning Transferable Visual Models From Natural Language Supervision* (CLIP). OpenAI. <https://arxiv.org/abs/2103.00020>
-- Alayrac, J.B. et al. (2022). *Flamingo: a Visual Language Model for Few-Shot Learning*. DeepMind. <https://arxiv.org/abs/2204.14198>
-- Liu, H. et al. (2023). *Visual Instruction Tuning* (LLaVA). <https://arxiv.org/abs/2304.08485>
-- OpenAI (2023). *GPT-4V(ision) System Card*. <https://openai.com/research/gpt-4v-system-card>
-- Google DeepMind (2023). *Gemini: A Family of Highly Capable Multimodal Models*. <https://arxiv.org/abs/2312.11805>
-- Chen, Z. et al. (2024). *InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks*. <https://arxiv.org/abs/2312.14238>
-- Wang, P. et al. (2024). *Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution*. <https://arxiv.org/abs/2409.12191>
-- Wang, W. et al. (2023). *CogVLM: Visual Expert for Pretrained Language Models*. <https://arxiv.org/abs/2311.03079>
-- Li, K. et al. (2023). *VideoChat: Chat-Centric Video Understanding*. <https://arxiv.org/abs/2305.06355>
+- Radford, A. et al. (2021). *Learning Transferable Visual Models From Natural Language Supervision* (CLIP). OpenAI. https://arxiv.org/abs/2103.00020
+- Alayrac, J.B. et al. (2022). *Flamingo: a Visual Language Model for Few-Shot Learning*. DeepMind. https://arxiv.org/abs/2204.14198
+- Liu, H. et al. (2023). *Visual Instruction Tuning* (LLaVA). https://arxiv.org/abs/2304.08485
+- OpenAI (2023). *GPT-4V(ision) System Card*. https://openai.com/research/gpt-4v-system-card
+- Google DeepMind (2023). *Gemini: A Family of Highly Capable Multimodal Models*. https://arxiv.org/abs/2312.11805
+- Chen, Z. et al. (2024). *InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks*. https://arxiv.org/abs/2312.14238
+- Wang, P. et al. (2024). *Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution*. https://arxiv.org/abs/2409.12191
+- Wang, W. et al. (2023). *CogVLM: Visual Expert for Pretrained Language Models*. https://arxiv.org/abs/2311.03079
+- Li, K. et al. (2023). *VideoChat: Chat-Centric Video Understanding*. https://arxiv.org/abs/2305.06355
 
 **Audio Foundation Models**
 
-- Radford, A. et al. (2022). *Robust Speech Recognition via Large-Scale Weak Supervision* (Whisper). OpenAI. <https://arxiv.org/abs/2212.04356>
-- Rubenstein, P.K. et al. (2023). *AudioPaLM: A Large Language Model That Can Speak and Listen*. Google. <https://arxiv.org/abs/2306.12925>
+- Radford, A. et al. (2022). *Robust Speech Recognition via Large-Scale Weak Supervision* (Whisper). OpenAI. https://arxiv.org/abs/2212.04356
+- Rubenstein, P.K. et al. (2023). *AudioPaLM: A Large Language Model That Can Speak and Listen*. Google. https://arxiv.org/abs/2306.12925
 
 ---
 
 ### Security and Safety
 
-- OWASP Foundation (2025). *OWASP Top 10 for LLM Applications 2025*. <https://owasp.org/www-project-top-10-for-large-language-model-applications/>
-- MITRE (2024). *MITRE ATLAS: Adversarial Threat Landscape for Artificial-Intelligence Systems*. <https://atlas.mitre.org>
-- Gu, J. et al. (2024). *Agent Smith: A Single Image Can Jailbreak One Million Multimodal LLM Agents Exponentially Fast* (visual prompt injection taxonomy). <https://arxiv.org/abs/2402.08567>
-- Brown, T.B. et al. (2017). *Adversarial Patch*. <https://arxiv.org/abs/1712.09665>
-- Mazeika, M. et al. (2024). *HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal*. <https://arxiv.org/abs/2402.04249>
+- OWASP Foundation (2025). *OWASP Top 10 for LLM Applications 2025*. https://owasp.org/www-project-top-10-for-large-language-model-applications/
+- MITRE (2024). *MITRE ATLAS: Adversarial Threat Landscape for Artificial-Intelligence Systems*. https://atlas.mitre.org
+- Gu, J. et al. (2024). *Agent Smith: A Single Image Can Jailbreak One Million Multimodal LLM Agents Exponentially Fast* (visual prompt injection taxonomy). https://arxiv.org/abs/2402.08567
+- Brown, T.B. et al. (2017). *Adversarial Patch*. https://arxiv.org/abs/1712.09665
+- Mazeika, M. et al. (2024). *HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal*. https://arxiv.org/abs/2402.04249
 
 ---
 
 ### Evaluation Benchmarks
 
-- Yue, X. et al. (2024). *MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark*. <https://arxiv.org/abs/2311.16502>
-- Mathew, M. et al. (2021). *DocVQA: A Dataset for VQA on Document Images*. <https://arxiv.org/abs/2007.00398>
-- Fu, C. et al. (2024). *Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis*. <https://arxiv.org/abs/2405.21075>
-- Guan, T. et al. (2024). *HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models*. <https://arxiv.org/abs/2310.14566>
-- Mialon, G. et al. (2023). *GAIA: A Benchmark for General AI Assistants*. Meta AI. <https://arxiv.org/abs/2311.12983>
+- Yue, X. et al. (2024). *MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark*. https://arxiv.org/abs/2311.16502
+- Mathew, M. et al. (2021). *DocVQA: A Dataset for VQA on Document Images*. https://arxiv.org/abs/2007.00398
+- Fu, C. et al. (2024). *Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis*. https://arxiv.org/abs/2405.21075
+- Guan, T. et al. (2024). *HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models*. https://arxiv.org/abs/2310.14566
+- Mialon, G. et al. (2023). *GAIA: A Benchmark for General AI Assistants*. Meta AI. https://arxiv.org/abs/2311.12983
 
 ---
 
 ### Standards and Regulations
 
-- European Parliament (2024). *Regulation (EU) 2024/1689 on Artificial Intelligence (EU AI Act)*. Official Journal of the European Union. <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689>
-- NIST (2023). *AI Risk Management Framework 1.0 (AI RMF 1.0)*. National Institute of Standards and Technology. <https://airc.nist.gov/RMF>
-- NIST (2023). *AI 100-1: Trustworthy and Responsible AI*. <https://doi.org/10.6028/NIST.AI.100-1>
-- C2PA (2024). *C2PA Specification v2.1: Coalition for Content Provenance and Authenticity*. <https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html>
+- European Parliament (2024). *Regulation (EU) 2024/1689 on Artificial Intelligence (EU AI Act)*. Official Journal of the European Union. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689
+- NIST (2023). *AI Risk Management Framework 1.0 (AI RMF 1.0)*. National Institute of Standards and Technology. https://airc.nist.gov/RMF
+- NIST (2023). *AI 100-1: Trustworthy and Responsible AI*. https://doi.org/10.6028/NIST.AI.100-1
+- C2PA (2024). *C2PA Specification v2.1: Coalition for Content Provenance and Authenticity*. https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html
 - ISO/IEC (2023). *ISO/IEC 42001:2023 — Artificial Intelligence Management System (AIMS)*. International Organization for Standardization.
 
 ---
 
 ### GitHub Repositories
 
-- Awesome Multimodal Large Language Models (comprehensive survey and model list): <https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models>
-- VLMEvalKit — evaluation toolkit for multimodal LLMs: <https://github.com/open-compass/VLMEvalKit>
-- Microsoft Prompt Flow — multimodal pipeline orchestration: <https://github.com/microsoft/promptflow>
-- NVIDIA NeMo-Guardrails — programmable multimodal safety: <https://github.com/NVIDIA/NeMo-Guardrails>
+- Awesome Multimodal Large Language Models (comprehensive survey and model list): https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models
+- VLMEvalKit — evaluation toolkit for multimodal LLMs: https://github.com/open-compass/VLMEvalKit
+- Microsoft Prompt Flow — multimodal pipeline orchestration: https://github.com/microsoft/promptflow
+- NVIDIA NeMo-Guardrails — programmable multimodal safety: https://github.com/NVIDIA/NeMo-Guardrails
 
 ---
 

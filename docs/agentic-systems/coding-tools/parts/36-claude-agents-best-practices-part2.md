@@ -47,7 +47,7 @@ response = client.messages.create(
 |Explicit params|Clear types, constraints, examples. Avoid optional params|Malformed calls|
 |Negative examples|Include what NOT to use the tool for (critical boundary definition)|Over-triggering|
 |PROACTIVELY signal|'Use PROACTIVELY when...' prefix for auto-selection|Under-triggering|
-|Limit total tools|Target <20 tools per server (Manus, Claude Code use ~12-20)|Context bloat|
+|Limit total tools|Target &lt;20 tools per server (Manus, Claude Code use ~12-20)|Context bloat|
 
 ## **Plugin Manifest — 10 Component Types**
 

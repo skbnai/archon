@@ -355,7 +355,7 @@ Level 5 — Ambient Enterprise Intelligence
 | Enterprise reference architecture (17 layers) | [Enterprise Reference Architecture](../08-enterprise-reference-architecture.md) |
 | HITL gate implementation patterns | [Enterprise AI Architecture Patterns](../../../architecture/49-enterprise-ai-architecture-patterns.md) §8 |
 | Agent memory supporting context preservation | [Agent Memory & Planning Architecture](../../../architecture/41-agent-memory-planning-architecture.md) |
-| Security model for trust boundaries | [Agentic AI Security & Identity](../../../trust/05-agentic-ai-security-identity.md) |
+| Security model for trust boundaries | [Agentic AI Security & Identity](../../../trust/index.md) |
 | EU AI Act transparency requirements | [Enterprise AI Governance & Compliance](../../../architecture/51-enterprise-ai-governance-compliance.md) |
 | OTel observability for agent UX | [Reliability, Observability & Governance](../../../architecture/43-agentic-ai-reliability-observability-governance.md) |
 

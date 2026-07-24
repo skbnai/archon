@@ -175,4 +175,4 @@ The scalability decision matrix in Part 2 Section 18 provides criteria for choos
 **Related Documentation:**
 - [Reliability Engineering](../16-reliability-engineering.md) — Circuit breakers and graceful degradation under load
 - [Agent Memory Planning Architecture](../../../architecture/41-agent-memory-planning-architecture.md) — Scaling session state and conversation history
-- [Kong AI Gateway Guide](../../../platforms/08-kong-ai-gateway-guide.md) — Rate limiting and load balancing at the gateway layer
+- [Kong AI Gateway Guide](../../../platforms/index.md) — Rate limiting and load balancing at the gateway layer

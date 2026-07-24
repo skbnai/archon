@@ -104,12 +104,12 @@ Security review operates on two tracks simultaneously: automated scanning that r
 
 |**Category**|**Reviewer Implication**|
 |---|---|
-|A01 — Broken Access Control|Still #1. Now absorbs Server-Side Request Forgery (SSRF), which was<br>previously its own category — reflecting that SSRF is fundamentally an<br>access-control failure (the server accessing a resource it shouldn't on the<br>attacker's behalf).|
-|A02 — Security Misconfiguration|Jumped from #5 to #2, now affecting a measurably larger share of tested<br>applications — a direct consequence of the shift to cloud-native,<br>config-heavy infrastructure where a single wrong IAM policy or open<br>bucket is catastrophic.|
-|A03 — Software Supply Chain<br>Failures|New top-3 category, expanding the old "vulnerable components" category<br>to the full pipeline: compromised dependencies, tampered build steps,<br>stolen signing keys, and over-permissive CI/CD integrations. Ranked #1<br>by over half of practitioners surveyed for the standard.|
-|A04 — Cryptographic Failures|Dropped from #2 to #4 as baseline TLS/crypto hygiene has improved<br>industry-wide, but remains a hard blocker whenever a reviewer sees<br>custom cryptography or a legacy cipher suite.|
-|A05 — Injection|Fell from #3 to #5 — still critical, but no longer the dominant category as<br>parameterized queries and modern ORMs have closed off much of the<br>easy surface.|
-|A10 — Mishandling of Exceptional<br>Conditions (new)|A new category covering improper error handling, logic errors, and<br>fail-open conditions — the class of bug where a system's behavior under<br>failure is itself the vulnerability, not a component the system depends on.|
+|A01 — Broken Access Control|Still #1. Now absorbs Server-Side Request Forgery (SSRF), which was<br/>previously its own category — reflecting that SSRF is fundamentally an<br/>access-control failure (the server accessing a resource it shouldn't on the<br/>attacker's behalf).|
+|A02 — Security Misconfiguration|Jumped from #5 to #2, now affecting a measurably larger share of tested<br/>applications — a direct consequence of the shift to cloud-native,<br/>config-heavy infrastructure where a single wrong IAM policy or open<br/>bucket is catastrophic.|
+|A03 — Software Supply Chain<br/>Failures|New top-3 category, expanding the old "vulnerable components" category<br/>to the full pipeline: compromised dependencies, tampered build steps,<br/>stolen signing keys, and over-permissive CI/CD integrations. Ranked #1<br/>by over half of practitioners surveyed for the standard.|
+|A04 — Cryptographic Failures|Dropped from #2 to #4 as baseline TLS/crypto hygiene has improved<br/>industry-wide, but remains a hard blocker whenever a reviewer sees<br/>custom cryptography or a legacy cipher suite.|
+|A05 — Injection|Fell from #3 to #5 — still critical, but no longer the dominant category as<br/>parameterized queries and modern ORMs have closed off much of the<br/>easy surface.|
+|A10 — Mishandling of Exceptional<br/>Conditions (new)|A new category covering improper error handling, logic errors, and<br/>fail-open conditions — the class of bug where a system's behavior under<br/>failure is itself the vulnerability, not a component the system depends on.|
 
 *Source: OWASP Top 10:2025 official release (owasp.org/Top10/2025). The 2025 edition also flags, as a forward-looking "next steps" item rather than a ranked category, the risk of unreviewed AI-generated code being merged without a human fully understanding its logic.*
 
@@ -143,13 +143,13 @@ Software supply chain review has become one of the highest-leverage areas of sec
 
 |**Control**|**What It Provides**|
 |---|---|
-|SBOM (Software Bill of Materials)|An inventory of every component in a build — the "ingredient list."<br>Reviewers should expect a signed SBOM (CycloneDX or SPDX format)<br>generated as part of every release build, not reconstructed after the fact.|
-|SLSA (Supply-chain Levels for<br>Software Artifacts)|A framework, originally developed inside Google and now under the<br>OpenSSF, defining build-integrity levels. Level 2 (hosted build service,<br>signed provenance) is the realistic near-term target for most production<br>software; Level 3 (hermetic, isolated builds with non-falsifiable<br>provenance) is the bar for regulated or high-risk components.|
+|SBOM (Software Bill of Materials)|An inventory of every component in a build — the "ingredient list."<br/>Reviewers should expect a signed SBOM (CycloneDX or SPDX format)<br/>generated as part of every release build, not reconstructed after the fact.|
+|SLSA (Supply-chain Levels for<br/>Software Artifacts)|A framework, originally developed inside Google and now under the<br/>OpenSSF, defining build-integrity levels. Level 2 (hosted build service,<br/>signed provenance) is the realistic near-term target for most production<br/>software; Level 3 (hermetic, isolated builds with non-falsifiable<br/>provenance) is the bar for regulated or high-risk components.|
 
 |**Control**|**What It Provides**|
 |---|---|
-|Sigstore (cosign, Fulcio, Rekor)|The standard open-source toolchain for keyless artifact signing: Fulcio<br>issues short-lived certificates tied to an OIDC identity, Cosign signs the<br>artifact, and Rekor records the signing event in an immutable transparency<br>log — removing the operational burden of managing long-lived signing<br>keys.|
-|Pinning by commit SHA, not tag|The single highest-leverage low-cost control after the 2025<br>compromised-GitHub-Action incidents: a tag can be silently repointed by a<br>compromised maintainer account; a commit SHA cannot.|
+|Sigstore (cosign, Fulcio, Rekor)|The standard open-source toolchain for keyless artifact signing: Fulcio<br/>issues short-lived certificates tied to an OIDC identity, Cosign signs the<br/>artifact, and Rekor records the signing event in an immutable transparency<br/>log — removing the operational burden of managing long-lived signing<br/>keys.|
+|Pinning by commit SHA, not tag|The single highest-leverage low-cost control after the 2025<br/>compromised-GitHub-Action incidents: a tag can be silently repointed by a<br/>compromised maintainer account; a commit SHA cannot.|
 
 *Sources: SLSA specification (slsa.dev), Sigstore project documentation, OWASP Top 10:2025 A03 category writeup.*
 

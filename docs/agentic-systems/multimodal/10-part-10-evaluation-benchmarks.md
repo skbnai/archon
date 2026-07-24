@@ -152,7 +152,7 @@ flowchart TD
 
 ### Agent & Reasoning Benchmarks
 
-**GAIA (General AI Assistants):** 466 questions requiring real-world task completion with multi-step reasoning, tool use (web search, code execution, file handling), and multimodal understanding. Three difficulty levels. GAIA questions test whether AI agents can reliably accomplish the kind of research and analysis tasks a human assistant performs. Currently, frontier models score 50–70% on Level 1 questions and <30% on Level 3.
+**GAIA (General AI Assistants):** 466 questions requiring real-world task completion with multi-step reasoning, tool use (web search, code execution, file handling), and multimodal understanding. Three difficulty levels. GAIA questions test whether AI agents can reliably accomplish the kind of research and analysis tasks a human assistant performs. Currently, frontier models score 50–70% on Level 1 questions and &lt;30% on Level 3.
 
 **AgentBench:** Multi-environment evaluation for LLM agents: web browsing, database operations, lateral-thinking puzzles, house-holding tasks (Alfworld), coding, and operating systems. Tests agent generalization across diverse task types.
 

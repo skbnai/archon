@@ -16,11 +16,11 @@ supersedes: []
 
 |**Tool**|**Bug-catch / F1**|**Noise Level**|**Notes**|
 |---|---|---|---|
-|Greptile|~82%|Highest|Full-repo indexing; best<br>cross-module/cross-file bug detection;<br>materially higher false-positive rate than<br>precision-tuned competitors.|
-|CodeRabbit|~52.5% recall / ~50.5%<br>precision (F1≈51.5%)|Low|Best all-around F1 among broadly available<br>tools per multiple 2026 comparisons; widest<br>platform support.|
-|GitHub Copilot<br>Code Review|~36.7% recall / ~56.5%<br>precision|Lowest (of the<br>compared set)|Diff-only, no whole-codebase context;<br>conservative flagging keeps noise low but<br>misses roughly two-thirds of issues found in<br>benchmark testing.|
-|Qodo Merge|F1≈60.1%|Moderate|Multi-agent architecture (separate<br>bug/security/quality/test agents); strongest<br>multi-platform coverage alongside<br>CodeRabbit.|
-|Claude Code<br>Review|Not independently<br>benchmarked at time of<br>writing|Designed to be<br>low (explicit ver<br>ification/false-p<br>ositive-filter<br>step before<br>surfacing<br>findings)|Multi-agent parallel analysis with a dedicated<br>verification pass; does not gate merge, by<br>design.|
+|Greptile|~82%|Highest|Full-repo indexing; best<br/>cross-module/cross-file bug detection;<br/>materially higher false-positive rate than<br/>precision-tuned competitors.|
+|CodeRabbit|~52.5% recall / ~50.5%<br/>precision (F1≈51.5%)|Low|Best all-around F1 among broadly available<br/>tools per multiple 2026 comparisons; widest<br/>platform support.|
+|GitHub Copilot<br/>Code Review|~36.7% recall / ~56.5%<br/>precision|Lowest (of the<br/>compared set)|Diff-only, no whole-codebase context;<br/>conservative flagging keeps noise low but<br/>misses roughly two-thirds of issues found in<br/>benchmark testing.|
+|Qodo Merge|F1≈60.1%|Moderate|Multi-agent architecture (separate<br/>bug/security/quality/test agents); strongest<br/>multi-platform coverage alongside<br/>CodeRabbit.|
+|Claude Code<br/>Review|Not independently<br/>benchmarked at time of<br/>writing|Designed to be<br/>low (explicit ver<br/>ification/false-p<br/>ositive-filter<br/>step before<br/>surfacing<br/>findings)|Multi-agent parallel analysis with a dedicated<br/>verification pass; does not gate merge, by<br/>design.|
 
 *Figures compiled from multiple independent 2026 comparison sources testing against real-world PRs from open-source projects (including Sentry, Cal.com, and Grafana in at least one cited evaluation) and standardized review benchmarks. Different sources use different test sets and methodologies; treat exact percentages as illustrative of relative positioning, not as a precise, source-agreed ranking.*
 
@@ -32,12 +32,12 @@ supersedes: []
 
 |**Approach**|**How It Works / Tradeoff**|
 |---|---|
-|Diff-only analysis|The model receives the changed lines (plus some surrounding context) and<br>reasons about them in isolation. Fast and cheap; structurally blind to effects<br>outside the diff.|
-|RAG / semantic indexing|The tool builds embeddings of functions, classes, and their relationships, and<br>retrieves relevant related code at review time even if it wasn't part of the diff<br>— CodeRabbit's approach.|
-|Full-repository graph indexing|The tool builds and maintains a dependency/call graph of the entire<br>codebase, enabling it to trace a change's effect on every caller — Greptile's<br>approach, and the most expensive to compute and keep current.|
-|Multi-agent parallel review|Multiple specialized model instances review the same diff for different<br>concerns (security, logic, performance, testability) in parallel, with results<br>deduplicated and ranked — used by Qodo Merge and Claude Code Review,<br>among others.|
-|Verification / false-positive<br>filtering|A separate pass checks each candidate finding against actual code behavior<br>before surfacing it to a human, trading additional compute cost for lower noise<br>— the mechanism Claude Code Review and similarly-architected tools use<br>specifically to counter the hallucination risk described in 14.5.|
-|Rule-based + generative hybrid|Deterministic, pre-built detectors (informed by known vulnerability and<br>anti-pattern catalogs) run alongside generative analysis, with the rule-based<br>layer providing a hallucination-resistant floor under the generative layer's<br>more flexible but less reliable findings — Amazon Q Developer's approach.|
+|Diff-only analysis|The model receives the changed lines (plus some surrounding context) and<br/>reasons about them in isolation. Fast and cheap; structurally blind to effects<br/>outside the diff.|
+|RAG / semantic indexing|The tool builds embeddings of functions, classes, and their relationships, and<br/>retrieves relevant related code at review time even if it wasn't part of the diff<br/>— CodeRabbit's approach.|
+|Full-repository graph indexing|The tool builds and maintains a dependency/call graph of the entire<br/>codebase, enabling it to trace a change's effect on every caller — Greptile's<br/>approach, and the most expensive to compute and keep current.|
+|Multi-agent parallel review|Multiple specialized model instances review the same diff for different<br/>concerns (security, logic, performance, testability) in parallel, with results<br/>deduplicated and ranked — used by Qodo Merge and Claude Code Review,<br/>among others.|
+|Verification / false-positive<br/>filtering|A separate pass checks each candidate finding against actual code behavior<br/>before surfacing it to a human, trading additional compute cost for lower noise<br/>— the mechanism Claude Code Review and similarly-architected tools use<br/>specifically to counter the hallucination risk described in 14.5.|
+|Rule-based + generative hybrid|Deterministic, pre-built detectors (informed by known vulnerability and<br/>anti-pattern catalogs) run alongside generative analysis, with the rule-based<br/>layer providing a hallucination-resistant floor under the generative layer's<br/>more flexible but less reliable findings — Amazon Q Developer's approach.|
 
 ### **14.5 Hallucination Risk in AI-Generated and AI-Reviewed Code**
 

@@ -18,10 +18,10 @@ supersedes:
 **Related:**
 [Architecture Patterns](../../architecture/49-enterprise-ai-architecture-patterns.md) |
 [Governance & Compliance](../../architecture/51-enterprise-ai-governance-compliance.md) |
-[Security & Identity](../../trust/05-agentic-ai-security-identity.md) |
+[Security & Identity](../../trust/index.md) |
 [Observability](../../architecture/43-agentic-ai-reliability-observability-governance.md) |
 [Memory Architecture](../../architecture/41-agent-memory-planning-architecture.md) |
-[Auth Implementation](../../protocols/08-entra-3lo-agent-auth-implementation.md)
+[Auth Implementation](../../protocols/index.md)
 
 ---
 

@@ -322,7 +322,7 @@ With trace propagation, a single Jaeger/Grafana Tempo query shows the full distr
 - Pending documentation: 8%
 
 **Quality Metrics**
-- Human Override Rate: 4.2% (target: <10%)
+- Human Override Rate: 4.2% (target: &lt;10%)
 - Prompt version: underwriting-v3.1.2
 - Model: claude-sonnet-4-6
 

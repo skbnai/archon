@@ -31,14 +31,14 @@ They are not competitors. They solve different problems. The challenge is knowin
 Durable execution is built on **event sourcing**: every state transition in a workflow is written to an append-only log before it is acted on. If the process crashes, it replays the log to reconstruct exactly where it was—and continues from there without re-executing completed steps.
 
 **Event Log (Temporal History)**:
-1. WorkflowStarted {orderId: "ORD-123"}
-2. ActivityScheduled {name: "ValidatePayment"}
-3. ActivityCompleted {result: {valid: true}}
-4. ActivityScheduled {name: "ChargeCard"}
+1. `WorkflowStarted {orderId: "ORD-123"}`
+2. `ActivityScheduled {name: "ValidatePayment"}`
+3. `ActivityCompleted {result: {valid: true}}`
+4. `ActivityScheduled {name: "ChargeCard"}`
 5. **CRASH HERE**
-6. [Worker restarts, replays events 1-4, picks up at 4]
-7. ActivityCompleted {result: {charged: true}}
-8. WorkflowCompleted
+6. Worker restarts, replays events 1-4, picks up at 4
+7. `ActivityCompleted {result: {charged: true}}`
+8. `WorkflowCompleted`
 
 Replay is **deterministic** because every activity result is cached in the log. The replayed code reaches the same decision branches using cached results, never re-executing side effects.
 

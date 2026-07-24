@@ -112,7 +112,7 @@ Hallucination detection in VLMs operates at two levels: offline evaluation using
 
 *Sampling consistency:* For important claims, sample the VLM 3–5 times at temperature 0.3–0.7. If the model gives inconsistent answers across samples (claims the invoice total is $1,250 in one sample and $1,240 in another), the uncertainty indicates potential hallucination. Log consistency scores as a production metric.
 
-Track hallucination rate as a first-class KPI: target <2% hallucination rate for enterprise document processing. Alert when hallucination rate trends above 3% — this often indicates distribution shift (new document types the model was not trained on).
+Track hallucination rate as a first-class KPI: target &lt;2% hallucination rate for enterprise document processing. Alert when hallucination rate trends above 3% — this often indicates distribution shift (new document types the model was not trained on).
 
 ### Q4: Design a golden dataset for evaluating a medical imaging AI system that must achieve radiologist-level concordance
 

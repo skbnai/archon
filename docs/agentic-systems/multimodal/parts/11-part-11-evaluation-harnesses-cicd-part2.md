@@ -161,7 +161,7 @@ Active learning reduces annotation cost by prioritizing the examples most inform
 
 ### Disagreement Resolution and Quality Control
 
-Quality control for annotation: implement dual annotation (two independent annotators) for at least 20% of examples, using inter-annotator agreement (IAA) as a quality signal. Low IAA (<Cohen's Kappa 0.6) on a question-type indicates annotation guideline ambiguity — revise guidelines before continuing.
+Quality control for annotation: implement dual annotation (two independent annotators) for at least 20% of examples, using inter-annotator agreement (IAA) as a quality signal. Low IAA (&lt;Cohen's Kappa 0.6) on a question-type indicates annotation guideline ambiguity — revise guidelines before continuing.
 
 Disagreement resolution workflow: flag examples where annotators disagree → route to a domain expert arbitrator → arbitrator makes final determination → update annotation guidelines based on disagreement patterns. Log all arbitration decisions for later guideline refinement.
 

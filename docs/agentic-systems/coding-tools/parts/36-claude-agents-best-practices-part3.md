@@ -69,7 +69,7 @@ These are documented failure modes drawn from Anthropic's official best-practice
 
 Problem: CLAUDE.md over 80 lines, includes things Claude already knows, tutorials instead of corrections. Important rules get lost in the noise — Claude ignores half.
 
-**Fix: Ruthlessly prune to <80 lines. If Claude does it correctly without the instruction, delete it or convert to a hook.**
+**Fix: Ruthlessly prune to &lt;80 lines. If Claude does it correctly without the instruction, delete it or convert to a hook.**
 
 #### **Anti-Pattern #2: Description-less Skills**
 

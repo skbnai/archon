@@ -105,7 +105,7 @@ These 10 actions are valuable today regardless of which specific technology pred
 
 ## Related Pages
 
-- [Part 1: Standards and Early Trends](pathname://docs/agentic-systems/agentic-ui/10-future-outlook.md) — Standards convergence, ambient AI, personalization, and OS integration (2026–2028)
-- [AGUI Standards Landscape](agui-standards-landscape.md) — Standards overview and ecosystem comparison
-- [Security Architecture](security-architecture.md) — Security horizon for agentic systems
-- [Governance](governance.md) — Governance evolution for enterprise AI
+- [Part 1: Standards and Early Trends](pathname:///archon/agentic-systems/agentic-ui/10-future-outlook) — Standards convergence, ambient AI, personalization, and OS integration (2026–2028)
+- [AGUI Standards Landscape](../02-agui-standards-landscape.md) — Standards overview and ecosystem comparison
+- [Security Architecture](../19-agentic-ui-security-architecture.md) — Security horizon for agentic systems
+- [Governance](../11-governance.md) — Governance evolution for enterprise AI

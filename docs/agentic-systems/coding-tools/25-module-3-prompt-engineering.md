@@ -310,8 +310,8 @@ Extended thinking gives Claude a private scratchpad to reason before responding.
 
 | Mode | How to Enable | Description | Best For |
 |------|--------------|-------------|----------|
-| **Manual mode thinking** | thinking={type:'enabled', budget_tokens:N} | Pre-Claude-4.6 models. budget_tokens is deprecated on 4.6+. Thinking budget control on older models (deprecated on 4.6+) | Explicit budget control |
-| **Adaptive mode** | thinking={type:'auto'} + effort='low\|medium\|high' (recommended for 4.6+) | Claude decides depth of thinking automatically | Flexible depth management |
+| **Manual mode thinking** | `thinking={type:'enabled', budget_tokens:N}` | Pre-Claude-4.6 models. budget_tokens is deprecated on 4.6+. Thinking budget control on older models (deprecated on 4.6+) | Explicit budget control |
+| **Adaptive mode** | `thinking={type:'auto'}` + effort='low\|medium\|high' (recommended for 4.6+) | Claude decides depth of thinking automatically | Flexible depth management |
 | **Interleaved thinking** | betas=['interleaved-thinking-2025-05-14'] (Sonnet 4.6) or auto on Opus 4.6+ | Thinking blocks appear between tool calls. Claude reasons about tool results. | Complex agentic workflows with tool use (Claude 4 only) |
 
 ### Adaptive Thinking — Recommended Production Pattern

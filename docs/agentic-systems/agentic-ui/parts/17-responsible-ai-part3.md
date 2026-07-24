@@ -245,6 +245,6 @@ For EU AI Act conformity assessment, evidence packages must be assembled:
     - [Security Architecture for Agentic Applications](../19-agentic-ui-security-architecture.md) — Security controls, threat models
     - [Identity &amp; Auth Architecture](../12-identity-auth-architecture.md) — Identity types, OAuth flows, authorization
     - [Enterprise AI Governance &amp; Compliance](../../../architecture/51-enterprise-ai-governance-compliance.md) — Full EU AI Act / NIST AI RMF / ISO 42001 details
-    - [Agentic AI Security &amp; Identity](../../../trust/05-agentic-ai-security-identity.md) — OWASP ASI01–ASI10
-    - [Sovereign AI Foundations](../../../trust/sovereign-constitutional-ai/11-sovereign-ai-foundations.md) — Sovereign AI deployment strategies
-    - [Constitutional AI Engineering](../../../trust/sovereign-constitutional-ai/07-constitutional-ai-engineering.md) — Constitutional AI technical implementation
+    - [Agentic AI Security &amp; Identity](../../../trust/index.md) — OWASP ASI01–ASI10
+    - [Sovereign AI Foundations](../../../trust/index.md) — Sovereign AI deployment strategies
+    - [Constitutional AI Engineering](../../../trust/index.md) — Constitutional AI technical implementation

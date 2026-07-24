@@ -18,11 +18,11 @@ supersedes: []
 
 |**Item**|**Why It's Reviewed**|
 |---|---|
-|Resource requests/limits|Missing or unrealistic requests/limits are the single most common cause of<br>noisy-neighbor incidents — a pod without limits can starve every other<br>workload on its node.|
-|Liveness/readiness probes|Missing or misconfigured probes mean Kubernetes cannot tell a hung process<br>from a healthy one, defeating the platform's own self-healing.|
-|Non-root containers|Dockerfiles that run as root by default are a standing privilege-escalation risk if<br>the container is ever compromised; reviewers should expect an explicit<br>non-root USER.|
-|Image provenance|Is the base image pinned to a digest (not `latest`), from a trusted registry, and<br>ideally signed and verifiable at admission time via a policy controller?|
-|Rollback safety|Does the deployment strategy (rolling update, blue/green, canary) allow a fast,<br>automated rollback, or does a bad deploy require manual intervention to<br>reverse?|
+|Resource requests/limits|Missing or unrealistic requests/limits are the single most common cause of<br/>noisy-neighbor incidents — a pod without limits can starve every other<br/>workload on its node.|
+|Liveness/readiness probes|Missing or misconfigured probes mean Kubernetes cannot tell a hung process<br/>from a healthy one, defeating the platform's own self-healing.|
+|Non-root containers|Dockerfiles that run as root by default are a standing privilege-escalation risk if<br/>the container is ever compromised; reviewers should expect an explicit<br/>non-root USER.|
+|Image provenance|Is the base image pinned to a digest (not `latest`), from a trusted registry, and<br/>ideally signed and verifiable at admission time via a policy controller?|
+|Rollback safety|Does the deployment strategy (rolling update, blue/green, canary) allow a fast,<br/>automated rollback, or does a bad deploy require manual intervention to<br/>reverse?|
 
 ### **5.3 CI/CD Pipeline Review**
 
@@ -54,13 +54,13 @@ Database changes are disproportionately dangerous in review because their failur
 
 |**Concern**|**Reviewer Question**|
 |---|---|
-|Indexes|Does a new query pattern have a supporting index? Conversely, does a<br>migration drop an index that something still depends on? Index creation on a<br>large table should default to an online/concurrent build to avoid locking writes.|
-|Locks and transactions|Does this migration take a long-held lock on a large, high-traffic table (e.g.,<br>adding a column with a default value on some database engines can rewrite<br>the whole table under lock)? Is the transaction scope as narrow as possible?|
-|Backward compatibility /<br>roll-forward-only|Can the application run against both the old and new schema simultaneously<br>during a rolling deploy? If not, this is a coordinated-deployment risk, not a<br>routine merge.|
-|Rollback strategy|Is there a tested down-migration, or is this a one-way door (e.g., a destructive<br>column drop) that needs an explicit backup/snapshot step before it runs?|
-|Large-table operations|Has the migration been tested against production-scale data volume, not just<br>a small development database where the same operation completes<br>instantly?|
-|Partitioning and CDC|Does this change interact with existing partitioning strategy or<br>change-data-capture (CDC) pipelines that downstream systems depend on for<br>replication or analytics ingestion?|
-|Replication lag|For a write-heavy migration, has the reviewer considered the impact on<br>replication lag to read replicas that other services depend on for read<br>consistency?|
+|Indexes|Does a new query pattern have a supporting index? Conversely, does a<br/>migration drop an index that something still depends on? Index creation on a<br/>large table should default to an online/concurrent build to avoid locking writes.|
+|Locks and transactions|Does this migration take a long-held lock on a large, high-traffic table (e.g.,<br/>adding a column with a default value on some database engines can rewrite<br/>the whole table under lock)? Is the transaction scope as narrow as possible?|
+|Backward compatibility /<br/>roll-forward-only|Can the application run against both the old and new schema simultaneously<br/>during a rolling deploy? If not, this is a coordinated-deployment risk, not a<br/>routine merge.|
+|Rollback strategy|Is there a tested down-migration, or is this a one-way door (e.g., a destructive<br/>column drop) that needs an explicit backup/snapshot step before it runs?|
+|Large-table operations|Has the migration been tested against production-scale data volume, not just<br/>a small development database where the same operation completes<br/>instantly?|
+|Partitioning and CDC|Does this change interact with existing partitioning strategy or<br/>change-data-capture (CDC) pipelines that downstream systems depend on for<br/>replication or analytics ingestion?|
+|Replication lag|For a write-heavy migration, has the reviewer considered the impact on<br/>replication lag to read replicas that other services depend on for read<br/>consistency?|
 
 **The expand/contract pattern** is the standard mitigation for nearly every risk in this table: add the new column/table/index alongside the old one (expand), migrate reads and writes over in a separate, reversible step, then remove the old structure only once nothing references it (contract). A reviewer seeing a migration that tries to do all three steps in a single PR should generally ask for it to be split.
 
@@ -88,10 +88,10 @@ Database changes are disproportionately dangerous in review because their failur
 
 |**Protocol**|**What Reviewers Check**|
 |---|---|
-|REST / OpenAPI|Reviewer checks the OpenAPI diff for removed fields, changed types, or tightened<br>validation on existing fields — all of which are breaking even if the endpoint path is<br>unchanged. Tooling (e.g., openapi-diff style checks) can gate this automatically in<br>CI.|
-|GraphQL|Field deprecation via `@deprecated` rather than removal; N+1 query risk from a<br>new resolver that doesn't batch/dataload; whether a new field exposes more data<br>than the client actually needs, widening the effective API surface silently.|
-|gRPC / Protobuf|Field number reuse is the classic breaking mistake — removing a field and<br>reusing its number for something new corrupts data for any client still on the old<br>schema. Reviewers check that removed fields are reserved, not reused.|
-|Async / Event APIs|See Section 3.3 — compatibility mode enforcement via schema registry, and<br>whether a new consumer needs to handle both old and new event shapes during<br>a transition window.|
+|REST / OpenAPI|Reviewer checks the OpenAPI diff for removed fields, changed types, or tightened<br/>validation on existing fields — all of which are breaking even if the endpoint path is<br/>unchanged. Tooling (e.g., openapi-diff style checks) can gate this automatically in<br/>CI.|
+|GraphQL|Field deprecation via `@deprecated` rather than removal; N+1 query risk from a<br/>new resolver that doesn't batch/dataload; whether a new field exposes more data<br/>than the client actually needs, widening the effective API surface silently.|
+|gRPC / Protobuf|Field number reuse is the classic breaking mistake — removing a field and<br/>reusing its number for something new corrupts data for any client still on the old<br/>schema. Reviewers check that removed fields are reserved, not reused.|
+|Async / Event APIs|See Section 3.3 — compatibility mode enforcement via schema registry, and<br/>whether a new consumer needs to handle both old and new event shapes during<br/>a transition window.|
 
 ## **Section 8 — Documentation Review**
 
@@ -101,12 +101,12 @@ Documentation review is frequently treated as optional in PR review, which is pr
 
 |**Artifact**|**Reviewer Question**|
 |---|---|
-|README|Does it still accurately describe how to run and test the system after this change,<br>or does the PR silently make the README wrong?|
-|ADRs|Does an architecturally significant change have a corresponding ADR, linked from<br>the PR description? (See Section 9.)|
-|Runbooks / playbooks|For a change that affects on-call response (new failure mode, new alert, changed<br>rollback procedure), is the runbook updated in the same PR, not as a follow-up<br>that never happens?|
-|Diagrams|Do sequence or architecture diagrams still reflect reality, or is this the change that<br>makes the diagram lie? Diagrams-as-code (Mermaid, PlantUML) checked into the<br>same repo as the change they describe age far better than static images<br>maintained separately.|
-|Decision logs / wiki|Is there a single source of truth being updated, or is this creating a second,<br>soon-to-be-conflicting copy of information that already lives in the wiki?|
-|Developer guides|If this PR changes a public interface or a common workflow, does the<br>onboarding/developer guide for that area need a corresponding update?|
+|README|Does it still accurately describe how to run and test the system after this change,<br/>or does the PR silently make the README wrong?|
+|ADRs|Does an architecturally significant change have a corresponding ADR, linked from<br/>the PR description? (See Section 9.)|
+|Runbooks / playbooks|For a change that affects on-call response (new failure mode, new alert, changed<br/>rollback procedure), is the runbook updated in the same PR, not as a follow-up<br/>that never happens?|
+|Diagrams|Do sequence or architecture diagrams still reflect reality, or is this the change that<br/>makes the diagram lie? Diagrams-as-code (Mermaid, PlantUML) checked into the<br/>same repo as the change they describe age far better than static images<br/>maintained separately.|
+|Decision logs / wiki|Is there a single source of truth being updated, or is this creating a second,<br/>soon-to-be-conflicting copy of information that already lives in the wiki?|
+|Developer guides|If this PR changes a public interface or a common workflow, does the<br/>onboarding/developer guide for that area need a corresponding update?|
 
 The practical mechanism that makes this stick: a PR template checkbox ("Architecture Impact — has an ADR been created or updated?") costs nothing to add and, per practitioner guidance on ADR adoption, is one of the most effective low-friction ways to keep documentation review from being silently skipped.
 
@@ -141,12 +141,12 @@ decisions does this create?
 
 |**Phase**|**Practice**|
 |---|---|
-|Before coding|An architecturally significant decision — new data store, new external<br>dependency, a pattern that will be replicated elsewhere — gets an ADR in<br>Proposed status before implementation starts, so the review of the idea happens<br>before the review of hundreds of lines of code built on it.|
-|During PR review|The reviewer's job shifts from re-litigating the decision to checking conformance:<br>does the implementation match what the accepted ADR says? A reviewer who<br>disagrees with the decision itself should reopen the ADR discussion, not block the<br>PR with a design debate that was supposed to already be settled.|
+|Before coding|An architecturally significant decision — new data store, new external<br/>dependency, a pattern that will be replicated elsewhere — gets an ADR in<br/>Proposed status before implementation starts, so the review of the idea happens<br/>before the review of hundreds of lines of code built on it.|
+|During PR review|The reviewer's job shifts from re-litigating the decision to checking conformance:<br/>does the implementation match what the accepted ADR says? A reviewer who<br/>disagrees with the decision itself should reopen the ADR discussion, not block the<br/>PR with a design debate that was supposed to already be settled.|
 
 |**Phase**|**Practice**|
 |---|---|
-|After merge|Some teams schedule a lightweight after-action review — commonly around one<br>month later — comparing what the ADR predicted against what actually<br>happened, closing the loop on whether the decision-making process itself is<br>improving over time.|
+|After merge|Some teams schedule a lightweight after-action review — commonly around one<br/>month later — comparing what the ADR predicted against what actually<br/>happened, closing the loop on whether the decision-making process itself is<br/>improving over time.|
 
 ### **9.3 Traceability and Governance**
 
@@ -178,10 +178,10 @@ Where an ADR records a decision already made, an RFC (Request for Comments) is t
 
 |**Aspect**|**Practice**|
 |---|---|
-|Review lifecycle|An RFC typically moves through draft→circulated for comment→revised→<br>approved by a named decision-maker or review board, with the comment period<br>being the actual review — not a formality before an already-decided outcome.|
-|Ownership|A named owner (often, but not always, the author) is responsible for driving the<br>RFC to resolution and is the point of contact when a later PR appears to diverge<br>from what was agreed.|
-|Evolution|Once approved, an RFC — like an ADR — is not silently edited; material changes<br>in direction get a follow-up RFC or an amendment section with a clear date stamp,<br>preserving why the team believed what it believed at the time.|
-|Downstream PR review|PRs implementing an approved RFC are reviewed for conformance to the RFC,<br>with substantive design disagreement redirected back to an RFC amendment<br>rather than re-litigated in PR comments — this is what keeps large, cross-team<br>implementations from getting stuck in endless per-PR debate.|
+|Review lifecycle|An RFC typically moves through draft→circulated for comment→revised→<br/>approved by a named decision-maker or review board, with the comment period<br/>being the actual review — not a formality before an already-decided outcome.|
+|Ownership|A named owner (often, but not always, the author) is responsible for driving the<br/>RFC to resolution and is the point of contact when a later PR appears to diverge<br/>from what was agreed.|
+|Evolution|Once approved, an RFC — like an ADR — is not silently edited; material changes<br/>in direction get a follow-up RFC or an amendment section with a clear date stamp,<br/>preserving why the team believed what it believed at the time.|
+|Downstream PR review|PRs implementing an approved RFC are reviewed for conformance to the RFC,<br/>with substantive design disagreement redirected back to an RFC amendment<br/>rather than re-litigated in PR comments — this is what keeps large, cross-team<br/>implementations from getting stuck in endless per-PR debate.|
 
 ### **10.3 When to Use an RFC vs. an ADR vs. Neither**
 

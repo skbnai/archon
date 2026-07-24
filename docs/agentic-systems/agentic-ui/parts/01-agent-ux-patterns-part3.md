@@ -192,7 +192,7 @@ Use ARIA pattern: div role="log" aria-live="polite" aria-label="Agent response" 
 | High (70-89%) | #1565C0 (blue, 5.1:1) | Trend up | "High" |
 | Medium (40-69%) | #E65100 (orange, 3.1:1) | Wavy | "Medium" |
 | Low (20-39%) | #B71C1C (red, 5.8:1) | Trend down | "Low" |
-| Very Low (<20%) | #4A148C (purple, 7.3:1) | Question | "Very Low" |
+| Very Low (&lt;20%) | #4A148C (purple, 7.3:1) | Question | "Very Low" |
 
 Use fill level as primary encoding. Color is secondary. Text label always present.
 

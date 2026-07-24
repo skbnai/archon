@@ -196,7 +196,7 @@ const swarm = await flow.createSwarm(\{
 | Claude Sonnet 5 | $3 | $15 | Production-quality reasoning, most enterprise tasks |
 | Claude Fable 5 | $10 | $50 | Complex architecture decisions, high-stakes reasoning |
 
-For current pricing, see [Models 2026](claude-models-2026.md).
+For current pricing, see [Models 2026](../35-claude-models-2026.md).
 
 ### Cost Tracking Per Workflow
 

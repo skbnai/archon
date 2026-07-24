@@ -78,7 +78,7 @@ graph TB
 
 Architecture, security model, lifecycle
 
-|**03**<br>**The Big**|**Win Case Studies**|
+|**03**<br/>**The Big**|**Win Case Studies**|
 |---|---|
 
 Accenture RCT, Impact, Saxo Bank, Harness SEI
@@ -117,21 +117,21 @@ GitHub Copilot has crossed the threshold from productivity experiment to enterpr
 
 |**55%**|**84%**|**10.6%**|**3.5h**|
 |---|---|---|---|
-|Faster Code<br>Completion Tasks|Increase in<br>Successful Builds|More PRs<br>per Developer|Reduction in<br>Cycle Time|
+|Faster Code<br/>Completion Tasks|Increase in<br/>Successful Builds|More PRs<br/>per Developer|Reduction in<br/>Cycle Time|
 |**23%**|**96%**|**90%**|**4,800%**|
-|Coding Efficiency<br>Gain (Impact)|Day-One<br>Adoption Rate|Developer Job<br>Satisfaction|ROI Reported<br>(Impact Study)|
+|Coding Efficiency<br/>Gain (Impact)|Day-One<br/>Adoption Rate|Developer Job<br/>Satisfaction|ROI Reported<br/>(Impact Study)|
 
 ### Sources Behind the Numbers
 
-|**Metric**<br>55% faster coding|**Source**<br>GitHub internal research|**Study Type**<br>Controlled trial|**Year**<br>2024-25|
+|**Metric**<br/>55% faster coding|**Source**<br/>GitHub internal research|**Study Type**<br/>Controlled trial|**Year**<br/>2024-25|
 |---|---|---|---|
 |84% more successful build|sSecond Talent / GitHub research|Enterprise survey|2025|
 |10.6% more PRs, -3.5h cy|cleHarness SEI / customer study|Before/after analysis|2025|
-|23% coding efficiency +17|% quality<br>Impact case study|Single-org deployment|2025|
-|96% day-one adoption, 90|% satisfaction<br>Accenture RCT (50K+ devs)|Randomized controlled tr|ial 2024|
-|4,800% ROI ($76,600 net a|nnual)<br>Impact myBiz case study|ROI calculation|2025|
+|23% coding efficiency +17|% quality<br/>Impact case study|Single-org deployment|2025|
+|96% day-one adoption, 90|% satisfaction<br/>Accenture RCT (50K+ devs)|Randomized controlled tr|ial 2024|
+|4,800% ROI ($76,600 net a|nnual)<br/>Impact myBiz case study|ROI calculation|2025|
 |56% SWE-bench pass rate|GitHub / Claude 3.7 Sonnet eval|Benchmark|2025|
-|80% new devs use Copilot|in week 1<br>GitHub Octoverse 2025|Platform telemetry|2025|
+|80% new devs use Copilot|in week 1<br/>GitHub Octoverse 2025|Platform telemetry|2025|
 
 ## 02 How the Coding Agent Branches & Creates PRs
 
@@ -185,7 +185,7 @@ PR merges to main. The agent's branch is deleted. The issue is automatically clo
 
 The coding agent enforces a multi-layer security model that cannot be overridden by prompts. These are platform-level constraints, not soft guidelines:
 
-|**Security Control**<br>Branch isolation|**Behavior**<br>Agent can only push to branches it created. Zero access to main, develop, or any human-created branch.|
+|**Security Control**<br/>Branch isolation|**Behavior**<br/>Agent can only push to branches it created. Zero access to main, develop, or any human-created branch.|
 |---|---|
 |No self-approval|The developer who assigned the issue cannot approve the resulting PR. Required reviews rules are alwa|
 |Controlled internet access|The agent's network egress is restricted to a customizable allowlist. No exfiltration paths.|
@@ -569,7 +569,7 @@ Industry-validated quality gates that work with — and protect against — AI-g
 
 AI-generated PRs require the same quality gates as human-written code — and in some cases, stricter ones. The volume of AI-generated code is higher and arrives faster, which means your gate automation must be equally fast and reliable. These are the gates that leading engineering teams have standardized on.
 
-|**Gate**<br>Unit Tests|**Tool/Approach**<br>Jest / pytest / Go test|**Threshold**<br>Must pass 100%|**On Failure**<br>Block merge; comment on PR with failures|
+|**Gate**<br/>Unit Tests|**Tool/Approach**<br/>Jest / pytest / Go test|**Threshold**<br/>Must pass 100%|**On Failure**<br/>Block merge; comment on PR with failures|
 |---|---|---|---|
 |Code Coverage|Istanbul / Coverage.py|≥80% lines|Block merge; Copilot re-assigned to add tests|
 |Security Scan|Snyk + CodeQL|Zero Critical/High|Block merge; auto-label 'security'; alert #sec-alerts|
@@ -599,13 +599,13 @@ The most powerful pattern observed in production deployments is the self-healing
 
 ### Anti-Patterns in PR Gates
 
-|**Anti-Pattern**<br>Gating on process, not outcomes|**Why It's Dangerous**<br>Don't gate on 'did the agent run?' Gate on 'do tests pass?'. Process gates bre|ak when tooling changes|
+|**Anti-Pattern**<br/>Gating on process, not outcomes|**Why It's Dangerous**<br/>Don't gate on 'did the agent run?' Gate on 'do tests pass?'. Process gates bre|ak when tooling changes|
 |---|---|---|
 |Skipping gates for 'trivial' changes|AI-generated code that looks trivial is where subtle bugs hide. Apply full gates|to all PRs regardless of|
 |Infinite self-healing loops|Always cap self-healing loops at 3-5 iterations. After that, escalate to human.|Uncapped loops burn Ac|
 |Not having CODEOWNERS|Without CODEOWNERS, agent PRs can merge without the right team review|ing. Define ownership for|
 
-|**Anti-Pattern**<br>Over-relying on AI review|**Why It's Dangerous**<br>Copilot's code review|
+|**Anti-Pattern**<br/>Over-relying on AI review|**Why It's Dangerous**<br/>Copilot's code review|
 |---|---|
 
 ---

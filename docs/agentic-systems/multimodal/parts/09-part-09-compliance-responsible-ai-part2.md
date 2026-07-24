@@ -48,7 +48,7 @@ tags:
 
 **Equalized odds** for face recognition: the true positive rate (correctly identifying a person) and false positive rate (falsely matching to wrong person) should be equal across demographic groups. Equalized odds failure means the system makes different errors for different groups — the most dangerous failure mode for law enforcement or access control applications.
 
-**WER disparity** across accent groups: measured as the absolute WER difference between the highest-WER and lowest-WER demographic groups. A target of <5 percentage points absolute WER gap is a reasonable enterprise fairness threshold for call center ASR.
+**WER disparity** across accent groups: measured as the absolute WER difference between the highest-WER and lowest-WER demographic groups. A target of &lt;5 percentage points absolute WER gap is a reasonable enterprise fairness threshold for call center ASR.
 
 ### Explainability
 

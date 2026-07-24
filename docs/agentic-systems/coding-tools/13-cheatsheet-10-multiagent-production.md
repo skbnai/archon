@@ -53,8 +53,8 @@ for doc in documents[0:50]:
 
 Orchestrator spawns one Task per document (up to 10 parallel):
 
-- Task(doc_1) → { summary, key_points, metadata, source_id: "doc_1" }
-- Task(doc_2) → { summary, key_points, metadata, source_id: "doc_2" }
+- `Task(doc_1)` → `{ summary, key_points, metadata, source_id: "doc_1" }`
+- `Task(doc_2)` → `{ summary, key_points, metadata, source_id: "doc_2" }`
 - ... up to doc_50 (queued, max 10 parallel)
 
 Each subagent has a FRESH context window for its 1 doc. Returns a COMPACT structured result (not full doc content). Orchestrator context only holds 50 small result objects.

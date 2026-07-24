@@ -18,7 +18,7 @@ covers_version: "as of 2026-07-10"
 Security Architects and Principal AI Architects will find here the definitive security reference for agentic UI systems — mapping the eight trust boundaries (TB1–TB8) to OWASP Agentic Security Intelligence risks (ASI01–ASI10), with attack surface analysis, tool approval sandboxing patterns, Content Security Policy configuration, and defenses against agent impersonation, confused deputy, and UI injection as of July 2026.
 
 :::info Scope and Cross-References
-    This page covers *agentic UI–specific* security: attack surfaces introduced by the AG-UI protocol, generative UI rendering, HITL approval flows, and the MCP tool execution boundary. For the full OWASP ASI01–ASI10 taxonomy, see [Agentic AI Security & Identity](../enterprise-architecture/ai-architecture/agentic-ai-security-identity.md). For the 14-layer guardrails framework (input/output classifiers), see [Security Architecture & Guardrails](../enterprise-architecture/ai-architecture/agentic-ai-security-guardrails.md). For identity and OAuth 2.1 flows, see [Identity & Auth Architecture](12-identity-auth-architecture.md).
+    This page covers *agentic UI–specific* security: attack surfaces introduced by the AG-UI protocol, generative UI rendering, HITL approval flows, and the MCP tool execution boundary. For the full OWASP ASI01–ASI10 taxonomy, see [Agentic AI Security & Identity](../../trust/index.md). For the 14-layer guardrails framework (input/output classifiers), see [Security Architecture & Guardrails](../../trust/index.md). For identity and OAuth 2.1 flows, see [Identity & Auth Architecture](12-identity-auth-architecture.md).
 
 ---
 
@@ -554,6 +554,6 @@ Use this checklist when reviewing an agentic UI deployment:
 
 - [Identity & Auth Architecture](12-identity-auth-architecture.md) — OBO flow, RFC 8707, service identity
 - [Enterprise Reference Architecture](08-enterprise-reference-architecture.md) — Layer 8 (Guardrails), TB1–TB8 detail
-- [Agentic AI Security & Identity](../../trust/05-agentic-ai-security-identity.md) — Full OWASP ASI01–ASI10 taxonomy
-- [Security Architecture & Guardrails](../../trust/04-agentic-ai-security-guardrails.md) — 14-layer guardrails framework
+- [Agentic AI Security & Identity](../../trust/index.md) — Full OWASP ASI01–ASI10 taxonomy
+- [Security Architecture & Guardrails](../../trust/index.md) — 14-layer guardrails framework
 - [DevSecOps](07-devsecops.md) — Security in the build and deployment pipeline

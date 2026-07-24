@@ -233,8 +233,8 @@ curl -H "Authorization: Bearer $GITHUB_TOKEN" \
 Pagination (link header):
 
 ```
-Link: <https://api.github.com/repos/...?page=2>; rel="next",
-      <https://api.github.com/repos/...?page=5>; rel="last"
+Link: https://api.github.com/repos/...?page=2; rel="next",
+      https://api.github.com/repos/...?page=5; rel="last"
 ```
 
 With gh CLI:

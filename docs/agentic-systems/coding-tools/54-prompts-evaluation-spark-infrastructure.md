@@ -261,7 +261,7 @@ GitHub's own Octoverse 2025 report (covering September 2024 through August 2025)
 |Commits pushed (2025)|~1B (986M)|+25.1%|
 |Coding Agent PRs authored (May–Sep 2025)|1M+|new metric|
 |Public repos importing an LLM SDK|1.1M+|+178%|
-|AI-related public repositories|4.3M+|~2x in <2 yrs|
+|AI-related public repositories|4.3M+|~2x in &lt;2 yrs|
 
 **These are GitHub's own headline scale figures and represent the most reliable, directly verifiable infrastructure-load evidence available; they say nothing directly about GPU scheduling, multi-region failover design, or request-batching internals, which GitHub has not published in comparable technical detail.**
 

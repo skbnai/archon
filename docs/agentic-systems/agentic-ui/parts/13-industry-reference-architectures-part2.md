@@ -292,7 +292,7 @@ Regardless of industry, five UX patterns appear consistently in successful agent
 ## Related Pages
 
 - [Part 1: Financial Services, Healthcare, Insurance, Retail, Manufacturing, and Developer Platforms](pathname:///archon/agentic-systems/agentic-ui/13-industry-reference-architectures) — Sections 1–6
-- [Security Architecture](security-architecture.md) — Enterprise security controls across industries
-- [Agent UX Patterns](agent-ux-patterns.md) — Human oversight models (HITL/HOTL/HOOL)
-- [Governance](governance.md) — Compliance and governance frameworks
-- [Enterprise Reference Architecture](enterprise-reference-architecture.md) — Backend platform architecture
+- [Security Architecture](../19-agentic-ui-security-architecture.md) — Enterprise security controls across industries
+- [Agent UX Patterns](../01-agent-ux-patterns.md) — Human oversight models (HITL/HOTL/HOOL)
+- [Governance](../11-governance.md) — Compliance and governance frameworks
+- [Enterprise Reference Architecture](../08-enterprise-reference-architecture.md) — Backend platform architecture
