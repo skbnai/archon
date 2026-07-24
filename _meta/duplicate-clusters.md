@@ -1,6 +1,6 @@
 # Duplicate-Candidate Clusters (>=0.6 similarity, connected components)
 
-24 cluster(s) found across 492 pages.
+24 cluster(s) found across 488 pages.
 
 ## Cluster (4 pages)
 
@@ -136,7 +136,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 65%  `agentic-systems/coding-tools/33-claude-code-complete-2026` <-> `agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2`
+- 64%  `agentic-systems/coding-tools/33-claude-code-complete-2026` <-> `agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2`
 
 ## Cluster (2 pages)
 

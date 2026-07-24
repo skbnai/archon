@@ -71,7 +71,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
-     "score": 0.52
+     "score": 0.51
     },
     {
      "id": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
@@ -660,7 +660,7 @@
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
-     "score": 0.39
+     "score": 0.38
     },
     {
      "id": "architecture/16-ea-aidlc-deep-research-2026",
@@ -829,12 +829,7 @@
    "word_count": 2463,
    "last_reviewed": "2026-07-19",
    "status": "current",
-   "top_similar": [
-    {
-     "id": "ai-foundations/agentic_ai_landing_zone_context_engineering",
-     "score": 0.39
-    }
-   ]
+   "top_similar": []
   },
   {
    "id": "architecture/32-agentic-ai-landing-zone-visual-guide",
@@ -857,11 +852,11 @@
      "score": 0.32
     },
     {
-     "id": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
+     "id": "architecture/23-agentic-ai-landing-zone-business-layer",
      "score": 0.32
     },
     {
-     "id": "architecture/23-agentic-ai-landing-zone-business-layer",
+     "id": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
      "score": 0.32
     }
    ]
@@ -1533,12 +1528,7 @@
    "word_count": 4287,
    "last_reviewed": "2026-07-23",
    "status": "current",
-   "top_similar": [
-    {
-     "id": "architecture/44-ai-harness-architecture-orchestration",
-     "score": 0.3
-    }
-   ]
+   "top_similar": []
   },
   {
    "id": "architecture/60-volume1-governance-ecosystem-operating-models",
@@ -1815,7 +1805,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/23-claude-ecosystem-research-report-part2",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -2162,8 +2152,8 @@
      "score": 0.31
     },
     {
-     "id": "protocols/index",
-     "score": 0.31
+     "id": "data-knowledge/index",
+     "score": 0.3
     }
    ]
   },
@@ -2191,7 +2181,7 @@
     },
     {
      "id": "architecture/02-aidlc-artifacts-development-to-retirement",
-     "score": 0.52
+     "score": 0.51
     },
     {
      "id": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
@@ -2289,7 +2279,7 @@
     },
     {
      "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
-     "score": 0.46
+     "score": 0.45
     }
    ]
   },
@@ -2701,7 +2691,7 @@
     },
     {
      "id": "architecture/48-enterprise-ai-architect-foundations",
-     "score": 0.38
+     "score": 0.37
     },
     {
      "id": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",

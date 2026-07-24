@@ -236,7 +236,7 @@
    "top_similar": [
     {
      "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -616,7 +616,7 @@
     },
     {
      "id": "strategy/42-ai-first-to-ai-native",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "strategy/27-part-17-transformation-roadmap",
@@ -1153,7 +1153,7 @@
     },
     {
      "id": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -1907,7 +1907,7 @@
     },
     {
      "id": "strategy/27-part-17-transformation-roadmap",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
@@ -2063,10 +2063,6 @@
     {
      "id": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
      "score": 0.35
-    },
-    {
-     "id": "enterprise-architecture/ai-architecture/index",
-     "score": 0.35
     }
    ]
   },
@@ -2151,12 +2147,12 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
+     "id": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
      "score": 0.42
     },
     {
-     "id": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
-     "score": 0.42
+     "id": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
+     "score": 0.41
     },
     {
      "id": "strategy/49-vol6-organization-structure-operating-model",
@@ -2634,7 +2630,7 @@
    "top_similar": [
     {
      "id": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "strategy/28-part-18-case-studies",
