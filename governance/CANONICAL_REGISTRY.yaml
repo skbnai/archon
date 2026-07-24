@@ -1135,33 +1135,6 @@ topics:
     - modern data & ai platform blueprint 2026
     supersedes: []
     pages: []
-  - id: agent-ux-patterns
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/01-agent-ux-patterns.md
-    aliases: []
-    supersedes: []
-    pages: []
-  - id: agui-standards-landscape
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/02-agui-standards-landscape.md
-    aliases:
-    - agui standards & ecosystem landscape
-    supersedes: []
-    pages: []
-  - id: anti-patterns
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/03-anti-patterns.md
-    aliases:
-    - anti-pattern catalog for agentic applications
-    supersedes: []
-    pages: []
-  - id: application-lifecycle
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/04-application-lifecycle.md
-    aliases:
-    - agentic application lifecycle
-    supersedes: []
-    pages: []
   - id: context-engineering
     domain: agentic-systems
     canonical: docs/agentic-systems/agentic-ui/05-context-engineering.md
@@ -1188,13 +1161,6 @@ topics:
     aliases: []
     supersedes: []
     pages: []
-  - id: evolution-human-ai-interfaces
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/09-evolution-human-ai-interfaces.md
-    aliases:
-    - evolution of human-ai interfaces
-    supersedes: []
-    pages: []
   - id: future-outlook
     domain: agentic-systems
     canonical: docs/agentic-systems/agentic-ui/10-future-outlook.md
@@ -1206,13 +1172,6 @@ topics:
     domain: agentic-systems
     canonical: docs/agentic-systems/agentic-ui/parts/10-future-outlook-part2.md
     aliases: []
-    supersedes: []
-    pages: []
-  - id: governance
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/11-governance.md
-    aliases:
-    - governance for agentic applications
     supersedes: []
     pages: []
   - id: identity-auth-architecture
@@ -1233,41 +1192,6 @@ topics:
     domain: agentic-systems
     canonical: docs/agentic-systems/agentic-ui/parts/13-industry-reference-architectures-part2.md
     aliases: []
-    supersedes: []
-    pages: []
-  - id: observability
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/14-observability.md
-    aliases:
-    - observability for agentic applications
-    supersedes: []
-    pages: []
-  - id: performance-engineering
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/15-performance-engineering.md
-    aliases:
-    - performance engineering for agentic applications
-    supersedes: []
-    pages: []
-  - id: reliability-engineering
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/16-reliability-engineering.md
-    aliases:
-    - reliability engineering for agentic applications
-    supersedes: []
-    pages: []
-  - id: responsible-ai
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/17-responsible-ai.md
-    aliases:
-    - responsible ai for agentic applications
-    supersedes: []
-    pages: []
-  - id: scalability-engineering
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/18-scalability-engineering.md
-    aliases:
-    - scalability engineering for agentic applications
     supersedes: []
     pages: []
   - id: agentic-ui-security-architecture
@@ -1343,38 +1267,11 @@ topics:
     aliases: []
     supersedes: []
     pages: []
-  - id: copilot-enterprise-playbook
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/07-copilot-enterprise-playbook.md
-    aliases:
-    - github copilot ai credits enterprise mastery guide
-    supersedes: []
-    pages: []
   - id: copilotkit-mcp-apps-vs-tools
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/08-copilotkit-mcp-apps-vs-tools.md
     aliases:
     - copilotkit mcp apps vs tools — eu bank design decision
-    supersedes: []
-    pages: []
-  - id: git-github-platform-engineering-handbook
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/09-git-github-platform-engineering-handbook.md
-    aliases:
-    - git, github platform & platform engineering cheatsheet
-    supersedes: []
-    pages: []
-  - id: github-copilot-big-wins-research
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/10-github-copilot-big-wins-research.md
-    aliases:
-    - github copilot big wins & automation research playbook
-    supersedes: []
-    pages: []
-  - id: github-copilot-zero-to-hero
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/11-github-copilot-zero-to-hero.md
-    aliases: []
     supersedes: []
     pages: []
   - id: microsoft-apm-guide
@@ -1466,12 +1363,6 @@ topics:
     - claude code agents & parallelism
     supersedes: []
     pages: []
-  - id: claude-ecosystem-research-report
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/23-claude-ecosystem-research-report.md
-    aliases: []
-    supersedes: []
-    pages: []
   - id: module-1-claude-foundations
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/24-module-1-claude-foundations.md
@@ -1526,52 +1417,10 @@ topics:
     aliases: []
     supersedes: []
     pages: []
-  - id: claude-agent-sdk-production
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/30-claude-agent-sdk-production.md
-    aliases:
-    - claude agent sdk — production reference
-    supersedes: []
-    pages: []
   - id: claude-api-mastery
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/31-claude-api-mastery.md
     aliases: []
-    supersedes: []
-    pages: []
-  - id: claude-best-practices
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/32-claude-best-practices.md
-    aliases:
-    - how to use this guide
-    supersedes: []
-    pages: []
-  - id: claude-code-complete-2026
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/33-claude-code-complete-2026.md
-    aliases:
-    - claude code cli — zero to mastery 2026
-    supersedes: []
-    pages: []
-  - id: claude-enterprise-2026
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/34-claude-enterprise-2026.md
-    aliases:
-    - claude enterprise deployment 2026
-    supersedes: []
-    pages: []
-  - id: claude-models-2026
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/35-claude-models-2026.md
-    aliases:
-    - claude models 2026 — complete reference
-    supersedes: []
-    pages: []
-  - id: claude-agents-best-practices
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/36-claude-agents-best-practices.md
-    aliases:
-    - 'claude & github agents: best practices guide'
     supersedes: []
     pages: []
   - id: claude-routines-guide
@@ -1585,27 +1434,6 @@ topics:
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/parts/37-claude-routines-guide-part2.md
     aliases: []
-    supersedes: []
-    pages: []
-  - id: constitutional-ai-safety-2026
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/38-constitutional-ai-safety-2026.md
-    aliases:
-    - constitutional ai & safety 2026
-    supersedes: []
-    pages: []
-  - id: mcp-deep-guide
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/39-mcp-deep-guide.md
-    aliases:
-    - mcp deep guide — server development & enterprise integration
-    supersedes: []
-    pages: []
-  - id: prompt-engineering-claude-4
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/40-prompt-engineering-claude-4.md
-    aliases:
-    - prompt engineering for claude 4.x
     supersedes: []
     pages: []
   - id: ruflo-agentic-ai-guide
@@ -1692,13 +1520,6 @@ topics:
     aliases: []
     supersedes: []
     pages: []
-  - id: github-copilot-enterprise-research-2026
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/47-github-copilot-enterprise-research-2026.md
-    aliases:
-    - github copilot enterprise agent platform
-    supersedes: []
-    pages: []
   - id: git-internals
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/48-git-internals.md
@@ -1755,13 +1576,6 @@ topics:
     supersedes:
     - docs/agentic-systems/skill/coding/02-skill-anatomy-and-metadata-schema.md
     pages: []
-  - id: enterprise-agentic-ai-config-management-2026
-    domain: agentic-systems
-    canonical: docs/agentic-systems/core/02-enterprise-agentic-ai-config-management-2026.md
-    aliases:
-    - enterprise configuration & parameter management for agentic ai platforms on aws
-    supersedes: []
-    pages: []
   - id: harness-bestpractices-antipatterns-roadmap
     domain: agentic-systems
     canonical: docs/agentic-systems/core/03-harness-bestpractices-antipatterns-roadmap.md
@@ -1807,25 +1621,11 @@ topics:
     aliases: []
     supersedes: []
     pages: []
-  - id: enterprise-promptops-aws-agentcore-2026
-    domain: agentic-systems
-    canonical: docs/agentic-systems/core/08-enterprise-promptops-aws-agentcore-2026.md
-    aliases:
-    - 'enterprise promptops: prompt lifecycle management for aws agentcore runtime'
-    supersedes: []
-    pages: []
   - id: multitenantagentplatform-architecture
     domain: agentic-systems
     canonical: docs/agentic-systems/core/09-multitenantagentplatform-architecture.md
     aliases:
     - multi-tenant agent platform architecture
-    supersedes: []
-    pages: []
-  - id: agentic-platform-bestpractices
-    domain: agentic-systems
-    canonical: docs/agentic-systems/core/10-agentic-platform-bestpractices.md
-    aliases:
-    - enterprise agentic platform best practices
     supersedes: []
     pages: []
   - id: ai-msf-requirements-runbook
@@ -1840,19 +1640,6 @@ topics:
     canonical: docs/agentic-systems/core/12-ai-platform-factory-runbook.md
     aliases:
     - ai platform factory runbook v2
-    supersedes: []
-    pages: []
-  - id: enterprise-agentic-ai-asset-management-2026
-    domain: agentic-systems
-    canonical: docs/agentic-systems/core/13-enterprise-agentic-ai-asset-management-2026.md
-    aliases: []
-    supersedes: []
-    pages: []
-  - id: genaiaf-prompt-lifecycle-hotswap-research-2026
-    domain: agentic-systems
-    canonical: docs/agentic-systems/core/14-genaiaf-prompt-lifecycle-hotswap-research-2026.md
-    aliases:
-    - 'genaiaf-559: prompt lifecycle, versioning & hot-swap research 2026'
     supersedes: []
     pages: []
   - id: executive-summary-and-reference-architecture
@@ -1873,13 +1660,6 @@ topics:
     domain: agentic-systems
     canonical: docs/agentic-systems/parts/16-agent-skills-complete-playbook-2026-part2.md
     aliases: []
-    supersedes: []
-    pages: []
-  - id: a2a-deep-research
-    domain: agentic-systems
-    canonical: docs/agentic-systems/core/17-a2a-deep-research.md
-    aliases:
-    - 'a2a protocol: deep research & critical analysis'
     supersedes: []
     pages: []
   - id: foundations-what-is-a-coding-skill
@@ -2113,13 +1893,6 @@ topics:
     aliases: []
     supersedes: []
     pages: []
-  - id: part-09-compliance-responsible-ai
-    domain: agentic-systems
-    canonical: docs/agentic-systems/multimodal/09-part-09-compliance-responsible-ai.md
-    aliases:
-    - part 9 — compliance & responsible ai for multimodal systems
-    supersedes: []
-    pages: []
   - id: part-10-evaluation-benchmarks
     domain: agentic-systems
     canonical: docs/agentic-systems/multimodal/10-part-10-evaluation-benchmarks.md
@@ -2139,13 +1912,6 @@ topics:
     aliases: []
     supersedes: []
     pages: []
-  - id: part-11-evaluation-harnesses-cicd
-    domain: agentic-systems
-    canonical: docs/agentic-systems/multimodal/11-part-11-evaluation-harnesses-cicd.md
-    aliases:
-    - part 11 — evaluation harnesses & ci/cd for multimodal ai
-    supersedes: []
-    pages: []
   - id: part-12-observability-finops
     domain: agentic-systems
     canonical: docs/agentic-systems/multimodal/12-part-12-observability-finops.md
@@ -2157,13 +1923,6 @@ topics:
     domain: agentic-systems
     canonical: docs/agentic-systems/multimodal/parts/12-part-12-observability-finops-part2.md
     aliases: []
-    supersedes: []
-    pages: []
-  - id: part-13-governance-production
-    domain: agentic-systems
-    canonical: docs/agentic-systems/multimodal/13-part-13-governance-production.md
-    aliases:
-    - part 13 — enterprise governance & production engineering for multimodal ai
     supersedes: []
     pages: []
   - id: part-14-cloud-platform-comparison
