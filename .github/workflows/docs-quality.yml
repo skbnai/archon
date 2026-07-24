@@ -23,13 +23,13 @@ jobs:
           CHANGED_MD=$(git diff --name-only origin/${{ github.base_ref }} -- 'docs/**/*.md')
           if [ -n "$CHANGED_MD" ]; then
             # stage-04 lands one domain per PR; only that domain's registry
-            # entries are expected to have canonical files on disk already.
-            # Other domains are future waves -- don't fail this PR for them.
-            DOMAINS=$(echo "$CHANGED_MD" | sed -E 's#^docs/([a-z-]+)/.*#\1#' | sort -u | paste -sd, -)
-            echo "changed domains: $DOMAINS"
-            python3 scripts/registry_check.py --domains "$DOMAINS"
+            # entries are expected to have canonical files on disk. Other
+            # domains are future waves -- don't fail this PR for them.
+            CHANGED_DOMAINS=$(echo "$CHANGED_MD" | sed -E 's#^docs/([a-z-]+)/.*#\1#' | sort -u | paste -sd, -)
+            echo "changed domains: $CHANGED_DOMAINS"
+            python3 scripts/registry_check.py --domains "$CHANGED_DOMAINS"
           else
-            echo "no docs/ pages changed in this PR -- paper-stage registry update, running --paper mode"
+            echo "no docs pages changed in this PR -- registry-only update, running --paper mode"
             python3 scripts/registry_check.py --paper
           fi
       - name: Near-duplicate gate
