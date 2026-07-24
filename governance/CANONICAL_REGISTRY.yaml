@@ -5705,3 +5705,27 @@ topics:
     aliases: []
     supersedes: []
     pages: []
+  - id: evolution-human-ai-interfaces-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: claude-agent-sdk-production-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/30-claude-agent-sdk-production-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agentic-ai-asset-management-2026-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/parts/13-enterprise-agentic-ai-asset-management-2026-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: responsible-ai-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/parts/17-responsible-ai-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
