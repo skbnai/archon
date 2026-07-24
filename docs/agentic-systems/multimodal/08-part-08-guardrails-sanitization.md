@@ -185,4 +185,4 @@ PII in multimodal systems exists in three distinct forms that require different 
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/08-08-part-08-guardrails-sanitization.md-part2.md) for sanitization pipeline design, enterprise patterns, and interview use cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/08-part-08-guardrails-sanitization-part2) for sanitization pipeline design, enterprise patterns, and interview use cases.**

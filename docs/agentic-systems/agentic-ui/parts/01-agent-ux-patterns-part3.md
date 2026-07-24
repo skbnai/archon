@@ -323,4 +323,4 @@ Use fill level (progress bar) as the primary encoding. Color is secondary. Text 
     For a new agentic application, start with the **Copilot Pattern Taxonomy** (Section 1) to identify your deployment archetype, then use the **Decision Framework** guide at [decision-frameworks.md](../06-decision-frameworks.md) for technology selection. For lifecycle planning, see [application-lifecycle.md](../04-application-lifecycle.md).
 
 :::note Protocol Reference
-    AG-UI event types referenced throughout this document (`TEXT_MESSAGE_CONTENT`, `TOOL_CALL_START`, `STATE_SNAPSHOT`, etc.) are specified in the AG-UI open protocol. MCP integration patterns are detailed in [MCP Deep Research 2026](pathname:///archon/protocols/mcp-deep-research-2026).
+    AG-UI event types referenced throughout this document (`TEXT_MESSAGE_CONTENT`, `TOOL_CALL_START`, `STATE_SNAPSHOT`, etc.) are specified in the AG-UI open protocol. MCP integration patterns are detailed in [MCP Deep Research 2026](pathname:///archon/protocols/13-mcp-deep-research-2026).

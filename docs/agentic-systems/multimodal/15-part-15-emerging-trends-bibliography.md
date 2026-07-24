@@ -229,4 +229,4 @@ The EU AI Act (2024) Article 50 requires that providers of AI systems that gener
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/15-15-part-15-emerging-trends-bibliography.md-part2.md) for research gaps, timeline, and comprehensive bibliography.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/15-part-15-emerging-trends-bibliography-part2) for research gaps, timeline, and comprehensive bibliography.**

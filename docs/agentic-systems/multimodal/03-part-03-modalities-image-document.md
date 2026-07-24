@@ -146,4 +146,4 @@ Layout understanding is the hardest IDP sub-problem. *Reading order* in a multi-
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/03-03-part-03-modalities-image-document.md-part2.md) for Enterprise Patterns, Failure Modes, and Interview Use Cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/03-part-03-modalities-image-document-part2) for Enterprise Patterns, Failure Modes, and Interview Use Cases.**

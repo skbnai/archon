@@ -1,5 +1,5 @@
 ---
-title: "Reference Architecture"
+title: "Anti-pattern Catalog for Agentic Applications (Part 2)"
 date_created: 2026-07-07
 last_reviewed: 2026-07-24
 status: current
@@ -151,7 +151,7 @@ graph TD
     - Security patterns → [Security Architecture](../19-agentic-ui-security-architecture.md)
     - Context patterns → [Context Engineering](../05-context-engineering.md)
     - Governance patterns → [Governance](../11-governance.md)
-    - Evaluation patterns → [Evaluation Framework](pathname:///archon/operations/agent-evaluation-framework)
+    - Evaluation patterns → [Evaluation Framework](pathname:///archon/operations/01-agent-evaluation-framework)
     - DevSecOps patterns → [DevSecOps](../07-devsecops.md)
 
 

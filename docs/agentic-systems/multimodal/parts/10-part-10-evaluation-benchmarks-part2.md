@@ -115,4 +115,4 @@ Construct adversarial test sets for each modality:
 
 ---
 
-**This is Part 2 of 3. [Continue with Part 3 →](pathname:///archon/agentic-systems/multimodal/parts/10-part-10-evaluation-benchmarks-part3.md) for evaluation pipeline architecture, interview use cases, and related resources.**
+**This is Part 2 of 3. [Continue with Part 3 →](pathname:///archon/agentic-systems/multimodal/parts/10-part-10-evaluation-benchmarks-part3) for evaluation pipeline architecture, interview use cases, and related resources.**

@@ -202,4 +202,4 @@ flowchart TD
 
 ---
 
-**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/10-10-part-10-evaluation-benchmarks.md-part2.md) for LLM-as-Judge and golden dataset construction.**
+**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/10-part-10-evaluation-benchmarks-part2) for LLM-as-Judge and golden dataset construction.**

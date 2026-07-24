@@ -1,5 +1,5 @@
 ---
-title: "Reference Architecture"
+title: "Observability for Agentic Applications"
 date_created: 2026-07-07
 last_reviewed: 2026-07-24
 status: current

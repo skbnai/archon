@@ -1,5 +1,5 @@
 ---
-title: "Reference Architecture"
+title: "Anti-pattern Catalog for Agentic Applications"
 date_created: 2026-07-07
 last_reviewed: 2026-07-24
 status: current

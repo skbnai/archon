@@ -231,4 +231,4 @@ Diarization answers "who spoke when?" — a prerequisite for call analytics and 
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/04-04-part-04-modalities-video-audio.md-part2.md) for Enterprise Pipelines, Use Cases, and Interview Examples.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/04-part-04-modalities-video-audio-part2) for Enterprise Pipelines, Use Cases, and Interview Examples.**

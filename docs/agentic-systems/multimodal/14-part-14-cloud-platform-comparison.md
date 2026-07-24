@@ -201,4 +201,4 @@ Anthropic's Claude models are the strongest performers for long-context document
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/14-14-part-14-cloud-platform-comparison.md-part2.md) for decision trees, multi-cloud architecture, and interview use cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/14-part-14-cloud-platform-comparison-part2) for decision trees, multi-cloud architecture, and interview use cases.**

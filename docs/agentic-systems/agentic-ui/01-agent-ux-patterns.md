@@ -19,7 +19,7 @@ covers_version: "as of 2026-07-10"
 **Related:**
 [HITL Gates](../../architecture/49-enterprise-ai-architecture-patterns.md) |
 [Memory Architecture](../../architecture/41-agent-memory-planning-architecture.md) |
-[Security/OWASP](pathname:///archon/trust/agentic-ai-security-identity) |
+[Security/OWASP](pathname:///archon/trust/05-agentic-ai-security-identity) |
 [Governance](../../architecture/51-enterprise-ai-governance-compliance.md) |
 [Observability](../../architecture/43-agentic-ai-reliability-observability-governance.md)
 

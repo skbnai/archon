@@ -11,7 +11,7 @@ supersedes: []
 
 # Claude Models 2026 — Complete Reference (Part 2)
 
-**[Back to Part 1 ←](pathname:///archon/agentic-systems/coding-tools/35-claude-models-2026)**
+**This is Part 2 of 3. [Back to Part 1 ←](pathname:///archon/agentic-systems/coding-tools/35-claude-models-2026) · [Continue with Part 3 →](pathname:///archon/agentic-systems/coding-tools/parts/35-claude-models-2026-part3)**
 
 ---
 
@@ -565,34 +565,4 @@ def request_with_backoff(
 
 ---
 
-## 17. Antipatterns
-
-**Using Fable 5 as the Default Model:** At $10/$50 per million tokens, Fable 5 costs 5–10× more than Haiku and 3.3× more than Sonnet 5 (standard). Using it as a blanket default wastes significant budget. Always route tasks to the cheapest capable model.
-
-**Hardcoding Model IDs in Application Logic:** Embedding model IDs directly in request code means model upgrades require code changes and redeployments. Externalize model selection to configuration so updates are a config push, not a deployment.
-
-**Using Date-Suffixed Model IDs in Code:** Never use `claude-haiku-4-5-20251001` or any date-suffixed form in your code. Use the alias `claude-haiku-4-5`. Date-suffixed IDs are the underlying pinned snapshots; the alias is the stable public API surface.
-
-**Passing `budget_tokens` to Fable 5, Opus 4.7, or Opus 4.8:** These models do not support extended thinking. Passing `{"type": "enabled", "budget_tokens": N}` returns HTTP 400. Use `output_config={"effort": "..."}` instead. Extended thinking (`budget_tokens`) is only valid on Haiku 4.5, Opus 4.6, Sonnet 4.6, and older models.
-
-**Not Handling the `refusal` Stop Reason on Fable 5 / Mythos 5:** These models can return `stop_reason: "refusal"` with an empty `content` array. Reading `response.content[0].text` without checking `stop_reason` first raises an IndexError. Always check stop reason before reading content.
-
-**Ignoring the Tokenizer Change When Migrating:** Migrating from Opus 4.6, Sonnet 4.6, or Haiku 4.5 to any new-tokenizer model (Sonnet 5, Opus 4.7/4.8, Fable 5) without recounting tokens leads to truncation, context overflow, or cost overruns. Always recount with `count_tokens` using the target model.
-
-**Not Using Prompt Caching for Stable Content:** Sending the same 5,000-token system prompt on every request without `cache_control` pays full input price every time. With caching, subsequent calls within 5 minutes pay ~10% of that cost.
-
-**Missing Rate Limit Retry Logic:** Production code without exponential backoff on `RateLimitError` will crash during traffic spikes. Always implement retry with jitter.
-
-**Using Standard API for Offline Batch Workloads:** Nightly report generation, bulk classification, and dataset creation through the real-time API pay full price. The Batch API offers 50% off for async workloads with no quality difference.
-
-**Assuming Tasks Need Fable 5 Without Testing Cheaper Tiers:** Most classification, extraction, and short-form generation tasks run acceptably on Haiku. Sonnet 5 covers most agentic workloads. Test iteratively from cheapest to most expensive before committing to frontier models.
-
-**Unbounded Output Requests:** Sending prompts without explicit output length constraints results in verbose, expensive completions. Always specify the expected format and approximate length.
-
-**Ignoring Thinking Token Cost:** On Fable 5 ($50/M output), an effort level of `max` can cost several dollars per request in thinking tokens alone. Monitor `usage.output_tokens` and tune effort levels to task complexity.
-
-**Evaluating Models Only on Toy Examples:** Toy benchmark prompts do not predict production performance in your domain. Always build an eval harness with real (anonymized) production inputs before committing to a model.
-
----
-
-**Part 2 of 3. [Continue with Part 3 →](pathname:///archon/agentic-systems/coding-tools/parts/35-claude-models-2026-part3)**
+**Part 2 of 3. [Continue with Part 3 →](pathname:///archon/agentic-systems/coding-tools/parts/35-claude-models-2026-part3) for antipatterns and the summary reference.**

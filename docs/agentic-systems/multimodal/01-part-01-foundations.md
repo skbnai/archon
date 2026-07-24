@@ -155,4 +155,4 @@ The table below covers the major multimodal models relevant to enterprise deploy
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/01-01-part-01-foundations.md-part2.md) for Agentic Perception and Interview Use Cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/01-part-01-foundations-part2) for Agentic Perception and Interview Use Cases.**

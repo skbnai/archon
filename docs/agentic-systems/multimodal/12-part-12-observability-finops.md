@@ -305,4 +305,4 @@ ocr_confidence = Histogram(
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/12-12-part-12-observability-finops.md-part2.md) for FinOps strategy, cost optimization, and governance.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/12-part-12-observability-finops-part2) for FinOps strategy, cost optimization, and governance.**

@@ -16,11 +16,11 @@
    "status": "draft",
    "top_similar": [
     {
-     "id": "data-knowledge/index",
+     "id": "operations/index",
      "score": 0.35
     },
     {
-     "id": "operations/index",
+     "id": "data-knowledge/index",
      "score": 0.34
     },
     {

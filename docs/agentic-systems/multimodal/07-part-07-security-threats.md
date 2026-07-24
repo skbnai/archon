@@ -301,4 +301,4 @@ graph TD
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/07-07-part-07-security-threats.md-part2.md) for Detection & Mitigation Strategies and Interview Use Cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/07-part-07-security-threats-part2) for Detection & Mitigation Strategies and Interview Use Cases.**

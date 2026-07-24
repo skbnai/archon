@@ -187,4 +187,4 @@ The EU AI Act (effective August 2024, full enforcement August 2026) classifies A
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/09-09-part-09-compliance-responsible-ai.md-part2) for biometric governance, responsible AI, content provenance, and interview use cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/09-part-09-compliance-responsible-ai-part2) for biometric governance, responsible AI, content provenance, and interview use cases.**

@@ -13,7 +13,7 @@
       },
       {
         "id": "agentic-systems/agentic-ui/03-anti-patterns",
-        "title": "Reference Architecture"
+        "title": "Anti-pattern Catalog for Agentic Applications"
       },
       {
         "id": "agentic-systems/agentic-ui/04-application-lifecycle",
@@ -45,7 +45,7 @@
       },
       {
         "id": "agentic-systems/agentic-ui/11-governance",
-        "title": "Reference Architecture"
+        "title": "Governance for Agentic Applications"
       },
       {
         "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
@@ -57,7 +57,7 @@
       },
       {
         "id": "agentic-systems/agentic-ui/14-observability",
-        "title": "Reference Architecture"
+        "title": "Observability for Agentic Applications"
       },
       {
         "id": "agentic-systems/agentic-ui/15-performance-engineering",
@@ -97,7 +97,7 @@
       },
       {
         "id": "agentic-systems/agentic-ui/parts/03-anti-patterns-part2",
-        "title": "Reference Architecture"
+        "title": "Anti-pattern Catalog for Agentic Applications (Part 2)"
       },
       {
         "id": "agentic-systems/agentic-ui/parts/04-application-lifecycle-part2",
@@ -121,7 +121,7 @@
       },
       {
         "id": "agentic-systems/agentic-ui/parts/11-governance-part2",
-        "title": "Reference Architecture"
+        "title": "Governance for Agentic Applications (Part 2)"
       },
       {
         "id": "agentic-systems/agentic-ui/parts/13-industry-reference-architectures-part2",
@@ -129,7 +129,7 @@
       },
       {
         "id": "agentic-systems/agentic-ui/parts/14-observability-part2",
-        "title": "Reference Architecture"
+        "title": "Observability for Agentic Applications (Part 2)"
       },
       {
         "id": "agentic-systems/agentic-ui/parts/15-performance-engineering-part2",

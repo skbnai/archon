@@ -1,5 +1,5 @@
 ---
-title: "Reference Architecture"
+title: "Governance for Agentic Applications (Part 2)"
 date_created: 2026-07-07
 last_reviewed: 2026-07-24
 status: current

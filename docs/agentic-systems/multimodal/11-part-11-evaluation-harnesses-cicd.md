@@ -202,4 +202,4 @@ Validates that the system maintains target throughput under load. Run weekly. Me
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/11-11-part-11-evaluation-harnesses-cicd.md-part2) for CI/CD pipeline design, chaos testing, human-in-the-loop, production monitoring, and interview use cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/11-part-11-evaluation-harnesses-cicd-part2) for CI/CD pipeline design, chaos testing, human-in-the-loop, production monitoring, and interview use cases.**

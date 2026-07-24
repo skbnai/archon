@@ -452,4 +452,4 @@ graph TD
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/35-claude-models-2026-part2) for context window guide, platform availability, migration strategy, deprecation timeline, token counting, cost optimization, rate limits, best practices, and antipatterns.**
+**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/35-claude-models-2026-part2) for context window guide, platform availability, migration strategy, deprecation timeline, token counting, cost optimization, rate limits, and best practices. [Part 3 →](pathname:///archon/agentic-systems/coding-tools/parts/35-claude-models-2026-part3) has antipatterns and the summary reference.**
