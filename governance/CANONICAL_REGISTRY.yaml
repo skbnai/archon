@@ -5343,18 +5343,6 @@ topics:
     aliases: []
     supersedes: []
     pages: []
-  - id: observability-part2
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/parts/14-observability-part2.md
-    aliases: []
-    supersedes: []
-    pages: []
-  - id: copilot-enterprise-playbook-part2
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/parts/07-copilot-enterprise-playbook-part2.md
-    aliases: []
-    supersedes: []
-    pages: []
   - id: evolution-human-ai-interfaces-part2
     domain: agentic-systems
     canonical: docs/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part2.md
@@ -5492,18 +5480,6 @@ topics:
   - id: claude-enterprise-2026-part3
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/parts/34-claude-enterprise-2026-part3.md
-    aliases: []
-    supersedes: []
-    pages: []
-  - id: observability-part3
-    domain: agentic-systems
-    canonical: docs/agentic-systems/agentic-ui/parts/14-observability-part3.md
-    aliases: []
-    supersedes: []
-    pages: []
-  - id: copilot-enterprise-playbook-part3
-    domain: agentic-systems
-    canonical: docs/agentic-systems/coding-tools/parts/07-copilot-enterprise-playbook-part3.md
     aliases: []
     supersedes: []
     pages: []

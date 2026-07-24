@@ -663,4 +663,4 @@ main_queue = sqs.create_queue(
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/18-scalability-engineering-part2) for backpressure, autoscaling, concurrency management, multi-region deployment, GPU scheduling, connection pooling, and capacity planning.**
+**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/18-scalability-engineering-part2) for backpressure, autoscaling, concurrency management, multi-region deployment, GPU scheduling, connection pooling, and capacity planning.**

@@ -89,4 +89,6 @@ response = client.messages.create(
 - Consolidated billing across AWS Organization accounts is supported
 - AWS Budgets can trigger alerts at configurable thresholds
 
-This is a placeholder for the full content. Due to token limits, creating the complete files via bash is necessary. The split plan will guide complete reconstruction.
+---
+
+**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/34-claude-enterprise-2026-part2) for Claude Enterprise Plan, Managed Agents, Security, and Compliance. [See Part 3 →](pathname:///archon/agentic-systems/coding-tools/parts/34-claude-enterprise-2026-part3) for Guardrails, Explainability, Responsible AI, and Deployment Checklists.**

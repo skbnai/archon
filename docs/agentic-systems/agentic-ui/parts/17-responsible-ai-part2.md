@@ -17,8 +17,6 @@ Constitutional AI (CAI) applies the principle of constraining AI behavior via a 
 
 ### 5.1 Constitutional Constraints in Agent Behavior
 
-A constitutional agent operates under a hierarchy of constraints:
-
 A constitutional agent's constraint hierarchy, highest priority first:
 
 1. **Hard safety constraints (non-negotiable)**:
@@ -44,16 +42,7 @@ A constitutional agent's constraint hierarchy, highest priority first:
 
 ### 5.2 Self-Critique and Revision Loops
 
-Constitutional AI includes a self-critique mechanism where the agent evaluates its planned actions against its constitutional principles before executing:
-
-| Stage | Action | Implementation |
-| --- | --- | --- |
-| **Planning** | Agent proposes action plan | Standard agent reasoning |
-| **Constitutional review** | Agent evaluates plan against Level 1–3 principles | Programmatic or LLM-based policy check |
-| **Critique** | If violation detected: agent generates critique explaining the issue | Critique prompt template |
-| **Revision** | Agent revises plan to comply with principles | Iterative refinement |
-| **Final check** | Final plan evaluated against hard safety constraints | Rule-based check (not LLM-dependent for safety) |
-| **Execution** | Compliant plan executed | Normal execution path |
+Constitutional AI includes a self-critique mechanism where the agent evaluates planned actions against its principles before executing:
 
 ```mermaid
 flowchart TD

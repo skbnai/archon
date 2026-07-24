@@ -592,3 +592,7 @@ def request_with_backoff(
 **Ignoring Thinking Token Cost:** On Fable 5 ($50/M output), an effort level of `max` can cost several dollars per request in thinking tokens alone. Monitor `usage.output_tokens` and tune effort levels to task complexity.
 
 **Evaluating Models Only on Toy Examples:** Toy benchmark prompts do not predict production performance in your domain. Always build an eval harness with real (anonymized) production inputs before committing to a model.
+
+---
+
+**This is Part 2 of 3. [Continue with Part 3 →](pathname:///archon/agentic-systems/coding-tools/parts/35-claude-models-2026-part3) for summary and related resources.**

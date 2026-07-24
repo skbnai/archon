@@ -479,3 +479,7 @@ In addition to latency (P50/P95/P99) and throughput (requests/second), agentic b
 | **Caching** | Semantic cache | Exact cache | High query diversity; NLP domain | Deterministic queries; structured lookups |
 | **Multi-region** | Active-active | Active-passive | < 200ms global latency required; high traffic | Cost sensitive; strong consistency required; simple failover |
 | **Model hosting** | Self-hosted GPU | Provider API | > $30K/month API spend; data sovereignty | < $30K/month; no GPU team; flexibility |
+
+---
+
+**This is Part 2 of 3. [Continue with Part 3 →](pathname:///archon/agentic-systems/agentic-ui/parts/18-scalability-engineering-part3) for implementation roadmap, decision trees, and production deployment guidance.**
