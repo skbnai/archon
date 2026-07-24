@@ -5603,3 +5603,81 @@ topics:
     supersedes:
     - docs/coding-tools/claude/claude-best-practices.md
     pages: []
+  - id: claude-agents-best-practices-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: claude-best-practices-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/32-claude-best-practices-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: genaiaf-prompt-lifecycle-hotswap-research-2026-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/parts/14-genaiaf-prompt-lifecycle-hotswap-research-2026-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: github-copilot-enterprise-research-2026-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/47-github-copilot-enterprise-research-2026-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: claude-ecosystem-research-report-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/23-claude-ecosystem-research-report-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: a2a-deep-research-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/parts/17-a2a-deep-research-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentic-platform-bestpractices-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/parts/10-agentic-platform-bestpractices-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: claude-models-2026-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/35-claude-models-2026-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: scalability-engineering-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/parts/18-scalability-engineering-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: performance-engineering-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/parts/15-performance-engineering-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: claude-enterprise-2026-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/34-claude-enterprise-2026-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: observability-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/parts/14-observability-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: copilot-enterprise-playbook-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/07-copilot-enterprise-playbook-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
