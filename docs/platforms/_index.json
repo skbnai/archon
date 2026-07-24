@@ -14,7 +14,16 @@
    "word_count": 101,
    "last_reviewed": "2026-07-18",
    "status": "draft",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "operations/index",
+     "score": 0.34
+    },
+    {
+     "id": "architecture/index",
+     "score": 0.31
+    }
+   ]
   }
  ]
 }

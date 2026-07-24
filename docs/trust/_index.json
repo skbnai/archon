@@ -16,12 +16,12 @@
    "status": "draft",
    "top_similar": [
     {
-     "id": "protocols/index",
-     "score": 0.31
+     "id": "operations/index",
+     "score": 0.37
     },
     {
-     "id": "operations/index",
-     "score": 0.31
+     "id": "protocols/index",
+     "score": 0.34
     }
    ]
   }

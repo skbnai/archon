@@ -16,12 +16,16 @@
    "status": "draft",
    "top_similar": [
     {
-     "id": "trust/index",
-     "score": 0.31
+     "id": "data-knowledge/index",
+     "score": 0.34
     },
     {
      "id": "operations/index",
-     "score": 0.3
+     "score": 0.34
+    },
+    {
+     "id": "trust/index",
+     "score": 0.34
     }
    ]
   }

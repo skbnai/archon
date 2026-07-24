@@ -1,0 +1,22 @@
+{
+ "domain": "enterprise-architecture",
+ "page_count": 1,
+ "pages": [
+  {
+   "id": "enterprise-architecture/ai-architecture/index",
+   "title": "Enterprise AI Architecture",
+   "doc_type": "hub",
+   "topic_id": "enterprise-ai-architecture-hub",
+   "tags": [],
+   "word_count": 9,
+   "last_reviewed": "2026-07-24",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g",
+     "score": 0.34
+    }
+   ]
+  }
+ ]
+}
