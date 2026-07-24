@@ -14,3 +14,10 @@ bash scripts/pre_push_check.sh
 HOOK
 chmod +x "$HOOK_DIR/pre-push"
 echo "install-git-hooks: pre-push hook installed (runs scripts/pre_push_check.sh; bypass with git push --no-verify)"
+
+cat > "$HOOK_DIR/pre-commit" <<'HOOK'
+#!/usr/bin/env bash
+bash scripts/pre_commit_check.sh
+HOOK
+chmod +x "$HOOK_DIR/pre-commit"
+echo "install-git-hooks: pre-commit hook installed (runs scripts/pre_commit_check.sh; bypass with git commit --no-verify)"
