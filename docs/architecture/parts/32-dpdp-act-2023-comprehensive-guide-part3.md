@@ -1,14 +1,28 @@
 ---
 title: "DPDP Act 2023 & DPDP Rules 2025 (Part 3 of 3): Anti-Patterns, GDPR Comparison, Technology Architecture & Compliance Checklist"
 date_created: 2026-07-23
-last_reviewed: 2026-07-23
+last_reviewed: 2026-07-24
 status: current
 doc_type: guide
 domain: architecture
 topic_id: dpdp-act-2023-comprehensive-guide-part3
 supersedes: []
 tags: [compliance, data-privacy, india, governance, dpdp, anti-patterns, technology-architecture]
-covers_version: "2026"
+covers_version: "DPDP Act 2023 + DPDP Rules 2025 (as of Gazette notification G.S.R. 846(E), 13 Nov 2025); GDPR (EU) 2016/679"
+sources:
+  - url: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+    title: "Regulation (EU) 2016/679 (GDPR) — official consolidated text"
+    tier: 1
+    retrieved: 2026-07-24
+  - url: https://gdpr-info.eu/art-8-gdpr/
+    title: "Art. 8 GDPR — child's consent age (16 default, member states may lower to 13)"
+    tier: 3
+    retrieved: 2026-07-24
+  - url: https://www.dpdpa.com/dpdpa2023/chapter-2/section9.html
+    title: "DPDP Act 2023, Section 2(k) & Section 9 — child defined as under 18"
+    tier: 3
+    retrieved: 2026-07-24
+grounding_note: "GDPR comparison figures (4% of global turnover / EUR 20M penalty cap, 6 lawful bases under Article 6, Article 8 child-consent age) confirmed against the GDPR's own text. DPDP-side figures (penalty cap, child age) cross-checked against the same sources used in Parts 1-2."
 ---
 
 **Navigation**: Read [Part 1: Executive Summary, Framework & Principles](pathname:///archon/architecture/79-dpdp-act-2023-comprehensive-guide) and [Part 2: Data Discovery, DLP, Breach Notification, DPO & Penalties](pathname:///archon/architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2) before this part.
@@ -193,7 +207,7 @@ The window between today (June 2026) and enforcement (May 2027) is 11 months—e
 
 ---
 
-**Sources & References**: EY India — DPDP Act 2023 & Rules 2025 Compliance Guide; KPMG India — DPDP Act Simplified (Dec 2025); Deloitte India — DPDP Act 2023 Advisory; PwC India — DPDP Consumer Survey & Implementation Framework; MeitY — DPDP Rules 2025 Official Notification; Fisher Phillips LLP — 8-Step DPDP Compliance Plan (Feb 2026); Scrut.io — DPDP Rules 2025 Implementation Guide; CyrilAmarchand Mangaldas — DPDP Final Rules Roadmap; RecordingLaw.com — India Data Privacy Laws Complete Guide (May 2026).
+**Sources & References**: Advisory/consultancy material drawn from EY India, KPMG India, Deloitte India, PwC India, Fisher Phillips LLP, Scrut.io, CyrilAmarchand Mangaldas, and RecordingLaw.com. Regulatory dates, penalty schedule, and GDPR comparison figures independently checked on 2026-07-24 against the sources listed in this page's and Parts 1-2's frontmatter (`sources`), including one primary MeitY document and the GDPR's own consolidated text.
 
 This guide is prepared for informational and compliance planning purposes. It does not constitute legal advice. Organizations should engage qualified legal counsel for jurisdiction-specific and fact-specific DPDP compliance guidance.
 
@@ -201,4 +215,4 @@ This guide is prepared for informational and compliance planning purposes. It do
 
 **Navigation**: Read [Part 1: Executive Summary, Framework & Principles](pathname:///archon/architecture/79-dpdp-act-2023-comprehensive-guide) and [Part 2: Data Discovery, DLP, Breach Notification, DPO & Penalties](pathname:///archon/architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2).
 
-**Note**: This guide contains regulatory claims regarding Indian data protection law, penalty amounts, and compliance deadlines. All three parts require a research-grounding pass before final publication to verify citations against current DPDP Act 2023, DPDP Rules 2025, and MeitY guidance.
+**Note**: Regulatory claims in this 3-part guide were checked against multiple independent legal-press sources plus primary MeitY/GDPR documents on 2026-07-24 (see frontmatter `sources` on each part). The full Gazette/Rules primary text was not directly fetched this pass, so treat this as tier-2/3-substantiated rather than full tier-1 primary verification — a follow-up pass against the Gazette PDF directly is still recommended before this is cited as legal advice.

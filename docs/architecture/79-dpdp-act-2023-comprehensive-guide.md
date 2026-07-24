@@ -1,14 +1,36 @@
 ---
 title: "DPDP Act 2023 & DPDP Rules 2025 — Comprehensive Guide (Part 1 of 3): Executive Summary, Legislative Foundation, Framework, Principles & Rights"
 date_created: 2026-07-23
-last_reviewed: 2026-07-23
+last_reviewed: 2026-07-24
 status: current
 doc_type: guide
 domain: architecture
 topic_id: dpdp-act-2023-comprehensive-guide
 supersedes: [docs/enterprise-architecture/specialization/DPDP_Act_2023_Comprehensive_Guide.md]
 tags: [compliance, data-privacy, india, governance, dpdp]
-covers_version: "2026"
+covers_version: "DPDP Act 2023 + DPDP Rules 2025 (as of Gazette notification G.S.R. 846(E), 13 Nov 2025)"
+sources:
+  - url: https://www.meity.gov.in/static/uploads/2026/05/cd481c027470b420b4cb85fb40a91c53.pdf
+    title: "MeitY notification — Data Protection Board of India, Chairperson & Member appointments (F.No. 2(1)/2026-Pers.I)"
+    tier: 1
+    retrieved: 2026-07-24
+  - url: https://www.barandbench.com/view-point/meity-notifies-final-digital-personal-data-protection-rules-2025
+    title: "MeitY notifies final Digital Personal Data Protection Rules 2025 (Gazette G.S.R. 846(E))"
+    tier: 3
+    retrieved: 2026-07-24
+  - url: https://www.india-briefing.com/news/india-dpdp-compliance-timeline-enforcement-2026-27-44740.html/
+    title: "India's DPDP Timeline: Critical Compliance Deadlines for 2026-27"
+    tier: 3
+    retrieved: 2026-07-24
+  - url: https://www.mondaq.com/india/data-protection/1774316/indias-data-protection-board-the-enforcer-that-isnt-there-yet
+    title: "India's Data Protection Board: The Enforcer That Isn't There Yet"
+    tier: 3
+    retrieved: 2026-07-24
+  - url: https://www.dpdpa.com/dpdpa2023/chapter-2/section9.html
+    title: "DPDP Act 2023, Section 2(k) & Section 9 — child defined as under 18"
+    tier: 3
+    retrieved: 2026-07-24
+grounding_note: "Numeric/date claims corroborated across multiple independent legal-press sources plus one primary MeitY document; full Gazette primary text was not directly fetched this pass (tool access constraint) — treat as tier-2/3-substantiated, not full tier-1, until someone can verify against the Gazette PDF directly."
 ---
 
 **Navigation**: This is Part 1 of 3. Continue with [Part 2: Data Discovery, DLP, Breach Notification, DPO & Penalties](pathname:///archon/architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2) and [Part 3: Anti-Patterns, GDPR Comparison, Technology Architecture & Compliance Checklist](pathname:///archon/architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3).
@@ -21,7 +43,7 @@ Comprehensive Compliance Guide | Standards | Best Practices | Anti-Patterns | Im
 |---|---|
 | **Enacted** | August 11, 2023 (Presidential Assent) |
 | **Rules Notified** | November 13, 2025 (DPDP Rules 2025) |
-| **Full Enforcement** | May 13, 2027 |
+| **Full Enforcement** | May 14, 2027 (18 months after the Rules' Nov 13, 2025 Gazette notification; multiple compliance trackers report the 14th as the commencement date — see `covers_version`/`sources`) |
 | **Max Penalty** | ₹250 crore per violation |
 | **Guide Version** | June 2026 \| Based on EY, KPMG, Deloitte, PwC, MeitY Sources |
 
@@ -45,7 +67,7 @@ Compiled from KPMG India, EY India, Deloitte India, PwC India, MeitY, Fisher Phi
 
 ## 1. Executive Summary & Why This Matters Now
 
-**Critical Alert**: The DPDP Act 2023 is now enforceable. With penalties reaching ₹250 crore per violation and full enforcement commencing May 13, 2027, organizations operating in India have a rapidly closing window to achieve compliance. The Data Protection Board of India (DPBI) became operational in November 2025—enforcement is no longer theoretical.
+**Critical Alert**: The DPDP Act 2023 is now enforceable. With penalties reaching ₹250 crore per violation and full enforcement commencing May 14, 2027, organizations operating in India have a rapidly closing window to achieve compliance. The Data Protection Board of India (DPBI) was formally established on November 13, 2025, but its full Chairperson/Member roster was still being appointed well into 2026 (per MeitY's own appointment notifications)—confirm current DPBI operational status before treating enforcement capacity as fully staffed.
 
 India's Digital Personal Data Protection (DPDP) Act, 2023 represents the country's first comprehensive standalone data privacy law—a landmark shift from the fragmented regime under the IT Act 2000. Together with the DPDP Rules 2025 notified on November 13, 2025, it establishes a citizen-centric, enforceable framework for all digital personal data processing.
 
@@ -70,7 +92,7 @@ The DPDP Act 2023 is the culmination of nearly two decades of legislative effort
 | **2017** | Puttaswamy Judgment—Privacy declared a fundamental right (Article 21) |
 | **2018-22** | Multiple draft bills (PDP Bill 2019 withdrawn in 2022) after extensive parliamentary review |
 | **Aug 2023** | DPDP Act 2023 receives Presidential Assent—India's 1st standalone data law |
-| **Nov 2025** | DPDP Rules 2025 notified; Data Protection Board of India (DPBI) becomes operational |
+| **Nov 2025** | DPDP Rules 2025 notified; Data Protection Board of India (DPBI) formally established (full leadership appointments continued into 2026) |
 | **Nov 2026** | Phase 2: Consent Manager Framework becomes operational |
 | **May 2027** | Phase 3: Full enforcement—all obligations enforceable, no cure period |
 
@@ -240,4 +262,4 @@ Deloitte recommends early engagement with the **Consent Manager framework** (ope
 
 **Navigation**: This is Part 1 of 3. Continue with [Part 2: Data Discovery, DLP, Breach Notification, DPO & Penalties](pathname:///archon/architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2).
 
-**Note**: This guide contains regulatory claims regarding Indian data protection law, penalty amounts, and compliance deadlines. All three parts require a research-grounding pass before final publication to verify citations against current DPDP Act 2023, DPDP Rules 2025, and MeitY guidance.
+**Note**: Regulatory dates, the penalty schedule, and the GDPR comparison figures in this 3-part guide were checked against multiple independent legal-press sources plus one primary MeitY document on 2026-07-24 (see frontmatter `sources`). The full Gazette text was not directly fetched this pass, so treat this as tier-2/3-substantiated rather than full tier-1 primary verification.
