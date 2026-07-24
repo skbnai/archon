@@ -65,11 +65,11 @@ Copilot coding agent automatically uses: `copilot/issue-{N}-{slug}`. For custom 
 
 |**Agent Type**<br/>Copilot cloud agent (auto)|**Branch Pattern**<br/>`copilot/issue-{N}-{slug}`|**Example**<br/>copilot/issue-42-fix-auth-timeout|
 |---|---|---|
-|Custom fix agent|agent/fix/{issue-N}-{slug}|agent/fix/issue-42-auth-timeout|
-|Custom feature agent|agent/feat/{issue-N}-{slug}|agent/feat/issue-99-oauth-pkce|
-|Research session|agent/research/{issue-N}-{slug}|agent/research/issue-15-perf-audit|
-|Doc update agent|agent/docs/{issue-N}-{slug}|agent/docs/issue-33-api-changelog|
-|Multi-agent parallel|agent/parallel/{run-id}/{task}|agent/parallel/run-001/task-auth|
+|Custom fix agent|`agent/fix/{issue-N}-{slug}`|agent/fix/issue-42-auth-timeout|
+|Custom feature agent|`agent/feat/{issue-N}-{slug}`|agent/feat/issue-99-oauth-pkce|
+|Research session|`agent/research/{issue-N}-{slug}`|agent/research/issue-15-perf-audit|
+|Doc update agent|`agent/docs/{issue-N}-{slug}`|agent/docs/issue-33-api-changelog|
+|Multi-agent parallel|`agent/parallel/{run-id}/{task}`|agent/parallel/run-001/task-auth|
 
 ### Branch Protection Rules for Agentic Repos
 

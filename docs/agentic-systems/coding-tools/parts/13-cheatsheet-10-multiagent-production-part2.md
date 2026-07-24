@@ -174,7 +174,7 @@ Never silently produce nothing — always return something at the degraded level
 - **Citation in prose:** "Sources: [3]" in free text. Reporting agent can't parse it. Use structured citation schema.
 - **Assuming inheritance:** Subagent expected to "know" orchestrator's context. Subagents are context-blind — pass everything explicitly.
 - **Large subagent output:** Subagent returns 5000-token analysis. Orchestrator fills immediately. Enforce compact return schema.
-- **No task tracking:** No status for each doc/task. Can't retry failures. Can't resume. Always track {id, status, result, error}.
+- **No task tracking:** No status for each doc/task. Can't retry failures. Can't resume. Always track `{id, status, result, error}`.
 - **Text-based stop check:** Checking if response contains "I'm done" to terminate loop. Use stop_reason === "end_turn" — the only reliable signal.
 - **Subagent spawns subagent:** Not supported — causes silent failure. Plan agent exists for this reason. Use Agent Teams if cross-agent work needed.
 - **No checkpoint saves:** 50-doc batch fails at doc 48. Must restart from scratch. Checkpoint every 10 docs.
@@ -302,7 +302,7 @@ Output: report.docx with full citations ✓
 
 ### Reliability
 
-- ☐ Task status tracking: {id, status, result, error} for every item
+- ☐ Task status tracking: `{id, status, result, error}` for every item
 - ☐ Schema validation: All subagent returns validated before use
 - ☐ Retry logic: Max 3 retries with escalating prompt strictness
 - ☐ Graceful degradation levels: Full → Partial → Summary → Skip

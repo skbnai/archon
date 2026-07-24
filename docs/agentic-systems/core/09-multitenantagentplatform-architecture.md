@@ -318,7 +318,7 @@ Two distinct Backend-for-Frontend services handle the different channel types. M
 |---|---|---|
 |Auth flow|PKCE→Entra id_token→internal JWT|Client credentials→Entra access_token→internal JWT|
 |Session|HttpOnly session cookie, server-side session store|Stateless — no session; correlationId per call|
-|Response mode|SSE / WebSocket streaming (real-time tokens)|POST→202 jobId; GET /results/{jobId} (async polling / callback)|
+|Response mode|SSE / WebSocket streaming (real-time tokens)|`POST` → 202 jobId; `GET /results/{jobId}` (async polling / callback)|
 |Token cache|In-memory LRU keyed by session; TTL = JWT exp - 60s|Lambda memory cache; cold start re-exchanges token|
 |VPC routing|SG: only outbound to APIGW; no inbound from internet|Lambda in VPC; same SG rules|
 |Scale|ECS auto-scaling on CPU/memory; Fargate Spot for cost|Lambda concurrency reservation per tenant|
@@ -342,7 +342,7 @@ The Lambda Authorizer returns a context object with an 8 KB hard limit. A typica
 |5|JWT Token Svc→BFF|Return JWT: `{sub, tenant_id, rights_fp, exp:+900s}`. No rights in token.|0 ms|
 |6|APIGW→Lambda Authorizer|Verify RS256 signature; extract claims|0 ms|
 |7|λAuthorizer→ ElastiCache|`GET rights:{tenant_id}:{fp}` → hydrate full rights|1–2 ms|
-|8|λAuthorizer→APIGW|Return IAM Allow policy + context {tenant_id, user_id, rights_json (route-scoped)}|0 ms|
+|8|λAuthorizer→APIGW|Return IAM Allow policy + context `{tenant_id, user_id, rights_json (route-scoped)}`|0 ms|
 |9|APIGW→AgentCore|Forward request with context headers; AgentCore Identity validates OAuth Bearer|0 ms|
 
 ## 4.3 JWT Token Service — Key Implementation Details

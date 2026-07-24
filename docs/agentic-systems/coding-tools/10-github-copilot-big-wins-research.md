@@ -559,7 +559,7 @@ I Use research sessions for complex, multi-day tasks where you want to validate 
 
 I Set 'create_pr: false' when the task is exploratory or when you need to merge multiple agent outputs first
 
-I Review the implementation plan (output to a file like docs/plans/plan-{issue}.md) before the agent writes code
+I Review the implementation plan (output to a file like `docs/plans/plan-{issue}.md`) before the agent writes code
 
 I Combine with the /fleet command to research multiple approaches in parallel and pick the best one
 
