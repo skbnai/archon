@@ -50,6 +50,24 @@ Structured logs capture per-inference detail at a verbosity level not appropriat
 
 Events capture discrete semantic occurrences: model version change, safety guardrail triggered, human review escalation, circuit breaker opened, cache hit/miss. Events are attached to the trace and also emitted to an event bus for real-time alerting.
 
+```mermaid
+flowchart TB
+    A["Multimodal Workload"] --> B["Traces\nCausal Chains"]
+    A --> C["Metrics\nTime Series"]
+    A --> D["Logs\nStructured Data"]
+    A --> E["Events\nSemantic Signals"]
+    
+    B --> F["Latency Attribution"]
+    C --> G["Aggregated Views"]
+    D --> H["Quality Analysis"]
+    E --> I["Real-time Alerts"]
+    
+    F --> J["Observability Platform\nGrafana + Langfuse"]
+    G --> J
+    H --> J
+    I --> J
+```
+
 ---
 
 ## Span Types for Multimodal Pipelines

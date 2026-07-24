@@ -49,6 +49,25 @@ A multimodal judge is well-calibrated if its scores correlate with human judgmen
 
 A single LLM judge has variance that makes it unreliable for individual evaluations. An ensemble of 3–5 judges (from different model families) with majority voting or score averaging reduces variance by √N. For high-stakes model selection decisions, use a 3-judge ensemble with tie-breaking by human evaluation.
 
+```mermaid
+flowchart TD
+    A["Model Output"] --> B["Judge 1\nGPT-4o"]
+    A --> C["Judge 2\nGemini 1.5 Pro"]
+    A --> D["Judge 3\nClaude 3 Sonnet"]
+    
+    B --> E["Score + Rubric"]
+    C --> F["Score + Rubric"]
+    D --> G["Score + Rubric"]
+    
+    E --> H["Ensemble Aggregation\nMajority Voting"]
+    F --> H
+    G --> H
+    
+    H --> I{Disagreement\n> Threshold?}
+    I -->|Yes| J["Human Review"]
+    I -->|No| K["Confidence Score"]
+```
+
 ---
 
 ## Golden Dataset Construction

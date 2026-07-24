@@ -38,6 +38,27 @@ Selecting a cloud platform for enterprise multimodal AI is not a benchmark leade
 
 **Compliance:** Which certifications and regulatory frameworks does the platform satisfy? SOC2, HIPAA BAA, FedRAMP, ISO 27001, PCI DSS, and regional data residency are the baseline enterprise requirements.
 
+```mermaid
+flowchart TD
+    A["Enterprise Multimodal AI Workload"] --> B["Modality Support"]
+    A --> C["Agent Integration"]
+    A --> D["Governance"]
+    A --> E["Compliance"]
+    A --> F["Cost Model"]
+    
+    B --> G["Image/Video/Audio/Document"]
+    C --> H["Orchestration & Tool Calling"]
+    D --> I["RBAC + Audit Logging"]
+    E --> J["SOC2/HIPAA/FedRAMP"]
+    F --> K["Per-token or Per-GPU-hour"]
+    
+    G --> L["Platform Selection"]
+    H --> L
+    I --> L
+    J --> L
+    K --> L
+```
+
 ---
 
 ## Platform Deep Dives

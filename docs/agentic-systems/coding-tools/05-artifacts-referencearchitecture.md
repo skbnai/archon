@@ -161,6 +161,29 @@ This is the area requiring the most adaptation beyond GitHub's own architecture,
 
 The following synthesizes the verified GitHub patterns above into a single reference architecture, explicitly adapted for a multi-system enterprise context. This is a proposed synthesis, not a reproduction of any single GitHub-published diagram.
 
+```mermaid
+graph TD
+    A["Trigger Gate<br/>(Who can ask)"] -->|Write Access Only| B["Agent Orchestrator"]
+    B --> C["Multi-Source Retrieval"]
+    C --> D["GitHub"]
+    C --> E["Jira"]
+    C --> F["ServiceNow"]
+    C --> G["Confluence"]
+    C --> H["M365"]
+    B --> I["Tool Execution<br/>(MCP Servers)"]
+    I --> J["Self-Review Gate"]
+    J -->|Quality/Security Check| K["Automated Evaluation"]
+    K -->|Pass| L["Approval Gate<br/>(Human Review)"]
+    L -->|Approved| M["Change Application"]
+    L -->|Rejected| N["Feedback Loop"]
+    N --> B
+    M --> O["Observability Layer"]
+    O --> P["Usage Dashboards"]
+    O --> Q["Audit Logs"]
+    O --> R["Cost Attribution"]
+    O --> S["SIEM Streaming"]
+```
+
 ```
 LAYER 1: SELF-REVIEW / EVALUATION GATE
 ======================================

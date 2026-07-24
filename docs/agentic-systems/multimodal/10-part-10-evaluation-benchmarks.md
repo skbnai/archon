@@ -56,6 +56,22 @@ Enterprise evaluation strategy: automated benchmarks for regression tracking (da
 
 *Adversarial evaluation* systematically constructs inputs designed to expose model failure modes. Run quarterly or before deployment to high-stakes applications. Output: ranked list of failure modes with reproduction rate.
 
+```mermaid
+flowchart TD
+    A["Multimodal AI Model"] --> B["Regression Testing\n(Daily)"]
+    A --> C["Comparative Testing\n(Model Selection)"]
+    A --> D["Adversarial Testing\n(Quarterly)"]
+    
+    B --> E["Golden Dataset\n(Baseline)"]
+    C --> F["Statistical Significance\nN >= 500 examples"]
+    D --> G["Failure Mode\nDiscovery"]
+    
+    E --> H["Metrics Tracking"]
+    F --> H
+    G --> H
+    H --> I["Quality Report"]
+```
+
 ---
 
 ## Benchmark Taxonomy & Deep Dive

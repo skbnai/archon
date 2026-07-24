@@ -40,6 +40,24 @@ The architectural direction is clear: specialized modality models (a vision enco
 
 Training omni-modal models at scale requires solving modality interference: adding audio training data can degrade vision quality, and adding synthetic image training can degrade text reasoning. Techniques being deployed include modality-specific learning rate schedules, mixture-of-experts routing that activates modality-specific parameter sets, and continual pretraining with careful data mixing ratios. The compute cost of training omni-modal models is 5–10× that of equivalent unimodal models — concentrating frontier model development at a handful of organizations with the necessary compute infrastructure.
 
+```mermaid
+flowchart LR
+    A["Omni-Modal Foundation\nModels 2024"] --> B["Single Unified\nArchitecture"]
+    A --> C["Convergence of\nSpecialized Services"]
+    
+    B --> D["GPT-4o Audio+Vision+Text"]
+    B --> E["Gemini 2.0 Native Gen"]
+    
+    C --> F["Simplifies Integration"]
+    C --> G["Concentrates Risk"]
+    
+    D --> H["Production Simplicity"]
+    E --> H
+    
+    F --> I["Enterprise Adoption"]
+    G --> I
+```
+
 ---
 
 ## Real-Time Multimodal Agents

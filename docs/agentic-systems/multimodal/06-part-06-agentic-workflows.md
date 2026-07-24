@@ -315,8 +315,56 @@ A: MiFID II requires that investment firms record and retain all communications 
 
 ---
 
+## Applying A.R.T. to Multimodal Agentic Workflows
+
+The A.R.T. Framework (Agility · Risk · Tenacity) provides the execution backbone for delivering multimodal agentic systems. Its three pillars map directly onto the workflow lifecycle.
+
+### Agility in Multimodal Workflow Delivery
+
+Multimodal workflows evolve rapidly — new document layouts break IDP models, updated call center scripts invalidate intent classifiers, camera hardware upgrades change image resolution profiles. Agility practices prevent these from becoming production incidents:
+
+| A.R.T. Agility Practice | Multimodal Application |
+|-------------------------|------------------------|
+| *Experiment velocity* ≥ 4 experiments/sprint | Run A/B tests on OCR engines, VLM prompts, and ASR models in parallel; deploy winners to canary |
+| *Deployment frequency* — weekly or more | Treat prompt updates and tool configuration changes as deployable artifacts with CI/CD gates |
+| *Continuous Discovery* | Weekly review of human reviewer corrections to identify the highest-impact failure modes |
+| *Platform thinking* | Build internal tools that let domain experts (claims managers, radiologists) test new modality pipelines without engineering involvement |
+
+**Target KPI:** time to deploy a prompt improvement (including evaluation gates) &lt; 1 business day.
+
+### Risk in Multimodal Agent Governance
+
+Multimodal inputs expand the attack surface dramatically — adversarial images, malicious PDFs, voice-cloned audio, and deepfaked video all require specific Risk controls:
+
+| A.R.T. Risk Dimension | Multimodal Implementation |
+|-----------------------|--------------------------|
+| *Model risk* | Hallucination rate evaluation per modality; visual grounding regression tests on every deployment |
+| *Agent runtime risk* | Guardrail middleware (Azure AI Content Safety / NeMo) at every modality ingestion point; ASI01-ASI10 coverage check |
+| *Compliance risk* | EU AI Act classification for biometric modalities; GDPR consent gating before facial/voice processing |
+| *Data governance risk* | PII masking pipeline before any cross-border inference for DICOM, call recordings, ID documents |
+| *Operational risk* | Circuit breakers on VLM endpoints; fallback to lower-capability models when primary is unavailable |
+
+**Target KPI:** multimodal policy violation rate &lt; 0.5% of tool calls; mean time to contain a multimodal security incident &lt; 30 minutes.
+
+### Tenacity in Sustained Multimodal Operations
+
+The operational discipline to keep multimodal systems performant and improving is more demanding than text-only AI — model drift happens faster across modalities, GPU costs escalate without discipline, and human reviewers burn out faster on repetitive visual tasks:
+
+| A.R.T. Tenacity Dimension | Multimodal Implementation |
+|---------------------------|--------------------------|
+| *AgentOps maturity* | Per-modality latency, accuracy, and cost dashboards; alert on WER regression, OCR accuracy drop, VLM confidence distribution shift |
+| *Continuous evaluation* | Nightly regression suite across all modalities; monthly adversarial red-team evaluation |
+| *SRE practices* | SLOs per workflow (e.g., invoice STP accuracy &gt; 97.5%, P95 processing &lt; 3 min); error budgets drive when to pause feature work |
+| *Cost discipline* | Token budget per modality per session; adaptive frame sampling reduces video inference cost by 40–60% without accuracy loss |
+| *Kaizen culture* | Monthly calibration session reviewing HITL correction data; top-5 failure patterns assigned to improvement sprints |
+
+**Target KPI:** multimodal agent task success rate &gt; 90%; cost per processed claim trending down quarter-on-quarter.
+
+---
+
 ## Related
 
+- [A.R.T. Framework](../../enterprise-architecture/ai-architecture/ART-Framework-Agentic-AI-Execution.md) — execution methodology underpinning multimodal workflow delivery
 - [Part 04 — Video & Audio Intelligence](../04-part-04-modalities-video-audio.md) — audio pipelines for compliance monitoring
 - [Part 05 — Multimodal RAG](../05-part-05-multimodal-rag.md) — RAG as a tool within agentic workflows
 - [Part 07 — Security & Threat Taxonomy](../07-part-07-security-threats.md) — securing agentic multimodal systems
