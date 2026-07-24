@@ -1,14 +1,36 @@
 ---
 title: "DPDP Act 2023 & DPDP Rules 2025 (Part 2 of 3): Data Discovery, DLP, Breach Notification, DPO & Penalties"
 date_created: 2026-07-23
-last_reviewed: 2026-07-23
+last_reviewed: 2026-07-24
 status: current
 doc_type: guide
 domain: architecture
 topic_id: dpdp-act-2023-comprehensive-guide-part2
 supersedes: []
 tags: [compliance, data-privacy, india, governance, dpdp, breach-notification, penalties]
-covers_version: "2026"
+covers_version: "DPDP Act 2023 + DPDP Rules 2025 (as of Gazette notification G.S.R. 846(E), 13 Nov 2025)"
+sources:
+  - url: https://www.dpdpa.com/dpdpa2023/chapter-8/section33.html
+    title: "DPDP Act 2023, Section 33 & Schedule — penalty table"
+    tier: 3
+    retrieved: 2026-07-24
+  - url: https://www.cybernx.com/data-breach-notification-under-dpdpa/
+    title: "Data Breach Notification under DPDPA — Rule 7 Guide"
+    tier: 3
+    retrieved: 2026-07-24
+  - url: https://www.dpdpa.com/dpdparules/rule7.html
+    title: "DPDP Rules 2025, Rule 7 — breach notification requirements"
+    tier: 3
+    retrieved: 2026-07-24
+  - url: https://www.dpdpa.com/dpdparules/rule14.html
+    title: "DPDP Rules 2025, Rule 14 — Data Principal rights request timelines"
+    tier: 3
+    retrieved: 2026-07-24
+  - url: https://www.india-briefing.com/news/india-dpdp-compliance-timeline-enforcement-2026-27-44740.html/
+    title: "India's DPDP Timeline: Critical Compliance Deadlines for 2026-27"
+    tier: 3
+    retrieved: 2026-07-24
+grounding_note: "Penalty amounts confirmed across multiple independent legal-press sources (converging on the same six-tier schedule). Breach-notification timeline corrected: secondary sources describe Rule 7 as requiring the Data Fiduciary to notify the Board 'without delay' with a detailed follow-up report within 72 hours, and to notify affected Data Principals 'without delay' — not a flat 'discovery+72h' step for Data Principals as the original draft implied. Full Gazette/Rules primary text not directly fetched this pass."
 ---
 
 **Navigation**: Read [Part 1: Executive Summary, Framework & Principles](pathname:///archon/architecture/79-dpdp-act-2023-comprehensive-guide) first. After this part, continue with [Part 3: Anti-Patterns, GDPR Comparison, Technology Architecture & Compliance Checklist](pathname:///archon/architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3).
@@ -80,12 +102,15 @@ The 'reasonable security safeguards' standard requires a layered defense-in-dept
 
 ### Breach Notification Timeline
 
+Per Rule 7 of the DPDP Rules 2025, both the Board and affected Data Principals are notified **without delay** — the 72-hour clock applies specifically to the Data Fiduciary's detailed follow-up report to the Board, not to the initial Data Principal notice:
+
 | **Timeline** | **Action Required** |
 |---|---|
 | **Immediate** | Contain the breach; activate incident response team; preserve evidence |
-| **Discovery + 0h** | Notify the Data Protection Board of India (DPBI) immediately upon discovery with: nature of breach, categories affected, approximate number of Data Principals affected, likely consequences, remediation measures taken |
-| **Discovery + 72h** | Notify all affected Data Principals with: nature and extent of breach, timing and location, consequences, mitigating measures, guidance on protective action |
-| **Post-Breach** | Submit a final breach report to DPBI; conduct root cause analysis; implement systemic fixes; update incident response plan |
+| **Discovery, without delay** | Notify the Data Protection Board of India (DPBI) with initial details: nature of breach, categories affected, approximate number of Data Principals affected, likely consequences, remediation measures taken |
+| **Discovery, without delay** | Notify all affected Data Principals: nature and extent of breach, timing and location, consequences, mitigating measures, guidance on protective action |
+| **Discovery + 72h (or longer if the Board permits)** | Submit a detailed follow-up report to the DPBI: broad facts and causes, mitigation measures taken/proposed, findings on responsible parties, steps to prevent recurrence, summary of Data Principal notifications issued |
+| **Post-Breach** | Conduct root cause analysis; implement systemic fixes; update incident response plan |
 
 ### Incident Response Program — Best Practice Components
 
@@ -136,7 +161,7 @@ Unlike GDPR's percentage-of-revenue model, DPDP penalties are fixed caps per vio
 | Breach of any other provision of the Act or Rules | ₹50 crore | ~$6 million |
 | Data Principal violations (false complaints, impersonation, etc.) | ₹10,000 | ~$120 |
 
-**No Cure Period**: Unlike some global regimes, the DPDP Act does not provide a grace window to fix non-compliance before penalties are imposed. Organizations must be fully compliant before May 13, 2027. Appeals can be made to the TDSAT within 60 days, and to the Supreme Court thereafter.
+**No Cure Period**: Unlike some global regimes, the DPDP Act does not provide a grace window to fix non-compliance before penalties are imposed. Organizations must be fully compliant before May 14, 2027 (18 months after the Rules' Gazette notification). Under Section 29, appeals against a DPBI order go to the TDSAT within 60 days of the order (extendable for sufficient cause), with TDSAT expected to dispose of appeals within 6 months; further appeal lies to the Supreme Court.
 
 ## 14. Implementation Roadmap — Phase-by-Phase (2025–2027)
 
@@ -188,4 +213,4 @@ Unlike GDPR's percentage-of-revenue model, DPDP penalties are fixed caps per vio
 
 **Navigation**: Read [Part 1: Executive Summary, Framework & Principles](pathname:///archon/architecture/79-dpdp-act-2023-comprehensive-guide). Continue with [Part 3: Anti-Patterns, GDPR Comparison, Technology Architecture & Compliance Checklist](pathname:///archon/architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3).
 
-**Note**: This guide contains regulatory claims regarding Indian data protection law, penalty amounts, and compliance deadlines. All three parts require a research-grounding pass before final publication to verify citations against current DPDP Act 2023, DPDP Rules 2025, and MeitY guidance.
+**Note**: Regulatory dates, the penalty schedule, and the breach-notification timeline in this 3-part guide were checked against multiple independent legal-press sources plus one primary MeitY document on 2026-07-24 (see frontmatter `sources`). The full Gazette/Rules primary text was not directly fetched this pass, so treat this as tier-2/3-substantiated rather than full tier-1 primary verification.
