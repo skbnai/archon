@@ -1,5 +1,5 @@
 ---
-title: "Agent UX Patterns: Copilot Taxonomy & Streaming Design"
+title: "Agent UX Patterns: Copilot Taxonomy (Part 1)"
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 status: current
@@ -11,7 +11,7 @@ supersedes:
 covers_version: "as of 2026-07-10"
 ---
 
-# Agent UX Patterns: Copilot Taxonomy & Streaming Design
+# Agent UX Patterns: Copilot Taxonomy (Part 1)
 
 **Audience:** UX leads, product owners, and principal AI architects designing the human-facing layer of enterprise agentic applications.
 
@@ -267,137 +267,8 @@ Twelve canonical deployment archetypes. Every enterprise agentic application map
 
 **When to use:** The task is well-defined, repetitive, and time-consuming, human review of final output (not each step) is sufficient, risk of individual step error is low and recoverable, volume of work exceeds human capacity.
 
----
 
-## 2. Streaming UX Design
-
-Streaming is the default output mode for LLM-backed agents. Poor streaming UX is the #1 source of perceived quality regression from batch AI to agentic AI. These patterns address every dimension of streaming experience.
-
-### 2.1 Progressive Text Rendering
-
-| Rendering Mode | Behavior | When to Use | Risk |
-| ---------------- | ---------- | ------------- | ------ |
-| **Character stream** | Render every token as it arrives | Chat, conversational UX | Jitter on short tokens |
-| **Word-buffered** | Buffer until word boundary, then render | Voice transcription overlay | 50–80ms added latency |
-| **Sentence-buffered** | Hold until sentence end, flush | TTS pipelines, spoken output | Longer perceived latency |
-| **Paragraph-buffered** | Hold until double newline | Document editors, code blocks | Best for structured content |
-| **Hold-until-complete** | Never stream — wait for full response | Decision cards, structured JSON | Poor for long responses |
-| **Hybrid** | Stream prose, buffer code/tables | Mixed content (chat + code) | Complexity in render logic |
-
-**Choose Character stream when:** the response is conversational prose and user benefit of seeing words appear outweighs minor jitter of token-level rendering.
-
-**Choose Hold-until-complete when:** the output is a structured data object (JSON decision card, table) that cannot be partially rendered without confusing the user.
 
 ---
 
-### 2.2 Streaming Indicators
-
-Users need clear visibility into agent processing stages. Streaming indicator visualization shows status updates and progress tracking.
-
-**Streaming Status Dashboard:**
-- Status: "Thinking..." (animated ellipsis)
-- Stop button: Always visible during streaming
-- Step progress: "Step 1/4: Searching knowledge base" (Done), "Step 2/4: Analyzing contracts" (Running), "Step 3/4: Synthesizing findings" (Pending), "Step 4/4: Drafting recommendation" (Pending)
-- Progress bar: 52% complete (example: 192/247 documents)
-- Time estimate: "Est. 8 seconds remaining"
-
-| Indicator Type | Best For | Avoid When |
-| ---------------- | ---------- | ------------ |
-| Animated ellipsis ("Thinking...") | Short waits less than 3 seconds | Long multi-step tasks |
-| Step progress list | Multi-tool tasks | Simple single-turn responses |
-| Percentage progress bar | Tasks with known step count | Open-ended reasoning |
-| Tool call callout | Developer-facing/power users | End-user consumer apps |
-| Time estimate | Tasks greater than 15 seconds | Tasks with variable duration |
-| Spinner on input field | Embedded copilot in form | Full-page chat (too subtle) |
-
----
-
-### 2.3 Partial Result Surfacing
-
-The central streaming tension: **show work in progress** vs. **hold until complete**.
-
-| Approach | UX Benefit | UX Risk | Recommended For |
-| ---------- | ----------- | --------- | ----------------- |
-| **Show all partial output** | Fastest perceived completion | Confusing rewrites mid-stream | Chat, prose generation |
-| **Show structured skeleton first** | Sets expectations for long output | Jarring if structure changes | Reports, documents |
-| **Show partial sections as completed** | Best for long structured content | Requires section-boundary detection | Multi-section analysis |
-| **Stream reasoning separately** | Users see the agent "thinking" | Cognitive overload for non-technical | Developer tools, high-stakes analysis |
-| **Hold all, show spinner** | Clean final reveal | Longest perceived wait | Decision cards, forms, structured JSON |
-
----
-
-### 2.4 Streaming Tool Call Visualization
-
-When an agent executes tools during streaming, users need visibility without being overwhelmed.
-
-**Tool Execution Flow Example:**
-- Narrative: "Let me check the latest contract status for Acme Corp."
-- Tool: search_contracts
-  - Query: "Acme Corp renewal" (scope: last 90 days)
-  - Progress: (progress bar showing 80% filled)
-  - Result: 3 contracts found
-- Tool: get_contract_details
-  - Contract ID: CT-2024-0891
-  - Status: Fetching...
-- Final statement: "Based on the results, the renewal date is..."
-
-| Visibility Level | Shown | Audience |
-| ----------------- | ------- | ---------- |
-| **Invisible** | Nothing — seamless integration | End-user consumer apps |
-| **Minimal** | "Checking data..." generic indicator | Business user apps |
-| **Name only** | Tool name: `search_contracts` | Power users |
-| **Name + params** | Tool name + sanitized input parameters | Developer tools |
-| **Full trace** | Name + params + result + duration | Debug/audit mode |
-
----
-
-### 2.5 Cancellation UX
-
-The stop button must always be visible and functional during streaming.
-
-**Cancellation Flow:**
-- Stop button always visible during streaming
-- On user click:
-  - Generation halted immediately
-  - Partial response shown
-  - User options: [Keep partial response] [Retry with different prompt] [Discard]
-
-| Cancellation Scenario | Recommended Behavior |
-| ----------------------- | --------------------- |
-| User clicks Stop | Halt stream immediately. Show partial content. Offer Keep/Retry/Discard. |
-| User navigates away | Halt stream server-side. Do not persist partial output without user confirmation. |
-| Mid-tool-call cancel | Complete tool call if less than 1 second remaining. Abort if long-running. |
-| Cancel in approval dialog | Treat as "reject" — do not execute the pending tool call. |
-| Timeout (greater than 60s no completion) | Auto-cancel. Offer retry with context of how far it got. |
-
----
-
-### 2.6 Error Recovery During Streaming
-
-Errors during streaming require immediate, actionable feedback to the user.
-
-| Error Type | Detection Signal | UX Response |
-| ------------ | ----------------- | ------------- |
-| LLM API timeout | No tokens for greater than 30s | "The response timed out. [Retry] [Save what I have]" |
-| Rate limit hit | 429 from LLM API | "Busy right now — retrying automatically... 1/3" |
-| Tool call failure | `TOOL_CALL_END` with error | Inline tool error card with retry option |
-| Partial JSON truncation | Incomplete structured output | Attempt repair; fallback to "Unable to generate structured output — [Retry]" |
-| Context length exceeded | 400/413 from LLM API | "Conversation too long. [Summarize and continue] [Start new]" |
-| Network interruption | WebSocket/SSE disconnect | Reconnect with session ID; resume from last `MESSAGE_ID` |
-
----
-
-### 2.7 Streaming in Different Form Factors
-
-| Form Factor | Streaming Approach | Special Considerations |
-| ------------ | ------------------- | ---------------------- |
-| **Full-page chat** | Character-level streaming, left-aligned | Scroll lock: auto-scroll while streaming, release on manual scroll |
-| **Document editor** | Paragraph-buffered inline insertion | Preserve cursor position; undo stack integration required |
-| **Dashboard widget** | Hold-until-complete for KPI cards | Stream narrative summary; hold structured data |
-| **Mobile chat** | Word-buffered to reduce jitter | Battery-aware: reduce streaming frequency on low battery |
-| **Sidebar panel** | Stream into fixed-height scrollable div | Truncate at max height with "Show more" |
-| **Voice output** | Sentence-buffered → TTS | First sentence must begin TTS within 500ms for natural cadence |
-
----
-
-**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/01-agent-ux-patterns-part2) for reasoning visualization, confidence indicators, approval UX, and long-running task UX patterns.**
+**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/01-agent-ux-patterns-part2) for streaming UX design, reasoning visualization, confidence indicators, approval UX, and long-running task UX patterns.**

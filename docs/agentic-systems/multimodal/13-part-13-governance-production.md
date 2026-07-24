@@ -2,6 +2,7 @@
 title: "Part 13 — Enterprise Governance & Production Engineering for Multimodal AI"
 date_created: 2026-07-24
 date_updated: 2026-07-24
+last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 topic_id: part-13-governance-production
@@ -22,6 +23,24 @@ Technical reference for governing, hardening, and operating multimodal AI system
 ---
 
 ## Enterprise AI Governance Framework
+```mermaid
+graph TD
+    A[Enterprise AI Governance Framework] --> B[Accountability]
+    A --> C[Transparency]
+    A --> D[Control]
+    A --> E[Audit]
+    
+    B --> F[Role Definitions]
+    C --> G[Explainability Logging]
+    D --> H[Input/Output Controls]
+    E --> I[Immutable Records]
+    
+    F --> J[AI Council]
+    F --> K[Risk Owner]
+    F --> L[Model Owner]
+    F --> M[Data Owner]
+```
+
 
 ### Governance Pillars
 

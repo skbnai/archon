@@ -1,61 +1,19 @@
 ---
 title: "Claude Code CLI — Zero to Mastery 2026"
 date_created: 2026-07-24
+date_updated: 2026-07-24
 last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
-doc_type: guide
 topic_id: claude-code-complete-2026
+doc_type: guide
 supersedes:
   - ../knowledge-docs/docs/coding-tools/claude/claude-code-complete-2026.md
-sources:
-  - https://anthropic.com
-  - https://github.com/anthropics/claude-code
-tags:
-  - coding-tools
-  - claude
-  - cli
-  - agentic
 ---
 
 # Claude Code CLI — Zero to Mastery 2026
 
 Complete guide to Claude Code — from installation and first run through advanced hooks, skills, MCP integration, and CI/CD production patterns. Audience: developers new to Claude Code through advanced production users.
-
-## Claude Code Architecture Overview
-
-```mermaid
-graph TB
-    User["User Input<br/>Message/Command"]
-    
-    User --> Init["Initialize Session<br/>Load CLAUDE.md<br/>Load MCP servers"]
-    Init --> Context["Build Context<br/>Project files<br/>History<br/>Instructions"]
-    
-    Context --> Reason["Claude Reasons<br/>& Plans<br/>(with extended thinking)"]
-    Reason --> Tools["Tool Selection<br/>Read/Write/Bash/MCP"]
-    
-    Tools --> PreTool["PreToolUse Hooks<br/>Security gates<br/>Approval checks"]
-    PreTool -->|Allow| Execute["Execute Tool<br/>Sandbox"]
-    PreTool -->|Deny| Reject["Tool Blocked<br/>Report reason"]
-    
-    Execute --> PostTool["PostToolUse Hooks<br/>Auto-lint<br/>Logging"]
-    PostTool --> Continue{More work?}
-    
-    Continue -->|Yes| Reason
-    Continue -->|No| Done["Session Complete"]
-    
-    Done --> StopHook["Stop Hooks<br/>Summary<br/>Notifications"]
-    StopHook --> End["End"]
-    
-    Reject -.-> Reason
-    
-    style Init fill:#e3f2fd
-    style Context fill:#f3e5f5
-    style Reason fill:#fff3e0
-    style Tools fill:#ffe0b2
-    style Execute fill:#c8e6c9
-    style Done fill:#a5d6a7
-```
 
 ---
 
@@ -65,9 +23,29 @@ Claude Code is Anthropic's official **agentic CLI** — a command-line tool that
 
 ### The Agent Loop
 
-User message → Claude reasons and plans → Claude calls tools (read/write/bash/MCP) → Tool results returned → Claude continues reasoning → Loop until task complete or user interrupts → Final response
+```
+User message
+     │
+     ▼
+Claude reasons and produces a plan
+     │
+     ▼
+Claude calls tools (read file / write file / run command / MCP call)
+     │
+     ▼
+Tool results returned to Claude
+     │
+     ▼
+Claude continues reasoning and produces next action
+     │
+     ▼
+(loop until task complete or user interrupts)
+     │
+     ▼
+Claude produces final response
+```
 
-### What Makes It Different from Claude.ai Chat
+### What Makes It Different from Claude.ai Chat?
 
 | Feature | Claude.ai Chat | Claude Code CLI |
 | --- | --- | --- |
@@ -107,35 +85,39 @@ claude /doctor        # Runs environment diagnostics
 
 ### Authentication
 
-**Claude Subscription (Recommended):**
-```bash
-claude /login
-# Opens browser for OAuth login — no API key needed
-```
+=== "Claude Subscription (Recommended)"
 
-**API Key:**
-```bash
-export ANTHROPIC_API_KEY="sk-ant-..."
-claude
-```
+    ```bash
+    claude /login
+    # Opens browser for OAuth login — no API key needed
+    ```
 
-**AWS Bedrock:**
-```bash
-export ANTHROPIC_API_KEY="unused"
-export CLAUDE_CODE_USE_BEDROCK=1
-export AWS_REGION="us-east-1"
-# Ensure AWS credentials are configured via standard AWS methods
-claude
-```
+=== "API Key"
 
-**Google Vertex AI:**
-```bash
-export ANTHROPIC_API_KEY="unused"
-export CLAUDE_CODE_USE_VERTEX=1
-export CLOUD_ML_REGION="us-east5"
-export ANTHROPIC_VERTEX_PROJECT_ID="your-project-id"
-claude
-```
+    ```bash
+    export ANTHROPIC_API_KEY="sk-ant-..."
+    claude
+    ```
+
+=== "AWS Bedrock"
+
+    ```bash
+    export ANTHROPIC_API_KEY="unused"
+    export CLAUDE_CODE_USE_BEDROCK=1
+    export AWS_REGION="us-east-1"
+    # Ensure AWS credentials are configured via standard AWS methods
+    claude
+    ```
+
+=== "Google Vertex AI"
+
+    ```bash
+    export ANTHROPIC_API_KEY="unused"
+    export CLAUDE_CODE_USE_VERTEX=1
+    export CLOUD_ML_REGION="us-east5"
+    export ANTHROPIC_VERTEX_PROJECT_ID="your-project-id"
+    claude
+    ```
 
 ---
 
@@ -321,6 +303,9 @@ Slash commands are Claude Code's built-in interactive commands. All verified com
 | `/terminal-setup` | Configure terminal integration settings |
 | `/vim` | Toggle Vim keybindings mode |
 
+:::warning Only use verified commands
+    The commands above are the complete verified set. Do not use or document `/run`, `/exec`, `/debug`, or other commands not on this list — they do not exist in the current release.
+
 ---
 
 ## 7. Memory System
@@ -376,4 +361,256 @@ Good candidates for persistent memory:
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2) for hooks, MCP integration, custom commands, skills, permissions, CI/CD, IDE extensions, token optimization, cost controls, guardrails, and troubleshooting.**
+## 8. Hooks System
+
+Hooks are shell commands that Claude Code executes automatically at defined lifecycle points. They are configured in `settings.json` and allow you to automate reactions to Claude Code events without user input.
+
+### Hook Types
+
+| Hook Type | When It Fires | Common Uses |
+| --- | --- | --- |
+| `PreToolUse` | Before Claude calls any tool | Block dangerous commands, log intent, request confirmation |
+| `PostToolUse` | After Claude calls any tool | Log results, trigger side effects, update state |
+| `Stop` | When the agent session ends | Post-session reports, cleanup, notifications |
+| `Notification` | When Claude Code generates a notification | Alert routing, Slack/email integration |
+
+### Configuration Location
+
+Hooks are configured in `.claude/settings.json` (project-level) or `~/.claude/settings.json` (user-level):
+
+```json
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /path/to/scripts/check-dangerous-command.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /path/to/scripts/post-write-lint.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /path/to/scripts/session-summary.sh"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /path/to/scripts/notify-slack.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+### PreToolUse: Blocking Dangerous Commands
+
+A PreToolUse hook that intercepts shell commands and blocks dangerous patterns:
+
+```bash
+#!/usr/bin/env bash
+# scripts/check-dangerous-command.sh
+# Receives tool input via stdin as JSON
+
+INPUT=$(cat)
+COMMAND=$(echo "$INPUT" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('command',''))")
+
+# Block dangerous patterns
+DANGEROUS_PATTERNS=(
+    "rm -rf /"
+    "DROP TABLE"
+    "DELETE FROM.*WHERE.*1=1"
+    "chmod 777"
+    "curl.*| bash"
+)
+
+for pattern in "${DANGEROUS_PATTERNS[@]}"; do
+    if echo "$COMMAND" | grep -qi "$pattern"; then
+        echo "BLOCKED: Dangerous command pattern detected: $pattern" >&2
+        exit 1  # Non-zero exit blocks the tool call
+    fi
+done
+
+exit 0  # Zero exit allows the tool call to proceed
+```
+
+### PostToolUse: Auto-Lint After File Writes
+
+```bash
+#!/usr/bin/env bash
+# scripts/post-write-lint.sh
+# Auto-run linter after Claude writes a Python file
+
+INPUT=$(cat)
+FILE_PATH=$(echo "$INPUT" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('file_path',''))")
+
+if [[ "$FILE_PATH" == *.py ]]; then
+    ruff check "$FILE_PATH" --fix --quiet
+    echo "Linted: $FILE_PATH"
+fi
+```
+
+### Stop: Session Summary
+
+```bash
+#!/usr/bin/env bash
+# scripts/session-summary.sh
+# Log session end timestamp and trigger any cleanup
+
+echo "[$(date -u +"%Y-%m-%dT%H:%M:%SZ")] Claude Code session ended" >> ~/.claude/session-log.txt
+```
+
+### Hook Execution Rules
+
+- Hook commands receive context as JSON via `stdin`
+- `PreToolUse` hooks that exit non-zero **block the tool call**
+- `PostToolUse` and `Stop` hooks that exit non-zero log errors but do not interrupt Claude
+- Hooks time out after 30 seconds by default
+- Hook output goes to stderr; it is visible in the terminal but not sent to Claude
+
+---
+
+## 9. MCP Integration
+
+Model Context Protocol (MCP) allows Claude Code to connect to external servers that expose tools, resources, and prompts. This extends Claude's capabilities beyond the built-in file system and shell tools.
+
+### MCP Configuration
+
+MCP servers are configured in `.claude/mcp.json` (project level) or via the `/mcp` command:
+
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/allowed/path"],
+      "env": {}
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres"],
+      "env": {
+        "POSTGRES_CONNECTION_STRING": "${DATABASE_URL}"
+      }
+    },
+    "custom-internal": {
+      "command": "python3",
+      "args": ["/path/to/your/mcp_server.py"],
+      "env": {
+        "API_KEY": "${INTERNAL_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+### Managing MCP Servers in Session
+
+```bash
+/mcp              # List all configured MCP servers and their status
+/mcp list         # Same as above
+```
+
+### Using MCP Tools in Chat
+
+Once connected, MCP tools appear as callable tools in Claude's tool list. Reference them naturally:
+
+```
+> Use the GitHub MCP server to list open pull requests in the main repository.
+> Query the postgres server for the count of users created in the last 7 days.
+```
+
+### Writing a Minimal MCP Server
+
+```python
+#!/usr/bin/env python3
+"""Minimal MCP server exposing a custom tool."""
+
+import json
+import sys
+
+def handle_list_tools() -> dict:
+    return {
+        "tools": [
+            {
+                "name": "get_deployment_status",
+                "description": "Get the current deployment status for a service",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "service_name": {
+                            "type": "string",
+                            "description": "Name of the service to check"
+                        }
+                    },
+                    "required": ["service_name"]
+                }
+            }
+        ]
+    }
+
+def handle_call_tool(name: str, arguments: dict) -> dict:
+    if name == "get_deployment_status":
+        service = arguments["service_name"]
+        # Implement real lookup here
+        return {"content": [{"type": "text", "text": f"{service}: healthy (v2.1.4)"}]}
+    raise ValueError(f"Unknown tool: {name}")
+
+# MCP server reads JSON-RPC from stdin and writes to stdout
+for line in sys.stdin:
+    try:
+        request = json.loads(line)
+        method = request.get("method")
+        if method == "tools/list":
+            result = handle_list_tools()
+        elif method == "tools/call":
+            result = handle_call_tool(
+                request["params"]["name"],
+                request["params"].get("arguments", {})
+            )
+        else:
+            result = {}
+        print(json.dumps({"jsonrpc": "2.0", "id": request.get("id"), "result": result}))
+        sys.stdout.flush()
+    except Exception as e:
+        print(json.dumps({"jsonrpc": "2.0", "id": None, "error": {"message": str(e)}}))
+        sys.stdout.flush()
+```
+
+For a full MCP deep-dive including server types, resources, and prompts primitives, see [MCP Deep Guide](mcp-deep-guide.md).
+
+---
+
+
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2) for custom slash commands, skills, permissions, CI/CD integration, IDE extensions, token optimization, cost controls, guardrails, human-in-the-loop patterns, best practices, antipatterns, and troubleshooting.**
