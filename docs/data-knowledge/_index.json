@@ -17,7 +17,7 @@
    "top_similar": [
     {
      "id": "protocols/index",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "agentic-systems/index",
@@ -25,7 +25,7 @@
     },
     {
      "id": "operations/index",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   }

@@ -1,16 +1,4 @@
 # Temporary entries for work-in-progress.
 # The librarian agent will merge these into the main registry upon completion.
 version: 1
-topics:
-  - id: agentic_ai_landing_zone_context_engineering
-    domain: agentic-systems
-    canonical: docs/ai-foundations/agentic_ai_landing_zone_context_engineering.md
-  - id: ai-foundations-hub
-    domain: agentic-systems
-    canonical: docs/ai-foundations/index.md
-  - id: ai-security-governance-hub
-    domain: trust
-    canonical: docs/ai-security-governance/index.md
-  - id: enterprise-ai-architecture-hub
-    domain: architecture
-    canonical: docs/enterprise-architecture/ai-architecture/index.md
+topics: []

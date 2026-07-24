@@ -118,5 +118,5 @@ Scale: Stage 1–3 runs on CPU-based containers at ~200 documents/second per pod
 
 - [Part 7 — Security & Threat Taxonomy](../07-part-07-security-threats.md) — adversarial attacks and threat modeling for multimodal systems
 - [Part 9 — Compliance & Responsible AI](../09-part-09-compliance-responsible-ai.md) — regulatory requirements for multimodal guardrail systems
-- [AI Security Governance](../../../ai-security-governance/index.md) — enterprise security controls and governance frameworks
+- [Trust Hub](../../../trust/index.md) — enterprise security controls and governance frameworks
 - [Enterprise AI Architecture Patterns](../../../architecture/49-enterprise-ai-architecture-patterns.md) — architectural patterns including guardrail middleware

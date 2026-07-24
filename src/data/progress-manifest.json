@@ -1,11 +1,943 @@
 {
   "agentic-systems": {
     "label": "Agentic Systems",
-    "totalPages": 1,
+    "totalPages": 234,
     "pages": [
+      {
+        "id": "agentic-systems/agentic-ui/01-agent-ux-patterns",
+        "title": "Agent UX Patterns: Copilot Taxonomy"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/02-agui-standards-landscape",
+        "title": "AGUI Standards & Ecosystem Landscape"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/03-anti-patterns",
+        "title": "Reference Architecture"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/04-application-lifecycle",
+        "title": "Agentic Application Lifecycle"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/05-context-engineering",
+        "title": "Context Engineering for Agentic Applications"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/06-decision-frameworks",
+        "title": "Decision Frameworks"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/07-devsecops",
+        "title": "DevSecOps for Agentic Applications"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/08-enterprise-reference-architecture",
+        "title": "Enterprise Reference Architecture"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/09-evolution-human-ai-interfaces",
+        "title": "Evolution of Human-AI Interfaces"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/10-future-outlook",
+        "title": "Future Outlook: Agentic UI 2026–2030"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/11-governance",
+        "title": "Reference Architecture"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
+        "title": "Identity & Auth Architecture"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/13-industry-reference-architectures",
+        "title": "Industry Reference Architectures for Agentic Applications — Part 1 of 2"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/14-observability",
+        "title": "Reference Architecture"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/15-performance-engineering",
+        "title": "Performance Engineering for Agentic Applications"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/16-reliability-engineering",
+        "title": "Reliability Engineering for Agentic Applications"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/17-responsible-ai",
+        "title": "Responsible AI for Agentic Applications"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/18-scalability-engineering",
+        "title": "Scalability Engineering for Agentic Applications"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/19-agentic-ui-security-architecture",
+        "title": "Security Architecture"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/01-agent-ux-patterns-part2",
+        "title": "Agent UX Patterns: Streaming & Reasoning (Part 2)"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/01-agent-ux-patterns-part3",
+        "title": "Agent UX Patterns: Approval & Long-running Tasks (Part 3)"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/02-agui-standards-landscape-part2",
+        "title": "AGUI Standards & Ecosystem Landscape: NLWeb & OpenAI (Part 2)"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/02-agui-standards-landscape-part3",
+        "title": "AGUI Standards & Ecosystem Landscape: Framework Comparison (Part 3)"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/03-anti-patterns-part2",
+        "title": "Reference Architecture"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/04-application-lifecycle-part2",
+        "title": "Agentic Application Lifecycle — Part 2"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/04-application-lifecycle-part3",
+        "title": "Agentic Application Lifecycle — Part 3"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part2",
+        "title": "Evolution of Human-AI Interfaces — Part 2"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part3",
+        "title": "Evolution of Human-AI Interfaces — Part 3"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/10-future-outlook-part2",
+        "title": "Future Outlook: Agentic UI 2026–2030 — Part 2: Enterprise Architecture, Risks, and Recommendations"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/11-governance-part2",
+        "title": "Reference Architecture"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/13-industry-reference-architectures-part2",
+        "title": "Industry Reference Architectures for Agentic Applications — Part 2 of 2: Government, Telecom, Knowledge Management, and Life Sciences"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/14-observability-part2",
+        "title": "Reference Architecture"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/15-performance-engineering-part2",
+        "title": "Performance Engineering for Agentic Applications — Part 2"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/15-performance-engineering-part3",
+        "title": "Performance Engineering for Agentic Applications — Part 3"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/16-reliability-engineering-part2",
+        "title": "Reliability Engineering for Agentic Applications — Part 2"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/16-reliability-engineering-part3",
+        "title": "Reliability Engineering for Agentic Applications — Part 3"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/17-responsible-ai-part2",
+        "title": "Responsible AI for Agentic Applications — Part 2"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/17-responsible-ai-part3",
+        "title": "Responsible AI for Agentic Applications — Part 3"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/18-scalability-engineering-part2",
+        "title": "Scalability Engineering for Agentic Applications (Part 2)"
+      },
+      {
+        "id": "agentic-systems/agentic-ui/parts/18-scalability-engineering-part3",
+        "title": "Scalability Engineering for Agentic Applications (Part 3)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/01-cicd-secrets-security",
+        "title": "CI/CD Architecture, Secrets & Supply Chain Security"
+      },
+      {
+        "id": "agentic-systems/coding-tools/02-security-governance",
+        "title": "Security Architecture & Enterprise AI Governance (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/03-cicd-observability-scaling",
+        "title": "AI-Assisted CI/CD & Observability (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/04-enterprise-apis-apps-cli",
+        "title": "Enterprise GitHub, APIs & Apps (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/05-artifacts-referencearchitecture",
+        "title": "Engineering Artifacts & Enterprise Reference Architecture"
+      },
+      {
+        "id": "agentic-systems/coding-tools/06-ecosystem-patterns-labs",
+        "title": "Ecosystem & Enterprise Patterns (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/07-copilot-enterprise-playbook",
+        "title": "GitHub Copilot AI Credits Enterprise Mastery Guide"
+      },
+      {
+        "id": "agentic-systems/coding-tools/08-copilotkit-mcp-apps-vs-tools",
+        "title": "CopilotKit MCP Apps vs Tools — EU Bank Design Decision"
+      },
+      {
+        "id": "agentic-systems/coding-tools/09-git-github-platform-engineering-handbook",
+        "title": "Git, GitHub Platform & Platform Engineering Handbook"
+      },
+      {
+        "id": "agentic-systems/coding-tools/10-github-copilot-big-wins-research",
+        "title": "GitHub Copilot Big Wins & Automation Research Playbook"
+      },
+      {
+        "id": "agentic-systems/coding-tools/11-github-copilot-zero-to-hero",
+        "title": "GitHub Copilot Zero to Hero"
+      },
+      {
+        "id": "agentic-systems/coding-tools/12-microsoft-apm-guide",
+        "title": "Microsoft APM — Zero to Mastery"
+      },
+      {
+        "id": "agentic-systems/coding-tools/13-cheatsheet-10-multiagent-production",
+        "title": "Multi-Agent Production Patterns"
+      },
+      {
+        "id": "agentic-systems/coding-tools/14-cheatsheet-11-mcp-pipeline-errors",
+        "title": "MCP Pipeline Error & Context Handling"
+      },
+      {
+        "id": "agentic-systems/coding-tools/15-cheatsheet-1-claude-code",
+        "title": "Claude Code Cheat Sheet"
+      },
+      {
+        "id": "agentic-systems/coding-tools/16-cheatsheet-2-agent-sdk",
+        "title": "Agent SDK Cheat Sheet"
+      },
+      {
+        "id": "agentic-systems/coding-tools/17-cheatsheet-3-mcp",
+        "title": "MCP Cheat Sheet"
+      },
+      {
+        "id": "agentic-systems/coding-tools/18-cheatsheet-4-ai-fluency",
+        "title": "AI Fluency Cheat Sheet"
+      },
+      {
+        "id": "agentic-systems/coding-tools/19-cheatsheet-5-prompt-engineering",
+        "title": "Prompt Engineering Cheat Sheet"
+      },
+      {
+        "id": "agentic-systems/coding-tools/20-cheatsheet-6-claude-cli",
+        "title": "Claude CLI Cheat Sheet"
+      },
+      {
+        "id": "agentic-systems/coding-tools/21-cheatsheet-7-claude-ecosystem",
+        "title": "Claude Ecosystem Cheat Sheet"
+      },
+      {
+        "id": "agentic-systems/coding-tools/22-cheatsheet-9-agents-parallelism",
+        "title": "Claude Code Agents & Parallelism"
+      },
+      {
+        "id": "agentic-systems/coding-tools/23-claude-ecosystem-research-report",
+        "title": "Claude Ecosystem Research Report"
+      },
+      {
+        "id": "agentic-systems/coding-tools/24-module-1-claude-foundations",
+        "title": "Claude Foundations & Ecosystem Overview (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/25-module-3-prompt-engineering",
+        "title": "Prompt Engineering & Optimization — Complete Reference"
+      },
+      {
+        "id": "agentic-systems/coding-tools/26-module-4-mcp",
+        "title": "Model Context Protocol (MCP) — Complete Reference"
+      },
+      {
+        "id": "agentic-systems/coding-tools/27-module-5-claude-code-agents",
+        "title": "Claude Code, Hooks, Skills & Subagents"
+      },
+      {
+        "id": "agentic-systems/coding-tools/28-module-6-claude-workflows",
+        "title": "Claude Dynamic Workflows — Complete Guide"
+      },
+      {
+        "id": "agentic-systems/coding-tools/29-module-7-safety-enterprise-exam",
+        "title": "Safety, Enterprise Deployment & CCA-F Exam Prep (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/30-claude-agent-sdk-production",
+        "title": "Claude Agent SDK — Production Reference"
+      },
+      {
+        "id": "agentic-systems/coding-tools/31-claude-api-mastery",
+        "title": "Claude API Mastery"
+      },
+      {
+        "id": "agentic-systems/coding-tools/32-claude-best-practices",
+        "title": "Claude Architect Foundations: Best Practices & Anti-Patterns Guide — Part 1"
+      },
+      {
+        "id": "agentic-systems/coding-tools/33-claude-code-complete-2026",
+        "title": "Claude Code CLI — Zero to Mastery 2026"
+      },
+      {
+        "id": "agentic-systems/coding-tools/34-claude-enterprise-2026",
+        "title": "Claude Enterprise Deployment 2026"
+      },
+      {
+        "id": "agentic-systems/coding-tools/35-claude-models-2026",
+        "title": "Claude Models 2026 — Complete Reference"
+      },
+      {
+        "id": "agentic-systems/coding-tools/36-claude-agents-best-practices",
+        "title": "Claude & GitHub Agents: Best Practices Guide (v2) — Part 1"
+      },
+      {
+        "id": "agentic-systems/coding-tools/37-claude-routines-guide",
+        "title": "Claude Routines — Complete Help Guide (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/38-constitutional-ai-safety-2026",
+        "title": "Constitutional AI & Safety 2026"
+      },
+      {
+        "id": "agentic-systems/coding-tools/39-mcp-deep-guide",
+        "title": "MCP Deep Guide — Server Development & Enterprise Integration"
+      },
+      {
+        "id": "agentic-systems/coding-tools/40-prompt-engineering-claude-4",
+        "title": "Prompt Engineering for Claude 4.x"
+      },
+      {
+        "id": "agentic-systems/coding-tools/41-ruflo-agentic-ai-guide",
+        "title": "Multi-Agent Orchestration — claude-flow & Beyond (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/42-pr-review-handbook-vol1-traditional-review",
+        "title": "THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/43-pr-review-handbook-vol2-deep-domain-reviews",
+        "title": "THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/44-pr-review-handbook-vol3-ai-assisted-review",
+        "title": "THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/45-pr-review-handbook-vol4-agentic-review-architecture",
+        "title": "THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/46-pr-review-handbook-vol5-case-studies-maturity-model",
+        "title": "THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/47-github-copilot-enterprise-research-2026",
+        "title": "GitHub Copilot Enterprise Agent Platform"
+      },
+      {
+        "id": "agentic-systems/coding-tools/48-git-internals",
+        "title": "Git Internals"
+      },
+      {
+        "id": "agentic-systems/coding-tools/49-vision-copilot-architecture-repointelligence",
+        "title": "AI Vision, Copilot Architecture & Repository Intelligence"
+      },
+      {
+        "id": "agentic-systems/coding-tools/50-github-architecture-and-actions",
+        "title": "GitHub Architecture & Actions Deep Dive"
+      },
+      {
+        "id": "agentic-systems/coding-tools/51-rag-agents-models-platform",
+        "title": "RAG Architecture, Agent Comparisons & GitHub Models"
+      },
+      {
+        "id": "agentic-systems/coding-tools/52-runners-and-runtime",
+        "title": "GitHub Actions Runners & Runtime"
+      },
+      {
+        "id": "agentic-systems/coding-tools/53-marketplace-pages-packages",
+        "title": "Marketplace, Pages, Wiki, Releases & Packages"
+      },
+      {
+        "id": "agentic-systems/coding-tools/54-prompts-evaluation-spark-infrastructure",
+        "title": "Prompt Engineering, Evaluation, Spark & AI Infrastructure"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/02-security-governance-part2",
+        "title": "Security Architecture & Enterprise AI Governance (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/03-cicd-observability-scaling-part2",
+        "title": "Scaling Challenges (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/04-enterprise-apis-apps-cli-part2",
+        "title": "GitHub CLI & Enterprise Automation (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/06-ecosystem-patterns-labs-part2",
+        "title": "Hidden Features, Labs & Interview Q&A (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/07-copilot-enterprise-playbook-part2",
+        "title": "100 Anti-Patterns & Enterprise Roadmap: GitHub Copilot at Scale"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/09-git-github-platform-engineering-handbook-part2",
+        "title": "Git, GitHub Platform & Platform Engineering Handbook — Part 2: Platform Depth & CI/CD"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/09-git-github-platform-engineering-handbook-part3",
+        "title": "Git, GitHub Platform & Platform Engineering Handbook — Part 3: Security, Quality & Governance"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/09-git-github-platform-engineering-handbook-part4",
+        "title": "Git, GitHub Platform & Platform Engineering Handbook — Part 4: Enterprise Scale, Governance & Metrics"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/10-github-copilot-big-wins-research-part2",
+        "title": "GitHub Copilot Big Wins & Automation Research Playbook — Part 2"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part2",
+        "title": "Chat, Agents, MCP, Code Review, Billing"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part3",
+        "title": "Enterprise Features, Optimization, Guardrails, Explainability, HITL"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part4",
+        "title": "RAI, Best Practices, Antipatterns, Shortcuts, Troubleshooting"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/13-cheatsheet-10-multiagent-production-part2",
+        "title": "Multi-Agent Production Patterns — Part 2"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/14-cheatsheet-11-mcp-pipeline-errors-part2",
+        "title": "MCP Pipeline Error & Context Handling — Part 2"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/23-claude-ecosystem-research-report-part2",
+        "title": "Claude Ecosystem Research Report (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/24-module-1-claude-foundations-part2",
+        "title": "Claude Foundations & Ecosystem Overview (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/29-module-7-safety-enterprise-exam-part2",
+        "title": "Safety, Enterprise Deployment & CCA-F Exam Prep (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/30-claude-agent-sdk-production-part2",
+        "title": "Claude Agent SDK — Production Reference (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/30-claude-agent-sdk-production-part3",
+        "title": "Claude Agent SDK — Production Reference (Part 3)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/32-claude-best-practices-part2",
+        "title": "Claude Architect Foundations: Best Practices & Anti-Patterns Guide — Part 2"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/32-claude-best-practices-part3",
+        "title": "Claude Architect Foundations: Best Practices & Anti-Patterns Guide — Part 3"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2",
+        "title": "Claude Code CLI — Zero to Mastery 2026 (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/34-claude-enterprise-2026-part2",
+        "title": "Claude Enterprise Deployment 2026 — Part 2"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/34-claude-enterprise-2026-part3",
+        "title": "Claude Enterprise Deployment 2026 — Part 3"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/35-claude-models-2026-part2",
+        "title": "Claude Models 2026 — Complete Reference (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/35-claude-models-2026-part3",
+        "title": "Claude Models 2026 — Complete Reference (Part 3)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part2",
+        "title": "Claude & GitHub Agents: Best Practices Guide (v2) — Part 2"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part3",
+        "title": "Claude & GitHub Agents: Best Practices Guide (v2) — Part 3"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/37-claude-routines-guide-part2",
+        "title": "Claude Routines — Design Patterns & Reference (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/38-constitutional-ai-safety-2026-part2",
+        "title": "Constitutional AI & Safety 2026 — Part 2"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/39-mcp-deep-guide-part2",
+        "title": "MCP Deep Guide — Enterprise Deployment & Operations (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/40-prompt-engineering-claude-4-part2",
+        "title": "Prompt Engineering for Claude 4.x (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/41-ruflo-agentic-ai-guide-part2",
+        "title": "Multi-Agent Orchestration — claude-flow & Beyond (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/42-pr-review-handbook-vol1-traditional-review-part2",
+        "title": "THE ENTERPRISE PR REVIEW PLAYBOOK (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/42-pr-review-handbook-vol1-traditional-review-part3",
+        "title": "THE ENTERPRISE PR REVIEW PLAYBOOK (Part 3)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/43-pr-review-handbook-vol2-deep-domain-reviews-part2",
+        "title": "THE ENTERPRISE PR REVIEW PLAYBOOK (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/44-pr-review-handbook-vol3-ai-assisted-review-part2",
+        "title": "THE ENTERPRISE PR REVIEW PLAYBOOK (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/45-pr-review-handbook-vol4-agentic-review-architecture-part2",
+        "title": "THE ENTERPRISE PR REVIEW PLAYBOOK (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/46-pr-review-handbook-vol5-case-studies-maturity-model-part2",
+        "title": "THE ENTERPRISE PR REVIEW PLAYBOOK (Part 2)"
+      },
+      {
+        "id": "agentic-systems/coding-tools/parts/47-github-copilot-enterprise-research-2026-part2",
+        "title": "GitHub Copilot Enterprise Agent Platform (Part 2)"
+      },
+      {
+        "id": "agentic-systems/core/01-agent-skill-anatomy-metadata-schema",
+        "title": "Skill Anatomy & Metadata Schema"
+      },
+      {
+        "id": "agentic-systems/core/02-enterprise-agentic-ai-config-management-2026",
+        "title": "Enterprise Configuration & Parameter Management for Agentic AI Platforms on AWS"
+      },
+      {
+        "id": "agentic-systems/core/03-harness-bestpractices-antipatterns-roadmap",
+        "title": "Harness Best Practices, Anti-Patterns & Roadmap"
+      },
+      {
+        "id": "agentic-systems/core/04-harness-engineering-ai-agents-and-vendor-landscape",
+        "title": "Harness Engineering AI Agents & Vendor Landscape"
+      },
+      {
+        "id": "agentic-systems/core/05-harness-engineering-research-report",
+        "title": "Harness Engineering Research Report (Part 1 of 2)"
+      },
+      {
+        "id": "agentic-systems/core/06-harness-security-supplychain-observability",
+        "title": "Harness Security, Supply Chain & Observability"
+      },
+      {
+        "id": "agentic-systems/core/07-ai-memory-agent-innovations-research-report",
+        "title": "AI Memory Agent Innovations Research Report (Part 1 of 2)"
+      },
+      {
+        "id": "agentic-systems/core/08-enterprise-promptops-aws-agentcore-2026",
+        "title": "Enterprise PromptOps: Prompt Lifecycle Management for AWS AgentCore Runtime"
+      },
+      {
+        "id": "agentic-systems/core/09-multitenantagentplatform-architecture",
+        "title": "Multi-Tenant Agent Platform Architecture"
+      },
+      {
+        "id": "agentic-systems/core/10-agentic-platform-bestpractices",
+        "title": "Enterprise Agentic Platform Best Practices"
+      },
+      {
+        "id": "agentic-systems/core/11-ai-msf-requirements-runbook",
+        "title": "AI-Assisted Microservice Development Framework"
+      },
+      {
+        "id": "agentic-systems/core/12-ai-platform-factory-runbook",
+        "title": "AI Platform Factory Production Runbook"
+      },
+      {
+        "id": "agentic-systems/core/13-enterprise-agentic-ai-asset-management-2026",
+        "title": "Enterprise Agentic AI Asset Management 2026"
+      },
+      {
+        "id": "agentic-systems/core/14-genaiaf-prompt-lifecycle-hotswap-research-2026",
+        "title": "GENAIAF-559: Prompt Lifecycle, Versioning & Hot-Swap Research 2026"
+      },
+      {
+        "id": "agentic-systems/core/15-executive-summary-and-reference-architecture",
+        "title": "Agent Skills for AI Coding Assistants — Executive Summary & Reference Architecture"
+      },
+      {
+        "id": "agentic-systems/core/16-agent-skills-complete-playbook-2026",
+        "title": "Agent Skills & Skill Registries — Complete Playbook 2026 (Part 1)"
+      },
+      {
+        "id": "agentic-systems/core/17-a2a-deep-research",
+        "title": "A2A Protocol: Deep Research & Critical Analysis"
+      },
+      {
+        "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
+        "title": "Foundations: What Is a Coding Skill?"
+      },
+      {
+        "id": "agentic-systems/core/19-discovery-and-execution-lifecycle",
+        "title": "Skill Discovery & Execution Lifecycle"
+      },
+      {
+        "id": "agentic-systems/core/20-skills-tools-mcp-relationship",
+        "title": "Skills vs. MCP & the Full Responsibility Stack"
+      },
+      {
+        "id": "agentic-systems/core/21-tool-definitions-and-instructions-engineering",
+        "title": "Tool Definitions & Instructions Engineering"
+      },
+      {
+        "id": "agentic-systems/core/22-repository-context-engineering",
+        "title": "Repository Context Engineering"
+      },
+      {
+        "id": "agentic-systems/core/23-vscode-devcontainers-integration",
+        "title": "VS Code & Dev Containers Integration"
+      },
+      {
+        "id": "agentic-systems/core/24-mcp-integration-and-memory",
+        "title": "MCP Integration & Memory"
+      },
+      {
+        "id": "agentic-systems/core/25-multi-agent-and-observability",
+        "title": "Multi-Agent Skills & Observability"
+      },
+      {
+        "id": "agentic-systems/core/26-governance-and-security",
+        "title": "Governance & Security"
+      },
+      {
+        "id": "agentic-systems/core/27-evaluation-reusability-deduplication",
+        "title": "Evaluation, Reusability & Deduplication"
+      },
+      {
+        "id": "agentic-systems/core/28-enterprise-workflows-comparative-analysis-and-patterns",
+        "title": "Enterprise Workflows & Comparative Analysis"
+      },
+      {
+        "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
+        "title": "Foundations: What Is an Agent Skill?"
+      },
+      {
+        "id": "agentic-systems/core/30-execution-lifecycle-and-tracing",
+        "title": "Skill Execution Lifecycle & Tracing"
+      },
+      {
+        "id": "agentic-systems/core/31-skills-tools-mcp-a2a-relationship",
+        "title": "Skills, Tools, MCP & A2A Relationship"
+      },
+      {
+        "id": "agentic-systems/core/32-tool-definition-best-practices",
+        "title": "Tool Definition Best Practices"
+      },
+      {
+        "id": "agentic-systems/core/33-registry-discovery-and-deduplication",
+        "title": "Registry, Discovery & Deduplication"
+      },
+      {
+        "id": "agentic-systems/core/34-composition-and-instructions-engineering",
+        "title": "Skill Composition & Instructions Engineering"
+      },
+      {
+        "id": "agentic-systems/core/35-observability-and-evaluation",
+        "title": "Observability & Evaluation"
+      },
+      {
+        "id": "agentic-systems/core/36-agent-skills-security-architecture",
+        "title": "Security Architecture"
+      },
+      {
+        "id": "agentic-systems/core/37-governance-and-lifecycle",
+        "title": "Governance & Lifecycle"
+      },
+      {
+        "id": "agentic-systems/core/38-architecture-patterns-antipatterns-and-case-studies",
+        "title": "Architecture Patterns, Anti-Patterns & Case Studies"
+      },
+      {
+        "id": "agentic-systems/core/parts/02-enterprise-agentic-ai-config-management-2026-part2",
+        "title": "Enterprise Configuration & Parameter Management (Part 2): Runtime Patterns & Features"
+      },
+      {
+        "id": "agentic-systems/core/parts/02-enterprise-agentic-ai-config-management-2026-part3",
+        "title": "Enterprise Configuration & Parameter Management (Part 3): Governance & Operations"
+      },
+      {
+        "id": "agentic-systems/core/parts/08-enterprise-promptops-aws-agentcore-2026-part2",
+        "title": "Enterprise PromptOps (Part 2): Architecture, Integration & Implementation"
+      },
+      {
+        "id": "agentic-systems/core/parts/10-agentic-platform-bestpractices-part2",
+        "title": "Enterprise Agentic Platform Best Practices — Part 2"
+      },
+      {
+        "id": "agentic-systems/core/parts/10-agentic-platform-bestpractices-part3",
+        "title": "Enterprise Agentic Platform Best Practices — Part 3"
+      },
+      {
+        "id": "agentic-systems/core/parts/13-enterprise-agentic-ai-asset-management-2026-part2",
+        "title": "Enterprise Agentic AI Asset Management 2026 — Part 2"
+      },
+      {
+        "id": "agentic-systems/core/parts/13-enterprise-agentic-ai-asset-management-2026-part3",
+        "title": "Enterprise Agentic AI Asset Management 2026 — Part 3"
+      },
       {
         "id": "agentic-systems/index",
         "title": "Agentic Systems Hub"
+      },
+      {
+        "id": "agentic-systems/multimodal/01-part-01-foundations",
+        "title": "Part 1 — Foundations of Multimodal AI"
+      },
+      {
+        "id": "agentic-systems/multimodal/02-part-02-enterprise-architecture",
+        "title": "Part 2 — Enterprise Multimodal Agent Architecture"
+      },
+      {
+        "id": "agentic-systems/multimodal/03-part-03-modalities-image-document",
+        "title": "Part 3 — Image & Document Intelligence"
+      },
+      {
+        "id": "agentic-systems/multimodal/04-part-04-modalities-video-audio",
+        "title": "Part 04 — Video & Audio Intelligence"
+      },
+      {
+        "id": "agentic-systems/multimodal/05-part-05-multimodal-rag",
+        "title": "Part 05 — Multimodal RAG"
+      },
+      {
+        "id": "agentic-systems/multimodal/06-part-06-agentic-workflows",
+        "title": "Part 06 — Multimodal Agentic Workflows"
+      },
+      {
+        "id": "agentic-systems/multimodal/07-part-07-security-threats",
+        "title": "Part 07 — Security & Threat Taxonomy for Multimodal AI"
+      },
+      {
+        "id": "agentic-systems/multimodal/08-part-08-guardrails-sanitization",
+        "title": "Part 8 — Guardrails & Sanitization for Multimodal AI"
+      },
+      {
+        "id": "agentic-systems/multimodal/09-part-09-compliance-responsible-ai",
+        "title": "Part 9 — Compliance & Responsible AI for Multimodal Systems"
+      },
+      {
+        "id": "agentic-systems/multimodal/10-part-10-evaluation-benchmarks",
+        "title": "Part 10 — Evaluation & Benchmarks for Multimodal AI"
+      },
+      {
+        "id": "agentic-systems/multimodal/11-part-11-evaluation-harnesses-cicd",
+        "title": "Part 11 — Evaluation Harnesses & CI/CD for Multimodal AI"
+      },
+      {
+        "id": "agentic-systems/multimodal/12-part-12-observability-finops",
+        "title": "Part 12 — Observability & FinOps for Multimodal AI"
+      },
+      {
+        "id": "agentic-systems/multimodal/13-part-13-governance-production",
+        "title": "Part 13 — Enterprise Governance & Production Engineering for Multimodal AI"
+      },
+      {
+        "id": "agentic-systems/multimodal/14-part-14-cloud-platform-comparison",
+        "title": "Part 14 — Cloud Platform Comparison for Multimodal AI"
+      },
+      {
+        "id": "agentic-systems/multimodal/15-part-15-emerging-trends-bibliography",
+        "title": "Part 15 — Emerging Trends & Bibliography for Multimodal AI"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/01-part-01-foundations-part2",
+        "title": "Part 1 — Foundations of Multimodal AI (Part 2)"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/03-part-03-modalities-image-document-part2",
+        "title": "Part 3 — Image & Document Intelligence (Part 2)"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/04-part-04-modalities-video-audio-part2",
+        "title": "Part 04 — Video & Audio Intelligence (Part 2)"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/07-part-07-security-threats-part2",
+        "title": "Part 07 — Security & Threat Taxonomy for Multimodal AI (Part 2)"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/08-part-08-guardrails-sanitization-part2",
+        "title": "Part 8 — Guardrails & Sanitization for Multimodal AI (Part 2)"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/09-part-09-compliance-responsible-ai-part2",
+        "title": "Part 9 — Compliance & Responsible AI for Multimodal Systems — Part 2"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/10-part-10-evaluation-benchmarks-part2",
+        "title": "Part 10 — Evaluation & Benchmarks for Multimodal AI (Part 2)"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/10-part-10-evaluation-benchmarks-part3",
+        "title": "Part 10 — Evaluation & Benchmarks for Multimodal AI (Part 3)"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/11-part-11-evaluation-harnesses-cicd-part2",
+        "title": "Part 11 — Evaluation Harnesses & CI/CD for Multimodal AI — Part 2"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/12-part-12-observability-finops-part2",
+        "title": "Part 12 — Observability & FinOps for Multimodal AI (Part 2)"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/13-part-13-governance-production-part2",
+        "title": "Part 13 — Enterprise Governance & Production Engineering for Multimodal AI (Part 2)"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/14-part-14-cloud-platform-comparison-part2",
+        "title": "Part 14 — Cloud Platform Comparison for Multimodal AI (Part 2)"
+      },
+      {
+        "id": "agentic-systems/multimodal/parts/15-part-15-emerging-trends-bibliography-part2",
+        "title": "Part 15 — Emerging Trends & Bibliography for Multimodal AI (Part 2)"
+      },
+      {
+        "id": "agentic-systems/orchestration/01-executive-summary",
+        "title": "Executive Summary - Workflow Orchestration in the Agentic AI Era"
+      },
+      {
+        "id": "agentic-systems/orchestration/02-evolution-timeline",
+        "title": "Technology Evolution Timeline - From BPM to Agentic Orchestration"
+      },
+      {
+        "id": "agentic-systems/orchestration/03-workflow-vs-agent-architecture",
+        "title": "Workflow vs Agent Architecture - Determinism, Adaptivity, and Design Principles"
+      },
+      {
+        "id": "agentic-systems/orchestration/04-temporal-deep-dive",
+        "title": "Temporal Deep Dive - Architecture, Patterns, and AI Integration"
+      },
+      {
+        "id": "agentic-systems/orchestration/05-camunda-deep-dive",
+        "title": "Camunda Deep Dive - BPMN, BPM, and AI Integration"
+      },
+      {
+        "id": "agentic-systems/orchestration/06-durable-vs-cognitive-execution",
+        "title": "Durable Execution vs. Cognitive Execution"
+      },
+      {
+        "id": "agentic-systems/orchestration/07-ai-coding-orchestrators",
+        "title": "AI Coding Orchestrators - Claude Code, GitHub Copilot, and the Meta-Orchestrator Pattern"
+      },
+      {
+        "id": "agentic-systems/orchestration/08-agent-frameworks-comparison",
+        "title": "Agent Frameworks Comparison"
+      },
+      {
+        "id": "agentic-systems/orchestration/09-tool-calling-orchestration",
+        "title": "Tool Calling Orchestration"
+      },
+      {
+        "id": "agentic-systems/orchestration/10-mcp-impact",
+        "title": "MCP (Model Context Protocol) Impact on Orchestration"
+      },
+      {
+        "id": "agentic-systems/orchestration/11-a2a-orchestration-patterns",
+        "title": "A2A (Agent-to-Agent) Orchestration Patterns"
+      },
+      {
+        "id": "agentic-systems/orchestration/12-human-in-the-loop-architectures",
+        "title": "Human-in-the-Loop Architectures"
+      },
+      {
+        "id": "agentic-systems/orchestration/13-memory-vs-workflow-state",
+        "title": "Memory vs. Workflow State"
+      },
+      {
+        "id": "agentic-systems/orchestration/14-ai-planning-vs-workflow-engines",
+        "title": "AI Planning vs. Workflow Engines"
+      },
+      {
+        "id": "agentic-systems/orchestration/15-reliability-playbook",
+        "title": "Reliability Playbook for Agentic Systems"
+      },
+      {
+        "id": "agentic-systems/orchestration/16-observability-framework",
+        "title": "Observability Framework for Orchestrated AI Systems"
+      },
+      {
+        "id": "agentic-systems/orchestration/17-workflow-orchestration-security-architecture",
+        "title": "Security Architecture for Orchestrated AI Systems"
+      },
+      {
+        "id": "agentic-systems/orchestration/18-enterprise-governance-model",
+        "title": "Enterprise Governance Model"
+      },
+      {
+        "id": "agentic-systems/orchestration/19-reference-architectures",
+        "title": "Reference Architectures - From BPM-First to AI-Native"
+      },
+      {
+        "id": "agentic-systems/orchestration/20-decision-matrix",
+        "title": "Decision Matrix - Choosing Your Orchestration Platform"
+      },
+      {
+        "id": "agentic-systems/orchestration/21-future-predictions",
+        "title": "Future Outlook - Workflow Orchestration 2026–2035"
+      },
+      {
+        "id": "agentic-systems/orchestration/22-anti-patterns-catalog",
+        "title": "Anti-Patterns Catalog - Orchestration and Agentic Systems"
+      },
+      {
+        "id": "agentic-systems/orchestration/23-capability-maturity-model",
+        "title": "Orchestration Capability Maturity Model (CMM)"
+      },
+      {
+        "id": "agentic-systems/parts/01-harness-engineering-research-report-part2",
+        "title": "Harness Engineering Research Report (Part 2 of 2)"
+      },
+      {
+        "id": "agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2",
+        "title": "AI Memory Agent Innovations Research Report (Part 2 of 2)"
+      },
+      {
+        "id": "agentic-systems/parts/16-agent-skills-complete-playbook-2026-part2",
+        "title": "Agent Skills & Skill Registries — Complete Playbook 2026 (Part 2)"
       }
     ]
   },
