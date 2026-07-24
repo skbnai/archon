@@ -591,7 +591,7 @@ Consumer Side:
   - Process tasks and update status
 
 Client Interface:
-  - Polls GET /agent/tasks/{task_id}/status for status updates
+  - Polls `GET /agent/tasks/{task_id}/status` for status updates
   - OR receives push via SSE stream
 
 ### 8.2 Queue Configuration Reference

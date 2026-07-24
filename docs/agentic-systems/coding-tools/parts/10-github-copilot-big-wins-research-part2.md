@@ -61,9 +61,9 @@ Naming conventions, protection rules, and bypass patterns optimized for AI agent
 
 ### Branch Naming Convention
 
-Copilot coding agent automatically uses: copilot/issue-{N}-{slug}. For custom agents and SDK-based workflows, standardize on:
+Copilot coding agent automatically uses: `copilot/issue-{N}-{slug}`. For custom agents and SDK-based workflows, standardize on:
 
-|**Agent Type**<br/>Copilot cloud agent (auto)|**Branch Pattern**<br/>copilot/issue-{N}-{slug}|**Example**<br/>copilot/issue-42-fix-auth-timeout|
+|**Agent Type**<br/>Copilot cloud agent (auto)|**Branch Pattern**<br/>`copilot/issue-{N}-{slug}`|**Example**<br/>copilot/issue-42-fix-auth-timeout|
 |---|---|---|
 |Custom fix agent|agent/fix/{issue-N}-{slug}|agent/fix/issue-42-auth-timeout|
 |Custom feature agent|agent/feat/{issue-N}-{slug}|agent/feat/issue-99-oauth-pkce|

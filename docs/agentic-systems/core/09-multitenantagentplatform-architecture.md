@@ -182,10 +182,10 @@ Tenant isolation is enforced at the infrastructure, identity, data, and code lev
 |AgentCore MicroVM|Isolated CPU/memory/filesystem per user session; no shared memory|Hard|
 |JWT / Rights|tenant_id claim in every token; rights scoped to that tenant only|Cryptographic|
 |DynamoDB|LeadingKey condition on all queries = tenant_id; no cross-tenant scan possible|IAM + SDK|
-|S3 Sessions|Bucket per tenant (sessions-{tenant_id}); cross-bucket access denied|IAM|
-|SSM Parameters|Path /tenants/{tenant_id}/* — IAM policy restricts per-tenant read|IAM|
+|S3 Sessions|Bucket per tenant (`sessions-{tenant_id}`); cross-bucket access denied|IAM|
+|SSM Parameters|Path `/tenants/{tenant_id}/*` — IAM policy restricts per-tenant read|IAM|
 |AgentCore Memory|AgentCoreMemorySessionManager scoped to tenant_id + session_id|SDK|
-|ElastiCache|Key prefix rights:{tenant_id}:{fp} — no cross-tenant key access|Key design|
+|ElastiCache|Key prefix `rights:{tenant_id}:{fp}` — no cross-tenant key access|Key design|
 |Skill agents|@requires_right validates from JWT context (not payload); tenant from JWT claims|Code|
 
 ## 2 UI Layer — CopilotKit + AG-UI Protocol

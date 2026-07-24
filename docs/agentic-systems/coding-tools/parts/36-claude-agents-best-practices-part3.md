@@ -254,7 +254,7 @@ The awesome-claude-code repo (now 35.9K+ stars, 903 commits) hit issue #1000 on 
 
 ## **New Project Setup Checklist**
 
-1. Create CLAUDE.md (<80 lines, corrections only, architecture overview)
+1. Create CLAUDE.md (&lt;80 lines, corrections only, architecture overview)
 2. Add .claudeignore (node_modules, dist, logs, *.csv,*.lock, .git)
 3. Set CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=60 in environment
 4. Install relevant pre-built skills: pptx, xlsx, docx, pdf, frontend-design
@@ -279,7 +279,7 @@ The awesome-claude-code repo (now 35.9K+ stars, 903 commits) hit issue #1000 on 
 |Hooks|Anything that MUST always happen. Deterministic enforcement only.|
 |Subagents|Side tasks that would flood main context with search results or file contents.|
 |Agent Teams|Active coordination between specialists required — NOT just parallelism.|
-|MCP|External services, APIs, databases. Keep total tools <20 per server.|
+|MCP|External services, APIs, databases. Keep total tools &lt;20 per server.|
 |Slash commands|Explicit user-triggered workflows. Not for things Claude should auto-detect.|
 
 ## **Key Environment Variables**

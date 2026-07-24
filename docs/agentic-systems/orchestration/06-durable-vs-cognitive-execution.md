@@ -117,12 +117,12 @@ Step 1:
 Step 2:
 - Thought: "The $50 charge looks suspicious. Check it."
 - Action: get_charge_details(id="CHG-789")
-- Observation: {amount: 50, desc: "Annual plan renewal"}
+- Observation: `{amount: 50, desc: "Annual plan renewal"}`
 
 Step 3:
 - Thought: "Customer may not have noticed auto-renew. Offer partial refund per policy."
 - Action: check_refund_policy(reason="auto-renew")
-- Observation: {eligible: true, max_refund: 25}
+- Observation: `{eligible: true, max_refund: 25}`
 
 Step 4:
 - Action: draft_response(offer_refund=25, explain=true)

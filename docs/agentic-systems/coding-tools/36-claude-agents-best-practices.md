@@ -207,7 +207,7 @@ For ANY task touching >3 files or involving refactoring:
 3. Present plan to user for approval
 4. Only then invoke @execute with the approved plan as context
 ### Direct execution (skip pipeline)
-- Quick targeted fix: 1 file, <20 lines
+- Quick targeted fix: 1 file, &lt;20 lines
 - File already open in conversation context
 - Tasks needing frequent back-and-forth
 ### Domain routing (parallel)

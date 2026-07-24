@@ -102,7 +102,7 @@ flowchart TD
 
 **HallusionBench:** 1,129 visual questions specifically designed to probe hallucination. Questions are paired: a real question and a trick question about an object not present in the image. Measures object hallucination rate and counterfactual hallucination. Critical for enterprise deployment where hallucinated content in AI outputs creates legal or reputational risk.
 
-**POPE (Polling-based Object Probing Evaluation):** 9,000 binary questions ("Is there a {object} in the image?") across three sampling strategies — random, popular (commonly co-occurring objects), and adversarial. Measures object existence hallucination specifically. Metric: F1 score. High POPE score is a prerequisite for enterprise document processing VLMs.
+**POPE (Polling-based Object Probing Evaluation):** 9,000 binary questions ("Is there a `{object}` in the image?") across three sampling strategies — random, popular (commonly co-occurring objects), and adversarial. Measures object existence hallucination specifically. Metric: F1 score. High POPE score is a prerequisite for enterprise document processing VLMs.
 
 ### Video Benchmarks
 

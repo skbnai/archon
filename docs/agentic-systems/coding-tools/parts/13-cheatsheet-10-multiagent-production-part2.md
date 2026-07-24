@@ -75,7 +75,7 @@ def normalize_source_id(title, url):
     return slugify(title)[:30] + "_" + hash(url)[:6]
 ```
 
-OR: Instruct agents to use canonical IDs: "Source IDs must use this format: {author_surname}_{year}_{topic_slug}. Example: mckinsey_2024_market_report"
+OR: Instruct agents to use canonical IDs: "Source IDs must use this format: `{author_surname}_{year}_{topic_slug}`. Example: mckinsey_2024_market_report"
 
 **[INFERRED] flag:** When an agent makes a claim without a source, require it to mark [INFERRED]. Reporting agent highlights these for human review before publication.
 

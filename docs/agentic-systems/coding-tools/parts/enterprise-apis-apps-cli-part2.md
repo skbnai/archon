@@ -214,7 +214,7 @@ A: REST API authenticated requests: 5,000/hour per token. GraphQL API: 5,000 poi
 
 ### Q: How would you audit all repositories in an organization for missing branch protection?
 
-A: Use the GitHub GraphQL API or REST API via 'gh api' with pagination: list all repos, then check /repos/{owner}/{repo}/branches/main/protection for each. A bash script using gh repo list + gh api can do this efficiently. For org-wide enforcement, use Repository Rulesets which apply to ALL repos matching a pattern without requiring per-repo configuration.
+A: Use the GitHub GraphQL API or REST API via 'gh api' with pagination: list all repos, then check `/repos/{owner}/{repo}/branches/main/protection` for each. A bash script using gh repo list + gh api can do this efficiently. For org-wide enforcement, use Repository Rulesets which apply to ALL repos matching a pattern without requiring per-repo configuration.
 
 ---
 

@@ -176,17 +176,17 @@ for finding in agent_result.findings:
 
 - **Stage 1: Research Agent**
   - Input: topic + search queries
-  - Output: { findings[], citations[], raw_data }
+  - Output: `{ findings[], citations[], raw_data }`
   - ↓ (explicit context packet passed)
 
 - **Stage 2: Analysis Agent**
   - Input: findings + citations + analysis_brief
-  - Output: { insights[], patterns[], gaps[], citations[] }
+  - Output: `{ insights[], patterns[], gaps[], citations[] }`
   - ↓ (same citation IDs carried forward)
 
 - **Stage 3: Synthesis Agent**
   - Input: insights + citations + format_spec
-  - Output: { draft_report, citation_map }
+  - Output: `{ draft_report, citation_map }`
   - ↓
 
 - **Stage 4: Reporting Agent**

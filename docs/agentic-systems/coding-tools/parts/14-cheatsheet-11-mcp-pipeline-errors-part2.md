@@ -60,11 +60,11 @@ Reporting agent always prepends this block:
 
 **DATA QUALITY SUMMARY**
 
-- Sources used: {n} of {total_attempted}
-- Sources unavailable: {missing_sources}
-- OCR fallbacks: {ocr_count} documents
-- Items needing review: {manual_review_count}
-- Unverified claims: {inferred_count} marked [INFERRED]
+- Sources used: `{n}` of `{total_attempted}`
+- Sources unavailable: `{missing_sources}`
+- OCR fallbacks: `{ocr_count}` documents
+- Items needing review: `{manual_review_count}`
+- Unverified claims: `{inferred_count}` marked [INFERRED]
 - See 'Data Quality Notes' section for full details.
 
 Transparent error surfacing in the report itself is better than a clean report that hides data gaps. Readers know what to verify.

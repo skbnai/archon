@@ -151,7 +151,7 @@ Copilot spins up an ephemeral GitHub Actions runner. It clones the repository, i
 
 ### 3 Branch Creation
 
-The agent creates a uniquely named branch (pattern: copilot/issue-{N}-{slug}). Critically: the agent can ONLY push to branches it created. Your default branch and team branches are protected by default.
+The agent creates a uniquely named branch (pattern: `copilot/issue-{N}-{slug}`). Critically: the agent can ONLY push to branches it created. Your default branch and team branches are protected by default.
 
 ### 4 Research & Planning
 

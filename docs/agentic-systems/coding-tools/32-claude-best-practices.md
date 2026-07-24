@@ -147,7 +147,7 @@ MCP configuration has two scopes: project-level (.mcp.json, version-controlled, 
 | ✅  BEST PRACTICE | ❌  ANTIPATTERN |
 | --- | --- |
 | Use .mcp.json at project root for team-shared MCP servers. Commit to version control so all developers get access on clone. | Configuring shared MCP servers in ~/.claude.json on each developer's machine. New team members miss the configuration. |
-| Use ${GITHUB_TOKEN} syntax in .mcp.json for credentials. Each developer sets the environment variable locally. | Hardcoding credentials in .mcp.json, even with .gitignore. Risks accidental credential exposure across build artifacts. |
+| Use `${GITHUB_TOKEN}` syntax in .mcp.json for credentials. Each developer sets the environment variable locally. | Hardcoding credentials in .mcp.json, even with .gitignore. Risks accidental credential exposure across build artifacts. |
 | Audit active MCP servers and deactivate those not needed day-to-day. Too many active servers = too many tools = degraded selection. | Configuring 12 MCP servers simultaneously. Tool proliferation causes the same selection problems as 18+ inline tools. |
 | Use existing community MCP servers for standard integrations (Jira, GitHub, Slack). Reserve custom servers for proprietary workflows. | Building custom MCP servers for integrations that already have community implementations. Wastes development time and results in less-tested tooling. |
 

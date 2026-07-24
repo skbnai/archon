@@ -28,7 +28,7 @@ In the bank context, multitenancy has two meanings: (a) multiple business divisi
 | Layer | Internal Multitenancy | External Multitenancy |
 | --- | --- | --- |
 | AgentCore Runtime | Shared runtime; session isolation per microVM | Separate runtime per tenant; no shared infrastructure |
-| AgentCore Memory | Namespace-scoped: tenant:{div}:user:{sub} | Separate memory store per external tenant |
+| AgentCore Memory | Namespace-scoped: `tenant:{div}:user:{sub}` | Separate memory store per external tenant |
 | MCP Servers | Shared; FT rights restrict data access | Separate MCP instances or strict tenant_id row filtering |
 | Langfuse Traces | Tenant_id tag on all traces; project-level access control | Separate Langfuse projects per external tenant |
 | DynamoDB (context) | Partition key includes tenant_id | Separate table or separate AWS account |

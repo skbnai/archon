@@ -259,14 +259,14 @@ gh api /rate_limit
 
 | Area | Key Endpoints |
 |------|---|
-| Repos | GET /repos/{owner}/{repo}, POST /orgs/{org}/repos |
-| Commits | GET /repos/{owner}/{repo}/commits, GET /commits/{sha} |
-| Branches | GET /repos/{owner}/{repo}/branches, DELETE /refs/heads/{branch} |
-| Pull Requests | POST /pulls, GET /pulls/{number}, PATCH /pulls/{number}/merge |
-| Actions | GET /actions/runs, POST /actions/workflows/{id}/dispatches |
-| Releases | POST /releases, GET /releases/latest, PATCH /releases/{id} |
-| Deployments | POST /deployments, POST /deployments/{id}/statuses |
-| Webhooks | POST /repos/{owner}/{repo}/hooks |
+| Repos | `GET /repos/{owner}/{repo}`, `POST /orgs/{org}/repos` |
+| Commits | `GET /repos/{owner}/{repo}/commits`, `GET /commits/{sha}` |
+| Branches | `GET /repos/{owner}/{repo}/branches`, `DELETE /refs/heads/{branch}` |
+| Pull Requests | `POST /pulls`, `GET /pulls/{number}`, `PATCH /pulls/{number}/merge` |
+| Actions | `GET /actions/runs`, `POST /actions/workflows/{id}/dispatches` |
+| Releases | `POST /releases`, `GET /releases/latest`, `PATCH /releases/{id}` |
+| Deployments | `POST /deployments`, `POST /deployments/{id}/statuses` |
+| Webhooks | `POST /repos/{owner}/{repo}/hooks` |
 
 ## 15.2 GraphQL API
 

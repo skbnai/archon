@@ -80,7 +80,7 @@ The Claude model family follows a consistent three-tier structure. Each tier is 
 | Research / evaluation / maximum quality | Opus 4.8 + Extended Thinking |
 | Cost-sensitive production with long static prompts | Any model + Prompt Caching |
 
-**Exam Note:** The CCA-F exam references **claude-sonnet-4-20250514** in code examples. Real-world model strings use the format: *claude-{tier}-{major}.{minor}-{YYYYMMDD}* or abbreviated forms. Always check the Anthropic models documentation for the latest stable string before deploying.
+**Exam Note:** The CCA-F exam references **claude-sonnet-4-20250514** in code examples. Real-world model strings use the format: `claude-{tier}-{major}.{minor}-{YYYYMMDD}` or abbreviated forms. Always check the Anthropic models documentation for the latest stable string before deploying.
 
 ### Important: Opus 4.8 Tokenizer Change
 

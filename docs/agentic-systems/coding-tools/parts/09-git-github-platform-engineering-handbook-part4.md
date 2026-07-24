@@ -887,7 +887,7 @@ PRODUCTIVITY GAIN (industry data: 15–55% faster on assisted tasks)
   Team total gain: $75,000/month
 
   ROI ratio: $75,000 / $2,100 = 35.7x
-  Payback period: <1 month
+  Payback period: &lt;1 month
 
 QUALITY GAIN (harder to quantify but significant)
   - Fewer defects from AI-assisted code review
