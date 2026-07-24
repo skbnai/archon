@@ -554,6 +554,6 @@ Use this checklist when reviewing an agentic UI deployment:
 
 - [Identity & Auth Architecture](12-identity-auth-architecture.md) — OBO flow, RFC 8707, service identity
 - [Enterprise Reference Architecture](08-enterprise-reference-architecture.md) — Layer 8 (Guardrails), TB1–TB8 detail
-- [Agentic AI Security & Identity](../enterprise-architecture/ai-architecture/agentic-ai-security-identity.md) — Full OWASP ASI01–ASI10 taxonomy
-- [Security Architecture & Guardrails](../enterprise-architecture/ai-architecture/agentic-ai-security-guardrails.md) — 14-layer guardrails framework
-- [DevSecOps](devsecops.md) — Security in the build and deployment pipeline
+- [Agentic AI Security & Identity](../../trust/05-agentic-ai-security-identity.md) — Full OWASP ASI01–ASI10 taxonomy
+- [Security Architecture & Guardrails](../../trust/04-agentic-ai-security-guardrails.md) — 14-layer guardrails framework
+- [DevSecOps](07-devsecops.md) — Security in the build and deployment pipeline

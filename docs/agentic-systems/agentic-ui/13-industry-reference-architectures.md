@@ -20,7 +20,7 @@ Reference architectures for the AGUI/UX layer across 10 industry verticals — f
 **This is Part 1 of 2.** Part 1 covers Financial Services, Healthcare, Insurance, Retail & E-commerce, Manufacturing, and Developer Platforms. See [Part 2: Government, Telecom, Knowledge Management, and Life Sciences](pathname:///archon/agentic-systems/parts/13-industry-reference-architectures-part2) for the remaining 4 verticals and cross-industry patterns.
 
 :::note Backend Platform Coverage
-    For backend agent platform architecture (orchestration, memory, A2A, MCP), see [Enterprise Agent Reference Architectures](../enterprise-architecture/ai-architecture/enterprise-agent-reference-architectures.md). This guide focuses on what's different at the UX and AGUI layer per industry.
+    For backend agent platform architecture (orchestration, memory, A2A, MCP), see [Enterprise Agent Reference Architectures](../../architecture/47-enterprise-agent-reference-architectures.md). This guide focuses on what's different at the UX and AGUI layer per industry.
 
 ---
 
@@ -432,6 +432,6 @@ Agent Runtime
 
 - [Part 2: Government, Telecom, Knowledge Management, and Life Sciences](pathname:///archon/agentic-systems/parts/13-industry-reference-architectures-part2) — Sections 7–10 and cross-industry patterns
 - [Security Architecture](19-agentic-ui-security-architecture.md) — Enterprise security controls across industries
-- [Agent UX Patterns](agent-ux-patterns.md) — Human oversight models (HITL/HOTL/HOOL)
+- [Agent UX Patterns](01-agent-ux-patterns.md) — Human oversight models (HITL/HOTL/HOOL)
 - [Governance](11-governance.md) — Compliance and governance frameworks
 - [Enterprise Reference Architecture](08-enterprise-reference-architecture.md) — Backend platform architecture

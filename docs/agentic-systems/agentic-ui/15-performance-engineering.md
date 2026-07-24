@@ -17,9 +17,9 @@ source: knowledge-docs
 A comprehensive performance reference for AI Platform Teams and Principal Architects covering metrics taxonomy, optimization techniques, and profiling methodology from browser rendering through LLM inference for agentic UIs.
 
 :::note Related Guides
-    - Reliability under load (circuit breakers, degradation): [reliability-engineering](pathname:///archon/agentic-systems/agentic-ui/20-reliability-engineering)
+    - Reliability under load (circuit breakers, degradation): [reliability-engineering](pathname:///archon/agentic-systems/agentic-ui/16-reliability-engineering)
     - Scaling for throughput (caching, queues, autoscaling): [scalability-engineering](pathname:///archon/agentic-systems/agentic-ui/18-scalability-engineering)
-    - OTel GenAI observability spans: [agentic-ai-reliability-observability-governance](../enterprise-architecture/ai-architecture/agentic-ai-reliability-observability-governance.md)
+    - OTel GenAI observability spans: [agentic-ai-reliability-observability-governance](../../architecture/43-agentic-ai-reliability-observability-governance.md)
 
 ---
 

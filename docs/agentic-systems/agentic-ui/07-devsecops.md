@@ -884,4 +884,4 @@ resource "kubernetes_stateful_set" "qdrant" {
     - Evaluation framework: [Evaluation Framework](07-devsecops.md)
     - Observability infrastructure: [Observability](14-observability.md)
     - Governance policies: [Governance](11-governance.md)
-    - OTel GenAI conventions: [Reliability, Observability &amp; Governance](../enterprise-architecture/ai-architecture/agentic-ai-reliability-observability-governance.md)
+    - OTel GenAI conventions: [Reliability, Observability &amp; Governance](../../architecture/43-agentic-ai-reliability-observability-governance.md)

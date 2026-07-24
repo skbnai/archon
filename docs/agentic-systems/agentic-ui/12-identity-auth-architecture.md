@@ -491,6 +491,6 @@ WEBSOCKET VARIANT:
 
 - [Security Architecture](19-agentic-ui-security-architecture.md) — Trust boundaries, OWASP ASI mapping, attack surfaces
 - [Enterprise Reference Architecture](08-enterprise-reference-architecture.md) — Layer 6 (Identity Service), TB3–TB5
-- [Entra 3LO Implementation Guide](../ai-protocols/auth/entra-3lo-agent-auth-implementation.md) — Full OBO implementation with code
-- [Entra 3LO Security Review](../ai-protocols/auth/entra-3lo-agent-auth-security-review.md) — Security audit patterns
-- [Agent Identity: Entra vs AgentCore](../ai-protocols/auth/agent-identity-entra-vs-awsagentcore.md) — Platform comparison
+- [Entra 3LO Implementation Guide](../../protocols/08-entra-3lo-agent-auth-implementation.md) — Full OBO implementation with code
+- [Entra 3LO Security Review](../../protocols/10-entra-3lo-agent-auth-security-review.md) — Security audit patterns
+- [Agent Identity: Entra vs AgentCore](../../protocols/06-agent-identity-entra-vs-awsagentcore.md) — Platform comparison

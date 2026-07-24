@@ -14,4 +14,4 @@ covers_version: "as of 2026-07-10"
 
 # Decision Frameworks
 
-This guide is coming soon. See the [Agentic UI Overview](index.md) for related content.
+This guide is coming soon.
