@@ -7,8 +7,18 @@ set -u
 BASE_BRANCH="${PRE_PUSH_BASE:-main}"
 FAIL=0
 
-git fetch origin "$BASE_BRANCH" --depth=1 >/dev/null 2>&1 || true
+git fetch origin "$BASE_BRANCH" >/dev/null 2>&1 || true
+if ! git merge-base "origin/$BASE_BRANCH" HEAD >/dev/null 2>&1; then
+  # Shallow clone with a disconnected graft — deepen until history connects.
+  git fetch origin "$BASE_BRANCH" --unshallow >/dev/null 2>&1 \
+    || git fetch origin "$BASE_BRANCH" --depth=1000 >/dev/null 2>&1 || true
+fi
 CHANGED_MD=$(git diff --name-only "origin/$BASE_BRANCH"...HEAD -- 'docs/**/*.md' 2>/dev/null || true)
+
+if [ -z "$CHANGED_MD" ] && ! git merge-base "origin/$BASE_BRANCH" HEAD >/dev/null 2>&1; then
+  echo "pre-push: WARNING - no merge-base with origin/$BASE_BRANCH found even after deepening;" >&2
+  echo "  falling back to --paper mode may produce misleading naming errors. Investigate repo history." >&2
+fi
 
 if [ -z "$CHANGED_MD" ]; then
   echo "pre-push: no docs/ pages changed vs origin/$BASE_BRANCH -- running --paper registry check"
