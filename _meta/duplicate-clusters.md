@@ -26,8 +26,8 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 68%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
-- 66%  `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3` <-> `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2`
+- 66%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
+- 64%  `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3` <-> `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2`
 - 63%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2`
 
 ## Cluster (2 pages)

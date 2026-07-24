@@ -111,7 +111,7 @@
     },
     {
      "id": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
-     "score": 0.49
+     "score": 0.48
     }
    ]
   },
@@ -198,11 +198,11 @@
      "score": 0.39
     },
     {
-     "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
+     "id": "architecture/05-ea-architect-deep-dive-foundation",
      "score": 0.38
     },
     {
-     "id": "architecture/05-ea-architect-deep-dive-foundation",
+     "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
      "score": 0.38
     }
    ]
@@ -581,7 +581,7 @@
    "top_similar": [
     {
      "id": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-     "score": 0.35
+     "score": 0.34
     },
     {
      "id": "architecture/72-enterprise-ai-architect-bible-2026",
@@ -857,7 +857,7 @@
     },
     {
      "id": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
-     "score": 0.3
+     "score": 0.31
     }
    ]
   },
@@ -1422,7 +1422,7 @@
     },
     {
      "id": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "architecture/48-enterprise-ai-architect-foundations",
@@ -1946,13 +1946,13 @@
     "governance",
     "dpdp"
    ],
-   "word_count": 2272,
-   "last_reviewed": "2026-07-23",
+   "word_count": 2340,
+   "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3",
-     "score": 0.68
+     "score": 0.67
     },
     {
      "id": "architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2",
@@ -2391,7 +2391,7 @@
     },
     {
      "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-     "score": 0.49
+     "score": 0.48
     },
     {
      "id": "architecture/parts/04-aidlc-artifacts-development-to-retirement-ea-artifacts",
@@ -2711,7 +2711,7 @@
     },
     {
      "id": "architecture/54-enterprise-multi-model-ai-strategy",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
@@ -2994,13 +2994,13 @@
     "breach-notification",
     "penalties"
    ],
-   "word_count": 1591,
-   "last_reviewed": "2026-07-23",
+   "word_count": 1708,
+   "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3",
-     "score": 0.66
+     "score": 0.64
     },
     {
      "id": "architecture/79-dpdp-act-2023-comprehensive-guide",
@@ -3022,17 +3022,17 @@
     "anti-patterns",
     "technology-architecture"
    ],
-   "word_count": 1803,
-   "last_reviewed": "2026-07-23",
+   "word_count": 1809,
+   "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/79-dpdp-act-2023-comprehensive-guide",
-     "score": 0.68
+     "score": 0.67
     },
     {
      "id": "architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2",
-     "score": 0.66
+     "score": 0.64
     }
    ]
   },

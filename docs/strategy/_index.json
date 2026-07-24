@@ -79,7 +79,7 @@
    "top_similar": [
     {
      "id": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
-     "score": 0.57
+     "score": 0.58
     },
     {
      "id": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
@@ -859,6 +859,10 @@
     {
      "id": "strategy/41-roadmap-financials-kpis-and-risk",
      "score": 0.31
+    },
+    {
+     "id": "strategy/27-part-17-transformation-roadmap",
+     "score": 0.3
     }
    ]
   },
@@ -1228,7 +1232,7 @@
    "top_similar": [
     {
      "id": "strategy/03-ai-value-creator-deliverables-pack",
-     "score": 0.57
+     "score": 0.58
     },
     {
      "id": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
@@ -2419,7 +2423,7 @@
    "top_similar": [
     {
      "id": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
-     "score": 0.58
+     "score": 0.57
     },
     {
      "id": "strategy/02-quantum-ai-startup-landscape",
@@ -2512,7 +2516,7 @@
     },
     {
      "id": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
-     "score": 0.58
+     "score": 0.57
     },
     {
      "id": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
