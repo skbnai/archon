@@ -7,7 +7,7 @@ topic_id: part-04-modalities-video-audio
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/04-part-04-modalities-video-audio.md.md
+  - ../knowledge-docs/docs/multimodal-ai/04-part-04-modalities-video-audio.md
 ---
 
 # Part 04 — Video & Audio Intelligence

@@ -7,7 +7,7 @@ topic_id: part-01-foundations
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/01-part-01-foundations.md.md
+  - ../knowledge-docs/docs/multimodal-ai/01-part-01-foundations.md
 ---
 
 # Part 1 — Foundations of Multimodal AI

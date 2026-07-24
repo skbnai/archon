@@ -5,7 +5,7 @@ doc_type: reference-architecture
 status: current
 topic_id: part-10-evaluation-benchmarks-part3
 supersedes: []
-created_date: 2026-07-24
+date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
 
@@ -132,7 +132,7 @@ Track hallucination rate as a first-class KPI: target <2% hallucination rate for
 
 ## Related
 
-- [Part 11 — Evaluation Harnesses & CI/CD](./part-11-evaluation-harnesses-cicd) — implementing evaluation pipelines in production CI/CD systems
-- [Part 9 — Compliance & Responsible AI](./part-09-compliance-responsible-ai) — fairness requirements and regulatory evaluation obligations
-- [Part 8 — Guardrails & Sanitization](./part-08-guardrails-sanitization) — guardrail evaluation as part of the overall evaluation strategy
-- [AI Development — Testing & Evaluation](../ai-development/testing/index.md) — complementary evaluation frameworks for agentic systems
+- [Part 11 — Evaluation Harnesses & CI/CD](../11-part-11-evaluation-harnesses-cicd.md) — implementing evaluation pipelines in production CI/CD systems
+- [Part 9 — Compliance & Responsible AI](../09-part-09-compliance-responsible-ai.md) — fairness requirements and regulatory evaluation obligations
+- [Part 8 — Guardrails & Sanitization](../08-part-08-guardrails-sanitization.md) — guardrail evaluation as part of the overall evaluation strategy
+- AI Development — Testing & Evaluation (complementary evaluation frameworks for agentic systems; not yet migrated)

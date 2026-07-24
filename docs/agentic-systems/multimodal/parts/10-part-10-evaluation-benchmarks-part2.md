@@ -5,7 +5,7 @@ doc_type: reference-architecture
 status: current
 topic_id: part-10-evaluation-benchmarks-part2
 supersedes: []
-created_date: 2026-07-24
+date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
 

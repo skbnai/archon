@@ -44,7 +44,7 @@ Enterprise agentic applications need a UX philosophy that replaces principles in
 - Irreversible actions (email sends, financial transfers, external API calls) require a HITL gate and explicit irreversibility warning before execution
 - Agent action log must retain all arguments necessary to reconstruct the undo operation
 
-**Reference:** See [Enterprise Reference Architecture](enterprise-reference-architecture.md) §Layer 13 for tool executor design patterns that enforce reversibility.
+**Reference:** See [Enterprise Reference Architecture](../08-enterprise-reference-architecture.md) §Layer 13 for tool executor design patterns that enforce reversibility.
 
 ---
 
@@ -121,7 +121,7 @@ Enterprise agentic applications need a UX philosophy that replaces principles in
 - Multi-tab and multi-device context synchronization with conflict resolution
 - Explicit context handoff when the user delegates to a colleague ("Continue this task — here is the current state")
 
-**Technical Reference:** See [Agent Memory & Planning Architecture](../enterprise-architecture/ai-architecture/agent-memory-planning-architecture.md) for the memory layer design that supports context preservation.
+**Technical Reference:** See [Agent Memory & Planning Architecture](../../../architecture/41-agent-memory-planning-architecture.md) for the memory layer design that supports context preservation.
 
 ---
 
@@ -186,7 +186,7 @@ Enterprise agentic applications need a UX philosophy that replaces principles in
 - Voice input for hands-free or mobile contexts
 - All modalities share a single underlying state representation (the AG-UI state store)
 
-**Technical Reference:** A2UI v0.9 provides the declarative widget definitions for dynamic modality switching. See [AGUI Standards & Ecosystem Landscape](agui-standards-landscape.md) §3.
+**Technical Reference:** A2UI v0.9 provides the declarative widget definitions for dynamic modality switching. See [AGUI Standards & Ecosystem Landscape](../02-agui-standards-landscape.md) §3.
 
 ---
 
@@ -351,13 +351,13 @@ Level 5 — Ambient Enterprise Intelligence
 
 | Topic | Where to Go |
 | --- | --- |
-| AG-UI protocol: event taxonomy, transport, state sync | [AGUI Standards & Ecosystem Landscape](agui-standards-landscape.md) |
-| Enterprise reference architecture (17 layers) | [Enterprise Reference Architecture](enterprise-reference-architecture.md) |
-| HITL gate implementation patterns | [Enterprise AI Architecture Patterns](../enterprise-architecture/ai-architecture/enterprise-ai-architecture-patterns.md) §8 |
-| Agent memory supporting context preservation | [Agent Memory & Planning Architecture](../enterprise-architecture/ai-architecture/agent-memory-planning-architecture.md) |
-| Security model for trust boundaries | [Agentic AI Security & Identity](../enterprise-architecture/ai-architecture/agentic-ai-security-identity.md) |
-| EU AI Act transparency requirements | [Enterprise AI Governance & Compliance](../enterprise-architecture/ai-architecture/enterprise-ai-governance-compliance.md) |
-| OTel observability for agent UX | [Reliability, Observability & Governance](../enterprise-architecture/ai-architecture/agentic-ai-reliability-observability-governance.md) |
+| AG-UI protocol: event taxonomy, transport, state sync | [AGUI Standards & Ecosystem Landscape](../02-agui-standards-landscape.md) |
+| Enterprise reference architecture (17 layers) | [Enterprise Reference Architecture](../08-enterprise-reference-architecture.md) |
+| HITL gate implementation patterns | [Enterprise AI Architecture Patterns](../../../architecture/49-enterprise-ai-architecture-patterns.md) §8 |
+| Agent memory supporting context preservation | [Agent Memory & Planning Architecture](../../../architecture/41-agent-memory-planning-architecture.md) |
+| Security model for trust boundaries | [Agentic AI Security & Identity](../../../trust/05-agentic-ai-security-identity.md) |
+| EU AI Act transparency requirements | [Enterprise AI Governance & Compliance](../../../architecture/51-enterprise-ai-governance-compliance.md) |
+| OTel observability for agent UX | [Reliability, Observability & Governance](../../../architecture/43-agentic-ai-reliability-observability-governance.md) |
 
 ---
 

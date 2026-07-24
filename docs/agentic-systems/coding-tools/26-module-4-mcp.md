@@ -62,7 +62,7 @@ graph TD
 | Primitive | Control | Description & Behavior | Examples |
 |-----------|---------|------------------------|----------|
 | **Tools** | Model-controlled | Functions Claude invokes autonomously based on context. CAN have side effects. Claude reads description to decide when. High-risk tools should require user confirmation. | search_db, send_email, create_ticket, run_query, write_file, execute_code |
-| **Resources** | App-controlled | Read-only data the HOST APPLICATION exposes. Claude does NOT autonomously choose to access resources. Application/user selects which resources to surface. | file:///docs/policy.md, db://schema/customers, git://repo/main/src, api://reports/monthly |
+| **Resources** | App-controlled | Read-only data the HOST APPLICATION exposes. Claude does NOT autonomously choose to access resources. Application/user selects which resources to surface. | `file:///docs/policy.md`, `db://schema/customers`, `git://repo/main/src`, `api://reports/monthly` |
 | **Prompts** | User-controlled | Pre-built templates users invoke by name. Appear as slash commands (/code-review) or template options in the host application UI. | /customer-360 {id}, /code-review, /generate-report {period}, /debug-error {msg} |
 
 ## 4.2 Production MCP Server — Python SDK

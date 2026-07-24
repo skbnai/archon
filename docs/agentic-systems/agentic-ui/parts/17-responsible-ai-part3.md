@@ -241,10 +241,10 @@ For EU AI Act conformity assessment, evidence packages must be assembled:
 ---
 
 :::note Related Guides
-    - [Governance for Agentic Applications](governance.md) — Governance structures, decision rights, 16 domains
-    - [Security Architecture for Agentic Applications](security-architecture.md) — Security controls, threat models
-    - [Identity &amp; Auth Architecture](identity-auth-architecture.md) — Identity types, OAuth flows, authorization
-    - [Enterprise AI Governance &amp; Compliance](../enterprise-architecture/ai-architecture/enterprise-ai-governance-compliance.md) — Full EU AI Act / NIST AI RMF / ISO 42001 details
-    - [Agentic AI Security &amp; Identity](../enterprise-architecture/ai-architecture/agentic-ai-security-identity.md) — OWASP ASI01–ASI10
-    - [Sovereign AI Foundations](../sovereign-constitutional-ai/sovereign-ai-foundations.md) — Sovereign AI deployment strategies
-    - [Constitutional AI Engineering](../sovereign-constitutional-ai/constitutional-ai-engineering.md) — Constitutional AI technical implementation
+    - [Governance for Agentic Applications](../11-governance.md) — Governance structures, decision rights, 16 domains
+    - [Security Architecture for Agentic Applications](../19-agentic-ui-security-architecture.md) — Security controls, threat models
+    - [Identity &amp; Auth Architecture](../12-identity-auth-architecture.md) — Identity types, OAuth flows, authorization
+    - [Enterprise AI Governance &amp; Compliance](../../../architecture/51-enterprise-ai-governance-compliance.md) — Full EU AI Act / NIST AI RMF / ISO 42001 details
+    - [Agentic AI Security &amp; Identity](../../../trust/05-agentic-ai-security-identity.md) — OWASP ASI01–ASI10
+    - [Sovereign AI Foundations](../../../trust/sovereign-constitutional-ai/11-sovereign-ai-foundations.md) — Sovereign AI deployment strategies
+    - [Constitutional AI Engineering](../../../trust/sovereign-constitutional-ai/07-constitutional-ai-engineering.md) — Constitutional AI technical implementation

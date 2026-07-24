@@ -542,6 +542,6 @@ Does the task span business process domains with human task steps AND SLA govern
 
 ---
 
-**Related:** [Multi-Agent Topology Patterns](../enterprise-architecture/ai-architecture/multi-agent-topology-patterns) | [Agent-as-Tool Composition](../enterprise-architecture/ai-architecture/agent-as-tool-composition) | [Reference Architectures](./19-reference-architectures.md)
+**Related:** [Multi-Agent Topology Patterns](../../architecture/59-multi-agent-topology-patterns.md) | [Agent-as-Tool Composition](../../architecture/39-agent-as-tool-composition.md) | [Reference Architectures](./19-reference-architectures.md)
 
 **Next**: Study [Reference Architectures](./19-reference-architectures.md) for your scenario, or explore [Future Predictions](./21-future-predictions.md).

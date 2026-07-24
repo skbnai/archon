@@ -130,8 +130,8 @@ The orchestrator assembles the three structured outputs and applies decision log
 - [Part 1 — Foundations](../01-part-01-foundations.md) — tokenization strategies for document image encoding
 - [Part 2 — Enterprise Architecture](../02-part-02-enterprise-architecture.md) — document understanding agents in the four-layer architecture
 - [Part 5 — Multimodal RAG](../05-part-05-multimodal-rag.md) — retrieving relevant document sections using multimodal embeddings
-- [Part 8 — Guardrails & Sanitization](../08-guardrails-sanitization.md) — PII detection and redaction in extracted document content
-- [Knowledge & RAG](../../data-knowledge/index.md) — knowledge architecture patterns that consume IDP pipeline outputs
+- [Part 8 — Guardrails & Sanitization](../08-part-08-guardrails-sanitization.md) — PII detection and redaction in extracted document content
+- [Knowledge & RAG](../../../data-knowledge/index.md) — knowledge architecture patterns that consume IDP pipeline outputs
 
 ---
 

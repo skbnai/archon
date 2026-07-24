@@ -639,12 +639,12 @@ jobs:
 - **LLM agent evaluation survey:** arxiv.org/pdf/2507.21504
 - **Agentic AI Governance (IMDA):** imda.gov.sg/mgf-for-agentic-ai
 - **Related guides in this site:**
-  - [MCP Deep Guide](mcp-deep-guide.md)
-  - [Agent SDK Production](claude-agent-sdk-production.md)
-  - [Models 2026](claude-models-2026.md)
-  - [Enterprise AI Architecture Patterns](../../enterprise-architecture/ai-architecture/enterprise-ai-architecture-patterns.md)
-  - [Governance & Compliance](../../enterprise-architecture/ai-architecture/enterprise-ai-governance-compliance.md)
-  - [Skills Assessment](../../enterprise-architecture/ai-architecture/enterprise-ai-skills-assessment.md)
+  - [MCP Deep Guide](../39-mcp-deep-guide.md)
+  - [Agent SDK Production](../30-claude-agent-sdk-production.md)
+  - [Models 2026](../35-claude-models-2026.md)
+  - [Enterprise AI Architecture Patterns](../../../architecture/49-enterprise-ai-architecture-patterns.md)
+  - [Governance & Compliance](../../../architecture/51-enterprise-ai-governance-compliance.md)
+  - [Skills Assessment](../../../architecture/52-enterprise-ai-skills-assessment.md)
 
 ---
 

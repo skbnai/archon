@@ -5,7 +5,7 @@ doc_type: reference-architecture
 status: current
 topic_id: part-15-emerging-trends-bibliography-part2
 supersedes: []
-created_date: 2026-07-24
+date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
 
@@ -174,7 +174,7 @@ A: Seven decisions dominate the architecture. First, inference latency vs safety
 
 ## Related
 
-- [Part 1 — Foundations](./part-01-foundations) — foundational concepts this trends analysis builds on
-- [Part 9 — Compliance & Responsible AI](./part-09-compliance-responsible-ai) — regulatory context including EU AI Act
-- [Part 8 — Guardrails & Sanitization](./part-08-guardrails-sanitization) — deepfake detection and C2PA verification in guardrail pipelines
-- [Part 14 — Cloud Platform Comparison](./part-14-cloud-platform-comparison) — current platform capabilities that emerging trends are extending
+- [Part 1 — Foundations](../01-part-01-foundations.md) — foundational concepts this trends analysis builds on
+- [Part 9 — Compliance & Responsible AI](../09-part-09-compliance-responsible-ai.md) — regulatory context including EU AI Act
+- [Part 8 — Guardrails & Sanitization](../08-part-08-guardrails-sanitization.md) — deepfake detection and C2PA verification in guardrail pipelines
+- [Part 14 — Cloud Platform Comparison](../14-part-14-cloud-platform-comparison.md) — current platform capabilities that emerging trends are extending

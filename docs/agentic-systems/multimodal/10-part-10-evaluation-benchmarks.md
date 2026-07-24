@@ -3,11 +3,10 @@ title: Part 10 — Evaluation & Benchmarks for Multimodal AI
 domain: agentic-systems
 doc_type: reference-architecture
 status: current
-topic_id: 10-part-10-evaluation-benchmarks.md
 topic_id: part-10-evaluation-benchmarks
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/10-part-10-evaluation-benchmarks.md.md
-created_date: 2026-07-24
+  - ../knowledge-docs/docs/multimodal-ai/10-part-10-evaluation-benchmarks.md
+date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
 

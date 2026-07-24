@@ -7,7 +7,7 @@ topic_id: part-06-agentic-workflows
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/06-part-06-agentic-workflows.md.md
+  - ../knowledge-docs/docs/multimodal-ai/06-part-06-agentic-workflows.md
 ---
 
 # Part 06 — Multimodal Agentic Workflows
@@ -364,8 +364,8 @@ The operational discipline to keep multimodal systems performant and improving i
 
 ## Related
 
-- [A.R.T. Framework](../../enterprise-architecture/ai-architecture/ART-Framework-Agentic-AI-Execution.md) — execution methodology underpinning multimodal workflow delivery
-- [Part 04 — Video & Audio Intelligence](../04-04-part-04-modalities-video-audio.md.md) — audio pipelines for compliance monitoring
-- [Part 05 — Multimodal RAG](../05-05-part-05-multimodal-rag.md.md) — RAG as a tool within agentic workflows
-- [Part 07 — Security & Threat Taxonomy](../07-07-part-07-security-threats.md.md) — securing agentic multimodal systems
-- [Part 03 — Image & Document Intelligence](../03-03-part-03-modalities-image-document.md.md) — document tools used in invoice and claims workflows
+- [A.R.T. Framework](../../architecture/37-art-framework-agentic-ai-execution.md) — execution methodology underpinning multimodal workflow delivery
+- [Part 04 — Video & Audio Intelligence](04-part-04-modalities-video-audio.md) — audio pipelines for compliance monitoring
+- [Part 05 — Multimodal RAG](05-part-05-multimodal-rag.md) — RAG as a tool within agentic workflows
+- [Part 07 — Security & Threat Taxonomy](07-part-07-security-threats.md) — securing agentic multimodal systems
+- [Part 03 — Image & Document Intelligence](03-part-03-modalities-image-document.md) — document tools used in invoice and claims workflows

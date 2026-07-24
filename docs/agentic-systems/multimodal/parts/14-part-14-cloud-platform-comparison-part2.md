@@ -5,7 +5,7 @@ doc_type: reference-architecture
 status: current
 topic_id: part-14-cloud-platform-comparison-part2
 supersedes: []
-created_date: 2026-07-24
+date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
 
@@ -91,7 +91,7 @@ A: The architecture must assume zero internet connectivity and operate entirely 
 
 ## Related
 
-- [Part 12 — Observability & FinOps](./part-12-observability-finops) — platform-specific cost models and observability tooling
-- [Part 13 — Governance & Production Engineering](./part-13-governance-production) — governance tooling available per platform
-- [Part 9 — Compliance & Responsible AI](./part-09-compliance-responsible-ai) — regulatory mapping that drives platform selection criteria
-- [Databricks Agentic AI Reference](../databricks-agentic-ai/index.md) — deep dive on Databricks Mosaic AI capabilities
+- [Part 12 — Observability & FinOps](../12-part-12-observability-finops.md) — platform-specific cost models and observability tooling
+- [Part 13 — Governance & Production Engineering](../13-part-13-governance-production.md) — governance tooling available per platform
+- [Part 9 — Compliance & Responsible AI](../09-part-09-compliance-responsible-ai.md) — regulatory mapping that drives platform selection criteria
+- Databricks Agentic AI Reference (deep dive on Databricks Mosaic AI capabilities; not yet migrated)

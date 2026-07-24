@@ -373,8 +373,6 @@ payload = { "sub": user_id, "tenant_id": tenant_id, "rights_fp": fingerprint,
 return {"token": jwt.encode(payload, signing_key, algorithm="RS256")}
 ```
 
-![Figure 2](/img/agentic-systems/platform/multitenant-platform-p11-2.png)
-
 ### 4.4 Rights Change Invalidation
 
 When FT rights change in DynamoDB, a Stream triggers a Lambda that invalidates all ElastiCache keys for the affected user using Redis SCAN + DEL. The next request will cause a cache miss, falling back to DynamoDB (10–15 ms one-time penalty), which refreshes the cache with the updated rights.

@@ -5,7 +5,7 @@ doc_type: reference-architecture
 status: current
 topic_id: part-12-observability-finops-part2
 supersedes: []
-created_date: 2026-07-24
+date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
 
@@ -293,7 +293,7 @@ A: Detection: Prometheus alerting rule on `rate(multimodal_cost_usd_total{custom
 
 ## Related
 
-- [Part 11 — Evaluation Harnesses & CI/CD](./part-11-evaluation-harnesses-cicd.md) — continuous quality measurement that feeds observability dashboards
-- [Part 13 — Governance & Production Engineering](./part-13-governance-production.md) — audit logging, policy enforcement, and production hardening
-- [Part 14 — Cloud Platform Comparison](./part-14-cloud-platform-comparison.md) — platform-specific cost models and FinOps tooling
-- [AI Economics & Cost Management](../ai-economics/index.md) — broader FinOps patterns beyond multimodal workloads
+- [Part 11 — Evaluation Harnesses & CI/CD](../11-part-11-evaluation-harnesses-cicd.md) — continuous quality measurement that feeds observability dashboards
+- [Part 13 — Governance & Production Engineering](../13-part-13-governance-production.md) — audit logging, policy enforcement, and production hardening
+- [Part 14 — Cloud Platform Comparison](../14-part-14-cloud-platform-comparison.md) — platform-specific cost models and FinOps tooling
+- AI Economics & Cost Management (broader FinOps patterns beyond multimodal workloads; not yet migrated)

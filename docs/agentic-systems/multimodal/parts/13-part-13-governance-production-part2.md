@@ -17,7 +17,7 @@ Continuation covering the A.R.T. Framework applied to multimodal governance, ope
 ---
 ## A.R.T. Framework Applied to Multimodal Governance & Production
 
-The [A.R.T. Framework (Agility · Risk · Tenacity)](../enterprise-architecture/ai-architecture/ART-Framework-Agentic-AI-Execution.md) provides a validated execution model for governing and sustaining multimodal AI systems. In the governance and production domain, the *Risk* and *Tenacity* pillars dominate — with *Agility* ensuring governance processes do not become bottlenecks to innovation.
+The [A.R.T. Framework (Agility · Risk · Tenacity)](../../../architecture/37-art-framework-agentic-ai-execution.md) provides a validated execution model for governing and sustaining multimodal AI systems. In the governance and production domain, the *Risk* and *Tenacity* pillars dominate — with *Agility* ensuring governance processes do not become bottlenecks to innovation.
 
 ### Risk Pillar — Governance Implementation
 
@@ -100,11 +100,11 @@ graph LR
 
 ## Related
 
-- [A.R.T. Framework](../enterprise-architecture/ai-architecture/ART-Framework-Agentic-AI-Execution.md) — the execution methodology underpinning multimodal governance
-- [Part 12 — Observability & FinOps](./part-12-observability-finops.md) — instrumentation and cost management that feeds into governance dashboards
-- [Part 09 — Compliance & Responsible AI](./part-09-compliance-responsible-ai.md) — regulatory requirements and fairness obligations
-- [Part 07 — Security & Threat Taxonomy](./part-07-security-threats.md) — threat model underlying many governance controls
-- [Part 14 — Cloud Platform Comparison](./part-14-cloud-platform-comparison.md) — platform-specific governance tooling (Azure Policy, AWS Organizations, GCP Org Policy)
+- [A.R.T. Framework](../../../architecture/37-art-framework-agentic-ai-execution.md) — the execution methodology underpinning multimodal governance
+- [Part 12 — Observability & FinOps](../12-part-12-observability-finops.md) — instrumentation and cost management that feeds into governance dashboards
+- [Part 09 — Compliance & Responsible AI](../09-part-09-compliance-responsible-ai.md) — regulatory requirements and fairness obligations
+- [Part 07 — Security & Threat Taxonomy](../07-part-07-security-threats.md) — threat model underlying many governance controls
+- [Part 14 — Cloud Platform Comparison](../14-part-14-cloud-platform-comparison.md) — platform-specific governance tooling (Azure Policy, AWS Organizations, GCP Org Policy)
 
 
 **This is Part 2 of 2. [Return to Part 1 ←](pathname:///archon/agentic-systems/multimodal/13-part-13-governance-production) for governance framework, approval workflows, policy-as-code, audit logging, risk scoring, kill switches, production engineering, GPU infrastructure, large media processing, and caching architecture.**

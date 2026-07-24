@@ -18,10 +18,10 @@ supersedes:
 
 **What it does NOT duplicate:**
 
-- MCP protocol fundamentals → [MCP Deep Guide](mcp-deep-guide.md)
-- Claude model pricing → [Models 2026](claude-models-2026.md)
-- Agent SDK patterns → [Agent SDK Production](claude-agent-sdk-production.md)
-- EA-level governance → [Governance & Compliance](../../enterprise-architecture/ai-architecture/enterprise-ai-governance-compliance.md)
+- MCP protocol fundamentals → [MCP Deep Guide](39-mcp-deep-guide.md)
+- Claude model pricing → [Models 2026](35-claude-models-2026.md)
+- Agent SDK patterns → [Agent SDK Production](30-claude-agent-sdk-production.md)
+- EA-level governance → [Governance & Compliance](../../architecture/51-enterprise-ai-governance-compliance.md)
 
 ---
 

@@ -608,7 +608,7 @@ for line in sys.stdin:
         sys.stdout.flush()
 ```
 
-For a full MCP deep-dive including server types, resources, and prompts primitives, see [MCP Deep Guide](mcp-deep-guide.md).
+For a full MCP deep-dive including server types, resources, and prompts primitives, see [MCP Deep Guide](39-mcp-deep-guide.md).
 
 ---
 

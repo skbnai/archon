@@ -5,7 +5,7 @@ doc_type: reference-architecture
 status: current
 topic_id: part-08-guardrails-sanitization-part2
 supersedes: []
-created_date: 2026-07-24
+date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
 
@@ -116,7 +116,7 @@ Scale: Stage 1–3 runs on CPU-based containers at ~200 documents/second per pod
 
 ## Related
 
-- [Part 7 — Security & Threat Taxonomy](./part-07-security-threats) — adversarial attacks and threat modeling for multimodal systems
-- [Part 9 — Compliance & Responsible AI](./part-09-compliance-responsible-ai) — regulatory requirements for multimodal guardrail systems
-- [AI Security Governance](../ai-security-governance/index.md) — enterprise security controls and governance frameworks
-- [Enterprise AI Architecture Patterns](../enterprise-architecture/ai-architecture/enterprise-ai-architecture-patterns.md) — architectural patterns including guardrail middleware
+- [Part 7 — Security & Threat Taxonomy](../07-part-07-security-threats.md) — adversarial attacks and threat modeling for multimodal systems
+- [Part 9 — Compliance & Responsible AI](../09-part-09-compliance-responsible-ai.md) — regulatory requirements for multimodal guardrail systems
+- [AI Security Governance](../../../ai-security-governance/index.md) — enterprise security controls and governance frameworks
+- [Enterprise AI Architecture Patterns](../../../architecture/49-enterprise-ai-architecture-patterns.md) — architectural patterns including guardrail middleware

@@ -7,7 +7,7 @@ domain: agentic-systems
 doc_type: reference-architecture
 topic_id: part-09-compliance-responsible-ai
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/09-part-09-compliance-responsible-ai.md.md
+  - ../knowledge-docs/docs/multimodal-ai/09-part-09-compliance-responsible-ai.md
 sources:
   - https://ec.europa.eu/info/law/ai-act_en
   - https://gdpr-info.eu

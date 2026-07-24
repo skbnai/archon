@@ -56,7 +56,7 @@ Configure Langfuse's field masking to redact specific fields before trace storag
 | Data Type | Langfuse Masking Approach |
 | --- | --- |
 | Account numbers (IBAN/BBAN) | Regex: [A-Z]{2}[0-9]{2}[A-Z0-9]{4,30} → IBAN-REDACTED |
-| Customer UPN / email | Pseudonymise: SHA256[upn](:8) → shown as user_abc12345 |
+| Customer UPN / email | Pseudonymise: `SHA256(upn)[:8]` → shown as user_abc12345 |
 | Customer full name | Partial: 'John D.' format or full redaction |
 | Social Security / National ID | Full redaction |
 | Trade amounts &gt; EUR 100k | Redact in trace, preserve in separate audit log |

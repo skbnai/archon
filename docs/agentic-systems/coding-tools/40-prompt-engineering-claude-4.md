@@ -769,7 +769,7 @@ def fan_out_analysis(documents: list[str], question: str) -> str:
 
 ### Batch Prompts
 
-For offline workloads, use the Batch API instead of threading. See [Claude Models 2026](claude-models-2026.md#8-pricing-reference) for batch pricing.
+For offline workloads, use the Batch API instead of threading. See [Claude Models 2026](35-claude-models-2026.md#8-pricing-reference) for batch pricing.
 
 ---
 

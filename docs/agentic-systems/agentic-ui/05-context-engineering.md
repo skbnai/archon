@@ -556,5 +556,5 @@ def sanitize_tool_result(result: str, tool_name: str) -> str:
 - [AGUI Standards &amp; Ecosystem Landscape](02-agui-standards-landscape.md) — AG-UI STATE_SNAPSHOT/STATE_DELTA (state as context)
 - [Enterprise Reference Architecture](08-enterprise-reference-architecture.md) — Layer 13 (RAG), Layer 14 (Memory)
 - [Security Architecture](19-agentic-ui-security-architecture.md) — Context poisoning attacks and defenses
-- [Agent Memory &amp; Planning Architecture](../enterprise-architecture/ai-architecture/agent-memory-planning-architecture.md) — Deep dive on the four memory types
-- [Agentic AI Landing Zone — Context Engineering](../ai-foundations/agentic_ai_landing_zone_context_engineering.md) — Platform-level context engineering
+- [Agent Memory &amp; Planning Architecture](../../architecture/41-agent-memory-planning-architecture.md) — Deep dive on the four memory types
+- [Agentic AI Landing Zone — Context Engineering](../../ai-foundations/agentic_ai_landing_zone_context_engineering.md) — Platform-level context engineering

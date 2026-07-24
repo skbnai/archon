@@ -18,7 +18,7 @@ related_docs:
 
 A comprehensive scalability reference for AI Platform Teams and Principal Architects covering stateless design, horizontal scaling patterns, queue architectures, autoscaling, GPU scheduling, and capacity planning for agentic systems from frontend through LLM inference.
 
-**Build on the foundation:** Circuit breakers and degradation under load are covered in [reliability-engineering](reliability-engineering). AI Gateway load balancing and rate limiting are in [Kong AI Gateway Guide](../cloud-platforms/ai-gateway/kong-ai-gateway-guide). Agent memory and state scaling details are in [Agent Memory Planning Architecture](../enterprise-architecture/ai-architecture/agent-memory-planning-architecture).
+**Build on the foundation:** Circuit breakers and degradation under load are covered in [reliability-engineering](16-reliability-engineering.md). AI Gateway load balancing and rate limiting are in [Kong AI Gateway Guide](../../platforms/08-kong-ai-gateway-guide.md). Agent memory and state scaling details are in [Agent Memory Planning Architecture](../../architecture/41-agent-memory-planning-architecture.md).
 
 ---
 

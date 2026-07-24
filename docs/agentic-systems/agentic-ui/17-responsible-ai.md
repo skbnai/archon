@@ -17,7 +17,7 @@ supersedes:
 **Audience:** Enterprise AI/Principal AI Architects, AI Platform Teams, Security Architects, and Compliance/Risk Officers designing, implementing, and auditing responsible AI practices in agentic UI systems — how RAI requirements manifest in UX, architecture, and operations, not the regulatory frameworks themselves (covered in linked references).
 
 :::note Scope Boundary
-    This file covers **UX, architecture, and operational implementation** of RAI requirements. For full EU AI Act / NIST AI RMF / ISO 42001 details, see [Enterprise AI Governance & Compliance](../enterprise-architecture/ai-architecture/enterprise-ai-governance-compliance.md). For governance structures, see [Governance for Agentic Applications](governance.md).
+    This file covers **UX, architecture, and operational implementation** of RAI requirements. For full EU AI Act / NIST AI RMF / ISO 42001 details, see [Enterprise AI Governance & Compliance](../../architecture/51-enterprise-ai-governance-compliance.md). For governance structures, see [Governance for Agentic Applications](11-governance.md).
 
 ---
 
@@ -72,7 +72,7 @@ RAI principles manifest directly in user interface design, not just backend arch
 
 ## 2. EU AI Act for Agentic UI Applications
 
-For full EU AI Act framework and Digital Omnibus deadlines, see [Enterprise AI Governance & Compliance](../enterprise-architecture/ai-architecture/enterprise-ai-governance-compliance.md) §2. This section covers how obligations manifest in **agentic UI design and architecture**.
+For full EU AI Act framework and Digital Omnibus deadlines, see [Enterprise AI Governance & Compliance](../../architecture/51-enterprise-ai-governance-compliance.md) §2. This section covers how obligations manifest in **agentic UI design and architecture**.
 
 ### 2.1 High-Risk Classification for Agentic Apps
 
@@ -178,7 +178,7 @@ Article 5 prohibitions for agentic UI design:
 
 ## 3. NIST AI RMF for Agentic Systems
 
-For the full NIST AI RMF framework description, see [Enterprise AI Governance & Compliance](../enterprise-architecture/ai-architecture/enterprise-ai-governance-compliance.md) §2.2.
+For the full NIST AI RMF framework description, see [Enterprise AI Governance & Compliance](../../architecture/51-enterprise-ai-governance-compliance.md) §2.2.
 
 Covers how GOVERN/MAP/MEASURE/MANAGE apply to **agentic-specific scenarios**.
 
@@ -253,7 +253,7 @@ CAISI (Comprehensive AI Safety and Integrity Standards) extends NIST AI RMF 2.0 
 
 ## 4. OWASP LLM Top 10 (2025) in Agentic UI Applications
 
-For OWASP Agentic AI ASI01–ASI10, see [Agentic AI Security &amp; Identity](../enterprise-architecture/ai-architecture/agentic-ai-security-identity.md). Maps OWASP LLM Top 10 (2025, chatbot origin) to agentic UI surfaces.
+For OWASP Agentic AI ASI01–ASI10, see [Agentic AI Security &amp; Identity](../../trust/05-agentic-ai-security-identity.md). Maps OWASP LLM Top 10 (2025, chatbot origin) to agentic UI surfaces.
 
 ### 4.1 LLM01–LLM10 Mapped to AGUI Attack Surfaces
 

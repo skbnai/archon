@@ -88,7 +88,7 @@ Continuation of the prompt engineering reference guide. This part covers advance
 
 Prompt caching reduces cost on repeated calls with stable content by storing token representations server-side. Cache reads cost approximately 10% of full input price.
 
-For pricing details, see [Claude Models 2026](claude-models-2026.md#8-pricing-reference).
+For pricing details, see [Claude Models 2026](../35-claude-models-2026.md#8-pricing-reference).
 
 ### Cache Control Syntax
 

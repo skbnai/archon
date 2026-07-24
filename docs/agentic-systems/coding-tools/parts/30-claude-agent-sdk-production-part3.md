@@ -272,7 +272,7 @@ async def run_managed_agent(task: str, tools: list[str]) -> dict:
         }
 ```
 
-For enterprise cloud deployment (AWS Bedrock, GCP Vertex AI, Azure AI Foundry), see [Claude Enterprise Deployment 2026](claude-enterprise-2026.md).
+For enterprise cloud deployment (AWS Bedrock, GCP Vertex AI, Azure AI Foundry), see [Claude Enterprise Deployment 2026](../34-claude-enterprise-2026.md).
 
 ---
 

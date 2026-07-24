@@ -25,7 +25,7 @@ Zero-to-mastery guide for building production multi-agent systems with the Claud
 
 The Claude Agent SDK is a library that runs **in your own process** and provides a structured runtime for multi-turn, tool-using, multi-agent applications built on top of the Claude Messages API. It handles the agentic loop (calling tools, processing results, continuing the conversation), session persistence, subagent spawning, and lifecycle management — without you writing that scaffolding manually.
 
-The SDK is distinct from the raw Messages API (which you manage entirely) and from Managed Agents (a hosted REST API product where Anthropic runs the sandbox). For a model pricing reference, see [Claude Models 2026](claude-models-2026.md). For enterprise cloud deployment across AWS/GCP/Azure, see [Claude Enterprise Deployment 2026](claude-enterprise-2026.md). For MCP server development and the MCP protocol deep-dive, see [MCP Deep Guide](mcp-deep-guide.md).
+The SDK is distinct from the raw Messages API (which you manage entirely) and from Managed Agents (a hosted REST API product where Anthropic runs the sandbox). For a model pricing reference, see [Claude Models 2026](35-claude-models-2026.md). For enterprise cloud deployment across AWS/GCP/Azure, see [Claude Enterprise Deployment 2026](34-claude-enterprise-2026.md). For MCP server development and the MCP protocol deep-dive, see [MCP Deep Guide](39-mcp-deep-guide.md).
 
 ### Agent SDK vs Managed Agents — Decision Matrix
 

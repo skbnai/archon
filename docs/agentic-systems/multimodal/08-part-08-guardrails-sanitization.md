@@ -3,11 +3,10 @@ title: Part 8 — Guardrails & Sanitization for Multimodal AI
 domain: agentic-systems
 doc_type: reference-architecture
 status: current
-topic_id: 08-part-08-guardrails-sanitization.md
 topic_id: part-08-guardrails-sanitization
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/08-part-08-guardrails-sanitization.md.md
-created_date: 2026-07-24
+  - ../knowledge-docs/docs/multimodal-ai/08-part-08-guardrails-sanitization.md
+date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
 

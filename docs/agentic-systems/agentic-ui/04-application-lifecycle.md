@@ -16,12 +16,12 @@ supersedes:
 **Audience:** Enterprise architects, AI platform teams, and product owners governing the full delivery journey of production agentic applications from ideation through retirement.
 
 **Related:**
-[Architecture Patterns](../enterprise-architecture/ai-architecture/enterprise-ai-architecture-patterns.md) |
-[Governance & Compliance](../enterprise-architecture/ai-architecture/enterprise-ai-governance-compliance.md) |
-[Security & Identity](../enterprise-architecture/ai-architecture/agentic-ai-security-identity.md) |
-[Observability](../enterprise-architecture/ai-architecture/agentic-ai-reliability-observability-governance.md) |
-[Memory Architecture](../enterprise-architecture/ai-architecture/agent-memory-planning-architecture.md) |
-[Auth Implementation](../ai-protocols/auth/entra-3lo-agent-auth-implementation.md)
+[Architecture Patterns](../../architecture/49-enterprise-ai-architecture-patterns.md) |
+[Governance & Compliance](../../architecture/51-enterprise-ai-governance-compliance.md) |
+[Security & Identity](../../trust/05-agentic-ai-security-identity.md) |
+[Observability](../../architecture/43-agentic-ai-reliability-observability-governance.md) |
+[Memory Architecture](../../architecture/41-agent-memory-planning-architecture.md) |
+[Auth Implementation](../../protocols/08-entra-3lo-agent-auth-implementation.md)
 
 ---
 

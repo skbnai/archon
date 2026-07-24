@@ -173,6 +173,6 @@ Scalability for agentic applications requires coordinated decisions across six l
 The scalability decision matrix in Part 2 Section 18 provides criteria for choosing between alternatives (stateless vs. stateful, single provider vs. multi-provider, managed vs. self-hosted). Start with the simplest option that meets your SLA, then optimize based on observed bottlenecks, not premature assumptions.
 
 **Related Documentation:**
-- [Reliability Engineering](reliability-engineering) — Circuit breakers and graceful degradation under load
-- [Agent Memory Planning Architecture](../enterprise-architecture/ai-architecture/agent-memory-planning-architecture) — Scaling session state and conversation history
-- [Kong AI Gateway Guide](../cloud-platforms/ai-gateway/kong-ai-gateway-guide) — Rate limiting and load balancing at the gateway layer
+- [Reliability Engineering](../16-reliability-engineering.md) — Circuit breakers and graceful degradation under load
+- [Agent Memory Planning Architecture](../../../architecture/41-agent-memory-planning-architecture.md) — Scaling session state and conversation history
+- [Kong AI Gateway Guide](../../../platforms/08-kong-ai-gateway-guide.md) — Rate limiting and load balancing at the gateway layer

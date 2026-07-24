@@ -500,7 +500,7 @@ Or switch models for the current session:
 /model claude-sonnet-5              # Switch to Sonnet 5 for agentic work
 ```
 
-See [Claude Models 2026](claude-models-2026.md) for model IDs, pricing, and selection guidance.
+See [Claude Models 2026](../35-claude-models-2026.md) for model IDs, pricing, and selection guidance.
 
 ### Session Cost Budgets
 

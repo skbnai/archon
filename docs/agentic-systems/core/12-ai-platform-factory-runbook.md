@@ -799,8 +799,6 @@ Data governance is non-negotiable in production. Every field must be classified.
 
 ### docs/data/schema-registry.yaml — canonical schema format
 
-![Schema registry diagram](/img/agentic-systems/platform/ai-platform-factory-runbook-v2.pdf-0018-07.png)
-
 **docs/data/pii-inventory.md — governance anchor:**
 
 ```markdown

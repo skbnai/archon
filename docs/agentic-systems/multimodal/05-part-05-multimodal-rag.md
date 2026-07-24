@@ -7,7 +7,7 @@ topic_id: part-05-multimodal-rag
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/05-part-05-multimodal-rag.md.md
+  - ../knowledge-docs/docs/multimodal-ai/05-part-05-multimodal-rag.md
 ---
 
 # Part 05 — Multimodal RAG
@@ -383,7 +383,7 @@ A: Evaluation is the hardest part of multimodal RAG because cross-modal relevanc
 
 ## Related
 
-- [Part 02 — Enterprise Architecture](../02-part-02-enterprise-architecture.md) — VLM generation from retrieved context
-- [Part 04 — Video & Audio Intelligence](../04-04-part-04-modalities-video-audio.md.md) — audio and video indexing for RAG
-- [Part 06 — Agentic Workflows](../06-06-part-06-agentic-workflows.md.md) — RAG as a tool within multimodal agents
-- [Part 07 — Security & Threat Taxonomy](../07-07-part-07-security-threats.md.md) — RAG poisoning and embedding attacks
+- [Part 02 — Enterprise Architecture](02-part-02-enterprise-architecture.md) — VLM generation from retrieved context
+- [Part 04 — Video & Audio Intelligence](04-part-04-modalities-video-audio.md) — audio and video indexing for RAG
+- [Part 06 — Agentic Workflows](06-part-06-agentic-workflows.md) — RAG as a tool within multimodal agents
+- [Part 07 — Security & Threat Taxonomy](07-part-07-security-threats.md) — RAG poisoning and embedding attacks

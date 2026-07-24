@@ -98,7 +98,7 @@ Qwen2-VL under an Apache 2.0 license is self-hostable, meaning data never leaves
 - [Part 2 — Enterprise Architecture](../02-part-02-enterprise-architecture.md) — how multimodal models slot into four-layer agent architectures
 - [Part 5 — Multimodal RAG](../05-part-05-multimodal-rag.md) — embedding strategies and cross-modal retrieval built on CLIP and VLM encoders
 - [Part 7 — Security & Threat Taxonomy](../07-part-07-security-threats.md) — adversarial attacks specific to each modality covered in this part
-- [AI Foundations](../ai-foundations/index.md) — foundational transformer and attention architecture background
+- [AI Foundations](../../../ai-foundations/index.md) — foundational transformer and attention architecture background
 
 ---
 

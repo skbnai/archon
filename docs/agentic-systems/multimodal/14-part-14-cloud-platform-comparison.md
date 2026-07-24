@@ -3,11 +3,10 @@ title: Part 14 — Cloud Platform Comparison for Multimodal AI
 domain: agentic-systems
 doc_type: reference-architecture
 status: current
-topic_id: 14-part-14-cloud-platform-comparison.md
 topic_id: part-14-cloud-platform-comparison
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/14-part-14-cloud-platform-comparison.md.md
-created_date: 2026-07-24
+  - ../knowledge-docs/docs/multimodal-ai/14-part-14-cloud-platform-comparison.md
+date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
 

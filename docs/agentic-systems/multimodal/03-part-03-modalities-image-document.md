@@ -7,7 +7,7 @@ topic_id: part-03-modalities-image-document
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/03-part-03-modalities-image-document.md.md
+  - ../knowledge-docs/docs/multimodal-ai/03-part-03-modalities-image-document.md
 ---
 
 # Part 3 — Image & Document Intelligence

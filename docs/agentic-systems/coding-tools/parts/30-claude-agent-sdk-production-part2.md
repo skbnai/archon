@@ -273,7 +273,7 @@ Match model to task complexity. Over-specifying the model is the single largest 
 | Creative writing, narrative | `claude-fable` | Optimised for fluency and style |
 | Long-horizon coding, complex research | `claude-opus-4-6` | Maximum capability, use sparingly |
 
-See [Claude Models 2026](claude-models-2026.md) for pricing details.
+See [Claude Models 2026](../35-claude-models-2026.md) for pricing details.
 
 ### Token Counting Before Dispatch
 
