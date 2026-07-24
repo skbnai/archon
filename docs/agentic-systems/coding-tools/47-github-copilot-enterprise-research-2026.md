@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 doc_type: guide
-topic_id: github_copilot_enterprise_research_2026
+topic_id: github-copilot-enterprise-research-2026
 supersedes: []
 ---
 

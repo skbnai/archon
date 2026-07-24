@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 doc_type: guide
-topic_id: a2a_deep_research
+topic_id: a2a-deep-research
 supersedes: []
 ---
 

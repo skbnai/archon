@@ -3,7 +3,7 @@ title: "Part 07 — Security & Threat Taxonomy for Multimodal AI"
 doc_type: guide
 domain: agentic-systems
 status: current
-topic_id: 07-part-07-security-threats.md
+topic_id: part-07-security-threats
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:

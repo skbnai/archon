@@ -3,7 +3,7 @@ title: "Part 06 — Multimodal Agentic Workflows"
 doc_type: reference-architecture
 domain: agentic-systems
 status: current
-topic_id: 06-part-06-agentic-workflows.md
+topic_id: part-06-agentic-workflows
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:

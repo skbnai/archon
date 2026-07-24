@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 doc_type: guide
-topic_id: enterprise_agentic_ai_asset_management_2026
+topic_id: enterprise-agentic-ai-asset-management-2026
 supersedes: []
 ---
 

@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 doc_type: guide
-topic_id: genaiaf_prompt_lifecycle_hotswap_research_2026
+topic_id: genaiaf-prompt-lifecycle-hotswap-research-2026
 supersedes: []
 ---
 

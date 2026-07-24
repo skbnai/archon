@@ -3,7 +3,7 @@ title: "Part 05 — Multimodal RAG"
 doc_type: reference-architecture
 domain: agentic-systems
 status: current
-topic_id: 05-part-05-multimodal-rag.md
+topic_id: part-05-multimodal-rag
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:

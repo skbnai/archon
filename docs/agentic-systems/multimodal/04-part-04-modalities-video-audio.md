@@ -3,7 +3,7 @@ title: "Part 04 — Video & Audio Intelligence"
 doc_type: guide
 domain: agentic-systems
 status: current
-topic_id: 04-part-04-modalities-video-audio.md
+topic_id: part-04-modalities-video-audio
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:

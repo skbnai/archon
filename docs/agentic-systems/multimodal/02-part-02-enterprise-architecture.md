@@ -3,7 +3,7 @@ title: "Part 2 — Enterprise Multimodal Agent Architecture"
 doc_type: reference-architecture
 domain: agentic-systems
 status: current
-topic_id: 02-part-02-enterprise-architecture.md
+topic_id: part-02-enterprise-architecture
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:

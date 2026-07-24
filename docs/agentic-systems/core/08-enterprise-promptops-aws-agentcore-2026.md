@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 doc_type: guide
-topic_id: enterprise_promptops_aws_agentcore_2026
+topic_id: enterprise-promptops-aws-agentcore-2026
 supersedes: []
 ---
 

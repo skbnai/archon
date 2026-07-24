@@ -3,7 +3,7 @@ title: "Part 1 — Foundations of Multimodal AI"
 doc_type: concept
 domain: agentic-systems
 status: current
-topic_id: 01-part-01-foundations.md
+topic_id: part-01-foundations
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:

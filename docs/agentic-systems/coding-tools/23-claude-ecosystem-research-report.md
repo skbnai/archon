@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 doc_type: guide
-topic_id: claude_ecosystem_research_report
+topic_id: claude-ecosystem-research-report
 supersedes: []
 ---
 

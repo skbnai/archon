@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 doc_type: reference-architecture
-topic_id: 09-part-09-compliance-responsible-ai.md
+topic_id: part-09-compliance-responsible-ai
 supersedes:
   - ../knowledge-docs/docs/multimodal-ai/09-part-09-compliance-responsible-ai.md.md
 sources:

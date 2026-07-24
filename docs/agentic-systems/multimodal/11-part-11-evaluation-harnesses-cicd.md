@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 doc_type: reference-architecture
-topic_id: 11-part-11-evaluation-harnesses-cicd.md
+topic_id: part-11-evaluation-harnesses-cicd
 supersedes:
   - ../knowledge-docs/docs/multimodal-ai/11-part-11-evaluation-harnesses-cicd.md.md
 sources:

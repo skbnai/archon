@@ -3,7 +3,7 @@ title: "Part 3 — Image & Document Intelligence"
 doc_type: guide
 domain: agentic-systems
 status: current
-topic_id: 03-part-03-modalities-image-document.md
+topic_id: part-03-modalities-image-document
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:

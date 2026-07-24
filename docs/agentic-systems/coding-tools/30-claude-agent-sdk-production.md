@@ -1,4 +1,5 @@
 ---
+title: "Claude Agent SDK — Production Reference"
 domain: agentic-systems
 doc_type: guide
 status: current

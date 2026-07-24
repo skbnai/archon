@@ -10,5 +10,4 @@ supersedes: []
 ---
 
 # Observability for Agentic Applications
-
-[Content to be migrated from wave-4+]
+[Observability content to be migrated from wave-4+]

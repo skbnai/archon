@@ -4,6 +4,7 @@ domain: agentic-systems
 doc_type: reference-architecture
 status: current
 topic_id: 15-part-15-emerging-trends-bibliography.md
+topic_id: part-15-emerging-trends-bibliography
 supersedes:
   - ../knowledge-docs/docs/multimodal-ai/15-part-15-emerging-trends-bibliography.md.md
 created_date: 2026-07-24
