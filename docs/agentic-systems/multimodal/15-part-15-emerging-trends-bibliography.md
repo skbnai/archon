@@ -3,9 +3,9 @@ title: Part 15 — Emerging Trends & Bibliography for Multimodal AI
 domain: agentic-systems
 doc_type: reference-architecture
 status: current
-topic_id: part-15-emerging-trends-bibliography
+topic_id: 15-part-15-emerging-trends-bibliography.md
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/part-15-emerging-trends-bibliography.md
+  - ../knowledge-docs/docs/multimodal-ai/15-part-15-emerging-trends-bibliography.md.md
 created_date: 2026-07-24
 last_reviewed: 2026-07-24
 ---
@@ -229,4 +229,4 @@ The EU AI Act (2024) Article 50 requires that providers of AI systems that gener
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/15-part-15-emerging-trends-bibliography-part2.md) for research gaps, timeline, and comprehensive bibliography.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/15-15-part-15-emerging-trends-bibliography.md-part2.md) for research gaps, timeline, and comprehensive bibliography.**

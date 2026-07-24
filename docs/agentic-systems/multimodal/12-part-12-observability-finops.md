@@ -3,9 +3,9 @@ title: Part 12 — Observability & FinOps for Multimodal AI
 domain: agentic-systems
 doc_type: reference-architecture
 status: current
-topic_id: part-12-observability-finops
+topic_id: 12-part-12-observability-finops.md
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/part-12-observability-finops.md
+  - ../knowledge-docs/docs/multimodal-ai/12-part-12-observability-finops.md.md
 created_date: 2026-07-24
 last_reviewed: 2026-07-24
 ---
@@ -305,4 +305,4 @@ ocr_confidence = Histogram(
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/12-part-12-observability-finops-part2.md) for FinOps strategy, cost optimization, and governance.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/12-12-part-12-observability-finops.md-part2.md) for FinOps strategy, cost optimization, and governance.**

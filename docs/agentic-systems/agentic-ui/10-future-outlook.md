@@ -191,6 +191,6 @@ The evolution from per-task copilot to persistent digital coworker with defined 
 ## Related Pages
 
 - [Part 2: Enterprise Architecture Implications & Strategic Recommendations](pathname://docs/agentic-systems/agentic-ui/parts/10-future-outlook-part2.md) — Enterprise architect roles, platform consolidation, risks, and 10 strategic recommendations for 2026–2030
-- [AGUI Standards Landscape](agui-standards-landscape.md) — Standards overview and ecosystem comparison
-- [Security Architecture](security-architecture.md) — Security horizon for agentic systems
-- [Governance](governance.md) — Governance evolution for enterprise AI
+- [AGUI Standards Landscape](02-agui-standards-landscape.md) — Standards overview and ecosystem comparison
+- [Security Architecture](19-agentic-ui-security-architecture.md) — Security horizon for agentic systems
+- [Governance](11-governance.md) — Governance evolution for enterprise AI

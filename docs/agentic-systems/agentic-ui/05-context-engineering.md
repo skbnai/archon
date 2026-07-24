@@ -450,7 +450,7 @@ ON READ (at session start):
 
 ## 6. Context Poisoning Defenses
 
-Context poisoning occurs when adversarial content enters the context window and manipulates the agent's subsequent behavior. See [Security Architecture](security-architecture.md) §3 for the full attack taxonomy. Below are the context-engineering–specific mitigations.
+Context poisoning occurs when adversarial content enters the context window and manipulates the agent's subsequent behavior. See [Security Architecture](19-agentic-ui-security-architecture.md) §3 for the full attack taxonomy. Below are the context-engineering–specific mitigations.
 
 ### 6.1 Structural Separation
 
@@ -553,8 +553,8 @@ def sanitize_tool_result(result: str, tool_name: str) -> str:
 
 ## Related Pages
 
-- [AGUI Standards &amp; Ecosystem Landscape](agui-standards-landscape.md) — AG-UI STATE_SNAPSHOT/STATE_DELTA (state as context)
-- [Enterprise Reference Architecture](enterprise-reference-architecture.md) — Layer 13 (RAG), Layer 14 (Memory)
-- [Security Architecture](security-architecture.md) — Context poisoning attacks and defenses
+- [AGUI Standards &amp; Ecosystem Landscape](02-agui-standards-landscape.md) — AG-UI STATE_SNAPSHOT/STATE_DELTA (state as context)
+- [Enterprise Reference Architecture](08-enterprise-reference-architecture.md) — Layer 13 (RAG), Layer 14 (Memory)
+- [Security Architecture](19-agentic-ui-security-architecture.md) — Context poisoning attacks and defenses
 - [Agent Memory &amp; Planning Architecture](../enterprise-architecture/ai-architecture/agent-memory-planning-architecture.md) — Deep dive on the four memory types
 - [Agentic AI Landing Zone — Context Engineering](../ai-foundations/agentic_ai_landing_zone_context_engineering.md) — Platform-level context engineering

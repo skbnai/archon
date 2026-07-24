@@ -3,9 +3,9 @@ title: Part 10 — Evaluation & Benchmarks for Multimodal AI
 domain: agentic-systems
 doc_type: reference-architecture
 status: current
-topic_id: part-10-evaluation-benchmarks
+topic_id: 10-part-10-evaluation-benchmarks.md
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/part-10-evaluation-benchmarks.md
+  - ../knowledge-docs/docs/multimodal-ai/10-part-10-evaluation-benchmarks.md.md
 created_date: 2026-07-24
 last_reviewed: 2026-07-24
 ---
@@ -202,4 +202,4 @@ flowchart TD
 
 ---
 
-**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/10-part-10-evaluation-benchmarks-part2.md) for LLM-as-Judge and golden dataset construction.**
+**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/10-10-part-10-evaluation-benchmarks.md-part2.md) for LLM-as-Judge and golden dataset construction.**

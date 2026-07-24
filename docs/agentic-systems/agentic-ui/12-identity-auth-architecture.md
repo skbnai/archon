@@ -18,7 +18,7 @@ covers_version: "as of 2026-07-10"
 Security Architects and Principal AI Architects will find here the authoritative reference for identity and authorization in agentic UI systems — covering agent identity models, OAuth 2.1 delegation chains, MCP authentication (RFC 9728 + RFC 8707), multi-tenant token isolation, and cross-agent (A2A) trust as of July 2026.
 
 :::info Scope Boundary
-    This page covers identity and auth architecture *specific to the agentic UI stack* — the AG-UI transport layer, agent runtime, MCP server connections, and A2A delegation. For the full Entra 3LO implementation guide (including OBO flow code, MSAL configuration, and Azure AD app registration), see [Entra 3LO Implementation Guide](../ai-protocols/auth/entra-3lo-agent-auth-implementation.md). For the OWASP ASI threat model and UI-level attack surfaces, see [Security Architecture](security-architecture.md).
+    This page covers identity and auth architecture *specific to the agentic UI stack* — the AG-UI transport layer, agent runtime, MCP server connections, and A2A delegation. For the full Entra 3LO implementation guide (including OBO flow code, MSAL configuration, and Azure AD app registration), see [Entra 3LO Implementation Guide](../ai-protocols/auth/entra-3lo-agent-auth-implementation.md). For the OWASP ASI threat model and UI-level attack surfaces, see [Security Architecture](19-agentic-ui-security-architecture.md).
 
 ---
 
@@ -489,8 +489,8 @@ WEBSOCKET VARIANT:
 
 ## Related Pages
 
-- [Security Architecture](security-architecture.md) — Trust boundaries, OWASP ASI mapping, attack surfaces
-- [Enterprise Reference Architecture](enterprise-reference-architecture.md) — Layer 6 (Identity Service), TB3–TB5
+- [Security Architecture](19-agentic-ui-security-architecture.md) — Trust boundaries, OWASP ASI mapping, attack surfaces
+- [Enterprise Reference Architecture](08-enterprise-reference-architecture.md) — Layer 6 (Identity Service), TB3–TB5
 - [Entra 3LO Implementation Guide](../ai-protocols/auth/entra-3lo-agent-auth-implementation.md) — Full OBO implementation with code
 - [Entra 3LO Security Review](../ai-protocols/auth/entra-3lo-agent-auth-security-review.md) — Security audit patterns
 - [Agent Identity: Entra vs AgentCore](../ai-protocols/auth/agent-identity-entra-vs-awsagentcore.md) — Platform comparison

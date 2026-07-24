@@ -3,9 +3,9 @@ title: Part 8 — Guardrails & Sanitization for Multimodal AI
 domain: agentic-systems
 doc_type: reference-architecture
 status: current
-topic_id: part-08-guardrails-sanitization
+topic_id: 08-part-08-guardrails-sanitization.md
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/part-08-guardrails-sanitization.md
+  - ../knowledge-docs/docs/multimodal-ai/08-part-08-guardrails-sanitization.md.md
 created_date: 2026-07-24
 last_reviewed: 2026-07-24
 ---
@@ -185,4 +185,4 @@ PII in multimodal systems exists in three distinct forms that require different 
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/08-part-08-guardrails-sanitization-part2.md) for sanitization pipeline design, enterprise patterns, and interview use cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/08-08-part-08-guardrails-sanitization.md-part2.md) for sanitization pipeline design, enterprise patterns, and interview use cases.**

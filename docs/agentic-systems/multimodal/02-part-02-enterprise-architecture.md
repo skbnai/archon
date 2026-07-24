@@ -3,11 +3,11 @@ title: "Part 2 — Enterprise Multimodal Agent Architecture"
 doc_type: reference-architecture
 domain: agentic-systems
 status: current
-topic_id: part-02-enterprise-architecture
+topic_id: 02-part-02-enterprise-architecture.md
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/part-02-enterprise-architecture.md
+  - ../knowledge-docs/docs/multimodal-ai/02-part-02-enterprise-architecture.md.md
 ---
 
 # Part 2 — Enterprise Multimodal Agent Architecture
@@ -318,7 +318,7 @@ Sub-millimeter defect detection at production-line speed requires a two-stage pe
 
 ## Related
 
-- [Part 1 — Foundations](../01-part-01-foundations.md) — tokenization and model taxonomy that feeds the perception layer
-- [Part 3 — Image & Document Intelligence](../03-part-03-modalities-image-document.md) — deep dive on document understanding agents and IDP pipelines
-- [Part 6 — Agentic Workflows](../06-part-06-agentic-workflows.md) — end-to-end workflow patterns including HITL and tool use
+- [Part 1 — Foundations](../01-01-part-01-foundations.md.md) — tokenization and model taxonomy that feeds the perception layer
+- [Part 3 — Image & Document Intelligence](../03-03-part-03-modalities-image-document.md.md) — deep dive on document understanding agents and IDP pipelines
+- [Part 6 — Agentic Workflows](../06-06-part-06-agentic-workflows.md.md) — end-to-end workflow patterns including HITL and tool use
 - [Enterprise Architecture — AI Architecture](../../enterprise-architecture/ai-architecture/index.md) — broader enterprise AI architecture patterns

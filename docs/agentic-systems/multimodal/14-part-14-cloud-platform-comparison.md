@@ -3,9 +3,9 @@ title: Part 14 — Cloud Platform Comparison for Multimodal AI
 domain: agentic-systems
 doc_type: reference-architecture
 status: current
-topic_id: part-14-cloud-platform-comparison
+topic_id: 14-part-14-cloud-platform-comparison.md
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/part-14-cloud-platform-comparison.md
+  - ../knowledge-docs/docs/multimodal-ai/14-part-14-cloud-platform-comparison.md.md
 created_date: 2026-07-24
 last_reviewed: 2026-07-24
 ---
@@ -201,4 +201,4 @@ Anthropic's Claude models are the strongest performers for long-context document
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/14-part-14-cloud-platform-comparison-part2.md) for decision trees, multi-cloud architecture, and interview use cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/14-14-part-14-cloud-platform-comparison.md-part2.md) for decision trees, multi-cloud architecture, and interview use cases.**

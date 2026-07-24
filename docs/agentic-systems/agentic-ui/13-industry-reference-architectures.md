@@ -431,7 +431,7 @@ Agent Runtime
 ## Related Pages
 
 - [Part 2: Government, Telecom, Knowledge Management, and Life Sciences](pathname:///archon/agentic-systems/parts/13-industry-reference-architectures-part2) — Sections 7–10 and cross-industry patterns
-- [Security Architecture](security-architecture.md) — Enterprise security controls across industries
+- [Security Architecture](19-agentic-ui-security-architecture.md) — Enterprise security controls across industries
 - [Agent UX Patterns](agent-ux-patterns.md) — Human oversight models (HITL/HOTL/HOOL)
-- [Governance](governance.md) — Compliance and governance frameworks
-- [Enterprise Reference Architecture](enterprise-reference-architecture.md) — Backend platform architecture
+- [Governance](11-governance.md) — Compliance and governance frameworks
+- [Enterprise Reference Architecture](08-enterprise-reference-architecture.md) — Backend platform architecture

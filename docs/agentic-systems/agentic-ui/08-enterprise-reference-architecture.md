@@ -718,8 +718,8 @@ The 51+ anti-patterns documented in §2 per layer fall into six families:
 
 ## Related Pages
 
-- [AGUI Standards & Ecosystem Landscape](agui-standards-landscape.md) — AG-UI event taxonomy, A2UI, protocol comparison
-- [Identity & Auth Architecture](identity-auth-architecture.md) — OBO delegation, RFC 8707, Entra Agent ID
-- [Security Architecture](security-architecture.md) — TB1–TB8 attack surfaces, OWASP ASI mapping
-- [Observability](observability.md) — OTel spans, AG-UI audit schema
-- [Evolution of Human-AI Interfaces](evolution-human-ai-interfaces.md) — Why this architecture exists
+- [AGUI Standards & Ecosystem Landscape](02-agui-standards-landscape.md) — AG-UI event taxonomy, A2UI, protocol comparison
+- [Identity & Auth Architecture](12-identity-auth-architecture.md) — OBO delegation, RFC 8707, Entra Agent ID
+- [Security Architecture](19-agentic-ui-security-architecture.md) — TB1–TB8 attack surfaces, OWASP ASI mapping
+- [Observability](14-observability.md) — OTel spans, AG-UI audit schema
+- [Evolution of Human-AI Interfaces](09-evolution-human-ai-interfaces.md) — Why this architecture exists

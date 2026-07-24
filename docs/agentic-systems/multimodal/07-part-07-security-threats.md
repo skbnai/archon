@@ -3,11 +3,11 @@ title: "Part 07 — Security & Threat Taxonomy for Multimodal AI"
 doc_type: guide
 domain: agentic-systems
 status: current
-topic_id: part-07-security-threats
+topic_id: 07-part-07-security-threats.md
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/part-07-security-threats.md
+  - ../knowledge-docs/docs/multimodal-ai/07-part-07-security-threats.md.md
 ---
 
 # Part 07 — Security & Threat Taxonomy for Multimodal AI
@@ -301,4 +301,4 @@ graph TD
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/07-part-07-security-threats-part2.md) for Detection & Mitigation Strategies and Interview Use Cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/07-07-part-07-security-threats.md-part2.md) for Detection & Mitigation Strategies and Interview Use Cases.**

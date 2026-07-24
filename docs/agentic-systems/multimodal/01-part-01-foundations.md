@@ -3,11 +3,11 @@ title: "Part 1 — Foundations of Multimodal AI"
 doc_type: concept
 domain: agentic-systems
 status: current
-topic_id: part-01-foundations
+topic_id: 01-part-01-foundations.md
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/part-01-foundations.md
+  - ../knowledge-docs/docs/multimodal-ai/01-part-01-foundations.md.md
 ---
 
 # Part 1 — Foundations of Multimodal AI
@@ -155,4 +155,4 @@ The table below covers the major multimodal models relevant to enterprise deploy
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/01-part-01-foundations-part2.md) for Agentic Perception and Interview Use Cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/01-01-part-01-foundations.md-part2.md) for Agentic Perception and Interview Use Cases.**

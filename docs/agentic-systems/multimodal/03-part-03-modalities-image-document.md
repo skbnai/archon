@@ -3,11 +3,11 @@ title: "Part 3 — Image & Document Intelligence"
 doc_type: guide
 domain: agentic-systems
 status: current
-topic_id: part-03-modalities-image-document
+topic_id: 03-part-03-modalities-image-document.md
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/part-03-modalities-image-document.md
+  - ../knowledge-docs/docs/multimodal-ai/03-part-03-modalities-image-document.md.md
 ---
 
 # Part 3 — Image & Document Intelligence
@@ -146,4 +146,4 @@ Layout understanding is the hardest IDP sub-problem. *Reading order* in a multi-
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/03-part-03-modalities-image-document-part2.md) for Enterprise Patterns, Failure Modes, and Interview Use Cases.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/03-03-part-03-modalities-image-document.md-part2.md) for Enterprise Patterns, Failure Modes, and Interview Use Cases.**

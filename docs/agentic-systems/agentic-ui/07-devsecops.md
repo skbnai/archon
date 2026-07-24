@@ -881,7 +881,7 @@ resource "kubernetes_stateful_set" "qdrant" {
 ---
 
 :::tip Cross-references
-    - Evaluation framework: [Evaluation Framework](evaluation-framework.md)
-    - Observability infrastructure: [Observability](observability.md)
-    - Governance policies: [Governance](governance.md)
+    - Evaluation framework: [Evaluation Framework](07-devsecops.md)
+    - Observability infrastructure: [Observability](14-observability.md)
+    - Governance policies: [Governance](11-governance.md)
     - OTel GenAI conventions: [Reliability, Observability &amp; Governance](../enterprise-architecture/ai-architecture/agentic-ai-reliability-observability-governance.md)

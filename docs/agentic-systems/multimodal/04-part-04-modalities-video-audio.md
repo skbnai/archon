@@ -3,11 +3,11 @@ title: "Part 04 — Video & Audio Intelligence"
 doc_type: guide
 domain: agentic-systems
 status: current
-topic_id: part-04-modalities-video-audio
+topic_id: 04-part-04-modalities-video-audio.md
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/part-04-modalities-video-audio.md
+  - ../knowledge-docs/docs/multimodal-ai/04-part-04-modalities-video-audio.md.md
 ---
 
 # Part 04 — Video & Audio Intelligence
@@ -231,4 +231,4 @@ Diarization answers "who spoke when?" — a prerequisite for call analytics and 
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/04-part-04-modalities-video-audio-part2.md) for Enterprise Pipelines, Use Cases, and Interview Examples.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/04-04-part-04-modalities-video-audio.md-part2.md) for Enterprise Pipelines, Use Cases, and Interview Examples.**
