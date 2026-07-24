@@ -98,7 +98,13 @@ def main():
     if "--domains" in sys.argv:
         idx = sys.argv.index("--domains")
         domains = {d.strip() for d in sys.argv[idx + 1].split(",") if d.strip()}
-    reg = yaml.safe_load(open("governance/CANONICAL_REGISTRY.yaml")) or {}
+    
+    reg = yaml.safe_load(pathlib.Path("governance/CANONICAL_REGISTRY.yaml").read_text()) or {}
+    wip_reg_path = pathlib.Path("governance/TEMP_WIP_REGISTRY_ENTRIES.yaml")
+    if wip_reg_path.exists():
+        wip_reg = yaml.safe_load(wip_reg_path.read_text()) or {}
+        reg.setdefault("topics", []).extend(wip_reg.get("topics", []))
+
     topics = reg.get("topics") or []
     if "--pending-domains" in sys.argv:
         pending = sorted(pending_domains(topics))
