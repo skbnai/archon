@@ -595,4 +595,4 @@ def request_with_backoff(
 
 ---
 
-**This is Part 2 of 3. [Continue with Part 3 →](pathname:///archon/agentic-systems/coding-tools/parts/35-claude-models-2026-part3) for summary and related resources.**
+**Part 2 of 3. [Continue with Part 3 →](pathname:///archon/agentic-systems/coding-tools/parts/35-claude-models-2026-part3)**
