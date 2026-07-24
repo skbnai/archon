@@ -18,8 +18,8 @@ tags: ["agentic-ui"]
 
 **Related:**
 [Architecture Patterns](../../architecture/49-enterprise-ai-architecture-patterns.md) |
-[Governance & Compliance](../../architecture/51-enterprise-ai-governance-compliance.md) |
-[Security & Identity](../../trust/index.md) |
+[Governance &amp; Compliance](../../architecture/51-enterprise-ai-governance-compliance.md) |
+[Security &amp; Identity](../../trust/index.md) |
 [Observability](../../architecture/43-agentic-ai-reliability-observability-governance.md) |
 [Memory Architecture](../../architecture/41-agent-memory-planning-architecture.md) |
 [Auth Implementation](../../protocols/index.md)
@@ -28,29 +28,26 @@ tags: ["agentic-ui"]
 
 ## Lifecycle Overview
 
-The complete agentic application lifecycle consists of 17 sequential stages from conception through end-of-life. Each stage has defined objectives, critical activities, accountable owners, and go/no-go decision gates.
-
 ```mermaid
 graph LR
-  IDEA["1. IDEATION<br/>1-2 weeks<br/>Product Owner"] --> DISC["2. DISCOVERY<br/>2-4 weeks<br/>Architect + UX"]
-  DISC --> BCASE["3. BUSINESS CASE<br/>2-3 weeks<br/>Product + Finance"]
-  BCASE --> ARCH["4. ARCHITECTURE<br/>3-6 weeks<br/>Principal Architect"]
-  ARCH --> UXD["5. UX RESEARCH<br/>3-6 weeks<br/>UX Lead"]
-  UXD --> CTX["6. CONTEXT ENG<br/>2-4 weeks<br/>AI Engineer"]
-  CTX --> AGNT["7. AGENT DESIGN<br/>2-4 weeks<br/>AI Architect"]
-  AGNT --> EVAL["8. EVAL DESIGN<br/>2-3 weeks<br/>AI Engineer"]
-  EVAL --> SEC["9. SECURITY<br/>2-3 weeks<br/>Security Architect"]
-  SEC --> DEV["10. DEVELOPMENT<br/>8-16 weeks<br/>Engineering Team"]
-  DEV --> TEST["11. TESTING<br/>3-6 weeks<br/>QA + Red Team"]
-  TEST --> DEPLOY["12. DEPLOYMENT<br/>1-3 weeks<br/>Platform/SRE"]
-  DEPLOY --> OPS["13. OPERATIONS<br/>Ongoing<br/>SRE + Product"]
-  OPS --> CONT["14. CONTINUOUS<br/>Ongoing<br/>AI Engineer"]
-  CONT --> VER["15. VERSIONING<br/>Ongoing<br/>AI Engineer"]
-  VER --> MIG["16. MIGRATION<br/>Variable<br/>Architect"]
-  MIG --> SUN["17. SUNSETTING<br/>4-8 weeks<br/>Product + Legal"]
+    IDEA["IDEATION<br/>↓"] --> DISC["DISCOVERY<br/>↓"]
+    DISC --> BCASE["BUSINESS CASE<br/>↓"]
+    BCASE --> ARCH["ARCHITECTURE<br/>↓"]
+    ARCH --> UXD["UX DESIGN<br/>↓"]
+    UXD --> CTX["CONTEXT ENG<br/>↓"]
+    CTX --> AGNT["AGENT DESIGN<br/>↓"]
+    AGNT --> EVAL["EVAL DESIGN<br/>↓"]
+    EVAL --> SEC["SECURITY<br/>↓"]
+    SEC --> DEV["DEVELOPMENT<br/>↓"]
+    DEV --> TEST["TESTING<br/>↓"]
+    TEST --> DEPLOY["DEPLOYMENT<br/>↓"]
+    DEPLOY --> OPS["OPERATIONS<br/>↓"]
+    OPS --> CONT["CONTINUOUS<br/>IMPROVEMENT<br/>↓"]
+    CONT --> VER["VERSIONING<br/>↓"]
+    VER --> MIG["MIGRATION<br/>↓"]
+    MIG --> SUN["SUNSETTING<br/>↓"]
+    SUN --> RET["RETIREMENT"]
 ```
-
-**Lifecycle Stages and Gates:**
 
 | Stage | Typical Duration | Primary Owner | Key Gate |
 | ------- | ----------------- | --------------- | ---------- |
@@ -58,7 +55,7 @@ graph LR
 | 2. Discovery | 2–4 weeks | Architect + UX | Discovery Report signed off |
 | 3. Business Case | 2–3 weeks | Product Owner + Finance | IRR/NPV approved by sponsor |
 | 4. Architecture | 3–6 weeks | Principal Architect | ARB approval |
-| 5. UX Research & Design | 3–6 weeks | UX Lead | Usability test pass rate ≥ 80% |
+| 5. UX Research &amp; Design | 3–6 weeks | UX Lead | Usability test pass rate ≥ 80% |
 | 6. Context Engineering | 2–4 weeks | AI Engineer | Eval baseline established |
 | 7. Agent Design | 2–4 weeks | AI Architect | Agent spec signed off |
 | 8. Evaluation Design | 2–3 weeks | AI Engineer | Eval harness green |
@@ -67,7 +64,7 @@ graph LR
 | 11. Testing | 3–6 weeks | QA + Red Team | All blockers resolved |
 | 12. Deployment | 1–3 weeks | Platform / SRE | Canary stable at 10% |
 | 13. Operations | Ongoing | SRE + Product | SLOs met for 30 days |
-| 14. Continuous Improvement | Ongoing | AI Engineer + Product | Eval regression &lt;2% |
+| 14. Continuous Improvement | Ongoing | AI Engineer + Product | Eval regression &lt; 2% |
 | 15. Versioning | Ongoing | AI Engineer | No breaking changes unannounced |
 | 16. Migration | Variable | Architect + Engineering | Zero data loss; rollback tested |
 | 17. Sunsetting | 4–8 weeks | Product + Legal | Compliance archive complete |
@@ -126,16 +123,16 @@ Score each criterion 0 (none) – 2 (strong). Total ≥ 8 proceeds to Discovery.
 
 ### Value Hypothesis Canvas Template
 
-The Value Hypothesis Canvas frames business impact: problem, current state cost, proposed AI solution, projected savings, investment, payback, risks, and confidence level.
-
-- **Problem:** [One sentence]
-- **Current state cost:** $X per [unit] × Y volume = $Z/yr
-- **AI proposed state:** [What the agent will do]
-- **Projected saving:** X% reduction = $Z saved/yr
-- **Investment estimate:** Build $X, Run $Y/yr
-- **Payback period:** [months]
-- **Biggest risk:** [One-line risk statement]
-- **Confidence:** Low / Medium / High
+| Value Hypothesis Canvas | |
+| --- | --- |
+| Problem | [One sentence] |
+| Current state cost | $X per [unit] × Y volume = $Z/yr |
+| AI proposed state | [What the agent will do] |
+| Projected saving | X% reduction = $Z saved/yr |
+| Investment estimate | Build: $X, Run: $Y/yr |
+| Payback period | [months] |
+| Biggest risk | [One-line risk statement] |
+| Confidence | Low / Medium / High |
 
 ### Go / No-Go Criteria
 
@@ -215,7 +212,7 @@ For each data source:
 | FINRA / MiFID II | Financial services | High | Explainability, record-keeping |
 | Industry-specific | Varies | Review | Legal counsel required |
 
-See [Governance & Compliance](../../architecture/51-enterprise-ai-governance-compliance.md) for full regulatory matrix.
+See [Governance &amp; Compliance](../../architecture/51-enterprise-ai-governance-compliance.md) for full regulatory matrix.
 
 ### Go / No-Go Criteria
 
@@ -255,7 +252,7 @@ Quantify the value, validate the investment, make the build/buy/partner decision
 
 ### ROI Model Template
 
-```
+```text
 YEAR          0      1      2      3
 
 INVESTMENT
@@ -434,3 +431,5 @@ See [Enterprise Reference Architectures](../../architecture/20-ai-native-archite
 - **Shared mutable memory:** Multiple agents writing to the same memory store without conflict resolution. See [Memory Architecture](../../architecture/41-agent-memory-planning-architecture.md).
 
 ---
+
+**[Continue to Part 2 →](./parts/04-application-lifecycle-part2.md)**

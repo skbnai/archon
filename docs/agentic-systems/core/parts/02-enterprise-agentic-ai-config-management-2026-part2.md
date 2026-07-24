@@ -166,7 +166,7 @@ Agentic AI platforms handle a large volume of secrets: LLM API keys, OAuth crede
 |AWS IAM Integ|Native|Via auth method|Limited|Limited|
 ### AWS Secrets Manager — Enterprise Implementation
 ### Secret Naming Convention
-Use hierarchical naming: /{environment}/{platform}/{service}/{secret-type}. Example: /prod/agent-platform/bedrock/api-key, /prod/agent-platform/langfuse/token, /prod/agent-platform/oauth/{tool-name}/client-secret. Tag every secret with: Environment, Platform, Team, DataClassification, RotationSchedule.
+Use hierarchical naming: `/{environment}/{platform}/{service}/{secret-type}`. Example: `/prod/agent-platform/bedrock/api-key`, `/prod/agent-platform/langfuse/token`, `/prod/agent-platform/oauth/{tool-name}/client-secret`. Tag every secret with: Environment, Platform, Team, DataClassification, RotationSchedule.
 ### Automatic Rotation Architecture
 Configure Lambda rotation functions for all API keys and OAuth tokens. Rotation Lambda: (1) Generate new credential, (2) Test new credential, (3) Update secret with AWSPENDING label, (4) Validate, (5) Promote to AWSCURRENT, (6) Delete old credential. Set rotation window: 30 days for API keys, 90 days for service accounts, 7 days for OAuth refresh tokens.
 ### Cross-Account Access Pattern
@@ -224,13 +224,10 @@ The 14-level hierarchy maps directly to SSM Parameter Store paths:
 ### Inheritance Rules
 - **Last-writer-wins:** Lower levels override higher levels for the same key
 - **Deep merge for maps:** Nested JSON objects are merged recursively (not replaced)
-- **Append for lists:** List values (e.g., allowed-tools) are unioned by default; explicit 'replace' prefix
-- overrides
+- **Append for lists:** List values (e.g., allowed-tools) are unioned by default; explicit 'replace' prefix overrides
 - **Explicit null to remove:** A lower level can remove an inherited value by explicitly setting null
-- **Protected values:** Enterprise-level security minimums cannot be overridden (marked 'immutable' in
-- schema)
-- **Dependency resolution:** Configuration values referencing other values (e.g.,
-- ${env/prod/bedrock/endpoint}) are resolved at evaluation time
+- **Protected values:** Enterprise-level security minimums cannot be overridden (marked 'immutable' in schema)
+- **Dependency resolution:** Configuration values referencing other values (e.g., `${env/prod/bedrock/endpoint}`) are resolved at evaluation time
 - **Cycle detection:** Configuration resolver detects circular references and fails with descriptive error
 ## Configuration Schema Design
 ### Type-Safe, Versioned Schemas for Every Configuration Category
@@ -366,7 +363,7 @@ Configuration security for Agentic AI platforms must address a unique threat mod
 Monitoring Configuration Changes, Propagation, and Failures
 Configuration observability answers the critical operational questions: Did my configuration change propagate to all agents? Is the new prompt version being used? Did the kill switch activate globally? Why is Agent-X still using the old model?
 ### Configuration Change Events
-All configuration changes published to EventBridge as structured events. Schema: {eventType: 'configuration.updated', agentId, configPath, oldVersion, newVersion, deployedBy, deploymentStrategy, timestamp}. Events consumed by: audit log (CloudWatch), notification service (SNS), propagation tracker (DynamoDB), dashboard (Grafana).
+All configuration changes published to EventBridge as structured events. Schema: `{eventType: 'configuration.updated', agentId, configPath, oldVersion, newVersion, deployedBy, deploymentStrategy, timestamp}`. Events consumed by: audit log (CloudWatch), notification service (SNS), propagation tracker (DynamoDB), dashboard (Grafana).
 ### Propagation Monitoring
 After each configuration deployment, propagation tracker polls a random 10% sample of running agent instances to verify they have received the new version. Alert if &lt;95% of instances have updated within SLA window (90s for AppConfig, 300s for polling). Dashboard shows propagation heatmap by region and availability zone.
 ### Configuration Failure Detection

@@ -402,4 +402,4 @@ flowchart TD
 - [ ] HITL approval latency test (P99 approval round-trip)
 
 :::tip Cross-Reference: Observability
-    For OTel span schema specific to AG-UI events (run spans, step spans, tool call spans), see [Reliability, Observability & Governance](../../../architecture/43-agentic-ai-reliability-observability-governance.md). For security hardening beyond this page, see [Agentic AI Security & Identity](../../../trust/05-agentic-ai-security-identity.md) OWASP ASI mapping.
+    For OTel span schema specific to AG-UI events (run spans, step spans, tool call spans), see [Reliability, Observability & Governance](../../../architecture/43-agentic-ai-reliability-observability-governance.md). For security hardening beyond this page, see [Agentic AI Security & Identity](pathname:///archon/trust/agentic-ai-security-identity) OWASP ASI mapping.

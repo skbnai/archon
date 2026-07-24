@@ -71,7 +71,7 @@ response = client.messages.create(
     messages=[
         {
             "role": "user",
-            "content": "Review this function:\n\n```python\ndef login(username, password):\n    query = f'SELECT * FROM users WHERE name=\{username}'\n    ...\n```"
+            "content": "Review this function:\n\n```python\ndef login(username, password):\n    query = f'SELECT * FROM users WHERE name={username}'\n    ...\n```"
         },
         # Optional: include a prior assistant turn for multi-turn conversations
         # {

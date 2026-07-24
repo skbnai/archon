@@ -276,7 +276,7 @@ RECOMMENDED ARIA PATTERN FOR STREAMING:
 | High (70-89%) | #1565C0 (blue, 5.1:1) | ↑ trend | "High" |
 | Medium (40-69%) | #E65100 (orange, 3.1:1 on white) | ≈ wavy | "Medium" |
 | Low (20-39%) | #B71C1C (red, 5.8:1) | ↓ trend | "Low" |
-| Very Low (<20%) | #4A148C (purple, 7.3:1) | ? question | "Very Low" |
+| Very Low (&lt;20%) | #4A148C (purple, 7.3:1) | ? question | "Very Low" |
 
 Use fill level (progress bar) as the primary encoding. Color is secondary. Text label is always present.
 
@@ -320,7 +320,7 @@ Use fill level (progress bar) as the primary encoding. Color is secondary. Text 
 ---
 
 :::tip Getting Started with UX Pattern Selection
-    For a new agentic application, start with the **Copilot Pattern Taxonomy** (Section 1) to identify your deployment archetype, then use the **Decision Framework** guide at [decision-frameworks.md](decision-frameworks.md) for technology selection. For lifecycle planning, see [application-lifecycle.md](application-lifecycle.md).
+    For a new agentic application, start with the **Copilot Pattern Taxonomy** (Section 1) to identify your deployment archetype, then use the **Decision Framework** guide at [decision-frameworks.md](../06-decision-frameworks.md) for technology selection. For lifecycle planning, see [application-lifecycle.md](../04-application-lifecycle.md).
 
 :::note Protocol Reference
-    AG-UI event types referenced throughout this document (`TEXT_MESSAGE_CONTENT`, `TOOL_CALL_START`, `STATE_SNAPSHOT`, etc.) are specified in the AG-UI open protocol. MCP integration patterns are detailed in [MCP Deep Research 2026](../ai-protocols/mcp/MCP_Deep_Research_2026.md).
+    AG-UI event types referenced throughout this document (`TEXT_MESSAGE_CONTENT`, `TOOL_CALL_START`, `STATE_SNAPSHOT`, etc.) are specified in the AG-UI open protocol. MCP integration patterns are detailed in [MCP Deep Research 2026](pathname:///archon/protocols/mcp-deep-research-2026).

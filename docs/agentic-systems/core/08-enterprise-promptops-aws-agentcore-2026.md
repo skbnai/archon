@@ -302,8 +302,7 @@ AppConfig supports several deployment strategies matching different risk profile
 |Manual Bake Time|Custom|Safety-critical prompts|Manual sign-off required|
 ### Prompt CDN / Prompt Gateway Pattern
 For global, high-throughput deployments, a Prompt Gateway (API service) centralizes routing, caching, and policy enforcement across all agents and regions:
-- Single endpoint for all agent prompt requests: GET
-- /v1/prompts/{id}?version=latest&tenant;=acme&model;=claude-sonnet
+- Single endpoint for all agent prompt requests: `GET /v1/prompts/{id}?version=latest&tenant=acme&model=claude-sonnet`
 - Gateway applies routing policy: A/B assignment, canary percentage, tenant overrides, model-specific variants
 - Redis cluster behind gateway provides sub-millisecond cache hits at scale
 - Gateway publishes invalidation events on update, all downstream caches refresh

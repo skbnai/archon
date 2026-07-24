@@ -502,9 +502,9 @@ The following anti-patterns represent governance failures observed in enterprise
     **Year 3 (Optimization):** Full governance automation; continuous compliance dashboard; self-assessing governance maturity; governance as competitive advantage.
 
 :::note Related Guides
-    - [Responsible AI for Agentic Applications](responsible-ai.md) — RAI principles, EU AI Act compliance requirements, OWASP LLM Top 10
-    - [Security Architecture for Agentic Applications](security-architecture.md) — Security controls, threat models, AGUI-specific security
-    - [Identity & Auth Architecture](identity-auth-architecture.md) — Identity types, OAuth flows, authorization models
+    - [Responsible AI for Agentic Applications](../17-responsible-ai.md) — RAI principles, EU AI Act compliance requirements, OWASP LLM Top 10
+    - [Security Architecture for Agentic Applications](../19-agentic-ui-security-architecture.md) — Security controls, threat models, AGUI-specific security
+    - [Identity & Auth Architecture](../12-identity-auth-architecture.md) — Identity types, OAuth flows, authorization models
     - [Enterprise AI Governance & Compliance](../../../architecture/51-enterprise-ai-governance-compliance.md) — Regulatory framework details
     - [Reliability, Observability & Governance](../../../architecture/43-agentic-ai-reliability-observability-governance.md) — Operational governance, 5 registries
 

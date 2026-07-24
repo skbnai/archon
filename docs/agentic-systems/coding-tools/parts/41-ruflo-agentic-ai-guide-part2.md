@@ -26,36 +26,36 @@ supersedes: []
 
 ```javascript
 // parallel-agents.js
-const \{ ClaudeFlow } = require('claude-flow');
+const { ClaudeFlow } = require('claude-flow');
 
-const flow = new ClaudeFlow(\{
+const flow = new ClaudeFlow({
   apiKey: process.env.ANTHROPIC_API_KEY,
   model: 'claude-sonnet-4-6',
 });
 
-async function parallelFileProcessing(filePaths) \{
+async function parallelFileProcessing(filePaths) {
   // Process up to 5 files concurrently; serialise the rest
   const CONCURRENCY = 5;
   const results = [];
 
-  for (let i = 0; i < filePaths.length; i += CONCURRENCY) \{
+  for (let i = 0; i < filePaths.length; i += CONCURRENCY) {
     const batch = filePaths.slice(i, i + CONCURRENCY);
 
     const batchResults = await Promise.all(
       batch.map(filePath =>
         flow.runAgent(
-          \{
+          {
             role: 'file-processor',
-            instructions: `Analyse this file and extract key information: $\{filePath}`,
+            instructions: `Analyse this file and extract key information: ${filePath}`,
             tools: ['file_read', 'memory_write'],
           },
-          \{ memoryKey: `result:$\{filePath}` }
+          { memoryKey: `result:${filePath}` }
         )
       )
     );
 
     results.push(...batchResults);
-    console.log(`Processed batch $\{Math.floor(i / CONCURRENCY) + 1}: $\{batch.length} files`);
+    console.log(`Processed batch ${Math.floor(i / CONCURRENCY) + 1}: ${batch.length} files`);
   }
 
   return results;
@@ -66,24 +66,24 @@ async function parallelFileProcessing(filePaths) \{
 
 ```javascript
 // safe-aggregation.js
-const \{ Mutex } = require('async-mutex');  // npm install async-mutex
+const { Mutex } = require('async-mutex');  // npm install async-mutex
 
 const mutex = new Mutex();
 const aggregatedResults = [];
 
-async function safeAggregate(agentResult) \{
+async function safeAggregate(agentResult) {
   // Serialise writes to prevent concurrent modification
   const release = await mutex.acquire();
-  try \{
+  try {
     aggregatedResults.push(agentResult);
-  } finally \{
+  } finally {
     release();
   }
 }
 
 // In your agent runner:
 await Promise.all(
-  agents.map(async agent => \{
+  agents.map(async agent => {
     const result = await flow.runAgent(agent, {});
     await safeAggregate(result);
   })
@@ -99,18 +99,18 @@ await Promise.all(
 Assign token budgets at the agent level to prevent runaway spend from a single verbose agent.
 
 ```javascript
-const swarm = await flow.createSwarm(\{
+const swarm = await flow.createSwarm({
   agents: [
-    \{
+    {
       role: 'coder',
-      tokenBudget: \{
+      tokenBudget: {
         maxInputTokens: 20_000,
         maxOutputTokens: 4_000,
       },
     },
-    \{
+    {
       role: 'reviewer',
-      tokenBudget: \{
+      tokenBudget: {
         maxInputTokens: 8_000,
         maxOutputTokens: 1_000,    // reviewers write less than coders
       },
@@ -126,10 +126,10 @@ Agents sharing a large context window (e.g., a codebase) should read from the sh
 ```javascript
 // Instead of this (wasteful — N agents each get the full codebase):
 const fullCodebase = fs.readFileSync('src/index.ts', 'utf8');  // 50,000 tokens
-agents.map(agent => flow.runAgent(agent, \{ context: fullCodebase }));
+agents.map(agent => flow.runAgent(agent, { context: fullCodebase }));
 
 // Do this (agents retrieve only the relevant sections):
-await memory.store('codebase:index', fullCodebase, \{ namespace: 'project' });
+await memory.store('codebase:index', fullCodebase, { namespace: 'project' });
 // Agent instructions: "Read the relevant sections from memory using memory_read."
 // Each agent retrieves only the ~2,000 tokens it actually needs.
 ```
@@ -137,7 +137,7 @@ await memory.store('codebase:index', fullCodebase, \{ namespace: 'project' });
 ### Output Length Controls
 
 ```javascript
-const agent = new Agent(\{
+const agent = new Agent({
   role: 'summariser',
   instructions: 'Summarise the document in exactly 3 bullet points. Do not exceed 150 words.',
   // Explicit length constraints in the prompt reduce output token spend
@@ -155,29 +155,29 @@ Use the cheapest model capable of the task. Reserve expensive models for tasks t
 
 ```javascript
 // cost-optimised-swarm.js
-const flow = new ClaudeFlow(\{ apiKey: process.env.ANTHROPIC_API_KEY });
+const flow = new ClaudeFlow({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-const swarm = await flow.createSwarm(\{
+const swarm = await flow.createSwarm({
   agents: [
-    \{
+    {
       role: 'router',
       // Routing decisions do not need a frontier model
       model: 'claude-haiku-4-5',
       instructions: 'Classify the task type and route to the appropriate specialist.',
     },
-    \{
+    {
       role: 'coder',
       // Complex reasoning benefits from a mid-tier model
       model: 'claude-sonnet-4-6',
       instructions: 'Implement the feature to spec.',
     },
-    \{
+    {
       role: 'tester',
       // Test generation is pattern-following — haiku is sufficient
       model: 'claude-haiku-4-5',
       instructions: 'Write unit tests for the implementation.',
     },
-    \{
+    {
       role: 'architect',
       // Architecture decisions with high stakes warrant the best model
       model: 'claude-fable-5',
@@ -202,13 +202,13 @@ For current pricing, see [Models 2026](../35-claude-models-2026.md).
 
 ```javascript
 // cost-tracker.js
-class CostTracker \{
-  constructor() \{
+class CostTracker {
+  constructor() {
     this.records = [];
   }
 
-  record(workflowId, agentRole, usage) \{
-    this.records.push(\{
+  record(workflowId, agentRole, usage) {
+    this.records.push({
       workflowId,
       agentRole,
       inputTokens: usage.input_tokens,
@@ -217,9 +217,9 @@ class CostTracker \{
     });
   }
 
-  summary(workflowId) \{
+  summary(workflowId) {
     const workflow = this.records.filter(r => r.workflowId === workflowId);
-    return \{
+    return {
       totalInput: workflow.reduce((s, r) => s + r.inputTokens, 0),
       totalOutput: workflow.reduce((s, r) => s + r.outputTokens, 0),
       byAgent: Object.groupBy(workflow, r => r.agentRole),
@@ -242,7 +242,7 @@ tracker.record('workflow-001', agent.role, result.usage);
 
 ```javascript
 // guardrailed-swarm.js
-const AGENT_PERMISSIONS = \{
+const AGENT_PERMISSIONS = {
   coder:    ['file_read', 'file_write', 'bash', 'memory_read'],
   tester:   ['file_read', 'bash', 'memory_read', 'memory_write'],
   reviewer: ['file_read', 'memory_read'],
@@ -250,14 +250,14 @@ const AGENT_PERMISSIONS = \{
 };
 
 // Enforce at runtime — reject tool calls outside the whitelist
-function buildAgent(role) \{
+function buildAgent(role) {
   const allowedTools = AGENT_PERMISSIONS[role] ?? [];
-  return new Agent(\{
+  return new Agent({
     role,
     tools: allowedTools,
-    onToolCall: (toolName, args) => \{
-      if (!allowedTools.includes(toolName)) \{
-        throw new Error(`GUARDRAIL: $\{role} is not authorised to call $\{toolName}`);
+    onToolCall: (toolName, args) => {
+      if (!allowedTools.includes(toolName)) {
+        throw new Error(`GUARDRAIL: ${role} is not authorised to call ${toolName}`);
       }
     },
   });
@@ -273,10 +273,10 @@ import json
 
 # Patterns that should never appear in outputs
 BLOCKED_PATTERNS = [
-    r'\b\d\{4}[- ]?\d\{4}[- ]?\d\{4}[- ]?\d\{4}\b',   # credit card
-    r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]\{2,}\b',  # email (when unexpected)
-    r'AKIA[0-9A-Z]\{16}',                            # AWS access key
-    r'sk-[a-zA-Z0-9]\{40,}',                         # API key pattern
+    r'\b\d{4}[- ]?\d{4}[- ]?\d{4}[- ]?\d{4}\b',   # credit card
+    r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b',  # email (when unexpected)
+    r'AKIA[0-9A-Z]{16}',                            # AWS access key
+    r'sk-[a-zA-Z0-9]{40,}',                         # API key pattern
 ]
 
 def validate_output(output: str, context: dict) -> tuple[bool, list[str]]:
@@ -284,50 +284,50 @@ def validate_output(output: str, context: dict) -> tuple[bool, list[str]]:
     violations = []
     for pattern in BLOCKED_PATTERNS:
         if re.search(pattern, output):
-            violations.append(f"Blocked pattern detected: \{pattern}")
+            violations.append(f"Blocked pattern detected: {pattern}")
     if len(output) > context.get('max_output_length', 10_000):
         violations.append("Output exceeds maximum allowed length")
     return len(violations) == 0, violations
 
 # Use in your agent pipeline:
-is_valid, violations = validate_output(agent_result.output, \{'max_output_length': 5_000})
+is_valid, violations = validate_output(agent_result.output, {'max_output_length': 5_000})
 if not is_valid:
     log_violation(violations)
-    raise GuardrailViolation(f"Output blocked: \{violations}")
+    raise GuardrailViolation(f"Output blocked: {violations}")
 ```
 
 ### HITL Gates
 
 ```javascript
 // hitl-gate.js
-async function withHumanApproval(action, actionDescription, \{
+async function withHumanApproval(action, actionDescription, {
   timeoutMs = 300_000,   // 5 minutes
   onTimeout = 'reject',  // 'reject' | 'approve' | 'escalate'
-} = {}) \{
-  const approvalRequest = await notifyApprover(\{
+} = {}) {
+  const approvalRequest = await notifyApprover({
     description: actionDescription,
     requestedAt: new Date().toISOString(),
   });
 
-  return new Promise((resolve, reject) => \{
-    const timer = setTimeout(() => \{
-      if (onTimeout === 'approve') \{
-        console.warn(`HITL timeout: auto-approving "$\{actionDescription}"`);
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => {
+      if (onTimeout === 'approve') {
+        console.warn(`HITL timeout: auto-approving "${actionDescription}"`);
         resolve(action());
-      } else if (onTimeout === 'escalate') \{
+      } else if (onTimeout === 'escalate') {
         notifyEscalation(approvalRequest);
-        reject(new Error(`HITL timeout: escalated "$\{actionDescription}"`));
-      } else \{
-        reject(new Error(`HITL timeout: rejected "$\{actionDescription}"`));
+        reject(new Error(`HITL timeout: escalated "${actionDescription}"`));
+      } else {
+        reject(new Error(`HITL timeout: rejected "${actionDescription}"`));
       }
     }, timeoutMs);
 
-    approvalRequest.onDecision(decision => \{
+    approvalRequest.onDecision(decision => {
       clearTimeout(timer);
-      if (decision === 'approved') \{
+      if (decision === 'approved') {
         resolve(action());
-      } else \{
-        reject(new Error(`Human rejected action: "$\{actionDescription}"`));
+      } else {
+        reject(new Error(`Human rejected action: "${actionDescription}"`));
       }
     });
   });
@@ -337,7 +337,7 @@ async function withHumanApproval(action, actionDescription, \{
 await withHumanApproval(
   () => deployToProduction(build),
   'Deploy build v1.42 to production',
-  \{ timeoutMs: 600_000, onTimeout: 'reject' }
+  { timeoutMs: 600_000, onTimeout: 'reject' }
 );
 ```
 
@@ -354,14 +354,14 @@ Every agent action, tool call, and decision should be logged with enough context
 
 ```javascript
 // audit-logger.js
-class AuditLogger \{
-  constructor(workflowId) \{
+class AuditLogger {
+  constructor(workflowId) {
     this.workflowId = workflowId;
     this.entries = [];
   }
 
-  log(event) \{
-    const entry = \{
+  log(event) {
+    const entry = {
       workflowId: this.workflowId,
       timestamp: new Date().toISOString(),
       ...event,
@@ -371,22 +371,22 @@ class AuditLogger \{
     console.log(JSON.stringify(entry));
   }
 
-  agentStarted(agentId, role, task) \{
-    this.log(\{ type: 'AGENT_STARTED', agentId, role, task });
+  agentStarted(agentId, role, task) {
+    this.log({ type: 'AGENT_STARTED', agentId, role, task });
   }
 
-  toolCalled(agentId, toolName, args) \{
+  toolCalled(agentId, toolName, args) {
     // Redact sensitive args before logging
     const safeArgs = redactSensitive(args);
-    this.log(\{ type: 'TOOL_CALLED', agentId, toolName, args: safeArgs });
+    this.log({ type: 'TOOL_CALLED', agentId, toolName, args: safeArgs });
   }
 
-  agentCompleted(agentId, outputSummary, usage) \{
-    this.log(\{ type: 'AGENT_COMPLETED', agentId, outputSummary, usage });
+  agentCompleted(agentId, outputSummary, usage) {
+    this.log({ type: 'AGENT_COMPLETED', agentId, outputSummary, usage });
   }
 
-  policyViolation(agentId, violation) \{
-    this.log(\{ type: 'POLICY_VIOLATION', agentId, violation, severity: 'HIGH' });
+  policyViolation(agentId, violation) {
+    this.log({ type: 'POLICY_VIOLATION', agentId, violation, severity: 'HIGH' });
   }
 }
 ```
@@ -395,11 +395,11 @@ class AuditLogger \{
 
 ```javascript
 // activity-tracker.js
-const swarm = await flow.createSwarm(\{
+const swarm = await flow.createSwarm({
   agents: ['coder', 'tester', 'reviewer'],
-  onAgentEvent: (event) => \{
+  onAgentEvent: (event) => {
     auditLogger.log(event);   // every event goes to audit log
-    if (event.type === 'tool_call' && SENSITIVE_TOOLS.includes(event.toolName)) \{
+    if (event.type === 'tool_call' && SENSITIVE_TOOLS.includes(event.toolName)) {
       notifyGovernanceChannel(event);
     }
   },
@@ -410,23 +410,23 @@ const swarm = await flow.createSwarm(\{
 
 ```javascript
 // rollback-support.js
-class CheckpointedWorkflow \{
-  constructor() \{
+class CheckpointedWorkflow {
+  constructor() {
     this.checkpoints = [];
   }
 
-  async saveCheckpoint(label, state) \{
-    this.checkpoints.push(\{
+  async saveCheckpoint(label, state) {
+    this.checkpoints.push({
       label,
       timestamp: new Date().toISOString(),
       state: JSON.parse(JSON.stringify(state)),  // deep clone
     });
   }
 
-  async rollbackTo(label) \{
+  async rollbackTo(label) {
     const checkpoint = this.checkpoints.findLast(c => c.label === label);
-    if (!checkpoint) throw new Error(`Checkpoint "$\{label}" not found`);
-    console.log(`Rolling back to checkpoint: $\{label} ($\{checkpoint.timestamp})`);
+    if (!checkpoint) throw new Error(`Checkpoint "${label}" not found`);
+    console.log(`Rolling back to checkpoint: ${label} (${checkpoint.timestamp})`);
     return checkpoint.state;
   }
 }
@@ -434,10 +434,10 @@ class CheckpointedWorkflow \{
 const workflow = new CheckpointedWorkflow();
 
 // Save state before each risky phase
-await workflow.saveCheckpoint('pre-refactor', \{ files: currentFiles });
-const refactorResult = await swarm.run(\{ task: 'refactor auth module' });
+await workflow.saveCheckpoint('pre-refactor', { files: currentFiles });
+const refactorResult = await swarm.run({ task: 'refactor auth module' });
 
-if (!refactorResult.testsPass) \{
+if (!refactorResult.testsPass) {
   const previousState = await workflow.rollbackTo('pre-refactor');
   await restoreFiles(previousState.files);
 }
@@ -555,7 +555,7 @@ jobs:
 
       - name: Run offline eval suite
         env:
-          ANTHROPIC_API_KEY: $\{\{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           RESULTS_FILE="evals/results/ci-$(date +%Y%m%d-%H%M%S).json"
           python evals/eval_harness.py evals/datasets/baseline.jsonl \
@@ -565,7 +565,7 @@ jobs:
 
       - name: Check regression against baseline
         env:
-          ANTHROPIC_API_KEY: $\{\{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           npx claude-flow eval compare \
             --current "$RESULTS_FILE" \
@@ -577,7 +577,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: eval-results-$\{\{ github.run_number }}
+          name: eval-results-${{ github.run_number }}
           path: evals/results/
           retention-days: 90
 
@@ -590,13 +590,13 @@ jobs:
             const results = JSON.parse(fs.readFileSync(process.env.RESULTS_FILE));
             const body = [
               '## Eval Results',
-              `Pass rate: **$\{(results.pass_rate * 100).toFixed(1)}%** ($\{results.passed}/$\{results.total})`,
-              `Average score: **$\{results.avg_score.toFixed(2)}**`,
+              `Pass rate: **${(results.pass_rate * 100).toFixed(1)}%** (${results.passed}/${results.total})`,
+              `Average score: **${results.avg_score.toFixed(2)}**`,
               results.failures.length > 0
-                ? `\n### Failures\n$\{results.failures.map(f => `- \`$\{f.task}\`: $\{f.reason}`).join('\n')}`
+                ? `\n### Failures\n${results.failures.map(f => `- \`${f.task}\`: ${f.reason}`).join('\n')}`
                 : '\nNo failures.',
             ].join('\n');
-            github.rest.issues.createComment(\{
+            github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -621,7 +621,7 @@ jobs:
 
       - name: Run concurrent agent stress test
         env:
-          ANTHROPIC_API_KEY: $\{\{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node evals/stress-test.js --concurrent 5 --tasks-per-agent 3
 ```
 

@@ -475,7 +475,7 @@ def assert_no_regressions(
 
 12. **Test prompts with the target production model** — results vary across models; always eval on the model you will deploy with.
 
-13. **Use prefill to eliminate format preambles** — prefilling `\{` eliminates "Here is the JSON:" preamble and saves output tokens.
+13. **Use prefill to eliminate format preambles** — prefilling `{` eliminates "Here is the JSON:" preamble and saves output tokens.
 
 14. **Separate retrieval from reasoning** — use RAG to retrieve documents, then pass only the relevant documents to Claude; do not dump an entire knowledge base into context.
 
@@ -486,7 +486,7 @@ def assert_no_regressions(
 ## 20. Antipatterns
 
 :::danger Vague Output Format Instructions
-    Saying "respond in a structured way" does not tell Claude what structure to use. Always specify exact format: `Respond with valid JSON matching this schema: \{...}`.
+    Saying "respond in a structured way" does not tell Claude what structure to use. Always specify exact format: `Respond with valid JSON matching this schema: {...}`.
 
 :::danger Contradiction Between System and User Instructions
     If the system prompt says "be concise" and the user message says "explain in detail", Claude must choose. Resolve this by making the system prompt silent on aspects the user should control.

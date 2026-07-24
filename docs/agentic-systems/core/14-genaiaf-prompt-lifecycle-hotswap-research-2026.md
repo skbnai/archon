@@ -79,14 +79,14 @@ GENAIAF-559 requests the minimum viable SDK capability for: (1) prompt versionin
 
 ## Option Summary
 
-|**Option**<br>**A**|**RECOMMENDED**<br>**MVP**|**AgentCore Config Bundles (Native)**<br>Zero external dependency. Hot-swap without redeploy. Version history. A/B via<br>Gateway. Trace correlation via bundle ID in OTel spans. GA path imminent.|
+|**Option**<br/>**A**|**RECOMMENDED**<br/>**MVP**|**AgentCore Config Bundles (Native)**<br/>Zero external dependency. Hot-swap without redeploy. Version history. A/B via<br/>Gateway. Trace correlation via bundle ID in OTel spans. GA path imminent.|
 |---|---|---|
-|**Option**<br>**B**|**RECOMMENDED —**<br>**Harness path**|**AgentCore Harness Versioning (Native)**<br>GA June 18 2026. UpdateHarness = new immutable version. Named endpoints =<br>environment pinning. Per-invocation prompt override = instant hot-swap. No redeploy.|
-|**Option**<br>**C**|**RECOMMENDED —**<br>**Full lifecycle**|**Langfuse Prompt Registry + AppConfig**<br>SDK prompt fetch + version label (production). Trace linkage via Langfuse prompt<br>object. AppConfig delivers hot payload. Best external platform for this use case.|
-|**Option**<br>**D**|**OBSERVABILITY**<br>**layer only**|**Arize AX / Phoenix + AppConfig**<br>Phoenix/AX does NOT provide hot prompt delivery. Use for trace correlation and online<br>eval ONLY. Must pair with AppConfig or Langfuse for delivery.|
-|**Option**<br>**E**|**MINIMUM VIABLE**<br>**DELIVERY**|**AWS AppConfig alone (no registry)**<br>Fast, AWS-native, zero platform cost. No lineage or approval workflow. Suitable for<br>teams not ready for external platform.|
-|**Option**<br>**F**|**NOT TRUE**<br>**HOT-SWAP**|**CDK Hotswap Deploy**<br>Reduces redeploy time from ~5min to ~30s. Does NOT eliminate deployment step.<br>Valid for teams where AppConfig complexity is unwanted.|
-|**Option**<br>**G**|**FUTURE STATE**|**Full external registry (Braintrust/MLflow)**<br>Best-in-class eval-gated CI/CD. Adds governance layer. More complex.<br>Recommended for Phase 2 when lifecycle maturity is needed.|
+|**Option**<br/>**B**|**RECOMMENDED —**<br/>**Harness path**|**AgentCore Harness Versioning (Native)**<br/>GA June 18 2026. UpdateHarness = new immutable version. Named endpoints =<br/>environment pinning. Per-invocation prompt override = instant hot-swap. No redeploy.|
+|**Option**<br/>**C**|**RECOMMENDED —**<br/>**Full lifecycle**|**Langfuse Prompt Registry + AppConfig**<br/>SDK prompt fetch + version label (production). Trace linkage via Langfuse prompt<br/>object. AppConfig delivers hot payload. Best external platform for this use case.|
+|**Option**<br/>**D**|**OBSERVABILITY**<br/>**layer only**|**Arize AX / Phoenix + AppConfig**<br/>Phoenix/AX does NOT provide hot prompt delivery. Use for trace correlation and online<br/>eval ONLY. Must pair with AppConfig or Langfuse for delivery.|
+|**Option**<br/>**E**|**MINIMUM VIABLE**<br/>**DELIVERY**|**AWS AppConfig alone (no registry)**<br/>Fast, AWS-native, zero platform cost. No lineage or approval workflow. Suitable for<br/>teams not ready for external platform.|
+|**Option**<br/>**F**|**NOT TRUE**<br/>**HOT-SWAP**|**CDK Hotswap Deploy**<br/>Reduces redeploy time from ~5min to ~30s. Does NOT eliminate deployment step.<br/>Valid for teams where AppConfig complexity is unwanted.|
+|**Option**<br/>**G**|**FUTURE STATE**|**Full external registry (Braintrust/MLflow)**<br/>Best-in-class eval-gated CI/CD. Adds governance layer. More complex.<br/>Recommended for Phase 2 when lifecycle maturity is needed.|
 
 ## The Three Requirements Decomposed
 

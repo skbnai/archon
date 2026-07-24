@@ -86,7 +86,7 @@ For memory architecture and tiering details, see [Memory & Planning Architecture
 | `safety.pii.detected` | PII detected in inputs | Track trend | 90 days |
 | `safety.policy_violation.attempt` | User attempted policy-violating action | Any | 1 year |
 
-For OWASP ASI01–ASI10 security controls and guardrail policy design, see [Agentic AI Security & Identity](../../../trust/05-agentic-ai-security-identity.md).
+For OWASP ASI01–ASI10 security controls and guardrail policy design, see [Agentic AI Security & Identity](pathname:///archon/trust/agentic-ai-security-identity).
 
 ### 8.2 Safety Alert Tiers
 
@@ -297,7 +297,7 @@ groups:
 
 ---
 
-*For the OTel GenAI baseline, burn rate SLO methodology, and 5-dashboard reference, see [Reliability, Observability & Governance](../../../architecture/43-agentic-ai-reliability-observability-governance.md). For eval pipeline architecture, see [AI Agent Evaluation Framework Guide](../../../operations/01-agent-evaluation-framework.md). For EU AI Act Article 26 safety logging obligations, see [Enterprise AI Governance & Compliance](../../../architecture/51-enterprise-ai-governance-compliance.md).*
+*For the OTel GenAI baseline, burn rate SLO methodology, and 5-dashboard reference, see [Reliability, Observability & Governance](../../../architecture/43-agentic-ai-reliability-observability-governance.md). For eval pipeline architecture, see [AI Agent Evaluation Framework Guide](pathname:///archon/operations/agent-evaluation-framework). For EU AI Act Article 26 safety logging obligations, see [Enterprise AI Governance & Compliance](../../../architecture/51-enterprise-ai-governance-compliance.md).*
 
 
 ## Related Links

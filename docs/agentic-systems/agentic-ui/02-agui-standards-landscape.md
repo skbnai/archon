@@ -252,10 +252,10 @@ AG-UI's HITL model supports five interrupt types:
 | Interrupt Type | Trigger | Client Action Required | Agent Behavior |
 | --- | --- | --- | --- |
 | `pause` | `TOOL_CALL_START` with `hitl: true` | Display tool args, await user decision | Halts execution, holds connection open |
-| `approve` | User clicks Approve | `POST /agent/action \{"type":"approve","tool_call_id":"..."}` | Executes the tool call with original args |
-| `edit` | User modifies tool args | `POST /agent/action \{"type":"edit","tool_call_id":"...","args":\{...}}` | Executes the tool call with modified args |
-| `retry` | User requests retry with different approach | `POST /agent/action \{"type":"retry","instruction":"..."}` | Agent re-plans the current step |
-| `escalate` | User escalates to human agent | `POST /agent/action \{"type":"escalate","reason":"..."}` | Run is suspended; escalation record created |
+| `approve` | User clicks Approve | `POST /agent/action {"type":"approve","tool_call_id":"..."}` | Executes the tool call with original args |
+| `edit` | User modifies tool args | `POST /agent/action {"type":"edit","tool_call_id":"...","args":{...}}` | Executes the tool call with modified args |
+| `retry` | User requests retry with different approach | `POST /agent/action {"type":"retry","instruction":"..."}` | Agent re-plans the current step |
+| `escalate` | User escalates to human agent | `POST /agent/action {"type":"escalate","reason":"..."}` | Run is suspended; escalation record created |
 
 ### 2.7 Nested Agent Composition
 

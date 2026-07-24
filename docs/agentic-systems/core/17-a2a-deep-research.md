@@ -474,5 +474,5 @@ Compiled from: A2A Protocol Specification (v0.3), Linux Foundation announcements
 
 ## Related Documentation
 
-- [Enterprise Agentic AI Configuration Management](/docs/agentic-systems/core/02-enterprise-agentic-ai-config-management-2026.md) — Policy and governance frameworks for agent deployment
-- [Agent Skills Complete Playbook 2026](/docs/agentic-systems/core/16-agent-skills-complete-playbook-2026.md) — Design patterns for composable agent capabilities
+- [Enterprise Agentic AI Configuration Management](02-enterprise-agentic-ai-config-management-2026.md) — Policy and governance frameworks for agent deployment
+- [Agent Skills Complete Playbook 2026](16-agent-skills-complete-playbook-2026.md) — Design patterns for composable agent capabilities

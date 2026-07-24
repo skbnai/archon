@@ -148,11 +148,11 @@ graph TD
 
 :::tip Using This Catalog
     Start with **Critical** severity items. Each anti-pattern in this catalog has been observed in production agentic systems — not theoretical failures. Cross-reference:
-    - Security patterns → [Security Architecture](security-architecture.md)
-    - Context patterns → [Context Engineering](context-engineering.md)
-    - Governance patterns → [Governance](governance.md)
-    - Evaluation patterns → [Evaluation Framework](evaluation-framework.md)
-    - DevSecOps patterns → [DevSecOps](devsecops.md)
+    - Security patterns → [Security Architecture](../19-agentic-ui-security-architecture.md)
+    - Context patterns → [Context Engineering](../05-context-engineering.md)
+    - Governance patterns → [Governance](../11-governance.md)
+    - Evaluation patterns → [Evaluation Framework](pathname:///archon/operations/agent-evaluation-framework)
+    - DevSecOps patterns → [DevSecOps](../07-devsecops.md)
 
 
 ## Related Links

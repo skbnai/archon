@@ -646,30 +646,30 @@ ERROR RECOVERY
 
     ```javascript
     const PII_PATTERNS = [
-      /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]\{2,}\b/g,  // email
-      /\b\d\{3}[-.]?\d\{3}[-.]?\d\{4}\b/g,                           // phone
-      /\b\d\{3}-\d\{2}-\d\{4}\b/g,                                   // SSN
-      /\b(?:\d[ -]*?)\{13,16}\b/g,                                  // credit card
+      /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g,  // email
+      /\b\d{3}[-.]?\d{3}[-.]?\d{4}\b/g,                           // phone
+      /\b\d{3}-\d{2}-\d{4}\b/g,                                   // SSN
+      /\b(?:\d[ -]*?){13,16}\b/g,                                  // credit card
     ];
 
-    function scrubPii(value) \{
+    function scrubPii(value) {
       if (typeof value !== 'string') return value;
       return PII_PATTERNS.reduce((s, p) => s.replace(p, '[REDACTED]'), value);
     }
 
     // Measure agent TTFT from browser perspective
-    export function measureAgentTTFT(requestId) \{
-      performance.mark(`agent_request_start_$\{requestId}`);
-      return \{
-        recordFirstChunk() \{
-          performance.mark(`agent_first_chunk_$\{requestId}`);
+    export function measureAgentTTFT(requestId) {
+      performance.mark(`agent_request_start_${requestId}`);
+      return {
+        recordFirstChunk() {
+          performance.mark(`agent_first_chunk_${requestId}`);
           performance.measure(
-            `agent_ttft_$\{requestId}`,
-            `agent_request_start_$\{requestId}`,
-            `agent_first_chunk_$\{requestId}`
+            `agent_ttft_${requestId}`,
+            `agent_request_start_${requestId}`,
+            `agent_first_chunk_${requestId}`
           );
-          const [entry] = performance.getEntriesByName(`agent_ttft_$\{requestId}`);
-          analytics.track('agui.stream.ttft_ms', \{
+          const [entry] = performance.getEntriesByName(`agent_ttft_${requestId}`);
+          analytics.track('agui.stream.ttft_ms', {
             duration_ms: entry.duration,
             request_id: requestId,   // never send user content
           });
@@ -678,14 +678,14 @@ ERROR RECOVERY
     }
 
     // Rage click and abandonment tracking
-    export function initInteractionTracking() \{
+    export function initInteractionTracking() {
       const clickHistory = [];
-      document.addEventListener('click', (e) => \{
+      document.addEventListener('click', (e) => {
         const now = Date.now();
-        clickHistory.push(\{ time: now, target: e.target.className });
+        clickHistory.push({ time: now, target: e.target.className });
         const recent = clickHistory.filter(c => now - c.time &lt; 2000);
-        if (recent.length >= 3 && recent.every(c => c.target === recent[0].target)) \{
-          analytics.track('agui.ux.rage_click', \{
+        if (recent.length >= 3 && recent.every(c => c.target === recent[0].target)) {
+          analytics.track('agui.ux.rage_click', {
             element_class: scrubPii(recent[0].target),
             click_count: recent.length,
           });
@@ -693,9 +693,9 @@ ERROR RECOVERY
         if (clickHistory.length > 10) clickHistory.splice(0, clickHistory.length - 10);
       });
 
-      document.addEventListener('visibilitychange', () => \{
-        if (document.hidden && window.__activeStreamId) \{
-          analytics.track('agui.ux.stream_abandoned', \{
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden && window.__activeStreamId) {
+          analytics.track('agui.ux.stream_abandoned', {
             stream_id: window.__activeStreamId,
             progress_pct: window.__streamProgressPct,
           });

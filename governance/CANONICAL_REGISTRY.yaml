@@ -5591,3 +5591,15 @@ topics:
     aliases: []
     supersedes: []
     pages: []
+  - id: claude-ecosystem-research-report-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/23-claude-ecosystem-research-report-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: github-copilot-enterprise-research-2026-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/47-github-copilot-enterprise-research-2026-part2.md
+    aliases: []
+    supersedes: []
+    pages: []

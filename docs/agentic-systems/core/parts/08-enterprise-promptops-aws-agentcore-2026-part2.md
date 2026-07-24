@@ -226,13 +226,13 @@ Tenant-specific overrides applied on top of base prompt. Override stored separat
 ## Prompt Template Systems
 Jinja2, Mustache, DSPy, structured prompts, and composition patterns.
 ### Template Engine Comparison
-|**Engine**|**Syntax**|**Logic Support**|**Safety**|**Enterprise**<br/>**Use**|**Recommendation**|
-|Jinja2 (Python)|{{ var }}, {% if %}|Full logic, loops,<br/>filters|II<br/>Requires<br/>sanitizatio<br/>n|Very<br/>common|IRECOMMENDED — most<br/>expressive|
-|Mustache /<br/>Handlebars|{{ var }}, {{# section }}|Logic-less<br/>(Mustache); some<br/>logic (HB)|ISafer<br/>— no<br/>code<br/>execution|Common|IGood for non-technical<br/>authoring|
-|Python f-strings|f'{var}'|None in template|I<br/>Injection<br/>risk|Legacy|IAnti-pattern for production|
-|Structured JSON|{ 'role': 'system',<br/>'content': [...] }|No logic|ISafe|Growing|IFor API-first, multi-modal<br/>prompts|
-|XML/YAML Prompts|YAML/XML structure<br/>with variable refs|Limited|ISafe|Enterprise|IGood for structured agents|
-|DSPy|Programmatic<br/>module definitions,<br/>auto-optimization|Full Python logic|I<br/>Compiled<br/>output|Research /<br/>advanced|IIBest for teams with ML<br/>expertise|
+|**Engine**|**Syntax**|**Logic Support**|**Safety**|**Enterprise Use**|**Recommendation**|
+|Jinja2 (Python)|`{{ var }}`, `{% if %}`|Full logic, loops, filters|Requires sanitization|Very common|Recommended — most expressive|
+|Mustache / Handlebars|`{{ var }}`, `{{# section }}`|Logic-less (Mustache); some logic (HB)|Safer — no code execution|Common|Good for non-technical authoring|
+|Python f-strings|`f'{var}'`|None in template|Injection risk|Legacy|Anti-pattern for production|
+|Structured JSON|`{ 'role': 'system', 'content': [...] }`|No logic|Safe|Growing|For API-first, multi-modal prompts|
+|XML/YAML Prompts|YAML/XML structure with variable refs|Limited|Safe|Enterprise|Good for structured agents|
+|DSPy|Programmatic module definitions, auto-optimization|Full Python logic|Compiled output|Research / advanced|Best for teams with ML expertise|
 ### Recommended Template Pattern: Jinja2 with Security Controls
 ```
 # template: customer-support-system-v2.jinja2

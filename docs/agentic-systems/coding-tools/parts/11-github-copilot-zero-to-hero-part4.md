@@ -248,7 +248,7 @@ Diagnostics:
 
 Fixes:
 1. Verify the command in mcp.json resolves: run it directly in terminal.
-2. Check environment variables: ${env:GITHUB_TOKEN} requires the variable set in your shell.
+2. Check environment variables: `${env:GITHUB_TOKEN}` requires the variable set in your shell.
 3. Enterprise: verify the server is on the org allow-list.
 4. Restart MCP connection: command palette → "GitHub Copilot: Restart MCP Servers".
 
