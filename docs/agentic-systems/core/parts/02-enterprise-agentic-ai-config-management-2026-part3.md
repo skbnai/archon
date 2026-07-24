@@ -46,7 +46,7 @@ Agentic AI platforms require configuration capabilities that have no equivalent 
 - Automatic A/B testing on prompt version upgrades (10% traffic to new version, compare quality metrics)
 - Rollback: instant revert to previous approved version via label switch
 - Prompt templates stored in S3 (versioned), referenced by AppConfig
-- Prompt rendering at runtime (late binding variables: {user_name}, {current_date})
+- Prompt rendering at runtime (late binding variables: `{user_name}`, `{current_date}`)
 - Prompt injection detection rules embedded in prompt registry validation
 ### Model Registry & Routing
 - Model Registry catalogs all approved models with metadata: provider, context window, cost/token, capabilities
@@ -162,7 +162,7 @@ Configuration anti-patterns are the most common cause of production incidents in
 Comprehensive Configuration Governance for Enterprise Scale
 ### Naming Standards
 - Use lowercase-kebab-case for all configuration keys
-- Follow hierarchy: /{layer}/{environment}/{service}/{category}/{key}
+- Follow hierarchy: `/{layer}/{environment}/{service}/{category}/{key}`
 - Include version suffix for breaking changes: /agent-config/v2/...
 - No abbreviations — prefer clarity over brevity: 'primary-model-id' not 'pm-id'
 - Environment names: dev, test, uat, prod (never: d, t, u, p or development, production)
