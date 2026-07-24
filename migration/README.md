@@ -14,6 +14,12 @@ the old-repo migration (see `governance/MIGRATION_SOURCES.md`).
 - `merge-plans/` — one file per duplicate cluster, naming the survivor page,
   target canonical path, topic_id, and which old paths get folded in via
   `supersedes`. The `migrator` agent executes these; it does not write them.
+  **Every row a migrator will execute — including simple 1:1 MIGRATE rows,
+  not just splits — must carry an explicit source line-range (`lines: N-M`,
+  or `lines: 1-<EOF>` for whole files).** The migrator refuses assignments
+  without one: vague "migrate this file" scopes caused silent content
+  condensing in wave 2 (as low as 15% retained), while exact-range
+  transcription assignments were reliably faithful.
 - `mapping.csv` — old path → new canonical path, used to rewrite internal
   links during migration.
 - `refresh-queue.md` — freshness-auditor output: stale pages ranked for

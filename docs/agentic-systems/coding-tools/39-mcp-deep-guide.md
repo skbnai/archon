@@ -7,7 +7,7 @@ domain: agentic-systems
 doc_type: guide
 topic_id: mcp-deep-guide
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/mcp-deep-guide.md
+  - docs/coding-tools/claude/mcp-deep-guide.md
 covers_version: "as of 2026-07-10"
 ---
 

@@ -7,7 +7,7 @@ date_created: 2026-07-24
 last_reviewed: 2026-07-24
 topic_id: claude-agent-sdk-production
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/claude-agent-sdk-production.md
+  - docs/coding-tools/claude/claude-agent-sdk-production.md
 ---
 
 # Claude Agent SDK — Production Reference

@@ -7,7 +7,7 @@ status: current
 date_published: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/Part11_Security_Governance.md
+  - docs/coding-tools/github-copilot/Part11_Security_Governance.md
 tags:
   - coding-tools
   - security
@@ -111,4 +111,4 @@ Independent security tooling vendors building on top of GitHub's native protecti
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/security-governance-part2.md) for Enterprise AI Governance and governance controls.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/02-security-governance-part2.md) for Enterprise AI Governance and governance controls.**

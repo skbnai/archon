@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/claude-api-mastery.md
+  - docs/coding-tools/claude/claude-api-mastery.md
 ---
 
 # Claude API Mastery
@@ -311,7 +311,7 @@ for result in client.messages.batches.results(batch.id):
 **Key facts:**
 
 - 50% price discount vs synchronous API
-- Most batches complete in < 1 hour
+- Most batches complete in &lt; 1 hour
 - Compatible with prompt caching (additional discount)
 - Requests expire if not processed within 24 hours
 - Up to 300K `max_tokens` per request in Opus/Sonnet via beta header

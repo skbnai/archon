@@ -7,7 +7,7 @@ status: current
 date_published: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/Part14_Enterprise_APIs_Apps_CLI.md
+  - docs/coding-tools/github-copilot/Part14_Enterprise_APIs_Apps_CLI.md
 tags:
   - coding-tools
   - enterprise
@@ -457,4 +457,4 @@ Using a GitHub App in Actions (generate token at runtime):
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/enterprise-apis-apps-cli-part2.md) for GitHub CLI and interview questions.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/04-enterprise-apis-apps-cli-part2.md) for GitHub CLI and interview questions.**

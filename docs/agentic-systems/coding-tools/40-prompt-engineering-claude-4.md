@@ -8,7 +8,7 @@ domain: agentic-systems
 topic_id: prompt-engineering-claude-4
 doc_type: guide
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/prompt-engineering-claude-4.md
+  - docs/coding-tools/claude/prompt-engineering-claude-4.md
 ---
 
 

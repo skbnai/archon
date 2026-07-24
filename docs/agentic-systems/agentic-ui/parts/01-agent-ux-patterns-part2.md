@@ -1,18 +1,149 @@
 ---
-title: "Agent UX Patterns: Reasoning, Confidence, Approval & Tasks (Part 2)"
+title: "Agent UX Patterns: Streaming & Reasoning (Part 2)"
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
-doc_type: guide
+doc_type: reference-architecture
 topic_id: agent-ux-patterns-part2
-supersedes: []
 covers_version: "as of 2026-07-10"
 ---
 
-# Agent UX Patterns: Reasoning, Confidence, Approval & Tasks (Part 2)
+This is part 2 of 3.
 
-**This is Part 2 of 3. [Back to Part 1 ←](pathname:///archon/agentic-systems/agentic-ui/01-agent-ux-patterns) for copilot pattern taxonomy and streaming design.**
+**Related:** [Part 1](../01-agent-ux-patterns.md) · [Part 3](../parts/01-agent-ux-patterns-part3.md)
+
+---
+
+## 2. Streaming UX Design
+
+Streaming is the default output mode for LLM-backed agents. Poor streaming UX is the #1 source of perceived quality regression from batch AI to agentic AI. These patterns address every dimension of streaming experience.
+
+### 2.1 Progressive Text Rendering
+
+| Rendering Mode | Behavior | When to Use | Risk |
+| ---------------- | ---------- | ------------- | ------ |
+| **Character stream** | Render every token as it arrives | Chat, conversational UX | Jitter on short tokens |
+| **Word-buffered** | Buffer until word boundary, then render | Voice transcription overlay | 50–80ms added latency |
+| **Sentence-buffered** | Hold until sentence end, flush | TTS pipelines, spoken output | Longer perceived latency |
+| **Paragraph-buffered** | Hold until double newline | Document editors, code blocks | Best for structured content |
+| **Hold-until-complete** | Never stream — wait for full response | Decision cards, structured JSON | Poor for long responses |
+| **Hybrid** | Stream prose, buffer code/tables | Mixed content (chat + code) | Complexity in render logic |
+
+**Choose Character stream when:** the response is conversational prose and the user benefit of seeing words appear outweighs the minor jitter of token-level rendering.
+
+**Choose Hold-until-complete when:** the output is a structured data object (JSON decision card, table) that cannot be partially rendered without confusing the user.
+
+---
+
+### 2.2 Streaming Indicators
+
+```mermaid
+graph TD
+    A["● Thinking... [Stop]"] --> B["Step 1/4: Searching knowledge base — Done"]
+    B --> C["Step 2/4: Analyzing contracts — Running"]
+    C --> D["Step 3/4: Synthesizing findings — Pending"]
+    D --> E["Step 4/4: Drafting recommendation — Pending"]
+    E --> F["Progress: 52% — est. 8 seconds remaining"]
+```
+
+*Step-progress streaming indicator: each tool-driven step reports Done/Running/Pending state, with an overall percentage and time estimate.*
+
+| Indicator Type | Best For | Avoid When |
+| ---------------- | ---------- | ------------ |
+| Animated ellipsis ("Thinking...") | Short waits < 3 seconds | Long multi-step tasks |
+| Step progress list | Multi-tool tasks | Simple single-turn responses |
+| Percentage progress bar | Tasks with known step count | Open-ended reasoning |
+| Tool call callout | Developer-facing / power users | End-user consumer apps |
+| Time estimate | Tasks > 15 seconds | Tasks with variable duration |
+| Spinner on input field | Embedded copilot in form | Full-page chat (too subtle) |
+
+---
+
+### 2.3 Partial Result Surfacing
+
+The central streaming tension: **show work in progress** vs. **hold until complete**.
+
+| Approach | UX Benefit | UX Risk | Recommended For |
+| ---------- | ----------- | --------- | ----------------- |
+| **Show all partial output** | Fastest perceived completion | Confusing rewrites mid-stream | Chat, prose generation |
+| **Show structured skeleton first** | Sets expectations for long output | Jarring if structure changes | Reports, documents |
+| **Show partial sections as completed** | Best for long structured content | Requires section-boundary detection | Multi-section analysis |
+| **Stream reasoning separately** | Users see the agent "thinking" | Cognitive overload for non-technical | Developer tools, high-stakes analysis |
+| **Hold all, show spinner** | Clean final reveal | Longest perceived wait | Decision cards, forms, structured JSON |
+
+---
+
+### 2.4 Streaming Tool Call Visualization
+
+When an agent executes tools during streaming, users need visibility without being overwhelmed.
+
+```mermaid
+graph TD
+    A["Agent prose: 'Let me check the latest contract status for Acme Corp.'"] --> B
+    B["Tool: search_contracts<br/>query: 'Acme Corp renewal', scope: last 90 days<br/>Result: 3 contracts found ✓"] --> C
+    C["Tool: get_contract_details<br/>contract_id: CT-2024-0891<br/>● Fetching..."] --> D
+    D["Agent prose resumes: 'Based on the results, the renewal date is...'"]
+```
+
+*Streaming tool-call visualization: prose and tool-call cards interleave in one stream, each card showing its inputs and live status.*
+
+**Tool call visualization levels:**
+
+| Visibility Level | Shown | Audience |
+| ----------------- | ------- | ---------- |
+| **Invisible** | Nothing — seamless integration | End-user consumer apps |
+| **Minimal** | "Checking data..." generic indicator | Business user apps |
+| **Name only** | Tool name: `search_contracts` | Power users |
+| **Name + params** | Tool name + sanitized input parameters | Developer tools |
+| **Full trace** | Name + params + result + duration | Debug / audit mode |
+
+---
+
+### 2.5 Cancellation UX
+
+```mermaid
+graph TD
+    A["Stop button — always visible during streaming"] -->|on click| B["Generation stopped"]
+    B --> C["Keep partial response"]
+    B --> D["Retry with different prompt"]
+```
+
+*Cancellation UX: the Stop control is always visible mid-stream; clicking it surfaces a choice between keeping the partial response or retrying.*
+
+| Cancellation Scenario | Recommended Behavior |
+| ----------------------- | --------------------- |
+| User clicks Stop | Halt stream immediately. Show partial content. Offer Keep/Retry/Discard. |
+| User navigates away | Halt stream server-side. Do not persist partial output without user confirmation. |
+| Mid-tool-call cancel | Complete tool call if < 1 second remaining. Abort if long-running. |
+| Cancel in approval dialog | Treat as "reject" — do not execute the pending tool call. |
+| Timeout (> 60s no completion) | Auto-cancel. Offer retry with context of how far it got. |
+
+---
+
+### 2.6 Error Recovery During Streaming
+
+| Error Type | Detection Signal | UX Response |
+| ------------ | ----------------- | ------------- |
+| LLM API timeout | No tokens for > 30s | "The response timed out. [Retry] [Save what I have]" |
+| Rate limit hit | 429 from LLM API | "Busy right now — retrying automatically... 1/3" |
+| Tool call failure | `TOOL_CALL_END` with error | Inline tool error card with retry option |
+| Partial JSON truncation | Incomplete structured output | Attempt repair; fallback to "Unable to generate structured output — [Retry]" |
+| Context length exceeded | 400/413 from LLM API | "Conversation too long. [Summarize and continue] [Start new]" |
+| Network interruption | WebSocket / SSE disconnect | Reconnect with session ID; resume from last `MESSAGE_ID` |
+
+---
+
+### 2.7 Streaming in Different Form Factors
+
+| Form Factor | Streaming Approach | Special Considerations |
+| ------------ | ------------------- | ---------------------- |
+| **Full-page chat** | Character-level streaming, left-aligned | Scroll lock: auto-scroll while streaming, release on manual scroll |
+| **Document editor** | Paragraph-buffered inline insertion | Preserve cursor position; undo stack integration required |
+| **Dashboard widget** | Hold-until-complete for KPI cards | Stream narrative summary; hold structured data |
+| **Mobile chat** | Word-buffered to reduce jitter | Battery-aware: reduce streaming frequency on low battery |
+| **Sidebar panel** | Stream into fixed-height scrollable div | Truncate at max height with "Show more" |
+| **Voice output** | Sentence-buffered → TTS | First sentence must begin TTS within 500ms for natural cadence |
 
 ---
 
@@ -22,16 +153,14 @@ Showing the agent's reasoning is a UX decision with significant downstream effec
 
 ### 3.1 Decision Framework: When to Show Reasoning
 
-Decision matrix based on stakes and confidence:
-
-LOW stakes, LOW confidence: Hide (show result only)
-LOW stakes, HIGH confidence: Hide (clean UX)
-HIGH stakes, LOW confidence: Collapsible summary (this is where users need to see reasoning)
-HIGH stakes, HIGH confidence: Full structured reasoning required
+| Confidence \ Stakes | Low Stakes | High Stakes |
+| --- | --- | --- |
+| **Low confidence** | Hide (show result only) | Collapsible summary |
+| **High confidence** | Hide (clean UX) | Full structured reasoning required |
 
 **Show full reasoning when:**
 
-- Stakes are high AND confidence is uncertain
+- Stakes are high AND confidence is uncertain (cell: HIGH stakes, LOW confidence)
 - The user needs to validate the reasoning (regulated decision support)
 - The output will be challenged by a downstream reviewer
 - The user has explicitly requested an explanation
@@ -43,10 +172,10 @@ HIGH stakes, HIGH confidence: Full structured reasoning required
 
 **Hide reasoning when:**
 
-- Simple fact retrieval (clutter greater than benefit)
+- Simple fact retrieval (clutter > benefit)
 - End-user consumer app with low technical literacy
 - High-confidence, low-stakes generation (email autocomplete)
-- Regulated contexts where showing reasoning implies AI autonomy
+- Regulated contexts where showing reasoning implies AI autonomy (EU AI Act Art. 14 consideration — see [Governance](../../../architecture/51-enterprise-ai-governance-compliance.md))
 
 ---
 
@@ -63,24 +192,24 @@ HIGH stakes, HIGH confidence: Full structured reasoning required
 
 ---
 
-### 3.3 Reasoning Panel Example
+### 3.3 ASCII Wireframe: Reasoning Panel
 
-RECOMMENDATION: Approve the vendor contract with standard terms. Est. savings: $240K.
-Confidence: 78% (progress bar showing 6 of 10 filled)
+```mermaid
+graph TD
+    R["RECOMMENDATION (Confidence 78%)<br/>Approve the vendor contract with standard terms. Est. savings: $240K."]
+    R --> E["▼ Supporting evidence (3 sources)"]
+    E --> E1["[1] Vendor pricing analysis — 'per-unit cost 18% below market median'"]
+    E --> E2["[2] Legal review — standard terms approved"]
+    E --> E3["[3] Procurement policy — threshold: $500K needs VP"]
+    R --> S["▼ Reasoning steps"]
+    S --> S1["1. Retrieved vendor history (3 contracts)"]
+    S1 --> S2["2. Compared pricing vs. market benchmarks"]
+    S2 --> S3["3. Checked against procurement policy limits"]
+    S3 --> S4["4. Drafted recommendation with evidence"]
+    R --> A["Approve / Request Changes / Escalate"]
+```
 
-View supporting evidence (3 sources):
-[1] Vendor pricing analysis — last updated 3 days ago
-    "Per-unit cost 18% below market median"
-[2] Legal review — standard terms approved
-[3] Procurement policy — threshold: $500K needs VP approval
-
-View reasoning steps:
-Step 1: Retrieved vendor history (3 contracts)
-Step 2: Compared pricing vs. market benchmarks
-Step 3: Checked against procurement policy limits
-Step 4: Drafted recommendation with evidence
-
-[Approve] [Request Changes] [Escalate]
+*Reasoning panel: a headline recommendation with confidence, expandable evidence and reasoning-step sections, and the approval actions.*
 
 ---
 
@@ -104,7 +233,8 @@ Step 4: Drafted recommendation with evidence
 
 ### 4.2 Calibration Considerations
 
-**Overconfidence is a UX hazard:** LLM confidence scores are frequently miscalibrated — a model that says 85% confidence may be right only 60% of the time in your domain. Always validate calibration on your golden dataset before displaying numeric confidence to users. Miscalibrated confidence erodes trust faster than no confidence display.
+:::warning Overconfidence is a UX hazard
+    LLM confidence scores are frequently miscalibrated — a model that says 85% confidence may be right only 60% of the time in your domain. Always validate calibration on your golden dataset before displaying numeric confidence to users. Miscalibrated confidence erodes trust faster than no confidence display.
 
 | Domain | Calibration Risk | Recommendation |
 | -------- | ----------------- | ---------------- |
@@ -120,20 +250,18 @@ Step 4: Drafted recommendation with evidence
 
 For decisions with genuine uncertainty, show multiple hypotheses rather than a single answer with confidence.
 
-ANALYSIS RESULTS
+```mermaid
+graph TD
+    A["ANALYSIS RESULTS — three interpretations are consistent with the data"]
+    A --> H1["① Supply chain disruption (most likely, 65%)<br/>Evidence: inventory drop, lead time increase"]
+    A --> H2["② Demand spike in Q3 (25%)<br/>Evidence: order backlog increase"]
+    A --> H3["③ Reporting error (10%)<br/>Evidence: inconsistency in warehouse records"]
+    H1 --> ACT["Investigate ① / Investigate ② / Request manual audit"]
+    H2 --> ACT
+    H3 --> ACT
+```
 
-Three interpretations are consistent with the data:
-
-1. Supply chain disruption (most likely) — 65%
-   Evidence: inventory drop, lead time increase
-
-2. Demand spike in Q3 — 25%
-   Evidence: order backlog increase
-
-3. Reporting error — 10%
-   Evidence: inconsistency in warehouse records
-
-[Investigate #1] [Investigate #2] [Request manual audit]
+*Multiple-hypothesis display: instead of one answer with a confidence score, competing interpretations are ranked with their supporting evidence and per-hypothesis investigate actions.*
 
 ---
 
@@ -164,20 +292,19 @@ Every approval request must answer four questions immediately visible without sc
 3. **What happens if I approve?** (Consequence)
 4. **What happens if I reject?** (Alternative path)
 
-Example approval dialog:
+```mermaid
+graph TD
+    A["ACTION REQUIRED: File Deletion"]
+    A --> W["WHAT: Delete 47 files in /reports/archive/2021/"]
+    A --> Y["WHY: storage cleanup request (Task #4 of 8)"]
+    A --> R["RISK: this action cannot be undone"]
+    A --> N["IF NO: skip this folder, continue with next task"]
+    A --> V["View file list (47)"]
+    A --> ACT["Approve (A) / Skip (S) / Stop task (X)"]
+    ACT --> T["Respond within 23:47 or task will pause"]
+```
 
-WARNING: ACTION REQUIRED: File Deletion
-
-WHAT: Delete 47 files in /reports/archive/2021/
-WHY: Your storage cleanup request (Task #4 of 8)
-RISK: This action cannot be undone
-IF NO: Skip this folder; continue with next task
-
-[View file list (47)]
-
-[Approve (A)] [Skip (S)] [Stop task (X)]
-
-Respond within: 23:47 or task will pause
+*Approval request anatomy: what/why/risk/alternative are all visible without scrolling, alongside the response deadline.*
 
 ---
 
@@ -214,18 +341,20 @@ Respond within: 23:47 or task will pause
 
 For autonomous workflows generating multiple pending approvals:
 
-PENDING APPROVALS (12 items) [Approve All]
+```mermaid
+graph TD
+    A["PENDING APPROVALS (12 items) — Approve All"]
+    A --> L1["Update vendor record — Acme Corp (Low risk)"]
+    A --> L2["Update vendor record — Beta Systems (Low risk)"]
+    A --> M1["Send renewal notice — Acme Corp (Medium risk)"]
+    A --> H1["Delete archive /2019/Q1, 47 files (High risk) — selected"]
+    A --> M2["Send renewal notice — Beta Systems (Medium risk)"]
+    A --> More["...7 more"]
+    H1 --> ACT["Approve Selected (1) / Review Individual"]
+    ACT --> Note["Note: 'Approve All' excludes High Risk items"]
+```
 
-- [ ] Update vendor record — Acme Corp (Low risk)
-- [ ] Update vendor record — Beta Systems (Low risk)
-- [ ] Send renewal notice — Acme Corp (Medium risk)
-- [x] Delete archive /2019/Q1 (47 files) (High risk)
-- [ ] Send renewal notice — Beta Systems (Medium risk)
-- ... 7 more
-
-[Approve Selected (1)] [Review Individual]
-
-Note: "Approve All" excludes High Risk items
+*Batch approval list: items are grouped and risk-tagged, with High Risk items always excluded from the bulk "Approve All" action.*
 
 **Batch approval rules:**
 
@@ -246,7 +375,8 @@ Note: "Approve All" excludes High Risk items
 | Escalation wait | Configurable | Routes to backup approver |
 | Final timeout | Configurable | Task cancelled. Audit log entry. |
 
-**Escalation Chain Design:** Define a 3-level escalation chain for every autonomous task: primary approver → manager → task owner. Undeclared escalation chains are an operational risk for long-running autonomous workflows.
+:::note Escalation Chain Design
+    Define a 3-level escalation chain for every autonomous task: primary approver → manager → task owner. Undeclared escalation chains are an operational risk for long-running autonomous workflows. See [HITL patterns](../../../architecture/49-enterprise-ai-architecture-patterns.md).
 
 ---
 
@@ -270,68 +400,3 @@ Every approval decision must be persisted with:
 
 ---
 
-## 6. Long-running Task UX
-
-### 6.1 Progress Visualization Patterns
-
-Contract Analysis — 247 documents
-Started: 14:32 | Est. completion: 15:45
-
-Progress: 78% (192/247 docs)
-
-CURRENT: Analyzing "Q3 2024 MSA - Vertex Corp.pdf"
-
-COMPLETED MILESTONES
-- Document ingestion — 14:32 (3 min) DONE
-- Clause extraction — 14:40 (8 min) DONE
-- Risk scoring — 14:48 (in progress)
-- Summary report — (pending)
-- Dashboard update — (pending)
-
-[Pause] [View partial results] [Cancel]
-
-| Progress Element | Required | Recommended When |
-| ----------------- | ---------- | ----------------- |
-| Overall % bar | Always | Any task greater than 10 seconds |
-| Milestone list | Yes | Tasks with 3+ distinct phases |
-| Current item name | Yes | Batch processing tasks |
-| Time elapsed / estimated | Yes | Tasks greater than 1 minute |
-| Items completed / total | Yes | Enumerable batch tasks |
-| Cost consumed (tokens/$) | Optional | Developer / admin view |
-
----
-
-### 6.2 Background Task Management
-
-Minimized Task Bar: [Contract Analysis 78%] [Code Review Done ✓]
-
-**Background task lifecycle:**
-
-| State | Visual | Action Available |
-| ------- | -------- | ----------------- |
-| Running | Animated progress indicator | Pause, View, Cancel |
-| Paused | Static progress bar (amber) | Resume, Cancel |
-| Awaiting approval | Bell icon (red badge) | Review + Approve |
-| Completed | Green check | View results, Dismiss |
-| Failed | Red X | View error, Retry |
-| Cancelled | Gray dash | — |
-
----
-
-### 6.3 Notification Fallback
-
-When the user is not active in the application, task completion must reach them through ambient channels.
-
-| Delivery Channel | Trigger | Content |
-| ---------------- | --------- | --------- |
-| In-app toast | User active, task completes | "Contract analysis complete — 12 high-risk clauses found" |
-| Browser push notification | User has tab open, focus elsewhere | Title + one-line summary |
-| Email digest | User offline greater than 15 minutes | Subject, summary, link to results |
-| Slack DM | User has Slack integration configured | Summary card + "View Results" button |
-| Mobile push | User has mobile app installed | Summary + deep link to task result |
-
-
-
----
-
-**This is Part 2 of 3. [Continue with Part 3 →](pathname:///archon/agentic-systems/agentic-ui/parts/01-agent-ux-patterns-part3) for multi-agent collaboration, undo/replay, audit UX, error handling, accessibility, and anti-patterns.**

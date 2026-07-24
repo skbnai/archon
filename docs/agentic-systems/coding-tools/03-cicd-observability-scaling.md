@@ -7,7 +7,7 @@ status: current
 date_published: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/Part13_CICD_Observability_Scaling.md
+  - docs/coding-tools/github-copilot/Part13_CICD_Observability_Scaling.md
 tags:
   - coding-tools
   - ci-cd
@@ -128,4 +128,4 @@ As established in earlier sections, no source reviewed for this report describes
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/cicd-observability-scaling-part2.md) for Scaling Challenges.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/03-cicd-observability-scaling-part2.md) for Scaling Challenges.**

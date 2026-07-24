@@ -7,7 +7,7 @@ domain: agentic-systems
 doc_type: reference-architecture
 topic_id: part-11-evaluation-harnesses-cicd
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/11-part-11-evaluation-harnesses-cicd.md
+  - docs/multimodal-ai/11-part-11-evaluation-harnesses-cicd.md
 sources:
   - https://deepeval.truelens.io
   - https://langfuse.com

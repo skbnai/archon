@@ -8,7 +8,7 @@ date_created: 2026-07-24
 last_reviewed: 2026-07-24
 tags: [coding-tools]
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/Module_7_Safety_Enterprise_Exam.md
+  - docs/coding-tools/claude/Module_7_Safety_Enterprise_Exam.md
 ---
 
 # Safety, Enterprise Deployment & CCA-F Exam Prep

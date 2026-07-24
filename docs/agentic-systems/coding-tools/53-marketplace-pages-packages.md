@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/Part06_Marketplace_Pages_Packages.md
+  - docs/coding-tools/github-copilot/Part06_Marketplace_Pages_Packages.md
 ---
 
 # Marketplace, Pages, Wiki, Releases & Packages

@@ -232,9 +232,9 @@ graph TD
 ```
 
 **Promotion criteria (after 24h):**
-- Task completion rate delta: < -2%
-- User satisfaction delta: < -3%
-- Error rate delta: < +1%
+- Task completion rate delta: &lt; -2%
+- User satisfaction delta: &lt; -3%
+- Error rate delta: &lt; +1%
 
 **Shadow Deploy**
 ```mermaid

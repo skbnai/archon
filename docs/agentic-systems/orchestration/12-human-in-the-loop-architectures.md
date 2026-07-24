@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 topic_id: human-in-the-loop-architectures
-supersedes: ["../knowledge-docs/docs/workflow-orchestration/12-human-in-the-loop-architectures.md"]
+supersedes: ["docs/workflow-orchestration/12-human-in-the-loop-architectures.md"]
 doc_type: guide
 tags: ["workflow-orchestration", "hitl", "governance", "human-oversight", "agents"]
 ---

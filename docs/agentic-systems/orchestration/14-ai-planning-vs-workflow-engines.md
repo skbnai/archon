@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 topic_id: ai-planning-vs-workflow-engines
-supersedes: ["../knowledge-docs/docs/workflow-orchestration/14-ai-planning-vs-workflow-engines.md"]
+supersedes: ["docs/workflow-orchestration/14-ai-planning-vs-workflow-engines.md"]
 doc_type: guide
 tags: ["workflow-orchestration", "ai-planning", "workflow-engines", "agents", "htn"]
 ---

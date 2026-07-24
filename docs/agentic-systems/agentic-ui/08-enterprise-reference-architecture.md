@@ -622,7 +622,7 @@ SERVICE MESH: Istio
 
 ## 7. Multi-Region Architecture Variant
 
-For enterprise deployments requiring < 100ms latency globally or HA across cloud region failures:
+For enterprise deployments requiring &lt; 100ms latency globally or HA across cloud region failures:
 
 ```text
 MULTI-REGION TOPOLOGY — Active/Active

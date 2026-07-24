@@ -5,7 +5,7 @@ doc_type: reference-architecture
 status: current
 topic_id: part-10-evaluation-benchmarks
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/10-part-10-evaluation-benchmarks.md
+  - docs/multimodal-ai/10-part-10-evaluation-benchmarks.md
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
@@ -106,7 +106,7 @@ flowchart TD
 
 ### Video Benchmarks
 
-**VideoMME:** Comprehensive video question answering benchmark with short (< 2 min), medium (4–15 min), and long (30–60 min) video clips. Tests temporal reasoning, event localization, and content understanding across 30 domains. Metric: accuracy. The reference benchmark for evaluating video VLM temporal reasoning at different timescales.
+**VideoMME:** Comprehensive video question answering benchmark with short (&lt; 2 min), medium (4–15 min), and long (30–60 min) video clips. Tests temporal reasoning, event localization, and content understanding across 30 domains. Metric: accuracy. The reference benchmark for evaluating video VLM temporal reasoning at different timescales.
 
 **MVBench:** Multi-task video understanding benchmark with 20 challenging temporal reasoning tasks including action sequence understanding, scene transition reasoning, and counterfactual reasoning. 4,000 multiple-choice questions. Enterprise relevance: tests whether the model understands what happened *over time*, not just what appears in a single frame.
 

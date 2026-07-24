@@ -7,7 +7,7 @@ domain: agentic-systems
 doc_type: guide
 topic_id: constitutional-ai-safety-2026
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/constitutional-ai-safety-2026.md
+  - docs/coding-tools/claude/constitutional-ai-safety-2026.md
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/38-constitutional-ai-safety-2026-part2) for human-in-the-loop, stress testing, compliance, and governance.**

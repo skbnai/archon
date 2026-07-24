@@ -7,7 +7,7 @@ domain: agentic-systems
 doc_type: guide
 topic_id: agentic-platform-bestpractices
 supersedes:
-  - ../knowledge-docs/docs/agentic-systems/platform/agentic_platform_bestpractices.md
+  - docs/agentic-systems/platform/agentic_platform_bestpractices.md
 ---
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/core/parts/10-agentic-platform-bestpractices-part2) for multitenancy, MCP, and ADFS. [Part 3 →](pathname:///archon/agentic-systems/core/parts/10-agentic-platform-bestpractices-part3) covers observability, governance, and roadmap.**

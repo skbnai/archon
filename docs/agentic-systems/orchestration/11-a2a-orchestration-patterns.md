@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 topic_id: a2a-orchestration-patterns
-supersedes: ["../knowledge-docs/docs/workflow-orchestration/11-a2a-orchestration-patterns.md"]
+supersedes: ["docs/workflow-orchestration/11-a2a-orchestration-patterns.md"]
 doc_type: guide
 tags: ["workflow-orchestration", "agents", "multi-agent", "a2a"]
 ---

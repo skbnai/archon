@@ -79,7 +79,7 @@ Decision tables replace business logic code:
 |---------|--------------|----------|
 | > $100k | > 700        | Approve  |
 | > $50k  | > 650        | Manual   |
-| < $50k  | Any          | Reject   |
+| &lt; $50k  | Any          | Reject   |
 
 **Benefits**:
 

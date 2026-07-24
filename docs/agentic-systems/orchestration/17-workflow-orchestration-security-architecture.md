@@ -5,7 +5,7 @@ doc_type: guide
 topic_id: workflow-orchestration-security-architecture
 status: current
 supersedes:
-  - ../knowledge-docs/docs/workflow-orchestration/17-security-architecture.md
+  - docs/workflow-orchestration/17-security-architecture.md
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 source_type: native-md

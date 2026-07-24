@@ -5,7 +5,7 @@ doc_type: guide
 topic_id: reference-architectures
 status: current
 supersedes:
-  - ../knowledge-docs/docs/workflow-orchestration/19-reference-architectures.md
+  - docs/workflow-orchestration/19-reference-architectures.md
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 source_type: native-md

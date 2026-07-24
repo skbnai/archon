@@ -7,7 +7,7 @@ topic_id: claude-enterprise-2026
 date_published: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/claude-enterprise-2026.md
+  - docs/coding-tools/claude/claude-enterprise-2026.md
 related_docs:
   - reliability-engineering
 ---

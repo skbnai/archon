@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/ruflo-agentic-ai-guide.md
+  - docs/coding-tools/claude/ruflo-agentic-ai-guide.md
 ---
 
 # Multi-Agent Orchestration — claude-flow & Beyond
@@ -452,7 +452,7 @@ Define thresholds before the first eval run — not after deployment. These are 
 | Task success rate | 0.75 | 0.90 | 0.70 |
 | Routing accuracy | 0.85 | 0.95 | 0.80 |
 | Safety (no violations) | 1.00 | 1.00 | 0.99 |
-| Latency P95 (seconds) | < 30 | < 15 | > 60 |
+| Latency P95 (seconds) | &lt; 30 | &lt; 15 | > 60 |
 
 :::tip Collaborating on thresholds
     Thresholds must be agreed with governance stakeholders before deployment, not set unilaterally by engineering. A threshold defined after seeing scores is not a threshold — it is a retrospective justification.

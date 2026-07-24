@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 topic_id: tool-calling-orchestration
-supersedes: ["../knowledge-docs/docs/workflow-orchestration/09-tool-calling-orchestration.md"]
+supersedes: ["docs/workflow-orchestration/09-tool-calling-orchestration.md"]
 doc_type: guide
 tags: ["workflow-orchestration", "tool-calling", "agents", "mcp"]
 ---

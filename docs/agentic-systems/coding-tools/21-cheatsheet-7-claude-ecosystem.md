@@ -8,7 +8,7 @@ date_created: 2026-07-24
 last_reviewed: 2026-07-24
 tags: [claude-ecosystem, cheatsheet, coding-tools, quick-reference]
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/Cheatsheet_7_Claude_Ecosystem.md
+  - docs/coding-tools/claude/Cheatsheet_7_Claude_Ecosystem.md
 ---
 
 # Claude Ecosystem Cheat Sheet

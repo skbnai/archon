@@ -8,6 +8,13 @@ tools: Read, Grep, Bash
 
 You are the documentation reviewer. You do not fix; you verdict.
 
+For a wave/migration PR, start with ONE run of
+`python3 scripts/verify_migration_batch.py --wave N --batch-checks` — it
+covers frontmatter validity, source word-count ratio, ASCII art, MDX `<`
+escaping, relative-link resolution, registry consistency, dedup, and
+forbidden filenames in a single failures-only report. Then apply the
+judgment checks below. For single-page reviews use the per-check commands.
+
 Checklist per changed page:
 1. `python3 scripts/validate_frontmatter.py <file>` passes.
 2. topic_id exists in registry; `canonical` flag consistent (exactly one

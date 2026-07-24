@@ -7,11 +7,11 @@ topic_id: scalability-engineering
 date_published: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/agentic-ui/scalability-engineering.md
+  - docs/agentic-ui/scalability-engineering.md
 related_docs:
   - reliability-engineering
-  - ../cloud-platforms/ai-gateway/kong-ai-gateway-guide
-  - ../enterprise-architecture/ai-architecture/agent-memory-planning-architecture
+  - ../../platforms/08-kong-ai-gateway-guide
+  - ../../architecture/41-agent-memory-planning-architecture
 ---
 
 # Scalability Engineering for Agentic Applications
@@ -31,7 +31,7 @@ Agentic applications impose fundamentally different scalability constraints than
 | Scalability Problem | Traditional App | Agentic App | Engineering Impact |
 | -------------------- | ---------------- | ------------- | ------------------- |
 | **Stateful conversations** | Each request independent | Session state must follow user or be accessible from any instance | Session affinity OR expensive state externalization |
-| **Long-running tasks** | < 1s per request | 30s – 30min per task | Persistent connections; heartbeats; worker lifecycle management |
+| **Long-running tasks** | &lt; 1s per request | 30s – 30min per task | Persistent connections; heartbeats; worker lifecycle management |
 | **Token throughput bottleneck** | CPU/memory bound | LLM token generation is the primary ceiling | Cannot scale past provider TPM (tokens-per-minute) limits |
 | **Tool call fan-out** | Linear request processing | One user message triggers 5–20 parallel tool calls | Concurrency spikes; downstream API rate limit cascade |
 
@@ -657,9 +657,9 @@ main_queue = sqs.create_queue(
 | Queue | Scale-Out Trigger | Scale-In Trigger | Max Workers | Min Workers |
 | ------- | ------------------ | ----------------- | ------------- | ------------- |
 | agent-tasks-high | depth > 5 for 30s | depth = 0 for 5min | 20 | 2 |
-| agent-tasks-normal | depth > 20 for 60s | depth < 3 for 5min | 50 | 2 |
-| agent-tasks-batch | depth > 100 for 5min | depth < 10 for 15min | 30 | 0 (scale-to-zero) |
-| tool-executor | depth > 50 for 30s | depth < 10 for 5min | 100 | 3 |
+| agent-tasks-normal | depth > 20 for 60s | depth &lt; 3 for 5min | 50 | 2 |
+| agent-tasks-batch | depth > 100 for 5min | depth &lt; 10 for 15min | 30 | 0 (scale-to-zero) |
+| tool-executor | depth > 50 for 30s | depth &lt; 10 for 5min | 100 | 3 |
 
 ---
 

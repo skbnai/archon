@@ -7,7 +7,7 @@ domain: agentic-systems
 doc_type: guide
 topic_id: evolution-human-ai-interfaces
 supersedes:
-  - ../knowledge-docs/docs/agentic-ui/evolution-human-ai-interfaces.md
+  - docs/agentic-ui/evolution-human-ai-interfaces.md
 ---
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part2) for collaboration models and HITL. [Part 3 →](pathname:///archon/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part3) covers principles and enterprise architecture.**

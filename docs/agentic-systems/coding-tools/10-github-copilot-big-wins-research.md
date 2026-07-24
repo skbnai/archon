@@ -7,7 +7,7 @@ domain: agentic-systems
 doc_type: reference-architecture
 topic_id: github-copilot-big-wins-research
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/github-copilot-big-wins-research.md
+  - docs/coding-tools/github-copilot/github-copilot-big-wins-research.md
 sources:
   - https://github.blog
   - https://microsoft.com/research
@@ -317,7 +317,7 @@ Integrated Copilot into existing sprint workflow. Used custom instructions to en
 
 *Domain-specific custom instructions in copilot-instructions.md produce dramatically better*
 
-*suggestions in specialized industries. Generic Copilot < Copilot with your patterns encoded.*
+*suggestions in specialized industries. Generic Copilot &lt; Copilot with your patterns encoded.*
 
 ### Microsoft Internal (All Engineers)
 

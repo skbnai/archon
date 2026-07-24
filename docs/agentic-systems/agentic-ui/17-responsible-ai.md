@@ -7,7 +7,7 @@ domain: agentic-systems
 doc_type: guide
 topic_id: responsible-ai
 supersedes:
-  - ../knowledge-docs/docs/agentic-ui/responsible-ai.md
+  - docs/agentic-ui/responsible-ai.md
 ---
 
 **Continue to [Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/17-responsible-ai-part2)** for Constitutional AI, Sovereign AI, Transparency, Explainability, Fairness, and Human Oversight.

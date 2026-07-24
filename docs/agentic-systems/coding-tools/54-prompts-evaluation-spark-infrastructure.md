@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/Part07_Prompts_Evaluation_Spark_Infrastructure.md
+  - docs/coding-tools/github-copilot/Part07_Prompts_Evaluation_Spark_Infrastructure.md
 ---
 
 # Prompt Engineering, Evaluation, Spark & AI Infrastructure

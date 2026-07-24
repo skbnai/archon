@@ -5,7 +5,7 @@ doc_type: reference-architecture
 status: current
 topic_id: part-15-emerging-trends-bibliography
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/15-part-15-emerging-trends-bibliography.md
+  - docs/multimodal-ai/15-part-15-emerging-trends-bibliography.md
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
@@ -72,7 +72,7 @@ Google's Gemini Live (available in Gemini 2.0) provides real-time multimodal con
 
 ### WebRTC-Based Multimodal Agents
 
-For enterprise deployments requiring fine-grained latency control and on-premises deployment, WebRTC provides the transport layer for real-time multimodal agent communication. Audio is streamed as WebRTC audio tracks; video frames are transmitted as WebRTC video. The inference service (Triton + streaming VLM) connects as a WebRTC peer. Latency budgets for real-time multimodal agents: < 150ms ASR (speech to text), < 100ms LLM first token, < 50ms TTS (text to audio). Total end-to-end target: < 300ms — the threshold below which humans perceive a response as natural.
+For enterprise deployments requiring fine-grained latency control and on-premises deployment, WebRTC provides the transport layer for real-time multimodal agent communication. Audio is streamed as WebRTC audio tracks; video frames are transmitted as WebRTC video. The inference service (Triton + streaming VLM) connects as a WebRTC peer. Latency budgets for real-time multimodal agents: &lt; 150ms ASR (speech to text), &lt; 100ms LLM first token, &lt; 50ms TTS (text to audio). Total end-to-end target: &lt; 300ms — the threshold below which humans perceive a response as natural.
 
 ### Applications
 
@@ -181,17 +181,17 @@ Apple Intelligence (iOS 18, macOS 15) deploys a sub-3B parameter VLM on-device, 
 | Accelerator | Platform | Key Capability |
 |------------|---------|---------------|
 | Apple M-series Neural Engine | Mac, iPhone, iPad | 38 TOPS (M4), optimized for Core ML |
-| Qualcomm AI Hub | Android mobile, automotive | 75 TOPS (Snapdragon 8 Elite), Stable Diffusion < 1s |
+| Qualcomm AI Hub | Android mobile, automotive | 75 TOPS (Snapdragon 8 Elite), Stable Diffusion &lt; 1s |
 | NVIDIA Jetson Orin NX | Edge/embedded | 100 TOPS, full CUDA support, JetPack SDK |
 | Google Tensor G4 | Pixel phones | On-device Gemini Nano, privacy-preserving |
 
 ### Quantization Strategies for Edge
 
-INT4 quantization (4-bit weights) reduces a 7B VLM from ~14GB to ~4GB, enabling deployment on devices with 6–8GB RAM. AWQ (Activation-aware Weight Quantization) minimizes accuracy loss at INT4 by protecting salient weights from aggressive quantization — achieving < 2% accuracy degradation on most benchmarks versus FP16. GPTQ provides similar accuracy with faster quantization speed, suitable for rapid model updates on edge devices.
+INT4 quantization (4-bit weights) reduces a 7B VLM from ~14GB to ~4GB, enabling deployment on devices with 6–8GB RAM. AWQ (Activation-aware Weight Quantization) minimizes accuracy loss at INT4 by protecting salient weights from aggressive quantization — achieving &lt; 2% accuracy degradation on most benchmarks versus FP16. GPTQ provides similar accuracy with faster quantization speed, suitable for rapid model updates on edge devices.
 
 ### Split Inference
 
-For tasks where full on-device inference is infeasible (large VLMs), split inference distributes computation: the vision encoder (ViT) runs on-device (< 500MB model, < 200ms latency), producing image embeddings; the embeddings are sent to the cloud for language model reasoning. This protects raw image privacy while enabling high-quality responses. The network payload is 1024×4 bytes (one embedding vector) rather than megabytes of image data.
+For tasks where full on-device inference is infeasible (large VLMs), split inference distributes computation: the vision encoder (ViT) runs on-device (&lt; 500MB model, &lt; 200ms latency), producing image embeddings; the embeddings are sent to the cloud for language model reasoning. This protects raw image privacy while enabling high-quality responses. The network payload is 1024×4 bytes (one embedding vector) rather than megabytes of image data.
 
 ---
 

@@ -8,7 +8,7 @@ domain: agentic-systems
 topic_id: part-13-governance-production
 doc_type: reference-architecture
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/part-13-governance-production.md
+  - docs/multimodal-ai/part-13-governance-production.md
 ---
 
 
@@ -341,7 +341,7 @@ Kill switches provide the ability to immediately stop a multimodal AI system or 
 
 **Graceful Shutdown:** Drain in-flight requests, reject new requests, preserve state for resumability. Triggered by the operations team via a feature flag (LaunchDarkly, Unleash, or AWS AppConfig). Takes 30–60 seconds to complete.
 
-**Emergency Stop:** Immediately reject all new requests; in-flight requests receive a 503 response with retry-after header. Triggered by an automated circuit breaker or by security incident response. Takes < 1 second. Does not wait for in-flight completion.
+**Emergency Stop:** Immediately reject all new requests; in-flight requests receive a 503 response with retry-after header. Triggered by an automated circuit breaker or by security incident response. Takes &lt; 1 second. Does not wait for in-flight completion.
 
 **Component-Level Kill Switches:** Independent switches per modality component allow surgical disablement: disable only video inference while image and document processing continue. Implemented via feature flags scoped to the specific component.
 
@@ -499,7 +499,7 @@ Use a two-tier queue architecture:
 
 **Batch Queue (background processing):** Archive processing, bulk document ingestion, model evaluation runs. Processed by autoscaling workers on spot instances. No SLA — best effort with progress reporting.
 
-Kafka is the preferred message broker for high-throughput scenarios (> 10,000 jobs/hour) with its ordered partition model enabling per-customer throughput isolation. SQS FIFO is appropriate for < 1,000 jobs/hour with simpler operations requirements.
+Kafka is the preferred message broker for high-throughput scenarios (> 10,000 jobs/hour) with its ordered partition model enabling per-customer throughput isolation. SQS FIFO is appropriate for &lt; 1,000 jobs/hour with simpler operations requirements.
 
 ### Dead Letter Queues and Error Handling for Corrupted Media
 
@@ -614,7 +614,7 @@ A: I would design a three-layer kill switch system. The outermost layer is a fea
 
 **Q: Walk me through implementing Policy-as-Code for a healthcare multimodal AI platform that must enforce different data handling rules across HIPAA, state regulations, and hospital-specific policies.**
 
-A: I would implement a layered OPA policy architecture with three policy bundles. The federal layer enforces HIPAA: PHI can only be processed in HIPAA-compliant regions, access requires authentication with an authorized entity, and any automated decision on PHI requires an audit log entry with 6-year retention. This bundle ships with the platform and is not modifiable by customers. The state layer adds jurisdiction-specific rules: California CMIA (Confidentiality of Medical Information Act) adds consent requirements beyond HIPAA; Texas Health & Safety Code adds specific breach notification rules. This bundle is loaded per state based on the location of the patient data. The hospital-specific layer is customer-managed within guardrails: hospitals can restrict which departments can access which modalities, set stricter retention periods, add additional consent requirements, or restrict certain AI use cases entirely. The policy evaluation order is additive deny — any deny at any layer blocks the request. I would version all three bundles in Git, with change control on the federal and state bundles requiring approval from the legal and compliance teams. Policy unit tests run in CI against a synthetic PHI test corpus. At runtime, OPA evaluates all three bundles in < 5ms at the API gateway before any data is sent to the inference pipeline. Policy decisions are logged in the audit trail with a record of which bundle version fired which rule — this is essential for regulatory defensibility.
+A: I would implement a layered OPA policy architecture with three policy bundles. The federal layer enforces HIPAA: PHI can only be processed in HIPAA-compliant regions, access requires authentication with an authorized entity, and any automated decision on PHI requires an audit log entry with 6-year retention. This bundle ships with the platform and is not modifiable by customers. The state layer adds jurisdiction-specific rules: California CMIA (Confidentiality of Medical Information Act) adds consent requirements beyond HIPAA; Texas Health & Safety Code adds specific breach notification rules. This bundle is loaded per state based on the location of the patient data. The hospital-specific layer is customer-managed within guardrails: hospitals can restrict which departments can access which modalities, set stricter retention periods, add additional consent requirements, or restrict certain AI use cases entirely. The policy evaluation order is additive deny — any deny at any layer blocks the request. I would version all three bundles in Git, with change control on the federal and state bundles requiring approval from the legal and compliance teams. Policy unit tests run in CI against a synthetic PHI test corpus. At runtime, OPA evaluates all three bundles in &lt; 5ms at the API gateway before any data is sent to the inference pipeline. Policy decisions are logged in the audit trail with a record of which bundle version fired which rule — this is essential for regulatory defensibility.
 
 **Q: How would you architect a system to process 10 years of archived court video recordings (approximately 5PB) using AI agents, ensuring fault tolerance, resumability, and audit compliance?**
 
