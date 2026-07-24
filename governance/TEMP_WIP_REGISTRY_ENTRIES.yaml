@@ -8,48 +8,9 @@ topics:
   - id: ai-foundations-hub
     domain: agentic-systems
     canonical: docs/ai-foundations/index.md
-  - id: agent-identity-entra-vs-awsagentcore
-    domain: protocols
-    canonical: docs/ai-protocols/auth/agent-identity-entra-vs-awsagentcore.md
-  - id: entra-3lo-agent-auth-implementation
-    domain: protocols
-    canonical: docs/ai-protocols/auth/entra-3lo-agent-auth-implementation.md
-  - id: entra-3lo-agent-auth-security-review
-    domain: protocols
-    canonical: docs/ai-protocols/auth/entra-3lo-agent-auth-security-review.md
   - id: ai-security-governance-hub
     domain: trust
     canonical: docs/ai-security-governance/index.md
-  - id: kong-ai-gateway-guide
-    domain: platforms
-    canonical: docs/cloud-platforms/ai-gateway/kong-ai-gateway-guide.md
-  - id: agent-memory-planning-architecture
-    domain: architecture
-    canonical: docs/enterprise-architecture/ai-architecture/agent-memory-planning-architecture.md
-  - id: agentic-ai-reliability-observability-governance
-    domain: architecture
-    canonical: docs/enterprise-architecture/ai-architecture/agentic-ai-reliability-observability-governance.md
-  - id: agentic-ai-security-guardrails
-    domain: architecture
-    canonical: docs/enterprise-architecture/ai-architecture/agentic-ai-security-guardrails.md
-  - id: agentic-ai-security-identity
-    domain: architecture
-    canonical: docs/enterprise-architecture/ai-architecture/agentic-ai-security-identity.md
-  - id: art-framework-agentic-ai-execution
-    domain: architecture
-    canonical: docs/enterprise-architecture/ai-architecture/ART-Framework-Agentic-AI-Execution.md
-  - id: enterprise-agent-reference-architectures
-    domain: architecture
-    canonical: docs/enterprise-architecture/ai-architecture/enterprise-agent-reference-architectures.md
-  - id: enterprise-ai-architecture-patterns
-    domain: architecture
-    canonical: docs/enterprise-architecture/ai-architecture/enterprise-ai-architecture-patterns.md
-  - id: enterprise-ai-governance-compliance
-    domain: architecture
-    canonical: docs/enterprise-architecture/ai-architecture/enterprise-ai-governance-compliance.md
-  - id: enterprise-ai-skills-assessment
-    domain: architecture
-    canonical: docs/enterprise-architecture/ai-architecture/enterprise-ai-skills-assessment.md
   - id: enterprise-ai-architecture-hub
     domain: architecture
     canonical: docs/enterprise-architecture/ai-architecture/index.md
