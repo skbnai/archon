@@ -64,18 +64,23 @@ def check_live(topics, domains=None):
     for t in topics:
         tid, canon = t.get("id"), t.get("canonical")
         if not tid or not canon:
-            errs.append(f"registry entry missing id/canonical: {t}"); continue
-        registered.add(canon); registered.update(t.get("pages", []))
-        p = pathlib.Path(canon)
-        if not p.exists():
-            if domains is None or t.get("domain") in domains:
-                errs.append(f"[{tid}] canonical file missing: {canon}")
-        else:
-            f = fm(p)
-            if f.get("topic_id") != tid:
-                errs.append(f"[{tid}] {canon} frontmatter topic_id={f.get('topic_id')}")
-            if f.get("status") == "superseded":
-                errs.append(f"[{tid}] canonical page marked superseded: {canon}")
+            errs.append(f"registry entry missing id/canonical: {t}")
+            continue
+
+        all_paths = [canon] + t.get("pages", [])
+        registered.update(all_paths)
+
+        for path_str in all_paths:
+            p = pathlib.Path(path_str)
+            if not p.exists():
+                if domains is None or t.get("domain") in domains:
+                    errs.append(f"[{tid}] canonical file missing: {path_str}")
+            else:
+                f = fm(p)
+                if f.get("topic_id") != tid:
+                    errs.append(f"[{tid}] {path_str} frontmatter topic_id={f.get('topic_id')}")
+                if path_str == canon and f.get("status") == "superseded":
+                    errs.append(f"[{tid}] canonical page marked superseded: {path_str}")
     ids = [t.get("id") for t in topics]
     for d in {i for i in ids if ids.count(i) > 1}:
         errs.append(f"duplicate topic id in registry: {d}")
