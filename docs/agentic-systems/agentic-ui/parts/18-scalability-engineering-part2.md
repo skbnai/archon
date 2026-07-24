@@ -281,7 +281,7 @@ All regions connect to:
   - Global State (DynamoDB Global Tables / Cosmos DB multi-region)
 
 Replication strategy:
-  - Session checkpoints: async, <5s lag
+  - Session checkpoints: async, &lt;5s lag
   - User preferences: sync write
   - Idempotency cache: primary-preferred
   - Conversation archive: async batch

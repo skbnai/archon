@@ -61,7 +61,7 @@ Each subagent has a FRESH context window for its 1 doc. Returns a COMPACT struct
 
 **Prompt for each Task:**
 
-"Read ONLY this document. Extract: {summary (≤100 words), key_claims: [], entities: [], source_id}. Return JSON. Nothing else."
+"Read ONLY this document. Extract: `{summary (≤100 words), key_claims: [], entities: [], source_id}`. Return JSON. Nothing else."
 
 ### ORCHESTRATOR COLLECTS RESULTS
 

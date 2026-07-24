@@ -112,7 +112,7 @@ Goal: "Help customer resolve billing dispute for account A-123"
 Step 1:
 - Thought: "I need to look up the account first"
 - Action: lookup_account(id="A-123")
-- Observation: {balance: -$50, last_charge: "Jul 1 SAAS"}
+- Observation: `{balance: -$50, last_charge: "Jul 1 SAAS"}`
 
 Step 2:
 - Thought: "The $50 charge looks suspicious. Check it."

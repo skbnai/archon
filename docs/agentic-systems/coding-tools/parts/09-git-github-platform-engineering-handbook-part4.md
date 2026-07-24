@@ -814,7 +814,7 @@ DORA (DevOps Research and Assessment) defines four key metrics that predict orga
 | **Deployment Frequency** | How often code deploys to production | On-demand (multiple/day) | Weekly–monthly | Monthly–6 months | >6 months |
 | **Lead Time for Changes** | Commit → production | &lt;1 hour | 1 day–1 week | 1 week–1 month | >1 month |
 | **Change Failure Rate** | % deploys causing incident/rollback | 0–5% | 5–10% | 10–15% | 15–50% |
-| **Time to Restore Service** | Incident → resolved | <1 hour | <1 day | 1 day–1 week | >1 week |
+| **Time to Restore Service** | Incident → resolved | &lt;1 hour | &lt;1 day | 1 day–1 week | >1 week |
 
 ### Collecting DORA Metrics from GitHub
 

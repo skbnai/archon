@@ -187,7 +187,7 @@ Problem: Using model: claude-latest or not pinning the model version in CI/CD. M
 
 Problem: Multiple Claude reviews running simultaneously on the same PR when new commits arrive. Wastes tokens and produces conflicting review comments.
 
-**Fix: Add concurrency: group: claude-review-${{ github.event.pull_request.number }}, cancel-in-progress: true**
+**Fix:** Add `concurrency: { group: claude-review-${{ github.event.pull_request.number }}, cancel-in-progress: true }`
 
 #### **Anti-Pattern #20: Artifact Paradox**
 
