@@ -67,7 +67,7 @@ graph LR
 | 11. Testing | 3–6 weeks | QA + Red Team | All blockers resolved |
 | 12. Deployment | 1–3 weeks | Platform / SRE | Canary stable at 10% |
 | 13. Operations | Ongoing | SRE + Product | SLOs met for 30 days |
-| 14. Continuous Improvement | Ongoing | AI Engineer + Product | Eval regression < 2% |
+| 14. Continuous Improvement | Ongoing | AI Engineer + Product | Eval regression &lt;2% |
 | 15. Versioning | Ongoing | AI Engineer | No breaking changes unannounced |
 | 16. Migration | Variable | Architect + Engineering | Zero data loss; rollback tested |
 | 17. Sunsetting | 4–8 weeks | Product + Legal | Compliance archive complete |

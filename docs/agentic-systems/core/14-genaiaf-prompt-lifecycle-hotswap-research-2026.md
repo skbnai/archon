@@ -956,6 +956,4 @@ OTEL_EXPORTER_OTLP_HEADERS=
 
 ## Related Documentation
 
-- [AWS AgentCore Runtime Guide](docs/agentic-systems/core/11-aws-agentcore-guide.md)
-- [Prompt Versioning Strategies](docs/agentic-systems/core/15-prompt-versioning-strategies.md)
-- [OTel Trace Correlation](docs/agentic-systems/observability/8-otel-span-correlation.md)
+- [Executive Summary & Reference Architecture](15-executive-summary-and-reference-architecture.md)
