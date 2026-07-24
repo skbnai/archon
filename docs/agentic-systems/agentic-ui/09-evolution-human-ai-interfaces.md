@@ -10,7 +10,7 @@ supersedes:
   - ../knowledge-docs/docs/agentic-ui/evolution-human-ai-interfaces.md
 ---
 
-**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part2) for collaboration models.**
+**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part2) for collaboration models and HITL. [Part 3 →](pathname:///archon/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part3) covers principles and enterprise architecture.**
 
 # Evolution of Human-AI Interfaces
 
@@ -272,56 +272,4 @@ Enterprise Architects and Principal AI Architects will find here the definitive 
 
 ---
 
-#### Era 11: Multi-Agent Collaborative Workspaces (2026)
-
-**UX Pattern:** Multiple specialized agents operate in a shared workspace simultaneously. A research agent retrieves information while a drafting agent writes. A validation agent checks outputs while an orchestrator manages priorities. Human operators set goals, review outputs, and manage exceptions from a unified command surface.
-
-**What It Enables:**
-
-- Parallel execution of complex task portfolios
-- Specialization: each agent optimized for its domain
-- Resilience: failure of one agent does not halt the entire workspace
-- Transparency: human can see all agents' work products and reasoning
-
-**Key Protocols:** AG-UI nested composition with scoped state; A2A agent delegation; shared memory architecture.
-
-**Current Engineering Challenges:**
-
-- State consistency across agents writing to shared context
-- Attribution: which agent produced which artifact
-- Conflict resolution when agents propose contradictory outputs
-- Trust boundaries: agent A should not read agent B's credentials
-
----
-
-#### Era 12: Ambient Computing (2026+)
-
-**UX Pattern:** AI operates without an explicit interface. Events trigger agent actions. The user sets high-level preferences and policies; the AI monitors conditions and acts within defined boundaries. Notifications surface only when human decision is required.
-
-**What It Enables:**
-
-- Zero-interaction automation for routine workflows
-- Event-driven proactive assistance (e.g., "flag any contract over $500K for review")
-- Background monitoring and alerting
-- Reduction of notification fatigue through intelligent filtering
-
-**Design Requirement:** Requires explicit consent architecture, interrupt budget controls, and comprehensive audit trails. Every ambient action must be attributable and reversible.
-
----
-
-#### Era 13: Autonomous Enterprise Applications (2027+)
-
-**UX Pattern:** Human-over-the-loop. Humans specify goals, policies, and constraints; applications execute entire business processes autonomously. Humans review outcomes, audit decisions, and update policies. Individual task approval is replaced by policy governance.
-
-**What It Enables:**
-
-- Business process automation at orders of magnitude higher complexity than RPA
-- Self-healing workflows that adapt to changing conditions
-- Continuous improvement through outcome-based learning
-- Competitive differentiation through proprietary workflow intelligence
-
-**Enterprise Architecture Prerequisite:** 17-layer reference architecture (see [Enterprise Reference Architecture](enterprise-reference-architecture.md)), policy-as-code enforcement at the agent layer, and comprehensive governance.
-
----
-
-**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part2) for collaboration models and HITL.**
+**This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part2) for collaboration models and HITL. [Part 3 →](pathname:///archon/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part3) covers principles and enterprise architecture.**
