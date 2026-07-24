@@ -5,7 +5,7 @@ doc_type: reference-architecture
 status: current
 topic_id: part-08-guardrails-sanitization
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/08-part-08-guardrails-sanitization.md
+  - docs/multimodal-ai/08-part-08-guardrails-sanitization.md
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---

@@ -7,7 +7,7 @@ topic_id: part-05-multimodal-rag
 date: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/05-part-05-multimodal-rag.md
+  - docs/multimodal-ai/05-part-05-multimodal-rag.md
 ---
 
 # Part 05 — Multimodal RAG

@@ -5,7 +5,7 @@ doc_type: reference-architecture
 status: current
 topic_id: part-12-observability-finops
 supersedes:
-  - ../knowledge-docs/docs/multimodal-ai/12-part-12-observability-finops.md
+  - docs/multimodal-ai/12-part-12-observability-finops.md
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 ---
@@ -194,7 +194,7 @@ Sampling 100% of multimodal traces is prohibitively expensive at scale. A tiered
 
 **Head-based sampling:** Sample 10% of low-value routine processing (document batches with high confidence, cache hits). Apply via OpenTelemetry SDK sampler configuration.
 
-**Tail-based sampling:** Always retain traces where: total latency > p99 threshold, any span has `error=true`, OCR confidence < 0.8, VLM confidence < 0.7, or cost_usd > $0.05 per request. Implement with OpenTelemetry Collector's tail sampling processor.
+**Tail-based sampling:** Always retain traces where: total latency > p99 threshold, any span has `error=true`, OCR confidence &lt; 0.8, VLM confidence &lt; 0.7, or cost_usd > $0.05 per request. Implement with OpenTelemetry Collector's tail sampling processor.
 
 **Modality-specific sampling rates:** Video inference (high cost, high value) at 50%, audio transcription at 25%, image classification at 5%.
 
@@ -271,7 +271,7 @@ ocr_confidence = Histogram(
 |--------|--------|-------------|
 | OCR accuracy (character level) | > 98% on clean docs | Character Error Rate on golden set |
 | VLM task accuracy (visual QA) | > 85% on domain benchmark | Exact match / ROUGE on eval set |
-| ASR Word Error Rate | < 5% on clean audio | WER on labeled audio corpus |
+| ASR Word Error Rate | &lt; 5% on clean audio | WER on labeled audio corpus |
 | Object detection mAP | > 0.75 for production | COCO mAP on held-out set |
 
 ### Latency Metrics

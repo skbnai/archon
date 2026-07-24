@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/code-review/PR_Review_Handbook_Vol2_Deep_Domain_Reviews.md
+  - docs/coding-tools/code-review/PR_Review_Handbook_Vol2_Deep_Domain_Reviews.md
 ---
 # THE ENTERPRISE PR REVIEW PLAYBOOK
 Volume II — Deep Domain Reviews

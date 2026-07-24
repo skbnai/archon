@@ -8,7 +8,7 @@ date_created: 2026-07-24
 last_reviewed: 2026-07-24
 tags: [agents, parallelism, cheatsheet, coding-tools]
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/Cheatsheet_9_Agents_Parallelism.md
+  - docs/coding-tools/claude/Cheatsheet_9_Agents_Parallelism.md
 ---
 
 # Claude Code Agents & Parallelism

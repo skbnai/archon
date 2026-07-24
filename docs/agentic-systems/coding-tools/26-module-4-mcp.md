@@ -8,7 +8,7 @@ date_created: 2026-07-24
 last_reviewed: 2026-07-24
 tags: [coding-tools]
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/Module_4_MCP.md
+  - docs/coding-tools/claude/Module_4_MCP.md
 ---
 
 # Model Context Protocol (MCP) — Complete Reference

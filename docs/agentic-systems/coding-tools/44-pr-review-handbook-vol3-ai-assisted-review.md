@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/code-review/PR_Review_Handbook_Vol3_AI_Assisted_Review.md
+  - docs/coding-tools/code-review/PR_Review_Handbook_Vol3_AI_Assisted_Review.md
 ---
 # THE ENTERPRISE PR REVIEW PLAYBOOK
 Volume III — AI-Assisted Review Today

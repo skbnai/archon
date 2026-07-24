@@ -7,7 +7,7 @@ topic_id: claude-models-2026
 date_published: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/claude-models-2026.md
+  - docs/coding-tools/claude/claude-models-2026.md
 sources:
   - Anthropic Models Overview
   - Claude Sonnet 5 announcement

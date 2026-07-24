@@ -4,12 +4,13 @@ date_created: 2026-07-24
 last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
-doc_type: guide
+doc_type: reference-architecture
 topic_id: agui-standards-landscape
-covers_version: "as of 2026-07-10"
 supersedes:
   - docs/agentic-ui/agui-standards-landscape.md
+covers_version: "as of 2026-07-10"
 ---
+
 
 # AGUI Standards & Ecosystem Landscape
 
@@ -18,59 +19,38 @@ Principal AI Architects and AI Platform Teams will find here the authoritative t
 :::info Protocol Maturity Status — July 2026
     AG-UI: production-ready open standard. A2UI: v0.9 experimental (Google). NLWeb: production open project (Microsoft). MCP Apps: production (CopilotKit/Anthropic ecosystem). OpenAI Apps SDK: production (later standardized into MCP Apps). Microsoft Agent Framework 1.0: production-ready (released April 2026). Amazon Bedrock AgentCore AG-UI support: infrastructure-level production.
 
----
 
 ## 1. Protocol Layer Map
 
 The agentic UI protocol stack as of July 2026 comprises five distinct but interoperating standards. Each operates at a different layer of the stack and solves a different problem. Understanding the boundaries between them is essential for correct architecture decisions.
 
-```text
-AGENTIC UI PROTOCOL STACK — LAYER MODEL
-
-┌─────────────────────────────────────────────────────────────────────────┐
-│  PRESENTATION  Web · Mobile · Desktop · Voice · IDE · Teams / Slack    │
-│  RENDER ENGINE CopilotKit · React Native · Terminal · Custom shells    │
-└──────────────────────────────┬──────────────────────────────────────────┘
-                               │  AG-UI Protocol
-                               │  Server→Client: HTTP + Server-Sent Events
-                               │  Client→Server: HTTP POST (actions)
-┌──────────────────────────────▼──────────────────────────────────────────┐
-│  AG-UI — Agent-to-User-Interface Transport Protocol                    │
-│  Concern: HOW events flow between agent and user interface              │
-│  Events: TEXT_MESSAGE_* · TOOL_CALL_* · STATE_* · RUN_* · STEP_* ...  │
-│  Capabilities: streaming · generative UI · state sync · HITL · nesting │
-└──────────────────────────────┬──────────────────────────────────────────┘
-                               │  A2UI JSON payload (in AG-UI CUSTOM event)
-┌──────────────────────────────▼──────────────────────────────────────────┐
-│  A2UI v0.9 — Agent-to-UI Surface Definition (Google)                  │
-│  Concern: WHAT the UI surface looks like (declarative widget JSON)     │
-│  Widget types: text · form · table · chart · card · carousel · action  │
-│  Rendering: framework-agnostic, host renders natively                   │
-└─────────────┬────────────────┬──────────────────┬───────────────────────┘
-              │                │                  │
-┌─────────────▼────┐ ┌─────────▼───────┐ ┌────────▼──────────────────────┐
-│  MCP             │ │  A2A            │ │  NLWeb                        │
-│  Model Context   │ │  Agent-to-Agent │ │  Conversational Web           │
-│  Protocol        │ │  (Google)       │ │  (Microsoft open project)     │
-│  Concern:        │ │  Concern:       │ │  Concern:                     │
-│  agent ↔ tool    │ │  agent ↔ agent  │ │  agent ↔ web content          │
-│  Tool routing    │ │  Task deleg.    │ │  Schema.org/RSS + vector       │
-│  Auth / authz    │ │  Agent Cards    │ │  Every instance = MCP server   │
-│  Rate limiting   │ │  Scoped trust   │ │  Cloudflare AutoRAG native    │
-└──────────────────┘ └─────────────────┘ └───────────────────────────────┘
-
-ORACLE OPEN AGENT SPEC — THREE-LAYER MODEL
-  Tier 1  Oracle Open Agent Spec  defines WHAT capabilities an agent has
-  Tier 2  AG-UI                   defines HOW transport and interaction stream
-  Tier 3  A2UI                    defines WHAT the UI surface renders
-
-RELATIONSHIP SUMMARY
-  AG-UI   transport layer — does NOT replace MCP or A2A
-  A2UI    surface layer — travels inside AG-UI as CUSTOM event payload
-  NLWeb   instances are MCP servers; their content is agent-discoverable
-  MCP Apps = MCP servers that bundle UI resource components with tools
-  OpenAI Apps SDK later standardized as part of the MCP Apps pattern
+```mermaid
+graph TB
+    subgraph P["Presentation Layer"]
+        UI["Web · Mobile · Desktop · Voice · IDE · Teams / Slack<br/>Render engines: CopilotKit · React Native · Terminal · Custom shells"]
+    end
+    subgraph T["Transport Layer"]
+        AGUI["AG-UI — Agent-to-User-Interface Transport Protocol<br/>Concern: HOW events flow agent ↔ UI<br/>Events: TEXT_MESSAGE_* · TOOL_CALL_* · STATE_* · RUN_* · STEP_*<br/>Streaming · generative UI · state sync · HITL · nesting"]
+    end
+    subgraph S["Surface Layer"]
+        A2UI["A2UI v0.9 — Agent-to-UI Surface Definition (Google)<br/>Concern: WHAT the UI surface looks like (declarative widget JSON)<br/>Widgets: text · form · table · chart · card · carousel · action"]
+    end
+    subgraph B["Agent Backbone Protocols"]
+        MCP["MCP — Model Context Protocol<br/>agent ↔ tool: routing, auth, rate limiting"]
+        A2A["A2A — Agent-to-Agent (Google)<br/>agent ↔ agent: task delegation, Agent Cards, scoped trust"]
+        NLWEB["NLWeb — Conversational Web (Microsoft)<br/>agent ↔ web content: Schema.org/RSS + vector; every instance is an MCP server"]
+    end
+    UI -- "AG-UI: HTTP + SSE (server→client), HTTP POST actions (client→server)" --> AGUI
+    AGUI -- "A2UI JSON payload in AG-UI CUSTOM event" --> A2UI
+    A2UI --> MCP
+    A2UI --> A2A
+    A2UI --> NLWEB
 ```
+
+
+**Agentic UI protocol stack — layer model**
+
+*The five interoperating standards, top to bottom: presentation hosts render surfaces, AG-UI transports events, A2UI defines the surface, and MCP/A2A/NLWeb form the agent backbone underneath.*
 
 ### 1.1 Protocol Responsibility Matrix
 
@@ -87,7 +67,6 @@ RELATIONSHIP SUMMARY
 | Authentication / authorization | Transport-level | No | Primary | Scoped | MCP-inherited | Primary |
 | Nested agent composition | Primary | No | No | Complementary | No | No |
 
----
 
 ## 2. AG-UI Deep Dive
 
@@ -134,66 +113,501 @@ AG-UI communication is entirely event-driven. The server emits a stream of typed
 
 ### 2.2 Transport Architecture
 
-AG-UI operates over HTTP and Server-Sent Events for request-response patterns. The client initiates a request to `/agent/run` with messages and state; the server responds with a streaming event sequence. For bidirectional requirements like collaborative workspaces, WebSocket transport is supported.
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Server as Server (Agent Backend)
 
-The transport model ensures that complex interactions like human-in-the-loop approval gates can be handled through explicit action endpoints: when an agent pauses for approval, the client displays an interface and posts back to `/agent/action` with the user's decision. The server then resumes the agent run.
+    Client->>Server: POST /agent/run {messages, state, context}
+    Server-->>Client: HTTP 200 text/event-stream
+    Server-->>Client: data: {"type":"RUN_STARTED",...}
+    Server-->>Client: data: {"type":"STEP_STARTED",...}
+    Server-->>Client: data: {"type":"TEXT_MESSAGE_START",...}
+    Server-->>Client: data: {"type":"TEXT_MESSAGE_CONTENT",...} × N tokens
+    Server-->>Client: data: {"type":"TOOL_CALL_START",...}
+    Note over Client: Client pauses if HITL gate triggered
+    Client->>Server: POST /agent/action {"type":"approve","tool_call_id":"..."}
+    Server-->>Client: data: {"type":"TOOL_CALL_RESULT",...}
+    Server-->>Client: data: {"type":"RUN_FINISHED",...}
+```
 
-State is synchronized through snapshots and deltas. The agent emits `STATE_SNAPSHOT` to initialize or fully replace the client state store, and `STATE_DELTA` for incremental updates using JSON Patch format. This allows the client to maintain a consistent view of shared state even across reconnections.
+*AG-UI transport model: the client opens a run over SSE and receives a typed event stream; a client-initiated action (e.g. HITL approval) round-trips over a separate POST while the stream continues.*
+
+**Alternative transport — WebSocket** (bidirectional, long-lived): use for real-time bidirectional requirements (collaborative workspaces). SSE is preferred for standard request-response agentic patterns; WebSocket is required for multi-agent shared state with client-originated state writes.
 
 ### 2.3 State Synchronization Model
 
-AG-UI implements an event-sourced state synchronization model. The state store is a typed key-value structure. The agent emits `STATE_SNAPSHOT` to initialize state and `STATE_DELTA` for incremental updates. Deltas use JSON Patch (RFC 6902) format, allowing fine-grained updates like replacing a single field or appending to a list without transmitting the entire state.
+AG-UI implements an event-sourced state synchronization model. The state store is a typed key-value structure. The agent emits `STATE_SNAPSHOT` to initialize state and `STATE_DELTA` for incremental updates. Deltas use JSON Patch (RFC 6902) format.
 
-Client-to-server state writes are handled separately. When the client needs to update state (e.g., user preference changes), it posts to `/agent/action` with an action containing the state path and value. The server applies the update, validates it, and confirms by re-emitting a `STATE_DELTA` event. This pattern supports optimistic UI updates with server-authoritative conflict resolution.
+```mermaid
+sequenceDiagram
+    participant Agent as Agent Backend
+    participant Store as Client State Store
+
+    Agent->>Store: STATE_SNAPSHOT {user, task, context}
+    Note over Store: replaces entire store
+    Agent->>Store: STATE_DELTA [{"op":"replace","path":"/task/status","value":"in_progress"}]
+    Note over Store: applies patch atomically
+    Agent->>Store: STATE_DELTA [{"op":"add","path":"/task/steps/-","value":{...}}]
+    Note over Store: appends step
+```
+
+*State synchronization: the agent initializes the client's state store with a full snapshot, then applies incremental JSON Patch (RFC 6902) deltas that the store applies atomically.*
+
+**Client-to-server state writes** are handled via `POST /agent/action`, with actions like `{type: "state_update", path: "...", value: ...}`. The server validates and applies the write, then re-emits a `STATE_DELTA` to confirm — optimistic UI updates are allowed with server-authoritative conflict resolution.
 
 ### 2.4 Tool Lifecycle
 
-AG-UI distinguishes two categories of tools based on execution location and authorization model:
+AG-UI distinguishes two categories of tools:
 
-Backend tools execute in the agent runtime and carry the agent's authorization credentials. These tools can access protected resources and cause side effects. Frontend tools execute in the browser or mobile client and use the user's browser credentials. Frontend tools are typically used for user-facing operations like camera access or clipboard manipulation.
+| Category | Execution Location | Authorization | Streaming | Examples |
+| --- | --- | --- | --- | --- |
+| **Backend Tools** | Agent backend (Python/Node/Java process) | Bearer token / mTLS from backend to tool | Results streamed via TOOL_CALL_RESULT | database query, API call, file read |
+| **Frontend Tools** | Browser / mobile client | User's browser session credentials | Synchronous (result returned via POST /action) | camera access, local file read, user geolocation, clipboard |
 
-Both tool categories support human-in-the-loop gates. When a tool is marked `hitl: true` in a `TOOL_CALL_START` event, the client pauses execution and displays an approval UI. The user reviews the proposed arguments and decides whether to approve, reject, or modify the call. Only after the user's decision does the agent proceed or replan.
+```mermaid
+sequenceDiagram
+    participant Agent
+    participant Client as AG-UI Client
+    participant Tool as Tool API
+
+    rect rgb(230, 240, 255)
+    Note over Agent,Tool: Backend Tool
+    Agent->>Client: TOOL_CALL_START {name:"search_docs", args:..., hitl:false}
+    Agent->>Tool: execute immediately
+    Tool-->>Agent: result
+    Agent->>Client: TOOL_CALL_RESULT
+    end
+```
+
+```mermaid
+sequenceDiagram
+    participant Agent
+    participant Client as AG-UI Client
+    participant Browser as Browser API
+
+    Agent->>Client: TOOL_CALL_START {name:"read_clipboard", args:{}, hitl:true}
+    Client->>Client: Approval UI shown, user approves
+    Client->>Browser: invoke
+    Browser-->>Client: result
+    Client->>Agent: POST /agent/action {type:"tool_result", tool_call_id, result}
+    Note over Agent: continue execution
+```
+
+*Tool lifecycle for the two tool categories: backend tools execute immediately with results streamed back; frontend tools pause for an approval UI and a browser API call before the result posts back to the agent.*
 
 ### 2.5 Generative UI Modes
 
-AG-UI supports two distinct modes for generating dynamic UI:
+AG-UI supports two modes of generative UI:
 
-In static or typed mode, the agent selects from a pre-registered component schema and returns structured JSON matching that schema. The client has a component registry that maps component names to React or native components. The agent's job is simply to select the right component and populate its props. This mode is predictable and requires no runtime code generation.
+| Mode | How It Works | When to Use | A2UI Role |
+| --- | --- | --- | --- |
+| **Static / Typed** | Agent returns structured JSON matching a known component schema registered in the client | When the UI component library is predefined and agent selects from known options | Optional; can use bespoke schema |
+| **Declarative / Dynamic** | Agent emits an A2UI JSON surface definition in a CUSTOM event; client renders the declared widget tree | When the agent determines the optimal UI surface for the current data and task at runtime | Primary carrier of A2UI payloads |
 
-In declarative or dynamic mode, the agent emits a full A2UI JSON surface definition that describes the entire widget tree. The client renders this tree using its native components without requiring any component registry. The agent has full control over the UI surface on a per-request basis, enabling truly adaptive UI. This mode is more powerful but requires the client to validate and render arbitrary widget structures.
+**Static Mode Example Flow:** the agent emits a `CUSTOM` event naming a registered component:
+
+```json
+{
+  "type": "CUSTOM",
+  "name": "generative_ui",
+  "value": {
+    "component": "ApprovalCard",
+    "props": {
+      "title": "Invoice #4821",
+      "amount": 94200.00,
+      "vendor": "Acme Corp",
+      "actions": ["approve", "reject", "request_info"]
+    }
+  }
+}
+```
+
+The client looks up `"ApprovalCard"` in its component registry and renders it with the supplied `props`.
+
+**Declarative Mode (A2UI) Flow:**
+
+```json
+{
+  "type": "CUSTOM",
+  "name": "a2ui_surface",
+  "value": {
+    "type": "card",
+    "title": "Invoice #4821",
+    "body": [
+      {"type": "table", "columns": [...], "rows": [...]},
+      {"type": "action", "label": "Approve", "style": "primary"},
+      {"type": "action", "label": "Reject", "style": "danger"}
+    ]
+  }
+}
+```
+
+The client renders this using its host widget library directly — no component registry required, unlike Static Mode.
 
 ### 2.6 HITL Interrupts
 
-AG-UI's HITL model supports five distinct interrupt types, each corresponding to a user decision point:
+AG-UI's HITL model supports five interrupt types:
 
-The `pause` type halts execution when a tool call is marked for human review. The client displays the tool's arguments and waits for the user to approve, edit the arguments, request a retry with a different strategy, or escalate to a human agent. The `approve` type executes the tool with the original arguments. The `edit` type allows the user to modify arguments before execution. The `retry` type asks the agent to replan the current step with different logic or different context. The `escalate` type transfers the conversation to a human agent and records the escalation context for the human to review.
+| Interrupt Type | Trigger | Client Action Required | Agent Behavior |
+| --- | --- | --- | --- |
+| `pause` | `TOOL_CALL_START` with `hitl: true` | Display tool args, await user decision | Halts execution, holds connection open |
+| `approve` | User clicks Approve | `POST /agent/action {"type":"approve","tool_call_id":"..."}` | Executes the tool call with original args |
+| `edit` | User modifies tool args | `POST /agent/action {"type":"edit","tool_call_id":"...","args":{...}}` | Executes the tool call with modified args |
+| `retry` | User requests retry with different approach | `POST /agent/action {"type":"retry","instruction":"..."}` | Agent re-plans the current step |
+| `escalate` | User escalates to human agent | `POST /agent/action {"type":"escalate","reason":"..."}` | Run is suspended; escalation record created |
 
 ### 2.7 Nested Agent Composition
 
-AG-UI supports nested agent composition where a parent agent can delegate to child agents. Each child agent opens its own AG-UI sub-stream with independently scoped state. The parent agent receives state snapshots from each child and can merge results before writing to the parent state. This pattern enables multi-agent systems where tasks are decomposed and delegated to specialized agents while maintaining a unified UX and audit trail.
+AG-UI supports nested agent composition with scoped state. A parent agent can delegate to a child agent, which opens its own AG-UI sub-stream with independently scoped state.
+
+```mermaid
+sequenceDiagram
+    participant UI as User Interface
+    participant Parent as Parent Agent (Orchestrator)
+    participant Research as Research Agent
+    participant Drafting as Drafting Agent
+
+    UI->>Parent: AG-UI stream (parent)
+    Parent->>Research: AG-UI sub-stream (child 1, scoped state)
+    Parent->>Drafting: AG-UI sub-stream (child 2, scoped state)
+    Research-->>Parent: STATE_DELTA
+    Drafting-->>Parent: STATE_DELTA
+    Note over Parent: merges children's state
+    Parent-->>UI: Aggregated output on parent AG-UI stream
+    Note over UI: sees unified progress
+```
+
+*Nested agent composition: the parent orchestrator opens independently scoped sub-streams to child agents and merges their state before reporting unified progress upstream.*
+
+**State scoping rules:** each child agent has its own STATE namespace; the parent can read child state via the child stream's `STATE_SNAPSHOT`; children cannot read parent or sibling state directly; the parent merges child outputs explicitly before writing to its own STATE.
 
 ### 2.8 Middleware Architecture
 
-AG-UI backends typically implement a standard middleware chain. Authentication middleware validates the incoming bearer token or mTLS cert. Rate limiting middleware enforces per-user and per-tenant request limits. Context middleware assembles context: conversation history, user preferences, memory stores. Policy middleware evaluates authorization rules against the request. The agent runner executes the actual agent logic. Guardrail middleware filters outbound events for PII, safety, and policy compliance. Observability middleware attaches OpenTelemetry spans for tracing and metrics. Finally, the SSE serializer formats the events as a streaming response.
+```mermaid
+flowchart TD
+    A[Inbound Request] --> B["Auth Middleware<br/>Validates Bearer/mTLS, extracts identity"]
+    B --> C["Rate Limit Middleware<br/>Per-user and per-tenant rate limiting"]
+    C --> D["Context Middleware<br/>Assembles context (memory, RAG, session history)"]
+    D --> E["Policy Middleware<br/>OPA/Cedar policy evaluation on request parameters"]
+    E --> F["Agent Runner<br/>Executes agent; emits AG-UI event stream"]
+    F --> G["Guardrail Middleware<br/>Filters outbound events (PII scrub, content safety)"]
+    G --> H["Observability Middleware<br/>Attaches OTel spans to each event"]
+    H --> I["SSE Serializer<br/>Formats events as text/event-stream"]
+    I --> J[Client]
+```
 
-CopilotKit's MCPAppsMiddleware integrates between the agent runner and guardrail layers. When an agent calls an MCP App tool, the middleware intercepts the `TOOL_CALL_START` event, resolves the UI resource from the MCP registry, and emits a `CUSTOM` event with the A2UI surface definition before the tool result is processed.
+*AG-UI middleware chain: a request passes through auth, rate limiting, context assembly, and policy evaluation before the agent runs, then outbound events pass through guardrails and observability before serialization.*
+
+CopilotKit's `MCPAppsMiddleware` sits between Agent Runner and Guardrail Middleware: it intercepts `TOOL_CALL_START` events, resolves UI resources from the MCP registry, and emits a `CUSTOM` `a2ui_surface` event before `TOOL_CALL_RESULT`.
 
 ### 2.9 Security Model
 
-AG-UI requires TLS 1.3 for all connections. Authentication is enforced via bearer tokens or API keys in the Authorization header; enterprise deployments use short-lived JWTs with audience binding and OBO (on-behalf-of) flows for delegated identity. Event stream integrity is preserved by the TLS layer; additional message-level HMAC signing can be added for high-assurance contexts.
+| Security Concern | AG-UI Treatment | Enterprise Requirement |
+| --- | --- | --- |
+| **Transport security** | TLS 1.3 required for all AG-UI connections | Mutual TLS for backend-to-agent connections |
+| **Authentication** | Bearer token or API key in Authorization header | Short-lived JWTs with audience binding; OBO flow for delegated identity |
+| **Event stream integrity** | SSE over TLS prevents tampering; no message-level signing in base spec | Add message signing for high-assurance contexts (see HMAC event signing pattern) |
+| **State store access control** | Agent is authoritative; client reads only | Separate auth for client-initiated state writes |
+| **Tool authorization** | Tool calls carry the agent's bearer token; tool API validates | Scoped tool tokens via MCP auth; Entra OBO for enterprise tools |
+| **CUSTOM event injection** | No base-spec validation of CUSTOM payloads | Validate A2UI payloads against JSON Schema before rendering |
+| **Prompt injection via tool results** | No base-spec protection | Implement output guardrails between TOOL_CALL_RESULT and TEXT_MESSAGE stream |
+| **Rate limiting** | Not in base spec | Implement per-user token budget at middleware layer |
+| **Audit logging** | Not in base spec | Emit all AG-UI events to append-only audit log with OTel correlation |
 
-State store access is agent-authoritative: the client reads state but cannot initiate writes directly. Writes must go through the agent via `/agent/action` and the agent is responsible for validation. Tool calls carry the agent's authorization token; tool APIs must validate this token. CUSTOM events carrying A2UI surfaces or third-party payloads must be validated against JSON Schema before rendering. Output guardrails should filter tool results before they reach the TEXT_MESSAGE stream to prevent prompt injection attacks. Rate limiting is enforced at the middleware layer on a per-user and per-tenant basis. Audit logging captures all AG-UI events with OTel correlation IDs for later analysis.
-
-A significant security risk exists when malicious MCP servers or compromised tool APIs inject arbitrary CUSTOM events into the stream. These events could carry fake approval buttons or UI elements designed to trick the user. Organizations must maintain an allowlist of trusted MCP servers, sandbox UI components in iframes with strict CSP policies, and validate all CUSTOM event payloads against registered schemas before rendering.
+:::warning CUSTOM Event Injection Risk
+    A compromised tool API or malicious MCP server could inject arbitrary CUSTOM events into the AG-UI stream, including A2UI surfaces with fraudulent approval buttons. Always validate CUSTOM event payloads against registered schemas before rendering. Never render unvalidated declarative UI from untrusted sources.
 
 ### 2.10 Code Examples
 
-AG-UI can be implemented in any backend language. The Python example demonstrates a minimal FastAPI server using sse-starlette for streaming. The `/agent/run` endpoint receives a POST request with messages and state, yields a series of AG-UI events formatted as SSE data lines, and streams them back to the client.
+=== "Python"
 
-The TypeScript example shows the same pattern with Express. Both examples include a tool call lifecycle with HITL pause, token generation, and result handling. A real implementation would add proper error handling, circuit breakers, and observability instrumentation.
+    ```python
+    # Minimal AG-UI server in Python using FastAPI + asyncio
+    # Dependencies: pip install fastapi uvicorn sse-starlette
+
+    import asyncio
+    import json
+    import uuid
+    from fastapi import FastAPI, Request
+    from fastapi.responses import StreamingResponse
+    from sse_starlette.sse import EventSourceResponse
+
+    app = FastAPI()
+
+    def make_event(event_type: str, data: dict) -> str:
+        """Format a single AG-UI event as SSE data."""
+        return f"data: {json.dumps({'type': event_type, **data})}\n\n"
+
+    async def run_agent(messages: list, state: dict, run_id: str):
+        """Generator: yields AG-UI events for a simple agent run."""
+
+        # 1. Signal run start
+        yield make_event("RUN_STARTED", {"run_id": run_id, "thread_id": "thread-001"})
+
+        # 2. Signal planning step
+        step_id = str(uuid.uuid4())
+        yield make_event("STEP_STARTED", {
+            "step_id": step_id,
+            "step_name": "plan",
+            "description": "Decomposing task"
+        })
+
+        # 3. Stream a text message
+        msg_id = str(uuid.uuid4())
+        yield make_event("TEXT_MESSAGE_START", {"message_id": msg_id, "role": "assistant"})
+        for token in ["Analyzing ", "your request...\n"]:
+            yield make_event("TEXT_MESSAGE_CONTENT", {"message_id": msg_id, "delta": token})
+            await asyncio.sleep(0.05)
+        yield make_event("TEXT_MESSAGE_END", {"message_id": msg_id})
+
+        # 4. Emit a tool call (with HITL pause signal)
+        tool_call_id = str(uuid.uuid4())
+        tool_args = {"query": "Q3 revenue data", "date_range": "2026-01-01/2026-09-30"}
+        yield make_event("TOOL_CALL_START", {
+            "tool_call_id": tool_call_id,
+            "tool_name": "query_data_warehouse",
+            "hitl": True,           # signal frontend to pause for approval
+            "args_preview": tool_args
+        })
+        # Stream args incrementally
+        args_str = json.dumps(tool_args)
+        yield make_event("TOOL_CALL_ARGS", {"tool_call_id": tool_call_id, "delta": args_str})
+        yield make_event("TOOL_CALL_END", {"tool_call_id": tool_call_id})
+
+        # 5. (Real implementation: wait for /agent/action approval before executing)
+        # For demo: emit mock result
+        yield make_event("TOOL_CALL_RESULT", {
+            "tool_call_id": tool_call_id,
+            "result": {"revenue": 4200000, "currency": "USD"}
+        })
+
+        # 6. Emit state delta
+        yield make_event("STATE_DELTA", {
+            "delta": [{"op": "replace", "path": "/task/status", "value": "complete"}]
+        })
+
+        # 7. Finish step and run
+        yield make_event("STEP_FINISHED", {"step_id": step_id, "duration_ms": 1200})
+        yield make_event("RUN_FINISHED", {"run_id": run_id, "status": "success"})
+
+    @app.post("/agent/run")
+    async def agent_run(request: Request):
+        body = await request.json()
+        run_id = str(uuid.uuid4())
+        return EventSourceResponse(
+            run_agent(
+                messages=body.get("messages", []),
+                state=body.get("state", {}),
+                run_id=run_id
+            )
+        )
+
+    @app.post("/agent/action")
+    async def agent_action(request: Request):
+        action = await request.json()
+        # Real implementation: look up the pending run by tool_call_id
+        # and resume or cancel based on action.type
+        return {"status": "accepted", "action_type": action.get("type")}
+
+    if __name__ == "__main__":
+        import uvicorn
+        uvicorn.run(app, host="0.0.0.0", port=8000)
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    // Minimal AG-UI server in TypeScript using Express + Node streams
+    // Dependencies: npm install express @types/express
+
+    import express, { Request, Response } from "express";
+    import { randomUUID } from "crypto";
+
+    const app = express();
+    app.use(express.json());
+
+    type AgUiEvent = { type: string; [key: string]: unknown };
+
+    function sseEvent(res: Response, event: AgUiEvent): void {
+      res.write(`data: ${JSON.stringify(event)}\n\n`);
+    }
+
+    async function sleep(ms: number): Promise<void> {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+
+    async function runAgent(
+      res: Response,
+      messages: unknown[],
+      state: Record<string, unknown>
+    ): Promise<void> {
+      const runId = randomUUID();
+      const stepId = randomUUID();
+      const msgId = randomUUID();
+      const toolCallId = randomUUID();
+
+      // 1. Run started
+      sseEvent(res, { type: "RUN_STARTED", run_id: runId, thread_id: "thread-001" });
+
+      // 2. Step started
+      sseEvent(res, {
+        type: "STEP_STARTED",
+        step_id: stepId,
+        step_name: "plan",
+        description: "Decomposing task",
+      });
+
+      // 3. Stream text message
+      sseEvent(res, { type: "TEXT_MESSAGE_START", message_id: msgId, role: "assistant" });
+      for (const token of ["Analyzing ", "your request...\n"]) {
+        sseEvent(res, { type: "TEXT_MESSAGE_CONTENT", message_id: msgId, delta: token });
+        await sleep(50);
+      }
+      sseEvent(res, { type: "TEXT_MESSAGE_END", message_id: msgId });
+
+      // 4. Tool call with HITL pause
+      const toolArgs = { query: "Q3 revenue data", date_range: "2026-01-01/2026-09-30" };
+      sseEvent(res, {
+        type: "TOOL_CALL_START",
+        tool_call_id: toolCallId,
+        tool_name: "query_data_warehouse",
+        hitl: true,
+        args_preview: toolArgs,
+      });
+      sseEvent(res, {
+        type: "TOOL_CALL_ARGS",
+        tool_call_id: toolCallId,
+        delta: JSON.stringify(toolArgs),
+      });
+      sseEvent(res, { type: "TOOL_CALL_END", tool_call_id: toolCallId });
+
+      // 5. Mock tool result (real: await approval action)
+      sseEvent(res, {
+        type: "TOOL_CALL_RESULT",
+        tool_call_id: toolCallId,
+        result: { revenue: 4200000, currency: "USD" },
+      });
+
+      // 6. State delta
+      sseEvent(res, {
+        type: "STATE_DELTA",
+        delta: [{ op: "replace", path: "/task/status", value: "complete" }],
+      });
+
+      // 7. Finish
+      sseEvent(res, { type: "STEP_FINISHED", step_id: stepId, duration_ms: 1200 });
+      sseEvent(res, { type: "RUN_FINISHED", run_id: runId, status: "success" });
+
+      res.end();
+    }
+
+    app.post("/agent/run", (req: Request, res: Response) => {
+      res.setHeader("Content-Type", "text/event-stream");
+      res.setHeader("Cache-Control", "no-cache");
+      res.setHeader("Connection", "keep-alive");
+      res.flushHeaders();
+
+      const { messages = [], state = {} } = req.body;
+      runAgent(res, messages, state).catch((err) => {
+        sseEvent(res, { type: "RUN_ERROR", message: String(err) });
+        res.end();
+      });
+    });
+
+    app.post("/agent/action", (req: Request, res: Response) => {
+      const action = req.body;
+      // Real: resume the pending run identified by action.tool_call_id
+      res.json({ status: "accepted", action_type: action.type });
+    });
+
+    app.listen(8000, () => console.log("AG-UI server running on :8000"));
+    ```
 
 ### 2.11 CopilotKit React Frontend Integration
 
-CopilotKit provides a React library that abstracts away AG-UI stream handling. Applications wrap their components in a `<CopilotKit>` provider pointing at an AG-UI backend. The `useCopilotReadable` hook exposes app state to the agent. The `useCopilotAction` hook registers frontend-callable tools and specifies a `render` function for HITL UI. When the agent triggers this action, the render function displays the approval panel, and the `handler` is called only after the user approves.
+=== "TypeScript"
 
-This is Part 1 of 3. **[Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/02-agui-standards-landscape-part2) to explore A2UI, MCP Apps, and NLWeb.**
+    ```typescript
+    // CopilotKit React frontend connecting to an AG-UI backend
+    // Dependencies: npm install @copilotkit/react-ui @copilotkit/react-core @copilotkit/runtime
+
+    import React from "react";
+    import {
+      CopilotKit,
+      useCopilotAction,
+      useCopilotReadable,
+    } from "@copilotkit/react-core";
+    import { CopilotSidebar } from "@copilotkit/react-ui";
+    import "@copilotkit/react-ui/styles.css";
+
+    // Root: wrap your app in CopilotKit pointing at your AG-UI backend
+    export function App() {
+      return (
+        <CopilotKit runtimeUrl="/api/copilotkit" agent="my-agent">
+          <CopilotSidebar
+            defaultOpen={true}
+            labels={{ title: "Enterprise AI Assistant" }}
+          >
+            <MainContent />
+          </CopilotSidebar>
+        </CopilotKit>
+      );
+    }
+
+    // Example: expose app state to the agent (readable context)
+    function MainContent() {
+      const [invoices, setInvoices] = React.useState<Invoice[]>([]);
+
+      // Make invoices readable by the agent
+      useCopilotReadable({
+        description: "Current invoice queue awaiting approval",
+        value: invoices,
+      });
+
+      // Register a frontend tool the agent can call
+      useCopilotAction({
+        name: "approve_invoice",
+        description: "Approve an invoice from the current queue",
+        parameters: [
+          { name: "invoice_id", type: "string", description: "Invoice identifier" },
+          { name: "comment", type: "string", description: "Approval comment" },
+        ],
+        // HITL: render = present UI before executing
+        render: ({ args, status, result }) => (
+          <ApprovalCard
+            args={args}
+            status={status}
+            onApprove={() => { /* trigger approve */ }}
+            onReject={() => { /* trigger reject */ }}
+          />
+        ),
+        handler: async ({ invoice_id, comment }) => {
+          // Called only after user approves in the render panel
+          const result = await fetch(`/api/invoices/${invoice_id}/approve`, {
+            method: "POST",
+            body: JSON.stringify({ comment }),
+          });
+          return result.json();
+        },
+      });
+
+      return <InvoiceList invoices={invoices} />;
+    }
+
+    interface Invoice { id: string; vendor: string; amount: number; }
+    function InvoiceList({ invoices }: { invoices: Invoice[] }) {
+      return <div>{invoices.map(i => <div key={i.id}>{i.vendor}: ${i.amount}</div>)}</div>;
+    }
+    function ApprovalCard({ args, status, onApprove, onReject }: any) {
+      return (
+        <div className="approval-card">
+          <p>Approve invoice {args?.invoice_id}?</p>
+          <button onClick={onApprove}>Approve</button>
+          <button onClick={onReject}>Reject</button>
+        </div>
+      );
+    }
+    ```
+
+

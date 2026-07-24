@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/Part02_GitHub_Architecture_and_Actions.md
+  - docs/coding-tools/github-copilot/Part02_GitHub_Architecture_and_Actions.md
 ---
 
 # GitHub Architecture & Actions Deep Dive

@@ -7,7 +7,7 @@ status: current
 date_published: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/Part18_Ecosystem_Patterns_Labs.md
+  - docs/coding-tools/github-copilot/Part18_Ecosystem_Patterns_Labs.md
 tags:
   - coding-tools
   - ecosystem
@@ -333,4 +333,4 @@ InnerSource applies open-source collaboration practices within a company. Intern
 
 ---
 
-**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/ecosystem-patterns-labs-part2.md) for hidden features, labs, and interview questions.**
+**This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/06-ecosystem-patterns-labs-part2.md) for hidden features, labs, and interview questions.**

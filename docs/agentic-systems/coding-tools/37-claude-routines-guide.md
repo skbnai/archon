@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/claude_routines_guide.md
+  - docs/coding-tools/claude/claude_routines_guide.md
 ---
 
 # Claude Routines — Complete Help Guide

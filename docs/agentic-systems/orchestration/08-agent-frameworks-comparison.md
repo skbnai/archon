@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 topic_id: agent-frameworks-comparison
-supersedes: ["../knowledge-docs/docs/workflow-orchestration/08-agent-frameworks-comparison.md"]
+supersedes: ["docs/workflow-orchestration/08-agent-frameworks-comparison.md"]
 doc_type: guide
 tags: ["workflow-orchestration", "agents", "langgraph", "crewai", "pydanticai", "google-adk", "mastra"]
 ---

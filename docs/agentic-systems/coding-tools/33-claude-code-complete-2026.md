@@ -8,7 +8,7 @@ domain: agentic-systems
 topic_id: claude-code-complete-2026
 doc_type: guide
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/claude-code-complete-2026.md
+  - docs/coding-tools/claude/claude-code-complete-2026.md
 ---
 
 # Claude Code CLI — Zero to Mastery 2026
@@ -23,27 +23,17 @@ Claude Code is Anthropic's official **agentic CLI** — a command-line tool that
 
 ### The Agent Loop
 
+```mermaid
+flowchart TD
+    A[User message] --> B[Claude reasons and produces a plan]
+    B --> C["Claude calls tools (read file / write file / run command / MCP call)"]
+    C --> D[Tool results returned to Claude]
+    D --> E[Claude continues reasoning and produces next action]
+    E -->|task incomplete| C
+    E -->|task complete or user interrupts| F[Claude produces final response]
 ```
-User message
-     │
-     ▼
-Claude reasons and produces a plan
-     │
-     ▼
-Claude calls tools (read file / write file / run command / MCP call)
-     │
-     ▼
-Tool results returned to Claude
-     │
-     ▼
-Claude continues reasoning and produces next action
-     │
-     ▼
-(loop until task complete or user interrupts)
-     │
-     ▼
-Claude produces final response
-```
+
+*The Claude Code agent loop: the model plans, calls tools, and feeds results back into its reasoning until the task completes or the user interrupts.*
 
 ### What Makes It Different from Claude.ai Chat?
 

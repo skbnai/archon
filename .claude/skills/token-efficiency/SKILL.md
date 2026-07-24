@@ -30,7 +30,19 @@ description: >
 8. **Never trust a subagent's self-reported numbers.** Migrator/reviewer agents
    have repeatedly reported wrong word counts, "no ASCII art found" when there
    was, and "all links resolved" when many weren't — even "task complete" at a
-   fraction of the batch. After every batch, re-run the real checks yourself
-   (`registry_check.py`, `dedup_check.py`, a word-count script, an ASCII-art
-   grep, a link-resolution pass) rather than accepting the agent's prose
-   summary as ground truth. This is cheap compared to a reviewer bounce.
+   fraction of the batch. After every batch, run
+   `python3 scripts/verify_migration_batch.py --wave N` (or `--pairs` for a
+   partial batch) — ONE command covering frontmatter, word-count ratio,
+   ASCII art, MDX escaping, and link resolution, with a compact failures-only
+   report. Add `--batch-checks` for the registry/dedup/filename battery
+   before commit. Never re-derive these as separate ad hoc grep/wc commands;
+   only pull the FAILing files into context.
+9. **Exact line-ranges in every migrator dispatch — never "migrate this
+   file".** Vague scopes made a haiku migrator silently condense 76/103
+   wave-2 files (as low as 15% retained); exact-range assignments were
+   reliably faithful (0.95-1.3). This is the single highest-leverage token
+   fix from wave 2: one bad dispatch form cost multiple full-wave
+   re-verification and redo rounds. The migrator agent now refuses
+   assignments without a line-range, and self-checks (validate_frontmatter,
+   wc -w ratio >=0.90, box-char grep, MDX scan) inside its own dispatch
+   before reporting — deterministic script runs, zero orchestrator tokens.

@@ -7,7 +7,7 @@ status: current
 date_published: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/microsoft-apm-guide.md
+  - docs/coding-tools/github-copilot/microsoft-apm-guide.md
 tags:
   - microsoft-apm
   - github-copilot

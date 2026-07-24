@@ -5,7 +5,7 @@ doc_type: guide
 topic_id: observability-framework
 status: current
 supersedes:
-  - ../knowledge-docs/docs/workflow-orchestration/16-observability-framework.md
+  - docs/workflow-orchestration/16-observability-framework.md
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 source_type: native-md

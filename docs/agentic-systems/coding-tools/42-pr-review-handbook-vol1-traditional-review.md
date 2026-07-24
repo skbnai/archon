@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/code-review/PR_Review_Handbook_Vol1_Traditional_Review.md
+  - docs/coding-tools/code-review/PR_Review_Handbook_Vol1_Traditional_Review.md
 ---
 # THE ENTERPRISE PR REVIEW PLAYBOOK
 Volume I — Traditional Review Discipline

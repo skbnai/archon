@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/ruflo-agentic-ai-guide.md
+  - docs/coding-tools/claude/ruflo-agentic-ai-guide.md
 ---
 
 # Multi-Agent Orchestration — claude-flow & Beyond
@@ -145,28 +145,28 @@ A working 20-line example that spawns a two-agent swarm:
 
 ```javascript
 // quick-start.js
-const \{ ClaudeFlow } = require('claude-flow');
+const { ClaudeFlow } = require('claude-flow');
 
-async function main() \{
-  const flow = new ClaudeFlow(\{
+async function main() {
+  const flow = new ClaudeFlow({
     apiKey: process.env.ANTHROPIC_API_KEY,
     model: 'claude-sonnet-4-6',
   });
 
   // Define the swarm
-  const swarm = await flow.createSwarm(\{
+  const swarm = await flow.createSwarm({
     topology: 'hierarchical',
     agents: ['coder', 'reviewer'],
   });
 
   // Run a task
-  const result = await swarm.run(\{
+  const result = await swarm.run({
     task: 'Write a Python function that validates email addresses with unit tests',
     memoryPersist: true,
   });
 
   console.log(result.output);
-  console.log(`Tokens used: $\{result.usage.totalTokens}`);
+  console.log(`Tokens used: ${result.usage.totalTokens}`);
 }
 
 main().catch(console.error);
@@ -202,16 +202,16 @@ The Queen receives the goal, decomposes it, spawns workers in parallel, waits fo
 
 ```javascript
 // hierarchical-orchestration.js
-const \{ ClaudeFlow, Agent } = require('claude-flow');
+const { ClaudeFlow, Agent } = require('claude-flow');
 
-const flow = new ClaudeFlow(\{
+const flow = new ClaudeFlow({
   apiKey: process.env.ANTHROPIC_API_KEY,
   model: 'claude-sonnet-4-6',
 });
 
-async function buildFeature(featureDescription) \{
+async function buildFeature(featureDescription) {
   // Define specialised agents
-  const queen = new Agent(\{
+  const queen = new Agent({
     role: 'orchestrator',
     instructions: `You are the Queen agent. Decompose the given feature into:
     1. A specification document
@@ -221,32 +221,32 @@ async function buildFeature(featureDescription) \{
     tools: ['spawn_agent', 'memory_write', 'memory_read'],
   });
 
-  const coder = new Agent(\{
+  const coder = new Agent({
     role: 'coder',
     instructions: 'Implement the feature to the specification. Write clean, documented code.',
     tools: ['file_write', 'file_read', 'memory_read', 'bash'],
   });
 
-  const tester = new Agent(\{
+  const tester = new Agent({
     role: 'tester',
     instructions: 'Write comprehensive unit tests. Aim for >90% coverage.',
     tools: ['file_write', 'file_read', 'bash', 'memory_read'],
   });
 
-  const reviewer = new Agent(\{
+  const reviewer = new Agent({
     role: 'reviewer',
     instructions: 'Review code and tests. Check for correctness, edge cases, and code quality.',
     tools: ['file_read', 'memory_read', 'memory_write'],
   });
 
-  const swarm = await flow.createSwarm(\{
+  const swarm = await flow.createSwarm({
     queen,
     workers: [coder, tester, reviewer],
     topology: 'hierarchical',
     memoryNamespace: 'feature-build',
   });
 
-  return swarm.run(\{ task: featureDescription });
+  return swarm.run({ task: featureDescription });
 }
 
 buildFeature('JWT authentication with refresh token rotation')
@@ -260,48 +260,48 @@ Agents work independently but read each other's outputs from the shared memory p
 
 ```javascript
 // peer-collaboration.js
-const \{ ClaudeFlow, Agent, MemoryPool } = require('claude-flow');
+const { ClaudeFlow, Agent, MemoryPool } = require('claude-flow');
 
-const flow = new ClaudeFlow(\{
+const flow = new ClaudeFlow({
   apiKey: process.env.ANTHROPIC_API_KEY,
   model: 'claude-sonnet-4-6',
 });
 
-async function collaborativeResearch(topic) \{
-  const memory = new MemoryPool(\{ namespace: 'research', backend: 'sqlite' });
+async function collaborativeResearch(topic) {
+  const memory = new MemoryPool({ namespace: 'research', backend: 'sqlite' });
 
   // Each agent runs concurrently and deposits findings into shared memory
   const agents = [
-    new Agent(\{
+    new Agent({
       role: 'literature-reviewer',
-      instructions: `Research existing approaches to: $\{topic}. Store findings in memory under key "prior-art".`,
+      instructions: `Research existing approaches to: ${topic}. Store findings in memory under key "prior-art".`,
       tools: ['web_search', 'memory_write'],
     }),
-    new Agent(\{
+    new Agent({
       role: 'technical-analyst',
-      instructions: `Analyse technical feasibility of: $\{topic}. Read "prior-art" from memory first.`,
+      instructions: `Analyse technical feasibility of: ${topic}. Read "prior-art" from memory first.`,
       tools: ['memory_read', 'memory_write'],
     }),
-    new Agent(\{
+    new Agent({
       role: 'risk-assessor',
-      instructions: `Identify risks for: $\{topic}. Read all memory keys before writing risk assessment.`,
+      instructions: `Identify risks for: ${topic}. Read all memory keys before writing risk assessment.`,
       tools: ['memory_read', 'memory_write'],
     }),
   ];
 
   // Run all agents concurrently with access to the same memory pool
   const results = await Promise.all(
-    agents.map(agent => flow.runAgent(agent, \{ memory }))
+    agents.map(agent => flow.runAgent(agent, { memory }))
   );
 
   // Synthesise: final agent reads all memory and produces report
-  const synthesiser = new Agent(\{
+  const synthesiser = new Agent({
     role: 'synthesiser',
     instructions: 'Read all memory entries and produce a structured research report.',
     tools: ['memory_read'],
   });
 
-  return flow.runAgent(synthesiser, \{ memory });
+  return flow.runAgent(synthesiser, { memory });
 }
 
 collaborativeResearch('stateless MCP server architecture').then(r => console.log(r.output));
@@ -313,20 +313,20 @@ Multiple agents independently produce outputs; a judge agent selects the best ba
 
 ```javascript
 // competitive-evaluation.js
-const \{ ClaudeFlow, Agent } = require('claude-flow');
+const { ClaudeFlow, Agent } = require('claude-flow');
 
-const flow = new ClaudeFlow(\{
+const flow = new ClaudeFlow({
   apiKey: process.env.ANTHROPIC_API_KEY,
   model: 'claude-sonnet-4-6',
 });
 
-async function getBestImplementation(requirement) \{
+async function getBestImplementation(requirement) {
   // Spawn three independent implementers concurrently
   const implementers = ['coder-a', 'coder-b', 'coder-c'].map(id =>
-    new Agent(\{
+    new Agent({
       id,
       role: 'implementer',
-      instructions: `Implement this requirement independently: $\{requirement}. Optimise for readability.`,
+      instructions: `Implement this requirement independently: ${requirement}. Optimise for readability.`,
       tools: ['file_write'],
     })
   );
@@ -337,20 +337,20 @@ async function getBestImplementation(requirement) \{
   );
 
   // Judge picks the best
-  const judge = new Agent(\{
+  const judge = new Agent({
     role: 'judge',
-    instructions: `You will receive $\{implementations.length} implementations of the same requirement.
+    instructions: `You will receive ${implementations.length} implementations of the same requirement.
     Evaluate each on: correctness, readability, edge case handling, and test coverage.
     Select the best and explain why the others were not selected.`,
     tools: [],
   });
 
-  const judgeInput = implementations.map((impl, i) => (\{
-    label: `Implementation $\{i + 1}`,
+  const judgeInput = implementations.map((impl, i) => ({
+    label: `Implementation ${i + 1}`,
     code: impl.output,
   }));
 
-  return flow.runAgent(judge, \{ context: JSON.stringify(judgeInput) });
+  return flow.runAgent(judge, { context: JSON.stringify(judgeInput) });
 }
 
 getBestImplementation('rate limiter with sliding window and Redis backend')
@@ -452,7 +452,7 @@ Define thresholds before the first eval run — not after deployment. These are 
 | Task success rate | 0.75 | 0.90 | 0.70 |
 | Routing accuracy | 0.85 | 0.95 | 0.80 |
 | Safety (no violations) | 1.00 | 1.00 | 0.99 |
-| Latency P95 (seconds) | < 30 | < 15 | > 60 |
+| Latency P95 (seconds) | &lt; 30 | &lt; 15 | > 60 |
 
 :::tip Collaborating on thresholds
     Thresholds must be agreed with governance stakeholders before deployment, not set unilaterally by engineering. A threshold defined after seeing scores is not a threshold — it is a retrospective justification.
@@ -575,44 +575,44 @@ if __name__ == '__main__':
 
 ```javascript
 // stress-test.js
-const \{ ClaudeFlow } = require('claude-flow');
+const { ClaudeFlow } = require('claude-flow');
 
-const flow = new ClaudeFlow(\{
+const flow = new ClaudeFlow({
   apiKey: process.env.ANTHROPIC_API_KEY,
   model: 'claude-sonnet-4-6',
 });
 
-async function stressTest(\{
+async function stressTest({
   concurrentAgents = 10,
   tasksPerAgent = 5,
   timeoutMs = 30_000,
-}) \{
-  const tasks = Array.from(\{ length: concurrentAgents }, (_, i) => `agent-$\{i}`);
-  const results = \{ succeeded: 0, failed: 0, timedOut: 0, errors: [] };
+}) {
+  const tasks = Array.from({ length: concurrentAgents }, (_, i) => `agent-${i}`);
+  const results = { succeeded: 0, failed: 0, timedOut: 0, errors: [] };
 
   await Promise.allSettled(
-    tasks.map(async (agentId) => \{
-      for (let t = 0; t < tasksPerAgent; t++) \{
+    tasks.map(async (agentId) => {
+      for (let t = 0; t < tasksPerAgent; t++) {
         const controller = new AbortController();
-        const timeout = setTimeout(() => \{
+        const timeout = setTimeout(() => {
           controller.abort();
           results.timedOut++;
         }, timeoutMs);
 
-        try \{
+        try {
           await flow.runAgent(
-            \{ id: agentId, role: 'tester', instructions: `Complete task $\{t}` },
-            \{ signal: controller.signal }
+            { id: agentId, role: 'tester', instructions: `Complete task ${t}` },
+            { signal: controller.signal }
           );
           results.succeeded++;
-        } catch (err) \{
-          if (err.name === 'AbortError') \{
+        } catch (err) {
+          if (err.name === 'AbortError') {
             // already counted in timedOut
-          } else \{
+          } else {
             results.failed++;
-            results.errors.push(\{ agentId, task: t, error: err.message });
+            results.errors.push({ agentId, task: t, error: err.message });
           }
-        } finally \{
+        } finally {
           clearTimeout(timeout);
         }
       }
@@ -622,11 +622,11 @@ async function stressTest(\{
   return results;
 }
 
-stressTest(\{ concurrentAgents: 10, tasksPerAgent: 5 }).then(r => \{
+stressTest({ concurrentAgents: 10, tasksPerAgent: 5 }).then(r => {
   console.log('Stress test results:', r);
   const failRate = (r.failed + r.timedOut) / (r.succeeded + r.failed + r.timedOut);
-  if (failRate > 0.05) \{
-    console.error(`FAIL: failure rate $\{(failRate * 100).toFixed(1)}% exceeds 5% threshold`);
+  if (failRate > 0.05) {
+    console.error(`FAIL: failure rate ${(failRate * 100).toFixed(1)}% exceeds 5% threshold`);
     process.exit(1);
   }
 });
@@ -636,12 +636,18 @@ stressTest(\{ concurrentAgents: 10, tasksPerAgent: 5 }).then(r => \{
 
 ```javascript
 // resource-limited-swarm.js
-const swarm = await flow.createSwarm(\{
+const swarm = await flow.createSwarm({
   topology: 'hierarchical',
   agents: ['coder', 'tester'],
-  limits: \{
+  limits: {
     maxConcurrentAgents: 5,       // cap parallelism
     maxTokensPerAgent: 50_000,    // per-agent token budget
     maxTotalTokens: 200_000,      // workflow-level budget
+    timeoutMs: 60_000,            // per-agent timeout
+    retryOnTimeout: true,
+    maxRetries: 2,
+  },
+});
+```
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/41-ruflo-agentic-ai-guide-part2.md) for continued content.**

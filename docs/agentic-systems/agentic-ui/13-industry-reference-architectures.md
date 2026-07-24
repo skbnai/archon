@@ -342,7 +342,7 @@ Plant Systems
 - Voice interface for hands-free operation at workstations — operator's hands may be occupied
 - Auditory alerts (not just visual) for critical equipment alerts
 - Offline-capable (plant floor may have spotty connectivity)
-- Response time must be < 3 seconds for safety-critical alerts (operator cannot wait)
+- Response time must be &lt; 3 seconds for safety-critical alerts (operator cannot wait)
 
 **OT/IT network separation:**
 

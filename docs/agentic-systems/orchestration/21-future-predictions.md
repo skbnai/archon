@@ -5,7 +5,7 @@ doc_type: guide
 topic_id: future-predictions
 status: current
 supersedes:
-  - ../knowledge-docs/docs/workflow-orchestration/21-future-predictions.md
+  - docs/workflow-orchestration/21-future-predictions.md
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 source_type: native-md

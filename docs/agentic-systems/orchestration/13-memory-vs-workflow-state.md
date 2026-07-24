@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 topic_id: memory-vs-workflow-state
-supersedes: ["../knowledge-docs/docs/workflow-orchestration/13-memory-vs-workflow-state.md"]
+supersedes: ["docs/workflow-orchestration/13-memory-vs-workflow-state.md"]
 doc_type: guide
 tags: ["workflow-orchestration", "memory", "state", "agents", "langgraph", "temporal"]
 ---

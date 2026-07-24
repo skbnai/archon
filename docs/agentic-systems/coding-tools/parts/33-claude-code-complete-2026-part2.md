@@ -295,7 +295,7 @@ jobs:
 
       - name: Run Claude Code review
         env:
-          ANTHROPIC_API_KEY: $\{\{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CLAUDE_CI: "1"
         run: |
           claude --print \
@@ -310,11 +310,11 @@ jobs:
           script: |
             const fs = require('fs');
             const review = fs.readFileSync('review-output.md', 'utf8');
-            github.rest.issues.createComment(\{
+            github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## Claude Code Review\n\n$\{review}`
+              body: `## Claude Code Review\n\n${review}`
             });
 ```
 

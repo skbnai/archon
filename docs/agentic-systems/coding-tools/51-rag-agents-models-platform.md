@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/Part04_RAG_Agents_Models_Platform.md
+  - docs/coding-tools/github-copilot/Part04_RAG_Agents_Models_Platform.md
 ---
 
 # RAG Architecture, Agent Comparisons & GitHub Models

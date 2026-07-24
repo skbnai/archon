@@ -6,7 +6,7 @@ status: current
 domain: agentic-systems
 topic_id: claude-agents-best-practices
 doc_type: guide
-supersedes: ["../../../knowledge-docs/docs/coding-tools/claude/claude_agents_best_practices_v2.md"]
+supersedes: ["../../docs/coding-tools/claude/claude_agents_best_practices_v2.md"]
 tags: ["coding-tools", "agents", "best-practices"]
 ---
 

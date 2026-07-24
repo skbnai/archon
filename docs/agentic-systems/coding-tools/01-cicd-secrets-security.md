@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/Part11_CICD_Secrets_Security.md
+  - docs/coding-tools/github-copilot/Part11_CICD_Secrets_Security.md
 ---
 
 # CI/CD Architecture, Secrets & Supply Chain Security

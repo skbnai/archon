@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 topic_id: reliability-playbook
-supersedes: ["../knowledge-docs/docs/workflow-orchestration/15-reliability-playbook.md"]
+supersedes: ["docs/workflow-orchestration/15-reliability-playbook.md"]
 doc_type: guide
 tags: ["workflow-orchestration", "reliability", "sre", "failure-modes", "agents"]
 ---

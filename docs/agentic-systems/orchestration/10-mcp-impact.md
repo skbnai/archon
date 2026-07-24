@@ -5,7 +5,7 @@ last_reviewed: 2026-07-24
 status: current
 domain: agentic-systems
 topic_id: mcp-impact
-supersedes: ["../knowledge-docs/docs/workflow-orchestration/10-mcp-impact.md"]
+supersedes: ["docs/workflow-orchestration/10-mcp-impact.md"]
 doc_type: guide
 tags: ["workflow-orchestration", "mcp", "tool-discovery", "agents", "protocol"]
 ---

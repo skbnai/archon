@@ -8,7 +8,7 @@ date_created: 2026-07-24
 last_reviewed: 2026-07-24
 tags: [coding-tools]
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/claude/Module_5_Claude_Code_Agents.md
+  - docs/coding-tools/claude/Module_5_Claude_Code_Agents.md
 ---
 
 # Claude Code, Hooks, Skills & Subagents

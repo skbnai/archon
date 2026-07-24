@@ -50,13 +50,13 @@ Agentic applications require a new vocabulary of performance metrics. Traditiona
 
 | Interaction Type | Primary Metric | Secondary Metrics | P95 Target |
 | ----------------- | --------------- | ------------------ | ----------- |
-| Simple Q&A (no tools) | TTFT | E2E, Streaming Lag | TTFT < 800ms, E2E < 5s |
-| Tool-augmented Q&A | TTFT + Tool Latency | CAT, E2E | TTFT < 1s, E2E < 8s |
-| Multi-step agentic task | E2E | Progress events P95, PL | E2E < 45s for 5-step task |
-| RAG-heavy research | CAT + TTFT | MRL, E2E | CAT < 500ms, E2E < 15s |
-| Code generation + execution | E2E | Planning Latency, Tool Latency | E2E < 30s |
-| Document analysis | TTFT | Context Assembly, E2E | TTFT < 1.5s |
-| Autonomous background task | E2E (async) | Checkpoint frequency | E2E < 5min for complex task |
+| Simple Q&A (no tools) | TTFT | E2E, Streaming Lag | TTFT &lt; 800ms, E2E &lt; 5s |
+| Tool-augmented Q&A | TTFT + Tool Latency | CAT, E2E | TTFT &lt; 1s, E2E &lt; 8s |
+| Multi-step agentic task | E2E | Progress events P95, PL | E2E &lt; 45s for 5-step task |
+| RAG-heavy research | CAT + TTFT | MRL, E2E | CAT &lt; 500ms, E2E &lt; 15s |
+| Code generation + execution | E2E | Planning Latency, Tool Latency | E2E &lt; 30s |
+| Document analysis | TTFT | Context Assembly, E2E | TTFT &lt; 1.5s |
+| Autonomous background task | E2E (async) | Checkpoint frequency | E2E &lt; 5min for complex task |
 
 ### 1.3 Concurrency-Adjusted Metrics
 
@@ -475,7 +475,7 @@ Each additional tool in the agent's tool set increases planning time and the pro
 | Tool set tiering | -100ms planning | Neutral | Basic tier (5 tools) vs full tier (25 tools) |
 | Tool description compression | -50ms TTFT | Neutral | Shorter tool descriptions = fewer tokens |
 | Tool schema caching | -30ms | Neutral | Cache compiled tool schemas in memory |
-| Retire unused tools | -10ms per tool | Neutral | Remove tools with < 0.1% usage rate |
+| Retire unused tools | -10ms per tool | Neutral | Remove tools with &lt; 0.1% usage rate |
 
 ---
 

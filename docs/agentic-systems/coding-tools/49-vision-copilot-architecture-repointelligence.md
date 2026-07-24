@@ -7,7 +7,7 @@ status: current
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
 supersedes:
-  - ../knowledge-docs/docs/coding-tools/github-copilot/Part01_Vision_Copilot_Architecture_RepoIntelligence.md
+  - docs/coding-tools/github-copilot/Part01_Vision_Copilot_Architecture_RepoIntelligence.md
 ---
 
 # AI Vision, Copilot Architecture & Repository Intelligence
