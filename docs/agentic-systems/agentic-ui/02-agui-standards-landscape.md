@@ -113,89 +113,48 @@ AG-UI communication is entirely event-driven. The server emits a stream of typed
 
 ### 2.2 Transport Architecture
 
-```text
-AG-UI TRANSPORT MODEL
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Server as Server (Agent Backend)
 
-CLIENT                                    SERVER (Agent Backend)
-   │                                              │
-   │  POST /agent/run                             │
-   │  {messages, state, context}                  │
-   ├─────────────────────────────────────────────►│
-   │                                              │
-   │  HTTP 200 text/event-stream                  │
-   │◄─────────────────────────────────────────────┤
-   │                                              │
-   │  data: {"type":"RUN_STARTED",...}            │
-   │◄─────────────────────────────────────────────┤
-   │                                              │
-   │  data: {"type":"STEP_STARTED",...}           │
-   │◄─────────────────────────────────────────────┤
-   │                                              │
-   │  data: {"type":"TEXT_MESSAGE_START",...}     │
-   │◄─────────────────────────────────────────────┤
-   │                                              │
-   │  data: {"type":"TEXT_MESSAGE_CONTENT",...}   │ × N tokens
-   │◄─────────────────────────────────────────────┤
-   │                                              │
-   │  data: {"type":"TOOL_CALL_START",...}        │
-   │◄─────────────────────────────────────────────┤
-   │                                              │
-   │  [Client pauses if HITL gate triggered]      │
-   │                                              │
-   │  POST /agent/action                          │
-   │  {"type":"approve","tool_call_id":"..."}     │
-   ├─────────────────────────────────────────────►│
-   │                                              │
-   │  data: {"type":"TOOL_CALL_RESULT",...}       │
-   │◄─────────────────────────────────────────────┤
-   │                                              │
-   │  data: {"type":"RUN_FINISHED",...}           │
-   │◄─────────────────────────────────────────────┤
-   │                                              │
-
-ALTERNATIVE TRANSPORT: WebSocket (bidirectional, long-lived)
-  Use for real-time bidirectional requirements (collaborative workspaces)
-  SSE is preferred for standard request-response agentic patterns
-  WebSocket required for multi-agent shared state with client-originated state writes
+    Client->>Server: POST /agent/run {messages, state, context}
+    Server-->>Client: HTTP 200 text/event-stream
+    Server-->>Client: data: {"type":"RUN_STARTED",...}
+    Server-->>Client: data: {"type":"STEP_STARTED",...}
+    Server-->>Client: data: {"type":"TEXT_MESSAGE_START",...}
+    Server-->>Client: data: {"type":"TEXT_MESSAGE_CONTENT",...} × N tokens
+    Server-->>Client: data: {"type":"TOOL_CALL_START",...}
+    Note over Client: Client pauses if HITL gate triggered
+    Client->>Server: POST /agent/action {"type":"approve","tool_call_id":"..."}
+    Server-->>Client: data: {"type":"TOOL_CALL_RESULT",...}
+    Server-->>Client: data: {"type":"RUN_FINISHED",...}
 ```
+
+*AG-UI transport model: the client opens a run over SSE and receives a typed event stream; a client-initiated action (e.g. HITL approval) round-trips over a separate POST while the stream continues.*
+
+**Alternative transport — WebSocket** (bidirectional, long-lived): use for real-time bidirectional requirements (collaborative workspaces). SSE is preferred for standard request-response agentic patterns; WebSocket is required for multi-agent shared state with client-originated state writes.
 
 ### 2.3 State Synchronization Model
 
 AG-UI implements an event-sourced state synchronization model. The state store is a typed key-value structure. The agent emits `STATE_SNAPSHOT` to initialize state and `STATE_DELTA` for incremental updates. Deltas use JSON Patch (RFC 6902) format.
 
-```text
-STATE SYNCHRONIZATION MODEL
+```mermaid
+sequenceDiagram
+    participant Agent as Agent Backend
+    participant Store as Client State Store
 
-Agent Backend                        Client State Store
-       │                                     │
-       │  STATE_SNAPSHOT {                   │
-       │    user: {name, role},              │
-       │    task: {id, status, steps},       │
-       │    context: {documents, refs}       │
-       │  }                                  │
-       ├────────────────────────────────────►│ replaces entire store
-       │                                     │
-       │  STATE_DELTA [                      │
-       │    {"op":"replace",                 │
-       │     "path":"/task/status",          │
-       │     "value":"in_progress"}          │
-       │  ]                                  │
-       ├────────────────────────────────────►│ applies patch atomically
-       │                                     │
-       │  STATE_DELTA [                      │
-       │    {"op":"add",                     │
-       │     "path":"/task/steps/-",         │
-       │     "value":{...}}                  │
-       │  ]                                  │
-       ├────────────────────────────────────►│ appends step
-       │                                     │
-
-CLIENT-TO-SERVER STATE WRITES
-  Handled via POST /agent/action
-  Actions include: {type: "state_update", path: "...", value: ...}
-  Server validates and applies; re-emits STATE_DELTA to confirm
-  Optimistic UI updates allowed with server-authoritative conflict resolution
+    Agent->>Store: STATE_SNAPSHOT {user, task, context}
+    Note over Store: replaces entire store
+    Agent->>Store: STATE_DELTA [{"op":"replace","path":"/task/status","value":"in_progress"}]
+    Note over Store: applies patch atomically
+    Agent->>Store: STATE_DELTA [{"op":"add","path":"/task/steps/-","value":{...}}]
+    Note over Store: appends step
 ```
+
+*State synchronization: the agent initializes the client's state store with a full snapshot, then applies incremental JSON Patch (RFC 6902) deltas that the store applies atomically.*
+
+**Client-to-server state writes** are handled via `POST /agent/action`, with actions like `{type: "state_update", path: "...", value: ...}`. The server validates and applies the write, then re-emits a `STATE_DELTA` to confirm — optimistic UI updates are allowed with server-authoritative conflict resolution.
 
 ### 2.4 Tool Lifecycle
 
@@ -206,39 +165,36 @@ AG-UI distinguishes two categories of tools:
 | **Backend Tools** | Agent backend (Python/Node/Java process) | Bearer token / mTLS from backend to tool | Results streamed via TOOL_CALL_RESULT | database query, API call, file read |
 | **Frontend Tools** | Browser / mobile client | User's browser session credentials | Synchronous (result returned via POST /action) | camera access, local file read, user geolocation, clipboard |
 
-```text
-TOOL LIFECYCLE — BACKEND TOOL
+```mermaid
+sequenceDiagram
+    participant Agent
+    participant Client as AG-UI Client
+    participant Tool as Tool API
 
-Agent                     AG-UI Client              Tool API
-  │                            │                        │
-  │  TOOL_CALL_START            │                        │
-  │  {name:"search_docs",       │                        │
-  │   args:..., hitl:false}     │                        │
-  ├───────────────────────────►│                        │
-  │  [execute immediately]      │                        │
-  ├───────────────────────────────────────────────────►│
-  │                            │                        │ execute
-  │◄───────────────────────────────────────────────────┤
-  │  TOOL_CALL_RESULT           │                        │
-  ├───────────────────────────►│                        │
-
-TOOL LIFECYCLE — FRONTEND TOOL (with HITL)
-
-Agent                     AG-UI Client              Browser API
-  │                            │                        │
-  │  TOOL_CALL_START            │                        │
-  │  {name:"read_clipboard",    │                        │
-  │   args:{}, hitl:true}       │                        │
-  ├───────────────────────────►│                        │
-  │                            │  [Approval UI shown]    │
-  │                            │  User approves          │
-  │                            ├───────────────────────►│
-  │                            │◄───────────────────────┤
-  │                            │  POST /agent/action     │
-  │◄───────────────────────────┤  {type:"tool_result",  │
-  │                            │   tool_call_id,result} │
-  │  [continue execution]       │                        │
+    rect rgb(230, 240, 255)
+    Note over Agent,Tool: Backend Tool
+    Agent->>Client: TOOL_CALL_START {name:"search_docs", args:..., hitl:false}
+    Agent->>Tool: execute immediately
+    Tool-->>Agent: result
+    Agent->>Client: TOOL_CALL_RESULT
+    end
 ```
+
+```mermaid
+sequenceDiagram
+    participant Agent
+    participant Client as AG-UI Client
+    participant Browser as Browser API
+
+    Agent->>Client: TOOL_CALL_START {name:"read_clipboard", args:{}, hitl:true}
+    Client->>Client: Approval UI shown, user approves
+    Client->>Browser: invoke
+    Browser-->>Client: result
+    Client->>Agent: POST /agent/action {type:"tool_result", tool_call_id, result}
+    Note over Agent: continue execution
+```
+
+*Tool lifecycle for the two tool categories: backend tools execute immediately with results streamed back; frontend tools pause for an approval UI and a browser API call before the result posts back to the agent.*
 
 ### 2.5 Generative UI Modes
 
@@ -249,15 +205,14 @@ AG-UI supports two modes of generative UI:
 | **Static / Typed** | Agent returns structured JSON matching a known component schema registered in the client | When the UI component library is predefined and agent selects from known options | Optional; can use bespoke schema |
 | **Declarative / Dynamic** | Agent emits an A2UI JSON surface definition in a CUSTOM event; client renders the declared widget tree | When the agent determines the optimal UI surface for the current data and task at runtime | Primary carrier of A2UI payloads |
 
-**Static Mode Example Flow:**
+**Static Mode Example Flow:** the agent emits a `CUSTOM` event naming a registered component:
 
-```text
-Agent emits CUSTOM event:
+```json
 {
   "type": "CUSTOM",
   "name": "generative_ui",
   "value": {
-    "component": "ApprovalCard",      ← registered component name
+    "component": "ApprovalCard",
     "props": {
       "title": "Invoice #4821",
       "amount": 94200.00,
@@ -266,14 +221,13 @@ Agent emits CUSTOM event:
     }
   }
 }
-
-Client looks up "ApprovalCard" in component registry → renders
 ```
+
+The client looks up `"ApprovalCard"` in its component registry and renders it with the supplied `props`.
 
 **Declarative Mode (A2UI) Flow:**
 
-```text
-Agent emits CUSTOM event:
+```json
 {
   "type": "CUSTOM",
   "name": "a2ui_surface",
@@ -287,9 +241,9 @@ Agent emits CUSTOM event:
     ]
   }
 }
-
-Client renders using host widget library → no component registry required
 ```
+
+The client renders this using its host widget library directly — no component registry required, unlike Static Mode.
 
 ### 2.6 HITL Interrupts
 
@@ -307,66 +261,43 @@ AG-UI's HITL model supports five interrupt types:
 
 AG-UI supports nested agent composition with scoped state. A parent agent can delegate to a child agent, which opens its own AG-UI sub-stream with independently scoped state.
 
-```text
-NESTED AGENT COMPOSITION
+```mermaid
+sequenceDiagram
+    participant UI as User Interface
+    participant Parent as Parent Agent (Orchestrator)
+    participant Research as Research Agent
+    participant Drafting as Drafting Agent
 
-User Interface
-    │
-    │  AG-UI stream (parent)
-    ▼
-Parent Agent (Orchestrator)
-    │  AG-UI sub-stream (child 1, scoped state)
-    ├──────────────────────────────────────────►  Research Agent
-    │  AG-UI sub-stream (child 2, scoped state)
-    ├──────────────────────────────────────────►  Drafting Agent
-    │                                             │
-    │  STATE_DELTA (merged from children)         │
-    │◄─────────────────────────────────────────────┤
-    │
-    │  Aggregated output to parent AG-UI stream
-    ▼
-User Interface (sees unified progress)
-
-State Scoping Rules:
-  - Each child agent has its own STATE namespace
-  - Parent can read child state via child stream STATE_SNAPSHOT
-  - Children cannot read parent or sibling state directly
-  - Parent merges child outputs explicitly before writing to parent STATE
+    UI->>Parent: AG-UI stream (parent)
+    Parent->>Research: AG-UI sub-stream (child 1, scoped state)
+    Parent->>Drafting: AG-UI sub-stream (child 2, scoped state)
+    Research-->>Parent: STATE_DELTA
+    Drafting-->>Parent: STATE_DELTA
+    Note over Parent: merges children's state
+    Parent-->>UI: Aggregated output on parent AG-UI stream
+    Note over UI: sees unified progress
 ```
+
+*Nested agent composition: the parent orchestrator opens independently scoped sub-streams to child agents and merges their state before reporting unified progress upstream.*
+
+**State scoping rules:** each child agent has its own STATE namespace; the parent can read child state via the child stream's `STATE_SNAPSHOT`; children cannot read parent or sibling state directly; the parent merges child outputs explicitly before writing to its own STATE.
 
 ### 2.8 Middleware Architecture
 
-```text
-AG-UI MIDDLEWARE CHAIN
+```mermaid
+flowchart TD
+    A[Inbound Request] --> B["Auth Middleware<br/>Validates Bearer/mTLS, extracts identity"]
+    B --> C["Rate Limit Middleware<br/>Per-user and per-tenant rate limiting"]
+    C --> D["Context Middleware<br/>Assembles context (memory, RAG, session history)"]
+    D --> E["Policy Middleware<br/>OPA/Cedar policy evaluation on request parameters"]
+    E --> F["Agent Runner<br/>Executes agent; emits AG-UI event stream"]
+    F --> G["Guardrail Middleware<br/>Filters outbound events (PII scrub, content safety)"]
+    G --> H["Observability Middleware<br/>Attaches OTel spans to each event"]
+    H --> I["SSE Serializer<br/>Formats events as text/event-stream"]
+    I --> J[Client]
+```
 
-Inbound Request
-       │
-       ▼
-[Auth Middleware]         Validates Bearer/mTLS, extracts identity
-       │
-       ▼
-[Rate Limit Middleware]   Per-user and per-tenant rate limiting
-       │
-       ▼
-[Context Middleware]      Assembles context (memory, RAG, session history)
-       │
-       ▼
-[Policy Middleware]       OPA/Cedar policy evaluation on request parameters
-       │
-       ▼
-[Agent Runner]            Executes agent; emits AG-UI event stream
-       │
-       ▼
-[Guardrail Middleware]    Filters outbound events (PII scrub, content safety)
-       │
-       ▼
-[Observability Middleware] Attaches OTel spans to each event
-       │
-       ▼
-[SSE Serializer]          Formats events as text/event-stream
-       │
-       ▼
-Client
+*AG-UI middleware chain: a request passes through auth, rate limiting, context assembly, and policy evaluation before the agent runs, then outbound events pass through guardrails and observability before serialization.*
 
 CopilotKit MCPAppsMiddleware sits between Agent Runner and Guardrail Middleware
   — intercepts TOOL_CALL_START events
@@ -494,19 +425,19 @@ CopilotKit MCPAppsMiddleware sits between Agent Runner and Guardrail Middleware
     // Minimal AG-UI server in TypeScript using Express + Node streams
     // Dependencies: npm install express @types/express
 
-    import express, \{ Request, Response } from "express";
-    import \{ randomUUID } from "crypto";
+    import express, { Request, Response } from "express";
+    import { randomUUID } from "crypto";
 
     const app = express();
     app.use(express.json());
 
-    type AgUiEvent = \{ type: string; [key: string]: unknown };
+    type AgUiEvent = { type: string; [key: string]: unknown };
 
-    function sseEvent(res: Response, event: AgUiEvent): void \{
-      res.write(`data: $\{JSON.stringify(event)}\n\n`);
+    function sseEvent(res: Response, event: AgUiEvent): void {
+      res.write(`data: ${JSON.stringify(event)}\n\n`);
     }
 
-    async function sleep(ms: number): Promise<void> \{
+    async function sleep(ms: number): Promise<void> {
       return new Promise((resolve) => setTimeout(resolve, ms));
     }
 
@@ -514,17 +445,17 @@ CopilotKit MCPAppsMiddleware sits between Agent Runner and Guardrail Middleware
       res: Response,
       messages: unknown[],
       state: Record<string, unknown>
-    ): Promise<void> \{
+    ): Promise<void> {
       const runId = randomUUID();
       const stepId = randomUUID();
       const msgId = randomUUID();
       const toolCallId = randomUUID();
 
       // 1. Run started
-      sseEvent(res, \{ type: "RUN_STARTED", run_id: runId, thread_id: "thread-001" });
+      sseEvent(res, { type: "RUN_STARTED", run_id: runId, thread_id: "thread-001" });
 
       // 2. Step started
-      sseEvent(res, \{
+      sseEvent(res, {
         type: "STEP_STARTED",
         step_id: stepId,
         step_name: "plan",
@@ -532,66 +463,66 @@ CopilotKit MCPAppsMiddleware sits between Agent Runner and Guardrail Middleware
       });
 
       // 3. Stream text message
-      sseEvent(res, \{ type: "TEXT_MESSAGE_START", message_id: msgId, role: "assistant" });
-      for (const token of ["Analyzing ", "your request...\n"]) \{
-        sseEvent(res, \{ type: "TEXT_MESSAGE_CONTENT", message_id: msgId, delta: token });
+      sseEvent(res, { type: "TEXT_MESSAGE_START", message_id: msgId, role: "assistant" });
+      for (const token of ["Analyzing ", "your request...\n"]) {
+        sseEvent(res, { type: "TEXT_MESSAGE_CONTENT", message_id: msgId, delta: token });
         await sleep(50);
       }
-      sseEvent(res, \{ type: "TEXT_MESSAGE_END", message_id: msgId });
+      sseEvent(res, { type: "TEXT_MESSAGE_END", message_id: msgId });
 
       // 4. Tool call with HITL pause
-      const toolArgs = \{ query: "Q3 revenue data", date_range: "2026-01-01/2026-09-30" };
-      sseEvent(res, \{
+      const toolArgs = { query: "Q3 revenue data", date_range: "2026-01-01/2026-09-30" };
+      sseEvent(res, {
         type: "TOOL_CALL_START",
         tool_call_id: toolCallId,
         tool_name: "query_data_warehouse",
         hitl: true,
         args_preview: toolArgs,
       });
-      sseEvent(res, \{
+      sseEvent(res, {
         type: "TOOL_CALL_ARGS",
         tool_call_id: toolCallId,
         delta: JSON.stringify(toolArgs),
       });
-      sseEvent(res, \{ type: "TOOL_CALL_END", tool_call_id: toolCallId });
+      sseEvent(res, { type: "TOOL_CALL_END", tool_call_id: toolCallId });
 
       // 5. Mock tool result (real: await approval action)
-      sseEvent(res, \{
+      sseEvent(res, {
         type: "TOOL_CALL_RESULT",
         tool_call_id: toolCallId,
-        result: \{ revenue: 4200000, currency: "USD" },
+        result: { revenue: 4200000, currency: "USD" },
       });
 
       // 6. State delta
-      sseEvent(res, \{
+      sseEvent(res, {
         type: "STATE_DELTA",
-        delta: [\{ op: "replace", path: "/task/status", value: "complete" }],
+        delta: [{ op: "replace", path: "/task/status", value: "complete" }],
       });
 
       // 7. Finish
-      sseEvent(res, \{ type: "STEP_FINISHED", step_id: stepId, duration_ms: 1200 });
-      sseEvent(res, \{ type: "RUN_FINISHED", run_id: runId, status: "success" });
+      sseEvent(res, { type: "STEP_FINISHED", step_id: stepId, duration_ms: 1200 });
+      sseEvent(res, { type: "RUN_FINISHED", run_id: runId, status: "success" });
 
       res.end();
     }
 
-    app.post("/agent/run", (req: Request, res: Response) => \{
+    app.post("/agent/run", (req: Request, res: Response) => {
       res.setHeader("Content-Type", "text/event-stream");
       res.setHeader("Cache-Control", "no-cache");
       res.setHeader("Connection", "keep-alive");
       res.flushHeaders();
 
-      const \{ messages = [], state = {} } = req.body;
-      runAgent(res, messages, state).catch((err) => \{
-        sseEvent(res, \{ type: "RUN_ERROR", message: String(err) });
+      const { messages = [], state = {} } = req.body;
+      runAgent(res, messages, state).catch((err) => {
+        sseEvent(res, { type: "RUN_ERROR", message: String(err) });
         res.end();
       });
     });
 
-    app.post("/agent/action", (req: Request, res: Response) => \{
+    app.post("/agent/action", (req: Request, res: Response) => {
       const action = req.body;
       // Real: resume the pending run identified by action.tool_call_id
-      res.json(\{ status: "accepted", action_type: action.type });
+      res.json({ status: "accepted", action_type: action.type });
     });
 
     app.listen(8000, () => console.log("AG-UI server running on :8000"));
@@ -606,21 +537,21 @@ CopilotKit MCPAppsMiddleware sits between Agent Runner and Guardrail Middleware
     // Dependencies: npm install @copilotkit/react-ui @copilotkit/react-core @copilotkit/runtime
 
     import React from "react";
-    import \{
+    import {
       CopilotKit,
       useCopilotAction,
       useCopilotReadable,
     } from "@copilotkit/react-core";
-    import \{ CopilotSidebar } from "@copilotkit/react-ui";
+    import { CopilotSidebar } from "@copilotkit/react-ui";
     import "@copilotkit/react-ui/styles.css";
 
     // Root: wrap your app in CopilotKit pointing at your AG-UI backend
-    export function App() \{
+    export function App() {
       return (
         <CopilotKit runtimeUrl="/api/copilotkit" agent="my-agent">
           <CopilotSidebar
-            defaultOpen=\{true}
-            labels=\{\{ title: "Enterprise AI Assistant" }}
+            defaultOpen={true}
+            labels={{ title: "Enterprise AI Assistant" }}
           >
             <MainContent />
           </CopilotSidebar>
@@ -629,55 +560,55 @@ CopilotKit MCPAppsMiddleware sits between Agent Runner and Guardrail Middleware
     }
 
     // Example: expose app state to the agent (readable context)
-    function MainContent() \{
+    function MainContent() {
       const [invoices, setInvoices] = React.useState<Invoice[]>([]);
 
       // Make invoices readable by the agent
-      useCopilotReadable(\{
+      useCopilotReadable({
         description: "Current invoice queue awaiting approval",
         value: invoices,
       });
 
       // Register a frontend tool the agent can call
-      useCopilotAction(\{
+      useCopilotAction({
         name: "approve_invoice",
         description: "Approve an invoice from the current queue",
         parameters: [
-          \{ name: "invoice_id", type: "string", description: "Invoice identifier" },
-          \{ name: "comment", type: "string", description: "Approval comment" },
+          { name: "invoice_id", type: "string", description: "Invoice identifier" },
+          { name: "comment", type: "string", description: "Approval comment" },
         ],
         // HITL: render = present UI before executing
-        render: (\{ args, status, result }) => (
+        render: ({ args, status, result }) => (
           <ApprovalCard
-            args=\{args}
-            status=\{status}
-            onApprove=\{() => \{ /* trigger approve */ }}
-            onReject=\{() => \{ /* trigger reject */ }}
+            args={args}
+            status={status}
+            onApprove={() => { /* trigger approve */ }}
+            onReject={() => { /* trigger reject */ }}
           />
         ),
-        handler: async (\{ invoice_id, comment }) => \{
+        handler: async ({ invoice_id, comment }) => {
           // Called only after user approves in the render panel
-          const result = await fetch(`/api/invoices/$\{invoice_id}/approve`, \{
+          const result = await fetch(`/api/invoices/${invoice_id}/approve`, {
             method: "POST",
-            body: JSON.stringify(\{ comment }),
+            body: JSON.stringify({ comment }),
           });
           return result.json();
         },
       });
 
-      return <InvoiceList invoices=\{invoices} />;
+      return <InvoiceList invoices={invoices} />;
     }
 
-    interface Invoice \{ id: string; vendor: string; amount: number; }
-    function InvoiceList(\{ invoices }: \{ invoices: Invoice[] }) \{
-      return <div>\{invoices.map(i => <div key=\{i.id}>\{i.vendor}: $\{i.amount}</div>)}</div>;
+    interface Invoice { id: string; vendor: string; amount: number; }
+    function InvoiceList({ invoices }: { invoices: Invoice[] }) {
+      return <div>{invoices.map(i => <div key={i.id}>{i.vendor}: ${i.amount}</div>)}</div>;
     }
-    function ApprovalCard(\{ args, status, onApprove, onReject }: any) \{
+    function ApprovalCard({ args, status, onApprove, onReject }: any) {
       return (
         <div className="approval-card">
-          <p>Approve invoice \{args?.invoice_id}?</p>
-          <button onClick=\{onApprove}>Approve</button>
-          <button onClick=\{onReject}>Reject</button>
+          <p>Approve invoice {args?.invoice_id}?</p>
+          <button onClick={onApprove}>Approve</button>
+          <button onClick={onReject}>Reject</button>
         </div>
       );
     }

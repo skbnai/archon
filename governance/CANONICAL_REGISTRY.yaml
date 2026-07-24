@@ -5180,6 +5180,30 @@ topics:
     supersedes:
     - docs/coding-tools/github-copilot/github-copilot-zero-to-hero.md
     pages: []
+  - id: copilot-enterprise-playbook-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/07-copilot-enterprise-playbook-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: github-copilot-zero-to-hero-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: github-copilot-zero-to-hero-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: github-copilot-zero-to-hero-part4
+    domain: agentic-systems
+    canonical: docs/agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
   - id: governance
     domain: agentic-systems
     canonical: docs/agentic-systems/agentic-ui/11-governance.md
@@ -5528,6 +5552,42 @@ topics:
   - id: responsible-ai-part3
     domain: agentic-systems
     canonical: docs/agentic-systems/agentic-ui/parts/17-responsible-ai-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agentic-ai-config-management-2026-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/parts/02-enterprise-agentic-ai-config-management-2026-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agentic-ai-config-management-2026-part3
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/parts/02-enterprise-agentic-ai-config-management-2026-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-promptops-aws-agentcore-2026-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/core/parts/08-enterprise-promptops-aws-agentcore-2026-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: anti-patterns-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/parts/03-anti-patterns-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: governance-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/parts/11-governance-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: observability-part2
+    domain: agentic-systems
+    canonical: docs/agentic-systems/agentic-ui/parts/14-observability-part2.md
     aliases: []
     supersedes: []
     pages: []

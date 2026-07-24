@@ -128,17 +128,14 @@ Score each criterion 0 (none) – 2 (strong). Total ≥ 8 proceeds to Discovery.
 
 The Value Hypothesis Canvas frames business impact: problem, current state cost, proposed AI solution, projected savings, investment, payback, risks, and confidence level.
 
-```
-VALUE HYPOTHESIS CANVAS
-├─ Problem: [One sentence]
-├─ Current state cost: $X per [unit] × Y volume = $Z/yr
-├─ AI proposed state: [What the agent will do]
-├─ Projected saving: X% reduction = $Z saved/yr
-├─ Investment estimate: Build: $X  Run: $Y/yr
-├─ Payback period: [months]
-├─ Biggest risk: [One-line risk statement]
-└─ Confidence: Low / Medium / High
-```
+- **Problem:** [One sentence]
+- **Current state cost:** $X per [unit] × Y volume = $Z/yr
+- **AI proposed state:** [What the agent will do]
+- **Projected saving:** X% reduction = $Z saved/yr
+- **Investment estimate:** Build $X, Run $Y/yr
+- **Payback period:** [months]
+- **Biggest risk:** [One-line risk statement]
+- **Confidence:** Low / Medium / High
 
 ### Go / No-Go Criteria
 

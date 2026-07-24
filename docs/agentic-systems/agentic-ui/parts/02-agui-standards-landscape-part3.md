@@ -109,20 +109,18 @@ The OpenAI Apps SDK was an early standardization of the MCP Apps pattern, using 
 
 ### 6.1 Architecture
 
-```text
-OPENAI APPS SDK ARCHITECTURE
-
-Browser Host Application
-├── iFrame sandbox (CSP-isolated)
-│   ├── OpenAI App Component (React/Web Component)
-│   │   └── Uses openai/apps-sdk-ui: Button, Card, Input, Layout
-│   └── Communicates via postMessage (JSON-RPC 2.0)
-│
-└── Host Bridge
-    ├── Receives tool-input notifications from app
-    ├── Delivers tool results after user approval
-    └── Enforces content security policy
+```mermaid
+graph TB
+    subgraph Host["Browser Host Application"]
+        subgraph Frame["iFrame sandbox (CSP-isolated)"]
+            Comp["OpenAI App Component (React/Web Component)<br/>Uses openai/apps-sdk-ui: Button, Card, Input, Layout"]
+        end
+        Bridge["Host Bridge<br/>Receives tool-input notifications from app<br/>Delivers tool results after user approval<br/>Enforces content security policy"]
+    end
+    Frame -- "postMessage (JSON-RPC 2.0)" --> Bridge
 ```
+
+*OpenAI Apps SDK architecture: the app component runs inside a CSP-isolated iframe and communicates with the host bridge exclusively via JSON-RPC 2.0 over `postMessage`.*
 
 ### 6.2 JSON-RPC 2.0 Transport
 
@@ -148,18 +146,23 @@ The two-action limit was a deliberate UX constraint: avoid decision paralysis on
 
 ### 6.4 Approval Flow
 
-```text
-OPENAI APPS SDK APPROVAL FLOW
+```mermaid
+sequenceDiagram
+    participant Agent
+    participant Host
+    participant App as App Component
+    participant User
 
-1. Agent proposes tool call
-2. Host receives tool call arguments
-3. Host delivers args via ui/notifications/tool-input to the app component
-4. App renders an approval card with the proposed args
-5. User approves or rejects in the card UI
-6. App notifies host of user decision
-7. Host either executes the tool (approve) or cancels (reject)
-8. Host delivers result via tools/result to app
+    Agent->>Host: propose tool call
+    Host->>App: deliver args via ui/notifications/tool-input
+    App->>User: render approval card with proposed args
+    User->>App: approve or reject
+    App->>Host: notify of user decision
+    Host->>Host: execute tool (approve) or cancel (reject)
+    Host->>App: deliver result via tools/result
 ```
+
+*OpenAI Apps SDK approval flow: the host mediates every step between the agent's tool proposal and the app component's approval card, only executing after explicit user approval.*
 
 ### 6.5 Relationship to MCP Apps
 
@@ -191,32 +194,22 @@ Microsoft Agent Framework 1.0 was released in April 2026 as a production-ready m
 
 ### 7.2 AG-UI Integration Pattern
 
-```text
-MICROSOFT AGENT FRAMEWORK + AG-UI + COPILOTKIT
+```mermaid
+graph TB
+    FE["React Frontend (CopilotKit)<br/>&lt;CopilotKit runtimeUrl='/api/copilotkit'&gt;"]
+    FE -- "AG-UI (SSE stream)" --> EP
 
-┌──────────────────────────────────────────────────────────────┐
-│  React Frontend (CopilotKit)                                │
-│  <CopilotKit runtimeUrl="/api/copilotkit">                  │
-└────────────────────┬─────────────────────────────────────────┘
-                     │  AG-UI (SSE stream)
-┌────────────────────▼─────────────────────────────────────────┐
-│  HttpAgent Endpoint                                         │
-│  (Microsoft Agent Framework 1.0)                           │
-│                                                             │
-│  Maps CopilotKit messages → Agent Framework messages        │
-│  Maps Agent Framework events → AG-UI events                 │
-│  Handles HITL pause/approve/reject via action endpoint      │
-└────────────────────┬─────────────────────────────────────────┘
-                     │  Internal agent bus
-┌────────────────────▼─────────────────────────────────────────┐
-│  Agent Orchestrator (Agent Framework 1.0)                  │
-│                                                             │
-│  ┌─────────────┐  ┌─────────────┐  ┌──────────────────────┐ │
-│  │ Research    │  │ Analysis    │  │ Report Writing       │ │
-│  │ Agent       │  │ Agent       │  │ Agent                │ │
-│  └─────────────┘  └─────────────┘  └──────────────────────┘ │
-└─────────────────────────────────────────────────────────────┘
+    EP["HttpAgent Endpoint (Microsoft Agent Framework 1.0)<br/>Maps CopilotKit messages ↔ Agent Framework messages<br/>Maps Agent Framework events → AG-UI events<br/>Handles HITL pause/approve/reject via action endpoint"]
+    EP -- "Internal agent bus" --> ORCH
+
+    subgraph ORCH["Agent Orchestrator (Agent Framework 1.0)"]
+        R[Research Agent]
+        A[Analysis Agent]
+        W[Report Writing Agent]
+    end
 ```
+
+*Microsoft Agent Framework 1.0 integration: a CopilotKit frontend streams over AG-UI to an HttpAgent endpoint, which translates between CopilotKit and Agent Framework message formats and routes to a multi-agent orchestrator.*
 
 ### 7.3 Azure Deployment Targets
 
@@ -321,96 +314,49 @@ L1 = Proof of concept only · L2 = Experimental / early adopter · L3 = Producti
 
 ## 9. Decision Tree: Which Protocol or Framework Should I Choose?
 
-```text
-AGENTIC UI PROTOCOL / FRAMEWORK SELECTION
+```mermaid
+flowchart TD
+    START([Start]) --> Q1{Stream agent output<br/>to a UI in real time?}
+    Q1 -->|No| BATCH["Consider batch/async agent<br/>pattern; AG-UI not required"]
+    Q1 -->|Yes| Q2{Interface needs<br/>dynamic UI components?}
+    Q2 -->|No| TXT["AG-UI with TEXT_MESSAGE<br/>streaming only —<br/>LangGraph, CrewAI, or PydanticAI"]
+    Q2 -->|Yes| Q3{UI surface determined<br/>by the agent at runtime?}
+    Q3 -->|Yes| A2UI["Consider A2UI (v0.9 experimental)"]
+    Q3 -->|No| STATIC["Static component registry in<br/>AG-UI CUSTOM events (typed generative UI)"]
 
-START
-  │
-  ▼
-Do you need to stream agent output to a user interface in real time?
-  │              │
- YES             NO
-  │              │
-  ▼              ▼
-Does the        Consider batch / async
-interface       agent pattern; AG-UI
-need dynamic    not required
-UI components?
-  │
- YES ─────────────── NO
-  │                   │
-  ▼                   ▼
-Is the UI surface   AG-UI with TEXT_MESSAGE
-determined by the   streaming only;
-agent at runtime?   framework: LangGraph,
-                    CrewAI, or PydanticAI
-  │
- YES ─── NO
-  │        │
-  ▼        ▼
-Consider   Use static component
-A2UI       registry in AG-UI CUSTOM
-(v0.9 exp) events (typed generative UI)
+    A2UI --> Q4
+    STATIC --> Q4
+    TXT --> Q4
+    Q4{Primary backend ecosystem?}
+    Q4 -->|Python only| E1["LangGraph, CrewAI, PydanticAI, Agno"]
+    Q4 -->|".NET / C#"| E2["Microsoft Agent Framework 1.0, Semantic Kernel"]
+    Q4 -->|TypeScript/Node.js| E3["Mastra, Vercel AI SDK (partial AG-UI)"]
+    Q4 -->|Multi-language| E4["Microsoft Agent Framework 1.0 (Python + .NET)"]
+    Q4 -->|Cloud-managed| E5["AWS Bedrock AgentCore (AG-UI native)"]
 
-CONTINUING FROM AG-UI CONFIRMED:
-  │
-  ▼
-What is your primary backend ecosystem?
-  │
-  ├── Python only           → LangGraph, CrewAI, PydanticAI, Agno
-  ├── .NET / C#             → Microsoft Agent Framework 1.0, Semantic Kernel
-  ├── TypeScript / Node.js  → Mastra, Vercel AI SDK (partial AG-UI)
-  ├── Multi-language        → Microsoft Agent Framework 1.0 (Python + .NET)
-  └── Cloud-managed         → AWS Bedrock AgentCore (AG-UI native)
-  │
-  ▼
-What are your HITL requirements?
-  │
-  ├── Formal approval workflow (named approver, audit trail, timeout)
-  │   → CopilotKit + AG-UI with useCopilotAction render
-  │   → Microsoft Agent Framework 1.0 HITL tools
-  │
-  ├── Simple yes/no approval
-  │   → Any AG-UI framework with TOOL_CALL_START hitl:true
-  │
-  └── No HITL needed
-      → Any AG-UI framework; HOTL monitoring via OTel
-  │
-  ▼
-Do you need MCP tool integration?
-  │
-  ├── YES: tools with bundled UI
-  │   → CopilotKit MCPAppsMiddleware
-  │   → Register tools on MCP App servers
-  │
-  ├── YES: tools without bundled UI
-  │   → Any MCP-compatible AG-UI backend
-  │   → LangGraph, Mastra, PydanticAI all have 1st-party MCP support
-  │
-  └── NO
-      → Direct tool calling in chosen framework
-  │
-  ▼
-Enterprise readiness requirements?
-  │
-  ├── L5 required (Azure SLA, certified, .NET+Python)
-  │   → Microsoft Agent Framework 1.0
-  │
-  ├── L4 required (production, multi-tenant, governance tooling)
-  │   → LangGraph + CopilotKit + AG-UI
-  │   → Google ADK + A2UI (if Google ecosystem)
-  │
-  ├── L3 required (production, basic enterprise)
-  │   → PydanticAI, CrewAI, AutoGen/AG2
-  │
-  └── L2 acceptable (beta, growing project)
-      → Agno, Mastra
+    E1 & E2 & E3 & E4 & E5 --> Q5
+    Q5{HITL requirements?}
+    Q5 -->|Formal approval workflow| H1["CopilotKit + AG-UI useCopilotAction;<br/>Microsoft Agent Framework 1.0 HITL tools"]
+    Q5 -->|Simple yes/no approval| H2["Any AG-UI framework with<br/>TOOL_CALL_START hitl:true"]
+    Q5 -->|No HITL needed| H3["Any AG-UI framework;<br/>HOTL monitoring via OTel"]
 
-SPECIAL CASES:
-  Making website content agent-queryable? → NLWeb
-  Cloudflare-hosted content?              → Cloudflare AutoRAG (NLWeb pattern)
-  OpenAI platform existing investment?    → OpenAI Apps SDK → plan migration to MCP Apps
+    H1 & H2 & H3 --> Q6
+    Q6{MCP tool integration needed?}
+    Q6 -->|Tools with bundled UI| M1["CopilotKit MCPAppsMiddleware;<br/>register tools on MCP App servers"]
+    Q6 -->|Tools without bundled UI| M2["Any MCP-compatible AG-UI backend —<br/>LangGraph, Mastra, PydanticAI"]
+    Q6 -->|No| M3["Direct tool calling in chosen framework"]
+
+    M1 & M2 & M3 --> Q7
+    Q7{Enterprise readiness level?}
+    Q7 -->|L5: Azure SLA, certified| R1["Microsoft Agent Framework 1.0"]
+    Q7 -->|L4: production, multi-tenant| R2["LangGraph + CopilotKit + AG-UI;<br/>Google ADK + A2UI"]
+    Q7 -->|L3: production, basic| R3["PydanticAI, CrewAI, AutoGen/AG2"]
+    Q7 -->|L2: beta, growing| R4["Agno, Mastra"]
 ```
+
+*Protocol/framework selection decision tree: from streaming and dynamic-UI needs, through backend ecosystem, HITL model, MCP integration, to enterprise readiness tier.*
+
+**Special cases:** making website content agent-queryable → NLWeb; Cloudflare-hosted content → Cloudflare AutoRAG (NLWeb pattern); existing OpenAI platform investment → OpenAI Apps SDK, then plan migration to MCP Apps.
 
 ---
 
@@ -418,46 +364,42 @@ SPECIAL CASES:
 
 ### 10.1 Operational Requirements Checklist
 
-```text
-AG-UI PRODUCTION READINESS CHECKLIST
+**Transport**
+- [ ] TLS 1.3 on all AG-UI connections
+- [ ] Mutual TLS for backend-to-agent connections
+- [ ] Connection timeout configured (idle SSE connections)
+- [ ] SSE reconnection logic in client (EventSource retry)
+- [ ] WebSocket fallback for environments blocking SSE
 
-Transport
-  [ ] TLS 1.3 on all AG-UI connections
-  [ ] Mutual TLS for backend-to-agent connections
-  [ ] Connection timeout configured (idle SSE connections)
-  [ ] SSE reconnection logic in client (EventSource retry)
-  [ ] WebSocket fallback for environments blocking SSE
+**Authentication**
+- [ ] Short-lived JWTs with audience binding
+- [ ] OBO flow configured for enterprise tool access
+- [ ] API key rotation policy
+- [ ] Rate limiting per user per tenant
 
-Authentication
-  [ ] Short-lived JWTs with audience binding
-  [ ] OBO flow configured for enterprise tool access
-  [ ] API key rotation policy
-  [ ] Rate limiting per user per tenant
+**Reliability**
+- [ ] AG-UI server behind load balancer with sticky sessions (SSE)
+- [ ] Run state persisted to durable storage (not in-memory only)
+- [ ] Interrupt handler does not leak resources on cancellation
+- [ ] TOOL_CALL_RESULT retry on transient tool failures
 
-Reliability
-  [ ] AG-UI server behind load balancer with sticky sessions (SSE)
-  [ ] Run state persisted to durable storage (not in-memory only)
-  [ ] Interrupt handler does not leak resources on cancellation
-  [ ] TOOL_CALL_RESULT retry on transient tool failures
+**Observability**
+- [ ] OTel spans on every AG-UI event (trace ID propagated)
+- [ ] run_id and thread_id in all log lines
+- [ ] Metrics: events/second, HITL approval rate, run duration, error rate
+- [ ] Audit log: append-only, tool call args + user identity + decision
 
-Observability
-  [ ] OTel spans on every AG-UI event (trace ID propagated)
-  [ ] run_id and thread_id in all log lines
-  [ ] Metrics: events/second, HITL approval rate, run duration, error rate
-  [ ] Audit log: append-only, tool call args + user identity + decision
+**Security**
+- [ ] CUSTOM event payload validated against JSON Schema
+- [ ] MCP App UI resources sandboxed (CSP iframe)
+- [ ] Tool call args sanitized before execution
+- [ ] Output guardrails on TEXT_MESSAGE stream (PII, safety)
 
-Security
-  [ ] CUSTOM event payload validated against JSON Schema
-  [ ] MCP App UI resources sandboxed (CSP iframe)
-  [ ] Tool call args sanitized before execution
-  [ ] Output guardrails on TEXT_MESSAGE stream (PII, safety)
-
-Testing
-  [ ] AG-UI conformance test suite against all event types
-  [ ] Load test: 100 concurrent SSE streams
-  [ ] Chaos test: mid-stream tool failure, SSE disconnect, timeout
-  [ ] HITL approval latency test (P99 approval round-trip)
-```
+**Testing**
+- [ ] AG-UI conformance test suite against all event types
+- [ ] Load test: 100 concurrent SSE streams
+- [ ] Chaos test: mid-stream tool failure, SSE disconnect, timeout
+- [ ] HITL approval latency test (P99 approval round-trip)
 
 :::tip Cross-Reference: Observability
     For OTel span schema specific to AG-UI events (run spans, step spans, tool call spans), see [Reliability, Observability & Governance](../../../architecture/43-agentic-ai-reliability-observability-governance.md). For security hardening beyond this page, see [Agentic AI Security & Identity](../../../trust/05-agentic-ai-security-identity.md) OWASP ASI mapping.

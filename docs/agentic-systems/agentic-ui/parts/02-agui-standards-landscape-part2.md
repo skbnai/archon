@@ -186,56 +186,56 @@ MCP Apps is an architectural pattern (originally standardized through CopilotKit
 
 ### 4.1 Architecture
 
-```text
-MCP APPS ARCHITECTURE
+```mermaid
+graph TB
+    subgraph SRV["MCP App Server"]
+        subgraph TD["Tool Definitions"]
+            T1[get_invoice]
+            T2[approve_invoice]
+            T3[query_spend]
+            T4[create_order]
+        end
+        subgraph UI["UI Resources"]
+            U1["InvoiceCard.tsx (React)"]
+            U2["ApprovalPanel.tsx (React)"]
+            U3["SpendChart.tsx (React)"]
+            U4["OrderForm.tsx (React)"]
+        end
+        T1 <--> U1
+        T2 <--> U2
+        T3 <--> U3
+        T4 <--> U4
+        EXP["Exposes via MCP protocol:<br/>tools/list, tools/call,<br/>resources/list, resources/read"]
+    end
 
-┌──────────────────────────────────────────────────────────────┐
-│  MCP App Server                                             │
-│                                                            │
-│  ┌─────────────────┐    ┌───────────────────────────────┐  │
-│  │ Tool Definitions │    │ UI Resources                  │  │
-│  │                 │    │                               │  │
-│  │  get_invoice    │◄──►│  InvoiceCard.tsx (React)      │  │
-│  │  approve_invoice│◄──►│  ApprovalPanel.tsx (React)    │  │
-│  │  query_spend    │◄──►│  SpendChart.tsx (React)       │  │
-│  │  create_order   │◄──►│  OrderForm.tsx (React)        │  │
-│  └─────────────────┘    └───────────────────────────────┘  │
-│                                                            │
-│  Exposes via MCP protocol:                                 │
-│  - tools/list → tool definitions                          │
-│  - tools/call → tool execution results                    │
-│  - resources/list → UI resource URLs                       │
-│  - resources/read → UI component code                      │
-└──────────────────────────────────────────────────────────────┘
-         ▲                              ▲
-         │ Tool calls                   │ UI resource fetch
-         │                              │
-┌────────┴────────┐          ┌──────────┴────────────────────┐
-│ Agent Backend   │          │ CopilotKit MCPAppsMiddleware  │
-│                 │          │                               │
-│ Calls MCP tools │          │ Intercepts TOOL_CALL_START    │
-│ Receives results│          │ Looks up UI resource for tool │
-│ Emits AG-UI     │          │ Fetches component code        │
-│ events          │          │ Emits CUSTOM a2ui_surface evt │
-└─────────────────┘          └───────────────────────────────┘
+    AB["Agent Backend<br/>Calls MCP tools, receives results,<br/>emits AG-UI events"] -- "Tool calls" --> SRV
+    MW["CopilotKit MCPAppsMiddleware<br/>Intercepts TOOL_CALL_START, looks up UI resource,<br/>fetches component code, emits CUSTOM a2ui_surface event"] -- "UI resource fetch" --> SRV
 ```
+
+*MCP Apps architecture: each tool definition pairs with a matching UI resource on the server; the agent backend calls tools while the middleware fetches and emits the corresponding UI component.*
 
 ### 4.2 Frontend Tool Execution Lifecycle
 
-```text
-MCP APPS TOOL EXECUTION — STEP BY STEP
+```mermaid
+sequenceDiagram
+    participant Agent
+    participant MW as MCPAppsMiddleware
+    participant Server as MCP Server
+    participant Client as CopilotKit Client
+    participant User
 
-1. Agent calls tool "approve_invoice" via MCP
-2. MCPAppsMiddleware intercepts TOOL_CALL_START
-3. Middleware looks up "approve_invoice" in MCP resource registry
-4. Middleware fetches InvoiceApprovalPanel.tsx from MCP server
-5. Middleware emits CUSTOM event {type:"mcp_app_ui", component: <code>, props: <tool_args>}
-6. CopilotKit client receives CUSTOM event
-7. Client renders InvoiceApprovalPanel with tool args as props
-8. User interacts with the panel (approve / reject / modify)
-9. Client POSTs action to /agent/action: {type:"tool_result", result: {approved: true}}
-10. Agent receives tool result; continues execution
+    Agent->>MW: calls tool "approve_invoice" via MCP
+    MW->>MW: intercepts TOOL_CALL_START
+    MW->>Server: look up "approve_invoice" in resource registry
+    Server-->>MW: InvoiceApprovalPanel.tsx
+    MW->>Client: CUSTOM event {type:"mcp_app_ui", component, props: tool_args}
+    Client->>Client: render InvoiceApprovalPanel with tool args as props
+    User->>Client: interacts with panel (approve / reject / modify)
+    Client->>Agent: POST /agent/action {type:"tool_result", result: {approved: true}}
+    Agent->>Agent: receives tool result; continues execution
 ```
+
+*Frontend tool execution lifecycle for MCP Apps: the middleware intercepts the tool call, fetches the matching UI resource, and the rendered panel's user interaction posts a result back to the agent.*
 
 ### 4.3 MCP Apps Security Model
 
@@ -251,36 +251,16 @@ MCP APPS TOOL EXECUTION — STEP BY STEP
 
 For organizations operating multiple MCP App servers, a centralized registry provides discovery, governance, and access control:
 
-```text
-ENTERPRISE MCP APP REGISTRY
-
-             Tool Discovery Request
-                      │
-                      ▼
-          ┌───────────────────────┐
-          │ MCP Registry Service  │
-          │                       │
-          │  Tool catalog         │
-          │  Server health        │
-          │  Access policy        │
-          │  Rate limit config    │
-          │  Audit routing        │
-          └──────────┬────────────┘
-                     │
-        ┌────────────┼──────────────┐
-        │            │              │
-   ┌────▼────┐  ┌────▼────┐  ┌────▼────┐
-   │MCP App  │  │MCP App  │  │MCP App  │
-   │Finance  │  │HR       │  │Legal    │
-   │Server   │  │Server   │  │Server   │
-   └─────────┘  └─────────┘  └─────────┘
-
-Policy enforced at registry:
-  - Role-based server access (Finance team → Finance MCP only)
-  - Data classification gates (PII tools require DLP approval)
-  - Rate limiting per team per server
-  - Versioned tool routing (canary 10% to v2, 90% to v1)
+```mermaid
+graph TB
+    REQ["Tool Discovery Request"] --> REG
+    REG["MCP Registry Service<br/>Tool catalog · Server health · Access policy ·<br/>Rate limit config · Audit routing"]
+    REG --> F["MCP App Server — Finance"]
+    REG --> H["MCP App Server — HR"]
+    REG --> L["MCP App Server — Legal"]
 ```
+
+*Enterprise MCP App registry: a central service governs discovery, health, access policy, and rate limits across per-domain MCP App servers. Policy enforced at the registry: role-based server access (e.g. Finance team → Finance MCP only), data classification gates (PII tools require DLP approval), per-team-per-server rate limiting, and versioned tool routing (e.g. canary 10% to v2, 90% to v1).*
 
 ### 4.5 Code Example: Minimal MCP App Server
 
