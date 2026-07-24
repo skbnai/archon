@@ -212,7 +212,7 @@ Business failures (escalate, don't retry):
 3. **Permissions**: A mega-agent has access to every tool — a security risk. Compromise of one workflow gives access to all capabilities.
 4. **Testing**: You cannot test individual capabilities in isolation.
 
-**The correct pattern**: Specialized agents with narrow scopes, coordinated by a supervisor. See [A2A Orchestration Patterns](./a2a-orchestration-patterns).
+**The correct pattern**: Specialized agents with narrow scopes, coordinated by a supervisor. See [A2A Orchestration Patterns](./11-a2a-orchestration-patterns.md).
 
 ---
 
@@ -224,7 +224,7 @@ Business failures (escalate, don't retry):
 
 **Why it fails**: AI systems fail in ways humans would catch trivially. A confident hallucination on a $100,000 loan decision, with no human review, can cause financial and reputational harm that takes months to resolve.
 
-**The correct pattern**: Risk-tier every decision. High-stakes decisions always have a human gate. See [Human-in-the-Loop Architectures](./human-in-the-loop-architectures).
+**The correct pattern**: Risk-tier every decision. High-stakes decisions always have a human gate. See [Human-in-the-Loop Architectures](./12-human-in-the-loop-architectures.md).
 
 ---
 
@@ -314,4 +314,4 @@ class MyWorkflow:
 
 ## Related
 
-[Reliability Playbook](./reliability-playbook) · [Enterprise Governance Model](./18-enterprise-governance-model.md) · [Human-in-the-Loop Architectures](./human-in-the-loop-architectures) · [Durable Execution vs Cognitive Execution](./durable-vs-cognitive-execution)
+[Reliability Playbook](./15-reliability-playbook.md) · [Enterprise Governance Model](./18-enterprise-governance-model.md) · [Human-in-the-Loop Architectures](./12-human-in-the-loop-architectures.md) · [Durable Execution vs Cognitive Execution](./06-durable-vs-cognitive-execution.md)

@@ -391,4 +391,4 @@ You'll need traces for:
 
 ---
 
-**Next**: Understand what distinguishes [Workflows from Agents](./workflow-vs-agent-architecture).
+**Next**: Understand what distinguishes [Workflows from Agents](./03-workflow-vs-agent-architecture.md).

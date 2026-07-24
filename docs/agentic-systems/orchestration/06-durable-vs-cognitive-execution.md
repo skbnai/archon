@@ -315,4 +315,4 @@ The future is not one or the other. It is building the judgment to know which la
 
 ---
 
-**Related sections**: [Workflow vs Agent Architecture](./workflow-vs-agent-architecture) · [Temporal Deep Dive](./temporal-deep-dive) · [Memory vs Workflow State](./memory-vs-workflow-state) · [Reliability Playbook](./reliability-playbook)
+**Related sections**: [Workflow vs Agent Architecture](./03-workflow-vs-agent-architecture.md) · [Temporal Deep Dive](./04-temporal-deep-dive.md) · [Memory vs Workflow State](./13-memory-vs-workflow-state.md) · [Reliability Playbook](./15-reliability-playbook.md)

@@ -415,4 +415,4 @@ The intake and underwriting agents are sequential (one depends on the other). Cr
 
 ## Related
 
-[Agent Frameworks Comparison](./agent-frameworks-comparison) · [Human-in-the-Loop Architectures](./human-in-the-loop-architectures) · [Reliability Playbook](./reliability-playbook) · [Observability Framework](./observability-framework)
+[Agent Frameworks Comparison](./08-agent-frameworks-comparison.md) · [Human-in-the-Loop Architectures](./12-human-in-the-loop-architectures.md) · [Reliability Playbook](./15-reliability-playbook.md) · [Observability Framework](./16-observability-framework.md)

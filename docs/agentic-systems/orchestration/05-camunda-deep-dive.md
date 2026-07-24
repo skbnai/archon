@@ -442,4 +442,4 @@ Choose HYBRID if:
 
 ---
 
-**Next**: Explore [AI Coding Orchestrators](./ai-coding-orchestrators) to see how Claude Code/GitHub Copilot orchestrate differently, or read [Decision Matrix](./decision-matrix) for a comprehensive comparison.
+**Next**: Explore [AI Coding Orchestrators](./07-ai-coding-orchestrators.md) to see how Claude Code/GitHub Copilot orchestrate differently, or read [Decision Matrix](./20-decision-matrix.md) for a comprehensive comparison.

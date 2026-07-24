@@ -441,4 +441,4 @@ Consider:
 
 ---
 
-**Next**: Compare [Agent Frameworks](./ai-coding-orchestrators) (LangGraph vs. CrewAI vs. Semantic Kernel), or jump to [Reference Architectures](./reference-architectures) for real-world patterns.
+**Next**: Compare [Agent Frameworks](./07-ai-coding-orchestrators.md) (LangGraph vs. CrewAI vs. Semantic Kernel), or jump to [Reference Architectures](./19-reference-architectures.md) for real-world patterns.

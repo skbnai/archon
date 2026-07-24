@@ -403,4 +403,4 @@ MCP adds latency at tool discovery time. Profile before and after introducing MC
 
 ## Related
 
-[Tool Calling Orchestration](./tool-calling-orchestration) · [Agent Frameworks Comparison](./agent-frameworks-comparison) · [Security Architecture](./security-architecture) · [A2A Orchestration Patterns](./a2a-orchestration-patterns)
+[Tool Calling Orchestration](./09-tool-calling-orchestration.md) · [Agent Frameworks Comparison](./08-agent-frameworks-comparison.md) · [Security Architecture](./17-workflow-orchestration-security-architecture.md) · [A2A Orchestration Patterns](./11-a2a-orchestration-patterns.md)

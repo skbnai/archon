@@ -460,4 +460,4 @@ class AppealsWorkflow:
 
 ## Related
 
-[Enterprise Governance Model](./enterprise-governance-model) · [A2A Orchestration Patterns](./a2a-orchestration-patterns) · [Security Architecture](./security-architecture) · [Temporal Deep Dive](./temporal-deep-dive)
+[Enterprise Governance Model](./18-enterprise-governance-model.md) · [A2A Orchestration Patterns](./11-a2a-orchestration-patterns.md) · [Security Architecture](./17-workflow-orchestration-security-architecture.md) · [Temporal Deep Dive](./04-temporal-deep-dive.md)

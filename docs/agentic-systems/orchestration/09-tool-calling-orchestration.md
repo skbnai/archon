@@ -224,7 +224,7 @@ def get_tools_for_agent(agent_role: str) -> list[dict]:
 
 ### Dynamic Tool Discovery (MCP)
 
-Tools discovered at runtime from MCP servers. The agent queries what's available before deciding what to call. See [MCP Impact](./mcp-impact) for full details.
+Tools discovered at runtime from MCP servers. The agent queries what's available before deciding what to call. See [MCP Impact](./10-mcp-impact.md) for full details.
 
 ```python
 from mcp import ClientSession, StdioServerParameters
@@ -416,4 +416,4 @@ def get_tool_for_agent(tool_name: str, agent_version_constraint: str = "latest")
 
 ## Related
 
-[MCP Impact](./mcp-impact) · [Agent Frameworks Comparison](./agent-frameworks-comparison) · [Durable Execution vs Cognitive Execution](./durable-vs-cognitive-execution) · [Reliability Playbook](./reliability-playbook)
+[MCP Impact](./10-mcp-impact.md) · [Agent Frameworks Comparison](./08-agent-frameworks-comparison.md) · [Durable Execution vs Cognitive Execution](./06-durable-vs-cognitive-execution.md) · [Reliability Playbook](./15-reliability-playbook.md)

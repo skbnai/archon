@@ -370,4 +370,4 @@ async def migrate_memories_for_model_upgrade(
 
 ## Related
 
-[Durable Execution vs Cognitive Execution](./durable-vs-cognitive-execution) · [Reliability Playbook](./reliability-playbook) · [Agent Frameworks Comparison](./agent-frameworks-comparison) · [Temporal Deep Dive](./temporal-deep-dive)
+[Durable Execution vs Cognitive Execution](./06-durable-vs-cognitive-execution.md) · [Reliability Playbook](./15-reliability-playbook.md) · [Agent Frameworks Comparison](./08-agent-frameworks-comparison.md) · [Temporal Deep Dive](./04-temporal-deep-dive.md)

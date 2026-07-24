@@ -603,4 +603,4 @@ The agent framework handles: reasoning, tool selection, and adaptive behavior wi
 
 ## Related
 
-[Durable Execution vs Cognitive Execution](./durable-vs-cognitive-execution) · [Tool Calling Orchestration](./tool-calling-orchestration) · [A2A Orchestration Patterns](./a2a-orchestration-patterns) · [AI Coding Orchestrators](./ai-coding-orchestrators)
+[Durable Execution vs Cognitive Execution](./06-durable-vs-cognitive-execution.md) · [Tool Calling Orchestration](./09-tool-calling-orchestration.md) · [A2A Orchestration Patterns](./11-a2a-orchestration-patterns.md) · [AI Coding Orchestrators](./07-ai-coding-orchestrators.md)

@@ -380,4 +380,4 @@ flowchart TD
 
 ---
 
-**Next**: Explore [Camunda and BPM](./camunda-deep-dive) for comparison, or jump to [Hybrid Architectures](./reference-architectures).
+**Next**: Explore [Camunda and BPM](./05-camunda-deep-dive.md) for comparison, or jump to [Hybrid Architectures](./19-reference-architectures.md).

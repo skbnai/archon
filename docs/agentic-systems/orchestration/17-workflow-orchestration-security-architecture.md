@@ -439,4 +439,4 @@ async def handle_security_event(event: SecurityEvent, workflow_id: str, details:
 
 ## Related
 
-[Observability Framework](./16-observability-framework.md) · [Enterprise Governance Model](./18-enterprise-governance-model.md) · [MCP Impact](./mcp-impact) · [Tool Calling Orchestration](./tool-calling-orchestration)
+[Observability Framework](./16-observability-framework.md) · [Enterprise Governance Model](./18-enterprise-governance-model.md) · [MCP Impact](./10-mcp-impact.md) · [Tool Calling Orchestration](./09-tool-calling-orchestration.md)

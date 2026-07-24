@@ -368,10 +368,10 @@ def format_plan_for_human_review(plan: list[dict]) -> str:
 #     Reversible: No — requires approval
 ```
 
-This "show the plan, get approval, then execute" pattern is the bridge between AI planning and human-in-the-loop governance. See [Human-in-the-Loop Architectures](./human-in-the-loop-architectures) for implementation.
+This "show the plan, get approval, then execute" pattern is the bridge between AI planning and human-in-the-loop governance. See [Human-in-the-Loop Architectures](./12-human-in-the-loop-architectures.md) for implementation.
 
 ---
 
 ## Related
 
-[Durable Execution vs Cognitive Execution](./durable-vs-cognitive-execution) · [Tool Calling Orchestration](./tool-calling-orchestration) · [Human-in-the-Loop Architectures](./human-in-the-loop-architectures) · [Agent Frameworks Comparison](./agent-frameworks-comparison)
+[Durable Execution vs Cognitive Execution](./06-durable-vs-cognitive-execution.md) · [Tool Calling Orchestration](./09-tool-calling-orchestration.md) · [Human-in-the-Loop Architectures](./12-human-in-the-loop-architectures.md) · [Agent Frameworks Comparison](./08-agent-frameworks-comparison.md)

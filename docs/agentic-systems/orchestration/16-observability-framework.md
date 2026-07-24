@@ -480,4 +480,4 @@ def find_escalated_runs(hours: int = 24) -> list[dict]:
 
 ## Related
 
-[Reliability Playbook](./reliability-playbook) · [Security Architecture](./17-workflow-orchestration-security-architecture.md) · [Enterprise Governance Model](./18-enterprise-governance-model.md) · [Human-in-the-Loop Architectures](./human-in-the-loop-architectures)
+[Reliability Playbook](./15-reliability-playbook.md) · [Security Architecture](./17-workflow-orchestration-security-architecture.md) · [Enterprise Governance Model](./18-enterprise-governance-model.md) · [Human-in-the-Loop Architectures](./12-human-in-the-loop-architectures.md)

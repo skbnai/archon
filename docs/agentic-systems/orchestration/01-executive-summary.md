@@ -227,16 +227,16 @@ Each layer:
 ## Next Steps
 
 **For CIOs/CTOs**:  
-Start with the [Decision Matrix](./decision-matrix). Choose your platform strategy by Q4 2026.
+Start with the [Decision Matrix](./20-decision-matrix.md). Choose your platform strategy by Q4 2026.
 
 **For Enterprise Architects**:  
-Read [Workflow vs. Agent Architecture](./workflow-vs-agent-architecture), then deep-dive into your platform of choice.
+Read [Workflow vs. Agent Architecture](./03-workflow-vs-agent-architecture.md), then deep-dive into your platform of choice.
 
 **For Platform Engineers**:  
-Study the [Hybrid Reference Architecture](./reference-architectures) and implement internal orchestration patterns.
+Study the [Hybrid Reference Architecture](./19-reference-architectures.md) and implement internal orchestration patterns.
 
 **For AI Governance**:  
-Review [Enterprise Governance Model](./reference-architectures) for versioning, audit, and oversight.
+Review [Enterprise Governance Model](./18-enterprise-governance-model.md) for versioning, audit, and oversight.
 
 ---
 

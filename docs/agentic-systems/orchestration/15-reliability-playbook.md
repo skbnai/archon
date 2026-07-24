@@ -357,4 +357,4 @@ Set Temporal `start_to_close_timeout` to your p99 + 20% margin. Build alerting o
 
 ## Related
 
-[Observability Framework](./observability-framework) · [Human-in-the-Loop Architectures](./human-in-the-loop-architectures) · [Anti-Patterns Catalog](./anti-patterns-catalog) · [Enterprise Governance Model](./enterprise-governance-model)
+[Observability Framework](./16-observability-framework.md) · [Human-in-the-Loop Architectures](./12-human-in-the-loop-architectures.md) · [Anti-Patterns Catalog](./22-anti-patterns-catalog.md) · [Enterprise Governance Model](./18-enterprise-governance-model.md)

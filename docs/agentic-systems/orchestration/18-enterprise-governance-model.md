@@ -399,4 +399,4 @@ Before any MAJOR change ships to production:
 
 ## Related
 
-[Human-in-the-Loop Architectures](./human-in-the-loop-architectures) · [Security Architecture](./17-workflow-orchestration-security-architecture.md) · [Observability Framework](./16-observability-framework.md) · [Capability Maturity Model](./23-capability-maturity-model.md)
+[Human-in-the-Loop Architectures](./12-human-in-the-loop-architectures.md) · [Security Architecture](./17-workflow-orchestration-security-architecture.md) · [Observability Framework](./16-observability-framework.md) · [Capability Maturity Model](./23-capability-maturity-model.md)

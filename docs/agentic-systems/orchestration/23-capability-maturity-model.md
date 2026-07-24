@@ -365,4 +365,4 @@ def assess_level(scores: dict) -> int:
 
 ## Related
 
-[Enterprise Governance Model](./18-enterprise-governance-model.md) · [Reference Architectures](./19-reference-architectures.md) · [Decision Matrix](./20-decision-matrix.md) · [Human-in-the-Loop Architectures](./human-in-the-loop-architectures)
+[Enterprise Governance Model](./18-enterprise-governance-model.md) · [Reference Architectures](./19-reference-architectures.md) · [Decision Matrix](./20-decision-matrix.md) · [Human-in-the-Loop Architectures](./12-human-in-the-loop-architectures.md)
