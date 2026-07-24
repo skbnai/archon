@@ -299,11 +299,7 @@ flowchart TD
 
 *AG-UI middleware chain: a request passes through auth, rate limiting, context assembly, and policy evaluation before the agent runs, then outbound events pass through guardrails and observability before serialization.*
 
-CopilotKit MCPAppsMiddleware sits between Agent Runner and Guardrail Middleware
-  — intercepts TOOL_CALL_START events
-  — resolves UI resources from MCP registry
-  — emits CUSTOM a2ui_surface event before TOOL_CALL_RESULT
-```
+CopilotKit's `MCPAppsMiddleware` sits between Agent Runner and Guardrail Middleware: it intercepts `TOOL_CALL_START` events, resolves UI resources from the MCP registry, and emits a `CUSTOM` `a2ui_surface` event before `TOOL_CALL_RESULT`.
 
 ### 2.9 Security Model
 

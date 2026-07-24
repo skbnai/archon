@@ -643,5 +643,11 @@ const swarm = await flow.createSwarm({
     maxConcurrentAgents: 5,       // cap parallelism
     maxTokensPerAgent: 50_000,    // per-agent token budget
     maxTotalTokens: 200_000,      // workflow-level budget
+    timeoutMs: 60_000,            // per-agent timeout
+    retryOnTimeout: true,
+    maxRetries: 2,
+  },
+});
+```
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/41-ruflo-agentic-ai-guide-part2.md) for continued content.**

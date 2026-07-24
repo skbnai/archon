@@ -11,12 +11,6 @@ supersedes: []
 
 
 **This is Part 2 of 2. [Back to Part 1 ←](pathname:///archon/agentic-systems/coding-tools/41-ruflo-agentic-ai-guide) for the beginning.**
-    timeoutMs: 60_000,            // per-agent timeout
-    retryOnTimeout: true,
-    maxRetries: 2,
-  },
-});
-```
 
 ---
 
