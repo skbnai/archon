@@ -115,6 +115,22 @@ graph TD
 
 ## 6. Package contents
 
+### Enterprise Platform Research (11 parts)
+
+| File | Covers |
+| --- | --- |
+| [Part 1 — Foundations: What Is an Agent Skill?](29-foundations-what-is-an-agent-skill.md) | Skill vs. Tool/Workflow/Agent/Prompt, progressive disclosure |
+| [Part 2 — Skill Anatomy & Metadata Schema](01-agent-skill-anatomy-metadata-schema.md) | Internal structure, metadata schema, Deliverable 4 |
+| [Part 3 — Execution Lifecycle & Tracing](30-execution-lifecycle-and-tracing.md) | End-to-end flow, Deliverable 2 |
+| [Part 4 — Skills, Tools, MCP, A2A Relationship](31-skills-tools-mcp-a2a-relationship.md) | Decision matrix, Deliverable 3 |
+| [Part 5 — Tool Definition Best Practices](32-tool-definition-best-practices.md) | Best-practice template, Deliverable 5 |
+| [Part 6 — Registry, Discovery & Deduplication](33-registry-discovery-and-deduplication.md) | Registry architecture, Deliverable 9 |
+| [Part 7 — Composition & Instructions Engineering](34-composition-and-instructions-engineering.md) | Skill composition, instructions engineering |
+| [Part 8 — Observability & Evaluation](35-observability-and-evaluation.md) | Logging, tracing, eval, Deliverable 7 |
+| [Part 9 — Security Architecture](36-agent-skills-security-architecture.md) | Security, Deliverable 8 |
+| [Part 10 — Governance & Lifecycle](37-governance-and-lifecycle.md) | Governance model, Deliverable 6 |
+| [Part 11 — Architecture Patterns, Anti-Patterns & Case Studies](38-architecture-patterns-antipatterns-and-case-studies.md) | Patterns, anti-patterns, vendor cases, Deliverable 10 |
+
 ### Coding Assistant Research (12 parts)
 
 | File | Covers |

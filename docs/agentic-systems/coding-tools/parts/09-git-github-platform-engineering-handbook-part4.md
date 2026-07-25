@@ -467,9 +467,19 @@ jobs:
 | `security-and-quality` | Security + code quality / correctness | Full-fidelity scan, slower |
 | Custom `.ql` files | Domain-specific patterns | Internal API misuse, compliance rules |
 
+**Suppressing false positives:**
+
+```python
+# codeql-suppress: py/sql-injection
+# This query is parameterized; suppression is intentional
+result = db.execute(query, params)
+```
+
 ### Secret Scanning and Push Protection
 
 Secret scanning scans every push for 200+ credential patterns (API keys, tokens, certificates). Push Protection blocks the push before the secret hits the remote.
+
+**Configuration** (`.github/secret_scanning.yml`):
 
 ```yaml
 paths-ignore:
@@ -539,6 +549,8 @@ updates:
       github-actions-updates:
         patterns: ["*"]
 ```
+
+**Dependabot security updates**: Automatically open PRs for known CVEs regardless of schedule — always enabled separately from version updates.
 
 ### GHAS Org Policies
 
@@ -643,16 +655,58 @@ gh api --method PATCH /orgs/myorg/settings/billing/actions \
 | Set model selection policy to "standard" for test/dev environments | Significant | Devs on dev environments use cheaper model tier |
 | Use `.copilotignore` to exclude generated files, fixtures, vendor code | 5–15% | No suggestions in excluded files |
 
-### Codebase Indexing and Fine-Tuned Models
+### Codebase Indexing
 
-Codebase indexing gives Copilot semantic understanding of your entire repository. Setup: GitHub org → Settings → Copilot → Codebase indexing → Enable for repository.
+Codebase indexing gives Copilot semantic understanding of your entire repository — suggestions and chat responses become aware of your APIs, conventions, and project structure.
+
+**Setup:**
+
+1. GitHub org → Settings → Copilot → Codebase indexing → Enable for repository.
+2. Index builds on push to default branch; initial index takes minutes to hours depending on repo size.
+3. Index is re-built incrementally on subsequent pushes.
 
 **Optimizing index quality:**
 
 - Keep the repo's default branch clean — the index reflects `main`, not feature branches.
-- Add a `copilot-instructions.md` with project conventions describing architecture, naming patterns, preferred libraries, and patterns to avoid.
+- Add a `copilot-instructions.md` (or `.github/copilot-instructions.md`) with project conventions:
 
-**Fine-Tuned Custom Models** are supported on Copilot Enterprise for orgs with sufficient code volume. Custom models improve code completion suggestions aligned to your naming conventions, internal APIs, and patterns. Training data is your repos (GitHub never uses it for shared models), and data never leaves your enterprise isolation boundary.
+```markdown
+# Copilot Instructions
+
+## Architecture
+This is a Python FastAPI application using PostgreSQL (via SQLAlchemy ORM).
+All API endpoints live in `src/api/`; database models in `src/models/`.
+
+## Conventions
+- Use `async def` for all route handlers.
+- All database operations must be inside a `async with db.begin():` transaction context.
+- Error responses use the `ErrorResponse` schema from `src/schemas/errors.py`.
+- Tests use pytest with the fixtures in `tests/conftest.py`.
+
+## What Copilot Should Avoid
+- Do not suggest raw SQL strings — always use SQLAlchemy ORM.
+- Do not suggest `print()` for logging — use `structlog` from `src/logging.py`.
+```
+
+### Fine-Tuned Custom Models
+
+GitHub Copilot Enterprise supports fine-tuned code completion models trained on your private codebase.
+
+| Aspect | Detail |
+| --- | --- |
+| **Eligibility** | GitHub Copilot Enterprise plan; org must have sufficient code volume (GitHub guidance: tens of thousands of files) |
+| **What improves** | Code completion suggestions — aligned to your naming conventions, internal APIs, and patterns |
+| **What it does NOT improve** | Chat, agent mode, code review — these use foundation models with context injection |
+| **Training data** | Your repos (you choose which); GitHub never uses it to train shared models |
+| **Training frequency** | Periodic retraining schedule (days to weeks depending on tier) |
+| **Governance** | Opt specific repos in/out; data never leaves your enterprise isolation boundary |
+
+**Governance checklist before enabling fine-tuned models:**
+
+- [ ] Legal/privacy review of which repos are included in training data.
+- [ ] Exclude repos with third-party licensed code that restricts ML training (check license terms).
+- [ ] Document which model version is deployed (for compliance audit trail).
+- [ ] Establish a retraining cadence aligned with major codebase refactors.
 
 ### Enterprise MCP Admin
 
@@ -675,7 +729,18 @@ MCP (Model Context Protocol) connects Copilot to external tools. Enterprise admi
 | SOC 2 Type II | Certified; report available under NDA |
 | GDPR compliance | Covered by GitHub's DPA for Enterprise |
 
-**Practical step**: Request and sign the GitHub Data Processing Agreement (DPA) before deploying Copilot Enterprise in any regulated environment.
+**Practical step**: Request and sign the GitHub Data Processing Agreement (DPA) before deploying Copilot Enterprise in any regulated environment. The DPA formalizes the zero-training and data-handling guarantees.
+
+### SSO / SCIM Provisioning
+
+```yaml
+# IdP (Okta) → GitHub Enterprise managed users (EMU) SCIM flow:
+# 1. Configure GitHub as SAML app in Okta
+# 2. Assign Okta groups to GitHub org teams
+# 3. SCIM provisioner syncs users: new hires → auto-provisioned; offboarding → auto-deprovisioned
+# 4. Copilot seat assignment: link to Okta group → team → Copilot seat group
+# Result: Copilot access follows HR system; zero manual seat management
+```
 
 ### Best Practices
 
@@ -911,6 +976,29 @@ def get_lead_time(org: str, repo: str, token: str, days: int = 30) -> list[float
     return lead_times
 ```
 
+```yaml
+# GitHub Actions workflow to publish DORA metrics to Datadog
+name: DORA Metrics
+on:
+  schedule:
+    - cron: '0 8 * * 1'   # Monday 08:00 UTC
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install httpx
+      - name: Collect and publish metrics
+        run: python scripts/collect_dora_metrics.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DD_API_KEY: ${{ secrets.DD_API_KEY }}
+          ORG: ${{ github.repository_owner }}
+```
+
 ### AI Productivity Metrics
 
 GitHub's Copilot Metrics API provides data on AI adoption and impact:
@@ -930,6 +1018,20 @@ gh api /orgs/myorg/copilot/metrics \
 | **Coding agent PR rate** | Agent-authored PRs / total PRs | 10–30% for eligible tasks | Measures automation uptake |
 | **Code review turnaround** | Time from PR open to first review | Decreasing trend | Copilot review should accelerate this |
 | **Credit utilization** | credits_used / credits_allocated | 70–90% | Below 70% = underuse; above 90% = risk of cap |
+
+### AI Productivity Dashboard (Sample Datadog JSON structure)
+
+```json
+{
+  "title": "Copilot Productivity Dashboard",
+  "widgets": [
+    { "type": "timeseries", "metric": "copilot.acceptance_rate", "group_by": ["team"] },
+    { "type": "toplist",    "metric": "copilot.suggestions_accepted", "group_by": ["repo"] },
+    { "type": "query_value","metric": "copilot.active_users",  "aggregation": "last" },
+    { "type": "timeseries", "metric": "copilot.credits_used",  "group_by": ["feature"] }
+  ]
+}
+```
 
 ### AI Credits ROI Analysis
 

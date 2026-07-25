@@ -2,7 +2,7 @@
 title: "Decision Frameworks"
 date_created: 2026-07-24
 last_reviewed: 2026-07-24
-status: current
+status: draft
 doc_type: guide
 domain: agentic-systems
 topic_id: decision-frameworks
@@ -14,4 +14,4 @@ covers_version: "as of 2026-07-10"
 
 # Decision Frameworks
 
-This guide is coming soon.
+This guide is coming soon. See the [Agentic UI Overview](../index.md) for related content.

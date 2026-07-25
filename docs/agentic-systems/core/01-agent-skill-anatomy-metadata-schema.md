@@ -19,11 +19,11 @@ tags: ["agentic-systems", "skill", "enterprise", "coding-tools", "research"]
 
 ```
 my-skill/
-├── SKILL.md              # REQUIRED
-├── references/            # OPTIONAL: deep docs loaded on demand
-├── scripts/                # OPTIONAL: helper scripts (executed, not read into context)
-├── templates/               # OPTIONAL: boilerplate/scaffold files (e.g., bug-report.md)
-└── evals/                    # RECOMMENDED: regression tests (evals.json)
+  SKILL.md          # REQUIRED
+  references/       # OPTIONAL: deep docs loaded on demand
+  scripts/           # OPTIONAL: helper scripts (executed, not read into context)
+  templates/         # OPTIONAL: boilerplate/scaffold files (e.g., bug-report.md)
+  evals/             # RECOMMENDED: regression tests (evals.json)
 ```
 
 This baseline is identical for the enterprise and coding-assistant cases because it's the same open spec. GitHub's own example shows exactly this shape: a `github-issues/` skill next to a `code-review/` skill, each with its own `SKILL.md` and a `templates/` subfolder.
