@@ -40,7 +40,7 @@ Pairwise similarity within this cluster:
 
 - 68%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
 - 66%  `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
-- 65%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2`
+- 64%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2`
 
 ## Cluster (3 pages)
 
@@ -50,7 +50,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 64%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
+- 65%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
 - 61%  `architecture/04-aidlc-artifacts-togaf-migration-to-ea` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
 - 54%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/04-aidlc-artifacts-togaf-migration-to-ea`
 
@@ -61,7 +61,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 62%  `agentic-systems/coding-tools/23-claude-ecosystem-research-report` <-> `agentic-systems/coding-tools/parts/23-claude-ecosystem-research-report-part2`
+- 63%  `agentic-systems/coding-tools/23-claude-ecosystem-research-report` <-> `agentic-systems/coding-tools/parts/23-claude-ecosystem-research-report-part2`
 
 ## Cluster (2 pages)
 
