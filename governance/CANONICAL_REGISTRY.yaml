@@ -2202,11 +2202,32 @@ topics:
     aliases: []
     supersedes: []
     pages: []
+  - id: mcp-deep-research-2026-part2
+    domain: protocols
+    canonical: docs/protocols/parts/13-mcp-deep-research-2026-part2.md
+    aliases:
+    - 'mcp deep research 2026: part 2'
+    supersedes: []
+    pages: []
   - id: mcp-enterprise-security-governance-operations-2026
     domain: protocols
     canonical: docs/protocols/14-mcp-enterprise-security-governance-operations-2026.md
     aliases:
     - enterprise mcp security, authorization, governance & operations
+    supersedes: []
+    pages: []
+  - id: mcp-enterprise-security-governance-operations-2026-part2
+    domain: protocols
+    canonical: docs/protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2.md
+    aliases:
+    - 'enterprise mcp security, authorization, governance & operations: part 2'
+    supersedes: []
+    pages: []
+  - id: mcp-enterprise-security-governance-operations-2026-part3
+    domain: protocols
+    canonical: docs/protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part3.md
+    aliases:
+    - 'enterprise mcp security, authorization, governance & operations: part 3'
     supersedes: []
     pages: []
   - id: mcp-harness-aidlc
@@ -2223,6 +2244,13 @@ topics:
     - ai protocols, frameworks & standards 2026
     supersedes: []
     pages: []
+  - id: ai-protocols-standards-service-industry-guide-2026-part2
+    domain: protocols
+    canonical: docs/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2.md
+    aliases:
+    - 'ai protocols, frameworks & standards 2026: part 2'
+    supersedes: []
+    pages: []
   - id: agent-protocol-metadata-headers
     domain: protocols
     canonical: docs/protocols/17-agent-protocol-metadata-headers.md
@@ -2237,11 +2265,25 @@ topics:
     - 'section 2a: acp & anp deep dives — federated and decentralised agent protocols'
     supersedes: []
     pages: []
+  - id: emerging-protocols-acp-anp-part2
+    domain: protocols
+    canonical: docs/protocols/parts/18-emerging-protocols-acp-anp-part2.md
+    aliases:
+    - 'section 2a: acp & anp deep dives — federated and decentralised agent protocols: part 2'
+    supersedes: []
+    pages: []
   - id: emerging-protocols-agui-utcp
     domain: protocols
     canonical: docs/protocols/19-emerging-protocols-agui-utcp.md
     aliases:
     - 'section 2b: ag-ui & utcp — enterprise architecture deep dive'
+    supersedes: []
+    pages: []
+  - id: emerging-protocols-agui-utcp-part2
+    domain: protocols
+    canonical: docs/protocols/parts/19-emerging-protocols-agui-utcp-part2.md
+    aliases:
+    - 'section 2b: ag-ui & utcp — enterprise architecture deep dive: part 2'
     supersedes: []
     pages: []
   - id: emerging-protocols-crosscutting
@@ -2251,6 +2293,13 @@ topics:
     - 'section 3 — cross-cutting architecture: security, governance, compliance & observability'
     supersedes: []
     pages: []
+  - id: emerging-protocols-crosscutting-part2
+    domain: protocols
+    canonical: docs/protocols/parts/20-emerging-protocols-crosscutting-part2.md
+    aliases:
+    - 'section 3 — cross-cutting architecture: security, governance, compliance & observability: part 2'
+    supersedes: []
+    pages: []
   - id: emerging-protocols-overview
     domain: protocols
     canonical: docs/protocols/21-emerging-protocols-overview.md
@@ -2258,11 +2307,32 @@ topics:
     - emerging ai agent protocols beyond mcp & a2a — enterprise architecture, standards, security, and adoption
     supersedes: []
     pages: []
+  - id: emerging-protocols-overview-part2
+    domain: protocols
+    canonical: docs/protocols/parts/21-emerging-protocols-overview-part2.md
+    aliases:
+    - 'emerging ai agent protocols beyond mcp & a2a — enterprise architecture, standards, security, and adoption: part 2'
+    supersedes: []
+    pages: []
   - id: emerging-protocols-ucp-ap2-nlip-lmos
     domain: protocols
     canonical: docs/protocols/22-emerging-protocols-ucp-ap2-nlip-lmos.md
     aliases:
     - 'section 2c — emerging ai agent protocols: ucp, ap2, nlip & lmos deep dives'
+    supersedes: []
+    pages: []
+  - id: emerging-protocols-ucp-ap2-nlip-lmos-part2
+    domain: protocols
+    canonical: docs/protocols/parts/22-emerging-protocols-ucp-ap2-nlip-lmos-part2.md
+    aliases:
+    - 'section 2c — emerging ai agent protocols: ucp, ap2, nlip & lmos deep dives: part 2'
+    supersedes: []
+    pages: []
+  - id: emerging-protocols-ucp-ap2-nlip-lmos-part3
+    domain: protocols
+    canonical: docs/protocols/parts/22-emerging-protocols-ucp-ap2-nlip-lmos-part3.md
+    aliases:
+    - 'section 2c — emerging ai agent protocols: ucp, ap2, nlip & lmos deep dives: part 3'
     supersedes: []
     pages: []
   - id: existing-protocol-evolution-agentic-ai
