@@ -1,0 +1,36 @@
+# Manually-reviewed false positives from the graphify "Deep duplicate gate"
+# (.github/workflows/graphify.yml, query_graph.py --duplicates --min 0.6).
+#
+# TF-IDF cosine similarity over full page text can score two genuinely
+# distinct pages above the cross-domain threshold when they share dense,
+# narrow technical vocabulary (e.g. two deep pages on the same protocol
+# that cover different aspects of it). Before adding an entry here, confirm
+# via an actual section-heading diff (not just the similarity score) that
+# the pages are NOT duplicates — this file suppresses the gate, it doesn't
+# fix a real duplicate.
+#
+# Entry shape: an unordered pair of doc_ids (graph node ids, "domain/NN-slug"
+# form, no .md). Order doesn't matter; query_graph.py matches either order.
+#
+# - pair: [doc-id-a, doc-id-b]
+#   reason: why these are legitimately distinct despite high similarity
+#   reviewed: YYYY-MM-DD
+
+exceptions:
+  - pair:
+      - protocols/19-emerging-protocols-agui-utcp
+      - agentic-systems/agentic-ui/parts/02-agui-standards-landscape-part3
+    reason: >
+      Both are deep AG-UI-adjacent documents but cover disjoint scope:
+      protocols/19 is an AG-UI/UTCP protocol-architecture reference
+      (event schema, transport, security model, enterprise deployment);
+      the agentic-systems page is a framework-comparison guide (NLWeb,
+      OpenAI Apps SDK, Microsoft Agent Framework) that only touches AG-UI
+      in one subsection. Confirmed via independent header-diffs on both
+      sides (reviewer agent, twice) finding zero real content overlap.
+      Trimming the shared subsection to reduce the TF-IDF score made it
+      worse, not better (removed unique code content, leaving
+      proportionally more shared vocabulary) — the high score is an
+      artifact of narrow-domain technical vocabulary overlap, not
+      duplication.
+    reviewed: 2026-07-25

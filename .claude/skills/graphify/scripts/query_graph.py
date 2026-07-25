@@ -33,11 +33,36 @@ Usage:
 """
 import json
 import argparse
+import os
 from collections import defaultdict
+
+try:
+    import yaml
+except ImportError:
+    yaml = None
+
+DEDUP_EXCEPTIONS_PATH = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..",
+    "governance", "DEDUP_EXCEPTIONS.yaml",
+)
 
 
 def load(path):
     return json.load(open(path, encoding="utf-8"))
+
+
+def load_dedup_exceptions(path=DEDUP_EXCEPTIONS_PATH):
+    """Manually-reviewed similar_to pairs to exclude from --duplicates.
+    See governance/DEDUP_EXCEPTIONS.yaml for the review criteria."""
+    if yaml is None or not os.path.isfile(path):
+        return set()
+    data = yaml.safe_load(open(path, encoding="utf-8")) or {}
+    pairs = set()
+    for entry in data.get("exceptions", []) or []:
+        pair = entry.get("pair") or []
+        if len(pair) == 2:
+            pairs.add(frozenset(pair))
+    return pairs
 
 
 def cmd_related(graph, doc_id, top):
@@ -152,7 +177,12 @@ def cmd_topic(graph, topic_id):
 
 
 def cmd_duplicates(graph, min_sim):
-    edges = [e for e in graph["edges"] if e["type"] == "similar_to" and e["weight"] >= min_sim]
+    exceptions = load_dedup_exceptions()
+    edges = [
+        e for e in graph["edges"]
+        if e["type"] == "similar_to" and e["weight"] >= min_sim
+        and frozenset((e["source"], e["target"])) not in exceptions
+    ]
     parent = {}
 
     def find(x):
@@ -181,6 +211,8 @@ def cmd_duplicates(graph, min_sim):
         (e["weight"] for e in edges if e["source"] in members and e["target"] in members),
         default=0))
 
+    if exceptions:
+        print(f"({len(exceptions)} manually-reviewed pair(s) suppressed via governance/DEDUP_EXCEPTIONS.yaml)\n")
     print(f"{len(ranked)} duplicate-candidate cluster(s) at >= {min_sim:.0%} similarity:\n")
     for members in ranked:
         cross_domain = len({domains.get(m, "") for m in members}) > 1
