@@ -209,7 +209,7 @@ graph TD
 ```mermaid
 graph TD
     A["External Input<br/>user text, tool output,<br/>retrieved document"]
-    A --> B["PII Detection &lt;&amp; Masking<br/>Presidio, Microsoft Purview"]
+    A --> B["PII Detection &amp; Masking<br/>Presidio, Microsoft Purview"]
     B --> C["Secret Detection<br/>TruffleHog patterns, GitGuardian"]
     C --> D["Injection Pattern Detection<br/>Prompt injection signatures,<br/>SQLi, path traversal"]
     D --> E["Markup Sanitization<br/>Strip HTML, &lt;IMPORTANT&gt;, XML-like tags"]
@@ -725,12 +725,12 @@ Cross-cloud identity: SPIFFE federation + OIDC WIF (no long-lived cross-cloud se
 - Vulnerable MCP Project — github.com/invariantlabs-ai/mcp-scan
 
 ### Related Guides in This Repository
-- [MCP Deep Research 2026](MCP_Deep_Research_2026.md) — Protocol architecture, capabilities, ecosystem
-- [MCP Harness Engineering](MCP_Harness_AIDLC.md) — Testing and evaluation across AIDLC
-- [MCP &lt;&amp; A2A Protocol Deep Dive](../../enterprise-architecture/ai-architecture/mcp-a2a-protocol-deep-dive.md) — 2026-07-28 protocol changes
-- [A2A Enterprise Security &lt;&amp; Governance Guide](../../enterprise-architecture/ai-architecture/a2a-enterprise-security-governance-guide.md) — Agent-to-agent boundary security
-- [Identity, MCP &lt;&amp; A2A Security Blueprint](../../ai-security-governance/security/02-Identity-MCP-A2A-Security-Blueprint.md) — Workload identity and compound identity depth
-- [Agent Tool Authorization Vol 3](../../ai-security-governance/policy/Vol3_Agent_Tool_MCP_Authorization.md) — Authorization policy deep dive
+- [MCP Deep Research 2026](pathname:///archon/protocols/13-mcp-deep-research-2026) — Protocol architecture, capabilities, ecosystem
+- [MCP Harness Engineering](pathname:///archon/protocols/15-mcp-harness-aidlc) — Testing and evaluation across AIDLC
+- [MCP &amp; A2A Protocol Deep Dive](pathname:///archon/architecture/58-mcp-a2a-protocol-deep-dive) — 2026-07-28 protocol changes
+- [A2A Enterprise Security &amp; Governance Guide](pathname:///archon/trust/02-a2a-security-governance) — Agent-to-agent boundary security
+- [Identity, MCP &amp; A2A Security Blueprint](pathname:///archon/trust/ai-security-governance/34-identity-mcp-a2a-security-blueprint) — Workload identity and compound identity depth
+- [Agent Tool Authorization Vol 3](pathname:///archon/trust/ai-security-governance/27-agent-tool-mcp-authorization) — Authorization policy deep dive
 
 ---
 

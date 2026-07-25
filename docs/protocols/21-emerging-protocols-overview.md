@@ -33,7 +33,7 @@ audience: Enterprise Architects, AI Platform Architects, CTOs, Principal Enginee
 
 **July 2026 Edition** | Enterprise Architecture Research Division
 
-&gt; This report covers nine protocols that sit alongside—and interoperate with—the two foundational enterprise protocols (MCP and A2A). Read the [MCP Deep Research 2026](../mcp/MCP_Deep_Research_2026.md) and the [A2A Enterprise Security &amp; Governance Guide](../../enterprise-architecture/ai-architecture/a2a-enterprise-security-governance-guide.md) as companion documents.
+&gt; This report covers nine protocols that sit alongside—and interoperate with—the two foundational enterprise protocols (MCP and A2A). Read the [MCP Deep Research 2026](pathname:///archon/protocols/13-mcp-deep-research-2026) and the [A2A Enterprise Security &amp; Governance Guide](pathname:///archon/trust/02-a2a-security-governance) as companion documents.
 
 ---
 
@@ -168,10 +168,10 @@ This guide is organized for progressive depth:
 
 **Companion documents:**
 
-- [MCP Deep Research 2026](../mcp/MCP_Deep_Research_2026.md) — detailed MCP implementation guide
-- [A2A Enterprise Security &amp; Governance Guide](../../enterprise-architecture/ai-architecture/a2a-enterprise-security-governance-guide.md)
-- [Agent Communication, Identity &amp; Gateway](../../enterprise-architecture/ai-architecture/agent-communication-identity-gateway.md)
-- [Auth &amp; Identity Standards Reference](../auth/auth-standards-reference.md)
+- [MCP Deep Research 2026](pathname:///archon/protocols/13-mcp-deep-research-2026) — detailed MCP implementation guide
+- [A2A Enterprise Security &amp; Governance Guide](pathname:///archon/trust/02-a2a-security-governance)
+- [Agent Communication, Identity &amp; Gateway](pathname:///archon/trust/03-agent-communication-identity-gateway)
+- [Auth &amp; Identity Standards Reference](pathname:///archon/protocols/01-auth-standards-reference)
 
 :::info Protocol Scope Boundary
 MCP and A2A are excluded from the comparative matrices in this report — they have dedicated deep-dive documents. They appear in architecture diagrams and decision trees as reference anchors only.

@@ -538,4 +538,4 @@ None of these changes required a new transport layer. The "agentic web" runs on 
 
 ---
 
-**Related:** [Emerging Protocols Beyond MCP & A2A](./emerging-protocols-beyond-mcp-a2a) · [Agent Protocol Metadata & Headers](./17-agent-protocol-metadata-headers) · [MCP & A2A Deep Dive](../architecture/58-mcp-a2a-protocol-deep-dive)
+**Related:** [Protocols Hub](index.md) · [Agent Protocol Metadata & Headers](./17-agent-protocol-metadata-headers) · [MCP & A2A Deep Dive](pathname:///archon/architecture/58-mcp-a2a-protocol-deep-dive)

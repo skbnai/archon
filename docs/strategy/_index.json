@@ -567,10 +567,6 @@
     {
      "id": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
      "score": 0.33
-    },
-    {
-     "id": "architecture/55-governance-propagation-chain",
-     "score": 0.3
     }
    ]
   },
@@ -1223,7 +1219,7 @@
    "top_similar": [
     {
      "id": "strategy/vols/08-vol8-portfolio-consulting-frameworks-pmo-evolution-strategy-frameworks",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -1917,7 +1913,7 @@
     },
     {
      "id": "strategy/27-part-17-transformation-roadmap",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
@@ -2544,7 +2540,7 @@
     },
     {
      "id": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-     "score": 0.37
+     "score": 0.36
     }
    ]
   },
@@ -2680,7 +2676,7 @@
     },
     {
      "id": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-     "score": 0.32
+     "score": 0.33
     },
     {
      "id": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
@@ -2733,7 +2729,7 @@
    "top_similar": [
     {
      "id": "strategy/vols/06-vol7-enterprise-building-blocks-ai-infrastructure-platform-engineering",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -2753,7 +2749,7 @@
    "top_similar": [
     {
      "id": "strategy/vols/05-vol7-enterprise-building-blocks-application-core-ai-blocks",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -2788,7 +2784,7 @@
    "top_similar": [
     {
      "id": "strategy/51-vol8-portfolio-consulting-frameworks",
-     "score": 0.34
+     "score": 0.33
     },
     {
      "id": "strategy/93-vol3-portfolio-governance-pmo-agile-governance",
@@ -2812,7 +2808,7 @@
    "top_similar": [
     {
      "id": "architecture/83-ea-okr-kpi-research",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },

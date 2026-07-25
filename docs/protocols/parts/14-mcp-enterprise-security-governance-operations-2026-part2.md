@@ -181,7 +181,7 @@ graph TD
 
 ## 6. On-Behalf-Of and Token Exchange
 
-&gt; For detailed OBO architecture and identity propagation diagrams, see [Identity, MCP &lt;&amp; A2A Security Blueprint §2.3](../../ai-security-governance/security/02-Identity-MCP-A2A-Security-Blueprint.md) and [A2A Enterprise Security Guide §3](../../enterprise-architecture/ai-architecture/a2a-enterprise-security-governance-guide.md). This section covers MCP-specific application of OBO at the tool boundary.
+&gt; For detailed OBO architecture and identity propagation diagrams, see [Identity, MCP &amp; A2A Security Blueprint](pathname:///archon/trust/ai-security-governance/34-identity-mcp-a2a-security-blueprint) and [A2A Enterprise Security Guide](pathname:///archon/trust/02-a2a-security-governance). This section covers MCP-specific application of OBO at the tool boundary.
 
 ### 6.1 Why OBO Matters at the Tool Boundary
 

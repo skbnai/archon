@@ -29,7 +29,7 @@ tags:
 **Part 1 of 3** — Threat model, authentication patterns, and authorization foundations.  
 [Continue with Part 2 →](pathname:///archon/protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2.md)
 
-> **Audience:** AI Enterprise Architects, Security Architects, Platform Engineers, and Governance teams operating production MCP ecosystems at scale (hundreds to thousands of servers). This guide focuses on the **agent-to-tool** security boundary. For the **agent-to-agent** boundary, see [A2A Enterprise Security & Governance Guide](../../enterprise-architecture/ai-architecture/a2a-enterprise-security-governance-guide.md). For protocol architecture, see [MCP Deep Research 2026](pathname:///archon/protocols/13-mcp-deep-research-2026.md). For identity architecture depth (SPIFFE/SPIRE, compound identity, OBO flows), see [Identity, MCP & A2A Security Blueprint](../../ai-security-governance/security/02-Identity-MCP-A2A-Security-Blueprint.md).
+> **Audience:** AI Enterprise Architects, Security Architects, Platform Engineers, and Governance teams operating production MCP ecosystems at scale (hundreds to thousands of servers). This guide focuses on the **agent-to-tool** security boundary. For the **agent-to-agent** boundary, see [A2A Enterprise Security & Governance Guide](pathname:///archon/trust/02-a2a-security-governance). For protocol architecture, see [MCP Deep Research 2026](pathname:///archon/protocols/13-mcp-deep-research-2026). For identity architecture depth (SPIFFE/SPIRE, compound identity, OBO flows), see [Identity, MCP & A2A Security Blueprint](pathname:///archon/trust/ai-security-governance/34-identity-mcp-a2a-security-blueprint).
 
 ---
 
@@ -62,7 +62,7 @@ MCP is a communication protocol, not a security framework. Every production MCP 
 
 ## 2. Complete MCP Threat Model
 
-> **Scope:** This threat model covers the **agent-to-tool boundary** — MCP servers, tool invocations, and the protocols connecting them. For agent-to-agent threats (delegation loops, lateral movement, registry compromise), see the [A2A Enterprise Security Guide §1](../../enterprise-architecture/ai-architecture/a2a-enterprise-security-governance-guide.md). Methodology: STRIDE + OWASP LLM Top 10 2025 + CoSAI MCP Security White Paper (January 2026) + Vulnerable MCP Project (50+ CVEs, 13 critical).
+> **Scope:** This threat model covers the **agent-to-tool boundary** — MCP servers, tool invocations, and the protocols connecting them. For agent-to-agent threats (delegation loops, lateral movement, registry compromise), see the [A2A Enterprise Security Guide §1](pathname:///archon/trust/02-a2a-security-governance). Methodology: STRIDE + OWASP LLM Top 10 2025 + CoSAI MCP Security White Paper (January 2026) + Vulnerable MCP Project (50+ CVEs, 13 critical).
 
 ### Threat Taxonomy
 
@@ -270,7 +270,7 @@ MCP is a communication protocol, not a security framework. Every production MCP 
 
 ## 3. Authentication Patterns
 
-> For deep workload identity architecture (SPIFFE/SPIRE, compound identity, OBO token flows), see [Identity, MCP & A2A Security Blueprint §2](../../ai-security-governance/security/02-Identity-MCP-A2A-Security-Blueprint.md) and [A2A Enterprise Security Guide §2–3](../../enterprise-architecture/ai-architecture/a2a-enterprise-security-governance-guide.md). This section focuses on MCP-specific application of these patterns.
+> For deep workload identity architecture (SPIFFE/SPIRE, compound identity, OBO token flows), see [Identity, MCP & A2A Security Blueprint §2](pathname:///archon/trust/ai-security-governance/34-identity-mcp-a2a-security-blueprint) and [A2A Enterprise Security Guide §2–3](pathname:///archon/trust/02-a2a-security-governance). This section focuses on MCP-specific application of these patterns.
 
 ### 3.1 Authentication Pattern Selection
 

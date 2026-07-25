@@ -111,7 +111,7 @@
     },
     {
      "id": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
-     "score": 0.54
+     "score": 0.53
     }
    ]
   },
@@ -198,11 +198,11 @@
      "score": 0.41
     },
     {
-     "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
+     "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
      "score": 0.41
     },
     {
-     "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
+     "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
      "score": 0.41
     }
    ]
@@ -324,7 +324,7 @@
    "top_similar": [
     {
      "id": "architecture/12-apex-ea-delivery-governance-reference",
-     "score": 0.61
+     "score": 0.62
     },
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
@@ -382,7 +382,7 @@
    "top_similar": [
     {
      "id": "architecture/10-apex-ea-aidlc-methodology",
-     "score": 0.61
+     "score": 0.62
     },
     {
      "id": "architecture/11-apex-ea-information-systems-architecture",
@@ -1448,7 +1448,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
-     "score": 0.33
+     "score": 0.32
     }
    ]
   },
@@ -1860,7 +1860,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/25-enterprise-technology-selection-framework-part2",
-     "score": 0.57
+     "score": 0.58
     }
    ]
   },
@@ -1882,7 +1882,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/26-ai-invoice-auditor-architecture-part2",
-     "score": 0.53
+     "score": 0.54
     }
    ]
   },
@@ -2053,7 +2053,7 @@
     },
     {
      "id": "strategy/vols/09-vol8-portfolio-consulting-frameworks-architecture-operating-delivery",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -2413,7 +2413,7 @@
     },
     {
      "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-     "score": 0.54
+     "score": 0.53
     },
     {
      "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
@@ -2833,7 +2833,7 @@
     },
     {
      "id": "architecture/parts/19-enterprise-multi-model-ai-strategy-part3",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "architecture/parts/21-enterprise-ai-skills-assessment-part2",
@@ -2890,7 +2890,7 @@
    "top_similar": [
     {
      "id": "architecture/75-enterprise-technology-selection-framework",
-     "score": 0.57
+     "score": 0.58
     }
    ]
   },
@@ -2913,7 +2913,7 @@
    "top_similar": [
     {
      "id": "architecture/76-ai-invoice-auditor-architecture",
-     "score": 0.53
+     "score": 0.54
     }
    ]
   },

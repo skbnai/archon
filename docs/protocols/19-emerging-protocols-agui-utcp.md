@@ -271,6 +271,16 @@ AG-UI is fully compatible with a Zero Trust Architecture (ZTA) framework (NIST S
 | Commercial support | Partial | CopilotKit Inc., Microsoft (Agent Framework 1.0), AWS (AgentCore) offer commercial support |
 | Governance body | None yet | Apache 2.0 open-source; AAIF donation expected H1 2027 |
 
+#### Scalability Characteristics
+
+**Horizontal scale ceiling (without externalised state):** a single AG-UI server process supports ~200-500 concurrent SSE connections (limited by file descriptor limits, SSE buffer memory, and I/O multiplexing).
+
+**With externalised state (Redis + stateless nodes):** horizontal scale is linear with node count — tested in production at 10,000+ concurrent runs (AWS Bedrock AgentCore, internal data).
+
+**Latency profile:** token streaming P50 &lt;5ms event-to-browser latency (SSE overhead); HITL round-trip P50 &lt;100ms (server-to-browser + user decision + action POST); state delta application P50 &lt;10ms (Redis write + SSE emit).
+
+**Network efficiency:** SSE overhead vs. WebSocket is +5-15% for standard request-response patterns; SSE overhead vs. long polling is -60 to -80% (fewer round-trips). WebSocket is preferred for multi-agent shared state with client-originated writes.
+
 #### Cloud Platform Integration Matrix
 
 | Cloud Platform | AG-UI Support | Native Integration Path | Enterprise Tier |
@@ -280,6 +290,37 @@ AG-UI is fully compatible with a Zero Trust Architecture (ZTA) framework (NIST S
 | **Google ADK / Vertex AI Agent Engine** | Native production | Google ADK first-party AG-UI integration; Vertex AI Agent Engine as managed backend | Enterprise (GCP support tiers) |
 | **Cloudflare Agents** | In progress (H2 2026) | Cloudflare Workers-based AG-UI endpoint; edge-deployed, global | Enterprise (Cloudflare Enterprise) |
 | **Self-hosted (any cloud)** | Full | FastAPI/Express AG-UI server; containerized; Kubernetes-deployable | Depends on internal SLA |
+
+#### Multi-Cloud and Hybrid Deployment Patterns
+
+```mermaid
+graph TD
+    IdP["Enterprise SSO / IdP"]
+    IdP --> Azure["Azure Agent<br/>Agent Framework 1.0 + AKS"]
+    IdP --> AWS["AWS Agent<br/>Strands + Bedrock AgentCore"]
+    IdP --> GCP["GCP Agent<br/>ADK + Vertex AI Agent Engine"]
+    Azure -->|"AG-UI SSE (identical protocol across clouds)"| GW["API Gateway / Global Load Balancer<br/>(Azure Front Door, AWS CloudFront,<br/>or Cloudflare as neutral broker)"]
+    AWS --> GW
+    GCP --> GW
+    GW --> FE["Enterprise Frontend<br/>(single CopilotKit or custom AG-UI client<br/>routing runs to appropriate cloud backend<br/>based on data residency, cost, or SLA)"]
+```
+
+**Cross-cloud state consistency:** run state is cloud-local (do not share Redis across cloud boundaries); the frontend routes runs deterministically to one cloud per session; there is no live state migration between clouds (re-run from scratch on failover).
+
+**Global deployment considerations:** SSE connections are long-lived HTTP/2 streams, not compatible with aggressive connection resets by some CDN PoPs — prefer Cloudflare or AWS Global Accelerator (SSE-aware) over generic CDNs. Data residency: SSE stream content passes through all PoPs, so validate the DPA accordingly.
+
+#### Air-Gapped and Sovereign Cloud Deployments
+
+AG-UI is deployable in fully air-gapped environments with the following constraints:
+
+1. **No external SDK downloads** — Package the AG-UI SDK and all agent framework dependencies into the internal artifact registry before deployment
+2. **Sovereign SSE termination** — The SSE stream must terminate within the sovereign boundary; no split-routing to external CDN
+3. **Internal IdP only** — JWT validation must use an internally hosted JWKS endpoint (no calls to public identity providers)
+4. **A2UI schema validation offline** — Cache the A2UI JSON Schema at `https://a2ui.dev/schema/v0.9/surface.json` in the internal schema registry; validate against the local copy
+
+:::tip Sovereign Cloud AG-UI Checklist
+Before declaring an AG-UI deployment sovereign-compliant: (1) verify all npm/pip dependencies are pinned to an internal mirror, (2) confirm JWKS endpoint is internally hosted, (3) validate that no telemetry SDKs call external endpoints by default (OTel Collector must route to internal SIEM), (4) confirm A2UI schema validation uses internal schema copy.
+:::
 
 #### Regulated Industry Suitability
 

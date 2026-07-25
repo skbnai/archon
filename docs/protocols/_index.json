@@ -479,7 +479,7 @@
     "standards",
     "user-interaction"
    ],
-   "word_count": 3638,
+   "word_count": 4083,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
@@ -619,7 +619,7 @@
     "spiffe",
     "enterprise-architecture"
    ],
-   "word_count": 2612,
+   "word_count": 2608,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
@@ -660,7 +660,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.4
+     "score": 0.39
     }
    ]
   },
@@ -707,7 +707,7 @@
     "guardrails",
     "governance"
    ],
-   "word_count": 4031,
+   "word_count": 4029,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
@@ -909,7 +909,7 @@
     },
     {
      "id": "protocols/parts/22-emerging-protocols-ucp-ap2-nlip-lmos-part3",
-     "score": 0.48
+     "score": 0.46
     }
    ]
   },
@@ -930,10 +930,6 @@
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
-    {
-     "id": "protocols/parts/22-emerging-protocols-ucp-ap2-nlip-lmos-part3",
-     "score": 0.51
-    },
     {
      "id": "protocols/21-emerging-protocols-overview",
      "score": 0.36
@@ -956,21 +952,21 @@
     "enterprise-architecture",
     "orchestration"
    ],
-   "word_count": 4252,
+   "word_count": 3110,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
     {
-     "id": "protocols/parts/22-emerging-protocols-ucp-ap2-nlip-lmos-part2",
-     "score": 0.51
-    },
-    {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.48
+     "score": 0.46
     },
     {
      "id": "protocols/21-emerging-protocols-overview",
-     "score": 0.42
+     "score": 0.39
+    },
+    {
+     "id": "protocols/20-emerging-protocols-crosscutting",
+     "score": 0.38
     }
    ]
   }

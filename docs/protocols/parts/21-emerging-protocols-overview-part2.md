@@ -704,10 +704,10 @@ The following ten anti-patterns are commonly observed when enterprises adopt eme
 
 ### Enterprise Architecture Governance
 
-- [Agent Interoperability &amp; Orchestration](../../enterprise-architecture/ai-architecture/agent-interoperability-orchestration.md) — internal guide
-- [Auth &amp; Identity Standards Reference](../auth/auth-standards-reference.md) — internal guide
-- [A2A Enterprise Security &amp; Governance Guide](../../enterprise-architecture/ai-architecture/a2a-enterprise-security-governance-guide.md) — internal guide
-- [MCP Deep Research 2026](../mcp/MCP_Deep_Research_2026.md) — internal guide
+- [Agent Interoperability &amp; Orchestration](pathname:///archon/architecture/40-agent-interoperability-orchestration.md) — internal guide
+- [Auth &amp; Identity Standards Reference](pathname:///archon/protocols/01-auth-standards-reference) — internal guide
+- [A2A Enterprise Security &amp; Governance Guide](pathname:///archon/trust/02-a2a-security-governance) — internal guide
+- [MCP Deep Research 2026](pathname:///archon/protocols/13-mcp-deep-research-2026) — internal guide
 
 ---
 

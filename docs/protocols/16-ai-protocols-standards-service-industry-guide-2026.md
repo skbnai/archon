@@ -138,7 +138,7 @@ Anthropic's Model Context Protocol, launched November 2024, has achieved near-un
 | **When to Use** | Any agent needing to access external tools, databases, files, or APIs — start here before any other protocol |
 
 :::tip Deep Dive Available
-For a full technical reference on MCP including the 2026-07-28 stateless spec release candidate, see [MCP Deep Research 2026](../mcp/MCP_Deep_Research_2026) and [MCP & A2A Protocol Deep Dive](../../enterprise-architecture/ai-architecture/mcp-a2a-protocol-deep-dive).
+For a full technical reference on MCP including the 2026-07-28 stateless spec release candidate, see [MCP Deep Research 2026](pathname:///archon/protocols/13-mcp-deep-research-2026) and [MCP & A2A Protocol Deep Dive](pathname:///archon/architecture/58-mcp-a2a-protocol-deep-dive).
 :::
 
 ---
@@ -223,7 +223,7 @@ Together:
 This combination completely eliminates the need to pre-build frontend components for every possible agent output scenario.
 
 :::tip Deep Dive Available
-See [AGUI Standards & Ecosystem Landscape](../../agentic-ui/agui-standards-landscape) for the full technical reference including the 15-framework comparison matrix, production code examples, and selection decision tree.
+See [AGUI Standards & Ecosystem Landscape](pathname:///archon/agentic-systems/agentic-ui/02-agui-standards-landscape) for the full technical reference including the 15-framework comparison matrix, production code examples, and selection decision tree.
 :::
 
 ---
