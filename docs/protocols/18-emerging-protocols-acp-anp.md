@@ -111,7 +111,7 @@ sequenceDiagram
     participant Client as ACP Client
     participant Server as ACP Agent Server
     
-    Client->>Server: POST /runs<br/>Content-Type: application/json<br/>{agent_id, input, mode}
+    Client->>Server: POST /runs<br/>Content-Type: application/json<br/>(agent_id, input, mode)
     activate Server
     Note over Server: agent executes
     Server-->>Client: HTTP 200 OK<br/>Content-Type: multipart/mixed<br/>(streaming parts)

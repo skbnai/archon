@@ -84,8 +84,8 @@ sequenceDiagram
     Remote-->>Caller: Agent Card (capabilities, auth scheme)
     Caller->>Remote: POST /tasks
     Remote-->>Caller: Task created (id, message, state: submitted)
-    Caller->>Remote: GET /tasks/{id} or subscribe SSE
-    Note over Remote: Executes task; may invoke MCP tool calls internally
+    Caller->>Remote: GET task status or subscribe SSE
+    Note over Remote: Executes task, may invoke MCP tool calls internally
     Remote-->>Caller: Artifact result
 ```
 

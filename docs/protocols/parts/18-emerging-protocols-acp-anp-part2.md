@@ -241,8 +241,8 @@ sequenceDiagram
     
     AgentA->>Resolver: resolve(did:web:b.example.com:agent)
     Resolver->>DIDDoc: GET https://b.example.com/agent/did.json
-    DIDDoc-->>Resolver: 200 OK {DID Document}
-    Resolver-->>AgentA: {DID Document}
+    DIDDoc-->>Resolver: 200 OK (DID Document)
+    Resolver-->>AgentA: (DID Document)
     
     Note over AgentA: extract encryption key, service endpoint
     Note over AgentA: compose DIDComm encrypted message
@@ -284,8 +284,8 @@ sequenceDiagram
     
     AgentA->>AgentB: [DIDComm] ProtocolPropose message<br/>I support: financial-query-v1,<br/>document-analysis-v2, generic-qa-v1
     AgentB->>AgentA: [DIDComm] ProtocolAccept message<br/>Let's use: financial-query-v1<br/>I also support version 2 if needed
-    AgentA->>AgentB: [Application Protocol: financial-query-v1]<br/>QueryRequest { ... }
-    AgentB->>AgentA: QueryResponse { ... }
+    AgentA->>AgentB: [Application Protocol: financial-query-v1]<br/>QueryRequest ( ... )
+    AgentB->>AgentA: QueryResponse ( ... )
     
     Note over AgentA,AgentB: KEY INSIGHT: The protocol used for application messages<br/>is determined at runtime by the agents, not pre-configured
 ```

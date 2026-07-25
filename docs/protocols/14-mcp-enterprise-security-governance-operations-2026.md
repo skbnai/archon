@@ -331,7 +331,7 @@ sequenceDiagram
     Agent->>AS: /token(code+verifier)
     AS-->>Agent: access_token (15min) + refresh
 
-    Agent->>MCP: tools/call<br/>Authorization: Bearer {token}<br/>Mcp-Method: tools/call<br/>Mcp-Name: search_customers
+    Agent->>MCP: tools/call<br/>Authorization: Bearer (token)<br/>Mcp-Method: tools/call<br/>Mcp-Name: search_customers
     Note over MCP: validate iss == expected AS (RFC 9207 — prevents mix-up attacks)<br/>validate scope covers tool:search_customers<br/>validate exp not expired<br/>validate jti not in used-nonce cache<br/>validate act chain (agent authorized for this user)
     MCP-->>Agent: ALLOW or DENY
 ```

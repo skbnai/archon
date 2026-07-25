@@ -43,9 +43,9 @@ sequenceDiagram
     participant Server
     Client->>Server: POST /messages
     Server-->>Client: GET /sse (text/event-stream)
-    Server-->>Client: data: {"type":"TEXT_MESSAGE_CONTENT"...}
-    Server-->>Client: data: {"type":"TOOL_CALL_START"...}
-    Server-->>Client: data: {"type":"RUN_FINISHED"...}
+    Server-->>Client: data: ("type":"TEXT_MESSAGE_CONTENT"...)
+    Server-->>Client: data: ("type":"TOOL_CALL_START"...)
+    Server-->>Client: data: ("type":"RUN_FINISHED"...)
 ```
 
 ### 1.2 `/.well-known/` URI Pattern for Agent Discovery
@@ -72,7 +72,7 @@ sequenceDiagram
     participant Agent
     participant Service
     Agent->>Service: GET /paid-api
-    Service-->>Agent: 402 Payment Required<br/>X-Payment-Required: {...}
+    Service-->>Agent: 402 Payment Required<br/>X-Payment-Required: (...)
     Agent->>Agent: Pay on-chain
     Agent->>Service: GET /paid-api<br/>X-Payment-Proof: &lt;signed-receipt&gt;
     Service-->>Agent: 200 OK
@@ -139,7 +139,7 @@ sequenceDiagram
     participant Orchestrator
     participant AuthServer
     Orchestrator->>AuthServer: POST /token<br/>grant_type=token-exchange<br/>subject_token=&lt;orchestrator-token&gt;<br/>requested_token_type=access_token<br/>scope=fraud:read<br/>actor=did:web:sub-agent.vendor.com
-    AuthServer-->>Orchestrator: 200 OK<br/>access_token: &lt;scoped-delegated-token&gt;<br/>act: {sub: did:web:sub-agent.vendor.com}
+    AuthServer-->>Orchestrator: 200 OK<br/>access_token: &lt;scoped-delegated-token&gt;<br/>act: (sub: did:web:sub-agent.vendor.com)
 ```
 
 The resulting token carries `act` (who is acting) and `may_act` (who is authorised to act), creating a cryptographically provable delegation chain through arbitrarily deep agent hierarchies.

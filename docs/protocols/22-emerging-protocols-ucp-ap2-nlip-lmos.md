@@ -234,22 +234,22 @@ sequenceDiagram
     A->>M: GET /.well-known/ucp-manifest
     M->>A: UCPManifest (capabilities)
     
-    A->>M: UCPCatalogueQuery<br/>{query, filters, agent_context}
-    M->>A: UCPCatalogueResponse<br/>{items[], facets, total, cursor}
+    A->>M: UCPCatalogueQuery<br/>(query, filters, agent_context)
+    M->>A: UCPCatalogueResponse<br/>(items[], facets, total, cursor)
     
-    A->>M: UCPRFQRequest<br/>{items, quantity, delivery_by}
-    M->>A: UCPRFQResponse<br/>{quote_id, unit_price, valid_for}
+    A->>M: UCPRFQRequest<br/>(items, quantity, delivery_by)
+    M->>A: UCPRFQResponse<br/>(quote_id, unit_price, valid_for)
     
-    A->>M: UCPCartCreate<br/>{items[], quote_ref}
+    A->>M: UCPCartCreate<br/>(items[], quote_ref)
     M->>A: UCPCart<br/>(cart_id, line_items)
     
-    A->>M: UCPCheckoutInitiate<br/>{cart_id, ship_to, payment_ref}
-    M->>A: UCPCheckoutSession<br/>{session_id, steps[], ap2_trigger}
+    A->>M: UCPCheckoutInitiate<br/>(cart_id, ship_to, payment_ref)
+    M->>A: UCPCheckoutSession<br/>(session_id, steps[], ap2_trigger)
     
     Note over A,M: AP2 PaymentMandate flow executes
     
-    A->>M: UCPOrderConfirm<br/>{session_id, payment_receipt_id}
-    M->>A: UCPOrderConfirmation<br/>{order_id, eta, tracking_url}
+    A->>M: UCPOrderConfirm<br/>(session_id, payment_receipt_id)
+    M->>A: UCPOrderConfirmation<br/>(order_id, eta, tracking_url)
     
     A->>M: UCPOrderStatus (polling/webhook)
     M->>A: UCPOrderStatus response

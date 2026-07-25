@@ -214,15 +214,15 @@ sequenceDiagram
     participant CP as Credentials Provider
     participant PP as Payment Processor
     
-    A->>CP: AP2PaymentRequest<br/>{mandate, payment_intent}
+    A->>CP: AP2PaymentRequest<br/>(mandate, payment_intent)
     Note over CP: Validate mandate sig<br/>Check IntentMandate<br/>Verify against policy
     CP->>A: AP2CredentialToken<br/>(scoped, 1-use JWT)
     
-    A->>PP: AP2ExecutePayment<br/>{credential_token, amount, merchant}
+    A->>PP: AP2ExecutePayment<br/>(credential_token, amount, merchant)
     Note over PP: Validate token<br/>Execute payment<br/>Sign receipt
-    PP->>A: AP2PaymentReceipt<br/>{receipt_id, amount, timestamp, signatures}
+    PP->>A: AP2PaymentReceipt<br/>(receipt_id, amount, timestamp, signatures)
     
-    A->>A: AP2AuditRecord<br/>{all events, receipt, mandate ref}
+    A->>A: AP2AuditRecord<br/>(all events, receipt, mandate ref)
 ```
 
 #### Streaming Support
@@ -607,7 +607,7 @@ sequenceDiagram
     A->>S: NLIPCapabilityQuery
     S->>A: NLIPCapabilityManifest<br/>(languages, domains, trust)
     
-    A->>S: NLIPRequest<br/>{nl_content, language, ctx}
+    A->>S: NLIPRequest<br/>(nl_content, language, ctx)
     Note over S: LLM interpretation<br/>Knowledge retrieval<br/>Response generation
     S->>A: NLIPResponse streaming<br/>Token-by-token SSE<br/>Prose summary first<br/>Structured data appended
     

@@ -84,8 +84,8 @@ The API Gateway / Load Balancer routes traffic:
 sequenceDiagram
     participant A as Agent A
     participant B as Agent B
-    A->>B: Hello: {supported_protocols: ["anp/1.0", "anp/0.9"]}
-    B-->>A: NegotiationResult: {selected_protocol: "anp/1.0"}
+    A->>B: Hello: (supported_protocols: ["anp/1.0", "anp/0.9"])
+    B-->>A: NegotiationResult: (selected_protocol: "anp/1.0")
     Note over A,B: Proceed with agreed protocol version
 ```
 
@@ -139,13 +139,13 @@ sequenceDiagram
     GW->>B: route to Agent B
     Note over B: [working]
     Note over B: CRASH
-    A->>GW: GET /tasks/{id}
-    GW-->>A: {status: "working"}
+    A->>GW: GET /tasks/(id)
+    GW-->>A: (status: "working")
     Note over GW: Gateway has persistent state
     Note over GW: Detect agent B offline
     Note over GW: Route to replica or fail
-    A->>GW: GET /tasks/{id}
-    GW-->>A: {status: "failed", error: "agent_unavailable"}
+    A->>GW: GET /tasks/(id)
+    GW-->>A: (status: "failed", error: "agent_unavailable")
     Note over A: Caller decides: retry, escalate, or degrade
 ```
 

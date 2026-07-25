@@ -256,10 +256,10 @@ sequenceDiagram
     participant IdP as IdP
     participant Server as A2A Server Agent
     Client->>Server: GET /.well-known/agent-card.json
-    Server-->>Client: {auth: {type: "oauth2", url: "https://idp..."}}
+    Server-->>Client: (auth: (type: "oauth2", url: "https://idp..."))
     Client->>IdP: POST /oauth/token (client_credentials)
     IdP-->>Client: access_token (scoped)
-    Client->>Server: POST /tasks {Authorization: Bearer token}
+    Client->>Server: POST /tasks (Authorization: Bearer token)
 ```
 
 **AP2 — Mandate-Chained Auth:**

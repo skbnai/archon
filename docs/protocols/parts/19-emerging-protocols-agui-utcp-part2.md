@@ -95,10 +95,10 @@ sequenceDiagram
     participant Server as UTCP-compatible server
     
     Agent->>Server: 1. Discover tools: GET /.well-known/utcp.json
-    Server-->>Agent: 2. Manifest: {tools: [{name, endpoint, parameters, auth}]}
+    Server-->>Agent: 2. Manifest: (tools: [(name, endpoint, parameters, auth)])
     
-    Agent->>Server: 3. Invoke tool: POST /api/tools/search_products<br/>Authorization: Bearer {token}<br/>{"tool": "search_products", "arguments": {"query": "laptop"}}
-    Server-->>Agent: 4. Result: {"result": [{id, name, price}]}
+    Agent->>Server: 3. Invoke tool: POST /api/tools/search_products<br/>Authorization: Bearer (token)<br/>("tool": "search_products", "arguments": ("query": "laptop"))
+    Server-->>Agent: 4. Result: ("result": [(id, name, price)])
     
     Note over Agent: CONTRAST WITH MCP:<br/>MCP: 5 round-trips (Initialize → capabilities/list → tools/list → tools/call → result)<br/>UTCP: 2 round-trips (GET manifest → POST invoke → result)
 ```
