@@ -17,11 +17,15 @@
    "top_similar": [
     {
      "id": "assets/index",
-     "score": 0.47
+     "score": 0.52
     },
     {
      "id": "learning-paths/index",
-     "score": 0.39
+     "score": 0.43
+    },
+    {
+     "id": "operations/index",
+     "score": 0.3
     }
    ]
   }

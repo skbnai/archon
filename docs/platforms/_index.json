@@ -16,11 +16,11 @@
    "status": "draft",
    "top_similar": [
     {
-     "id": "architecture/index",
-     "score": 0.32
+     "id": "operations/index",
+     "score": 0.35
     },
     {
-     "id": "operations/index",
+     "id": "architecture/index",
      "score": 0.32
     }
    ]
