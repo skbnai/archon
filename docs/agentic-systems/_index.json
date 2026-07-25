@@ -14,7 +14,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/parts/02-agui-standards-landscape-part3",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "agentic-systems/agentic-ui/02-agui-standards-landscape",
@@ -195,11 +195,11 @@
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/parts/11-governance-part2",
-     "score": 0.53
+     "score": 0.54
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
-     "score": 0.32
+     "score": 0.31
     },
     {
      "id": "agentic-systems/agentic-ui/parts/03-anti-patterns-part2",
@@ -229,7 +229,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/19-agentic-ui-security-architecture",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -276,7 +276,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/parts/15-performance-engineering-part3",
-     "score": 0.48
+     "score": 0.47
     }
    ]
   },
@@ -365,7 +365,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -401,7 +401,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part3",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -421,7 +421,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/parts/02-agui-standards-landscape-part3",
-     "score": 0.32
+     "score": 0.33
     },
     {
      "id": "agentic-systems/coding-tools/08-copilotkit-mcp-apps-vs-tools",
@@ -445,7 +445,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/01-agent-ux-patterns",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "agentic-systems/coding-tools/08-copilotkit-mcp-apps-vs-tools",
@@ -537,7 +537,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/parts/01-agent-ux-patterns-part3",
-     "score": 0.31
+     "score": 0.3
     },
     {
      "id": "agentic-systems/agentic-ui/09-evolution-human-ai-interfaces",
@@ -577,7 +577,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/11-governance",
-     "score": 0.53
+     "score": 0.54
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
@@ -653,7 +653,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/15-performance-engineering",
-     "score": 0.48
+     "score": 0.47
     },
     {
      "id": "agentic-systems/agentic-ui/parts/18-scalability-engineering-part2",
@@ -859,7 +859,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/54-prompts-evaluation-spark-infrastructure",
-     "score": 0.5
+     "score": 0.51
     },
     {
      "id": "agentic-systems/coding-tools/49-vision-copilot-architecture-repointelligence",
@@ -895,7 +895,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/53-marketplace-pages-packages",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -1220,7 +1220,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/33-claude-code-complete-2026",
-     "score": 0.48
+     "score": 0.47
     },
     {
      "id": "agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2",
@@ -1291,7 +1291,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/parts/23-claude-ecosystem-research-report-part2",
-     "score": 0.63
+     "score": 0.62
     },
     {
      "id": "agentic-systems/coding-tools/33-claude-code-complete-2026",
@@ -1390,7 +1390,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2",
-     "score": 0.36
+     "score": 0.35
     }
    ]
   },
@@ -1473,7 +1473,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/parts/32-claude-best-practices-part3",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "agentic-systems/coding-tools/16-cheatsheet-2-agent-sdk",
@@ -1501,7 +1501,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/20-cheatsheet-6-claude-cli",
-     "score": 0.48
+     "score": 0.47
     },
     {
      "id": "agentic-systems/coding-tools/23-claude-ecosystem-research-report",
@@ -1685,11 +1685,11 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/42-pr-review-handbook-vol1-traditional-review-part3",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "agentic-systems/coding-tools/parts/43-pr-review-handbook-vol2-deep-domain-reviews-part2",
-     "score": 0.3
+     "score": 0.31
     }
    ]
   },
@@ -1782,7 +1782,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part4",
-     "score": 0.48
+     "score": 0.49
     }
    ]
   },
@@ -1838,14 +1838,14 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/parts/06-ecosystem-patterns-labs-part2",
-     "score": 0.38
+     "score": 0.37
     },
     {
      "id": "agentic-systems/coding-tools/parts/09-git-github-platform-engineering-handbook-part2",
      "score": 0.35
     },
     {
-     "id": "agentic-systems/coding-tools/53-marketplace-pages-packages",
+     "id": "agentic-systems/coding-tools/04-enterprise-apis-apps-cli",
      "score": 0.35
     }
    ]
@@ -1897,7 +1897,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/parts/09-git-github-platform-engineering-handbook-part2",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "agentic-systems/coding-tools/50-github-architecture-and-actions",
@@ -1905,7 +1905,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/04-enterprise-apis-apps-cli",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -1925,7 +1925,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/03-cicd-observability-scaling",
-     "score": 0.5
+     "score": 0.51
     },
     {
      "id": "agentic-systems/coding-tools/49-vision-copilot-architecture-repointelligence",
@@ -2009,7 +2009,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/09-git-github-platform-engineering-handbook-part2",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -2029,7 +2029,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/50-github-architecture-and-actions",
-     "score": 0.38
+     "score": 0.37
     },
     {
      "id": "agentic-systems/coding-tools/01-cicd-secrets-security",
@@ -2086,7 +2086,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/53-marketplace-pages-packages",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "agentic-systems/coding-tools/parts/09-git-github-platform-engineering-handbook-part3",
@@ -2136,21 +2136,21 @@
     "platform-engineering",
     "metrics"
    ],
-   "word_count": 5283,
+   "word_count": 4415,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
-     "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part4",
-     "score": 0.49
+     "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part2",
+     "score": 0.47
     },
     {
-     "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part2",
-     "score": 0.48
+     "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part4",
+     "score": 0.46
     },
     {
      "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part3",
-     "score": 0.46
+     "score": 0.45
     }
    ]
   },
@@ -2325,7 +2325,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/23-claude-ecosystem-research-report",
-     "score": 0.63
+     "score": 0.62
     },
     {
      "id": "agentic-systems/coding-tools/parts/47-github-copilot-enterprise-research-2026-part2",
@@ -2441,7 +2441,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/32-claude-best-practices-part3",
-     "score": 0.36
+     "score": 0.35
     }
    ]
   },
@@ -2462,11 +2462,11 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/32-claude-best-practices",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "agentic-systems/coding-tools/parts/32-claude-best-practices-part2",
-     "score": 0.36
+     "score": 0.35
     }
    ]
   },
@@ -2757,7 +2757,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/42-pr-review-handbook-vol1-traditional-review",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -2777,7 +2777,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/42-pr-review-handbook-vol1-traditional-review",
-     "score": 0.3
+     "score": 0.31
     }
    ]
   },
@@ -2970,7 +2970,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/parts/01-harness-engineering-research-report-part2",
-     "score": 0.47
+     "score": 0.46
     },
     {
      "id": "agentic-systems/core/05-harness-engineering-research-report",
@@ -2995,7 +2995,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/parts/01-harness-engineering-research-report-part2",
-     "score": 0.49
+     "score": 0.48
     },
     {
      "id": "agentic-systems/core/04-harness-engineering-ai-agents-and-vendor-landscape",
@@ -3049,7 +3049,7 @@
     },
     {
      "id": "architecture/17-ai-assistant-architecture-research-report",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -3259,7 +3259,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/28-enterprise-workflows-comparative-analysis-and-patterns",
-     "score": 0.58
+     "score": 0.57
     },
     {
      "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
@@ -3412,7 +3412,7 @@
     },
     {
      "id": "agentic-systems/core/21-tool-definitions-and-instructions-engineering",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -3489,11 +3489,11 @@
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/10-mcp-impact",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "agentic-systems/core/20-skills-tools-mcp-relationship",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -3540,7 +3540,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/28-enterprise-workflows-comparative-analysis-and-patterns",
-     "score": 0.43
+     "score": 0.44
     },
     {
      "id": "agentic-systems/core/21-tool-definitions-and-instructions-engineering",
@@ -3564,7 +3564,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/15-executive-summary-and-reference-architecture",
-     "score": 0.58
+     "score": 0.57
     },
     {
      "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
@@ -3572,7 +3572,7 @@
     },
     {
      "id": "agentic-systems/core/27-evaluation-reusability-deduplication",
-     "score": 0.43
+     "score": 0.44
     }
    ]
   },
@@ -3592,7 +3592,7 @@
     },
     {
      "id": "agentic-systems/core/34-composition-and-instructions-engineering",
-     "score": 0.56
+     "score": 0.55
     },
     {
      "id": "agentic-systems/parts/16-agent-skills-complete-playbook-2026-part2",
@@ -3691,7 +3691,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.56
+     "score": 0.55
     },
     {
      "id": "agentic-systems/core/30-execution-lifecycle-and-tracing",
@@ -3978,7 +3978,7 @@
     },
     {
      "id": "protocols/index",
-     "score": 0.33
+     "score": 0.32
     },
     {
      "id": "operations/index",
@@ -4070,7 +4070,7 @@
     },
     {
      "id": "agentic-systems/multimodal/08-part-08-guardrails-sanitization",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -4158,7 +4158,7 @@
     },
     {
      "id": "agentic-systems/multimodal/04-part-04-modalities-video-audio",
-     "score": 0.32
+     "score": 0.31
     },
     {
      "id": "agentic-systems/multimodal/01-part-01-foundations",
@@ -4588,7 +4588,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/02-evolution-timeline",
-     "score": 0.54
+     "score": 0.53
     },
     {
      "id": "agentic-systems/orchestration/03-workflow-vs-agent-architecture",
@@ -4612,7 +4612,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/01-executive-summary",
-     "score": 0.54
+     "score": 0.53
     },
     {
      "id": "agentic-systems/orchestration/03-workflow-vs-agent-architecture",
@@ -4708,11 +4708,11 @@
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/04-temporal-deep-dive",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "agentic-systems/orchestration/03-workflow-vs-agent-architecture",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -4801,11 +4801,11 @@
      "score": 0.37
     },
     {
-     "id": "agentic-systems/core/24-mcp-integration-and-memory",
-     "score": 0.36
+     "id": "agentic-systems/coding-tools/39-mcp-deep-guide",
+     "score": 0.35
     },
     {
-     "id": "agentic-systems/coding-tools/39-mcp-deep-guide",
+     "id": "agentic-systems/core/24-mcp-integration-and-memory",
      "score": 0.35
     }
    ]
@@ -5029,7 +5029,7 @@
     },
     {
      "id": "agentic-systems/orchestration/03-workflow-vs-agent-architecture",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -5089,11 +5089,11 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/05-harness-engineering-research-report",
-     "score": 0.49
+     "score": 0.48
     },
     {
      "id": "agentic-systems/core/04-harness-engineering-ai-agents-and-vendor-landscape",
-     "score": 0.47
+     "score": 0.46
     }
    ]
   },
