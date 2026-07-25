@@ -398,6 +398,13 @@ ruleset:
 4. Review CODEOWNERS files in quarterly platform reviews; dead-team owners silently break review requirements.
 5. Enable "Require deployments to succeed" on `main` only after your deployment environments are stable — enabling prematurely blocks legitimate hotfixes.
 
+### Antipatterns
+
+- **Bypassing branch protection for "urgent" fixes** — establish a formal break-glass process (temporary bypass actor with mandatory post-incident review) instead of disabling protections.
+- **Using individual GitHub usernames in CODEOWNERS** — when the person leaves, the branch protection silently stops requiring their review (or blocks PRs with no reachable reviewer).
+- **Relying on UI-configured rules without IaC** — the UI does not show diffs, does not version changes, and configuration drift is invisible until an incident.
+- **Setting required status checks to optional** — required checks that are consistently skipped provide false assurance and developer frustration.
+
 ---
 
 ## PART 27 — GitHub Advanced Security (GHAS) — Deep Dive
@@ -565,6 +572,21 @@ jobs:
           comment-summary-in-pr: always
 ```
 
+### Best Practices
+
+1. Enable secret scanning + push protection on all repos org-wide via auto-enable — new repos are protected from day one without manual steps.
+2. Review Dependabot PRs weekly; use auto-merge for patch-only updates that pass all CI checks (reduces toil without sacrificing control).
+3. Treat CodeQL findings as blocking on `main` PRs — fix or suppress with documented rationale; never silently ignore.
+4. Audit push protection bypass logs weekly; any non-false-positive bypass triggers incident response.
+5. Use GHAS Security Overview dashboards in quarterly security reviews to track MTTR (mean time to remediate) for each repo and team.
+
+### Antipatterns
+
+- **Enabling secret scanning but not push protection** — scanning after the push means the secret is already in history and potentially cloned by other systems.
+- **Ignoring Dependabot PRs** — stale, unreviewed Dependabot PRs pile up and become a noise wall, defeating the purpose.
+- **CodeQL on schedule only, not on PR** — vulnerabilities reach `main` before scanning catches them.
+- **Custom pattern sprawl** — defining hundreds of custom secret patterns with high false-positive rates causes alert fatigue and bypass normalization.
+
 ---
 
 ## PART 28 — GitHub Copilot Enterprise at Scale
@@ -654,6 +676,23 @@ MCP (Model Context Protocol) connects Copilot to external tools. Enterprise admi
 | GDPR compliance | Covered by GitHub's DPA for Enterprise |
 
 **Practical step**: Request and sign the GitHub Data Processing Agreement (DPA) before deploying Copilot Enterprise in any regulated environment.
+
+### Best Practices
+
+1. Assign Copilot seats via team membership (not individual assignment) — scales with org growth and simplifies offboarding.
+2. Run a monthly seat utilization report; deprovision seats unused for 30+ days — typically recovers 10–20% of seat spend.
+3. Set org-level AI Credits budget caps with 3 alert thresholds (50%, 75%, 100%) before rollout.
+4. Publish a `copilot-instructions.md` for each major repo — it's the highest-ROI action for improving suggestion quality.
+5. Review enterprise MCP allow-list quarterly; remove servers no longer in use.
+6. Sign the GitHub DPA before granting Copilot Enterprise access in regulated industries.
+
+### Antipatterns
+
+- **Open-ended seat provisioning** — every developer requests a seat on a whim; no utilization review. Leads to 30–40% waste.
+- **No `copilot-instructions.md`** — Copilot makes generic suggestions that violate internal conventions, eroding developer trust.
+- **Enabling all MCP servers** without an allow-list — developers connect arbitrary MCP servers, expanding attack surface and creating compliance violations.
+- **Deploying in a regulated environment without signing the DPA** — code sent to Copilot may have different data-handling terms than assumed.
+- **Fine-tuning on all repos including vendor code** — license violations if third-party licensed code is included in training data.
 
 ---
 
@@ -801,6 +840,32 @@ jobs:
             });
 ```
 
+### Copilot for Code Review of IaC
+
+Assign Copilot as a reviewer on Terraform/CloudFormation/Kubernetes PRs:
+
+1. Add `copilot` as a reviewer in CODEOWNERS for `terraform/**` and `kubernetes/**`.
+2. Copilot agentic review (March 2026+) explores related IaC files, traces module dependencies, and surfaces:
+   - Security misconfigurations (e.g., S3 bucket without versioning, security group `0.0.0.0/0`).
+   - Drift from organizational standards (e.g., missing required tags, wrong naming convention).
+   - Missing outputs needed by other modules that import from this one.
+3. Human platform engineer reviews Copilot's comments before merging.
+
+### Best Practices
+
+1. Use Plan Mode in agent mode for all IaC generation tasks — review the proposed file structure before execution.
+2. Scope MCP server permissions to read-only for log/metrics access; require explicit HITL for any write operation.
+3. Create issue templates that pre-assign to `copilot` for standardized infra requests — reduces toil for platform team while maintaining governance.
+4. Log all agent sessions (VS Code agent mode and coding agent) to a central audit trail; review weekly.
+5. Use Copilot for first-draft runbooks and post-mortems; require SRE sign-off before publishing.
+
+### Antipatterns
+
+- **Granting agent mode write access to production cloud accounts** — even in incident scenarios, writes must be human-confirmed.
+- **Publishing AI-drafted runbooks without review** — agent mode generates plausible but not always correct operational procedures.
+- **Using the coding agent for open-ended infrastructure tasks** — agent works best on well-scoped tasks with clear acceptance criteria; "set up our entire AWS environment" will produce inconsistent results.
+- **No HITL gate on agent-authored IaC PRs** — agent-generated Terraform can introduce subtle security misconfigurations not caught by `terraform validate`.
+
 ---
 
 ## PART 30 — Measuring Platform Engineering Success
@@ -937,6 +1002,14 @@ graph LR
 3. Pair quantitative metrics (acceptance rate) with qualitative (developer survey) — one without the other misses the full picture.
 4. Attribute productivity gains conservatively in ROI models; inflated numbers invite skepticism and erode trust when reality doesn't match.
 5. Track credit utilization by feature (completions vs. chat vs. agent vs. code review) to identify where investment delivers most value.
+
+### Antipatterns
+
+- **Measuring only acceptance rate** — a high acceptance rate from low-quality, single-line suggestions is meaningless; pair with PR lead time and developer NPS.
+- **No baseline before rollout** — impossible to attribute DORA improvements to Copilot vs. other concurrent changes.
+- **Sharing individual developer AI usage data with managers** — creates surveillance culture and suppresses authentic adoption; aggregate to team level only.
+- **Declaring ROI success after one month** — AI tool adoption follows an S-curve; the real productivity gain emerges after 3–6 months as developers learn effective prompting.
+- **Ignoring overage spend signals** — consistent monthly overage means your budget model is wrong; recalibrate or negotiate a higher tier before costs surprise leadership.
 
 ---
 
