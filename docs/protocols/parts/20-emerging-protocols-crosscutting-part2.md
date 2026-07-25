@@ -542,22 +542,28 @@ Each protocol introduces a new "registry" concept. Enterprises must govern all o
 **Unified Registry Architecture (recommended):**
 
 **Registry Entry (per agent):**
-- agent_id: (UUID)
-- protocols: ["a2a", "ag-ui", "utcp"]
-- agent_card_url: "https://.../.well-known/agent-card.json"
-- did: "did:web:enterprise.com:agents:billing"
-- spiffe_id: "spiffe://enterprise.com/agent/billing"
-- owner_team: "finance-engineering"
-- compliance_tier: "high" (triggers PCI/GDPR controls)
-- approved_versions: {"a2a": "1.0", "ag-ui": "0.8+"}
-- last_reviewed: "2026-07-01"
+
+```text
+agent_id: (UUID)
+protocols: ["a2a", "ag-ui", "utcp"]
+agent_card_url: "https://.../.well-known/agent-card.json"
+did: "did:web:enterprise.com:agents:billing"
+spiffe_id: "spiffe://enterprise.com/agent/billing"
+owner_team: "finance-engineering"
+compliance_tier: "high" (triggers PCI/GDPR controls)
+approved_versions: {"a2a": "1.0", "ag-ui": "0.8+"}
+last_reviewed: "2026-07-01"
+```
 
 **Registry API:**
-- GET /registry/agents?protocol=a2a
-- GET /registry/agents/{id}
-- POST /registry/agents (requires governance approval)
-- PUT /registry/agents/{id}/versions (approval required)
-- DELETE /registry/agents/{id} (decommission workflow)
+
+```text
+GET /registry/agents?protocol=a2a
+GET /registry/agents/{id}
+POST /registry/agents (requires governance approval)
+PUT /registry/agents/{id}/versions (approval required)
+DELETE /registry/agents/{id} (decommission workflow)
+```
 
 ### 3.12.6 Metadata Governance
 

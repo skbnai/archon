@@ -16,4 +16,4 @@ Agent identity — the mechanisms by which an AI system proves and maintains its
 
 **Key Finding:** Enterprise platforms diverge significantly on whether agents are first-class identity subjects (like AWS IAM roles or Entra service principals) or subordinate to human user identity contexts. This choice cascades through authorization, audit, and compliance architectures.
 
-For detailed identity implementation guidance across specific platforms and protocols, see the companion guides: [Agent Identity — Entra vs. AWS AgentCore](./06-agent-identity-entra-vs-awsagentcore), [Identity, OBO & Sessions](./05-identity-obo-sessions), and [Auth Standards Reference](./01-auth-standards-reference).
+For detailed identity implementation guidance across specific platforms and protocols, see the companion guides: [Agent Identity — Entra vs. AWS AgentCore](./06-agent-identity-entra-vs-awsagentcore.md), [Identity, OBO & Sessions](./05-identity-obo-sessions.md), and [Auth Standards Reference](./01-auth-standards-reference.md).

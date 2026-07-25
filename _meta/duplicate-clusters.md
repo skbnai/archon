@@ -11,10 +11,10 @@
 
 Pairwise similarity within this cluster:
 
-- 74%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 74%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 74%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 73%  `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
-- 70%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 71%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 70%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 69%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
 
@@ -52,7 +52,7 @@ Pairwise similarity within this cluster:
 
 - 65%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
 - 62%  `architecture/04-aidlc-artifacts-togaf-migration-to-ea` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
-- 54%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/04-aidlc-artifacts-togaf-migration-to-ea`
+- 55%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/04-aidlc-artifacts-togaf-migration-to-ea`
 
 ## Cluster (3 pages)
 
@@ -63,7 +63,7 @@ Pairwise similarity within this cluster:
 Pairwise similarity within this cluster:
 
 - 68%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
-- 67%  `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
+- 66%  `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
 - 65%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2`
 
 ## Cluster (3 pages)
@@ -76,7 +76,7 @@ Pairwise similarity within this cluster:
 
 - 64%  `protocols/08-entra-3lo-agent-auth-implementation` <-> `protocols/11-entra-3lo-agent-auth-standards-architecture`
 - 61%  `protocols/09-entra-3lo-agent-auth-multiagent-compliance` <-> `protocols/11-entra-3lo-agent-auth-standards-architecture`
-- 48%  `protocols/08-entra-3lo-agent-auth-implementation` <-> `protocols/09-entra-3lo-agent-auth-multiagent-compliance`
+- 49%  `protocols/08-entra-3lo-agent-auth-implementation` <-> `protocols/09-entra-3lo-agent-auth-multiagent-compliance`
 
 ## Cluster (3 pages)
 
@@ -106,7 +106,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 66%  `agentic-systems/coding-tools/09-git-github-platform-engineering-handbook` <-> `agentic-systems/coding-tools/48-git-internals`
+- 65%  `agentic-systems/coding-tools/09-git-github-platform-engineering-handbook` <-> `agentic-systems/coding-tools/48-git-internals`
 
 ## Cluster (2 pages)
 
@@ -115,7 +115,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 63%  `agentic-systems/coding-tools/13-cheatsheet-10-multiagent-production` <-> `agentic-systems/coding-tools/parts/13-cheatsheet-10-multiagent-production-part2`
+- 62%  `agentic-systems/coding-tools/13-cheatsheet-10-multiagent-production` <-> `agentic-systems/coding-tools/parts/13-cheatsheet-10-multiagent-production-part2`
 
 ## Cluster (2 pages)
 
@@ -223,7 +223,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 68%  `architecture/77-ai-transformation-consultant-toolkit-2026` <-> `architecture/parts/27-ai-transformation-consultant-toolkit-2026-part2`
+- 69%  `architecture/77-ai-transformation-consultant-toolkit-2026` <-> `architecture/parts/27-ai-transformation-consultant-toolkit-2026-part2`
 
 ## Cluster (2 pages)
 

@@ -47,7 +47,7 @@
     },
     {
      "id": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
-     "score": 0.42
+     "score": 0.43
     }
    ]
   },
@@ -111,7 +111,7 @@
     },
     {
      "id": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
-     "score": 0.53
+     "score": 0.54
     }
    ]
   },
@@ -164,7 +164,7 @@
    "top_similar": [
     {
      "id": "architecture/06-ea-architect-deep-dive-five-arenas",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "architecture/08-ea-architect-deep-dive-measurement-growth",
@@ -195,14 +195,14 @@
    "top_similar": [
     {
      "id": "architecture/05-ea-architect-deep-dive-foundation",
+     "score": 0.42
+    },
+    {
+     "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
      "score": 0.41
     },
     {
      "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
-     "score": 0.41
-    },
-    {
-     "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
      "score": 0.41
     }
    ]
@@ -324,7 +324,7 @@
    "top_similar": [
     {
      "id": "architecture/12-apex-ea-delivery-governance-reference",
-     "score": 0.62
+     "score": 0.61
     },
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
@@ -382,7 +382,7 @@
    "top_similar": [
     {
      "id": "architecture/10-apex-ea-aidlc-methodology",
-     "score": 0.62
+     "score": 0.61
     },
     {
      "id": "architecture/11-apex-ea-information-systems-architecture",
@@ -419,7 +419,7 @@
     },
     {
      "id": "architecture/parts/10-aidlc-agile-cicd-agile-evolution-cicd-transformation",
-     "score": 0.51
+     "score": 0.52
     },
     {
      "id": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
@@ -1364,7 +1364,7 @@
     },
     {
      "id": "architecture/48-enterprise-ai-architect-foundations",
-     "score": 0.36
+     "score": 0.35
     }
    ]
   },
@@ -1860,7 +1860,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/25-enterprise-technology-selection-framework-part2",
-     "score": 0.58
+     "score": 0.57
     }
    ]
   },
@@ -1882,7 +1882,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/26-ai-invoice-auditor-architecture-part2",
-     "score": 0.54
+     "score": 0.53
     }
    ]
   },
@@ -2053,7 +2053,7 @@
     },
     {
      "id": "strategy/vols/09-vol8-portfolio-consulting-frameworks-architecture-operating-delivery",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -2076,7 +2076,7 @@
      "score": 0.34
     },
     {
-     "id": "architecture/77-ai-transformation-consultant-toolkit-2026",
+     "id": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
      "score": 0.33
     }
    ]
@@ -2281,7 +2281,7 @@
    "top_similar": [
     {
      "id": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
-     "score": 0.5
+     "score": 0.51
     },
     {
      "id": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
@@ -2413,7 +2413,7 @@
     },
     {
      "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-     "score": 0.53
+     "score": 0.54
     },
     {
      "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
@@ -2479,7 +2479,7 @@
     },
     {
      "id": "architecture/13-aidlc-agile-cicd-ai-transformation-2026",
-     "score": 0.51
+     "score": 0.52
     },
     {
      "id": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
@@ -2890,7 +2890,7 @@
    "top_similar": [
     {
      "id": "architecture/75-enterprise-technology-selection-framework",
-     "score": 0.58
+     "score": 0.57
     }
    ]
   },
@@ -2913,7 +2913,7 @@
    "top_similar": [
     {
      "id": "architecture/76-ai-invoice-auditor-architecture",
-     "score": 0.54
+     "score": 0.53
     }
    ]
   },

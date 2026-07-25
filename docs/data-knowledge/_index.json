@@ -16,12 +16,12 @@
    "status": "draft",
    "top_similar": [
     {
-     "id": "operations/index",
+     "id": "agentic-systems/index",
      "score": 0.34
     },
     {
-     "id": "agentic-systems/index",
-     "score": 0.33
+     "id": "operations/index",
+     "score": 0.34
     },
     {
      "id": "architecture/index",

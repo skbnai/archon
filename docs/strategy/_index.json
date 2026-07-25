@@ -54,7 +54,7 @@
     },
     {
      "id": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
-     "score": 0.56
+     "score": 0.55
     },
     {
      "id": "strategy/01-quantum-ai-consulting-landscape",
@@ -567,6 +567,10 @@
     {
      "id": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
      "score": 0.33
+    },
+    {
+     "id": "architecture/55-governance-propagation-chain",
+     "score": 0.3
     }
    ]
   },
@@ -664,7 +668,7 @@
    "top_similar": [
     {
      "id": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-     "score": 0.47
+     "score": 0.46
     },
     {
      "id": "strategy/42-ai-first-to-ai-native",
@@ -1033,7 +1037,7 @@
     },
     {
      "id": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-     "score": 0.42
+     "score": 0.41
     }
    ]
   },
@@ -1295,7 +1299,7 @@
    "top_similar": [
     {
      "id": "strategy/55-ai-cost-implementation-guide-2026-anti-patterns-deployment-playbook",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -1316,7 +1320,7 @@
    "top_similar": [
     {
      "id": "strategy/54-ai-cost-implementation-guide-2026-budget-finops-roi-measurement",
-     "score": 0.33
+     "score": 0.34
     },
     {
      "id": "strategy/04-ai-cost-implementation-guide-2026",
@@ -1603,7 +1607,7 @@
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -2410,7 +2414,7 @@
    "top_similar": [
     {
      "id": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
-     "score": 0.75
+     "score": 0.74
     },
     {
      "id": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
@@ -2471,7 +2475,7 @@
    "top_similar": [
     {
      "id": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
-     "score": 0.75
+     "score": 0.74
     },
     {
      "id": "strategy/01-quantum-ai-consulting-landscape",
@@ -2506,7 +2510,7 @@
     },
     {
      "id": "strategy/02-quantum-ai-startup-landscape",
-     "score": 0.56
+     "score": 0.55
     },
     {
      "id": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
@@ -2540,7 +2544,7 @@
     },
     {
      "id": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-     "score": 0.36
+     "score": 0.37
     }
    ]
   },
@@ -2676,7 +2680,7 @@
     },
     {
      "id": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
-     "score": 0.33
+     "score": 0.32
     },
     {
      "id": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
@@ -2700,7 +2704,7 @@
    "top_similar": [
     {
      "id": "strategy/27-part-17-transformation-roadmap",
-     "score": 0.47
+     "score": 0.46
     },
     {
      "id": "architecture/85-enterprise-manager-ai-genai",
@@ -2708,7 +2712,7 @@
     },
     {
      "id": "strategy/42-ai-first-to-ai-native",
-     "score": 0.42
+     "score": 0.41
     }
    ]
   },
@@ -2808,7 +2812,7 @@
    "top_similar": [
     {
      "id": "architecture/83-ea-okr-kpi-research",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },

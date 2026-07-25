@@ -61,9 +61,9 @@ Users accessing the AI Agent system authenticate via the OAuth 2.0 Authorization
 | --- | --- | --- |
 | **response_type** | code | Authorization code flow (not implicit) |
 | **code_challenge_method** | S256 | SHA-256 hashed PKCE verifier |
-| **scope** | openid profile api://{app-id}/.default | Request ID token + API access |
-| **redirect_uri** | https://{apim-host}/.auth/callback | Only registered URIs accepted |
-| **token_endpoint** | login.microsoftonline.com/{tenant}/oauth2/v2.0/token | Token exchange endpoint |
+| **scope** | openid profile api://`{app-id}`/.default | Request ID token + API access |
+| **redirect_uri** | https://`{apim-host}`/.auth/callback | Only registered URIs accepted |
+| **token_endpoint** | login.microsoftonline.com/`{tenant}`/oauth2/v2.0/token | Token exchange endpoint |
 | **access_token TTL** | 1 hour (3600s) | Short-lived; refresh token used after |
 | **refresh_token TTL** | 90 days (sliding) | Rotated on every use |
 | **MFA enforcement** | Conditional Access Policy | Required for all user logins |
@@ -125,7 +125,7 @@ For workloads running on AKS (primarily the Harness Delegate and Chaos Agent), M
 ### Configuration Requirements
 
 - AKS cluster: Enable OIDC issuer (--enable-oidc-issuer) and Workload Identity webhook (--enable-workload-identity)
-- Service Account: Annotate with azure.workload.identity/client-id: {managed-identity-client-id}
+- Service Account: Annotate with azure.workload.identity/client-id: `{managed-identity-client-id}`
 - Pod spec: Label with azure.workload.identity/use: "true" (Fail-Close mode for reliability)
 - Federated credential: Register OIDC issuer URL + namespace/service-account in Managed Identity
 - Code: Use DefaultAzureCredential() — automatically selects WorkloadIdentityCredential on AKS
@@ -159,8 +159,8 @@ Azure Key Vault is the single secret store for the entire AI Agent Architecture.
 | --- | --- | --- |
 | ACA/AKS Workload | GET http://169.254.169.254/metadata/identity/oauth2/token?resource=https://vault.azure.net | Request token from IMDS |
 | IMDS / Entra ID | JWT Bearer Token (scope: vault.azure.net) | Token issued |
-| Workload | GET https://{vault}.vault.azure.net/secrets/{name} Authorization: Bearer {token} RBAC check: Key Vault Secrets User role | Fetch secret |
-| Key Vault | {Secret value (AOAI key / connection string) | Secret returned |
+| Workload | `GET https://{vault}.vault.azure.net/secrets/{name}`, `Authorization: Bearer {token}` | Fetch secret; RBAC check: Key Vault Secrets User role |
+| Key Vault | Secret value (AOAI key / connection string) | Secret returned |
 
 **Azure RBAC Roles for Key Vault:**
 
@@ -263,7 +263,7 @@ Conditional Access enforces contextual authorisation on top of token validation:
 
 #### Phase 1 — Identity Foundation
 
-- [ ] Register backend-app in Entra ID; expose API URI (api://{client-id}); define App Roles
+- [ ] Register backend-app in Entra ID; expose API URI (api://`{client-id}`); define App Roles
 - [ ] Register worker-app; grant application permissions (not delegated); admin consent
 - [ ] Enable System-Assigned Managed Identity on all ACA environments
 - [ ] Enable AKS OIDC Issuer + Workload Identity webhook on AKS cluster
@@ -298,7 +298,7 @@ Conditional Access enforces contextual authorisation on top of token validation:
 | **Pitfall** | **Risk** | **Mitigation** |
 | --- | --- | --- |
 | **Storing client_secret in env vars** | Secret leakage via logs/config dumps | Use Managed Identity or cert assertion; Key Vault ref |
-| **Wrong audience (aud) in token** | 401 errors on every request | Use api://{backend-app-id}/.default scope exactly |
+| **Wrong audience (aud) in token** | 401 errors on every request | Use api://`{backend-app-id}`/.default scope exactly |
 | **scp vs roles confusion** | Authorization always fails for daemon apps | Client credentials→roles claim; delegated→scp claim |
 | **IMDS endpoint behind proxy** | Token acquisition fails silently | IMDS (169.254.169.254) must be non-proxied; configure exclusion |
 | **Token not cached locally** | IMDS throttling (429) under load | Use DefaultAzureCredential — built-in token cache (5 min) |

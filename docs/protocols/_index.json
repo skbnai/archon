@@ -533,7 +533,7 @@
     },
     {
      "id": "protocols/parts/20-emerging-protocols-crosscutting-part2",
-     "score": 0.45
+     "score": 0.44
     }
    ]
   },
@@ -856,21 +856,21 @@
     "lmos",
     "utcp"
    ],
-   "word_count": 5463,
+   "word_count": 5453,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/20-emerging-protocols-crosscutting",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "protocols/21-emerging-protocols-overview",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.4
+     "score": 0.39
     }
    ]
   },
