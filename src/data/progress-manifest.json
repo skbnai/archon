@@ -1513,11 +1513,143 @@
   },
   "protocols": {
     "label": "Protocols & Interoperability",
-    "totalPages": 1,
+    "totalPages": 34,
     "pages": [
+      {
+        "id": "protocols/01-auth-standards-reference",
+        "title": "Auth Standards Reference: OAuth 2.1, OIDC, RFC 8693 & Implementation Checklists"
+      },
+      {
+        "id": "protocols/02-enterprise-ai-platform-auth-survey",
+        "title": "Enterprise AI Platform Authentication Survey"
+      },
+      {
+        "id": "protocols/03-marketplace-connector-auth-patterns",
+        "title": "Marketplace Connector Auth Patterns & Enterprise Architecture"
+      },
+      {
+        "id": "protocols/04-agentidentity-research-2026",
+        "title": "Agent Identity for AI Systems — Research 2026"
+      },
+      {
+        "id": "protocols/05-identity-obo-sessions",
+        "title": "Enterprise Authentication & Identity Propagation for AI Agents"
+      },
+      {
+        "id": "protocols/06-agent-identity-entra-vs-awsagentcore",
+        "title": "Agent Identity for AI Systems: Microsoft Entra Agent ID vs AWS AgentCore Identity"
+      },
+      {
+        "id": "protocols/07-auth-identity-flows",
+        "title": "Authentication & Identity Flows: Complete Azure AI Agent Architecture"
+      },
+      {
+        "id": "protocols/08-entra-3lo-agent-auth-implementation",
+        "title": "EntraID 3LO: AC Gateway + AC Identity — Volume 2"
+      },
+      {
+        "id": "protocols/09-entra-3lo-agent-auth-multiagent-compliance",
+        "title": "EntraID 3LO: AC Gateway + AC Identity — Volume 3"
+      },
+      {
+        "id": "protocols/10-entra-3lo-agent-auth-security-review",
+        "title": "EntraID 3LO: AC Gateway + AC Identity — Volume 4"
+      },
+      {
+        "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
+        "title": "EntraID 3LO: AC Gateway + AC Identity — Volume 1"
+      },
+      {
+        "id": "protocols/12-tool-authentication-connectors",
+        "title": "Tool Authentication & Connector Models: OAuth, SAML, API Keys & PATs"
+      },
+      {
+        "id": "protocols/13-mcp-deep-research-2026",
+        "title": "MCP Deep Research 2026 — Part 1: Architecture, Capabilities & Ecosystem Foundation"
+      },
+      {
+        "id": "protocols/14-mcp-enterprise-security-governance-operations-2026",
+        "title": "Enterprise MCP Security, Authorization & Governance (2026) — Part 1: Foundations"
+      },
+      {
+        "id": "protocols/15-mcp-harness-aidlc",
+        "title": "MCP Harness Engineering: Testing &amp; Evaluation Across the AIDLC"
+      },
+      {
+        "id": "protocols/16-ai-protocols-standards-service-industry-guide-2026",
+        "title": "AI Protocols, Frameworks & Standards 2026"
+      },
+      {
+        "id": "protocols/17-agent-protocol-metadata-headers",
+        "title": "Agent Protocol Metadata, Headers & Capability Negotiation"
+      },
+      {
+        "id": "protocols/18-emerging-protocols-acp-anp",
+        "title": "ACP & ANP Deep Dives — Federated and Decentralised Agent Protocols"
+      },
+      {
+        "id": "protocols/19-emerging-protocols-agui-utcp",
+        "title": "AG-UI & UTCP — Enterprise Architecture Deep Dive (Part 1)"
+      },
+      {
+        "id": "protocols/20-emerging-protocols-crosscutting",
+        "title": "Cross-Cutting Architecture (Part 1): Security, Governance, Compliance & Observability"
+      },
+      {
+        "id": "protocols/21-emerging-protocols-overview",
+        "title": "Emerging AI Agent Protocols Overview (Part 1): Executive Summary & Landscape"
+      },
+      {
+        "id": "protocols/22-emerging-protocols-ucp-ap2-nlip-lmos",
+        "title": "Section 2C — Emerging AI Agent Protocols: UCP, AP2, NLIP & LMOS Deep Dives"
+      },
+      {
+        "id": "protocols/23-existing-protocol-evolution-agentic-ai",
+        "title": "Existing Protocol Evolution for Agentic AI (2025–2026)"
+      },
       {
         "id": "protocols/index",
         "title": "Protocols Hub"
+      },
+      {
+        "id": "protocols/parts/13-mcp-deep-research-2026-part2",
+        "title": "MCP Deep Research 2026 — Part 2: RAI, Governance, Ecosystem & Assessment"
+      },
+      {
+        "id": "protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2",
+        "title": "Enterprise MCP Security, Authorization & Governance (2026) — Part 2: Authorization Models & Policy Enforcement"
+      },
+      {
+        "id": "protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part3",
+        "title": "Enterprise MCP Security, Authorization & Governance (2026) — Part 3: Trust Lifecycle, Compliance & Reference Architectures"
+      },
+      {
+        "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
+        "title": "AI Protocols, Frameworks & Standards 2026: Service Industry Adoption & Action Plan"
+      },
+      {
+        "id": "protocols/parts/18-emerging-protocols-acp-anp-part2",
+        "title": "ANP Protocol Architecture & Governance — Part 2"
+      },
+      {
+        "id": "protocols/parts/19-emerging-protocols-agui-utcp-part2",
+        "title": "UTCP Protocol Analysis & Protocol Stack Synthesis — Part 2"
+      },
+      {
+        "id": "protocols/parts/20-emerging-protocols-crosscutting-part2",
+        "title": "Cross-Cutting Architecture (Part 2): Versioning, Failure Handling, Observability & Compliance"
+      },
+      {
+        "id": "protocols/parts/21-emerging-protocols-overview-part2",
+        "title": "Emerging AI Agent Protocols Overview (Part 2): Future Outlook & Decision Framework"
+      },
+      {
+        "id": "protocols/parts/22-emerging-protocols-ucp-ap2-nlip-lmos-part2",
+        "title": "Section 2C — Emerging AI Agent Protocols: AP2, NLIP & Protocol Integration"
+      },
+      {
+        "id": "protocols/parts/22-emerging-protocols-ucp-ap2-nlip-lmos-part3",
+        "title": "Section 2C — Emerging AI Agent Protocols: LMOS & Cross-Protocol Architecture"
       }
     ]
   },

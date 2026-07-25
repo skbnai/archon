@@ -16,7 +16,7 @@
    "status": "draft",
    "top_similar": [
     {
-     "id": "protocols/index",
+     "id": "agentic-systems/index",
      "score": 0.34
     },
     {
@@ -24,8 +24,8 @@
      "score": 0.34
     },
     {
-     "id": "agentic-systems/index",
-     "score": 0.33
+     "id": "architecture/index",
+     "score": 0.31
     }
    ]
   }
