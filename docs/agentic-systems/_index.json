@@ -8,7 +8,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "agent-ux-patterns",
    "tags": [],
-   "word_count": 2808,
+   "word_count": 2837,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -22,7 +22,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/02-agui-standards-landscape",
-     "score": 0.3
+     "score": 0.31
     }
    ]
   },
@@ -32,17 +32,17 @@
    "doc_type": "reference-architecture",
    "topic_id": "agui-standards-landscape",
    "tags": [],
-   "word_count": 3481,
+   "word_count": 3514,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/19-emerging-protocols-agui-utcp",
-     "score": 0.56
+     "score": 0.58
     },
     {
      "id": "agentic-systems/agentic-ui/parts/02-agui-standards-landscape-part3",
-     "score": 0.5
+     "score": 0.51
     },
     {
      "id": "agentic-systems/agentic-ui/parts/02-agui-standards-landscape-part2",
@@ -58,7 +58,7 @@
    "tags": [
     "agentic-ui"
    ],
-   "word_count": 5550,
+   "word_count": 5575,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -76,7 +76,7 @@
    "tags": [
     "agentic-ui"
    ],
-   "word_count": 3126,
+   "word_count": 3155,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": []
@@ -102,7 +102,7 @@
    "tags": [
     "agentic-ui"
    ],
-   "word_count": 16,
+   "word_count": 44,
    "last_reviewed": "2026-07-24",
    "status": "draft",
    "top_similar": []
@@ -115,7 +115,7 @@
    "tags": [
     "agentic-ui"
    ],
-   "word_count": 4035,
+   "word_count": 4060,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -157,7 +157,7 @@
    "doc_type": "guide",
    "topic_id": "evolution-human-ai-interfaces",
    "tags": [],
-   "word_count": 2332,
+   "word_count": 2348,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -193,7 +193,7 @@
    "tags": [
     "agentic-ui"
    ],
-   "word_count": 5325,
+   "word_count": 5355,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -263,7 +263,7 @@
    "tags": [
     "agentic-ui"
    ],
-   "word_count": 3314,
+   "word_count": 3344,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": []
@@ -274,13 +274,13 @@
    "doc_type": "guide",
    "topic_id": "performance-engineering",
    "tags": [],
-   "word_count": 2610,
+   "word_count": 2637,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/parts/15-performance-engineering-part3",
-     "score": 0.48
+     "score": 0.47
     }
    ]
   },
@@ -293,17 +293,13 @@
     "agentic-systems",
     "reliability-engineering"
    ],
-   "word_count": 2734,
+   "word_count": 2760,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/parts/16-reliability-engineering-part3",
      "score": 0.39
-    },
-    {
-     "id": "architecture/43-agentic-ai-reliability-observability-governance",
-     "score": 0.3
     }
    ]
   },
@@ -323,7 +319,7 @@
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
-     "score": 0.38
+     "score": 0.37
     },
     {
      "id": "strategy/22-part-12-responsible-ai",
@@ -337,13 +333,13 @@
    "doc_type": "guide",
    "topic_id": "scalability-engineering",
    "tags": [],
-   "word_count": 3314,
+   "word_count": 3340,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/parts/18-scalability-engineering-part3",
-     "score": 0.4
+     "score": 0.41
     },
     {
      "id": "agentic-systems/agentic-ui/parts/18-scalability-engineering-part2",
@@ -409,7 +405,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part3",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -453,7 +449,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/02-agui-standards-landscape",
-     "score": 0.5
+     "score": 0.51
     },
     {
      "id": "agentic-systems/agentic-ui/01-agent-ux-patterns",
@@ -545,7 +541,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/parts/01-agent-ux-patterns-part3",
-     "score": 0.31
+     "score": 0.3
     },
     {
      "id": "agentic-systems/agentic-ui/09-evolution-human-ai-interfaces",
@@ -661,7 +657,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/15-performance-engineering",
-     "score": 0.48
+     "score": 0.47
     },
     {
      "id": "agentic-systems/agentic-ui/parts/18-scalability-engineering-part2",
@@ -803,7 +799,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/18-scalability-engineering",
-     "score": 0.4
+     "score": 0.41
     }
    ]
   },
@@ -813,7 +809,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "cicd-secrets-security",
    "tags": [],
-   "word_count": 2727,
+   "word_count": 2745,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -833,7 +829,7 @@
     "security",
     "governance"
    ],
-   "word_count": 1588,
+   "word_count": 1619,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -847,7 +843,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/05-artifacts-referencearchitecture",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -861,7 +857,7 @@
     "ci-cd",
     "observability"
    ],
-   "word_count": 1665,
+   "word_count": 1698,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -875,7 +871,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/51-rag-agents-models-platform",
-     "score": 0.44
+     "score": 0.45
     }
    ]
   },
@@ -889,7 +885,7 @@
     "enterprise",
     "apis"
    ],
-   "word_count": 1833,
+   "word_count": 1863,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -917,17 +913,17 @@
     "architecture",
     "reference"
    ],
-   "word_count": 2670,
+   "word_count": 2701,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/49-vision-copilot-architecture-repointelligence",
-     "score": 0.42
+     "score": 0.43
     },
     {
      "id": "agentic-systems/coding-tools/51-rag-agents-models-platform",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "agentic-systems/coding-tools/54-prompts-evaluation-spark-infrastructure",
@@ -945,17 +941,13 @@
     "ecosystem",
     "patterns"
    ],
-   "word_count": 1468,
+   "word_count": 1484,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/51-rag-agents-models-platform",
      "score": 0.31
-    },
-    {
-     "id": "agentic-systems/coding-tools/parts/06-ecosystem-patterns-labs-part2",
-     "score": 0.3
     }
    ]
   },
@@ -996,7 +988,7 @@
     "github-copilot",
     "design-decision"
    ],
-   "word_count": 1639,
+   "word_count": 1666,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1025,7 +1017,7 @@
     "platform-engineering",
     "devops"
    ],
-   "word_count": 2512,
+   "word_count": 2544,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1046,7 +1038,7 @@
     "automation",
     "research"
    ],
-   "word_count": 3618,
+   "word_count": 3636,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1101,7 +1093,7 @@
     "github-copilot",
     "package-management"
    ],
-   "word_count": 1950,
+   "word_count": 1965,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1117,7 +1109,7 @@
    "doc_type": "guide",
    "topic_id": "cheatsheet-10-multiagent-production",
    "tags": [],
-   "word_count": 1659,
+   "word_count": 1691,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1137,7 +1129,7 @@
    "doc_type": "guide",
    "topic_id": "cheatsheet-11-mcp-pipeline-errors",
    "tags": [],
-   "word_count": 1618,
+   "word_count": 1646,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1153,7 +1145,7 @@
    "doc_type": "guide",
    "topic_id": "cheatsheet-1-claude-code",
    "tags": [],
-   "word_count": 1077,
+   "word_count": 1091,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1162,11 +1154,11 @@
      "score": 0.35
     },
     {
-     "id": "agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2",
+     "id": "agentic-systems/coding-tools/20-cheatsheet-6-claude-cli",
      "score": 0.34
     },
     {
-     "id": "agentic-systems/coding-tools/20-cheatsheet-6-claude-cli",
+     "id": "agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2",
      "score": 0.33
     }
    ]
@@ -1177,13 +1169,13 @@
    "doc_type": "guide",
    "topic_id": "cheatsheet-2-agent-sdk",
    "tags": [],
-   "word_count": 927,
+   "word_count": 952,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/32-claude-best-practices",
-     "score": 0.39
+     "score": 0.38
     }
    ]
   },
@@ -1193,7 +1185,7 @@
    "doc_type": "guide",
    "topic_id": "cheatsheet-3-mcp",
    "tags": [],
-   "word_count": 841,
+   "word_count": 867,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": []
@@ -1204,10 +1196,15 @@
    "doc_type": "guide",
    "topic_id": "cheatsheet-4-ai-fluency",
    "tags": [],
-   "word_count": 885,
+   "word_count": 910,
    "last_reviewed": "2026-07-24",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "agentic-systems/coding-tools/19-cheatsheet-5-prompt-engineering",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "agentic-systems/coding-tools/19-cheatsheet-5-prompt-engineering",
@@ -1215,10 +1212,15 @@
    "doc_type": "guide",
    "topic_id": "cheatsheet-5-prompt-engineering",
    "tags": [],
-   "word_count": 912,
+   "word_count": 938,
    "last_reviewed": "2026-07-24",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "agentic-systems/coding-tools/18-cheatsheet-4-ai-fluency",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "agentic-systems/coding-tools/20-cheatsheet-6-claude-cli",
@@ -1226,7 +1228,7 @@
    "doc_type": "guide",
    "topic_id": "cheatsheet-6-claude-cli",
    "tags": [],
-   "word_count": 1450,
+   "word_count": 1476,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1255,7 +1257,7 @@
     "coding-tools",
     "quick-reference"
    ],
-   "word_count": 1476,
+   "word_count": 1503,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1265,11 +1267,11 @@
     },
     {
      "id": "agentic-systems/coding-tools/33-claude-code-complete-2026",
-     "score": 0.31
+     "score": 0.33
     },
     {
      "id": "agentic-systems/coding-tools/20-cheatsheet-6-claude-cli",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -1284,7 +1286,7 @@
     "cheatsheet",
     "coding-tools"
    ],
-   "word_count": 1951,
+   "word_count": 1965,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1331,7 +1333,7 @@
    "tags": [
     "coding-tools"
    ],
-   "word_count": 1721,
+   "word_count": 1738,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1344,7 +1346,7 @@
      "score": 0.5
     },
     {
-     "id": "agentic-systems/coding-tools/parts/24-module-1-claude-foundations-part2",
+     "id": "agentic-systems/coding-tools/21-cheatsheet-7-claude-ecosystem",
      "score": 0.41
     }
    ]
@@ -1357,7 +1359,7 @@
    "tags": [
     "coding-tools"
    ],
-   "word_count": 3962,
+   "word_count": 3994,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1383,15 +1385,10 @@
    "tags": [
     "coding-tools"
    ],
-   "word_count": 911,
+   "word_count": 942,
    "last_reviewed": "2026-07-24",
    "status": "current",
-   "top_similar": [
-    {
-     "id": "protocols/13-mcp-deep-research-2026",
-     "score": 0.3
-    }
-   ]
+   "top_similar": []
   },
   {
    "id": "agentic-systems/coding-tools/27-module-5-claude-code-agents",
@@ -1401,13 +1398,13 @@
    "tags": [
     "coding-tools"
    ],
-   "word_count": 1157,
+   "word_count": 1188,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/36-claude-agents-best-practices",
-     "score": 0.42
+     "score": 0.43
     },
     {
      "id": "agentic-systems/coding-tools/33-claude-code-complete-2026",
@@ -1427,7 +1424,7 @@
    "tags": [
     "coding-tools"
    ],
-   "word_count": 1247,
+   "word_count": 1280,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": []
@@ -1440,7 +1437,7 @@
    "tags": [
     "coding-tools"
    ],
-   "word_count": 1086,
+   "word_count": 1102,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1460,7 +1457,7 @@
    "doc_type": "guide",
    "topic_id": "claude-agent-sdk-production",
    "tags": [],
-   "word_count": 3780,
+   "word_count": 3806,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1476,7 +1473,7 @@
    "doc_type": "guide",
    "topic_id": "claude-api-mastery",
    "tags": [],
-   "word_count": 1313,
+   "word_count": 1346,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": []
@@ -1492,7 +1489,7 @@
     "architecture",
     "best-practices"
    ],
-   "word_count": 2475,
+   "word_count": 2494,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1502,7 +1499,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/16-cheatsheet-2-agent-sdk",
-     "score": 0.39
+     "score": 0.38
     },
     {
      "id": "agentic-systems/coding-tools/parts/32-claude-best-practices-part2",
@@ -1516,7 +1513,7 @@
    "doc_type": "guide",
    "topic_id": "claude-code-complete-2026",
    "tags": [],
-   "word_count": 2549,
+   "word_count": 2579,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1540,17 +1537,17 @@
    "doc_type": "guide",
    "topic_id": "claude-enterprise-2026",
    "tags": [],
-   "word_count": 2316,
+   "word_count": 2347,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
-     "id": "agentic-systems/coding-tools/parts/35-claude-models-2026-part2",
+     "id": "agentic-systems/coding-tools/24-module-1-claude-foundations",
      "score": 0.31
     },
     {
-     "id": "agentic-systems/coding-tools/24-module-1-claude-foundations",
-     "score": 0.3
+     "id": "agentic-systems/coding-tools/parts/35-claude-models-2026-part2",
+     "score": 0.31
     }
    ]
   },
@@ -1560,7 +1557,7 @@
    "doc_type": "guide",
    "topic_id": "claude-models-2026",
    "tags": [],
-   "word_count": 2963,
+   "word_count": 2978,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1574,7 +1571,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/35-claude-models-2026-part3",
-     "score": 0.44
+     "score": 0.43
     }
    ]
   },
@@ -1588,13 +1585,13 @@
     "agents",
     "best-practices"
    ],
-   "word_count": 2854,
+   "word_count": 2890,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part2",
-     "score": 0.63
+     "score": 0.62
     },
     {
      "id": "agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part3",
@@ -1602,7 +1599,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/27-module-5-claude-code-agents",
-     "score": 0.42
+     "score": 0.43
     }
    ]
   },
@@ -1612,13 +1609,13 @@
    "doc_type": "guide",
    "topic_id": "claude-routines-guide",
    "tags": [],
-   "word_count": 2306,
+   "word_count": 2329,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/parts/37-claude-routines-guide-part2",
-     "score": 0.64
+     "score": 0.65
     }
    ]
   },
@@ -1628,13 +1625,13 @@
    "doc_type": "guide",
    "topic_id": "constitutional-ai-safety-2026",
    "tags": [],
-   "word_count": 3751,
+   "word_count": 3782,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/parts/24-module-1-claude-foundations-part2",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -1644,7 +1641,7 @@
    "doc_type": "guide",
    "topic_id": "mcp-deep-guide",
    "tags": [],
-   "word_count": 4678,
+   "word_count": 4705,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1658,7 +1655,7 @@
     },
     {
      "id": "architecture/58-mcp-a2a-protocol-deep-dive",
-     "score": 0.42
+     "score": 0.41
     }
    ]
   },
@@ -1668,7 +1665,7 @@
    "doc_type": "guide",
    "topic_id": "prompt-engineering-claude-4",
    "tags": [],
-   "word_count": 3071,
+   "word_count": 3095,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1688,7 +1685,7 @@
    "doc_type": "guide",
    "topic_id": "ruflo-agentic-ai-guide",
    "tags": [],
-   "word_count": 2935,
+   "word_count": 2961,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1704,7 +1701,7 @@
    "doc_type": "guide",
    "topic_id": "pr-review-handbook-vol1-traditional-review",
    "tags": [],
-   "word_count": 2452,
+   "word_count": 2469,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1714,7 +1711,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/42-pr-review-handbook-vol1-traditional-review-part3",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "agentic-systems/coding-tools/parts/43-pr-review-handbook-vol2-deep-domain-reviews-part2",
@@ -1728,13 +1725,13 @@
    "doc_type": "guide",
    "topic_id": "pr-review-handbook-vol2-deep-domain-reviews",
    "tags": [],
-   "word_count": 2004,
+   "word_count": 2036,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/parts/43-pr-review-handbook-vol2-deep-domain-reviews-part2",
-     "score": 0.36
+     "score": 0.37
     }
    ]
   },
@@ -1744,7 +1741,7 @@
    "doc_type": "guide",
    "topic_id": "pr-review-handbook-vol3-ai-assisted-review",
    "tags": [],
-   "word_count": 1314,
+   "word_count": 1346,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1760,7 +1757,7 @@
    "doc_type": "guide",
    "topic_id": "pr-review-handbook-vol4-agentic-review-architecture",
    "tags": [],
-   "word_count": 1489,
+   "word_count": 1521,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1776,7 +1773,7 @@
    "doc_type": "guide",
    "topic_id": "pr-review-handbook-vol5-case-studies-maturity-model",
    "tags": [],
-   "word_count": 1931,
+   "word_count": 1948,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1797,7 +1794,7 @@
     "enterprise",
     "research"
    ],
-   "word_count": 5062,
+   "word_count": 5074,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1811,7 +1808,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part4",
-     "score": 0.49
+     "score": 0.48
     }
    ]
   },
@@ -1821,7 +1818,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "git-internals",
    "tags": [],
-   "word_count": 3568,
+   "word_count": 3598,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1837,7 +1834,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "vision-copilot-architecture-repointelligence",
    "tags": [],
-   "word_count": 3027,
+   "word_count": 3053,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1861,7 +1858,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "github-architecture-and-actions",
    "tags": [],
-   "word_count": 2582,
+   "word_count": 2614,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1870,11 +1867,11 @@
      "score": 0.38
     },
     {
-     "id": "agentic-systems/coding-tools/parts/09-git-github-platform-engineering-handbook-part2",
+     "id": "agentic-systems/coding-tools/04-enterprise-apis-apps-cli",
      "score": 0.35
     },
     {
-     "id": "agentic-systems/coding-tools/04-enterprise-apis-apps-cli",
+     "id": "agentic-systems/coding-tools/parts/09-git-github-platform-engineering-handbook-part2",
      "score": 0.35
     }
    ]
@@ -1885,7 +1882,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "rag-agents-models-platform",
    "tags": [],
-   "word_count": 2692,
+   "word_count": 2721,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1899,7 +1896,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/03-cicd-observability-scaling",
-     "score": 0.44
+     "score": 0.45
     }
    ]
   },
@@ -1909,7 +1906,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "runners-and-runtime",
    "tags": [],
-   "word_count": 2321,
+   "word_count": 2352,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": []
@@ -1920,7 +1917,7 @@
    "doc_type": "guide",
    "topic_id": "marketplace-pages-packages",
    "tags": [],
-   "word_count": 1917,
+   "word_count": 1947,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1930,7 +1927,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/50-github-architecture-and-actions",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "agentic-systems/coding-tools/04-enterprise-apis-apps-cli",
@@ -1944,7 +1941,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "prompts-evaluation-spark-infrastructure",
    "tags": [],
-   "word_count": 3091,
+   "word_count": 3107,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -2179,7 +2176,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part2",
-     "score": 0.49
+     "score": 0.48
     }
    ]
   },
@@ -2204,7 +2201,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/47-github-copilot-enterprise-research-2026",
-     "score": 0.38
+     "score": 0.37
     },
     {
      "id": "agentic-systems/coding-tools/parts/09-git-github-platform-engineering-handbook-part4",
@@ -2388,7 +2385,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/38-constitutional-ai-safety-2026",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -2590,7 +2587,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/35-claude-models-2026",
-     "score": 0.44
+     "score": 0.43
     },
     {
      "id": "agentic-systems/coding-tools/24-module-1-claude-foundations",
@@ -2616,11 +2613,11 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/36-claude-agents-best-practices",
-     "score": 0.63
+     "score": 0.62
     },
     {
      "id": "agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part3",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "agentic-systems/coding-tools/33-claude-code-complete-2026",
@@ -2654,7 +2651,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part2",
-     "score": 0.4
+     "score": 0.39
     }
    ]
   },
@@ -2670,7 +2667,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/37-claude-routines-guide",
-     "score": 0.64
+     "score": 0.65
     }
    ]
   },
@@ -2693,7 +2690,7 @@
      "score": 0.34
     },
     {
-     "id": "agentic-systems/coding-tools/parts/34-claude-enterprise-2026-part3",
+     "id": "agentic-systems/agentic-ui/parts/17-responsible-ai-part3",
      "score": 0.32
     }
    ]
@@ -2786,7 +2783,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/42-pr-review-handbook-vol1-traditional-review",
-     "score": 0.36
+     "score": 0.37
     }
    ]
   },
@@ -2802,7 +2799,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/43-pr-review-handbook-vol2-deep-domain-reviews",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "agentic-systems/coding-tools/42-pr-review-handbook-vol1-traditional-review",
@@ -2826,7 +2823,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/45-pr-review-handbook-vol4-agentic-review-architecture-part2",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -2850,7 +2847,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/44-pr-review-handbook-vol3-ai-assisted-review-part2",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -2891,7 +2888,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part4",
-     "score": 0.44
+     "score": 0.43
     },
     {
      "id": "agentic-systems/coding-tools/10-github-copilot-big-wins-research",
@@ -2911,21 +2908,21 @@
     "coding-tools",
     "research"
    ],
-   "word_count": 1232,
+   "word_count": 1260,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
-     "score": 0.47
-    },
-    {
-     "id": "agentic-systems/core/34-composition-and-instructions-engineering",
-     "score": 0.41
+     "score": 0.48
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.41
+     "score": 0.42
+    },
+    {
+     "id": "agentic-systems/core/34-composition-and-instructions-engineering",
+     "score": 0.42
     }
    ]
   },
@@ -2942,7 +2939,7 @@
     "feature-flags",
     "secrets-management"
    ],
-   "word_count": 4834,
+   "word_count": 4868,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -2968,13 +2965,13 @@
     "anti-patterns",
     "devops"
    ],
-   "word_count": 1446,
+   "word_count": 1463,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/05-harness-engineering-research-report",
-     "score": 0.31
+     "score": 0.33
     }
    ]
   },
@@ -2989,7 +2986,7 @@
     "vendor-landscape",
     "agentic-ai"
    ],
-   "word_count": 2319,
+   "word_count": 2351,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -2999,7 +2996,7 @@
     },
     {
      "id": "agentic-systems/core/05-harness-engineering-research-report",
-     "score": 0.42
+     "score": 0.44
     },
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
@@ -3018,21 +3015,21 @@
     "research",
     "ci-cd"
    ],
-   "word_count": 1811,
+   "word_count": 1842,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/parts/01-harness-engineering-research-report-part2",
-     "score": 0.48
+     "score": 0.49
     },
     {
      "id": "agentic-systems/core/04-harness-engineering-ai-agents-and-vendor-landscape",
-     "score": 0.42
+     "score": 0.44
     },
     {
      "id": "agentic-systems/core/03-harness-bestpractices-antipatterns-roadmap",
-     "score": 0.31
+     "score": 0.33
     }
    ]
   },
@@ -3048,7 +3045,7 @@
     "observability",
     "devops"
    ],
-   "word_count": 1105,
+   "word_count": 1123,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": []
@@ -3064,7 +3061,7 @@
     "ai-agents",
     "research"
    ],
-   "word_count": 2270,
+   "word_count": 2307,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3074,11 +3071,11 @@
     },
     {
      "id": "architecture/41-agent-memory-planning-architecture",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "architecture/parts/13-ai-native-architecture-evolution-report-decision-forecast",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -3094,7 +3091,7 @@
     "agentcore",
     "prompt-lifecycle"
    ],
-   "word_count": 5264,
+   "word_count": 5287,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3123,7 +3120,7 @@
     "platform-architecture",
     "aws"
    ],
-   "word_count": 4295,
+   "word_count": 4329,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3147,7 +3144,7 @@
    "doc_type": "guide",
    "topic_id": "agentic-platform-bestpractices",
    "tags": [],
-   "word_count": 2984,
+   "word_count": 3015,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3177,7 +3174,7 @@
     "runbook",
     "requirements"
    ],
-   "word_count": 2730,
+   "word_count": 2743,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3190,8 +3187,8 @@
      "score": 0.36
     },
     {
-     "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part4",
-     "score": 0.31
+     "id": "agentic-systems/coding-tools/parts/47-github-copilot-enterprise-research-2026-part2",
+     "score": 0.3
     }
    ]
   },
@@ -3207,7 +3204,7 @@
     "devops",
     "aws"
    ],
-   "word_count": 4977,
+   "word_count": 5000,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3231,7 +3228,7 @@
    "doc_type": "research-report",
    "topic_id": "enterprise-agentic-ai-asset-management-2026",
    "tags": [],
-   "word_count": 2443,
+   "word_count": 2459,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3282,7 +3279,7 @@
     "coding-tools",
     "research"
    ],
-   "word_count": 2022,
+   "word_count": 2043,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3292,11 +3289,11 @@
     },
     {
      "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "agentic-systems/core/21-tool-definitions-and-instructions-engineering",
-     "score": 0.45
+     "score": 0.46
     }
    ]
   },
@@ -3311,21 +3308,21 @@
     "playbook",
     "coding-tools"
    ],
-   "word_count": 2236,
+   "word_count": 2272,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/parts/16-agent-skills-complete-playbook-2026-part2",
-     "score": 0.57
+     "score": 0.58
     },
     {
      "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
-     "score": 0.47
+     "score": 0.49
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.43
+     "score": 0.44
     }
    ]
   },
@@ -3369,17 +3366,17 @@
     "coding-tools",
     "research"
    ],
-   "word_count": 1576,
+   "word_count": 1610,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.63
+     "score": 0.64
     },
     {
      "id": "agentic-systems/core/15-executive-summary-and-reference-architecture",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "agentic-systems/core/28-enterprise-workflows-comparative-analysis-and-patterns",
@@ -3398,21 +3395,21 @@
     "coding-tools",
     "research"
    ],
-   "word_count": 1101,
+   "word_count": 1133,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/30-execution-lifecycle-and-tracing",
-     "score": 0.48
+     "score": 0.49
+    },
+    {
+     "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
+     "score": 0.43
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.41
-    },
-    {
-     "id": "agentic-systems/core/34-composition-and-instructions-engineering",
-     "score": 0.4
+     "score": 0.43
     }
    ]
   },
@@ -3427,21 +3424,21 @@
     "coding-tools",
     "research"
    ],
-   "word_count": 959,
+   "word_count": 987,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/15-executive-summary-and-reference-architecture",
-     "score": 0.4
+     "score": 0.41
     },
     {
      "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "agentic-systems/core/21-tool-definitions-and-instructions-engineering",
-     "score": 0.35
+     "score": 0.38
     }
    ]
   },
@@ -3456,13 +3453,13 @@
     "coding-tools",
     "research"
    ],
-   "word_count": 1388,
+   "word_count": 1417,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/15-executive-summary-and-reference-architecture",
-     "score": 0.45
+     "score": 0.46
     },
     {
      "id": "agentic-systems/core/28-enterprise-workflows-comparative-analysis-and-patterns",
@@ -3470,7 +3467,7 @@
     },
     {
      "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
-     "score": 0.42
+     "score": 0.43
     }
    ]
   },
@@ -3485,7 +3482,7 @@
     "coding-tools",
     "research"
    ],
-   "word_count": 883,
+   "word_count": 912,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": []
@@ -3501,7 +3498,7 @@
     "coding-tools",
     "research"
    ],
-   "word_count": 1215,
+   "word_count": 1240,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3517,13 +3514,13 @@
    "doc_type": "guide",
    "topic_id": "mcp-integration-and-memory",
    "tags": [],
-   "word_count": 1144,
+   "word_count": 1172,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/10-mcp-impact",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "protocols/parts/13-mcp-deep-research-2026-part2",
@@ -3541,7 +3538,7 @@
    "doc_type": "guide",
    "topic_id": "multi-agent-and-observability",
    "tags": [],
-   "word_count": 1328,
+   "word_count": 1353,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": []
@@ -3552,13 +3549,13 @@
    "doc_type": "guide",
    "topic_id": "governance-and-security",
    "tags": [],
-   "word_count": 1673,
+   "word_count": 1699,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/15-executive-summary-and-reference-architecture",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "agentic-systems/core/28-enterprise-workflows-comparative-analysis-and-patterns",
@@ -3572,13 +3569,13 @@
    "doc_type": "guide",
    "topic_id": "evaluation-reusability-deduplication",
    "tags": [],
-   "word_count": 1336,
+   "word_count": 1362,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/28-enterprise-workflows-comparative-analysis-and-patterns",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "agentic-systems/core/21-tool-definitions-and-instructions-engineering",
@@ -3596,7 +3593,7 @@
    "doc_type": "guide",
    "topic_id": "enterprise-workflows-comparative-analysis-and-patterns",
    "tags": [],
-   "word_count": 1685,
+   "word_count": 1699,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3610,7 +3607,7 @@
     },
     {
      "id": "agentic-systems/core/27-evaluation-reusability-deduplication",
-     "score": 0.44
+     "score": 0.45
     }
    ]
   },
@@ -3620,13 +3617,13 @@
    "doc_type": "concept",
    "topic_id": "foundations-what-is-an-agent-skill",
    "tags": [],
-   "word_count": 1563,
+   "word_count": 1578,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
-     "score": 0.63
+     "score": 0.64
     },
     {
      "id": "agentic-systems/core/34-composition-and-instructions-engineering",
@@ -3644,21 +3641,21 @@
    "doc_type": "reference-architecture",
    "topic_id": "execution-lifecycle-and-tracing",
    "tags": [],
-   "word_count": 1458,
+   "word_count": 1488,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/34-composition-and-instructions-engineering",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "agentic-systems/core/19-discovery-and-execution-lifecycle",
-     "score": 0.48
+     "score": 0.49
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.47
+     "score": 0.49
     }
    ]
   },
@@ -3668,21 +3665,21 @@
    "doc_type": "reference-architecture",
    "topic_id": "skills-tools-mcp-a2a-relationship",
    "tags": [],
-   "word_count": 1006,
+   "word_count": 1033,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.39
+     "score": 0.41
     },
     {
      "id": "agentic-systems/core/30-execution-lifecycle-and-tracing",
-     "score": 0.36
+     "score": 0.39
     },
     {
      "id": "agentic-systems/core/34-composition-and-instructions-engineering",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -3692,7 +3689,7 @@
    "doc_type": "guide",
    "topic_id": "tool-definition-best-practices",
    "tags": [],
-   "word_count": 1254,
+   "word_count": 1282,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": []
@@ -3703,7 +3700,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "registry-discovery-and-deduplication",
    "tags": [],
-   "word_count": 1070,
+   "word_count": 1097,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3713,7 +3710,11 @@
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.32
+     "score": 0.33
+    },
+    {
+     "id": "agentic-systems/core/34-composition-and-instructions-engineering",
+     "score": 0.31
     }
    ]
   },
@@ -3723,7 +3724,7 @@
    "doc_type": "guide",
    "topic_id": "composition-and-instructions-engineering",
    "tags": [],
-   "word_count": 1384,
+   "word_count": 1409,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3733,7 +3734,7 @@
     },
     {
      "id": "agentic-systems/core/30-execution-lifecycle-and-tracing",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "agentic-systems/parts/16-agent-skills-complete-playbook-2026-part2",
@@ -3747,13 +3748,13 @@
    "doc_type": "guide",
    "topic_id": "observability-and-evaluation",
    "tags": [],
-   "word_count": 1213,
+   "word_count": 1238,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/30-execution-lifecycle-and-tracing",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -3763,13 +3764,13 @@
    "doc_type": "reference-architecture",
    "topic_id": "agent-skills-security-architecture",
    "tags": [],
-   "word_count": 1378,
+   "word_count": 1402,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/parts/16-agent-skills-complete-playbook-2026-part2",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
@@ -3777,7 +3778,7 @@
     },
     {
      "id": "agentic-systems/core/38-architecture-patterns-antipatterns-and-case-studies",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -3787,7 +3788,7 @@
    "doc_type": "guide",
    "topic_id": "governance-and-lifecycle",
    "tags": [],
-   "word_count": 966,
+   "word_count": 992,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3803,7 +3804,7 @@
    "doc_type": "guide",
    "topic_id": "architecture-patterns-antipatterns-and-case-studies",
    "tags": [],
-   "word_count": 2226,
+   "word_count": 2239,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -3817,7 +3818,7 @@
     },
     {
      "id": "agentic-systems/parts/16-agent-skills-complete-playbook-2026-part2",
-     "score": 0.41
+     "score": 0.4
     }
    ]
   },
@@ -3844,6 +3845,10 @@
     {
      "id": "agentic-systems/core/02-enterprise-agentic-ai-config-management-2026",
      "score": 0.71
+    },
+    {
+     "id": "agentic-systems/core/08-enterprise-promptops-aws-agentcore-2026",
+     "score": 0.3
     }
    ]
   },
@@ -3961,7 +3966,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/parts/13-enterprise-agentic-ai-asset-management-2026-part3",
-     "score": 0.5
+     "score": 0.49
     },
     {
      "id": "agentic-systems/core/13-enterprise-agentic-ai-asset-management-2026",
@@ -3985,7 +3990,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/parts/13-enterprise-agentic-ai-asset-management-2026-part2",
-     "score": 0.5
+     "score": 0.49
     },
     {
      "id": "agentic-systems/core/13-enterprise-agentic-ai-asset-management-2026",
@@ -4009,7 +4014,12 @@
    "word_count": 118,
    "last_reviewed": "2026-07-18",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "operations/index",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "agentic-systems/multimodal/01-part-01-foundations",
@@ -4017,7 +4027,7 @@
    "doc_type": "concept",
    "topic_id": "part-01-foundations",
    "tags": [],
-   "word_count": 2199,
+   "word_count": 2216,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -4027,7 +4037,7 @@
     },
     {
      "id": "agentic-systems/multimodal/05-part-05-multimodal-rag",
-     "score": 0.49
+     "score": 0.48
     },
     {
      "id": "agentic-systems/multimodal/04-part-04-modalities-video-audio",
@@ -4065,13 +4075,13 @@
    "doc_type": "guide",
    "topic_id": "part-03-modalities-image-document",
    "tags": [],
-   "word_count": 2163,
+   "word_count": 2195,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/multimodal/parts/03-part-03-modalities-image-document-part2",
-     "score": 0.41
+     "score": 0.4
     }
    ]
   },
@@ -4081,7 +4091,7 @@
    "doc_type": "guide",
    "topic_id": "part-04-modalities-video-audio",
    "tags": [],
-   "word_count": 1496,
+   "word_count": 1531,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -4111,7 +4121,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/multimodal/01-part-01-foundations",
-     "score": 0.49
+     "score": 0.48
     },
     {
      "id": "agentic-systems/multimodal/parts/01-part-01-foundations-part2",
@@ -4153,7 +4163,7 @@
    "doc_type": "guide",
    "topic_id": "part-07-security-threats",
    "tags": [],
-   "word_count": 2417,
+   "word_count": 2451,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -4163,11 +4173,11 @@
     },
     {
      "id": "agentic-systems/multimodal/01-part-01-foundations",
-     "score": 0.31
+     "score": 0.32
     },
     {
      "id": "agentic-systems/multimodal/05-part-05-multimodal-rag",
-     "score": 0.3
+     "score": 0.31
     }
    ]
   },
@@ -4177,7 +4187,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "part-08-guardrails-sanitization",
    "tags": [],
-   "word_count": 2214,
+   "word_count": 2252,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -4207,7 +4217,7 @@
     "gdpr",
     "hipaa"
    ],
-   "word_count": 2810,
+   "word_count": 2846,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -4217,7 +4227,7 @@
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -4227,7 +4237,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "part-10-evaluation-benchmarks",
    "tags": [],
-   "word_count": 2808,
+   "word_count": 2846,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -4252,13 +4262,17 @@
     "cicd",
     "regression-testing"
    ],
-   "word_count": 2170,
+   "word_count": 2206,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/multimodal/parts/11-part-11-evaluation-harnesses-cicd-part2",
      "score": 0.38
+    },
+    {
+     "id": "agentic-systems/multimodal/12-part-12-observability-finops",
+     "score": 0.3
     }
    ]
   },
@@ -4268,7 +4282,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "part-12-observability-finops",
    "tags": [],
-   "word_count": 1882,
+   "word_count": 1921,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -4277,12 +4291,12 @@
      "score": 0.42
     },
     {
-     "id": "agentic-systems/multimodal/06-part-06-agentic-workflows",
+     "id": "agentic-systems/multimodal/13-part-13-governance-production",
      "score": 0.4
     },
     {
-     "id": "agentic-systems/multimodal/13-part-13-governance-production",
-     "score": 0.39
+     "id": "agentic-systems/multimodal/06-part-06-agentic-workflows",
+     "score": 0.4
     }
    ]
   },
@@ -4292,13 +4306,13 @@
    "doc_type": "reference-architecture",
    "topic_id": "part-13-governance-production",
    "tags": [],
-   "word_count": 5398,
+   "word_count": 5434,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/multimodal/12-part-12-observability-finops",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "agentic-systems/multimodal/parts/12-part-12-observability-finops-part2",
@@ -4316,17 +4330,17 @@
    "doc_type": "reference-architecture",
    "topic_id": "part-14-cloud-platform-comparison",
    "tags": [],
-   "word_count": 2600,
+   "word_count": 2639,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/multimodal/12-part-12-observability-finops",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "agentic-systems/multimodal/15-part-15-emerging-trends-bibliography",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "agentic-systems/multimodal/parts/14-part-14-cloud-platform-comparison-part2",
@@ -4340,7 +4354,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "part-15-emerging-trends-bibliography",
    "tags": [],
-   "word_count": 2697,
+   "word_count": 2716,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -4354,7 +4368,7 @@
     },
     {
      "id": "agentic-systems/multimodal/14-part-14-cloud-platform-comparison",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -4394,7 +4408,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/multimodal/03-part-03-modalities-image-document",
-     "score": 0.41
+     "score": 0.4
     },
     {
      "id": "agentic-systems/multimodal/06-part-06-agentic-workflows",
@@ -4619,17 +4633,17 @@
    "doc_type": "guide",
    "topic_id": "executive-summary",
    "tags": [],
-   "word_count": 1512,
+   "word_count": 1531,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/02-evolution-timeline",
-     "score": 0.54
+     "score": 0.55
     },
     {
      "id": "agentic-systems/orchestration/03-workflow-vs-agent-architecture",
-     "score": 0.47
+     "score": 0.48
     },
     {
      "id": "agentic-systems/orchestration/21-future-predictions",
@@ -4643,21 +4657,21 @@
    "doc_type": "guide",
    "topic_id": "evolution-timeline",
    "tags": [],
-   "word_count": 1720,
+   "word_count": 1758,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/01-executive-summary",
-     "score": 0.54
-    },
-    {
-     "id": "agentic-systems/orchestration/19-reference-architectures",
-     "score": 0.41
+     "score": 0.55
     },
     {
      "id": "agentic-systems/orchestration/03-workflow-vs-agent-architecture",
-     "score": 0.4
+     "score": 0.43
+    },
+    {
+     "id": "agentic-systems/orchestration/04-temporal-deep-dive",
+     "score": 0.43
     }
    ]
   },
@@ -4667,21 +4681,21 @@
    "doc_type": "guide",
    "topic_id": "workflow-vs-agent-architecture",
    "tags": [],
-   "word_count": 1977,
+   "word_count": 2013,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/01-executive-summary",
-     "score": 0.47
+     "score": 0.48
     },
     {
      "id": "agentic-systems/orchestration/04-temporal-deep-dive",
-     "score": 0.43
+     "score": 0.45
     },
     {
      "id": "agentic-systems/orchestration/02-evolution-timeline",
-     "score": 0.4
+     "score": 0.43
     }
    ]
   },
@@ -4691,21 +4705,21 @@
    "doc_type": "guide",
    "topic_id": "temporal-deep-dive",
    "tags": [],
-   "word_count": 1322,
+   "word_count": 1359,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/03-workflow-vs-agent-architecture",
+     "score": 0.45
+    },
+    {
+     "id": "agentic-systems/orchestration/02-evolution-timeline",
      "score": 0.43
     },
     {
      "id": "agentic-systems/orchestration/01-executive-summary",
-     "score": 0.4
-    },
-    {
-     "id": "agentic-systems/orchestration/02-evolution-timeline",
-     "score": 0.4
+     "score": 0.41
     }
    ]
   },
@@ -4715,7 +4729,7 @@
    "doc_type": "guide",
    "topic_id": "camunda-deep-dive",
    "tags": [],
-   "word_count": 1502,
+   "word_count": 1534,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -4725,11 +4739,11 @@
     },
     {
      "id": "agentic-systems/orchestration/02-evolution-timeline",
-     "score": 0.38
+     "score": 0.39
     },
     {
      "id": "agentic-systems/orchestration/01-executive-summary",
-     "score": 0.35
+     "score": 0.37
     }
    ]
   },
@@ -4739,21 +4753,21 @@
    "doc_type": "guide",
    "topic_id": "durable-vs-cognitive-execution",
    "tags": [],
-   "word_count": 1843,
+   "word_count": 1882,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/04-temporal-deep-dive",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "agentic-systems/orchestration/03-workflow-vs-agent-architecture",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "agentic-systems/orchestration/01-executive-summary",
-     "score": 0.3
+     "score": 0.32
     }
    ]
   },
@@ -4763,21 +4777,21 @@
    "doc_type": "guide",
    "topic_id": "ai-coding-orchestrators",
    "tags": [],
-   "word_count": 1521,
+   "word_count": 1551,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/01-executive-summary",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "agentic-systems/orchestration/02-evolution-timeline",
-     "score": 0.34
+     "score": 0.36
     },
     {
      "id": "agentic-systems/coding-tools/33-claude-code-complete-2026",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -4846,7 +4860,7 @@
      "score": 0.39
     },
     {
-     "id": "agentic-systems/coding-tools/parts/39-mcp-deep-guide-part2",
+     "id": "agentic-systems/coding-tools/39-mcp-deep-guide",
      "score": 0.36
     }
    ]
@@ -4903,7 +4917,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/04-temporal-deep-dive",
-     "score": 0.37
+     "score": 0.36
     },
     {
      "id": "agentic-systems/orchestration/03-workflow-vs-agent-architecture",
@@ -5004,13 +5018,13 @@
    "tags": [
     "workflow-orchestration"
    ],
-   "word_count": 1811,
+   "word_count": 1848,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/01-executive-summary",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "agentic-systems/orchestration/02-evolution-timeline",
@@ -5030,21 +5044,21 @@
    "tags": [
     "workflow-orchestration"
    ],
-   "word_count": 2722,
+   "word_count": 2753,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/19-reference-architectures",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "agentic-systems/orchestration/01-executive-summary",
-     "score": 0.31
+     "score": 0.32
     },
     {
      "id": "agentic-systems/orchestration/02-evolution-timeline",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -5056,7 +5070,7 @@
    "tags": [
     "workflow-orchestration"
    ],
-   "word_count": 1753,
+   "word_count": 1770,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -5066,11 +5080,11 @@
     },
     {
      "id": "agentic-systems/orchestration/02-evolution-timeline",
-     "score": 0.39
+     "score": 0.41
     },
     {
      "id": "agentic-systems/orchestration/03-workflow-vs-agent-architecture",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -5093,10 +5107,6 @@
     {
      "id": "agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2",
      "score": 0.34
-    },
-    {
-     "id": "architecture/parts/23-enterprise-ai-architect-foundations-part2",
-     "score": 0.3
     }
    ]
   },
@@ -5134,7 +5144,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/05-harness-engineering-research-report",
-     "score": 0.48
+     "score": 0.49
     },
     {
      "id": "agentic-systems/core/04-harness-engineering-ai-agents-and-vendor-landscape",
@@ -5188,7 +5198,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/16-agent-skills-complete-playbook-2026",
-     "score": 0.57
+     "score": 0.58
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",

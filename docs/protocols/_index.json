@@ -136,7 +136,7 @@
     },
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.38
+     "score": 0.37
     },
     {
      "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
@@ -400,7 +400,7 @@
    "top_similar": [
     {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
-     "score": 0.47
+     "score": 0.46
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
@@ -466,7 +466,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/17-a2a-deep-research",
-     "score": 0.35
+     "score": 0.34
     },
     {
      "id": "protocols/21-emerging-protocols-overview",
@@ -501,10 +501,10 @@
     },
     {
      "id": "agentic-systems/agentic-ui/02-agui-standards-landscape",
-     "score": 0.56
+     "score": 0.58
     },
     {
-     "id": "agentic-systems/agentic-ui/08-enterprise-reference-architecture",
+     "id": "agentic-systems/agentic-ui/19-agentic-ui-security-architecture",
      "score": 0.38
     }
    ]
@@ -785,7 +785,7 @@
    "top_similar": [
     {
      "id": "protocols/16-ai-protocols-standards-service-industry-guide-2026",
-     "score": 0.47
+     "score": 0.46
     },
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
@@ -793,7 +793,7 @@
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
-     "score": 0.46
+     "score": 0.45
     }
    ]
   },

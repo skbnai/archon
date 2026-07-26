@@ -80,7 +80,7 @@
     },
     {
      "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
-     "score": 0.54
+     "score": 0.55
     },
     {
      "id": "data-knowledge/parts/04-enterprise-data-systems-ai-governance-report-part3",
@@ -134,11 +134,11 @@
    "top_similar": [
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",
-     "score": 0.54
+     "score": 0.55
     },
     {
      "id": "data-knowledge/parts/01-data-architecture-for-ai-report-part2",
-     "score": 0.49
+     "score": 0.5
     },
     {
      "id": "data-knowledge/parts/04-enterprise-data-systems-ai-governance-report-part3",
@@ -170,10 +170,10 @@
     },
     {
      "id": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
-     "score": 0.38
+     "score": 0.37
     },
     {
-     "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
+     "id": "strategy/28-part-18-case-studies",
      "score": 0.36
     }
    ]
@@ -230,7 +230,7 @@
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
-     "score": 0.35
+     "score": 0.34
     },
     {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
@@ -253,7 +253,7 @@
    "top_similar": [
     {
      "id": "data-knowledge/parts/05-enterprise-knowledge-architectures-report-part2",
-     "score": 0.3
+     "score": 0.31
     }
    ]
   },
@@ -272,15 +272,11 @@
    "top_similar": [
     {
      "id": "data-knowledge/parts/01-data-architecture-for-ai-report-part2",
-     "score": 0.32
+     "score": 0.33
     },
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",
      "score": 0.31
-    },
-    {
-     "id": "data-knowledge/09-governance-rai",
-     "score": 0.3
     }
    ]
   },
@@ -298,11 +294,11 @@
    "top_similar": [
     {
      "id": "architecture/parts/30-akes-addendum-document-update-and-versioning-part2",
-     "score": 0.35
+     "score": 0.34
     },
     {
      "id": "architecture/78-akes-addendum-document-update-and-versioning",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -323,7 +319,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/multimodal/05-part-05-multimodal-rag",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -381,7 +377,7 @@
     },
     {
      "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
-     "score": 0.49
+     "score": 0.5
     },
     {
      "id": "data-knowledge/parts/04-enterprise-data-systems-ai-governance-report-part3",
@@ -417,7 +413,7 @@
     },
     {
      "id": "data-knowledge/parts/05-enterprise-knowledge-architectures-report-part2",
-     "score": 0.36
+     "score": 0.35
     }
    ]
   },
@@ -499,11 +495,11 @@
     },
     {
      "id": "data-knowledge/parts/02-end-to-end-lineage-systems-report-part2",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   }

@@ -11,11 +11,11 @@
 
 Pairwise similarity within this cluster:
 
-- 74%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
-- 74%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 75%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 75%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 73%  `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 71%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
-- 70%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 71%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 70%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
 
 ## Cluster (3 pages)
@@ -76,7 +76,7 @@ Pairwise similarity within this cluster:
 
 - 65%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
 - 62%  `architecture/04-aidlc-artifacts-togaf-migration-to-ea` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
-- 55%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/04-aidlc-artifacts-togaf-migration-to-ea`
+- 54%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/04-aidlc-artifacts-togaf-migration-to-ea`
 
 ## Cluster (3 pages)
 
@@ -160,7 +160,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 63%  `agentic-systems/coding-tools/36-claude-agents-best-practices` <-> `agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part2`
+- 62%  `agentic-systems/coding-tools/36-claude-agents-best-practices` <-> `agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part2`
 
 ## Cluster (2 pages)
 
@@ -205,7 +205,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 64%  `agentic-systems/coding-tools/37-claude-routines-guide` <-> `agentic-systems/coding-tools/parts/37-claude-routines-guide-part2`
+- 65%  `agentic-systems/coding-tools/37-claude-routines-guide` <-> `agentic-systems/coding-tools/parts/37-claude-routines-guide-part2`
 
 ## Cluster (2 pages)
 
@@ -214,7 +214,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 63%  `agentic-systems/core/18-foundations-what-is-a-coding-skill` <-> `agentic-systems/core/29-foundations-what-is-an-agent-skill`
+- 64%  `agentic-systems/core/18-foundations-what-is-a-coding-skill` <-> `agentic-systems/core/29-foundations-what-is-an-agent-skill`
 
 ## Cluster (2 pages)
 
@@ -232,7 +232,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 69%  `architecture/77-ai-transformation-consultant-toolkit-2026` <-> `architecture/parts/27-ai-transformation-consultant-toolkit-2026-part2`
+- 68%  `architecture/77-ai-transformation-consultant-toolkit-2026` <-> `architecture/parts/27-ai-transformation-consultant-toolkit-2026-part2`
 
 ## Cluster (2 pages)
 
@@ -277,7 +277,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 72%  `strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g` <-> `strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t`
+- 73%  `strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g` <-> `strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t`
 
 ## Cluster (2 pages)
 
