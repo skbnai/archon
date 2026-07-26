@@ -277,6 +277,10 @@
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",
      "score": 0.31
+    },
+    {
+     "id": "data-knowledge/09-governance-rai",
+     "score": 0.3
     }
    ]
   },
@@ -444,7 +448,7 @@
     },
     {
      "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
-     "score": 0.44
+     "score": 0.45
     }
    ]
   },

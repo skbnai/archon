@@ -11,11 +11,11 @@
 
 Pairwise similarity within this cluster:
 
-- 75%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
-- 75%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 74%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 74%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 73%  `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 71%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
-- 71%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 70%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 70%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
 
 ## Cluster (3 pages)
@@ -28,7 +28,7 @@ Pairwise similarity within this cluster:
 
 - 65%  `protocols/11-entra-3lo-agent-auth-standards-architecture` <-> `protocols/08-entra-3lo-agent-auth-implementation`
 - 62%  `protocols/11-entra-3lo-agent-auth-standards-architecture` <-> `protocols/09-entra-3lo-agent-auth-multiagent-compliance`
-- 50%  `protocols/08-entra-3lo-agent-auth-implementation` <-> `protocols/09-entra-3lo-agent-auth-multiagent-compliance`
+- 49%  `protocols/08-entra-3lo-agent-auth-implementation` <-> `protocols/09-entra-3lo-agent-auth-multiagent-compliance`
 
 ## Cluster (3 pages)
 
@@ -169,7 +169,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 66%  `agentic-systems/coding-tools/48-git-internals` <-> `agentic-systems/coding-tools/09-git-github-platform-engineering-handbook`
+- 65%  `agentic-systems/coding-tools/48-git-internals` <-> `agentic-systems/coding-tools/09-git-github-platform-engineering-handbook`
 
 ## Cluster (2 pages)
 
@@ -178,7 +178,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 62%  `agentic-systems/coding-tools/13-cheatsheet-10-multiagent-production` <-> `agentic-systems/coding-tools/parts/13-cheatsheet-10-multiagent-production-part2`
+- 63%  `agentic-systems/coding-tools/13-cheatsheet-10-multiagent-production` <-> `agentic-systems/coding-tools/parts/13-cheatsheet-10-multiagent-production-part2`
 
 ## Cluster (2 pages)
 
@@ -259,7 +259,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 61%  `architecture/78-akes-addendum-document-update-and-versioning` <-> `architecture/parts/30-akes-addendum-document-update-and-versioning-part2`
+- 60%  `architecture/78-akes-addendum-document-update-and-versioning` <-> `architecture/parts/30-akes-addendum-document-update-and-versioning-part2`
 
 ## Cluster (2 pages)
 

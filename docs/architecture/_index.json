@@ -111,7 +111,7 @@
     },
     {
      "id": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
-     "score": 0.54
+     "score": 0.53
     }
    ]
   },
@@ -158,13 +158,13 @@
     "communication",
     "leadership"
    ],
-   "word_count": 2889,
+   "word_count": 2940,
    "last_reviewed": "2026-07-17",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/06-ea-architect-deep-dive-five-arenas",
-     "score": 0.41
+     "score": 0.44
     },
     {
      "id": "architecture/08-ea-architect-deep-dive-measurement-growth",
@@ -172,7 +172,7 @@
     },
     {
      "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },
@@ -189,21 +189,21 @@
     "ai-strategy",
     "multi-part-series"
    ],
-   "word_count": 3649,
+   "word_count": 3691,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
-     "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
-     "score": 0.41
-    },
-    {
      "id": "architecture/05-ea-architect-deep-dive-foundation",
-     "score": 0.41
+     "score": 0.44
     },
     {
      "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
-     "score": 0.41
+     "score": 0.43
+    },
+    {
+     "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
+     "score": 0.42
     }
    ]
   },
@@ -222,17 +222,17 @@
     "templates",
     "artifacts"
    ],
-   "word_count": 3504,
+   "word_count": 3548,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/06-ea-architect-deep-dive-five-arenas",
-     "score": 0.41
+     "score": 0.43
     },
     {
      "id": "architecture/08-ea-architect-deep-dive-measurement-growth",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "architecture/05-ea-architect-deep-dive-foundation",
@@ -255,7 +255,7 @@
     "self-assessment",
     "growth-framework"
    ],
-   "word_count": 2922,
+   "word_count": 2962,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -265,7 +265,7 @@
     },
     {
      "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
@@ -286,17 +286,17 @@
     "raci-matrix",
     "governance"
    ],
-   "word_count": 3452,
+   "word_count": 3502,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/12-apex-ea-delivery-governance-reference",
-     "score": 0.35
+     "score": 0.37
     },
     {
      "id": "architecture/10-apex-ea-aidlc-methodology",
-     "score": 0.33
+     "score": 0.35
     },
     {
      "id": "architecture/60-volume1-governance-ecosystem-operating-models",
@@ -318,7 +318,7 @@
     "business-architecture",
     "governance"
    ],
-   "word_count": 3594,
+   "word_count": 3641,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -327,12 +327,12 @@
      "score": 0.62
     },
     {
-     "id": "architecture/14-aidlc-enterprise-framework-2025",
-     "score": 0.37
+     "id": "architecture/11-apex-ea-information-systems-architecture",
+     "score": 0.39
     },
     {
-     "id": "architecture/11-apex-ea-information-systems-architecture",
-     "score": 0.36
+     "id": "architecture/14-aidlc-enterprise-framework-2025",
+     "score": 0.38
     }
    ]
   },
@@ -349,17 +349,17 @@
     "technology-architecture",
     "cloud-native"
    ],
-   "word_count": 2074,
+   "word_count": 2107,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/12-apex-ea-delivery-governance-reference",
-     "score": 0.51
+     "score": 0.53
     },
     {
      "id": "architecture/10-apex-ea-aidlc-methodology",
-     "score": 0.36
+     "score": 0.39
     }
    ]
   },
@@ -376,7 +376,7 @@
     "regulatory-compliance",
     "cloud-native"
    ],
-   "word_count": 3616,
+   "word_count": 3646,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -386,11 +386,11 @@
     },
     {
      "id": "architecture/11-apex-ea-information-systems-architecture",
-     "score": 0.51
+     "score": 0.53
     },
     {
      "id": "architecture/09-apex-ea-team-structure-raci",
-     "score": 0.35
+     "score": 0.37
     }
    ]
   },
@@ -423,7 +423,7 @@
     },
     {
      "id": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -437,13 +437,13 @@
     "software-engineering",
     "aidlc"
    ],
-   "word_count": 6271,
+   "word_count": 6323,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/16-ea-aidlc-deep-research-2026",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
@@ -466,7 +466,7 @@
     "agile",
     "agentic-ai"
    ],
-   "word_count": 5936,
+   "word_count": 5970,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
@@ -495,13 +495,13 @@
     "aidlc",
     "enterprise-architecture"
    ],
-   "word_count": 6416,
+   "word_count": 6447,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
@@ -509,7 +509,7 @@
     },
     {
      "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-     "score": 0.46
+     "score": 0.45
     }
    ]
   },
@@ -583,7 +583,7 @@
     "enterprise-architecture",
     "research"
    ],
-   "word_count": 4903,
+   "word_count": 4937,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
@@ -654,7 +654,7 @@
     "landing-zone",
     "enterprise-architecture"
    ],
-   "word_count": 4441,
+   "word_count": 4493,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
@@ -689,15 +689,15 @@
    "status": "current",
    "top_similar": [
     {
+     "id": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
+     "score": 0.36
+    },
+    {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
      "score": 0.35
     },
     {
-     "id": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
-     "score": 0.35
-    },
-    {
-     "id": "architecture/51-enterprise-ai-governance-compliance",
+     "id": "architecture/22-agentic-ai-landing-zone-architecture",
      "score": 0.33
     }
    ]
@@ -727,7 +727,7 @@
    "tags": [
     "ai-foundations"
    ],
-   "word_count": 3923,
+   "word_count": 3951,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
@@ -737,11 +737,11 @@
     },
     {
      "id": "architecture/23-agentic-ai-landing-zone-business-layer",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "architecture/32-agentic-ai-landing-zone-visual-guide",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -753,7 +753,7 @@
    "tags": [
     "ai-foundations"
    ],
-   "word_count": 2420,
+   "word_count": 2450,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": []
@@ -768,10 +768,15 @@
     "agentic-ai",
     "memory-systems"
    ],
-   "word_count": 2360,
+   "word_count": 2410,
    "last_reviewed": "2026-07-10",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "architecture/41-agent-memory-planning-architecture",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "architecture/28-agentic-ai-landing-zone-multiagent",
@@ -781,7 +786,7 @@
    "tags": [
     "ai-foundations"
    ],
-   "word_count": 2525,
+   "word_count": 2554,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": []
@@ -794,7 +799,7 @@
    "tags": [
     "ai-foundations"
    ],
-   "word_count": 2802,
+   "word_count": 2830,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": []
@@ -807,13 +812,13 @@
    "tags": [
     "ai-foundations"
    ],
-   "word_count": 4071,
+   "word_count": 4102,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/32-agentic-ai-landing-zone-visual-guide",
-     "score": 0.32
+     "score": 0.34
     }
    ]
   },
@@ -847,21 +852,21 @@
     "decision-trees",
     "architecture"
    ],
-   "word_count": 3134,
+   "word_count": 3164,
    "last_reviewed": "2026-07-19",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/30-agentic-ai-landing-zone-playbooks",
-     "score": 0.32
+     "score": 0.34
     },
     {
      "id": "architecture/23-agentic-ai-landing-zone-business-layer",
-     "score": 0.32
+     "score": 0.33
     },
     {
-     "id": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
-     "score": 0.31
+     "id": "architecture/22-agentic-ai-landing-zone-architecture",
+     "score": 0.33
     }
    ]
   },
@@ -877,13 +882,13 @@
     "market-analysis",
     "2026-2030"
    ],
-   "word_count": 2073,
+   "word_count": 2106,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -898,7 +903,7 @@
     "ai-foundations",
     "architecture"
    ],
-   "word_count": 3944,
+   "word_count": 3974,
    "last_reviewed": "2026-07-17",
    "status": "current",
    "top_similar": [
@@ -923,7 +928,7 @@
     "ai-foundations",
     "deep-dive"
    ],
-   "word_count": 3472,
+   "word_count": 3492,
    "last_reviewed": "2026-07-17",
    "status": "current",
    "top_similar": [
@@ -968,7 +973,7 @@
     "execution-framework",
     "governance"
    ],
-   "word_count": 6059,
+   "word_count": 6093,
    "last_reviewed": "2026-07-14",
    "status": "current",
    "top_similar": [
@@ -1058,7 +1063,7 @@
     },
     {
      "id": "architecture/58-mcp-a2a-protocol-deep-dive",
-     "score": 0.38
+     "score": 0.39
     }
    ]
   },
@@ -1074,7 +1079,7 @@
     "planning",
     "state-management"
    ],
-   "word_count": 2100,
+   "word_count": 2137,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -1084,7 +1089,11 @@
     },
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
-     "score": 0.34
+     "score": 0.33
+    },
+    {
+     "id": "architecture/27-agentic-ai-landing-zone-memory-architecture",
+     "score": 0.31
     }
    ]
   },
@@ -1101,13 +1110,13 @@
     "error-budgets",
     "observability"
    ],
-   "word_count": 4248,
+   "word_count": 4300,
    "last_reviewed": "2026-07-19",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/43-agentic-ai-reliability-observability-governance",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "agentic-systems/agentic-ui/parts/16-reliability-engineering-part3",
@@ -1124,13 +1133,13 @@
     "coding-tools",
     "enterprise-ai-architect"
    ],
-   "word_count": 5535,
+   "word_count": 5577,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/42-agent-reliability-engineering",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
@@ -1154,13 +1163,13 @@
     "orchestration",
     "multi-agent"
    ],
-   "word_count": 4242,
+   "word_count": 4278,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/47-enterprise-agent-reference-architectures",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
@@ -1184,7 +1193,7 @@
     "mlops",
     "multi-agent"
    ],
-   "word_count": 2910,
+   "word_count": 2941,
    "last_reviewed": "2026-07-19",
    "status": "current",
    "top_similar": []
@@ -1201,7 +1210,7 @@
     "opentelemetry",
     "audit"
    ],
-   "word_count": 2591,
+   "word_count": 2638,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": []
@@ -1217,13 +1226,13 @@
     "platform-engineering",
     "domain-specific"
    ],
-   "word_count": 2833,
+   "word_count": 2862,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "architecture/58-mcp-a2a-protocol-deep-dive",
@@ -1241,7 +1250,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "enterprise-ai-architect-foundations",
    "tags": [],
-   "word_count": 4358,
+   "word_count": 4388,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -1301,21 +1310,21 @@
     "decision-framework",
     "maturity-model"
    ],
-   "word_count": 2350,
+   "word_count": 2381,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/33-enterprise-agentic-ai-outlook-2026-2030",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "architecture/47-enterprise-agent-reference-architectures",
-     "score": 0.33
+     "score": 0.34
     },
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
-     "score": 0.33
+     "score": 0.32
     }
    ]
   },
@@ -1335,11 +1344,11 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "architecture/14-aidlc-enterprise-framework-2025",
+     "id": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
      "score": 0.5
     },
     {
-     "id": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
+     "id": "architecture/14-aidlc-enterprise-framework-2025",
      "score": 0.5
     },
     {
@@ -1354,7 +1363,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "enterprise-ai-skills-assessment",
    "tags": [],
-   "word_count": 4361,
+   "word_count": 4391,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -1364,11 +1373,11 @@
     },
     {
      "id": "architecture/16-ea-aidlc-deep-research-2026",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "architecture/48-enterprise-ai-architect-foundations",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -1438,13 +1447,13 @@
     "zero-trust",
     "multi-agent"
    ],
-   "word_count": 3018,
+   "word_count": 3057,
    "last_reviewed": "2026-07-19",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/73-enterprise-agentic-ai-architecture-playbook-2026",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2",
@@ -1452,7 +1461,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
-     "score": 0.33
+     "score": 0.32
     }
    ]
   },
@@ -1468,7 +1477,7 @@
     "governance",
     "emergency-shutdown"
    ],
-   "word_count": 2922,
+   "word_count": 2956,
    "last_reviewed": "2026-07-19",
    "status": "current",
    "top_similar": []
@@ -1484,7 +1493,7 @@
     "policy-as-code",
     "operational-resilience"
    ],
-   "word_count": 2246,
+   "word_count": 2276,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -1506,7 +1515,7 @@
     "a2a",
     "agentic-systems"
    ],
-   "word_count": 2531,
+   "word_count": 2577,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -1520,7 +1529,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/39-mcp-deep-guide",
-     "score": 0.41
+     "score": 0.42
     }
    ]
   },
@@ -1534,13 +1543,13 @@
     "patterns",
     "multi-agent"
    ],
-   "word_count": 4287,
+   "word_count": 4335,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
-     "score": 0.3
+     "score": 0.31
     }
    ]
   },
@@ -1554,13 +1563,13 @@
     "governance",
     "operating-models"
    ],
-   "word_count": 5312,
+   "word_count": 5341,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/66-volume7-ai-native-arb-case-studies",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "architecture/09-apex-ea-team-structure-raci",
@@ -1578,7 +1587,7 @@
     "economics",
     "decision-frameworks"
    ],
-   "word_count": 3661,
+   "word_count": 3690,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": []
@@ -1589,13 +1598,13 @@
    "doc_type": "reference-architecture",
    "topic_id": "volume3-knowledge-management-capability-mapping",
    "tags": [],
-   "word_count": 2408,
+   "word_count": 2434,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/66-volume7-ai-native-arb-case-studies",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -1605,7 +1614,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "volume4-artifact-catalog-quality-attributes",
    "tags": [],
-   "word_count": 1896,
+   "word_count": 1924,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": []
@@ -1616,10 +1625,15 @@
    "doc_type": "reference-architecture",
    "topic_id": "volume5-review-questions-scorecards",
    "tags": [],
-   "word_count": 3625,
+   "word_count": 3654,
    "last_reviewed": "2026-07-23",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "architecture/66-volume7-ai-native-arb-case-studies",
+     "score": 0.3
+    }
+   ]
   },
   {
    "id": "architecture/65-volume6-banking-industry-deepdive",
@@ -1631,7 +1645,7 @@
     "banking",
     "regulatory-governance"
    ],
-   "word_count": 1675,
+   "word_count": 1705,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": []
@@ -1646,17 +1660,21 @@
     "governance",
     "ai-native"
    ],
-   "word_count": 2980,
+   "word_count": 3013,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/60-volume1-governance-ecosystem-operating-models",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "architecture/62-volume3-knowledge-management-capability-mapping",
-     "score": 0.32
+     "score": 0.33
+    },
+    {
+     "id": "architecture/64-volume5-review-questions-scorecards",
+     "score": 0.3
     }
    ]
   },
@@ -1670,7 +1688,7 @@
     "patterns",
     "reference-architectures"
    ],
-   "word_count": 4127,
+   "word_count": 4157,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": []
@@ -1685,17 +1703,17 @@
     "best-practices",
     "reference"
    ],
-   "word_count": 3219,
+   "word_count": 3237,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/parts/35-ea-mastery-guide-part2",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "strategy/32-ea-strategy-playbook",
-     "score": 0.38
+     "score": 0.37
     },
     {
      "id": "architecture/71-ea-mastery-guide",
@@ -1709,7 +1727,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "ea-glossary-cheatsheet",
    "tags": [],
-   "word_count": 5477,
+   "word_count": 5493,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -1729,13 +1747,13 @@
    "doc_type": "reference-architecture",
    "topic_id": "executive-communication-framework-guide",
    "tags": [],
-   "word_count": 6227,
+   "word_count": 6258,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/82-ea-business-communication-executive-skills",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },
@@ -1750,13 +1768,13 @@
     "technical-domains",
     "business-strategy"
    ],
-   "word_count": 2462,
+   "word_count": 2486,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/parts/35-ea-mastery-guide-part2",
-     "score": 0.58
+     "score": 0.57
     },
     {
      "id": "architecture/68-ea-bestpractices-jargon",
@@ -1764,7 +1782,7 @@
     },
     {
      "id": "architecture/16-ea-aidlc-deep-research-2026",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -1780,7 +1798,7 @@
     "agentic-systems",
     "rag"
    ],
-   "word_count": 5435,
+   "word_count": 5465,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -1790,11 +1808,11 @@
     },
     {
      "id": "architecture/48-enterprise-ai-architect-foundations",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "architecture/86-principal-enterprise-ai-guide-educative",
-     "score": 0.37
+     "score": 0.38
     }
    ]
   },
@@ -1809,7 +1827,7 @@
     "principal-architect",
     "2026-2030"
    ],
-   "word_count": 5619,
+   "word_count": 5648,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -1819,7 +1837,7 @@
     },
     {
      "id": "architecture/55-governance-propagation-chain",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "data-knowledge/parts/04-enterprise-data-systems-ai-governance-report-part3",
@@ -1837,7 +1855,7 @@
     "process",
     "lifecycle"
    ],
-   "word_count": 1252,
+   "word_count": 1290,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
@@ -1862,7 +1880,7 @@
     "governance",
     "enterprise-architecture"
    ],
-   "word_count": 5240,
+   "word_count": 5259,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
@@ -1884,13 +1902,13 @@
     "sqlite",
     "windows"
    ],
-   "word_count": 3271,
+   "word_count": 3305,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/parts/26-ai-invoice-auditor-architecture-part2",
-     "score": 0.54
+     "score": 0.53
     }
    ]
   },
@@ -1900,7 +1918,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "ai-transformation-consultant-toolkit-2026",
    "tags": [],
-   "word_count": 4779,
+   "word_count": 4809,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -1929,13 +1947,13 @@
     "versioning",
     "standards"
    ],
-   "word_count": 2035,
+   "word_count": 2052,
    "last_reviewed": "2026-07-17",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/parts/30-akes-addendum-document-update-and-versioning-part2",
-     "score": 0.61
+     "score": 0.6
     },
     {
      "id": "data-knowledge/12-autonomous-knowledge-engineering-system",
@@ -1955,7 +1973,7 @@
     "governance",
     "dpdp"
    ],
-   "word_count": 2340,
+   "word_count": 2371,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
@@ -1982,7 +2000,7 @@
     "system-design",
     "interview-prep"
    ],
-   "word_count": 4828,
+   "word_count": 4856,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": []
@@ -1997,13 +2015,13 @@
     "knowledge-architecture",
     "eaka"
    ],
-   "word_count": 1938,
+   "word_count": 1970,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/parts/33-eaka-research-study-part2",
-     "score": 0.55
+     "score": 0.54
     },
     {
      "id": "architecture/parts/34-eaka-research-study-part3",
@@ -2011,7 +2029,7 @@
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -2027,13 +2045,13 @@
     "stakeholder-management",
     "leadership"
    ],
-   "word_count": 6351,
+   "word_count": 6381,
    "last_reviewed": "2026-07-24",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/70-executive-communication-framework-guide",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "architecture/parts/35-ea-mastery-guide-part2",
@@ -2051,7 +2069,7 @@
    "doc_type": "research-report",
    "topic_id": "ea-okr-kpi-research",
    "tags": [],
-   "word_count": 2534,
+   "word_count": 2562,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -2075,7 +2093,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "enterprise-data-architect-ai-genai",
    "tags": [],
-   "word_count": 3007,
+   "word_count": 3040,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -2085,7 +2103,7 @@
     },
     {
      "id": "data-knowledge/parts/01-data-architecture-for-ai-report-part2",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "data-knowledge/parts/03-enterprise-data-systems-ai-governance-report-part2",
@@ -2099,7 +2117,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "enterprise-manager-ai-genai",
    "tags": [],
-   "word_count": 4547,
+   "word_count": 4583,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -2123,21 +2141,21 @@
    "doc_type": "reference-architecture",
    "topic_id": "principal-enterprise-ai-guide-educative",
    "tags": [],
-   "word_count": 3975,
+   "word_count": 4004,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/parts/36-principal-enterprise-ai-guide-educative-part2",
-     "score": 0.4
+     "score": 0.41
     },
     {
      "id": "architecture/72-enterprise-ai-architect-bible-2026",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "architecture/48-enterprise-ai-architect-foundations",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -2147,7 +2165,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "modern-data-ai-platform-blueprint-2026",
    "tags": [],
-   "word_count": 4490,
+   "word_count": 4526,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
@@ -2180,7 +2198,7 @@
    "top_similar": [
     {
      "id": "platforms/index",
-     "score": 0.32
+     "score": 0.31
     },
     {
      "id": "operations/index",
@@ -2402,7 +2420,7 @@
     },
     {
      "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
-     "score": 0.5
+     "score": 0.49
     },
     {
      "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
@@ -2434,7 +2452,7 @@
     },
     {
      "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-     "score": 0.54
+     "score": 0.53
     },
     {
      "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
@@ -2504,7 +2522,7 @@
     },
     {
      "id": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -2934,7 +2952,7 @@
    "top_similar": [
     {
      "id": "architecture/76-ai-invoice-auditor-architecture",
-     "score": 0.54
+     "score": 0.53
     }
    ]
   },
@@ -2974,7 +2992,7 @@
     },
     {
      "id": "architecture/parts/29-ai-solution-lifecycle-deliverables-part3",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },
@@ -2994,7 +3012,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/28-ai-solution-lifecycle-deliverables-part2",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "architecture/74-ai-solution-lifecycle-deliverables",
@@ -3019,7 +3037,7 @@
    "top_similar": [
     {
      "id": "architecture/78-akes-addendum-document-update-and-versioning",
-     "score": 0.61
+     "score": 0.6
     },
     {
      "id": "data-knowledge/12-autonomous-knowledge-engineering-system",
@@ -3099,15 +3117,15 @@
    "top_similar": [
     {
      "id": "architecture/81-eaka-research-study",
-     "score": 0.55
+     "score": 0.54
     },
     {
      "id": "architecture/parts/34-eaka-research-study-part3",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "agentic-systems/parts/16-agent-skills-complete-playbook-2026-part2",
-     "score": 0.4
+     "score": 0.41
     }
    ]
   },
@@ -3127,7 +3145,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/33-eaka-research-study-part2",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "architecture/81-eaka-research-study",
@@ -3135,7 +3153,7 @@
     },
     {
      "id": "agentic-systems/parts/16-agent-skills-complete-playbook-2026-part2",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -3160,11 +3178,11 @@
    "top_similar": [
     {
      "id": "architecture/71-ea-mastery-guide",
-     "score": 0.58
+     "score": 0.57
     },
     {
      "id": "architecture/68-ea-bestpractices-jargon",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "architecture/82-ea-business-communication-executive-skills",
@@ -3184,7 +3202,7 @@
    "top_similar": [
     {
      "id": "architecture/86-principal-enterprise-ai-guide-educative",
-     "score": 0.4
+     "score": 0.41
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
@@ -3216,11 +3234,11 @@
    "top_similar": [
     {
      "id": "architecture/06-ea-architect-deep-dive-five-arenas",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "architecture/05-ea-architect-deep-dive-foundation",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "architecture/08-ea-architect-deep-dive-measurement-growth",

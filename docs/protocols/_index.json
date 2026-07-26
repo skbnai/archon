@@ -188,7 +188,7 @@
     },
     {
      "id": "protocols/09-entra-3lo-agent-auth-multiagent-compliance",
-     "score": 0.5
+     "score": 0.49
     }
    ]
   },
@@ -216,7 +216,7 @@
     },
     {
      "id": "protocols/08-entra-3lo-agent-auth-implementation",
-     "score": 0.5
+     "score": 0.49
     }
    ]
   },
@@ -324,7 +324,7 @@
      "score": 0.42
     },
     {
-     "id": "agentic-systems/orchestration/10-mcp-impact",
+     "id": "agentic-systems/coding-tools/parts/39-mcp-deep-guide-part2",
      "score": 0.4
     }
    ]
@@ -356,7 +356,7 @@
     },
     {
      "id": "protocols/parts/13-mcp-deep-research-2026-part2",
-     "score": 0.41
+     "score": 0.4
     }
    ]
   },
@@ -501,10 +501,10 @@
     },
     {
      "id": "agentic-systems/agentic-ui/02-agui-standards-landscape",
-     "score": 0.57
+     "score": 0.56
     },
     {
-     "id": "agentic-systems/agentic-ui/19-agentic-ui-security-architecture",
+     "id": "agentic-systems/agentic-ui/08-enterprise-reference-architecture",
      "score": 0.38
     }
    ]
@@ -672,7 +672,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },
@@ -698,7 +698,7 @@
     },
     {
      "id": "agentic-systems/orchestration/10-mcp-impact",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "architecture/58-mcp-a2a-protocol-deep-dive",
@@ -821,7 +821,7 @@
     },
     {
      "id": "protocols/21-emerging-protocols-overview",
-     "score": 0.34
+     "score": 0.33
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
