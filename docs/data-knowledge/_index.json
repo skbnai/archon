@@ -60,7 +60,7 @@
     },
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -70,7 +70,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "data-architecture-for-ai-report",
    "tags": [],
-   "word_count": 5427,
+   "word_count": 6017,
    "last_reviewed": "2026-07-25",
    "status": "current",
    "top_similar": [
@@ -80,11 +80,11 @@
     },
     {
      "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
-     "score": 0.54
+     "score": 0.55
     },
     {
      "id": "data-knowledge/parts/04-enterprise-data-systems-ai-governance-report-part3",
-     "score": 0.44
+     "score": 0.45
     }
    ]
   },
@@ -134,7 +134,7 @@
    "top_similar": [
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",
-     "score": 0.54
+     "score": 0.55
     },
     {
      "id": "data-knowledge/parts/01-data-architecture-for-ai-report-part2",
@@ -272,7 +272,7 @@
    "top_similar": [
     {
      "id": "data-knowledge/parts/01-data-architecture-for-ai-report-part2",
-     "score": 0.32
+     "score": 0.33
     },
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",

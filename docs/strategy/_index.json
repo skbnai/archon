@@ -124,7 +124,7 @@
     "value-lifecycle",
     "agentic-ai"
    ],
-   "word_count": 709,
+   "word_count": 919,
    "last_reviewed": "2026-07-19",
    "status": "current",
    "top_similar": [
@@ -134,11 +134,11 @@
     },
     {
      "id": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
-     "score": 0.43
+     "score": 0.41
     },
     {
      "id": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
-     "score": 0.41
+     "score": 0.39
     }
    ]
   },
@@ -1067,7 +1067,7 @@
    "top_similar": [
     {
      "id": "strategy/86-vol10-relationship-maps-glossary-ai-comparisons-terminology-xref",
-     "score": 0.33
+     "score": 0.32
     }
    ]
   },
@@ -1269,7 +1269,7 @@
     },
     {
      "id": "strategy/05-agentic-ai-use-case-value-lifecycle",
-     "score": 0.43
+     "score": 0.41
     }
    ]
   },
@@ -1340,7 +1340,7 @@
     },
     {
      "id": "strategy/05-agentic-ai-use-case-value-lifecycle",
-     "score": 0.41
+     "score": 0.39
     },
     {
      "id": "strategy/03-ai-value-creator-deliverables-pack",
@@ -2043,7 +2043,7 @@
    "top_similar": [
     {
      "id": "strategy/44-vol10-relationship-maps-glossary",
-     "score": 0.33
+     "score": 0.32
     }
    ]
   },

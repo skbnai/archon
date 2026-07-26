@@ -774,7 +774,7 @@
    "top_similar": [
     {
      "id": "architecture/41-agent-memory-planning-architecture",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -1079,13 +1079,13 @@
     "planning",
     "state-management"
    ],
-   "word_count": 2137,
+   "word_count": 2350,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/07-ai-memory-agent-innovations-research-report",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
@@ -1093,7 +1093,7 @@
     },
     {
      "id": "architecture/27-agentic-ai-landing-zone-memory-architecture",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -1320,7 +1320,7 @@
     },
     {
      "id": "architecture/47-enterprise-agent-reference-architectures",
-     "score": 0.33
+     "score": 0.34
     },
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
@@ -1543,13 +1543,13 @@
     "patterns",
     "multi-agent"
    ],
-   "word_count": 4361,
+   "word_count": 4841,
    "last_reviewed": "2026-07-23",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -1569,7 +1569,7 @@
    "top_similar": [
     {
      "id": "architecture/66-volume7-ai-native-arb-case-studies",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "architecture/09-apex-ea-team-structure-raci",
@@ -1661,7 +1661,7 @@
    "top_similar": [
     {
      "id": "architecture/60-volume1-governance-ecosystem-operating-models",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "architecture/62-volume3-knowledge-management-capability-mapping",
@@ -2046,7 +2046,7 @@
     },
     {
      "id": "architecture/parts/35-ea-mastery-guide-part2",
-     "score": 0.37
+     "score": 0.36
     },
     {
      "id": "architecture/68-ea-bestpractices-jargon",
@@ -2069,11 +2069,11 @@
      "score": 0.35
     },
     {
-     "id": "architecture/71-ea-mastery-guide",
+     "id": "strategy/vols/09-vol8-portfolio-consulting-frameworks-architecture-operating-delivery",
      "score": 0.32
     },
     {
-     "id": "strategy/vols/09-vol8-portfolio-consulting-frameworks-architecture-operating-delivery",
+     "id": "architecture/71-ea-mastery-guide",
      "score": 0.32
     }
    ]
@@ -2122,7 +2122,7 @@
     },
     {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
-     "score": 0.41
+     "score": 0.42
     }
    ]
   },
@@ -2165,11 +2165,11 @@
      "score": 0.43
     },
     {
-     "id": "data-knowledge/03-data-architecture-for-ai-report",
+     "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
      "score": 0.4
     },
     {
-     "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
+     "id": "data-knowledge/03-data-architecture-for-ai-report",
      "score": 0.4
     }
    ]
@@ -2582,15 +2582,15 @@
    "status": "current",
    "top_similar": [
     {
+     "id": "data-knowledge/03-data-architecture-for-ai-report",
+     "score": 0.43
+    },
+    {
      "id": "architecture/20-ai-native-architecture-evolution-report",
      "score": 0.43
     },
     {
      "id": "architecture/parts/13-ai-native-architecture-evolution-report-decision-forecast",
-     "score": 0.42
-    },
-    {
-     "id": "data-knowledge/03-data-architecture-for-ai-report",
      "score": 0.42
     }
    ]
@@ -2616,11 +2616,11 @@
      "score": 0.46
     },
     {
-     "id": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
-     "score": 0.42
+     "id": "data-knowledge/03-data-architecture-for-ai-report",
+     "score": 0.43
     },
     {
-     "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
+     "id": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
      "score": 0.42
     }
    ]
@@ -2716,8 +2716,8 @@
      "score": 0.31
     },
     {
-     "id": "agentic-systems/coding-tools/23-claude-ecosystem-research-report",
-     "score": 0.3
+     "id": "architecture/44-ai-harness-architecture-orchestration",
+     "score": 0.31
     }
    ]
   },
@@ -3192,7 +3192,7 @@
     },
     {
      "id": "architecture/82-ea-business-communication-executive-skills",
-     "score": 0.37
+     "score": 0.36
     }
    ]
   },

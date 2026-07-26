@@ -64,7 +64,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/parts/14-observability-part2",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -625,7 +625,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/03-anti-patterns",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -965,7 +965,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/parts/07-copilot-enterprise-playbook-part2",
-     "score": 0.5
+     "score": 0.51
     },
     {
      "id": "agentic-systems/coding-tools/47-github-copilot-enterprise-research-2026",
@@ -2082,7 +2082,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/07-copilot-enterprise-playbook",
-     "score": 0.5
+     "score": 0.51
     },
     {
      "id": "agentic-systems/coding-tools/47-github-copilot-enterprise-research-2026",
@@ -3071,7 +3071,7 @@
     },
     {
      "id": "architecture/41-agent-memory-planning-architecture",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "architecture/parts/13-ai-native-architecture-evolution-report-decision-forecast",
@@ -3404,11 +3404,11 @@
      "score": 0.49
     },
     {
-     "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
+     "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
      "score": 0.43
     },
     {
-     "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
+     "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
      "score": 0.43
     }
    ]
@@ -3650,11 +3650,11 @@
      "score": 0.53
     },
     {
-     "id": "agentic-systems/core/19-discovery-and-execution-lifecycle",
+     "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
      "score": 0.49
     },
     {
-     "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
+     "id": "agentic-systems/core/19-discovery-and-execution-lifecycle",
      "score": 0.49
     }
    ]
@@ -3671,7 +3671,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.4
+     "score": 0.41
     },
     {
      "id": "agentic-systems/core/30-execution-lifecycle-and-tracing",
