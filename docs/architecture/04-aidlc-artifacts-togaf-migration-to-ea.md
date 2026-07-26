@@ -20,6 +20,17 @@ Part 1 of 3 — continues to [Part 2: Change Management & Cross-Cutting Artifact
 
 Enterprise architecture artifacts for TOGAF ADM Opportunities & Migration Phase E/F and Implementation Governance Phase G, with AI-First extensions.
 
+```mermaid
+flowchart LR
+    subgraph EF["Phase E/F: Opportunities & Migration"]
+        A[AI Use Case Portfolio & Sequencing Plan] --> B[AI-Readiness Transition Architecture]
+    end
+    subgraph G["Phase G: Implementation Governance"]
+        C[Architecture Compliance Checklist] --> D[AI System Registration Form]
+    end
+    EF --> G
+```
+
 **Audience:** Enterprise Architects, Chief Technology Officers, Governance Leaders, AI Governance Council Members
 
 **Coverage:** TOGAF ADM Opportunities & Migration (E/F) · Implementation Governance (G) · AI-First Extensions

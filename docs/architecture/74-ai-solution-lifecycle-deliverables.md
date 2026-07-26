@@ -28,7 +28,13 @@ This catalog aligns with EU AI Act (High-Risk AI system lifecycle requirements, 
 
 ## 1. Lifecycle Stages
 
-<!-- TODO(diagram): ASCII lifecycle diagram showing 5 stages (Incubation, RFP/Vendor Selection, Design & Build, Operate & Scale, Retire/Decommission) with timeframes. Rewrite as figure with labels. -->
+```mermaid
+flowchart LR
+    A["Incubation<br/>Weeks 1-4"] --> B["RFP / Vendor Selection<br/>Weeks 5-12"]
+    B --> C["Design & Build<br/>Months 3-9"]
+    C --> D["Operate & Scale<br/>Months 9-60+"]
+    D --> E["Retire / Decommission<br/>as needed"]
+```
 
 The AI solution lifecycle spans five key stages: Incubation (Weeks 1–4), RFP / Vendor Selection (Weeks 5–12), Design & Build (Months 3–9), Operate & Scale (Months 9–60+), and Retire / Decommission (as needed). Each stage has distinct governance deliverables and decision gates.
 

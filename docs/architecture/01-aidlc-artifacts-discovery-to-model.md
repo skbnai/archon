@@ -19,6 +19,13 @@ sources: []
 
 **Part 1 of 3** — live templates for AIDLC Phase 1 (Discovery & Ideation), the first of four stages that precede any model training, with field definitions and example content for every artifact. Continues in [Feasibility, Risk & Data Strategy](parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy.md) and [Model Design & Architecture](parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture.md).
 
+```mermaid
+flowchart LR
+    A[AI Use Case Charter] --> B[Business Value Canvas]
+    B --> C[Initial Risk Classification Sheet]
+    C --> D[Phase 2: Feasibility, Risk & Data Strategy]
+```
+
 **Audience:** Enterprise Architects, AI Delivery Leads, Program Managers, Governance Teams
 
 **Coverage:** AIDLC Phase 1 · Template Field Definitions

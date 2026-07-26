@@ -20,6 +20,16 @@ exist. This page explains that machinery — the registry, the hooks, the CI
 gates, the document types, and the freshness SLAs — so a contributor can
 predict what will be blocked before they try it.
 
+```mermaid
+flowchart LR
+    A[1. Registry<br/>one canonical page per topic] --> B[2. PreToolUse hook<br/>write-time guard]
+    B --> C[3. PostToolUse validator<br/>write-time check]
+    C --> D[4. Document types<br/>drive templates & rules]
+    D --> E[5. CI<br/>second gate]
+    E --> F[6. Duplicate detection]
+    F --> G[7. Freshness SLAs]
+```
+
 ## Prerequisites
 
 - Read `AGENTS.md` (the project constitution) and `governance/TAXONOMY.md`

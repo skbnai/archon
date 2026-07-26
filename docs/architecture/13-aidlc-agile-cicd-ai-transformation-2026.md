@@ -20,6 +20,12 @@ Part 1 of 3 — continues to [Part 2: Agile Evolution & CI/CD Transformation](./
 
 How AI is redefining the development lifecycle, Agile methodologies, and CI/CD pipelines.
 
+```mermaid
+flowchart LR
+    A["Generation 1: MLOps<br/>The Classical Pipeline<br/>(deterministic, discrete model artifact)"] --> B["Generation 2: LLMOps<br/>The Non-Deterministic Paradigm<br/>(foundation models, prompts, evals)"]
+    B --> C["Generation 3: AgentOps<br/>The Autonomous System Paradigm<br/>(multi-step, tool-using, self-directed)"]
+```
+
 **Audience:** Engineering Leaders, Platform Engineers, DevOps Teams, Enterprise Architects
 
 **Coverage:** The Grand Transformation · AIDLC Phases · MLOps to AgentOps Evolution

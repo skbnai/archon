@@ -20,6 +20,18 @@ Part 1 of 3 — continues to [Part 2: Deployment, MLOps & Retirement (Phase 7-8)
 
 Live templates for AIDLC Phases 5 and 6 — development and training, and evaluation and red-teaming.
 
+```mermaid
+flowchart LR
+    subgraph Phase5["Phase 5: Development & Training"]
+        A[Experiment Tracking Record] --> B[AI-Generated Code Audit Log]
+    end
+    subgraph Phase6["Phase 6: Evaluation & Red-Teaming"]
+        C[Red Team Report] --> D[Fairness Evaluation Report]
+        D --> E[Constitutional AI Compliance Audit]
+    end
+    Phase5 --> Phase6
+```
+
 **Audience:** Enterprise Architects, ML Engineers, MLOps Engineers, Data Scientists, Compliance Teams
 
 **Coverage:** AIDLC Phases 5–6
