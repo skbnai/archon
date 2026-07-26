@@ -11,8 +11,8 @@
 
 Pairwise similarity within this cluster:
 
-- 74%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
-- 74%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 75%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 75%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 73%  `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 71%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 70%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
@@ -63,7 +63,7 @@ Pairwise similarity within this cluster:
 Pairwise similarity within this cluster:
 
 - 68%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
-- 67%  `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
+- 66%  `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
 - 65%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2`
 
 ## Cluster (3 pages)
@@ -160,7 +160,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 62%  `agentic-systems/coding-tools/36-claude-agents-best-practices` <-> `agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part2`
+- 63%  `agentic-systems/coding-tools/36-claude-agents-best-practices` <-> `agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part2`
 
 ## Cluster (2 pages)
 
@@ -196,7 +196,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 65%  `agentic-systems/coding-tools/33-claude-code-complete-2026` <-> `agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2`
+- 66%  `agentic-systems/coding-tools/33-claude-code-complete-2026` <-> `agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2`
 
 ## Cluster (2 pages)
 

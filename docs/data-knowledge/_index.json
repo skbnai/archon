@@ -15,16 +15,20 @@
     "lakeflow",
     "real-time"
    ],
-   "word_count": 1506,
+   "word_count": 1557,
    "last_reviewed": "2026-07-16",
    "status": "current",
    "top_similar": [
     {
      "id": "data-knowledge/02-databricks-iceberg-open-formats",
-     "score": 0.31
+     "score": 0.36
     },
     {
      "id": "architecture/20-ai-native-architecture-evolution-report",
+     "score": 0.33
+    },
+    {
+     "id": "data-knowledge/03-data-architecture-for-ai-report",
      "score": 0.31
     }
    ]
@@ -42,7 +46,7 @@
     "catalog-federation",
     "open-formats"
    ],
-   "word_count": 1904,
+   "word_count": 1937,
    "last_reviewed": "2026-07-16",
    "status": "current",
    "top_similar": [
@@ -52,6 +56,10 @@
     },
     {
      "id": "data-knowledge/01-databricks-lakehouse-data-infrastructure",
+     "score": 0.36
+    },
+    {
+     "id": "data-knowledge/03-data-architecture-for-ai-report",
      "score": 0.31
     }
    ]
@@ -62,7 +70,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "data-architecture-for-ai-report",
    "tags": [],
-   "word_count": 5379,
+   "word_count": 5427,
    "last_reviewed": "2026-07-25",
    "status": "current",
    "top_similar": [
@@ -94,7 +102,7 @@
     "knowledge-engineering",
     "compliance"
    ],
-   "word_count": 5857,
+   "word_count": 5907,
    "last_reviewed": "2026-07-25",
    "status": "current",
    "top_similar": [
@@ -120,7 +128,7 @@
     "lakehouse",
     "ai-systems"
    ],
-   "word_count": 5715,
+   "word_count": 5770,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
@@ -152,13 +160,13 @@
     "MBB",
     "industry-landscape"
    ],
-   "word_count": 4508,
+   "word_count": 4542,
    "last_reviewed": "2026-07-13",
    "status": "current",
    "top_similar": [
     {
      "id": "data-knowledge/07-consulting-firms",
-     "score": 0.42
+     "score": 0.44
     },
     {
      "id": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
@@ -179,13 +187,13 @@
     "knowledge-engineering",
     "industry-practices"
    ],
-   "word_count": 963,
+   "word_count": 1004,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
     {
      "id": "data-knowledge/06-consulting-firms-genai-strategy",
-     "score": 0.42
+     "score": 0.44
     }
    ]
   },
@@ -198,7 +206,7 @@
     "knowledge-engineering",
     "industry-practices"
    ],
-   "word_count": 863,
+   "word_count": 916,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": []
@@ -212,13 +220,13 @@
     "knowledge-engineering",
     "industry-practices"
    ],
-   "word_count": 1113,
+   "word_count": 1165,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
@@ -239,10 +247,15 @@
     "knowledge-engineering",
     "industry-practices"
    ],
-   "word_count": 769,
+   "word_count": 820,
    "last_reviewed": "2026-07-10",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "data-knowledge/parts/05-enterprise-knowledge-architectures-report-part2",
+     "score": 0.3
+    }
+   ]
   },
   {
    "id": "data-knowledge/11-tech-companies",
@@ -253,13 +266,13 @@
     "knowledge-engineering",
     "industry-practices"
    ],
-   "word_count": 1061,
+   "word_count": 1097,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
     {
      "id": "data-knowledge/parts/01-data-architecture-for-ai-report-part2",
-     "score": 0.32
+     "score": 0.33
     },
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",
@@ -275,7 +288,7 @@
    "tags": [
     "knowledge-engineering"
    ],
-   "word_count": 6651,
+   "word_count": 6706,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
@@ -300,7 +313,7 @@
     "vector-search",
     "document-processing"
    ],
-   "word_count": 6155,
+   "word_count": 6205,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
@@ -316,7 +329,7 @@
    "doc_type": "reference-architecture",
    "topic_id": "enterprise-knowledge-architectures-report",
    "tags": [],
-   "word_count": 5922,
+   "word_count": 5974,
    "last_reviewed": "2026-07-25",
    "status": "current",
    "top_similar": [
@@ -325,11 +338,11 @@
      "score": 0.64
     },
     {
-     "id": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
+     "id": "data-knowledge/03-data-architecture-for-ai-report",
      "score": 0.35
     },
     {
-     "id": "data-knowledge/03-data-architecture-for-ai-report",
+     "id": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
      "score": 0.35
     }
    ]
@@ -431,7 +444,7 @@
     },
     {
      "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
-     "score": 0.44
+     "score": 0.45
     }
    ]
   },
