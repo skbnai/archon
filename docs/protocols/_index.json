@@ -184,7 +184,7 @@
     },
     {
      "id": "protocols/09-entra-3lo-agent-auth-multiagent-compliance",
-     "score": 0.49
+     "score": 0.48
     }
    ]
   },
@@ -212,7 +212,7 @@
     },
     {
      "id": "protocols/08-entra-3lo-agent-auth-implementation",
-     "score": 0.49
+     "score": 0.48
     }
    ]
   },
@@ -344,7 +344,7 @@
    "top_similar": [
     {
      "id": "protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part3",
@@ -492,7 +492,7 @@
      "score": 0.56
     },
     {
-     "id": "agentic-systems/agentic-ui/19-agentic-ui-security-architecture",
+     "id": "agentic-systems/agentic-ui/08-enterprise-reference-architecture",
      "score": 0.38
     }
    ]
@@ -717,10 +717,10 @@
     },
     {
      "id": "protocols/14-mcp-enterprise-security-governance-operations-2026",
-     "score": 0.45
+     "score": 0.44
     },
     {
-     "id": "architecture/55-governance-propagation-chain",
+     "id": "protocols/parts/13-mcp-deep-research-2026-part2",
      "score": 0.33
     }
    ]
