@@ -17,14 +17,14 @@
    "top_similar": [
     {
      "id": "trust/index",
-     "score": 0.39
+     "score": 0.37
+    },
+    {
+     "id": "agentic-systems/index",
+     "score": 0.34
     },
     {
      "id": "platforms/index",
-     "score": 0.35
-    },
-    {
-     "id": "data-knowledge/index",
      "score": 0.34
     }
    ]
