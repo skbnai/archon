@@ -50,23 +50,23 @@ supersedes: ["docs/ai-protocols/standards/AI_Protocols_Standards_Service_Industr
 - [B5 — MITRE ATLAS, SOC 2 for AI & GDPR/CCPA](#b5--mitre-atlas-soc-2-for-ai--gdprccpa-ai-extensions)
 - [B6 — Integrated Compliance Architecture](#b6--the-integrated-compliance-architecture)
 
-**Part C — Service Industry Adoption Playbooks**
-- [C1 — Financial Services & Banking](#c1--financial-services--banking)
-- [C2 — Healthcare & Life Sciences](#c2--healthcare--life-sciences-services)
-- [C3 — Legal & Professional Services](#c3--legal--professional-services)
-- [C4 — Retail & E-Commerce](#c4--retail--e-commerce)
-- [C5 — Hospitality & Travel](#c5--hospitality--travel)
-- [C6 — Telecommunications](#c6--telecommunications)
-- [C7 — Insurance](#c7--insurance)
-- [C8 — Consulting & Business Services](#c8--consulting--business-services)
-- [C9 — Education Services](#c9--education-services)
-- [C10 — Government & Public Sector](#c10--government--public-sector)
+**Part C — Service Industry Adoption Playbooks** (in [Part 2](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2))
+- [C1 — Financial Services & Banking](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#c1--financial-services--banking)
+- [C2 — Healthcare & Life Sciences](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#c2--healthcare--life-sciences-services)
+- [C3 — Legal & Professional Services](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#c3--legal--professional-services)
+- [C4 — Retail & E-Commerce](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#c4--retail--e-commerce)
+- [C5 — Hospitality & Travel](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#c5--hospitality--travel)
+- [C6 — Telecommunications](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#c6--telecommunications)
+- [C7 — Insurance](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#c7--insurance)
+- [C8 — Consulting & Business Services](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#c8--consulting--business-services)
+- [C9 — Education Services](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#c9--education-services)
+- [C10 — Government & Public Sector](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#c10--government--public-sector)
 
-**Part D — Executive Action Plan**
-- [D1 — 90-Day Sprint](#d1--the-90-day-sprint)
-- [D2 — AI Maturity Scorecard](#d2--the-ai-maturity-scorecard)
-- [D3 — Common Failure Patterns](#d3--common-failure-patterns--how-to-avoid-them)
-- [D4 — Building Your AI Adoption Team](#d4--building-your-ai-adoption-team)
+**Part D — Executive Action Plan** (in [Part 2](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2))
+- [D1 — 90-Day Sprint](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#d1--the-90-day-sprint)
+- [D2 — AI Maturity Scorecard](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#d2--the-ai-maturity-scorecard)
+- [D3 — Common Failure Patterns](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#d3--common-failure-patterns--how-to-avoid-them)
+- [D4 — Building Your AI Adoption Team](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2#d4--building-your-ai-adoption-team)
 
 ---
 
