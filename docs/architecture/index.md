@@ -2,7 +2,7 @@
 title: "Architecture Hub"
 doc_type: hub
 domain: architecture
-status: draft
+status: current
 canonical: true
 topic_id: hub-architecture
 maturity: foundational

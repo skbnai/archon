@@ -2,7 +2,7 @@
 title: "Protocols Hub"
 doc_type: hub
 domain: protocols
-status: draft
+status: current
 canonical: true
 topic_id: hub-protocols
 maturity: foundational

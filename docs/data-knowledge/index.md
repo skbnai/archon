@@ -2,7 +2,7 @@
 title: "Data & Knowledge Hub"
 doc_type: hub
 domain: data-knowledge
-status: draft
+status: current
 canonical: true
 topic_id: hub-data-knowledge
 maturity: foundational
