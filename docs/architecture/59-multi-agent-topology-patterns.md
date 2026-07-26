@@ -521,6 +521,45 @@ graph TB
 
 Swarm topology: many simple agents interact locally; emergent behavior arises from the aggregate.
 
+### Lifecycle
+
+1. Agents are seeded (randomly or by simple rule) into an environment or shared state space
+2. Each agent perceives only its local neighborhood — it has no view of global state or overall goal progress
+3. Agents act and update local state based on simple, fixed interaction rules (e.g., "if neighbor confidence exceeds mine, adopt its answer")
+4. Aggregate behavior — consensus, coverage, or an emergent solution — arises after many rounds of local interaction, not from any single agent's decision
+5. Termination is typically convergence-based (state stops changing) or round-limited, not task-completion-based like a supervised topology
+
+### State Management
+
+- No shared plan state exists — this is the defining difference from Supervisor-Worker and Router topologies, where a coordinator owns a task-plan
+- Each agent holds only its own local state plus whatever it observes from immediate neighbors
+- There is no single point that can report "current progress" — observability has to sample the aggregate, not query one owner
+
+### Communication
+
+- Strictly local: agent-to-neighbor only, no broadcast and no central channel
+- No A2A-style task delegation applies here — there is no delegator and no delegate, only peers
+- Message volume scales with neighbor-graph density, not with task complexity, which makes swarm communication cost hard to predict from task size alone
+
+### Governance
+
+- The absence of a coordinator means there is no natural point to enforce policy before an action is taken — every agent boundary is a potential policy-evaluation point, which is expensive at swarm scale
+- Audit trail must be reconstructed from the aggregate of many small local interactions rather than read off one supervisor's log, which is why this topology carries the "Audit gap" flag in the risk table above
+- Least-privilege scoping still applies per agent, but there is no natural place to attest an overall task's authorization the way a supervisor does
+
+### Failure Modes
+
+| Failure | Behaviour | Resolution |
+|---------|-----------|------------|
+| No convergence | Agents oscillate without reaching stable aggregate state | Cap rounds; fall back to a supervised topology for the task |
+| Silent bad consensus | Swarm converges confidently on a wrong answer with no dissent signal | Require a diversity/dissent metric, not just convergence, before accepting the result |
+| Untraceable action | An action taken by the aggregate can't be attributed to a decision point | Log every local interaction, not just outcomes; expect high storage cost |
+
+### Anti-Patterns
+
+- **Using swarm topology because it sounds more "agentic," not because the problem is aggregation-shaped.** Most enterprise tasks have a clear decomposition and benefit from Supervisor-Worker's traceability instead.
+- **Bolting a compliance gate onto a swarm after the fact.** Policy enforcement designed for a single coordination point does not transfer to a topology with none — it has to be designed in from the start, per the Governance section above.
+
 ### Enterprise Suitability ★★☆☆☆
 
 Currently a research topology. Difficult to govern, audit, or explain. Emergent behavior means no single audit trail, no clear policy enforcement point. Not recommended for production enterprise systems in 2026. Monitor for maturity; may become viable as agent identity and distributed tracing standards mature.
