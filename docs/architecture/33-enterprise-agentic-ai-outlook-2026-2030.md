@@ -46,18 +46,21 @@ Three compounding curves drive the 2026–2030 arc:
 
 ### Expected Cycle Shape
 
-```
-2025–2026: Peak hype → rapid production adoption of Level 2–3 maturity
-2026–2027: Mid-cycle disillusionment trough
-           → agent-washing corrections
-           → ROI audit pressure from CFO/board
-           → first significant agentic security incident (public)
-2027–2028: Reset and re-qualification
-           → stronger eval-gating, identity, and audit practices
-           → consolidation from &gt;500 agent startups to a smaller cohort
-2028–2030: Steeper, more concentrated second adoption slope
-           → agents operating as workforce components with SLAs
-           → outcome-based commercial models normalise
+```mermaid
+timeline
+    title Expected Adoption Cycle Shape, 2025-2030
+    2025-2026 : Peak hype
+              : Rapid production adoption of Level 2-3 maturity
+    2026-2027 : Mid-cycle disillusionment trough
+              : Agent-washing corrections
+              : ROI audit pressure from CFO/board
+              : First significant agentic security incident (public)
+    2027-2028 : Reset and re-qualification
+              : Stronger eval-gating, identity, and audit practices
+              : Consolidation from 500+ agent startups to a smaller cohort
+    2028-2030 : Steeper, more concentrated second adoption slope
+              : Agents operating as workforce components with SLAs
+              : Outcome-based commercial models normalise
 ```
 
 **Architect posture during trough (2026–27):** Do not pause platform investment — use the trough to complete identity, observability, and eval-gating infrastructure that was deferred during the hype phase. Organisations that do this emerge with level-4 maturity when the second slope starts.

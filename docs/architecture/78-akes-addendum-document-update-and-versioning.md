@@ -52,7 +52,21 @@ Three properties the versioning design must satisfy:
 
 Every version of every artifact moves through a defined set of states. Transitions are triggered by agent decisions, human actions, or drift detection events — never by time alone.
 
-<!-- TODO(diagram): Version state machine diagram showing states (Draft, PendingReview, Verified, Current, Disputed, Superseded, Rejected) and transitions. Original fig ea-p4-1.png. -->
+```mermaid
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> PendingReview: confidence below threshold or high severity
+    Draft --> Verified: passes governance gate
+    PendingReview --> Verified: reviewer approves
+    PendingReview --> Rejected: reviewer rejects
+    Verified --> Current: instant transition
+    Current --> Disputed: drift detection finds contradiction
+    Current --> Superseded: newer version becomes Current
+    Disputed --> Current: human or Validation Agent resolves
+    Disputed --> Superseded: newer version becomes Current
+    Rejected --> [*]
+    Superseded --> [*]
+```
 
 **State definitions**
 

@@ -104,6 +104,13 @@ A common misconception is that OKRs and KPIs are competing frameworks. In realit
 
 The most successful organisations leverage both frameworks as part of a comprehensive performance management system. A KPI might reveal that customer satisfaction scores are declining — this insight then triggers an OKR to address root causes and drive improvement. By integrating OKRs, organisations can elevate KPIs from simple measurements to powerful tools that achieve strategic goals. The hierarchy flows: strategy defines OKRs, OKRs identify the most critical KPIs to move, and KPI tracking provides the data that informs OKR progress reviews.
 
+```mermaid
+flowchart LR
+    A[Strategy] --> B[OKRs<br/>ambitious, cycle-based objectives]
+    B --> C[KPIs<br/>continuous operational metrics]
+    C -- progress data feeds back into --> B
+```
+
 ---
 
 ## SECTION 4: The Role of the Enterprise Architect

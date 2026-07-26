@@ -110,6 +110,16 @@ The DPDP Act 2023 is the culmination of nearly two decades of legislative effort
 
 **Territorial Scope**: The Act applies to (a) all processing of digital personal data within India, and (b) processing outside India if it involves offering goods/services to Data Principals in India. This extraterritorial reach means US, EU, and other international companies handling Indian user data are covered.
 
+```mermaid
+flowchart LR
+    DP["Data Principal<br/>(the individual)"] -- gives/withdraws consent via --> CM["Consent Manager"]
+    CM -- consent --> DF["Data Fiduciary<br/>(determines purpose & means)"]
+    DF -- instructs --> DPR["Data Processor<br/>(processes on Fiduciary's behalf)"]
+    DF -- enhanced obligations if designated --> SDF["Significant Data Fiduciary"]
+    DF -- monitored by --> DPBI["Data Protection Board (DPBI)"]
+    DPBI -- investigates breaches, imposes penalties --> DF
+```
+
 ## 4. Seven Guiding Principles of the DPDP Act
 
 ### 1. Lawfulness, Fairness & Transparency

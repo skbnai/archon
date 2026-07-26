@@ -20,6 +20,13 @@ Part 1 of 4 — continues to [Part 2: Vision & Business Architecture (Phase A-B)
 
 Enterprise architecture artifacts for TOGAF ADM Preliminary Phase, with AI-First extensions that adapt TOGAF 10 for AI-integrated enterprises.
 
+```mermaid
+flowchart LR
+    A[EA Framework Charter] --> B[AI Governance Principles]
+    B --> C[EA Stakeholder Register]
+    C --> D[Phase A-B: Vision & Business Architecture]
+```
+
 This part covers artifact templates for the TOGAF 10 Preliminary phase, showing the enterprise-architecture governance artifacts an EA team maintains around an AIDLC delivery. All templates trace to the same illustrative example — a Credit Risk AI Scoring Model — shown here for a fictional "GlobalBank plc" as the EA-programme sponsor.
 
 **Audience:** Enterprise Architects, Chief Technology Officers, Governance Leaders, AI Governance Council Members
