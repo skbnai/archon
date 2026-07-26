@@ -48,7 +48,7 @@
     },
     {
      "id": "protocols/05-identity-obo-sessions",
-     "score": 0.46
+     "score": 0.47
     },
     {
      "id": "protocols/12-tool-authentication-connectors",
@@ -92,7 +92,7 @@
    "top_similar": [
     {
      "id": "protocols/06-agent-identity-entra-vs-awsagentcore",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -116,7 +116,7 @@
     },
     {
      "id": "protocols/02-enterprise-ai-platform-auth-survey",
-     "score": 0.46
+     "score": 0.47
     }
    ]
   },
@@ -131,16 +131,16 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.36
-    },
-    {
      "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
      "score": 0.36
     },
     {
+     "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
+     "score": 0.36
+    },
+    {
      "id": "protocols/04-agentidentity-research-2026",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -180,7 +180,7 @@
     },
     {
      "id": "protocols/10-entra-3lo-agent-auth-security-review",
-     "score": 0.54
+     "score": 0.55
     },
     {
      "id": "protocols/09-entra-3lo-agent-auth-multiagent-compliance",
@@ -240,7 +240,7 @@
     },
     {
      "id": "protocols/08-entra-3lo-agent-auth-implementation",
-     "score": 0.54
+     "score": 0.55
     }
    ]
   },
@@ -373,7 +373,7 @@
    "top_similar": [
     {
      "id": "protocols/parts/13-mcp-deep-research-2026-part2",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -485,7 +485,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/agentic-ui/parts/02-agui-standards-landscape-part3",
-     "score": 0.65
+     "score": 0.66
     },
     {
      "id": "agentic-systems/agentic-ui/02-agui-standards-landscape",
@@ -525,7 +525,7 @@
    "top_similar": [
     {
      "id": "protocols/21-emerging-protocols-overview",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
@@ -566,7 +566,7 @@
     },
     {
      "id": "protocols/20-emerging-protocols-crosscutting",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "protocols/16-ai-protocols-standards-service-industry-guide-2026",
@@ -720,7 +720,7 @@
      "score": 0.45
     },
     {
-     "id": "architecture/55-governance-propagation-chain",
+     "id": "protocols/parts/13-mcp-deep-research-2026-part2",
      "score": 0.33
     }
    ]
