@@ -603,7 +603,51 @@ const sidebars = {
       label: "Data & Knowledge",
       link: { type: "doc", id: "data-knowledge/index" },
       collapsible: true,
-      items: [],
+      items: [
+        {
+          type: "category",
+          label: "Lakehouse & Data Architecture",
+          items: [
+            "data-knowledge/databricks-lakehouse-data-infrastructure",
+            "data-knowledge/databricks-iceberg-open-formats",
+            "data-knowledge/data-architecture-for-ai-report",
+            "data-knowledge/parts/data-architecture-for-ai-report-part2",
+          ],
+        },
+        {
+          type: "category",
+          label: "Lineage & Governance",
+          items: [
+            "data-knowledge/end-to-end-lineage-systems-report",
+            "data-knowledge/parts/end-to-end-lineage-systems-report-part2",
+            "data-knowledge/enterprise-data-systems-ai-governance-report",
+            "data-knowledge/parts/enterprise-data-systems-ai-governance-report-part2",
+            "data-knowledge/parts/enterprise-data-systems-ai-governance-report-part3",
+          ],
+        },
+        {
+          type: "category",
+          label: "Knowledge Graphs & RAG",
+          items: [
+            "data-knowledge/autonomous-knowledge-engineering-system",
+            "data-knowledge/complex-rag-deep-dive",
+            "data-knowledge/enterprise-knowledge-architectures-report",
+            "data-knowledge/parts/enterprise-knowledge-architectures-report-part2",
+          ],
+        },
+        {
+          type: "category",
+          label: "Industry Practices",
+          items: [
+            "data-knowledge/tech-companies",
+            "data-knowledge/consulting-firms",
+            "data-knowledge/consulting-firms-genai-strategy",
+            "data-knowledge/governance-rai",
+            "data-knowledge/grounding",
+            "data-knowledge/evaluation",
+          ],
+        },
+      ],
     },
     {
       type: "category",
