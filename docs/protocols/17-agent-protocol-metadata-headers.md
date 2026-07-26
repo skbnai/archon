@@ -809,4 +809,8 @@ The `inputHash` / `outputHash` fields are SHA-256 hashes of the actual data — 
 
 ---
 
-**Related:** [Existing Protocol Evolution for Agentic AI](./23-existing-protocol-evolution-agentic-ai.md) · [Emerging Protocols Beyond MCP & A2A](./index.md) · [MCP Deep Research 2026](./13-mcp-deep-research-2026.md)
+## Related
+
+- [Existing Protocol Evolution for Agentic AI](23-existing-protocol-evolution-agentic-ai.md) — how established protocols evolved metadata/header conventions that these agent protocols extend.
+- [Protocols Hub](index.md) — the full protocol landscape these metadata systems operate within.
+- [MCP Deep Research 2026](13-mcp-deep-research-2026.md) — deep dive on MCP, one of the four protocols covered here.

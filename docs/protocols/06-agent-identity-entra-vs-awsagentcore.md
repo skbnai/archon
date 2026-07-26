@@ -464,3 +464,9 @@ Critically, they are designed for interoperability, not competition. Microsoft e
 - **Microsoft-first organisations:** Use Entra Agent ID Blueprints for governance and add AWS STS federation for Bedrock workloads.
 
 The federation trust between both systems can be established in under 30 minutes using published reference implementations from both Microsoft and Amazon.
+
+## Related
+
+- [Agent Identity for AI Systems — Research 2026](04-agentidentity-research-2026.md) — the broader identity landscape this comparison sits within.
+- [EntraID 3LO Volume 1: Standards & Architecture](11-entra-3lo-agent-auth-standards-architecture.md) — deep dive on the Entra side of this comparison.
+- [Identity, OBO & Sessions](05-identity-obo-sessions.md) — session and delegation patterns relevant to both platforms.

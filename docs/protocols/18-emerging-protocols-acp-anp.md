@@ -565,6 +565,12 @@ ACP's REST surface integrated with all major API gateways (Kong, AWS API Gateway
 
 **Navigation:** [View Part 2 — ANP Deep Dive &amp; Protocol Comparison](pathname:///archon/protocols/parts/18-emerging-protocols-acp-anp-part2.md)
 
+## Related
+
+- [Emerging AI Agent Protocols Overview](21-emerging-protocols-overview.md) — the landscape this ACP/ANP deep dive is one section of.
+- [AG-UI & UTCP — Enterprise Architecture Deep Dive](19-emerging-protocols-agui-utcp.md) — the sibling deep dive covering the other emerging protocols.
+- [Agent Protocol Metadata, Headers & Capability Negotiation](17-agent-protocol-metadata-headers.md) — how ANP's metadata conventions compare to MCP/A2A/AG-UI.
+
 ---
 
 &gt; **Document metadata**: Part 1 of "Emerging AI Agent Protocols Beyond MCP &amp; A2A — Enterprise Architecture, Standards, Security, and Adoption" (July 2026 edition). Section 2A: ACP &amp; ANP Deep Dives. Research current as of 2026-07-11. Protocol status subject to rapid change; verify against primary sources before implementation decisions.

@@ -371,3 +371,9 @@ The solution is standardised and production-proven. The EntraID 3LO pattern — 
 3. **Full audit trail**: `agent_id` + `user_oid` + scope + resource + timestamp on every call
 
 Everything else — CIBA, multi-agent chains, MCP/A2A, DORA compliance — builds on these three.
+
+## Related
+
+- [EntraID 3LO Volume 2: Implementation](08-entra-3lo-agent-auth-implementation.md) — the reference implementation these multi-agent and compliance patterns extend.
+- [EntraID 3LO Volume 4: Security Review](10-entra-3lo-agent-auth-security-review.md) — security and NHI governance review for this series.
+- [Trust Hub](../trust/index.md) — the broader compliance framework catalog (DORA, NIS2) this volume maps into.

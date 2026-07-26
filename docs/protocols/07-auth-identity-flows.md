@@ -308,6 +308,12 @@ Conditional Access enforces contextual authorisation on top of token validation:
 
 ---
 
+## Related
+
+- [Auth Standards Reference](01-auth-standards-reference.md) — the underlying OAuth 2.1/OIDC standards this Azure architecture implements.
+- [Identity, OBO & Sessions](05-identity-obo-sessions.md) — on-behalf-of and session-handling patterns used across this flow architecture.
+- [EntraID 3LO Volume 1: Standards & Architecture](11-entra-3lo-agent-auth-standards-architecture.md) — related Entra-based delegated-auth architecture.
+
 ## References
 
 Microsoft Learn — OAuth 2.0 and OIDC on Microsoft identity platform · Azure Container Apps Authentication · Managed Identities for Azure Resources · AKS Workload Identity Overview · APIM validate-jwt policy · Azure Key Vault RBAC · Conditional Access documentation · Microsoft Entra ID Zero Trust guidance

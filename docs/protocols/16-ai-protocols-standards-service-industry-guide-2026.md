@@ -392,6 +392,11 @@ OWASP LLM Top 10 and MITRE ATLAS provide the security threat modelling layer. IE
 | SOC 2 for AI | Audit Standard | Often required by B2B clients | Next audit cycle | Audit fees | MEDIUM |
 | GDPR/CCPA AI Extensions | Privacy Regulation | YES — any personal data use | Immediate | Legal review | **CRITICAL** |
 
+## Related
+
+- [Emerging AI Agent Protocols Overview](21-emerging-protocols-overview.md) — the landscape overview this service-industry guide draws its protocol coverage from.
+- [Existing Protocol Evolution for Agentic AI](23-existing-protocol-evolution-agentic-ai.md) — how established web protocols evolved to support the same agentic use cases.
+
 ---
 
 **Next:** [Part C — Service Industry Adoption Playbooks](pathname:///archon/protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2.md)

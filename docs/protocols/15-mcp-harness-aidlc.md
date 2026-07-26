@@ -721,3 +721,9 @@ Most teams in 2026 are at level 1–2. Level 3 is achievable in a week with a ga
 **Automated red-team catches 60–70%, not 100%.** Research by Amine Raji (2026) found automated scans miss business logic attacks, creative chaining, and context-specific exploitation. Schedule human red-team exercises at least quarterly for critical servers.
 
 **The model is a non-deterministic test participant.** Your injection tests will not always reproduce. Use n=10 runs for injection tests and gate on pass rate (e.g., must pass 9/10), not single-run results. Non-determinism is a feature of LLMs — design your assertions around distributions, not single outputs.
+
+## Related
+
+- [MCP Deep Research 2026](13-mcp-deep-research-2026.md) — the architecture and capabilities being tested by this harness.
+- [Enterprise MCP Security, Authorization & Governance (2026)](14-mcp-enterprise-security-governance-operations-2026.md) — the security controls this harness's red-teaming validates.
+- [Agentic Systems Hub](../agentic-systems/index.md) — the broader AI development lifecycle this harness instruments.

@@ -275,3 +275,9 @@ The GENAI Agent Foundry architecture implements user-delegated OAuth 2.0 — the
 | AI agents must be treated as first-class identities with full governance lifecycle — not as features running under a human's credentials | Regulatory: DORA requires ICT risk management for all systems. Security: shared credentials create untraceable blast radius. | Governance framework (Agent Registry, Access Reviews) to be operational by Phase 1 (Q3-Q4 2026) |
 | DORA Register of Information must include agent-accessed ICT systems (Atlassian, GHE, Microsoft) once agents go live | Regulatory: DORA Article 28 non-compliance; potential NCA sanction | DORA scoping decision required before Phase 1 go-live |
 | EU AI Act conformity assessment required if any agent system is classified high-risk (customer-facing decisions, credit, fraud, HR) | Regulatory: EU AI Act high-risk (Annex III) enforcement December 2027 (deferred from Aug 2026 by the Digital Omnibus); Art. 50 transparency from Aug 2026 | Risk classification decision required by end of Q3 2026 |
+
+## Related
+
+- [EntraID 3LO Volume 2: Implementation](08-entra-3lo-agent-auth-implementation.md) — the implementation this security review evaluates.
+- [EntraID 3LO Volume 3: Multi-Agent Chains & Compliance](09-entra-3lo-agent-auth-multiagent-compliance.md) — the compliance obligations (DORA/NIS2) this security review satisfies.
+- [Trust Hub](../trust/index.md) — broader red-teaming and threat-model practices this review draws on.

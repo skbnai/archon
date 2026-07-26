@@ -345,3 +345,9 @@ Moveworks is an AI platform focused on employee IT and HR automation. It connect
 - Audit log completeness varies — only M365 Copilot (Purview) and ServiceNow provide full chain logging
 - Multi-tenant isolation is strongest in dedicated-VPC deployments (Glean, Amazon Q Business)
 - Session continuity across long conversations is an unsolved problem for most platforms
+
+## Related
+
+- [Auth Standards Reference](01-auth-standards-reference.md) — the underlying OAuth 2.1/OIDC/RFC 8693 standards these platform implementations build on.
+- [Marketplace Connector Auth Patterns](03-marketplace-connector-auth-patterns.md) — deep dive on the connector-specific patterns surveyed here.
+- [Tool Authentication & Connector Models](12-tool-authentication-connectors.md) — implementation-level detail for the connector auth models referenced.

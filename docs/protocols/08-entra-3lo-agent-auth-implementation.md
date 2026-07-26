@@ -550,3 +550,9 @@ SIDECAR SHORTCUT:
 | MS Graph (delegated) | OBO requires audience of Tc to match Blueprint `client_id`. `token_version`/nonce mismatch causes AADSTS70011. |
 | Entra Agent ID | Never use Azure CLI tokens for Agent Identity API calls (`Directory.AccessAsUser.All` → hard 403). Permission grant propagation: retry 403s with 30-120s backoff after admin consent. |
 | All providers | Per-(user,provider) distributed lock on refresh is **not optional** at scale. Race condition without it corrupts vault state and cascades to service outage. |
+
+## Related
+
+- [EntraID 3LO Volume 1: Standards & Architecture](11-entra-3lo-agent-auth-standards-architecture.md) — the architecture this implementation volume builds from.
+- [EntraID 3LO Volume 3: Multi-Agent Chains & Compliance](09-entra-3lo-agent-auth-multiagent-compliance.md) — how this implementation extends to multi-agent delegation chains.
+- [EntraID 3LO Volume 4: Security Review](10-entra-3lo-agent-auth-security-review.md) — the security review package for this implementation.

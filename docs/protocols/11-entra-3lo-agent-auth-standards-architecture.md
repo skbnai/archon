@@ -437,3 +437,9 @@ The EntraID 3LO pattern for AI agents is well-understood, standardised, and prod
 1. **No client secrets** — use FIC+MSI
 2. **Per-user token isolation** — never share tokens across users
 3. **Full audit trail** — every agent API call must be traceable to a specific agent, user, scope, and timestamp
+
+## Related
+
+- [EntraID 3LO Volume 2: Implementation](08-entra-3lo-agent-auth-implementation.md) — the reference implementation and credential vault built on this architecture.
+- [EntraID 3LO Volume 3: Multi-Agent Chains & Compliance](09-entra-3lo-agent-auth-multiagent-compliance.md) — how this architecture extends to multi-agent delegation.
+- [Agent Identity: Entra vs AWS AgentCore](06-agent-identity-entra-vs-awsagentcore.md) — how this architecture compares to AWS's approach.
