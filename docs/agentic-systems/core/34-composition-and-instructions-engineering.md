@@ -89,3 +89,8 @@ Recommended structure (expands on file `02`'s anatomy section with authoring gui
 3. **Structure for scale from the start** — assume the SKILL.md will eventually need a `references/` split, and organize headings accordingly even while the file is still small.
 4. **Observe real trajectories.** Watch how the agent actually uses the skill in production/staging — overreliance on one section, unexpected tool choices, and misfires are the signal for the next revision, not intuition alone.
 5. **Treat the name and description as the highest-leverage two fields in the whole document** — they are the only thing evaluated at every single turn (via the system-prompt-level metadata), long before the rest of the content is ever loaded.
+
+## Related
+
+- [Registry, Discovery & Deduplication](33-registry-discovery-and-deduplication.md) — the previous section in this series.
+- [Observability & Evaluation](35-observability-and-evaluation.md) — the next section in this series.

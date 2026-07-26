@@ -407,3 +407,7 @@ Start small → scale as needed:
 3. \+ Worktrees (if file conflicts)
 4. \+ Agent Teams (if coordination needed)
 5. \+ Background (if you need to keep working)
+
+## Related
+
+- [Claude Ecosystem Cheat Sheet](21-cheatsheet-7-claude-ecosystem.md) — the previous section in this series.

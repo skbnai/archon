@@ -86,3 +86,8 @@ The most common coding-assistant-specific duplication failure mode, not present 
 | Isolates the agent from the host OS | | | | | | | ✅ |
 | Should be code-reviewed like source | ✅ (if committed) | ✅ | n/a (harness-provided) | server config, yes | n/a | n/a | ✅ (devcontainer.json) |
 | Should be portable across agent vendors | ✅ (spec-conformant) | ✅ (if AGENTS.md) | rarely | ✅ (protocol-native) | ❌ | ❌ | ✅ (devcontainer.json spec) |
+
+## Related
+
+- [Skill Discovery & Execution Lifecycle](19-discovery-and-execution-lifecycle.md) — the previous section in this series.
+- [Tool Definitions & Instructions Engineering](21-tool-definitions-and-instructions-engineering.md) — the next section in this series.

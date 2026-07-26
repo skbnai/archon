@@ -146,3 +146,8 @@ This union schema is intentionally a **superset**: any given host reads only the
 ---
 
 Continue this series with [Execution Lifecycle & Tracing](30-execution-lifecycle-and-tracing.md).
+
+## Related
+
+- [Foundations: What Is an Agent Skill?](29-foundations-what-is-an-agent-skill.md) — the conceptual foundation this metadata schema formalizes.
+- [Foundations: What Is a Coding Skill?](18-foundations-what-is-a-coding-skill.md) — the coding-assistant-specific counterpart.

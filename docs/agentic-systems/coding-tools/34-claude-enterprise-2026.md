@@ -642,3 +642,8 @@ curl -H "Authorization: Bearer $ANTHROPIC_ADMIN_KEY" \
 ---
 
 **This is Part 1 of 3. [Continue with Part 2 →](./parts/34-claude-enterprise-2026-part2.md) for Managed Agents, Security, Compliance, and Cost Governance. [See Part 3 →](./parts/34-claude-enterprise-2026-part3.md) for Guardrails, Explainability, Responsible AI, and Deployment Checklists.**
+
+## Related
+
+- [Claude Agent SDK — Production Reference](30-claude-agent-sdk-production.md) — the production SDK this enterprise deployment guide builds on.
+- [Constitutional AI & Safety 2026](38-constitutional-ai-safety-2026.md) — safety considerations for enterprise deployment.

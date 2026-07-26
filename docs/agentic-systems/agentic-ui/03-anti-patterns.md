@@ -276,3 +276,7 @@ graph TD
 
 ---
 
+## Related
+
+- [Agentic Application Lifecycle](04-application-lifecycle.md) — the lifecycle these anti-patterns tend to break.
+- [Decision Frameworks](06-decision-frameworks.md) — frameworks for avoiding the anti-patterns catalogued here.

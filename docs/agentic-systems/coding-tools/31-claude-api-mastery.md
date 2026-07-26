@@ -474,3 +474,8 @@ def call_with_retry(messages, max_retries=3):
 | 429 | Rate limit exceeded | Exponential backoff |
 | 500 | Internal server error | Retry with backoff |
 | 529 | Overloaded | Wait and retry |
+
+## Related
+
+- [Claude Agent SDK — Production Reference](30-claude-agent-sdk-production.md) — the SDK layer built on top of this API.
+- [Claude Models 2026 — Complete Reference](35-claude-models-2026.md) — the model catalog this API surfaces.

@@ -302,3 +302,8 @@ graph TD
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/07-part-07-security-threats-part2) for Detection & Mitigation Strategies and Interview Use Cases.**
+
+## Related
+
+- [Part 04 — Video & Audio Intelligence](04-part-04-modalities-video-audio.md) — the previous section in this series.
+- [Part 8 — Guardrails & Sanitization for Multimodal AI](08-part-08-guardrails-sanitization.md) — the next section in this series.

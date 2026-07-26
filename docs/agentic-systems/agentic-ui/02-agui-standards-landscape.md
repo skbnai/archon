@@ -610,4 +610,7 @@ CopilotKit's `MCPAppsMiddleware` sits between Agent Runner and Guardrail Middlew
     }
     ```
 
+## Related
 
+- [Agent UX Patterns: Copilot Taxonomy](01-agent-ux-patterns.md) — the UX patterns these standards aim to support.
+- [AG-UI & UTCP — Enterprise Architecture Deep Dive](../../protocols/19-emerging-protocols-agui-utcp.md) — protocol-level deep dive on AG-UI specifically.

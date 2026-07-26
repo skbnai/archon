@@ -611,3 +611,7 @@ The most powerful pattern observed in production deployments is the self-healing
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/10-github-copilot-big-wins-research-part2) for branch strategy, skill agents, deployment gates, WRAP framework, lessons learned, and implementation roadmap.**
+
+## Related
+
+- [Git, GitHub Platform & Platform Engineering Handbook](09-git-github-platform-engineering-handbook.md) — the platform foundation this research builds on.

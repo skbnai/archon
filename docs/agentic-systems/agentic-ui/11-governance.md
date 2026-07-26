@@ -601,3 +601,7 @@ Every memory operation must be logged:
 
 ---
 
+## Related
+
+- [DevSecOps for Agentic Applications](07-devsecops.md) — where governance controls get implemented in the pipeline.
+- [Responsible AI for Agentic Applications](17-responsible-ai.md) — the responsible-AI dimension of this governance model.

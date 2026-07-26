@@ -440,6 +440,12 @@ Choose HYBRID if:
   - (Camunda for user processes, Temporal for backend)
 ```
 
+
+## Related
+
+- [Temporal Deep Dive - Architecture, Patterns, and AI Integration](04-temporal-deep-dive.md) — the previous section in this series.
+- [Durable Execution vs. Cognitive Execution](06-durable-vs-cognitive-execution.md) — the next section in this series.
+
 ---
 
 **Next**: Explore [AI Coding Orchestrators](./07-ai-coding-orchestrators.md) to see how Claude Code/GitHub Copilot orchestrate differently, or read [Decision Matrix](./20-decision-matrix.md) for a comprehensive comparison.

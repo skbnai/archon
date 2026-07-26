@@ -215,3 +215,8 @@ Overly narrow decomposition → coordinator misses broad coverage of research to
 - **Hooks = deterministic; prompts = probabilistic**
 - **Context isolation = subagents start clean**
 - **Central routing = observability + consistent errors**
+
+## Related
+
+- [Claude Code Cheat Sheet](15-cheatsheet-1-claude-code.md) — the previous section in this series.
+- [MCP Cheat Sheet](17-cheatsheet-3-mcp.md) — the next section in this series.

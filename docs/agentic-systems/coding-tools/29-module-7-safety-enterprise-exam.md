@@ -105,3 +105,7 @@ The three-tier permission system governs all Claude behavior. Understanding it i
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/29-module-7-safety-enterprise-exam-part2) for 20 practice questions with full explanations covering all 5 exam domains.**
+
+## Related
+
+- [Claude Dynamic Workflows — Complete Guide](28-module-6-claude-workflows.md) — the previous section in this series.

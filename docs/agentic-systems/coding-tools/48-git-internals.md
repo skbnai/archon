@@ -686,3 +686,8 @@ A: LFS installs a Git smudge/clean filter. On checkout (smudge), it replaces the
 #### Q: What is a partial clone and when should you use it?
 
 A: Partial clone defers downloading of blobs (--filter=blob:none) or trees (--filter=tree:0) until they're accessed. Use it in CI pipelines and large monorepos to reduce clone times from minutes to seconds.
+
+## Related
+
+- [GitHub Copilot Enterprise Agent Platform](47-github-copilot-enterprise-research-2026.md) — the previous section in this series.
+- [AI Vision, Copilot Architecture & Repository Intelligence](49-vision-copilot-architecture-repointelligence.md) — the next section in this series.

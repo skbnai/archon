@@ -487,3 +487,8 @@ A: GitHub Pages serves static files — a direct URL to /about will get a 404 be
 #### Q: What is SBOM and why is it important in a release workflow?
 
 A: A Software Bill of Materials (SBOM) is a formal, machine-readable inventory of all components in a software artifact — direct and transitive dependencies, versions, and their sources. It enables: vulnerability scanning against CVE databases, license compliance checks, supply chain auditing, and meeting regulatory requirements. Tools like syft and anchore/sbom-action generate SPDX or CycloneDX SBOMs from container images or source trees.
+
+## Related
+
+- [GitHub Actions Runners & Runtime](52-runners-and-runtime.md) — the previous section in this series.
+- [Prompt Engineering, Evaluation, Spark & AI Infrastructure](54-prompts-evaluation-spark-infrastructure.md) — the next section in this series.

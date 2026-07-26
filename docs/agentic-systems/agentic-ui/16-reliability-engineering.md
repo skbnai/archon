@@ -488,3 +488,8 @@ Timeouts must be nested: inner timeouts must be shorter than outer timeouts or t
 
 :::warning Timeout Nesting Violation
     If your tool call timeout (30s) equals your LLM call timeout (30s), both can expire simultaneously, making it impossible to determine which failed. Always set inner timeouts 20–40% shorter than outer timeouts.
+
+## Related
+
+- [Observability for Agentic Applications](14-observability.md) — the telemetry this reliability discipline depends on.
+- [Scalability Engineering for Agentic Applications](18-scalability-engineering.md) — a related non-functional discipline.

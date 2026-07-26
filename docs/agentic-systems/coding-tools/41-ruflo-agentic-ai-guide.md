@@ -651,3 +651,8 @@ const swarm = await flow.createSwarm({
 ```
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/41-ruflo-agentic-ai-guide-part2.md) for continued content.**
+
+## Related
+
+- [Multi-Agent Production Patterns](13-cheatsheet-10-multiagent-production.md) — production patterns relevant to this orchestration framework.
+- [Multi-Agent Topology Patterns](../../architecture/59-multi-agent-topology-patterns.md) — the architecture-level topology patterns this framework implements.

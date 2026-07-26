@@ -193,3 +193,7 @@ The same diff produces a different review depending on who is reading it. A juni
 |**Approval criteria**|The change is defensible not just today but as a precedent — other teams will<br/>point to this PR as "how we do X here." Principal-level approval is often about<br/>setting a pattern, not just clearing a diff.|
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/42-pr-review-handbook-vol1-traditional-review-part2) for continued content.**
+
+## Related
+
+- [THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)](43-pr-review-handbook-vol2-deep-domain-reviews.md) — the next section in this series.

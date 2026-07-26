@@ -273,3 +273,7 @@ Enterprise Architects and Principal AI Architects will find here the definitive 
 ---
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part2) for collaboration models and HITL. [Part 3 →](pathname:///archon/agentic-systems/agentic-ui/parts/09-evolution-human-ai-interfaces-part3) covers principles and enterprise architecture.**
+
+## Related
+
+- [Agent UX Patterns: Copilot Taxonomy](01-agent-ux-patterns.md) — the current-state taxonomy this history leads into.

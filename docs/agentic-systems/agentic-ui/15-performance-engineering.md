@@ -480,3 +480,8 @@ Each additional tool in the agent's tool set increases planning time and the pro
 ---
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/15-performance-engineering-part2) for context assembly, memory retrieval, network optimization, and frontend rendering performance.**
+
+## Related
+
+- [Observability for Agentic Applications](14-observability.md) — the telemetry this performance work depends on.
+- [Scalability Engineering for Agentic Applications](18-scalability-engineering.md) — the closely related scaling discipline.

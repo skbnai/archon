@@ -243,3 +243,7 @@ Review [Enterprise Governance Model](./18-enterprise-governance-model.md) for ve
 ## Key Takeaway
 
 **Workflow orchestration isn't dying. It's evolving.** The platforms that win by 2030 won't be "the best orchestrator"—they'll be the best at a specific job: Temporal for reliability, Camunda for governance, LangGraph for reasoning, Claude Code for meta-orchestration. Your job as an architect: build the glue that makes them work together.
+
+## Related
+
+- [Technology Evolution Timeline - From BPM to Agentic Orchestration](02-evolution-timeline.md) — the next section in this series.

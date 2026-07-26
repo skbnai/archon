@@ -628,3 +628,8 @@ A: The strategy has four components. Predictive scaling: analyze 90 days of hist
 
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/13-part-13-governance-production-part2) for the A.R.T. Framework applied to multimodal governance, implementation details, and related architecture patterns.**
+
+## Related
+
+- [Part 12 — Observability & FinOps for Multimodal AI](12-part-12-observability-finops.md) — the previous section in this series.
+- [Part 14 — Cloud Platform Comparison for Multimodal AI](14-part-14-cloud-platform-comparison.md) — the next section in this series.

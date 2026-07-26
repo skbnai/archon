@@ -368,3 +368,8 @@ Even with 10× overage: stays well within 1M. BUT Sonnet 4.6 = 200K context — 
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/14-cheatsheet-11-mcp-pipeline-errors-part2) for reporting, retry strategies, context management, and error decision trees.**
+
+## Related
+
+- [Multi-Agent Production Patterns](13-cheatsheet-10-multiagent-production.md) — the companion cheatsheet on broader multi-agent production patterns.
+- [MCP Cheat Sheet](17-cheatsheet-3-mcp.md) — the foundational MCP reference this error-handling cheatsheet assumes.

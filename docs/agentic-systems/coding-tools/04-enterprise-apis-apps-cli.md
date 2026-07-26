@@ -458,3 +458,8 @@ Using a GitHub App in Actions (generate token at runtime):
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/04-enterprise-apis-apps-cli-part2.md) for GitHub CLI and interview questions.**
+
+## Related
+
+- [AI-Assisted CI/CD & Observability (Part 1)](03-cicd-observability-scaling.md) — the previous section in this series.
+- [Engineering Artifacts & Enterprise Reference Architecture](05-artifacts-referencearchitecture.md) — the next section in this series.

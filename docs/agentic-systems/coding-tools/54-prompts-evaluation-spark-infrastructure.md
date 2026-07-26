@@ -281,3 +281,7 @@ None of the sources reviewed for this report contain a GitHub-published technica
 - Spark's multi-model history is concrete, dated evidence that GitHub treats the underlying model as a swappable component of product architecture, not a fixed identity.
 - Octoverse 2025 is the single most information-dense, fully GitHub-sourced dataset available for understanding platform-wide AI infrastructure load.
 - GitHub has not published low-level infrastructure internals (GPU scheduling, batching, autoscaling) at a level of detail comparable to its product-level documentation — this is an honest, bounded gap in the public record.
+
+## Related
+
+- [Marketplace, Pages, Wiki, Releases & Packages](53-marketplace-pages-packages.md) — the previous section in this series.

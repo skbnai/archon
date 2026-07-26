@@ -1156,3 +1156,8 @@ async def filter_tools_by_role(ctx: Context) -> list[str] | None:
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/39-mcp-deep-guide-part2) for enterprise deployment, ecosystem, inspection, best practices, antipatterns, guardrails, governance, performance, testing, and evaluation.**
+
+## Related
+
+- [MCP Cheat Sheet](17-cheatsheet-3-mcp.md) — a quick-reference companion to this deep guide.
+- [Model Context Protocol (MCP) — Complete Reference](26-module-4-mcp.md) — the curriculum-style companion reference.

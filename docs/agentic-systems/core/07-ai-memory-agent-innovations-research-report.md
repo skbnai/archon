@@ -175,3 +175,8 @@ Users and enterprises increasingly want visibility into agent reasoning for trus
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2) for Cross-Platform Capability Matrix, Best Practices & Anti-Pattern Catalog, and Decision Framework.**
+
+## Related
+
+- [Agent Memory & Planning Architecture](../../architecture/41-agent-memory-planning-architecture.md) — the architecture-side treatment of the memory patterns surveyed here.
+- [Agentic AI Landing Zone: Memory Architecture (Tier 3)](../../architecture/27-agentic-ai-landing-zone-memory-architecture.md) — how this research maps onto a concrete reference architecture.

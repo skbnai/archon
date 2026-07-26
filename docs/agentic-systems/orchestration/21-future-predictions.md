@@ -514,6 +514,11 @@ Process intelligence:
 
 **Your turn**: Document your predictions for your industry/domain. How do you see orchestration evolving in your context?
 
+
+## Related
+
+- [Decision Matrix - Choosing Your Orchestration Platform](20-decision-matrix.md) — the previous section in this series.
+
 ---
 
 **Next**: Jump to [Decision Matrix](./20-decision-matrix.md) to start building your architecture now, or read [Reference Architectures](./19-reference-architectures.md) for patterns.

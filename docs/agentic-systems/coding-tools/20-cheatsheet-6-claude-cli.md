@@ -334,3 +334,8 @@ claude \
 # Terminal bell when Claude finishes long task
 claude config set --global preferredNotifChannel terminal_bell
 ```
+
+## Related
+
+- [Prompt Engineering Cheat Sheet](19-cheatsheet-5-prompt-engineering.md) — the previous section in this series.
+- [Claude Ecosystem Cheat Sheet](21-cheatsheet-7-claude-ecosystem.md) — the next section in this series.

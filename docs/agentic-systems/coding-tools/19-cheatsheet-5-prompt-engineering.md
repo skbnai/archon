@@ -237,3 +237,8 @@ Prompt Engineering &amp; Structured Output + Context Management &amp; Reliabilit
 - **Domain 4:** 20% of exam
 - **Domain 5:** 15% of exam
 - **Combined:** 35%
+
+## Related
+
+- [AI Fluency Cheat Sheet](18-cheatsheet-4-ai-fluency.md) — the previous section in this series.
+- [Claude CLI Cheat Sheet](20-cheatsheet-6-claude-cli.md) — the next section in this series.

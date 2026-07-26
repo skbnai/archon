@@ -706,3 +706,7 @@ ERROR RECOVERY
 
 ---
 
+## Related
+
+- [Reliability Engineering for Agentic Applications](16-reliability-engineering.md) — the discipline observability data feeds into.
+- [Performance Engineering for Agentic Applications](15-performance-engineering.md) — a related non-functional discipline sharing the same telemetry.

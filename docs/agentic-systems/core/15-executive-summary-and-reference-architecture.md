@@ -158,3 +158,7 @@ graph TD
 - **Anyone comparing specific vendors** (Copilot, Claude Code, Cursor, Codex, Devin, Amp, Junie): `12`, cross-referenced against `04`.
 
 *All platform facts reflect publicly documented state as of July 2026. Given the pace of change evidenced throughout this research (multiple vendor shutdowns, rebrands, and acquisitions occurred during the research window itself), re-verify current product state before any procurement or migration decision.*
+
+## Related
+
+- [Agent Skills & Skill Registries — Complete Playbook 2026 (Part 1)](16-agent-skills-complete-playbook-2026.md) — the next section in this series.

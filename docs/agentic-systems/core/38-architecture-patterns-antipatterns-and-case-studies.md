@@ -147,3 +147,7 @@ This file **is** Deliverable 10: the pattern catalog (Part A), anti-pattern cata
 3. **Treat skill supply-chain security as a first-class governance gate**, not an afterthought — the ecosystem's own poisoning incidents in Q1 2026 make this the fastest-moving risk category in this entire research area.
 4. **Instrument for OpenTelemetry GenAI conventions now, even while the spec is experimental** — the migration cost of retrofitting observability later is far higher than adopting an evolving-but-directionally-correct standard early.
 5. **Build the enterprise metadata schema (file `02`) as the source of truth, and treat every vendor's native format as an export target**, not the other way around — this is what makes a federated, multi-platform registry (file `06`) actually achievable instead of aspirational.
+
+## Related
+
+- [Governance & Lifecycle](37-governance-and-lifecycle.md) — the previous section in this series.

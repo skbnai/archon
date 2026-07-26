@@ -513,3 +513,8 @@ Claude Code uses file-based memory — no vector DB. This means memory is inspec
 ---
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/36-claude-agents-best-practices-part2) for MCP, context engineering, and token optimization.**
+
+## Related
+
+- [Claude Architect Foundations: Best Practices & Anti-Patterns Guide](32-claude-best-practices.md) — the foundational best-practices guide this v2 updates.
+- [Claude Code, Hooks, Skills & Subagents](27-module-5-claude-code-agents.md) — the technical reference for the agent features covered here.

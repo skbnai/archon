@@ -389,6 +389,12 @@ You'll need traces for:
 - Agent reasoning (LLM reasoning traces)
 - Business outcomes (did the process succeed?)
 
+
+## Related
+
+- [Executive Summary - Workflow Orchestration in the Agentic AI Era](01-executive-summary.md) — the previous section in this series.
+- [Workflow vs Agent Architecture - Determinism, Adaptivity, and Design Principles](03-workflow-vs-agent-architecture.md) — the next section in this series.
+
 ---
 
 **Next**: Understand what distinguishes [Workflows from Agents](./03-workflow-vs-agent-architecture.md).

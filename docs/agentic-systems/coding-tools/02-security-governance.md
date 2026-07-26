@@ -112,3 +112,8 @@ Independent security tooling vendors building on top of GitHub's native protecti
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/02-security-governance-part2.md) for Enterprise AI Governance and governance controls.**
+
+## Related
+
+- [CI/CD Architecture, Secrets & Supply Chain Security](01-cicd-secrets-security.md) — the previous section in this series.
+- [AI-Assisted CI/CD & Observability (Part 1)](03-cicd-observability-scaling.md) — the next section in this series.

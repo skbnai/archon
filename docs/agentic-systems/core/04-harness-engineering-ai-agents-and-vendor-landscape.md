@@ -135,3 +135,8 @@ Tekton provides the underlying custom-resource pipeline engine that other projec
 **The throughline back to Part 1:** the vendors in the top tier all converged, independently, on the same governance pattern that Part 1 identifies as the hard part of harness engineering — scoped per-agent identity, policy gates shared with human workflows, and audit trails — rather than on model choice or raw agent capability. That convergence is itself evidence for Part 1's central claim: the harness, not the model, is where 2026's real engineering investment is going.
 
 Company profiles are necessarily compressed for comparability; treat "no evidence found" for Jenkins/ArgoCD/Spinnaker/Tekton as a statement about current public research, not a certainty that no such capability exists anywhere in those ecosystems' plugin/vendor long tail.
+
+## Related
+
+- [Harness Best Practices, Anti-Patterns & Roadmap](03-harness-bestpractices-antipatterns-roadmap.md) — the previous section in this series.
+- [Harness Engineering Research Report (Part 1 of 2)](05-harness-engineering-research-report.md) — the next section in this series.

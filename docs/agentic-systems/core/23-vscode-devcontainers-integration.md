@@ -93,3 +93,8 @@ graph TB
 *Reference architecture: the developer's editor connects into a Dev Container over Remote Development; inside, the language server, Git, and a sandboxed terminal feed the agent harness, which drives MCP-mediated tool access behind an allowlisted network egress — keeping the host machine untouched even in the worst case.*
 
 This composed architecture is what several vendors now publish as reference material directly (Anthropic's own reference devcontainer for Claude Code with baked-in firewall rules is a concrete, cited example) — the pattern has moved from ad hoc community workaround to vendor-endorsed default practice within roughly a year.
+
+## Related
+
+- [Repository Context Engineering](22-repository-context-engineering.md) — the previous section in this series.
+- [MCP Integration & Memory](24-mcp-integration-and-memory.md) — the next section in this series.

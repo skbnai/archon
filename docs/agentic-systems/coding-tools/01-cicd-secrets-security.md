@@ -720,3 +720,7 @@ A: pull_request_target runs in the base branch context with full secrets access,
 #### Q: What is the difference between GitHub Secrets, Variables, and Environments?
 
 A: Secrets store sensitive encrypted values (API keys, passwords) masked in logs. Variables store non-sensitive configuration in plaintext (regions, URLs). Environments group secrets/variables with protection rules (required reviewers, deployment branches) for specific deployment targets. Secrets and variables can be scoped to enterprise, org, repo, or environment. Environment-scoped secrets override repo-scoped ones with the same name.
+
+## Related
+
+- [Security Architecture & Enterprise AI Governance (Part 1)](02-security-governance.md) — the next section in this series.

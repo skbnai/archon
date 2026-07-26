@@ -111,3 +111,8 @@ graph TD
     style E fill:#f3e5f5
     style F fill:#ffccbc
 ```
+
+## Related
+
+- [Observability & Evaluation](35-observability-and-evaluation.md) — the previous section in this series.
+- [Governance & Lifecycle](37-governance-and-lifecycle.md) — the next section in this series.

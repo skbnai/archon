@@ -244,3 +244,8 @@ GitHub states explicitly that no prompts or outputs submitted through GitHub Mod
 - 'Neighboring tabs' is a separate, simpler, zero-indexing context source that runs alongside the heavier RAG pipeline, illustrating that GitHub's actual production system is a cascade of multiple techniques rather than a single retrieval algorithm.
 - The competitive agentic-coding landscape is changing on a near-monthly cadence; any specific benchmark percentage or pricing figure should be treated as a snapshot, not a stable fact.
 - GitHub Models is architected for minimal-friction graduation from free experimentation to production Azure AI deployment — the Azure AI Inference API compatibility is the single most consequential design decision in the platform.
+
+## Related
+
+- [GitHub Architecture & Actions Deep Dive](50-github-architecture-and-actions.md) — the previous section in this series.
+- [GitHub Actions Runners & Runtime](52-runners-and-runtime.md) — the next section in this series.

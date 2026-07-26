@@ -84,3 +84,7 @@ Synthesized from the architecture, governance, and best-practice/anti-pattern ma
 **Sequencing rationale:** Delegate topology and secrets-backend choice are placed first specifically because they are the two decisions hardest to unwind after teams have onboarded against them — everything else in this roadmap (templates, policies, dashboards) can be iterated without a migration.
 
 This is a synthesized, general-purpose sequencing based on documented Harness capabilities and general enterprise platform-engineering practice — not a Harness-published rollout plan. Adjust phase lengths for organizations with heavier compliance review cycles (banking, healthcare) or air-gapped constraints, both covered in the earlier security report.
+
+## Related
+
+- [Harness Engineering AI Agents & Vendor Landscape](04-harness-engineering-ai-agents-and-vendor-landscape.md) — the next section in this series.

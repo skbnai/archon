@@ -186,3 +186,8 @@ PII in multimodal systems exists in three distinct forms that require different 
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/08-part-08-guardrails-sanitization-part2) for sanitization pipeline design, enterprise patterns, and interview use cases.**
+
+## Related
+
+- [Part 07 — Security & Threat Taxonomy for Multimodal AI](07-part-07-security-threats.md) — the previous section in this series.
+- [Part 9 — Compliance & Responsible AI for Multimodal Systems](09-part-09-compliance-responsible-ai.md) — the next section in this series.

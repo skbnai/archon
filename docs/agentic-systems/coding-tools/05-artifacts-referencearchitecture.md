@@ -222,3 +222,8 @@ The evaluation gate must run automated test suites against agent behavior change
 ## 17.12 Closing Synthesis
 
 GitHub's transformation from a Git hosting platform into an AI-native software engineering platform is real, substantially well-documented at the product and policy level, and built on a coherent, repeatedly-reapplied set of architectural principles: cascading rather than monolithic retrieval, hard explicit scope limits as security controls, an open tool-integration protocol over a proprietary one, self-review before human review, trigger-point gating in addition to output-point gating, and transparent (if recent and still-evolving) governance and data-use policy. The most important caution this report can offer an enterprise architect translating these patterns is the one documented in earlier sections: GitHub's own purpose-built, independently-implemented runtime defenses were demonstrably bypassed in April 2026 by a single, generalizable attack technique. No reference architecture, including the one proposed here, should be treated as a finished security guarantee — it is a documented, reasoned starting point that itself requires the same adversarial testing GitHub's own defenses were subjected to.
+
+## Related
+
+- [Enterprise GitHub, APIs & Apps (Part 1)](04-enterprise-apis-apps-cli.md) — the previous section in this series.
+- [Ecosystem & Enterprise Patterns (Part 1)](06-ecosystem-patterns-labs.md) — the next section in this series.

@@ -216,3 +216,8 @@ A skill is not a static artifact — it is a product with a full lifecycle from 
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/parts/16-agent-skills-complete-playbook-2026-part2) for Evaluation Frameworks, A/B Testing, Enterprise Integration, OKRs & KPIs, Governance & Security, and The Road Ahead.**
+
+## Related
+
+- [Agent Skills for AI Coding Assistants — Executive Summary & Reference Architecture](15-executive-summary-and-reference-architecture.md) — the previous section in this series.
+- [Foundations: What Is a Coding Skill?](18-foundations-what-is-a-coding-skill.md) — the next section in this series.

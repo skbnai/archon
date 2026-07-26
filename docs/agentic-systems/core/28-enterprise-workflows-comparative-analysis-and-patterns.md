@@ -92,3 +92,7 @@ See file `00`, section 3 for the full diagram. In one sentence: **an always-load
 - **Formal quality/security scoring for public skill marketplaces**, analogous to the enterprise-side SkillsBench development (companion package file `06`) — early, narrower precedents already exist (`gh skill`'s spec-validation `--dry-run`, security-audited marketplaces like the ones referenced in file `18`) and are likely to broaden.
 - **Convergence toward AGENTS.md + SKILL.md as the durable, cross-vendor standards**, with individual vendors competing on harness quality, sandboxing, and IDE integration rather than on proprietary instruction formats — the clearest strategic signal from this entire research window is that betting on open standards over any single vendor's proprietary format is the lower-risk long-term choice.
 - **Security tooling catching up to the attack research** — expect skill/rules-file scanning (semantic, not just pattern-matching, given documented evasion of simple regex scanners) to become a standard CI check, the coding-agent-specific analogue of the enterprise AST10 mitigations (companion package file `09`).
+
+## Related
+
+- [Evaluation, Reusability & Deduplication](27-evaluation-reusability-deduplication.md) — the previous section in this series.

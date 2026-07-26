@@ -434,3 +434,7 @@ agentrc                                       # auto-generate instructions from 
 Built from the official [microsoft.github.io/apm](https://microsoft.github.io/apm/) documentation & [github.com/microsoft/apm](https://github.com/microsoft/apm)
 
 MIT License · microsoft/apm · May 2026
+
+## Related
+
+- [GitHub Copilot Enterprise Agent Platform](47-github-copilot-enterprise-research-2026.md) — a comparable enterprise agent-platform deep dive.

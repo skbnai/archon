@@ -582,3 +582,7 @@ What AgentCore provides natively, what it expects external systems to provide, a
 |RAI Review|Custom checklist + Arize AX evaluators + Amazon Bedrock Guardrails|
 |Prompt-level RBAC|Custom DynamoDB + IAM or external registry RBAC|
 |Audit Trail|AWS CloudTrail + immutable S3 + custom audit API|
+
+## Related
+
+- [Enterprise Configuration & Parameter Management for Agentic AI Platforms on AWS](02-enterprise-agentic-ai-config-management-2026.md) — the companion configuration-management discipline on the same platform.

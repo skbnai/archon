@@ -123,3 +123,8 @@ Harness's AI strategy is built around a shared **Software Delivery Knowledge Gra
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/parts/01-harness-engineering-research-report-part2) for Competitive Positioning, Decision Framework, Key Risks, and Glossary.**
+
+## Related
+
+- [Harness Engineering AI Agents & Vendor Landscape](04-harness-engineering-ai-agents-and-vendor-landscape.md) — the previous section in this series.
+- [Harness Security, Supply Chain & Observability](06-harness-security-supplychain-observability.md) — the next section in this series.

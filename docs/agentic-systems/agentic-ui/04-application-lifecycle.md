@@ -433,3 +433,8 @@ See [Enterprise Reference Architectures](../../architecture/20-ai-native-archite
 ---
 
 **[Continue to Part 2 →](./parts/04-application-lifecycle-part2.md)**
+
+## Related
+
+- [Anti-pattern Catalog for Agentic Applications](03-anti-patterns.md) — failure modes that show up across this lifecycle.
+- [DevSecOps for Agentic Applications](07-devsecops.md) — how security integrates across this lifecycle.

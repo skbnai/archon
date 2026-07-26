@@ -120,3 +120,8 @@ Every lifecycle transition (submitted, reviewed, approved, deployed, deprecated,
 | **Lifecycle** | Six states (`draft` → `in_review` → `certified` → `deployed` → `deprecated` → `retired`), each with explicit entry/exit criteria |
 | **Retirement** | Deprecation window with communicated deadline; retirement removes discoverability but preserves audit history |
 | **Audit** | Immutable, timestamped, artifact-and-actor-linked record of every lifecycle transition |
+
+## Related
+
+- [Security Architecture](36-agent-skills-security-architecture.md) — the previous section in this series.
+- [Architecture Patterns, Anti-Patterns & Case Studies](38-architecture-patterns-antipatterns-and-case-studies.md) — the next section in this series.

@@ -632,3 +632,8 @@ def run_regression_suite(test_cases: list[dict]) -> dict:
 ```
 
 **Architect Tip:** Integrate your regression suite into CI/CD. Every PR that changes a system prompt must pass the full test suite before merge. Set a minimum pass rate (e.g., 95%) and a minimum average score (e.g., 4.0/5.0). Treat prompt changes with the same rigor as code changes — they are code.
+
+## Related
+
+- [Claude Foundations & Ecosystem Overview (Part 1)](24-module-1-claude-foundations.md) — the previous section in this series.
+- [Model Context Protocol (MCP) — Complete Reference](26-module-4-mcp.md) — the next section in this series.

@@ -180,3 +180,8 @@ graph TD
 ```
 
 The key design choice this architecture encodes: **agent-authored work should be observable through the same lens as human-authored work** (same CI dashboards, same PR review metrics) *plus* an additional agent-specific layer (skill/tool selection, MCP calls, approval-gate events) that has no human-workflow equivalent. Treating agent telemetry as a completely separate, siloed system tends to produce blind spots exactly where it matters most — at the moment an agent's output merges into the same codebase a human's would.
+
+## Related
+
+- [MCP Integration & Memory](24-mcp-integration-and-memory.md) — the previous section in this series.
+- [Governance & Security](26-governance-and-security.md) — the next section in this series.

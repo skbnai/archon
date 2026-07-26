@@ -261,3 +261,8 @@ async def build_agent(session_ctx):
 **EU BANK AI COPILOT — MCP DESIGN DECISION**
 Strands · AgentCore · CopilotKit · AG-UI · MCP
 Research: CopilotKit Docs · Jan 2026
+
+## Related
+
+- [GitHub Copilot Enterprise Agent Platform](47-github-copilot-enterprise-research-2026.md) — broader enterprise Copilot platform context.
+- [MCP Deep Guide](39-mcp-deep-guide.md) — the protocol-level detail behind this apps-vs-tools design decision.

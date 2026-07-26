@@ -119,3 +119,8 @@ graph TD
 ```
 
 Treat this loop as a first-class part of the observability program, not an afterthought — it's what turns a trace archive into a continuously improving system rather than a forensic-only tool.
+
+## Related
+
+- [Skill Composition & Instructions Engineering](34-composition-and-instructions-engineering.md) — the previous section in this series.
+- [Security Architecture](36-agent-skills-security-architecture.md) — the next section in this series.

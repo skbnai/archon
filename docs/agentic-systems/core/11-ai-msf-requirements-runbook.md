@@ -417,3 +417,7 @@ The repo IS the agent's memory. Plain markdown, zero vendor lock-in. Unique: sta
 ---
 
 Compatible with GitHub Copilot Agent, Claude Code, Gemini CLI, AWS Kiro, Cursor, Windsurf
+
+## Related
+
+- [AI Platform Factory Production Runbook](12-ai-platform-factory-runbook.md) — a related production-runbook discipline.

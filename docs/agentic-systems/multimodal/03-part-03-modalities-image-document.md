@@ -147,3 +147,8 @@ Layout understanding is the hardest IDP sub-problem. *Reading order* in a multi-
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/03-part-03-modalities-image-document-part2) for Enterprise Patterns, Failure Modes, and Interview Use Cases.**
+
+## Related
+
+- [Part 1 — Foundations of Multimodal AI](01-part-01-foundations.md) — the previous section in this series.
+- [Part 04 — Video & Audio Intelligence](04-part-04-modalities-video-audio.md) — the next section in this series.

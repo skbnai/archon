@@ -315,3 +315,7 @@ when the CI run finishes, tell me the result and suggest next steps
 ```
 
 Claude pins the fire time to a specific minute using a cron expression and confirms when it will fire. One-shot tasks resume on `--resume` or `--continue` if the scheduled time hasn't passed yet. Background Bash and Monitor tasks are never restored on resume.
+
+## Related
+
+- [Claude Code CLI — Zero to Mastery 2026](33-claude-code-complete-2026.md) — the broader Claude Code guide this routines feature is part of.

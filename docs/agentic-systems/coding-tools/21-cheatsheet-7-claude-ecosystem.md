@@ -257,3 +257,8 @@ Claude Code → Cowork lineage: same agent architecture, Cowork adds non-coding-
 - **Opus 4.6**: 1M token context, 128K output — complex enterprise tasks, lead agent in multi-agent systems
 - **Sonnet 4.6**: Smart, efficient — everyday tasks, most Claude.ai interactions, subagents
 - **Haiku 4.5**: Fast + cheap — high-volume subagents, Chrome (Pro), rapid iteration tasks
+
+## Related
+
+- [Claude CLI Cheat Sheet](20-cheatsheet-6-claude-cli.md) — the previous section in this series.
+- [Claude Code Agents & Parallelism](22-cheatsheet-9-agents-parallelism.md) — the next section in this series.

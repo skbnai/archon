@@ -89,3 +89,8 @@ AGENTS.md and Skills are *authored* context — someone deliberately wrote them 
 - Tier 1 content changes should go through the same PR review as code.
 - Tier 2 content (especially ADRs) should be linked from Tier 1 where highly relevant, so the always-loaded context can point the agent to deeper material rather than trying to inline it.
 - Tier 3 retrieval infrastructure (the semantic index) should have an owner and a freshness SLA tied to CI, exactly like any other piece of build infrastructure.
+
+## Related
+
+- [Tool Definitions & Instructions Engineering](21-tool-definitions-and-instructions-engineering.md) — the previous section in this series.
+- [VS Code & Dev Containers Integration](23-vscode-devcontainers-integration.md) — the next section in this series.
