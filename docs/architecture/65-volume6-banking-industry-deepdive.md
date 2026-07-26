@@ -139,3 +139,9 @@ graph TB
 ```
 
 Banking Architecture Governance Model — Banking-specific regulatory drivers, governance structures, and control requirements shape every architectural decision, with particular constraints on AI adoption and a transferable principle of treating regulatory requirements as first-class design inputs.
+
+## Related
+
+- [Enterprise Review Questions & Scorecards](64-volume5-review-questions-scorecards.md) — Volume 5, the scorecard framework applied here.
+- [AI-Native ARB & Enterprise Case Studies](66-volume7-ai-native-arb-case-studies.md) — Volume 7, following this industry deep-dive.
+

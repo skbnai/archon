@@ -1010,6 +1010,13 @@ Our landing zone implements both frameworks in an integrated manner:
 
 **Document Status**: APPROVED (Part 1 of 2)  
 **See Also**: [Part 2: Implementation Governance & Architecture Decision Records](pathname:///archon/architecture/parts/14-agentic-ai-landing-zone-architecture-implementation-governance)  
+
+## Related
+
+- [Agentic AI Landing Zone: Agent Platform Layer](29-agentic-ai-landing-zone-platform-layer.md) — the platform layer underneath this landing zone.
+- [Agentic AI Landing Zone: Multi-Agent Reference Architectures](28-agentic-ai-landing-zone-multiagent.md) — reference architectures built on this landing zone.
+- [Agentic AI Landing Zone: Visual Guide & Quick Reference](32-agentic-ai-landing-zone-visual-guide.md) — a visual summary of this whole series.
+
 **Next Review Date**: 2026-10-05 (Quarterly; last reviewed 2026-07-05)  
 **Owner**: Enterprise Architecture Office  
 **Distribution**: Architecture Review Board, AI Governance Board, Engineering Leadership

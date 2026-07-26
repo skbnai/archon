@@ -1130,3 +1130,9 @@ Week 5-6: Deployment
 **Document Status:** READY FOR EXECUTION
 **Owner:** Platform Engineering Lead
 **Audience:** Engineering teams, product owners
+
+## Related
+
+- [Agentic AI Landing Zone Architecture](22-agentic-ai-landing-zone-architecture.md) — the architecture these playbooks implement.
+- [Agentic AI Landing Zone: Visual Guide & Quick Reference](32-agentic-ai-landing-zone-visual-guide.md) — a quick-reference companion to these playbooks.
+

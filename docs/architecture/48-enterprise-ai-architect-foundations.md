@@ -638,3 +638,9 @@ headers = {
 - **Crawl:** Track total LLM spend by project. Establish per-task cost baselines.
 - **Walk:** Tag all calls; per-team showback; identify top-10 cost drivers; model routing implemented.
 - **Run:** Real-time cost dashboards; anomaly alerting; automated routing; chargeback to BU P&Ls; FinOps reviews as part of AI CoE governance cadence.
+
+## Related
+
+- [Enterprise AI Architect — Skills Assessment](52-enterprise-ai-skills-assessment.md) — the companion competency/certification model for this role.
+- [Enterprise AI Architect Bible](72-enterprise-ai-architect-bible-2026.md) — the fuller reference this foundations guide summarizes.
+

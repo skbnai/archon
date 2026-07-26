@@ -200,3 +200,10 @@ Listening techniques only become reliable through deliberate practice with real 
 ### The Strategic Value of Listening Well
 
 The readiness assessment is not just diagnostic — it is political. By asking these questions before drawing architecture, you signal that you are a consultant, not a vendor. You are helping the stakeholder understand their own situation more clearly. That is the foundation of trusted advisor status. Stakeholders remember the architect who asked the question they hadn't thought of.
+
+## Related
+
+- [EA Architect Deep Dive: The Five Arenas](06-ea-architect-deep-dive-five-arenas.md) — Part 2 of this series, on stakeholder communication.
+- [EA Architect Deep Dive: Toolkit & Practice](07-ea-architect-deep-dive-toolkit-practice.md) — Part 3, practical tooling built on this foundation.
+- [EA Mastery Guide](71-ea-mastery-guide.md) — broader frameworks and technical domains this foundation series feeds into.
+

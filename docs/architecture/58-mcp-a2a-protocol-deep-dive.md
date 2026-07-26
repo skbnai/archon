@@ -258,6 +258,12 @@ Identity here is *organizational* trust, distinct from intra-platform workload i
 
 ---
 
+## Related
+
+- [MCP Deep Research 2026](../protocols/13-mcp-deep-research-2026.md) — the protocol-level deep dive this architecture-side treatment builds on.
+- [Multi-Agent Topology Patterns](59-multi-agent-topology-patterns.md) — the agent topologies MCP and A2A connect together.
+- [Existing Protocol Evolution for Agentic AI](../protocols/23-existing-protocol-evolution-agentic-ai.md) — how these protocols evolved from earlier web standards.
+
 ## Sources
 
 - [MCP Blog — The 2026-07-28 Specification Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/)

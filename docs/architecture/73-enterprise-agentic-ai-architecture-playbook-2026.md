@@ -445,3 +445,9 @@ Deploy OPA/Cedar policy sidecars, tool allowlists, and HITL checkpoints as infra
 ---
 
 This playbook synthesises research from Microsoft Build 2026, Google I/O 2026, AWS re:Invent 2025, AI Engineer World's Fair 2026, AAAI 2026, IETF OAuth WG, NIST CAISI, McKinsey QuantumBlack, IDC, Gartner, and practitioner community sources across LangChain, Arize, DataHub, Zylos Research, and primary lab publications. Version 1.0 – June 2026. Scheduled for quarterly updates.
+
+## Related
+
+- [Enterprise Agentic AI Outlook 2026–2030](33-enterprise-agentic-ai-outlook-2026-2030.md) — the longer-term outlook this playbook implements toward.
+- [Agentic AI Landing Zone Architecture](22-agentic-ai-landing-zone-architecture.md) — the reference architecture this playbook operationalizes.
+

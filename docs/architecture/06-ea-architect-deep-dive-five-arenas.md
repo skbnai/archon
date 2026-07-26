@@ -113,6 +113,12 @@ Example: "Option A — Fast Track: Deploy a vendor solution in 90 days, $400K. O
 
 Example: "I recommend Option A. It hits the speed-to-value threshold at acceptable risk, and the vendor contract includes a data portability clause that protects us if we decide to build in-house later."
 
+## Related
+
+- [EA Architect Deep Dive: Foundation](05-ea-architect-deep-dive-foundation.md) — Part 1 of this series.
+- [EA Architect Deep Dive: Toolkit & Practice](07-ea-architect-deep-dive-toolkit-practice.md) — Part 3, following this stakeholder-communication part.
+- [Business Communication & Executive Skills](82-ea-business-communication-executive-skills.md) — deeper dive on the executive-communication arena.
+
 **Next 90 Days:** Close with a specific, time-boxed action plan. Name owners, milestones, and the specific approval or resource you need from this audience. The 90-day window is deliberate — it is long enough to show meaningful progress, short enough to feel accountable. Do not end with "we will need to discuss further" — end with a specific ask.
 
 Example: "To proceed, I need approval for $50K in Q3 to run a 60-day pilot with three contract types. By day 60, we will have accuracy data to make the full deployment decision."

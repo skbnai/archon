@@ -723,3 +723,9 @@ Before every significant communication, run through this checklist:
 | **Uncertainty** | Have I communicated uncertainty accurately rather than performing false precision? |
 | **Ask** | Does my communication end with a specific action, owner, and deadline? |
 | **Register** | Is there any jargon, passive voice, or technical vocabulary that would require translation? |
+
+## Related
+
+- [Business Communication & Executive Skills](82-ea-business-communication-executive-skills.md) — the skills-level companion to this frameworks guide.
+- [EA Architect Deep Dive: The Five Arenas](06-ea-architect-deep-dive-five-arenas.md) — the executive-stakeholder arena these frameworks serve.
+

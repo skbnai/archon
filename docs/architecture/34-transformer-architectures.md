@@ -417,3 +417,9 @@ Grok is the only frontier model with real-time access to live data without expli
 There is no single best architecture. MoE wins on capacity-at-cost. Dense wins on consistency and fine-tuning. GQA/MQA wins on inference efficiency. Constitutional AI wins on alignment. The frontier is moving toward: (1) MoE becoming standard, (2) Context windows expanding toward 10M+, (3) Native multimodality across all modalities, (4) Hybrid architectures mixing attention with state-space models (Mamba, RWKV) for sub-quadratic scaling. The next 2 years will see these ideas converge into a new generation of architectures that look meaningfully different from today's pure Transformer descendants.
 
 Specifications reflect publicly available information; proprietary model details are best estimates based on published research, model card data, and independent analysis.
+
+## Related
+
+- [Transformer Concepts: Deep Internals](35-transformer-concepts-deep.md) — the internal mechanics underlying these frontier-model architectures.
+- [AI Lab Research Landscape Report](19-ai-lab-research-report-june2026.md) — who is building these frontier models and how.
+

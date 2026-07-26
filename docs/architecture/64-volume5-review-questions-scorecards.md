@@ -480,3 +480,9 @@ graph TD
 ---
 
 **Part A Summary:** Business, architecture, security, cloud, data, AI, platform, operations, and compliance domains address 80% of typical ARB reviews. **Part B Summary:** Extended domains (FinOps, vendor, agent, memory, MCP, A2A, networking, identity, runtime) handle emerging and operational concerns. Scorecards provide structure to convert qualitative findings into quantifiable, auditable approval decisions with clear automation opportunities.
+
+## Related
+
+- [Artifact Catalog & Quality Attributes](63-volume4-artifact-catalog-quality-attributes.md) — Volume 4 of this series.
+- [Banking — The Primary Lens](65-volume6-banking-industry-deepdive.md) — Volume 6, an industry deep-dive using these scorecards.
+

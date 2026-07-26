@@ -919,5 +919,11 @@ For each high-risk agent:
 
 **Document Status:** CRITICAL - Action Required
 **Deadlines:** Art. 50 transparency — Aug 2, 2026 (in force) · Annex III high-risk — Dec 2, 2027
+
+## Related
+
+- [Agentic AI Landing Zone Architecture](22-agentic-ai-landing-zone-architecture.md) — the base architecture this compliance guidance applies to.
+- [Trust Hub](../trust/index.md) — the broader compliance and regulatory framework catalog.
+
 **Next Update:** After classification complete
 **Owner:** Chief Compliance Officer / General Counsel

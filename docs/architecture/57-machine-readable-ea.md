@@ -334,6 +334,11 @@ Enterprise architects in regulated sectors should designate certain data classif
 
 ---
 
+## Related
+
+- [EA Mastery Guide](71-ea-mastery-guide.md) — the broader EA practice this machine-readable approach modernizes.
+- [EA Architect Deep Dive: Toolkit & Practice](07-ea-architect-deep-dive-toolkit-practice.md) — practical tooling this machine-readable pattern supports.
+
 ## Sources
 
 - [Avolution: Enterprise Architecture Trends, Skills & Strategies 2026](https://www.avolutionsoftware.com/our-resources/enterprise-architecture-trends-skills-strategies-2026/)

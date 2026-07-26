@@ -855,3 +855,10 @@ Real systems combine patterns. Most common compositions:
 - [MCP Deep Research](pathname:///archon/protocols/mcp-deep-research-2026) — tool protocol used across most patterns
 - [A2A Enterprise Security & Governance](pathname:///archon/trust/a2a-security-governance) — remote agent communication protocol
 - [HITL/HOTL/HOOL Interview Questions](pathname:///archon/career/interview-ea-hitl-hotl-hool) — governance framing
+
+## Related
+
+- [MCP & A2A Protocol Deep Dive](58-mcp-a2a-protocol-deep-dive.md) — the interop protocols these topologies communicate over.
+- [Agentic AI Landing Zone: Multi-Agent Reference Architectures](28-agentic-ai-landing-zone-multiagent.md) — a landing-zone-level implementation of these topology patterns.
+- [AI Harness Architecture & Multi-Agent Orchestration](44-ai-harness-architecture-orchestration.md) — the orchestration harness these topologies run inside.
+

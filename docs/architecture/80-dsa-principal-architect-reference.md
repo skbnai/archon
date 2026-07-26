@@ -1088,3 +1088,9 @@ print(ac.search("ushers"))  # [(2,'she'),(3,'he'),(5,'hers')]
 - Watch for integer overflow in hash/rolling hash computations – use mod arithmetic.
 - For graph problems, always clarify: directed/undirected, cyclic?, connected?, weighted?
 - Clean code signals seniority: meaningful variable names, no magic numbers, helper functions.
+
+## Related
+
+- [EA Mastery Guide](71-ea-mastery-guide.md) — broader architect-level frameworks this reference complements.
+- [Principal & Enterprise AI Architect](86-principal-enterprise-ai-guide-educative.md) — companion scenario-based guide for the same seniority level.
+

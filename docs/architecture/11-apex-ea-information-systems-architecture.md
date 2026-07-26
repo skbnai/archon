@@ -178,6 +178,11 @@ graph TB
 | DEA Validation | DEA generation service completeness check; validation before production mark | DEA assembled from all log sources; completeness validated | NEVER for High-Risk AI agents |
 | Post-Deploy DORA Record | Argo CD drift detection; cost tag validator; DORA change record writer | AI generates stakeholder summary; DORA change record auto-created with ARB reference | NEVER — records are mandatory; absence triggers T4 alert |
 
+## Related
+
+- [APEX EA Part 2: AI-DLC Methodology & Foundation Architecture](10-apex-ea-aidlc-methodology.md) — the methodology behind this architecture.
+- [APEX EA Part 4: Delivery, Governance & Reference](12-apex-ea-delivery-governance-reference.md) — Part 4 of this series.
+
 ---
 
 **Next:** [Part 4 — Delivery, Governance & Reference](./12-apex-ea-delivery-governance-reference.md) covers the roadmap, migration strategy, 5-tier governance model, requirements traceability, and regulatory/service-mapping/glossary reference material.

@@ -505,3 +505,9 @@ This roadmap synthesizes the collective guidance of AWS, McKinsey, Deloitte, Acc
 **CLOSING THESIS 2026**
 
 ***The enterprises that will define the next decade are building AI-ready architectures today — not AI-augmented architectures built on legacy foundations. AIDLC provides the lifecycle discipline. The 7-Layer Reference Architecture provides the structural blueprint. Zero Trust for AI provides the security posture. And TOGAF 10, properly extended, provides the governance framework that makes it all accountable, auditable, and scalable. The architecture decisions made in 2026 will determine AI competitive advantage through 2030.***
+
+## Related
+
+- [AIDLC Enterprise Framework](14-aidlc-enterprise-framework-2025.md) — the framework this research examines the impact of.
+- [Agile in the Age of Agentic AI](15-agile-in-the-age-of-agentic-ai-2026.md) — companion piece on agile practice under AIDLC.
+

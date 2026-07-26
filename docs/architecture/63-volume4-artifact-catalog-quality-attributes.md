@@ -172,3 +172,9 @@ Generic non-functional requirements ("the system should be fast and secure") are
 Many of these attributes are in direct tension — Security and Usability frequently trade off against each other; Performance and Auditability can conflict when comprehensive audit logging adds latency; AI Explainability and raw model performance often trade off, since the most explainable model architectures aren't always the most accurate ones.
 
 For any architecturally significant initiative, require an explicit statement of which quality attributes were deliberately prioritized and which were consciously deprioritized, with rationale — rather than a checklist where every attribute is rated "addressed." A design that explicitly says "we are accepting reduced AI Explainability in exchange for materially better fraud detection accuracy, because [rationale], and this trade-off has been reviewed by [Responsible AI Council]" is far more defensible under audit.
+
+## Related
+
+- [Architecture Knowledge Management & Capability Mapping](62-volume3-knowledge-management-capability-mapping.md) — Volume 3 of this series.
+- [Enterprise Review Questions & Scorecards](64-volume5-review-questions-scorecards.md) — Volume 5, following this artifact catalog.
+

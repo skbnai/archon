@@ -533,3 +533,9 @@ I want to ensure this is visible and that we have a mechanism to review it at th
 ---
 
 **The EA who speaks in numbers, listens with curiosity, decides with evidence, and communicates with brevity — that EA is not just an architect. They are a trusted advisor.**
+
+## Related
+
+- [Executive Communication Framework Guide](70-executive-communication-framework-guide.md) — the frameworks-level companion to these skills.
+- [EA Architect Deep Dive: The Five Arenas](06-ea-architect-deep-dive-five-arenas.md) — the executive-stakeholder arena these skills apply to.
+

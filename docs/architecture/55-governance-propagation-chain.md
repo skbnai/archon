@@ -566,3 +566,9 @@ For each production multi-agent system, verify:
 - [End-to-End Traceability Guide](46-end-to-end-traceability-guide.md) — how authorization decisions are traced
 - [Kill Switch Architecture](56-kill-switch-architecture.md) — emergency policy override propagation
 - [DeepMind AI Control Series](pathname:///archon/trust/ai-security-governance/ai-authorization) — authorization in depth
+
+## Related
+
+- [Agentic AI Reliability, Observability & Governance Lifecycle](43-agentic-ai-reliability-observability-governance.md) — the operational lifecycle this governance chain propagates through.
+- [Kill Switch Architecture for Multi-Agent AI Systems](56-kill-switch-architecture.md) — the terminal governance control this chain must be able to trigger.
+

@@ -733,3 +733,10 @@ When approaching pin expiration: re-evaluate on updated version or escalate to v
 - [Chaos Engineering Principles](https://principlesofchaos.org) — Chaos engineering methodology
 - [OpenTelemetry GenAI Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/) — Telemetry standards for AI systems
 - [NIST AI RMF](https://www.nist.gov/system/files/documents/2023/01/26/AI%20RMF%201.0.pdf) — AI risk management framework
+
+## Related
+
+- [Agentic AI Reliability, Observability & Governance Lifecycle](43-agentic-ai-reliability-observability-governance.md) — the full lifecycle this reliability-engineering discipline sits within.
+- [Drift Detection for Multi-Agent AI Systems](45-drift-detection-guide.md) — a specific reliability failure mode this engineering practice guards against.
+- [AI Harness Architecture & Multi-Agent Orchestration](44-ai-harness-architecture-orchestration.md) — the harness that operationalizes this reliability engineering.
+

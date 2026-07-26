@@ -313,3 +313,9 @@ graph TD
 ---
 
 **Part A Summary:** Technical debt, platform ROI, cost of delay, and AI economics provide the language to defend architecture decisions in financial terms. **Part B Summary:** ATAM, CBAM, real options, and Wardley mapping are the formal frameworks that separate rigorous architecture decision-making from opinion, critical for regulated environments where "why" must be auditable months after the decision.
+
+## Related
+
+- [Enterprise Governance Ecosystem & Operating Models](60-volume1-governance-ecosystem-operating-models.md) — Volume 1 of this series.
+- [Architecture Knowledge Management & Capability Mapping](62-volume3-knowledge-management-capability-mapping.md) — Volume 3, following this economics volume.
+

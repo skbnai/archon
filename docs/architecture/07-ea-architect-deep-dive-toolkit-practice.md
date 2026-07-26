@@ -370,3 +370,10 @@ graph TD
 ---
 
 Next: [Part 4 — Measurement & Growth](./08-ea-architect-deep-dive-measurement-growth.md) provides frameworks for measuring communication effectiveness and continuous improvement.
+
+## Related
+
+- [EA Architect Deep Dive: The Five Arenas](06-ea-architect-deep-dive-five-arenas.md) — Part 2 of this series.
+- [EA Architect Deep Dive: Measurement & Growth](08-ea-architect-deep-dive-measurement-growth.md) — Part 4, closing out this series.
+- [Machine-Readable Enterprise Architecture](57-machine-readable-ea.md) — a tooling pattern relevant to this practice guide.
+

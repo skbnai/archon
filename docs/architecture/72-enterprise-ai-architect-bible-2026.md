@@ -451,3 +451,9 @@ See [Part 2: LLMOps, Safety & Career Strategy](pathname:///archon/architecture/p
 ---
 
 **Document Status:** This is Part 1 of a 2-part enterprise reference architecture. Part 1 focuses on foundational concepts (LLMs, Agentic Systems, RAG). Last updated: July 2026. For the complete 2026 AI Architect Bible, see the companion Part 2 document.
+
+## Related
+
+- [EA Mastery Guide](71-ea-mastery-guide.md) — the broader (non-AI-specific) EA frameworks this bible builds on.
+- [Principal & Enterprise AI Architect](86-principal-enterprise-ai-guide-educative.md) — scenario-based companion guide for the same role.
+

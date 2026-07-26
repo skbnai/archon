@@ -570,6 +570,12 @@ Google's AlphaFold 3 protein structure prediction API, accessed by thousands of 
 
 ---
 
+## Related
+
+- [Agent Reliability Engineering (ARE)](42-agent-reliability-engineering.md) — the engineering discipline this lifecycle is built on.
+- [End-to-End Traceability for Multi-Agent Systems](46-end-to-end-traceability-guide.md) — the traceability layer underneath this governance lifecycle.
+- [Governance Propagation Chain](55-governance-propagation-chain.md) — how governance decisions propagate through this lifecycle.
+
 ## Sources
 
 - [Model Armor overview | Google Cloud](https://docs.cloud.google.com/model-armor/overview)

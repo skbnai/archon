@@ -210,3 +210,9 @@ Requirements Management is the continuous central process of the TOGAF ADM. AI-D
 TOGAF® is a registered trademark of The Open Group. EU AI Act, DORA, GDPR, MiFID II, and BCBS 239 are legislative instruments of their respective issuing bodies. All product names mentioned as cloud-provider equivalents are trademarks of their respective owners.
 
 This is the final part of the series. For the full programme overview and links to all 4 parts, return to [Part 1: Team Structure, RACI & Operating Model](./09-apex-ea-team-structure-raci.md).
+
+## Related
+
+- [APEX EA Part 3: Information Systems & Technology Architecture](11-apex-ea-information-systems-architecture.md) — the architecture this delivery model governs.
+- [Governance Propagation Chain](55-governance-propagation-chain.md) — how governance decisions propagate through delivery.
+

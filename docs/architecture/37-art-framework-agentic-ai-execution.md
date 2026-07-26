@@ -694,6 +694,11 @@ Before any agent goes to production, verify:
 
 ---
 
+## Related
+
+- [Agentic AI Reliability, Observability & Governance Lifecycle](43-agentic-ai-reliability-observability-governance.md) — the operational lifecycle this execution framework runs within.
+- [Enterprise Agentic AI Architecture Playbook 2026](73-enterprise-agentic-ai-architecture-playbook-2026.md) — a companion playbook for enterprise agentic execution.
+
 ## References
 
 ### Failure Rate Research

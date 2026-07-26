@@ -440,3 +440,8 @@ The process of evaluating every system in the portfolio on business value and te
 A production system that is no longer actively used but continues to draw operating cost because no one has formally retired it. A symptom of weak portfolio governance.
 
 *In practice: "That reporting system hasn't had a login in 18 months but we're still paying £40k a year in hosting — it's a zombie, let's start the retirement process."*
+
+## Related
+
+- [Enterprise Architecture Glossary & Cheat Sheet](69-ea-glossary-cheatsheet.md) — the companion glossary for the jargon covered here.
+

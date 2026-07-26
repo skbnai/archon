@@ -218,6 +218,12 @@ The Preliminary Phase establishes GlobalCorp's architecture capability for APEX.
 | Deploy & Monitor | 2–4 weeks | 1 week | 3 days | DORA change framing adds a compliance record step; canary monitoring adds 1–2 days |
 | TOTAL TIME-TO-MARKET | ~9 months | ~9.5 weeks | 5–6 weeks | Planning baseline used for budgets; 9.5 weeks used for business cases as conservative estimate |
 
+## Related
+
+- [APEX EA Part 1: Team Structure, RACI & Operating Model](09-apex-ea-team-structure-raci.md) — the team structure that executes this methodology.
+- [APEX EA Part 3: Information Systems & Technology Architecture](11-apex-ea-information-systems-architecture.md) — the architecture this methodology produces.
+- [AIDLC Enterprise Framework](14-aidlc-enterprise-framework-2025.md) — a parallel enterprise-wide AIDLC framework.
+
 ---
 
 **Next:** [Part 3 — Information Systems & Technology Architecture](./11-apex-ea-information-systems-architecture.md) covers TOGAF Phases C and D — data, AI-native entities, application components, and cloud-native infrastructure.

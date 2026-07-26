@@ -258,6 +258,11 @@ Deloitte recommends early engagement with the **Consent Manager framework** (ope
 | **Level 3 — Managed** | Purpose-level granular consent, automated enforcement, 90-day response SLAs. Substantially compliant. |
 | **Level 4 — Optimized** | AI-powered consent management, predictive compliance, consent manager integration, real-time dashboards. Fully compliant & audit-ready. |
 
+## Related
+
+- [Trust Hub](../trust/index.md) — the broader compliance index this India-specific regulatory guide belongs alongside.
+- [Agentic AI Landing Zone: EU AI Act Compliance](25-agentic-ai-landing-zone-eu-ai-act.md) — a parallel jurisdiction-specific compliance guide.
+
 ---
 
 **Navigation**: This is Part 1 of 3. Continue with [Part 2: Data Discovery, DLP, Breach Notification, DPO & Penalties](pathname:///archon/architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2).

@@ -799,3 +799,9 @@ def semantic_recall_override_patterns(
         return 'No similar patterns found'
     return str([r.value for r in results[:3]])
 ```
+
+## Related
+
+- [Enterprise Agent Reference Architectures, Platform Engineering & Checklists](47-enterprise-agent-reference-architectures.md) — the general reference patterns this specific case-study architecture instantiates.
+- [Agentic Systems Hub](../agentic-systems/index.md) — broader agent-architecture patterns this auditor system builds on.
+

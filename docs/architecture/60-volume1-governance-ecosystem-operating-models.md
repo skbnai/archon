@@ -334,3 +334,9 @@ graph TD
 ---
 
 **Part A Summary:** The ARB cannot operate in isolation. Understanding the mesh of 16+ governance bodies, their overlaps, escalation paths, and anti-patterns is essential for a Principal Enterprise Architect. **Part B Summary:** Operating models are not one-size-fits-all — the same charter produces wildly different outcomes depending on organizational size, maturity, and business context. Diagnosis (queue depth, drift, traceability, platform leverage) should precede model selection.
+
+## Related
+
+- [Architecture Economics & Decision Science](61-volume2-economics-decision-science.md) — Volume 2 of this series.
+- [Enterprise Review Questions & Scorecards](64-volume5-review-questions-scorecards.md) — how this operating model is assessed in practice.
+
