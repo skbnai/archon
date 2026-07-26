@@ -140,7 +140,7 @@
     },
     {
      "id": "architecture/parts/08-aidlc-artifacts-togaf-change-management-cross-cutting",
-     "score": 0.59
+     "score": 0.6
     },
     {
      "id": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
@@ -168,7 +168,7 @@
     },
     {
      "id": "architecture/08-ea-architect-deep-dive-measurement-growth",
-     "score": 0.4
+     "score": 0.41
     },
     {
      "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
@@ -194,15 +194,15 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
-     "score": 0.42
-    },
-    {
      "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "architecture/05-ea-architect-deep-dive-foundation",
+     "score": 0.41
+    },
+    {
+     "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
      "score": 0.41
     }
    ]
@@ -228,7 +228,7 @@
    "top_similar": [
     {
      "id": "architecture/06-ea-architect-deep-dive-five-arenas",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "architecture/08-ea-architect-deep-dive-measurement-growth",
@@ -236,7 +236,7 @@
     },
     {
      "id": "architecture/05-ea-architect-deep-dive-foundation",
-     "score": 0.38
+     "score": 0.39
     }
    ]
   },
@@ -261,7 +261,7 @@
    "top_similar": [
     {
      "id": "architecture/05-ea-architect-deep-dive-foundation",
-     "score": 0.4
+     "score": 0.41
     },
     {
      "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
@@ -509,7 +509,7 @@
     },
     {
      "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-     "score": 0.45
+     "score": 0.46
     }
    ]
   },
@@ -904,7 +904,7 @@
    "top_similar": [
     {
      "id": "architecture/35-transformer-concepts-deep",
-     "score": 0.49
+     "score": 0.5
     },
     {
      "id": "architecture/54-enterprise-multi-model-ai-strategy",
@@ -929,7 +929,7 @@
    "top_similar": [
     {
      "id": "architecture/34-transformer-architectures",
-     "score": 0.49
+     "score": 0.5
     }
    ]
   },
@@ -1084,7 +1084,7 @@
     },
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -1315,7 +1315,7 @@
     },
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -1335,11 +1335,11 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
+     "id": "architecture/14-aidlc-enterprise-framework-2025",
      "score": 0.5
     },
     {
-     "id": "architecture/14-aidlc-enterprise-framework-2025",
+     "id": "architecture/parts/22-enterprise-ai-governance-compliance-part2",
      "score": 0.5
     },
     {
@@ -1364,7 +1364,7 @@
     },
     {
      "id": "architecture/16-ea-aidlc-deep-research-2026",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "architecture/48-enterprise-ai-architect-foundations",
@@ -1764,7 +1764,7 @@
     },
     {
      "id": "architecture/16-ea-aidlc-deep-research-2026",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -1847,7 +1847,7 @@
     },
     {
      "id": "architecture/parts/29-ai-solution-lifecycle-deliverables-part3",
-     "score": 0.39
+     "score": 0.38
     }
    ]
   },
@@ -2011,7 +2011,7 @@
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.33
+     "score": 0.32
     }
    ]
   },
@@ -2179,12 +2179,12 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "operations/index",
-     "score": 0.33
+     "id": "platforms/index",
+     "score": 0.32
     },
     {
-     "id": "platforms/index",
-     "score": 0.33
+     "id": "operations/index",
+     "score": 0.31
     }
    ]
   },
@@ -2406,7 +2406,7 @@
     },
     {
      "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-     "score": 0.5
+     "score": 0.49
     }
    ]
   },
@@ -2430,7 +2430,7 @@
    "top_similar": [
     {
      "id": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
-     "score": 0.59
+     "score": 0.6
     },
     {
      "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
@@ -2504,7 +2504,7 @@
     },
     {
      "id": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
-     "score": 0.36
+     "score": 0.35
     }
    ]
   },
@@ -2885,7 +2885,7 @@
     },
     {
      "id": "architecture/48-enterprise-ai-architect-foundations",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "architecture/16-ea-aidlc-deep-research-2026",
@@ -2974,7 +2974,7 @@
     },
     {
      "id": "architecture/parts/29-ai-solution-lifecycle-deliverables-part3",
-     "score": 0.4
+     "score": 0.39
     }
    ]
   },
@@ -2994,11 +2994,11 @@
    "top_similar": [
     {
      "id": "architecture/parts/28-ai-solution-lifecycle-deliverables-part2",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "architecture/74-ai-solution-lifecycle-deliverables",
-     "score": 0.39
+     "score": 0.38
     }
    ]
   },
@@ -3047,7 +3047,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3",
-     "score": 0.66
+     "score": 0.67
     },
     {
      "id": "architecture/79-dpdp-act-2023-comprehensive-guide",
@@ -3079,7 +3079,7 @@
     },
     {
      "id": "architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2",
-     "score": 0.66
+     "score": 0.67
     }
    ]
   },
@@ -3191,7 +3191,7 @@
      "score": 0.39
     },
     {
-     "id": "architecture/14-aidlc-enterprise-framework-2025",
+     "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
      "score": 0.37
     }
    ]
@@ -3216,7 +3216,7 @@
    "top_similar": [
     {
      "id": "architecture/06-ea-architect-deep-dive-five-arenas",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "architecture/05-ea-architect-deep-dive-foundation",

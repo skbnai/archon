@@ -15,7 +15,7 @@ Pairwise similarity within this cluster:
 - 75%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 73%  `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 71%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
-- 70%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 71%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 70%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
 
 ## Cluster (3 pages)
@@ -26,9 +26,9 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 64%  `protocols/11-entra-3lo-agent-auth-standards-architecture` <-> `protocols/08-entra-3lo-agent-auth-implementation`
-- 61%  `protocols/11-entra-3lo-agent-auth-standards-architecture` <-> `protocols/09-entra-3lo-agent-auth-multiagent-compliance`
-- 49%  `protocols/08-entra-3lo-agent-auth-implementation` <-> `protocols/09-entra-3lo-agent-auth-multiagent-compliance`
+- 65%  `protocols/11-entra-3lo-agent-auth-standards-architecture` <-> `protocols/08-entra-3lo-agent-auth-implementation`
+- 62%  `protocols/11-entra-3lo-agent-auth-standards-architecture` <-> `protocols/09-entra-3lo-agent-auth-multiagent-compliance`
+- 50%  `protocols/08-entra-3lo-agent-auth-implementation` <-> `protocols/09-entra-3lo-agent-auth-multiagent-compliance`
 
 ## Cluster (3 pages)
 
@@ -63,7 +63,7 @@ Pairwise similarity within this cluster:
 Pairwise similarity within this cluster:
 
 - 68%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
-- 66%  `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
+- 67%  `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2` <-> `architecture/parts/32-dpdp-act-2023-comprehensive-guide-part3`
 - 65%  `architecture/79-dpdp-act-2023-comprehensive-guide` <-> `architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2`
 
 ## Cluster (3 pages)
@@ -87,7 +87,7 @@ Pairwise similarity within this cluster:
 Pairwise similarity within this cluster:
 
 - 64%  `strategy/02-quantum-ai-startup-landscape` <-> `strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns`
-- 60%  `strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns` <-> `strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti`
+- 61%  `strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns` <-> `strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti`
 - 55%  `strategy/02-quantum-ai-startup-landscape` <-> `strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti`
 
 ## Cluster (2 pages)
@@ -169,7 +169,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 65%  `agentic-systems/coding-tools/48-git-internals` <-> `agentic-systems/coding-tools/09-git-github-platform-engineering-handbook`
+- 66%  `agentic-systems/coding-tools/48-git-internals` <-> `agentic-systems/coding-tools/09-git-github-platform-engineering-handbook`
 
 ## Cluster (2 pages)
 
@@ -286,4 +286,4 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 79%  `strategy/99-vol5-ai-strategy-transformation-glossary-glossary-a-to-h` <-> `strategy/vols/01-vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref`
+- 80%  `strategy/99-vol5-ai-strategy-transformation-glossary-glossary-a-to-h` <-> `strategy/vols/01-vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref`

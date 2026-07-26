@@ -17,15 +17,11 @@
    "top_similar": [
     {
      "id": "career/index",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "learning-paths/index",
      "score": 0.44
-    },
-    {
-     "id": "operations/index",
-     "score": 0.31
     }
    ]
   }

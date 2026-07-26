@@ -8,17 +8,17 @@
    "doc_type": "guide",
    "topic_id": "auth-standards-reference",
    "tags": [],
-   "word_count": 2338,
+   "word_count": 2400,
    "last_reviewed": "2026-07-25",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/05-identity-obo-sessions",
-     "score": 0.53
+     "score": 0.54
     },
     {
      "id": "protocols/12-tool-authentication-connectors",
-     "score": 0.45
+     "score": 0.46
     },
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
@@ -38,7 +38,7 @@
     "enterprise",
     "survey"
    ],
-   "word_count": 2693,
+   "word_count": 2740,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
@@ -62,13 +62,13 @@
    "doc_type": "guide",
    "topic_id": "marketplace-connector-auth-patterns",
    "tags": [],
-   "word_count": 1947,
+   "word_count": 1993,
    "last_reviewed": "2026-07-25",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/12-tool-authentication-connectors",
-     "score": 0.52
+     "score": 0.54
     },
     {
      "id": "protocols/02-enterprise-ai-platform-auth-survey",
@@ -86,13 +86,13 @@
    "doc_type": "guide",
    "topic_id": "agentidentity-research-2026",
    "tags": [],
-   "word_count": 123,
+   "word_count": 176,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/06-agent-identity-entra-vs-awsagentcore",
-     "score": 0.34
+     "score": 0.38
     }
    ]
   },
@@ -102,13 +102,13 @@
    "doc_type": "guide",
    "topic_id": "identity-obo-sessions",
    "tags": [],
-   "word_count": 2412,
+   "word_count": 2461,
    "last_reviewed": "2026-07-25",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/01-auth-standards-reference",
-     "score": 0.53
+     "score": 0.54
     },
     {
      "id": "protocols/12-tool-authentication-connectors",
@@ -126,21 +126,21 @@
    "doc_type": "guide",
    "topic_id": "agent-identity-entra-vs-awsagentcore",
    "tags": [],
-   "word_count": 2583,
+   "word_count": 2635,
    "last_reviewed": "2026-07-25",
    "status": "current",
    "top_similar": [
     {
-     "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
-     "score": 0.36
+     "id": "protocols/04-agentidentity-research-2026",
+     "score": 0.38
     },
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.36
+     "score": 0.38
     },
     {
-     "id": "protocols/04-agentidentity-research-2026",
-     "score": 0.34
+     "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
+     "score": 0.37
     }
    ]
   },
@@ -150,13 +150,17 @@
    "doc_type": "guide",
    "topic_id": "auth-identity-flows",
    "tags": [],
-   "word_count": 2395,
+   "word_count": 2439,
    "last_reviewed": "2026-07-25",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/08-entra-3lo-agent-auth-implementation",
-     "score": 0.32
+     "score": 0.33
+    },
+    {
+     "id": "protocols/06-agent-identity-entra-vs-awsagentcore",
+     "score": 0.31
     }
    ]
   },
@@ -170,13 +174,13 @@
     "auth",
     "reference-architecture"
    ],
-   "word_count": 4206,
+   "word_count": 4257,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.64
+     "score": 0.65
     },
     {
      "id": "protocols/10-entra-3lo-agent-auth-security-review",
@@ -184,7 +188,7 @@
     },
     {
      "id": "protocols/09-entra-3lo-agent-auth-multiagent-compliance",
-     "score": 0.49
+     "score": 0.5
     }
    ]
   },
@@ -198,21 +202,21 @@
     "auth",
     "reference-architecture"
    ],
-   "word_count": 4441,
+   "word_count": 4490,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.61
+     "score": 0.62
     },
     {
      "id": "protocols/10-entra-3lo-agent-auth-security-review",
-     "score": 0.57
+     "score": 0.58
     },
     {
      "id": "protocols/08-entra-3lo-agent-auth-implementation",
-     "score": 0.49
+     "score": 0.5
     }
    ]
   },
@@ -226,7 +230,7 @@
     "auth",
     "reference-architecture"
    ],
-   "word_count": 4597,
+   "word_count": 4643,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
@@ -236,7 +240,7 @@
     },
     {
      "id": "protocols/09-entra-3lo-agent-auth-multiagent-compliance",
-     "score": 0.57
+     "score": 0.58
     },
     {
      "id": "protocols/08-entra-3lo-agent-auth-implementation",
@@ -254,17 +258,17 @@
     "auth",
     "reference-architecture"
    ],
-   "word_count": 3805,
+   "word_count": 3856,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/08-entra-3lo-agent-auth-implementation",
-     "score": 0.64
+     "score": 0.65
     },
     {
      "id": "protocols/09-entra-3lo-agent-auth-multiagent-compliance",
-     "score": 0.61
+     "score": 0.62
     },
     {
      "id": "protocols/10-entra-3lo-agent-auth-security-review",
@@ -278,17 +282,17 @@
    "doc_type": "guide",
    "topic_id": "tool-authentication-connectors",
    "tags": [],
-   "word_count": 2415,
+   "word_count": 2459,
    "last_reviewed": "2026-07-25",
    "status": "current",
    "top_similar": [
     {
-     "id": "protocols/05-identity-obo-sessions",
-     "score": 0.53
+     "id": "protocols/03-marketplace-connector-auth-patterns",
+     "score": 0.54
     },
     {
-     "id": "protocols/03-marketplace-connector-auth-patterns",
-     "score": 0.52
+     "id": "protocols/05-identity-obo-sessions",
+     "score": 0.53
     },
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
@@ -307,21 +311,21 @@
     "protocol-architecture",
     "ecosystem"
    ],
-   "word_count": 3472,
+   "word_count": 3524,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/parts/13-mcp-deep-research-2026-part2",
-     "score": 0.58
+     "score": 0.59
     },
     {
      "id": "agentic-systems/coding-tools/39-mcp-deep-guide",
      "score": 0.42
     },
     {
-     "id": "agentic-systems/coding-tools/parts/39-mcp-deep-guide-part2",
-     "score": 0.39
+     "id": "agentic-systems/orchestration/10-mcp-impact",
+     "score": 0.4
     }
    ]
   },
@@ -338,7 +342,7 @@
     "enterprise-architecture",
     "zero-trust"
    ],
-   "word_count": 4192,
+   "word_count": 4242,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
@@ -352,7 +356,7 @@
     },
     {
      "id": "protocols/parts/13-mcp-deep-research-2026-part2",
-     "score": 0.4
+     "score": 0.41
     }
    ]
   },
@@ -367,13 +371,13 @@
     "a2a",
     "reference-architecture"
    ],
-   "word_count": 3362,
+   "word_count": 3408,
    "last_reviewed": "2026-07-14",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/parts/13-mcp-deep-research-2026-part2",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -390,7 +394,7 @@
     "compliance",
     "service-industry"
    ],
-   "word_count": 3761,
+   "word_count": 3801,
    "last_reviewed": "2026-07-10",
    "status": "current",
    "top_similar": [
@@ -423,7 +427,7 @@
     "headers",
     "capability-negotiation"
    ],
-   "word_count": 2869,
+   "word_count": 2901,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
@@ -432,11 +436,11 @@
      "score": 0.35
     },
     {
-     "id": "agentic-systems/core/17-a2a-deep-research",
-     "score": 0.34
+     "id": "protocols/23-existing-protocol-evolution-agentic-ai",
+     "score": 0.35
     },
     {
-     "id": "protocols/23-existing-protocol-evolution-agentic-ai",
+     "id": "agentic-systems/core/17-a2a-deep-research",
      "score": 0.34
     }
    ]
@@ -456,13 +460,21 @@
     "enterprise-ai",
     "protocol-architecture"
    ],
-   "word_count": 3739,
+   "word_count": 3793,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
     {
      "id": "agentic-systems/core/17-a2a-deep-research",
-     "score": 0.34
+     "score": 0.35
+    },
+    {
+     "id": "protocols/21-emerging-protocols-overview",
+     "score": 0.31
+    },
+    {
+     "id": "protocols/parts/21-emerging-protocols-overview-part2",
+     "score": 0.31
     }
    ]
   },
@@ -479,7 +491,7 @@
     "standards",
     "user-interaction"
    ],
-   "word_count": 4083,
+   "word_count": 4134,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
@@ -489,7 +501,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/02-agui-standards-landscape",
-     "score": 0.56
+     "score": 0.57
     },
     {
      "id": "agentic-systems/agentic-ui/19-agentic-ui-security-architecture",
@@ -519,7 +531,7 @@
     "lmos",
     "utcp"
    ],
-   "word_count": 5057,
+   "word_count": 5107,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
@@ -556,7 +568,7 @@
     "enterprise-architecture",
     "standards"
    ],
-   "word_count": 4184,
+   "word_count": 4244,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
@@ -590,13 +602,13 @@
     "payments",
     "internet-of-agents"
    ],
-   "word_count": 3491,
+   "word_count": 3540,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
     {
      "id": "protocols/21-emerging-protocols-overview",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
@@ -619,7 +631,7 @@
     "spiffe",
     "enterprise-architecture"
    ],
-   "word_count": 2608,
+   "word_count": 2664,
    "last_reviewed": "2026-07-11",
    "status": "current",
    "top_similar": [
@@ -660,7 +672,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.4
+     "score": 0.39
     }
    ]
   },
@@ -682,11 +694,11 @@
    "top_similar": [
     {
      "id": "protocols/13-mcp-deep-research-2026",
-     "score": 0.58
+     "score": 0.59
     },
     {
      "id": "agentic-systems/orchestration/10-mcp-impact",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "architecture/58-mcp-a2a-protocol-deep-dive",
@@ -813,7 +825,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -866,7 +878,7 @@
     },
     {
      "id": "protocols/21-emerging-protocols-overview",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
