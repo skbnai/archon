@@ -203,3 +203,8 @@ flowchart TD
 ---
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/10-part-10-evaluation-benchmarks-part2) for LLM-as-Judge and golden dataset construction.**
+
+## Related
+
+- [Part 9 — Compliance & Responsible AI for Multimodal Systems](09-part-09-compliance-responsible-ai.md) — the previous section in this series.
+- [Part 11 — Evaluation Harnesses & CI/CD for Multimodal AI](11-part-11-evaluation-harnesses-cicd.md) — the next section in this series.

@@ -148,3 +148,8 @@ flowchart LR
 ```
 
 *The complete lifecycle end to end, showing the optional human approval gate before execution and the bounded retry loop on validation failure.*
+
+## Related
+
+- [Foundations: What Is a Coding Skill?](18-foundations-what-is-a-coding-skill.md) — the previous section in this series.
+- [Skills vs. MCP & the Full Responsibility Stack](20-skills-tools-mcp-relationship.md) — the next section in this series.

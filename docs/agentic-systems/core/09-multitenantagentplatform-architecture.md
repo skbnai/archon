@@ -707,3 +707,8 @@ P0 (auth foundation) is the single most important phase to get right before any 
 |---|---|
 |**Next review**|Q3 2026|
 |**Confidentiality**|Internal use only — do not distribute externally|
+
+## Related
+
+- [Enterprise Agentic Platform Best Practices](10-agentic-platform-bestpractices.md) — best practices for the kind of platform described here.
+- [AI Platform Factory Production Runbook](12-ai-platform-factory-runbook.md) — the production runbook for operating a platform like this.

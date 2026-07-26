@@ -1086,3 +1086,8 @@ done
 ---
 
 AI Platform Factory — Production Agent Runbook v2.0 | June 2026 | Multi-service: Frontend + Backend + Data Pipeline + Agent Layer | GitHub Copilot Agent + Claude Code | Open standard: SKILL.md + AGENTS.md + hooks
+
+## Related
+
+- [Multi-Tenant Agent Platform Architecture](09-multitenantagentplatform-architecture.md) — the architecture this runbook operationalizes.
+- [AI-Assisted Microservice Development Framework](11-ai-msf-requirements-runbook.md) — a related production runbook.

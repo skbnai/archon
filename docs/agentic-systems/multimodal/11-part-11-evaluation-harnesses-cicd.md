@@ -203,3 +203,8 @@ Validates that the system maintains target throughput under load. Run weekly. Me
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/11-part-11-evaluation-harnesses-cicd-part2) for CI/CD pipeline design, chaos testing, human-in-the-loop, production monitoring, and interview use cases.**
+
+## Related
+
+- [Part 10 — Evaluation & Benchmarks for Multimodal AI](10-part-10-evaluation-benchmarks.md) — the previous section in this series.
+- [Part 12 — Observability & FinOps for Multimodal AI](12-part-12-observability-finops.md) — the next section in this series.

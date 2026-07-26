@@ -196,3 +196,8 @@ Software supply chain review has become one of the highest-leverage areas of sec
 - <sup>**Secrets in state**— does this introduce a resource whose sensitive output (a generated password, a private</sup> key) will be stored in plaintext in Terraform state unless explicitly marked sensitive and the backend encrypted?
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/43-pr-review-handbook-vol2-deep-domain-reviews-part2) for continued content.**
+
+## Related
+
+- [THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)](42-pr-review-handbook-vol1-traditional-review.md) — the previous section in this series.
+- [THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)](44-pr-review-handbook-vol3-ai-assisted-review.md) — the next section in this series.

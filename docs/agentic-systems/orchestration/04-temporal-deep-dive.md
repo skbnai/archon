@@ -378,6 +378,12 @@ flowchart TD
 
 **Most Likely**: Temporal + LangGraph becomes the de facto pattern for enterprise orchestration.
 
+
+## Related
+
+- [Workflow vs Agent Architecture - Determinism, Adaptivity, and Design Principles](03-workflow-vs-agent-architecture.md) — the previous section in this series.
+- [Camunda Deep Dive - BPMN, BPM, and AI Integration](05-camunda-deep-dive.md) — the next section in this series.
+
 ---
 
 **Next**: Explore [Camunda and BPM](./05-camunda-deep-dive.md) for comparison, or jump to [Hybrid Architectures](./19-reference-architectures.md).

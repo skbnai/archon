@@ -194,3 +194,8 @@ async function reviewPR(diff: string) {
     return JSON.parse(result.content[0].text);
 }
 ```
+
+## Related
+
+- [Model Context Protocol (MCP) — Complete Reference](26-module-4-mcp.md) — the previous section in this series.
+- [Claude Dynamic Workflows — Complete Guide](28-module-6-claude-workflows.md) — the next section in this series.

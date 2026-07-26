@@ -139,3 +139,8 @@ tool:
 - **Descriptions written for a human reader of API docs, not for a model deciding whether to call the tool** — omit implementation detail (internal service names, DB table names) the model doesn't need and that a security reviewer would rather not have exposed in a prompt-visible surface anyway.
 - **Copy-pasted descriptions across near-duplicate tools** — a strong signal that the tools themselves should be consolidated (file `06`).
 - **Missing "when NOT to use"** — the majority of observed wrong-tool-selection incidents trace back to two tools with overlapping positive descriptions and no negative disambiguation.
+
+## Related
+
+- [Skills, Tools, MCP & A2A Relationship](31-skills-tools-mcp-a2a-relationship.md) — the previous section in this series.
+- [Registry, Discovery & Deduplication](33-registry-discovery-and-deduplication.md) — the next section in this series.

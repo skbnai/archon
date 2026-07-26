@@ -334,3 +334,7 @@ InnerSource applies open-source collaboration practices within a company. Intern
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/06-ecosystem-patterns-labs-part2.md) for hidden features, labs, and interview questions.**
+
+## Related
+
+- [Engineering Artifacts & Enterprise Reference Architecture](05-artifacts-referencearchitecture.md) — the previous section in this series.

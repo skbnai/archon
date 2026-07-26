@@ -69,3 +69,8 @@ This three-registry pattern (capability catalog on top, skill/tool/agent registr
 5. **Federation, not centralization, across platforms.** Don't force every team onto one vendor's native skill format — instead, maintain the enterprise metadata schema (file `02`) as the source of truth and sync/export to each platform's native registry (Azure Skills API, ADK Skill Registry, AgentCore catalog) so discovery *within* each platform still works, while a cross-platform search layer (built on the same embeddings) prevents silent duplication *across* platforms.
 6. **Deprecation must be visible at discovery time**, not just in a changelog — a `lifecycle_state: deprecated` skill should still resolve in search but be ranked last and flagged with its replacement, so agents (and developers) don't keep building against it.
 7. **Quality/usage signals feed ranking.** A 2026 industry benchmark (SkillsBench) scored tens of thousands of unreviewed public skills and found an average quality score of roughly 6 out of 12, while curated, reviewed skill libraries raised measured agent pass rates by double-digit percentage points over uncurated ones. Discovery ranking should weight curated/certified quality scores, not raw popularity alone — popularity and quality diverged sharply in the poisoned public-registry incidents of Q1 2026 (file `09`).
+
+## Related
+
+- [Tool Definition Best Practices](32-tool-definition-best-practices.md) — the previous section in this series.
+- [Skill Composition & Instructions Engineering](34-composition-and-instructions-engineering.md) — the next section in this series.

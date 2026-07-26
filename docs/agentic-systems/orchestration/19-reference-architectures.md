@@ -513,6 +513,12 @@ Audit Layer (Always)
 - **Temporal only**: Add LangGraph for reasoning
 - **All three**: Add Claude Code for meta-orchestration
 
+
+## Related
+
+- [AI Coding Orchestrators - Claude Code, GitHub Copilot, and the Meta-Orchestrator Pattern](07-ai-coding-orchestrators.md) — the previous section in this series.
+- [Decision Matrix - Choosing Your Orchestration Platform](20-decision-matrix.md) — the next section in this series.
+
 ---
 
 **Next**: Read [Future Predictions](./21-future-predictions.md) to understand where this is all headed, or jump to [Decision Matrix](./20-decision-matrix.md) for platform selection.

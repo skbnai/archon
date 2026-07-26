@@ -516,6 +516,12 @@ while not done:
 | Learning from outcomes | Agent | Models can be retrained |
 | Sub-millisecond performance | Workflow (Temporal) | No LLM latency |
 
+
+## Related
+
+- [Technology Evolution Timeline - From BPM to Agentic Orchestration](02-evolution-timeline.md) — the previous section in this series.
+- [Temporal Deep Dive - Architecture, Patterns, and AI Integration](04-temporal-deep-dive.md) — the next section in this series.
+
 ---
 
 **Next steps**:

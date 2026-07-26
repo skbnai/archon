@@ -237,3 +237,7 @@ grep -r "Cannot read" logs/
 - Resumed sessions preserve work context
 
 **✓ Dev productivity = tool integrations + configured conventions + smart session management**
+
+## Related
+
+- [Agent SDK Cheat Sheet](16-cheatsheet-2-agent-sdk.md) — the next section in this series.

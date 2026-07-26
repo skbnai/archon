@@ -677,3 +677,8 @@ A: Use composite actions for reusable steps within a job (setup, build steps, no
 #### Q: How does concurrency: cancel-in-progress affect different branch types?
 
 A: For feature branches and PRs, cancelling in-progress is desirable to save runner minutes on superseded pushes. For main/release branches, you want to queue (cancel-in-progress: false) to ensure every commit is tested/deployed. A common pattern: `cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}`.
+
+## Related
+
+- [AI Vision, Copilot Architecture & Repository Intelligence](49-vision-copilot-architecture-repointelligence.md) — the previous section in this series.
+- [RAG Architecture, Agent Comparisons & GitHub Models](51-rag-agents-models-platform.md) — the next section in this series.

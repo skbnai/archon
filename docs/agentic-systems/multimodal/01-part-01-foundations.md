@@ -156,3 +156,7 @@ The table below covers the major multimodal models relevant to enterprise deploy
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/01-part-01-foundations-part2) for Agentic Perception and Interview Use Cases.**
+
+## Related
+
+- [Part 3 — Image & Document Intelligence](03-part-03-modalities-image-document.md) — the next section in this series.

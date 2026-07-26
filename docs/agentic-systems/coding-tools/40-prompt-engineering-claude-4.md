@@ -775,3 +775,8 @@ For offline workloads, use the Batch API instead of threading. See [Claude Model
 
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/40-prompt-engineering-claude-4-part2) for context window management, prompt caching, guardrails, explainability, human-in-the-loop patterns, RAI, evaluation-driven development, best practices, antipatterns, and prompt templates.**
+
+## Related
+
+- [Prompt Engineering Cheat Sheet](19-cheatsheet-5-prompt-engineering.md) — a quick-reference companion.
+- [Prompt Engineering & Optimization — Complete Reference](25-module-3-prompt-engineering.md) — the curriculum-style companion reference.

@@ -418,3 +418,7 @@ June 1, 2026 marks the end of the "unlimited" era for GitHub Copilot. The transi
 
 
 **Continued in [Part 2](parts/47-github-copilot-enterprise-research-2026-part2.md)**: Enterprise Adoption Framework, Competitive Analysis, Principal AI Architect Playbook, Future of Software Engineering, Anti-Patterns Catalog, Enterprise Reference Architecture, Sources, Related Documentation.
+
+## Related
+
+- [Git Internals](48-git-internals.md) — the next section in this series.

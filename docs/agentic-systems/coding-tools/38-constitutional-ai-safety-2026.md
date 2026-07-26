@@ -695,3 +695,8 @@ def write_audit_record(record: AuditRecord, store):
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/38-constitutional-ai-safety-2026-part2) for human-in-the-loop, stress testing, compliance, and governance.**
+
+## Related
+
+- [Safety, Enterprise Deployment & CCA-F Exam Prep](29-module-7-safety-enterprise-exam.md) — the enterprise-deployment safety curriculum this underpins.
+- [Claude Enterprise Deployment 2026](34-claude-enterprise-2026.md) — where these safety principles get applied in production.

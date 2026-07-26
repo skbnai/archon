@@ -439,6 +439,12 @@ Consider:
 
 **Next sections** will explore these patterns in depth. Your enterprise experience will shape the recommendations.
 
+
+## Related
+
+- [Durable Execution vs. Cognitive Execution](06-durable-vs-cognitive-execution.md) — the previous section in this series.
+- [Reference Architectures - From BPM-First to AI-Native](19-reference-architectures.md) — the next section in this series.
+
 ---
 
 **Next**: Compare [Agent Frameworks](./07-ai-coding-orchestrators.md) (LangGraph vs. CrewAI vs. Semantic Kernel), or jump to [Reference Architectures](./19-reference-architectures.md) for real-world patterns.

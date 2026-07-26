@@ -507,3 +507,8 @@ A: Persistent runners maintain state between jobs. A malicious PR can write secr
 #### Q: Explain how ARC (Actions Runner Controller) auto-scales runners.
 
 A: ARC's HorizontalRunnerAutoscaler watches the GitHub Actions queue via the API (for org-level runners) or webhooks. When queued jobs exceed available runners, it scales up by creating new runner pods. When the queue drains, it scales down with a configurable cooldown period. The minimum scale-to-zero is supported for cost efficiency.
+
+## Related
+
+- [RAG Architecture, Agent Comparisons & GitHub Models](51-rag-agents-models-platform.md) — the previous section in this series.
+- [Marketplace, Pages, Wiki, Releases & Packages](53-marketplace-pages-packages.md) — the next section in this series.

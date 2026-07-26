@@ -174,3 +174,7 @@ These checklists consolidate the discipline-specific review questions developed 
 
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/46-pr-review-handbook-vol5-case-studies-maturity-model-part2) for continued content.**
+
+## Related
+
+- [THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)](45-pr-review-handbook-vol4-agentic-review-architecture.md) — the previous section in this series.

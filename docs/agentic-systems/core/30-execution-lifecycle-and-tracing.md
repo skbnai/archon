@@ -277,3 +277,8 @@ The trace hierarchy is structured as a nested tree with the following levels:
 6. **API Trace** — Backend API calls (if instrumented)
 
 Each level should propagate a common `trace_id`/`session_id` per W3C Trace Context so that a single production incident can be reconstructed top-to-bottom — this is the explicit design goal behind both the AAIF's push for OTel-based agent tracing and OpenTelemetry's own GenAI observability walkthroughs, which show the `invoke_agent` span as the parent of child `chat` (LLM call) and `execute_tool` spans.
+
+## Related
+
+- [Foundations: What Is an Agent Skill?](29-foundations-what-is-an-agent-skill.md) — the previous section in this series.
+- [Skills, Tools, MCP & A2A Relationship](31-skills-tools-mcp-a2a-relationship.md) — the next section in this series.

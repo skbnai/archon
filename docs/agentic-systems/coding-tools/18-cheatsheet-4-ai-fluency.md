@@ -154,3 +154,8 @@ Large Language Models - Tokens - Context - Capabilities &amp; Limitations - Prod
 - 6+ months prod experience expected
 - Understand capabilities AND limitations
 - Design for reliability in uncertainty
+
+## Related
+
+- [MCP Cheat Sheet](17-cheatsheet-3-mcp.md) — the previous section in this series.
+- [Prompt Engineering Cheat Sheet](19-cheatsheet-5-prompt-engineering.md) — the next section in this series.

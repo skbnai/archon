@@ -885,3 +885,8 @@ resource "kubernetes_stateful_set" "qdrant" {
     - Observability infrastructure: [Observability](14-observability.md)
     - Governance policies: [Governance](11-governance.md)
     - OTel GenAI conventions: [Reliability, Observability &amp; Governance](../../architecture/43-agentic-ai-reliability-observability-governance.md)
+
+## Related
+
+- [Governance for Agentic Applications](11-governance.md) — the governance layer DevSecOps practices enforce.
+- [Reliability Engineering for Agentic Applications](16-reliability-engineering.md) — a related non-functional discipline.

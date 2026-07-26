@@ -604,3 +604,8 @@ For a full MCP deep-dive including server types, resources, and prompts primitiv
 
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/33-claude-code-complete-2026-part2) for custom slash commands, skills, permissions, CI/CD integration, IDE extensions, token optimization, cost controls, guardrails, human-in-the-loop patterns, best practices, antipatterns, and troubleshooting.**
+
+## Related
+
+- [Claude Code Cheat Sheet](15-cheatsheet-1-claude-code.md) — a quick-reference companion to this complete guide.
+- [Claude Routines — Complete Help Guide](37-claude-routines-guide.md) — a related Claude Code feature deep dive.

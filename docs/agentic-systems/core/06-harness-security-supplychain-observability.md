@@ -81,3 +81,7 @@ The correlation engine is the differentiated piece: rather than just reporting f
 **ANALYSIS**
 
 This closes out the three-part scoped treatment (Architecture → AI Agents & Vendor Landscape → Security/Supply Chain/Observability) of the original 23-section research prompt. Remaining untouched sections — per-industry reference architectures, the 15 hands-on labs, sequence diagrams, and interview question banks — are lower-leverage for an architect's decision-making and are better suited to the Research feature if still wanted.
+
+## Related
+
+- [Harness Engineering Research Report (Part 1 of 2)](05-harness-engineering-research-report.md) — the previous section in this series.

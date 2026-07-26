@@ -181,3 +181,8 @@ print(f'Estimated total: ${total:.2f}')  # ~$136
 | **MCP Servers** | Connecting to external services (CRM, GitHub, Gmail); real-time data; used across many sessions | Query Salesforce, search GitHub issues, read Gmail |
 
 **New Capability:** Dynamic Workflows transform Claude Code from a context-constrained assistant into a massively parallel compute platform. Anthropic used hundreds of parallel agents in the Claude 4.8 internal migration — this architecture is production-validated at scale.
+
+## Related
+
+- [Claude Code, Hooks, Skills & Subagents](27-module-5-claude-code-agents.md) — the previous section in this series.
+- [Safety, Enterprise Deployment & CCA-F Exam Prep (Part 1)](29-module-7-safety-enterprise-exam.md) — the next section in this series.

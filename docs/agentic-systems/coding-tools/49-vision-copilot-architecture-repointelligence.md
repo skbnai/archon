@@ -290,3 +290,8 @@ GitHub's product surface exposes several graph structures that plausibly feed AI
 - The Coding Agent's hard scope limits (single repo, one PR, no vision model, default-branch-only) are real, documented security and reliability boundaries.
 - Repository intelligence relies on a cascading, gracefully-degrading retrieval strategy (remote search → local lexical → local embeddings → heuristics) — this is the best-evidenced architectural claim in this section, grounded in both GitHub's own blog (embedding model improvements) and independent reverse-engineering of open-source client code.
 - Many graph-based context sources (dependency graph, ownership graph, code navigation graph) exist on the platform but their direct wiring into AI retrieval is inferred, not confirmed.
+
+## Related
+
+- [Git Internals](48-git-internals.md) — the previous section in this series.
+- [GitHub Architecture & Actions Deep Dive](50-github-architecture-and-actions.md) — the next section in this series.

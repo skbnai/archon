@@ -664,3 +664,8 @@ main_queue = sqs.create_queue(
 ---
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/agentic-ui/parts/18-scalability-engineering-part2) for backpressure, autoscaling, concurrency management, multi-region deployment, GPU scheduling, connection pooling, and capacity planning.**
+
+## Related
+
+- [Performance Engineering for Agentic Applications](15-performance-engineering.md) — the performance discipline scalability builds on.
+- [Reliability Engineering for Agentic Applications](16-reliability-engineering.md) — a related non-functional discipline.

@@ -159,3 +159,7 @@ Use these formulas to budget your Claude API spend before production launch:
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/24-module-1-claude-foundations-part2) for token economics, safety philosophy, deployment channels, and CCA-F certification pathway.**
+
+## Related
+
+- [Prompt Engineering & Optimization — Complete Reference](25-module-3-prompt-engineering.md) — the next section in this series.

@@ -316,3 +316,8 @@ The future is not one or the other. It is building the judgment to know which la
 ---
 
 **Related sections**: [Workflow vs Agent Architecture](./03-workflow-vs-agent-architecture.md) · [Temporal Deep Dive](./04-temporal-deep-dive.md) · [Memory vs Workflow State](./13-memory-vs-workflow-state.md) · [Reliability Playbook](./15-reliability-playbook.md)
+
+## Related
+
+- [Camunda Deep Dive - BPMN, BPM, and AI Integration](05-camunda-deep-dive.md) — the previous section in this series.
+- [AI Coding Orchestrators - Claude Code, GitHub Copilot, and the Meta-Orchestrator Pattern](07-ai-coding-orchestrators.md) — the next section in this series.

@@ -266,3 +266,7 @@ Model assets represent the foundation computational units that agents and evalua
 ---
 
 **[Continue to Part 2 →](pathname:///archon/agentic-systems/core/parts/13-enterprise-agentic-ai-asset-management-2026-part2)**
+
+## Related
+
+- [Enterprise Agentic Platform Best Practices](10-agentic-platform-bestpractices.md) — the platform practices this asset-management discipline complements.

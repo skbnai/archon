@@ -91,3 +91,8 @@ wanting one tool for both code generation and review gravitate here; teams for w
 Independent 2026 benchmarking (drawing on standardized code-review evaluation sets and real-world PR testing across open-source projects) gives a genuinely useful signal that didn't exist reliably in this category before — though as with any benchmark, the numbers should be read as directional rather than as a precise ranking that will hold on any specific team's codebase and language mix.
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/44-pr-review-handbook-vol3-ai-assisted-review-part2) for continued content.**
+
+## Related
+
+- [THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)](43-pr-review-handbook-vol2-deep-domain-reviews.md) — the previous section in this series.
+- [THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)](45-pr-review-handbook-vol4-agentic-review-architecture.md) — the next section in this series.

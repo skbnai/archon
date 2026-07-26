@@ -264,3 +264,8 @@ graph TD
 ---
 
 **This is Part 1 of 4. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/09-git-github-platform-engineering-handbook-part2) for GitHub Platform Depth & CI/CD.**
+
+## Related
+
+- [GitHub Copilot Big Wins & Automation Research Playbook](10-github-copilot-big-wins-research.md) — the automation playbook that builds on this platform handbook.
+- [Git Internals](48-git-internals.md) — deeper technical detail underneath this platform handbook.

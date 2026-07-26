@@ -349,3 +349,8 @@ AWS Bedrock AgentCore Runtime provides managed infrastructure for deploying AI a
 |server integration)<br/>• Auto-scaling for concurrent agent execution<br/>• Native observability integration with CloudWatch<br/>and X-Ray|• Less flexibility for custom agent frameworks<br/>(LangChain, custom Python)<br/>• Vendor lock-in risk for core agent orchestration<br/>• Pricing model still evolving|
 |• IAM-native access control for agent permissions<br/>• Integration with Parameter Store and Secrets<br/>Manager for agent configuration<br/>• Multi-agent orchestration support<br/>• Built-in retry and timeout handling<br/>• Bedrock Guardrails integration for real-time safety<br/>enforcement|• Limited support for complex multi-step workflow<br/>orchestration|
 |→AWS-native agent deployments using Bedrock<br/>models<br/>→<br/>Rapid<br/>agent<br/>deployment<br/>without<br/>custom<br/>infrastructure<br/>→Agents requiring built-in memory and tool<br/>management<br/>→Enterprises wanting fully managed agent runtime|Multi-cloud or model-agnostic agent frameworks<br/>Complex custom agent orchestration patterns<br/>Organizations with strict vendor lock-in policies|
+
+## Related
+
+- [Enterprise PromptOps: Prompt Lifecycle Management for AWS AgentCore Runtime](08-enterprise-promptops-aws-agentcore-2026.md) — the companion prompt-lifecycle discipline on the same platform.
+- [Multi-Tenant Agent Platform Architecture](09-multitenantagentplatform-architecture.md) — the platform this configuration management operates within.

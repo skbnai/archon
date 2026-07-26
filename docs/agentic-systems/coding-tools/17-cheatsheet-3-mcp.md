@@ -221,3 +221,8 @@ ERRORS: Returns null if order not found.
 **✓ Include DO NOT USE section to prevent misrouting to similar tools**
 
 **⚠️ System prompt keywords can create unintended tool associations — audit your prompts**
+
+## Related
+
+- [Agent SDK Cheat Sheet](16-cheatsheet-2-agent-sdk.md) — the previous section in this series.
+- [AI Fluency Cheat Sheet](18-cheatsheet-4-ai-fluency.md) — the next section in this series.

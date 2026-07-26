@@ -177,3 +177,8 @@ Each agent below maps to a domain from Volumes 1–2 and is specified using a co
 |**Policies**|New logic requires a corresponding test exercising both the happy path and at least one<br/>failure path (Volume 1, Section 2.9).|
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/45-pr-review-handbook-vol4-agentic-review-architecture-part2) for continued content.**
+
+## Related
+
+- [THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)](44-pr-review-handbook-vol3-ai-assisted-review.md) — the previous section in this series.
+- [THE ENTERPRISE PR REVIEW PLAYBOOK (Part 1)](46-pr-review-handbook-vol5-case-studies-maturity-model.md) — the next section in this series.

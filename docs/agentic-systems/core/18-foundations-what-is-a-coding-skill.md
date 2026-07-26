@@ -101,3 +101,8 @@ Both are necessary; neither substitutes for the other. The empirical Vercel find
 4. **Is it a one-off instruction for this single conversation?** → Neither; just say it in the prompt.
 5. **Does an existing skill already cover this?** → Extend it; don't fork (file `11`).
 6. **Would combining this with AGENTS.md make that file unwieldy or slow down every single turn** with content only occasionally needed? → Split it out into a Skill, and add one line to AGENTS.md pointing to it — directly following the Vercel-validated "AGENTS.md as router" pattern.
+
+## Related
+
+- [Agent Skills & Skill Registries — Complete Playbook 2026 (Part 1)](16-agent-skills-complete-playbook-2026.md) — the previous section in this series.
+- [Skill Discovery & Execution Lifecycle](19-discovery-and-execution-lifecycle.md) — the next section in this series.

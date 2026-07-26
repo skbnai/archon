@@ -82,3 +82,8 @@ These are **backend systems**, accessed via **Tools** (often MCP-hosted: e.g., A
 2. **Putting authentication logic inside skill instructions** ("first call the auth endpoint with these headers..."). Auth belongs to the MCP server / gateway layer, which should present the agent with an already-authenticated tool call.
 3. **Encoding cross-system orchestration entirely in one mega-skill** instead of decomposing into a supervisor pattern that delegates to domain skills and, where the domains are owned by separate teams/systems, to peer agents over A2A (file `07`).
 4. **Treating a vector database as a tool an agent calls raw** rather than through a retrieval Tool that encodes query construction, filtering, and result shaping — this pushes fragile, hard-to-govern logic into every skill that needs retrieval instead of centralizing it once.
+
+## Related
+
+- [Skill Execution Lifecycle & Tracing](30-execution-lifecycle-and-tracing.md) — the previous section in this series.
+- [Tool Definition Best Practices](32-tool-definition-best-practices.md) — the next section in this series.

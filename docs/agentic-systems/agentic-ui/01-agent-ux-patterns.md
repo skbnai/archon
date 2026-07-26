@@ -423,4 +423,7 @@ graph LR
 - Risk of individual step error is low and recoverable
 - Volume of work exceeds human capacity
 
+## Related
 
+- [AGUI Standards & Ecosystem Landscape](02-agui-standards-landscape.md) — the emerging standards behind these UX patterns.
+- [Evolution of Human-AI Interfaces](09-evolution-human-ai-interfaces.md) — the historical arc this taxonomy sits within.

@@ -69,3 +69,8 @@ supersedes: ["docs/agentic-systems/skill/coding/08-mcp-integration-and-memory.md
 ### 12.4 Governance note
 
 Memory in coding-agent tooling today is overwhelmingly **local and unmanaged** compared to the increasingly formal memory architectures emerging in enterprise agent platforms (companion package: AWS AgentCore's episodic memory, Azure Foundry's procedural memory). For teams operating at scale, this is a gap worth closing deliberately: treat repository-scoped memory with the same review discipline as AGENTS.md (file `10`), since a poisoned or incorrect memory entry persists and compounds exactly the way a bad standing instruction does.
+
+## Related
+
+- [VS Code & Dev Containers Integration](23-vscode-devcontainers-integration.md) — the previous section in this series.
+- [Multi-Agent Skills & Observability](25-multi-agent-and-observability.md) — the next section in this series.

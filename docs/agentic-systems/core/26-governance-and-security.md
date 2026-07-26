@@ -111,3 +111,8 @@ The layered security architecture for coding agents consists of five key control
 - **Read-only-by-default for anything with a write mode**: database MCP servers, cloud MCP servers, and terminal tools should default to the least-privileged mode (Codex CLI's own default posture is the clearest vendor-endorsed example) and require explicit elevation.
 - **Human-in-the-loop checkpoints are a design requirement, not a UX inconvenience** — every long-horizon agent studied (Devin, GitHub Copilot Workspace) surfaces a plan and asks for approval before destructive actions specifically because unattended, high-autonomy operation without checkpoints is where the worst documented incidents originate.
 - **Approval fatigue is a real, named failure mode** — the fix is not "prompt less" but "sandbox more, so that fewer prompts are actually necessary because the blast radius of an unreviewed action is already contained."
+
+## Related
+
+- [Multi-Agent Skills & Observability](25-multi-agent-and-observability.md) — the previous section in this series.
+- [Evaluation, Reusability & Deduplication](27-evaluation-reusability-deduplication.md) — the next section in this series.

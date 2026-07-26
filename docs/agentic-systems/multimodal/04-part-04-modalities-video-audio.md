@@ -232,3 +232,8 @@ Diarization answers "who spoke when?" — a prerequisite for call analytics and 
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/04-part-04-modalities-video-audio-part2) for Enterprise Pipelines, Use Cases, and Interview Examples.**
+
+## Related
+
+- [Part 3 — Image & Document Intelligence](03-part-03-modalities-image-document.md) — the previous section in this series.
+- [Part 07 — Security & Threat Taxonomy for Multimodal AI](07-part-07-security-threats.md) — the next section in this series.

@@ -306,3 +306,8 @@ ocr_confidence = Histogram(
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/12-part-12-observability-finops-part2) for FinOps strategy, cost optimization, and governance.**
+
+## Related
+
+- [Part 11 — Evaluation Harnesses & CI/CD for Multimodal AI](11-part-11-evaluation-harnesses-cicd.md) — the previous section in this series.
+- [Part 13 — Enterprise Governance & Production Engineering for Multimodal AI](13-part-13-governance-production.md) — the next section in this series.

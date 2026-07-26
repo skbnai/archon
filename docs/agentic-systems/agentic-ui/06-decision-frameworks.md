@@ -15,3 +15,8 @@ covers_version: "as of 2026-07-10"
 # Decision Frameworks
 
 This guide is coming soon. See the [Agentic UI Overview](../index.md) for related content.
+
+## Related
+
+- [Anti-pattern Catalog for Agentic Applications](03-anti-patterns.md) — what these decision frameworks help you avoid.
+- [Agentic Application Lifecycle](04-application-lifecycle.md) — where these decisions get made in practice.

@@ -984,3 +984,8 @@ async def aggregate_reports(regions: list[str]) -> dict:
 ---
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/30-claude-agent-sdk-production-part2) for Production Patterns and Observability, or [skip to Part 3 →](pathname:///archon/agentic-systems/coding-tools/parts/30-claude-agent-sdk-production-part3) for Best Practices and Testing.**
+
+## Related
+
+- [Claude API Mastery](31-claude-api-mastery.md) — the API layer underneath this SDK.
+- [Claude Enterprise Deployment 2026](34-claude-enterprise-2026.md) — enterprise deployment context for production SDK use.

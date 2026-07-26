@@ -92,3 +92,8 @@ In the enterprise case (companion package file `06`), a central platform team ca
 - **Instructions/prompts**: the single-canonical-source pattern above.
 - **Slash commands**: overlapping slash commands across tools for the same underlying procedure should point to the same underlying skill content, not separately maintained near-duplicates.
 - **Capability definitions generally**: the same discipline as the enterprise case — before authoring, search first (file `18`'s catalog mechanisms); author only when a genuine gap is confirmed.
+
+## Related
+
+- [Governance & Security](26-governance-and-security.md) — the previous section in this series.
+- [Enterprise Workflows & Comparative Analysis](28-enterprise-workflows-comparative-analysis-and-patterns.md) — the next section in this series.

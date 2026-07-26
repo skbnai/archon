@@ -135,3 +135,8 @@ argument-hint: "File path or module name of the test target"
 A diff containing the new/updated test file(s), plus a one-line summary
 of what behaviors are now covered.
 ```
+
+## Related
+
+- [Skills vs. MCP & the Full Responsibility Stack](20-skills-tools-mcp-relationship.md) — the previous section in this series.
+- [Repository Context Engineering](22-repository-context-engineering.md) — the next section in this series.

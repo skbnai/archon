@@ -503,3 +503,8 @@ async def store_interaction_summary(user_sub: str, tenant_id: str, ft_rights: li
 ---
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/core/parts/10-agentic-platform-bestpractices-part2) for multitenancy, MCP, and ADFS. [Part 3 →](pathname:///archon/agentic-systems/core/parts/10-agentic-platform-bestpractices-part3) covers observability, governance, and roadmap.**
+
+## Related
+
+- [Multi-Tenant Agent Platform Architecture](09-multitenantagentplatform-architecture.md) — a concrete architecture these best practices apply to.
+- [Enterprise Agentic AI Asset Management 2026](13-enterprise-agentic-ai-asset-management-2026.md) — the asset-management discipline that complements these practices.

@@ -165,3 +165,7 @@ Claude Code's built-in tools have precise, non-overlapping use cases. Using the 
 ---
 
 **This is Part 1 of 3. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/32-claude-best-practices-part2) for configuration and workflows.**
+
+## Related
+
+- [Claude & GitHub Agents: Best Practices Guide (v2)](36-claude-agents-best-practices.md) — the updated, agent-focused successor to this guide.

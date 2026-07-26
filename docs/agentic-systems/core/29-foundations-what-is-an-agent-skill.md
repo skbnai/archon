@@ -97,3 +97,7 @@ Decision checklist, in order:
 5. **Would combining this with an existing Skill create instruction conflicts or context bloat** (mutually exclusive contexts, e.g., US tax rules vs. EU tax rules)? If yes, prefer a *new, separate* Skill over cramming an `if/else` into one bloated file — Anthropic's own authoring guidance explicitly recommends splitting mutually-exclusive content into separate files/skills to reduce token usage and avoid the model conflating contexts.
 
 The overarching test used across every platform studied: **a Skill should be scoped narrowly enough that its name and one-paragraph description alone let the agent (and a human reviewer) correctly predict when it will and won't be used.** If you can't write that description in a paragraph, the Skill is trying to do too much and should be split.
+
+## Related
+
+- [Skill Execution Lifecycle & Tracing](30-execution-lifecycle-and-tracing.md) — the next section in this series.

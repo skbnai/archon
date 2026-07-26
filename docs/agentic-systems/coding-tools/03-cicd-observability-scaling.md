@@ -129,3 +129,8 @@ As established in earlier sections, no source reviewed for this report describes
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/03-cicd-observability-scaling-part2.md) for Scaling Challenges.**
+
+## Related
+
+- [Security Architecture & Enterprise AI Governance (Part 1)](02-security-governance.md) — the previous section in this series.
+- [Enterprise GitHub, APIs & Apps (Part 1)](04-enterprise-apis-apps-cli.md) — the next section in this series.

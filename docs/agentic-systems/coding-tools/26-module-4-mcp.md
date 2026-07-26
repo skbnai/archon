@@ -179,3 +179,8 @@ if __name__ == '__main__':
 | **Error messages** | Return generic errors to Claude. Log details server-side only. Never expose stack traces or paths. |
 
 **Critical:** MCP servers inherit OS permissions of the launching process. Never run MCP servers as root or with broad filesystem access. A compromised server can read files, call networks, and execute commands at that permission level.
+
+## Related
+
+- [Prompt Engineering & Optimization — Complete Reference](25-module-3-prompt-engineering.md) — the previous section in this series.
+- [Claude Code, Hooks, Skills & Subagents](27-module-5-claude-code-agents.md) — the next section in this series.

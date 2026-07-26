@@ -188,3 +188,8 @@ The EU AI Act (effective August 2024, full enforcement August 2026) classifies A
 ---
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/multimodal/parts/09-part-09-compliance-responsible-ai-part2) for biometric governance, responsible AI, content provenance, and interview use cases.**
+
+## Related
+
+- [Part 8 — Guardrails & Sanitization for Multimodal AI](08-part-08-guardrails-sanitization.md) — the previous section in this series.
+- [Part 10 — Evaluation & Benchmarks for Multimodal AI](10-part-10-evaluation-benchmarks.md) — the next section in this series.

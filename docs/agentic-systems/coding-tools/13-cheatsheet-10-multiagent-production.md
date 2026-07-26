@@ -358,3 +358,8 @@ When subagent hits max_tokens:
 ```
 
 **This is Part 1 of 2. [Continue with Part 2 →](pathname:///archon/agentic-systems/coding-tools/parts/13-cheatsheet-10-multiagent-production-part2) for citation systems, error recovery, agent architectures, anti-patterns, complete examples, and production checklist.**
+
+## Related
+
+- [MCP Pipeline Error & Context Handling](14-cheatsheet-11-mcp-pipeline-errors.md) — the companion cheatsheet on MCP-specific production failures.
+- [Claude Code Agents & Parallelism](22-cheatsheet-9-agents-parallelism.md) — the parallelism cheatsheet this production guidance builds on.
