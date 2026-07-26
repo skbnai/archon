@@ -27,6 +27,7 @@ re-integrating from scratch every time.
 - Model Context Protocol (MCP) hub and changelog
 - Agent2Agent (A2A) protocol
 - Emerging agent interoperability standards
+- Workflow protocols (BPMN as an interchange standard vs. code-first orchestration)
 - Agent identity and authentication
 - Connectors
 

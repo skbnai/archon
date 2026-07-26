@@ -861,4 +861,5 @@ Real systems combine patterns. Most common compositions:
 - [MCP & A2A Protocol Deep Dive](58-mcp-a2a-protocol-deep-dive.md) — the interop protocols these topologies communicate over.
 - [Agentic AI Landing Zone: Multi-Agent Reference Architectures](28-agentic-ai-landing-zone-multiagent.md) — a landing-zone-level implementation of these topology patterns.
 - [AI Harness Architecture & Multi-Agent Orchestration](44-ai-harness-architecture-orchestration.md) — the orchestration harness these topologies run inside.
+- [Architecture Styles: A Decision Guide for AI Systems](88-architecture-styles.md) — where the agent-based style catalogued here sits among the other architecture styles it typically composes with.
 

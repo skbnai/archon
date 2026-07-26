@@ -5703,3 +5703,19 @@ topics:
     aliases: []
     supersedes: []
     pages: []
+  - id: architecture-styles
+    domain: architecture
+    canonical: docs/architecture/88-architecture-styles.md
+    aliases:
+    - architectural styles catalog
+    - architecture style comparison
+    supersedes: []
+    pages: []
+  - id: workflow-protocols-bpmn-temporal
+    domain: protocols
+    canonical: docs/protocols/24-workflow-protocols-bpmn-temporal.md
+    aliases:
+    - bpmn protocol
+    - workflow orchestration protocols
+    supersedes: []
+    pages: []

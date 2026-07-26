@@ -445,6 +445,7 @@ Choose HYBRID if:
 
 - [Temporal Deep Dive - Architecture, Patterns, and AI Integration](04-temporal-deep-dive.md) — the previous section in this series.
 - [Durable Execution vs. Cognitive Execution](06-durable-vs-cognitive-execution.md) — the next section in this series.
+- [Workflow Protocols: BPMN vs. Code-First Orchestration](../../protocols/24-workflow-protocols-bpmn-temporal.md) — why BPMN's standardization matters at the protocol level, beyond Camunda's own implementation of it.
 
 ---
 

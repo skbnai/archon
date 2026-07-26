@@ -383,6 +383,7 @@ flowchart TD
 
 - [Workflow vs Agent Architecture - Determinism, Adaptivity, and Design Principles](03-workflow-vs-agent-architecture.md) — the previous section in this series.
 - [Camunda Deep Dive - BPMN, BPM, and AI Integration](05-camunda-deep-dive.md) — the next section in this series.
+- [Workflow Protocols: BPMN vs. Code-First Orchestration](../../protocols/24-workflow-protocols-bpmn-temporal.md) — the protocol-level (standardization/portability) framing of this comparison.
 
 ---
 
