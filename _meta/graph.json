@@ -533,7 +533,7 @@
    "domain": "protocols",
    "doc_type": "hub",
    "topic_id": "hub-protocols",
-   "status": "draft",
+   "status": "current",
    "tags": [
     "hub",
     "protocols"
@@ -1234,7 +1234,7 @@
    "domain": "data-knowledge",
    "doc_type": "hub",
    "topic_id": "hub-data-knowledge",
-   "status": "draft",
+   "status": "current",
    "tags": [
     "hub",
     "data-knowledge"
@@ -1392,7 +1392,7 @@
    "domain": "agentic-systems",
    "doc_type": "hub",
    "topic_id": "hub-agentic-systems",
-   "status": "draft",
+   "status": "current",
    "tags": [
     "hub",
     "agentic-systems"
@@ -8426,7 +8426,7 @@
    "domain": "architecture",
    "doc_type": "hub",
    "topic_id": "hub-architecture",
-   "status": "draft",
+   "status": "current",
    "tags": [
     "hub",
     "architecture"
