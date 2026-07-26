@@ -489,6 +489,12 @@ graph TD
 
 ---
 
+## Related
+
+- [ACP & ANP Deep Dives](18-emerging-protocols-acp-anp.md), [AG-UI & UTCP Deep Dive](19-emerging-protocols-agui-utcp.md), and [UCP, AP2, NLIP & LMOS Deep Dives](22-emerging-protocols-ucp-ap2-nlip-lmos.md) — the individual protocol deep dives this overview summarizes.
+- [Cross-Cutting Architecture](20-emerging-protocols-crosscutting.md) — security, governance, and observability concerns spanning all of these protocols.
+- [Existing Protocol Evolution for Agentic AI](23-existing-protocol-evolution-agentic-ai.md) — how established protocols evolved rather than being replaced.
+
 ## Navigation
 
 **Next part:** [Convergence & Merger Scenarios (Part 2) — 5-Year Outlook, Vendor Dynamics & Technology Radar](pathname:///archon/protocols/parts/21-emerging-protocols-overview-part2.md)

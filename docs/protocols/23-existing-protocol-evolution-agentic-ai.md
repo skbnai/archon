@@ -538,4 +538,9 @@ None of these changes required a new transport layer. The "agentic web" runs on 
 
 ---
 
-**Related:** [Protocols Hub](index.md) · [Agent Protocol Metadata & Headers](./17-agent-protocol-metadata-headers.md) · [MCP & A2A Deep Dive](pathname:///archon/architecture/58-mcp-a2a-protocol-deep-dive)
+## Related
+
+- [Protocols Hub](index.md) — the full protocol landscape this evolution history sits within.
+- [Agent Protocol Metadata, Headers & Capability Negotiation](17-agent-protocol-metadata-headers.md) — how these evolved protocols express metadata and capability negotiation.
+- [Emerging AI Agent Protocols Overview](21-emerging-protocols-overview.md) — the newer protocols built on top of this evolved foundation.
+- [MCP & A2A Protocol Deep Dive](../architecture/58-mcp-a2a-protocol-deep-dive.md) — the architecture-side deep dive on how these protocols are actually implemented in systems.

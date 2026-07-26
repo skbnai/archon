@@ -209,3 +209,9 @@ Production enterprise AI deployments follow established architecture patterns th
 - Audit all token issuances, refreshes, and revocations with correlation to conversation IDs
 - Implement token binding where supported (bind token to TLS session) to prevent exfiltration
 - Maintain a token revocation list (JTI-based) for high-security contexts
+
+## Related
+
+- [Enterprise AI Platform Authentication Survey](02-enterprise-ai-platform-auth-survey.md) — how these connector patterns compare across major AI platforms.
+- [Tool Authentication & Connector Models](12-tool-authentication-connectors.md) — the OAuth/SAML/API-key/PAT models underlying these marketplace connectors.
+- [Trust Hub](../trust/index.md) — broader guardrails and identity/authz frameworks these patterns should comply with.

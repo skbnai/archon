@@ -333,6 +333,12 @@ CVE-2025-6514 (mcp-remote): command injection in a commonly used wrapper package
 
 Perhaps the most operationally dangerous: insufficient logging, monitoring, and attribution across MCP actions. In a multi-server, multi-agent deployment, a compromised agent can take harmful actions with no forensic trail. MCP's core protocol carries no audit log primitives — this is entirely delegated to implementations, which often don't implement it.
 
+## Related
+
+- [Enterprise MCP Security, Authorization & Governance (2026)](14-mcp-enterprise-security-governance-operations-2026.md) — deeper dive on the security and governance gaps identified here.
+- [MCP Harness Engineering](15-mcp-harness-aidlc.md) — how to test and evaluate MCP deployments across the AI development lifecycle.
+- [Agentic Systems Hub](../agentic-systems/index.md) — the agent architectures MCP connects to tools and data.
+
 ---
 
 [Continue with Part 2 →](pathname:///archon/protocols/parts/13-mcp-deep-research-2026-part2.md)

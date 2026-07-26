@@ -725,6 +725,12 @@ message CapabilityResponse {
 
 ---
 
+## Related
+
+- [Emerging AI Agent Protocols Overview](21-emerging-protocols-overview.md) — the landscape these cross-cutting concerns apply across.
+- [Enterprise MCP Security, Authorization & Governance (2026)](14-mcp-enterprise-security-governance-operations-2026.md) — the equivalent cross-cutting security/governance treatment for MCP specifically.
+- [Trust Hub](../trust/index.md) — the broader security, governance, and compliance framework catalog this cross-cutting analysis maps into.
+
 ## Navigation
 
 **Next part:** [Cross-Cutting Architecture (Part 2) — Versioning, Compatibility, Failure Handling, Observability & Compliance](pathname:///archon/protocols/parts/20-emerging-protocols-crosscutting-part2.md)

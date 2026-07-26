@@ -402,6 +402,12 @@ A healthcare organization deployed AG-UI with LangGraph for clinical documentati
 
 **Navigation:** [View Part 2 — UTCP Analysis &amp; Synthesis](pathname:///archon/protocols/parts/19-emerging-protocols-agui-utcp-part2.md)
 
+## Related
+
+- [Emerging AI Agent Protocols Overview](21-emerging-protocols-overview.md) — the landscape this AG-UI/UTCP deep dive is one section of.
+- [ACP & ANP Deep Dives](18-emerging-protocols-acp-anp.md) — the sibling deep dive covering the other emerging protocols.
+- [Agent Protocol Metadata, Headers & Capability Negotiation](17-agent-protocol-metadata-headers.md) — how AG-UI's SSE-based metadata compares to MCP/A2A/ANP.
+
 ---
 
 &gt; **Document metadata**: Part 1 of "Emerging AI Agent Protocols Beyond MCP &amp; A2A — Enterprise Architecture, Standards, Security, and Adoption" (July 2026 edition). Section 2B: AG-UI &amp; UTCP Deep Dive. Research current as of 2026-07-11. Protocol status subject to rapid change; verify against primary sources before implementation decisions.

@@ -238,3 +238,10 @@ Use this decision framework when adding a new tool connector to an enterprise AI
 | SCIM | System for Cross-domain Identity Management; protocol for automated user provisioning |
 | PAT | Personal Access Token; long-lived credential used in place of passwords for API access |
 | Zero Trust | Security model: never trust, always verify; authenticate and authorize every request |
+
+## Related
+
+- [Identity, OBO & Sessions](05-identity-obo-sessions.md) — how these standards apply to on-behalf-of and long-running agent sessions.
+- [Authentication & Identity Flows](07-auth-identity-flows.md) — a complete Azure-based reference architecture built on these standards.
+- [Tool Authentication & Connector Models](12-tool-authentication-connectors.md) — applying these standards to specific connector auth patterns.
+- [Trust Hub](../trust/index.md) — the broader identity/authz and guardrails catalog these standards feed into.

@@ -284,3 +284,9 @@ Salesforce uses OAuth 2.0 as its primary API authentication mechanism. For AI ag
 - Implement automatic refresh token rotation; treat refresh tokens as high-value secrets
 - Use Continuous Access Evaluation (CAE) where available (Microsoft 365, Entra ID)
 - Audit all token issuances and API calls; correlate with conversation/session IDs
+
+## Related
+
+- [Auth Standards Reference](01-auth-standards-reference.md) — the OAuth/OIDC standards these connector models implement.
+- [Marketplace Connector Auth Patterns](03-marketplace-connector-auth-patterns.md) — marketplace-specific applications of these tool auth models.
+- [Enterprise AI Platform Authentication Survey](02-enterprise-ai-platform-auth-survey.md) — how major AI platforms implement these connector models in practice.

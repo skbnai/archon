@@ -202,3 +202,9 @@ A critical security principle is that OAuth scopes granted for one service must 
 - NEVER include access tokens in LLM input or output (prompt injection risk)
 - NEVER allow the LLM to directly construct API URLs — use typed tool schemas only
 - NEVER skip per-service authorization checks in the name of performance
+
+## Related
+
+- [Auth Standards Reference](01-auth-standards-reference.md) — the OAuth 2.1/RFC 8693 token-exchange standards these OBO patterns implement.
+- [Authentication & Identity Flows](07-auth-identity-flows.md) — a complete reference architecture using these session and OBO patterns.
+- [Agent Identity for AI Systems — Research 2026](04-agentidentity-research-2026.md) — broader agent-identity landscape this fits within.

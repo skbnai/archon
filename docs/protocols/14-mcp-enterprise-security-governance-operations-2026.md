@@ -442,6 +442,12 @@ Validation at MCP server:
   agent:crm: registered? tool in allowed_tools? schema hash current?
 ```
 
+## Related
+
+- [MCP Deep Research 2026](13-mcp-deep-research-2026.md) — the architecture and capability foundations this security/governance layer sits on top of.
+- [MCP Harness Engineering](15-mcp-harness-aidlc.md) — continuous testing and red-teaming practices for the controls described here.
+- [Trust Hub](../trust/index.md) — the broader governance and compliance frameworks this MCP-specific guidance maps into.
+
 ---
 
 [Continue with Part 2 →](pathname:///archon/protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2.md)

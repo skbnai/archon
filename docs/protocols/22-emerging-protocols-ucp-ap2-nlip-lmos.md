@@ -457,6 +457,12 @@ For merchants without UCP-native server infrastructure, the UCP specification de
 
 UCP's DPA token model is designed to integrate with enterprise identity providers implementing OpenID Connect 1.0. The DPA token is an OIDC-derived assertion. Microsoft Entra ID, Okta, and Google Workspace all have documented patterns for issuing DPA tokens through custom claims in OIDC ID tokens or dedicated assertion issuance flows.
 
+## Related
+
+- [Emerging AI Agent Protocols Overview](21-emerging-protocols-overview.md) — the landscape this UCP/AP2/NLIP/LMOS deep dive is one section of.
+- [ACP & ANP Deep Dives](18-emerging-protocols-acp-anp.md) — the sibling deep dive covering the other emerging protocols.
+- [Auth Standards Reference](01-auth-standards-reference.md) — the OIDC foundations UCP's DPA token model builds on.
+
 ---
 
 **Next:** [Part 2 — AP2, NLIP & Protocol Integration](pathname:///archon/protocols/parts/22-emerging-protocols-ucp-ap2-nlip-lmos-part2.md)
