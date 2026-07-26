@@ -25,6 +25,7 @@ audit.
 ## Scope
 
 - Architectural foundations and landing zones
+- Architecture styles catalog and decision guidance
 - Reference architecture catalog
 - Pattern and anti-pattern catalogs
 - ADR library
