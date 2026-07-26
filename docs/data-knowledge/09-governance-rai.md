@@ -101,6 +101,12 @@ A well-designed RAG system directly supports several Act requirements: **source 
 
 ---
 
+## Related
+
+- [Evaluation & Quality Gates](08-evaluation.md) — how the governance requirements here get enforced as measurable, CI-gated checks.
+- [End-to-End Lineage for AI-Era Data Systems](04-end-to-end-lineage-systems-report.md) — the traceability layer governance and compliance reporting depend on.
+- [Trust Hub](../trust/index.md) — the broader RAI/constitutional and compliance framework catalog this domain-specific governance connects to.
+
 ## Sources
 
 - [Enterprise RAG platforms comparison — the missing governance layer (Atlan)](https://atlan.com/know/enterprise-rag-platforms-comparison/)

@@ -81,6 +81,12 @@ Two refinements define the leading edge in 2026:
 
 ---
 
+## Related
+
+- [Complex RAG Systems: Deep Technical Guide](13-complex-rag-deep-dive.md) — the production-engineering detail (chunking, indexing, temporal QA) behind these grounding patterns.
+- [Enterprise Knowledge Architectures Report](14-enterprise-knowledge-architectures-report.md) — the knowledge-graph and GraphRAG modeling this grounding approach draws on.
+- [Evaluation & Quality Gates](08-evaluation.md) — how groundedness is measured and gated in production.
+
 ## Sources
 
 - [RAG in Production 2026: GraphRAG, Hybrid Retrieval, and Evals (AI Learning Guides)](https://ailearningguides.com/rag-production-patterns-2026/)

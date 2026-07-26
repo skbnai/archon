@@ -826,3 +826,9 @@ You cannot improve what you do not measure. Every production RAG system must hav
 | Hallucination Rate | Does the answer contain facts not in any retrieved chunk? | &lt;0.05 | LLM judge: fact-check every claim against context |
 
 *Complex RAG Systems — Deep Technical Guide | Enterprise Architect Interview Prep | March 2026*
+
+## Related
+
+- [Grounding Architectures](10-grounding.md) — the production grounding patterns this deep-dive's indexing and retrieval techniques support.
+- [Data Architecture for AI: Foundations & Infrastructure](03-data-architecture-for-ai-report.md) — the vector-DB and semantic-layer foundations these RAG techniques run on.
+- [Enterprise Knowledge Architectures Report](14-enterprise-knowledge-architectures-report.md) — knowledge-graph-based alternatives to the chunking/indexing approaches covered here.

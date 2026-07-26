@@ -92,6 +92,12 @@ Inference-layer evals (all three frameworks) can detect an answer that contradic
 
 ---
 
+## Related
+
+- [Grounding Architectures](10-grounding.md) — the retrieval patterns these evaluation gates measure.
+- [Governance & Responsible AI for Knowledge Systems](09-governance-rai.md) — the regulatory context that makes systematic evaluation a compliance requirement, not just a quality nicety.
+- [Operations Hub](../operations/index.md) — the broader evaluation and benchmark practice this domain-specific evaluation work plugs into.
+
 ## Sources
 
 - [RAGAS, TruLens, DeepEval: LLM Evaluation Frameworks Compared (Atlan)](https://atlan.com/know/llm-evaluation-frameworks-compared/)

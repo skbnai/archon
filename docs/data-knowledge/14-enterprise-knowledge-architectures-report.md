@@ -320,6 +320,12 @@ A knowledge model designed primarily for human consumption (e.g., a knowledge gr
 
 Grounding — connecting an AI system's outputs to verifiable, enterprise-specific information rather than relying solely on the model's parametric (training-time) knowledge — is the primary justification for enterprise knowledge architecture investment in the AI era. This section examines how the components from Sections 1-4 contribute to grounding, and where grounding can fail despite a knowledge architecture being technically present.
 
+## Related
+
+- [Grounding Architectures](10-grounding.md) — how this report's modeling approaches translate into production grounding.
+- [Complex RAG Systems: Deep Technical Guide](13-complex-rag-deep-dive.md) — implementation-level detail for the retrieval patterns this report models conceptually.
+- [Data Architecture for AI: Foundations & Infrastructure](03-data-architecture-for-ai-report.md) — where knowledge graphs fit among the other foundational data-layer components.
+
 ---
 
 **Continue to Part 2:** For investigation of multi-hop reasoning, semantic retrieval, knowledge governance, and GraphRAG comparison with traditional architectures, see [Part 2: AI Grounding Deep-Dive & Architectures](pathname:///archon/data-knowledge/parts/05-enterprise-knowledge-architectures-report-part2).

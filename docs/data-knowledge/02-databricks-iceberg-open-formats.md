@@ -380,6 +380,11 @@ Databricks' stated long-term strategy is an **open, Iceberg-compatible, agent-na
 
 ---
 
+## Related
+
+- [Databricks Lakehouse Architecture & Real-Time Infrastructure](01-databricks-lakehouse-data-infrastructure.md) — the lakehouse layer these table formats sit inside.
+- [Data Architecture for AI: Foundations & Infrastructure](03-data-architecture-for-ai-report.md) — broader foundations context for table-format choice.
+
 ## Sources
 
 - [Apache Iceberg v3 Public Preview on Databricks](https://www.databricks.com/blog/next-era-open-lakehouse-apache-icebergtm-v3-public-preview-databricks)

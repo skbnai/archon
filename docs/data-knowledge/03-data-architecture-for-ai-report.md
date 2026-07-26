@@ -597,6 +597,12 @@ Key decision criteria when selecting a vector database:
 
 - **Integration Depth:** LangChain/LlamaIndex: all major platforms supported. Native LLM provider integration: Pinecone (OpenAI), Weaviate (multi-model). Graph+vector: Weaviate, Neo4j.
 
+## Related
+
+- [Enterprise Knowledge Architectures Report](14-enterprise-knowledge-architectures-report.md) — deeper dive on the knowledge-graph modeling layer touched on here.
+- [Complex RAG Systems: Deep Technical Guide](13-complex-rag-deep-dive.md) — production-grade retrieval patterns built on this foundation.
+- [Databricks Lakehouse Architecture & Real-Time Infrastructure](01-databricks-lakehouse-data-infrastructure.md) — one concrete lakehouse implementation of this architecture.
+
 ---
 
 **Continue to [Part 2: Enterprise AI Data Architecture Reference Models, Governance, Case Studies &amp; Trends](pathname:///archon/data-knowledge/parts/01-data-architecture-for-ai-report-part2.md)**

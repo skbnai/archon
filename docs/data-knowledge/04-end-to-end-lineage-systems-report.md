@@ -401,6 +401,12 @@ Agent governance (Part 16 of the companion report) within Collibra's AI Governan
 
 The most active area of standards development relevant to agent lineage is the extension of OpenTelemetry's GenAI semantic conventions (via OpenInference and related efforts) to cover agent-specific span types (tool calls, agent handoffs, multi-step reasoning chains). Arize Phoenix and Langfuse both support these conventions and are the most mature platforms for agent-level trace visualization as of 2026. The gap — connecting these traces to Layers 1-3 and 6 — remains the primary open integration challenge, and is the focus of early-stage efforts (not yet standardized) to propagate trace context across the data-lineage/agent-observability boundary.
 
+## Related
+
+- [Enterprise Data Systems, Streaming & AI Governance](05-enterprise-data-systems-ai-governance-report.md) — the operational data-systems layer this lineage model traces across.
+- [Governance & Responsible AI for Knowledge Systems](09-governance-rai.md) — the compliance and regulatory drivers behind lineage requirements.
+- [Trust Hub](../trust/index.md) — broader compliance and governance frameworks lineage reporting feeds into.
+
 ---
 
 **Continue to [Part 2: Knowledge Lineage, Platform Comparison & Analysis](pathname:///archon/data-knowledge/parts/02-end-to-end-lineage-systems-report-part2)**
