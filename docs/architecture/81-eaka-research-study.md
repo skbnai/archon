@@ -258,3 +258,9 @@ Skills must maintain backward compatibility for at least one major version. Depr
 **Continued in Part 2:** Dynamic Skill Composition, Agent Knowledge Governance, Enterprise Knowledge Graph, MCP Integration, Microsoft Agent Ecosystem Integration.
 
 **See also:** [Part 2 of 3](pathname:///archon/architecture/parts/33-eaka-research-study-part2), [Part 3 of 3](pathname:///archon/architecture/parts/34-eaka-research-study-part3)
+
+## Related
+
+- [AKES Addendum: Document Update & Versioning](78-akes-addendum-document-update-and-versioning.md) — an addendum extending this research study.
+- [Data & Knowledge Hub](../data-knowledge/index.md) — the broader knowledge-architecture catalog this enterprise agent research draws on.
+

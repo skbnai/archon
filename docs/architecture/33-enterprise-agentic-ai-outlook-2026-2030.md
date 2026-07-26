@@ -226,3 +226,9 @@ The organisations that win in 2030 will not be the ones that picked the "right" 
 ---
 
 **Companion reading:** [Comparative Matrices &amp; Decision Tools](pathname:///archon/architecture/50-enterprise-ai-comparative-matrices-2026.md) · [Commercial Analysis 2026](pathname:///archon/strategy/09-enterprise-ai-commercial-analysis-2026.md)
+
+## Related
+
+- [Enterprise Agentic AI Architecture Playbook 2026](73-enterprise-agentic-ai-architecture-playbook-2026.md) — the near-term implementation playbook behind this longer-term outlook.
+- [Agentic AI Landing Zone Architecture](22-agentic-ai-landing-zone-architecture.md) — the reference architecture this outlook projects forward from.
+

@@ -436,3 +436,9 @@ The findings compiled across this comprehensive intelligence report point to a c
 By treating foundation models as powerful, probabilistic engines inside a highly disciplined, deterministic software harness, modern engineering teams are successfully unlocking predictable business value. The future of enterprise automation belongs to the organizations that construct the most robust state machines, the most secure execution sandboxes, the tightest infra co-locations, and the most unbiased evaluation environments around their models.
 
 ---
+
+## Related
+
+- [Enterprise Agentic AI Outlook 2026–2030](33-enterprise-agentic-ai-outlook-2026-2030.md) — the enterprise-side forecast this lab-research landscape feeds into.
+- [Transformer Architecture: Frontier Models Deep Dive](34-transformer-architectures.md) — technical detail on the model architectures these labs produce.
+

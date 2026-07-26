@@ -198,3 +198,9 @@ These are composite, illustrative case studies built from publicly observable pa
 | **Lessons learned** | Grandfathering existing systems with a clear, honestly-resourced remediation timeline is more effective than demanding immediate full compliance, both for talent retention and for actually getting the remediation done properly rather than rushed |
 | **What should be replicated** | Building the combined AI Solution Review intake before the acquisition closes, so the acquired team experiences the bank's governance model as a single coherent process from day one rather than four uncoordinated review bodies |
 | **What should be avoided** | Treating governance integration as a checkbox compliance exercise disconnected from talent retention strategy — the two are inseparable in practice for any acquisition-driven integration |
+
+## Related
+
+- [Banking — The Primary Lens](65-volume6-banking-industry-deepdive.md) — Volume 6 of this series.
+- [Part A — Reference Architectures & Architecture Patterns](67-volume9-enterprise-reference-repository.md) — Volume 9, the reference-architecture repository this ARB draws on.
+

@@ -266,6 +266,11 @@ Throughout: migrate MCP servers toward the 2026-07-28 stateless model during its
 
 ---
 
+## Related
+
+- [Agentic AI Landing Zone Architecture](22-agentic-ai-landing-zone-architecture.md) — a companion landing-zone-level reference architecture.
+- [AI Harness Architecture & Multi-Agent Orchestration](44-ai-harness-architecture-orchestration.md) — the orchestration harness these reference architectures assume.
+
 ## Sources
 
 - [The New Stack — In 2026, AI Is Merging With Platform Engineering](https://thenewstack.io/in-2026-ai-is-merging-with-platform-engineering-are-you-ready/)

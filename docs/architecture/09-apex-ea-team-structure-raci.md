@@ -198,6 +198,12 @@ The following matrix shows how each team tier interacts with others, the nature 
 | **Specialist Functions** | Embedded in: security design, data architecture, CI/CD gates | Provides: domain-level guidance, data classification, embedded model risk reviews | Feeds into: ARB with specialist opinions. Attends: relevant ARB agenda items | Cross-functional: security–compliance alignment; data–model risk alignment | No direct external engagement; all via Compliance Lead or CISO |
 | **External Stakeholders** | Receives: SLA reports, FinOps dashboards, compliance packs | None (no direct domain team interaction) | Attends: quarterly regulator briefing. Reviews: DORA evidence pack, EU AI Act submissions | None direct | Peer industry: AI governance working groups; open-source community participation |
 
+## Related
+
+- [APEX EA Part 2: AI-DLC Methodology & Foundation Architecture](10-apex-ea-aidlc-methodology.md) — the methodology this team structure operates.
+- [APEX EA Part 4: Delivery, Governance & Reference](12-apex-ea-delivery-governance-reference.md) — how this team structure governs delivery.
+- [AI Solution Lifecycle Deliverables by Role](74-ai-solution-lifecycle-deliverables.md) — role-by-role deliverables matrix complementing this RACI model.
+
 ---
 
 **Next:** [Part 2 — AI-DLC Methodology & Foundation Architecture](./10-apex-ea-aidlc-methodology.md) covers the AI-DLC delivery methodology and TOGAF Preliminary/Vision/Business phases that this team structure operates within.

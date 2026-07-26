@@ -279,6 +279,12 @@ Temporal's trajectory validates selection doctrine #2: $300M raised at a $5B val
 
 ---
 
+## Related
+
+- [MCP Harness Engineering](../protocols/15-mcp-harness-aidlc.md) — the protocol-level counterpart to this orchestration harness.
+- [Agent Reliability Engineering (ARE)](42-agent-reliability-engineering.md) — the reliability discipline this harness enforces.
+- [Multi-Agent Topology Patterns](59-multi-agent-topology-patterns.md) — the topologies this harness orchestrates.
+
 ## Sources
 
 - [Anthropic — How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)

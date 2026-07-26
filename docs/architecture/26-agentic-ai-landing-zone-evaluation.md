@@ -552,3 +552,9 @@ Before production deployment:
 **Document Status:** DRAFT (July 2026)
 **Owner:** Quality Assurance + Platform Engineering
 **Audience:** Everyone deploying agents
+
+## Related
+
+- [Agentic AI Landing Zone Architecture](22-agentic-ai-landing-zone-architecture.md) — the architecture this evaluation framework validates.
+- [Operations Hub](../operations/index.md) — the broader evaluation and benchmark catalog this domain-specific framework connects to.
+

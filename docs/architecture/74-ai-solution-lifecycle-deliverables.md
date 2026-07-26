@@ -105,3 +105,9 @@ The following matrix shows key deliverables mapped to owner, stage, and status:
 **Operate & Scale:** The Enterprise Architect conducts a Post-Implementation Review at 90 days after launch, comparing actual versus expected performance, incidents, governance findings, and recommendations. An AI System Performance Dashboard provides quarterly review: model performance, fairness metrics, cost, and incidents.
 
 **Retire / Decommission:** The Enterprise Architect validates the Decommission Architecture Review, ensuring retirement is safe: data deletion plan confirmed, dependencies mapped, regulatory retention met, knowledge transferred.
+
+## Related
+
+- [APEX EA Part 1: Team Structure, RACI & Operating Model](09-apex-ea-team-structure-raci.md) — the team structure these role-based deliverables map onto.
+- [Enterprise AI Architect — Foundations](48-enterprise-ai-architect-foundations.md) — the architect role this deliverables matrix is built around.
+

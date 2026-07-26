@@ -408,3 +408,9 @@ LLM architectures, vector databases, and AI governance standards evolve at unpre
 **The Enterprise Data Architect who masters these five domains will be the most essential enabler of the AI revolution. Data is the fuel; the EDA is the engineer ensuring it is clean, available, and safely delivered to every engine in the enterprise.**
 
 *Review and update quarterly as AI capabilities, governance standards, and enterprise architecture patterns evolve.*
+
+## Related
+
+- [Modern Data & AI Platform Blueprint 2026](87-modern-data-ai-platform-blueprint-2026.md) — the platform blueprint this role guide operates within.
+- [Data & Knowledge Hub](../data-knowledge/index.md) — the broader data-architecture domain this role sits in.
+

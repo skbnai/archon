@@ -166,3 +166,8 @@ The version store is an append-only log of artifact versions. It is separate fro
 ### Why content_hash matters
 
 The content hash serves two purposes. First, it enables the version store to detect if two distinct change events produce semantically identical content — a common case when two unrelated commits both touch the same service's entry in the catalog — allowing the system to skip publishing an identical version. Second, it provides a tamper-evident record: if a version's stored content no longer matches its hash, the system knows it was modified outside the normal write path, which should be treated as a security event.
+
+## Related
+
+- [Enterprise Agent Knowledge Architecture (EAKA) Research Study](81-eaka-research-study.md) — the research study this addendum extends.
+

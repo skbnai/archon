@@ -690,3 +690,9 @@ Before deploying multi-agent systems:
 **Document Status:** DRAFT (July 2026)
 **Owner:** Platform Architecture
 **Audience:** Architects designing agent systems
+
+## Related
+
+- [Multi-Agent Topology Patterns](59-multi-agent-topology-patterns.md) — the topology patterns this reference architecture implements.
+- [Agentic AI Landing Zone Architecture](22-agentic-ai-landing-zone-architecture.md) — the base landing zone this multi-agent design extends.
+

@@ -402,3 +402,9 @@ graph TD
 ---
 
 End of document — Modern Data & AI Platform Architecture Blueprint, prepared for Executive Architecture Review, 2026.
+
+## Related
+
+- [Enterprise Data Architect in the Age of AI & GenAI](84-enterprise-data-architect-ai-genai.md) — the role guide for whoever operates this blueprint.
+- [Data & Knowledge Hub](../data-knowledge/index.md) — the broader data-architecture domain this blueprint belongs to.
+

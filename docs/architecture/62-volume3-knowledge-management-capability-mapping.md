@@ -181,3 +181,9 @@ graph TD
 ---
 
 **Part A Summary:** Knowledge graphs, RAG systems, pattern catalogs, and living documentation transform architecture knowledge from static documents into queryable, continuously validated assets. **Part B Summary:** Capability mapping connects business strategy to infrastructure through twelve traceable layers, enabling both top-down capability-to-application queries and bottom-up impact analysis, with particular value in identifying redundancy and automation opportunities in large, M&amp;A-grown banks.
+
+## Related
+
+- [Architecture Economics & Decision Science](61-volume2-economics-decision-science.md) — Volume 2 of this series.
+- [Artifact Catalog & Quality Attributes](63-volume4-artifact-catalog-quality-attributes.md) — Volume 4, following this volume.
+

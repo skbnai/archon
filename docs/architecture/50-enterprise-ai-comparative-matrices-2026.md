@@ -291,6 +291,11 @@ graph TD
 
 ---
 
+## Related
+
+- [Enterprise Technology Selection & Decision Framework](75-enterprise-technology-selection-framework.md) — the decision framework these comparative matrices support.
+- [Enterprise AI Architect Bible](72-enterprise-ai-architect-bible-2026.md) — broader architect reference this decision-tool set belongs to.
+
 ## Sources
 
 - [AgentMarketCap — Agent Memory at Scale 2026: Letta, Zep, Mem0, LangMem Compared](https://agentmarketcap.ai/blog/2026/04/10/agent-memory-vendor-landscape-2026-letta-zep-mem0-langmem)

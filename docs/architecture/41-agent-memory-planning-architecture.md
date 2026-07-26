@@ -233,6 +233,11 @@ Compensation execution order = **reverse-topological over completed mutating nod
 
 ---
 
+## Related
+
+- [Agentic AI Landing Zone: Memory Architecture (Tier 3)](27-agentic-ai-landing-zone-memory-architecture.md) — how this memory design fits the landing zone's tiered model.
+- [Agentic Systems Hub](../agentic-systems/index.md) — the broader agent-architecture catalog memory and planning are part of.
+
 ## Sources
 
 - [AgentMarketCap — Agent Memory at Scale 2026: Letta, Zep, Mem0, LangMem Compared](https://agentmarketcap.ai/blog/2026/04/10/agent-memory-vendor-landscape-2026-letta-zep-mem0-langmem)

@@ -624,3 +624,8 @@ How much compute per token. In dense models = total params. In MoE = (active exp
 
 TRANSFORMER INTERNALS — CONCEPT-FIRST DEEP DIVE  ·  INTERACTIVE EXAMPLES  ·  2025  
 All computations shown are simplified for illustrative clarity. Real vectors have thousands of dimensions.
+
+## Related
+
+- [Transformer Architecture: Frontier Models Deep Dive](34-transformer-architectures.md) — how these internal concepts show up in current frontier models.
+

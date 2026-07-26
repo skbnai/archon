@@ -360,3 +360,9 @@ AI vendor relationships carry specific risks that traditional software vendor ma
 ---
 
 [Continue to Part 2: Scenario Questions, Review Checklist & Resources](pathname:///archon/architecture/parts/21-enterprise-ai-skills-assessment-part2)
+
+## Related
+
+- [Enterprise AI Architect — Foundations](48-enterprise-ai-architect-foundations.md) — the role and landscape this skills assessment measures against.
+- [EA Mastery Guide](71-ea-mastery-guide.md) — broader frameworks this competency model draws on.
+

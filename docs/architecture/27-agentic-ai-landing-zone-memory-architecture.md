@@ -672,6 +672,12 @@ Governance:
 - [ ] Compliance review (GDPR, CCPA, etc.)
 ```
 
+## Related
+
+- [Agent Memory & Planning Architecture](41-agent-memory-planning-architecture.md) — deeper technical dive on the memory patterns summarized here.
+- [Agentic AI Landing Zone Architecture](22-agentic-ai-landing-zone-architecture.md) — the base landing zone this memory tier belongs to.
+- [Data & Knowledge Hub](../data-knowledge/index.md) — the RAG and long-term memory backends this tier relies on.
+
 ---
 
 **Next Tier 3 Document:** Agent Identity & Trust Architecture  

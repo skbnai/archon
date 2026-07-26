@@ -539,3 +539,8 @@ These are the behaviours that separate Distinguished from Principal in senior ar
 | **This Document** | **Glossary & Cheat Sheet** | **300+ terms, 9 cheat sheets, regulation guide, interview tips** |
 
 **Targeting:** Microsoft · Google · Amazon · JPMorgan · Goldman Sachs · Morgan Stanley · Barclays · HSBC · Visa · ServiceNow · SAP
+
+## Related
+
+- [Best Practices & Jargon Guide](68-ea-bestpractices-jargon.md) — the companion best-practices guide for these terms.
+

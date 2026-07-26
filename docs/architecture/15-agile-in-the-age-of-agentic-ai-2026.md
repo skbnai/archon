@@ -534,6 +534,11 @@ Agile gave us the mindset. AI gives us the execution speed. The synthesis — in
 |  | Final Thought The competitive advantage in 2026 will not be determined by who has access to the largest language model. It will belong to organizations that can design, govern, and trust reliable autonomous agent systems embedded directly into their operations — and the human teams skilled enough to orchestrate them. |
 | --- | --- |
 
+## Related
+
+- [AIDLC Enterprise Framework](14-aidlc-enterprise-framework-2025.md) — the broader AI-native delivery lifecycle this agile adaptation fits within.
+- [Impact of AIDLC on Enterprise Architecture](16-ea-aidlc-deep-research-2026.md) — research on how AIDLC changes EA tooling and practice.
+
 ## Sources & References
 
 *McKinsey State of AI 2025 | BCG Emerging Agentic Enterprise (with MIT Sloan) | Accenture Platform Strategy in the Age of Agentic AI | Forrester 2025 State of Agile Development | AWS 2026 Prescriptive Guidance on Intent Design | InfoQ: Does AI Make the Agile Manifesto Obsolete? (Feb 2026) | SAFe: Sprint Cadence for AI Teams — Dual-Rhythm Architecture (Mar 2026) | GitHub Octoverse 2025 | DORA 2025 State of DevOps | Stack Overflow Developer Survey 2025 | JetBrains State of Developer Ecosystem 2025 | METR RCT on AI Developer Productivity | Gartner 2026 AI Spending Forecast | Deloitte 2026 Software Industry Outlook | Stanford HAI AI Index Report | CodeRabbit December 2025 Report | NorthStar Consulting: Generative AI in Consulting | PepperFoster AI ROI Report | MIT: The GenAI Divide: State of AI in Business 2025*

@@ -525,3 +525,9 @@ T+24h   Post-mortem published
 - [AIDR: AI Detection and Response](pathname:///archon/trust/ai-security-governance/aidr-ai-detection-response-complete-guide) — SOC response when kill switch is triggered
 - [AI SOC](pathname:///archon/trust/ai-security-governance/ai-soc) — AI security operations
 - [AI TRiSM Complete Guide](pathname:///archon/trust/ai-security-governance/ai-trism-complete-guide) — trust, risk, and security management
+
+## Related
+
+- [Governance Propagation Chain](55-governance-propagation-chain.md) — the governance decision-flow a kill switch is the terminal control for.
+- [Trust Hub](../trust/index.md) — the broader AI control and threat-model catalog this safety mechanism belongs to.
+

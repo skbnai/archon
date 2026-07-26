@@ -263,3 +263,9 @@ PROSCI ADKAR model: Awareness, Desire, Knowledge, Ability, Reinforcement — the
 ## Cross-Reference
 
 This concludes Part 1 of the EA Mastery Guide. **Next:** Continue with [Part 2: Must-Read Books, Communities, Certifications, Tools & Master Principles](pathname:///archon/architecture/parts/35-ea-mastery-guide-part2).
+
+## Related
+
+- [Enterprise AI Architect Bible](72-enterprise-ai-architect-bible-2026.md) — the companion AI-specific architect reference.
+- [EA Architect Deep Dive: Foundation](05-ea-architect-deep-dive-foundation.md) — a foundational-level companion series.
+

@@ -722,3 +722,9 @@ Your AI Champions. These are the people you need on your side.
 *This toolkit is Part 1 of 2. Part 2 contains Stakeholder Interview Templates, Use Case Prioritisation Framework, FAQ Bank, Phase-Gated Checklists, and Templates & Deliverable Frameworks.*
 
 *Adapt all templates to your client's industry, vocabulary, and risk profile. The structure is more important than the exact wording. Update questions and checklists as your engagement experience grows — the best consultants don't use templates mechanically; they use them as a foundation for the judgment that only experience can provide.*
+
+## Related
+
+- [Strategy Hub](../strategy/index.md) — the broader AI transformation strategy this consultant toolkit operationalizes.
+- [Enterprise Agentic AI Outlook 2026–2030](33-enterprise-agentic-ai-outlook-2026-2030.md) — the market outlook this toolkit is designed against.
+

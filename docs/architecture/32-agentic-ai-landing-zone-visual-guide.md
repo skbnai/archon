@@ -750,4 +750,10 @@ Cross-reference map showing how knowledge base sections connect and which audien
 **Document Status:** ✅ COMPLETE  
 **Total Knowledge Base:** 9 documents, ~15,000 lines  
 **Ready to Share:** YES (with leadership, teams, external partners)  
+
+## Related
+
+- [Agentic AI Landing Zone Architecture](22-agentic-ai-landing-zone-architecture.md) — the full architecture this visual guide summarizes.
+- [Agentic AI Landing Zone: Implementation Playbooks](30-agentic-ai-landing-zone-playbooks.md) — step-by-step playbooks referenced in this guide.
+
 **Next Step:** Push to GitHub + schedule team briefings

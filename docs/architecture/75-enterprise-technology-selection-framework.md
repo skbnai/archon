@@ -728,3 +728,8 @@ graph TB
 ## See Also
 
 **Part 2 of this framework:** Risk Assessment Framework, Vendor Evaluation, Total Cost of Ownership, ARB Decision Process, Decision Documentation (ADR templates), Success Metrics, Anti-Patterns, Reference Models by Organisation Type, and Templates/Checklists. See [Enterprise Technology Selection & Decision Framework (Part 2 of 2)](pathname:///archon/architecture/25-enterprise-technology-selection-framework-part2).
+
+## Related
+
+- [Enterprise AI Comparative Matrices & Decision Tools 2026](50-enterprise-ai-comparative-matrices-2026.md) — the comparative matrices this selection framework applies.
+

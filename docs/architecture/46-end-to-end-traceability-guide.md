@@ -485,3 +485,10 @@ Where the model generates content NOT grounded in retrieved sources:
 - [Kill Switch Architecture](56-kill-switch-architecture.md) — emergency shutdown traceability
 - [AI Observability](pathname:///archon/trust/ai-security-governance/16-ai-observability) — deep-mind series
 - [EU Bank Copilot: Compliance & Observability](pathname:///archon/assets/eu-bank-copilot-compliance-observability) — regulated industry traceability requirements
+
+## Related
+
+- [Drift Detection for Multi-Agent AI Systems](45-drift-detection-guide.md) — a key consumer of this traceability data.
+- [Agentic AI Reliability, Observability & Governance Lifecycle](43-agentic-ai-reliability-observability-governance.md) — the governance lifecycle this traceability guide supports.
+- [End-to-End Lineage for AI-Era Data Systems](../data-knowledge/04-end-to-end-lineage-systems-report.md) — the data-lineage counterpart to agent-level traceability.
+

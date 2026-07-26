@@ -675,5 +675,11 @@ Before rolling out the Agent Platform layer, your organization should decide:
 ---
 
 **Document Status:** DRAFT (July 2026)
+
+## Related
+
+- [Agentic AI Landing Zone Architecture](22-agentic-ai-landing-zone-architecture.md) — the landing zone this platform layer supports.
+- [Platforms Hub](../platforms/index.md) — the broader platform-engineering catalog this layer draws on.
+
 **Next Update:** After first agents enter Registry (production experience)
 **Owner:** Platform Engineering + AI Governance Board

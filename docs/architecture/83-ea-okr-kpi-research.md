@@ -292,3 +292,9 @@ Effective measurement is a conversation, not a scorecard. Goals and KPIs should 
 ---
 
 **The Enterprise Architect's ultimate measure of success is not the number of documents produced — it is how coherently, efficiently, and strategically the organisation moves as a result of their work.**
+
+## Related
+
+- [Strategy Hub](../strategy/index.md) — the broader business-KPI and executive-dashboard practice this framework belongs to.
+- [Enterprise Review Questions & Scorecards](64-volume5-review-questions-scorecards.md) — a related scorecard-based assessment approach.
+

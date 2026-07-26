@@ -601,3 +601,10 @@ The following processes synthesize the methodologies of McKinsey, Deloitte, Acce
 **CLOSING THESIS**
 
 The organizations that will win the AI era are not those that move fastest without governance — they are those that build governance as an accelerant, not a brake. AIDLC is the operational system that transforms that vision into daily practice.
+
+## Related
+
+- [Impact of AIDLC on Enterprise Architecture](16-ea-aidlc-deep-research-2026.md) — deeper research on AIDLC's effect on EA practice.
+- [Agile in the Age of Agentic AI](15-agile-in-the-age-of-agentic-ai-2026.md) — how agile delivery practices adapt within this framework.
+- [APEX EA Part 2: AI-DLC Methodology & Foundation Architecture](10-apex-ea-aidlc-methodology.md) — a team-level implementation of AIDLC methodology.
+

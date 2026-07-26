@@ -380,3 +380,9 @@ deny[msg] {
   )
 }
 ```
+
+## Related
+
+- [AI-Native ARB & Enterprise Case Studies](66-volume7-ai-native-arb-case-studies.md) — Volume 7 of this series.
+- [Enterprise Agent Reference Architectures, Platform Engineering & Checklists](47-enterprise-agent-reference-architectures.md) — a companion agent-focused reference-architecture catalog.
+

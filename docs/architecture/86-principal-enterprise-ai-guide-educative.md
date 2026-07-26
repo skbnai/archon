@@ -546,3 +546,9 @@ The 5 non-negotiable agent safety controls: minimal privilege, action classifica
 Orchestrator-specialist is the enterprise-preferred multi-agent pattern for high-stakes, auditable workflows. Saga pattern with compensating transactions is required for any multi-agent workflow with irreversible side effects.
 
 Agent evaluation must cover trajectory quality, not just final output — LLM-as-judge scores each step.
+
+## Related
+
+- [Enterprise AI Architect Bible](72-enterprise-ai-architect-bible-2026.md) — the fuller reference this scenario-based guide complements.
+- [DSA Principal Architect Reference](80-dsa-principal-architect-reference.md) — a companion reference for the same seniority level.
+

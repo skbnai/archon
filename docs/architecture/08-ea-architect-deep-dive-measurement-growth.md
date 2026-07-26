@@ -300,3 +300,10 @@ graph TB
 This closes the four-part **Communication Mastery — Deep Dive Edition** series. Return to [Part 1 — Foundation](./05-ea-architect-deep-dive-foundation.md) to restart the recommended reading path from the self-assessment rubric, or review [Part 2 — The Five Arenas](./06-ea-architect-deep-dive-five-arenas.md) and [Part 3 — Toolkit & Practice](./07-ea-architect-deep-dive-toolkit-practice.md) as reference.
 
 The principal architect who masters communication across all five arenas does not just sound senior. They become the person the organisation turns to when the stakes are highest.
+
+## Related
+
+- [EA Architect Deep Dive: Toolkit & Practice](07-ea-architect-deep-dive-toolkit-practice.md) — Part 3 of this series.
+- [EA OKR & KPI Value Framework](83-ea-okr-kpi-research.md) — measurement frameworks that complement this part.
+- [Enterprise Review Questions & Scorecards](64-volume5-review-questions-scorecards.md) — scorecard-based growth assessment.
+

@@ -505,3 +505,9 @@ graph TD
     style D fill:#FF6B6B
     style E fill:#FFB347
 ```
+
+## Related
+
+- [Enterprise Data Architect in the Age of AI & GenAI](84-enterprise-data-architect-ai-genai.md) — a companion role guide for a related enterprise function.
+- [Strategy Hub](../strategy/index.md) — the broader AI-adoption and change-management context managers operate within.
+
