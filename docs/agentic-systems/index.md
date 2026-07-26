@@ -2,7 +2,7 @@
 title: "Agentic Systems Hub"
 doc_type: hub
 domain: agentic-systems
-status: draft
+status: current
 canonical: true
 topic_id: hub-agentic-systems
 maturity: foundational
