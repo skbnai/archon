@@ -141,6 +141,21 @@ Full threat treatments in [Security Architecture & Guardrails](pathname:///archo
 
 ## 5. Planning Architecture
 
+### 5.0 Cognitive Architecture: How Memory and Planning Fit Together
+
+"Cognitive architecture" is the umbrella term for how an agent's perception, memory, reasoning, and action components fit together into one control loop — the memory taxonomy in Sections 1–4 and the planning model in this section are two halves of that same architecture, not separate concerns. The canonical shape is a **sense → retrieve → plan → act → reflect** loop:
+
+```mermaid
+flowchart LR
+    A[Sense<br/>new input/observation] --> B[Retrieve<br/>pull relevant memory]
+    B --> C[Plan<br/>decompose into next action]
+    C --> D[Act<br/>execute tool call or step]
+    D --> E[Reflect<br/>update memory with outcome]
+    E --> B
+```
+
+Each stage maps directly onto architecture already defined elsewhere on this page: **Retrieve** is the Extract–Consolidate–Retrieve pipeline (Section 2) pulling from the memory taxonomy (Section 1); **Plan** is the planning architecture below (Section 5.1–5.4); **Reflect** is what writes back into memory lifecycle controls (Section 3) and — when the outcome contradicts a prior belief — into the conflict-resolution path (Section 3.4). The point of naming this as one cognitive architecture rather than two independent subsystems is that a planning failure and a memory failure often present identically to an end user (a wrong or stalled action), but require debugging the loop stage that actually broke, not just the visible symptom.
+
 ### 5.1 The Plan as a First-Class Artifact
 
 Production doctrine: **the plan is a versioned data structure, not a thought.** Represent it as a goal tree / dependency DAG:

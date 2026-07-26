@@ -44,6 +44,10 @@ Value is a bridge of three distinct streams (efficiency, loss-cost leakage, rete
 ### Stage 1 — Discover (Weeks 1–8)
 Baseline current-state: cost per claim, cycle time, leakage rate, CSAT, adjuster capacity by claim type and region. Build AI Opportunity Matrix to rank sub-processes by value potential × feasibility.
 
+**Discovery methodology.** Use case discovery is a structured sourcing-and-screening exercise, not a brainstorm. Three sourcing channels feed the candidate list: stakeholder interviews across the process (front-line staff surface the friction points executives don't see), process-mining or workflow-log analysis (surfaces where cycle time and rework actually concentrate, independent of anyone's opinion), and a scan of what peer organizations in the same industry have already deployed (sets a credible upper bound on feasibility). Every candidate use case is then screened against the same two axes that populate the AI Opportunity Matrix: **value potential** (cost, cycle-time, or risk impact if solved) and **feasibility** (data readiness, process standardization, and regulatory exposure) — not against enthusiasm or executive sponsorship alone, which is the most common way discovery produces a portfolio that doesn't survive Stage 2's business case.
+
+**Screening criteria** that filter the raw candidate list down to the top 3: data must already exist in usable form (not "could be collected"); the process must occur at sufficient volume to justify build cost; and the failure mode of an AI-assisted version must be tolerable — a wrong answer that's easy for a human to catch and correct screens in, one that's silent and high-consequence screens out or gets flagged for heavier human-in-the-loop design in Stage 2.
+
 **Gate criteria:** Baseline metrics signed off by Finance and Claims Ops; top 3 opportunities selected.
 
 ### Stage 2 — Business Case & Design (Weeks 6–14)
