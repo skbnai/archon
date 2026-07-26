@@ -413,6 +413,12 @@ graph TB
 
 ---
 
+## Related
+
+- [Apache Iceberg, Open Table Formats & Interoperability](02-databricks-iceberg-open-formats.md) — the table-format layer underneath this lakehouse architecture.
+- [Data Architecture for AI: Foundations & Infrastructure](03-data-architecture-for-ai-report.md) — where lakehouse fits among knowledge graphs, feature stores, semantic layers, and vector DBs.
+- [Platforms Hub](../platforms/index.md) — where lakehouse infrastructure is provisioned and operated.
+
 ## Sources
 
 - [Lakeflow Agentic Data Engineering Blog](https://www.databricks.com/blog/lakeflow-new-era-agentic-data-engineering)

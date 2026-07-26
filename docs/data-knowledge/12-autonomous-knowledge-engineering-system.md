@@ -494,3 +494,9 @@ Generate the Developer Knowledge Pack (lower risk — mostly derived from existi
 ### Closing
 
 The case studies in Section 2 show that the building blocks of this system already exist, separately, inside major tech companies — Spotify's catalog solved discovery and ownership, Google's Kythe solved structural code understanding at scale, and Netflix's Service Topology solved multi-source reconciliation for dependency truth. What none of these systems originally had was a documentation layer that wrote itself back, continuously, with calibrated trust. The architecture in this brief is, in essence, the proposal that LLM agents are now capable enough to be that missing layer — provided the surrounding system is designed, from the start, around the same lessons these companies learned the hard way: ownership before documentation, structure before narrative, multiple sources before any single source, and confidence as a first-class, visible property of every claim.
+
+## Related
+
+- [Enterprise Knowledge Architectures Report](14-enterprise-knowledge-architectures-report.md) — the modeling and ontology foundations this agent-driven system writes back into.
+- [End-to-End Lineage for AI-Era Data Systems](04-end-to-end-lineage-systems-report.md) — provenance and trust-tracking for knowledge an agent authors rather than a human.
+- [Agentic Systems Hub](../agentic-systems/index.md) — the broader agent-architecture patterns (memory, planning, HITL) this system builds on.

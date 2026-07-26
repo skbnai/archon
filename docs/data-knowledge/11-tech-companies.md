@@ -88,6 +88,11 @@ The pattern the hyperscalers built internally is what **Glean** productized for 
 
 ---
 
+## Related
+
+- [Consulting Firm AI Knowledge Platforms](07-consulting-firms.md) — the parallel case-study set for consultancies' internal knowledge platforms.
+- [Governance & Responsible AI for Knowledge Systems](09-governance-rai.md) — the governance patterns these tech companies' approaches informed industry-wide.
+
 ## Sources
 
 - [Meet Michelangelo: Uber's Machine Learning Platform](https://www.uber.com/us/en/blog/michelangelo-machine-learning-platform/)

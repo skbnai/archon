@@ -487,6 +487,12 @@ Policies governing how long data is retained, when it's archived to cheaper stor
 
 ---
 
+## Related
+
+- [End-to-End Lineage for AI-Era Data Systems](04-end-to-end-lineage-systems-report.md) — the lineage model that traces impact across the systems covered here.
+- [Governance & Responsible AI for Knowledge Systems](09-governance-rai.md) — regulatory framework mapping for the AI-governance topics in this report.
+- [Operations Hub](../operations/index.md) — reliability, observability, and DR/BCP practices this report's operational-lifecycle coverage connects to.
+
 ## Continue to Part 2
 
 The next section covers **Data Lineage**, **Data Observability**, **Platform Observability**, **Reliability Engineering**, **Security Architecture**, **Compliance & Regulatory Requirements**, and **AI Governance**.

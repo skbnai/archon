@@ -359,6 +359,11 @@ graph TD
 
 ---
 
+## Related
+
+- [Consulting Firm AI Knowledge Platforms](07-consulting-firms.md) — the internal knowledge-management systems (Lilli, GENE, PairD, EYQ, KymChat) behind these firms' strategy plays.
+- [Strategy Hub](../strategy/index.md) — broader AI transformation and operating-model strategy context.
+
 ## Sources
 
 - [Seizing the Agentic AI Advantage — McKinsey QuantumBlack](https://www.mckinsey.com/capabilities/quantumblack/our-insights/seizing-the-agentic-ai-advantage)

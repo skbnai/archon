@@ -87,6 +87,11 @@ Accenture's distinctive move is workforce-scale enablement backed by policy: it 
 
 ---
 
+## Related
+
+- [Consulting & Services Firms: GenAI Strategy Landscape](06-consulting-firms-genai-strategy.md) — the broader business-strategy and delivery-model story these knowledge platforms support.
+- [How Tech Companies Build & Serve Knowledge Systems](11-tech-companies.md) — the parallel case-study set for Big Tech's internal knowledge platforms.
+
 ## Sources
 
 - [Rewiring the way McKinsey works with Lilli (McKinsey)](https://www.mckinsey.com/capabilities/tech-and-ai/how-we-help-clients/rewiring-the-way-mckinsey-works-with-lilli)
