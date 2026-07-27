@@ -2882,9 +2882,15 @@ topics:
   - id: k8s-handbook-part5-kubernetes-resources
     domain: platforms
     canonical: docs/platforms/38-k8s-handbook-part5-kubernetes-resources.md
-    pending: true
     aliases:
     - 'k8s handbook part 5: kubernetes resources'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part5_Kubernetes_Resources.md
+    pages: []
+  - id: k8s-handbook-part5-kubernetes-resources-part2
+    domain: platforms
+    canonical: docs/platforms/parts/38-k8s-handbook-part5-kubernetes-resources-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part6-kubernetes-networking

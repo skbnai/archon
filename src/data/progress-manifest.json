@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 69,
+    "totalPages": 71,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1688,6 +1688,10 @@
       {
         "id": "platforms/37-k8s-handbook-part4-kubernetes-internals",
         "title": "K8s Handbook Part 4: Kubernetes Internals"
+      },
+      {
+        "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+        "title": "K8s Handbook Part 5: Kubernetes Resources"
       },
       {
         "id": "platforms/43-part-01-platform-vision-agentic-services",
@@ -1856,6 +1860,10 @@
       {
         "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part4",
         "title": "K8s Handbook Part 4 (Part 4: Leader Election, API Request Lifecycle & Troubleshooting)"
+      },
+      {
+        "id": "platforms/parts/38-k8s-handbook-part5-kubernetes-resources-part2",
+        "title": "K8s Handbook Part 5: Kubernetes Resources (Part 2)"
       },
       {
         "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
