@@ -1,7 +1,257 @@
 {
  "domain": "platforms",
- "page_count": 1,
+ "page_count": 25,
  "pages": [
+  {
+   "id": "platforms/05-ai-gateway-full-comparison",
+   "title": "AI Gateway Comparison \u2014 10 Tools",
+   "doc_type": "guide",
+   "topic_id": "ai-gateway-full-comparison",
+   "tags": [
+    "ai-gateway",
+    "platform-comparison",
+    "kong",
+    "litellm",
+    "aws-bedrock",
+    "azure",
+    "cloudflare"
+   ],
+   "word_count": 1814,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/06-ai-gateway-multitenant-multicloud",
+   "title": "AI Gateway: Multi-Tenant, Multi-Cloud, Data Ownership",
+   "doc_type": "guide",
+   "topic_id": "ai-gateway-multitenant-multicloud",
+   "tags": [
+    "ai-gateway",
+    "multi-tenant",
+    "multi-cloud",
+    "data-sovereignty",
+    "finops"
+   ],
+   "word_count": 2644,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/06-ai-gateway-multitenant-multicloud-part2",
+     "score": 0.61
+    },
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.32
+    },
+    {
+     "id": "agentic-systems/core/parts/10-agentic-platform-bestpractices-part2",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "platforms/07-enterprise-ai-gateway",
+   "title": "Enterprise AI Gateway",
+   "doc_type": "guide",
+   "topic_id": "enterprise-ai-gateway",
+   "tags": [
+    "ai-gateway",
+    "enterprise-architecture",
+    "resilience",
+    "security",
+    "observability"
+   ],
+   "word_count": 2571,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/07-enterprise-ai-gateway-part2",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/08-kong-ai-gateway-guide",
+     "score": 0.37
+    },
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+     "score": 0.36
+    }
+   ]
+  },
+  {
+   "id": "platforms/08-kong-ai-gateway-guide",
+   "title": "Kong AI Gateway \u2014 Complete End-to-End Guide",
+   "doc_type": "guide",
+   "topic_id": "kong-ai-gateway-guide",
+   "tags": [
+    "ai-gateway",
+    "kong",
+    "kubernetes",
+    "auth",
+    "observability",
+    "cost-management"
+   ],
+   "word_count": 2398,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+     "score": 0.56
+    },
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.37
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
+     "score": 0.34
+    }
+   ]
+  },
+  {
+   "id": "platforms/09-kong-entra-id-integration",
+   "title": "Kong AI Gateway \u2014 Microsoft Entra ID Integration",
+   "doc_type": "guide",
+   "topic_id": "kong-entra-id-integration",
+   "tags": [
+    "ai-gateway",
+    "kong",
+    "entra-id",
+    "azure",
+    "sso",
+    "oauth"
+   ],
+   "word_count": 2448,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/09-kong-entra-id-integration-part2",
+     "score": 0.61
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+     "score": 0.33
+    }
+   ]
+  },
+  {
+   "id": "platforms/10-ai-infrastructure-silicon-landscape-2026",
+   "title": "AI Infrastructure & Silicon Landscape 2026",
+   "doc_type": "guide",
+   "topic_id": "ai-infrastructure-silicon-landscape-2026",
+   "tags": [
+    "ai-infrastructure",
+    "silicon",
+    "gpu",
+    "ai-economics",
+    "hyperscaler"
+   ],
+   "word_count": 991,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/11-aws-native-standards-first-agentic-architecture",
+   "title": "AWS-Native, Standards-First Agentic Platform Architecture",
+   "doc_type": "guide",
+   "topic_id": "aws-native-standards-first-agentic-architecture",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands",
+    "reference-architecture",
+    "standards",
+    "mcp",
+    "a2a"
+   ],
+   "word_count": 2346,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "score": 0.57
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
+     "score": 0.56
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part3",
+     "score": 0.43
+    }
+   ]
+  },
+  {
+   "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
+   "title": "AWS Strands & Bedrock AgentCore \u2014 Advanced Patterns v3.0",
+   "doc_type": "guide",
+   "topic_id": "aws-strands-agentcore-advancedpatterns",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands",
+    "hooks",
+    "hitl",
+    "checkpointer",
+    "multi-agent"
+   ],
+   "word_count": 1978,
+   "last_reviewed": "2026-07-27",
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
+   "title": "AWS Strands & Bedrock AgentCore Production Builder Journey Kit",
+   "doc_type": "guide",
+   "topic_id": "aws-strands-agentcore-builder-journey-kit",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands",
+    "mcp",
+    "observability",
+    "compliance",
+    "production"
+   ],
+   "word_count": 2134,
+   "last_reviewed": "2026-07-27",
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+     "score": 0.55
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
+     "score": 0.51
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "score": 0.42
+    }
+   ]
+  },
   {
    "id": "platforms/index",
    "title": "Platforms Hub",
@@ -17,11 +267,472 @@
    "top_similar": [
     {
      "id": "operations/index",
-     "score": 0.33
+     "score": 0.34
     },
     {
      "id": "architecture/index",
      "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+   "title": "AI Gateway Comparison \u2014 10 Tools (Part 2: AWS Bedrock, Azure APIM, Portkey)",
+   "doc_type": "guide",
+   "topic_id": "ai-gateway-full-comparison-part2",
+   "tags": [
+    "ai-gateway",
+    "platform-comparison",
+    "kong",
+    "litellm",
+    "aws-bedrock",
+    "azure",
+    "cloudflare"
+   ],
+   "word_count": 2201,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part3",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.36
+    },
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
+     "score": 0.35
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/05-ai-gateway-full-comparison-part3",
+   "title": "AI Gateway Comparison \u2014 10 Tools (Part 3: Cloudflare, Apigee, WSO2)",
+   "doc_type": "guide",
+   "topic_id": "ai-gateway-full-comparison-part3",
+   "tags": [
+    "ai-gateway",
+    "platform-comparison",
+    "kong",
+    "litellm",
+    "aws-bedrock",
+    "azure",
+    "cloudflare"
+   ],
+   "word_count": 2149,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.33
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
+   "title": "AI Gateway Comparison \u2014 10 Tools (Part 4: Traefik, IBM watsonx, Decision Guide)",
+   "doc_type": "guide",
+   "topic_id": "ai-gateway-full-comparison-part4",
+   "tags": [
+    "ai-gateway",
+    "platform-comparison",
+    "kong",
+    "litellm",
+    "aws-bedrock",
+    "azure",
+    "cloudflare"
+   ],
+   "word_count": 1762,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part3",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+     "score": 0.35
+    },
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.34
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/06-ai-gateway-multitenant-multicloud-part2",
+   "title": "AI Gateway: Multi-Tenant, Multi-Cloud, Data Ownership (Part 2: Cost Attribution, Governance, Reference Patterns)",
+   "doc_type": "guide",
+   "topic_id": "ai-gateway-multitenant-multicloud-part2",
+   "tags": [
+    "ai-gateway",
+    "multi-tenant",
+    "multi-cloud",
+    "data-sovereignty",
+    "finops"
+   ],
+   "word_count": 953,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/06-ai-gateway-multitenant-multicloud",
+     "score": 0.61
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/07-enterprise-ai-gateway-part2",
+   "title": "Enterprise AI Gateway (Part 2: Governance, Ops, Ecosystem, Future)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-ai-gateway-part2",
+   "tags": [
+    "ai-gateway",
+    "enterprise-architecture",
+    "resilience",
+    "security",
+    "observability"
+   ],
+   "word_count": 1474,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+     "score": 0.34
+    },
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
+     "score": 0.33
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
+   "title": "Kong AI Gateway \u2014 Complete End-to-End Guide (Part 2: Authentication & Authorization I)",
+   "doc_type": "guide",
+   "topic_id": "kong-ai-gateway-guide-part2",
+   "tags": [
+    "ai-gateway",
+    "kong",
+    "kubernetes",
+    "auth",
+    "observability",
+    "cost-management"
+   ],
+   "word_count": 2592,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/09-kong-entra-id-integration",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/08-kong-ai-gateway-guide",
+     "score": 0.34
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+   "title": "Kong AI Gateway \u2014 Complete End-to-End Guide (Part 3: Auth II, Multi-Model Routing, Production Ops)",
+   "doc_type": "guide",
+   "topic_id": "kong-ai-gateway-guide-part3",
+   "tags": [
+    "ai-gateway",
+    "kong",
+    "kubernetes",
+    "auth",
+    "observability",
+    "cost-management"
+   ],
+   "word_count": 2625,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/08-kong-ai-gateway-guide",
+     "score": 0.56
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/parts/09-kong-entra-id-integration-part2",
+     "score": 0.37
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/09-kong-entra-id-integration-part2",
+   "title": "Kong AI Gateway \u2014 Microsoft Entra ID Integration (Part 2: Auto-Provisioning, MFA, Multi-Tenant, Troubleshooting)",
+   "doc_type": "guide",
+   "topic_id": "kong-entra-id-integration-part2",
+   "tags": [
+    "ai-gateway",
+    "kong",
+    "entra-id",
+    "azure",
+    "sso",
+    "oauth"
+   ],
+   "word_count": 2170,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/09-kong-entra-id-integration",
+     "score": 0.61
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+     "score": 0.37
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
+     "score": 0.34
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+   "title": "AWS-Native, Standards-First Agentic Platform Architecture (Part 2: Layers 2-6)",
+   "doc_type": "guide",
+   "topic_id": "aws-native-standards-first-agentic-architecture-part2",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands",
+    "reference-architecture",
+    "standards",
+    "mcp",
+    "a2a"
+   ],
+   "word_count": 2212,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part3",
+     "score": 0.6
+    },
+    {
+     "id": "platforms/11-aws-native-standards-first-agentic-architecture",
+     "score": 0.57
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
+     "score": 0.44
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part3",
+   "title": "AWS-Native, Standards-First Agentic Platform Architecture (Part 3: Layers 7-9, Memory/Session/Multi-Agent Design, Security start)",
+   "doc_type": "guide",
+   "topic_id": "aws-native-standards-first-agentic-architecture-part3",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands",
+    "reference-architecture",
+    "standards",
+    "mcp",
+    "a2a"
+   ],
+   "word_count": 2330,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "score": 0.6
+    },
+    {
+     "id": "platforms/11-aws-native-standards-first-agentic-architecture",
+     "score": 0.43
+    },
+    {
+     "id": "agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2",
+     "score": 0.34
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
+   "title": "AWS-Native, Standards-First Agentic Platform Architecture (Part 4: Governance Mapping, Anti-Patterns, Appendices)",
+   "doc_type": "guide",
+   "topic_id": "aws-native-standards-first-agentic-architecture-part4",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands",
+    "reference-architecture",
+    "standards",
+    "mcp",
+    "a2a"
+   ],
+   "word_count": 1068,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/11-aws-native-standards-first-agentic-architecture",
+     "score": 0.56
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "score": 0.44
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
+   "title": "AWS Strands & Bedrock AgentCore \u2014 Advanced Patterns v3.0 (Part 2: Checkpointer, Code Interpreter, Browser Tool, Meta Tool)",
+   "doc_type": "guide",
+   "topic_id": "aws-strands-agentcore-advancedpatterns-part2",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands",
+    "hooks",
+    "hitl",
+    "checkpointer",
+    "multi-agent"
+   ],
+   "word_count": 2224,
+   "last_reviewed": "2026-07-27",
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
+     "score": 0.46
+    },
+    {
+     "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
+   "title": "AWS Strands & Bedrock AgentCore \u2014 Advanced Patterns v3.0 (Part 3: Meta Tool close, Expert Patterns)",
+   "doc_type": "guide",
+   "topic_id": "aws-strands-agentcore-advancedpatterns-part3",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands",
+    "hooks",
+    "hitl",
+    "checkpointer",
+    "multi-agent"
+   ],
+   "word_count": 2311,
+   "last_reviewed": "2026-07-27",
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
+     "score": 0.46
+    },
+    {
+     "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+     "score": 0.35
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
+   "title": "AWS Strands & Bedrock AgentCore Production Builder Journey Kit (Part 2: Memory, Gateway/MCP, Identity/Auth, Multi-Agent Patterns)",
+   "doc_type": "guide",
+   "topic_id": "aws-strands-agentcore-builder-journey-kit-part2",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands",
+    "mcp",
+    "observability",
+    "compliance",
+    "production"
+   ],
+   "word_count": 2181,
+   "last_reviewed": "2026-07-27",
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
+     "score": 0.51
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+     "score": 0.42
+    },
+    {
+     "id": "agentic-systems/core/09-multitenantagentplatform-architecture",
+     "score": 0.41
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+   "title": "AWS Strands & Bedrock AgentCore Production Builder Journey Kit (Part 3: Observability, RAI/Compliance, LaaS, Production Blueprint)",
+   "doc_type": "guide",
+   "topic_id": "aws-strands-agentcore-builder-journey-kit-part3",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands",
+    "mcp",
+    "observability",
+    "compliance",
+    "production"
+   ],
+   "word_count": 2379,
+   "last_reviewed": "2026-07-27",
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
+     "score": 0.55
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "score": 0.38
     }
    ]
   }

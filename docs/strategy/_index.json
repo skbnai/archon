@@ -20,7 +20,7 @@
    "top_similar": [
     {
      "id": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
-     "score": 0.74
+     "score": 0.75
     },
     {
      "id": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
@@ -58,7 +58,7 @@
     },
     {
      "id": "strategy/01-quantum-ai-consulting-landscape",
-     "score": 0.51
+     "score": 0.52
     }
    ]
   },
@@ -83,7 +83,7 @@
     },
     {
      "id": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
-     "score": 0.54
+     "score": 0.53
     },
     {
      "id": "strategy/05-agentic-ai-use-case-value-lifecycle",
@@ -134,11 +134,11 @@
     },
     {
      "id": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },
@@ -213,12 +213,7 @@
    "word_count": 611,
    "last_reviewed": "2026-07-19",
    "status": "current",
-   "top_similar": [
-    {
-     "id": "strategy/62-enterprise-ai-commercial-analysis-2026-finops-procurement-framework",
-     "score": 0.3
-    }
-   ]
+   "top_similar": []
   },
   {
    "id": "strategy/10-foundation-model-companies-2026",
@@ -286,7 +281,7 @@
    "top_similar": [
     {
      "id": "strategy/64-part-02-operating-models-operating-models-platform-ai-native",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "strategy/40-target-operating-model-and-change",
@@ -376,7 +371,7 @@
     },
     {
      "id": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
-     "score": 0.38
+     "score": 0.39
     },
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
@@ -403,7 +398,7 @@
    "top_similar": [
     {
      "id": "strategy/72-part-10-service-catalog-tiers-governance-developer-portal",
-     "score": 0.4
+     "score": 0.39
     }
    ]
   },
@@ -427,7 +422,7 @@
    "top_similar": [
     {
      "id": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "strategy/68-part-08-organizational-roles-career-pathways-salary-benchmarks",
@@ -613,11 +608,11 @@
    "top_similar": [
     {
      "id": "architecture/16-ea-aidlc-deep-research-2026",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "strategy/42-ai-first-to-ai-native",
@@ -672,7 +667,7 @@
     },
     {
      "id": "strategy/42-ai-first-to-ai-native",
-     "score": 0.45
+     "score": 0.46
     },
     {
      "id": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
@@ -702,15 +697,15 @@
    "top_similar": [
     {
      "id": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
+     "score": 0.37
+    },
+    {
+     "id": "strategy/27-part-17-transformation-roadmap",
      "score": 0.36
     },
     {
      "id": "data-knowledge/06-consulting-firms-genai-strategy",
-     "score": 0.35
-    },
-    {
-     "id": "strategy/27-part-17-transformation-roadmap",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -730,7 +725,12 @@
    "word_count": 1071,
    "last_reviewed": "2026-07-19",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "strategy/27-part-17-transformation-roadmap",
+     "score": 0.3
+    }
+   ]
   },
   {
    "id": "strategy/30-part-20-greenfield-vs-brownfield",
@@ -793,11 +793,11 @@
    "top_similar": [
     {
      "id": "strategy/74-ea-strategy-playbook-build-operate-retire-stages",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "architecture/68-ea-bestpractices-jargon",
-     "score": 0.37
+     "score": 0.38
     }
    ]
   },
@@ -934,7 +934,7 @@
    "top_similar": [
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
@@ -968,7 +968,7 @@
     },
     {
      "id": "strategy/41-roadmap-financials-kpis-and-risk",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -994,11 +994,11 @@
     },
     {
      "id": "strategy/40-target-operating-model-and-change",
-     "score": 0.32
+     "score": 0.33
     },
     {
      "id": "strategy/81-ai-first-to-ai-native-case-studies-readiness-checklist",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -1024,7 +1024,7 @@
     },
     {
      "id": "strategy/27-part-17-transformation-roadmap",
-     "score": 0.45
+     "score": 0.46
     },
     {
      "id": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
@@ -1067,7 +1067,7 @@
    "top_similar": [
     {
      "id": "strategy/86-vol10-relationship-maps-glossary-ai-comparisons-terminology-xref",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -1104,7 +1104,7 @@
    "top_similar": [
     {
      "id": "strategy/93-vol3-portfolio-governance-pmo-agile-governance",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },
@@ -1173,7 +1173,7 @@
    "top_similar": [
     {
      "id": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
-     "score": 0.33
+     "score": 0.34
     },
     {
      "id": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
@@ -1269,7 +1269,7 @@
     },
     {
      "id": "strategy/05-agentic-ai-use-case-value-lifecycle",
-     "score": 0.41
+     "score": 0.42
     }
    ]
   },
@@ -1290,7 +1290,7 @@
    "top_similar": [
     {
      "id": "strategy/55-ai-cost-implementation-guide-2026-anti-patterns-deployment-playbook",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -1311,7 +1311,7 @@
    "top_similar": [
     {
      "id": "strategy/54-ai-cost-implementation-guide-2026-budget-finops-roi-measurement",
-     "score": 0.35
+     "score": 0.34
     },
     {
      "id": "strategy/04-ai-cost-implementation-guide-2026",
@@ -1336,15 +1336,15 @@
    "top_similar": [
     {
      "id": "strategy/parts/01-ai-value-creator-deliverables-pack-playbooks-scorecard",
-     "score": 0.42
+     "score": 0.43
     },
     {
      "id": "strategy/05-agentic-ai-use-case-value-lifecycle",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "strategy/03-ai-value-creator-deliverables-pack",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -1450,12 +1450,7 @@
    "word_count": 594,
    "last_reviewed": "2026-07-19",
    "status": "current",
-   "top_similar": [
-    {
-     "id": "strategy/09-enterprise-ai-commercial-analysis-2026",
-     "score": 0.3
-    }
-   ]
+   "top_similar": []
   },
   {
    "id": "strategy/63-part-01-evolution-evolution-stages-agentic-ai-native",
@@ -1506,11 +1501,11 @@
    "top_similar": [
     {
      "id": "strategy/12-part-02-operating-models",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "strategy/27-part-17-transformation-roadmap",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "strategy/65-part-02-operating-models-operating-model-comparison-maturity",
@@ -1590,11 +1585,11 @@
    "top_similar": [
     {
      "id": "strategy/18-part-08-organizational-roles",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "strategy/16-part-06-governance",
-     "score": 0.38
+     "score": 0.39
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
@@ -1629,7 +1624,7 @@
     },
     {
      "id": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -1720,7 +1715,7 @@
    "top_similar": [
     {
      "id": "strategy/17-part-07-platform-operating-model",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "strategy/20-part-10-service-catalog",
@@ -1772,11 +1767,11 @@
    "top_similar": [
     {
      "id": "strategy/32-ea-strategy-playbook",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "architecture/68-ea-bestpractices-jargon",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -1800,10 +1795,6 @@
     {
      "id": "strategy/76-enterprise-ai-strategic-brief-2026-roadmap-strategic-imperatives",
      "score": 0.41
-    },
-    {
-     "id": "architecture/16-ea-aidlc-deep-research-2026",
-     "score": 0.3
     }
    ]
   },
@@ -1934,7 +1925,7 @@
    "top_similar": [
     {
      "id": "strategy/41-roadmap-financials-kpis-and-risk",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -1955,7 +1946,11 @@
    "top_similar": [
     {
      "id": "strategy/85-vol1-corporate-strategy-relationships-industry-comparisons",
-     "score": 0.38
+     "score": 0.39
+    },
+    {
+     "id": "strategy/vols/01-vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref",
+     "score": 0.31
     }
    ]
   },
@@ -1974,7 +1969,12 @@
    "word_count": 1360,
    "last_reviewed": "2026-07-19",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "strategy/84-vol1-corporate-strategy-execution-templates-kpis",
+     "score": 0.3
+    }
+   ]
   },
   {
    "id": "strategy/84-vol1-corporate-strategy-execution-templates-kpis",
@@ -1998,6 +1998,10 @@
     },
     {
      "id": "strategy/vols/09-vol8-portfolio-consulting-frameworks-architecture-operating-delivery",
+     "score": 0.31
+    },
+    {
+     "id": "strategy/83-vol1-corporate-strategy-strategy-taxonomy-24-types",
      "score": 0.3
     }
    ]
@@ -2018,7 +2022,7 @@
    "top_similar": [
     {
      "id": "strategy/82-vol1-corporate-strategy-themes-priorities-initiatives",
-     "score": 0.38
+     "score": 0.39
     },
     {
      "id": "strategy/96-vol4-consulting-frameworks-industry-architecture-industry-playbooks",
@@ -2043,7 +2047,7 @@
    "top_similar": [
     {
      "id": "strategy/44-vol10-relationship-maps-glossary",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -2063,11 +2067,11 @@
    "top_similar": [
     {
      "id": "strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t",
-     "score": 0.72
+     "score": 0.73
     },
     {
      "id": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -2087,7 +2091,7 @@
    "top_similar": [
     {
      "id": "strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g",
-     "score": 0.72
+     "score": 0.73
     },
     {
      "id": "strategy/89-vol10-relationship-maps-glossary-glossary-u-z-deliverables",
@@ -2112,7 +2116,7 @@
    "top_similar": [
     {
      "id": "strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t",
@@ -2152,16 +2156,16 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
-     "score": 0.42
+     "id": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
+     "score": 0.43
     },
     {
-     "id": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
-     "score": 0.42
+     "id": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
+     "score": 0.43
     },
     {
      "id": "strategy/49-vol6-organization-structure-operating-model",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -2198,15 +2202,15 @@
    "top_similar": [
     {
      "id": "strategy/46-vol3-portfolio-governance",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "strategy/94-vol3-portfolio-governance-ai-governance-metrics",
-     "score": 0.33
+     "score": 0.34
     },
     {
      "id": "strategy/vols/08-vol8-portfolio-consulting-frameworks-pmo-evolution-strategy-frameworks",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -2227,7 +2231,7 @@
    "top_similar": [
     {
      "id": "strategy/93-vol3-portfolio-governance-pmo-agile-governance",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -2371,7 +2375,7 @@
    "top_similar": [
     {
      "id": "strategy/03-ai-value-creator-deliverables-pack",
-     "score": 0.54
+     "score": 0.53
     },
     {
      "id": "strategy/53-ai-value-creator-deliverables-pack-maturity-governance-playbooks",
@@ -2379,7 +2383,7 @@
     },
     {
      "id": "strategy/56-agentic-ai-use-case-value-lifecycle-financial-model-assumptions",
-     "score": 0.42
+     "score": 0.43
     }
    ]
   },
@@ -2405,7 +2409,7 @@
     },
     {
      "id": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
-     "score": 0.7
+     "score": 0.71
     },
     {
      "id": "strategy/01-quantum-ai-consulting-landscape",
@@ -2433,7 +2437,7 @@
    "top_similar": [
     {
      "id": "strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns",
-     "score": 0.73
+     "score": 0.74
     },
     {
      "id": "strategy/01-quantum-ai-consulting-landscape",
@@ -2441,7 +2445,7 @@
     },
     {
      "id": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
-     "score": 0.7
+     "score": 0.71
     }
    ]
   },
@@ -2466,11 +2470,11 @@
     },
     {
      "id": "strategy/01-quantum-ai-consulting-landscape",
-     "score": 0.74
+     "score": 0.75
     },
     {
      "id": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
-     "score": 0.73
+     "score": 0.74
     }
    ]
   },
@@ -2493,7 +2497,7 @@
    "top_similar": [
     {
      "id": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
-     "score": 0.6
+     "score": 0.61
     },
     {
      "id": "strategy/02-quantum-ai-startup-landscape",
@@ -2523,7 +2527,7 @@
    "top_similar": [
     {
      "id": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
-     "score": 0.5
+     "score": 0.51
     },
     {
      "id": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
@@ -2553,7 +2557,7 @@
    "top_similar": [
     {
      "id": "strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns",
-     "score": 0.54
+     "score": 0.55
     },
     {
      "id": "strategy/02-quantum-ai-startup-landscape",
@@ -2586,11 +2590,11 @@
     },
     {
      "id": "strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti",
-     "score": 0.6
+     "score": 0.61
     },
     {
      "id": "strategy/quantum/06-quantum-ai-startup-landscape-iqm-emerging-players",
-     "score": 0.54
+     "score": 0.55
     }
    ]
   },
@@ -2611,6 +2615,10 @@
     {
      "id": "strategy/99-vol5-ai-strategy-transformation-glossary-glossary-a-to-h",
      "score": 0.79
+    },
+    {
+     "id": "strategy/82-vol1-corporate-strategy-themes-priorities-initiatives",
+     "score": 0.31
     }
    ]
   },
@@ -2631,11 +2639,11 @@
    "top_similar": [
     {
      "id": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
-     "score": 0.42
+     "score": 0.43
     },
     {
      "id": "strategy/28-part-18-case-studies",
-     "score": 0.33
+     "score": 0.34
     },
     {
      "id": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
@@ -2659,7 +2667,7 @@
    "top_similar": [
     {
      "id": "strategy/91-vol2-business-architecture-operating-model-organization-operating-model-design",
-     "score": 0.42
+     "score": 0.43
     },
     {
      "id": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
@@ -2667,7 +2675,7 @@
     },
     {
      "id": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -2716,7 +2724,7 @@
    "top_similar": [
     {
      "id": "strategy/vols/06-vol7-enterprise-building-blocks-ai-infrastructure-platform-engineering",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -2736,7 +2744,7 @@
    "top_similar": [
     {
      "id": "strategy/vols/05-vol7-enterprise-building-blocks-application-core-ai-blocks",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -2775,7 +2783,7 @@
     },
     {
      "id": "strategy/93-vol3-portfolio-governance-pmo-agile-governance",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -2799,7 +2807,7 @@
     },
     {
      "id": "strategy/84-vol1-corporate-strategy-execution-templates-kpis",
-     "score": 0.3
+     "score": 0.31
     }
    ]
   },
@@ -2836,7 +2844,7 @@
    "top_similar": [
     {
      "id": "strategy/vols/12-vol9-industry-deep-dives-life-sciences-logistics-media-tech",
-     "score": 0.45
+     "score": 0.46
     },
     {
      "id": "strategy/52-vol9-industry-deep-dives",
@@ -2867,7 +2875,7 @@
    "top_similar": [
     {
      "id": "strategy/vols/11-vol9-industry-deep-dives-manufacturing-energy-telecom-gov",
-     "score": 0.45
+     "score": 0.46
     },
     {
      "id": "strategy/52-vol9-industry-deep-dives",
