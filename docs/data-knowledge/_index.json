@@ -20,16 +20,8 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "data-knowledge/02-databricks-iceberg-open-formats",
-     "score": 0.36
-    },
-    {
-     "id": "architecture/20-ai-native-architecture-evolution-report",
-     "score": 0.33
-    },
-    {
-     "id": "data-knowledge/03-data-architecture-for-ai-report",
-     "score": 0.31
+     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
+     "score": 0.51
     }
    ]
   },
@@ -51,16 +43,16 @@
    "status": "current",
    "top_similar": [
     {
+     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
+     "score": 0.5
+    },
+    {
      "id": "architecture/87-modern-data-ai-platform-blueprint-2026",
-     "score": 0.44
+     "score": 0.4
     },
     {
-     "id": "data-knowledge/01-databricks-lakehouse-data-infrastructure",
-     "score": 0.36
-    },
-    {
-     "id": "data-knowledge/03-data-architecture-for-ai-report",
-     "score": 0.3
+     "id": "platforms/49-part-09-competitive-reference-architectures",
+     "score": 0.39
     }
    ]
   },
@@ -173,7 +165,7 @@
      "score": 0.37
     },
     {
-     "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
+     "id": "strategy/28-part-18-case-studies",
      "score": 0.35
     }
    ]
@@ -272,7 +264,7 @@
    "top_similar": [
     {
      "id": "data-knowledge/parts/01-data-architecture-for-ai-report-part2",
-     "score": 0.32
+     "score": 0.33
     },
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",
@@ -294,7 +286,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/30-akes-addendum-document-update-and-versioning-part2",
-     "score": 0.35
+     "score": 0.34
     },
     {
      "id": "architecture/78-akes-addendum-document-update-and-versioning",
@@ -409,11 +401,11 @@
     },
     {
      "id": "data-knowledge/parts/03-enterprise-data-systems-ai-governance-report-part2",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "data-knowledge/parts/05-enterprise-knowledge-architectures-report-part2",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -495,7 +487,7 @@
     },
     {
      "id": "data-knowledge/parts/02-end-to-end-lineage-systems-report-part2",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",

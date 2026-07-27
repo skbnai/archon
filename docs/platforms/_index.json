@@ -112,7 +112,7 @@
    "top_similar": [
     {
      "id": "platforms/02-quantum-ai-applications",
-     "score": 0.6
+     "score": 0.61
     },
     {
      "id": "platforms/01-quantum-ai-foundations",
@@ -165,11 +165,11 @@
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.33
+     "score": 0.32
     },
     {
      "id": "agentic-systems/core/parts/10-agentic-platform-bestpractices-part2",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -191,11 +191,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/07-enterprise-ai-gateway-part2",
-     "score": 0.5
+     "score": 0.49
     },
     {
      "id": "platforms/08-kong-ai-gateway-guide",
-     "score": 0.37
+     "score": 0.36
     },
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
@@ -226,7 +226,7 @@
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.37
+     "score": 0.36
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
@@ -417,7 +417,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",
-     "score": 0.52
+     "score": 0.51
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
@@ -447,7 +447,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/17-agentcore-memory-operations-deepdive-part2",
-     "score": 0.43
+     "score": 0.42
     }
    ]
   },
@@ -635,7 +635,20 @@
    "word_count": 2002,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
+     "score": 0.47
+    },
+    {
+     "id": "platforms/44-part-02-agent-lake-architecture",
+     "score": 0.4
+    },
+    {
+     "id": "platforms/45-part-03-mosaic-ai-mlflow",
+     "score": 0.38
+    }
+   ]
   },
   {
    "id": "platforms/44-part-02-agent-lake-architecture",
@@ -653,7 +666,20 @@
    "word_count": 1911,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/45-part-03-mosaic-ai-mlflow",
+     "score": 0.44
+    },
+    {
+     "id": "platforms/46-part-04-unity-catalog-governance",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
+     "score": 0.41
+    }
+   ]
   },
   {
    "id": "platforms/45-part-03-mosaic-ai-mlflow",
@@ -671,7 +697,20 @@
    "word_count": 1756,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/44-part-02-agent-lake-architecture",
+     "score": 0.44
+    },
+    {
+     "id": "platforms/43-part-01-platform-vision-agentic-services",
+     "score": 0.38
+    },
+    {
+     "id": "platforms/48-part-08-observability-finops-integration",
+     "score": 0.36
+    }
+   ]
   },
   {
    "id": "platforms/46-part-04-unity-catalog-governance",
@@ -689,7 +728,20 @@
    "word_count": 1707,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/44-part-02-agent-lake-architecture",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
+     "score": 0.41
+    },
+    {
+     "id": "platforms/47-part-07-security-architecture",
+     "score": 0.4
+    }
+   ]
   },
   {
    "id": "platforms/47-part-07-security-architecture",
@@ -708,7 +760,16 @@
    "word_count": 1767,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/46-part-04-unity-catalog-governance",
+     "score": 0.4
+    },
+    {
+     "id": "platforms/48-part-08-observability-finops-integration",
+     "score": 0.35
+    }
+   ]
   },
   {
    "id": "platforms/48-part-08-observability-finops-integration",
@@ -728,7 +789,20 @@
    "word_count": 2478,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/49-part-09-competitive-reference-architectures",
+     "score": 0.4
+    },
+    {
+     "id": "platforms/43-part-01-platform-vision-agentic-services",
+     "score": 0.38
+    }
+   ]
   },
   {
    "id": "platforms/49-part-09-competitive-reference-architectures",
@@ -744,7 +818,20 @@
    "word_count": 1731,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
+     "score": 0.43
+    },
+    {
+     "id": "platforms/48-part-08-observability-finops-integration",
+     "score": 0.4
+    },
+    {
+     "id": "data-knowledge/02-databricks-iceberg-open-formats",
+     "score": 0.39
+    }
+   ]
   },
   {
    "id": "platforms/index",
@@ -851,16 +938,16 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
-     "score": 0.42
-    },
-    {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
      "score": 0.42
     },
     {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+     "score": 0.42
+    },
+    {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.33
+     "score": 0.32
     }
    ]
   },
@@ -936,7 +1023,7 @@
    "top_similar": [
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.5
+     "score": 0.49
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
@@ -967,7 +1054,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "platforms/09-kong-entra-id-integration",
@@ -1002,7 +1089,7 @@
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
@@ -1101,7 +1188,7 @@
     },
     {
      "id": "agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -1178,14 +1265,6 @@
     {
      "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
      "score": 0.43
-    },
-    {
-     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.3
-    },
-    {
-     "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
-     "score": 0.3
     }
    ]
   },
@@ -1281,7 +1360,7 @@
     },
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.38
+     "score": 0.37
     }
    ]
   },
@@ -1303,7 +1382,7 @@
    "top_similar": [
     {
      "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
-     "score": 0.52
+     "score": 0.51
     }
    ]
   },
@@ -1325,7 +1404,7 @@
    "top_similar": [
     {
      "id": "platforms/17-agentcore-memory-operations-deepdive",
-     "score": 0.43
+     "score": 0.42
     }
    ]
   },
@@ -1488,7 +1567,20 @@
    "word_count": 1558,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "data-knowledge/01-databricks-lakehouse-data-infrastructure",
+     "score": 0.51
+    },
+    {
+     "id": "data-knowledge/02-databricks-iceberg-open-formats",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/43-part-01-platform-vision-agentic-services",
+     "score": 0.47
+    }
+   ]
   }
  ]
 }
