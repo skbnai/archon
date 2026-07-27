@@ -2656,18 +2656,18 @@ topics:
   - id: azure-agent-architecture
     domain: platforms
     canonical: docs/platforms/21-azure-agent-architecture.md
-    pending: true
     aliases:
     - azure ai agent architecture — production grade
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/azure/azure_agent_architecture.md
     pages: []
   - id: hyperscaler-deep-dive-azure
     domain: platforms
     canonical: docs/platforms/22-hyperscaler-deep-dive-azure.md
-    pending: true
     aliases:
     - 'hyperscaler deep dive: microsoft azure'
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/azure/hyperscaler-deep-dive-azure.md
     pages: []
   - id: enterprise-agent-runtime-internals-2026
     domain: platforms
@@ -2680,10 +2680,10 @@ topics:
   - id: hyperscaler-deep-dive-gcp
     domain: platforms
     canonical: docs/platforms/24-hyperscaler-deep-dive-gcp.md
-    pending: true
     aliases:
     - 'hyperscaler deep dive: google cloud'
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/gcp/hyperscaler-deep-dive-gcp.md
     pages: []
   - id: ai-assisted-iac-mastery
     domain: platforms
