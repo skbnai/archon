@@ -2910,9 +2910,15 @@ topics:
   - id: k8s-handbook-part7-storage
     domain: platforms
     canonical: docs/platforms/40-k8s-handbook-part7-storage.md
-    pending: true
     aliases:
     - 'k8s handbook part 7: storage'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part7_Storage.md
+    pages: []
+  - id: k8s-handbook-part7-storage-part2
+    domain: platforms
+    canonical: docs/platforms/parts/40-k8s-handbook-part7-storage-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part8-security
