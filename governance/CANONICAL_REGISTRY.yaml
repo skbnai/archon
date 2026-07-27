@@ -2659,7 +2659,31 @@ topics:
   - id: bedrock-agentcore-code-interpreter-architecture
     domain: platforms
     canonical: docs/platforms/19-bedrock-agentcore-code-interpreter-architecture.md
-    pending: true
+    aliases: []
+    supersedes:
+    - docs/cloud-platforms/aws/bedrock-agentcore-code-interpreter-architecture.md
+    pages: []
+  - id: bedrock-agentcore-code-interpreter-architecture-part2
+    domain: platforms
+    canonical: docs/platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: bedrock-agentcore-code-interpreter-architecture-part3
+    domain: platforms
+    canonical: docs/platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: bedrock-agentcore-code-interpreter-architecture-part4
+    domain: platforms
+    canonical: docs/platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: bedrock-agentcore-code-interpreter-architecture-part5
+    domain: platforms
+    canonical: docs/platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5.md
     aliases: []
     supersedes: []
     pages: []

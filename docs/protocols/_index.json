@@ -22,7 +22,7 @@
     },
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.4
+     "score": 0.41
     }
    ]
   },
@@ -112,7 +112,7 @@
     },
     {
      "id": "protocols/12-tool-authentication-connectors",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "protocols/02-enterprise-ai-platform-auth-survey",
@@ -212,7 +212,7 @@
    "top_similar": [
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.61
+     "score": 0.62
     },
     {
      "id": "protocols/10-entra-3lo-agent-auth-security-review",
@@ -272,7 +272,7 @@
     },
     {
      "id": "protocols/09-entra-3lo-agent-auth-multiagent-compliance",
-     "score": 0.61
+     "score": 0.62
     },
     {
      "id": "protocols/10-entra-3lo-agent-auth-security-review",
@@ -296,7 +296,7 @@
     },
     {
      "id": "protocols/05-identity-obo-sessions",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
@@ -328,8 +328,8 @@
      "score": 0.42
     },
     {
-     "id": "agentic-systems/coding-tools/parts/39-mcp-deep-guide-part2",
-     "score": 0.39
+     "id": "agentic-systems/orchestration/10-mcp-impact",
+     "score": 0.4
     }
    ]
   },
@@ -404,11 +404,11 @@
    "top_similar": [
     {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
-     "score": 0.46
+     "score": 0.47
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "protocols/21-emerging-protocols-overview",
@@ -441,7 +441,7 @@
     },
     {
      "id": "protocols/23-existing-protocol-evolution-agentic-ai",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "agentic-systems/core/17-a2a-deep-research",
@@ -505,7 +505,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/02-agui-standards-landscape",
-     "score": 0.57
+     "score": 0.58
     },
     {
      "id": "agentic-systems/agentic-ui/19-agentic-ui-security-architecture",
@@ -541,11 +541,11 @@
    "top_similar": [
     {
      "id": "protocols/21-emerging-protocols-overview",
-     "score": 0.53
+     "score": 0.54
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.51
+     "score": 0.52
     },
     {
      "id": "protocols/parts/20-emerging-protocols-crosscutting-part2",
@@ -582,7 +582,7 @@
     },
     {
      "id": "protocols/20-emerging-protocols-crosscutting",
-     "score": 0.53
+     "score": 0.54
     },
     {
      "id": "protocols/16-ai-protocols-standards-service-industry-guide-2026",
@@ -616,7 +616,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -649,7 +649,7 @@
     },
     {
      "id": "protocols/index",
-     "score": 0.36
+     "score": 0.37
     }
    ]
   },
@@ -701,7 +701,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },
@@ -727,7 +727,7 @@
     },
     {
      "id": "agentic-systems/orchestration/10-mcp-impact",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "architecture/58-mcp-a2a-protocol-deep-dive",
@@ -814,7 +814,7 @@
    "top_similar": [
     {
      "id": "protocols/16-ai-protocols-standards-service-industry-guide-2026",
-     "score": 0.46
+     "score": 0.47
     },
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
@@ -946,7 +946,7 @@
     },
     {
      "id": "protocols/20-emerging-protocols-crosscutting",
-     "score": 0.51
+     "score": 0.52
     },
     {
      "id": "protocols/parts/22-emerging-protocols-ucp-ap2-nlip-lmos-part3",

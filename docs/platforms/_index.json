@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 94,
+ "page_count": 99,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -161,15 +161,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/06-ai-gateway-multitenant-multicloud-part2",
-     "score": 0.61
+     "score": 0.6
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
      "score": 0.32
-    },
-    {
-     "id": "agentic-systems/core/parts/10-agentic-platform-bestpractices-part2",
-     "score": 0.3
     }
    ]
   },
@@ -302,7 +298,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
-     "score": 0.57
+     "score": 0.56
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
@@ -310,7 +306,7 @@
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part3",
-     "score": 0.43
+     "score": 0.42
     }
    ]
   },
@@ -414,7 +410,20 @@
    "word_count": 2562,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
+     "score": 0.38
+    }
+   ]
   },
   {
    "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
@@ -437,11 +446,11 @@
      "score": 0.51
     },
     {
-     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.33
+     "id": "platforms/15-agentcore-memory-architecture-guide",
+     "score": 0.32
     },
     {
-     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
      "score": 0.32
     }
    ]
@@ -465,6 +474,36 @@
     {
      "id": "platforms/parts/17-agentcore-memory-operations-deepdive-part2",
      "score": 0.42
+    }
+   ]
+  },
+  {
+   "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+   "title": "Bedrock AgentCore Code Interpreter Architecture",
+   "doc_type": "guide",
+   "topic_id": "bedrock-agentcore-code-interpreter-architecture",
+   "tags": [
+    "aws",
+    "agentcore",
+    "code-interpreter",
+    "eu-banking",
+    "gdpr"
+   ],
+   "word_count": 1068,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+     "score": 0.7
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+     "score": 0.62
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5",
+     "score": 0.56
     }
    ]
   },
@@ -596,15 +635,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
-     "score": 0.39
+     "score": 0.38
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -624,15 +663,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part4",
-     "score": 0.7
+     "score": 0.68
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
-     "score": 0.65
+     "score": 0.64
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part2",
-     "score": 0.49
+     "score": 0.48
     }
    ]
   },
@@ -651,7 +690,12 @@
    "word_count": 2536,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/27-k8s-handbook-part10-observability-part2",
+     "score": 0.36
+    }
+   ]
   },
   {
    "id": "platforms/28-k8s-handbook-part11-ai-infrastructure",
@@ -668,7 +712,16 @@
    "word_count": 2545,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2",
+     "score": 0.55
+    },
+    {
+     "id": "platforms/33-k8s-handbook-part16-future-outlook",
+     "score": 0.32
+    }
+   ]
   },
   {
    "id": "platforms/29-k8s-handbook-part12-agentic-ai",
@@ -685,7 +738,20 @@
    "word_count": 2215,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part2",
+     "score": 0.39
+    },
+    {
+     "id": "platforms/30-k8s-handbook-part13-emerging-standards",
+     "score": 0.31
+    },
+    {
+     "id": "architecture/44-ai-harness-architecture-orchestration",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/30-k8s-handbook-part13-emerging-standards",
@@ -702,7 +768,20 @@
    "word_count": 1078,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "protocols/parts/13-mcp-deep-research-2026-part2",
+     "score": 0.35
+    },
+    {
+     "id": "agentic-systems/core/17-a2a-deep-research",
+     "score": 0.34
+    },
+    {
+     "id": "architecture/58-mcp-a2a-protocol-deep-dive",
+     "score": 0.33
+    }
+   ]
   },
   {
    "id": "platforms/31-k8s-handbook-part14-reference-architectures",
@@ -753,7 +832,12 @@
    "word_count": 1205,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/28-k8s-handbook-part11-ai-infrastructure",
+     "score": 0.32
+    }
+   ]
   },
   {
    "id": "platforms/34-k8s-handbook-part1-infrastructure-evolution",
@@ -770,7 +854,12 @@
    "word_count": 2076,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
+     "score": 0.36
+    }
+   ]
   },
   {
    "id": "platforms/35-k8s-handbook-part2-linux-foundations",
@@ -787,7 +876,16 @@
    "word_count": 2352,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part3",
+     "score": 0.59
+    },
+    {
+     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
+     "score": 0.47
+    }
+   ]
   },
   {
    "id": "platforms/36-k8s-handbook-part3-containers",
@@ -804,7 +902,20 @@
    "word_count": 2080,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part3",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/36-k8s-handbook-part3-containers-part2",
+     "score": 0.34
+    }
+   ]
   },
   {
    "id": "platforms/37-k8s-handbook-part4-kubernetes-internals",
@@ -821,7 +932,20 @@
    "word_count": 2640,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part4",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part2",
+     "score": 0.43
+    },
+    {
+     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+     "score": 0.32
+    }
+   ]
   },
   {
    "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
@@ -838,7 +962,20 @@
    "word_count": 3270,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/40-k8s-handbook-part7-storage",
+     "score": 0.39
+    },
+    {
+     "id": "platforms/parts/38-k8s-handbook-part5-kubernetes-resources-part2",
+     "score": 0.38
+    },
+    {
+     "id": "platforms/parts/40-k8s-handbook-part7-storage-part2",
+     "score": 0.36
+    }
+   ]
   },
   {
    "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
@@ -855,7 +992,20 @@
    "word_count": 3127,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part2",
+     "score": 0.7
+    },
+    {
+     "id": "platforms/parts/39-k8s-handbook-part6-kubernetes-networking-part2",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part3",
+     "score": 0.3
+    }
+   ]
   },
   {
    "id": "platforms/40-k8s-handbook-part7-storage",
@@ -872,7 +1022,16 @@
    "word_count": 2695,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/40-k8s-handbook-part7-storage-part2",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+     "score": 0.39
+    }
+   ]
   },
   {
    "id": "platforms/41-k8s-handbook-part8-security",
@@ -889,7 +1048,16 @@
    "word_count": 2784,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/41-k8s-handbook-part8-security-part2",
+     "score": 0.32
+    },
+    {
+     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/42-k8s-handbook-part9-platform-engineering",
@@ -906,7 +1074,16 @@
    "word_count": 2962,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/42-k8s-handbook-part9-platform-engineering-part2",
+     "score": 0.46
+    },
+    {
+     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3",
+     "score": 0.4
+    }
+   ]
   },
   {
    "id": "platforms/43-part-01-platform-vision-agentic-services",
@@ -997,7 +1174,7 @@
     },
     {
      "id": "platforms/48-part-08-observability-finops-integration",
-     "score": 0.36
+     "score": 0.37
     }
    ]
   },
@@ -1024,7 +1201,7 @@
     },
     {
      "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "platforms/47-part-07-security-architecture",
@@ -1081,7 +1258,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.42
+     "score": 0.43
     },
     {
      "id": "platforms/49-part-09-competitive-reference-architectures",
@@ -1110,7 +1287,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.43
+     "score": 0.44
     },
     {
      "id": "platforms/48-part-08-observability-finops-integration",
@@ -1196,7 +1373,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part3",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
@@ -1232,7 +1409,7 @@
     },
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
@@ -1268,7 +1445,7 @@
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -1290,7 +1467,7 @@
    "top_similar": [
     {
      "id": "platforms/06-ai-gateway-multitenant-multicloud",
-     "score": 0.61
+     "score": 0.6
     }
    ]
   },
@@ -1320,7 +1497,7 @@
     },
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
-     "score": 0.33
+     "score": 0.32
     }
    ]
   },
@@ -1343,7 +1520,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/09-kong-entra-id-integration",
@@ -1351,7 +1528,7 @@
     },
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -1378,7 +1555,7 @@
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
@@ -1413,7 +1590,7 @@
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -1441,7 +1618,7 @@
     },
     {
      "id": "platforms/11-aws-native-standards-first-agentic-architecture",
-     "score": 0.57
+     "score": 0.56
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
@@ -1473,11 +1650,11 @@
     },
     {
      "id": "platforms/11-aws-native-standards-first-agentic-architecture",
-     "score": 0.43
+     "score": 0.42
     },
     {
      "id": "agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -1668,7 +1845,20 @@
    "word_count": 2793,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+     "score": 0.63
+    },
+    {
+     "id": "platforms/15-agentcore-memory-architecture-guide",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
+     "score": 0.39
+    }
+   ]
   },
   {
    "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
@@ -1685,7 +1875,20 @@
    "word_count": 2474,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
+     "score": 0.63
+    },
+    {
+     "id": "platforms/15-agentcore-memory-architecture-guide",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
+     "score": 0.46
+    }
+   ]
   },
   {
    "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
@@ -1702,7 +1905,20 @@
    "word_count": 2699,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+     "score": 0.46
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
+     "score": 0.39
+    },
+    {
+     "id": "platforms/15-agentcore-memory-architecture-guide",
+     "score": 0.38
+    }
+   ]
   },
   {
    "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",
@@ -1745,6 +1961,131 @@
     {
      "id": "platforms/17-agentcore-memory-operations-deepdive",
      "score": 0.42
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+     "score": 0.38
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+   "title": "Bedrock AgentCore Code Interpreter Architecture (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "bedrock-agentcore-code-interpreter-architecture-part2",
+   "tags": [
+    "aws",
+    "agentcore",
+    "memory",
+    "data-lineage",
+    "pii"
+   ],
+   "word_count": 2191,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+     "score": 0.7
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+     "score": 0.6
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part4",
+     "score": 0.57
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+   "title": "Bedrock AgentCore Code Interpreter Architecture (Part 3)",
+   "doc_type": "guide",
+   "topic_id": "bedrock-agentcore-code-interpreter-architecture-part3",
+   "tags": [
+    "aws",
+    "agentcore",
+    "security",
+    "gdpr",
+    "multi-agent"
+   ],
+   "word_count": 2332,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+     "score": 0.62
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+     "score": 0.6
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5",
+     "score": 0.51
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part4",
+   "title": "Bedrock AgentCore Code Interpreter Architecture (Part 4)",
+   "doc_type": "guide",
+   "topic_id": "bedrock-agentcore-code-interpreter-architecture-part4",
+   "tags": [
+    "aws",
+    "agentcore",
+    "cost-optimization",
+    "terraform",
+    "iac"
+   ],
+   "word_count": 3738,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+     "score": 0.57
+    },
+    {
+     "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+     "score": 0.48
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5",
+   "title": "Bedrock AgentCore Code Interpreter Architecture (Part 5)",
+   "doc_type": "guide",
+   "topic_id": "bedrock-agentcore-code-interpreter-architecture-part5",
+   "tags": [
+    "aws",
+    "agentcore",
+    "best-practices",
+    "roadmap",
+    "evaluation",
+    "adr"
+   ],
+   "word_count": 1824,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+     "score": 0.56
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+     "score": 0.52
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+     "score": 0.51
     }
    ]
   },
@@ -1767,7 +2108,7 @@
    "top_similar": [
     {
      "id": "platforms/25-ai-assisted-iac-mastery",
-     "score": 0.39
+     "score": 0.38
     },
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
@@ -1794,7 +2135,7 @@
    "top_similar": [
     {
      "id": "platforms/25-ai-assisted-iac-mastery",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
@@ -1820,15 +2161,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part4",
-     "score": 0.54
+     "score": 0.53
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
-     "score": 0.52
+     "score": 0.51
     },
     {
      "id": "platforms/26-terraform-mastery-guide",
-     "score": 0.49
+     "score": 0.48
     }
    ]
   },
@@ -1850,15 +2191,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part4",
-     "score": 0.77
+     "score": 0.75
     },
     {
      "id": "platforms/26-terraform-mastery-guide",
-     "score": 0.65
+     "score": 0.64
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part2",
-     "score": 0.52
+     "score": 0.51
     }
    ]
   },
@@ -1880,15 +2221,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
-     "score": 0.77
+     "score": 0.75
     },
     {
      "id": "platforms/26-terraform-mastery-guide",
-     "score": 0.7
+     "score": 0.68
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part2",
-     "score": 0.54
+     "score": 0.53
     }
    ]
   },
@@ -1907,7 +2248,16 @@
    "word_count": 2218,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/27-k8s-handbook-part10-observability",
+     "score": 0.36
+    },
+    {
+     "id": "platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2",
@@ -1924,7 +2274,16 @@
    "word_count": 1937,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/28-k8s-handbook-part11-ai-infrastructure",
+     "score": 0.55
+    },
+    {
+     "id": "platforms/parts/27-k8s-handbook-part10-observability-part2",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part2",
@@ -1941,7 +2300,16 @@
    "word_count": 2258,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/29-k8s-handbook-part12-agentic-ai",
+     "score": 0.39
+    },
+    {
+     "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part3",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part3",
@@ -1958,7 +2326,16 @@
    "word_count": 2212,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part2",
+     "score": 0.31
+    },
+    {
+     "id": "platforms/29-k8s-handbook-part12-agentic-ai",
+     "score": 0.3
+    }
+   ]
   },
   {
    "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
@@ -1975,7 +2352,20 @@
    "word_count": 2592,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/35-k8s-handbook-part2-linux-foundations",
+     "score": 0.47
+    },
+    {
+     "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part3",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/36-k8s-handbook-part3-containers",
+     "score": 0.42
+    }
+   ]
   },
   {
    "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3",
@@ -1992,7 +2382,20 @@
    "word_count": 1726,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/42-k8s-handbook-part9-platform-engineering",
+     "score": 0.4
+    },
+    {
+     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part4",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part4",
@@ -2008,7 +2411,16 @@
    "word_count": 945,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
+     "score": 0.32
+    },
+    {
+     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part2",
@@ -2026,7 +2438,16 @@
    "word_count": 2245,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
+     "score": 0.7
+    },
+    {
+     "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part3",
+     "score": 0.36
+    }
+   ]
   },
   {
    "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part3",
@@ -2043,7 +2464,20 @@
    "word_count": 1776,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/35-k8s-handbook-part2-linux-foundations",
+     "score": 0.59
+    },
+    {
+     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/36-k8s-handbook-part3-containers",
+     "score": 0.45
+    }
+   ]
   },
   {
    "id": "platforms/parts/36-k8s-handbook-part3-containers-part2",
@@ -2060,7 +2494,16 @@
    "word_count": 2213,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/36-k8s-handbook-part3-containers-part3",
+     "score": 0.37
+    },
+    {
+     "id": "platforms/36-k8s-handbook-part3-containers",
+     "score": 0.34
+    }
+   ]
   },
   {
    "id": "platforms/parts/36-k8s-handbook-part3-containers-part3",
@@ -2078,7 +2521,16 @@
    "word_count": 2279,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/36-k8s-handbook-part3-containers-part2",
+     "score": 0.37
+    },
+    {
+     "id": "platforms/36-k8s-handbook-part3-containers",
+     "score": 0.33
+    }
+   ]
   },
   {
    "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part2",
@@ -2094,7 +2546,20 @@
    "word_count": 1300,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part4",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/37-k8s-handbook-part4-kubernetes-internals",
+     "score": 0.43
+    },
+    {
+     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+     "score": 0.32
+    }
+   ]
   },
   {
    "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part3",
@@ -2112,7 +2577,16 @@
    "word_count": 1623,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
+     "score": 0.3
+    },
+    {
+     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+     "score": 0.3
+    }
+   ]
   },
   {
    "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part4",
@@ -2128,7 +2602,16 @@
    "word_count": 1278,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/37-k8s-handbook-part4-kubernetes-internals",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part2",
+     "score": 0.5
+    }
+   ]
   },
   {
    "id": "platforms/parts/38-k8s-handbook-part5-kubernetes-resources-part2",
@@ -2145,7 +2628,12 @@
    "word_count": 1940,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+     "score": 0.38
+    }
+   ]
   },
   {
    "id": "platforms/parts/39-k8s-handbook-part6-kubernetes-networking-part2",
@@ -2162,7 +2650,16 @@
    "word_count": 2099,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/parts/40-k8s-handbook-part7-storage-part2",
@@ -2179,7 +2676,16 @@
    "word_count": 2211,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/40-k8s-handbook-part7-storage",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+     "score": 0.36
+    }
+   ]
   },
   {
    "id": "platforms/parts/41-k8s-handbook-part8-security-part2",
@@ -2196,7 +2702,12 @@
    "word_count": 2090,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/41-k8s-handbook-part8-security",
+     "score": 0.32
+    }
+   ]
   },
   {
    "id": "platforms/parts/42-k8s-handbook-part9-platform-engineering-part2",
@@ -2213,7 +2724,12 @@
    "word_count": 2116,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/42-k8s-handbook-part9-platform-engineering",
+     "score": 0.46
+    }
+   ]
   },
   {
    "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
@@ -2237,7 +2753,7 @@
     },
     {
      "id": "data-knowledge/02-databricks-iceberg-open-formats",
-     "score": 0.5
+     "score": 0.51
     },
     {
      "id": "platforms/43-part-01-platform-vision-agentic-services",

@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 94,
+    "totalPages": 99,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1652,6 +1652,10 @@
       {
         "id": "platforms/17-agentcore-memory-operations-deepdive",
         "title": "AgentCore Memory Operations Deep Dive"
+      },
+      {
+        "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+        "title": "Bedrock AgentCore Code Interpreter Architecture"
       },
       {
         "id": "platforms/20-hyperscaler-deep-dive-aws",
@@ -1860,6 +1864,22 @@
       {
         "id": "platforms/parts/17-agentcore-memory-operations-deepdive-part2",
         "title": "AgentCore Memory Operations Deep Dive (Part 2: Issues by Phase, Unit Testing, Evaluation & Cleanup)"
+      },
+      {
+        "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+        "title": "Bedrock AgentCore Code Interpreter Architecture (Part 2)"
+      },
+      {
+        "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+        "title": "Bedrock AgentCore Code Interpreter Architecture (Part 3)"
+      },
+      {
+        "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part4",
+        "title": "Bedrock AgentCore Code Interpreter Architecture (Part 4)"
+      },
+      {
+        "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5",
+        "title": "Bedrock AgentCore Code Interpreter Architecture (Part 5)"
       },
       {
         "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
