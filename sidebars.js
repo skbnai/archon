@@ -876,6 +876,8 @@ const sidebars = {
             "platforms/parts/k8s-handbook-part6-kubernetes-networking-part2",
             "platforms/k8s-handbook-part7-storage",
             "platforms/parts/k8s-handbook-part7-storage-part2",
+            "platforms/k8s-handbook-part8-security",
+            "platforms/parts/k8s-handbook-part8-security-part2",
           ],
         },
       ],

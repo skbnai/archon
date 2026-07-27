@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 75,
+ "page_count": 77,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -734,6 +734,23 @@
     "longhorn"
    ],
    "word_count": 2695,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/41-k8s-handbook-part8-security",
+   "title": "K8s Handbook Part 8: Security",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part8-security",
+   "tags": [
+    "kubernetes",
+    "security",
+    "zero-trust",
+    "rbac",
+    "secrets"
+   ],
+   "word_count": 2784,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []
@@ -1888,6 +1905,23 @@
     "observability"
    ],
    "word_count": 2211,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/41-k8s-handbook-part8-security-part2",
+   "title": "K8s Handbook Part 8: Security (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part8-security-part2",
+   "tags": [
+    "kubernetes",
+    "security",
+    "compliance",
+    "supply-chain",
+    "runtime-security"
+   ],
+   "word_count": 2090,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []

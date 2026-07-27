@@ -2924,9 +2924,15 @@ topics:
   - id: k8s-handbook-part8-security
     domain: platforms
     canonical: docs/platforms/41-k8s-handbook-part8-security.md
-    pending: true
     aliases:
     - 'k8s handbook part 8: security'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part8_Security.md
+    pages: []
+  - id: k8s-handbook-part8-security-part2
+    domain: platforms
+    canonical: docs/platforms/parts/41-k8s-handbook-part8-security-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part9-platform-engineering
