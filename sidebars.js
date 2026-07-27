@@ -852,6 +852,16 @@ const sidebars = {
             "platforms/parts/part-09-competitive-reference-architectures-part2",
           ],
         },
+        {
+          type: "category",
+          label: "Kubernetes Platform Engineering",
+          items: [
+            "platforms/k8s-handbook-part1-infrastructure-evolution",
+            "platforms/parts/k8s-handbook-part1-infrastructure-evolution-part2",
+            "platforms/parts/k8s-handbook-part1-infrastructure-evolution-part3",
+            "platforms/parts/k8s-handbook-part1-infrastructure-evolution-part4",
+          ],
+        },
       ],
     },
     {

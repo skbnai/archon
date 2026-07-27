@@ -2790,9 +2790,27 @@ topics:
   - id: k8s-handbook-part1-infrastructure-evolution
     domain: platforms
     canonical: docs/platforms/34-k8s-handbook-part1-infrastructure-evolution.md
-    pending: true
     aliases:
     - 'k8s handbook part 1: infrastructure evolution'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part1_Infrastructure_Evolution.md
+    pages: []
+  - id: k8s-handbook-part1-infrastructure-evolution-part2
+    domain: platforms
+    canonical: docs/platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part1-infrastructure-evolution-part3
+    domain: platforms
+    canonical: docs/platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part1-infrastructure-evolution-part4
+    domain: platforms
+    canonical: docs/platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part4.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part2-linux-foundations

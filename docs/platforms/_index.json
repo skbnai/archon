@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 55,
+ "page_count": 51,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -112,7 +112,7 @@
    "top_similar": [
     {
      "id": "platforms/02-quantum-ai-applications",
-     "score": 0.61
+     "score": 0.6
     },
     {
      "id": "platforms/01-quantum-ai-foundations",
@@ -165,11 +165,11 @@
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.32
+     "score": 0.33
     },
     {
      "id": "agentic-systems/core/parts/10-agentic-platform-bestpractices-part2",
-     "score": 0.3
+     "score": 0.31
     }
    ]
   },
@@ -191,11 +191,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/07-enterprise-ai-gateway-part2",
-     "score": 0.49
+     "score": 0.5
     },
     {
      "id": "platforms/08-kong-ai-gateway-guide",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
@@ -226,7 +226,7 @@
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.36
+     "score": 0.37
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
@@ -417,7 +417,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",
-     "score": 0.51
+     "score": 0.52
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
@@ -447,7 +447,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/17-agentcore-memory-operations-deepdive-part2",
-     "score": 0.42
+     "score": 0.43
     }
    ]
   },
@@ -620,218 +620,21 @@
    ]
   },
   {
-   "id": "platforms/43-part-01-platform-vision-agentic-services",
-   "title": "Databricks Agentic AI, Part 1 \u2014 Platform Vision & Agentic Services",
+   "id": "platforms/34-k8s-handbook-part1-infrastructure-evolution",
+   "title": "K8s Handbook Part 1: Infrastructure Evolution",
    "doc_type": "guide",
-   "topic_id": "part-01-platform-vision-agentic-services",
+   "topic_id": "k8s-handbook-part1-infrastructure-evolution",
    "tags": [
-    "databricks",
-    "agent-bricks",
-    "mosaic-ai",
-    "genie-one",
-    "omnigent",
-    "lakeflow"
+    "kubernetes",
+    "infrastructure",
+    "virtualization",
+    "cloud-computing",
+    "platform-engineering"
    ],
-   "word_count": 2002,
+   "word_count": 2076,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": [
-    {
-     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.47
-    },
-    {
-     "id": "platforms/44-part-02-agent-lake-architecture",
-     "score": 0.4
-    },
-    {
-     "id": "platforms/45-part-03-mosaic-ai-mlflow",
-     "score": 0.38
-    }
-   ]
-  },
-  {
-   "id": "platforms/44-part-02-agent-lake-architecture",
-   "title": "Databricks Agentic AI, Part 2 \u2014 Agent Lake, Agent Architecture & Multi-Agent Orchestration",
-   "doc_type": "guide",
-   "topic_id": "part-02-agent-lake-architecture",
-   "tags": [
-    "databricks",
-    "agent-lake",
-    "agent-architecture",
-    "multi-agent",
-    "orchestration",
-    "langgraph"
-   ],
-   "word_count": 1911,
-   "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": [
-    {
-     "id": "platforms/45-part-03-mosaic-ai-mlflow",
-     "score": 0.44
-    },
-    {
-     "id": "platforms/46-part-04-unity-catalog-governance",
-     "score": 0.42
-    },
-    {
-     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.41
-    }
-   ]
-  },
-  {
-   "id": "platforms/45-part-03-mosaic-ai-mlflow",
-   "title": "Databricks Agentic AI, Part 3 \u2014 Mosaic AI & MLflow 3",
-   "doc_type": "guide",
-   "topic_id": "part-03-mosaic-ai-mlflow",
-   "tags": [
-    "databricks",
-    "mosaic-ai",
-    "mlflow",
-    "vector-search",
-    "model-serving",
-    "ai-functions"
-   ],
-   "word_count": 1756,
-   "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": [
-    {
-     "id": "platforms/44-part-02-agent-lake-architecture",
-     "score": 0.44
-    },
-    {
-     "id": "platforms/43-part-01-platform-vision-agentic-services",
-     "score": 0.38
-    },
-    {
-     "id": "platforms/48-part-08-observability-finops-integration",
-     "score": 0.36
-    }
-   ]
-  },
-  {
-   "id": "platforms/46-part-04-unity-catalog-governance",
-   "title": "Databricks Agentic AI, Part 4 \u2014 Unity Catalog AI Governance",
-   "doc_type": "guide",
-   "topic_id": "part-04-unity-catalog-governance",
-   "tags": [
-    "databricks",
-    "unity-catalog",
-    "governance",
-    "abac",
-    "lineage",
-    "audit"
-   ],
-   "word_count": 1707,
-   "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": [
-    {
-     "id": "platforms/44-part-02-agent-lake-architecture",
-     "score": 0.42
-    },
-    {
-     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.41
-    },
-    {
-     "id": "platforms/47-part-07-security-architecture",
-     "score": 0.4
-    }
-   ]
-  },
-  {
-   "id": "platforms/47-part-07-security-architecture",
-   "title": "Databricks Agentic AI, Part 7 \u2014 Security Architecture",
-   "doc_type": "guide",
-   "topic_id": "part-07-security-architecture",
-   "tags": [
-    "databricks",
-    "security",
-    "zero-trust",
-    "rbac",
-    "abac",
-    "encryption",
-    "network-security"
-   ],
-   "word_count": 1767,
-   "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": [
-    {
-     "id": "platforms/46-part-04-unity-catalog-governance",
-     "score": 0.4
-    },
-    {
-     "id": "platforms/48-part-08-observability-finops-integration",
-     "score": 0.35
-    }
-   ]
-  },
-  {
-   "id": "platforms/48-part-08-observability-finops-integration",
-   "title": "Databricks Agentic AI, Part 8 \u2014 Observability, FinOps & Integration Ecosystem",
-   "doc_type": "guide",
-   "topic_id": "part-08-observability-finops-integration",
-   "tags": [
-    "databricks",
-    "observability",
-    "mlflow",
-    "finops",
-    "cost-optimization",
-    "integrations",
-    "lakewatch",
-    "model-units"
-   ],
-   "word_count": 2478,
-   "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": [
-    {
-     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.42
-    },
-    {
-     "id": "platforms/49-part-09-competitive-reference-architectures",
-     "score": 0.4
-    },
-    {
-     "id": "platforms/43-part-01-platform-vision-agentic-services",
-     "score": 0.38
-    }
-   ]
-  },
-  {
-   "id": "platforms/49-part-09-competitive-reference-architectures",
-   "title": "Databricks Agentic AI, Part 9 \u2014 Competitive Comparison & Industry Reference Architectures",
-   "doc_type": "guide",
-   "topic_id": "part-09-competitive-reference-architectures",
-   "tags": [
-    "databricks",
-    "agentic-ai",
-    "competitive",
-    "reference-architecture"
-   ],
-   "word_count": 1731,
-   "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": [
-    {
-     "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.43
-    },
-    {
-     "id": "platforms/48-part-08-observability-finops-integration",
-     "score": 0.4
-    },
-    {
-     "id": "data-knowledge/02-databricks-iceberg-open-formats",
-     "score": 0.39
-    }
-   ]
+   "top_similar": []
   },
   {
    "id": "platforms/index",
@@ -938,16 +741,16 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
-     "score": 0.42
-    },
-    {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
      "score": 0.42
     },
     {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
+     "score": 0.42
+    },
+    {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -1023,7 +826,7 @@
    "top_similar": [
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.49
+     "score": 0.5
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
@@ -1054,7 +857,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/09-kong-entra-id-integration",
@@ -1089,7 +892,7 @@
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
@@ -1188,7 +991,7 @@
     },
     {
      "id": "agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -1265,6 +1068,14 @@
     {
      "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
      "score": 0.43
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+     "score": 0.3
+    },
+    {
+     "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
+     "score": 0.3
     }
    ]
   },
@@ -1360,7 +1171,7 @@
     },
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.37
+     "score": 0.38
     }
    ]
   },
@@ -1382,7 +1193,7 @@
    "top_similar": [
     {
      "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
-     "score": 0.51
+     "score": 0.52
     }
    ]
   },
@@ -1404,7 +1215,7 @@
    "top_similar": [
     {
      "id": "platforms/17-agentcore-memory-operations-deepdive",
-     "score": 0.42
+     "score": 0.43
     }
    ]
   },
@@ -1553,34 +1364,54 @@
    ]
   },
   {
-   "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-   "title": "Databricks Agentic AI, Part 9 (Part 2: Anti-Patterns, Decision Framework & Roadmap)",
+   "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
+   "title": "K8s Handbook Part 1 (Part 2: Cloud Computing, Containers & the Kubernetes Precursors)",
    "doc_type": "guide",
-   "topic_id": "part-09-competitive-reference-architectures-part2",
+   "topic_id": "k8s-handbook-part1-infrastructure-evolution-part2",
    "tags": [
-    "databricks",
-    "agentic-ai",
-    "anti-patterns",
-    "decision-framework",
-    "roadmap"
+    "kubernetes",
+    "cloud-computing",
+    "containers",
+    "docker",
+    "google-borg"
    ],
-   "word_count": 1558,
+   "word_count": 2592,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": [
-    {
-     "id": "data-knowledge/01-databricks-lakehouse-data-infrastructure",
-     "score": 0.51
-    },
-    {
-     "id": "data-knowledge/02-databricks-iceberg-open-formats",
-     "score": 0.5
-    },
-    {
-     "id": "platforms/43-part-01-platform-vision-agentic-services",
-     "score": 0.47
-    }
-   ]
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3",
+   "title": "K8s Handbook Part 1 (Part 3: The Kubernetes Era, Cloud-Native Architecture & Platform Engineering)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part1-infrastructure-evolution-part3",
+   "tags": [
+    "kubernetes",
+    "cloud-native",
+    "platform-engineering",
+    "internal-developer-platform",
+    "twelve-factor"
+   ],
+   "word_count": 1726,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part4",
+   "title": "K8s Handbook Part 1 (Part 4: Decision Matrix, Anti-Patterns & Migration Strategy)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part1-infrastructure-evolution-part4",
+   "tags": [
+    "kubernetes",
+    "decision-framework",
+    "anti-patterns",
+    "migration"
+   ],
+   "word_count": 945,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   }
  ]
 }
