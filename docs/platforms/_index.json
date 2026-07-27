@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 83,
+ "page_count": 86,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -649,6 +649,23 @@
     "kserve"
    ],
    "word_count": 2545,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/29-k8s-handbook-part12-agentic-ai",
+   "title": "K8s Handbook Part 12: Agentic AI",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part12-agentic-ai",
+   "tags": [
+    "kubernetes",
+    "agentic-ai",
+    "mcp",
+    "temporal",
+    "argo-workflows"
+   ],
+   "word_count": 2215,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []
@@ -1769,6 +1786,40 @@
     "cost-optimization"
    ],
    "word_count": 1937,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part2",
+   "title": "K8s Handbook Part 12: Agentic AI (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part12-agentic-ai-part2",
+   "tags": [
+    "kubernetes",
+    "agentic-ai",
+    "autoscaling",
+    "multi-tenancy",
+    "tool-registry"
+   ],
+   "word_count": 2258,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part3",
+   "title": "K8s Handbook Part 12: Agentic AI (Part 3)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part12-agentic-ai-part3",
+   "tags": [
+    "kubernetes",
+    "agentic-ai",
+    "sovereign-ai",
+    "disaster-recovery",
+    "gitops"
+   ],
+   "word_count": 2212,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []

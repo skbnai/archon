@@ -2759,12 +2759,38 @@ topics:
     aliases: []
     supersedes: []
     pages: []
+  - id: chaos-engineering
+    domain: platforms
+    canonical: docs/platforms/50-chaos-engineering.md
+    pending: true
+    # Backlog topic (no old-repo source; not part of the K8s Handbook migration).
+    # Requested scope: core principles, common failure scenarios, lifecycle,
+    # tools & platforms, and AI workloads. Files under "Operational Resilience".
+    aliases:
+    - chaos engineering
+    - operational resilience
+    - failure injection testing
+    - resilience engineering
+    supersedes: []
+    pages: []
   - id: k8s-handbook-part12-agentic-ai
     domain: platforms
     canonical: docs/platforms/29-k8s-handbook-part12-agentic-ai.md
-    pending: true
     aliases:
     - 'k8s handbook part 12: agentic ai'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part12_Agentic_AI.md
+    pages: []
+  - id: k8s-handbook-part12-agentic-ai-part2
+    domain: platforms
+    canonical: docs/platforms/parts/29-k8s-handbook-part12-agentic-ai-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part12-agentic-ai-part3
+    domain: platforms
+    canonical: docs/platforms/parts/29-k8s-handbook-part12-agentic-ai-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part13-emerging-standards
