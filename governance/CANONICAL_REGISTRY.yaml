@@ -2816,9 +2816,21 @@ topics:
   - id: k8s-handbook-part2-linux-foundations
     domain: platforms
     canonical: docs/platforms/35-k8s-handbook-part2-linux-foundations.md
-    pending: true
     aliases:
     - 'k8s handbook part 2: linux foundations'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part2_Linux_Foundations.md
+    pages: []
+  - id: k8s-handbook-part2-linux-foundations-part2
+    domain: platforms
+    canonical: docs/platforms/parts/35-k8s-handbook-part2-linux-foundations-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part2-linux-foundations-part3
+    domain: platforms
+    canonical: docs/platforms/parts/35-k8s-handbook-part2-linux-foundations-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part3-containers
