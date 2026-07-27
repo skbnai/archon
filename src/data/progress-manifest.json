@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 108,
+    "totalPages": 115,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1672,6 +1672,10 @@
       {
         "id": "platforms/22-hyperscaler-deep-dive-azure",
         "title": "Hyperscaler Deep Dive: Microsoft Azure (2026)"
+      },
+      {
+        "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026)"
       },
       {
         "id": "platforms/24-hyperscaler-deep-dive-gcp",
@@ -1916,6 +1920,30 @@
       {
         "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5",
         "title": "Bedrock AgentCore Code Interpreter Architecture (Part 5)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part2",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 2)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part3",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 3)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part4",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 4)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 5)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part6",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 6)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 7)"
       },
       {
         "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",

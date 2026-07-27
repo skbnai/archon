@@ -854,6 +854,13 @@ const sidebars = {
             "platforms/azure-agent-architecture",
             "platforms/hyperscaler-deep-dive-azure",
             "platforms/hyperscaler-deep-dive-gcp",
+            "platforms/enterprise-agent-runtime-internals-2026",
+            "platforms/parts/enterprise-agent-runtime-internals-2026-part2",
+            "platforms/parts/enterprise-agent-runtime-internals-2026-part3",
+            "platforms/parts/enterprise-agent-runtime-internals-2026-part4",
+            "platforms/parts/enterprise-agent-runtime-internals-2026-part5",
+            "platforms/parts/enterprise-agent-runtime-internals-2026-part6",
+            "platforms/parts/enterprise-agent-runtime-internals-2026-part7",
           ],
         },
         {

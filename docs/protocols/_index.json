@@ -14,7 +14,7 @@
    "top_similar": [
     {
      "id": "protocols/05-identity-obo-sessions",
-     "score": 0.54
+     "score": 0.53
     },
     {
      "id": "protocols/12-tool-authentication-connectors",
@@ -76,7 +76,7 @@
     },
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.44
+     "score": 0.43
     }
    ]
   },
@@ -92,7 +92,7 @@
    "top_similar": [
     {
      "id": "protocols/06-agent-identity-entra-vs-awsagentcore",
-     "score": 0.37
+     "score": 0.36
     }
    ]
   },
@@ -108,7 +108,7 @@
    "top_similar": [
     {
      "id": "protocols/01-auth-standards-reference",
-     "score": 0.54
+     "score": 0.53
     },
     {
      "id": "protocols/12-tool-authentication-connectors",
@@ -136,7 +136,7 @@
     },
     {
      "id": "protocols/04-agentidentity-research-2026",
-     "score": 0.37
+     "score": 0.36
     },
     {
      "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
@@ -155,15 +155,15 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "platforms/parts/09-kong-entra-id-integration-part2",
-     "score": 0.32
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part4",
+     "score": 0.33
     },
     {
-     "id": "protocols/08-entra-3lo-agent-auth-implementation",
+     "id": "platforms/parts/09-kong-entra-id-integration-part2",
      "score": 0.31
     },
     {
-     "id": "platforms/21-azure-agent-architecture",
+     "id": "protocols/08-entra-3lo-agent-auth-implementation",
      "score": 0.31
     }
    ]
@@ -360,7 +360,7 @@
     },
     {
      "id": "protocols/parts/13-mcp-deep-research-2026-part2",
-     "score": 0.39
+     "score": 0.38
     }
    ]
   },
@@ -701,7 +701,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },

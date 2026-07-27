@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 108,
+ "page_count": 115,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -86,7 +86,7 @@
     },
     {
      "id": "platforms/parts/04-quantum-ai-appendices-part2",
-     "score": 0.72
+     "score": 0.73
     },
     {
      "id": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
@@ -249,7 +249,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
-     "score": 0.61
+     "score": 0.6
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
@@ -298,7 +298,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
-     "score": 0.56
+     "score": 0.55
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
@@ -358,7 +358,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.52
+     "score": 0.51
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
@@ -451,7 +451,7 @@
     },
     {
      "id": "platforms/15-agentcore-memory-architecture-guide",
-     "score": 0.32
+     "score": 0.31
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
@@ -564,11 +564,11 @@
     },
     {
      "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
-     "score": 0.35
+     "score": 0.34
     },
     {
      "id": "platforms/18-agentcore-strands-deep-research-report",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -586,12 +586,7 @@
    "word_count": 1887,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": [
-    {
-     "id": "protocols/07-auth-identity-flows",
-     "score": 0.31
-    }
-   ]
+   "top_similar": []
   },
   {
    "id": "platforms/22-hyperscaler-deep-dive-azure",
@@ -620,6 +615,36 @@
     {
      "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
      "score": 0.32
+    }
+   ]
+  },
+  {
+   "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "agent-runtime",
+    "enterprise-architecture"
+   ],
+   "word_count": 2631,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part2",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+     "score": 0.57
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part3",
+     "score": 0.54
     }
    ]
   },
@@ -666,7 +691,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
@@ -698,7 +723,7 @@
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
-     "score": 0.63
+     "score": 0.64
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part2",
@@ -772,7 +797,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part2",
-     "score": 0.39
+     "score": 0.38
     },
     {
      "id": "platforms/30-k8s-handbook-part13-emerging-standards",
@@ -974,7 +999,7 @@
     },
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -1345,7 +1370,7 @@
    "top_similar": [
     {
      "id": "operations/index",
-     "score": 0.35
+     "score": 0.34
     },
     {
      "id": "architecture/index",
@@ -1372,7 +1397,7 @@
    "top_similar": [
     {
      "id": "platforms/03-quantum-ai-architecture",
-     "score": 0.72
+     "score": 0.73
     },
     {
      "id": "platforms/02-quantum-ai-applications",
@@ -1436,7 +1461,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
@@ -1468,7 +1493,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part3",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
@@ -1524,7 +1549,7 @@
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
-     "score": 0.33
+     "score": 0.32
     },
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
@@ -1613,7 +1638,7 @@
    "top_similar": [
     {
      "id": "platforms/09-kong-entra-id-integration",
-     "score": 0.61
+     "score": 0.6
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
@@ -1649,11 +1674,11 @@
     },
     {
      "id": "platforms/11-aws-native-standards-first-agentic-architecture",
-     "score": 0.56
+     "score": 0.55
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
-     "score": 0.42
+     "score": 0.41
     }
    ]
   },
@@ -1713,7 +1738,7 @@
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
-     "score": 0.42
+     "score": 0.41
     }
    ]
   },
@@ -1789,11 +1814,11 @@
     },
     {
      "id": "agentic-systems/core/09-multitenantagentplatform-architecture",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.39
+     "score": 0.38
     }
    ]
   },
@@ -1817,15 +1842,15 @@
    "top_similar": [
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.52
+     "score": 0.51
     },
     {
      "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
-     "score": 0.39
+     "score": 0.38
     }
    ]
   },
@@ -1849,7 +1874,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/14-aws-strands-agentcore-delta-supplement",
@@ -2056,7 +2081,7 @@
     },
     {
      "id": "platforms/parts/18-agentcore-strands-deep-research-report-part6",
-     "score": 0.4
+     "score": 0.39
     }
    ]
   },
@@ -2171,7 +2196,7 @@
     },
     {
      "id": "platforms/18-agentcore-strands-deep-research-report",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "platforms/parts/18-agentcore-strands-deep-research-report-part9",
@@ -2320,7 +2345,7 @@
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
-     "score": 0.47
+     "score": 0.46
     }
    ]
   },
@@ -2347,11 +2372,194 @@
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
-     "score": 0.5
+     "score": 0.49
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
      "score": 0.49
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part2",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part2",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "session-management",
+    "durable-execution"
+   ],
+   "word_count": 2194,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part3",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part6",
+     "score": 0.47
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part3",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 3)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part3",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "memory",
+    "mcp",
+    "service-mesh"
+   ],
+   "word_count": 2133,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+     "score": 0.54
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+     "score": 0.51
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part2",
+     "score": 0.5
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part4",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 4)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part4",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "authentication",
+    "authorization"
+   ],
+   "word_count": 2190,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+     "score": 0.42
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 5)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part5",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "zero-trust",
+    "guardrails",
+    "policy-engine"
+   ],
+   "word_count": 2034,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part4",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+     "score": 0.46
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part6",
+     "score": 0.44
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part6",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 6)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part6",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "networking",
+    "observability",
+    "multi-tenancy"
+   ],
+   "word_count": 1483,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part2",
+     "score": 0.47
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
+     "score": 0.44
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 7)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part7",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "comparative-analysis",
+    "references"
+   ],
+   "word_count": 1355,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+     "score": 0.57
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part3",
+     "score": 0.51
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
+     "score": 0.46
     }
    ]
   },
@@ -2401,7 +2609,7 @@
    "top_similar": [
     {
      "id": "platforms/25-ai-assisted-iac-mastery",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
@@ -2461,7 +2669,7 @@
     },
     {
      "id": "platforms/26-terraform-mastery-guide",
-     "score": 0.63
+     "score": 0.64
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part2",
@@ -2569,11 +2777,7 @@
    "top_similar": [
     {
      "id": "platforms/29-k8s-handbook-part12-agentic-ai",
-     "score": 0.39
-    },
-    {
-     "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part3",
-     "score": 0.3
+     "score": 0.38
     }
    ]
   },
@@ -2593,10 +2797,6 @@
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": [
-    {
-     "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part2",
-     "score": 0.3
-    },
     {
      "id": "platforms/29-k8s-handbook-part12-agentic-ai",
      "score": 0.3
@@ -2923,7 +3123,7 @@
     },
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },

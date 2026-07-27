@@ -2762,9 +2762,45 @@ topics:
   - id: enterprise-agent-runtime-internals-2026
     domain: platforms
     canonical: docs/platforms/23-enterprise-agent-runtime-internals-2026.md
-    pending: true
     aliases:
     - 'enterprise ai agent runtime internals: aws, azure & gcp'
+    supersedes:
+    - docs/cloud-platforms/enterprise-agent-runtime-internals-2026.md
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part2
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part3
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part4
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part5
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part5.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part6
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part6.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part7
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part7.md
+    aliases: []
     supersedes: []
     pages: []
   - id: hyperscaler-deep-dive-gcp
