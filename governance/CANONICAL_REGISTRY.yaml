@@ -2796,10 +2796,10 @@ topics:
   - id: k8s-handbook-part13-emerging-standards
     domain: platforms
     canonical: docs/platforms/30-k8s-handbook-part13-emerging-standards.md
-    pending: true
     aliases:
     - 'k8s handbook part 13: emerging standards'
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part13_Emerging_Standards.md
     pages: []
   - id: k8s-handbook-part14-reference-architectures
     domain: platforms

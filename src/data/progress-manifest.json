@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 86,
+    "totalPages": 87,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1684,6 +1684,10 @@
       {
         "id": "platforms/29-k8s-handbook-part12-agentic-ai",
         "title": "K8s Handbook Part 12: Agentic AI"
+      },
+      {
+        "id": "platforms/30-k8s-handbook-part13-emerging-standards",
+        "title": "K8s Handbook Part 13: Emerging Standards"
       },
       {
         "id": "platforms/34-k8s-handbook-part1-infrastructure-evolution",

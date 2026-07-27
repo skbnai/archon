@@ -887,6 +887,7 @@ const sidebars = {
             "platforms/k8s-handbook-part12-agentic-ai",
             "platforms/parts/k8s-handbook-part12-agentic-ai-part2",
             "platforms/parts/k8s-handbook-part12-agentic-ai-part3",
+            "platforms/k8s-handbook-part13-emerging-standards",
           ],
         },
       ],

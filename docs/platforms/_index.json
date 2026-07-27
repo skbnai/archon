@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 86,
+ "page_count": 87,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -666,6 +666,23 @@
     "argo-workflows"
    ],
    "word_count": 2215,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/30-k8s-handbook-part13-emerging-standards",
+   "title": "K8s Handbook Part 13: Emerging Standards",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part13-emerging-standards",
+   "tags": [
+    "kubernetes",
+    "mcp",
+    "a2a",
+    "ai-gateway",
+    "opentelemetry"
+   ],
+   "word_count": 1078,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []
