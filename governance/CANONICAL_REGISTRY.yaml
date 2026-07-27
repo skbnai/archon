@@ -2598,7 +2598,25 @@ topics:
   - id: agentcore-memory-architecture-guide
     domain: platforms
     canonical: docs/platforms/15-agentcore-memory-architecture-guide.md
-    pending: true
+    aliases: []
+    supersedes:
+    - docs/cloud-platforms/aws/AgentCore_Memory_Architecture_Guide.md
+    pages: []
+  - id: agentcore-memory-architecture-guide-part2
+    domain: platforms
+    canonical: docs/platforms/parts/15-agentcore-memory-architecture-guide-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-memory-architecture-guide-part3
+    domain: platforms
+    canonical: docs/platforms/parts/15-agentcore-memory-architecture-guide-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-memory-architecture-guide-part4
+    domain: platforms
+    canonical: docs/platforms/parts/15-agentcore-memory-architecture-guide-part4.md
     aliases: []
     supersedes: []
     pages: []

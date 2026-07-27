@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 90,
+ "page_count": 94,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -398,6 +398,23 @@
      "score": 0.42
     }
    ]
+  },
+  {
+   "id": "platforms/15-agentcore-memory-architecture-guide",
+   "title": "AgentCore Memory Architecture Guide",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-architecture-guide",
+   "tags": [
+    "aws",
+    "agentcore",
+    "memory",
+    "strands",
+    "session-management"
+   ],
+   "word_count": 2562,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
@@ -1635,6 +1652,57 @@
      "score": 0.37
     }
    ]
+  },
+  {
+   "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
+   "title": "AgentCore Memory Architecture Guide (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-architecture-guide-part2",
+   "tags": [
+    "aws",
+    "agentcore",
+    "memory",
+    "session-resume",
+    "multi-agent"
+   ],
+   "word_count": 2793,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+   "title": "AgentCore Memory Architecture Guide (Part 3)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-architecture-guide-part3",
+   "tags": [
+    "aws",
+    "agentcore",
+    "gdpr",
+    "security",
+    "terraform"
+   ],
+   "word_count": 2474,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
+   "title": "AgentCore Memory Architecture Guide (Part 4)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-architecture-guide-part4",
+   "tags": [
+    "aws",
+    "agentcore",
+    "python",
+    "terraform",
+    "testing"
+   ],
+   "word_count": 2699,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",

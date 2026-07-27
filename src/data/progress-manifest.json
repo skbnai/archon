@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 90,
+    "totalPages": 94,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1640,6 +1640,10 @@
       {
         "id": "platforms/14-aws-strands-agentcore-delta-supplement",
         "title": "AWS Strands & Bedrock AgentCore — Delta Supplement v2.0"
+      },
+      {
+        "id": "platforms/15-agentcore-memory-architecture-guide",
+        "title": "AgentCore Memory Architecture Guide"
       },
       {
         "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
@@ -1836,6 +1840,18 @@
       {
         "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
         "title": "AWS Strands & Bedrock AgentCore — Delta Supplement v2.0 (Part 2: Strands Labs, AgentCore GA Updates, Observability, Best Practices)"
+      },
+      {
+        "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
+        "title": "AgentCore Memory Architecture Guide (Part 2)"
+      },
+      {
+        "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+        "title": "AgentCore Memory Architecture Guide (Part 3)"
+      },
+      {
+        "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
+        "title": "AgentCore Memory Architecture Guide (Part 4)"
       },
       {
         "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",
