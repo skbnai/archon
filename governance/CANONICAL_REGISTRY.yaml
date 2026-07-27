@@ -3519,17 +3519,29 @@ topics:
   - id: aws-implementation-governance
     domain: trust
     canonical: docs/trust/ai-security-governance/31-aws-implementation-governance.md
-    pending: true
     aliases:
     - aws implementation, governance & production readiness
+    supersedes:
+    - docs/ai-security-governance/policy/Vol5_AWS_Implementation_Governance.md
+    pages: []
+  - id: aws-implementation-governance-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/31-aws-implementation-governance-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: 5b-compliance-governance-decision-framework
     domain: trust
     canonical: docs/trust/ai-security-governance/32-5b-compliance-governance-decision-framework.md
-    pending: true
     aliases:
     - compliance, governance & final decision framework
+    supersedes:
+    - docs/ai-security-governance/policy/Vol5b_Compliance_Governance_Decision_Framework.md
+    pages: []
+  - id: 5b-compliance-governance-decision-framework-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/32-5b-compliance-governance-decision-framework-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: foundations-reference-architecture

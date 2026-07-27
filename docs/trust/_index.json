@@ -1,6 +1,6 @@
 {
  "domain": "trust",
- "page_count": 24,
+ "page_count": 42,
  "pages": [
   {
    "id": "trust/ai-security-governance/01-ai-control-series-overview",
@@ -13,7 +13,7 @@
     "deepmind",
     "series-overview"
    ],
-   "word_count": 551,
+   "word_count": 565,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": [
@@ -24,6 +24,36 @@
     {
      "id": "trust/ai-security-governance/parts/05-deepmind-ai-control-roadmap-part2",
      "score": 0.32
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/02-policy-authorization-series-overview",
+   "title": "Policy & Authorization Series Overview",
+   "doc_type": "guide",
+   "topic_id": "policy-authorization-series-overview",
+   "tags": [
+    "authorization",
+    "ai-security",
+    "policy",
+    "cedar",
+    "opa"
+   ],
+   "word_count": 1105,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "strategy/99-vol5-ai-strategy-transformation-glossary-glossary-a-to-h",
+     "score": 0.6
+    },
+    {
+     "id": "strategy/vols/01-vol5-ai-strategy-transformation-glossary-glossary-i-to-z-crossref",
+     "score": 0.56
+    },
+    {
+     "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+     "score": 0.38
     }
    ]
   },
@@ -127,7 +157,7 @@
     },
     {
      "id": "trust/ai-security-governance/12-memory-governance",
-     "score": 0.34
+     "score": 0.33
     },
     {
      "id": "trust/ai-security-governance/21-best-practices-anti-patterns",
@@ -168,14 +198,14 @@
    "top_similar": [
     {
      "id": "trust/ai-security-governance/08-ai-control-architecture",
-     "score": 0.32
+     "score": 0.31
     },
     {
      "id": "strategy/23-part-13-security-model",
      "score": 0.31
     },
     {
-     "id": "architecture/55-governance-propagation-chain",
+     "id": "trust/ai-security-governance/22-future-outlook-2026-2035",
      "score": 0.3
     }
    ]
@@ -197,8 +227,16 @@
    "status": "current",
    "top_similar": [
     {
+     "id": "trust/ai-security-governance/23-executive-architecture",
+     "score": 0.42
+    },
+    {
+     "id": "trust/ai-security-governance/parts/32-5b-compliance-governance-decision-framework-part2",
+     "score": 0.36
+    },
+    {
      "id": "architecture/55-governance-propagation-chain",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -227,7 +265,7 @@
     },
     {
      "id": "trust/ai-security-governance/08-ai-control-architecture",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -249,6 +287,10 @@
     {
      "id": "protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2",
      "score": 0.31
+    },
+    {
+     "id": "trust/ai-security-governance/27-agent-tool-mcp-authorization",
+     "score": 0.3
     }
    ]
   },
@@ -422,7 +464,7 @@
    "top_similar": [
     {
      "id": "trust/ai-security-governance/parts/21-best-practices-anti-patterns-part2",
-     "score": 0.43
+     "score": 0.42
     },
     {
      "id": "trust/ai-security-governance/22-future-outlook-2026-2035",
@@ -461,6 +503,289 @@
     {
      "id": "trust/ai-security-governance/21-best-practices-anti-patterns",
      "score": 0.37
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/23-executive-architecture",
+   "title": "Executive Architecture & Authorization Fundamentals",
+   "doc_type": "guide",
+   "topic_id": "executive-architecture",
+   "tags": [
+    "authorization",
+    "ai-security",
+    "policy",
+    "cedar",
+    "opa",
+    "zero-trust"
+   ],
+   "word_count": 2395,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+     "score": 0.55
+    },
+    {
+     "id": "trust/ai-security-governance/parts/32-5b-compliance-governance-decision-framework-part2",
+     "score": 0.48
+    },
+    {
+     "id": "trust/ai-security-governance/24-1b-authorization-deep-dive",
+     "score": 0.44
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/24-1b-authorization-deep-dive",
+   "title": "Authorization Deep Dive: Engines, Interceptor Patterns & XACML",
+   "doc_type": "guide",
+   "topic_id": "1b-authorization-deep-dive",
+   "tags": [
+    "authorization",
+    "ai-security",
+    "policy",
+    "xacml",
+    "openfga",
+    "cedar"
+   ],
+   "word_count": 1155,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/23-executive-architecture",
+     "score": 0.44
+    },
+    {
+     "id": "trust/ai-security-governance/parts/32-5b-compliance-governance-decision-framework-part2",
+     "score": 0.36
+    },
+    {
+     "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+     "score": 0.34
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/25-identity-claims-policy",
+   "title": "Identity, Claims & Policy Design",
+   "doc_type": "guide",
+   "topic_id": "identity-claims-policy",
+   "tags": [
+    "authorization",
+    "identity",
+    "policy",
+    "cedar",
+    "entra-id"
+   ],
+   "word_count": 1437,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+     "score": 0.4
+    },
+    {
+     "id": "trust/ai-security-governance/30-4b-aws-entra-federation-patterns",
+     "score": 0.36
+    },
+    {
+     "id": "trust/ai-security-governance/26-2b-advanced-policy-engineering",
+     "score": 0.36
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/26-2b-advanced-policy-engineering",
+   "title": "Advanced Policy Engineering: SCIM, Cedar Templates & Delegated Administration",
+   "doc_type": "guide",
+   "topic_id": "2b-advanced-policy-engineering",
+   "tags": [
+    "authorization",
+    "policy-engineering",
+    "scim",
+    "cedar-templates"
+   ],
+   "word_count": 1358,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/25-identity-claims-policy",
+     "score": 0.36
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/27-agent-tool-mcp-authorization",
+   "title": "Agent, Tool & MCP Authorization",
+   "doc_type": "guide",
+   "topic_id": "agent-tool-mcp-authorization",
+   "tags": [
+    "authorization",
+    "mcp",
+    "agent-tools",
+    "cedar"
+   ],
+   "word_count": 2225,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/32-5b-compliance-governance-decision-framework-part2",
+     "score": 0.4
+    },
+    {
+     "id": "trust/ai-security-governance/parts/25-identity-claims-policy-part2",
+     "score": 0.38
+    },
+    {
+     "id": "trust/ai-security-governance/parts/24-1b-authorization-deep-dive-part2",
+     "score": 0.38
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/28-3b-agent-authorization-deep-dive",
+   "title": "Agent Authorization Deep Dive: Prompt Safety & Risk Engine Integration",
+   "doc_type": "guide",
+   "topic_id": "3b-agent-authorization-deep-dive",
+   "tags": [
+    "authorization",
+    "prompt-injection",
+    "risk-scoring",
+    "cedar"
+   ],
+   "word_count": 1009,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/27-agent-tool-mcp-authorization",
+     "score": 0.35
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/29-rag-memory-data-authorization",
+   "title": "RAG, Memory & Data Authorization",
+   "doc_type": "guide",
+   "topic_id": "rag-memory-data-authorization",
+   "tags": [
+    "authorization",
+    "rag",
+    "memory",
+    "multi-tenant",
+    "dlp"
+   ],
+   "word_count": 1714,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/27-agent-tool-mcp-authorization",
+     "score": 0.34
+    },
+    {
+     "id": "trust/ai-security-governance/parts/32-5b-compliance-governance-decision-framework-part2",
+     "score": 0.34
+    },
+    {
+     "id": "trust/ai-security-governance/parts/24-1b-authorization-deep-dive-part2",
+     "score": 0.32
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/30-4b-aws-entra-federation-patterns",
+   "title": "AWS & Entra ID Federation: Registration, OIDC & Token Exchange",
+   "doc_type": "guide",
+   "topic_id": "4b-aws-entra-federation-patterns",
+   "tags": [
+    "authorization",
+    "aws",
+    "entra-id",
+    "oidc",
+    "oauth"
+   ],
+   "word_count": 1009,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/25-identity-claims-policy",
+     "score": 0.36
+    },
+    {
+     "id": "protocols/05-identity-obo-sessions",
+     "score": 0.34
+    },
+    {
+     "id": "protocols/06-agent-identity-entra-vs-awsagentcore",
+     "score": 0.3
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/31-aws-implementation-governance",
+   "title": "AWS Implementation & Governance: Reference Architecture & CI/CD",
+   "doc_type": "guide",
+   "topic_id": "aws-implementation-governance",
+   "tags": [
+    "authorization",
+    "aws",
+    "reference-architecture",
+    "ci-cd"
+   ],
+   "word_count": 1456,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/24-1b-authorization-deep-dive-part2",
+     "score": 0.52
+    },
+    {
+     "id": "trust/ai-security-governance/parts/30-4b-aws-entra-federation-patterns-part2",
+     "score": 0.44
+    },
+    {
+     "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+     "score": 0.44
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/32-5b-compliance-governance-decision-framework",
+   "title": "Compliance & Governance: Regulatory Control Mapping",
+   "doc_type": "guide",
+   "topic_id": "5b-compliance-governance-decision-framework",
+   "tags": [
+    "authorization",
+    "compliance",
+    "nist",
+    "pci-dss",
+    "dora",
+    "eu-ai-act"
+   ],
+   "word_count": 1828,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+     "score": 0.41
+    },
+    {
+     "id": "trust/ai-security-governance/23-executive-architecture",
+     "score": 0.4
+    },
+    {
+     "id": "trust/ai-security-governance/parts/32-5b-compliance-governance-decision-framework-part2",
+     "score": 0.39
     }
    ]
   },
@@ -528,7 +853,7 @@
    "top_similar": [
     {
      "id": "trust/ai-security-governance/21-best-practices-anti-patterns",
-     "score": 0.43
+     "score": 0.42
     }
    ]
   },
@@ -563,6 +888,210 @@
    ]
   },
   {
+   "id": "trust/ai-security-governance/parts/24-1b-authorization-deep-dive-part2",
+   "title": "Authorization Deep Dive: Engines, Interceptor Patterns & XACML (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "1b-authorization-deep-dive-part2",
+   "tags": [
+    "authorization",
+    "ai-security",
+    "policy",
+    "stride",
+    "performance"
+   ],
+   "word_count": 1861,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/31-aws-implementation-governance",
+     "score": 0.52
+    },
+    {
+     "id": "trust/ai-security-governance/parts/30-4b-aws-entra-federation-patterns-part2",
+     "score": 0.4
+    },
+    {
+     "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+     "score": 0.39
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/parts/25-identity-claims-policy-part2",
+   "title": "Identity, Claims & Policy Design (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "identity-claims-policy-part2",
+   "tags": [
+    "authorization",
+    "policy",
+    "opa",
+    "rego",
+    "token-exchange"
+   ],
+   "word_count": 1395,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/32-5b-compliance-governance-decision-framework-part2",
+     "score": 0.5
+    },
+    {
+     "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+     "score": 0.49
+    },
+    {
+     "id": "trust/ai-security-governance/23-executive-architecture",
+     "score": 0.41
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/parts/26-2b-advanced-policy-engineering-part2",
+   "title": "Advanced Policy Engineering: OPA Patterns, Testing & Governance (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "2b-advanced-policy-engineering-part2",
+   "tags": [
+    "authorization",
+    "policy-engineering",
+    "opa",
+    "wasm",
+    "shadow-evaluation"
+   ],
+   "word_count": 1134,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+     "score": 0.38
+    },
+    {
+     "id": "trust/ai-security-governance/parts/25-identity-claims-policy-part2",
+     "score": 0.35
+    },
+    {
+     "id": "trust/ai-security-governance/31-aws-implementation-governance",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/parts/28-3b-agent-authorization-deep-dive-part2",
+   "title": "Agent Authorization Deep Dive: Human-in-the-Loop, Audit & Capability Scoping (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "3b-agent-authorization-deep-dive-part2",
+   "tags": [
+    "authorization",
+    "step-functions",
+    "audit-trail",
+    "agent-types"
+   ],
+   "word_count": 1441,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/27-agent-tool-mcp-authorization",
+     "score": 0.38
+    },
+    {
+     "id": "trust/ai-security-governance/32-5b-compliance-governance-decision-framework",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/parts/30-4b-aws-entra-federation-patterns-part2",
+   "title": "AWS & Entra ID Federation: Network Security, Cross-Account & DR (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "4b-aws-entra-federation-patterns-part2",
+   "tags": [
+    "authorization",
+    "aws",
+    "privatelink",
+    "disaster-recovery",
+    "multi-account"
+   ],
+   "word_count": 1322,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/31-aws-implementation-governance",
+     "score": 0.44
+    },
+    {
+     "id": "trust/ai-security-governance/parts/24-1b-authorization-deep-dive-part2",
+     "score": 0.4
+    },
+    {
+     "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+     "score": 0.33
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+   "title": "AWS Implementation & Governance: Case Studies, Migration & Readiness (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "aws-implementation-governance-part2",
+   "tags": [
+    "authorization",
+    "aws",
+    "migration",
+    "production-readiness"
+   ],
+   "word_count": 1424,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/23-executive-architecture",
+     "score": 0.55
+    },
+    {
+     "id": "trust/ai-security-governance/parts/32-5b-compliance-governance-decision-framework-part2",
+     "score": 0.52
+    },
+    {
+     "id": "trust/ai-security-governance/parts/25-identity-claims-policy-part2",
+     "score": 0.49
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/parts/32-5b-compliance-governance-decision-framework-part2",
+   "title": "Compliance & Governance: Anti-Pattern Catalogue & Final Decision Framework (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "5b-compliance-governance-decision-framework-part2",
+   "tags": [
+    "authorization",
+    "anti-patterns",
+    "cedar",
+    "opa",
+    "decision-framework"
+   ],
+   "word_count": 1438,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/31-aws-implementation-governance-part2",
+     "score": 0.52
+    },
+    {
+     "id": "trust/ai-security-governance/parts/25-identity-claims-policy-part2",
+     "score": 0.5
+    },
+    {
+     "id": "trust/ai-security-governance/23-executive-architecture",
+     "score": 0.48
+    }
+   ]
+  },
+  {
    "id": "trust/index",
    "title": "Trust Hub",
    "doc_type": "hub",
@@ -581,7 +1110,7 @@
     },
     {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
-     "score": 0.34
+     "score": 0.33
     },
     {
      "id": "strategy/42-ai-first-to-ai-native",
