@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 25,
+ "page_count": 32,
  "pages": [
   {
    "id": "platforms/05-ai-gateway-full-comparison",
@@ -251,6 +251,77 @@
      "score": 0.42
     }
    ]
+  },
+  {
+   "id": "platforms/14-aws-strands-agentcore-delta-supplement",
+   "title": "AWS Strands & Bedrock AgentCore \u2014 Delta Supplement v2.0",
+   "doc_type": "guide",
+   "topic_id": "aws-strands-agentcore-delta-supplement",
+   "tags": [
+    "aws",
+    "bedrock",
+    "agentcore",
+    "strands",
+    "agents",
+    "typescript",
+    "observability",
+    "evaluation"
+   ],
+   "word_count": 2588,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
+   "title": "AgentCore Memory \u2014 Gaps, Extensions & 2026 Research",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-gaps-extensions-2026",
+   "tags": [
+    "aws",
+    "bedrock",
+    "agentcore",
+    "strands",
+    "memory"
+   ],
+   "word_count": 1776,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/17-agentcore-memory-operations-deepdive",
+   "title": "AgentCore Memory Operations Deep Dive",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-operations-deepdive",
+   "tags": [
+    "aws",
+    "bedrock",
+    "agentcore",
+    "memory",
+    "kinesis"
+   ],
+   "word_count": 1766,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/20-hyperscaler-deep-dive-aws",
+   "title": "Hyperscaler Deep Dive: AWS (2026)",
+   "doc_type": "guide",
+   "topic_id": "hyperscaler-deep-dive-aws",
+   "tags": [
+    "aws",
+    "hyperscaler",
+    "bedrock",
+    "agentcore",
+    "strands"
+   ],
+   "word_count": 1165,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/index",
@@ -735,6 +806,59 @@
      "score": 0.38
     }
    ]
+  },
+  {
+   "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
+   "title": "AWS Strands & Bedrock AgentCore \u2014 Delta Supplement v2.0 (Part 2: Strands Labs, AgentCore GA Updates, Observability, Best Practices)",
+   "doc_type": "guide",
+   "topic_id": "aws-strands-agentcore-delta-supplement-part2",
+   "tags": [
+    "aws",
+    "bedrock",
+    "agentcore",
+    "strands",
+    "agents",
+    "observability",
+    "evaluation"
+   ],
+   "word_count": 3020,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",
+   "title": "AgentCore Memory \u2014 Gaps, Extensions & 2026 Research (Part 2: Structured Extraction, Graph Memory & Research Landscape)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-gaps-extensions-2026-part2",
+   "tags": [
+    "aws",
+    "bedrock",
+    "agentcore",
+    "strands",
+    "memory"
+   ],
+   "word_count": 2566,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/17-agentcore-memory-operations-deepdive-part2",
+   "title": "AgentCore Memory Operations Deep Dive (Part 2: Issues by Phase, Unit Testing, Evaluation & Cleanup)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-operations-deepdive-part2",
+   "tags": [
+    "aws",
+    "bedrock",
+    "agentcore",
+    "memory",
+    "testing"
+   ],
+   "word_count": 3481,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   }
  ]
 }
