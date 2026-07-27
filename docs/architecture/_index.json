@@ -39,7 +39,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/01-aidlc-artifacts-discovery-to-model-feasibility-risk-data-strategy",
-     "score": 0.43
+     "score": 0.44
     },
     {
      "id": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
@@ -103,7 +103,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
-     "score": 0.66
+     "score": 0.65
     },
     {
      "id": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
@@ -168,7 +168,7 @@
     },
     {
      "id": "architecture/08-ea-architect-deep-dive-measurement-growth",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
@@ -236,7 +236,7 @@
     },
     {
      "id": "architecture/05-ea-architect-deep-dive-foundation",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },
@@ -261,7 +261,7 @@
    "top_similar": [
     {
      "id": "architecture/05-ea-architect-deep-dive-foundation",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
@@ -328,7 +328,7 @@
     },
     {
      "id": "architecture/11-apex-ea-information-systems-architecture",
-     "score": 0.39
+     "score": 0.38
     },
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
@@ -355,11 +355,11 @@
    "top_similar": [
     {
      "id": "architecture/12-apex-ea-delivery-governance-reference",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "architecture/10-apex-ea-aidlc-methodology",
-     "score": 0.39
+     "score": 0.38
     }
    ]
   },
@@ -386,7 +386,7 @@
     },
     {
      "id": "architecture/11-apex-ea-information-systems-architecture",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "architecture/09-apex-ea-team-structure-raci",
@@ -423,7 +423,7 @@
     },
     {
      "id": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -443,7 +443,7 @@
    "top_similar": [
     {
      "id": "architecture/16-ea-aidlc-deep-research-2026",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
@@ -472,7 +472,7 @@
    "top_similar": [
     {
      "id": "architecture/85-enterprise-manager-ai-genai",
-     "score": 0.47
+     "score": 0.48
     },
     {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
@@ -480,7 +480,7 @@
     },
     {
      "id": "data-knowledge/06-consulting-firms-genai-strategy",
-     "score": 0.37
+     "score": 0.38
     }
    ]
   },
@@ -501,7 +501,7 @@
    "top_similar": [
     {
      "id": "architecture/14-aidlc-enterprise-framework-2025",
-     "score": 0.52
+     "score": 0.53
     },
     {
      "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
@@ -509,7 +509,7 @@
     },
     {
      "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-     "score": 0.45
+     "score": 0.46
     }
    ]
   },
@@ -568,7 +568,7 @@
     },
     {
      "id": "architecture/85-enterprise-manager-ai-genai",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -698,7 +698,7 @@
     },
     {
      "id": "architecture/22-agentic-ai-landing-zone-architecture",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -1028,7 +1028,7 @@
    "top_similar": [
     {
      "id": "architecture/40-agent-interoperability-orchestration",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -1055,7 +1055,7 @@
     },
     {
      "id": "agentic-systems/core/17-a2a-deep-research",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "architecture/58-mcp-a2a-protocol-deep-dive",
@@ -1112,11 +1112,11 @@
    "top_similar": [
     {
      "id": "architecture/43-agentic-ai-reliability-observability-governance",
-     "score": 0.38
+     "score": 0.39
     },
     {
      "id": "agentic-systems/agentic-ui/parts/16-reliability-engineering-part3",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -1135,7 +1135,7 @@
    "top_similar": [
     {
      "id": "architecture/42-agent-reliability-engineering",
-     "score": 0.38
+     "score": 0.39
     },
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
@@ -1291,7 +1291,7 @@
     },
     {
      "id": "architecture/72-enterprise-ai-architect-bible-2026",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -1452,11 +1452,11 @@
      "score": 0.36
     },
     {
-     "id": "protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2",
-     "score": 0.32
+     "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
+     "score": 0.33
     },
     {
-     "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
+     "id": "protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2",
      "score": 0.32
     }
    ]
@@ -1495,7 +1495,7 @@
    "top_similar": [
     {
      "id": "architecture/16-ea-aidlc-deep-research-2026",
-     "score": 0.3
+     "score": 0.31
     }
    ]
   },
@@ -1520,11 +1520,11 @@
      "score": 0.42
     },
     {
-     "id": "agentic-systems/core/17-a2a-deep-research",
+     "id": "agentic-systems/coding-tools/39-mcp-deep-guide",
      "score": 0.42
     },
     {
-     "id": "agentic-systems/coding-tools/39-mcp-deep-guide",
+     "id": "agentic-systems/core/17-a2a-deep-research",
      "score": 0.42
     }
    ]
@@ -1713,7 +1713,7 @@
     },
     {
      "id": "architecture/71-ea-mastery-guide",
-     "score": 0.37
+     "score": 0.38
     }
    ]
   },
@@ -1774,7 +1774,7 @@
     },
     {
      "id": "architecture/68-ea-bestpractices-jargon",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "architecture/16-ea-aidlc-deep-research-2026",
@@ -1836,7 +1836,7 @@
      "score": 0.36
     },
     {
-     "id": "data-knowledge/parts/04-enterprise-data-systems-ai-governance-report-part3",
+     "id": "agentic-systems/coding-tools/parts/23-claude-ecosystem-research-report-part2",
      "score": 0.35
     }
    ]
@@ -2119,7 +2119,7 @@
    "top_similar": [
     {
      "id": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
-     "score": 0.47
+     "score": 0.48
     },
     {
      "id": "strategy/vols/04-vol6-organization-structure-operating-model-ai-maturity-deliverables",
@@ -2166,15 +2166,15 @@
    "status": "current",
    "top_similar": [
     {
+     "id": "data-knowledge/02-databricks-iceberg-open-formats",
+     "score": 0.4
+    },
+    {
      "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
      "score": 0.4
     },
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",
-     "score": 0.4
-    },
-    {
-     "id": "data-knowledge/02-databricks-iceberg-open-formats",
      "score": 0.4
     }
    ]
@@ -2210,10 +2210,6 @@
     {
      "id": "platforms/index",
      "score": 0.31
-    },
-    {
-     "id": "operations/index",
-     "score": 0.3
     }
    ]
   },
@@ -2363,7 +2359,7 @@
    "top_similar": [
     {
      "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
-     "score": 0.66
+     "score": 0.65
     },
     {
      "id": "architecture/04-aidlc-artifacts-togaf-migration-to-ea",
@@ -2430,11 +2426,11 @@
      "score": 0.56
     },
     {
-     "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
+     "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
      "score": 0.5
     },
     {
-     "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
+     "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
      "score": 0.5
     }
    ]
@@ -2467,7 +2463,7 @@
     },
     {
      "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
-     "score": 0.52
+     "score": 0.53
     }
    ]
   },
@@ -3052,7 +3048,7 @@
     },
     {
      "id": "data-knowledge/12-autonomous-knowledge-engineering-system",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -3217,11 +3213,11 @@
     },
     {
      "id": "architecture/51-enterprise-ai-governance-compliance",
-     "score": 0.38
+     "score": 0.39
     },
     {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
-     "score": 0.36
+     "score": 0.37
     }
    ]
   },

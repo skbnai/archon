@@ -44,7 +44,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.5
+     "score": 0.51
     },
     {
      "id": "architecture/87-modern-data-ai-platform-blueprint-2026",
@@ -158,14 +158,14 @@
    "top_similar": [
     {
      "id": "data-knowledge/07-consulting-firms",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "architecture/15-agile-in-the-age-of-agentic-ai-2026",
-     "score": 0.37
+     "score": 0.38
     },
     {
-     "id": "strategy/28-part-18-case-studies",
+     "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
      "score": 0.35
     }
    ]
@@ -185,7 +185,7 @@
    "top_similar": [
     {
      "id": "data-knowledge/06-consulting-firms-genai-strategy",
-     "score": 0.44
+     "score": 0.45
     }
    ]
   },
@@ -268,7 +268,7 @@
     },
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -286,7 +286,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/30-akes-addendum-document-update-and-versioning-part2",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "architecture/78-akes-addendum-document-update-and-versioning",
@@ -373,7 +373,7 @@
     },
     {
      "id": "data-knowledge/parts/04-enterprise-data-systems-ai-governance-report-part3",
-     "score": 0.43
+     "score": 0.44
     }
    ]
   },
@@ -436,7 +436,7 @@
     },
     {
      "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
-     "score": 0.45
+     "score": 0.44
     }
    ]
   },
