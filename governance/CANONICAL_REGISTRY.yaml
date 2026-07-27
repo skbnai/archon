@@ -3461,41 +3461,59 @@ topics:
   - id: 2b-advanced-policy-engineering
     domain: trust
     canonical: docs/trust/ai-security-governance/26-2b-advanced-policy-engineering.md
-    pending: true
     aliases:
     - 'advanced policy engineering: scim, cedar templates, opa & wasm'
+    supersedes:
+    - docs/ai-security-governance/policy/Vol2b_Advanced_Policy_Engineering.md
+    pages: []
+  - id: 2b-advanced-policy-engineering-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/26-2b-advanced-policy-engineering-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: agent-tool-mcp-authorization
     domain: trust
     canonical: docs/trust/ai-security-governance/27-agent-tool-mcp-authorization.md
-    pending: true
     aliases:
     - agent, tool & mcp authorization
-    supersedes: []
+    supersedes:
+    - docs/ai-security-governance/policy/Vol3_Agent_Tool_MCP_Authorization.md
     pages: []
   - id: 3b-agent-authorization-deep-dive
     domain: trust
     canonical: docs/trust/ai-security-governance/28-3b-agent-authorization-deep-dive.md
-    pending: true
     aliases:
     - 'agent authorization deep dive: prompt safety, contextual risk & workflow patterns'
+    supersedes:
+    - docs/ai-security-governance/policy/Vol3b_Agent_Authorization_Deep_Dive.md
+    pages: []
+  - id: 3b-agent-authorization-deep-dive-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/28-3b-agent-authorization-deep-dive-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: rag-memory-data-authorization
     domain: trust
     canonical: docs/trust/ai-security-governance/29-rag-memory-data-authorization.md
-    pending: true
     aliases:
     - rag, memory & data authorization
-    supersedes: []
+    supersedes:
+    - docs/ai-security-governance/policy/Vol4_RAG_Memory_Data_Authorization.md
     pages: []
   - id: 4b-aws-entra-federation-patterns
     domain: trust
     canonical: docs/trust/ai-security-governance/30-4b-aws-entra-federation-patterns.md
-    pending: true
     aliases:
     - 'aws & entra id federation: complete integration patterns'
+    supersedes:
+    - docs/ai-security-governance/policy/Vol4b_AWS_Entra_Federation_Patterns.md
+    pages: []
+  - id: 4b-aws-entra-federation-patterns-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/30-4b-aws-entra-federation-patterns-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: aws-implementation-governance
