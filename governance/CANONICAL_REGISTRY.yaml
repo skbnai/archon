@@ -2862,57 +2862,63 @@ topics:
   - id: part-01-platform-vision-agentic-services
     domain: platforms
     canonical: docs/platforms/43-part-01-platform-vision-agentic-services.md
-    pending: true
     aliases:
     - part 1 — platform vision & agentic services
-    supersedes: []
+    supersedes:
+    - docs/databricks-agentic-ai/part-01-platform-vision-agentic-services.md
     pages: []
   - id: part-02-agent-lake-architecture
     domain: platforms
     canonical: docs/platforms/44-part-02-agent-lake-architecture.md
-    pending: true
     aliases:
     - part 2 — agent lake, agent architecture & multi-agent orchestration
-    supersedes: []
+    supersedes:
+    - docs/databricks-agentic-ai/part-02-agent-lake-architecture.md
     pages: []
   - id: part-03-mosaic-ai-mlflow
     domain: platforms
     canonical: docs/platforms/45-part-03-mosaic-ai-mlflow.md
-    pending: true
     aliases:
     - part 3 — mosaic ai & mlflow 3
-    supersedes: []
+    supersedes:
+    - docs/databricks-agentic-ai/part-03-mosaic-ai-mlflow.md
     pages: []
   - id: part-04-unity-catalog-governance
     domain: platforms
     canonical: docs/platforms/46-part-04-unity-catalog-governance.md
-    pending: true
     aliases:
     - part 4 — unity catalog ai governance
-    supersedes: []
+    supersedes:
+    - docs/databricks-agentic-ai/part-04-unity-catalog-governance.md
     pages: []
   - id: part-07-security-architecture
     domain: platforms
     canonical: docs/platforms/47-part-07-security-architecture.md
-    pending: true
     aliases:
     - part 7 — security architecture
-    supersedes: []
+    supersedes:
+    - docs/databricks-agentic-ai/part-07-security-architecture.md
     pages: []
   - id: part-08-observability-finops-integration
     domain: platforms
     canonical: docs/platforms/48-part-08-observability-finops-integration.md
-    pending: true
     aliases:
     - part 8 — observability, finops & integration ecosystem
-    supersedes: []
+    supersedes:
+    - docs/databricks-agentic-ai/part-08-observability-finops-integration.md
     pages: []
   - id: part-09-competitive-reference-architectures
     domain: platforms
     canonical: docs/platforms/49-part-09-competitive-reference-architectures.md
-    pending: true
     aliases:
     - part 9 — competitive comparison & industry reference architectures
+    supersedes:
+    - docs/databricks-agentic-ai/part-09-competitive-reference-architectures.md
+    pages: []
+  - id: part-09-competitive-reference-architectures-part2
+    domain: platforms
+    canonical: docs/platforms/parts/49-part-09-competitive-reference-architectures-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: databricks-vendor-landscape

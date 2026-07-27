@@ -838,6 +838,20 @@ const sidebars = {
             "platforms/hyperscaler-deep-dive-gcp",
           ],
         },
+        {
+          type: "category",
+          label: "Databricks Agentic Platform",
+          items: [
+            "platforms/part-01-platform-vision-agentic-services",
+            "platforms/part-02-agent-lake-architecture",
+            "platforms/part-03-mosaic-ai-mlflow",
+            "platforms/part-04-unity-catalog-governance",
+            "platforms/part-07-security-architecture",
+            "platforms/part-08-observability-finops-integration",
+            "platforms/part-09-competitive-reference-architectures",
+            "platforms/parts/part-09-competitive-reference-architectures-part2",
+          ],
+        },
       ],
     },
     {
