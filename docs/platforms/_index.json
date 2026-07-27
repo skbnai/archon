@@ -165,7 +165,7 @@
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.32
+     "score": 0.33
     },
     {
      "id": "agentic-systems/core/parts/10-agentic-platform-bestpractices-part2",
@@ -222,7 +222,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
-     "score": 0.56
+     "score": 0.55
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
@@ -395,7 +395,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
-     "score": 0.43
+     "score": 0.42
     }
    ]
   },
@@ -417,7 +417,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",
-     "score": 0.51
+     "score": 0.52
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
@@ -553,6 +553,10 @@
     {
      "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
      "score": 0.35
+    },
+    {
+     "id": "platforms/20-hyperscaler-deep-dive-aws",
+     "score": 0.3
     }
    ]
   },
@@ -572,7 +576,20 @@
    "word_count": 2432,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
+     "score": 0.53
+    },
+    {
+     "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
+     "score": 0.39
+    },
+    {
+     "id": "platforms/parts/26-terraform-mastery-guide-part3",
+     "score": 0.35
+    }
+   ]
   },
   {
    "id": "platforms/26-terraform-mastery-guide",
@@ -587,7 +604,20 @@
    "word_count": 2473,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/26-terraform-mastery-guide-part4",
+     "score": 0.7
+    },
+    {
+     "id": "platforms/parts/26-terraform-mastery-guide-part3",
+     "score": 0.65
+    },
+    {
+     "id": "platforms/parts/26-terraform-mastery-guide-part2",
+     "score": 0.49
+    }
+   ]
   },
   {
    "id": "platforms/index",
@@ -694,11 +724,11 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
      "score": 0.42
     },
     {
-     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
      "score": 0.42
     },
     {
@@ -810,7 +840,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/09-kong-entra-id-integration",
@@ -818,7 +848,7 @@
     },
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -841,11 +871,11 @@
    "top_similar": [
     {
      "id": "platforms/08-kong-ai-gateway-guide",
-     "score": 0.56
+     "score": 0.55
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
@@ -880,7 +910,7 @@
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -944,7 +974,7 @@
     },
     {
      "id": "agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -1021,6 +1051,14 @@
     {
      "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
      "score": 0.43
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+     "score": 0.3
+    },
+    {
+     "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
+     "score": 0.3
     }
    ]
   },
@@ -1112,7 +1150,7 @@
     },
     {
      "id": "platforms/14-aws-strands-agentcore-delta-supplement",
-     "score": 0.43
+     "score": 0.42
     },
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
@@ -1138,7 +1176,7 @@
    "top_similar": [
     {
      "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
-     "score": 0.51
+     "score": 0.52
     }
    ]
   },
@@ -1180,7 +1218,16 @@
    "word_count": 1968,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/25-ai-assisted-iac-mastery",
+     "score": 0.39
+    },
+    {
+     "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
+     "score": 0.38
+    }
+   ]
   },
   {
    "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
@@ -1198,7 +1245,16 @@
    "word_count": 1961,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/25-ai-assisted-iac-mastery",
+     "score": 0.53
+    },
+    {
+     "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
+     "score": 0.38
+    }
+   ]
   },
   {
    "id": "platforms/parts/26-terraform-mastery-guide-part2",
@@ -1215,7 +1271,20 @@
    "word_count": 2138,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/26-terraform-mastery-guide-part4",
+     "score": 0.54
+    },
+    {
+     "id": "platforms/parts/26-terraform-mastery-guide-part3",
+     "score": 0.52
+    },
+    {
+     "id": "platforms/26-terraform-mastery-guide",
+     "score": 0.49
+    }
+   ]
   },
   {
    "id": "platforms/parts/26-terraform-mastery-guide-part3",
@@ -1232,7 +1301,20 @@
    "word_count": 2381,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/26-terraform-mastery-guide-part4",
+     "score": 0.77
+    },
+    {
+     "id": "platforms/26-terraform-mastery-guide",
+     "score": 0.65
+    },
+    {
+     "id": "platforms/parts/26-terraform-mastery-guide-part2",
+     "score": 0.52
+    }
+   ]
   },
   {
    "id": "platforms/parts/26-terraform-mastery-guide-part4",
@@ -1249,7 +1331,20 @@
    "word_count": 2243,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/26-terraform-mastery-guide-part3",
+     "score": 0.77
+    },
+    {
+     "id": "platforms/26-terraform-mastery-guide",
+     "score": 0.7
+    },
+    {
+     "id": "platforms/parts/26-terraform-mastery-guide-part2",
+     "score": 0.54
+    }
+   ]
   }
  ]
 }

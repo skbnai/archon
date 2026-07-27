@@ -1,6 +1,6 @@
 # Duplicate-Candidate Clusters (>=0.6 similarity, connected components)
 
-31 cluster(s) found across 581 pages.
+32 cluster(s) found across 588 pages.
 
 ## Cluster (8 pages)
 
@@ -18,24 +18,24 @@ Pairwise similarity within this cluster:
 - 74%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 74%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 73%  `platforms/03-quantum-ai-architecture` <-> `platforms/02-quantum-ai-applications`
-- 73%  `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 72%  `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 72%  `platforms/03-quantum-ai-architecture` <-> `platforms/parts/04-quantum-ai-appendices-part2`
 - 70%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
-- 70%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 69%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 69%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
 - 66%  `platforms/02-quantum-ai-applications` <-> `platforms/parts/04-quantum-ai-appendices-part2`
 - 64%  `platforms/02-quantum-ai-applications` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 62%  `platforms/02-quantum-ai-applications` <-> `strategy/01-quantum-ai-consulting-landscape`
 - 62%  `platforms/parts/04-quantum-ai-appendices-part2` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
 - 61%  `platforms/03-quantum-ai-architecture` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
-- 61%  `platforms/parts/04-quantum-ai-appendices-part2` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 60%  `platforms/02-quantum-ai-applications` <-> `platforms/04-quantum-ai-appendices`
+- 60%  `platforms/parts/04-quantum-ai-appendices-part2` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 60%  `platforms/03-quantum-ai-architecture` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
 - 59%  `platforms/parts/04-quantum-ai-appendices-part2` <-> `strategy/01-quantum-ai-consulting-landscape`
 - 59%  `platforms/03-quantum-ai-architecture` <-> `strategy/01-quantum-ai-consulting-landscape`
 - 57%  `platforms/02-quantum-ai-applications` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
 - 57%  `platforms/03-quantum-ai-architecture` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
-- 57%  `platforms/parts/04-quantum-ai-appendices-part2` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 56%  `platforms/parts/04-quantum-ai-appendices-part2` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 55%  `platforms/02-quantum-ai-applications` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 54%  `platforms/03-quantum-ai-architecture` <-> `platforms/04-quantum-ai-appendices`
 - 52%  `platforms/04-quantum-ai-appendices` <-> `platforms/parts/04-quantum-ai-appendices-part2`
@@ -79,6 +79,18 @@ Pairwise similarity within this cluster:
 - 74%  `agentic-systems/core/02-enterprise-agentic-ai-config-management-2026` <-> `agentic-systems/core/parts/02-enterprise-agentic-ai-config-management-2026-part3`
 - 73%  `agentic-systems/core/parts/02-enterprise-agentic-ai-config-management-2026-part2` <-> `agentic-systems/core/parts/02-enterprise-agentic-ai-config-management-2026-part3`
 - 71%  `agentic-systems/core/02-enterprise-agentic-ai-config-management-2026` <-> `agentic-systems/core/parts/02-enterprise-agentic-ai-config-management-2026-part2`
+
+## Cluster (3 pages)
+
+- `platforms/26-terraform-mastery-guide`
+- `platforms/parts/26-terraform-mastery-guide-part4`
+- `platforms/parts/26-terraform-mastery-guide-part3`
+
+Pairwise similarity within this cluster:
+
+- 77%  `platforms/parts/26-terraform-mastery-guide-part4` <-> `platforms/parts/26-terraform-mastery-guide-part3`
+- 70%  `platforms/26-terraform-mastery-guide` <-> `platforms/parts/26-terraform-mastery-guide-part4`
+- 65%  `platforms/26-terraform-mastery-guide` <-> `platforms/parts/26-terraform-mastery-guide-part3`
 
 ## Cluster (3 pages)
 
@@ -165,7 +177,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 66%  `agentic-systems/coding-tools/45-pr-review-handbook-vol4-agentic-review-architecture` <-> `agentic-systems/coding-tools/parts/45-pr-review-handbook-vol4-agentic-review-architecture-part2`
+- 65%  `agentic-systems/coding-tools/45-pr-review-handbook-vol4-agentic-review-architecture` <-> `agentic-systems/coding-tools/parts/45-pr-review-handbook-vol4-agentic-review-architecture-part2`
 
 ## Cluster (2 pages)
 
@@ -219,7 +231,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 65%  `agentic-systems/coding-tools/37-claude-routines-guide` <-> `agentic-systems/coding-tools/parts/37-claude-routines-guide-part2`
+- 64%  `agentic-systems/coding-tools/37-claude-routines-guide` <-> `agentic-systems/coding-tools/parts/37-claude-routines-guide-part2`
 
 ## Cluster (2 pages)
 
