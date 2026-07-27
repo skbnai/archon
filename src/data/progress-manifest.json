@@ -943,7 +943,7 @@
   },
   "architecture": {
     "label": "Architecture",
-    "totalPages": 126,
+    "totalPages": 127,
     "pages": [
       {
         "id": "architecture/00-wiki-governance",
@@ -1298,6 +1298,10 @@
         "title": "Modern Data & AI Platform Blueprint 2026"
       },
       {
+        "id": "architecture/88-architecture-styles",
+        "title": "Architecture Styles: A Decision Guide for AI Systems"
+      },
+      {
         "id": "architecture/index",
         "title": "Architecture Hub"
       },
@@ -1589,7 +1593,7 @@
   },
   "protocols": {
     "label": "Protocols & Interoperability",
-    "totalPages": 34,
+    "totalPages": 35,
     "pages": [
       {
         "id": "protocols/01-auth-standards-reference",
@@ -1682,6 +1686,10 @@
       {
         "id": "protocols/23-existing-protocol-evolution-agentic-ai",
         "title": "Existing Protocol Evolution for Agentic AI (2025–2026)"
+      },
+      {
+        "id": "protocols/24-workflow-protocols-bpmn-temporal",
+        "title": "Workflow Protocols: BPMN as an Interoperability Standard vs. Code-First Orchestration"
       },
       {
         "id": "protocols/index",

@@ -11,6 +11,16 @@
 #   supersedes:                            # old-repo paths absorbed by this topic
 #     - docs/ai-protocols/mcp/MCP_Deep_Research_2026.md
 #   pages: []                              # registered non-canonical spokes
+#   pending: true                          # optional; see below
+#
+# `pending: true` — for domains whose migration.csv mapping is too big for one
+# PR/wave and lands in several batches. A topic pre-registered for a batch
+# that hasn't landed yet keeps this flag, which exempts it from
+# registry_check.py's "canonical file missing" check even while its domain is
+# in --domains scope for the batch that IS landing. Remove the flag in the
+# same PR that creates the topic's canonical file(s). See registry_check.py
+# docstring for full rationale; migration/mapping.csv is the source of truth
+# for what's still unbatched within a domain.
 
 version: 1
 topics:
@@ -2472,6 +2482,7 @@ topics:
   - id: quantum-ai-foundations
     domain: platforms
     canonical: docs/platforms/01-quantum-ai-foundations.md
+    pending: true
     aliases:
     - 'quantum ai: zero to mastery'
     supersedes:
@@ -2480,6 +2491,7 @@ topics:
   - id: quantum-ai-applications
     domain: platforms
     canonical: docs/platforms/02-quantum-ai-applications.md
+    pending: true
     aliases:
     - 'quantum ai: zero to mastery'
     supersedes: []
@@ -2487,6 +2499,7 @@ topics:
   - id: quantum-ai-architecture
     domain: platforms
     canonical: docs/platforms/03-quantum-ai-architecture.md
+    pending: true
     aliases:
     - 'quantum ai: zero to mastery'
     supersedes: []
@@ -2494,6 +2507,7 @@ topics:
   - id: quantum-ai-appendices
     domain: platforms
     canonical: docs/platforms/04-quantum-ai-appendices.md
+    pending: true
     aliases:
     - 'quantum ai: zero to mastery'
     supersedes: []
@@ -2503,47 +2517,54 @@ topics:
     canonical: docs/platforms/05-ai-gateway-full-comparison.md
     aliases:
     - ai gateway comparison — 10 tools
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-gateway/AI_Gateway_Full_Comparison.md
     pages: []
   - id: ai-gateway-multitenant-multicloud
     domain: platforms
     canonical: docs/platforms/06-ai-gateway-multitenant-multicloud.md
     aliases:
     - ai gateway
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-gateway/AI_Gateway_MultiTenant_MultiCloud.md
     pages: []
   - id: enterprise-ai-gateway
     domain: platforms
     canonical: docs/platforms/07-enterprise-ai-gateway.md
     aliases: []
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-gateway/Enterprise_AI_Gateway.md
     pages: []
   - id: kong-ai-gateway-guide
     domain: platforms
     canonical: docs/platforms/08-kong-ai-gateway-guide.md
     aliases: []
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-gateway/kong-ai-gateway-guide.md
     pages: []
   - id: kong-entra-id-integration
     domain: platforms
     canonical: docs/platforms/09-kong-entra-id-integration.md
     aliases:
     - kong + entra id integration
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-gateway/kong-entra-id-integration.md
     pages: []
   - id: ai-infrastructure-silicon-landscape-2026
     domain: platforms
     canonical: docs/platforms/10-ai-infrastructure-silicon-landscape-2026.md
     aliases:
     - ai infrastructure & silicon landscape 2026
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-infrastructure-silicon-landscape-2026.md
     pages: []
   - id: aws-native-standards-first-agentic-architecture
     domain: platforms
     canonical: docs/platforms/11-aws-native-standards-first-agentic-architecture.md
     aliases:
     - aws-native, standards-first agentic platform architecture
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/aws/AWS_Native_Standards_First_Agentic_Architecture.md
     pages: []
   - id: aws-strands-agentcore-advancedpatterns
     domain: platforms
@@ -2562,6 +2583,7 @@ topics:
   - id: aws-strands-agentcore-delta-supplement
     domain: platforms
     canonical: docs/platforms/14-aws-strands-agentcore-delta-supplement.md
+    pending: true
     aliases:
     - aws strands & bedrock agentcore — delta supplement v2.0
     supersedes: []
@@ -2569,12 +2591,14 @@ topics:
   - id: agentcore-memory-architecture-guide
     domain: platforms
     canonical: docs/platforms/15-agentcore-memory-architecture-guide.md
+    pending: true
     aliases: []
     supersedes: []
     pages: []
   - id: agentcore-memory-gaps-extensions-2026
     domain: platforms
     canonical: docs/platforms/16-agentcore-memory-gaps-extensions-2026.md
+    pending: true
     aliases:
     - agentcore memory — gaps, extensions & 2026 research
     supersedes: []
@@ -2582,6 +2606,7 @@ topics:
   - id: agentcore-memory-operations-deepdive
     domain: platforms
     canonical: docs/platforms/17-agentcore-memory-operations-deepdive.md
+    pending: true
     aliases:
     - agentcore memory operations deep dive
     supersedes: []
@@ -2589,6 +2614,7 @@ topics:
   - id: agentcore-strands-deep-research-report
     domain: platforms
     canonical: docs/platforms/18-agentcore-strands-deep-research-report.md
+    pending: true
     aliases:
     - amazon bedrock agentcore & strands sdk — deep technical research report
     supersedes: []
@@ -2596,12 +2622,14 @@ topics:
   - id: bedrock-agentcore-code-interpreter-architecture
     domain: platforms
     canonical: docs/platforms/19-bedrock-agentcore-code-interpreter-architecture.md
+    pending: true
     aliases: []
     supersedes: []
     pages: []
   - id: hyperscaler-deep-dive-aws
     domain: platforms
     canonical: docs/platforms/20-hyperscaler-deep-dive-aws.md
+    pending: true
     aliases:
     - 'hyperscaler deep dive: aws'
     supersedes: []
@@ -2609,6 +2637,7 @@ topics:
   - id: azure-agent-architecture
     domain: platforms
     canonical: docs/platforms/21-azure-agent-architecture.md
+    pending: true
     aliases:
     - azure ai agent architecture — production grade
     supersedes: []
@@ -2616,6 +2645,7 @@ topics:
   - id: hyperscaler-deep-dive-azure
     domain: platforms
     canonical: docs/platforms/22-hyperscaler-deep-dive-azure.md
+    pending: true
     aliases:
     - 'hyperscaler deep dive: microsoft azure'
     supersedes: []
@@ -2623,6 +2653,7 @@ topics:
   - id: enterprise-agent-runtime-internals-2026
     domain: platforms
     canonical: docs/platforms/23-enterprise-agent-runtime-internals-2026.md
+    pending: true
     aliases:
     - 'enterprise ai agent runtime internals: aws, azure & gcp'
     supersedes: []
@@ -2630,6 +2661,7 @@ topics:
   - id: hyperscaler-deep-dive-gcp
     domain: platforms
     canonical: docs/platforms/24-hyperscaler-deep-dive-gcp.md
+    pending: true
     aliases:
     - 'hyperscaler deep dive: google cloud'
     supersedes: []
@@ -2637,6 +2669,7 @@ topics:
   - id: ai-assisted-iac-mastery
     domain: platforms
     canonical: docs/platforms/25-ai-assisted-iac-mastery.md
+    pending: true
     aliases:
     - ai-assisted iac mastery guide
     supersedes: []
@@ -2644,6 +2677,7 @@ topics:
   - id: terraform-mastery-guide
     domain: platforms
     canonical: docs/platforms/26-terraform-mastery-guide.md
+    pending: true
     aliases:
     - terraform from zero to mastery
     supersedes: []
@@ -2651,6 +2685,7 @@ topics:
   - id: k8s-handbook-part10-observability
     domain: platforms
     canonical: docs/platforms/27-k8s-handbook-part10-observability.md
+    pending: true
     aliases:
     - 'k8s handbook part 10: observability'
     supersedes: []
@@ -2658,6 +2693,7 @@ topics:
   - id: k8s-handbook-part11-ai-infrastructure
     domain: platforms
     canonical: docs/platforms/28-k8s-handbook-part11-ai-infrastructure.md
+    pending: true
     aliases:
     - 'k8s handbook part 11: ai infrastructure'
     supersedes: []
@@ -2665,6 +2701,7 @@ topics:
   - id: k8s-handbook-part12-agentic-ai
     domain: platforms
     canonical: docs/platforms/29-k8s-handbook-part12-agentic-ai.md
+    pending: true
     aliases:
     - 'k8s handbook part 12: agentic ai'
     supersedes: []
@@ -2672,6 +2709,7 @@ topics:
   - id: k8s-handbook-part13-emerging-standards
     domain: platforms
     canonical: docs/platforms/30-k8s-handbook-part13-emerging-standards.md
+    pending: true
     aliases:
     - 'k8s handbook part 13: emerging standards'
     supersedes: []
@@ -2679,6 +2717,7 @@ topics:
   - id: k8s-handbook-part14-reference-architectures
     domain: platforms
     canonical: docs/platforms/31-k8s-handbook-part14-reference-architectures.md
+    pending: true
     aliases:
     - 'k8s handbook part 14: reference architectures'
     supersedes: []
@@ -2686,6 +2725,7 @@ topics:
   - id: k8s-handbook-part15-implementation-labs
     domain: platforms
     canonical: docs/platforms/32-k8s-handbook-part15-implementation-labs.md
+    pending: true
     aliases:
     - 'k8s handbook part 15: implementation labs'
     supersedes: []
@@ -2693,6 +2733,7 @@ topics:
   - id: k8s-handbook-part16-future-outlook
     domain: platforms
     canonical: docs/platforms/33-k8s-handbook-part16-future-outlook.md
+    pending: true
     aliases:
     - 'k8s handbook part 16: future outlook'
     supersedes: []
@@ -2700,6 +2741,7 @@ topics:
   - id: k8s-handbook-part1-infrastructure-evolution
     domain: platforms
     canonical: docs/platforms/34-k8s-handbook-part1-infrastructure-evolution.md
+    pending: true
     aliases:
     - 'k8s handbook part 1: infrastructure evolution'
     supersedes: []
@@ -2707,6 +2749,7 @@ topics:
   - id: k8s-handbook-part2-linux-foundations
     domain: platforms
     canonical: docs/platforms/35-k8s-handbook-part2-linux-foundations.md
+    pending: true
     aliases:
     - 'k8s handbook part 2: linux foundations'
     supersedes: []
@@ -2714,6 +2757,7 @@ topics:
   - id: k8s-handbook-part3-containers
     domain: platforms
     canonical: docs/platforms/36-k8s-handbook-part3-containers.md
+    pending: true
     aliases:
     - 'k8s handbook part 3: containers'
     supersedes: []
@@ -2721,6 +2765,7 @@ topics:
   - id: k8s-handbook-part4-kubernetes-internals
     domain: platforms
     canonical: docs/platforms/37-k8s-handbook-part4-kubernetes-internals.md
+    pending: true
     aliases:
     - 'k8s handbook part 4: kubernetes internals'
     supersedes: []
@@ -2728,6 +2773,7 @@ topics:
   - id: k8s-handbook-part5-kubernetes-resources
     domain: platforms
     canonical: docs/platforms/38-k8s-handbook-part5-kubernetes-resources.md
+    pending: true
     aliases:
     - 'k8s handbook part 5: kubernetes resources'
     supersedes: []
@@ -2735,6 +2781,7 @@ topics:
   - id: k8s-handbook-part6-kubernetes-networking
     domain: platforms
     canonical: docs/platforms/39-k8s-handbook-part6-kubernetes-networking.md
+    pending: true
     aliases:
     - 'k8s handbook part 6: kubernetes networking'
     supersedes: []
@@ -2742,6 +2789,7 @@ topics:
   - id: k8s-handbook-part7-storage
     domain: platforms
     canonical: docs/platforms/40-k8s-handbook-part7-storage.md
+    pending: true
     aliases:
     - 'k8s handbook part 7: storage'
     supersedes: []
@@ -2749,6 +2797,7 @@ topics:
   - id: k8s-handbook-part8-security
     domain: platforms
     canonical: docs/platforms/41-k8s-handbook-part8-security.md
+    pending: true
     aliases:
     - 'k8s handbook part 8: security'
     supersedes: []
@@ -2756,6 +2805,7 @@ topics:
   - id: k8s-handbook-part9-platform-engineering
     domain: platforms
     canonical: docs/platforms/42-k8s-handbook-part9-platform-engineering.md
+    pending: true
     aliases:
     - 'k8s handbook part 9: platform engineering'
     supersedes: []
@@ -2763,6 +2813,7 @@ topics:
   - id: part-01-platform-vision-agentic-services
     domain: platforms
     canonical: docs/platforms/43-part-01-platform-vision-agentic-services.md
+    pending: true
     aliases:
     - part 1 — platform vision & agentic services
     supersedes: []
@@ -2770,6 +2821,7 @@ topics:
   - id: part-02-agent-lake-architecture
     domain: platforms
     canonical: docs/platforms/44-part-02-agent-lake-architecture.md
+    pending: true
     aliases:
     - part 2 — agent lake, agent architecture & multi-agent orchestration
     supersedes: []
@@ -2777,6 +2829,7 @@ topics:
   - id: part-03-mosaic-ai-mlflow
     domain: platforms
     canonical: docs/platforms/45-part-03-mosaic-ai-mlflow.md
+    pending: true
     aliases:
     - part 3 — mosaic ai & mlflow 3
     supersedes: []
@@ -2784,6 +2837,7 @@ topics:
   - id: part-04-unity-catalog-governance
     domain: platforms
     canonical: docs/platforms/46-part-04-unity-catalog-governance.md
+    pending: true
     aliases:
     - part 4 — unity catalog ai governance
     supersedes: []
@@ -2791,6 +2845,7 @@ topics:
   - id: part-07-security-architecture
     domain: platforms
     canonical: docs/platforms/47-part-07-security-architecture.md
+    pending: true
     aliases:
     - part 7 — security architecture
     supersedes: []
@@ -2798,6 +2853,7 @@ topics:
   - id: part-08-observability-finops-integration
     domain: platforms
     canonical: docs/platforms/48-part-08-observability-finops-integration.md
+    pending: true
     aliases:
     - part 8 — observability, finops & integration ecosystem
     supersedes: []
@@ -2805,6 +2861,7 @@ topics:
   - id: part-09-competitive-reference-architectures
     domain: platforms
     canonical: docs/platforms/49-part-09-competitive-reference-architectures.md
+    pending: true
     aliases:
     - part 9 — competitive comparison & industry reference architectures
     supersedes: []
@@ -2812,6 +2869,7 @@ topics:
   - id: databricks-vendor-landscape
     domain: platforms
     canonical: docs/platforms/50-databricks-vendor-landscape.md
+    pending: true
     aliases:
     - part 13 — vendor landscape & decision matrix
     supersedes: []
@@ -5717,5 +5775,95 @@ topics:
     aliases:
     - bpmn protocol
     - workflow orchestration protocols
+    supersedes: []
+    pages: []
+  - id: ai-gateway-full-comparison-part2
+    domain: platforms
+    canonical: docs/platforms/parts/05-ai-gateway-full-comparison-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-gateway-full-comparison-part3
+    domain: platforms
+    canonical: docs/platforms/parts/05-ai-gateway-full-comparison-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-gateway-full-comparison-part4
+    domain: platforms
+    canonical: docs/platforms/parts/05-ai-gateway-full-comparison-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-gateway-multitenant-multicloud-part2
+    domain: platforms
+    canonical: docs/platforms/parts/06-ai-gateway-multitenant-multicloud-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-gateway-part2
+    domain: platforms
+    canonical: docs/platforms/parts/07-enterprise-ai-gateway-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: kong-ai-gateway-guide-part2
+    domain: platforms
+    canonical: docs/platforms/parts/08-kong-ai-gateway-guide-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: kong-ai-gateway-guide-part3
+    domain: platforms
+    canonical: docs/platforms/parts/08-kong-ai-gateway-guide-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: kong-entra-id-integration-part2
+    domain: platforms
+    canonical: docs/platforms/parts/09-kong-entra-id-integration-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-native-standards-first-agentic-architecture-part2
+    domain: platforms
+    canonical: docs/platforms/parts/11-aws-native-standards-first-agentic-architecture-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-native-standards-first-agentic-architecture-part3
+    domain: platforms
+    canonical: docs/platforms/parts/11-aws-native-standards-first-agentic-architecture-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-native-standards-first-agentic-architecture-part4
+    domain: platforms
+    canonical: docs/platforms/parts/11-aws-native-standards-first-agentic-architecture-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-advancedpatterns-part2
+    domain: platforms
+    canonical: docs/platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-advancedpatterns-part3
+    domain: platforms
+    canonical: docs/platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-builder-journey-kit-part2
+    domain: platforms
+    canonical: docs/platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-builder-journey-kit-part3
+    domain: platforms
+    canonical: docs/platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3.md
+    aliases: []
     supersedes: []
     pages: []
