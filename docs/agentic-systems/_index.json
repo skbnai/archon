@@ -1451,7 +1451,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/29-module-7-safety-enterprise-exam-part2",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -2007,7 +2007,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/coding-tools/54-prompts-evaluation-spark-infrastructure",
-     "score": 0.47
+     "score": 0.46
     },
     {
      "id": "agentic-systems/coding-tools/49-vision-copilot-architecture-repointelligence",
@@ -2415,7 +2415,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/29-module-7-safety-enterprise-exam",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -2918,7 +2918,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
-     "score": 0.49
+     "score": 0.48
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
@@ -3130,7 +3130,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
@@ -3191,7 +3191,7 @@
      "score": 0.36
     },
     {
-     "id": "agentic-systems/coding-tools/parts/47-github-copilot-enterprise-research-2026-part2",
+     "id": "agentic-systems/coding-tools/parts/11-github-copilot-zero-to-hero-part4",
      "score": 0.3
     }
    ]
@@ -3409,11 +3409,11 @@
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.44
+     "score": 0.43
     },
     {
      "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
-     "score": 0.44
+     "score": 0.43
     }
    ]
   },
@@ -3467,7 +3467,7 @@
     },
     {
      "id": "agentic-systems/core/28-enterprise-workflows-comparative-analysis-and-patterns",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "agentic-systems/core/18-foundations-what-is-a-coding-skill",
@@ -3563,7 +3563,7 @@
     },
     {
      "id": "agentic-systems/core/28-enterprise-workflows-comparative-analysis-and-patterns",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -3714,11 +3714,11 @@
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.34
+     "score": 0.33
     },
     {
      "id": "agentic-systems/core/34-composition-and-instructions-engineering",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -4835,7 +4835,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/10-mcp-impact",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },

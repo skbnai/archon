@@ -212,11 +212,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
-     "score": 0.31
+     "score": 0.35
     }
    ]
   },
@@ -240,11 +240,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.55
+     "score": 0.54
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
-     "score": 0.51
+     "score": 0.5
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
@@ -608,7 +608,7 @@
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -631,11 +631,11 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
-     "score": 0.46
+     "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
+     "score": 0.35
     },
     {
-     "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
+     "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
      "score": 0.31
     }
    ]
@@ -659,16 +659,16 @@
    "status": "draft",
    "top_similar": [
     {
-     "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
-     "score": 0.46
-    },
-    {
      "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.35
+     "score": 0.31
+    },
+    {
+     "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
+     "score": 0.3
     }
    ]
   },
@@ -692,14 +692,14 @@
    "top_similar": [
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.51
-    },
-    {
-     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.42
+     "score": 0.5
     },
     {
      "id": "agentic-systems/core/09-multitenantagentplatform-architecture",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
      "score": 0.41
     }
    ]
@@ -724,14 +724,14 @@
    "top_similar": [
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.55
+     "score": 0.54
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
-     "score": 0.42
+     "score": 0.41
     },
     {
-     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "id": "agentic-systems/core/09-multitenantagentplatform-architecture",
      "score": 0.38
     }
    ]

@@ -612,7 +612,7 @@
     },
     {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "strategy/42-ai-first-to-ai-native",
@@ -771,7 +771,7 @@
    "top_similar": [
     {
      "id": "strategy/73-part-21-agentic-process-blueprint-blueprints-by-function-teams",
-     "score": 0.44
+     "score": 0.45
     }
    ]
   },
@@ -1744,7 +1744,7 @@
    "top_similar": [
     {
      "id": "strategy/31-part-21-agentic-process-blueprint",
-     "score": 0.44
+     "score": 0.45
     }
    ]
   },
@@ -2156,11 +2156,11 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
+     "id": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
      "score": 0.43
     },
     {
-     "id": "strategy/vols/03-vol6-organization-structure-operating-model-target-operating-model-ai-coe",
+     "id": "strategy/vols/02-vol6-organization-structure-operating-model-agile-scale-operating-model",
      "score": 0.43
     },
     {
