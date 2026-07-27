@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 81,
+    "totalPages": 115,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1642,12 +1642,24 @@
         "title": "AWS Strands & Bedrock AgentCore — Delta Supplement v2.0"
       },
       {
+        "id": "platforms/15-agentcore-memory-architecture-guide",
+        "title": "AgentCore Memory Architecture Guide"
+      },
+      {
         "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
         "title": "AgentCore Memory — Gaps, Extensions & 2026 Research"
       },
       {
         "id": "platforms/17-agentcore-memory-operations-deepdive",
         "title": "AgentCore Memory Operations Deep Dive"
+      },
+      {
+        "id": "platforms/18-agentcore-strands-deep-research-report",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report"
+      },
+      {
+        "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+        "title": "Bedrock AgentCore Code Interpreter Architecture"
       },
       {
         "id": "platforms/20-hyperscaler-deep-dive-aws",
@@ -1660,6 +1672,10 @@
       {
         "id": "platforms/22-hyperscaler-deep-dive-azure",
         "title": "Hyperscaler Deep Dive: Microsoft Azure (2026)"
+      },
+      {
+        "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026)"
       },
       {
         "id": "platforms/24-hyperscaler-deep-dive-gcp",
@@ -1676,6 +1692,30 @@
       {
         "id": "platforms/27-k8s-handbook-part10-observability",
         "title": "K8s Handbook Part 10: Observability"
+      },
+      {
+        "id": "platforms/28-k8s-handbook-part11-ai-infrastructure",
+        "title": "K8s Handbook Part 11: AI Infrastructure"
+      },
+      {
+        "id": "platforms/29-k8s-handbook-part12-agentic-ai",
+        "title": "K8s Handbook Part 12: Agentic AI"
+      },
+      {
+        "id": "platforms/30-k8s-handbook-part13-emerging-standards",
+        "title": "K8s Handbook Part 13: Emerging Standards"
+      },
+      {
+        "id": "platforms/31-k8s-handbook-part14-reference-architectures",
+        "title": "K8s Handbook Part 14: Reference Architectures"
+      },
+      {
+        "id": "platforms/32-k8s-handbook-part15-implementation-labs",
+        "title": "K8s Handbook Part 15: Implementation Labs"
+      },
+      {
+        "id": "platforms/33-k8s-handbook-part16-future-outlook",
+        "title": "K8s Handbook Part 16: Future Outlook"
       },
       {
         "id": "platforms/34-k8s-handbook-part1-infrastructure-evolution",
@@ -1814,12 +1854,96 @@
         "title": "AWS Strands & Bedrock AgentCore — Delta Supplement v2.0 (Part 2: Strands Labs, AgentCore GA Updates, Observability, Best Practices)"
       },
       {
+        "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
+        "title": "AgentCore Memory Architecture Guide (Part 2)"
+      },
+      {
+        "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+        "title": "AgentCore Memory Architecture Guide (Part 3)"
+      },
+      {
+        "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
+        "title": "AgentCore Memory Architecture Guide (Part 4)"
+      },
+      {
         "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",
         "title": "AgentCore Memory — Gaps, Extensions & 2026 Research (Part 2: Structured Extraction, Graph Memory & Research Landscape)"
       },
       {
         "id": "platforms/parts/17-agentcore-memory-operations-deepdive-part2",
         "title": "AgentCore Memory Operations Deep Dive (Part 2: Issues by Phase, Unit Testing, Evaluation & Cleanup)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part2",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 2)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part3",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 3)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part4",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 4)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part5",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 5)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part6",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 6)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part7",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 7)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part8",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 8)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part9",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 9)"
+      },
+      {
+        "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+        "title": "Bedrock AgentCore Code Interpreter Architecture (Part 2)"
+      },
+      {
+        "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+        "title": "Bedrock AgentCore Code Interpreter Architecture (Part 3)"
+      },
+      {
+        "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part4",
+        "title": "Bedrock AgentCore Code Interpreter Architecture (Part 4)"
+      },
+      {
+        "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5",
+        "title": "Bedrock AgentCore Code Interpreter Architecture (Part 5)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part2",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 2)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part3",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 3)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part4",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 4)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 5)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part6",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 6)"
+      },
+      {
+        "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+        "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 7)"
       },
       {
         "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
@@ -1844,6 +1968,18 @@
       {
         "id": "platforms/parts/27-k8s-handbook-part10-observability-part2",
         "title": "K8s Handbook Part 10: Observability (Part 2)"
+      },
+      {
+        "id": "platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2",
+        "title": "K8s Handbook Part 11: AI Infrastructure (Part 2)"
+      },
+      {
+        "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part2",
+        "title": "K8s Handbook Part 12: Agentic AI (Part 2)"
+      },
+      {
+        "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part3",
+        "title": "K8s Handbook Part 12: Agentic AI (Part 3)"
       },
       {
         "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",

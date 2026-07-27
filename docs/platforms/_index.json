@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 81,
+ "page_count": 115,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -86,7 +86,7 @@
     },
     {
      "id": "platforms/parts/04-quantum-ai-appendices-part2",
-     "score": 0.72
+     "score": 0.73
     },
     {
      "id": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
@@ -112,7 +112,7 @@
    "top_similar": [
     {
      "id": "platforms/02-quantum-ai-applications",
-     "score": 0.6
+     "score": 0.61
     },
     {
      "id": "platforms/01-quantum-ai-foundations",
@@ -161,15 +161,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/06-ai-gateway-multitenant-multicloud-part2",
-     "score": 0.61
+     "score": 0.6
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
      "score": 0.32
-    },
-    {
-     "id": "agentic-systems/core/parts/10-agentic-platform-bestpractices-part2",
-     "score": 0.3
     }
    ]
   },
@@ -191,7 +187,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/07-enterprise-ai-gateway-part2",
-     "score": 0.49
+     "score": 0.48
     },
     {
      "id": "platforms/08-kong-ai-gateway-guide",
@@ -222,7 +218,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
-     "score": 0.56
+     "score": 0.55
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
@@ -253,7 +249,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
-     "score": 0.61
+     "score": 0.6
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
@@ -302,15 +298,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
-     "score": 0.57
-    },
-    {
-     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
      "score": 0.55
     },
     {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
+     "score": 0.53
+    },
+    {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part3",
-     "score": 0.43
+     "score": 0.42
     }
    ]
   },
@@ -334,11 +330,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
-     "score": 0.43
+     "score": 0.42
     },
     {
      "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -362,15 +358,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.54
+     "score": 0.51
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
-     "score": 0.49
+     "score": 0.48
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
-     "score": 0.42
+     "score": 0.4
     }
    ]
   },
@@ -395,7 +391,41 @@
    "top_similar": [
     {
      "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
-     "score": 0.42
+     "score": 0.41
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part4",
+     "score": 0.32
+    }
+   ]
+  },
+  {
+   "id": "platforms/15-agentcore-memory-architecture-guide",
+   "title": "AgentCore Memory Architecture Guide",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-architecture-guide",
+   "tags": [
+    "aws",
+    "agentcore",
+    "memory",
+    "strands",
+    "session-management"
+   ],
+   "word_count": 2562,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
+     "score": 0.37
     }
    ]
   },
@@ -417,15 +447,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",
-     "score": 0.52
+     "score": 0.5
+    },
+    {
+     "id": "platforms/15-agentcore-memory-architecture-guide",
+     "score": 0.31
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.33
-    },
-    {
-     "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -447,7 +477,68 @@
    "top_similar": [
     {
      "id": "platforms/parts/17-agentcore-memory-operations-deepdive-part2",
-     "score": 0.42
+     "score": 0.41
+    }
+   ]
+  },
+  {
+   "id": "platforms/18-agentcore-strands-deep-research-report",
+   "title": "Amazon Bedrock AgentCore & Strands SDK \u2014 Deep Technical Research Report",
+   "doc_type": "guide",
+   "topic_id": "agentcore-strands-deep-research-report",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands",
+    "research-report",
+    "runtime",
+    "gateway"
+   ],
+   "word_count": 2593,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part5",
+     "score": 0.54
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part6",
+     "score": 0.47
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part2",
+     "score": 0.45
+    }
+   ]
+  },
+  {
+   "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+   "title": "Bedrock AgentCore Code Interpreter Architecture",
+   "doc_type": "guide",
+   "topic_id": "bedrock-agentcore-code-interpreter-architecture",
+   "tags": [
+    "aws",
+    "agentcore",
+    "code-interpreter",
+    "eu-banking",
+    "gdpr"
+   ],
+   "word_count": 1068,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+     "score": 0.68
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+     "score": 0.6
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5",
+     "score": 0.53
     }
    ]
   },
@@ -469,15 +560,15 @@
    "top_similar": [
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.38
+     "score": 0.36
     },
     {
      "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
-     "score": 0.35
+     "score": 0.34
     },
     {
-     "id": "platforms/11-aws-native-standards-first-agentic-architecture",
-     "score": 0.32
+     "id": "platforms/18-agentcore-strands-deep-research-report",
+     "score": 0.33
     }
    ]
   },
@@ -495,12 +586,7 @@
    "word_count": 1887,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": [
-    {
-     "id": "protocols/07-auth-identity-flows",
-     "score": 0.31
-    }
-   ]
+   "top_similar": []
   },
   {
    "id": "platforms/22-hyperscaler-deep-dive-azure",
@@ -533,6 +619,36 @@
    ]
   },
   {
+   "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "agent-runtime",
+    "enterprise-architecture"
+   ],
+   "word_count": 2631,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part2",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+     "score": 0.57
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part3",
+     "score": 0.54
+    }
+   ]
+  },
+  {
    "id": "platforms/24-hyperscaler-deep-dive-gcp",
    "title": "Hyperscaler Deep Dive: Google Cloud (2026)",
    "doc_type": "guide",
@@ -553,10 +669,6 @@
     {
      "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
      "score": 0.35
-    },
-    {
-     "id": "platforms/20-hyperscaler-deep-dive-aws",
-     "score": 0.3
     }
    ]
   },
@@ -583,11 +695,11 @@
     },
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
-     "score": 0.39
+     "score": 0.38
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -607,15 +719,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part4",
-     "score": 0.69
+     "score": 0.68
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
-     "score": 0.65
+     "score": 0.64
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part2",
-     "score": 0.49
+     "score": 0.48
     }
    ]
   },
@@ -638,6 +750,148 @@
     {
      "id": "platforms/parts/27-k8s-handbook-part10-observability-part2",
      "score": 0.36
+    }
+   ]
+  },
+  {
+   "id": "platforms/28-k8s-handbook-part11-ai-infrastructure",
+   "title": "K8s Handbook Part 11: AI Infrastructure",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part11-ai-infrastructure",
+   "tags": [
+    "kubernetes",
+    "ai-infrastructure",
+    "gpu",
+    "vllm",
+    "kserve"
+   ],
+   "word_count": 2545,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2",
+     "score": 0.56
+    },
+    {
+     "id": "platforms/33-k8s-handbook-part16-future-outlook",
+     "score": 0.33
+    }
+   ]
+  },
+  {
+   "id": "platforms/29-k8s-handbook-part12-agentic-ai",
+   "title": "K8s Handbook Part 12: Agentic AI",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part12-agentic-ai",
+   "tags": [
+    "kubernetes",
+    "agentic-ai",
+    "mcp",
+    "temporal",
+    "argo-workflows"
+   ],
+   "word_count": 2215,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part2",
+     "score": 0.38
+    },
+    {
+     "id": "platforms/30-k8s-handbook-part13-emerging-standards",
+     "score": 0.31
+    },
+    {
+     "id": "architecture/44-ai-harness-architecture-orchestration",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "platforms/30-k8s-handbook-part13-emerging-standards",
+   "title": "K8s Handbook Part 13: Emerging Standards",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part13-emerging-standards",
+   "tags": [
+    "kubernetes",
+    "mcp",
+    "a2a",
+    "ai-gateway",
+    "opentelemetry"
+   ],
+   "word_count": 1078,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "protocols/parts/13-mcp-deep-research-2026-part2",
+     "score": 0.35
+    },
+    {
+     "id": "agentic-systems/core/17-a2a-deep-research",
+     "score": 0.34
+    },
+    {
+     "id": "architecture/58-mcp-a2a-protocol-deep-dive",
+     "score": 0.33
+    }
+   ]
+  },
+  {
+   "id": "platforms/31-k8s-handbook-part14-reference-architectures",
+   "title": "K8s Handbook Part 14: Reference Architectures",
+   "doc_type": "reference-architecture",
+   "topic_id": "k8s-handbook-part14-reference-architectures",
+   "tags": [
+    "kubernetes",
+    "reference-architecture",
+    "financial-services",
+    "healthcare",
+    "agentic-ai"
+   ],
+   "word_count": 793,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/32-k8s-handbook-part15-implementation-labs",
+   "title": "K8s Handbook Part 15: Implementation Labs",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part15-implementation-labs",
+   "tags": [
+    "kubernetes",
+    "hands-on-labs",
+    "gitops",
+    "vllm",
+    "rag"
+   ],
+   "word_count": 1238,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/33-k8s-handbook-part16-future-outlook",
+   "title": "K8s Handbook Part 16: Future Outlook",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part16-future-outlook",
+   "tags": [
+    "kubernetes",
+    "future-outlook",
+    "green-ai",
+    "gpu-native",
+    "agent-mesh"
+   ],
+   "word_count": 1205,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/28-k8s-handbook-part11-ai-infrastructure",
+     "score": 0.33
     }
    ]
   },
@@ -685,7 +939,7 @@
     },
     {
      "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
-     "score": 0.48
+     "score": 0.47
     }
    ]
   },
@@ -737,15 +991,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part4",
-     "score": 0.59
+     "score": 0.58
     },
     {
      "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part2",
-     "score": 0.44
+     "score": 0.43
     },
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -771,11 +1025,11 @@
     },
     {
      "id": "platforms/parts/38-k8s-handbook-part5-kubernetes-resources-part2",
-     "score": 0.39
+     "score": 0.38
     },
     {
      "id": "platforms/parts/40-k8s-handbook-part7-storage-part2",
-     "score": 0.37
+     "score": 0.36
     }
    ]
   },
@@ -797,15 +1051,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part2",
-     "score": 0.7
+     "score": 0.69
     },
     {
      "id": "platforms/parts/39-k8s-handbook-part6-kubernetes-networking-part2",
-     "score": 0.46
+     "score": 0.45
     },
     {
      "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part3",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -827,7 +1081,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/40-k8s-handbook-part7-storage-part2",
-     "score": 0.46
+     "score": 0.45
     },
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
@@ -879,7 +1133,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/42-k8s-handbook-part9-platform-engineering-part2",
-     "score": 0.48
+     "score": 0.46
     },
     {
      "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3",
@@ -1143,7 +1397,7 @@
    "top_similar": [
     {
      "id": "platforms/03-quantum-ai-architecture",
-     "score": 0.72
+     "score": 0.73
     },
     {
      "id": "platforms/02-quantum-ai-applications",
@@ -1207,7 +1461,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
@@ -1239,7 +1493,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part3",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
@@ -1247,7 +1501,7 @@
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -1269,7 +1523,7 @@
    "top_similar": [
     {
      "id": "platforms/06-ai-gateway-multitenant-multicloud",
-     "score": 0.61
+     "score": 0.6
     }
    ]
   },
@@ -1291,11 +1545,11 @@
    "top_similar": [
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.49
+     "score": 0.48
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
-     "score": 0.33
+     "score": 0.32
     },
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
@@ -1353,7 +1607,7 @@
    "top_similar": [
     {
      "id": "platforms/08-kong-ai-gateway-guide",
-     "score": 0.56
+     "score": 0.55
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
@@ -1384,7 +1638,7 @@
    "top_similar": [
     {
      "id": "platforms/09-kong-entra-id-integration",
-     "score": 0.61
+     "score": 0.6
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
@@ -1416,15 +1670,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part3",
-     "score": 0.6
+     "score": 0.59
     },
     {
      "id": "platforms/11-aws-native-standards-first-agentic-architecture",
-     "score": 0.57
+     "score": 0.55
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
-     "score": 0.43
+     "score": 0.41
     }
    ]
   },
@@ -1448,11 +1702,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
-     "score": 0.6
+     "score": 0.59
     },
     {
      "id": "platforms/11-aws-native-standards-first-agentic-architecture",
-     "score": 0.43
+     "score": 0.42
     },
     {
      "id": "agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2",
@@ -1480,11 +1734,11 @@
    "top_similar": [
     {
      "id": "platforms/11-aws-native-standards-first-agentic-architecture",
-     "score": 0.55
+     "score": 0.53
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
-     "score": 0.43
+     "score": 0.41
     }
    ]
   },
@@ -1508,7 +1762,7 @@
    "top_similar": [
     {
      "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -1532,15 +1786,7 @@
    "top_similar": [
     {
      "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
-     "score": 0.43
-    },
-    {
-     "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
-     "score": 0.3
-    },
-    {
-     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.3
+     "score": 0.42
     }
    ]
   },
@@ -1564,15 +1810,15 @@
    "top_similar": [
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.49
+     "score": 0.48
     },
     {
      "id": "agentic-systems/core/09-multitenantagentplatform-architecture",
-     "score": 0.41
+     "score": 0.39
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.4
+     "score": 0.38
     }
    ]
   },
@@ -1596,15 +1842,15 @@
    "top_similar": [
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.54
+     "score": 0.51
     },
     {
      "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
-     "score": 0.47
+     "score": 0.44
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
-     "score": 0.4
+     "score": 0.38
     }
    ]
   },
@@ -1628,15 +1874,105 @@
    "top_similar": [
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.47
+     "score": 0.44
     },
     {
      "id": "platforms/14-aws-strands-agentcore-delta-supplement",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.38
+     "score": 0.36
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
+   "title": "AgentCore Memory Architecture Guide (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-architecture-guide-part2",
+   "tags": [
+    "aws",
+    "agentcore",
+    "memory",
+    "session-resume",
+    "multi-agent"
+   ],
+   "word_count": 2793,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+     "score": 0.62
+    },
+    {
+     "id": "platforms/15-agentcore-memory-architecture-guide",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
+     "score": 0.39
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+   "title": "AgentCore Memory Architecture Guide (Part 3)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-architecture-guide-part3",
+   "tags": [
+    "aws",
+    "agentcore",
+    "gdpr",
+    "security",
+    "terraform"
+   ],
+   "word_count": 2474,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
+     "score": 0.62
+    },
+    {
+     "id": "platforms/15-agentcore-memory-architecture-guide",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
+     "score": 0.46
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
+   "title": "AgentCore Memory Architecture Guide (Part 4)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-memory-architecture-guide-part4",
+   "tags": [
+    "aws",
+    "agentcore",
+    "python",
+    "terraform",
+    "testing"
+   ],
+   "word_count": 2699,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+     "score": 0.46
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
+     "score": 0.39
+    },
+    {
+     "id": "platforms/15-agentcore-memory-architecture-guide",
+     "score": 0.37
     }
    ]
   },
@@ -1658,7 +1994,7 @@
    "top_similar": [
     {
      "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
-     "score": 0.52
+     "score": 0.5
     }
    ]
   },
@@ -1680,7 +2016,550 @@
    "top_similar": [
     {
      "id": "platforms/17-agentcore-memory-operations-deepdive",
+     "score": 0.41
+    },
+    {
+     "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
+     "score": 0.38
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/18-agentcore-strands-deep-research-report-part2",
+   "title": "Amazon Bedrock AgentCore & Strands SDK \u2014 Deep Technical Research Report (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-strands-deep-research-report-part2",
+   "tags": [
+    "aws",
+    "agentcore",
+    "policy",
+    "registry",
+    "harness"
+   ],
+   "word_count": 2388,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/18-agentcore-strands-deep-research-report",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part5",
      "score": 0.42
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part6",
+     "score": 0.41
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/18-agentcore-strands-deep-research-report-part3",
+   "title": "Amazon Bedrock AgentCore & Strands SDK \u2014 Deep Technical Research Report (Part 3)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-strands-deep-research-report-part3",
+   "tags": [
+    "aws",
+    "agentcore",
+    "identity",
+    "memory",
+    "code-interpreter",
+    "mcp"
+   ],
+   "word_count": 2234,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part5",
+     "score": 0.47
+    },
+    {
+     "id": "platforms/18-agentcore-strands-deep-research-report",
+     "score": 0.44
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part6",
+     "score": 0.39
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/18-agentcore-strands-deep-research-report-part4",
+   "title": "Amazon Bedrock AgentCore & Strands SDK \u2014 Deep Technical Research Report (Part 4)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-strands-deep-research-report-part4",
+   "tags": [
+    "aws",
+    "agentcore",
+    "strands-sdk",
+    "observability"
+   ],
+   "word_count": 2187,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/18-agentcore-strands-deep-research-report",
+     "score": 0.41
+    },
+    {
+     "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
+     "score": 0.39
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+     "score": 0.38
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/18-agentcore-strands-deep-research-report-part5",
+   "title": "Amazon Bedrock AgentCore & Strands SDK \u2014 Deep Technical Research Report (Part 5)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-strands-deep-research-report-part5",
+   "tags": [
+    "aws",
+    "agentcore",
+    "security",
+    "threat-model",
+    "production-architecture"
+   ],
+   "word_count": 2578,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/18-agentcore-strands-deep-research-report",
+     "score": 0.54
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part6",
+     "score": 0.49
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part3",
+     "score": 0.47
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/18-agentcore-strands-deep-research-report-part6",
+   "title": "Amazon Bedrock AgentCore & Strands SDK \u2014 Deep Technical Research Report (Part 6)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-strands-deep-research-report-part6",
+   "tags": [
+    "aws",
+    "agentcore",
+    "roadmap",
+    "best-practices",
+    "anti-patterns"
+   ],
+   "word_count": 2478,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part5",
+     "score": 0.49
+    },
+    {
+     "id": "platforms/18-agentcore-strands-deep-research-report",
+     "score": 0.47
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part2",
+     "score": 0.41
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/18-agentcore-strands-deep-research-report-part7",
+   "title": "Amazon Bedrock AgentCore & Strands SDK \u2014 Deep Technical Research Report (Part 7)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-strands-deep-research-report-part7",
+   "tags": [
+    "aws",
+    "agentcore",
+    "production-readiness",
+    "cost-optimization",
+    "resilience"
+   ],
+   "word_count": 2586,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part5",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/18-agentcore-strands-deep-research-report",
+     "score": 0.41
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part9",
+     "score": 0.4
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/18-agentcore-strands-deep-research-report-part8",
+   "title": "Amazon Bedrock AgentCore & Strands SDK \u2014 Deep Technical Research Report (Part 8)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-strands-deep-research-report-part8",
+   "tags": [
+    "aws",
+    "agentcore",
+    "resilience",
+    "human-in-the-loop",
+    "observability"
+   ],
+   "word_count": 2095,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part7",
+     "score": 0.4
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part9",
+     "score": 0.34
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/18-agentcore-strands-deep-research-report-part9",
+   "title": "Amazon Bedrock AgentCore & Strands SDK \u2014 Deep Technical Research Report (Part 9)",
+   "doc_type": "guide",
+   "topic_id": "agentcore-strands-deep-research-report-part9",
+   "tags": [
+    "aws",
+    "agentcore",
+    "sources",
+    "glossary"
+   ],
+   "word_count": 1115,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/18-agentcore-strands-deep-research-report",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part7",
+     "score": 0.4
+    },
+    {
+     "id": "platforms/parts/18-agentcore-strands-deep-research-report-part8",
+     "score": 0.34
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+   "title": "Bedrock AgentCore Code Interpreter Architecture (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "bedrock-agentcore-code-interpreter-architecture-part2",
+   "tags": [
+    "aws",
+    "agentcore",
+    "memory",
+    "data-lineage",
+    "pii"
+   ],
+   "word_count": 2191,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+     "score": 0.68
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part4",
+     "score": 0.55
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+   "title": "Bedrock AgentCore Code Interpreter Architecture (Part 3)",
+   "doc_type": "guide",
+   "topic_id": "bedrock-agentcore-code-interpreter-architecture-part3",
+   "tags": [
+    "aws",
+    "agentcore",
+    "security",
+    "gdpr",
+    "multi-agent"
+   ],
+   "word_count": 2332,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+     "score": 0.6
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5",
+     "score": 0.49
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part4",
+   "title": "Bedrock AgentCore Code Interpreter Architecture (Part 4)",
+   "doc_type": "guide",
+   "topic_id": "bedrock-agentcore-code-interpreter-architecture-part4",
+   "tags": [
+    "aws",
+    "agentcore",
+    "cost-optimization",
+    "terraform",
+    "iac"
+   ],
+   "word_count": 3738,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+     "score": 0.55
+    },
+    {
+     "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+     "score": 0.48
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+     "score": 0.46
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5",
+   "title": "Bedrock AgentCore Code Interpreter Architecture (Part 5)",
+   "doc_type": "guide",
+   "topic_id": "bedrock-agentcore-code-interpreter-architecture-part5",
+   "tags": [
+    "aws",
+    "agentcore",
+    "best-practices",
+    "roadmap",
+    "evaluation",
+    "adr"
+   ],
+   "word_count": 1824,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
+     "score": 0.53
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
+     "score": 0.49
+    },
+    {
+     "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
+     "score": 0.49
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part2",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part2",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "session-management",
+    "durable-execution"
+   ],
+   "word_count": 2194,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+     "score": 0.58
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part3",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part6",
+     "score": 0.47
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part3",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 3)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part3",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "memory",
+    "mcp",
+    "service-mesh"
+   ],
+   "word_count": 2133,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+     "score": 0.54
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+     "score": 0.51
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part2",
+     "score": 0.5
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part4",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 4)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part4",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "authentication",
+    "authorization"
+   ],
+   "word_count": 2190,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+     "score": 0.42
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 5)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part5",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "zero-trust",
+    "guardrails",
+    "policy-engine"
+   ],
+   "word_count": 2034,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part4",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+     "score": 0.46
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part6",
+     "score": 0.44
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part6",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 6)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part6",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "networking",
+    "observability",
+    "multi-tenancy"
+   ],
+   "word_count": 1483,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part2",
+     "score": 0.47
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
+     "score": 0.44
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+   "title": "Enterprise AI Agent Runtime Internals: AWS, Azure & GCP (2026) (Part 7)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-agent-runtime-internals-2026-part7",
+   "tags": [
+    "aws",
+    "azure",
+    "gcp",
+    "comparative-analysis",
+    "references"
+   ],
+   "word_count": 1355,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/23-enterprise-agent-runtime-internals-2026",
+     "score": 0.57
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part3",
+     "score": 0.51
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
+     "score": 0.46
     }
    ]
   },
@@ -1703,11 +2582,11 @@
    "top_similar": [
     {
      "id": "platforms/25-ai-assisted-iac-mastery",
-     "score": 0.39
+     "score": 0.38
     },
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
-     "score": 0.38
+     "score": 0.37
     }
    ]
   },
@@ -1734,7 +2613,7 @@
     },
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
-     "score": 0.38
+     "score": 0.37
     }
    ]
   },
@@ -1756,15 +2635,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part4",
-     "score": 0.54
+     "score": 0.53
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
-     "score": 0.52
+     "score": 0.51
     },
     {
      "id": "platforms/26-terraform-mastery-guide",
-     "score": 0.49
+     "score": 0.48
     }
    ]
   },
@@ -1786,15 +2665,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part4",
-     "score": 0.76
+     "score": 0.75
     },
     {
      "id": "platforms/26-terraform-mastery-guide",
-     "score": 0.65
+     "score": 0.64
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part2",
-     "score": 0.52
+     "score": 0.51
     }
    ]
   },
@@ -1816,15 +2695,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
-     "score": 0.76
+     "score": 0.75
     },
     {
      "id": "platforms/26-terraform-mastery-guide",
-     "score": 0.69
+     "score": 0.68
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part2",
-     "score": 0.54
+     "score": 0.53
     }
    ]
   },
@@ -1847,6 +2726,80 @@
     {
      "id": "platforms/27-k8s-handbook-part10-observability",
      "score": 0.36
+    },
+    {
+     "id": "platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2",
+   "title": "K8s Handbook Part 11: AI Infrastructure (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part11-ai-infrastructure-part2",
+   "tags": [
+    "kubernetes",
+    "ai-infrastructure",
+    "mlflow",
+    "vector-database",
+    "cost-optimization"
+   ],
+   "word_count": 1937,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/28-k8s-handbook-part11-ai-infrastructure",
+     "score": 0.56
+    },
+    {
+     "id": "platforms/parts/27-k8s-handbook-part10-observability-part2",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part2",
+   "title": "K8s Handbook Part 12: Agentic AI (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part12-agentic-ai-part2",
+   "tags": [
+    "kubernetes",
+    "agentic-ai",
+    "autoscaling",
+    "multi-tenancy",
+    "tool-registry"
+   ],
+   "word_count": 2258,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/29-k8s-handbook-part12-agentic-ai",
+     "score": 0.38
+    }
+   ]
+  },
+  {
+   "id": "platforms/parts/29-k8s-handbook-part12-agentic-ai-part3",
+   "title": "K8s Handbook Part 12: Agentic AI (Part 3)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part12-agentic-ai-part3",
+   "tags": [
+    "kubernetes",
+    "agentic-ai",
+    "sovereign-ai",
+    "disaster-recovery",
+    "gitops"
+   ],
+   "word_count": 2212,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/29-k8s-handbook-part12-agentic-ai",
+     "score": 0.3
     }
    ]
   },
@@ -1868,14 +2821,14 @@
    "top_similar": [
     {
      "id": "platforms/35-k8s-handbook-part2-linux-foundations",
-     "score": 0.48
+     "score": 0.47
     },
     {
      "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part3",
-     "score": 0.46
+     "score": 0.45
     },
     {
-     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3",
+     "id": "platforms/36-k8s-handbook-part3-containers",
      "score": 0.43
     }
    ]
@@ -1898,7 +2851,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
-     "score": 0.43
+     "score": 0.42
     },
     {
      "id": "platforms/42-k8s-handbook-part9-platform-engineering",
@@ -1954,11 +2907,11 @@
    "top_similar": [
     {
      "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
-     "score": 0.7
+     "score": 0.69
     },
     {
      "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part3",
-     "score": 0.36
+     "score": 0.35
     }
    ]
   },
@@ -1984,7 +2937,7 @@
     },
     {
      "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
-     "score": 0.46
+     "score": 0.45
     },
     {
      "id": "platforms/36-k8s-handbook-part3-containers",
@@ -2041,7 +2994,7 @@
     },
     {
      "id": "platforms/36-k8s-handbook-part3-containers",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -2066,11 +3019,11 @@
     },
     {
      "id": "platforms/37-k8s-handbook-part4-kubernetes-internals",
-     "score": 0.44
+     "score": 0.43
     },
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
-     "score": 0.33
+     "score": 0.32
     }
    ]
   },
@@ -2092,12 +3045,12 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
-     "score": 0.31
+     "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
+     "score": 0.3
     },
     {
-     "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
-     "score": 0.31
+     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+     "score": 0.3
     }
    ]
   },
@@ -2118,7 +3071,7 @@
    "top_similar": [
     {
      "id": "platforms/37-k8s-handbook-part4-kubernetes-internals",
-     "score": 0.59
+     "score": 0.58
     },
     {
      "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part2",
@@ -2144,7 +3097,7 @@
    "top_similar": [
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
-     "score": 0.39
+     "score": 0.38
     }
    ]
   },
@@ -2166,11 +3119,11 @@
    "top_similar": [
     {
      "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
-     "score": 0.46
+     "score": 0.45
     },
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -2192,11 +3145,11 @@
    "top_similar": [
     {
      "id": "platforms/40-k8s-handbook-part7-storage",
-     "score": 0.46
+     "score": 0.45
     },
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
-     "score": 0.37
+     "score": 0.36
     }
    ]
   },
@@ -2240,7 +3193,7 @@
    "top_similar": [
     {
      "id": "platforms/42-k8s-handbook-part9-platform-engineering",
-     "score": 0.48
+     "score": 0.46
     }
    ]
   },

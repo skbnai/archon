@@ -2598,7 +2598,25 @@ topics:
   - id: agentcore-memory-architecture-guide
     domain: platforms
     canonical: docs/platforms/15-agentcore-memory-architecture-guide.md
-    pending: true
+    aliases: []
+    supersedes:
+    - docs/cloud-platforms/aws/AgentCore_Memory_Architecture_Guide.md
+    pages: []
+  - id: agentcore-memory-architecture-guide-part2
+    domain: platforms
+    canonical: docs/platforms/parts/15-agentcore-memory-architecture-guide-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-memory-architecture-guide-part3
+    domain: platforms
+    canonical: docs/platforms/parts/15-agentcore-memory-architecture-guide-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-memory-architecture-guide-part4
+    domain: platforms
+    canonical: docs/platforms/parts/15-agentcore-memory-architecture-guide-part4.md
     aliases: []
     supersedes: []
     pages: []
@@ -2633,15 +2651,87 @@ topics:
   - id: agentcore-strands-deep-research-report
     domain: platforms
     canonical: docs/platforms/18-agentcore-strands-deep-research-report.md
-    pending: true
     aliases:
     - amazon bedrock agentcore & strands sdk — deep technical research report
+    supersedes:
+    - docs/cloud-platforms/aws/agentcore_strands_deep_research_report.md
+    pages: []
+  - id: agentcore-strands-deep-research-report-part2
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part3
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part4
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part5
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part5.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part6
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part6.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part7
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part7.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part8
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part8.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part9
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part9.md
+    aliases: []
     supersedes: []
     pages: []
   - id: bedrock-agentcore-code-interpreter-architecture
     domain: platforms
     canonical: docs/platforms/19-bedrock-agentcore-code-interpreter-architecture.md
-    pending: true
+    aliases: []
+    supersedes:
+    - docs/cloud-platforms/aws/bedrock-agentcore-code-interpreter-architecture.md
+    pages: []
+  - id: bedrock-agentcore-code-interpreter-architecture-part2
+    domain: platforms
+    canonical: docs/platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: bedrock-agentcore-code-interpreter-architecture-part3
+    domain: platforms
+    canonical: docs/platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: bedrock-agentcore-code-interpreter-architecture-part4
+    domain: platforms
+    canonical: docs/platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: bedrock-agentcore-code-interpreter-architecture-part5
+    domain: platforms
+    canonical: docs/platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5.md
     aliases: []
     supersedes: []
     pages: []
@@ -2672,9 +2762,45 @@ topics:
   - id: enterprise-agent-runtime-internals-2026
     domain: platforms
     canonical: docs/platforms/23-enterprise-agent-runtime-internals-2026.md
-    pending: true
     aliases:
     - 'enterprise ai agent runtime internals: aws, azure & gcp'
+    supersedes:
+    - docs/cloud-platforms/enterprise-agent-runtime-internals-2026.md
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part2
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part3
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part4
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part5
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part5.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part6
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part6.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-agent-runtime-internals-2026-part7
+    domain: platforms
+    canonical: docs/platforms/parts/23-enterprise-agent-runtime-internals-2026-part7.md
+    aliases: []
     supersedes: []
     pages: []
   - id: hyperscaler-deep-dive-gcp
@@ -2748,50 +2874,82 @@ topics:
   - id: k8s-handbook-part11-ai-infrastructure
     domain: platforms
     canonical: docs/platforms/28-k8s-handbook-part11-ai-infrastructure.md
-    pending: true
     aliases:
     - 'k8s handbook part 11: ai infrastructure'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part11_AI_Infrastructure.md
+    pages: []
+  - id: k8s-handbook-part11-ai-infrastructure-part2
+    domain: platforms
+    canonical: docs/platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: chaos-engineering
+    domain: platforms
+    canonical: docs/platforms/50-chaos-engineering.md
+    pending: true
+    # Backlog topic (no old-repo source; not part of the K8s Handbook migration).
+    # Requested scope: core principles, common failure scenarios, lifecycle,
+    # tools & platforms, and AI workloads. Files under "Operational Resilience".
+    aliases:
+    - chaos engineering
+    - operational resilience
+    - failure injection testing
+    - resilience engineering
     supersedes: []
     pages: []
   - id: k8s-handbook-part12-agentic-ai
     domain: platforms
     canonical: docs/platforms/29-k8s-handbook-part12-agentic-ai.md
-    pending: true
     aliases:
     - 'k8s handbook part 12: agentic ai'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part12_Agentic_AI.md
+    pages: []
+  - id: k8s-handbook-part12-agentic-ai-part2
+    domain: platforms
+    canonical: docs/platforms/parts/29-k8s-handbook-part12-agentic-ai-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part12-agentic-ai-part3
+    domain: platforms
+    canonical: docs/platforms/parts/29-k8s-handbook-part12-agentic-ai-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part13-emerging-standards
     domain: platforms
     canonical: docs/platforms/30-k8s-handbook-part13-emerging-standards.md
-    pending: true
     aliases:
     - 'k8s handbook part 13: emerging standards'
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part13_Emerging_Standards.md
     pages: []
   - id: k8s-handbook-part14-reference-architectures
     domain: platforms
     canonical: docs/platforms/31-k8s-handbook-part14-reference-architectures.md
-    pending: true
     aliases:
     - 'k8s handbook part 14: reference architectures'
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part14_Reference_Architectures.md
     pages: []
   - id: k8s-handbook-part15-implementation-labs
     domain: platforms
     canonical: docs/platforms/32-k8s-handbook-part15-implementation-labs.md
-    pending: true
     aliases:
     - 'k8s handbook part 15: implementation labs'
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part15_Implementation_Labs.md
     pages: []
   - id: k8s-handbook-part16-future-outlook
     domain: platforms
     canonical: docs/platforms/33-k8s-handbook-part16-future-outlook.md
-    pending: true
     aliases:
     - 'k8s handbook part 16: future outlook'
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part16_Future_Outlook.md
     pages: []
   - id: k8s-handbook-part1-infrastructure-evolution
     domain: platforms

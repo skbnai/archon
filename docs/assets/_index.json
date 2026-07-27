@@ -22,6 +22,10 @@
     {
      "id": "learning-paths/index",
      "score": 0.44
+    },
+    {
+     "id": "operations/index",
+     "score": 0.3
     }
    ]
   }
