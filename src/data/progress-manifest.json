@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 77,
+    "totalPages": 79,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1704,6 +1704,10 @@
       {
         "id": "platforms/41-k8s-handbook-part8-security",
         "title": "K8s Handbook Part 8: Security"
+      },
+      {
+        "id": "platforms/42-k8s-handbook-part9-platform-engineering",
+        "title": "K8s Handbook Part 9: Platform Engineering"
       },
       {
         "id": "platforms/43-part-01-platform-vision-agentic-services",
@@ -1888,6 +1892,10 @@
       {
         "id": "platforms/parts/41-k8s-handbook-part8-security-part2",
         "title": "K8s Handbook Part 8: Security (Part 2)"
+      },
+      {
+        "id": "platforms/parts/42-k8s-handbook-part9-platform-engineering-part2",
+        "title": "K8s Handbook Part 9: Platform Engineering (Part 2)"
       },
       {
         "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",

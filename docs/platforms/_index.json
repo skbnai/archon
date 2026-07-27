@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 77,
+ "page_count": 79,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -751,6 +751,23 @@
     "secrets"
    ],
    "word_count": 2784,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/42-k8s-handbook-part9-platform-engineering",
+   "title": "K8s Handbook Part 9: Platform Engineering",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part9-platform-engineering",
+   "tags": [
+    "kubernetes",
+    "platform-engineering",
+    "gitops",
+    "argocd",
+    "backstage"
+   ],
+   "word_count": 2962,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []
@@ -1922,6 +1939,23 @@
     "runtime-security"
    ],
    "word_count": 2090,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/42-k8s-handbook-part9-platform-engineering-part2",
+   "title": "K8s Handbook Part 9: Platform Engineering (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part9-platform-engineering-part2",
+   "tags": [
+    "kubernetes",
+    "platform-engineering",
+    "multi-tenancy",
+    "progressive-delivery",
+    "ai-infrastructure"
+   ],
+   "word_count": 2116,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []

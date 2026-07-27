@@ -2938,9 +2938,15 @@ topics:
   - id: k8s-handbook-part9-platform-engineering
     domain: platforms
     canonical: docs/platforms/42-k8s-handbook-part9-platform-engineering.md
-    pending: true
     aliases:
     - 'k8s handbook part 9: platform engineering'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part9_Platform_Engineering.md
+    pages: []
+  - id: k8s-handbook-part9-platform-engineering-part2
+    domain: platforms
+    canonical: docs/platforms/parts/42-k8s-handbook-part9-platform-engineering-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: part-01-platform-vision-agentic-services
