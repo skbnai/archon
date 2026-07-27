@@ -2503,40 +2503,46 @@ topics:
     canonical: docs/platforms/05-ai-gateway-full-comparison.md
     aliases:
     - ai gateway comparison — 10 tools
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-gateway/AI_Gateway_Full_Comparison.md
     pages: []
   - id: ai-gateway-multitenant-multicloud
     domain: platforms
     canonical: docs/platforms/06-ai-gateway-multitenant-multicloud.md
     aliases:
     - ai gateway
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-gateway/AI_Gateway_MultiTenant_MultiCloud.md
     pages: []
   - id: enterprise-ai-gateway
     domain: platforms
     canonical: docs/platforms/07-enterprise-ai-gateway.md
     aliases: []
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-gateway/Enterprise_AI_Gateway.md
     pages: []
   - id: kong-ai-gateway-guide
     domain: platforms
     canonical: docs/platforms/08-kong-ai-gateway-guide.md
     aliases: []
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-gateway/kong-ai-gateway-guide.md
     pages: []
   - id: kong-entra-id-integration
     domain: platforms
     canonical: docs/platforms/09-kong-entra-id-integration.md
     aliases:
     - kong + entra id integration
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-gateway/kong-entra-id-integration.md
     pages: []
   - id: ai-infrastructure-silicon-landscape-2026
     domain: platforms
     canonical: docs/platforms/10-ai-infrastructure-silicon-landscape-2026.md
     aliases:
     - ai infrastructure & silicon landscape 2026
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/ai-infrastructure-silicon-landscape-2026.md
     pages: []
   - id: aws-native-standards-first-agentic-architecture
     domain: platforms
@@ -5700,6 +5706,96 @@ topics:
   - id: github-copilot-enterprise-research-2026-part2
     domain: agentic-systems
     canonical: docs/agentic-systems/coding-tools/parts/47-github-copilot-enterprise-research-2026-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-gateway-full-comparison-part2
+    domain: platforms
+    canonical: docs/platforms/parts/05-ai-gateway-full-comparison-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-gateway-full-comparison-part3
+    domain: platforms
+    canonical: docs/platforms/parts/05-ai-gateway-full-comparison-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-gateway-full-comparison-part4
+    domain: platforms
+    canonical: docs/platforms/parts/05-ai-gateway-full-comparison-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-gateway-multitenant-multicloud-part2
+    domain: platforms
+    canonical: docs/platforms/parts/06-ai-gateway-multitenant-multicloud-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: enterprise-ai-gateway-part2
+    domain: platforms
+    canonical: docs/platforms/parts/07-enterprise-ai-gateway-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: kong-ai-gateway-guide-part2
+    domain: platforms
+    canonical: docs/platforms/parts/08-kong-ai-gateway-guide-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: kong-ai-gateway-guide-part3
+    domain: platforms
+    canonical: docs/platforms/parts/08-kong-ai-gateway-guide-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: kong-entra-id-integration-part2
+    domain: platforms
+    canonical: docs/platforms/parts/09-kong-entra-id-integration-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-native-standards-first-agentic-architecture-part2
+    domain: platforms
+    canonical: docs/platforms/parts/11-aws-native-standards-first-agentic-architecture-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-native-standards-first-agentic-architecture-part3
+    domain: platforms
+    canonical: docs/platforms/parts/11-aws-native-standards-first-agentic-architecture-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-native-standards-first-agentic-architecture-part4
+    domain: platforms
+    canonical: docs/platforms/parts/11-aws-native-standards-first-agentic-architecture-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-advancedpatterns-part2
+    domain: platforms
+    canonical: docs/platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-advancedpatterns-part3
+    domain: platforms
+    canonical: docs/platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-builder-journey-kit-part2
+    domain: platforms
+    canonical: docs/platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-builder-journey-kit-part3
+    domain: platforms
+    canonical: docs/platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3.md
     aliases: []
     supersedes: []
     pages: []
