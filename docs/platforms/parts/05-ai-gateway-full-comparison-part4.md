@@ -224,3 +224,13 @@ Match your primary driver to the recommended gateway. Most enterprises will laye
 | Edge + enterprise: global users + deep governance | Cloudflare (edge) + Kong (origin) |
 
 *This comparison reflects product capabilities as of April 2026. AI gateway features evolve rapidly — validate scores against current vendor documentation before architectural commitment. Scores are the authors' assessment of out-of-box capability; heavy customisation can raise scores in any dimension.*
+
+## Related
+
+- [Part 1: Kong AI & LiteLLM](../05-ai-gateway-full-comparison.md) — foundational AI gateway options for most enterprises.
+- [Part 2: AWS Bedrock, Azure APIM, Portkey](05-ai-gateway-full-comparison-part2.md) — cloud-native and SaaS gateway solutions.
+- [Part 3: Cloudflare, Apigee, WSO2](05-ai-gateway-full-comparison-part3.md) — edge-first and open-source gateway strategies.
+- [Multi-tenant, Multi-cloud AI Gateway Architecture](../06-ai-gateway-multitenant-multicloud.md) — applying comparison insights to hard-isolation and multi-cloud routing scenarios.
+- [Enterprise AI Gateway Design Patterns](../07-enterprise-ai-gateway.md) — reference architecture for large-scale AI platform governance.
+- [Kong AI Gateway Implementation Guide](../08-kong-ai-gateway-guide.md) — deep dive on Kong deployment, configuration, and operations.
+- [Kong + Entra ID Integration for Federated AI](../09-kong-entra-id-integration.md) — enterprise identity integration for gateway authentication.

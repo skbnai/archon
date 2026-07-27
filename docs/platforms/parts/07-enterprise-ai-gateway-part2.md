@@ -35,7 +35,7 @@ I **Kubernetes HPA on Token Throughput**
 |`metric: { na`|`me: gateway_tokens_per_second }`|
 |`target: { ty`|`pe: AverageValue, averageValue: 50000 }`|
 
-|I**ArgoCD Application — GitOps Gateway Config**|
+|**ArgoCD Application — GitOps Gateway Config**|
 |---|
 |`apiVersion: argoproj.io/v1alpha1`|
 |`kind: Application`|
@@ -183,12 +183,12 @@ location: MESH_EXTERNAL
 
 The AI gateway market is evolving at the pace of LLM capability expansion. The following trends define the next 24–36 months of gateway architecture:
 
-|I<br/>**Agentic Protocol**<br/>**Gateways (MCP-native)**|Model Context Protocol (MCP) is becoming the de-facto standard for<br/>agent-to-tool communication. Future gateways will be first-class MCP<br/>servers and routers — brokering tool registries, managing tool-call<br/>authorisation, caching tool results, and enforcing least-privilege tool access<br/>scopes per agent identity. The gateway becomes the MCP Hub of the<br/>enterprise, analogous to how service meshes centralised microservice<br/>communication.|
+|**Agentic Protocol Gateways (MCP-native)**|Model Context Protocol (MCP) is becoming the de-facto standard for<br/>agent-to-tool communication. Future gateways will be first-class MCP<br/>servers and routers — brokering tool registries, managing tool-call<br/>authorisation, caching tool results, and enforcing least-privilege tool access<br/>scopes per agent identity. The gateway becomes the MCP Hub of the<br/>enterprise, analogous to how service meshes centralised microservice<br/>communication.|
 |---|---|
-|I<br/>**Multimodal Traffic**<br/>**Management**|As vision, audio, and video models proliferate, gateways must handle binary<br/>payloads (images, audio streams, video frames) with modality-specific<br/>caching strategies, content safety checks (CSAM detection, deepfake<br/>scoring), and cost models that account for image resolution, audio duration,<br/>and video FPS. Unified multimodal request schemas and pipeline plugins<br/>are the next frontier.|
-|I<br/>**AI-Native Observability**<br/>**& Evals-in-Flight**|Static logging is insufficient for AI quality assurance. Next-generation<br/>gateways will run lightweight LLM judges inline (or in near-real-time async)<br/>to score every response for faithfulness, relevance, toxicity, and<br/>hallucination — feeding continuous evaluation dashboards and triggering<br/>automated model rollbacks when quality degrades beyond thresholds.|
-|I<br/>**Confidential AI &**<br/>**Homomorphic Inference**|Regulated industries (healthcare, finance, defence) cannot send raw data to<br/>external LLM providers. Future gateways will orchestrate confidential<br/>computing enclaves (Azure Confidential Containers, AWS Nitro Enclaves)<br/>and early-stage fully homomorphic encryption (FHE) inference, where data<br/>remains encrypted throughout the inference pipeline. The gateway manages<br/>attestation, key escrow, and enclave routing.|
-|I<br/>**Federated & Edge AI**<br/>**Gateways**|As inference moves to edge devices (mobile, IoT, on-prem GPUs),<br/>gateways must operate in a federated topology: a cloud control plane<br/>synchronises policy, model versions, and routing tables to lightweight edge<br/>gateway<br/>instances<br/>running<br/>on<br/>K3s<br/>or<br/>WebAssembly<br/>runtimes.<br/>Offline-capable operation with eventual-consistency policy sync is a key<br/>design challenge.|
+|**Multimodal Traffic Management**|As vision, audio, and video models proliferate, gateways must handle binary<br/>payloads (images, audio streams, video frames) with modality-specific<br/>caching strategies, content safety checks (CSAM detection, deepfake<br/>scoring), and cost models that account for image resolution, audio duration,<br/>and video FPS. Unified multimodal request schemas and pipeline plugins<br/>are the next frontier.|
+|**AI-Native Observability & Evals-in-Flight**|Static logging is insufficient for AI quality assurance. Next-generation<br/>gateways will run lightweight LLM judges inline (or in near-real-time async)<br/>to score every response for faithfulness, relevance, toxicity, and<br/>hallucination — feeding continuous evaluation dashboards and triggering<br/>automated model rollbacks when quality degrades beyond thresholds.|
+|**Confidential AI & Homomorphic Inference**|Regulated industries (healthcare, finance, defence) cannot send raw data to<br/>external LLM providers. Future gateways will orchestrate confidential<br/>computing enclaves (Azure Confidential Containers, AWS Nitro Enclaves)<br/>and early-stage fully homomorphic encryption (FHE) inference, where data<br/>remains encrypted throughout the inference pipeline. The gateway manages<br/>attestation, key escrow, and enclave routing.|
+|**Federated & Edge AI Gateways**|As inference moves to edge devices (mobile, IoT, on-prem GPUs),<br/>gateways must operate in a federated topology: a cloud control plane<br/>synchronises policy, model versions, and routing tables to lightweight edge<br/>gateway<br/>instances<br/>running<br/>on<br/>K3s<br/>or<br/>WebAssembly<br/>runtimes.<br/>Offline-capable operation with eventual-consistency policy sync is a key<br/>design challenge.|
 
 **Autonomous** Machine learning will be applied to the gateway's own configuration: I **Self-Tuning Gateways** RL-based routing agents that optimise cost-latency-quality trade-offs in real time, anomaly detectors that auto-tune rate limits based on consumer behaviour patterns, and chaos engineering bots that continuously probe resilience. The gateway becomes an intelligent adaptive system rather than a static policy engine. **Regulatory & AI Act** The EU AI Act (fully in force 2026) requires conformity assessments, I **Compliance Automation** transparency obligations, and human oversight for high-risk AI systems. I Gateways will automate compliance: generating Article 13 transparency
 
@@ -202,15 +202,15 @@ The EU AI Act (fully in force 2026) requires conformity assessments, transparenc
 
 |**Criteria**|**Kong AI GW**|**LiteLLM Proxy**|**AWS Bedrock GW**|**Cloudflare AI GW**|
 |---|---|---|---|---|
-|Multi-provider routing|INative|INative|IIAWS-only|IILimited|
-|Semantic caching|IPlugin|IBuilt-in|IManual|IBuilt-in|
-|Plugin / extensibility|ILua/WASM|IIPython CB|IILambda|IIWorkers|
-|On-prem deployment|IFull|IFull|ISaaS only|IEdge only|
-|PII / prompt guard|IPlugin|IICallback|IGuardrails|IILimited|
-|Kubernetes-native|IKIC/KGO|IHelm|IIEKS best|I|
-|Cost attribution|IPlugin|IBuilt-in|INative|IIBasic|
-|Enterprise support|IEnt|IICommunity|IAWS|ICloudflare|
-|Open-source core|IApache 2|IMIT|I|I|
+|Multi-provider routing|Native|Native|AWS-only|Limited|
+|Semantic caching|Plugin|Built-in|Manual|Built-in|
+|Plugin / extensibility|Lua/WASM|Python CB|Lambda|Workers|
+|On-prem deployment|Full|Full|SaaS only|Edge only|
+|PII / prompt guard|Plugin|Callback|Guardrails|Limited|
+|Kubernetes-native|KIC/KGO|Helm|EKS best||
+|Cost attribution|Plugin|Built-in|Native|Basic|
+|Enterprise support|Ent|Community|AWS|Cloudflare|
+|Open-source core|Apache 2|MIT|||
 
 ### Key Technology Stack
 
@@ -251,3 +251,13 @@ owasp.org/www-project-top-10-for-large-language-model-applications
 - SPIFFE / SPIRE (Service Identity) — spiffe.io
 
 *This document is produced by the Enterprise AI Architecture Practice. It represents current best practices as of April 2026 and should be reviewed quarterly given the pace of change in the AI infrastructure landscape.*
+
+---
+
+## Related
+
+- [Enterprise AI Gateway (Part 1)](../07-enterprise-ai-gateway.md) — core gateway design, architecture blueprint, harness integration, and threat model.
+- [AI Gateway: Multi-Tenant, Multi-Cloud, Data Ownership](../06-ai-gateway-multitenant-multicloud.md) — tenant isolation, multi-cloud routing, data sovereignty, and scaling patterns.
+- [AI Gateway: Multi-Tenant, Multi-Cloud, Data Ownership (Part 2)](../parts/06-ai-gateway-multitenant-multicloud-part2.md) — cost attribution, governance at scale, and compliance matrices.
+- [AI Gateway Full Comparison](../05-ai-gateway-full-comparison.md) — market landscape and detailed feature comparison matrix.
+- [Kong AI Gateway Guide](../08-kong-ai-gateway-guide.md) — Kong-specific implementation, configuration, and plugins.

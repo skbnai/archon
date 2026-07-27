@@ -100,7 +100,9 @@ from strands.mcp import MCPClient
 from bedrock_agentcore.identity.auth import get_sigv4_token  # or OAuth token
 ```
 
-`#` II `Using SigV4 auth (Runtime` -> `Gateway, IAM-to-IAM)` IIIIIIIIIIIIIIIIII
+```python
+# Using SigV4 auth (Runtime -> Gateway, IAM-to-IAM)
+```
 
 ```
 from mcp_proxy_aws import SigV4MCPProxy  # MCP Proxy for AWS
@@ -361,9 +363,42 @@ The **supervisor pattern** is the most common multi-agent topology for enterpris
 from strands import Agent, tool
 ```
 
-`#` II `Sub-agents as @tool functions` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `@tool def research_agent(query: str) -> str: """Performs deep research on a topic using web search and RAG.""" specialist = Agent( model="us.anthropic.claude-sonnet-4-20250514", system_prompt="You are an expert researcher. Always cite sources.", tools=[web_search, rag_retrieval] ) return specialist(query).message @tool def coding_agent(task: str) -> str: """Writes, reviews, and executes code.""" specialist = Agent( model="us.anthropic.claude-sonnet-4-20250514", system_prompt="You are a senior software engineer.", tools=[code_interpreter, file_write] ) return specialist(task).message @tool def compliance_agent(content: str) -> dict: """Reviews content for regulatory compliance issues.""" specialist = Agent( model="us.anthropic.claude-opus-4-20250514", system_prompt="You are a regulatory compliance expert. Check for PII, bias, legal issues.", tools=[guardrail_check, policy_lookup] ) return {"review": specialist(content).message, "approved": True} #` II `Supervisor` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `supervisor = Agent( model="us.anthropic.claude-opus-4-20250514", system_prompt="""You are an enterprise orchestrator. For complex tasks: use research_agent first, then coding_agent if code needed, always pass output through compliance_agent before returning.""",`
+```python
+# Sub-agents as @tool functions
+@tool
+def research_agent(query: str) -> str:
+    """Performs deep research on a topic using web search and RAG."""
+    specialist = Agent(
+        model="us.anthropic.claude-sonnet-4-20250514",
+        system_prompt="You are an expert researcher. Always cite sources.",
+        tools=[web_search, rag_retrieval]
+    )
+    return specialist(query).message
 
-```
+@tool
+def coding_agent(task: str) -> str:
+    """Writes, reviews, and executes code."""
+    specialist = Agent(
+        model="us.anthropic.claude-sonnet-4-20250514",
+        system_prompt="You are a senior software engineer.",
+        tools=[code_interpreter, file_write]
+    )
+    return specialist(task).message
+
+@tool
+def compliance_agent(content: str) -> dict:
+    """Reviews content for regulatory compliance issues."""
+    specialist = Agent(
+        model="us.anthropic.claude-opus-4-20250514",
+        system_prompt="You are a regulatory compliance expert. Check for PII, bias, legal issues.",
+        tools=[guardrail_check, policy_lookup]
+    )
+    return {"review": specialist(content).message, "approved": True}
+
+# Supervisor
+supervisor = Agent(
+    model="us.anthropic.claude-opus-4-20250514",
+    system_prompt="""You are an enterprise orchestrator. For complex tasks: use research_agent first, then coding_agent if code needed, always pass output through compliance_agent before returning.""",
     tools=[research_agent, coding_agent, compliance_agent]
 )
 ```
@@ -374,11 +409,27 @@ A2A (Agent-to-Agent) protocol enables agents deployed on *different* AgentCore R
 
 ###### **a2a_protocol.py**
 
-`#` II `Server-side: expose agent as A2A executor` IIIIIIIIIIIIIIIIIIIIIIII `from strands import Agent from strands.a2a import StrandsA2AExecutor from bedrock_agentcore.runtime import serve_a2a agent = Agent( model="us.anthropic.claude-sonnet-4-20250514", system_prompt="You are a specialized data analysis agent." ) # Registers /.well-known/agent.json + A2A invoke endpoint serve_a2a(StrandsA2AExecutor(agent))`
+```python
+# Server-side: expose agent as A2A executor
+from strands import Agent
+from strands.a2a import StrandsA2AExecutor
+from bedrock_agentcore.runtime import serve_a2a
 
-`#` II `Client-side: call remote A2A agent` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `from strands.a2a import A2AClient # A2A client discovers capabilities from /.well-known/agent.json a2a_client = A2AClient(`
+agent = Agent(
+    model="us.anthropic.claude-sonnet-4-20250514",
+    system_prompt="You are a specialized data analysis agent."
+)
 
+# Registers /.well-known/agent.json + A2A invoke endpoint
+serve_a2a(StrandsA2AExecutor(agent))
 ```
+
+```python
+# Client-side: call remote A2A agent
+from strands.a2a import A2AClient
+
+# A2A client discovers capabilities from /.well-known/agent.json
+a2a_client = A2AClient(
     endpoint_url="https://<runtime-endpoint>.bedrock-agentcore.us-east-1.amazonaws.com",
     auth_token=get_bearer_token()  # OAuth or SigV4 signed
 )
@@ -527,11 +578,23 @@ from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExport
 from phoenix.otel import register  # arize-phoenix-otel
 ```
 
-`#` II `Configure Phoenix as OTEL collector` IIIIIIIIIIIIIIIIIIIIIIIIIIIIII `tracer_provider = register( project_name="strands-agentcore-prod", endpoint="http://phoenix.internal:4317",  # Self-hosted Phoenix gRPC auto_instrument=True,  # Auto-instruments Bedrock calls )`
-
-`#` II `Create Strands agent with trace context` IIIIIIIIIIIIIIIIIIIIIIIIII `agent = Agent( model="us.anthropic.claude-sonnet-4-20250514", system_prompt="You are a production assistant.", tools=[...], trace_attributes={ "session.id": context.session_id,`
-
+```python
+# Configure Phoenix as OTEL collector
+tracer_provider = register(
+    project_name="strands-agentcore-prod",
+    endpoint="http://phoenix.internal:4317",  # Self-hosted Phoenix gRPC
+    auto_instrument=True,  # Auto-instruments Bedrock calls
+)
 ```
+
+```python
+# Create Strands agent with trace context
+agent = Agent(
+    model="us.anthropic.claude-sonnet-4-20250514",
+    system_prompt="You are a production assistant.",
+    tools=[...],
+    trace_attributes={
+        "session.id": context.session_id,
         "user.id": context.user_id,
         "tenant.id": "ACME-CORP",
         "deployment.env": "production",

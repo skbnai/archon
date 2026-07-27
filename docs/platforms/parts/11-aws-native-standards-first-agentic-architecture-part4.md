@@ -277,3 +277,12 @@ infrastructure/
 ### Closing Statement
 
 This architecture deliberately chooses AWS AgentCore and Strands as the path of least resistance for an AWS-native deployment—both are well-supported, actively developed (Strands 1.0 shipped May 2026 with multi-agent and A2A support), and genuinely reduce operational burden. The standards-first framing is not a rejection of that choice; it is the discipline that ensures the choice remains a choice. Every interface that matters—what a client sees, what a tool looks like, how agents talk to each other, how telemetry is structured, how memory is accessed—is defined by an open standard first, with AWS providing one (very good) implementation of each. Twelve months from now, if a component needs to change—for cost, capability, regulatory, or strategic reasons—the change should be localized to one layer, validated against an interface that was true from day one.
+
+## Related
+
+- [Part 1: Architecture Principles & Standards Map](../11-aws-native-standards-first-agentic-architecture.md) — foundational principles and standards-to-AWS-service mapping.
+- [Part 2: Layered Reference Architecture](11-aws-native-standards-first-agentic-architecture-part2.md) — nine-layer architecture with concrete AWS service implementations.
+- [Part 3: Memory, Session & Multi-Agent Design](11-aws-native-standards-first-agentic-architecture-part3.md) — provenance, temporal validity, and multi-agent coordination patterns.
+- [AI Infrastructure & Silicon Landscape 2026](../10-ai-infrastructure-silicon-landscape-2026.md) — market structure and vendor analysis for AI accelerators underlying these platforms.
+- [AWS Strands AgentCore Advanced Patterns](../12-aws-strands-agentcore-advancedpatterns.md) — production patterns for scaling and resilience.
+- [AWS Strands AgentCore Builder Journey Kit](../13-aws-strands-agentcore-builder-journey-kit.md) — hands-on implementation guide and decision trees.

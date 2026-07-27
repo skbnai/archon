@@ -13,11 +13,7 @@ covers_version: "N/A"
 
 # AI Gateway Comparison — 10 Tools
 
-Capabilities · Pros & Cons · Best Practices · Anti-Patterns
-
-An Enterprise Architect's reference covering Kong AI · LiteLLM · AWS Bedrock · Azure APIM · Portkey · Cloudflare · Apigee · WSO2 · Traefik · IBM watsonx.
-
-*Enterprise AI Architecture Practice · April 2026 · Addendum 03 · Version 1.0 · Confidential*
+This enterprise architect's reference evaluates the capabilities, trade-offs, and best practices for ten production AI gateways: Kong AI, LiteLLM Proxy, AWS Bedrock, Azure APIM, Portkey.ai, Cloudflare AI Gateway, Google Apigee, WSO2 Choreo, Traefik, and IBM watsonx. Each section includes a capability matrix, architectural guidance, best practices, anti-patterns, and reference implementations to help teams choose and deploy the right gateway for their workload and cloud strategy.
 
 ## Master Capability Comparison Matrix
 

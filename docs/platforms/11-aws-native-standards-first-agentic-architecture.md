@@ -29,29 +29,12 @@ Interoperable via MCP, A2A, AG-UI, OpenTelemetry, OpenAPI & AsyncAPI
 
 Enterprise Architecture . AWS AI/ML . Platform Engineering . Security Architecture . Agentic Systems
 
-## 9
+**9 Architecture Layers** · **7 Open Standards** · **15 Anti-Patterns Mapped** · **2 Medium Lock-In Points**
 
-## 7
-
-**15**
-
-**2**
-
-Architecture Layers
-
-Open Standards
-
-Anti-Patterns Mapped
-
-Medium Lock-In Points
-
-->  Part 1: Architecture Principles & Standards Map
-
-- ->  Part 2: Layered Reference Architecture (AWS Services)
-
-->  Part 3: Memory, Session & Multi-Agent Design
-
-->  Part 4: Security, Governance & Anti-Lock-In Strategy
+- Part 1: Architecture Principles & Standards Map
+- Part 2: Layered Reference Architecture (AWS Services)
+- Part 3: Memory, Session & Multi-Agent Design
+- Part 4: Security, Governance & Anti-Lock-In Strategy
 
 Reference Architecture  .  June 2026  .  Confidential
 

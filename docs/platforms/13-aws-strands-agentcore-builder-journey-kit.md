@@ -275,9 +275,31 @@ from strands import Agent, tool
 from bedrock_agentcore import BedrockAgentCoreApp
 ```
 
-`#` II `AgentCore app wrapper` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `app = BedrockAgentCoreApp()`
+```python
+# AgentCore app wrapper
+app = BedrockAgentCoreApp()
+```
 
-`#` II `Custom tool (any Python function decorated with @tool)` IIIIIIIIIIIII `@tool def get_weather(city: str) -> str: """Returns current weather for a given city.""" # In production: call a real weather API return f"Weather in {city}: 28°C, sunny" #` II `Agent with system prompt, model, and tools` IIIIIIIIIIIIIIIIIIIIIIII `agent = Agent( model="us.anthropic.claude-sonnet-4-20250514",  # or any Bedrock model system_prompt="You are a helpful travel assistant.", tools=[get_weather], # Optional: Bedrock Guardrails # guardrail_id="abc123", guardrail_version="1", ) #` II `AgentCore entrypoint (called per invocation)` IIIIIIIIIIIIIIIIIIIIII `@app.entrypoint`
+```python
+# Custom tool (any Python function decorated with @tool)
+@tool
+def get_weather(city: str) -> str:
+    """Returns current weather for a given city."""
+    # In production: call a real weather API
+    return f"Weather in {city}: 28°C, sunny"
+
+# Agent with system prompt, model, and tools
+agent = Agent(
+    model="us.anthropic.claude-sonnet-4-20250514",  # or any Bedrock model
+    system_prompt="You are a helpful travel assistant.",
+    tools=[get_weather],
+    # Optional: Bedrock Guardrails
+    # guardrail_id="abc123", guardrail_version="1",
+)
+
+# AgentCore entrypoint (called per invocation)
+@app.entrypoint
+```
 
 ```
 def invoke(payload, context):
@@ -304,7 +326,32 @@ from strands import tool
 from pydantic import BaseModel
 ```
 
-`#` II `Simple string input` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `@tool def lookup_order(order_id: str) -> dict: """Retrieves order details by order ID.""" return {"id": order_id, "status": "SHIPPED", "eta": "2026-04-01"} #` II `Structured Pydantic input` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `class BookingRequest(BaseModel): hotel: str check_in: str guests: int @tool def book_hotel(request: BookingRequest) -> str: """Books a hotel room for specified dates.""" return f"Booked {request.hotel} for {request.guests} guests from {request.check_in}" #` II `Async tool` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `@tool async def fetch_live_rate(currency_pair: str) -> float: """Fetches live FX rate for a currency pair.""" import asyncio await asyncio.sleep(0)  # Non-blocking I/O call return 1.0823`
+```python
+# Simple string input
+@tool
+def lookup_order(order_id: str) -> dict:
+    """Retrieves order details by order ID."""
+    return {"id": order_id, "status": "SHIPPED", "eta": "2026-04-01"}
+
+# Structured Pydantic input
+class BookingRequest(BaseModel):
+    hotel: str
+    check_in: str
+    guests: int
+
+@tool
+def book_hotel(request: BookingRequest) -> str:
+    """Books a hotel room for specified dates."""
+    return f"Booked {request.hotel} for {request.guests} guests from {request.check_in}"
+
+# Async tool
+@tool
+async def fetch_live_rate(currency_pair: str) -> float:
+    """Fetches live FX rate for a currency pair."""
+    import asyncio
+    await asyncio.sleep(0)  # Non-blocking I/O call
+    return 1.0823
+```
 
 ### **2.4 Deploying with Starter Toolkit**
 

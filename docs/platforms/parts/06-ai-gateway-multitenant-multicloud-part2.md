@@ -104,16 +104,13 @@ Generating, storing, and querying audit logs for thousands of tenants at million
 
 |**Regulation**|**Scope**|**AWS (us-east)**|**Azure (eu-west)**|**GCP (asia-se)**|**On-prem**|
 |---|---|---|---|---|---|
-|GDPR|EU persons' data|IDisallowed|IAllowed|IDisallowed|IAllowed|
-
-|**Regulation**|**Scope**|**AWS (us-east)**|**Azure (eu-west)**|**GCP (asia-se)**|**On-prem**|
-|---|---|---|---|---|---|
-|HIPAA|US health data|IBAA signed|IBAA signed|IBAA signed|IAllowed|
-|SOC 2 Type II|Service trust|ICovered|ICovered|ICovered|IISelf-cert|
-|DPDP (India)|IN persons' data|IDisallowed|IDisallowed|IIMumbai PoP|IPreferred|
-|FedRAMP High|US Gov data|IGovCloud|IGov Cloud|IDisallowed|ISILO only|
-|EU AI Act|High-risk AI|IIEU mirror|INative EU|I|IFull ctrl|
-|PCI DSS|Cardholder data|I+ no log|I+ no log|I+ no log|I+ no log|
+|GDPR|EU persons' data|Disallowed|Allowed|Disallowed|Allowed|
+|HIPAA|US health data|BAA signed|BAA signed|BAA signed|Allowed|
+|SOC 2 Type II|Service trust|Covered|Covered|Covered|Self-cert|
+|DPDP (India)|IN persons' data|Disallowed|Disallowed|Mumbai PoP|Preferred|
+|FedRAMP High|US Gov data|GovCloud|Gov Cloud|Disallowed|SILO only|
+|EU AI Act|High-risk AI|EU mirror|Native EU||Full ctrl|
+|PCI DSS|Cardholder data|+ no log|+ no log|+ no log|+ no log|
 
 ##### CHAPTER H
 
@@ -161,3 +158,13 @@ Generating, storing, and querying audit logs for thousands of tenants at million
 |Budget limit configuration|Implement|Accountable|Inform|Consult|
 
 *This addendum complements the Enterprise AI Gateway primary document. Multi-tenancy and multi-cloud topology choices are architecture decisions with long-term cost and compliance implications — review with your Data Protection Officer, Cloud Architect, and FinOps lead before committing to a tenancy model.*
+
+---
+
+## Related
+
+- [AI Gateway: Multi-Tenant, Multi-Cloud, Data Ownership (Part 1)](../06-ai-gateway-multitenant-multicloud.md) — tenancy models, isolation failure modes, and multi-cloud routing fabric.
+- [Enterprise AI Gateway](../07-enterprise-ai-gateway.md) — comprehensive reference for core gateway design, resilience, security, and observability.
+- [Enterprise AI Gateway (Part 2)](../parts/07-enterprise-ai-gateway-part2.md) — operational excellence, integration patterns, and future trends.
+- [AI Gateway Full Comparison](../05-ai-gateway-full-comparison.md) — market landscape and feature matrix across gateway solutions.
+- [Kong AI Gateway Guide](../08-kong-ai-gateway-guide.md) — Kong-specific implementation patterns and plugins.

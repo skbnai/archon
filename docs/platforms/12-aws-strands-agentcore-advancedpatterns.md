@@ -157,7 +157,15 @@ import time, logging, re
 log = logging.getLogger(__name__)
 ```
 
-`#` II `Hook 1: Observability — token cost + latency per request` IIIIIIIII `class ObservabilityHook(HookProvider): def register_hooks(self, registry: HookRegistry, **kw): registry.add_callback(StartRequestEvent,    self._start) registry.add_callback(BeforeModelCallEvent, self._before_llm) registry.add_callback(AfterModelCallEvent,  self._after_llm) registry.add_callback(EndRequestEvent,       self._end)`
+```python
+# Hook 1: Observability — token cost + latency per request
+class ObservabilityHook(HookProvider):
+    def register_hooks(self, registry: HookRegistry, **kw):
+        registry.add_callback(StartRequestEvent,    self._start)
+        registry.add_callback(BeforeModelCallEvent, self._before_llm)
+        registry.add_callback(AfterModelCallEvent,  self._after_llm)
+        registry.add_callback(EndRequestEvent,       self._end)
+```
 
 ```
     def _start(self, event: StartRequestEvent):
@@ -210,7 +218,10 @@ log = logging.getLogger(__name__)
         log.info(f"Request: {total_ms:.0f}ms | in={self._tokens_in} out={self._tokens_out}")
 ```
 
-`#` II `Hook 2: PII Scrubber — redact before storage` IIIIIIIIIIIIIIIIIIIIII `class PIIScrubHook(HookProvider):`
+```python
+# Hook 2: PII Scrubber — redact before storage
+class PIIScrubHook(HookProvider):
+```
 
 ```
     _PII_PATTERNS = [
@@ -259,7 +270,10 @@ log = logging.getLogger(__name__)
             msg["content"] = content  # Mutate in-place before persistence
 ```
 
-`#` II `Hook 3: retry_model on low-quality response` IIIIIIIIIIIIIIIIIIIIIII `class QualityRetryHook(HookProvider):`
+```python
+# Hook 3: retry_model on low-quality response
+class QualityRetryHook(HookProvider):
+```
 
 ```
     def __init__(self, max_retries=2):
@@ -275,7 +289,27 @@ log = logging.getLogger(__name__)
     def _check_quality(self, event: AfterModelCallEvent):
 ```
 
-`if not event.stop_response: return content = str(event.stop_response.content) session = id(event)  # Use event id as proxy for session key retries = self._retries.get(session, 0) if retries &lt; self._max and len(content) &lt; 50 and "sorry" in content.lower(): self._retries[session] = retries + 1 event.retry_model = True   #` &lt;- `Discard response, re-invoke model log.warning(f"Low-quality response, retry {retries+1}/{self._max}") #` II `Wire all hooks into agent` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `agent = Agent( model="us.anthropic.claude-sonnet-4-20250514", system_prompt="You are a production assistant.", tools=[...], hooks=[ObservabilityHook(), PIIScrubHook(), QualityRetryHook()], )`
+```python
+    if not event.stop_response:
+        return
+    content = str(event.stop_response.content)
+    session = id(event)  # Use event id as proxy for session key
+    retries = self._retries.get(session, 0)
+    if retries < self._max and len(content) < 50 and "sorry" in content.lower():
+        self._retries[session] = retries + 1
+        event.retry_model = True   # <- Discard response, re-invoke model
+    log.warning(f"Low-quality response, retry {retries+1}/{self._max}")
+```
+
+```python
+# Wire all hooks into agent
+agent = Agent(
+    model="us.anthropic.claude-sonnet-4-20250514",
+    system_prompt="You are a production assistant.",
+    tools=[...],
+    hooks=[ObservabilityHook(), PIIScrubHook(), QualityRetryHook()],
+)
+```
 
 ###### II **WARNING**
 
@@ -309,7 +343,10 @@ from strands.hooks import BeforeToolCallEvent, HookProvider, HookRegistry
 from typing import Any
 ```
 
-`#` II `Define sensitive tools` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `@tool`
+```python
+# Define sensitive tools
+@tool
+```
 
 ```
 def send_email(to: str, subject: str, body: str) -> str:
@@ -346,7 +383,10 @@ def transfer_funds(account_from: str, account_to: str, amount: float) -> str:
     return f"Transferred ${amount} from {account_from} to {account_to}"
 ```
 
-`#` II `HITL Hook: intercept specific tools` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `class ApprovalHook(HookProvider):`
+```python
+# HITL Hook: intercept specific tools
+class ApprovalHook(HookProvider):
+```
 
 ```
     SENSITIVE_TOOLS = {"send_email", "delete_records", "transfer_funds"}
@@ -443,9 +483,61 @@ For long-running workflows where human approval may take minutes or hours, imple
 
 ###### `async_hitl_sqs.py`
 
-`#` II `Producer: invoke agent, detect interrupt, persist state` IIIIIIIII `import boto3, json, uuid def invoke_with_hitl(prompt: str, session_id: str): result = agent(prompt, callback_handler=None) if result.stop_reason == "interrupt": # Persist interrupt state for later resumption interrupt_id = str(uuid.uuid4()) dynamodb = boto3.client("dynamodb", region_name="us-east-1") dynamodb.put_item( TableName="agent-hitl-state", Item={ "interrupt_id": {"S": interrupt_id}, "session_id":   {"S": session_id}, "agent_messages": {"S": json.dumps(result.message)}, "interrupts":   {"S": json.dumps(result.interrupts)}, "ttl":          {"N": str(int(time.time()) + 86400)},  # 24h TTL } ) # Notify human reviewer via SNS` -> `email/Slack sns = boto3.client("sns", region_name="us-east-1") for interrupt in result.interrupts: sns.publish( TopicArn=APPROVAL_TOPIC_ARN, Subject=f"Agent approval required: {interrupt['name']}", Message=json.dumps({ "interrupt_id": interrupt_id, "session_id": session_id, "action_required": interrupt["reason"], "approve_url": f"https://api.example.com/approve/{interrupt_id}/APPROVE", "reject_url":  f"https://api.example.com/approve/{interrupt_id}/REJECT", })`
+```python
+# Producer: invoke agent, detect interrupt, persist state
+import boto3, json, uuid
 
-`) return {"status": "pending_approval", "interrupt_id": interrupt_id} return {"status": "complete", "result": result.message} #` II `Consumer: webhook resumes agent with human decision` IIIIIIIIIIIIIII `def resume_agent(interrupt_id: str, decision: str): # Load persisted state item = dynamodb.get_item(TableName="agent-hitl-state", Key={"interrupt_id": {"S": interrupt_id}})["Item"] session_id   = item["session_id"]["S"] interrupts   = json.loads(item["interrupts"]["S"]) # Build interrupt responses responses = [{"interruptResponse": {"interruptId": i["id"], "response": decision}} for i in interrupts] # Resume agent with the human decision result = agent( None,  # No new user message — continue from interrupt session_id=session_id, interrupt_responses=responses, ) return result.message`
+def invoke_with_hitl(prompt: str, session_id: str):
+    result = agent(prompt, callback_handler=None)
+    if result.stop_reason == "interrupt":
+        # Persist interrupt state for later resumption
+        interrupt_id = str(uuid.uuid4())
+        dynamodb = boto3.client("dynamodb", region_name="us-east-1")
+        dynamodb.put_item(
+            TableName="agent-hitl-state",
+            Item={
+                "interrupt_id": {"S": interrupt_id},
+                "session_id":   {"S": session_id},
+                "agent_messages": {"S": json.dumps(result.message)},
+                "interrupts":   {"S": json.dumps(result.interrupts)},
+                "ttl":          {"N": str(int(time.time()) + 86400)},  # 24h TTL
+            }
+        )
+        # Notify human reviewer via SNS -> email/Slack
+        sns = boto3.client("sns", region_name="us-east-1")
+        for interrupt in result.interrupts:
+            sns.publish(
+                TopicArn=APPROVAL_TOPIC_ARN,
+                Subject=f"Agent approval required: {interrupt['name']}",
+                Message=json.dumps({
+                    "interrupt_id": interrupt_id,
+                    "session_id": session_id,
+                    "action_required": interrupt["reason"],
+                    "approve_url": f"https://api.example.com/approve/{interrupt_id}/APPROVE",
+                    "reject_url":  f"https://api.example.com/approve/{interrupt_id}/REJECT",
+                })
+            )
+    return {"status": "pending_approval", "interrupt_id": interrupt_id}
+    return {"status": "complete", "result": result.message}
+```
+
+```python
+# Consumer: webhook resumes agent with human decision
+def resume_agent(interrupt_id: str, decision: str):
+    # Load persisted state
+    item = dynamodb.get_item(TableName="agent-hitl-state", Key={"interrupt_id": {"S": interrupt_id}})["Item"]
+    session_id   = item["session_id"]["S"]
+    interrupts   = json.loads(item["interrupts"]["S"])
+    # Build interrupt responses
+    responses = [{"interruptResponse": {"interruptId": i["id"], "response": decision}} for i in interrupts]
+    # Resume agent with the human decision
+    result = agent(
+        None,  # No new user message — continue from interrupt
+        session_id=session_id,
+        interrupt_responses=responses,
+    )
+    return result.message
+```
 
 #### A2.5 HITL Circuit Breaker & Max-Iteration Guard
 

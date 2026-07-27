@@ -2563,7 +2563,8 @@ topics:
     canonical: docs/platforms/11-aws-native-standards-first-agentic-architecture.md
     aliases:
     - aws-native, standards-first agentic platform architecture
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/aws/AWS_Native_Standards_First_Agentic_Architecture.md
     pages: []
   - id: aws-strands-agentcore-advancedpatterns
     domain: platforms

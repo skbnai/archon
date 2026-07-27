@@ -15,11 +15,13 @@ covers_version: "N/A"
 
 Multi-Tenant · Multi-Cloud · Data Ownership
 
+This guide addresses the architecture and governance patterns required to operate AI gateways at enterprise scale across multiple tenants and cloud providers. It covers tenant isolation models, multi-cloud routing and failover, data residency enforcement, scaling patterns, cost attribution, and compliance frameworks — foundational concerns for regulated industries and SaaS platforms with diverse customer requirements.
+
 Scaling Patterns · Isolation Architecture · Data Sovereignty · Cross-Cloud Governance · Tenant Lifecycle Management
 
 <mark>Enterprise AI Architecture Practice · April 2026 · Addendum 02</mark> Version 1.0 · CONFIDENTIAL
 
-|**CHA**|**PTER —**<br/>**Table of Contents**|
+|**CHAPTER —**|**Table of Contents**|
 |---|---|
 |**A**|**The Multi-Tenancy Problem Space**|
 ||· Tenancy Models & Trade-offs<br/>· Isolation Failure Modes|
@@ -47,10 +49,10 @@ As enterprises scale AI capabilities across business units, geographies, product
 
 Three primary tenancy models exist, positioned on a spectrum from maximum isolation (maximum cost) to maximum density (minimum cost). The choice is driven by regulatory classification of tenant data, SLA tier, and scale economics:
 
-|**SILO**|Dedicated gateway +<br/>infra per tenant|IMaximum isolationI<br/>Zero noisy-neighbourI<br/>Simple audit scope|IIHighest costII<br/>Slow provisioningII<br/>Operational complexity|*Regulated: HIPAA,*<br/>*FedRAMP High-value*<br/>*enterprise accounts*|
+|**SILO**|Dedicated gateway +<br/>infra per tenant|Maximum isolation<br/>Zero noisy-neighbour<br/>Simple audit scope|Highest cost<br/>Slow provisioning<br/>Operational complexity|*Regulated: HIPAA,*<br/>*FedRAMP High-value*<br/>*enterprise accounts*|
 |---|---|---|---|---|
-|**BRIDG**<br/>**E**|Shared gateway,<br/>isolated namespaces &<br/>dedicated DB schemas<br/>per tenant|IStrong isolationI<br/>Moderate costIFast<br/>provisioning|IINamespace escape<br/>riskIIShared control<br/>plane|*Mid-market SaaS Internal*<br/>*BU isolation*|
-|**POOL**|Fully shared gateway,<br/>tenant ID as runtime<br/>context only|ILowest costIHighest<br/>densityISimplest ops|IIWeakest isolation<br/>IINoisy neighbour<br/>riskIIWidest blast<br/>radius|*Free/trial tiers Low-risk*<br/>*internal tools*|
+|**BRIDGE**|Shared gateway,<br/>isolated namespaces &<br/>dedicated DB schemas<br/>per tenant|Strong isolation<br/>Moderate cost<br/>Fast provisioning|Namespace escape<br/>risk<br/>Shared control<br/>plane|*Mid-market SaaS Internal*<br/>*BU isolation*|
+|**POOL**|Fully shared gateway,<br/>tenant ID as runtime<br/>context only|Lowest cost<br/>Highest density<br/>Simplest ops|Weakest isolation<br/>Noisy neighbour<br/>risk<br/>Widest blast<br/>radius|*Free/trial tiers Low-risk*<br/>*internal tools*|
 
 ### A.2 Isolation Failure Modes
 
@@ -92,12 +94,12 @@ Understanding failure modes is prerequisite to designing mitigations. The follow
 
 The gateway separates its concerns into a **Control Plane** (configuration, policy, identity, quota) and a **Data Plane** (request processing, routing, provider communication). Isolation strategies differ by plane:
 
-|**CONTROL**|`Tenant Registry`I`Policy Store (OPA)`I`Quota Engine`I`Config API`I`Admin Portal`|
+|**CONTROL**|`Tenant Registry`, `Policy Store (OPA)`, `Quota Engine`, `Config API`, `Admin Portal`|
 |---|---|
-|**SYNC**|`Config Push (gRPC)`I`Policy Distribution (bundle)`I`Quota Sync (Redis)`|
-|**DATA**|`Auth Plugin`I`Rate Limiter`I`Cache (tenant-scoped)`I`Router`I`Provider Proxy`|
-|**PROVIDERS**|`OpenAI`I`Anthropic`I`Azure OpenAI`I`Bedrock`I`Vertex AI`I`On-prem LLM`|
-|**OBSERVE**|`Per-tenant Metrics`I`Isolated Audit Logs`I`Tenant Cost Dashboard`|
+|**SYNC**|`Config Push (gRPC)`, `Policy Distribution (bundle)`, `Quota Sync (Redis)`|
+|**DATA**|`Auth Plugin`, `Rate Limiter`, `Cache (tenant-scoped)`, `Router`, `Provider Proxy`|
+|**PROVIDERS**|`OpenAI`, `Anthropic`, `Azure OpenAI`, `Bedrock`, `Vertex AI`, `On-prem LLM`|
+|**OBSERVE**|`Per-tenant Metrics`, `Isolated Audit Logs`, `Tenant Cost Dashboard`|
 
 The control plane is a singleton per region, managing all tenant configurations. The data plane is horizontally scaled and stateless — tenant context is resolved per-request from JWT claims without shared memory. This allows the data plane to scale independently of control plane operations.
 

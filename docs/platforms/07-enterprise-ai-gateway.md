@@ -15,13 +15,13 @@ covers_version: "N/A"
 
 Design · Integration · Governance · Future
 
-A Comprehensive Enterprise Architecture Reference for AI Gateway Strategy, Security, Resilience, Observability, and Operational Excellence
+This comprehensive guide covers the architecture, design patterns, integration considerations, and operational concerns for building and deploying AI gateways in enterprise environments. It addresses the full stack: core gateway design, multi-provider routing, security and governance frameworks, resilience patterns, observability, and emerging trends in agentic systems and multimodal workloads.
 
 Enterprise AI Architecture Practice · April 2026 Version 1.0 · CONFIDENTIAL
 
 ## Table of Contents
 
-|**CHAP**|**TER —**<br/>**Table of C**|
+|**CHAPTER —**|**Topic**|
 |---|---|
 |**01**|What Is an AI Gateway? Market Landscape & Big Wins|
 |**02**|Problems AI Gateways Solve|
@@ -65,12 +65,12 @@ An AI Gateway is a reverse-proxy, policy engine, and observability hub positione
 
 ### 01.3 Big Wins Delivered by AI Gateways
 
-|I**Cost**<br/>**Reduction**<br/>**40–70%**<br/>Semantic caching returns cached responses for semantically equivalent prompts,<br/>eliminating redundant LLM calls. Organisations deploying Kong's semantic cache<br/>plugin report token spend reductions of 40–70% on high-volume RAG workloads.|
+|**Cost Reduction 40–70%**<br/>Semantic caching returns cached responses for semantically equivalent prompts,<br/>eliminating redundant LLM calls. Organisations deploying Kong's semantic cache<br/>plugin report token spend reductions of 40–70% on high-volume RAG workloads.|
 |---|
-|I**Latency P99**<br/>**Improvement**<br/>Intelligent routing selects the lowest-latency provider per request. Fallback chains<br/>ensure sub-second degraded service even during provider outages.|
-|I**Compliance**<br/>**Acceleration**<br/>Centralised PII redaction, prompt injection filtering, and audit logs compressed<br/>compliance certification timelines from 12 months to under 6 weeks for regulated firms.|
-|I**Developer**<br/>**Velocity**<br/>A single SDK against a unified gateway endpoint removes per-provider integration<br/>work. Teams ship AI features 3x faster than point-to-point integrations.|
-|I**Security**<br/>**Posture**<br/>Gateway-level prompt injection detection, jailbreak prevention, and output content<br/>filtering catch threats before they reach business logic layers.|
+|**Latency P99 Improvement**<br/>Intelligent routing selects the lowest-latency provider per request. Fallback chains<br/>ensure sub-second degraded service even during provider outages.|
+|**Compliance Acceleration**<br/>Centralised PII redaction, prompt injection filtering, and audit logs compressed<br/>compliance certification timelines from 12 months to under 6 weeks for regulated firms.|
+|**Developer Velocity**<br/>A single SDK against a unified gateway endpoint removes per-provider integration<br/>work. Teams ship AI features 3x faster than point-to-point integrations.|
+|**Security Posture**<br/>Gateway-level prompt injection detection, jailbreak prevention, and output content<br/>filtering catch threats before they reach business logic layers.|
 
 **CHAPTER 02**
 
@@ -139,7 +139,7 @@ Within the Gateway Plane, the following micro-components process each request in
 
 ### 03.3 Data Flow Snippet
 
-|I**Kong AI Gateway — Declarative Route Config (snippet)**<br/>|
+|**Kong AI Gateway — Declarative Route Config (snippet)**|
 |---|
 |`services:`|
 |`- name: llm-router-service`|
@@ -158,7 +158,7 @@ Within the Gateway Plane, the following micro-components process each request in
 |`config:`|
 |`limit: [{ minute: 500, day: 50000 }]`|
 |`strategy: sliding_window`|
-|I**LiteLLM Proxy — Multi-provider fallback (snippet)**|
+|**LiteLLM Proxy — Multi-provider fallback (snippet)**|
 |`model_list:`|
 |`- model_name: gpt-4o`|
 |`litellm_params: { model: openai/gpt-4o, api_key: os.environ/OPENAI_KEY }`|
@@ -193,7 +193,7 @@ AI Harnesses — frameworks such as LangChain, LlamaIndex, AutoGen, CrewAI, and 
 
 - Prompt versioning: harness injects **X-Prompt-Version** header; gateway routes to the model version that was validated for that prompt template.
 
-|I**LangChain**→**Gateway (snippet)**|
+|**LangChain → Gateway (snippet)**|
 |---|
 |`from langchain_openai import ChatOpenAI`|
 |`llm = ChatOpenAI(`|
@@ -230,7 +230,7 @@ When frontend consumers are slow, gateway applies back-pressure signalling to th
 
 Gateway injects short-lived signed AGUI session tokens, eliminating the need for frontend clients to hold long-lived credentials.
 
-|I**AGUI SSE Gateway Route — Nginx upstream snippet**|
+|**AGUI SSE Gateway Route — Nginx upstream snippet**|
 |---|
 |`location /agui/stream {`|
 |`proxy_pass http://agent-backend-svc;`|

@@ -749,3 +749,12 @@ curl http://localhost:8001/services/openai-service/plugins | jq '[.data[].name]'
 ```
 
 *Guide covers Kong Gateway 3.7 with the openid-connect plugin (Enterprise) and Microsoft Entra ID (Azure AD v2.0 endpoints). Refer to [docs.konghq.com/hub/kong-inc/openid-connect](https://docs.konghq.com/hub/kong-inc/openid-connect/) for the latest plugin schema.*
+
+---
+
+## Related
+
+- [Kong AI Gateway — Complete End-to-End Guide](../08-kong-ai-gateway-guide.md) — core Kong plugins, routing, caching, rate limiting, and production deployment patterns.
+- [AI Gateway Full Comparison](../05-ai-gateway-full-comparison.md) — feature matrix and selection guide for enterprise API gateways handling LLM integrations.
+- [AI Gateway Multi-Tenant Multi-Cloud](../06-ai-gateway-multitenant-multicloud.md) — isolation, billing, and multi-region deployment for SaaS AI platforms.
+- [Enterprise AI Gateway Architecture](../07-enterprise-ai-gateway.md) — high-availability, observability, cost governance, and zero-trust patterns at scale.

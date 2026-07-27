@@ -13,7 +13,7 @@ covers_version: "N/A"
 
 # Kong AI Gateway — Microsoft Entra ID Integration
 
-## Complete End-to-End Guide
+Complete guide for integrating Kong AI Gateway with Microsoft Entra ID (Azure AD) to provide enterprise SSO, OAuth 2.0 client credentials flows, conditional access, and MFA enforcement. Covers app registration, token validation, group/role mapping, multi-tenant setup, and production troubleshooting.
 
 ---
 
@@ -40,7 +40,6 @@ covers_version: "N/A"
 
 Microsoft Entra ID (formerly Azure Active Directory) becomes the **single source of truth** for identity. Kong AI Gateway enforces authentication and authorization using tokens issued by Entra, then injects the LLM master credential upstream — clients never touch the raw OpenAI/Anthropic key.
 
-```
 ```mermaid
 sequenceDiagram
     participant App as App/Service
@@ -70,7 +69,6 @@ sequenceDiagram
     Kong->>Entra: exchange code for tokens
     Kong->>Kong: Set session cookie, map user to consumer, enforce group membership
     Kong->>OpenAI: forward request
-```
 ```
 
 ### Key Entra ID Concepts Used

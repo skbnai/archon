@@ -812,3 +812,12 @@ curl http://localhost:8001/plugins | jq '[.data[] | {name, enabled, scoped_to: .
 ---
 
 *Guide covers Kong Gateway 3.7 / Kong AI Gateway. For the latest plugin configuration options, refer to the [official Kong AI Gateway documentation](https://docs.konghq.com/gateway/latest/ai-gateway/).*
+
+---
+
+## Related
+
+- [Kong AI Gateway — Microsoft Entra ID Integration](../09-kong-entra-id-integration.md) — how to authenticate Kong with enterprise SSO using Entra ID.
+- [AI Gateway Full Comparison](../05-ai-gateway-full-comparison.md) — feature matrix and selection guide for Kong vs. Apigee, Ambassador, and other enterprise gateways.
+- [AI Gateway Multi-Tenant Multi-Cloud](../06-ai-gateway-multitenant-multicloud.md) — deployment patterns for SaaS platforms serving multiple organizations and cloud providers.
+- [Enterprise AI Gateway Architecture](../07-enterprise-ai-gateway.md) — design patterns for high-availability, observability, and cost governance at scale.*

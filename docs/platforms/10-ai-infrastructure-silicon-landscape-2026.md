@@ -17,8 +17,6 @@ covers_version: "as of mid-2026"
 
 **Purpose:** Analyst-style assessment of the silicon vendors powering enterprise AI — market structure, per-vendor moat anatomy and risks, a comparative matrix, and the implications architects should act on.
 
-**Related:** [Enterprise AI Commercial Analysis](../strategy/09-enterprise-ai-commercial-analysis-2026.md) · [Comparative Matrices & Decision Tools](../architecture/50-enterprise-ai-comparative-matrices-2026.md) · [Agentic AI Outlook 2026–2030](../architecture/33-enterprise-agentic-ai-outlook-2026-2030.md)
-
 ---
 
 ## 1. Market Structure
@@ -104,3 +102,9 @@ Not a near-term hyperscaler threat; a long-term architectural hedge and the most
 ---
 
 *Analyst assessment as of mid-2026. Vendor roadmaps, deal structures, and supply constraints move quickly — validate against current filings and vendor announcements before committing capital or contracts.*
+
+## Related
+
+- [Enterprise AI Commercial Analysis](../strategy/09-enterprise-ai-commercial-analysis-2026.md) — macro market drivers and economic models for AI infrastructure investment.
+- [Comparative Matrices & Decision Tools](../architecture/50-enterprise-ai-comparative-matrices-2026.md) — decision frameworks for silicon and platform selection.
+- [Agentic AI Outlook 2026–2030](../architecture/33-enterprise-agentic-ai-outlook-2026-2030.md) — long-term trends in agentic architecture and inference optimization.

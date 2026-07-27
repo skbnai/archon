@@ -13,6 +13,8 @@ covers_version: "N/A"
 
 # Kong AI Gateway — Complete End-to-End Guide
 
+Kong AI Gateway is an enterprise-grade API gateway built on top of Kong that sits between your applications and LLM providers (OpenAI, Anthropic, Azure OpenAI, etc.). This comprehensive guide covers architecture, installation, core plugins (caching, rate limiting, guardrails, observability), authentication patterns, multi-model routing, and production deployment on Kubernetes.
+
 ---
 
 ## Table of Contents
