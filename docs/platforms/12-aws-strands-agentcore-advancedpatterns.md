@@ -18,7 +18,7 @@ covers_version: "N/A"
 # AWS Strands & Bedrock AgentCore — Advanced Patterns v3.0
 **Hooks · HITL · Checkpointer · Code Interpreter · Browser Agent · Meta Tool · Expert Patterns**
 
-|**Vol 3 of 3**|**Expert Patterns**<br>**Production Grade**|**March 2026**|
+|**Vol 3 of 3**|**Expert Patterns**<br/>**Production Grade**|**March 2026**|
 |---|---|---|
 |**Volume**|3 of 3 — Advanced Patterns & Expert Implementations||
 |**Prereqs**|Builder Journey Kit v1.0 + Delta Supplement v2.0||
@@ -128,10 +128,10 @@ Strands Hooks are a **composable, type-safe extensibility mechanism** built into
 |**Event**|**Purpose / What You Can Do**|**Frequency**|
 |---|---|---|
 |AgentInitializedEvent|After agent fully constructed. Setup, DB pool init, warm-up.|Once|
-|StartRequestEvent|Before any model/tool execution on new request. Request-level<br>setup, logging, auth check.|Per request|
-|EndRequestEvent|After request completes (success or error). Cleanup, state persist.<br>REVERSE order.|Per request|
-|MessageAddedEvent|When user message, assistant response, or tool result added to<br>history.|Per message|
-|BeforeModelCallEvent|Before LLM invocation. Modify prompt, inject context, token-budget<br>check.|Per LLM call|
+|StartRequestEvent|Before any model/tool execution on new request. Request-level<br/>setup, logging, auth check.|Per request|
+|EndRequestEvent|After request completes (success or error). Cleanup, state persist.<br/>REVERSE order.|Per request|
+|MessageAddedEvent|When user message, assistant response, or tool result added to<br/>history.|Per message|
+|BeforeModelCallEvent|Before LLM invocation. Modify prompt, inject context, token-budget<br/>check.|Per LLM call|
 |AfterModelCallEvent|After LLM response. Validate output, set retry_model=True to retry.|Per LLM call|
 |BeforeToolCallEvent|Before tool execution. Intercept args, fire HITL interrupt, cancel tool.|Per tool call|
 |AfterToolCallEvent|After tool execution. Validate result, set retry=True to re-run tool.|Per tool call|
@@ -275,7 +275,7 @@ log = logging.getLogger(__name__)
     def _check_quality(self, event: AfterModelCallEvent):
 ```
 
-`if not event.stop_response: return content = str(event.stop_response.content) session = id(event)  # Use event id as proxy for session key retries = self._retries.get(session, 0) if retries &lt; self._max and len(content) &lt; 50 and "sorry" in content.lower(): self._retries[session] = retries + 1 event.retry_model = True   #` <- `Discard response, re-invoke model log.warning(f"Low-quality response, retry {retries+1}/{self._max}") #` II `Wire all hooks into agent` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `agent = Agent( model="us.anthropic.claude-sonnet-4-20250514", system_prompt="You are a production assistant.", tools=[...], hooks=[ObservabilityHook(), PIIScrubHook(), QualityRetryHook()], )`
+`if not event.stop_response: return content = str(event.stop_response.content) session = id(event)  # Use event id as proxy for session key retries = self._retries.get(session, 0) if retries &lt; self._max and len(content) &lt; 50 and "sorry" in content.lower(): self._retries[session] = retries + 1 event.retry_model = True   #` &lt;- `Discard response, re-invoke model log.warning(f"Low-quality response, retry {retries+1}/{self._max}") #` II `Wire all hooks into agent` IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII `agent = Agent( model="us.anthropic.claude-sonnet-4-20250514", system_prompt="You are a production assistant.", tools=[...], hooks=[ObservabilityHook(), PIIScrubHook(), QualityRetryHook()], )`
 
 ###### II **WARNING**
 

@@ -16,7 +16,7 @@ covers_version: "N/A"
 # AWS STRANDS & BEDROCK AGENTCORE PRODUCTION BUILDER JOURNEY KIT
 From Zero to Production · Multi-Agent · MCP · A2A · Auth · RAI · Observability · Compliance
 
-|**12 Chapters**|**100+ Patterns**<br>**50+ Snippets**<br>**Enterprise Grade**|
+|**12 Chapters**|**100+ Patterns**<br/>**50+ Snippets**<br/>**Enterprise Grade**|
 |---|---|
 |**Version**|1.0 — March 2026|
 |**Scope**|AWS Strands SDK · AgentCore Runtime · Gateway · Identity · Memory · Observability · Policy|
@@ -384,8 +384,8 @@ Each AgentCore Runtime is a named, versioned compute entity. When invoked, Runti
 
 |**Mode**|**Description**|**Use Case**|
 |---|---|---|
-|direct_code_deploy|Python source + requirements.txt uploaded to S3. No Docker.<br>Fastest iteration.|Dev, simple agents|
-|container_deploy|Docker image built by CodeBuild, pushed to ECR. Full OS<br>control.|Prod, custom deps, GPU|
+|direct_code_deploy|Python source + requirements.txt uploaded to S3. No Docker.<br/>Fastest iteration.|Dev, simple agents|
+|container_deploy|Docker image built by CodeBuild, pushed to ECR. Full OS<br/>control.|Prod, custom deps, GPU|
 |custom|Bring your own container registry / image URI.|Enterprise / air-gap|
 
 ### **3.3 Custom FastAPI Agent (Full HTTP Control)**

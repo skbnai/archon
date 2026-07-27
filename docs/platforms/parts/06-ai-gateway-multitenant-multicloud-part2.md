@@ -125,7 +125,7 @@ Generating, storing, and querying audit logs for thousands of tenants at million
 |---|---|
 |**Identity**|Tenant_id sourced from verified JWT claim only — never HTTP header|
 |**Cache**|Vector cache partitioned per tenant_id as primary key — cross-tenant lookups impossible|
-|**Quota**|Redis keys prefixed gw:{tenant_id}: — ACL-enforced keyspace isolation|
+|**Quota**|Redis keys prefixed gw:\{tenant_id\}: — ACL-enforced keyspace isolation|
 |**Residency**|OPA policy enforces provider allow-list per tenant data_residency attribute|
 |**Audit Logs**|Separate Kafka topic or S3 prefix per tenant — no shared stream|
 |**Data Deletion**|Automated erasure pipeline with 72h SLA and signed deletion certificate|
@@ -137,12 +137,12 @@ Generating, storing, and querying audit logs for thousands of tenants at million
 
 ### H.2 Capacity Sizing Reference
 
-|**Scale Tier**|**Tenants**|**Peak RPS**|**Gateway Pods**|**Redis**|**Vector Cache**|**Audit**<br>**Storage**|
+|**Scale Tier**|**Tenants**|**Peak RPS**|**Gateway Pods**|**Redis**|**Vector Cache**|**Audit**<br/>**Storage**|
 |---|---|---|---|---|---|---|
-|Small|1–50|500|3 pods (2 CPU)|Single node 8GB|pgvector 1 node|100GB/mon<br>th S3|
-|Medium|50–500|5,000|10 pods (4 CPU)|Cluster 3-shard|pgvector 3 node|1TB/month<br>S3|
-|Large|500–5k|50,000|30 pods (8 CPU)|Cluster 6-shard|Qdrant 3-node|10TB/mont<br>h S3|
-|Hyperscale|5k–50k|500,000|Cell arch (3 cells 50<br>pods each)|Redis Enterprise|Qdrant 9-node<br>cluster|100TB/mon<br>th + Glacier|
+|Small|1–50|500|3 pods (2 CPU)|Single node 8GB|pgvector 1 node|100GB/mon<br/>th S3|
+|Medium|50–500|5,000|10 pods (4 CPU)|Cluster 3-shard|pgvector 3 node|1TB/month<br/>S3|
+|Large|500–5k|50,000|30 pods (8 CPU)|Cluster 6-shard|Qdrant 3-node|10TB/mont<br/>h S3|
+|Hyperscale|5k–50k|500,000|Cell arch (3 cells 50<br/>pods each)|Redis Enterprise|Qdrant 9-node<br/>cluster|100TB/mon<br/>th + Glacier|
 
 ### H.3 Data Ownership RACI
 

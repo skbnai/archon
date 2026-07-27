@@ -21,7 +21,7 @@ Enterprise AI Architecture Practice · April 2026 Version 1.0 · CONFIDENTIAL
 
 ## Table of Contents
 
-|**CHAP**|**TER —**<br>**Table of C**|
+|**CHAP**|**TER —**<br/>**Table of C**|
 |---|---|
 |**01**|What Is an AI Gateway? Market Landscape & Big Wins|
 |**02**|Problems AI Gateways Solve|
@@ -48,15 +48,15 @@ An AI Gateway is a reverse-proxy, policy engine, and observability hub positione
 
 |**Gateway**|**Origin**|**Key Differentiator**|**Target Segment**|**License**|
 |---|---|---|---|---|
-|Kong AI Gateway|Kong Inc.|Plugin ecosystem, multi-provider LLM<br>routing, semantic caching|Enterprise / SaaS|Apache 2 / Ent.|
-|AWS Bedrock<br>Gateway|Amazon|Native IAM, Model Catalog,<br>Guardrails, multi-region|AWS-centric<br>enterprise|Proprietary|
-|Azure API Mgmt<br>+ APIM AI|Microsoft|Azure OpenAI integration, RBAC,<br>OBO token passthrough|M365 enterprise|Proprietary|
-|Google Apigee AI|Google|Vertex AI binding, Gemini routing,<br>Apigee policies|GCP-first orgs|Proprietary|
-|Portkey.ai|Portkey|Provider fallback, prompt versioning,<br>fine-grained cost|Dev teams / startups|SaaS / OSS|
-|LiteLLM Proxy|BerriAI|100+ LLM unification, budget limits,<br>virtual keys|OSS / DevOps teams|MIT / Enterprise|
-|Traefik AI Plugin|Traefik Labs|K8s-native, sidecar model, mesh<br>integration|Cloud-native platform<br>teams|Apache 2|
-|Cloudflare AI<br>Gateway|Cloudflare|Edge delivery, caching, WAF + AI in<br>one plane|Web-first orgs|SaaS|
-|IBM watsonx<br>Gateway|IBM|Regulated industries, on-prem,<br>Watson model governance|Financial / Gov|Proprietary|
+|Kong AI Gateway|Kong Inc.|Plugin ecosystem, multi-provider LLM<br/>routing, semantic caching|Enterprise / SaaS|Apache 2 / Ent.|
+|AWS Bedrock<br/>Gateway|Amazon|Native IAM, Model Catalog,<br/>Guardrails, multi-region|AWS-centric<br/>enterprise|Proprietary|
+|Azure API Mgmt<br/>+ APIM AI|Microsoft|Azure OpenAI integration, RBAC,<br/>OBO token passthrough|M365 enterprise|Proprietary|
+|Google Apigee AI|Google|Vertex AI binding, Gemini routing,<br/>Apigee policies|GCP-first orgs|Proprietary|
+|Portkey.ai|Portkey|Provider fallback, prompt versioning,<br/>fine-grained cost|Dev teams / startups|SaaS / OSS|
+|LiteLLM Proxy|BerriAI|100+ LLM unification, budget limits,<br/>virtual keys|OSS / DevOps teams|MIT / Enterprise|
+|Traefik AI Plugin|Traefik Labs|K8s-native, sidecar model, mesh<br/>integration|Cloud-native platform<br/>teams|Apache 2|
+|Cloudflare AI<br/>Gateway|Cloudflare|Edge delivery, caching, WAF + AI in<br/>one plane|Web-first orgs|SaaS|
+|IBM watsonx<br/>Gateway|IBM|Regulated industries, on-prem,<br/>Watson model governance|Financial / Gov|Proprietary|
 
 |**Gateway**|**Origin**|**Key Differentiator**|**Target Segment**|**License**|
 |---|---|---|---|---|
@@ -65,12 +65,12 @@ An AI Gateway is a reverse-proxy, policy engine, and observability hub positione
 
 ### 01.3 Big Wins Delivered by AI Gateways
 
-|I**Cost**<br>**Reduction**<br>**40–70%**<br>Semantic caching returns cached responses for semantically equivalent prompts,<br>eliminating redundant LLM calls. Organisations deploying Kong's semantic cache<br>plugin report token spend reductions of 40–70% on high-volume RAG workloads.|
+|I**Cost**<br/>**Reduction**<br/>**40–70%**<br/>Semantic caching returns cached responses for semantically equivalent prompts,<br/>eliminating redundant LLM calls. Organisations deploying Kong's semantic cache<br/>plugin report token spend reductions of 40–70% on high-volume RAG workloads.|
 |---|
-|I**Latency P99**<br>**Improvement**<br>Intelligent routing selects the lowest-latency provider per request. Fallback chains<br>ensure sub-second degraded service even during provider outages.|
-|I**Compliance**<br>**Acceleration**<br>Centralised PII redaction, prompt injection filtering, and audit logs compressed<br>compliance certification timelines from 12 months to under 6 weeks for regulated firms.|
-|I**Developer**<br>**Velocity**<br>A single SDK against a unified gateway endpoint removes per-provider integration<br>work. Teams ship AI features 3x faster than point-to-point integrations.|
-|I**Security**<br>**Posture**<br>Gateway-level prompt injection detection, jailbreak prevention, and output content<br>filtering catch threats before they reach business logic layers.|
+|I**Latency P99**<br/>**Improvement**<br/>Intelligent routing selects the lowest-latency provider per request. Fallback chains<br/>ensure sub-second degraded service even during provider outages.|
+|I**Compliance**<br/>**Acceleration**<br/>Centralised PII redaction, prompt injection filtering, and audit logs compressed<br/>compliance certification timelines from 12 months to under 6 weeks for regulated firms.|
+|I**Developer**<br/>**Velocity**<br/>A single SDK against a unified gateway endpoint removes per-provider integration<br/>work. Teams ship AI features 3x faster than point-to-point integrations.|
+|I**Security**<br/>**Posture**<br/>Gateway-level prompt injection detection, jailbreak prevention, and output content<br/>filtering catch threats before they reach business logic layers.|
 
 **CHAPTER 02**
 
@@ -110,12 +110,12 @@ The reference architecture is organised in five horizontal planes. Each plane is
 
 ### 03.1 Five-Plane Reference Architecture
 
-|**CONSUMER**<br>**PLANE**|`Web / Mobile Apps Agent Frameworks (LangChain, AutoGen) CI/CD Pipelines BI / Analytics`<br>`Tools 3rd-party SaaS`|
+|**CONSUMER**<br/>**PLANE**|`Web / Mobile Apps Agent Frameworks (LangChain, AutoGen) CI/CD Pipelines BI / Analytics`<br/>`Tools 3rd-party SaaS`|
 |---|---|
-|**GATEWAY**<br>**PLANE**|`Auth & Token Exchange Rate Limiting / Quota Engine Semantic Cache (vector DB) Prompt`<br>`Guard / PII Redact Intelligent Router Response Filter`|
-|**PROVIDER**<br>**PLANE**|`OpenAI / Azure OpenAI Anthropic Claude AWS Bedrock (Titan / Llama) Google Vertex (Gemini)`<br>`On-prem Ollama / vLLM Fine-tuned Private Models`|
-|**OBSERVABILI**<br>**TY PLANE**|`OTel Collector Prometheus + Grafana Jaeger Distributed Tracing LLM-specific Metrics`<br>`Dashboard Cost Attribution (Finops)`|
-|**GOVERNANCE**<br>**PLANE**|`OPA Policy Engine Audit Log Store (immutable S3/Splunk) Data Residency Enforcer AI Ethics`<br>`Policy Registry Compliance Reporter (SOC2/GDPR/HIPAA)`|
+|**GATEWAY**<br/>**PLANE**|`Auth & Token Exchange Rate Limiting / Quota Engine Semantic Cache (vector DB) Prompt`<br/>`Guard / PII Redact Intelligent Router Response Filter`|
+|**PROVIDER**<br/>**PLANE**|`OpenAI / Azure OpenAI Anthropic Claude AWS Bedrock (Titan / Llama) Google Vertex (Gemini)`<br/>`On-prem Ollama / vLLM Fine-tuned Private Models`|
+|**OBSERVABILI**<br/>**TY PLANE**|`OTel Collector Prometheus + Grafana Jaeger Distributed Tracing LLM-specific Metrics`<br/>`Dashboard Cost Attribution (Finops)`|
+|**GOVERNANCE**<br/>**PLANE**|`OPA Policy Engine Audit Log Store (immutable S3/Splunk) Data Residency Enforcer AI Ethics`<br/>`Policy Registry Compliance Reporter (SOC2/GDPR/HIPAA)`|
 
 ### 03.2 Gateway Internal Components
 
@@ -139,7 +139,7 @@ Within the Gateway Plane, the following micro-components process each request in
 
 ### 03.3 Data Flow Snippet
 
-|I**Kong AI Gateway — Declarative Route Config (snippet)**<br>|
+|I**Kong AI Gateway — Declarative Route Config (snippet)**<br/>|
 |---|
 |`services:`|
 |`- name: llm-router-service`|
@@ -181,7 +181,7 @@ The AI Gateway integrates with two rapidly evolving paradigms: the **AI Harness*
 
 AI Harnesses — frameworks such as LangChain, LlamaIndex, AutoGen, CrewAI, and Semantic Kernel — orchestrate multi-step, multi-model workflows. The gateway is the single egress point for all LLM calls originating inside the harness, ensuring that observability, rate limiting, and guardrails apply regardless of which model or step is executing.
 
-- Single endpoint injection: harness is configured with **OPENAI_BASE_URL=<https://gateway/v1>** — no per-model client changes required.
+- Single endpoint injection: harness is configured with **`OPENAI_BASE_URL=https://gateway/v1`** — no per-model client changes required.
 
 - Context propagation: W3C TraceContext headers carried through harness → gateway → provider for end-to-end distributed tracing.
 
@@ -202,7 +202,7 @@ AI Harnesses — frameworks such as LangChain, LlamaIndex, AutoGen, CrewAI, and 
 |`model='gpt-4o',`|
 |`default_headers={`|
 |`'X-Team-ID': 'platform-engineering',`|
-|`'X-Trace-ID': trace_context.span_id,`<br>`}`<br>`)`|
+|`'X-Trace-ID': trace_context.span_id,`<br/>`}`<br/>`)`|
 
 ### 04.2 AGUI — Agent-to-UI Protocol
 
@@ -241,7 +241,7 @@ Gateway injects short-lived signed AGUI session tokens, eliminating the need for
 |`proxy_set_header X-GW-Consumer $jwt_sub;`|
 |`add_header Cache-Control no-store;`|
 |`# Kong plugin strips sensitive tool_call events:`|
-|`# plugin: agui-event-filter { deny: [tool_call_internal] }`<br>`}`|
+|`# plugin: agui-event-filter { deny: [tool_call_internal] }`<br/>`}`|
 
 #### CHAPTER 05
 
@@ -355,14 +355,14 @@ AI gateways face a superset of traditional API security threats, augmented by LL
 
 |**OWASP LLM Risk**|**Description**|**Gateway Mitigation**|
 |---|---|---|
-|LLM01 — Prompt Injection|Malicious instructions embedded in user<br>input hijack model behaviour|Semantic injection classifier, input sanitisation,<br>system-prompt pinning via gateway|
-|LLM02 — Sensitive Info<br>Disclosure|Model reveals training data, PII, or<br>confidential content|Output PII detector, DLP regex engine, response<br>content classifier|
-|LLM03 — Supply Chain|Compromised model weights or plugins<br>introduce backdoors|Model provenance registry, plugin signature<br>verification, SBOM enforcement|
-|LLM04 — Data/Model<br>Poisoning|Adversarial training data degrades model<br>behaviour|Gateway-level anomaly detection on output drift;<br>model version pinning|
-|LLM06 — Excessive<br>Agency|Agents take destructive autonomous<br>actions beyond intent|Tool-call allow-list enforcement,<br>human-in-the-loop gates at gateway, scope<br>tokens|
-|LLM07 — System Prompt<br>Leakage|System prompts revealed to end users|Gateway strips system prompt content from<br>streamed responses|
-|LLM09 — Misinformation|Model outputs falsehoods presented as<br>facts|Confidence scoring, RAG grounding verification,<br>hallucination rate metrics|
-|LLM10 — Unbounded<br>Consumption|Resource exhaustion via large prompts /<br>token flooding|Token-count pre-check, max_tokens<br>enforcement, per-consumer rate limits|
+|LLM01 — Prompt Injection|Malicious instructions embedded in user<br/>input hijack model behaviour|Semantic injection classifier, input sanitisation,<br/>system-prompt pinning via gateway|
+|LLM02 — Sensitive Info<br/>Disclosure|Model reveals training data, PII, or<br/>confidential content|Output PII detector, DLP regex engine, response<br/>content classifier|
+|LLM03 — Supply Chain|Compromised model weights or plugins<br/>introduce backdoors|Model provenance registry, plugin signature<br/>verification, SBOM enforcement|
+|LLM04 — Data/Model<br/>Poisoning|Adversarial training data degrades model<br/>behaviour|Gateway-level anomaly detection on output drift;<br/>model version pinning|
+|LLM06 — Excessive<br/>Agency|Agents take destructive autonomous<br/>actions beyond intent|Tool-call allow-list enforcement,<br/>human-in-the-loop gates at gateway, scope<br/>tokens|
+|LLM07 — System Prompt<br/>Leakage|System prompts revealed to end users|Gateway strips system prompt content from<br/>streamed responses|
+|LLM09 — Misinformation|Model outputs falsehoods presented as<br/>facts|Confidence scoring, RAG grounding verification,<br/>hallucination rate metrics|
+|LLM10 — Unbounded<br/>Consumption|Resource exhaustion via large prompts /<br/>token flooding|Token-count pre-check, max_tokens<br/>enforcement, per-consumer rate limits|
 
 ### 06.2 Authentication & Authorisation Architecture
 

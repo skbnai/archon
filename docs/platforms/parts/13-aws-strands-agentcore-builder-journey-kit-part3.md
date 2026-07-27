@@ -312,11 +312,11 @@ Architecture · Security · Operations
 
 |**Practice**|**Guidance**|
 |---|---|
-|Session ID discipline|Always generate cryptographically random session IDs (UUID v4). Never reuse session IDs<br>across users.|
-|Tool granularity|One tool = one responsibility. Avoid mega-tools that do many things. Enables Policy enforcement<br>and tracing.|
+|Session ID discipline|Always generate cryptographically random session IDs (UUID v4). Never reuse session IDs<br/>across users.|
+|Tool granularity|One tool = one responsibility. Avoid mega-tools that do many things. Enables Policy enforcement<br/>and tracing.|
 |Idempotent tools|Design all state-mutating tools to be idempotent. Agents may retry tool calls on transient errors.|
 |Guardrail-first|Apply Bedrock Guardrails at agent creation, not as an afterthought. Test with adversarial prompts.|
-|Memory namespacing|Always namespace: user/{user_id}/*, tenant/{tenant_id}/*. Never write to shared namespaces.|
+|Memory namespacing|Always namespace: user/\{user_id\}/*, tenant/\{tenant_id\}/*. Never write to shared namespaces.|
 |Timeout tuning|Set agent loop max_iterations and per-tool timeouts. Prevent runaway loops in production.|
 |Version pinning|Pin specific Runtime versions for production endpoints. Never use LATEST in prod.|
 |Cost controls|Set per-session token budget limits. Monitor with CloudWatch token usage metrics.|
@@ -365,17 +365,17 @@ Reference Architecture · IaC · CI/CD · Checklist
 
 The following architecture implements all patterns from this guide in a production multi-tenant, multi-agent deployment:
 
-|**Production Reference Architecture**<br>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII|
+|**Production Reference Architecture**<br/>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII|
 |---|
 |I`CONSUMER LAYER`I|
 |I`Web App / Mobile`->`API Gateway (REST + MCP Proxy)`->`Lambda Proxy`I|
 |I`Partner Systems`->`A2A Protocol (JWT-federated, cross-tenant)`I|
 |I`Developer Tools`->`MCP Proxy for AWS (SigV4)`->`AgentCore Gateway`I|
-|IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII<br> I`OAuth Bearer / IAM SigV4`<br>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIMIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII|
+|IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII<br/> I`OAuth Bearer / IAM SigV4`<br/>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIMIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII|
 |I`AGENTCORE IDENTITY LAYER`I|
 |I`Cognito (OIDC IdP)`III`Token validation`I|
 |I`AgentCore Identity`III`Credential providers (M2M, API Key, IAM)`I|
-|I`AgentCore Policy`III`Real-time action authorization`I<br>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII<br> I`Authorized invocation`<br>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIMIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII|
+|I`AgentCore Policy`III`Real-time action authorization`I<br/>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII<br/> I`Authorized invocation`<br/>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIMIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII|
 |I`AGENTCORE RUNTIME LAYER (Multi-Tenant, MicroVM Isolated)`I|
 |I I|
 |I IIIIIIIIIIIIIIIIIIIIIIII IIIIIIIIIIIIIIIIIIIIIIII I|
@@ -384,12 +384,12 @@ The following architecture implements all patterns from this guide in a producti
 |I I`Strands + A2A`I I`Compliance / Data`I I|
 |I IIIIIIIIIIIIIIIIIIIIIIII IIIIIIIIIIIIIIIIIIIIIIII I|
 |I I I|
-|I`AgentCore Memory: Short-term (session) + Long-term (semantic)`I<br>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII<br> I`MCP (SigV4 / OAuth)`<br>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIMIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII|
+|I`AgentCore Memory: Short-term (session) + Long-term (semantic)`I<br/>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII<br/> I`MCP (SigV4 / OAuth)`<br/>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIMIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII|
 |I`AGENTCORE GATEWAY LAYER`I|
 |I`Target: OpenAPI specs`III`Enterprise APIs (REST)`I|
 |I`Target: Lambda fns`III`Custom business logic`I|
 |I`Target: Remote MCP`III`Fargate / OpenShift MCP servers`I|
-|I`Built-in: Semantic search, Outbound credential injection`I<br>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII<br> I<br>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIMIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII|
+|I`Built-in: Semantic search, Outbound credential injection`I<br/>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII<br/> I<br/>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIMIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII|
 |I`OBSERVABILITY & COMPLIANCE`I|
 
 I `OTEL` -> `CloudWatch (AgentCore native) + Arize Phoenix (self-hosted)` I I `Bedrock Guardrails (content, PII, grounding)` -> `all agents` I I `AgentCore Evaluations + Strands Eval CI gate` I I `CloudTrail audit log` -> `S3 (90-day retention, compliance)` I IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII

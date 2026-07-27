@@ -27,9 +27,9 @@ Production agents die: Lambda timeouts, container restarts, network failures. Wi
 |---|---|---|
 |Strands SessionManager (File)|In-process, file-backed. Session history only. No tool state.|Dev / single-user|
 |Strands SessionManager (S3)|Atomic S3 writes, safe concurrent access. Session history.|Multi-instance prod|
-|LangGraph DynamoDBSaver|Full graph state: node outputs, edges, pending actions.<br>Small->DDB, large->S3.|LangGraph + full replay|
+|LangGraph DynamoDBSaver|Full graph state: node outputs, edges, pending actions.<br/>Small->DDB, large->S3.|LangGraph + full replay|
 |LangGraph AgentCoreMemorySaver|Persists to AgentCore Memory API. Native integration.|AgentCore + LangGraph|
-|Custom Redis/Valkey checkpointer|Sub-millisecond reads. Use for high-throughput real-time<br>agents.|High-frequency agents|
+|Custom Redis/Valkey checkpointer|Sub-millisecond reads. Use for high-throughput real-time<br/>agents.|High-frequency agents|
 
 #### A3.2 Strands Built-In SessionManager
 

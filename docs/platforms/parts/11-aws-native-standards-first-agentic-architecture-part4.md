@@ -23,10 +23,10 @@ covers_version: "N/A"
 |2. API/Gateway|Amazon API Gateway (HTTP API)|OpenAPI 3.1|Synchronous REST contracts|
 |2. API/Gateway|AWS AppSync Events / EventBridge|AsyncAPI 3.0|Event-driven contracts|
 |2. API/Gateway|Amazon Cognito|OIDC / OAuth2|Identity provider|
-|3. Agent<br>Runtime|Amazon Bedrock AgentCore Runtime|A2A (via Strands)|Agent hosting, checkpointing,<br>scaling|
-|3. Agent<br>Runtime|Strands Agents 1.0|A2A, OTel-native|Agent orchestration framework|
-|3. Agent<br>Runtime|Amazon Bedrock|(model API)|Foundation model access|
-|3. Agent<br>Runtime|Amazon Bedrock Guardrails|(policy config)|Content safety, PII redaction|
+|3. Agent<br/>Runtime|Amazon Bedrock AgentCore Runtime|A2A (via Strands)|Agent hosting, checkpointing,<br/>scaling|
+|3. Agent<br/>Runtime|Strands Agents 1.0|A2A, OTel-native|Agent orchestration framework|
+|3. Agent<br/>Runtime|Amazon Bedrock|(model API)|Foundation model access|
+|3. Agent<br/>Runtime|Amazon Bedrock Guardrails|(policy config)|Content safety, PII redaction|
 |4. Tools|Amazon Bedrock AgentCore Gateway|MCP|Tool exposure from Lambda/APIs|
 |4. Tools|AWS Lambda|(implementation)|Tool execution|
 |5. Multi-Agent|Amazon Bedrock AgentCore Runtime (per agent)|A2A|Specialist agent hosting|
@@ -47,15 +47,15 @@ covers_version: "N/A"
 
 |**Standard**|**Governing Body / Origin**|**Maturity (as of mid-2026)**|**Role in This Architecture**|
 |---|---|---|---|
-|MCP (Model Context<br>Protocol)|Anthropic (open-sourced)|Production, broad ecosystem<br>adoption|Tool/data access contract (Layer<br>4)|
+|MCP (Model Context<br/>Protocol)|Anthropic (open-sourced)|Production, broad ecosystem<br/>adoption|Tool/data access contract (Layer<br/>4)|
 
 |**Standard**|**Governing Body / Origin**|**Maturity (as of mid-2026)**|**Role in This Architecture**|
 |---|---|---|---|
-|A2A (Agent2Agent)|Google, contributed to Linux<br>Foundation|Production; 150+ org adoption,<br>AWS/Azure/GCP support|Agent coordination contract<br>(Layer 5)|
-|AG-UI|CopilotKit|Production, growing adoption|Agent-to-frontend event protocol<br>(Layer 1)|
-|OpenTelemetry|CNCF|Production, industry standard|Observability instrumentation<br>(Layer 8)|
-|OpenAPI 3.1|OpenAPI Initiative / Linux<br>Foundation|Production, industry standard|Synchronous API contracts<br>(Layer 2)|
-|AsyncAPI 3.0|AsyncAPI Initiative / Linux<br>Foundation|Production, growing adoption|Event-driven API contracts<br>(Layer 2)|
+|A2A (Agent2Agent)|Google, contributed to Linux<br/>Foundation|Production; 150+ org adoption,<br/>AWS/Azure/GCP support|Agent coordination contract<br/>(Layer 5)|
+|AG-UI|CopilotKit|Production, growing adoption|Agent-to-frontend event protocol<br/>(Layer 1)|
+|OpenTelemetry|CNCF|Production, industry standard|Observability instrumentation<br/>(Layer 8)|
+|OpenAPI 3.1|OpenAPI Initiative / Linux<br/>Foundation|Production, industry standard|Synchronous API contracts<br/>(Layer 2)|
+|AsyncAPI 3.0|AsyncAPI Initiative / Linux<br/>Foundation|Production, growing adoption|Event-driven API contracts<br/>(Layer 2)|
 |CloudEvents|CNCF|Production, industry standard|Audit/event format (Layer 7/9)|
 |OIDC / OAuth 2.0|OpenID Foundation / IETF|Production, ubiquitous|Identity (Layer 2/9)|
 

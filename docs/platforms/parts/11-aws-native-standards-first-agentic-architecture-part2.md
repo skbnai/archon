@@ -199,12 +199,12 @@ Amazon Bedrock AgentCore Memory provides both short-term (session/working) memor
 
 |**Memory Type**|**Primary Store**|**Access Pattern**|**Notes**|
 |---|---|---|---|
-|Working / Session|AgentCore Memory (short-term)|Read/write via memory adapter, scoped<br>to session ID|Auto-managed lifecycle tied to<br>AgentCore Runtime session|
-|Episodic|AgentCore Memory (long-term) +<br>Aurora (pgvector)|Semantic search via adapter;<br>embeddings in pgvector for hybrid search|Provenance tag (Section 3.2)<br>stored alongside each record|
-|Semantic (user facts)|AgentCore Memory (long-term)|Extracted async post-conversation;<br>conflict-checked on write|TTL + importance score fields<br>per prior-research best practice<br>D.1|
-|Procedural|S3 (versioned) + Aurora metadata|Agent playbooks/prompts retrieved by<br>orchestrator at session start|Versioned like artifacts; not part<br>of AgentCore Memory|
-|Project / Org|Aurora + OpenSearch (full-text) +<br>S3 (documents)|Project-scoped retrieval; shared across<br>conversations in a project|Maps to 'Projects' construct from<br>prior research Part 10|
-|Knowledge Graph|Amazon Neptune (optional, Graph<br>RAG)|Entity/relationship traversal combined<br>with vector search|Added when multi-hop retrieval<br>quality (Part A.3, prior research)<br>justifies the investment|
+|Working / Session|AgentCore Memory (short-term)|Read/write via memory adapter, scoped<br/>to session ID|Auto-managed lifecycle tied to<br/>AgentCore Runtime session|
+|Episodic|AgentCore Memory (long-term) +<br/>Aurora (pgvector)|Semantic search via adapter;<br/>embeddings in pgvector for hybrid search|Provenance tag (Section 3.2)<br/>stored alongside each record|
+|Semantic (user facts)|AgentCore Memory (long-term)|Extracted async post-conversation;<br/>conflict-checked on write|TTL + importance score fields<br/>per prior-research best practice<br/>D.1|
+|Procedural|S3 (versioned) + Aurora metadata|Agent playbooks/prompts retrieved by<br/>orchestrator at session start|Versioned like artifacts; not part<br/>of AgentCore Memory|
+|Project / Org|Aurora + OpenSearch (full-text) +<br/>S3 (documents)|Project-scoped retrieval; shared across<br/>conversations in a project|Maps to 'Projects' construct from<br/>prior research Part 10|
+|Knowledge Graph|Amazon Neptune (optional, Graph<br/>RAG)|Entity/relationship traversal combined<br/>with vector search|Added when multi-hop retrieval<br/>quality (Part A.3, prior research)<br/>justifies the investment|
 
 #### Memory abstraction interface (illustrative)
 
@@ -265,13 +265,13 @@ Storage selections follow the storage taxonomy established in prior research (Pa
 
 |**Storage Need**|**AWS Service**|**Standard/Format**|**Portability Note**|
 |---|---|---|---|
-|Conversation & message<br>metadata|Aurora PostgreSQL (Serverless<br>v2)|Standard SQL schema (per prior<br>research Part 1.2)|pg_dump/restore to any<br>Postgres-compatible target|
-|Vector embeddings|Aurora PostgreSQL + pgvector<br>extension|pgvector (open-source extension)|Standard pgvector; portable to<br>any Postgres with the<br>extension|
-|Large artifacts (code, docs,<br>images)|Amazon S3|Content-addressable, versioned<br>objects|S3 API is a de facto standard;<br>S3-compatible APIs (MinIO,<br>R2) available everywhere|
-|Full-text & hybrid search|Amazon OpenSearch Service|OpenSearch (Apache 2.0,<br>Elasticsearch-API-compatible fork)|OpenSearch is itself<br>open-source; self-hostable|
-|Knowledge graph (optional)|Amazon Neptune|Gremlin / openCypher (open query<br>languages)|Query language portable to<br>Neo4j, JanusGraph, etc.|
-|Event log / audit trail|Amazon EventBridge -> S3<br>(WORM)|CloudEvents-formatted events<br>(CNCF standard)|CloudEvents format is<br>broker-agnostic|
-|Session cache (hot path)|Amazon ElastiCache (Redis<br>OSS)|Redis protocol (open-source)|Standard Redis; portable to<br>any Redis-compatible cache|
+|Conversation & message<br/>metadata|Aurora PostgreSQL (Serverless<br/>v2)|Standard SQL schema (per prior<br/>research Part 1.2)|pg_dump/restore to any<br/>Postgres-compatible target|
+|Vector embeddings|Aurora PostgreSQL + pgvector<br/>extension|pgvector (open-source extension)|Standard pgvector; portable to<br/>any Postgres with the<br/>extension|
+|Large artifacts (code, docs,<br/>images)|Amazon S3|Content-addressable, versioned<br/>objects|S3 API is a de facto standard;<br/>S3-compatible APIs (MinIO,<br/>R2) available everywhere|
+|Full-text & hybrid search|Amazon OpenSearch Service|OpenSearch (Apache 2.0,<br/>Elasticsearch-API-compatible fork)|OpenSearch is itself<br/>open-source; self-hostable|
+|Knowledge graph (optional)|Amazon Neptune|Gremlin / openCypher (open query<br/>languages)|Query language portable to<br/>Neo4j, JanusGraph, etc.|
+|Event log / audit trail|Amazon EventBridge -> S3<br/>(WORM)|CloudEvents-formatted events<br/>(CNCF standard)|CloudEvents format is<br/>broker-agnostic|
+|Session cache (hot path)|Amazon ElastiCache (Redis<br/>OSS)|Redis protocol (open-source)|Standard Redis; portable to<br/>any Redis-compatible cache|
 
 **PRINCIPLE:** Every storage choice in this layer uses either an open-source engine (Postgres, OpenSearch, Redis) run as a managed AWS service, or an open data format (CloudEvents, Gremlin/openCypher) on a proprietary engine (Neptune). This is the practical version of 'standards-first': pay AWS for operational convenience, but never for a proprietary data format you cannot extract.
 

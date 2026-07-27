@@ -199,7 +199,7 @@ NEVER attempt to answer directly if a skill would do it better."""
     model="us.anthropic.claude-opus-4-20250514",  # Strongest model for routing
 ```
 
-`system_prompt=meta_system, tools=[use_skill],     #` <- `Only 1 tool visible to orchestrator )`
+`system_prompt=meta_system, tools=[use_skill],     #` &lt;- `Only 1 tool visible to orchestrator )`
 
 #### A6.3 Dynamic Tool Registration at Runtime
 
@@ -359,7 +359,7 @@ Vol 3 — March 2026
 |Pause agent mid-tool execution|ToolContext HITL|ToolContext.interrupt()|
 |Multi-hour human approval workflow|Async HITL + DynamoDB + SNS|Persist interrupts, webhook resume|
 |Prevent runaway loops|Circuit breaker hook|BeforeToolCallEvent + counter|
-|Survive Lambda restarts|S3SessionManager /<br>DynamoDBSaver|session_manager=S3SessionManager()|
+|Survive Lambda restarts|S3SessionManager /<br/>DynamoDBSaver|session_manager=S3SessionManager()|
 |Full state replay (LangGraph)|DynamoDBSaver + get_state_history|langgraph-checkpoint-aws|
 |Cross-session semantic memory|AgentCoreMemorySaver + Store|langgraph-checkpoint-aws AgentCore|
 |Secure code execution|AgentCore Code Interpreter|AgentCoreCodeInterpreter() or custom|
@@ -368,7 +368,7 @@ Vol 3 — March 2026
 |Legacy system without API|Nova Act|NovaAct(starting_page=url).act(task)|
 |100+ tools, avoid overload|Meta Tool pattern|Single use_skill @tool, internal routing|
 |Role-scoped tool access|Dynamic tool registration|resolve_tools(permissions)|
-|Parallel agents, no memory conflict|AgentCore Memory Branching|memory_config={branch: name}|
+|Parallel agents, no memory conflict|AgentCore Memory Branching|`memory_config={branch: name}`|
 |Enforce output schema|Pydantic structured_output|agent.structured_output(schema=Model)|
 |Detect prompt injection|Canary + hook + Guardrails|AfterModelCallEvent output check|
 |Cost control + model routing|CostAwareRoutingHook|event.override_model = BedrockModel()|
@@ -378,7 +378,7 @@ Vol 3 — March 2026
 |HITL Samples|github.com/hoodini/hitl-strands-labs||
 |langgraph-checkpoint-aws|pypi.org/project/langgraph-checkpoint-a|ws/|
 |AgentCore Memory + LangGraph|docs.aws.amazon.com/bedrock-agentc|ore/latest/devguide/memory-integrate-lang.html|
-|Code Interpreter Intro|aws.amazon.com/blogs/machine-learni<br>terpreter/|ng/introducing-the-amazon-bedrock-agentcore-code-in|
+|Code Interpreter Intro|aws.amazon.com/blogs/machine-learni<br/>terpreter/|ng/introducing-the-amazon-bedrock-agentcore-code-in|
 |AgentCore Samples (all patterns)|github.com/awslabs/amazon-bedrock-a|gentcore-samples|
 |Full Chatbot Blueprint|github.com/aws-samples/sample-strand|s-agent-with-agentcore|
 

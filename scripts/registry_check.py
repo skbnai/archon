@@ -19,6 +19,19 @@ for files that DO exist, unregistered pages on disk) still runs unscoped.
 Without --domains, live mode requires every registered topic's canonical
 file to exist — only true once all stage-04 waves are merged.
 
+Multi-batch domains: some domains (e.g. platforms, wave 6) are too large for
+one PR and land in several batches. Rows from migration/mapping.csv whose
+batch hasn't been picked up yet keep their registry entry (id/canonical
+fixed upfront so downstream planning/links are stable) but are marked
+`pending: true`. A `pending: true` entry is exempt from the "canonical file
+missing" check unconditionally — even when its own domain IS in --domains
+scope — because it documents a future batch, not the batch this PR is
+landing. It still participates in every other check (duplicate id/canonical,
+frontmatter consistency once the file exists, etc). The librarian removes
+`pending: true` from an entry in the same PR that actually creates its
+canonical file(s); migration/mapping.csv (wave/disposition/rationale columns)
+remains the source of truth for what's still unbatched within the domain.
+
 --pending-domains: prints lychee-ready `--exclude` args (space-separated,
 one per domain) for every domain that has at least one registered topic
 whose canonical file doesn't exist yet. A page finished in an earlier wave
@@ -73,7 +86,8 @@ def check_live(topics, domains=None):
         for path_str in all_paths:
             p = pathlib.Path(path_str)
             if not p.exists():
-                if domains is None or t.get("domain") in domains:
+                in_scope = domains is None or t.get("domain") in domains
+                if in_scope and not t.get("pending"):
                     errs.append(f"[{tid}] canonical file missing: {path_str}")
             else:
                 f = fm(p)

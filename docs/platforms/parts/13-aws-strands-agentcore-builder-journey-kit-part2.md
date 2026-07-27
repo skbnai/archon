@@ -200,11 +200,11 @@ AgentCore Identity provides a two-sided authentication model: **Inbound** (who c
 
 |**Auth Method**|**Description**|**Used For**|
 |---|---|---|
-|Inbound — IAM SigV4|AWS accounts, roles calling Runtime/Gateway. Best for<br>internal M2M.|Runtime, Gateway|
-|Inbound — OAuth 2.1|External users, partner agents, third-party systems. Cognito<br>or any IdP.|Gateway (MCP spec requires OAuth)|
+|Inbound — IAM SigV4|AWS accounts, roles calling Runtime/Gateway. Best for<br/>internal M2M.|Runtime, Gateway|
+|Inbound — OAuth 2.1|External users, partner agents, third-party systems. Cognito<br/>or any IdP.|Gateway (MCP spec requires OAuth)|
 |Outbound — API Key|Agent calling external REST APIs with static key.|Gateway->OpenAPI target|
-|Outbound — OAuth M2M|Agent acquires token via client_credentials grant to call<br>protected APIs.|Gateway->OAuth-protected APIs|
-|Outbound — IAM Role|Agent assumes IAM role to call AWS services (Lambda, S3,<br>DynamoDB).|Gateway->Lambda target|
+|Outbound — OAuth M2M|Agent acquires token via client_credentials grant to call<br/>protected APIs.|Gateway->OAuth-protected APIs|
+|Outbound — IAM Role|Agent assumes IAM role to call AWS services (Lambda, S3,<br/>DynamoDB).|Gateway->Lambda target|
 
 ### **6.2 Inbound: Cognito OAuth + JWT Validation**
 

@@ -19,22 +19,22 @@ Scaling Patterns · Isolation Architecture · Data Sovereignty · Cross-Cloud Go
 
 <mark>Enterprise AI Architecture Practice · April 2026 · Addendum 02</mark> Version 1.0 · CONFIDENTIAL
 
-|**CHA**|**PTER —**<br>**Table of Contents**|
+|**CHA**|**PTER —**<br/>**Table of Contents**|
 |---|---|
 |**A**|**The Multi-Tenancy Problem Space**|
-||· Tenancy Models & Trade-offs<br>· Isolation Failure Modes|
+||· Tenancy Models & Trade-offs<br/>· Isolation Failure Modes|
 |**B**|**Multi-Tenant Gateway Architecture**|
-||· Control Plane vs Data Plane Isolation<br>· Namespace, Shard & Cell Patterns<br>· Tenant Lifecycle Management|
+||· Control Plane vs Data Plane Isolation<br/>· Namespace, Shard & Cell Patterns<br/>· Tenant Lifecycle Management|
 |**C**|**Multi-Cloud Gateway Design**|
-||· Cloud-agnostic Routing Fabric<br>· Cross-Cloud Failover & Latency Routing<br>· Provider Abstraction Layer|
+||· Cloud-agnostic Routing Fabric<br/>· Cross-Cloud Failover & Latency Routing<br/>· Provider Abstraction Layer|
 |**D**|**Data Ownership & Sovereignty**|
-||· Data Residency Enforcement<br>· Tenant Data Isolation Guarantees<br>· Prompt & Completion Data Lifecycle<br>· Right-to-Erasure (GDPR Art. 17)|
+||· Data Residency Enforcement<br/>· Tenant Data Isolation Guarantees<br/>· Prompt & Completion Data Lifecycle<br/>· Right-to-Erasure (GDPR Art. 17)|
 |**E**|**Scaling Architecture**|
-||· Horizontal & Vertical Scaling Patterns<br>· Token-throughput Autoscaling<br>· Global Anycast & Edge PoPs|
+||· Horizontal & Vertical Scaling Patterns<br/>· Token-throughput Autoscaling<br/>· Global Anycast & Edge PoPs|
 |**F**|**Cost Attribution & FinOps at Scale**|
-||· Chargeback Models<br>· Budget Guardrails per Tenant|
+||· Chargeback Models<br/>· Budget Guardrails per Tenant|
 |**G**|**Governance at Scale**|
-||· Policy Federation<br>· Audit at Multi-tenant Scale<br>· Compliance Matrix by Cloud & Region|
+||· Policy Federation<br/>· Audit at Multi-tenant Scale<br/>· Compliance Matrix by Cloud & Region|
 |**H**|**Reference Patterns & Snippets**|
 
 **CHAPTER A**
@@ -47,10 +47,10 @@ As enterprises scale AI capabilities across business units, geographies, product
 
 Three primary tenancy models exist, positioned on a spectrum from maximum isolation (maximum cost) to maximum density (minimum cost). The choice is driven by regulatory classification of tenant data, SLA tier, and scale economics:
 
-|**SILO**|Dedicated gateway +<br>infra per tenant|IMaximum isolationI<br>Zero noisy-neighbourI<br>Simple audit scope|IIHighest costII<br>Slow provisioningII<br>Operational complexity|*Regulated: HIPAA,*<br>*FedRAMP High-value*<br>*enterprise accounts*|
+|**SILO**|Dedicated gateway +<br/>infra per tenant|IMaximum isolationI<br/>Zero noisy-neighbourI<br/>Simple audit scope|IIHighest costII<br/>Slow provisioningII<br/>Operational complexity|*Regulated: HIPAA,*<br/>*FedRAMP High-value*<br/>*enterprise accounts*|
 |---|---|---|---|---|
-|**BRIDG**<br>**E**|Shared gateway,<br>isolated namespaces &<br>dedicated DB schemas<br>per tenant|IStrong isolationI<br>Moderate costIFast<br>provisioning|IINamespace escape<br>riskIIShared control<br>plane|*Mid-market SaaS Internal*<br>*BU isolation*|
-|**POOL**|Fully shared gateway,<br>tenant ID as runtime<br>context only|ILowest costIHighest<br>densityISimplest ops|IIWeakest isolation<br>IINoisy neighbour<br>riskIIWidest blast<br>radius|*Free/trial tiers Low-risk*<br>*internal tools*|
+|**BRIDG**<br/>**E**|Shared gateway,<br/>isolated namespaces &<br/>dedicated DB schemas<br/>per tenant|IStrong isolationI<br/>Moderate costIFast<br/>provisioning|IINamespace escape<br/>riskIIShared control<br/>plane|*Mid-market SaaS Internal*<br/>*BU isolation*|
+|**POOL**|Fully shared gateway,<br/>tenant ID as runtime<br/>context only|ILowest costIHighest<br/>densityISimplest ops|IIWeakest isolation<br/>IINoisy neighbour<br/>riskIIWidest blast<br/>radius|*Free/trial tiers Low-risk*<br/>*internal tools*|
 
 ### A.2 Isolation Failure Modes
 
@@ -60,7 +60,7 @@ Understanding failure modes is prerequisite to designing mitigations. The follow
 
 **Problem:** A tenant's token counter stored in a shared Redis key namespace collides with another tenant's key due to inadequate key prefixing. Tenant A exhausts Tenant B's daily budget or reads Tenant B's usage telemetry.
 
-**Mitigation:** Mitigation: Tenant-scoped Redis keyspaces with ACL isolation per tenant. Key schema: **gw:{tenant_id}:quota:{model}:{window}** . Redis AUTH per tenant key range.
+**Mitigation:** Mitigation: Tenant-scoped Redis keyspaces with ACL isolation per tenant. Key schema: **gw:\{tenant_id\}:quota:\{model\}:\{window\}** . Redis AUTH per tenant key range.
 
 #### Prompt/Completion Data Leakage via Cache
 
@@ -139,10 +139,10 @@ I **`Cell Architecture — snippet`** <mark>`# Cell assignment via consistent ha
 
 Tenant onboarding and offboarding must be fully automated via a Tenant Management API. Manual provisioning at scale introduces drift, security gaps, and compliance violations:
 
-|**Onboar**<br>**d**|Tenant record created · Workspace/Namespace provisioned · Virtual keys issued · Quota bucket initialised ·<br>OPA policy bundle deployed · Audit log stream created · Tenant admin notified|
+|**Onboar**<br/>**d**|Tenant record created · Workspace/Namespace provisioned · Virtual keys issued · Quota bucket initialised ·<br/>OPA policy bundle deployed · Audit log stream created · Tenant admin notified|
 |---|---|
-|**Suspen**<br>**d**|All virtual keys revoked · Rate limit set to 0 · Active connections drained gracefully · Data plane routes<br>disabled · Control plane config frozen · Audit log sealed|
-|**Offboar**<br>**d**|All keys deleted · Routes removed · Cache entries purged · Audit logs archived to cold storage with retention<br>policy · Data deletion workflow triggered (GDPR Art. 17) · Compliance certificate of deletion issued|
+|**Suspen**<br/>**d**|All virtual keys revoked · Rate limit set to 0 · Active connections drained gracefully · Data plane routes<br/>disabled · Control plane config frozen · Audit log sealed|
+|**Offboar**<br/>**d**|All keys deleted · Routes removed · Cache entries purged · Audit logs archived to cold storage with retention<br/>policy · Data deletion workflow triggered (GDPR Art. 17) · Compliance certificate of deletion issued|
 
 ##### CHAPTER C
 
@@ -164,18 +164,18 @@ The Provider Abstraction Layer (PAL) normalises heterogeneous provider APIs into
 
 |**Provider**|**Native API Schema**|**Auth Mechanism**|**Streaming Format**|**PAL Translation**|
 |---|---|---|---|---|
-|OpenAI|/v1/chat/completions|Bearer API Key|SSE<br>text/event-stream|Passthrough (reference)|
-|Anthropic<br>Claude|/v1/messages|x-api-key header|SSE<br>application/json|messages→content mapping|
-|AWS Bedrock|/model/{id}/invoke-strea<br>m|SigV4 signed<br>request|chunked binary|InvokeModel→OpenAI schema|
-|Azure OpenAI|/openai/deployments/{d}/<br>chat|api-key + AAD OBO|SSE (same as<br>OAI)|deployment ID mapping|
-|Google Vertex|/v1/projects/{p}/generate<br>Content|OAuth2 Bearer|SSE JSON|contents→messages mapping|
-|Ollama<br>(on-prem)|/api/chat|No auth (internal)|NDJSON stream|stream format convert|
+|OpenAI|/v1/chat/completions|Bearer API Key|SSE<br/>text/event-stream|Passthrough (reference)|
+|Anthropic<br/>Claude|/v1/messages|x-api-key header|SSE<br/>application/json|messages→content mapping|
+|AWS Bedrock|/model/\{id\}/invoke-strea<br/>m|SigV4 signed<br/>request|chunked binary|InvokeModel→OpenAI schema|
+|Azure OpenAI|/openai/deployments/\{d\}/<br/>chat|api-key + AAD OBO|SSE (same as<br/>OAI)|deployment ID mapping|
+|Google Vertex|/v1/projects/\{p\}/generate<br/>Content|OAuth2 Bearer|SSE JSON|contents→messages mapping|
+|Ollama<br/>(on-prem)|/api/chat|No auth (internal)|NDJSON stream|stream format convert|
 |I**`PAL — Bed`**|**`rock to OpenAI schema t`**|**`ranslation (snippet`**|**`)`**||
 |`-- Kong plu`|`gin: bedrock-normalize`|`r`|||
 |`local funct`|`ion transform_request(`|`body)`|||
 |`return {`|||||
 |`modelId = B`|`EDROCK_MODEL_MAP[body.`|`model],`|||
-|`messages =`<br>`inferenceCo`<br>`maxTokens =`<br>`temperature`<br>`}`<br>`}`<br>`end`<br>`local funct`<br>`return { --`<br>`choices = {`<br>`role = 'ass`<br>`content = b`<br>`}}}`<br>`}`<br>`end`|`map_openai_to_bedrock_`<br>`nfig = {`<br>`body.max_tokens,`<br>`= body.temperature,`<br>`ion transform_response`<br>`OpenAI shape`<br>`{ message = {`<br>`istant',`<br>`edrock_resp.output.mes`|`messages(body.mess`<br>`(bedrock_resp)`<br>`sage.content[1].te`|`ages),`<br>`xt`||
+|`messages =`<br/>`inferenceCo`<br/>`maxTokens =`<br/>`temperature`<br/>`}`<br/>`}`<br/>`end`<br/>`local funct`<br/>`return { --`<br/>`choices = {`<br/>`role = 'ass`<br/>`content = b`<br/>`}}}`<br/>`}`<br/>`end`|`map_openai_to_bedrock_`<br/>`nfig = {`<br/>`body.max_tokens,`<br/>`= body.temperature,`<br/>`ion transform_response`<br/>`OpenAI shape`<br/>`{ message = {`<br/>`istant',`<br/>`edrock_resp.output.mes`|`messages(body.mess`<br/>`(bedrock_resp)`<br/>`sage.content[1].te`|`ages),`<br/>`xt`||
 
 ##### CHAPTER D
 
@@ -219,12 +219,12 @@ The following table defines the isolation guarantee level for each data type acr
 
 The gateway defines explicit data lifecycle policies for prompt and completion content, distinguishing between operational logging (for debugging and cost tracking) and compliance audit logging (for regulatory evidence). By default, **prompt and completion content is never stored** — only metadata is logged. Content logging is an explicit opt-in per tenant with additional encryption and access controls:
 
-|**Transit**|In-flight only. TLS 1.3 with perfect-forward-secrecy. No buffering except for streaming reassembly (max<br>30s window). Memory is zeroed after response dispatch.|
+|**Transit**|In-flight only. TLS 1.3 with perfect-forward-secrecy. No buffering except for streaming reassembly (max<br/>30s window). Memory is zeroed after response dispatch.|
 |---|---|
-|**Operational**<br>**Log**|Metadata only by default: timestamp, tenant_id, model, token_counts, latency, cache_hit, cost_usd.<br>Content stored only if tenant opts in + DPO approval + field-level encryption with tenant-held key.|
-|**Compliance**<br>**Audit**|Immutable record: consumer_id, request_hash (SHA-256 of prompt), response_hash, model_version,<br>provider, timestamp. Hashes enable audit without storing raw content. Retained per regulatory<br>requirement (7yr HIPAA, 5yr SOC2).|
-|**Cache TTL**|Vector cache entries carry configurable TTL (default 1 hour). Tenant can set TTL=0 to disable caching for<br>sensitive workloads. Cache entries are encrypted with tenant-specific AES-256 key stored in Vault.|
-|**Erasure**|Right-to-erasure pipeline: cache purge→operational log field masking→audit hash retention (hash<br>retained, no raw content to erase)→certificate of deletion. SLA: 72 hours for GDPR, 30 days for CCPA.|
+|**Operational**<br/>**Log**|Metadata only by default: timestamp, tenant_id, model, token_counts, latency, cache_hit, cost_usd.<br/>Content stored only if tenant opts in + DPO approval + field-level encryption with tenant-held key.|
+|**Compliance**<br/>**Audit**|Immutable record: consumer_id, request_hash (SHA-256 of prompt), response_hash, model_version,<br/>provider, timestamp. Hashes enable audit without storing raw content. Retained per regulatory<br/>requirement (7yr HIPAA, 5yr SOC2).|
+|**Cache TTL**|Vector cache entries carry configurable TTL (default 1 hour). Tenant can set TTL=0 to disable caching for<br/>sensitive workloads. Cache entries are encrypted with tenant-specific AES-256 key stored in Vault.|
+|**Erasure**|Right-to-erasure pipeline: cache purge→operational log field masking→audit hash retention (hash<br/>retained, no raw content to erase)→certificate of deletion. SLA: 72 hours for GDPR, 30 days for CCPA.|
 
 ### D.4 Right-to-Erasure (GDPR Article 17)
 
@@ -327,12 +327,12 @@ For globally distributed SaaS tenants, the gateway is deployed at edge Points of
 |`const jwt = await verifyJWT(request.headers.get('Authorization'), env.JWKS_URL)`|
 |`if (!jwt.valid) return new Response('Unauthorized', { status: 401 })`|
 |`// 2. Edge rate-limit pre-check (KV store, eventual consistency)`|
-|`const key =`rl:${jwt.tenant_id}:${getMinuteBucket()}``|
+|``const key = `rl:${jwt.tenant_id}:${getMinuteBucket()}` ``|
 |`const count = await env.KV.get(key) ?? 0`|
 |`if (count > EDGE_LIMIT) return new Response('Too Many Requests', { status: 429 })`|
 |`await env.KV.put(key, count+1, { expirationTtl: 120 })`|
 |`// 3. Route to tenant's regional gateway`|
 |`const region = RESIDENCY_REGION[jwt.data_residency]`|
-|`return fetch(`https://${region}-gateway.corp/${request.url}`, request)`<br>`}`<br>`}`|
+|``return fetch(`https://${region}-gateway.corp/${request.url}`, request)``<br/>`}`<br/>`}`|
 
 *Part 1 of 2. Continued in [Part 2](parts/06-ai-gateway-multitenant-multicloud-part2.md).*
