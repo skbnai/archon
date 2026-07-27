@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 37,
+    "totalPages": 47,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1652,6 +1652,26 @@
       {
         "id": "platforms/20-hyperscaler-deep-dive-aws",
         "title": "Hyperscaler Deep Dive: AWS (2026)"
+      },
+      {
+        "id": "platforms/21-azure-agent-architecture",
+        "title": "Azure AI Agent Architecture — Production Grade"
+      },
+      {
+        "id": "platforms/22-hyperscaler-deep-dive-azure",
+        "title": "Hyperscaler Deep Dive: Microsoft Azure (2026)"
+      },
+      {
+        "id": "platforms/24-hyperscaler-deep-dive-gcp",
+        "title": "Hyperscaler Deep Dive: Google Cloud (2026)"
+      },
+      {
+        "id": "platforms/25-ai-assisted-iac-mastery",
+        "title": "AI-Assisted IaC Mastery Guide"
+      },
+      {
+        "id": "platforms/26-terraform-mastery-guide",
+        "title": "Terraform from Zero to Mastery"
       },
       {
         "id": "platforms/index",
@@ -1732,6 +1752,26 @@
       {
         "id": "platforms/parts/17-agentcore-memory-operations-deepdive-part2",
         "title": "AgentCore Memory Operations Deep Dive (Part 2: Issues by Phase, Unit Testing, Evaluation & Cleanup)"
+      },
+      {
+        "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
+        "title": "AI-Assisted IaC Mastery Guide (Part 2: Guardrails, Governance & Cost Optimization)"
+      },
+      {
+        "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
+        "title": "AI-Assisted IaC Mastery Guide (Part 3: Self-Healing Infrastructure & The Future)"
+      },
+      {
+        "id": "platforms/parts/26-terraform-mastery-guide-part2",
+        "title": "Terraform from Zero to Mastery (Part 2: CLI Mastery, Rollback & Modules)"
+      },
+      {
+        "id": "platforms/parts/26-terraform-mastery-guide-part3",
+        "title": "Terraform from Zero to Mastery (Part 3: Enterprise Architecture, Security & OpenTofu)"
+      },
+      {
+        "id": "platforms/parts/26-terraform-mastery-guide-part4",
+        "title": "Terraform from Zero to Mastery (Part 4: Interview Questions & Operations Guide)"
       }
     ]
   },
