@@ -74,11 +74,11 @@
      "score": 0.52
     },
     {
-     "id": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
+     "id": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
      "score": 0.51
     },
     {
-     "id": "architecture/parts/09-aidlc-artifacts-togaf-artifact-cross-reference",
+     "id": "architecture/parts/02-aidlc-artifacts-discovery-to-model-model-design-architecture",
      "score": 0.51
     }
    ]
@@ -164,11 +164,11 @@
    "top_similar": [
     {
      "id": "architecture/06-ea-architect-deep-dive-five-arenas",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "architecture/08-ea-architect-deep-dive-measurement-growth",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "architecture/parts/37-ea-architect-deep-dive-five-arenas-part2",
@@ -195,7 +195,7 @@
    "top_similar": [
     {
      "id": "architecture/05-ea-architect-deep-dive-foundation",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
@@ -261,7 +261,7 @@
    "top_similar": [
     {
      "id": "architecture/05-ea-architect-deep-dive-foundation",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "architecture/07-ea-architect-deep-dive-toolkit-practice",
@@ -568,7 +568,7 @@
     },
     {
      "id": "architecture/85-enterprise-manager-ai-genai",
-     "score": 0.36
+     "score": 0.35
     }
    ]
   },
@@ -690,7 +690,7 @@
    "top_similar": [
     {
      "id": "architecture/25-agentic-ai-landing-zone-eu-ai-act",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
@@ -698,7 +698,7 @@
     },
     {
      "id": "architecture/22-agentic-ai-landing-zone-architecture",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -737,7 +737,7 @@
     },
     {
      "id": "architecture/23-agentic-ai-landing-zone-business-layer",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "architecture/32-agentic-ai-landing-zone-visual-guide",
@@ -861,11 +861,11 @@
      "score": 0.34
     },
     {
-     "id": "architecture/23-agentic-ai-landing-zone-business-layer",
+     "id": "architecture/22-agentic-ai-landing-zone-architecture",
      "score": 0.33
     },
     {
-     "id": "architecture/22-agentic-ai-landing-zone-architecture",
+     "id": "architecture/23-agentic-ai-landing-zone-business-layer",
      "score": 0.33
     }
    ]
@@ -1116,7 +1116,7 @@
     },
     {
      "id": "agentic-systems/agentic-ui/parts/16-reliability-engineering-part3",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -1315,12 +1315,12 @@
      "score": 0.35
     },
     {
-     "id": "architecture/33-enterprise-agentic-ai-outlook-2026-2030",
-     "score": 0.34
+     "id": "platforms/24-hyperscaler-deep-dive-gcp",
+     "score": 0.35
     },
     {
-     "id": "architecture/47-enterprise-agent-reference-architectures",
-     "score": 0.33
+     "id": "architecture/33-enterprise-agentic-ai-outlook-2026-2030",
+     "score": 0.34
     }
    ]
   },
@@ -1452,12 +1452,12 @@
      "score": 0.36
     },
     {
-     "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
+     "id": "protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2",
      "score": 0.33
     },
     {
-     "id": "protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2",
-     "score": 0.33
+     "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
+     "score": 0.32
     }
    ]
   },
@@ -1520,12 +1520,12 @@
      "score": 0.42
     },
     {
-     "id": "agentic-systems/core/17-a2a-deep-research",
+     "id": "agentic-systems/coding-tools/39-mcp-deep-guide",
      "score": 0.42
     },
     {
-     "id": "agentic-systems/coding-tools/39-mcp-deep-guide",
-     "score": 0.42
+     "id": "agentic-systems/core/17-a2a-deep-research",
+     "score": 0.41
     }
    ]
   },
@@ -1624,7 +1624,12 @@
    "word_count": 3654,
    "last_reviewed": "2026-07-23",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "architecture/66-volume7-ai-native-arb-case-studies",
+     "score": 0.3
+    }
+   ]
   },
   {
    "id": "architecture/65-volume6-banking-industry-deepdive",
@@ -1662,6 +1667,10 @@
     {
      "id": "architecture/62-volume3-knowledge-management-capability-mapping",
      "score": 0.33
+    },
+    {
+     "id": "architecture/64-volume5-review-questions-scorecards",
+     "score": 0.3
     }
    ]
   },
@@ -1700,7 +1709,7 @@
     },
     {
      "id": "strategy/32-ea-strategy-playbook",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "architecture/71-ea-mastery-guide",
@@ -1944,7 +1953,7 @@
     },
     {
      "id": "data-knowledge/12-autonomous-knowledge-engineering-system",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -1970,7 +1979,7 @@
     },
     {
      "id": "architecture/parts/31-dpdp-act-2023-comprehensive-guide-part2",
-     "score": 0.64
+     "score": 0.65
     }
    ]
   },
@@ -2012,11 +2021,11 @@
     },
     {
      "id": "architecture/parts/34-eaka-research-study-part3",
-     "score": 0.47
+     "score": 0.48
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -2062,7 +2071,7 @@
    "top_similar": [
     {
      "id": "strategy/84-vol1-corporate-strategy-execution-templates-kpis",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "architecture/71-ea-mastery-guide",
@@ -2158,7 +2167,7 @@
    "top_similar": [
     {
      "id": "data-knowledge/02-databricks-iceberg-open-formats",
-     "score": 0.44
+     "score": 0.43
     },
     {
      "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
@@ -2201,6 +2210,10 @@
     {
      "id": "platforms/index",
      "score": 0.31
+    },
+    {
+     "id": "operations/index",
+     "score": 0.3
     }
    ]
   },
@@ -2417,11 +2430,11 @@
      "score": 0.56
     },
     {
-     "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
+     "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
      "score": 0.5
     },
     {
-     "id": "architecture/03-aidlc-artifacts-togaf-foundation-to-technology",
+     "id": "architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture",
      "score": 0.5
     }
    ]
@@ -2574,11 +2587,11 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "architecture/20-ai-native-architecture-evolution-report",
+     "id": "data-knowledge/03-data-architecture-for-ai-report",
      "score": 0.43
     },
     {
-     "id": "data-knowledge/03-data-architecture-for-ai-report",
+     "id": "architecture/20-ai-native-architecture-evolution-report",
      "score": 0.43
     },
     {
@@ -2609,7 +2622,7 @@
     },
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",
-     "score": 0.42
+     "score": 0.43
     },
     {
      "id": "architecture/parts/12-ai-native-architecture-evolution-report-data-paradigms",
@@ -2708,7 +2721,7 @@
      "score": 0.31
     },
     {
-     "id": "agentic-systems/coding-tools/23-claude-ecosystem-research-report",
+     "id": "architecture/44-ai-harness-architecture-orchestration",
      "score": 0.31
     }
    ]
@@ -3067,7 +3080,7 @@
     },
     {
      "id": "architecture/79-dpdp-act-2023-comprehensive-guide",
-     "score": 0.64
+     "score": 0.65
     }
    ]
   },
@@ -3147,11 +3160,11 @@
     },
     {
      "id": "architecture/81-eaka-research-study",
-     "score": 0.47
+     "score": 0.48
     },
     {
      "id": "agentic-systems/core/29-foundations-what-is-an-agent-skill",
-     "score": 0.32
+     "score": 0.33
     }
    ]
   },
@@ -3208,7 +3221,7 @@
     },
     {
      "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
-     "score": 0.36
+     "score": 0.37
     }
    ]
   },

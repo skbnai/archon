@@ -17,11 +17,15 @@
    "top_similar": [
     {
      "id": "trust/index",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "platforms/index",
-     "score": 0.33
+     "score": 0.34
+    },
+    {
+     "id": "agentic-systems/index",
+     "score": 0.31
     }
    ]
   }
