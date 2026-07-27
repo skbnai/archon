@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 62,
+ "page_count": 65,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -649,6 +649,23 @@
     "systems-programming"
    ],
    "word_count": 2352,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/36-k8s-handbook-part3-containers",
+   "title": "K8s Handbook Part 3: Containers",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part3-containers",
+   "tags": [
+    "kubernetes",
+    "docker",
+    "oci",
+    "container-runtimes",
+    "containerd"
+   ],
+   "word_count": 2080,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []
@@ -1667,6 +1684,41 @@
     "troubleshooting"
    ],
    "word_count": 1776,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/36-k8s-handbook-part3-containers-part2",
+   "title": "K8s Handbook Part 3 (Part 2: Image Building, Registry, Optimisation & Supply Chain)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part3-containers-part2",
+   "tags": [
+    "kubernetes",
+    "distroless",
+    "container-registry",
+    "supply-chain-security",
+    "cosign"
+   ],
+   "word_count": 2213,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/36-k8s-handbook-part3-containers-part3",
+   "title": "K8s Handbook Part 3 (Part 3: SBOM, SLSA, Vulnerability Scanning & Runtime Security)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part3-containers-part3",
+   "tags": [
+    "kubernetes",
+    "sbom",
+    "slsa",
+    "vulnerability-scanning",
+    "falco",
+    "tetragon"
+   ],
+   "word_count": 2279,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []

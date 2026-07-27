@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 62,
+    "totalPages": 65,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1680,6 +1680,10 @@
       {
         "id": "platforms/35-k8s-handbook-part2-linux-foundations",
         "title": "K8s Handbook Part 2: Linux Foundations"
+      },
+      {
+        "id": "platforms/36-k8s-handbook-part3-containers",
+        "title": "K8s Handbook Part 3: Containers"
       },
       {
         "id": "platforms/43-part-01-platform-vision-agentic-services",
@@ -1828,6 +1832,14 @@
       {
         "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part3",
         "title": "K8s Handbook Part 2 (Part 3: Runtime Internals, Kubernetes-Linux Mapping & Troubleshooting)"
+      },
+      {
+        "id": "platforms/parts/36-k8s-handbook-part3-containers-part2",
+        "title": "K8s Handbook Part 3 (Part 2: Image Building, Registry, Optimisation & Supply Chain)"
+      },
+      {
+        "id": "platforms/parts/36-k8s-handbook-part3-containers-part3",
+        "title": "K8s Handbook Part 3 (Part 3: SBOM, SLSA, Vulnerability Scanning & Runtime Security)"
       },
       {
         "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",

@@ -2836,9 +2836,21 @@ topics:
   - id: k8s-handbook-part3-containers
     domain: platforms
     canonical: docs/platforms/36-k8s-handbook-part3-containers.md
-    pending: true
     aliases:
     - 'k8s handbook part 3: containers'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part3_Containers.md
+    pages: []
+  - id: k8s-handbook-part3-containers-part2
+    domain: platforms
+    canonical: docs/platforms/parts/36-k8s-handbook-part3-containers-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part3-containers-part3
+    domain: platforms
+    canonical: docs/platforms/parts/36-k8s-handbook-part3-containers-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part4-kubernetes-internals
