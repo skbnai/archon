@@ -2583,10 +2583,10 @@ topics:
   - id: aws-strands-agentcore-delta-supplement
     domain: platforms
     canonical: docs/platforms/14-aws-strands-agentcore-delta-supplement.md
-    pending: true
     aliases:
     - aws strands & bedrock agentcore — delta supplement v2.0
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/aws/AWS_Strands_AgentCore_Delta_Supplement_v2.md
     pages: []
   - id: agentcore-memory-architecture-guide
     domain: platforms
@@ -2598,17 +2598,29 @@ topics:
   - id: agentcore-memory-gaps-extensions-2026
     domain: platforms
     canonical: docs/platforms/16-agentcore-memory-gaps-extensions-2026.md
-    pending: true
     aliases:
     - agentcore memory — gaps, extensions & 2026 research
+    supersedes:
+    - docs/cloud-platforms/aws/AgentCore_Memory_Gaps_Extensions_2026.md
+    pages: []
+  - id: agentcore-memory-gaps-extensions-2026-part2
+    domain: platforms
+    canonical: docs/platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: agentcore-memory-operations-deepdive
     domain: platforms
     canonical: docs/platforms/17-agentcore-memory-operations-deepdive.md
-    pending: true
     aliases:
     - agentcore memory operations deep dive
+    supersedes:
+    - docs/cloud-platforms/aws/AgentCore_Memory_Operations_DeepDive.md
+    pages: []
+  - id: agentcore-memory-operations-deepdive-part2
+    domain: platforms
+    canonical: docs/platforms/parts/17-agentcore-memory-operations-deepdive-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: agentcore-strands-deep-research-report
@@ -2629,10 +2641,10 @@ topics:
   - id: hyperscaler-deep-dive-aws
     domain: platforms
     canonical: docs/platforms/20-hyperscaler-deep-dive-aws.md
-    pending: true
     aliases:
     - 'hyperscaler deep dive: aws'
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/aws/hyperscaler-deep-dive-aws.md
     pages: []
   - id: azure-agent-architecture
     domain: platforms
@@ -5864,6 +5876,12 @@ topics:
   - id: aws-strands-agentcore-builder-journey-kit-part3
     domain: platforms
     canonical: docs/platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aws-strands-agentcore-delta-supplement-part2
+    domain: platforms
+    canonical: docs/platforms/parts/14-aws-strands-agentcore-delta-supplement-part2.md
     aliases: []
     supersedes: []
     pages: []
