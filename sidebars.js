@@ -880,6 +880,8 @@ const sidebars = {
             "platforms/parts/k8s-handbook-part8-security-part2",
             "platforms/k8s-handbook-part9-platform-engineering",
             "platforms/parts/k8s-handbook-part9-platform-engineering-part2",
+            "platforms/k8s-handbook-part10-observability",
+            "platforms/parts/k8s-handbook-part10-observability-part2",
           ],
         },
       ],

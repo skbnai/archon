@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 79,
+    "totalPages": 81,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1672,6 +1672,10 @@
       {
         "id": "platforms/26-terraform-mastery-guide",
         "title": "Terraform from Zero to Mastery"
+      },
+      {
+        "id": "platforms/27-k8s-handbook-part10-observability",
+        "title": "K8s Handbook Part 10: Observability"
       },
       {
         "id": "platforms/34-k8s-handbook-part1-infrastructure-evolution",
@@ -1836,6 +1840,10 @@
       {
         "id": "platforms/parts/26-terraform-mastery-guide-part4",
         "title": "Terraform from Zero to Mastery (Part 4: Interview Questions & Operations Guide)"
+      },
+      {
+        "id": "platforms/parts/27-k8s-handbook-part10-observability-part2",
+        "title": "K8s Handbook Part 10: Observability (Part 2)"
       },
       {
         "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",

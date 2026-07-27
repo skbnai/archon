@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 79,
+ "page_count": 81,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -618,6 +618,23 @@
      "score": 0.49
     }
    ]
+  },
+  {
+   "id": "platforms/27-k8s-handbook-part10-observability",
+   "title": "K8s Handbook Part 10: Observability",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part10-observability",
+   "tags": [
+    "kubernetes",
+    "observability",
+    "prometheus",
+    "opentelemetry",
+    "grafana"
+   ],
+   "word_count": 2536,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/34-k8s-handbook-part1-infrastructure-evolution",
@@ -1704,6 +1721,23 @@
      "score": 0.54
     }
    ]
+  },
+  {
+   "id": "platforms/parts/27-k8s-handbook-part10-observability-part2",
+   "title": "K8s Handbook Part 10: Observability (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part10-observability-part2",
+   "tags": [
+    "kubernetes",
+    "observability",
+    "slo",
+    "cost-observability",
+    "ai-observability"
+   ],
+   "word_count": 2218,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
