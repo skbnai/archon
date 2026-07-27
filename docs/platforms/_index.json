@@ -206,7 +206,7 @@
     "checkpointer",
     "multi-agent"
    ],
-   "word_count": 1978,
+   "word_count": 1987,
    "last_reviewed": "2026-07-27",
    "status": "draft",
    "top_similar": [
@@ -234,7 +234,7 @@
     "compliance",
     "production"
    ],
-   "word_count": 2134,
+   "word_count": 2154,
    "last_reviewed": "2026-07-27",
    "status": "draft",
    "top_similar": [
@@ -626,9 +626,9 @@
     "checkpointer",
     "multi-agent"
    ],
-   "word_count": 2224,
+   "word_count": 2101,
    "last_reviewed": "2026-07-27",
-   "status": "draft",
+   "status": "current",
    "top_similar": [
     {
      "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
@@ -686,7 +686,7 @@
     "compliance",
     "production"
    ],
-   "word_count": 2181,
+   "word_count": 2146,
    "last_reviewed": "2026-07-27",
    "status": "draft",
    "top_similar": [
@@ -718,7 +718,7 @@
     "compliance",
     "production"
    ],
-   "word_count": 2379,
+   "word_count": 2308,
    "last_reviewed": "2026-07-27",
    "status": "draft",
    "top_similar": [

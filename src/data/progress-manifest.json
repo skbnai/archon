@@ -1583,11 +1583,107 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 1,
+    "totalPages": 25,
     "pages": [
+      {
+        "id": "platforms/05-ai-gateway-full-comparison",
+        "title": "AI Gateway Comparison — 10 Tools"
+      },
+      {
+        "id": "platforms/06-ai-gateway-multitenant-multicloud",
+        "title": "AI Gateway: Multi-Tenant, Multi-Cloud, Data Ownership"
+      },
+      {
+        "id": "platforms/07-enterprise-ai-gateway",
+        "title": "Enterprise AI Gateway"
+      },
+      {
+        "id": "platforms/08-kong-ai-gateway-guide",
+        "title": "Kong AI Gateway — Complete End-to-End Guide"
+      },
+      {
+        "id": "platforms/09-kong-entra-id-integration",
+        "title": "Kong AI Gateway — Microsoft Entra ID Integration"
+      },
+      {
+        "id": "platforms/10-ai-infrastructure-silicon-landscape-2026",
+        "title": "AI Infrastructure & Silicon Landscape 2026"
+      },
+      {
+        "id": "platforms/11-aws-native-standards-first-agentic-architecture",
+        "title": "AWS-Native, Standards-First Agentic Platform Architecture"
+      },
+      {
+        "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
+        "title": "AWS Strands & Bedrock AgentCore — Advanced Patterns v3.0"
+      },
+      {
+        "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
+        "title": "AWS Strands & Bedrock AgentCore Production Builder Journey Kit"
+      },
       {
         "id": "platforms/index",
         "title": "Platforms Hub"
+      },
+      {
+        "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+        "title": "AI Gateway Comparison — 10 Tools (Part 2: AWS Bedrock, Azure APIM, Portkey)"
+      },
+      {
+        "id": "platforms/parts/05-ai-gateway-full-comparison-part3",
+        "title": "AI Gateway Comparison — 10 Tools (Part 3: Cloudflare, Apigee, WSO2)"
+      },
+      {
+        "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
+        "title": "AI Gateway Comparison — 10 Tools (Part 4: Traefik, IBM watsonx, Decision Guide)"
+      },
+      {
+        "id": "platforms/parts/06-ai-gateway-multitenant-multicloud-part2",
+        "title": "AI Gateway: Multi-Tenant, Multi-Cloud, Data Ownership (Part 2: Cost Attribution, Governance, Reference Patterns)"
+      },
+      {
+        "id": "platforms/parts/07-enterprise-ai-gateway-part2",
+        "title": "Enterprise AI Gateway (Part 2: Governance, Ops, Ecosystem, Future)"
+      },
+      {
+        "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
+        "title": "Kong AI Gateway — Complete End-to-End Guide (Part 2: Authentication & Authorization I)"
+      },
+      {
+        "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+        "title": "Kong AI Gateway — Complete End-to-End Guide (Part 3: Auth II, Multi-Model Routing, Production Ops)"
+      },
+      {
+        "id": "platforms/parts/09-kong-entra-id-integration-part2",
+        "title": "Kong AI Gateway — Microsoft Entra ID Integration (Part 2: Auto-Provisioning, MFA, Multi-Tenant, Troubleshooting)"
+      },
+      {
+        "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+        "title": "AWS-Native, Standards-First Agentic Platform Architecture (Part 2: Layers 2-6)"
+      },
+      {
+        "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part3",
+        "title": "AWS-Native, Standards-First Agentic Platform Architecture (Part 3: Layers 7-9, Memory/Session/Multi-Agent Design, Security start)"
+      },
+      {
+        "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
+        "title": "AWS-Native, Standards-First Agentic Platform Architecture (Part 4: Governance Mapping, Anti-Patterns, Appendices)"
+      },
+      {
+        "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
+        "title": "AWS Strands & Bedrock AgentCore — Advanced Patterns v3.0 (Part 2: Checkpointer, Code Interpreter, Browser Tool, Meta Tool)"
+      },
+      {
+        "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
+        "title": "AWS Strands & Bedrock AgentCore — Advanced Patterns v3.0 (Part 3: Meta Tool close, Expert Patterns)"
+      },
+      {
+        "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
+        "title": "AWS Strands & Bedrock AgentCore Production Builder Journey Kit (Part 2: Memory, Gateway/MCP, Identity/Auth, Multi-Agent Patterns)"
+      },
+      {
+        "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+        "title": "AWS Strands & Bedrock AgentCore Production Builder Journey Kit (Part 3: Observability, RAI/Compliance, LaaS, Production Blueprint)"
       }
     ]
   },
