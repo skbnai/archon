@@ -784,6 +784,19 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "Infrastructure as Code",
+          items: [
+            "platforms/ai-assisted-iac-mastery",
+            "platforms/parts/ai-assisted-iac-mastery-part2",
+            "platforms/parts/ai-assisted-iac-mastery-part3",
+            "platforms/terraform-mastery-guide",
+            "platforms/parts/terraform-mastery-guide-part2",
+            "platforms/parts/terraform-mastery-guide-part3",
+            "platforms/parts/terraform-mastery-guide-part4",
+          ],
+        },
+        {
+          type: "category",
           label: "AWS Agentic Platform",
           items: [
             "platforms/aws-native-standards-first-agentic-architecture",

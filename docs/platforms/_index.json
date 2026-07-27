@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 40,
+ "page_count": 47,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -555,6 +555,39 @@
      "score": 0.35
     }
    ]
+  },
+  {
+   "id": "platforms/25-ai-assisted-iac-mastery",
+   "title": "AI-Assisted IaC Mastery Guide",
+   "doc_type": "guide",
+   "topic_id": "ai-assisted-iac-mastery",
+   "tags": [
+    "terraform",
+    "iac",
+    "ai",
+    "llm",
+    "infrastructure-as-code",
+    "agentic-ai"
+   ],
+   "word_count": 2432,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/26-terraform-mastery-guide",
+   "title": "Terraform from Zero to Mastery",
+   "doc_type": "guide",
+   "topic_id": "terraform-mastery-guide",
+   "tags": [
+    "terraform",
+    "iac",
+    "infrastructure-as-code"
+   ],
+   "word_count": 2473,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/index",
@@ -1130,6 +1163,93 @@
      "score": 0.43
     }
    ]
+  },
+  {
+   "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
+   "title": "AI-Assisted IaC Mastery Guide (Part 2: Guardrails, Governance & Cost Optimization)",
+   "doc_type": "guide",
+   "topic_id": "ai-assisted-iac-mastery-part2",
+   "tags": [
+    "terraform",
+    "iac",
+    "ai",
+    "guardrails",
+    "governance",
+    "finops"
+   ],
+   "word_count": 1968,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
+   "title": "AI-Assisted IaC Mastery Guide (Part 3: Self-Healing Infrastructure & The Future)",
+   "doc_type": "guide",
+   "topic_id": "ai-assisted-iac-mastery-part3",
+   "tags": [
+    "terraform",
+    "iac",
+    "ai",
+    "self-healing",
+    "multi-agent",
+    "responsible-ai"
+   ],
+   "word_count": 1961,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/26-terraform-mastery-guide-part2",
+   "title": "Terraform from Zero to Mastery (Part 2: CLI Mastery, Rollback & Modules)",
+   "doc_type": "guide",
+   "topic_id": "terraform-mastery-guide-part2",
+   "tags": [
+    "terraform",
+    "iac",
+    "cli",
+    "state-management",
+    "modules"
+   ],
+   "word_count": 2138,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/26-terraform-mastery-guide-part3",
+   "title": "Terraform from Zero to Mastery (Part 3: Enterprise Architecture, Security & OpenTofu)",
+   "doc_type": "guide",
+   "topic_id": "terraform-mastery-guide-part3",
+   "tags": [
+    "terraform",
+    "iac",
+    "enterprise-architecture",
+    "security",
+    "opentofu"
+   ],
+   "word_count": 2381,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/26-terraform-mastery-guide-part4",
+   "title": "Terraform from Zero to Mastery (Part 4: Interview Questions & Operations Guide)",
+   "doc_type": "guide",
+   "topic_id": "terraform-mastery-guide-part4",
+   "tags": [
+    "terraform",
+    "iac",
+    "interview-prep",
+    "production-readiness",
+    "operations"
+   ],
+   "word_count": 2243,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   }
  ]
 }

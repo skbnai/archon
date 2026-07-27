@@ -2688,17 +2688,47 @@ topics:
   - id: ai-assisted-iac-mastery
     domain: platforms
     canonical: docs/platforms/25-ai-assisted-iac-mastery.md
-    pending: true
     aliases:
     - ai-assisted iac mastery guide
+    supersedes:
+    - docs/cloud-platforms/iac/terraform/ai-assisted-iac-mastery.md
+    pages: []
+  - id: ai-assisted-iac-mastery-part2
+    domain: platforms
+    canonical: docs/platforms/parts/25-ai-assisted-iac-mastery-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: ai-assisted-iac-mastery-part3
+    domain: platforms
+    canonical: docs/platforms/parts/25-ai-assisted-iac-mastery-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: terraform-mastery-guide
     domain: platforms
     canonical: docs/platforms/26-terraform-mastery-guide.md
-    pending: true
     aliases:
     - terraform from zero to mastery
+    supersedes:
+    - docs/cloud-platforms/iac/terraform/terraform-mastery-guide.md
+    pages: []
+  - id: terraform-mastery-guide-part2
+    domain: platforms
+    canonical: docs/platforms/parts/26-terraform-mastery-guide-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: terraform-mastery-guide-part3
+    domain: platforms
+    canonical: docs/platforms/parts/26-terraform-mastery-guide-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: terraform-mastery-guide-part4
+    domain: platforms
+    canonical: docs/platforms/parts/26-terraform-mastery-guide-part4.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part10-observability
