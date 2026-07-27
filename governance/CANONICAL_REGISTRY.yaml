@@ -2896,9 +2896,15 @@ topics:
   - id: k8s-handbook-part6-kubernetes-networking
     domain: platforms
     canonical: docs/platforms/39-k8s-handbook-part6-kubernetes-networking.md
-    pending: true
     aliases:
     - 'k8s handbook part 6: kubernetes networking'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part6_Kubernetes_Networking.md
+    pages: []
+  - id: k8s-handbook-part6-kubernetes-networking-part2
+    domain: platforms
+    canonical: docs/platforms/parts/39-k8s-handbook-part6-kubernetes-networking-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part7-storage

@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 71,
+ "page_count": 73,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -700,6 +700,23 @@
     "storage"
    ],
    "word_count": 3270,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
+   "title": "K8s Handbook Part 6: Kubernetes Networking",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part6-kubernetes-networking",
+   "tags": [
+    "kubernetes",
+    "networking",
+    "cni",
+    "coredns",
+    "ingress"
+   ],
+   "word_count": 3127,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []
@@ -1820,6 +1837,23 @@
     "scheduling"
    ],
    "word_count": 1940,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/39-k8s-handbook-part6-kubernetes-networking-part2",
+   "title": "K8s Handbook Part 6: Kubernetes Networking (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part6-kubernetes-networking-part2",
+   "tags": [
+    "kubernetes",
+    "networking",
+    "service-mesh",
+    "gateway-api",
+    "observability"
+   ],
+   "word_count": 2099,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []

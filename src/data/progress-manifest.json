@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 71,
+    "totalPages": 73,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1692,6 +1692,10 @@
       {
         "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
         "title": "K8s Handbook Part 5: Kubernetes Resources"
+      },
+      {
+        "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
+        "title": "K8s Handbook Part 6: Kubernetes Networking"
       },
       {
         "id": "platforms/43-part-01-platform-vision-agentic-services",
@@ -1864,6 +1868,10 @@
       {
         "id": "platforms/parts/38-k8s-handbook-part5-kubernetes-resources-part2",
         "title": "K8s Handbook Part 5: Kubernetes Resources (Part 2)"
+      },
+      {
+        "id": "platforms/parts/39-k8s-handbook-part6-kubernetes-networking-part2",
+        "title": "K8s Handbook Part 6: Kubernetes Networking (Part 2)"
       },
       {
         "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
