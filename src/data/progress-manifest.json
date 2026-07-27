@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 88,
+    "totalPages": 90,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1692,6 +1692,14 @@
       {
         "id": "platforms/31-k8s-handbook-part14-reference-architectures",
         "title": "K8s Handbook Part 14: Reference Architectures"
+      },
+      {
+        "id": "platforms/32-k8s-handbook-part15-implementation-labs",
+        "title": "K8s Handbook Part 15: Implementation Labs"
+      },
+      {
+        "id": "platforms/33-k8s-handbook-part16-future-outlook",
+        "title": "K8s Handbook Part 16: Future Outlook"
       },
       {
         "id": "platforms/34-k8s-handbook-part1-infrastructure-evolution",

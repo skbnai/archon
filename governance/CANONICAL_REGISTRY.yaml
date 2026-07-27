@@ -2812,18 +2812,18 @@ topics:
   - id: k8s-handbook-part15-implementation-labs
     domain: platforms
     canonical: docs/platforms/32-k8s-handbook-part15-implementation-labs.md
-    pending: true
     aliases:
     - 'k8s handbook part 15: implementation labs'
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part15_Implementation_Labs.md
     pages: []
   - id: k8s-handbook-part16-future-outlook
     domain: platforms
     canonical: docs/platforms/33-k8s-handbook-part16-future-outlook.md
-    pending: true
     aliases:
     - 'k8s handbook part 16: future outlook'
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part16_Future_Outlook.md
     pages: []
   - id: k8s-handbook-part1-infrastructure-evolution
     domain: platforms

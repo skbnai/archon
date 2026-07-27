@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 88,
+ "page_count": 90,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -700,6 +700,40 @@
     "agentic-ai"
    ],
    "word_count": 793,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/32-k8s-handbook-part15-implementation-labs",
+   "title": "K8s Handbook Part 15: Implementation Labs",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part15-implementation-labs",
+   "tags": [
+    "kubernetes",
+    "hands-on-labs",
+    "gitops",
+    "vllm",
+    "rag"
+   ],
+   "word_count": 1238,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/33-k8s-handbook-part16-future-outlook",
+   "title": "K8s Handbook Part 16: Future Outlook",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part16-future-outlook",
+   "tags": [
+    "kubernetes",
+    "future-outlook",
+    "green-ai",
+    "gpu-native",
+    "agent-mesh"
+   ],
+   "word_count": 1205,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []
