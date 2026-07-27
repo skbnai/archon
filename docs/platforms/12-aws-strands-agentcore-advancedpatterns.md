@@ -11,7 +11,7 @@ tags: [aws, agentcore, strands, hooks, hitl, checkpointer, multi-agent]
 covers_version: "N/A"
 ---
 
-> **Known issue:** some fenced code examples on this page were flattened during the original PDF-to-markdown conversion (lost line breaks/indentation, stray artifact characters) and need reformatting. Tracked in migration/WAVE6_BATCH1_STATUS.md (repo root).
+> **Known issue:** Part 3 of this series still has fenced code examples that were flattened during the original PDF-to-markdown conversion (lost line breaks/indentation, stray artifact characters) and needs reformatting. Parts 1 (this page) and 2 have been reconstructed. Tracked in migration/WAVE6_BATCH1_STATUS.md (repo root).
 
 ### AWS STRANDS & BEDROCK AGENTCORE
 
@@ -105,7 +105,7 @@ A7.7 Prompt Injection Defence: Multi-Layer Canary Pattern
 
 A7.8 Cost-Aware Model Routing at Tool Dispatch
 
-###### I **CHAPTER A1**
+###### **CHAPTER A1**
 
 ## Strands Hooks: Full Lifecycle System
 
@@ -311,11 +311,11 @@ agent = Agent(
 )
 ```
 
-###### II **WARNING**
+###### **WARNING**
 
 **retry_model vs retry (tool)** : event.retry_model=True on AfterModelCallEvent discards the LLM response and re-calls the model — streaming events already emitted are NOT recalled. event.retry=True on AfterToolCallEvent re-runs the tool. Implement idempotent tools before enabling tool retry.
 
-I **CHAPTER A2**
+**CHAPTER A2**
 
 ## Human-in-the-Loop (HITL)
 
@@ -561,6 +561,6 @@ def resume_agent(interrupt_id: str, decision: str):
             )
 ```
 
-###### I **CHAPTER A3**
+###### **CHAPTER A3**
 
 *Part 1 of 3. Continued in [Part 2](parts/12-aws-strands-agentcore-advancedpatterns-part2.md).*

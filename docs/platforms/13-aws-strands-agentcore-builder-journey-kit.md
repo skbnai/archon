@@ -11,7 +11,7 @@ tags: [aws, agentcore, strands, mcp, observability, compliance, production]
 covers_version: "N/A"
 ---
 
-> **Known issue:** some fenced code examples on this page were flattened during the original PDF-to-markdown conversion (lost line breaks/indentation, stray artifact characters) and need reformatting. Tracked in migration/WAVE6_BATCH1_STATUS.md (repo root).
+> **Known issue:** Part 3 of this series has a production-reference-architecture diagram that was severely corrupted (box-drawing/table structure lost) during the original PDF-to-markdown conversion and needs to be rebuilt as a proper diagram (see the `diagram-standards` skill). Parts 1 (this page) and 2 have had their flattened code blocks reconstructed. Tracked in migration/WAVE6_BATCH1_STATUS.md (repo root).
 
 # AWS STRANDS & BEDROCK AGENTCORE PRODUCTION BUILDER JOURNEY KIT
 From Zero to Production · Multi-Agent · MCP · A2A · Auth · RAI · Observability · Compliance
@@ -177,7 +177,7 @@ Core Concepts · Service Taxonomy · Design Philosophy
 
 ###### **Key design pillars:**
 
-###### I **BEST PRACTICE**
+###### **BEST PRACTICE**
 
 Strands is **model-agnostic** — it works with Claude, Nova, GPT-4, Gemini, Llama, and any Bedrock or LiteLLM-compatible endpoint, not just Bedrock models.
 
@@ -223,7 +223,7 @@ Browser Managed headless browser tool for web-based tasks. Code Interp. Secure s
 
 6. **Response** -> Final message + OTEL spans emitted
 
-###### II **NOTE**
+###### **NOTE**
 
 Strands agents can also be **composed** : an agent can be registered as a tool of another agent (supervisor pattern), or exposed as an A2A executor that another runtime can call via the A2A protocol.
 
@@ -313,7 +313,7 @@ if __name__ == "__main__":
     app.run()  # Local dev server on :8080
 ```
 
-###### I **BEST PRACTICE**
+###### **BEST PRACTICE**
 
 The **context** object injected by AgentCore contains: context.session_id, context.agent_runtime_id, context.user_id (from inbound auth token). Always log these for full trace correlation.
 
@@ -571,7 +571,7 @@ User preferences:\n{chr(10).join(m['content'] for m in relevant)}"""
 agent = Agent(model="...", system_prompt=system_prompt)
 ```
 
-###### II **WARNING**
+###### **WARNING**
 
 Always namespace memories by user_id or tenant_id to prevent cross-user memory leakage. Never store raw PII in memory — apply redaction before calling put_memory().
 

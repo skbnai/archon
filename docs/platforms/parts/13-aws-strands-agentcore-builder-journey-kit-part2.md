@@ -11,8 +11,6 @@ tags: [aws, agentcore, strands, mcp, observability, compliance, production]
 covers_version: "N/A"
 ---
 
-> **Known issue:** some fenced code examples on this page were flattened during the original PDF-to-markdown conversion (lost line breaks/indentation, stray artifact characters) and need reformatting. Tracked in migration/WAVE6_BATCH1_STATUS.md (repo root).
-
 *Part 2 of 3 of [AWS Strands & Bedrock AgentCore Production Builder Journey Kit](../13-aws-strands-agentcore-builder-journey-kit.md). Continued in [Part 3](13-aws-strands-agentcore-builder-journey-kit-part3.md).*
 
 ## **AgentCore Gateway & MCP**
@@ -115,7 +113,7 @@ s proxy:
 
 `tools = proxy.list_tools() agent = Agent( model="us.anthropic.claude-sonnet-4-20250514", system_prompt="You are an enterprise assistant with access to company tools.", mcp_clients=[proxy]   # Strands auto-converts MCP tools` -> `@tool functions ) result = agent("List all open orders for customer C-1001")`
 
-###### II **NOTE**
+###### **NOTE**
 
 **IAM vs OAuth choice** : Use IAM SigV4 when agent and gateway are in the same AWS account — simpler, no token exchange overhead. Use OAuth (M2M) when you need per-agent fine-grained scopes or cross-account/cross-tenant calls.
 
@@ -186,7 +184,7 @@ app = mcp.streamable_http_app()  # Returns FastAPI app with MCP routes
 #   remoteMcpConfig={"url": "https://fargate-alb.example.com/mcp"})
 ```
 
-###### I **BEST PRACTICE**
+###### **BEST PRACTICE**
 
 When running MCP servers on OpenShift, use OpenShift Routes with TLS passthrough or edge termination. Ensure the container port 8080 is exposed via a Service of type ClusterIP, and register the Route URL as the Remote MCP target URL in AgentCore Gateway.
 
@@ -319,7 +317,7 @@ response = remote_client.invoke_agent_runtime(
 )
 ```
 
-###### II **WARNING**
+###### **WARNING**
 
 **Cross-tenant trust hardening** : (1) Validate iss claim against allowlist of trusted issuers. (2) Validate aud matches your runtime ARN. (3) Enforce exp with 5-minute clock skew max. (4) Use short-lived tokens (max 1h). (5) Log all cross-tenant invocations to CloudTrail with tenant context.
 
@@ -439,7 +437,7 @@ result = a2a_client.send_message(
 )
 ```
 
-###### II **NOTE**
+###### **NOTE**
 
 A2A protocol support in AgentCore Runtime is GA. Broader A2A support (across Memory, Gateway, etc.) is on the roadmap. Use A2A for cross-runtime calls; use agents-as-tools for same-runtime calls.
 
