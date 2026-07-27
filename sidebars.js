@@ -97,6 +97,7 @@ const sidebars = {
             "architecture/aidlc-enterprise-framework-2025",
             "architecture/agile-in-the-age-of-agentic-ai-2026",
             "architecture/ea-aidlc-deep-research-2026",
+            "architecture/enterprise-agentic-ai-architecture-playbook-2026",
           ],
         },
         {
@@ -167,6 +168,7 @@ const sidebars = {
             "architecture/enterprise-ai-architect-foundations",
             "architecture/parts/enterprise-ai-architect-foundations-part2",
             "architecture/enterprise-ai-architecture-patterns",
+            "architecture/architecture-styles",
             "architecture/enterprise-ai-comparative-matrices-2026",
             "architecture/enterprise-ai-governance-compliance",
             "architecture/parts/enterprise-ai-governance-compliance-part2",
@@ -210,6 +212,7 @@ const sidebars = {
           items: [
             "architecture/ea-architect-deep-dive-foundation",
             "architecture/ea-architect-deep-dive-five-arenas",
+            "architecture/parts/ea-architect-deep-dive-five-arenas-part2",
             "architecture/ea-architect-deep-dive-toolkit-practice",
             "architecture/ea-architect-deep-dive-measurement-growth",
             "architecture/apex-ea-team-structure-raci",
@@ -228,7 +231,9 @@ const sidebars = {
             "architecture/enterprise-data-architect-ai-genai",
             "architecture/enterprise-manager-ai-genai",
             "architecture/principal-enterprise-ai-guide-educative",
+            "architecture/parts/principal-enterprise-ai-guide-educative-part2",
             "architecture/modern-data-ai-platform-blueprint-2026",
+            "architecture/dsa-principal-architect-reference",
           ],
         },
         {
@@ -584,6 +589,7 @@ const sidebars = {
             "protocols/parts/emerging-protocols-ucp-ap2-nlip-lmos-part3",
             "protocols/emerging-protocols-crosscutting",
             "protocols/parts/emerging-protocols-crosscutting-part2",
+            "protocols/workflow-protocols-bpmn-temporal",
           ],
         },
         {
