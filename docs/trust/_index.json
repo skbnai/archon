@@ -1,7 +1,567 @@
 {
  "domain": "trust",
- "page_count": 1,
+ "page_count": 24,
  "pages": [
+  {
+   "id": "trust/ai-security-governance/01-ai-control-series-overview",
+   "title": "DeepMind AI Control Series \u2014 Overview",
+   "doc_type": "guide",
+   "topic_id": "ai-control-series-overview",
+   "tags": [
+    "ai-security",
+    "ai-control",
+    "deepmind",
+    "series-overview"
+   ],
+   "word_count": 551,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/05-deepmind-ai-control-roadmap",
+     "score": 0.36
+    },
+    {
+     "id": "trust/ai-security-governance/parts/05-deepmind-ai-control-roadmap-part2",
+     "score": 0.32
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/05-deepmind-ai-control-roadmap",
+   "title": "DeepMind AI Control Roadmap",
+   "doc_type": "guide",
+   "topic_id": "deepmind-ai-control-roadmap",
+   "tags": [
+    "ai-security",
+    "ai-control",
+    "deepmind",
+    "threat-model"
+   ],
+   "word_count": 1684,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/05-deepmind-ai-control-roadmap-part2",
+     "score": 0.42
+    },
+    {
+     "id": "trust/ai-security-governance/01-ai-control-series-overview",
+     "score": 0.36
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/06-evolution-enterprise-ai-security",
+   "title": "Evolution of Enterprise AI Security",
+   "doc_type": "guide",
+   "topic_id": "evolution-enterprise-ai-security",
+   "tags": [
+    "ai-security",
+    "ai-control",
+    "deepmind",
+    "security-architecture-history"
+   ],
+   "word_count": 2399,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/22-future-outlook-2026-2035-part2",
+     "score": 0.33
+    },
+    {
+     "id": "trust/ai-security-governance/22-future-outlook-2026-2035",
+     "score": 0.33
+    },
+    {
+     "id": "strategy/23-part-13-security-model",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/07-enterprise-threat-modeling",
+   "title": "Enterprise Threat Modeling for AI Agents",
+   "doc_type": "guide",
+   "topic_id": "enterprise-threat-modeling",
+   "tags": [
+    "ai-security",
+    "threat-modeling",
+    "deepmind",
+    "mitre-atlas"
+   ],
+   "word_count": 1606,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/07-enterprise-threat-modeling-part2",
+     "score": 0.42
+    },
+    {
+     "id": "agentic-systems/multimodal/07-part-07-security-threats",
+     "score": 0.32
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/08-ai-control-architecture",
+   "title": "AI Control Architecture",
+   "doc_type": "guide",
+   "topic_id": "ai-control-architecture",
+   "tags": [
+    "ai-security",
+    "ai-control",
+    "deepmind",
+    "reference-architecture"
+   ],
+   "word_count": 1264,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/22-future-outlook-2026-2035",
+     "score": 0.38
+    },
+    {
+     "id": "trust/ai-security-governance/12-memory-governance",
+     "score": 0.34
+    },
+    {
+     "id": "trust/ai-security-governance/21-best-practices-anti-patterns",
+     "score": 0.32
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/09-runtime-ai-security",
+   "title": "Runtime AI Security",
+   "doc_type": "guide",
+   "topic_id": "runtime-ai-security",
+   "tags": [
+    "ai-security",
+    "runtime-security",
+    "deepmind",
+    "circuit-breakers"
+   ],
+   "word_count": 1221,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "trust/ai-security-governance/10-identity-for-ai-agents",
+   "title": "Identity for AI Agents",
+   "doc_type": "guide",
+   "topic_id": "identity-for-ai-agents",
+   "tags": [
+    "ai-security",
+    "identity",
+    "deepmind",
+    "spiffe"
+   ],
+   "word_count": 1224,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/08-ai-control-architecture",
+     "score": 0.32
+    },
+    {
+     "id": "strategy/23-part-13-security-model",
+     "score": 0.31
+    },
+    {
+     "id": "architecture/55-governance-propagation-chain",
+     "score": 0.3
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/11-ai-authorization",
+   "title": "AI Authorization Architecture",
+   "doc_type": "guide",
+   "topic_id": "ai-authorization",
+   "tags": [
+    "ai-security",
+    "authorization",
+    "deepmind",
+    "cedar",
+    "opa"
+   ],
+   "word_count": 877,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "architecture/55-governance-propagation-chain",
+     "score": 0.35
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/12-memory-governance",
+   "title": "Memory Governance",
+   "doc_type": "guide",
+   "topic_id": "memory-governance",
+   "tags": [
+    "ai-security",
+    "memory-governance",
+    "deepmind",
+    "gdpr"
+   ],
+   "word_count": 1223,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "architecture/27-agentic-ai-landing-zone-memory-architecture",
+     "score": 0.35
+    },
+    {
+     "id": "architecture/41-agent-memory-planning-architecture",
+     "score": 0.34
+    },
+    {
+     "id": "trust/ai-security-governance/08-ai-control-architecture",
+     "score": 0.34
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/13-tool-governance",
+   "title": "Tool Governance",
+   "doc_type": "guide",
+   "topic_id": "tool-governance",
+   "tags": [
+    "ai-security",
+    "tool-governance",
+    "deepmind",
+    "mcp"
+   ],
+   "word_count": 1434,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "protocols/parts/14-mcp-enterprise-security-governance-operations-2026-part2",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/14-reasoning-governance",
+   "title": "Reasoning Governance",
+   "doc_type": "guide",
+   "topic_id": "reasoning-governance",
+   "tags": [
+    "ai-security",
+    "reasoning-governance",
+    "deepmind",
+    "constitutional-ai"
+   ],
+   "word_count": 901,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "trust/ai-security-governance/15-multi-agent-security",
+   "title": "Multi-Agent Security",
+   "doc_type": "guide",
+   "topic_id": "multi-agent-security",
+   "tags": [
+    "ai-security",
+    "multi-agent",
+    "deepmind",
+    "a2a"
+   ],
+   "word_count": 1029,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "agentic-systems/core/17-a2a-deep-research",
+     "score": 0.34
+    },
+    {
+     "id": "trust/ai-security-governance/parts/22-future-outlook-2026-2035-part2",
+     "score": 0.33
+    },
+    {
+     "id": "architecture/40-agent-interoperability-orchestration",
+     "score": 0.32
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/16-ai-observability",
+   "title": "AI Observability",
+   "doc_type": "guide",
+   "topic_id": "ai-observability",
+   "tags": [
+    "ai-security",
+    "observability",
+    "deepmind",
+    "opentelemetry"
+   ],
+   "word_count": 1016,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "trust/ai-security-governance/17-ai-soc",
+   "title": "AI Security Operations Center",
+   "doc_type": "guide",
+   "topic_id": "ai-soc",
+   "tags": [
+    "ai-security",
+    "ai-soc",
+    "deepmind",
+    "incident-response"
+   ],
+   "word_count": 1126,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "trust/ai-security-governance/18-enterprise-governance",
+   "title": "Enterprise Governance",
+   "doc_type": "guide",
+   "topic_id": "enterprise-governance",
+   "tags": [
+    "ai-security",
+    "governance",
+    "deepmind",
+    "raci"
+   ],
+   "word_count": 1097,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "strategy/67-part-08-organizational-roles-governance-risk-roles-raci-matrix",
+     "score": 0.33
+    },
+    {
+     "id": "architecture/51-enterprise-ai-governance-compliance",
+     "score": 0.32
+    },
+    {
+     "id": "strategy/16-part-06-governance",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/19-cloud-implementation-comparison",
+   "title": "Cloud Implementation Comparison",
+   "doc_type": "guide",
+   "topic_id": "cloud-implementation-comparison",
+   "tags": [
+    "ai-security",
+    "cloud",
+    "deepmind",
+    "aws",
+    "azure",
+    "gcp"
+   ],
+   "word_count": 1195,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
+     "score": 0.35
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part4",
+     "score": 0.33
+    },
+    {
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
+     "score": 0.31
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/20-reference-architecture",
+   "title": "Reference Architecture",
+   "doc_type": "guide",
+   "topic_id": "reference-architecture",
+   "tags": [
+    "ai-security",
+    "reference-architecture",
+    "deepmind",
+    "air-gapped"
+   ],
+   "word_count": 1104,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "trust/ai-security-governance/21-best-practices-anti-patterns",
+   "title": "Best Practices & Anti-Patterns",
+   "doc_type": "guide",
+   "topic_id": "best-practices-anti-patterns",
+   "tags": [
+    "ai-security",
+    "best-practices",
+    "deepmind",
+    "design-principles"
+   ],
+   "word_count": 2593,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/21-best-practices-anti-patterns-part2",
+     "score": 0.43
+    },
+    {
+     "id": "trust/ai-security-governance/22-future-outlook-2026-2035",
+     "score": 0.37
+    },
+    {
+     "id": "trust/ai-security-governance/parts/22-future-outlook-2026-2035-part2",
+     "score": 0.32
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/22-future-outlook-2026-2035",
+   "title": "Future Outlook: 2026-2035",
+   "doc_type": "guide",
+   "topic_id": "future-outlook-2026-2035",
+   "tags": [
+    "ai-security",
+    "future-outlook",
+    "deepmind",
+    "control-plane",
+    "agent-os"
+   ],
+   "word_count": 1849,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/parts/22-future-outlook-2026-2035-part2",
+     "score": 0.46
+    },
+    {
+     "id": "trust/ai-security-governance/08-ai-control-architecture",
+     "score": 0.38
+    },
+    {
+     "id": "trust/ai-security-governance/21-best-practices-anti-patterns",
+     "score": 0.37
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/parts/05-deepmind-ai-control-roadmap-part2",
+   "title": "DeepMind AI Control Roadmap (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "deepmind-ai-control-roadmap-part2",
+   "tags": [
+    "ai-security",
+    "ai-control",
+    "deepmind",
+    "corrigibility"
+   ],
+   "word_count": 1342,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/05-deepmind-ai-control-roadmap",
+     "score": 0.42
+    },
+    {
+     "id": "trust/ai-security-governance/01-ai-control-series-overview",
+     "score": 0.32
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/parts/07-enterprise-threat-modeling-part2",
+   "title": "Enterprise Threat Modeling for AI Agents (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "enterprise-threat-modeling-part2",
+   "tags": [
+    "ai-security",
+    "threat-modeling",
+    "deepmind",
+    "mitre-atlas"
+   ],
+   "word_count": 1578,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/07-enterprise-threat-modeling",
+     "score": 0.42
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/parts/21-best-practices-anti-patterns-part2",
+   "title": "Best Practices & Anti-Patterns (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "best-practices-anti-patterns-part2",
+   "tags": [
+    "ai-security",
+    "best-practices",
+    "deepmind",
+    "anti-patterns",
+    "maturity-model"
+   ],
+   "word_count": 2189,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/21-best-practices-anti-patterns",
+     "score": 0.43
+    }
+   ]
+  },
+  {
+   "id": "trust/ai-security-governance/parts/22-future-outlook-2026-2035-part2",
+   "title": "Future Outlook: 2026-2035 (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "future-outlook-2026-2035-part2",
+   "tags": [
+    "ai-security",
+    "future-outlook",
+    "deepmind",
+    "zero-trust",
+    "formal-verification"
+   ],
+   "word_count": 2460,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": [
+    {
+     "id": "trust/ai-security-governance/22-future-outlook-2026-2035",
+     "score": 0.46
+    },
+    {
+     "id": "trust/ai-security-governance/06-evolution-enterprise-ai-security",
+     "score": 0.33
+    },
+    {
+     "id": "trust/ai-security-governance/15-multi-agent-security",
+     "score": 0.33
+    }
+   ]
+  },
   {
    "id": "trust/index",
    "title": "Trust Hub",
@@ -11,13 +571,21 @@
     "hub",
     "trust"
    ],
-   "word_count": 116,
-   "last_reviewed": "2026-07-18",
-   "status": "draft",
+   "word_count": 459,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
    "top_similar": [
     {
-     "id": "operations/index",
-     "score": 0.36
+     "id": "architecture/14-aidlc-enterprise-framework-2025",
+     "score": 0.34
+    },
+    {
+     "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
+     "score": 0.34
+    },
+    {
+     "id": "strategy/42-ai-first-to-ai-native",
+     "score": 0.33
     }
    ]
   }

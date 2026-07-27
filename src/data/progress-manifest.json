@@ -2681,8 +2681,44 @@
   },
   "trust": {
     "label": "Trust: Security, Governance & RAI",
-    "totalPages": 1,
+    "totalPages": 10,
     "pages": [
+      {
+        "id": "trust/ai-security-governance/01-ai-control-series-overview",
+        "title": "DeepMind AI Control Series — Overview"
+      },
+      {
+        "id": "trust/ai-security-governance/05-deepmind-ai-control-roadmap",
+        "title": "DeepMind AI Control Roadmap"
+      },
+      {
+        "id": "trust/ai-security-governance/06-evolution-enterprise-ai-security",
+        "title": "Evolution of Enterprise AI Security"
+      },
+      {
+        "id": "trust/ai-security-governance/07-enterprise-threat-modeling",
+        "title": "Enterprise Threat Modeling for AI Agents"
+      },
+      {
+        "id": "trust/ai-security-governance/08-ai-control-architecture",
+        "title": "AI Control Architecture"
+      },
+      {
+        "id": "trust/ai-security-governance/09-runtime-ai-security",
+        "title": "Runtime AI Security"
+      },
+      {
+        "id": "trust/ai-security-governance/10-identity-for-ai-agents",
+        "title": "Identity for AI Agents"
+      },
+      {
+        "id": "trust/ai-security-governance/parts/05-deepmind-ai-control-roadmap-part2",
+        "title": "DeepMind AI Control Roadmap (Part 2)"
+      },
+      {
+        "id": "trust/ai-security-governance/parts/07-enterprise-threat-modeling-part2",
+        "title": "Enterprise Threat Modeling for AI Agents (Part 2)"
+      },
       {
         "id": "trust/index",
         "title": "Trust Hub"

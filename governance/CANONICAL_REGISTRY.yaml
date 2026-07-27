@@ -3186,6 +3186,7 @@ topics:
   - id: airgapped-banking-infrastructure
     domain: trust
     canonical: docs/trust/01-airgapped-banking-infrastructure.md
+    pending: true
     aliases:
     - air-gapped ai infrastructure for enterprise banking
     supersedes: []
@@ -3193,6 +3194,7 @@ topics:
   - id: a2a-security-governance
     domain: trust
     canonical: docs/trust/02-a2a-security-governance.md
+    pending: true
     aliases:
     - 'enterprise-scale a2a ecosystem: security, governance & architecture guide'
     supersedes: []
@@ -3200,6 +3202,7 @@ topics:
   - id: agent-communication-identity-gateway
     domain: trust
     canonical: docs/trust/03-agent-communication-identity-gateway.md
+    pending: true
     aliases:
     - agent communication, identity, authorization & ai gateway
     supersedes: []
@@ -3207,6 +3210,7 @@ topics:
   - id: agentic-ai-security-guardrails
     domain: trust
     canonical: docs/trust/04-agentic-ai-security-guardrails.md
+    pending: true
     aliases:
     - agentic ai security architecture & multi-layer guardrails
     supersedes: []
@@ -3214,6 +3218,7 @@ topics:
   - id: agentic-ai-security-identity
     domain: trust
     canonical: docs/trust/05-agentic-ai-security-identity.md
+    pending: true
     aliases:
     - agentic ai security & agent identity
     supersedes: []
@@ -3223,11 +3228,13 @@ topics:
     canonical: docs/trust/ai-security-governance/01-ai-control-series-overview.md
     aliases:
     - deepmind control roadmap
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/index.md
     pages: []
   - id: policy-authorization-series-overview
     domain: trust
     canonical: docs/trust/ai-security-governance/02-policy-authorization-series-overview.md
+    pending: true
     aliases:
     - 'enterprise ai authorization series: series index & architecture overview'
     supersedes: []
@@ -3235,12 +3242,14 @@ topics:
   - id: agentic-ai-governance-framework
     domain: trust
     canonical: docs/trust/ai-security-governance/03-agentic-ai-governance-framework.md
+    pending: true
     aliases: []
     supersedes: []
     pages: []
   - id: sovereign-constitutional-ai-rai-implementation-handbook
     domain: trust
     canonical: docs/trust/ai-security-governance/04-sovereign-constitutional-ai-rai-implementation-handbook.md
+    pending: true
     aliases:
     - sovereign constitutional ai & rai - complete implementation handbook
     supersedes: []
@@ -3250,6 +3259,13 @@ topics:
     canonical: docs/trust/ai-security-governance/05-deepmind-ai-control-roadmap.md
     aliases:
     - 'part 1: deepmind ai control roadmap analysis'
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part01_DeepMind_AI_Control_Roadmap.md
+    pages: []
+  - id: deepmind-ai-control-roadmap-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/05-deepmind-ai-control-roadmap-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: evolution-enterprise-ai-security
@@ -3257,13 +3273,21 @@ topics:
     canonical: docs/trust/ai-security-governance/06-evolution-enterprise-ai-security.md
     aliases:
     - 'part 2: evolution of enterprise ai security'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part02_Evolution_Enterprise_AI_Security.md
     pages: []
   - id: enterprise-threat-modeling
     domain: trust
     canonical: docs/trust/ai-security-governance/07-enterprise-threat-modeling.md
     aliases:
     - 'part 3: enterprise threat modeling for ai agents'
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part03_Enterprise_Threat_Modeling.md
+    pages: []
+  - id: enterprise-threat-modeling-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/07-enterprise-threat-modeling-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: ai-control-architecture
@@ -3271,97 +3295,117 @@ topics:
     canonical: docs/trust/ai-security-governance/08-ai-control-architecture.md
     aliases:
     - 'part 4: ai control architecture'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part04_AI_Control_Architecture.md
     pages: []
   - id: runtime-ai-security
     domain: trust
     canonical: docs/trust/ai-security-governance/09-runtime-ai-security.md
     aliases:
     - 'part 5: runtime ai security'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part05_Runtime_AI_Security.md
     pages: []
   - id: identity-for-ai-agents
     domain: trust
     canonical: docs/trust/ai-security-governance/10-identity-for-ai-agents.md
     aliases:
     - 'part 6: identity for ai agents'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part06_Identity_for_AI_Agents.md
     pages: []
   - id: ai-authorization
     domain: trust
     canonical: docs/trust/ai-security-governance/11-ai-authorization.md
     aliases:
     - 'part 7: ai authorization architecture'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part07_AI_Authorization.md
     pages: []
   - id: memory-governance
     domain: trust
     canonical: docs/trust/ai-security-governance/12-memory-governance.md
     aliases:
     - 'part 8: memory governance'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part08_Memory_Governance.md
     pages: []
   - id: tool-governance
     domain: trust
     canonical: docs/trust/ai-security-governance/13-tool-governance.md
     aliases:
     - 'part 9: tool governance'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part09_Tool_Governance.md
     pages: []
   - id: reasoning-governance
     domain: trust
     canonical: docs/trust/ai-security-governance/14-reasoning-governance.md
     aliases:
     - 'part 10: reasoning governance'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part10_Reasoning_Governance.md
     pages: []
   - id: multi-agent-security
     domain: trust
     canonical: docs/trust/ai-security-governance/15-multi-agent-security.md
     aliases:
     - 'part 11: multi-agent security'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part11_Multi_Agent_Security.md
     pages: []
   - id: ai-observability
     domain: trust
     canonical: docs/trust/ai-security-governance/16-ai-observability.md
     aliases:
     - 'part 12: ai observability'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part12_AI_Observability.md
     pages: []
   - id: ai-soc
     domain: trust
     canonical: docs/trust/ai-security-governance/17-ai-soc.md
     aliases:
     - 'part 13: ai security operations center'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part13_AI_SOC.md
     pages: []
   - id: enterprise-governance
     domain: trust
     canonical: docs/trust/ai-security-governance/18-enterprise-governance.md
     aliases:
     - 'part 14: enterprise governance'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part14_Enterprise_Governance.md
     pages: []
   - id: cloud-implementation-comparison
     domain: trust
     canonical: docs/trust/ai-security-governance/19-cloud-implementation-comparison.md
     aliases:
     - 'part 15: cloud implementation comparison'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part15_Cloud_Implementation_Comparison.md
     pages: []
   - id: reference-architecture
     domain: trust
     canonical: docs/trust/ai-security-governance/20-reference-architecture.md
     aliases:
     - 'part 16: reference architecture'
-    supersedes: []
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part16_Reference_Architecture.md
     pages: []
   - id: best-practices-anti-patterns
     domain: trust
     canonical: docs/trust/ai-security-governance/21-best-practices-anti-patterns.md
     aliases:
     - 'part 17: best practices & anti-patterns'
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part17_Best_Practices_Anti_Patterns.md
+    pages: []
+  - id: best-practices-anti-patterns-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/21-best-practices-anti-patterns-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: future-outlook-2026-2035
@@ -3369,11 +3413,19 @@ topics:
     canonical: docs/trust/ai-security-governance/22-future-outlook-2026-2035.md
     aliases:
     - 'part 18: future outlook 2026-2035'
+    supersedes: 
+    - docs/ai-security-governance/deep-mind/Part18_Future_Outlook_2026_2035.md
+    pages: []
+  - id: future-outlook-2026-2035-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/22-future-outlook-2026-2035-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: executive-architecture
     domain: trust
     canonical: docs/trust/ai-security-governance/23-executive-architecture.md
+    pending: true
     aliases:
     - executive architecture & authorization fundamentals
     supersedes: []
@@ -3381,6 +3433,7 @@ topics:
   - id: 1b-authorization-deep-dive
     domain: trust
     canonical: docs/trust/ai-security-governance/24-1b-authorization-deep-dive.md
+    pending: true
     aliases:
     - 'enterprise authorization deep dive: engines, interceptor patterns & xacml'
     supersedes: []
@@ -3388,6 +3441,7 @@ topics:
   - id: identity-claims-policy
     domain: trust
     canonical: docs/trust/ai-security-governance/25-identity-claims-policy.md
+    pending: true
     aliases:
     - identity, claims & policy design
     supersedes: []
@@ -3395,6 +3449,7 @@ topics:
   - id: 2b-advanced-policy-engineering
     domain: trust
     canonical: docs/trust/ai-security-governance/26-2b-advanced-policy-engineering.md
+    pending: true
     aliases:
     - 'advanced policy engineering: scim, cedar templates, opa & wasm'
     supersedes: []
@@ -3402,6 +3457,7 @@ topics:
   - id: agent-tool-mcp-authorization
     domain: trust
     canonical: docs/trust/ai-security-governance/27-agent-tool-mcp-authorization.md
+    pending: true
     aliases:
     - agent, tool & mcp authorization
     supersedes: []
@@ -3409,6 +3465,7 @@ topics:
   - id: 3b-agent-authorization-deep-dive
     domain: trust
     canonical: docs/trust/ai-security-governance/28-3b-agent-authorization-deep-dive.md
+    pending: true
     aliases:
     - 'agent authorization deep dive: prompt safety, contextual risk & workflow patterns'
     supersedes: []
@@ -3416,6 +3473,7 @@ topics:
   - id: rag-memory-data-authorization
     domain: trust
     canonical: docs/trust/ai-security-governance/29-rag-memory-data-authorization.md
+    pending: true
     aliases:
     - rag, memory & data authorization
     supersedes: []
@@ -3423,6 +3481,7 @@ topics:
   - id: 4b-aws-entra-federation-patterns
     domain: trust
     canonical: docs/trust/ai-security-governance/30-4b-aws-entra-federation-patterns.md
+    pending: true
     aliases:
     - 'aws & entra id federation: complete integration patterns'
     supersedes: []
@@ -3430,6 +3489,7 @@ topics:
   - id: aws-implementation-governance
     domain: trust
     canonical: docs/trust/ai-security-governance/31-aws-implementation-governance.md
+    pending: true
     aliases:
     - aws implementation, governance & production readiness
     supersedes: []
@@ -3437,6 +3497,7 @@ topics:
   - id: 5b-compliance-governance-decision-framework
     domain: trust
     canonical: docs/trust/ai-security-governance/32-5b-compliance-governance-decision-framework.md
+    pending: true
     aliases:
     - compliance, governance & final decision framework
     supersedes: []
@@ -3444,6 +3505,7 @@ topics:
   - id: foundations-reference-architecture
     domain: trust
     canonical: docs/trust/ai-security-governance/33-foundations-reference-architecture.md
+    pending: true
     aliases:
     - foundations & reference architecture
     supersedes: []
@@ -3451,6 +3513,7 @@ topics:
   - id: identity-mcp-a2a-security-blueprint
     domain: trust
     canonical: docs/trust/ai-security-governance/34-identity-mcp-a2a-security-blueprint.md
+    pending: true
     aliases:
     - identity, mcp & a2a security blueprint
     supersedes: []
@@ -3458,6 +3521,7 @@ topics:
   - id: ai-soc-observability-redteam-memory
     domain: trust
     canonical: docs/trust/ai-security-governance/35-ai-soc-observability-redteam-memory.md
+    pending: true
     aliases:
     - ai soc, observability, red team & memory security
     supersedes: []
@@ -3465,6 +3529,7 @@ topics:
   - id: economic-security-finops-commerce-pqc
     domain: trust
     canonical: docs/trust/ai-security-governance/36-economic-security-finops-commerce-pqc.md
+    pending: true
     aliases:
     - economic security, finops, commerce & post-quantum cryptography
     supersedes: []
@@ -3472,6 +3537,7 @@ topics:
   - id: operating-model-maturity-roadmap
     domain: trust
     canonical: docs/trust/ai-security-governance/37-operating-model-maturity-roadmap.md
+    pending: true
     aliases:
     - operating model & security maturity roadmap
     supersedes: []
@@ -3479,6 +3545,7 @@ topics:
   - id: zero-to-mastery-curriculum
     domain: trust
     canonical: docs/trust/ai-security-governance/38-zero-to-mastery-curriculum.md
+    pending: true
     aliases:
     - zero-to-mastery security curriculum
     supersedes: []
@@ -3486,6 +3553,7 @@ topics:
   - id: architects-field-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/39-architects-field-guide.md
+    pending: true
     aliases:
     - ai security architect's field guide
     supersedes: []
@@ -3493,6 +3561,7 @@ topics:
   - id: future-ai-soc-2026-2030
     domain: trust
     canonical: docs/trust/ai-security-governance/40-future-ai-soc-2026-2030.md
+    pending: true
     aliases:
     - part 14 — future of ai soc
     supersedes: []
@@ -3500,6 +3569,7 @@ topics:
   - id: ai-bill-of-materials-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/41-ai-bill-of-materials-guide.md
+    pending: true
     aliases:
     - ai bill of materials (aibom) — supply chain transparency for ai systems
     supersedes: []
@@ -3507,6 +3577,7 @@ topics:
   - id: ai-red-teaming-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/42-ai-red-teaming-guide.md
+    pending: true
     aliases:
     - ai red teaming — adversarial testing for ai and agentic systems
     supersedes: []
@@ -3514,6 +3585,7 @@ topics:
   - id: ai-trism-complete-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/43-ai-trism-complete-guide.md
+    pending: true
     aliases:
     - 'ai trism — ai trust, risk and security management: complete guide'
     supersedes: []
@@ -3521,6 +3593,7 @@ topics:
   - id: aidr-ai-detection-response-complete-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/44-aidr-ai-detection-response-complete-guide.md
+    pending: true
     aliases:
     - 'aidr — ai detection and response: complete enterprise guide'
     supersedes: []
@@ -3528,6 +3601,7 @@ topics:
   - id: aispm-ai-security-posture-management
     domain: trust
     canonical: docs/trust/ai-security-governance/45-aispm-ai-security-posture-management.md
+    pending: true
     aliases:
     - 'aispm — ai security posture management: complete guide'
     supersedes: []
@@ -3535,6 +3609,7 @@ topics:
   - id: model-cards-system-cards-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/46-model-cards-system-cards-guide.md
+    pending: true
     aliases:
     - model cards and system cards — ai transparency documentation standards
     supersedes: []
@@ -3542,6 +3617,7 @@ topics:
   - id: runtime-security-governance
     domain: trust
     canonical: docs/trust/ai-security-governance/47-runtime-security-governance.md
+    pending: true
     aliases:
     - agent runtime, mcp security & governance
     supersedes: []
@@ -3549,6 +3625,7 @@ topics:
   - id: part-01-soc-operating-model
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/01-part-01-soc-operating-model.md
+    pending: true
     aliases:
     - part 01 — soc operating model & maturity
     supersedes: []
@@ -3556,6 +3633,7 @@ topics:
   - id: part-02-ai-use-cases
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/02-part-02-ai-use-cases.md
+    pending: true
     aliases:
     - part 02 — ai use cases in security operations
     supersedes: []
@@ -3563,6 +3641,7 @@ topics:
   - id: part-03-agentic-soc
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/03-part-03-agentic-soc.md
+    pending: true
     aliases:
     - part 03 — agentic soc architecture
     supersedes: []
@@ -3570,6 +3649,7 @@ topics:
   - id: part-04-automation-playbooks
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/04-part-04-automation-playbooks.md
+    pending: true
     aliases:
     - part 04 — ai automation playbooks
     supersedes: []
@@ -3577,6 +3657,7 @@ topics:
   - id: part-05-soar-platforms
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/05-part-05-soar-platforms.md
+    pending: true
     aliases:
     - part 05 — soar platform comparison
     supersedes: []
@@ -3584,6 +3665,7 @@ topics:
   - id: part-06-ai-models
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/06-part-06-ai-models.md
+    pending: true
     aliases:
     - part 06 — ai models for soc
     supersedes: []
@@ -3591,6 +3673,7 @@ topics:
   - id: part-07-ai-safety
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/07-part-07-ai-safety.md
+    pending: true
     aliases:
     - part 07 — ai safety & adversarial risks in soc
     supersedes: []
@@ -3598,6 +3681,7 @@ topics:
   - id: part-08-observability
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/08-part-08-observability.md
+    pending: true
     aliases:
     - part 08 — ai soc observability & evaluation
     supersedes: []
@@ -3605,6 +3689,7 @@ topics:
   - id: part-09-enterprise-architecture
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/09-part-09-enterprise-architecture.md
+    pending: true
     aliases:
     - part 09 — enterprise architecture integration
     supersedes: []
@@ -3612,6 +3697,7 @@ topics:
   - id: part-10-standards-compliance
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/10-part-10-standards-compliance.md
+    pending: true
     aliases:
     - part 10 — standards & compliance mapping
     supersedes: []
@@ -3619,6 +3705,7 @@ topics:
   - id: part-11-implementation-roadmap
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/11-part-11-implementation-roadmap.md
+    pending: true
     aliases:
     - part 11 — implementation roadmap & reference architecture
     supersedes: []
@@ -3626,6 +3713,7 @@ topics:
   - id: part-13-vendor-landscape
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/12-part-13-vendor-landscape.md
+    pending: true
     aliases:
     - part 13 — ai soc vendor landscape
     supersedes: []
@@ -3633,6 +3721,7 @@ topics:
   - id: part-14-future-soc
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/13-part-14-future-soc.md
+    pending: true
     aliases:
     - part 14 — future of ai soc
     supersedes: []
@@ -3640,6 +3729,7 @@ topics:
   - id: evolution
     domain: trust
     canonical: docs/trust/cybersec-architect/01-evolution.md
+    pending: true
     aliases:
     - part 1 — cyber security evolution
     supersedes: []
@@ -3647,6 +3737,7 @@ topics:
   - id: enterprise-security-architecture
     domain: trust
     canonical: docs/trust/cybersec-architect/02-enterprise-security-architecture.md
+    pending: true
     aliases:
     - part 2 — enterprise security architecture
     supersedes: []
@@ -3654,6 +3745,7 @@ topics:
   - id: security-domains
     domain: trust
     canonical: docs/trust/cybersec-architect/03-security-domains.md
+    pending: true
     aliases:
     - part 3 — security domains
     supersedes: []
@@ -3661,6 +3753,7 @@ topics:
   - id: ai-security
     domain: trust
     canonical: docs/trust/cybersec-architect/04-ai-security.md
+    pending: true
     aliases:
     - part 4 — ai security
     supersedes: []
@@ -3668,6 +3761,7 @@ topics:
   - id: agentic-ai-security
     domain: trust
     canonical: docs/trust/cybersec-architect/05-agentic-ai-security.md
+    pending: true
     aliases:
     - part 5 — agentic ai security
     supersedes: []
@@ -3675,6 +3769,7 @@ topics:
   - id: identity-architecture
     domain: trust
     canonical: docs/trust/cybersec-architect/06-identity-architecture.md
+    pending: true
     aliases:
     - part 6 — identity architecture
     supersedes: []
@@ -3682,6 +3777,7 @@ topics:
   - id: cloud-security
     domain: trust
     canonical: docs/trust/cybersec-architect/07-cloud-security.md
+    pending: true
     aliases:
     - part 7 — cloud security architecture
     supersedes: []
@@ -3689,6 +3785,7 @@ topics:
   - id: ai-governance
     domain: trust
     canonical: docs/trust/cybersec-architect/08-ai-governance.md
+    pending: true
     aliases:
     - part 8 — ai governance & compliance
     supersedes: []
@@ -3696,6 +3793,7 @@ topics:
   - id: security-operations
     domain: trust
     canonical: docs/trust/cybersec-architect/09-security-operations.md
+    pending: true
     aliases:
     - part 9 — security operations in the ai era
     supersedes: []
@@ -3703,6 +3801,7 @@ topics:
   - id: technology-investment
     domain: trust
     canonical: docs/trust/cybersec-architect/10-technology-investment.md
+    pending: true
     aliases:
     - part 10 — technology investment
     supersedes: []
@@ -3710,6 +3809,7 @@ topics:
   - id: ai-investment
     domain: trust
     canonical: docs/trust/cybersec-architect/11-ai-investment.md
+    pending: true
     aliases:
     - part 11 — ai & security investment
     supersedes: []
@@ -3717,6 +3817,7 @@ topics:
   - id: ea-deliverables
     domain: trust
     canonical: docs/trust/cybersec-architect/12-ea-deliverables.md
+    pending: true
     aliases:
     - part 12 — enterprise architecture deliverables
     supersedes: []
@@ -3724,6 +3825,7 @@ topics:
   - id: security-patterns
     domain: trust
     canonical: docs/trust/cybersec-architect/13-security-patterns.md
+    pending: true
     aliases:
     - part 13 — security patterns
     supersedes: []
@@ -3731,6 +3833,7 @@ topics:
   - id: case-studies
     domain: trust
     canonical: docs/trust/cybersec-architect/14-case-studies.md
+    pending: true
     aliases:
     - part 14 — industry case studies
     supersedes: []
@@ -3738,6 +3841,7 @@ topics:
   - id: emerging-trends
     domain: trust
     canonical: docs/trust/cybersec-architect/15-emerging-trends.md
+    pending: true
     aliases:
     - part 15 — emerging trends 2026–2030
     supersedes: []
@@ -3745,6 +3849,7 @@ topics:
   - id: part-01-nist-ai-100-2-adversarial-ml
     domain: trust
     canonical: docs/trust/nist-ai-standards/01-part-01-nist-ai-100-2-adversarial-ml.md
+    pending: true
     aliases:
     - nist ai 100-2 — adversarial machine learning
     supersedes: []
@@ -3752,6 +3857,7 @@ topics:
   - id: part-02-nist-ai-100-4-synthetic-content
     domain: trust
     canonical: docs/trust/nist-ai-standards/02-part-02-nist-ai-100-4-synthetic-content.md
+    pending: true
     aliases:
     - nist ai 100-4 — synthetic content detection & provenance
     supersedes: []
@@ -3759,6 +3865,7 @@ topics:
   - id: part-03-caisi-agentic-ai
     domain: trust
     canonical: docs/trust/nist-ai-standards/03-part-03-caisi-agentic-ai.md
+    pending: true
     aliases:
     - caisi agentic ai security guidance
     supersedes: []
@@ -3766,6 +3873,7 @@ topics:
   - id: part-04-enterprise-architecture
     domain: trust
     canonical: docs/trust/nist-ai-standards/04-part-04-enterprise-architecture.md
+    pending: true
     aliases:
     - nist ai standards — enterprise architecture patterns
     supersedes: []
@@ -3773,6 +3881,7 @@ topics:
   - id: part-05-control-mappings
     domain: trust
     canonical: docs/trust/nist-ai-standards/05-part-05-control-mappings.md
+    pending: true
     aliases:
     - nist ai standards — cross-framework control mappings
     supersedes: []
@@ -3780,6 +3889,7 @@ topics:
   - id: part-06-implementation-checklist
     domain: trust
     canonical: docs/trust/nist-ai-standards/06-part-06-implementation-checklist.md
+    pending: true
     aliases:
     - nist ai standards — implementation checklist
     supersedes: []
@@ -3787,6 +3897,7 @@ topics:
   - id: part-07-future-trends
     domain: trust
     canonical: docs/trust/nist-ai-standards/07-part-07-future-trends.md
+    pending: true
     aliases:
     - nist ai standards — future trends & emerging threats
     supersedes: []
@@ -3794,6 +3905,7 @@ topics:
   - id: ai-alignment-control
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/01-ai-alignment-control.md
+    pending: true
     aliases:
     - ai alignment & control
     supersedes: []
@@ -3801,6 +3913,7 @@ topics:
   - id: ai-assurance-audit-architecture
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/02-ai-assurance-audit-architecture.md
+    pending: true
     aliases:
     - ai assurance & audit architecture
     supersedes: []
@@ -3808,36 +3921,42 @@ topics:
   - id: ai-governance-operating-model
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/03-ai-governance-operating-model.md
+    pending: true
     aliases: []
     supersedes: []
     pages: []
   - id: ai-risk-taxonomy
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/04-ai-risk-taxonomy.md
+    pending: true
     aliases: []
     supersedes: []
     pages: []
   - id: ai-safety-framework
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/05-ai-safety-framework.md
+    pending: true
     aliases: []
     supersedes: []
     pages: []
   - id: constitutional-agent-architecture
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/06-constitutional-agent-architecture.md
+    pending: true
     aliases: []
     supersedes: []
     pages: []
   - id: constitutional-ai-engineering
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/07-constitutional-ai-engineering.md
+    pending: true
     aliases: []
     supersedes: []
     pages: []
   - id: democratic-ai-public-interest
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/08-democratic-ai-public-interest.md
+    pending: true
     aliases:
     - democratic & public interest ai
     supersedes: []
@@ -3845,6 +3964,7 @@ topics:
   - id: policy-as-code-framework
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/09-policy-as-code-framework.md
+    pending: true
     aliases:
     - policy-as-code framework
     supersedes: []
@@ -3852,6 +3972,7 @@ topics:
   - id: rai-operating-model
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/10-rai-operating-model.md
+    pending: true
     aliases:
     - responsible ai operating model
     supersedes: []
@@ -3859,12 +3980,14 @@ topics:
   - id: sovereign-ai-foundations
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/11-sovereign-ai-foundations.md
+    pending: true
     aliases: []
     supersedes: []
     pages: []
   - id: sovereign-ai-roadmap-maturity
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/12-sovereign-ai-roadmap-maturity.md
+    pending: true
     aliases:
     - roadmap, maturity & standards canon
     supersedes: []
