@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 81,
+    "totalPages": 83,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1676,6 +1676,10 @@
       {
         "id": "platforms/27-k8s-handbook-part10-observability",
         "title": "K8s Handbook Part 10: Observability"
+      },
+      {
+        "id": "platforms/28-k8s-handbook-part11-ai-infrastructure",
+        "title": "K8s Handbook Part 11: AI Infrastructure"
       },
       {
         "id": "platforms/34-k8s-handbook-part1-infrastructure-evolution",
@@ -1844,6 +1848,10 @@
       {
         "id": "platforms/parts/27-k8s-handbook-part10-observability-part2",
         "title": "K8s Handbook Part 10: Observability (Part 2)"
+      },
+      {
+        "id": "platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2",
+        "title": "K8s Handbook Part 11: AI Infrastructure (Part 2)"
       },
       {
         "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",

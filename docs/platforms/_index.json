@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 81,
+ "page_count": 83,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -632,6 +632,23 @@
     "grafana"
    ],
    "word_count": 2536,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/28-k8s-handbook-part11-ai-infrastructure",
+   "title": "K8s Handbook Part 11: AI Infrastructure",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part11-ai-infrastructure",
+   "tags": [
+    "kubernetes",
+    "ai-infrastructure",
+    "gpu",
+    "vllm",
+    "kserve"
+   ],
+   "word_count": 2545,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []
@@ -1735,6 +1752,23 @@
     "ai-observability"
    ],
    "word_count": 2218,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2",
+   "title": "K8s Handbook Part 11: AI Infrastructure (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part11-ai-infrastructure-part2",
+   "tags": [
+    "kubernetes",
+    "ai-infrastructure",
+    "mlflow",
+    "vector-database",
+    "cost-optimization"
+   ],
+   "word_count": 1937,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []

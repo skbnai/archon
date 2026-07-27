@@ -2748,9 +2748,15 @@ topics:
   - id: k8s-handbook-part11-ai-infrastructure
     domain: platforms
     canonical: docs/platforms/28-k8s-handbook-part11-ai-infrastructure.md
-    pending: true
     aliases:
     - 'k8s handbook part 11: ai infrastructure'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part11_AI_Infrastructure.md
+    pages: []
+  - id: k8s-handbook-part11-ai-infrastructure-part2
+    domain: platforms
+    canonical: docs/platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part12-agentic-ai
