@@ -68,7 +68,7 @@
    "top_similar": [
     {
      "id": "protocols/12-tool-authentication-connectors",
-     "score": 0.53
+     "score": 0.54
     },
     {
      "id": "protocols/02-enterprise-ai-platform-auth-survey",
@@ -131,11 +131,11 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "protocols/04-agentidentity-research-2026",
+     "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
      "score": 0.37
     },
     {
-     "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
+     "id": "protocols/04-agentidentity-research-2026",
      "score": 0.37
     },
     {
@@ -188,7 +188,7 @@
     },
     {
      "id": "protocols/10-entra-3lo-agent-auth-security-review",
-     "score": 0.54
+     "score": 0.55
     },
     {
      "id": "protocols/09-entra-3lo-agent-auth-multiagent-compliance",
@@ -248,7 +248,7 @@
     },
     {
      "id": "protocols/08-entra-3lo-agent-auth-implementation",
-     "score": 0.54
+     "score": 0.55
     }
    ]
   },
@@ -292,7 +292,7 @@
    "top_similar": [
     {
      "id": "protocols/03-marketplace-connector-auth-patterns",
-     "score": 0.53
+     "score": 0.54
     },
     {
      "id": "protocols/05-identity-obo-sessions",
@@ -300,7 +300,7 @@
     },
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.47
+     "score": 0.48
     }
    ]
   },
@@ -329,7 +329,7 @@
     },
     {
      "id": "agentic-systems/coding-tools/parts/39-mcp-deep-guide-part2",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },
@@ -360,7 +360,7 @@
     },
     {
      "id": "protocols/parts/13-mcp-deep-research-2026-part2",
-     "score": 0.39
+     "score": 0.38
     }
    ]
   },
@@ -670,7 +670,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/05-camunda-deep-dive",
-     "score": 0.35
+     "score": 0.36
     },
     {
      "id": "agentic-systems/orchestration/04-temporal-deep-dive",
@@ -701,7 +701,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },
@@ -1007,7 +1007,7 @@
     },
     {
      "id": "protocols/20-emerging-protocols-crosscutting",
-     "score": 0.38
+     "score": 0.39
     }
    ]
   }

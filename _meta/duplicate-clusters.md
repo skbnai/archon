@@ -1,6 +1,6 @@
 # Duplicate-Candidate Clusters (>=0.6 similarity, connected components)
 
-32 cluster(s) found across 566 pages.
+31 cluster(s) found across 573 pages.
 
 ## Cluster (4 pages)
 
@@ -11,8 +11,8 @@
 
 Pairwise similarity within this cluster:
 
-- 75%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 75%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 75%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 - 74%  `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 71%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
 - 71%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
@@ -74,7 +74,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 66%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
+- 65%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
 - 62%  `architecture/04-aidlc-artifacts-togaf-migration-to-ea` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
 - 55%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/04-aidlc-artifacts-togaf-migration-to-ea`
 
@@ -86,9 +86,9 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 64%  `strategy/02-quantum-ai-startup-landscape` <-> `strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns`
+- 65%  `strategy/02-quantum-ai-startup-landscape` <-> `strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns`
 - 61%  `strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns` <-> `strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti`
-- 55%  `strategy/02-quantum-ai-startup-landscape` <-> `strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti`
+- 56%  `strategy/02-quantum-ai-startup-landscape` <-> `strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti`
 
 ## Cluster (2 pages)
 
@@ -133,7 +133,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 63%  `data-knowledge/03-data-architecture-for-ai-report` <-> `data-knowledge/parts/01-data-architecture-for-ai-report-part2`
+- 62%  `data-knowledge/03-data-architecture-for-ai-report` <-> `data-knowledge/parts/01-data-architecture-for-ai-report-part2`
 
 ## Cluster (2 pages)
 
@@ -142,7 +142,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 63%  `agentic-systems/coding-tools/23-claude-ecosystem-research-report` <-> `agentic-systems/coding-tools/parts/23-claude-ecosystem-research-report-part2`
+- 62%  `agentic-systems/coding-tools/23-claude-ecosystem-research-report` <-> `agentic-systems/coding-tools/parts/23-claude-ecosystem-research-report-part2`
 
 ## Cluster (2 pages)
 
@@ -151,7 +151,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 66%  `agentic-systems/coding-tools/45-pr-review-handbook-vol4-agentic-review-architecture` <-> `agentic-systems/coding-tools/parts/45-pr-review-handbook-vol4-agentic-review-architecture-part2`
+- 65%  `agentic-systems/coding-tools/45-pr-review-handbook-vol4-agentic-review-architecture` <-> `agentic-systems/coding-tools/parts/45-pr-review-handbook-vol4-agentic-review-architecture-part2`
 
 ## Cluster (2 pages)
 
@@ -242,15 +242,6 @@ Pairwise similarity within this cluster:
 Pairwise similarity within this cluster:
 
 - 61%  `platforms/09-kong-entra-id-integration` <-> `platforms/parts/09-kong-entra-id-integration-part2`
-
-## Cluster (2 pages)
-
-- `platforms/parts/11-aws-native-standards-first-agentic-architecture-part3`
-- `platforms/parts/11-aws-native-standards-first-agentic-architecture-part2`
-
-Pairwise similarity within this cluster:
-
-- 60%  `platforms/parts/11-aws-native-standards-first-agentic-architecture-part3` <-> `platforms/parts/11-aws-native-standards-first-agentic-architecture-part2`
 
 ## Cluster (2 pages)
 
