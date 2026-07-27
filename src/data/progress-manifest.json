@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 99,
+    "totalPages": 108,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1652,6 +1652,10 @@
       {
         "id": "platforms/17-agentcore-memory-operations-deepdive",
         "title": "AgentCore Memory Operations Deep Dive"
+      },
+      {
+        "id": "platforms/18-agentcore-strands-deep-research-report",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report"
       },
       {
         "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
@@ -1864,6 +1868,38 @@
       {
         "id": "platforms/parts/17-agentcore-memory-operations-deepdive-part2",
         "title": "AgentCore Memory Operations Deep Dive (Part 2: Issues by Phase, Unit Testing, Evaluation & Cleanup)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part2",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 2)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part3",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 3)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part4",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 4)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part5",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 5)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part6",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 6)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part7",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 7)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part8",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 8)"
+      },
+      {
+        "id": "platforms/parts/18-agentcore-strands-deep-research-report-part9",
+        "title": "Amazon Bedrock AgentCore & Strands SDK — Deep Technical Research Report (Part 9)"
       },
       {
         "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",

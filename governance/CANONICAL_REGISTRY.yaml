@@ -2651,9 +2651,57 @@ topics:
   - id: agentcore-strands-deep-research-report
     domain: platforms
     canonical: docs/platforms/18-agentcore-strands-deep-research-report.md
-    pending: true
     aliases:
     - amazon bedrock agentcore & strands sdk — deep technical research report
+    supersedes:
+    - docs/cloud-platforms/aws/agentcore_strands_deep_research_report.md
+    pages: []
+  - id: agentcore-strands-deep-research-report-part2
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part3
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part4
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part5
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part5.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part6
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part6.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part7
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part7.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part8
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part8.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: agentcore-strands-deep-research-report-part9
+    domain: platforms
+    canonical: docs/platforms/parts/18-agentcore-strands-deep-research-report-part9.md
+    aliases: []
     supersedes: []
     pages: []
   - id: bedrock-agentcore-code-interpreter-architecture

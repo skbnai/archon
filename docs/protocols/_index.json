@@ -22,7 +22,7 @@
     },
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.41
+     "score": 0.4
     }
    ]
   },
@@ -112,7 +112,7 @@
     },
     {
      "id": "protocols/12-tool-authentication-connectors",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "protocols/02-enterprise-ai-platform-auth-survey",
@@ -160,7 +160,7 @@
     },
     {
      "id": "protocols/08-entra-3lo-agent-auth-implementation",
-     "score": 0.32
+     "score": 0.31
     },
     {
      "id": "platforms/21-azure-agent-architecture",
@@ -212,11 +212,11 @@
    "top_similar": [
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.62
+     "score": 0.61
     },
     {
      "id": "protocols/10-entra-3lo-agent-auth-security-review",
-     "score": 0.58
+     "score": 0.57
     },
     {
      "id": "protocols/08-entra-3lo-agent-auth-implementation",
@@ -244,7 +244,7 @@
     },
     {
      "id": "protocols/09-entra-3lo-agent-auth-multiagent-compliance",
-     "score": 0.58
+     "score": 0.57
     },
     {
      "id": "protocols/08-entra-3lo-agent-auth-implementation",
@@ -272,7 +272,7 @@
     },
     {
      "id": "protocols/09-entra-3lo-agent-auth-multiagent-compliance",
-     "score": 0.62
+     "score": 0.61
     },
     {
      "id": "protocols/10-entra-3lo-agent-auth-security-review",
@@ -296,7 +296,7 @@
     },
     {
      "id": "protocols/05-identity-obo-sessions",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
@@ -408,7 +408,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "protocols/21-emerging-protocols-overview",
@@ -445,7 +445,7 @@
     },
     {
      "id": "agentic-systems/core/17-a2a-deep-research",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -478,7 +478,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -616,7 +616,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -645,11 +645,11 @@
     },
     {
      "id": "protocols/20-emerging-protocols-crosscutting",
-     "score": 0.38
+     "score": 0.37
     },
     {
      "id": "protocols/index",
-     "score": 0.37
+     "score": 0.36
     }
    ]
   },
@@ -701,7 +701,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.4
+     "score": 0.39
     }
    ]
   },
