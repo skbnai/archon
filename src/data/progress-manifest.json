@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 65,
+    "totalPages": 69,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1684,6 +1684,10 @@
       {
         "id": "platforms/36-k8s-handbook-part3-containers",
         "title": "K8s Handbook Part 3: Containers"
+      },
+      {
+        "id": "platforms/37-k8s-handbook-part4-kubernetes-internals",
+        "title": "K8s Handbook Part 4: Kubernetes Internals"
       },
       {
         "id": "platforms/43-part-01-platform-vision-agentic-services",
@@ -1840,6 +1844,18 @@
       {
         "id": "platforms/parts/36-k8s-handbook-part3-containers-part3",
         "title": "K8s Handbook Part 3 (Part 3: SBOM, SLSA, Vulnerability Scanning & Runtime Security)"
+      },
+      {
+        "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part2",
+        "title": "K8s Handbook Part 4 (Part 2: Controller Manager, Cloud Controller Manager & kubelet)"
+      },
+      {
+        "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part3",
+        "title": "K8s Handbook Part 4 (Part 3: kube-proxy, CoreDNS, Admission Controllers, CRDs & Operators)"
+      },
+      {
+        "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part4",
+        "title": "K8s Handbook Part 4 (Part 4: Leader Election, API Request Lifecycle & Troubleshooting)"
       },
       {
         "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
