@@ -36,7 +36,20 @@
    "word_count": 2644,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/06-ai-gateway-multitenant-multicloud-part2",
+     "score": 0.61
+    },
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.32
+    },
+    {
+     "id": "agentic-systems/core/parts/10-agentic-platform-bestpractices-part2",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/07-enterprise-ai-gateway",
@@ -53,7 +66,20 @@
    "word_count": 2571,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/07-enterprise-ai-gateway-part2",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/08-kong-ai-gateway-guide",
+     "score": 0.37
+    },
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+     "score": 0.36
+    }
+   ]
   },
   {
    "id": "platforms/08-kong-ai-gateway-guide",
@@ -71,7 +97,20 @@
    "word_count": 2398,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+     "score": 0.56
+    },
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.37
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
+     "score": 0.34
+    }
+   ]
   },
   {
    "id": "platforms/09-kong-entra-id-integration",
@@ -89,7 +128,20 @@
    "word_count": 2448,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/09-kong-entra-id-integration-part2",
+     "score": 0.61
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+     "score": 0.33
+    }
+   ]
   },
   {
    "id": "platforms/10-ai-infrastructure-silicon-landscape-2026",
@@ -125,7 +177,20 @@
    "word_count": 2346,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "score": 0.57
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
+     "score": 0.56
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part3",
+     "score": 0.43
+    }
+   ]
   },
   {
    "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
@@ -141,10 +206,19 @@
     "checkpointer",
     "multi-agent"
    ],
-   "word_count": 1947,
+   "word_count": 1987,
    "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": []
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
@@ -160,10 +234,23 @@
     "compliance",
     "production"
    ],
-   "word_count": 2103,
+   "word_count": 2154,
    "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": []
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+     "score": 0.55
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
+     "score": 0.51
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "score": 0.42
+    }
+   ]
   },
   {
    "id": "platforms/index",
@@ -180,7 +267,7 @@
    "top_similar": [
     {
      "id": "operations/index",
-     "score": 0.33
+     "score": 0.34
     },
     {
      "id": "architecture/index",
@@ -205,7 +292,20 @@
    "word_count": 2201,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part3",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.36
+    },
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
+     "score": 0.35
+    }
+   ]
   },
   {
    "id": "platforms/parts/05-ai-gateway-full-comparison-part3",
@@ -224,7 +324,20 @@
    "word_count": 2149,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.33
+    }
+   ]
   },
   {
    "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
@@ -243,7 +356,20 @@
    "word_count": 1762,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part3",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+     "score": 0.35
+    },
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.34
+    }
+   ]
   },
   {
    "id": "platforms/parts/06-ai-gateway-multitenant-multicloud-part2",
@@ -260,7 +386,12 @@
    "word_count": 953,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/06-ai-gateway-multitenant-multicloud",
+     "score": 0.61
+    }
+   ]
   },
   {
    "id": "platforms/parts/07-enterprise-ai-gateway-part2",
@@ -277,7 +408,20 @@
    "word_count": 1474,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/07-enterprise-ai-gateway",
+     "score": 0.5
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+     "score": 0.34
+    },
+    {
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
+     "score": 0.33
+    }
+   ]
   },
   {
    "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
@@ -295,7 +439,20 @@
    "word_count": 2592,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/09-kong-entra-id-integration",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/08-kong-ai-gateway-guide",
+     "score": 0.34
+    }
+   ]
   },
   {
    "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
@@ -313,7 +470,20 @@
    "word_count": 2625,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/08-kong-ai-gateway-guide",
+     "score": 0.56
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/parts/09-kong-entra-id-integration-part2",
+     "score": 0.37
+    }
+   ]
   },
   {
    "id": "platforms/parts/09-kong-entra-id-integration-part2",
@@ -331,7 +501,20 @@
    "word_count": 2170,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/09-kong-entra-id-integration",
+     "score": 0.61
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
+     "score": 0.37
+    },
+    {
+     "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
+     "score": 0.34
+    }
+   ]
   },
   {
    "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
@@ -350,7 +533,20 @@
    "word_count": 2212,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part3",
+     "score": 0.6
+    },
+    {
+     "id": "platforms/11-aws-native-standards-first-agentic-architecture",
+     "score": 0.57
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
+     "score": 0.44
+    }
+   ]
   },
   {
    "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part3",
@@ -369,7 +565,20 @@
    "word_count": 2330,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "score": 0.6
+    },
+    {
+     "id": "platforms/11-aws-native-standards-first-agentic-architecture",
+     "score": 0.43
+    },
+    {
+     "id": "agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2",
+     "score": 0.34
+    }
+   ]
   },
   {
    "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
@@ -388,7 +597,20 @@
    "word_count": 1068,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/11-aws-native-standards-first-agentic-architecture",
+     "score": 0.56
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "score": 0.44
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
@@ -404,10 +626,19 @@
     "checkpointer",
     "multi-agent"
    ],
-   "word_count": 2105,
+   "word_count": 2101,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
+     "score": 0.46
+    },
+    {
+     "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
+     "score": 0.31
+    }
+   ]
   },
   {
    "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
@@ -423,10 +654,23 @@
     "checkpointer",
     "multi-agent"
    ],
-   "word_count": 2280,
+   "word_count": 2311,
    "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": []
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
+     "score": 0.46
+    },
+    {
+     "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
+     "score": 0.45
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+     "score": 0.35
+    }
+   ]
   },
   {
    "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
@@ -442,10 +686,23 @@
     "compliance",
     "production"
    ],
-   "word_count": 2150,
+   "word_count": 2146,
    "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": []
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
+     "score": 0.51
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
+     "score": 0.42
+    },
+    {
+     "id": "agentic-systems/core/09-multitenantagentplatform-architecture",
+     "score": 0.41
+    }
+   ]
   },
   {
    "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
@@ -461,10 +718,23 @@
     "compliance",
     "production"
    ],
-   "word_count": 2324,
+   "word_count": 2308,
    "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": []
+   "status": "draft",
+   "top_similar": [
+    {
+     "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
+     "score": 0.55
+    },
+    {
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
+     "score": 0.42
+    },
+    {
+     "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
+     "score": 0.38
+    }
+   ]
   }
  ]
 }
