@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 87,
+ "page_count": 88,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -683,6 +683,23 @@
     "opentelemetry"
    ],
    "word_count": 1078,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/31-k8s-handbook-part14-reference-architectures",
+   "title": "K8s Handbook Part 14: Reference Architectures",
+   "doc_type": "reference-architecture",
+   "topic_id": "k8s-handbook-part14-reference-architectures",
+   "tags": [
+    "kubernetes",
+    "reference-architecture",
+    "financial-services",
+    "healthcare",
+    "agentic-ai"
+   ],
+   "word_count": 793,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": []

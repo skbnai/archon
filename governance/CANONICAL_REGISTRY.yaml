@@ -2804,10 +2804,10 @@ topics:
   - id: k8s-handbook-part14-reference-architectures
     domain: platforms
     canonical: docs/platforms/31-k8s-handbook-part14-reference-architectures.md
-    pending: true
     aliases:
     - 'k8s handbook part 14: reference architectures'
-    supersedes: []
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part14_Reference_Architectures.md
     pages: []
   - id: k8s-handbook-part15-implementation-labs
     domain: platforms
