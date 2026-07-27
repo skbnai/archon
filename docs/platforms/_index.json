@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 40,
+ "page_count": 44,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -161,7 +161,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/06-ai-gateway-multitenant-multicloud-part2",
-     "score": 0.61
+     "score": 0.62
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
@@ -191,7 +191,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/07-enterprise-ai-gateway-part2",
-     "score": 0.5
+     "score": 0.49
     },
     {
      "id": "platforms/08-kong-ai-gateway-guide",
@@ -334,7 +334,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
-     "score": 0.43
+     "score": 0.44
     },
     {
      "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
@@ -417,7 +417,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",
-     "score": 0.51
+     "score": 0.52
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
@@ -469,7 +469,7 @@
    "top_similar": [
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
@@ -477,84 +477,42 @@
     },
     {
      "id": "platforms/11-aws-native-standards-first-agentic-architecture",
-     "score": 0.32
-    }
-   ]
-  },
-  {
-   "id": "platforms/21-azure-agent-architecture",
-   "title": "Azure AI Agent Architecture \u2014 Production Grade",
-   "doc_type": "reference-architecture",
-   "topic_id": "azure-agent-architecture",
-   "tags": [
-    "azure",
-    "cloud",
-    "agent-architecture",
-    "reference-architecture"
-   ],
-   "word_count": 1887,
-   "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": [
-    {
-     "id": "protocols/07-auth-identity-flows",
-     "score": 0.31
-    }
-   ]
-  },
-  {
-   "id": "platforms/22-hyperscaler-deep-dive-azure",
-   "title": "Hyperscaler Deep Dive: Microsoft Azure (2026)",
-   "doc_type": "guide",
-   "topic_id": "hyperscaler-deep-dive-azure",
-   "tags": [
-    "azure",
-    "hyperscaler",
-    "ai-foundry",
-    "copilot-studio",
-    "entra-agent-id"
-   ],
-   "word_count": 1165,
-   "last_reviewed": "2026-07-27",
-   "status": "current",
-   "top_similar": [
-    {
-     "id": "protocols/06-agent-identity-entra-vs-awsagentcore",
      "score": 0.33
-    },
-    {
-     "id": "agentic-systems/orchestration/08-agent-frameworks-comparison",
-     "score": 0.33
-    },
-    {
-     "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
-     "score": 0.32
     }
    ]
   },
   {
-   "id": "platforms/24-hyperscaler-deep-dive-gcp",
-   "title": "Hyperscaler Deep Dive: Google Cloud (2026)",
+   "id": "platforms/25-ai-assisted-iac-mastery",
+   "title": "AI-Assisted IaC Mastery Guide",
    "doc_type": "guide",
-   "topic_id": "hyperscaler-deep-dive-gcp",
+   "topic_id": "ai-assisted-iac-mastery",
    "tags": [
-    "gcp",
-    "google-cloud",
-    "hyperscaler",
-    "vertex-ai",
-    "adk",
-    "a2a",
-    "agent-engine"
+    "terraform",
+    "iac",
+    "ai",
+    "llm",
+    "infrastructure-as-code",
+    "agentic-ai"
    ],
-   "word_count": 1232,
+   "word_count": 2432,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": [
-    {
-     "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
-     "score": 0.35
-    }
-   ]
+   "top_similar": []
+  },
+  {
+   "id": "platforms/26-terraform-mastery-guide",
+   "title": "Terraform from Zero to Mastery",
+   "doc_type": "guide",
+   "topic_id": "terraform-mastery-guide",
+   "tags": [
+    "terraform",
+    "iac",
+    "infrastructure-as-code"
+   ],
+   "word_count": 2473,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/index",
@@ -571,7 +529,7 @@
    "top_similar": [
     {
      "id": "operations/index",
-     "score": 0.34
+     "score": 0.33
     },
     {
      "id": "architecture/index",
@@ -606,7 +564,7 @@
     },
     {
      "id": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
-     "score": 0.62
+     "score": 0.61
     }
    ]
   },
@@ -724,7 +682,7 @@
    "top_similar": [
     {
      "id": "platforms/06-ai-gateway-multitenant-multicloud",
-     "score": 0.61
+     "score": 0.62
     }
    ]
   },
@@ -746,11 +704,11 @@
    "top_similar": [
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.5
+     "score": 0.49
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
-     "score": 0.33
+     "score": 0.34
     },
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
@@ -785,7 +743,7 @@
     },
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -847,7 +805,7 @@
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -879,7 +837,7 @@
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part4",
-     "score": 0.43
+     "score": 0.44
     }
    ]
   },
@@ -911,7 +869,7 @@
     },
     {
      "id": "agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -939,7 +897,7 @@
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part2",
-     "score": 0.43
+     "score": 0.44
     }
    ]
   },
@@ -987,7 +945,11 @@
    "top_similar": [
     {
      "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
-     "score": 0.43
+     "score": 0.44
+    },
+    {
+     "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
+     "score": 0.3
     }
    ]
   },
@@ -1047,7 +1009,7 @@
     },
     {
      "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
-     "score": 0.46
+     "score": 0.47
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
@@ -1075,7 +1037,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.46
+     "score": 0.47
     },
     {
      "id": "platforms/14-aws-strands-agentcore-delta-supplement",
@@ -1105,7 +1067,7 @@
    "top_similar": [
     {
      "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
-     "score": 0.51
+     "score": 0.52
     }
    ]
   },
@@ -1130,6 +1092,93 @@
      "score": 0.43
     }
    ]
+  },
+  {
+   "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
+   "title": "AI-Assisted IaC Mastery Guide (Part 2: Guardrails, Governance & Cost Optimization)",
+   "doc_type": "guide",
+   "topic_id": "ai-assisted-iac-mastery-part2",
+   "tags": [
+    "terraform",
+    "iac",
+    "ai",
+    "guardrails",
+    "governance",
+    "finops"
+   ],
+   "word_count": 1968,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
+   "title": "AI-Assisted IaC Mastery Guide (Part 3: Self-Healing Infrastructure & The Future)",
+   "doc_type": "guide",
+   "topic_id": "ai-assisted-iac-mastery-part3",
+   "tags": [
+    "terraform",
+    "iac",
+    "ai",
+    "self-healing",
+    "multi-agent",
+    "responsible-ai"
+   ],
+   "word_count": 1961,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/26-terraform-mastery-guide-part2",
+   "title": "Terraform from Zero to Mastery (Part 2: CLI Mastery, Rollback & Modules)",
+   "doc_type": "guide",
+   "topic_id": "terraform-mastery-guide-part2",
+   "tags": [
+    "terraform",
+    "iac",
+    "cli",
+    "state-management",
+    "modules"
+   ],
+   "word_count": 2138,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/26-terraform-mastery-guide-part3",
+   "title": "Terraform from Zero to Mastery (Part 3: Enterprise Architecture, Security & OpenTofu)",
+   "doc_type": "guide",
+   "topic_id": "terraform-mastery-guide-part3",
+   "tags": [
+    "terraform",
+    "iac",
+    "enterprise-architecture",
+    "security",
+    "opentofu"
+   ],
+   "word_count": 2381,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/26-terraform-mastery-guide-part4",
+   "title": "Terraform from Zero to Mastery (Part 4: Interview Questions & Operations Guide)",
+   "doc_type": "guide",
+   "topic_id": "terraform-mastery-guide-part4",
+   "tags": [
+    "terraform",
+    "iac",
+    "interview-prep",
+    "production-readiness",
+    "operations"
+   ],
+   "word_count": 2243,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   }
  ]
 }
