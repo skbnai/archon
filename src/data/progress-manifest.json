@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 47,
+    "totalPages": 55,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1672,6 +1672,34 @@
       {
         "id": "platforms/26-terraform-mastery-guide",
         "title": "Terraform from Zero to Mastery"
+      },
+      {
+        "id": "platforms/43-part-01-platform-vision-agentic-services",
+        "title": "Databricks Agentic AI, Part 1 — Platform Vision & Agentic Services"
+      },
+      {
+        "id": "platforms/44-part-02-agent-lake-architecture",
+        "title": "Databricks Agentic AI, Part 2 — Agent Lake, Agent Architecture & Multi-Agent Orchestration"
+      },
+      {
+        "id": "platforms/45-part-03-mosaic-ai-mlflow",
+        "title": "Databricks Agentic AI, Part 3 — Mosaic AI & MLflow 3"
+      },
+      {
+        "id": "platforms/46-part-04-unity-catalog-governance",
+        "title": "Databricks Agentic AI, Part 4 — Unity Catalog AI Governance"
+      },
+      {
+        "id": "platforms/47-part-07-security-architecture",
+        "title": "Databricks Agentic AI, Part 7 — Security Architecture"
+      },
+      {
+        "id": "platforms/48-part-08-observability-finops-integration",
+        "title": "Databricks Agentic AI, Part 8 — Observability, FinOps & Integration Ecosystem"
+      },
+      {
+        "id": "platforms/49-part-09-competitive-reference-architectures",
+        "title": "Databricks Agentic AI, Part 9 — Competitive Comparison & Industry Reference Architectures"
       },
       {
         "id": "platforms/index",
@@ -1772,6 +1800,10 @@
       {
         "id": "platforms/parts/26-terraform-mastery-guide-part4",
         "title": "Terraform from Zero to Mastery (Part 4: Interview Questions & Operations Guide)"
+      },
+      {
+        "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
+        "title": "Databricks Agentic AI, Part 9 (Part 2: Anti-Patterns, Decision Framework & Roadmap)"
       }
     ]
   },

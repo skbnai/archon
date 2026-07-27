@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 47,
+ "page_count": 55,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -618,6 +618,133 @@
      "score": 0.49
     }
    ]
+  },
+  {
+   "id": "platforms/43-part-01-platform-vision-agentic-services",
+   "title": "Databricks Agentic AI, Part 1 \u2014 Platform Vision & Agentic Services",
+   "doc_type": "guide",
+   "topic_id": "part-01-platform-vision-agentic-services",
+   "tags": [
+    "databricks",
+    "agent-bricks",
+    "mosaic-ai",
+    "genie-one",
+    "omnigent",
+    "lakeflow"
+   ],
+   "word_count": 2002,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/44-part-02-agent-lake-architecture",
+   "title": "Databricks Agentic AI, Part 2 \u2014 Agent Lake, Agent Architecture & Multi-Agent Orchestration",
+   "doc_type": "guide",
+   "topic_id": "part-02-agent-lake-architecture",
+   "tags": [
+    "databricks",
+    "agent-lake",
+    "agent-architecture",
+    "multi-agent",
+    "orchestration",
+    "langgraph"
+   ],
+   "word_count": 1911,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/45-part-03-mosaic-ai-mlflow",
+   "title": "Databricks Agentic AI, Part 3 \u2014 Mosaic AI & MLflow 3",
+   "doc_type": "guide",
+   "topic_id": "part-03-mosaic-ai-mlflow",
+   "tags": [
+    "databricks",
+    "mosaic-ai",
+    "mlflow",
+    "vector-search",
+    "model-serving",
+    "ai-functions"
+   ],
+   "word_count": 1756,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/46-part-04-unity-catalog-governance",
+   "title": "Databricks Agentic AI, Part 4 \u2014 Unity Catalog AI Governance",
+   "doc_type": "guide",
+   "topic_id": "part-04-unity-catalog-governance",
+   "tags": [
+    "databricks",
+    "unity-catalog",
+    "governance",
+    "abac",
+    "lineage",
+    "audit"
+   ],
+   "word_count": 1707,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/47-part-07-security-architecture",
+   "title": "Databricks Agentic AI, Part 7 \u2014 Security Architecture",
+   "doc_type": "guide",
+   "topic_id": "part-07-security-architecture",
+   "tags": [
+    "databricks",
+    "security",
+    "zero-trust",
+    "rbac",
+    "abac",
+    "encryption",
+    "network-security"
+   ],
+   "word_count": 1767,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/48-part-08-observability-finops-integration",
+   "title": "Databricks Agentic AI, Part 8 \u2014 Observability, FinOps & Integration Ecosystem",
+   "doc_type": "guide",
+   "topic_id": "part-08-observability-finops-integration",
+   "tags": [
+    "databricks",
+    "observability",
+    "mlflow",
+    "finops",
+    "cost-optimization",
+    "integrations",
+    "lakewatch",
+    "model-units"
+   ],
+   "word_count": 2478,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/49-part-09-competitive-reference-architectures",
+   "title": "Databricks Agentic AI, Part 9 \u2014 Competitive Comparison & Industry Reference Architectures",
+   "doc_type": "guide",
+   "topic_id": "part-09-competitive-reference-architectures",
+   "tags": [
+    "databricks",
+    "agentic-ai",
+    "competitive",
+    "reference-architecture"
+   ],
+   "word_count": 1731,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/index",
@@ -1345,6 +1472,23 @@
      "score": 0.54
     }
    ]
+  },
+  {
+   "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
+   "title": "Databricks Agentic AI, Part 9 (Part 2: Anti-Patterns, Decision Framework & Roadmap)",
+   "doc_type": "guide",
+   "topic_id": "part-09-competitive-reference-architectures-part2",
+   "tags": [
+    "databricks",
+    "agentic-ai",
+    "anti-patterns",
+    "decision-framework",
+    "roadmap"
+   ],
+   "word_count": 1558,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   }
  ]
 }
