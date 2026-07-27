@@ -816,6 +816,15 @@ const sidebars = {
             "platforms/parts/quantum-ai-appendices-part2",
           ],
         },
+        {
+          type: "category",
+          label: "Multi-Cloud & Hyperscaler Deep Dives",
+          items: [
+            "platforms/azure-agent-architecture",
+            "platforms/hyperscaler-deep-dive-azure",
+            "platforms/hyperscaler-deep-dive-gcp",
+          ],
+        },
       ],
     },
     {

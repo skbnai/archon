@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 30,
+    "totalPages": 37,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1636,6 +1636,22 @@
       {
         "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
         "title": "AWS Strands & Bedrock AgentCore Production Builder Journey Kit"
+      },
+      {
+        "id": "platforms/14-aws-strands-agentcore-delta-supplement",
+        "title": "AWS Strands & Bedrock AgentCore — Delta Supplement v2.0"
+      },
+      {
+        "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
+        "title": "AgentCore Memory — Gaps, Extensions & 2026 Research"
+      },
+      {
+        "id": "platforms/17-agentcore-memory-operations-deepdive",
+        "title": "AgentCore Memory Operations Deep Dive"
+      },
+      {
+        "id": "platforms/20-hyperscaler-deep-dive-aws",
+        "title": "Hyperscaler Deep Dive: AWS (2026)"
       },
       {
         "id": "platforms/index",
@@ -1704,6 +1720,18 @@
       {
         "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
         "title": "AWS Strands & Bedrock AgentCore Production Builder Journey Kit (Part 3: Observability, RAI/Compliance, LaaS, Production Blueprint)"
+      },
+      {
+        "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
+        "title": "AWS Strands & Bedrock AgentCore — Delta Supplement v2.0 (Part 2: Strands Labs, AgentCore GA Updates, Observability, Best Practices)"
+      },
+      {
+        "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",
+        "title": "AgentCore Memory — Gaps, Extensions & 2026 Research (Part 2: Structured Extraction, Graph Memory & Research Landscape)"
+      },
+      {
+        "id": "platforms/parts/17-agentcore-memory-operations-deepdive-part2",
+        "title": "AgentCore Memory Operations Deep Dive (Part 2: Issues by Phase, Unit Testing, Evaluation & Cleanup)"
       }
     ]
   },

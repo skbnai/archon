@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 37,
+ "page_count": 40,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -480,6 +480,58 @@
      "score": 0.33
     }
    ]
+  },
+  {
+   "id": "platforms/21-azure-agent-architecture",
+   "title": "Azure AI Agent Architecture \u2014 Production Grade",
+   "doc_type": "reference-architecture",
+   "topic_id": "azure-agent-architecture",
+   "tags": [
+    "azure",
+    "cloud",
+    "agent-architecture",
+    "reference-architecture"
+   ],
+   "word_count": 1887,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/22-hyperscaler-deep-dive-azure",
+   "title": "Hyperscaler Deep Dive: Microsoft Azure (2026)",
+   "doc_type": "guide",
+   "topic_id": "hyperscaler-deep-dive-azure",
+   "tags": [
+    "azure",
+    "hyperscaler",
+    "ai-foundry",
+    "copilot-studio",
+    "entra-agent-id"
+   ],
+   "word_count": 1165,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/24-hyperscaler-deep-dive-gcp",
+   "title": "Hyperscaler Deep Dive: Google Cloud (2026)",
+   "doc_type": "guide",
+   "topic_id": "hyperscaler-deep-dive-gcp",
+   "tags": [
+    "gcp",
+    "google-cloud",
+    "hyperscaler",
+    "vertex-ai",
+    "adk",
+    "a2a",
+    "agent-engine"
+   ],
+   "word_count": 1232,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/index",
