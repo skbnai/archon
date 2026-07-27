@@ -34,3 +34,65 @@ exceptions:
       artifact of narrow-domain technical vocabulary overlap, not
       duplication.
     reviewed: 2026-07-25
+
+  - pair:
+      - platforms/02-quantum-ai-applications
+      - strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit
+    reason: >
+      Cross-domain false positive from dense shared "quantum AI" vocabulary.
+      platforms/02 is Phase 2 of a technical quantum-computing curriculum
+      (Weeks 5-8: classical ML through a quantum lens, VQE/QAOA, quantum
+      neural networks and kernel methods, QNLP, LLM-quantum integration
+      patterns — with runnable code samples). The strategy page profiles
+      two specific consulting firms' (Capgemini, and PwC/EY/KPMG) quantum
+      *business* practices and go-to-market positioning. Confirmed via
+      header-diff: zero topical overlap — one teaches quantum ML techniques,
+      the other analyzes consulting-firm market strategy.
+    reviewed: 2026-07-27
+
+  - pair:
+      - platforms/02-quantum-ai-applications
+      - strategy/01-quantum-ai-consulting-landscape
+    reason: >
+      Same false-positive pattern as the pair above (dense shared "quantum
+      AI" vocabulary, no topical overlap). platforms/02 teaches quantum ML
+      techniques (VQE, QAOA, QNN, QNLP); strategy/01 profiles Accenture and
+      McKinsey's quantum consulting practices. Confirmed via header-diff.
+    reviewed: 2026-07-27
+
+  - pair:
+      - platforms/parts/04-quantum-ai-appendices-part2
+      - strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm
+    reason: >
+      Cross-domain false positive from dense shared "quantum AI" vocabulary.
+      platforms/parts/04-...-part2 covers quantum-agentic use cases
+      (cybersecurity zero-trust, energy grid optimisation, agent task
+      allocation via QUBO), career/certification roadmaps, and a tooling
+      cheat sheet. The strategy page profiles BCG X, Deloitte, and IBM
+      Consulting's quantum practice positioning. Confirmed via header-diff:
+      zero topical overlap.
+    reviewed: 2026-07-27
+
+  - pair:
+      - platforms/03-quantum-ai-architecture
+      - strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit
+    reason: >
+      Cross-domain false positive from dense shared "quantum AI" vocabulary.
+      platforms/03 is Phase 3 of the quantum-computing curriculum (enterprise
+      quantum architecture patterns, hybrid quantum-classical stacks, quantum
+      cloud platforms/SDKs, post-quantum cryptography and NIST PQC standards,
+      capstone system design). The strategy page profiles Capgemini and the
+      Big Four audit firms' quantum consulting practices. Confirmed via
+      header-diff: zero topical overlap.
+    reviewed: 2026-07-27
+
+  - pair:
+      - platforms/parts/04-quantum-ai-appendices-part2
+      - strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit
+    reason: >
+      Same false-positive pattern as the two pairs above (dense shared
+      "quantum AI" vocabulary, no topical overlap). platforms/parts/04-...-part2
+      covers quantum-agentic use cases, career roadmaps, and tooling; the
+      strategy page profiles Capgemini/Big Four consulting practices.
+      Confirmed via header-diff.
+    reviewed: 2026-07-27
