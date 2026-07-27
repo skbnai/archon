@@ -17,15 +17,11 @@
    "top_similar": [
     {
      "id": "trust/index",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "platforms/index",
-     "score": 0.34
-    },
-    {
-     "id": "assets/index",
-     "score": 0.3
+     "score": 0.33
     }
    ]
   }

@@ -1,9 +1,13 @@
 # Duplicate-Candidate Clusters (>=0.6 similarity, connected components)
 
-31 cluster(s) found across 573 pages.
+31 cluster(s) found across 578 pages.
 
-## Cluster (4 pages)
+## Cluster (8 pages)
 
+- `platforms/03-quantum-ai-architecture`
+- `platforms/02-quantum-ai-applications`
+- `platforms/04-quantum-ai-appendices`
+- `platforms/parts/04-quantum-ai-appendices-part2`
 - `strategy/01-quantum-ai-consulting-landscape`
 - `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
 - `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
@@ -11,12 +15,34 @@
 
 Pairwise similarity within this cluster:
 
-- 75%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
-- 75%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
-- 74%  `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
-- 71%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
-- 71%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
-- 70%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
+- 74%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 74%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 73%  `platforms/03-quantum-ai-architecture` <-> `platforms/02-quantum-ai-applications`
+- 72%  `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 72%  `platforms/03-quantum-ai-architecture` <-> `platforms/parts/04-quantum-ai-appendices-part2`
+- 70%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 69%  `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 69%  `strategy/01-quantum-ai-consulting-landscape` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
+- 66%  `platforms/02-quantum-ai-applications` <-> `platforms/parts/04-quantum-ai-appendices-part2`
+- 64%  `platforms/02-quantum-ai-applications` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 61%  `platforms/parts/04-quantum-ai-appendices-part2` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
+- 61%  `platforms/02-quantum-ai-applications` <-> `strategy/01-quantum-ai-consulting-landscape`
+- 61%  `platforms/03-quantum-ai-architecture` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 60%  `platforms/parts/04-quantum-ai-appendices-part2` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 60%  `platforms/02-quantum-ai-applications` <-> `platforms/04-quantum-ai-appendices`
+- 60%  `platforms/03-quantum-ai-architecture` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
+- 59%  `platforms/parts/04-quantum-ai-appendices-part2` <-> `strategy/01-quantum-ai-consulting-landscape`
+- 59%  `platforms/03-quantum-ai-architecture` <-> `strategy/01-quantum-ai-consulting-landscape`
+- 57%  `platforms/03-quantum-ai-architecture` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 57%  `platforms/02-quantum-ai-applications` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
+- 56%  `platforms/parts/04-quantum-ai-appendices-part2` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 54%  `platforms/02-quantum-ai-applications` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
+- 54%  `platforms/03-quantum-ai-architecture` <-> `platforms/04-quantum-ai-appendices`
+- 52%  `platforms/04-quantum-ai-appendices` <-> `platforms/parts/04-quantum-ai-appendices-part2`
+- 47%  `platforms/04-quantum-ai-appendices` <-> `strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit`
+- 46%  `platforms/04-quantum-ai-appendices` <-> `strategy/01-quantum-ai-consulting-landscape`
+- 42%  `platforms/04-quantum-ai-appendices` <-> `strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm`
+- 42%  `platforms/04-quantum-ai-appendices` <-> `strategy/quantum/03-quantum-ai-consulting-landscape-cross-consultancy-antipatterns`
 
 ## Cluster (3 pages)
 
@@ -77,18 +103,6 @@ Pairwise similarity within this cluster:
 - 65%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
 - 62%  `architecture/04-aidlc-artifacts-togaf-migration-to-ea` <-> `architecture/parts/05-aidlc-artifacts-togaf-vision-business-architecture`
 - 55%  `architecture/03-aidlc-artifacts-togaf-foundation-to-technology` <-> `architecture/04-aidlc-artifacts-togaf-migration-to-ea`
-
-## Cluster (3 pages)
-
-- `strategy/02-quantum-ai-startup-landscape`
-- `strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns`
-- `strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti`
-
-Pairwise similarity within this cluster:
-
-- 65%  `strategy/02-quantum-ai-startup-landscape` <-> `strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns`
-- 61%  `strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns` <-> `strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti`
-- 56%  `strategy/02-quantum-ai-startup-landscape` <-> `strategy/quantum/04-quantum-ai-startup-landscape-quantinuum-multiverse-quera-rigetti`
 
 ## Cluster (2 pages)
 
@@ -232,7 +246,7 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 61%  `platforms/06-ai-gateway-multitenant-multicloud` <-> `platforms/parts/06-ai-gateway-multitenant-multicloud-part2`
+- 62%  `platforms/06-ai-gateway-multitenant-multicloud` <-> `platforms/parts/06-ai-gateway-multitenant-multicloud-part2`
 
 ## Cluster (2 pages)
 
@@ -295,7 +309,16 @@ Pairwise similarity within this cluster:
 
 Pairwise similarity within this cluster:
 
-- 73%  `strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g` <-> `strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t`
+- 72%  `strategy/87-vol10-relationship-maps-glossary-glossary-terms-a-g` <-> `strategy/88-vol10-relationship-maps-glossary-glossary-terms-h-t`
+
+## Cluster (2 pages)
+
+- `strategy/02-quantum-ai-startup-landscape`
+- `strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns`
+
+Pairwise similarity within this cluster:
+
+- 62%  `strategy/02-quantum-ai-startup-landscape` <-> `strategy/quantum/07-quantum-ai-startup-landscape-cross-startup-antipatterns`
 
 ## Cluster (2 pages)
 

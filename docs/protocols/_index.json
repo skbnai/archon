@@ -22,7 +22,7 @@
     },
     {
      "id": "protocols/11-entra-3lo-agent-auth-standards-architecture",
-     "score": 0.4
+     "score": 0.41
     }
    ]
   },
@@ -135,11 +135,11 @@
      "score": 0.37
     },
     {
-     "id": "protocols/04-agentidentity-research-2026",
+     "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
      "score": 0.37
     },
     {
-     "id": "agentic-systems/agentic-ui/12-identity-auth-architecture",
+     "id": "protocols/04-agentidentity-research-2026",
      "score": 0.37
     }
    ]
@@ -164,7 +164,7 @@
     },
     {
      "id": "protocols/06-agent-identity-entra-vs-awsagentcore",
-     "score": 0.3
+     "score": 0.31
     }
    ]
   },
@@ -328,7 +328,7 @@
      "score": 0.42
     },
     {
-     "id": "agentic-systems/coding-tools/parts/39-mcp-deep-guide-part2",
+     "id": "agentic-systems/orchestration/10-mcp-impact",
      "score": 0.4
     }
    ]
@@ -360,7 +360,7 @@
     },
     {
      "id": "protocols/parts/13-mcp-deep-research-2026-part2",
-     "score": 0.38
+     "score": 0.39
     }
    ]
   },
@@ -441,11 +441,11 @@
     },
     {
      "id": "protocols/23-existing-protocol-evolution-agentic-ai",
-     "score": 0.34
+     "score": 0.35
     },
     {
      "id": "agentic-systems/core/17-a2a-deep-research",
-     "score": 0.34
+     "score": 0.33
     }
    ]
   },
@@ -670,7 +670,7 @@
    "top_similar": [
     {
      "id": "agentic-systems/orchestration/05-camunda-deep-dive",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "agentic-systems/orchestration/04-temporal-deep-dive",
@@ -701,7 +701,7 @@
     },
     {
      "id": "protocols/parts/21-emerging-protocols-overview-part2",
-     "score": 0.4
+     "score": 0.39
     }
    ]
   },
@@ -727,7 +727,7 @@
     },
     {
      "id": "agentic-systems/orchestration/10-mcp-impact",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "architecture/58-mcp-a2a-protocol-deep-dive",
@@ -1007,7 +1007,7 @@
     },
     {
      "id": "protocols/20-emerging-protocols-crosscutting",
-     "score": 0.39
+     "score": 0.38
     }
    ]
   }

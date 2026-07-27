@@ -52,7 +52,7 @@
    "top_similar": [
     {
      "id": "architecture/87-modern-data-ai-platform-blueprint-2026",
-     "score": 0.43
+     "score": 0.44
     },
     {
      "id": "data-knowledge/01-databricks-lakehouse-data-infrastructure",
@@ -173,8 +173,8 @@
      "score": 0.37
     },
     {
-     "id": "strategy/28-part-18-case-studies",
-     "score": 0.36
+     "id": "protocols/parts/16-ai-protocols-standards-service-industry-guide-2026-part2",
+     "score": 0.35
     }
    ]
   },
@@ -272,11 +272,11 @@
    "top_similar": [
     {
      "id": "data-knowledge/parts/01-data-architecture-for-ai-report-part2",
-     "score": 0.33
+     "score": 0.32
     },
     {
      "id": "data-knowledge/03-data-architecture-for-ai-report",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -294,7 +294,7 @@
    "top_similar": [
     {
      "id": "architecture/parts/30-akes-addendum-document-update-and-versioning-part2",
-     "score": 0.35
+     "score": 0.34
     },
     {
      "id": "architecture/78-akes-addendum-document-update-and-versioning",
@@ -409,7 +409,7 @@
     },
     {
      "id": "data-knowledge/parts/03-enterprise-data-systems-ai-governance-report-part2",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "data-knowledge/parts/05-enterprise-knowledge-architectures-report-part2",
@@ -444,7 +444,7 @@
     },
     {
      "id": "data-knowledge/05-enterprise-data-systems-ai-governance-report",
-     "score": 0.45
+     "score": 0.44
     }
    ]
   },
