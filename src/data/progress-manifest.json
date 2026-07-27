@@ -1583,7 +1583,7 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 55,
+    "totalPages": 81,
     "pages": [
       {
         "id": "platforms/01-quantum-ai-foundations",
@@ -1672,6 +1672,46 @@
       {
         "id": "platforms/26-terraform-mastery-guide",
         "title": "Terraform from Zero to Mastery"
+      },
+      {
+        "id": "platforms/27-k8s-handbook-part10-observability",
+        "title": "K8s Handbook Part 10: Observability"
+      },
+      {
+        "id": "platforms/34-k8s-handbook-part1-infrastructure-evolution",
+        "title": "K8s Handbook Part 1: Infrastructure Evolution"
+      },
+      {
+        "id": "platforms/35-k8s-handbook-part2-linux-foundations",
+        "title": "K8s Handbook Part 2: Linux Foundations"
+      },
+      {
+        "id": "platforms/36-k8s-handbook-part3-containers",
+        "title": "K8s Handbook Part 3: Containers"
+      },
+      {
+        "id": "platforms/37-k8s-handbook-part4-kubernetes-internals",
+        "title": "K8s Handbook Part 4: Kubernetes Internals"
+      },
+      {
+        "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+        "title": "K8s Handbook Part 5: Kubernetes Resources"
+      },
+      {
+        "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
+        "title": "K8s Handbook Part 6: Kubernetes Networking"
+      },
+      {
+        "id": "platforms/40-k8s-handbook-part7-storage",
+        "title": "K8s Handbook Part 7: Storage"
+      },
+      {
+        "id": "platforms/41-k8s-handbook-part8-security",
+        "title": "K8s Handbook Part 8: Security"
+      },
+      {
+        "id": "platforms/42-k8s-handbook-part9-platform-engineering",
+        "title": "K8s Handbook Part 9: Platform Engineering"
       },
       {
         "id": "platforms/43-part-01-platform-vision-agentic-services",
@@ -1800,6 +1840,70 @@
       {
         "id": "platforms/parts/26-terraform-mastery-guide-part4",
         "title": "Terraform from Zero to Mastery (Part 4: Interview Questions & Operations Guide)"
+      },
+      {
+        "id": "platforms/parts/27-k8s-handbook-part10-observability-part2",
+        "title": "K8s Handbook Part 10: Observability (Part 2)"
+      },
+      {
+        "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
+        "title": "K8s Handbook Part 1 (Part 2: Cloud Computing, Containers & the Kubernetes Precursors)"
+      },
+      {
+        "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3",
+        "title": "K8s Handbook Part 1 (Part 3: The Kubernetes Era, Cloud-Native Architecture & Platform Engineering)"
+      },
+      {
+        "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part4",
+        "title": "K8s Handbook Part 1 (Part 4: Decision Matrix, Anti-Patterns & Migration Strategy)"
+      },
+      {
+        "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part2",
+        "title": "K8s Handbook Part 2 (Part 2: OverlayFS, Networking, iptables & eBPF)"
+      },
+      {
+        "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part3",
+        "title": "K8s Handbook Part 2 (Part 3: Runtime Internals, Kubernetes-Linux Mapping & Troubleshooting)"
+      },
+      {
+        "id": "platforms/parts/36-k8s-handbook-part3-containers-part2",
+        "title": "K8s Handbook Part 3 (Part 2: Image Building, Registry, Optimisation & Supply Chain)"
+      },
+      {
+        "id": "platforms/parts/36-k8s-handbook-part3-containers-part3",
+        "title": "K8s Handbook Part 3 (Part 3: SBOM, SLSA, Vulnerability Scanning & Runtime Security)"
+      },
+      {
+        "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part2",
+        "title": "K8s Handbook Part 4 (Part 2: Controller Manager, Cloud Controller Manager & kubelet)"
+      },
+      {
+        "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part3",
+        "title": "K8s Handbook Part 4 (Part 3: kube-proxy, CoreDNS, Admission Controllers, CRDs & Operators)"
+      },
+      {
+        "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part4",
+        "title": "K8s Handbook Part 4 (Part 4: Leader Election, API Request Lifecycle & Troubleshooting)"
+      },
+      {
+        "id": "platforms/parts/38-k8s-handbook-part5-kubernetes-resources-part2",
+        "title": "K8s Handbook Part 5: Kubernetes Resources (Part 2)"
+      },
+      {
+        "id": "platforms/parts/39-k8s-handbook-part6-kubernetes-networking-part2",
+        "title": "K8s Handbook Part 6: Kubernetes Networking (Part 2)"
+      },
+      {
+        "id": "platforms/parts/40-k8s-handbook-part7-storage-part2",
+        "title": "K8s Handbook Part 7: Storage (Part 2)"
+      },
+      {
+        "id": "platforms/parts/41-k8s-handbook-part8-security-part2",
+        "title": "K8s Handbook Part 8: Security (Part 2)"
+      },
+      {
+        "id": "platforms/parts/42-k8s-handbook-part9-platform-engineering-part2",
+        "title": "K8s Handbook Part 9: Platform Engineering (Part 2)"
       },
       {
         "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",

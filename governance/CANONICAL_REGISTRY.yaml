@@ -2734,9 +2734,15 @@ topics:
   - id: k8s-handbook-part10-observability
     domain: platforms
     canonical: docs/platforms/27-k8s-handbook-part10-observability.md
-    pending: true
     aliases:
     - 'k8s handbook part 10: observability'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part10_Observability.md
+    pages: []
+  - id: k8s-handbook-part10-observability-part2
+    domain: platforms
+    canonical: docs/platforms/parts/27-k8s-handbook-part10-observability-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part11-ai-infrastructure
@@ -2790,73 +2796,163 @@ topics:
   - id: k8s-handbook-part1-infrastructure-evolution
     domain: platforms
     canonical: docs/platforms/34-k8s-handbook-part1-infrastructure-evolution.md
-    pending: true
     aliases:
     - 'k8s handbook part 1: infrastructure evolution'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part1_Infrastructure_Evolution.md
+    pages: []
+  - id: k8s-handbook-part1-infrastructure-evolution-part2
+    domain: platforms
+    canonical: docs/platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part1-infrastructure-evolution-part3
+    domain: platforms
+    canonical: docs/platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part1-infrastructure-evolution-part4
+    domain: platforms
+    canonical: docs/platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part4.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part2-linux-foundations
     domain: platforms
     canonical: docs/platforms/35-k8s-handbook-part2-linux-foundations.md
-    pending: true
     aliases:
     - 'k8s handbook part 2: linux foundations'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part2_Linux_Foundations.md
+    pages: []
+  - id: k8s-handbook-part2-linux-foundations-part2
+    domain: platforms
+    canonical: docs/platforms/parts/35-k8s-handbook-part2-linux-foundations-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part2-linux-foundations-part3
+    domain: platforms
+    canonical: docs/platforms/parts/35-k8s-handbook-part2-linux-foundations-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part3-containers
     domain: platforms
     canonical: docs/platforms/36-k8s-handbook-part3-containers.md
-    pending: true
     aliases:
     - 'k8s handbook part 3: containers'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part3_Containers.md
+    pages: []
+  - id: k8s-handbook-part3-containers-part2
+    domain: platforms
+    canonical: docs/platforms/parts/36-k8s-handbook-part3-containers-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part3-containers-part3
+    domain: platforms
+    canonical: docs/platforms/parts/36-k8s-handbook-part3-containers-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part4-kubernetes-internals
     domain: platforms
     canonical: docs/platforms/37-k8s-handbook-part4-kubernetes-internals.md
-    pending: true
     aliases:
     - 'k8s handbook part 4: kubernetes internals'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part4_Kubernetes_Internals.md
+    pages: []
+  - id: k8s-handbook-part4-kubernetes-internals-part2
+    domain: platforms
+    canonical: docs/platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part4-kubernetes-internals-part3
+    domain: platforms
+    canonical: docs/platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: k8s-handbook-part4-kubernetes-internals-part4
+    domain: platforms
+    canonical: docs/platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part4.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part5-kubernetes-resources
     domain: platforms
     canonical: docs/platforms/38-k8s-handbook-part5-kubernetes-resources.md
-    pending: true
     aliases:
     - 'k8s handbook part 5: kubernetes resources'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part5_Kubernetes_Resources.md
+    pages: []
+  - id: k8s-handbook-part5-kubernetes-resources-part2
+    domain: platforms
+    canonical: docs/platforms/parts/38-k8s-handbook-part5-kubernetes-resources-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part6-kubernetes-networking
     domain: platforms
     canonical: docs/platforms/39-k8s-handbook-part6-kubernetes-networking.md
-    pending: true
     aliases:
     - 'k8s handbook part 6: kubernetes networking'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part6_Kubernetes_Networking.md
+    pages: []
+  - id: k8s-handbook-part6-kubernetes-networking-part2
+    domain: platforms
+    canonical: docs/platforms/parts/39-k8s-handbook-part6-kubernetes-networking-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part7-storage
     domain: platforms
     canonical: docs/platforms/40-k8s-handbook-part7-storage.md
-    pending: true
     aliases:
     - 'k8s handbook part 7: storage'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part7_Storage.md
+    pages: []
+  - id: k8s-handbook-part7-storage-part2
+    domain: platforms
+    canonical: docs/platforms/parts/40-k8s-handbook-part7-storage-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part8-security
     domain: platforms
     canonical: docs/platforms/41-k8s-handbook-part8-security.md
-    pending: true
     aliases:
     - 'k8s handbook part 8: security'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part8_Security.md
+    pages: []
+  - id: k8s-handbook-part8-security-part2
+    domain: platforms
+    canonical: docs/platforms/parts/41-k8s-handbook-part8-security-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: k8s-handbook-part9-platform-engineering
     domain: platforms
     canonical: docs/platforms/42-k8s-handbook-part9-platform-engineering.md
-    pending: true
     aliases:
     - 'k8s handbook part 9: platform engineering'
+    supersedes:
+    - docs/cloud-platforms/kubernetes/K8s_Handbook_Part9_Platform_Engineering.md
+    pages: []
+  - id: k8s-handbook-part9-platform-engineering-part2
+    domain: platforms
+    canonical: docs/platforms/parts/42-k8s-handbook-part9-platform-engineering-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: part-01-platform-vision-agentic-services

@@ -1,6 +1,6 @@
 {
  "domain": "platforms",
- "page_count": 55,
+ "page_count": 81,
  "pages": [
   {
    "id": "platforms/01-quantum-ai-foundations",
@@ -618,6 +618,176 @@
      "score": 0.49
     }
    ]
+  },
+  {
+   "id": "platforms/27-k8s-handbook-part10-observability",
+   "title": "K8s Handbook Part 10: Observability",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part10-observability",
+   "tags": [
+    "kubernetes",
+    "observability",
+    "prometheus",
+    "opentelemetry",
+    "grafana"
+   ],
+   "word_count": 2536,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/34-k8s-handbook-part1-infrastructure-evolution",
+   "title": "K8s Handbook Part 1: Infrastructure Evolution",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part1-infrastructure-evolution",
+   "tags": [
+    "kubernetes",
+    "infrastructure",
+    "virtualization",
+    "cloud-computing",
+    "platform-engineering"
+   ],
+   "word_count": 2076,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/35-k8s-handbook-part2-linux-foundations",
+   "title": "K8s Handbook Part 2: Linux Foundations",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part2-linux-foundations",
+   "tags": [
+    "kubernetes",
+    "linux",
+    "namespaces",
+    "cgroups",
+    "systems-programming"
+   ],
+   "word_count": 2352,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/36-k8s-handbook-part3-containers",
+   "title": "K8s Handbook Part 3: Containers",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part3-containers",
+   "tags": [
+    "kubernetes",
+    "docker",
+    "oci",
+    "container-runtimes",
+    "containerd"
+   ],
+   "word_count": 2080,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/37-k8s-handbook-part4-kubernetes-internals",
+   "title": "K8s Handbook Part 4: Kubernetes Internals",
+   "doc_type": "reference-architecture",
+   "topic_id": "k8s-handbook-part4-kubernetes-internals",
+   "tags": [
+    "kubernetes",
+    "api-server",
+    "etcd",
+    "scheduler",
+    "control-plane"
+   ],
+   "word_count": 2640,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+   "title": "K8s Handbook Part 5: Kubernetes Resources",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part5-kubernetes-resources",
+   "tags": [
+    "kubernetes",
+    "pods",
+    "workloads",
+    "services",
+    "storage"
+   ],
+   "word_count": 3270,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
+   "title": "K8s Handbook Part 6: Kubernetes Networking",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part6-kubernetes-networking",
+   "tags": [
+    "kubernetes",
+    "networking",
+    "cni",
+    "coredns",
+    "ingress"
+   ],
+   "word_count": 3127,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/40-k8s-handbook-part7-storage",
+   "title": "K8s Handbook Part 7: Storage",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part7-storage",
+   "tags": [
+    "kubernetes",
+    "storage",
+    "csi",
+    "ceph",
+    "longhorn"
+   ],
+   "word_count": 2695,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/41-k8s-handbook-part8-security",
+   "title": "K8s Handbook Part 8: Security",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part8-security",
+   "tags": [
+    "kubernetes",
+    "security",
+    "zero-trust",
+    "rbac",
+    "secrets"
+   ],
+   "word_count": 2784,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/42-k8s-handbook-part9-platform-engineering",
+   "title": "K8s Handbook Part 9: Platform Engineering",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part9-platform-engineering",
+   "tags": [
+    "kubernetes",
+    "platform-engineering",
+    "gitops",
+    "argocd",
+    "backstage"
+   ],
+   "word_count": 2962,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/43-part-01-platform-vision-agentic-services",
@@ -1551,6 +1721,278 @@
      "score": 0.54
     }
    ]
+  },
+  {
+   "id": "platforms/parts/27-k8s-handbook-part10-observability-part2",
+   "title": "K8s Handbook Part 10: Observability (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part10-observability-part2",
+   "tags": [
+    "kubernetes",
+    "observability",
+    "slo",
+    "cost-observability",
+    "ai-observability"
+   ],
+   "word_count": 2218,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
+   "title": "K8s Handbook Part 1 (Part 2: Cloud Computing, Containers & the Kubernetes Precursors)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part1-infrastructure-evolution-part2",
+   "tags": [
+    "kubernetes",
+    "cloud-computing",
+    "containers",
+    "docker",
+    "google-borg"
+   ],
+   "word_count": 2592,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3",
+   "title": "K8s Handbook Part 1 (Part 3: The Kubernetes Era, Cloud-Native Architecture & Platform Engineering)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part1-infrastructure-evolution-part3",
+   "tags": [
+    "kubernetes",
+    "cloud-native",
+    "platform-engineering",
+    "internal-developer-platform",
+    "twelve-factor"
+   ],
+   "word_count": 1726,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part4",
+   "title": "K8s Handbook Part 1 (Part 4: Decision Matrix, Anti-Patterns & Migration Strategy)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part1-infrastructure-evolution-part4",
+   "tags": [
+    "kubernetes",
+    "decision-framework",
+    "anti-patterns",
+    "migration"
+   ],
+   "word_count": 945,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part2",
+   "title": "K8s Handbook Part 2 (Part 2: OverlayFS, Networking, iptables & eBPF)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part2-linux-foundations-part2",
+   "tags": [
+    "kubernetes",
+    "linux",
+    "overlayfs",
+    "networking",
+    "iptables",
+    "ebpf"
+   ],
+   "word_count": 2245,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part3",
+   "title": "K8s Handbook Part 2 (Part 3: Runtime Internals, Kubernetes-Linux Mapping & Troubleshooting)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part2-linux-foundations-part3",
+   "tags": [
+    "kubernetes",
+    "linux",
+    "oci-runtime",
+    "runc",
+    "troubleshooting"
+   ],
+   "word_count": 1776,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/36-k8s-handbook-part3-containers-part2",
+   "title": "K8s Handbook Part 3 (Part 2: Image Building, Registry, Optimisation & Supply Chain)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part3-containers-part2",
+   "tags": [
+    "kubernetes",
+    "distroless",
+    "container-registry",
+    "supply-chain-security",
+    "cosign"
+   ],
+   "word_count": 2213,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/36-k8s-handbook-part3-containers-part3",
+   "title": "K8s Handbook Part 3 (Part 3: SBOM, SLSA, Vulnerability Scanning & Runtime Security)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part3-containers-part3",
+   "tags": [
+    "kubernetes",
+    "sbom",
+    "slsa",
+    "vulnerability-scanning",
+    "falco",
+    "tetragon"
+   ],
+   "word_count": 2279,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part2",
+   "title": "K8s Handbook Part 4 (Part 2: Controller Manager, Cloud Controller Manager & kubelet)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part4-kubernetes-internals-part2",
+   "tags": [
+    "kubernetes",
+    "controller-manager",
+    "cloud-controller-manager",
+    "kubelet"
+   ],
+   "word_count": 1300,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part3",
+   "title": "K8s Handbook Part 4 (Part 3: kube-proxy, CoreDNS, Admission Controllers, CRDs & Operators)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part4-kubernetes-internals-part3",
+   "tags": [
+    "kubernetes",
+    "kube-proxy",
+    "coredns",
+    "admission-controllers",
+    "crds",
+    "operators"
+   ],
+   "word_count": 1623,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part4",
+   "title": "K8s Handbook Part 4 (Part 4: Leader Election, API Request Lifecycle & Troubleshooting)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part4-kubernetes-internals-part4",
+   "tags": [
+    "kubernetes",
+    "leader-election",
+    "high-availability",
+    "troubleshooting"
+   ],
+   "word_count": 1278,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/38-k8s-handbook-part5-kubernetes-resources-part2",
+   "title": "K8s Handbook Part 5: Kubernetes Resources (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part5-kubernetes-resources-part2",
+   "tags": [
+    "kubernetes",
+    "rbac",
+    "networking",
+    "autoscaling",
+    "scheduling"
+   ],
+   "word_count": 1940,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/39-k8s-handbook-part6-kubernetes-networking-part2",
+   "title": "K8s Handbook Part 6: Kubernetes Networking (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part6-kubernetes-networking-part2",
+   "tags": [
+    "kubernetes",
+    "networking",
+    "service-mesh",
+    "gateway-api",
+    "observability"
+   ],
+   "word_count": 2099,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/40-k8s-handbook-part7-storage-part2",
+   "title": "K8s Handbook Part 7: Storage (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part7-storage-part2",
+   "tags": [
+    "kubernetes",
+    "storage",
+    "ai-infrastructure",
+    "backup",
+    "observability"
+   ],
+   "word_count": 2211,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/41-k8s-handbook-part8-security-part2",
+   "title": "K8s Handbook Part 8: Security (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part8-security-part2",
+   "tags": [
+    "kubernetes",
+    "security",
+    "compliance",
+    "supply-chain",
+    "runtime-security"
+   ],
+   "word_count": 2090,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/parts/42-k8s-handbook-part9-platform-engineering-part2",
+   "title": "K8s Handbook Part 9: Platform Engineering (Part 2)",
+   "doc_type": "guide",
+   "topic_id": "k8s-handbook-part9-platform-engineering-part2",
+   "tags": [
+    "kubernetes",
+    "platform-engineering",
+    "multi-tenancy",
+    "progressive-delivery",
+    "ai-infrastructure"
+   ],
+   "word_count": 2116,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
