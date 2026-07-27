@@ -3433,17 +3433,29 @@ topics:
   - id: 1b-authorization-deep-dive
     domain: trust
     canonical: docs/trust/ai-security-governance/24-1b-authorization-deep-dive.md
-    pending: true
     aliases:
     - 'enterprise authorization deep dive: engines, interceptor patterns & xacml'
+    supersedes:
+    - docs/ai-security-governance/policy/Vol1b_Authorization_Deep_Dive.md
+    pages: []
+  - id: 1b-authorization-deep-dive-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/24-1b-authorization-deep-dive-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: identity-claims-policy
     domain: trust
     canonical: docs/trust/ai-security-governance/25-identity-claims-policy.md
-    pending: true
     aliases:
     - identity, claims & policy design
+    supersedes:
+    - docs/ai-security-governance/policy/Vol2_Identity_Claims_Policy.md
+    pages: []
+  - id: identity-claims-policy-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/25-identity-claims-policy-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: 2b-advanced-policy-engineering
