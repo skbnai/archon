@@ -2482,34 +2482,41 @@ topics:
   - id: quantum-ai-foundations
     domain: platforms
     canonical: docs/platforms/01-quantum-ai-foundations.md
-    pending: true
     aliases:
     - 'quantum ai: zero to mastery'
     supersedes:
     - docs/quantum/zero-to-mastery.md
+    - docs/quantum/zero-to-mastery-part1-foundations.md
     pages: []
   - id: quantum-ai-applications
     domain: platforms
     canonical: docs/platforms/02-quantum-ai-applications.md
-    pending: true
     aliases:
     - 'quantum ai: zero to mastery'
-    supersedes: []
+    supersedes:
+    - docs/quantum/zero-to-mastery-part2-quantum-ai.md
     pages: []
   - id: quantum-ai-architecture
     domain: platforms
     canonical: docs/platforms/03-quantum-ai-architecture.md
-    pending: true
     aliases:
     - 'quantum ai: zero to mastery'
-    supersedes: []
+    supersedes:
+    - docs/quantum/zero-to-mastery-part3-architecture.md
     pages: []
   - id: quantum-ai-appendices
     domain: platforms
     canonical: docs/platforms/04-quantum-ai-appendices.md
-    pending: true
     aliases:
     - 'quantum ai: zero to mastery'
+    supersedes:
+    - docs/quantum/zero-to-mastery-part4-appendices.md
+    pages: []
+  - id: quantum-ai-appendices-part2
+    domain: platforms
+    canonical: docs/platforms/parts/04-quantum-ai-appendices-part2.md
+    aliases:
+    - 'quantum ai: zero to mastery appendices part 2'
     supersedes: []
     pages: []
   - id: ai-gateway-full-comparison

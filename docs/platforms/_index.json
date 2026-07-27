@@ -1,7 +1,77 @@
 {
  "domain": "platforms",
- "page_count": 32,
+ "page_count": 37,
  "pages": [
+  {
+   "id": "platforms/01-quantum-ai-foundations",
+   "title": "Quantum AI Foundations",
+   "doc_type": "guide",
+   "topic_id": "quantum-ai-foundations",
+   "tags": [
+    "quantum",
+    "quantum-computing",
+    "quantum-ai",
+    "enterprise-architecture",
+    "foundations"
+   ],
+   "word_count": 3036,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/02-quantum-ai-applications",
+   "title": "Quantum AI Applications",
+   "doc_type": "guide",
+   "topic_id": "quantum-ai-applications",
+   "tags": [
+    "quantum",
+    "quantum-computing",
+    "quantum-ai",
+    "quantum-ml",
+    "vqe",
+    "qaoa"
+   ],
+   "word_count": 1008,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/03-quantum-ai-architecture",
+   "title": "Quantum AI Architecture",
+   "doc_type": "guide",
+   "topic_id": "quantum-ai-architecture",
+   "tags": [
+    "quantum",
+    "quantum-computing",
+    "quantum-ai",
+    "enterprise-architecture",
+    "pqc",
+    "post-quantum-cryptography"
+   ],
+   "word_count": 1200,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
+  {
+   "id": "platforms/04-quantum-ai-appendices",
+   "title": "Quantum AI Appendices: Mathematics, Use Cases & Agentic Integration",
+   "doc_type": "guide",
+   "topic_id": "quantum-ai-appendices",
+   "tags": [
+    "quantum",
+    "quantum-computing",
+    "quantum-ai",
+    "reference",
+    "use-cases"
+   ],
+   "word_count": 1041,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
+  },
   {
    "id": "platforms/05-ai-gateway-full-comparison",
    "title": "AI Gateway Comparison \u2014 10 Tools",
@@ -381,6 +451,24 @@
      "score": 0.31
     }
    ]
+  },
+  {
+   "id": "platforms/parts/04-quantum-ai-appendices-part2",
+   "title": "Quantum AI Appendices: Career Paths, Tooling & Industry Landscape",
+   "doc_type": "guide",
+   "topic_id": "quantum-ai-appendices-part2",
+   "tags": [
+    "quantum",
+    "quantum-computing",
+    "quantum-ai",
+    "careers",
+    "industry-landscape",
+    "tooling"
+   ],
+   "word_count": 1465,
+   "last_reviewed": "2026-07-27",
+   "status": "current",
+   "top_similar": []
   },
   {
    "id": "platforms/parts/05-ai-gateway-full-comparison-part2",

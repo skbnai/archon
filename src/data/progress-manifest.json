@@ -1583,8 +1583,24 @@
   },
   "platforms": {
     "label": "Platforms & Infrastructure",
-    "totalPages": 32,
+    "totalPages": 30,
     "pages": [
+      {
+        "id": "platforms/01-quantum-ai-foundations",
+        "title": "Quantum AI Foundations"
+      },
+      {
+        "id": "platforms/02-quantum-ai-applications",
+        "title": "Quantum AI Applications"
+      },
+      {
+        "id": "platforms/03-quantum-ai-architecture",
+        "title": "Quantum AI Architecture"
+      },
+      {
+        "id": "platforms/04-quantum-ai-appendices",
+        "title": "Quantum AI Appendices: Mathematics, Use Cases & Agentic Integration"
+      },
       {
         "id": "platforms/05-ai-gateway-full-comparison",
         "title": "AI Gateway Comparison — 10 Tools"
@@ -1622,24 +1638,12 @@
         "title": "AWS Strands & Bedrock AgentCore Production Builder Journey Kit"
       },
       {
-        "id": "platforms/14-aws-strands-agentcore-delta-supplement",
-        "title": "AWS Strands & Bedrock AgentCore — Delta Supplement v2.0"
-      },
-      {
-        "id": "platforms/16-agentcore-memory-gaps-extensions-2026",
-        "title": "AgentCore Memory — Gaps, Extensions & 2026 Research"
-      },
-      {
-        "id": "platforms/17-agentcore-memory-operations-deepdive",
-        "title": "AgentCore Memory Operations Deep Dive"
-      },
-      {
-        "id": "platforms/20-hyperscaler-deep-dive-aws",
-        "title": "Hyperscaler Deep Dive: AWS (2026)"
-      },
-      {
         "id": "platforms/index",
         "title": "Platforms Hub"
+      },
+      {
+        "id": "platforms/parts/04-quantum-ai-appendices-part2",
+        "title": "Quantum AI Appendices: Career Paths, Tooling & Industry Landscape"
       },
       {
         "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
@@ -1700,18 +1704,6 @@
       {
         "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
         "title": "AWS Strands & Bedrock AgentCore Production Builder Journey Kit (Part 3: Observability, RAI/Compliance, LaaS, Production Blueprint)"
-      },
-      {
-        "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
-        "title": "AWS Strands & Bedrock AgentCore — Delta Supplement v2.0 (Part 2: Strands Labs, AgentCore GA Updates, Observability, Best Practices)"
-      },
-      {
-        "id": "platforms/parts/16-agentcore-memory-gaps-extensions-2026-part2",
-        "title": "AgentCore Memory — Gaps, Extensions & 2026 Research (Part 2: Structured Extraction, Graph Memory & Research Landscape)"
-      },
-      {
-        "id": "platforms/parts/17-agentcore-memory-operations-deepdive-part2",
-        "title": "AgentCore Memory Operations Deep Dive (Part 2: Issues by Phase, Unit Testing, Evaluation & Cleanup)"
       }
     ]
   },
