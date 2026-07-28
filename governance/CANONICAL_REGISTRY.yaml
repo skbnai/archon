@@ -4135,9 +4135,9 @@ topics:
   - id: constitutional-ai-engineering
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/07-constitutional-ai-engineering.md
-    pending: true
     aliases: []
-    supersedes: []
+    supersedes:
+    - docs/sovereign-constitutional-ai/constitutional-ai-engineering.md
     pages: []
   - id: democratic-ai-public-interest
     domain: trust
