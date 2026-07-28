@@ -3935,18 +3935,18 @@ topics:
   - id: agentic-ai-security
     domain: trust
     canonical: docs/trust/cybersec-architect/05-agentic-ai-security.md
-    pending: true
     aliases:
     - part 5 — agentic ai security
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/05-agentic-ai-security.md
     pages: []
   - id: identity-architecture
     domain: trust
     canonical: docs/trust/cybersec-architect/06-identity-architecture.md
-    pending: true
     aliases:
     - part 6 — identity architecture
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/06-identity-architecture.md
     pages: []
   - id: cloud-security
     domain: trust
