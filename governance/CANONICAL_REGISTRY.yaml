@@ -3234,9 +3234,15 @@ topics:
   - id: agentic-ai-security-guardrails
     domain: trust
     canonical: docs/trust/04-agentic-ai-security-guardrails.md
-    pending: true
     aliases:
     - agentic ai security architecture & multi-layer guardrails
+    supersedes:
+    - docs/enterprise-architecture/ai-architecture/agentic-ai-security-guardrails.md
+    pages: []
+  - id: agentic-ai-security-guardrails-part2
+    domain: trust
+    canonical: docs/trust/parts/04-agentic-ai-security-guardrails-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: agentic-ai-security-identity
