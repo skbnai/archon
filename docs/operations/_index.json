@@ -16,16 +16,16 @@
    "status": "draft",
    "top_similar": [
     {
-     "id": "trust/index",
-     "score": 0.36
+     "id": "platforms/index",
+     "score": 0.33
     },
     {
-     "id": "platforms/index",
-     "score": 0.34
+     "id": "architecture/index",
+     "score": 0.33
     },
     {
      "id": "agentic-systems/index",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   }

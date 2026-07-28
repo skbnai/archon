@@ -19,16 +19,16 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "platforms/02-quantum-ai-applications",
-     "score": 0.58
-    },
-    {
      "id": "platforms/04-quantum-ai-appendices",
      "score": 0.58
     },
     {
+     "id": "platforms/02-quantum-ai-applications",
+     "score": 0.57
+    },
+    {
      "id": "platforms/03-quantum-ai-architecture",
-     "score": 0.55
+     "score": 0.53
     }
    ]
   },
@@ -51,15 +51,15 @@
    "top_similar": [
     {
      "id": "platforms/03-quantum-ai-architecture",
-     "score": 0.73
+     "score": 0.71
     },
     {
      "id": "platforms/parts/04-quantum-ai-appendices-part2",
-     "score": 0.66
+     "score": 0.65
     },
     {
      "id": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
-     "score": 0.64
+     "score": 0.62
     }
    ]
   },
@@ -82,15 +82,15 @@
    "top_similar": [
     {
      "id": "platforms/02-quantum-ai-applications",
-     "score": 0.73
+     "score": 0.71
     },
     {
      "id": "platforms/parts/04-quantum-ai-appendices-part2",
-     "score": 0.73
+     "score": 0.71
     },
     {
      "id": "strategy/quantum/02-quantum-ai-consulting-landscape-capgemini-big-four-audit",
-     "score": 0.61
+     "score": 0.58
     }
    ]
   },
@@ -112,7 +112,7 @@
    "top_similar": [
     {
      "id": "platforms/02-quantum-ai-applications",
-     "score": 0.61
+     "score": 0.59
     },
     {
      "id": "platforms/01-quantum-ai-foundations",
@@ -120,7 +120,7 @@
     },
     {
      "id": "platforms/03-quantum-ai-architecture",
-     "score": 0.54
+     "score": 0.53
     }
    ]
   },
@@ -161,7 +161,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/06-ai-gateway-multitenant-multicloud-part2",
-     "score": 0.6
+     "score": 0.59
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
@@ -187,7 +187,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/07-enterprise-ai-gateway-part2",
-     "score": 0.48
+     "score": 0.47
     },
     {
      "id": "platforms/08-kong-ai-gateway-guide",
@@ -226,7 +226,7 @@
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
-     "score": 0.34
+     "score": 0.35
     }
    ]
   },
@@ -249,11 +249,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
-     "score": 0.6
+     "score": 0.59
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
-     "score": 0.42
+     "score": 0.44
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
@@ -306,7 +306,7 @@
     },
     {
      "id": "platforms/parts/11-aws-native-standards-first-agentic-architecture-part3",
-     "score": 0.42
+     "score": 0.41
     }
    ]
   },
@@ -330,11 +330,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part3",
-     "score": 0.42
+     "score": 0.43
     },
     {
      "id": "platforms/parts/12-aws-strands-agentcore-advancedpatterns-part2",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -358,7 +358,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.51
+     "score": 0.52
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
@@ -391,7 +391,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "platforms/parts/18-agentcore-strands-deep-research-report-part4",
@@ -451,7 +451,7 @@
     },
     {
      "id": "platforms/15-agentcore-memory-architecture-guide",
-     "score": 0.31
+     "score": 0.32
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
@@ -504,7 +504,7 @@
     },
     {
      "id": "platforms/parts/18-agentcore-strands-deep-research-report-part6",
-     "score": 0.47
+     "score": 0.48
     },
     {
      "id": "platforms/parts/18-agentcore-strands-deep-research-report-part2",
@@ -530,7 +530,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
-     "score": 0.68
+     "score": 0.69
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
@@ -538,7 +538,7 @@
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5",
-     "score": 0.53
+     "score": 0.54
     }
    ]
   },
@@ -560,7 +560,7 @@
    "top_similar": [
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.36
+     "score": 0.35
     },
     {
      "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
@@ -605,15 +605,15 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "protocols/06-agent-identity-entra-vs-awsagentcore",
-     "score": 0.33
-    },
-    {
      "id": "agentic-systems/orchestration/08-agent-frameworks-comparison",
-     "score": 0.33
+     "score": 0.32
     },
     {
      "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
+     "score": 0.32
+    },
+    {
+     "id": "protocols/06-agent-identity-entra-vs-awsagentcore",
      "score": 0.32
     }
    ]
@@ -668,7 +668,7 @@
    "top_similar": [
     {
      "id": "architecture/50-enterprise-ai-comparative-matrices-2026",
-     "score": 0.35
+     "score": 0.34
     }
    ]
   },
@@ -691,11 +691,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
-     "score": 0.38
+     "score": 0.37
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
@@ -719,7 +719,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part4",
-     "score": 0.68
+     "score": 0.69
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
@@ -727,7 +727,7 @@
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part2",
-     "score": 0.48
+     "score": 0.49
     }
    ]
   },
@@ -805,7 +805,7 @@
     },
     {
      "id": "architecture/44-ai-harness-architecture-orchestration",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -831,11 +831,11 @@
     },
     {
      "id": "agentic-systems/core/17-a2a-deep-research",
-     "score": 0.34
+     "score": 0.33
     },
     {
      "id": "architecture/58-mcp-a2a-protocol-deep-dive",
-     "score": 0.33
+     "score": 0.32
     }
    ]
   },
@@ -871,7 +871,12 @@
    "word_count": 1238,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": []
+   "top_similar": [
+    {
+     "id": "platforms/parts/42-k8s-handbook-part9-platform-engineering-part2",
+     "score": 0.3
+    }
+   ]
   },
   {
    "id": "platforms/33-k8s-handbook-part16-future-outlook",
@@ -1025,11 +1030,11 @@
     },
     {
      "id": "platforms/parts/38-k8s-handbook-part5-kubernetes-resources-part2",
-     "score": 0.38
+     "score": 0.39
     },
     {
      "id": "platforms/parts/40-k8s-handbook-part7-storage-part2",
-     "score": 0.36
+     "score": 0.37
     }
    ]
   },
@@ -1051,11 +1056,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part2",
-     "score": 0.69
+     "score": 0.7
     },
     {
      "id": "platforms/parts/39-k8s-handbook-part6-kubernetes-networking-part2",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/parts/37-k8s-handbook-part4-kubernetes-internals-part3",
@@ -1081,7 +1086,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/40-k8s-handbook-part7-storage-part2",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
@@ -1106,12 +1111,16 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "platforms/parts/41-k8s-handbook-part8-security-part2",
-     "score": 0.32
-    },
-    {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
      "score": 0.31
+    },
+    {
+     "id": "platforms/parts/41-k8s-handbook-part8-security-part2",
+     "score": 0.31
+    },
+    {
+     "id": "trust/cybersec-architect/06-identity-architecture",
+     "score": 0.3
     }
    ]
   },
@@ -1133,7 +1142,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/42-k8s-handbook-part9-platform-engineering-part2",
-     "score": 0.46
+     "score": 0.47
     },
     {
      "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3",
@@ -1160,7 +1169,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.47
+     "score": 0.48
     },
     {
      "id": "platforms/44-part-02-agent-lake-architecture",
@@ -1191,11 +1200,11 @@
    "top_similar": [
     {
      "id": "platforms/45-part-03-mosaic-ai-mlflow",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "platforms/46-part-04-unity-catalog-governance",
-     "score": 0.42
+     "score": 0.43
     },
     {
      "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
@@ -1222,7 +1231,7 @@
    "top_similar": [
     {
      "id": "platforms/44-part-02-agent-lake-architecture",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "platforms/43-part-01-platform-vision-agentic-services",
@@ -1230,7 +1239,7 @@
     },
     {
      "id": "platforms/48-part-08-observability-finops-integration",
-     "score": 0.37
+     "score": 0.38
     }
    ]
   },
@@ -1253,15 +1262,15 @@
    "top_similar": [
     {
      "id": "platforms/44-part-02-agent-lake-architecture",
-     "score": 0.42
+     "score": 0.43
     },
     {
      "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.42
+     "score": 0.43
     },
     {
      "id": "platforms/47-part-07-security-architecture",
-     "score": 0.4
+     "score": 0.41
     }
    ]
   },
@@ -1285,11 +1294,11 @@
    "top_similar": [
     {
      "id": "platforms/46-part-04-unity-catalog-governance",
-     "score": 0.4
+     "score": 0.41
     },
     {
      "id": "platforms/48-part-08-observability-finops-integration",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -1314,15 +1323,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.43
+     "score": 0.44
     },
     {
      "id": "platforms/49-part-09-competitive-reference-architectures",
-     "score": 0.4
+     "score": 0.42
     },
     {
      "id": "platforms/43-part-01-platform-vision-agentic-services",
-     "score": 0.38
+     "score": 0.39
     }
    ]
   },
@@ -1343,15 +1352,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/49-part-09-competitive-reference-architectures-part2",
-     "score": 0.43
+     "score": 0.45
     },
     {
      "id": "platforms/48-part-08-observability-finops-integration",
-     "score": 0.4
+     "score": 0.42
     },
     {
      "id": "data-knowledge/02-databricks-iceberg-open-formats",
-     "score": 0.39
+     "score": 0.4
     }
    ]
   },
@@ -1370,11 +1379,11 @@
    "top_similar": [
     {
      "id": "operations/index",
-     "score": 0.34
+     "score": 0.33
     },
     {
      "id": "architecture/index",
-     "score": 0.31
+     "score": 0.33
     }
    ]
   },
@@ -1397,15 +1406,15 @@
    "top_similar": [
     {
      "id": "platforms/03-quantum-ai-architecture",
-     "score": 0.73
+     "score": 0.71
     },
     {
      "id": "platforms/02-quantum-ai-applications",
-     "score": 0.66
+     "score": 0.65
     },
     {
      "id": "strategy/quantum/01-quantum-ai-consulting-landscape-bcg-x-deloitte-ibm",
-     "score": 0.62
+     "score": 0.6
     }
    ]
   },
@@ -1429,7 +1438,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/05-ai-gateway-full-comparison-part3",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
@@ -1460,11 +1469,11 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
-     "score": 0.41
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+     "score": 0.42
     },
     {
-     "id": "platforms/parts/05-ai-gateway-full-comparison-part2",
+     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
      "score": 0.41
     },
     {
@@ -1501,7 +1510,7 @@
     },
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.33
+     "score": 0.32
     }
    ]
   },
@@ -1523,7 +1532,7 @@
    "top_similar": [
     {
      "id": "platforms/06-ai-gateway-multitenant-multicloud",
-     "score": 0.6
+     "score": 0.59
     }
    ]
   },
@@ -1545,15 +1554,15 @@
    "top_similar": [
     {
      "id": "platforms/07-enterprise-ai-gateway",
-     "score": 0.48
+     "score": 0.47
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
      "score": 0.32
     },
     {
-     "id": "platforms/parts/05-ai-gateway-full-comparison-part4",
-     "score": 0.32
+     "id": "platforms/08-kong-ai-gateway-guide",
+     "score": 0.31
     }
    ]
   },
@@ -1576,15 +1585,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "platforms/09-kong-entra-id-integration",
-     "score": 0.42
+     "score": 0.44
     },
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -1611,11 +1620,11 @@
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
-     "score": 0.44
+     "score": 0.45
     },
     {
      "id": "platforms/parts/09-kong-entra-id-integration-part2",
-     "score": 0.37
+     "score": 0.38
     }
    ]
   },
@@ -1638,15 +1647,15 @@
    "top_similar": [
     {
      "id": "platforms/09-kong-entra-id-integration",
-     "score": 0.6
+     "score": 0.59
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part3",
-     "score": 0.37
+     "score": 0.38
     },
     {
      "id": "platforms/parts/08-kong-ai-gateway-guide-part2",
-     "score": 0.35
+     "score": 0.36
     }
    ]
   },
@@ -1706,7 +1715,7 @@
     },
     {
      "id": "platforms/11-aws-native-standards-first-agentic-architecture",
-     "score": 0.42
+     "score": 0.41
     },
     {
      "id": "agentic-systems/parts/02-ai-memory-agent-innovations-research-report-part2",
@@ -1762,7 +1771,7 @@
    "top_similar": [
     {
      "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
-     "score": 0.33
+     "score": 0.34
     }
    ]
   },
@@ -1786,7 +1795,7 @@
    "top_similar": [
     {
      "id": "platforms/12-aws-strands-agentcore-advancedpatterns",
-     "score": 0.42
+     "score": 0.43
     }
    ]
   },
@@ -1813,12 +1822,12 @@
      "score": 0.48
     },
     {
-     "id": "agentic-systems/core/09-multitenantagentplatform-architecture",
+     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
      "score": 0.39
     },
     {
-     "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.38
+     "id": "agentic-systems/core/09-multitenantagentplatform-architecture",
+     "score": 0.39
     }
    ]
   },
@@ -1842,15 +1851,15 @@
    "top_similar": [
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.51
+     "score": 0.52
     },
     {
      "id": "platforms/parts/14-aws-strands-agentcore-delta-supplement-part2",
-     "score": 0.44
+     "score": 0.46
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part2",
-     "score": 0.38
+     "score": 0.39
     }
    ]
   },
@@ -1874,11 +1883,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
-     "score": 0.44
+     "score": 0.46
     },
     {
      "id": "platforms/14-aws-strands-agentcore-delta-supplement",
-     "score": 0.41
+     "score": 0.42
     },
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
@@ -1904,7 +1913,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
-     "score": 0.62
+     "score": 0.63
     },
     {
      "id": "platforms/15-agentcore-memory-architecture-guide",
@@ -1912,7 +1921,7 @@
     },
     {
      "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
-     "score": 0.39
+     "score": 0.38
     }
    ]
   },
@@ -1934,7 +1943,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
-     "score": 0.62
+     "score": 0.63
     },
     {
      "id": "platforms/15-agentcore-memory-architecture-guide",
@@ -1942,7 +1951,7 @@
     },
     {
      "id": "platforms/parts/15-agentcore-memory-architecture-guide-part4",
-     "score": 0.46
+     "score": 0.45
     }
    ]
   },
@@ -1964,11 +1973,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/15-agentcore-memory-architecture-guide-part3",
-     "score": 0.46
+     "score": 0.45
     },
     {
      "id": "platforms/parts/15-agentcore-memory-architecture-guide-part2",
-     "score": 0.39
+     "score": 0.38
     },
     {
      "id": "platforms/15-agentcore-memory-architecture-guide",
@@ -2073,7 +2082,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/18-agentcore-strands-deep-research-report-part5",
-     "score": 0.47
+     "score": 0.46
     },
     {
      "id": "platforms/18-agentcore-strands-deep-research-report",
@@ -2106,7 +2115,7 @@
     },
     {
      "id": "platforms/13-aws-strands-agentcore-builder-journey-kit",
-     "score": 0.39
+     "score": 0.4
     },
     {
      "id": "platforms/parts/13-aws-strands-agentcore-builder-journey-kit-part3",
@@ -2140,7 +2149,7 @@
     },
     {
      "id": "platforms/parts/18-agentcore-strands-deep-research-report-part3",
-     "score": 0.47
+     "score": 0.46
     }
    ]
   },
@@ -2166,7 +2175,7 @@
     },
     {
      "id": "platforms/18-agentcore-strands-deep-research-report",
-     "score": 0.47
+     "score": 0.48
     },
     {
      "id": "platforms/parts/18-agentcore-strands-deep-research-report-part2",
@@ -2222,7 +2231,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/18-agentcore-strands-deep-research-report-part7",
-     "score": 0.4
+     "score": 0.39
     },
     {
      "id": "platforms/parts/18-agentcore-strands-deep-research-report-part9",
@@ -2277,15 +2286,15 @@
    "top_similar": [
     {
      "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
-     "score": 0.68
+     "score": 0.69
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
-     "score": 0.58
+     "score": 0.57
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part4",
-     "score": 0.55
+     "score": 0.56
     }
    ]
   },
@@ -2311,7 +2320,7 @@
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
-     "score": 0.58
+     "score": 0.57
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part5",
@@ -2337,15 +2346,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
-     "score": 0.55
+     "score": 0.56
     },
     {
      "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
-     "score": 0.48
+     "score": 0.5
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
-     "score": 0.46
+     "score": 0.47
     }
    ]
   },
@@ -2368,11 +2377,11 @@
    "top_similar": [
     {
      "id": "platforms/19-bedrock-agentcore-code-interpreter-architecture",
-     "score": 0.53
+     "score": 0.54
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part2",
-     "score": 0.49
+     "score": 0.5
     },
     {
      "id": "platforms/parts/19-bedrock-agentcore-code-interpreter-architecture-part3",
@@ -2459,15 +2468,15 @@
    "top_similar": [
     {
      "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
-     "score": 0.5
+     "score": 0.49
     },
     {
      "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
      "score": 0.45
     },
     {
-     "id": "platforms/23-enterprise-agent-runtime-internals-2026",
-     "score": 0.42
+     "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part6",
+     "score": 0.43
     }
    ]
   },
@@ -2490,7 +2499,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part4",
-     "score": 0.5
+     "score": 0.49
     },
     {
      "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part7",
@@ -2498,7 +2507,7 @@
     },
     {
      "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part6",
-     "score": 0.44
+     "score": 0.45
     }
    ]
   },
@@ -2529,7 +2538,7 @@
     },
     {
      "id": "platforms/parts/23-enterprise-agent-runtime-internals-2026-part5",
-     "score": 0.44
+     "score": 0.45
     }
    ]
   },
@@ -2545,7 +2554,7 @@
     "comparative-analysis",
     "references"
    ],
-   "word_count": 1355,
+   "word_count": 1350,
    "last_reviewed": "2026-07-27",
    "status": "current",
    "top_similar": [
@@ -2582,7 +2591,7 @@
    "top_similar": [
     {
      "id": "platforms/25-ai-assisted-iac-mastery",
-     "score": 0.38
+     "score": 0.37
     },
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part3",
@@ -2609,7 +2618,7 @@
    "top_similar": [
     {
      "id": "platforms/25-ai-assisted-iac-mastery",
-     "score": 0.53
+     "score": 0.52
     },
     {
      "id": "platforms/parts/25-ai-assisted-iac-mastery-part2",
@@ -2643,7 +2652,7 @@
     },
     {
      "id": "platforms/26-terraform-mastery-guide",
-     "score": 0.48
+     "score": 0.49
     }
    ]
   },
@@ -2665,7 +2674,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part4",
-     "score": 0.75
+     "score": 0.76
     },
     {
      "id": "platforms/26-terraform-mastery-guide",
@@ -2695,11 +2704,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part3",
-     "score": 0.75
+     "score": 0.76
     },
     {
      "id": "platforms/26-terraform-mastery-guide",
-     "score": 0.68
+     "score": 0.69
     },
     {
      "id": "platforms/parts/26-terraform-mastery-guide-part2",
@@ -2729,7 +2738,7 @@
     },
     {
      "id": "platforms/parts/28-k8s-handbook-part11-ai-infrastructure-part2",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -2755,7 +2764,7 @@
     },
     {
      "id": "platforms/parts/27-k8s-handbook-part10-observability-part2",
-     "score": 0.31
+     "score": 0.32
     }
    ]
   },
@@ -2796,12 +2805,7 @@
    "word_count": 2212,
    "last_reviewed": "2026-07-27",
    "status": "current",
-   "top_similar": [
-    {
-     "id": "platforms/29-k8s-handbook-part12-agentic-ai",
-     "score": 0.3
-    }
-   ]
+   "top_similar": []
   },
   {
    "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
@@ -2859,7 +2863,7 @@
     },
     {
      "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part4",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -2880,11 +2884,11 @@
    "top_similar": [
     {
      "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
-     "score": 0.32
+     "score": 0.31
     },
     {
      "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part3",
-     "score": 0.31
+     "score": 0.3
     }
    ]
   },
@@ -2907,7 +2911,7 @@
    "top_similar": [
     {
      "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
-     "score": 0.69
+     "score": 0.7
     },
     {
      "id": "platforms/parts/35-k8s-handbook-part2-linux-foundations-part3",
@@ -2936,11 +2940,11 @@
      "score": 0.59
     },
     {
-     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
+     "id": "platforms/36-k8s-handbook-part3-containers",
      "score": 0.45
     },
     {
-     "id": "platforms/36-k8s-handbook-part3-containers",
+     "id": "platforms/parts/34-k8s-handbook-part1-infrastructure-evolution-part2",
      "score": 0.45
     }
    ]
@@ -2963,7 +2967,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/36-k8s-handbook-part3-containers-part3",
-     "score": 0.37
+     "score": 0.36
     },
     {
      "id": "platforms/36-k8s-handbook-part3-containers",
@@ -2990,7 +2994,7 @@
    "top_similar": [
     {
      "id": "platforms/parts/36-k8s-handbook-part3-containers-part2",
-     "score": 0.37
+     "score": 0.36
     },
     {
      "id": "platforms/36-k8s-handbook-part3-containers",
@@ -3045,11 +3049,11 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
+     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
      "score": 0.3
     },
     {
-     "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
+     "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
      "score": 0.3
     }
    ]
@@ -3097,7 +3101,7 @@
    "top_similar": [
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
-     "score": 0.38
+     "score": 0.39
     }
    ]
   },
@@ -3119,7 +3123,7 @@
    "top_similar": [
     {
      "id": "platforms/39-k8s-handbook-part6-kubernetes-networking",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
@@ -3145,11 +3149,11 @@
    "top_similar": [
     {
      "id": "platforms/40-k8s-handbook-part7-storage",
-     "score": 0.45
+     "score": 0.44
     },
     {
      "id": "platforms/38-k8s-handbook-part5-kubernetes-resources",
-     "score": 0.36
+     "score": 0.37
     }
    ]
   },
@@ -3171,7 +3175,7 @@
    "top_similar": [
     {
      "id": "platforms/41-k8s-handbook-part8-security",
-     "score": 0.32
+     "score": 0.31
     }
    ]
   },
@@ -3193,7 +3197,11 @@
    "top_similar": [
     {
      "id": "platforms/42-k8s-handbook-part9-platform-engineering",
-     "score": 0.46
+     "score": 0.47
+    },
+    {
+     "id": "platforms/32-k8s-handbook-part15-implementation-labs",
+     "score": 0.3
     }
    ]
   },
@@ -3214,16 +3222,16 @@
    "status": "current",
    "top_similar": [
     {
-     "id": "data-knowledge/01-databricks-lakehouse-data-infrastructure",
-     "score": 0.51
+     "id": "data-knowledge/02-databricks-iceberg-open-formats",
+     "score": 0.52
     },
     {
-     "id": "data-knowledge/02-databricks-iceberg-open-formats",
-     "score": 0.51
+     "id": "data-knowledge/01-databricks-lakehouse-data-infrastructure",
+     "score": 0.52
     },
     {
      "id": "platforms/43-part-01-platform-vision-agentic-services",
-     "score": 0.47
+     "score": 0.48
     }
    ]
   }

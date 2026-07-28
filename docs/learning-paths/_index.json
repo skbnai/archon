@@ -17,11 +17,15 @@
    "top_similar": [
     {
      "id": "assets/index",
-     "score": 0.44
+     "score": 0.48
     },
     {
      "id": "career/index",
-     "score": 0.4
+     "score": 0.44
+    },
+    {
+     "id": "operations/index",
+     "score": 0.31
     }
    ]
   }
