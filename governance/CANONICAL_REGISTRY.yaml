@@ -4150,10 +4150,10 @@ topics:
   - id: policy-as-code-framework
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/09-policy-as-code-framework.md
-    pending: true
     aliases:
     - policy-as-code framework
-    supersedes: []
+    supersedes:
+    - docs/sovereign-constitutional-ai/policy-as-code-framework.md
     pages: []
   - id: rai-operating-model
     domain: trust
