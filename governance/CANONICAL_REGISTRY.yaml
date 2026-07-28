@@ -4021,9 +4021,15 @@ topics:
   - id: emerging-trends
     domain: trust
     canonical: docs/trust/cybersec-architect/15-emerging-trends.md
-    pending: true
     aliases:
     - part 15 — emerging trends 2026–2030
+    supersedes:
+    - docs/cybersec-architect/15-emerging-trends.md
+    pages: []
+  - id: emerging-trends-part2
+    domain: trust
+    canonical: docs/trust/cybersec-architect/parts/15-emerging-trends-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: part-01-nist-ai-100-2-adversarial-ml
