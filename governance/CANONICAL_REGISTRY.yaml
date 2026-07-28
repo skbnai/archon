@@ -3655,9 +3655,27 @@ topics:
   - id: architects-field-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/39-architects-field-guide.md
-    pending: true
     aliases:
     - ai security architect's field guide
+    supersedes:
+    - docs/ai-security-governance/security/08-Architects-Field-Guide.md
+    pages: []
+  - id: architects-field-guide-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/39-architects-field-guide-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: architects-field-guide-part3
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/39-architects-field-guide-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: architects-field-guide-part4
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/39-architects-field-guide-part4.md
+    aliases: []
     supersedes: []
     pages: []
   - id: future-ai-soc-2026-2030
