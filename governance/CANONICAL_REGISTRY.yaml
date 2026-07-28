@@ -3797,10 +3797,10 @@ topics:
   - id: part-03-agentic-soc
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/03-part-03-agentic-soc.md
-    pending: true
     aliases:
     - part 03 — agentic soc architecture
-    supersedes: []
+    supersedes:
+    - docs/ai-soc-playbooks/part-03-agentic-soc.md
     pages: []
   - id: part-04-automation-playbooks
     domain: trust
