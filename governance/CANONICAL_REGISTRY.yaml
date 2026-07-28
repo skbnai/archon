@@ -3857,10 +3857,10 @@ topics:
   - id: part-09-enterprise-architecture
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/09-part-09-enterprise-architecture.md
-    pending: true
     aliases:
     - part 09 — enterprise architecture integration
-    supersedes: []
+    supersedes:
+    - docs/ai-soc-playbooks/part-09-enterprise-architecture.md
     pages: []
   - id: part-10-standards-compliance
     domain: trust
