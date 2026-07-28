@@ -3967,18 +3967,18 @@ topics:
   - id: security-operations
     domain: trust
     canonical: docs/trust/cybersec-architect/09-security-operations.md
-    pending: true
     aliases:
     - part 9 — security operations in the ai era
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/09-security-operations.md
     pages: []
   - id: technology-investment
     domain: trust
     canonical: docs/trust/cybersec-architect/10-technology-investment.md
-    pending: true
     aliases:
     - part 10 — technology investment
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/10-technology-investment.md
     pages: []
   - id: ai-investment
     domain: trust
