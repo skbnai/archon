@@ -73,4 +73,5 @@ This 18-part series covers DeepMind's published safety research, framework desig
 
 ## Related
 
+- [Policy & Authorization Series Overview](02-policy-authorization-series-overview.md) — the companion policy-as-code and authorization volume series
 - [Trust Hub](../index.md)

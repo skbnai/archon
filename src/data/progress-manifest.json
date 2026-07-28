@@ -2681,7 +2681,7 @@
   },
   "trust": {
     "label": "Trust: Security, Governance & RAI",
-    "totalPages": 10,
+    "totalPages": 24,
     "pages": [
       {
         "id": "trust/ai-security-governance/01-ai-control-series-overview",
@@ -2712,12 +2712,68 @@
         "title": "Identity for AI Agents"
       },
       {
+        "id": "trust/ai-security-governance/11-ai-authorization",
+        "title": "AI Authorization Architecture"
+      },
+      {
+        "id": "trust/ai-security-governance/12-memory-governance",
+        "title": "Memory Governance"
+      },
+      {
+        "id": "trust/ai-security-governance/13-tool-governance",
+        "title": "Tool Governance"
+      },
+      {
+        "id": "trust/ai-security-governance/14-reasoning-governance",
+        "title": "Reasoning Governance"
+      },
+      {
+        "id": "trust/ai-security-governance/15-multi-agent-security",
+        "title": "Multi-Agent Security"
+      },
+      {
+        "id": "trust/ai-security-governance/16-ai-observability",
+        "title": "AI Observability"
+      },
+      {
+        "id": "trust/ai-security-governance/17-ai-soc",
+        "title": "AI Security Operations Center"
+      },
+      {
+        "id": "trust/ai-security-governance/18-enterprise-governance",
+        "title": "Enterprise Governance"
+      },
+      {
+        "id": "trust/ai-security-governance/19-cloud-implementation-comparison",
+        "title": "Cloud Implementation Comparison"
+      },
+      {
+        "id": "trust/ai-security-governance/20-reference-architecture",
+        "title": "Reference Architecture"
+      },
+      {
+        "id": "trust/ai-security-governance/21-best-practices-anti-patterns",
+        "title": "Best Practices & Anti-Patterns"
+      },
+      {
+        "id": "trust/ai-security-governance/22-future-outlook-2026-2035",
+        "title": "Future Outlook: 2026-2035"
+      },
+      {
         "id": "trust/ai-security-governance/parts/05-deepmind-ai-control-roadmap-part2",
         "title": "DeepMind AI Control Roadmap (Part 2)"
       },
       {
         "id": "trust/ai-security-governance/parts/07-enterprise-threat-modeling-part2",
         "title": "Enterprise Threat Modeling for AI Agents (Part 2)"
+      },
+      {
+        "id": "trust/ai-security-governance/parts/21-best-practices-anti-patterns-part2",
+        "title": "Best Practices & Anti-Patterns (Part 2)"
+      },
+      {
+        "id": "trust/ai-security-governance/parts/22-future-outlook-2026-2035-part2",
+        "title": "Future Outlook: 2026-2035 (Part 2)"
       },
       {
         "id": "trust/index",
