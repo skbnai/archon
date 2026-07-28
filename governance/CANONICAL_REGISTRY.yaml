@@ -3903,18 +3903,18 @@ topics:
   - id: evolution
     domain: trust
     canonical: docs/trust/cybersec-architect/01-evolution.md
-    pending: true
     aliases:
     - part 1 — cyber security evolution
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/01-evolution.md
     pages: []
   - id: enterprise-security-architecture
     domain: trust
     canonical: docs/trust/cybersec-architect/02-enterprise-security-architecture.md
-    pending: true
     aliases:
     - part 2 — enterprise security architecture
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/02-enterprise-security-architecture.md
     pages: []
   - id: security-domains
     domain: trust
