@@ -3879,10 +3879,10 @@ topics:
   - id: part-11-implementation-roadmap
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/11-part-11-implementation-roadmap.md
-    pending: true
     aliases:
     - part 11 — implementation roadmap & reference architecture
-    supersedes: []
+    supersedes:
+    - docs/ai-soc-playbooks/part-11-implementation-roadmap.md
     pages: []
   - id: part-13-vendor-landscape
     domain: trust
