@@ -3611,26 +3611,26 @@ topics:
   - id: ai-bill-of-materials-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/41-ai-bill-of-materials-guide.md
-    pending: true
     aliases:
     - ai bill of materials (aibom) — supply chain transparency for ai systems
-    supersedes: []
+    supersedes:
+    - docs/ai-security-governance/security/AI-Bill-of-Materials-Guide.md
     pages: []
   - id: ai-red-teaming-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/42-ai-red-teaming-guide.md
-    pending: true
     aliases:
     - ai red teaming — adversarial testing for ai and agentic systems
-    supersedes: []
+    supersedes:
+    - docs/ai-security-governance/security/AI-Red-Teaming-Guide.md
     pages: []
   - id: ai-trism-complete-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/43-ai-trism-complete-guide.md
-    pending: true
     aliases:
     - 'ai trism — ai trust, risk and security management: complete guide'
-    supersedes: []
+    supersedes:
+    - docs/ai-security-governance/security/AI-TRiSM-Complete-Guide.md
     pages: []
   - id: aidr-ai-detection-response-complete-guide
     domain: trust
@@ -3643,26 +3643,26 @@ topics:
   - id: aispm-ai-security-posture-management
     domain: trust
     canonical: docs/trust/ai-security-governance/45-aispm-ai-security-posture-management.md
-    pending: true
     aliases:
     - 'aispm — ai security posture management: complete guide'
-    supersedes: []
+    supersedes:
+    - docs/ai-security-governance/security/AISPM-AI-Security-Posture-Management.md
     pages: []
   - id: model-cards-system-cards-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/46-model-cards-system-cards-guide.md
-    pending: true
     aliases:
     - model cards and system cards — ai transparency documentation standards
-    supersedes: []
+    supersedes:
+    - docs/ai-security-governance/security/Model-Cards-System-Cards-Guide.md
     pages: []
   - id: runtime-security-governance
     domain: trust
     canonical: docs/trust/ai-security-governance/47-runtime-security-governance.md
-    pending: true
     aliases:
     - agent runtime, mcp security & governance
-    supersedes: []
+    supersedes:
+    - docs/ai-security-governance/security/Part4_Runtime_Security_Governance.md
     pages: []
   - id: part-01-soc-operating-model
     domain: trust
