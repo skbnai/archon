@@ -3895,10 +3895,10 @@ topics:
   - id: part-14-future-soc
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/13-part-14-future-soc.md
-    pending: true
     aliases:
     - part 14 — future of ai soc
-    supersedes: []
+    supersedes:
+    - docs/ai-soc-playbooks/part-14-future-soc.md
     pages: []
   - id: evolution
     domain: trust
