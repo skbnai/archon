@@ -4128,9 +4128,9 @@ topics:
   - id: constitutional-agent-architecture
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/06-constitutional-agent-architecture.md
-    pending: true
     aliases: []
-    supersedes: []
+    supersedes:
+    - docs/sovereign-constitutional-ai/constitutional-agent-architecture.md
     pages: []
   - id: constitutional-ai-engineering
     domain: trust
