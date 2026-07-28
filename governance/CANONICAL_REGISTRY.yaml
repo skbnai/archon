@@ -3865,9 +3865,15 @@ topics:
   - id: part-10-standards-compliance
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/10-part-10-standards-compliance.md
-    pending: true
     aliases:
     - part 10 — standards & compliance mapping
+    supersedes:
+    - docs/ai-soc-playbooks/part-10-standards-compliance.md
+    pages: []
+  - id: part-10-standards-compliance-part2
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/parts/10-part-10-standards-compliance-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: part-11-implementation-roadmap
