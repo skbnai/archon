@@ -3249,9 +3249,33 @@ topics:
   - id: sovereign-constitutional-ai-rai-implementation-handbook
     domain: trust
     canonical: docs/trust/ai-security-governance/04-sovereign-constitutional-ai-rai-implementation-handbook.md
-    pending: true
     aliases:
     - sovereign constitutional ai & rai - complete implementation handbook
+    supersedes:
+    - docs/ai-security-governance/Sovereign_Constitutional_AI_RAI_Implementation_Handbook.md
+    pages: []
+  - id: sovereign-constitutional-ai-rai-implementation-handbook-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/04-sovereign-constitutional-ai-rai-implementation-handbook-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: sovereign-constitutional-ai-rai-implementation-handbook-part3
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/04-sovereign-constitutional-ai-rai-implementation-handbook-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: sovereign-constitutional-ai-rai-implementation-handbook-part4
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/04-sovereign-constitutional-ai-rai-implementation-handbook-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: sovereign-constitutional-ai-rai-implementation-handbook-part5
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/04-sovereign-constitutional-ai-rai-implementation-handbook-part5.md
+    aliases: []
     supersedes: []
     pages: []
   - id: deepmind-ai-control-roadmap
