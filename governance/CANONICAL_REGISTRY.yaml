@@ -3999,17 +3999,23 @@ topics:
   - id: security-patterns
     domain: trust
     canonical: docs/trust/cybersec-architect/13-security-patterns.md
-    pending: true
     aliases:
     - part 13 — security patterns
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/13-security-patterns.md
     pages: []
   - id: case-studies
     domain: trust
     canonical: docs/trust/cybersec-architect/14-case-studies.md
-    pending: true
     aliases:
     - part 14 — industry case studies
+    supersedes:
+    - docs/cybersec-architect/14-case-studies.md
+    pages: []
+  - id: case-studies-part2
+    domain: trust
+    canonical: docs/trust/cybersec-architect/parts/14-case-studies-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: emerging-trends
