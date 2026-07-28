@@ -3629,9 +3629,29 @@ topics:
   - id: zero-to-mastery-curriculum
     domain: trust
     canonical: docs/trust/ai-security-governance/38-zero-to-mastery-curriculum.md
-    pending: true
     aliases:
     - zero-to-mastery security curriculum
+    supersedes:
+    - docs/ai-security-governance/security/07-Zero-to-Mastery-Curriculum.md
+    pages: []
+  - id: zero-to-mastery-curriculum-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/38-zero-to-mastery-curriculum-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: zero-to-mastery-curriculum-part3
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/38-zero-to-mastery-curriculum-part3.md
+    pending: true
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: zero-to-mastery-curriculum-part4
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/38-zero-to-mastery-curriculum-part4.md
+    pending: true
+    aliases: []
     supersedes: []
     pages: []
   - id: architects-field-guide

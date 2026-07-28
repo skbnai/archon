@@ -1,0 +1,89 @@
+---
+title: "Zero-to-Mastery Security Curriculum: Program & Foundations"
+doc_type: guide
+domain: trust
+status: current
+topic_id: zero-to-mastery-curriculum
+last_reviewed: 2026-07-27
+maturity: practitioner
+supersedes: [docs/ai-security-governance/security/07-Zero-to-Mastery-Curriculum.md]
+tags: [ai-security, curriculum, training, learning-path]
+covers_version: "as of 2026"
+---
+
+A 10-week, instructor-ready curriculum for IT and software professionals with no security background, taking a learner from security fundamentals to full agentic AI security architecture competence.
+
+## How to Use This Curriculum
+
+This is the instructional companion to the enterprise AI security architecture reference material — [Foundations & Reference Architecture](33-foundations-reference-architecture.md), [Identity/MCP/A2A Security Blueprint](34-identity-mcp-a2a-security-blueprint.md), [Memory Governance & AI SOC](35-ai-soc-observability-redteam-memory.md), [Economic Security](36-economic-security-finops-commerce-pqc.md), and [Operating Model & Maturity](37-operating-model-maturity-roadmap.md). Those references are dense and comprehensive, written for someone who already knows what question they're trying to answer. This curriculum is the path that gets a learner to the point where they can read those references and get full value from them, then keeps going until they can produce the kind of work those references model.
+
+The starting assumption is explicit: learners enter with general IT or software experience — they can read an architecture diagram, they have used cloud infrastructure, they may have written code — but they do not have a security background. No prior knowledge of threat modeling, identity and access management, or AI/ML systems is assumed. Stage 0 builds that floor before any agent-specific material is introduced, because the single most common failure mode in technical training is skipping fundamentals to get to the exciting part faster, which produces learners who can repeat vocabulary without being able to reason from it.
+
+**Program structure.** Ten stages, each mapped to roughly one week of full-time study (35-40 hours), organized into four phases:
+
+| Phase | Stages | Focus | Maps to Reference |
+|---|---|---|---|
+| I — Foundations | 0-1 | Security fundamentals and core agentic architecture | Foundations & Reference Architecture |
+| II — The Core Stack | 2-4 | Identity & NHI, MCP security, A2A security | Identity/MCP/A2A Security Blueprint |
+| III — Governance & Operations | 5-7 | Governance/compliance, AI SOC & observability, red teaming & reliability | Enterprise Governance, Memory Governance & AI SOC |
+| IV — Economics & Mastery | 8-9 | Economic security (FinOps/commerce/PQC); capstone & operating model | Economic Security, Operating Model & Maturity |
+
+**Every stage follows the same structure:** Objectives (a short, specific list of what you will be able to *do*, not just what you will have read); a Prerequisite Check (a one-line gate confirming you have what the stage assumes); Core Content (conceptual material written to teach rather than reference); a Hands-On Lab (a concrete, scoped exercise producing a real artifact — a policy file, a threat model, a registry schema, a working gateway config; this is where learning consolidates, and labs should not be skipped); a Knowledge Check (questions designed to expose gaps, not to be answered from memory); and a Stage Capstone (a larger deliverable, usually building on the lab, reviewable against a stated rubric).
+
+**Pacing for an instructor or cohort:** Monday-Tuesday for core content (instructor-led walkthrough for a cohort, independent reading otherwise); Wednesday-Thursday for the hands-on lab (pair or small-group work recommended for multi-component labs like a gateway); Friday for the knowledge check, capstone work session, and capstone submission. Every stage capstone is designed to be reviewable in roughly 20-30 minutes per learner against the stated rubric — build a standing Friday-afternoon review slot into the schedule. For Stages 2 through 4 (the identity/MCP/A2A core), consider running labs in pairs: these stages have the steepest learning curve in the program, and production-incident research makes a strong case that most real-world failures in this space come from working alone under time pressure with no second reviewer — exactly the dynamic pairing counteracts.
+
+## What "Mastery" Means at the End of This Program
+
+Mastery here is defined operationally, not by a credential. A learner who completes this curriculum should be able to walk into an organization deploying its first significant agent population and, without supervision: (1) threat-model a proposed agentic system using MAESTRO, identify which OWASP ASI categories apply, and produce a prioritized control list a platform engineering team could actually implement; (2) design and defend an identity, MCP, and A2A architecture for that system, including the specific tradeoffs (isolation tier, autonomy level, gateway placement) and why each choice was made; (3) map that system's risk profile against the governance frameworks that actually apply to it and produce the crosswalk evidence an auditor would need; and (4) operate the system after launch — read its telemetry, recognize the difference between a reliability problem and a security incident, run a red-team exercise against it, and know when to pull the kill switch. The Mastery Capstone in Stage 9 requires exactly these four things, applied to a single realistic scenario, because that is the actual job.
+
+## Stage 0 (Week 1): Security Fundamentals for Builders
+
+If you have never worked in security, this stage is not optional and not filler. Every subsequent stage assumes you already think in terms of threat actors, trust boundaries, and the difference between authentication and authorization. Most of the costly mistakes documented in the reference architecture — overpermissioned agents, conflated identity and trust, security bolted on after deployment — trace back to someone skipping exactly this kind of foundation.
+
+**By the end of this stage, you will be able to:** explain the difference between authentication, authorization, and accountability, with an example of a system that gets each one wrong; identify a trust boundary in a system diagram and explain what crossing it should require; apply the CIA triad and explain why it is insufficient on its own for systems that act autonomously; read and produce a basic STRIDE threat enumeration for a simple system; and explain defense in depth, zero trust, and assume breach in your own words, with a concrete counter-example for each.
+
+*Prerequisite check: none — this is the entry point. Learners with an existing security certification or 2+ years in a security role can likely skim this stage.*
+
+Security thinking differs from engineering thinking: engineering optimizes for the system working correctly under expected conditions, while security reasons about it under adversarial conditions — someone deliberately trying to make it behave incorrectly, willing to invest real effort to find the one path you didn't defend. A security review is never "does this work" but "what happens at the edges, under hostile input, when an assumption turns out false." This matters constantly with agentic systems, because an agent is a system that can be talked into attacking itself.
+
+Authentication, authorization, and accountability are used loosely in casual conversation and precisely in security work; conflating them is the single most common root cause of access-control failures. Authentication answers "who is this?" and commonly fails when a system silently treats "I know who you are" as "so you can do anything." Authorization answers "is this identity allowed to do this specific thing?" and commonly fails when the decision is made once at login and never re-checked per action. Accountability answers "can we prove, after the fact, who did what?" and commonly fails when logging is treated as a nice-to-have rather than a structural requirement. Every identity architecture from Stage 2 onward is an attempt to get these three things right simultaneously for a population of non-human actors that change faster than any human identity ever did.
+
+A trust boundary is any point where data or control crosses from one zone of trust into another — from the internet into your network, from an unauthenticated user into an authenticated session, from a low-privilege process into a high-privilege one. At every trust boundary you must assume the thing on the other side might be lying, malformed, or malicious, requiring an explicit control rather than an implicit assumption of good behavior. The classic mistake: a system validates user input once at the entry point, then an internal service passes that data onward without re-validating because "it's already been checked." This exact pattern, with "user input" replaced by "content an AI agent reads as part of its context," is the root mechanism behind prompt injection.
+
+STRIDE is a checklist for systematically asking "what could go wrong here": Spoofing (pretending to be someone or something you're not), Tampering (changing data or code without authorization), Repudiation (denying an action for lack of proof), Information Disclosure (seeing data you shouldn't), Denial of Service (making the system unavailable), and Elevation of Privilege (gaining more access than granted). STRIDE is the entry-level tool the more advanced frameworks (MAESTRO, in Stage 1) extend rather than replace.
+
+Three governing principles recur throughout the program: Defense in Depth (no single control is load-bearing — if one layer fails, another should catch the problem); Zero Trust (no actor, system, or location is trusted by default because of where it sits or what it did a moment ago); and Assume Breach (design as though something is already compromised, and ask what limits the damage).
+
+**Hands-on lab: threat-model a simple web application.** Given a basic three-tier system (web frontend, API backend, database) where the API backend also calls one external third-party weather API: draw the system with every place data crosses between components; identify every trust boundary (at least four exist); for each boundary, run through STRIDE and identify at least one plausible threat per applicable category; and for each threat, write a one-sentence control and name which of authentication/authorization/accountability (or CIA property) it primarily protects. **Deliverable:** a one-page threat model — diagram, labeled trust boundaries, and a table of (boundary, STRIDE category, threat, control) rows, minimum 8 rows.
+
+**Knowledge check:** (1) A system authenticates via password then allows the session to call any API endpoint with no further checks — which of the three Stage 0 concepts was skipped, and what's the risk? (2) Give an example of a trust boundary in a system you've worked on that you hadn't previously thought of as one. (3) Describe a system that is fully confidential, has perfect integrity, and is 100% available, but is still insecure — what does this say about the CIA triad's limits? (4) Describe what "defense in depth" would look like added to a household lock, without just adding a second lock of the same kind.
+
+## Stage 1 (Week 2): Agentic AI Architecture & Threat Modeling
+
+With Stage 0's vocabulary in place, this stage introduces what's actually new about agentic AI systems and gives you MAESTRO, the framework built for this new category of system. This stage corresponds to [Foundations & Reference Architecture](33-foundations-reference-architecture.md).
+
+**By the end of this stage, you will be able to:** explain what makes an AI agent's attack surface different from a conventional application's; walk through the canonical agent lifecycle and name a distinct threat at each stage; apply the seven-layer MAESTRO framework and identify at least one cross-layer threat; compare runtime isolation options (Firecracker, Kata, gVisor, WASM) and justify a choice for a given scenario; and explain why credential custody should live outside the agent.
+
+*Prerequisite check: comfortable with Stage 0 vocabulary and basic familiarity with how an LLM-based application is built — no ML/AI engineering experience required.*
+
+A conventional application, even one that calls an LLM, has a predictable, enumerable set of code paths. An agentic system is structurally different: the sequence of actions it takes is decided at runtime, by the model's own reasoning, in response to whatever it currently believes about the situation — including beliefs shaped by content the system processes along the way. In conventional security, you defend the code; in agentic security, you also defend the content, because every document, email, search result, tool response, and message from another agent becomes part of the effective instruction set whether intended or not. This is the root cause of nearly every major risk category in this program — goal hijacking, prompt injection, tool poisoning, memory poisoning: untrusted content treated with the authority of a trusted instruction.
+
+Every agentic interaction follows the same five-stage shape: User → Planner carries prompt injection (the "intent" the planner interprets isn't fully under the user's control); Planner → Agent carries goal hijacking (the plan pursues an objective the user never intended); Agent → Tool carries tool misuse (a legitimate tool invoked with malicious parameters); Tool → Memory carries memory poisoning (false information becomes part of what the agent trusts later); and Memory/Tool → Action carries irreversible unauthorized action. Learning to see this shape in any unfamiliar framework is one of the most transferable skills in this program.
+
+MAESTRO decomposes an agentic system into seven layers — Foundation Models, Data Operations, Agent Frameworks, Deployment & Infrastructure, Evaluation & Observability, Security & Compliance, and Agent Ecosystem — and requires looking for threats both within each layer and across layers. The exercise that makes MAESTRO valuable is not listing threats at each layer in isolation, but finding the threat that only exists because two layers interact: a poisoned document at the data layer becomes dangerous specifically because the agent framework layer treats retrieved content as trustworthy context.
+
+Runtime isolation limits what an agent can physically reach if something goes wrong; the right choice depends on how much you trust the boundary the agent operates inside — from Firecracker microVMs (highest isolation, for agents executing arbitrary model-generated code against production-adjacent systems) down through Kata Containers, gVisor, WASM/WASI, to hardened standard containers (lowest of these, for low-trust-boundary agents paired with strict network controls). Classify agents by which trust boundary they cross and assign isolation strength to match, rather than applying one technology uniformly.
+
+The single most important architectural pattern in this stage: the agent itself should never hold standing, reusable credentials. A separate "tool broker" component holds actual credentials, receives a policy-approved request from the agent, executes the call, and returns only the result — never the credential. If the agent is compromised or manipulated, there is nothing valuable for it to exfiltrate.
+
+**Hands-on lab: MAESTRO threat model for a customer support agent.** For a single-purpose agent reading support tickets with read access to a CRM and knowledge base, and draft-only (human-approved) email replies: map the system onto the five-stage lifecycle; identify at least one threat per MAESTRO layer (minimum 7); identify a cross-layer threat; assign a runtime isolation tier with justification; and sketch how CRM/knowledge-base access should be brokered rather than held directly. **Deliverable:** a structured MAESTRO threat model with lifecycle mapping, layer-by-layer threats, a cross-layer threat, an isolation-tier decision, and the credential-custody sketch.
+
+**Knowledge check:** (1) Why does an agentic system's attack surface include "content it reads" in a way a conventional application's does not? (2) Name the MAESTRO layer where a compromised third-party plugin most directly threatens a system, and why a STRIDE-only model might miss the interaction. (3) An agent reads cloud storage files and occasionally executes a model-generated data-transformation script — which isolation tier, and what changes if script execution is removed? (4) Explain why holding credentials inside the agent is worse than brokering them, without using the word "broker."
+
+**Phase I Capstone: Secure Architecture Sketch.** Choose a simple agentic use case (a meeting-notes agent, a code-review agent, an IT-helpdesk agent — anything with at least two tool integrations) and produce a one-to-two-page architecture document: a system diagram with all trust boundaries; a MAESTRO-based threat model covering at least five of seven layers with a cross-layer threat; a stated isolation tier with justification; a credential-custody design; and a short paragraph on what you'd need to learn in Phase II to secure this system's identity, tool access, and agent-to-agent communication. **Graded against:** completeness of the MAESTRO pass, correctness of the isolation-tier reasoning, and whether the credential-custody design genuinely keeps standing credentials out of the agent.
+
+## Related
+
+- [Zero-to-Mastery Curriculum: The Core Stack (Part 2)](parts/38-zero-to-mastery-curriculum-part2.md) — Stages 2-4: Identity & NHI, MCP security, A2A security
+- [Foundations & Reference Architecture](33-foundations-reference-architecture.md)
+- [Architects Field Guide](39-architects-field-guide.md)
