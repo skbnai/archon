@@ -3825,18 +3825,18 @@ topics:
   - id: part-05-soar-platforms
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/05-part-05-soar-platforms.md
-    pending: true
     aliases:
     - part 05 — soar platform comparison
-    supersedes: []
+    supersedes:
+    - docs/ai-soc-playbooks/part-05-soar-platforms.md
     pages: []
   - id: part-06-ai-models
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/06-part-06-ai-models.md
-    pending: true
     aliases:
     - part 06 — ai models for soc
-    supersedes: []
+    supersedes:
+    - docs/ai-soc-playbooks/part-06-ai-models.md
     pages: []
   - id: part-07-ai-safety
     domain: trust
