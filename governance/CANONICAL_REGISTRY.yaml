@@ -3615,9 +3615,15 @@ topics:
   - id: operating-model-maturity-roadmap
     domain: trust
     canonical: docs/trust/ai-security-governance/37-operating-model-maturity-roadmap.md
-    pending: true
     aliases:
     - operating model & security maturity roadmap
+    supersedes:
+    - docs/ai-security-governance/security/06-Operating-Model-Maturity-Roadmap.md
+    pages: []
+  - id: operating-model-maturity-roadmap-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/37-operating-model-maturity-roadmap-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: zero-to-mastery-curriculum
