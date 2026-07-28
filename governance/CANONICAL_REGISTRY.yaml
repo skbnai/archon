@@ -4051,18 +4051,18 @@ topics:
   - id: part-03-caisi-agentic-ai
     domain: trust
     canonical: docs/trust/nist-ai-standards/03-part-03-caisi-agentic-ai.md
-    pending: true
     aliases:
     - caisi agentic ai security guidance
-    supersedes: []
+    supersedes:
+    - docs/nist-ai-standards/part-03-caisi-agentic-ai.md
     pages: []
   - id: part-04-enterprise-architecture
     domain: trust
     canonical: docs/trust/nist-ai-standards/04-part-04-enterprise-architecture.md
-    pending: true
     aliases:
     - nist ai standards — enterprise architecture patterns
-    supersedes: []
+    supersedes:
+    - docs/nist-ai-standards/part-04-enterprise-architecture.md
     pages: []
   - id: part-05-control-mappings
     domain: trust
