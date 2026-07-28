@@ -3601,9 +3601,15 @@ topics:
   - id: economic-security-finops-commerce-pqc
     domain: trust
     canonical: docs/trust/ai-security-governance/36-economic-security-finops-commerce-pqc.md
-    pending: true
     aliases:
     - economic security, finops, commerce & post-quantum cryptography
+    supersedes:
+    - docs/ai-security-governance/security/05-Economic-Security-FinOps-Commerce-PQC.md
+    pages: []
+  - id: economic-security-finops-commerce-pqc-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/36-economic-security-finops-commerce-pqc-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: operating-model-maturity-roadmap
