@@ -4067,18 +4067,18 @@ topics:
   - id: part-05-control-mappings
     domain: trust
     canonical: docs/trust/nist-ai-standards/05-part-05-control-mappings.md
-    pending: true
     aliases:
     - nist ai standards — cross-framework control mappings
-    supersedes: []
+    supersedes:
+    - docs/nist-ai-standards/part-05-control-mappings.md
     pages: []
   - id: part-06-implementation-checklist
     domain: trust
     canonical: docs/trust/nist-ai-standards/06-part-06-implementation-checklist.md
-    pending: true
     aliases:
     - nist ai standards — implementation checklist
-    supersedes: []
+    supersedes:
+    - docs/nist-ai-standards/part-06-implementation-checklist.md
     pages: []
   - id: part-07-future-trends
     domain: trust
