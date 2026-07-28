@@ -3983,18 +3983,18 @@ topics:
   - id: ai-investment
     domain: trust
     canonical: docs/trust/cybersec-architect/11-ai-investment.md
-    pending: true
     aliases:
     - part 11 — ai & security investment
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/11-ai-investment.md
     pages: []
   - id: ea-deliverables
     domain: trust
     canonical: docs/trust/cybersec-architect/12-ea-deliverables.md
-    pending: true
     aliases:
     - part 12 — enterprise architecture deliverables
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/12-ea-deliverables.md
     pages: []
   - id: security-patterns
     domain: trust
