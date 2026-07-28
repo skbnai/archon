@@ -4158,10 +4158,10 @@ topics:
   - id: rai-operating-model
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/10-rai-operating-model.md
-    pending: true
     aliases:
     - responsible ai operating model
-    supersedes: []
+    supersedes:
+    - docs/sovereign-constitutional-ai/rai-operating-model.md
     pages: []
   - id: sovereign-ai-foundations
     domain: trust
