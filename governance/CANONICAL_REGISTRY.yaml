@@ -3919,18 +3919,18 @@ topics:
   - id: security-domains
     domain: trust
     canonical: docs/trust/cybersec-architect/03-security-domains.md
-    pending: true
     aliases:
     - part 3 — security domains
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/03-security-domains.md
     pages: []
   - id: ai-security
     domain: trust
     canonical: docs/trust/cybersec-architect/04-ai-security.md
-    pending: true
     aliases:
     - part 4 — ai security
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/04-ai-security.md
     pages: []
   - id: agentic-ai-security
     domain: trust
