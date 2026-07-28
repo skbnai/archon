@@ -4035,18 +4035,18 @@ topics:
   - id: part-01-nist-ai-100-2-adversarial-ml
     domain: trust
     canonical: docs/trust/nist-ai-standards/01-part-01-nist-ai-100-2-adversarial-ml.md
-    pending: true
     aliases:
     - nist ai 100-2 — adversarial machine learning
-    supersedes: []
+    supersedes:
+    - docs/nist-ai-standards/part-01-nist-ai-100-2-adversarial-ml.md
     pages: []
   - id: part-02-nist-ai-100-4-synthetic-content
     domain: trust
     canonical: docs/trust/nist-ai-standards/02-part-02-nist-ai-100-4-synthetic-content.md
-    pending: true
     aliases:
     - nist ai 100-4 — synthetic content detection & provenance
-    supersedes: []
+    supersedes:
+    - docs/nist-ai-standards/part-02-nist-ai-100-4-synthetic-content.md
     pages: []
   - id: part-03-caisi-agentic-ai
     domain: trust
