@@ -3635,9 +3635,21 @@ topics:
   - id: aidr-ai-detection-response-complete-guide
     domain: trust
     canonical: docs/trust/ai-security-governance/44-aidr-ai-detection-response-complete-guide.md
-    pending: true
     aliases:
     - 'aidr — ai detection and response: complete enterprise guide'
+    supersedes:
+    - docs/ai-security-governance/security/AIDR-AI-Detection-Response-Complete-Guide.md
+    pages: []
+  - id: aidr-ai-detection-response-complete-guide-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/44-aidr-ai-detection-response-complete-guide-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: aidr-ai-detection-response-complete-guide-part3
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/44-aidr-ai-detection-response-complete-guide-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: aispm-ai-security-posture-management
