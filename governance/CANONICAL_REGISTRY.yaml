@@ -3887,10 +3887,10 @@ topics:
   - id: part-13-vendor-landscape
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/12-part-13-vendor-landscape.md
-    pending: true
     aliases:
     - part 13 — ai soc vendor landscape
-    supersedes: []
+    supersedes:
+    - docs/ai-soc-playbooks/part-13-vendor-landscape.md
     pages: []
   - id: part-14-future-soc
     domain: trust
