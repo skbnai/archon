@@ -4142,10 +4142,10 @@ topics:
   - id: democratic-ai-public-interest
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/08-democratic-ai-public-interest.md
-    pending: true
     aliases:
     - democratic & public interest ai
-    supersedes: []
+    supersedes:
+    - docs/sovereign-constitutional-ai/democratic-ai-public-interest.md
     pages: []
   - id: policy-as-code-framework
     domain: trust
