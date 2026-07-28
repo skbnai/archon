@@ -3841,18 +3841,18 @@ topics:
   - id: part-07-ai-safety
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/07-part-07-ai-safety.md
-    pending: true
     aliases:
     - part 07 — ai safety & adversarial risks in soc
-    supersedes: []
+    supersedes:
+    - docs/ai-soc-playbooks/part-07-ai-safety.md
     pages: []
   - id: part-08-observability
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/08-part-08-observability.md
-    pending: true
     aliases:
     - part 08 — ai soc observability & evaluation
-    supersedes: []
+    supersedes:
+    - docs/ai-soc-playbooks/part-08-observability.md
     pages: []
   - id: part-09-enterprise-architecture
     domain: trust
