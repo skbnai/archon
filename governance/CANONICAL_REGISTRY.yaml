@@ -4107,9 +4107,9 @@ topics:
   - id: ai-governance-operating-model
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/03-ai-governance-operating-model.md
-    pending: true
     aliases: []
-    supersedes: []
+    supersedes:
+    - docs/sovereign-constitutional-ai/ai-governance-operating-model.md
     pages: []
   - id: ai-risk-taxonomy
     domain: trust
