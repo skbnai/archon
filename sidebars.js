@@ -1081,6 +1081,19 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "NIST AI Standards",
+      items: [
+        "trust/nist-ai-standards/part-01-nist-ai-100-2-adversarial-ml",
+        "trust/nist-ai-standards/part-02-nist-ai-100-4-synthetic-content",
+        "trust/nist-ai-standards/part-03-caisi-agentic-ai",
+        "trust/nist-ai-standards/part-04-enterprise-architecture",
+        "trust/nist-ai-standards/part-05-control-mappings",
+        "trust/nist-ai-standards/part-06-implementation-checklist",
+        "trust/nist-ai-standards/part-07-future-trends",
+      ],
+    },
+    {
+      type: "category",
       label: "Operations & Economics",
       link: { type: "doc", id: "operations/index" },
       collapsible: true,

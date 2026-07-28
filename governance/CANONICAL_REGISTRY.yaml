@@ -4083,10 +4083,10 @@ topics:
   - id: part-07-future-trends
     domain: trust
     canonical: docs/trust/nist-ai-standards/07-part-07-future-trends.md
-    pending: true
     aliases:
     - nist ai standards — future trends & emerging threats
-    supersedes: []
+    supersedes:
+    - docs/nist-ai-standards/part-07-future-trends.md
     pages: []
   - id: ai-alignment-control
     domain: trust
