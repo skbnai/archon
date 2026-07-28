@@ -1115,6 +1115,22 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Standalone Trust Guides",
+      items: [
+        "trust/airgapped-banking-infrastructure",
+        "trust/a2a-security-governance",
+        "trust/parts/a2a-security-governance-part2",
+        "trust/parts/a2a-security-governance-part3",
+        "trust/parts/a2a-security-governance-part4",
+        "trust/parts/a2a-security-governance-part5",
+        "trust/agent-communication-identity-gateway",
+        "trust/agentic-ai-security-guardrails",
+        "trust/parts/agentic-ai-security-guardrails-part2",
+        "trust/agentic-ai-security-identity",
+      ],
+    },
+    {
+      type: "category",
       label: "Operations & Economics",
       link: { type: "doc", id: "operations/index" },
       collapsible: true,

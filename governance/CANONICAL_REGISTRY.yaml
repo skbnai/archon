@@ -3248,10 +3248,10 @@ topics:
   - id: agentic-ai-security-identity
     domain: trust
     canonical: docs/trust/05-agentic-ai-security-identity.md
-    pending: true
     aliases:
     - agentic ai security & agent identity
-    supersedes: []
+    supersedes:
+    - docs/enterprise-architecture/ai-architecture/agentic-ai-security-identity.md
     pages: []
   - id: ai-control-series-overview
     domain: trust
