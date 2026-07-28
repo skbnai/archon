@@ -3186,17 +3186,41 @@ topics:
   - id: airgapped-banking-infrastructure
     domain: trust
     canonical: docs/trust/01-airgapped-banking-infrastructure.md
-    pending: true
     aliases:
     - air-gapped ai infrastructure for enterprise banking
-    supersedes: []
+    supersedes:
+    - docs/ai-usecases/airgapped-banking-architecture.md
     pages: []
   - id: a2a-security-governance
     domain: trust
     canonical: docs/trust/02-a2a-security-governance.md
-    pending: true
     aliases:
     - 'enterprise-scale a2a ecosystem: security, governance & architecture guide'
+    supersedes:
+    - docs/enterprise-architecture/ai-architecture/a2a-enterprise-security-governance-guide.md
+    pages: []
+  - id: a2a-security-governance-part2
+    domain: trust
+    canonical: docs/trust/parts/02-a2a-security-governance-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: a2a-security-governance-part3
+    domain: trust
+    canonical: docs/trust/parts/02-a2a-security-governance-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: a2a-security-governance-part4
+    domain: trust
+    canonical: docs/trust/parts/02-a2a-security-governance-part4.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: a2a-security-governance-part5
+    domain: trust
+    canonical: docs/trust/parts/02-a2a-security-governance-part5.md
+    aliases: []
     supersedes: []
     pages: []
   - id: agent-communication-identity-gateway
