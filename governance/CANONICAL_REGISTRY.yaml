@@ -4166,7 +4166,13 @@ topics:
   - id: sovereign-ai-foundations
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/11-sovereign-ai-foundations.md
-    pending: true
+    aliases: []
+    supersedes:
+    - docs/sovereign-constitutional-ai/sovereign-ai-foundations.md
+    pages: []
+  - id: sovereign-ai-foundations-part2
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/parts/11-sovereign-ai-foundations-part2.md
     aliases: []
     supersedes: []
     pages: []
