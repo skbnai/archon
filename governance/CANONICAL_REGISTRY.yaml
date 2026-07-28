@@ -3643,14 +3643,12 @@ topics:
   - id: zero-to-mastery-curriculum-part3
     domain: trust
     canonical: docs/trust/ai-security-governance/parts/38-zero-to-mastery-curriculum-part3.md
-    pending: true
     aliases: []
     supersedes: []
     pages: []
   - id: zero-to-mastery-curriculum-part4
     domain: trust
     canonical: docs/trust/ai-security-governance/parts/38-zero-to-mastery-curriculum-part4.md
-    pending: true
     aliases: []
     supersedes: []
     pages: []
