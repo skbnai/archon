@@ -3226,10 +3226,10 @@ topics:
   - id: agent-communication-identity-gateway
     domain: trust
     canonical: docs/trust/03-agent-communication-identity-gateway.md
-    pending: true
     aliases:
     - agent communication, identity, authorization & ai gateway
-    supersedes: []
+    supersedes:
+    - docs/enterprise-architecture/ai-architecture/agent-communication-identity-gateway.md
     pages: []
   - id: agentic-ai-security-guardrails
     domain: trust
