@@ -4091,18 +4091,18 @@ topics:
   - id: ai-alignment-control
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/01-ai-alignment-control.md
-    pending: true
     aliases:
     - ai alignment & control
-    supersedes: []
+    supersedes:
+    - docs/sovereign-constitutional-ai/ai-alignment-control.md
     pages: []
   - id: ai-assurance-audit-architecture
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/02-ai-assurance-audit-architecture.md
-    pending: true
     aliases:
     - ai assurance & audit architecture
-    supersedes: []
+    supersedes:
+    - docs/sovereign-constitutional-ai/ai-assurance-audit-architecture.md
     pages: []
   - id: ai-governance-operating-model
     domain: trust
