@@ -3781,18 +3781,18 @@ topics:
   - id: part-01-soc-operating-model
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/01-part-01-soc-operating-model.md
-    pending: true
     aliases:
     - part 01 — soc operating model & maturity
-    supersedes: []
+    supersedes:
+    - docs/ai-soc-playbooks/part-01-soc-operating-model.md
     pages: []
   - id: part-02-ai-use-cases
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/02-part-02-ai-use-cases.md
-    pending: true
     aliases:
     - part 02 — ai use cases in security operations
-    supersedes: []
+    supersedes:
+    - docs/ai-soc-playbooks/part-02-ai-use-cases.md
     pages: []
   - id: part-03-agentic-soc
     domain: trust
