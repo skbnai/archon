@@ -130,5 +130,5 @@ Antipatterns: governance on paper only (documented but never operationally imple
 ## Related
 
 - [Sovereign Constitutional AI Part 10: RAI Operating Model](10-rai-operating-model.md)
-- [Sovereign Constitutional AI Part 4: AI Risk Taxonomy](04-ai-risk-taxonomy.md)
+- [Sovereign Constitutional AI Part 5: AI Safety Framework](05-ai-safety-framework.md)
 - [Sovereign Constitutional AI Part 2: AI Assurance & Audit Architecture](02-ai-assurance-audit-architecture.md)

@@ -115,5 +115,5 @@ For High-Risk AI systems under the EU AI Act (Annex III), conformity assessment 
 ## Related
 
 - [Sovereign Constitutional AI Part 3: AI Governance Operating Model](03-ai-governance-operating-model.md)
-- [Sovereign Constitutional AI Part 4: AI Risk Taxonomy](04-ai-risk-taxonomy.md)
+- [Sovereign Constitutional AI Part 1: AI Alignment & Control](01-ai-alignment-control.md)
 - [Sovereign Constitutional AI Part 9: Policy-as-Code Framework](09-policy-as-code-framework.md)

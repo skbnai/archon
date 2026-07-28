@@ -4121,9 +4121,9 @@ topics:
   - id: ai-safety-framework
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/05-ai-safety-framework.md
-    pending: true
     aliases: []
-    supersedes: []
+    supersedes:
+    - docs/sovereign-constitutional-ai/ai-safety-framework.md
     pages: []
   - id: constitutional-agent-architecture
     domain: trust
