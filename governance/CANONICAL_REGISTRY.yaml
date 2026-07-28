@@ -4179,9 +4179,27 @@ topics:
   - id: sovereign-ai-roadmap-maturity
     domain: trust
     canonical: docs/trust/sovereign-constitutional-ai/12-sovereign-ai-roadmap-maturity.md
-    pending: true
     aliases:
     - roadmap, maturity & standards canon
+    supersedes:
+    - docs/sovereign-constitutional-ai/sovereign-ai-roadmap-maturity.md
+    pages: []
+  - id: sovereign-ai-roadmap-maturity-part2
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/parts/12-sovereign-ai-roadmap-maturity-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: sovereign-ai-roadmap-maturity-part3
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/parts/12-sovereign-ai-roadmap-maturity-part3.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: sovereign-ai-roadmap-maturity-part4
+    domain: trust
+    canonical: docs/trust/sovereign-constitutional-ai/parts/12-sovereign-ai-roadmap-maturity-part4.md
+    aliases: []
     supersedes: []
     pages: []
   - id: agent-evaluation-framework
