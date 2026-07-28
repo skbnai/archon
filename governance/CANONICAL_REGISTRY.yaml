@@ -3587,9 +3587,15 @@ topics:
   - id: ai-soc-observability-redteam-memory
     domain: trust
     canonical: docs/trust/ai-security-governance/35-ai-soc-observability-redteam-memory.md
-    pending: true
     aliases:
     - ai soc, observability, red team & memory security
+    supersedes:
+    - docs/ai-security-governance/security/04-AI-SOC-Observability-RedTeam-Memory.md
+    pages: []
+  - id: ai-soc-observability-redteam-memory-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/35-ai-soc-observability-redteam-memory-part2.md
+    aliases: []
     supersedes: []
     pages: []
   - id: economic-security-finops-commerce-pqc
