@@ -3951,18 +3951,18 @@ topics:
   - id: cloud-security
     domain: trust
     canonical: docs/trust/cybersec-architect/07-cloud-security.md
-    pending: true
     aliases:
     - part 7 — cloud security architecture
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/07-cloud-security.md
     pages: []
   - id: ai-governance
     domain: trust
     canonical: docs/trust/cybersec-architect/08-ai-governance.md
-    pending: true
     aliases:
     - part 8 — ai governance & compliance
-    supersedes: []
+    supersedes:
+    - docs/cybersec-architect/08-ai-governance.md
     pages: []
   - id: security-operations
     domain: trust
