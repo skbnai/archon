@@ -3567,9 +3567,21 @@ topics:
   - id: identity-mcp-a2a-security-blueprint
     domain: trust
     canonical: docs/trust/ai-security-governance/34-identity-mcp-a2a-security-blueprint.md
-    pending: true
     aliases:
     - identity, mcp & a2a security blueprint
+    supersedes:
+    - docs/ai-security-governance/security/02-Identity-MCP-A2A-Security-Blueprint.md
+    pages: []
+  - id: identity-mcp-a2a-security-blueprint-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/34-identity-mcp-a2a-security-blueprint-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: identity-mcp-a2a-security-blueprint-part3
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/34-identity-mcp-a2a-security-blueprint-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: ai-soc-observability-redteam-memory
