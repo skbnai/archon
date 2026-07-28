@@ -3242,9 +3242,9 @@ topics:
   - id: agentic-ai-governance-framework
     domain: trust
     canonical: docs/trust/ai-security-governance/03-agentic-ai-governance-framework.md
-    pending: true
     aliases: []
-    supersedes: []
+    supersedes:
+    - docs/ai-security-governance/Agentic_AI_Governance_Framework.md
     pages: []
   - id: sovereign-constitutional-ai-rai-implementation-handbook
     domain: trust
