@@ -3805,9 +3805,21 @@ topics:
   - id: part-04-automation-playbooks
     domain: trust
     canonical: docs/trust/ai-soc-playbooks/04-part-04-automation-playbooks.md
-    pending: true
     aliases:
     - part 04 — ai automation playbooks
+    supersedes:
+    - docs/ai-soc-playbooks/part-04-automation-playbooks.md
+    pages: []
+  - id: part-04-automation-playbooks-part2
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/parts/04-part-04-automation-playbooks-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: part-04-automation-playbooks-part3
+    domain: trust
+    canonical: docs/trust/ai-soc-playbooks/parts/04-part-04-automation-playbooks-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: part-05-soar-platforms
