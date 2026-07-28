@@ -3547,9 +3547,21 @@ topics:
   - id: foundations-reference-architecture
     domain: trust
     canonical: docs/trust/ai-security-governance/33-foundations-reference-architecture.md
-    pending: true
     aliases:
     - foundations & reference architecture
+    supersedes:
+    - docs/ai-security-governance/security/01-Foundations-Reference-Architecture.md
+    pages: []
+  - id: foundations-reference-architecture-part2
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/33-foundations-reference-architecture-part2.md
+    aliases: []
+    supersedes: []
+    pages: []
+  - id: foundations-reference-architecture-part3
+    domain: trust
+    canonical: docs/trust/ai-security-governance/parts/33-foundations-reference-architecture-part3.md
+    aliases: []
     supersedes: []
     pages: []
   - id: identity-mcp-a2a-security-blueprint
