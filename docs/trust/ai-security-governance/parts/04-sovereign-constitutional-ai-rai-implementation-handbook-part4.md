@@ -69,4 +69,4 @@ Few organizations can staff all six on day one — the roadmap sequences capabil
 
 - [Sovereign Constitutional AI & RAI Handbook: Autonomy, Policy & Public Interest (Part 3)](04-sovereign-constitutional-ai-rai-implementation-handbook-part3.md)
 - [Sovereign Constitutional AI & RAI Handbook: Deliverables, Roadmap & Appendices (Part 5)](04-sovereign-constitutional-ai-rai-implementation-handbook-part5.md)
-- [Economic Security: FinOps, Commerce & Post-Quantum](../economic-security-finops-commerce-pqc.md)
+- [Economic Security: FinOps, Commerce & Post-Quantum](../36-economic-security-finops-commerce-pqc.md)

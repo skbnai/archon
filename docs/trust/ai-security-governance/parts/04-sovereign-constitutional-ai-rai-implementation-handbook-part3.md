@@ -45,4 +45,4 @@ This is directional capability planning, not a procurement commitment, re-assess
 
 - [Sovereign Constitutional AI & RAI Handbook: Control, Governance & Risk (Part 2)](04-sovereign-constitutional-ai-rai-implementation-handbook-part2.md)
 - [Sovereign Constitutional AI & RAI Handbook: Lifecycle, Assurance & Operating Disciplines (Part 4)](04-sovereign-constitutional-ai-rai-implementation-handbook-part4.md) — Domains 13-18
-- [Identity/MCP/A2A Security Blueprint: MCP Security](../parts/identity-mcp-a2a-security-blueprint-part2.md)
+- [Identity/MCP/A2A Security Blueprint: MCP Security](../parts/34-identity-mcp-a2a-security-blueprint-part2.md)

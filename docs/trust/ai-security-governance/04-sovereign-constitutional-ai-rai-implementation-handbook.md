@@ -53,4 +53,4 @@ Cross-mapping is straightforward when requirements align; the harder problem is 
 
 - [Sovereign Constitutional AI & RAI Handbook: Control, Governance & Risk (Part 2)](parts/04-sovereign-constitutional-ai-rai-implementation-handbook-part2.md) — Domains 4-8
 - [Agentic AI Governance Framework](03-agentic-ai-governance-framework.md)
-- [Identity/MCP/A2A Security Blueprint](identity-mcp-a2a-security-blueprint.md)
+- [Identity/MCP/A2A Security Blueprint](34-identity-mcp-a2a-security-blueprint.md)

@@ -61,4 +61,4 @@ Capturing full chain-of-thought and tool payload for every action is necessary b
 
 - [Sovereign Constitutional AI & RAI Handbook: Foundations & Behavioral Engineering (Part 1)](../04-sovereign-constitutional-ai-rai-implementation-handbook.md)
 - [Sovereign Constitutional AI & RAI Handbook: Autonomy, Policy & Public Interest (Part 3)](04-sovereign-constitutional-ai-rai-implementation-handbook-part3.md) — Domains 9-12
-- [Identity/MCP/A2A Security Blueprint](../identity-mcp-a2a-security-blueprint.md)
+- [Identity/MCP/A2A Security Blueprint](../34-identity-mcp-a2a-security-blueprint.md)

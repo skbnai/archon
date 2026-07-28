@@ -77,4 +77,4 @@ This handbook is a living reference, not a one-time certification. Treat the con
 
 - [Sovereign Constitutional AI & RAI Handbook: Lifecycle, Assurance & Operating Disciplines (Part 4)](04-sovereign-constitutional-ai-rai-implementation-handbook-part4.md)
 - [Sovereign Constitutional AI & RAI Handbook: Foundations & Behavioral Engineering (Part 1)](../04-sovereign-constitutional-ai-rai-implementation-handbook.md)
-- [Enterprise Agent Operating Model & Maturity Model](../operating-model-maturity-roadmap.md)
+- [Enterprise Agent Operating Model & Maturity Model](../37-operating-model-maturity-roadmap.md)

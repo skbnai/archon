@@ -928,6 +928,18 @@ const sidebars = {
       items: [
         {
           type: "category",
+          label: "Governance Frameworks & Handbooks",
+          items: [
+            "trust/ai-security-governance/agentic-ai-governance-framework",
+            "trust/ai-security-governance/sovereign-constitutional-ai-rai-implementation-handbook",
+            "trust/ai-security-governance/parts/sovereign-constitutional-ai-rai-implementation-handbook-part2",
+            "trust/ai-security-governance/parts/sovereign-constitutional-ai-rai-implementation-handbook-part3",
+            "trust/ai-security-governance/parts/sovereign-constitutional-ai-rai-implementation-handbook-part4",
+            "trust/ai-security-governance/parts/sovereign-constitutional-ai-rai-implementation-handbook-part5",
+          ],
+        },
+        {
+          type: "category",
           label: "DeepMind AI Control Series",
           items: [
             "trust/ai-security-governance/ai-control-series-overview",
